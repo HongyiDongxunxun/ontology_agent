@@ -1,0 +1,1627 @@
+{
+  "base_name": "reviewed_full_3754",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "国外政府出版物中灰色文献的采集已趋于成熟，特别是欧、美、日等发达国家都把“政府出版物”中的“灰色文献”作为一种重要的情报源，非常重视对其的采集和利用。这些国家一般都有比较系统的机构或网站，以及相关的法律制度来保障文献的收集工作[1]。例如，欧洲大陆有“欧洲灰色文献情报系统\"[2],英国图书馆灰色文献供应中心（British Library Document Supply Service，简称BLDSC）是世界上收藏政府出版物中灰色文献最重要的中心之一，美国由国家技术信息服务中心（NationalTechnical InformationService，简称NTIS）负责收录美国政府立项研究及开发的项目报告和其他国家政府及研究单位的研究报告，日本在国家、地方、企业都有专业的灰色文献研究管理机构负责此类文献的采集[3]。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "欧洲灰色文献情报系统",
+          "normalized_name": "欧洲灰色文献情报系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "欧洲大陆有“欧洲灰色文献情报系统”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "英国图书馆灰色文献供应中心（British Library Document Supply Service，简称BLDSC）",
+          "normalized_name": "英国图书馆灰色文献供应中心（British Library Document Supply Service，简称BLDSC）",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "英国图书馆灰色文献供应中心（British Library Document Supply Service，简称BLDSC）是世界上收藏政府出版物中灰色文献最重要的中心之一",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "国家技术信息服务中心（NationalTechnical InformationService，简称NTIS）",
+          "normalized_name": "国家技术信息服务中心（National Technical Information Service，简称NTIS）",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国由国家技术信息服务中心（NationalTechnical InformationService，简称NTIS）负责收录美国政府立项研究及开发的项目报告",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "但是，国内对政府出版物中灰色文献的重视程度还远远不足。以国家图书馆（以下简称我馆）为例，政府出版物中正式发行的“白色文献”可以通过出版社缴送或者书商采购等途径获得，但“灰色文献”却没有稳定的采集渠道和专门的采集机构，导致大量政府出版物中的灰色文献缺藏，这与我馆“中文求全”的采访方针及“国家总书库”的地位很不相称。因此，加强对政府出版物中灰色文献的研究和采集，使此类文献中一些学术性与资料性较强的文献得到妥善保存与利用是非常有必要的。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "国家图书馆",
+          "normalized_name": "国家图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "以国家图书馆（以下简称我馆）为例",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "政府出版物",
+          "normalized_name": "政府出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国内对政府出版物中灰色文献的重视程度还远远不足",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "灰色文献",
+          "normalized_name": "灰色文献",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国内对政府出版物中灰色文献的重视程度还远远不足",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "白色文献",
+          "normalized_name": "白色文献",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "政府出版物中正式发行的“白色文献”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e5",
+          "mention": "中文求全",
+          "normalized_name": "中文求全",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "与我馆“中文求全”的采访方针",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为方针名称，但原文以引号标识，视为具体政策"
+        },
+        {
+          "entity_id": "2_e6",
+          "mention": "国家总书库",
+          "normalized_name": "国家总书库",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "及“国家总书库”的地位",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "“邸报”和“官书”是古代政府出版物的两种主要形态，其出版传播形态和具有的功能都有所不同。 “邸报”的主要功能是传播政府信息，它是依据官员层级在政府系统内部传播，这类似于现在的“红头文件”； 而“官书”的主要功能是灌输官方意识形态，它通过市场渠道进行传播，是所有公民都能获取的政府出版物[4]。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "邸报",
+          "normalized_name": "邸报",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "“邸报”和“官书”是古代政府出版物的两种主要形态",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "官书",
+          "normalized_name": "官书",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "“邸报”和“官书”是古代政府出版物的两种主要形态",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "古代政府出版物",
+          "normalized_name": "古代政府出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "“邸报”和“官书”是古代政府出版物的两种主要形态",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "红头文件",
+          "normalized_name": "红头文件",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这类似于现在的“红头文件”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "从晚清开始到民国时期，西方的民主思想通过政府出版物传达政府信息的方式等流传到中国，对中国的政府信息传播体制产生了很大的影响。 中国的政界、学界重新认识官报的作用，反思中国过去的政府信息传播方式，由此产生了中国近代的官报，推动了民国时期大量政府出版物的产生[5]。民国时期政府出版物的出版者为政府机构，其内容主要是国家及政府各部门颁行的法律法规、政府各部门的公务报告、统计资料等，而且多数为“非卖品”，没有定价，这与商业出版物明显不同，表明了其官方出资的非营利性质。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "政府出版物",
+          "normalized_name": "政府出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "西方的民主思想通过政府出版物传达政府信息的方式等流传到中国",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "官报",
+          "normalized_name": "官报",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "中国的政界、学界重新认识官报的作用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "中国近代的官报",
+          "normalized_name": "中国近代的官报",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "由此产生了中国近代的官报",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "民国时期政府出版物",
+          "normalized_name": "民国时期政府出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "民国时期政府出版物的出版者为政府机构",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "政府机构",
+          "normalized_name": "政府机构",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "民国时期政府出版物的出版者为政府机构",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但在此语境中指代具体类型的出版者，且为图情领域常见实体，故抽取"
+        },
+        {
+          "entity_id": "4_e6",
+          "mention": "法律法规",
+          "normalized_name": "法律法规",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "其内容主要是国家及政府各部门颁行的法律法规",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但作为政府出版物内容的具体类型，且为图情领域常见实体，故抽取"
+        },
+        {
+          "entity_id": "4_e7",
+          "mention": "统计资料",
+          "normalized_name": "统计资料",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "政府各部门的公务报告、统计资料等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但作为政府出版物内容的具体类型，且为图情领域常见实体，故抽取"
+        },
+        {
+          "entity_id": "4_e8",
+          "mention": "非卖品",
+          "normalized_name": "非卖品",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "而且多数为“非卖品”，没有定价",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "我馆早期对此类政府出版物中灰色文献采集的记载，是1919年1月21日教育部指令第132号照准京师图书馆征集图书简章（《教育公报》1919.3)[6]。我馆的目录柜中至今保留着大约六七千张民国时期出版的政府出版物卡片目录，这还不包括一大批中央和地方政府部门出版的政报类连续性出版物。此外，库存遗留下来的民国时期的政府文献还有政府会议录、规章制度、政府职员名录（如1948年出版的《教育部科长以上职员录》）、调查报告（如中国国民党中央组织部编《中国共匪情形调查报告》、伪内政部警官学校编《警察沿革》)、政府财政报告(如《中央政府短期外债现付总表》、《中央政府短期债款报告册》等）、“国立中央研究院 $\\times ~ \\times$ 年度总报告”（1918—1928）等类型，但采集数量非常有限。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "教育部指令第132号",
+          "normalized_name": "教育部指令第132号",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "1919年1月21日教育部指令第132号照准京师图书馆征集图书简章",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "京师图书馆",
+          "normalized_name": "京师图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "教育部指令第132号照准京师图书馆征集图书简章",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "征集图书简章",
+          "normalized_name": "征集图书简章",
+          "candidate_l3": "guideline",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "教育部指令第132号照准京师图书馆征集图书简章",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "《教育公报》",
+          "normalized_name": "《教育公报》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "（《教育公报》1919.3）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e5",
+          "mention": "《教育部科长以上职员录》",
+          "normalized_name": "《教育部科长以上职员录》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如1948年出版的《教育部科长以上职员录》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e6",
+          "mention": "中国国民党中央组织部",
+          "normalized_name": "中国国民党中央组织部",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中国国民党中央组织部编《中国共匪情形调查报告》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e7",
+          "mention": "《中国共匪情形调查报告》",
+          "normalized_name": "《中国共匪情形调查报告》",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "中国国民党中央组织部编《中国共匪情形调查报告》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e8",
+          "mention": "伪内政部警官学校",
+          "normalized_name": "伪内政部警官学校",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "伪内政部警官学校编《警察沿革》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e9",
+          "mention": "《警察沿革》",
+          "normalized_name": "《警察沿革》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "伪内政部警官学校编《警察沿革》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e10",
+          "mention": "《中央政府短期外债现付总表》",
+          "normalized_name": "《中央政府短期外债现付总表》",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如《中央政府短期外债现付总表》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e11",
+          "mention": "《中央政府短期债款报告册》",
+          "normalized_name": "《中央政府短期债款报告册》",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如《中央政府短期债款报告册》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e12",
+          "mention": "国立中央研究院",
+          "normalized_name": "国立中央研究院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "“国立中央研究院 × × 年度总报告”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "1985年,我馆成立了采集灰色文献的专门机构—“国内资料组”，其开始大规模、全面地采集中文灰色文献。1987年12月，我馆联合中国科委正式发文，向全国软科学机构采集研究报告、调研分析、对策建议和决策方案等软科学灰色文献，收到了很好的效果，并成立了“软科学资料室”。到1980年代末期，我馆灰色文献的采集已具有较大规模，数量总计已近10万种[7]。 其中，基藏库南库库存遗留下来的软科学资料中由各级党政机关及其附属研究机构出版的各类资料近万份，多为20世纪七八十年代编印或出版的文献（见表1）。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "我馆",
+          "normalized_name": "我馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1985年,我馆成立了采集灰色文献的专门机构",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "指代具体图书馆，但原文未给出馆名，需结合上下文确定"
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "国内资料组",
+          "normalized_name": "国内资料组",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "成立了采集灰色文献的专门机构—\"国内资料组\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "中国科委",
+          "normalized_name": "中国科委",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "我馆联合中国科委正式发文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "软科学资料室",
+          "normalized_name": "软科学资料室",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "成立了\"软科学资料室\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "灰色文献",
+          "normalized_name": "灰色文献",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采集灰色文献的专门机构",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e6",
+          "mention": "软科学灰色文献",
+          "normalized_name": "软科学灰色文献",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "向全国软科学机构采集研究报告、调研分析、对策建议和决策方案等软科学灰色文献",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可视为灰色文献的子类概念"
+        },
+        {
+          "entity_id": "6_e7",
+          "mention": "基藏库南库",
+          "normalized_name": "基藏库南库",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "基藏库南库库存遗留下来的软科学资料",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为图书馆内部库房名称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "内部发行的正式期刊内容主要供政府部门做宏观决策参考，如《决策导刊》、《中共中央党校报告选》等； 内部发行的非正式期刊主要反映地方政治、经济和社会情况，如《上饶政研》、《济宁调研》等；",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "《决策导刊》",
+          "normalized_name": "《决策导刊》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如《决策导刊》、《中共中央党校报告选》等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "《中共中央党校报告选》",
+          "normalized_name": "《中共中央党校报告选》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如《决策导刊》、《中共中央党校报告选》等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "《上饶政研》",
+          "normalized_name": "《上饶政研》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如《上饶政研》、《济宁调研》等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "《济宁调研》",
+          "normalized_name": "《济宁调研》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如《上饶政研》、《济宁调研》等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "我馆分馆2001年1月1日正式重新开馆后增设的国情资料室，作为为中央国家领导机关服务的窗口与前沿，提供政府出版物、年鉴、方志等有关省情、国情资料的借阅、检索和咨询服务[8]。 然而,国情资料室由于其定位和采集范围界定的模糊性、馆藏体系相对不完整等原因，近年来读者利用率较低，在我馆2008年初进行的机构调整中被撤并，目前已与地方文献整合。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "国情资料室",
+          "normalized_name": "国情资料室",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "我馆分馆2001年1月1日正式重新开馆后增设的国情资料室",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "政府出版物",
+          "normalized_name": "政府出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提供政府出版物、年鉴、方志等有关省情、国情资料的借阅、检索和咨询服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "年鉴",
+          "normalized_name": "年鉴",
+          "candidate_l3": "reference_tool",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "提供政府出版物、年鉴、方志等有关省情、国情资料的借阅、检索和咨询服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "方志",
+          "normalized_name": "方志",
+          "candidate_l3": "reference_tool",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "提供政府出版物、年鉴、方志等有关省情、国情资料的借阅、检索和咨询服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e5",
+          "mention": "地方文献",
+          "normalized_name": "地方文献",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前已与地方文献整合",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为corpus"
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "2003年初，新修订发布的《国家图书馆文献采选条例》中对灰色文献的采集政策逐渐开始调整[9],规定了适当采集未列入缴送范围的各机关团体和科研机构等出版的灰色文献，拓宽了政府出版物中灰色文献的采集范围。2008年初，重新成立了专门负责采集灰色文献的机构—“中文资料组”，前期规划中拟全面采集政府出版物中的灰色文献，主要包括中共中央及直属机构、全国人大和全国政协及下属中央级单位、国务院各部委办及所属办事机构、中央军委、最高人民法院和最高人民检察院、国家级各类社会团体/协会／学会等机构的出版物。 其具体类型有：上述机构发布的会议文件、报告、统计、计划、白皮书、期刊和报纸等；",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "《国家图书馆文献采选条例》",
+          "normalized_name": "《国家图书馆文献采选条例》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "新修订发布的《国家图书馆文献采选条例》中对灰色文献的采集政策逐渐开始调整",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "灰色文献",
+          "normalized_name": "灰色文献",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "《国家图书馆文献采选条例》中对灰色文献的采集政策逐渐开始调整",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "中文资料组",
+          "normalized_name": "中文资料组",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "重新成立了专门负责采集灰色文献的机构—\"中文资料组\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "中共中央及直属机构",
+          "normalized_name": "中共中央及直属机构",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "主要包括中共中央及直属机构、全国人大和全国政协及下属中央级单位、国务院各部委办及所属办事机构、中央军委、最高人民法院和最高人民检察院、国家级各类社会团体/协会／学会等机构的出版物",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "该实体为机构集合，但原文以具体名称列出，故抽取"
+        },
+        {
+          "entity_id": "9_e5",
+          "mention": "全国人大",
+          "normalized_name": "全国人大",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "主要包括中共中央及直属机构、全国人大和全国政协及下属中央级单位、国务院各部委办及所属办事机构、中央军委、最高人民法院和最高人民检察院、国家级各类社会团体/协会／学会等机构的出版物",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e6",
+          "mention": "全国政协",
+          "normalized_name": "全国政协",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "主要包括中共中央及直属机构、全国人大和全国政协及下属中央级单位、国务院各部委办及所属办事机构、中央军委、最高人民法院和最高人民检察院、国家级各类社会团体/协会／学会等机构的出版物",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e7",
+          "mention": "国务院各部委办及所属办事机构",
+          "normalized_name": "国务院各部委办及所属办事机构",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "主要包括中共中央及直属机构、全国人大和全国政协及下属中央级单位、国务院各部委办及所属办事机构、中央军委、最高人民法院和最高人民检察院、国家级各类社会团体/协会／学会等机构的出版物",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "该实体为机构集合，但原文以具体名称列出，故抽取"
+        },
+        {
+          "entity_id": "9_e8",
+          "mention": "中央军委",
+          "normalized_name": "中央军委",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "主要包括中共中央及直属机构、全国人大和全国政协及下属中央级单位、国务院各部委办及所属办事机构、中央军委、最高人民法院和最高人民检察院、国家级各类社会团体/协会／学会等机构的出版物",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e9",
+          "mention": "最高人民法院",
+          "normalized_name": "最高人民法院",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "主要包括中共中央及直属机构、全国人大和全国政协及下属中央级单位、国务院各部委办及所属办事机构、中央军委、最高人民法院和最高人民检察院、国家级各类社会团体/协会／学会等机构的出版物",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e10",
+          "mention": "最高人民检察院",
+          "normalized_name": "最高人民检察院",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "主要包括中共中央及直属机构、全国人大和全国政协及下属中央级单位、国务院各部委办及所属办事机构、中央军委、最高人民法院和最高人民检察院、国家级各类社会团体/协会／学会等机构的出版物",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e11",
+          "mention": "政府出版物",
+          "normalized_name": "政府出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "拓宽了政府出版物中灰色文献的采集范围",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "各类决策参考等[10]。 后经我馆文献资源建设指导委员会讨论，调整为前期以其中的学术会议论文集、研究报告、社会调查报告等为采集重点，强调资料的学术性与资料性，以保存文献为最终目的[1]。 从2008年7月开始面向社会广泛征集[12]。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "我馆文献资源建设指导委员会",
+          "normalized_name": "我馆文献资源建设指导委员会",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "后经我馆文献资源建设指导委员会讨论",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "机构名称中的'我馆'为自指，但'文献资源建设指导委员会'为具体机构名称，整体可识别"
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "学术会议论文集",
+          "normalized_name": "学术会议论文集",
+          "candidate_l3": "conference_paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "前期以其中的学术会议论文集、研究报告、社会调查报告等为采集重点",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "虽为文献类型泛称，但在具体采集决策语境中指向具体文献集合"
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "研究报告",
+          "normalized_name": "研究报告",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "前期以其中的学术会议论文集、研究报告、社会调查报告等为采集重点",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "同上，在具体采集决策语境中指向具体文献集合"
+        },
+        {
+          "entity_id": "10_e4",
+          "mention": "社会调查报告",
+          "normalized_name": "社会调查报告",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "前期以其中的学术会议论文集、研究报告、社会调查报告等为采集重点",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "同上，在具体采集决策语境中指向具体文献集合"
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "我馆从2003年开始组建“网络信息采集与保存”试验项目（简称WICP项目）团队，制定有针对性的网络采集政策，对反映我国国家政治、经济、文化等诸方面的重大事件进行基于主题事件的有选择的网络信息采集与长期保存。资源的获取采用机器自动采集的方式，将各政府网站上的相关信息采集到我馆，然后经过信息过滤、信息抽取、自动分类等智能处理后，按数据库结构自动生成政府公开信息库、政府公报库、政府机构库和热点专题数据库等，并计划将这些数据库的内容与我馆印本文献信息、网络采集的其他信息资源进行整合与关联。该项目实施中已经完成对“非典\"(SARS)、中国载人航天工程、2008北京奥运会的专题采集等[13]； 同时完成了对中央及地方各级政府及其组成机构的网站域名的采集，并对采集后的压缩数据分别建立专题索引[14]。",
+      "entities": []
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "我馆作为国家总书库，文献收藏除考虑读者的需求之外，还必须考虑文献的价值，包括现期价值和未来价值（潜在价值)。因此，政府出版物中灰色文献的采集定位就必须从“读者需求”和“文献价值”两个方面去综合考虑，其基本定位如下：一是要与我馆的职能相结合，有明确的目标服务群体，其服务对象重点是中央、国家领导机关和重点科研、教育及生产单位，同时兼顾一般公众服务； 二是要与我馆的地位相匹配，入藏要有特色，即所选择入藏的资料我馆具有收藏的便利条件，或者除了我馆目前还没有被其他机构系统收集和开发利用；",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "我馆",
+          "normalized_name": "我馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "我馆作为国家总书库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "国家总书库",
+          "normalized_name": "国家总书库",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "我馆作为国家总书库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "政府出版物",
+          "normalized_name": "政府出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "政府出版物中灰色文献的采集定位",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "灰色文献",
+          "normalized_name": "灰色文献",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "政府出版物中灰色文献的采集定位",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e5",
+          "mention": "读者需求",
+          "normalized_name": "读者需求",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从“读者需求”和“文献价值”两个方面去综合考虑",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛化概念，但原文以引号形式出现，视为具体概念"
+        },
+        {
+          "entity_id": "12_e6",
+          "mention": "文献价值",
+          "normalized_name": "文献价值",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从“读者需求”和“文献价值”两个方面去综合考虑",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛化概念，但原文以引号形式出现，视为具体概念"
+        },
+        {
+          "entity_id": "12_e7",
+          "mention": "中央",
+          "normalized_name": "中央",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "服务对象重点是中央、国家领导机关",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处指中央政府机构，非泛称"
+        },
+        {
+          "entity_id": "12_e8",
+          "mention": "国家领导机关",
+          "normalized_name": "国家领导机关",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "服务对象重点是中央、国家领导机关",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "具体指代中央及国家层面的领导机构"
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "IFLA（International Federation of Library Associationsand Institutions，国际图书馆协会和机构联合会）出版的《法定呈缴立法准则》中，关于法定缴存所阐述的一个基础原则是“除非在法律上有特别的例外规定，否则所有广义上的出版物，即所有向公众提供的资料都在缴存范围之内\"[17]。 我国的出版物包括由专业出版单位出版的出版物、政府出版物、机关团体出版物和个人出版物，呈缴者应当包括专业出版单位、政府机构、机关团体和个人，呈缴物应当包括正式出版物和灰色文献。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "IFLA（International Federation of Library Associationsand Institutions，国际图书馆协会和机构联合会）",
+          "normalized_name": "国际图书馆协会和机构联合会",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "IFLA（International Federation of Library Associationsand Institutions，国际图书馆协会和机构联合会）出版的《法定呈缴立法准则》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "《法定呈缴立法准则》",
+          "normalized_name": "《法定呈缴立法准则》",
+          "candidate_l3": "guideline",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "IFLA（International Federation of Library Associationsand Institutions，国际图书馆协会和机构联合会）出版的《法定呈缴立法准则》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "灰色文献",
+          "normalized_name": "灰色文献",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "呈缴物应当包括正式出版物和灰色文献",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "我国的出版物包括由专业出版单位出版的出版物、政府出版物、机关团体出版物和个人出版物，呈缴者应当包括专业出版单位、政府机构、机关团体和个人，呈缴物应当包括正式出版物和灰色文献。 但是一般认为，法定呈缴的范围应限定在可以明确法律责任的范围之内，而政府出版物中的灰色文献，只有经出版管理部门批准出版的“内部资料”（有内部准印证号）有明确的责任者，可以追究其法律责任。所以这些经批准出版的非保密性的灰色文献可以在相关法规中明确规定纳入呈缴范围之内。至于其他没有内部准印证号的政府机构编撰、绘制、印刷的具有保存价值的资料，可以实行鼓励呈缴和主动收缴的制度，规定“国家鼓励政府部门自愿呈缴”[18]。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "专业出版单位",
+          "normalized_name": "专业出版单位",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "包括由专业出版单位出版的出版物",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛化类别词，但此处有具体限定（专业出版单位），且在图情领域作为机构类型可识别"
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "政府出版物",
+          "normalized_name": "政府出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "政府出版物中的灰色文献",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "灰色文献",
+          "normalized_name": "灰色文献",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "呈缴物应当包括正式出版物和灰色文献",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e4",
+          "mention": "内部资料",
+          "normalized_name": "内部资料",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "只有经出版管理部门批准出版的“内部资料”（有内部准印证号）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e5",
+          "mention": "内部准印证号",
+          "normalized_name": "内部准印证号",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有内部准印证号",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为规范性标识，但无独立学术命名，暂标concept"
+        },
+        {
+          "entity_id": "16_e6",
+          "mention": "出版管理部门",
+          "normalized_name": "出版管理部门",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "经出版管理部门批准出版的“内部资料”",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛化机构类别词，但此处有具体职能限定，且在图情领域作为机构类型可识别"
+        },
+        {
+          "entity_id": "16_e7",
+          "mention": "政府机构",
+          "normalized_name": "政府机构",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "呈缴者应当包括专业出版单位、政府机构、机关团体和个人",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛化机构类别词，但此处有具体限定（政府机构），且在图情领域作为机构类型可识别"
+        },
+        {
+          "entity_id": "16_e8",
+          "mention": "机关团体",
+          "normalized_name": "机关团体",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "呈缴者应当包括专业出版单位、政府机构、机关团体和个人",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛化机构类别词，但此处有具体限定（机关团体），且在图情领域作为机构类型可识别"
+        },
+        {
+          "entity_id": "16_e9",
+          "mention": "正式出版物",
+          "normalized_name": "正式出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "呈缴物应当包括正式出版物和灰色文献",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "政府出版物中灰色文献形式多样、内容繁杂，非公开发行且具有数量稀少、传播不广、隐蔽性强等传播性特点，给此类文献的采集工作带来了很大的困难。正是因为灰色文献具有这些不同于正式出版物的特征，传统的采集方法往往很难直接照搬到政府出版物中灰色文献的采集工作中去。为了能够有效地推进政府出版物中灰色文献的采集工作，采编人员必须从灰色文献自产生到传播的各个环节入手，不断创新采集方法，寻求获取政府出版物中灰色文献的突破点，并将这些方式和方法逐步演变成长效、稳定的制度与机制。 譬如与政府出版物中灰色文献的来源机构建立制度化的文献交流与合作、与其他此类文献的收藏单位进行定期的目录比对与文献交换、培养对本馆所采集政府出版物中灰色文献敏感度较高的书商（在与书商良好合作的同时又要避免过分依赖书商，要始终保持馆员采访的主体地位）、探索“分类采访”（围绕采集范围、根据政府出版物中灰色文献不同类型文献来源渠道的特点，由采访人员按类别有针对性地采访）和“专题采集”（不管采集政府出版物中灰色文献中的哪一类文献，都应紧紧围绕该类中某一有价值的专题进行）的采访模式等，以逐步实现此类文献的体系化和特色化。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "政府出版物",
+          "normalized_name": "政府出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "政府出版物中灰色文献形式多样、内容繁杂",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "灰色文献",
+          "normalized_name": "灰色文献",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "政府出版物中灰色文献形式多样、内容繁杂",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "传统的采集方法",
+          "normalized_name": "传统的采集方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "传统的采集方法往往很难直接照搬到政府出版物中灰色文献的采集工作中去",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但此处有具体指代"
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "分类采访",
+          "normalized_name": "分类采访",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "探索“分类采访”（围绕采集范围、根据政府出版物中灰色文献不同类型文献来源渠道的特点，由采访人员按类别有针对性地采访）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e5",
+          "mention": "专题采集",
+          "normalized_name": "专题采集",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "“专题采集”（不管采集政府出版物中灰色文献中的哪一类文献，都应紧紧围绕该类中某一有价值的专题进行）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "面对政府出版物中灰色文献数字化、网络化的趋势，政府出版物中灰色文献的来源更加分散，采集变得更为困难。 因此，如何收集、保存与利用分散于网络中的灰色文献资源，探索有效的数字化灰色文献的采集与利用模式，将是我馆在未来灰色文献采集工作中不得不考虑的问题。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "政府出版物",
+          "normalized_name": "政府出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "面对政府出版物中灰色文献数字化、网络化的趋势",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "灰色文献",
+          "normalized_name": "灰色文献",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "政府出版物中灰色文献数字化、网络化的趋势",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "数字化",
+          "normalized_name": "数字化",
+          "candidate_l3": "trend",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "政府出版物中灰色文献数字化、网络化的趋势",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "18_e4",
+          "mention": "网络化",
+          "normalized_name": "网络化",
+          "candidate_l3": "trend",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "政府出版物中灰色文献数字化、网络化的趋势",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "18_e5",
+          "mention": "我馆",
+          "normalized_name": "我馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "将是我馆在未来灰色文献采集工作中不得不考虑的问题",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "指代具体图书馆，但未给出名称，置信度较低"
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "因此，如何收集、保存与利用分散于网络中的灰色文献资源，探索有效的数字化灰色文献的采集与利用模式，将是我馆在未来灰色文献采集工作中不得不考虑的问题。 虽然我馆通过“网络信息采集与保存”试验项目（WICP项目）和“政府公开信息整合服务平台项目”对这方面做了尝试，《政府信息公开条例》也对采集此类信息提供了一定的政策依据，但政府出版物中灰色文献的范围远远超出上述两个项目中所涉及的通过网络公开的“政府信息”（很多具有研究性的政府出版物并没有通过网络公开，仍仅在政府系统内部发行和流通)，而且目前的采集方式主要是被动采集，还缺乏政府机构的主动推送或者交存，缺乏与政府机构的制度化合作（网络出版物的缴存，无论是白色文献还是灰色文献，目前均还缺乏法律支持)，这都在一定程度上制约了政府出版物中灰色文献资源建设的完整性。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "灰色文献",
+          "normalized_name": "灰色文献",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如何收集、保存与利用分散于网络中的灰色文献资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "我馆",
+          "normalized_name": "我馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "将是我馆在未来灰色文献采集工作中不得不考虑的问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "指代具体图书馆，但未给出名称，需结合上下文确认"
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "网络信息采集与保存试验项目（WICP项目）",
+          "normalized_name": "网络信息采集与保存试验项目（WICP项目）",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "通过“网络信息采集与保存”试验项目（WICP项目）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e4",
+          "mention": "政府公开信息整合服务平台项目",
+          "normalized_name": "政府公开信息整合服务平台项目",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "和“政府公开信息整合服务平台项目”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e5",
+          "mention": "《政府信息公开条例》",
+          "normalized_name": "《政府信息公开条例》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《政府信息公开条例》也对采集此类信息提供了一定的政策依据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e6",
+          "mention": "政府出版物",
+          "normalized_name": "政府出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "政府出版物中灰色文献的范围",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e7",
+          "mention": "政府信息",
+          "normalized_name": "政府信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过网络公开的“政府信息”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e8",
+          "mention": "白色文献",
+          "normalized_name": "白色文献",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "无论是白色文献还是灰色文献",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "灰色文献呈缴制度的缺位主要影响的是按程序和政策行事的官方机构（包括政府部门和其他半官方机构）对灰色文献提交的积极性，而对于行事相对灵活的民间机构和个人的影响却不是很大。况且，对于政府出版物中灰色文献的收集与保存，除了图书馆这一系统之外，还有受制度强有力支持的档案系统来保障。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "灰色文献呈缴制度",
+          "normalized_name": "灰色文献呈缴制度",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "灰色文献呈缴制度的缺位主要影响的是按程序和政策行事的官方机构",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "官方机构",
+          "normalized_name": "官方机构",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "按程序和政策行事的官方机构（包括政府部门和其他半官方机构）",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "虽为类别词，但受'按程序和政策行事'限定，且后文括号内具体化为'政府部门'和'半官方机构'，可视为具体机构类别"
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "政府部门",
+          "normalized_name": "政府部门",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "官方机构（包括政府部门和其他半官方机构）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e4",
+          "mention": "半官方机构",
+          "normalized_name": "半官方机构",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "官方机构（包括政府部门和其他半官方机构）",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e5",
+          "mention": "民间机构",
+          "normalized_name": "民间机构",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "行事相对灵活的民间机构和个人",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称，但受'行事相对灵活'限定，且与官方机构对举，可视为具体类别"
+        },
+        {
+          "entity_id": "20_e6",
+          "mention": "政府出版物",
+          "normalized_name": "政府出版物",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "对于政府出版物中灰色文献的收集与保存",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e7",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "除了图书馆这一系统之外",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "虽为泛称，但在此语境中指代具体机构类型系统，且后文有'档案系统'对举，可视为具体实体"
+        },
+        {
+          "entity_id": "20_e8",
+          "mention": "档案系统",
+          "normalized_name": "档案系统",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "还有受制度强有力支持的档案系统来保障",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "同上，指代具体机构类型系统"
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "但是，对于民间文献，包括各类民间组织和个人（其手中都有大量的实体和数字资源，特别是一些开源的开放存取库、学者个人收藏的灰色文献和其个人的博客和主页数据库等）的文献，都是我们这个时代民众真实、鲜活的生活与思想的记录，如果我馆不去主动收集和保存，恐怕流失了之后就很难再找到了。所以，我馆今后在做好政府出版物中灰色文献采集的同时，也应进一步加强民间灰色文献的采集与保存。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "民间文献",
+          "normalized_name": "民间文献",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对于民间文献，包括各类民间组织和个人",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "开放存取库",
+          "normalized_name": "开放存取库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "特别是一些开源的开放存取库",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "灰色文献",
+          "normalized_name": "灰色文献",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学者个人收藏的灰色文献",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "博客",
+          "normalized_name": "博客",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "其个人的博客和主页数据库",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "21_e5",
+          "mention": "主页数据库",
+          "normalized_name": "主页数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "其个人的博客和主页数据库",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e6",
+          "mention": "政府出版物",
+          "normalized_name": "政府出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "做好政府出版物中灰色文献采集",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

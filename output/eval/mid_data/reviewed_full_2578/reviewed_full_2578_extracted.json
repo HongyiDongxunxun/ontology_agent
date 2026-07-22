@@ -1,0 +1,1049 @@
+{
+  "base_name": "reviewed_full_2578",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "2",
+      "sentence": "李永宁分析了中小企业信息化建设的误区[5]。 然而由于我国各省经济结构、发展水平和文化观念有很大的区别，不同省份之间的信息化水平差异很大,因此前人的研究并不能准确地总结各省的信息化现状及其面临问题。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "李永宁",
+          "normalized_name": "李永宁",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "李永宁分析了中小企业信息化建设的误区[5]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "中小企业信息化建设的误区[5]",
+          "normalized_name": "中小企业信息化建设的误区",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "李永宁分析了中小企业信息化建设的误区[5]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "文献编号[5]指向具体论文，但原文未给出完整标题，按原文短语抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "随着我国进入了信息化与工业化融合的新阶段，吉林省中小企业掀起了信息化的高潮，但是目前还没有针对吉林省中小企业信息化的研究，本文旨在通过大规模的问卷调研，收集吉林省中小企业信息化建设数据,总结其现状,分析其问题及对策,为吉林省中小企业信息化建设和政府制定信息化政策提供依据。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "吉林省中小企业",
+          "normalized_name": "吉林省中小企业",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "吉林省中小企业掀起了信息化的高潮",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "有地域限定，可视为具体组织群体"
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "信息化与工业化融合",
+          "normalized_name": "信息化与工业化融合",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国进入了信息化与工业化融合的新阶段",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可作为政策现象或趋势"
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "吉林省中小企业信息化建设数据",
+          "normalized_name": "吉林省中小企业信息化建设数据",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "收集吉林省中小企业信息化建设数据",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "数据集名称较泛，但有地域和主题限定"
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "信息化政策",
+          "normalized_name": "信息化政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "为吉林省中小企业信息化建设和政府制定信息化政策提供依据",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "未指明具体政策文件名称，但作为政策类型实体"
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "加总，得到样本企业各年度总体的IS 投资增长额(以1984 年为基准),据此绘制吉林省中小企业IS 投资增长趋势图(图1)。 该曲线呈现明显的\"S\"型态势,符合我国企业IS 成长的一般规律[7]。 从图可知,80 年代到90 年代之间，吉林省中小企业IS 成长经历了一个漫长的增长低迷期;",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "吉林省中小企业IS 投资增长趋势图(图1)",
+          "normalized_name": "吉林省中小企业IS投资增长趋势图(图1)",
+          "candidate_l3": "figure",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "据此绘制吉林省中小企业IS 投资增长趋势图(图1)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "吉林省中小企业",
+          "normalized_name": "吉林省中小企业",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "吉林省中小企业IS 成长经历了一个漫长的增长低迷期",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "candidate_l1 可兼为 Abstract (作为研究对象群体)"
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "IS 成长的一般规律[7]",
+          "normalized_name": "IS成长的一般规律",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "符合我国企业IS 成长的一般规律[7]",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "规律本身为抽象实体，但引用[7]指向具体文献"
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "增长低迷期",
+          "normalized_name": "增长低迷期",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "吉林省中小企业IS 成长经历了一个漫长的增长低迷期",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "该短语在原文中为时段性描述，但未明确命名，confidence较低"
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "到1999 年后，吉林省大批中小企业开始IS 建设,各年的IS投资额迅速增加，信息化进入快速增长阶段，至今仍保持着一个良好的发展势头。 可见，虽然吉林省中小企业信息化扩散阶段开始的较晚，但是当前吉林省中小企业已经进入信息化快速发展的关键时期。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "吉林省",
+          "normalized_name": "吉林省",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "吉林省大批中小企业开始IS 建设",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "IS 建设",
+          "normalized_name": "IS建设",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "吉林省大批中小企业开始IS 建设",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "IS为Information System缩写，可兼指具体系统建设过程"
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "信息化",
+          "normalized_name": "信息化",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息化进入快速增长阶段",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "快速增长阶段",
+          "normalized_name": "快速增长阶段",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "信息化进入快速增长阶段",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "阶段名称带有评价性修饰，但作为具体时段划分可抽取"
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "吉林省中小企业信息化扩散阶段",
+          "normalized_name": "吉林省中小企业信息化扩散阶段",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "吉林省中小企业信息化扩散阶段开始的较晚",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e6",
+          "mention": "信息化快速发展",
+          "normalized_name": "信息化快速发展",
+          "candidate_l3": "trend",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "吉林省中小企业已经进入信息化快速发展的关键时期",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "带有评价性修饰，但作为有方向性的演变趋势可抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "吉林省中小企业IS 带来的管理活动变化主要为提高工作效率$( 7 7 . 5 \\% )$ ,部门协调沟通 $( 5 4 . 1 \\% )$ ),管理基础规范（48.$7 \\%$ )和管理方法科学 $( 3 3 . 3 \\% )$ ,但在堵塞管理漏洞,改进管理决策，供应链集成管理方面带来的变化较小。说明吉林省中小企业IS 对企业内部的中基管理活动影响较大，对高层管理活动(管理决策，管理漏洞)及企业间管理活动的影响较小。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "吉林省中小企业IS",
+          "normalized_name": "吉林省中小企业IS",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "吉林省中小企业IS 带来的管理活动变化主要为提高工作效率",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "供应链集成管理",
+          "normalized_name": "供应链集成管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "供应链集成管理方面带来的变化较小",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "组织结构、集权程度和作风观念变化较小。 可见IS 对与高层领导的权力结构和利益分配有关的组织活动和及组织本身固有的价值观念带来的变化较小。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "IS",
+          "normalized_name": "IS",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "可见IS 对与高层领导的权力结构和利益分配有关的组织活动和及组织本身固有的价值观念带来的变化较小",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "IS可能为信息系统缩写，但原文未给出全称，按原文抽取"
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "高层领导",
+          "normalized_name": "高层领导",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对与高层领导的权力结构和利益分配有关的组织活动",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "虽为角色泛称，但'高层领导'在组织语境中可指具体职位群体，且原文有具体限定，暂保留"
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "而企业文化、相应的制度与机制保障、先进易用的IT产品、信息化经验、专家咨询的保障作用较低。 在吉林省中小企业信息化中，高中低层管理者的支持与配合是其主要成功因素，这一点是大部分企业的共识。但是文化、制度、经验等\"软环境”的作用没有被企业重视。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "吉林省中小企业信息化",
+          "normalized_name": "吉林省中小企业信息化",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在吉林省中小企业信息化中，高中低层管理者的支持与配合是其主要成功因素",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "IT产品",
+          "normalized_name": "IT产品",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "先进易用的IT产品",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但图情领域放宽规则中IT产品作为具体工具类别可抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "$54 . 9 \\%$ 的吉林省中小企业信息化面临的困难/阻力是信息技术(以下简称IT)人才缺乏，其次是员工素质 $( 3 7 . 4 \\% )$ ，观念变化的困难 $( 3 5 . 2 \\%$ ),企业信息化的经验 $( 3 4 . 1 \\% )$ ，需求的频繁变化 $( 3 3 \\% )$ ),流程再造的困难 $( 3 0 . 8 \\%$ )和数据缺乏 $30 \\%$ ,之后是管理基础 $( 2 8 . 1 \\%$ ),缺乏统一的战略规划 $( 2 4 \\%$ )和资金投入的保证 $( 2 3 . 8 \\%$ ，仅有 $9 . 9 \\%$ 的企业指出缺少专家咨询为困难。 其中人才缺乏是中小企业面临的突出困难,其他与管理基础、实施过程中的有关的各因素选择比例均在 $40 \\%$ 左右，但专家咨询及软件公司合作的比例非常低。吉林省中小企业所面临的困难大多为企业内部因素，外部因素带来的困难",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "吉林省中小企业",
+          "normalized_name": "吉林省中小企业",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "$54 . 9 \\%$ 的吉林省中小企业信息化面临的困难/阻力是信息技术(以下简称IT)人才缺乏",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "信息技术(以下简称IT)人才缺乏",
+          "normalized_name": "信息技术人才缺乏",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息技术(以下简称IT)人才缺乏",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "员工素质",
+          "normalized_name": "员工素质",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "其次是员工素质 $( 3 7 . 4 \\% )$",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e4",
+          "mention": "观念变化",
+          "normalized_name": "观念变化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "观念变化的困难 $( 3 5 . 2 \\%$ )",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e5",
+          "mention": "企业信息化",
+          "normalized_name": "企业信息化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "企业信息化的经验 $( 3 4 . 1 \\% )$",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e6",
+          "mention": "流程再造",
+          "normalized_name": "流程再造",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "流程再造的困难 $( 3 0 . 8 \\%$ )",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e7",
+          "mention": "数据缺乏",
+          "normalized_name": "数据缺乏",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "数据缺乏 $30 \\%$",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e8",
+          "mention": "管理基础",
+          "normalized_name": "管理基础",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "管理基础 $( 2 8 . 1 \\%$ )",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e9",
+          "mention": "缺乏统一的战略规划",
+          "normalized_name": "缺乏统一的战略规划",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "缺乏统一的战略规划 $( 2 4 \\%$ )",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e10",
+          "mention": "资金投入的保证",
+          "normalized_name": "资金投入的保证",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "资金投入的保证 $( 2 3 . 8 \\%$",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e11",
+          "mention": "专家咨询",
+          "normalized_name": "专家咨询",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "仅有 $9 . 9 \\%$ 的企业指出缺少专家咨询为困难",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e12",
+          "mention": "软件公司合作",
+          "normalized_name": "软件公司合作",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专家咨询及软件公司合作的比例非常低",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "其面临困难来看，高层领导的支持力度不足。虽然许多高层领导具备要应用IS 的观念，但大多停留在\"需要应用\"的表面层次上,对\"怎么用”知之甚少，即高层领导对IS 实施过程缺乏了解，在操作层面对其支持程度不够。中小企业所面临的缺乏统一的IS 战略规划和相应的制度与机制保障，员工观念转变缺少推动力，业务流程改造阻力大等困难(图10)都与高层领导对IS 实施过程的认识不足、支持不够有关。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "IS",
+          "normalized_name": "IS",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "高层领导具备要应用IS 的观念",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "IS可能为信息系统(Information System)的缩写，但原文未给出全称，按原文原词抽取"
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "IS 战略规划",
+          "normalized_name": "IS 战略规划",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "缺乏统一的IS 战略规划和相应的制度与机制保障",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "由于缺乏专业的IT 技术人员，在IS 实施过程中,不能及时发现和解决企业信息化中的问题，导致IS不能实现预期的效益,打击企业信息化积极性。同时中小企业员工素质较低,接受和使用IT技术的能力有限，对IS 带来的工作方式改变具有抗拒心理,抵制IS 使用，因此人才匮乏是制约其信息化建设的因素之一。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "IS",
+          "normalized_name": "IS",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在IS 实施过程中,不能及时发现和解决企业信息化中的问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "IS为缩写，可能指代具体信息系统名称，但原文未给出全称"
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "IT",
+          "normalized_name": "IT",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "缺乏专业的IT 技术人员",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "IT为缩写，指信息技术，作为学术概念抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "部分吉林省中小企业不重视科学的管理方法，管理制度不健全，管理方式较为落后，大多停留在原始的手工文档管理阶段，对企业内部的关键信息价值认识不足，信息化所需的基础数据很难系统地、完整地采集，增加了信息化难度。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "吉林省中小企业",
+          "normalized_name": "吉林省中小企业",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "部分吉林省中小企业不重视科学的管理方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "手工文档管理",
+          "normalized_name": "手工文档管理",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大多停留在原始的手工文档管理阶段",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "同时，目前中小企业的信贷担保机制还不完善，存在着贷富不贷贫的现象，越是需要资金的企业贷款难度越大。资金不足是制约其信息化的困难之一(见图10)。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "中小企业",
+          "normalized_name": "中小企业",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前中小企业的信贷担保机制还不完善",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为泛称经济主体，但图情领域常作为独立研究对象，可视为phenomenon"
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "贷富不贷贫",
+          "normalized_name": "贷富不贷贫",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "存在着贷富不贷贫的现象",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "因此其信息化建设不能一概而论，吉林省政府应结合现状分类指导，从解决企业突出问题入手对信息化程度不同的企业采取针对性的指导措施。对尚未开展信息化的企业，政府要根据企业实力，寻找有潜力的企业，采取相关措施提高其管理水平和高层领导信息化意识，并可通过一定的资金支持，加快其信息化进程。对处于初级应用阶段的企业，政府则要引导企业加速IT 技术在企业内部的扩散,拓宽其应用领域,提高应用层次。对处于高级阶段应用的企业，政府则要引导企业做好信息化融合，促进企业IS的深度使用，树立一批信息化典型示范企业。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "吉林省政府",
+          "normalized_name": "吉林省政府",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "吉林省政府应结合现状分类指导",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "信息化",
+          "normalized_name": "信息化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "其信息化建设不能一概而论",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "24_e3",
+          "mention": "IT 技术",
+          "normalized_name": "IT技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加速IT 技术在企业内部的扩散",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e4",
+          "mention": "IS",
+          "normalized_name": "IS",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "促进企业IS的深度使用",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "IS可能指信息系统(Information System)，但原文未展开全称，按原文缩写抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "处于初级应用阶段的企业要通过各种规章制度以及相应的激励措施在内部建立良好的IT文化氛围，使员工真正接受IT,并形成惯例，促进IT 技术的快速扩散。 处于高级阶段应用的企业则要努力做到企业业务流程与IS内嵌流程的匹配，业务战略与IS战略的对应，鼓励员工IT 创新,创造新的业务方式,增强企业竞争力。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "IT文化氛围",
+          "normalized_name": "IT文化氛围",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在内部建立良好的IT文化氛围",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "IT",
+          "normalized_name": "IT",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使员工真正接受IT",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼指信息技术领域"
+        },
+        {
+          "entity_id": "25_e3",
+          "mention": "IS",
+          "normalized_name": "IS",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "企业业务流程与IS内嵌流程的匹配",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼指信息系统"
+        },
+        {
+          "entity_id": "25_e4",
+          "mention": "IT创新",
+          "normalized_name": "IT创新",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "鼓励员工IT创新",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "他们对IS 实施过程的重视程度，提高企业高层领导对IS实施过程中各种问题的预测能力和管理能力，避免企业出现重信息化工具,轻信息化过程的问题。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "IS 实施过程",
+          "normalized_name": "IS实施过程",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "他们对IS 实施过程的重视程度",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "IS为缩写，可能指代具体信息系统，但原文未展开全称"
+        },
+        {
+          "entity_id": "26_e2",
+          "mention": "企业高层领导",
+          "normalized_name": "企业高层领导",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "提高企业高层领导对IS实施过程中各种问题的预测能力和管理能力",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "虽为角色泛称，但'企业高层领导'在管理语境中常指具体决策者群体，且原文有明确限定词'企业'，故抽取"
+        },
+        {
+          "entity_id": "26_e3",
+          "mention": "信息化工具",
+          "normalized_name": "信息化工具",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "避免企业出现重信息化工具,轻信息化过程的问题",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "泛称，但图情领域放宽规则中'信息系统、软件工具'即使名称较短也应抽取，且原文有明确对比语境"
+        },
+        {
+          "entity_id": "26_e4",
+          "mention": "信息化过程",
+          "normalized_name": "信息化过程",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "避免企业出现重信息化工具,轻信息化过程的问题",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "作为与'信息化工具'对比的学术概念，具有独立命名"
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "企业则要充分发挥这些拥护者的作用，让其进入到信息化的最前线，并在企业内部逐渐吸收各部门的信息化支持者，形成企业信息化推动小组。 他们既可以帮助企业解决IS实施过程中的问题，降低IS实施难度，还能亲自向周围的工友宣传推广信息化知识，减少员工对IS 的阻力。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "IS",
+          "normalized_name": "IS",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "解决IS实施过程中的问题，降低IS实施难度",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "IS为缩写，可能指代具体信息系统名称，但原文未给出全称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "29",
+      "sentence": "《促进中小企业发展的若干政策》的公布，拓宽了吉林省中小企业融资渠道。政府应在此基础上建立一套完善的中小企业信息化资金扶持体制。首先，可以制定一套完善的中小企业信息化筛选机制和信贷程序，让更多有潜力和实力的中小企业利用上述平台和政策获得资金支持。同时还可以建立扶持中小企业信息化的政府基金，在吉林省重点行业中挑选一批优秀的企业，有计划地进行资助，攻克各行业普遍面临的信息化技术难题,鼓励企业信息化创新,树立各行业信息化典型示范企业。",
+      "entities": [
+        {
+          "entity_id": "29_e1",
+          "mention": "《促进中小企业发展的若干政策》",
+          "normalized_name": "《促进中小企业发展的若干政策》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《促进中小企业发展的若干政策》的公布",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e2",
+          "mention": "吉林省",
+          "normalized_name": "吉林省",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "拓宽了吉林省中小企业融资渠道",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "31",
+      "sentence": "各种信息化推进会及典型企业信息化示范的途径，大力宣传IS 深入应用带来的企业效益，加强企业深入使用IS 的意愿，促进IS与企业的有效融合，同时还要进一步提高吉林省电子商务应用率。 除了要对加入中小企业电子商务平台\"阿里巴巴吉林省分站\"进行境内外销售的企业，全额资助使用年费外,吉林省政府还要继续学习江浙等省份的经验，与移动、联通、网通等通信公司展开合作，为中小企业电子商务创造并提供新的解决方案，积极推动中小企业开展电子商务。",
+      "entities": [
+        {
+          "entity_id": "31_e1",
+          "mention": "IS",
+          "normalized_name": "IS",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大力宣传IS 深入应用带来的企业效益",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "IS可能指信息系统(Information System)，但原文未给出全称，按原文缩写抽取"
+        },
+        {
+          "entity_id": "31_e2",
+          "mention": "吉林省电子商务应用率",
+          "normalized_name": "吉林省电子商务应用率",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "同时还要进一步提高吉林省电子商务应用率",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e3",
+          "mention": "阿里巴巴吉林省分站",
+          "normalized_name": "阿里巴巴吉林省分站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "加入中小企业电子商务平台\"阿里巴巴吉林省分站\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e4",
+          "mention": "吉林省政府",
+          "normalized_name": "吉林省政府",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "吉林省政府还要继续学习江浙等省份的经验",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e5",
+          "mention": "江浙等省份",
+          "normalized_name": "江浙等省份",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "吉林省政府还要继续学习江浙等省份的经验",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "指代多个省份的集合，但原文明确提及，按原文抽取"
+        },
+        {
+          "entity_id": "31_e6",
+          "mention": "移动",
+          "normalized_name": "中国移动",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "与移动、联通、网通等通信公司展开合作",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "原文为简称，规范化名称为中国移动"
+        },
+        {
+          "entity_id": "31_e7",
+          "mention": "联通",
+          "normalized_name": "中国联通",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "与移动、联通、网通等通信公司展开合作",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "原文为简称，规范化名称为中国联通"
+        },
+        {
+          "entity_id": "31_e8",
+          "mention": "网通",
+          "normalized_name": "中国网通",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "与移动、联通、网通等通信公司展开合作",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "原文为简称，规范化名称为中国网通"
+        }
+      ]
+    },
+    {
+      "sentence_id": "32",
+      "sentence": "吉大正元，师大理想),塑造行业模范，提高软件公司研究能力和设计能力，以开发出适合各类企业的标准的、模块化IS,来满足不同企业需求; 也要加强对软件公司的监管力度，对各软件公司进行测评，定期公布各软件公司测评结果，为企业选型提供依据。",
+      "entities": [
+        {
+          "entity_id": "32_e1",
+          "mention": "吉大正元",
+          "normalized_name": "吉大正元",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "吉大正元，师大理想",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e2",
+          "mention": "师大理想",
+          "normalized_name": "师大理想",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "吉大正元，师大理想",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e3",
+          "mention": "IS",
+          "normalized_name": "IS",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "开发出适合各类企业的标准的、模块化IS",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "IS为信息系统缩写，原文未展开全称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "33",
+      "sentence": "本文通过问卷调查了吉林省中小企业信息化现状，提出其信息化过程中面临的七个问题,并据此提出了八项对策。 希望本文能对吉林省中小企业信息化决策有所启迪。",
+      "entities": [
+        {
+          "entity_id": "33_e1",
+          "mention": "吉林省中小企业",
+          "normalized_name": "吉林省中小企业",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "吉林省中小企业信息化现状",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e2",
+          "mention": "问卷调查",
+          "normalized_name": "问卷调查",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "本文通过问卷调查了吉林省中小企业信息化现状",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e3",
+          "mention": "信息化",
+          "normalized_name": "信息化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "吉林省中小企业信息化现状",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

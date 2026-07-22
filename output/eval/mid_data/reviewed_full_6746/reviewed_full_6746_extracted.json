@@ -1,0 +1,1968 @@
+{
+  "base_name": "reviewed_full_6746",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "（摘要）为帮助学界了解控制错觉理论在信息系统研究中的应用现状，本文梳理了国内外相关文献，发现控制错觉理论在信息系统研究中的应用主要包括两个方面：控制错觉的影响因素及其产生机理研究、控制错觉现象及其影响研究；研究中存在“未能深入解释控制错觉现象产生的原因、“未能对控制错觉的消极影响提出相应的治理措施”等问题；未来值得关注的研究方向有“深入分析信息系统领域中控制错觉产生的内在机理、“研究如何减弱控制错觉的消极影响以及如何发挥其积极影响、“将控制错觉理论应用至新的领域和场景”等。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "控制错觉理论",
+          "normalized_name": "控制错觉理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为帮助学界了解控制错觉理论在信息系统研究中的应用现状",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "信息系统",
+          "normalized_name": "信息系统",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "控制错觉理论在信息系统研究中的应用现状",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为information_system，但此处指研究领域"
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "控制错觉的影响因素及其产生机理研究",
+          "normalized_name": "控制错觉的影响因素及其产生机理研究",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "控制错觉的影响因素及其产生机理研究",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为研究方向，可兼为phenomenon"
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "控制错觉现象及其影响研究",
+          "normalized_name": "控制错觉现象及其影响研究",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "控制错觉现象及其影响研究",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为研究方向，可兼为phenomenon"
+        },
+        {
+          "entity_id": "1_e5",
+          "mention": "控制错觉现象",
+          "normalized_name": "控制错觉现象",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "未能深入解释控制错觉现象产生的原因",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "(Abstract）Inorder to help the academic communityto fully understand the applicationand development of Illusion of Controltheory inthefieldof informationsystem，thispaperreviewedtherelevant literaturesand findsthattheresearches mainly focusedontwoaspects:theinfluencefactorsandmechanismof ilusionofcontrol，illusionofcontrolandits nfluence.There were some problems in existing researches，such as“studies have not deeply explained the causes of control illusion\"，“studieshadnotproposedcorrespondingsolutions tothenegativeeffectsofillusionofcontrol”andsoon.The valuableresearch directionsincluded“in-depthanalysisof theinternal mechanismofcontrolilusioninthefieldof nformation systems”，“howtoreduce the negative impactof control ilusion and howto exert itspositive impact’，“applying control illusion theory to new fields and scenarios”and so on.",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "Illusion of Control theory",
+          "normalized_name": "Illusion of Control theory",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "the application and development of Illusion of Control theory in the field of information system",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "information system",
+          "normalized_name": "information system",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "in the field of information system",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "illusion of control",
+          "normalized_name": "illusion of control",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "the influence factors and mechanism of illusion of control",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "control illusion",
+          "normalized_name": "control illusion",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "studies have not deeply explained the causes of control illusion",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为illusion of control的变体"
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "哈佛大学埃伦·兰格教授（EllenJLanger）于1975年在《人格与社会心理学杂志（Journal of Personality& SocialPsychology）》第2期上发表的《控制错觉理论（The Illu-sion of Control）》一文中，首次正式提出了控制错觉理论（Illusion of Control Theory）。 其核心思想是：在完成一件事情的过程中，情境因素（如熟悉、竞争、选择等）或者个体因素（如控制欲等）会使人们高估自己的控制能力，从而导致较低的风险认知或者对成功概率的预期高于真实",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "哈佛大学",
+          "normalized_name": "哈佛大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "哈佛大学埃伦·兰格教授",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "埃伦·兰格教授（EllenJLanger）",
+          "normalized_name": "埃伦·兰格（Ellen J. Langer）",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "哈佛大学埃伦·兰格教授（EllenJLanger）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "《人格与社会心理学杂志（Journal of Personality& SocialPsychology）》",
+          "normalized_name": "《人格与社会心理学杂志》（Journal of Personality and Social Psychology）",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在《人格与社会心理学杂志（Journal of Personality& SocialPsychology）》第2期上发表的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "《控制错觉理论（The Illu-sion of Control）》",
+          "normalized_name": "《控制错觉理论》（The Illusion of Control）",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "发表的《控制错觉理论（The Illu-sion of Control）》一文中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "控制错觉理论（Illusion of Control Theory）",
+          "normalized_name": "控制错觉理论（Illusion of Control Theory）",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "首次正式提出了控制错觉理论（Illusion of Control Theory）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "（2）控制错觉影响因素的元分析研究。 Pression等研究了1996年以前引用Langer最早提出控制错觉理论一文的29篇文献，用元分析方法计算了控制错觉影响因素（如选择程度、参与程度、外在激励等11个因素）的效应量，发现所有因素的效应量大小均为正； 在元分析研究过程中，作者还发现虽然许多研究使用了“控制错觉”这一概念，但是事实上并没有测量个体的控制程度，只是测量了个体对控制程度的判断，这显然混淆了控制错觉和判断错觉。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "控制错觉",
+          "normalized_name": "控制错觉",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "控制错觉影响因素的元分析研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "元分析",
+          "normalized_name": "元分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用元分析方法计算了控制错觉影响因素",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "Pression等",
+          "normalized_name": "Pression等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Pression等研究了1996年以前引用Langer最早提出控制错觉理论一文的29篇文献",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "Pression为姓氏，具体全名未提供"
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "Langer",
+          "normalized_name": "Langer",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Langer最早提出控制错觉理论",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "控制错觉理论",
+          "normalized_name": "控制错觉理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Langer最早提出控制错觉理论",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e6",
+          "mention": "判断错觉",
+          "normalized_name": "判断错觉",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "混淆了控制错觉和判断错觉",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "在元分析研究过程中，作者还发现虽然许多研究使用了“控制错觉”这一概念，但是事实上并没有测量个体的控制程度，只是测量了个体对控制程度的判断，这显然混淆了控制错觉和判断错觉。 Stefan等又用元分析方法研究了1996-2010年中应用控制错觉理论的20篇文献，结果表明相关影响因素（如性别、强化频率、文化等21个因素)的效应量均为正，其中强化频率和预期刺激顺序（Se-quence of the Expected Stimuli）的效应量最大，并且这两个因素会使个体误以为自己的行为与结果之间具有联系，这为控制后发理论解释控制错觉现象提供了有力的支持",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "控制错觉",
+          "normalized_name": "控制错觉",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "许多研究使用了“控制错觉”这一概念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "判断错觉",
+          "normalized_name": "判断错觉",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "混淆了控制错觉和判断错觉",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "Stefan等",
+          "normalized_name": "Stefan",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Stefan等又用元分析方法研究了1996-2010年中应用控制错觉理论的20篇文献",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "姓氏Stefan，未提供全名，可能为Stefan等多人"
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "控制错觉理论",
+          "normalized_name": "控制错觉理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "应用控制错觉理论的20篇文献",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e5",
+          "mention": "强化频率",
+          "normalized_name": "强化频率",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "其中强化频率和预期刺激顺序的效应量最大",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e6",
+          "mention": "预期刺激顺序（Se-quence of the Expected Stimuli）",
+          "normalized_name": "预期刺激顺序（Sequence of the Expected Stimuli）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "预期刺激顺序（Se-quence of the Expected Stimuli）的效应量最大",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e7",
+          "mention": "控制后发理论",
+          "normalized_name": "控制后发理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这为控制后发理论解释控制错觉现象提供了有力的支持",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为笔误或特定术语，原文如此"
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "信息系统领域也广泛存在着控制错觉现象，目前已有少数学者关注了信息系统领域的控制错觉现象，并撰写了一些相关研究文献。然而，在文献调研过程中未见有关的研究述评文献。为此，本文拟在简要介绍控制错觉理论演化之后，评述控制错觉理论在信息系统研究中的应用现状，并指出在信息系统领域中可以应用控制错觉理论的潜在研究方向。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "控制错觉",
+          "normalized_name": "控制错觉",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息系统领域也广泛存在着控制错觉现象",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "控制错觉理论",
+          "normalized_name": "控制错觉理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "简要介绍控制错觉理论演化之后，评述控制错觉理论在信息系统研究中的应用现状",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "信息系统",
+          "normalized_name": "信息系统",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息系统领域也广泛存在着控制错觉现象",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为discipline"
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "控制错觉理论主要沿着以下两个方向演化：一是将控制错觉理论的应用情境从不可控情境拓展到部分可控情境; 二是对控制错觉现象产生机制的研究越来越深入。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "控制错觉理论",
+          "normalized_name": "控制错觉理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "控制错觉理论主要沿着以下两个方向演化",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "控制错觉现象",
+          "normalized_name": "控制错觉现象",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对控制错觉现象产生机制的研究越来越深入",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "Langer研究了在不可控情境中参与、竞争、选择和熟悉等因素对控制错觉的影响，发现这些因素会导致个体高估自己的控制能力，误认为其能够对不可控情境施加影响，从而产生控制错觉[。Alloy等又专门研究了在不可控情境中强化频率对控制错觉的影响，发现强化频率越高，个体越容易产生控制错觉。例如，在一项由研究人员而不是由实验对象控制灯泡变亮的重复实验中，发现与灯泡变亮概率为 $2 5 \\%$ 的实验对象相比，灯泡变亮概率为 $7 5 \\%$ 的实验对象更倾向于相信灯泡变亮是由于他们按动开关所导致的。Friedland等则研究了不可控情境中个体压力对控制错觉的影响，他们通过操纵个体压力大小将50名实验对象随机分为高压力组和低压力组，发现压力越大，个体越容易高估自己的控制能力，如在一项预测掷骰子点数的实验中，高压力组的个体更倾向于相信自己能成功预测骰子的点数。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "Langer",
+          "normalized_name": "Langer",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Langer研究了在不可控情境中参与、竞争、选择和熟悉等因素对控制错觉的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "控制错觉",
+          "normalized_name": "控制错觉",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Langer研究了在不可控情境中参与、竞争、选择和熟悉等因素对控制错觉的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "Alloy",
+          "normalized_name": "Alloy",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Alloy等又专门研究了在不可控情境中强化频率对控制错觉的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "Friedland",
+          "normalized_name": "Friedland",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Friedland等则研究了不可控情境中个体压力对控制错觉的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "Thompson等将控制错觉理论的应用情境从不可控情境拓展到可控情境，他比较了在不可控情境和可控情境中强化频率对个体控制错觉的影响，发现在这两种情境中，强化频率都会造成控制错觉现象。此后，Gino等在研究不可控情境和可控情境中个体控制能力对控制错觉的影响时发现，当个体无法施加控制或施加的控制力较低时，个体容易高估自己的控制力； 当个体能够施加较高的控制时，个体反而会低估自己的控制力，如在一项通过点击电脑屏幕中的按钮使得屏幕出现蓝色圆圈的实验中，实际上无法控制蓝色圆圈出现的实验对象会高估自己的控制力，而可以施加一定控制的实验对象反而会低估自己的控制力 。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "Thompson",
+          "normalized_name": "Thompson",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Thompson等将控制错觉理论的应用情境从不可控情境拓展到可控情境",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "控制错觉理论",
+          "normalized_name": "控制错觉理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Thompson等将控制错觉理论的应用情境从不可控情境拓展到可控情境",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "Gino",
+          "normalized_name": "Gino",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Gino等在研究不可控情境和可控情境中个体控制能力对控制错觉的影响时发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "控制错觉",
+          "normalized_name": "控制错觉",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "强化频率都会造成控制错觉现象",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "值得指出的是，现实世界可以划分为可控情境和不可控情境，并且多数情况都是可控情境，不可控情境相对较少。然而，现有研究主要是基于不可控情境的，因此有必要加强在可控情境下控制错觉的相关研究。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "控制错觉",
+          "normalized_name": "控制错觉",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有必要加强在可控情境下控制错觉的相关研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "Langer最先从情境混淆的角度解释了控制错觉产生的原因，她在不可控的机会情境中引入了参与、竞争、选择和熟悉等可控情境中的技能因素，研究了这些因素对控制错觉的影响，发现上述因素会导致个体把不可控情境误当成可控情境，从而高估自己的控制能力，如当个体以自己熟悉的数字（生日等）作为购买彩票的数字，其会高估自己获奖的概率。此外，Wortman在不可控情境中研究个体对结果的预知这一可控情境因素对控制错觉的影响，发现当个体能够预知自己的选择会带来哪些结果时，个体会高估自己的控制能力，如当实验对象知道每种玻璃球的颜色所对应的奖品时，他们往往认为可以选中自己偏爱的奖品所对应的玻璃球[d。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "Langer",
+          "normalized_name": "Langer",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Langer最先从情境混淆的角度解释了控制错觉产生的原因",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "控制错觉",
+          "normalized_name": "控制错觉",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Langer最先从情境混淆的角度解释了控制错觉产生的原因",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "Wortman",
+          "normalized_name": "Wortman",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Wortman在不可控情境中研究个体对结果的预知这一可控情境因素对控制错觉的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "也有一些学者先后研究了控制欲、外在激励、情绪、文化等因素与控制错觉的关系。 Burger等在赌博实验中通过操控实验对象的控制欲大小来研究控制欲对控制错觉的影响，发现控制欲较强的个体容易高估自己取胜的概率[]。Burger等的后续研究发现当存在外在激励时，控制欲较强的个体更容易产生控制错觉，如在赌博实验中，当实验对象可以获得等同于赌注的真实奖金时（即存在外在激励)，高控制欲组更倾向于相信自己可以在该实验中获胜[。Alloy等招募学生完成3项控制灯泡亮灭的实验来研究个体消极情绪对控制错觉的影响，发现相较于情绪消极的个体，情绪不消极的个体更容易相信自己可以通过按动开关导致灯泡变亮。Yamaguchi等通过比较美国学生和日本学生在不可控情境中的控制错觉现象研究了文化对控制错觉的影响，发现日本学生倾向于相信集体比个体具有更高的控制能力，美国学生则呈现出相反的倾向[。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "Burger",
+          "normalized_name": "Burger",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Burger等在赌博实验中通过操控实验对象的控制欲大小来研究控制欲对控制错觉的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "Alloy",
+          "normalized_name": "Alloy",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Alloy等招募学生完成3项控制灯泡亮灭的实验来研究个体消极情绪对控制错觉的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "Yamaguchi",
+          "normalized_name": "Yamaguchi",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Yamaguchi等通过比较美国学生和日本学生在不可控情境中的控制错觉现象研究了文化对控制错觉的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "控制错觉",
+          "normalized_name": "控制错觉",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究控制欲对控制错觉的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e5",
+          "mention": "控制欲",
+          "normalized_name": "控制欲",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究控制欲对控制错觉的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e6",
+          "mention": "外在激励",
+          "normalized_name": "外在激励",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当存在外在激励时，控制欲较强的个体更容易产生控制错觉",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e7",
+          "mention": "消极情绪",
+          "normalized_name": "消极情绪",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究个体消极情绪对控制错觉的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e8",
+          "mention": "文化",
+          "normalized_name": "文化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究了文化对控制错觉的影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处'文化'作为具体研究变量，非泛称"
+        },
+        {
+          "entity_id": "12_e9",
+          "mention": "美国学生",
+          "normalized_name": "美国学生",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "通过比较美国学生和日本学生在不可控情境中的控制错觉现象",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "群体指称，非具体个人，但作为实验对象可识别"
+        },
+        {
+          "entity_id": "12_e10",
+          "mention": "日本学生",
+          "normalized_name": "日本学生",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "通过比较美国学生和日本学生在不可控情境中的控制错觉现象",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "群体指称，非具体个人，但作为实验对象可识别"
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "Thompson等不仅提出了控制启发理论（控制启发认为如果个体想要取得某个结果，同时又相信自身行为与取得的结果之间存在关联，那么个体就会高估自己的控制能力)，并且通过实验用控制后发理论解释了控制错觉的产生机理，如在由实验人员而不是实验对象控制电脑屏幕切换的实验中，发现由于实验对象试图通过空格键控制电脑屏幕切换，并且由于实验对象相信他们按空格键可以控制电脑屏幕切换，那么实验对象就会误认为是他们按空格键控制了电脑屏幕切换。Langens 则研究了个体调节定向对控制错觉的影响，研究发现：当个体处于促进定向时，因为会更关注积极的行为后果，所以往往会高估自己的控制力； 当个体处于预防定向时，则因为会更关注避免消极的行为后果，所以往往不会高估自己的控制力[4；",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "Thompson",
+          "normalized_name": "Thompson",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Thompson等不仅提出了控制启发理论",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "控制启发理论",
+          "normalized_name": "控制启发理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Thompson等不仅提出了控制启发理论",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "控制错觉",
+          "normalized_name": "控制错觉",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用控制后发理论解释了控制错觉的产生机理",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "Langens",
+          "normalized_name": "Langens",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Langens 则研究了个体调节定向对控制错觉的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e5",
+          "mention": "个体调节定向",
+          "normalized_name": "个体调节定向",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Langens 则研究了个体调节定向对控制错觉的影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e6",
+          "mention": "促进定向",
+          "normalized_name": "促进定向",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当个体处于促进定向时",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e7",
+          "mention": "预防定向",
+          "normalized_name": "预防定向",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当个体处于预防定向时",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "此外，Fast等将实验对象分为高权力组（实验对象对他人影响较大）和低权力（他人对实验象对影响较大），发现相较于低权力组，高权力组更相信自己可以成功预测骰子的点数[] 。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "Fast",
+          "normalized_name": "Fast",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Fast等将实验对象分为高权力组（实验对象对他人影响较大）和低权力（他人对实验象对影响较大）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "高权力组",
+          "normalized_name": "高权力组",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Fast等将实验对象分为高权力组（实验对象对他人影响较大）和低权力（他人对实验象对影响较大）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为实验分组标签，非独立学术概念"
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "低权力",
+          "normalized_name": "低权力",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Fast等将实验对象分为高权力组（实验对象对他人影响较大）和低权力（他人对实验象对影响较大）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为实验分组标签，非独立学术概念"
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "Kottemann等最早研究了决策支持系统（Decision Sup-port System，简称“DSS”）中的控制错觉现象，他们通过一项降低种植总成本的生产调度任务研究了决策支持技术中假设分析功能对控制错觉的影响，发现使用假设分析进行决策的研究对象对决策成果有更高的预期[。此后，Davis等又通过两个生产计划实验研究了假设分析对控制错觉的影响，结果表明：尽管假设分析对决策好坏并无重大影响，但几乎所有研究对象都认为使用假设分析所做出的决策优于其独立做出的决策，进一步证实了DSS中的假设分析功能会引发用户的控制错觉[。Forgionne则认为缺乏全面和一致的DSS评估模型是假设分析功能引发控制错觉的原因，这导致了学界关于DSS效用的分歧，因此他提出了一个评估DSS效用的多标准评估模型[g",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "Kottemann",
+          "normalized_name": "Kottemann",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Kottemann等最早研究了决策支持系统（Decision Sup-port System，简称“DSS”）中的控制错觉现象",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "决策支持系统（Decision Sup-port System，简称“DSS”）",
+          "normalized_name": "决策支持系统（Decision Support System，简称DSS）",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "决策支持系统（Decision Sup-port System，简称“DSS”）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "控制错觉",
+          "normalized_name": "控制错觉",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "决策支持系统（Decision Sup-port System，简称“DSS”）中的控制错觉现象",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "假设分析",
+          "normalized_name": "假设分析",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "决策支持技术中假设分析功能对控制错觉的影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e5",
+          "mention": "Davis",
+          "normalized_name": "Davis",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Davis等又通过两个生产计划实验研究了假设分析对控制错觉的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e6",
+          "mention": "Forgionne",
+          "normalized_name": "Forgionne",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Forgionne则认为缺乏全面和一致的DSS评估模型是假设分析功能引发控制错觉的原因",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e7",
+          "mention": "DSS评估模型",
+          "normalized_name": "DSS评估模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "缺乏全面和一致的DSS评估模型是假设分析功能引发控制错觉的原因",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e8",
+          "mention": "多标准评估模型",
+          "normalized_name": "多标准评估模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "他提出了一个评估DSS效用的多标准评估模型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "此外，Kahai等研究了橙汁瓶装商的DSS使用率、DSS熟悉度与控制错觉的关系，发现橙汁瓶装商的DSS使用率、DSS熟悉度越高，他们越相信他们的决策会产生更多的利润[。Chen等设计了一项模拟股票投资的对照试验，研究了系统为用户提供的选择程度、现有用户之间的竞争程度以及用户对系统熟悉程度与控制错觉现象的关联，发现只有选择程度引发了用户的控制错觉，如当用户可以自主选择投资哪种股票时，其通常会认为该股票价值会上涨 。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "Kahai等",
+          "normalized_name": "Kahai等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Kahai等研究了橙汁瓶装商的DSS使用率、DSS熟悉度与控制错觉的关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "DSS使用率",
+          "normalized_name": "DSS使用率",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "橙汁瓶装商的DSS使用率、DSS熟悉度与控制错觉的关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "DSS熟悉度",
+          "normalized_name": "DSS熟悉度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "橙汁瓶装商的DSS使用率、DSS熟悉度与控制错觉的关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e4",
+          "mention": "控制错觉",
+          "normalized_name": "控制错觉",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "橙汁瓶装商的DSS使用率、DSS熟悉度与控制错觉的关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e5",
+          "mention": "Chen等",
+          "normalized_name": "Chen等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Chen等设计了一项模拟股票投资的对照试验",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e6",
+          "mention": "模拟股票投资的对照试验",
+          "normalized_name": "模拟股票投资的对照试验",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Chen等设计了一项模拟股票投资的对照试验",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e7",
+          "mention": "选择程度",
+          "normalized_name": "选择程度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "系统为用户提供的选择程度、现有用户之间的竞争程度以及用户对系统熟悉程度与控制错觉现象的关联",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e8",
+          "mention": "竞争程度",
+          "normalized_name": "竞争程度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现有用户之间的竞争程度以及用户对系统熟悉程度与控制错觉现象的关联",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e9",
+          "mention": "系统熟悉程度",
+          "normalized_name": "系统熟悉程度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户对系统熟悉程度与控制错觉现象的关联",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e10",
+          "mention": "控制错觉现象",
+          "normalized_name": "控制错觉现象",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与控制错觉现象的关联",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "在研究控制错觉理论在DSS中的应用之外，Dudezert等通过访谈法获取了公司中的HR经理以及其他雇员有关知识地图（Knowledge Map，简称“Kmap”）的看法，并收集了HR经理在发布会等公开场合发表的相关观点，对这些数据进行分析以研究Kmap的控制错觉问题，发现不仅公司的雇员误认为Kmap能帮助HR经理掌握自己的技能水平等相关情况，而且HR经理也误认为Kmap能够真实反映雇员的技能水平等相关情况，进而辅助他们做出正确的决策，如雇员的晋升等[2]",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "控制错觉理论",
+          "normalized_name": "控制错觉理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究控制错觉理论在DSS中的应用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "DSS",
+          "normalized_name": "DSS",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "研究控制错觉理论在DSS中的应用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "DSS可能为决策支持系统的缩写，但原文未展开全称"
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "Dudezert",
+          "normalized_name": "Dudezert",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Dudezert等通过访谈法获取了公司中的HR经理以及其他雇员有关知识地图的看法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "访谈法",
+          "normalized_name": "访谈法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Dudezert等通过访谈法获取了公司中的HR经理以及其他雇员有关知识地图的看法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e5",
+          "mention": "知识地图（Knowledge Map，简称“Kmap”）",
+          "normalized_name": "知识地图（Knowledge Map，简称“Kmap”）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有关知识地图（Knowledge Map，简称“Kmap”）的看法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e6",
+          "mention": "Kmap",
+          "normalized_name": "Kmap",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识地图（Knowledge Map，简称“Kmap”）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e7",
+          "mention": "控制错觉问题",
+          "normalized_name": "控制错觉问题",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究Kmap的控制错觉问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为控制错觉理论的具体表现，但原文作为独立问题提及"
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "Drummond研究了决策过程中风险分析对控制错觉现象的影响，他通过访谈法采访伦敦证券交易所金牛座项目（8000万的IT投资）的负责人和参与者，收集从项目前期到最终决策制定过程中上述人员对该项目的评估、决策依据等，分析了该项目失败的原因，研究表明，基于风险分析和其他管理技术做出的决策可能非但不能减少不确定性，反而会使得决策成员高估自己对决策项目的掌握程度。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "Drummond",
+          "normalized_name": "Drummond",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Drummond研究了决策过程中风险分析对控制错觉现象的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "控制错觉现象",
+          "normalized_name": "控制错觉现象",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "风险分析对控制错觉现象的影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "访谈法",
+          "normalized_name": "访谈法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "他通过访谈法采访伦敦证券交易所金牛座项目",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e4",
+          "mention": "伦敦证券交易所",
+          "normalized_name": "伦敦证券交易所",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "采访伦敦证券交易所金牛座项目",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e5",
+          "mention": "金牛座项目",
+          "normalized_name": "金牛座项目",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "伦敦证券交易所金牛座项目（8000万的IT投资）",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e6",
+          "mention": "风险分析",
+          "normalized_name": "风险分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于风险分析和其他管理技术做出的决策",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "Jorgensen研究了风险识别工作是否会导致软件开发者产生控制错觉，他设计了4组有关软件开发的对比实验，发现如果软件开发人员越详尽地考虑到开发过程中可能出现的问题、并且对这些问题讨论的时间越充足，那么这些开发人员会高估该软件能够成功得以开发，并且对完成开发所需时间的估计也过短[] 。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "Jorgensen",
+          "normalized_name": "Jorgensen",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Jorgensen研究了风险识别工作是否会导致软件开发者产生控制错觉",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "风险识别",
+          "normalized_name": "风险识别",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Jorgensen研究了风险识别工作是否会导致软件开发者产生控制错觉",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "控制错觉",
+          "normalized_name": "控制错觉",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "风险识别工作是否会导致软件开发者产生控制错觉",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "由前述可知，目前文献主要集中于研究决策支持技术、决策过程中的风险分析与风险识别等方面对控制错觉的影响。 决策支持技术引发的控制错觉问题的研究主要集中于探究DSS的功能和特征对用户控制错觉的影响，并且相关文献所采用的研究方法以实验室实验法为主，研究人员通过设计实验以模拟决策支持系统的真实使用场景，招募学生等群体担任决策制定人员，完成相应的决策目标，这与真实的决策情境存在一定的差异，所获得的结论难以保证具有良好的外部有效性。此外，现有文献主要关注哪些因素会造成控制错觉现象，未能运用控制错觉的形成机制深入地研究产生控制错觉的内在机理，如学者发现风险识别会导致决策人员高估决策结果，但没有解释为何风险识别会导致这一现象； 并且，虽然发现了引发控制错觉的因素，但未能针对这些因素提出减弱控制错觉形成的具体措施。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "决策支持技术",
+          "normalized_name": "决策支持技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前文献主要集中于研究决策支持技术、决策过程中的风险分析与风险识别等方面对控制错觉的影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "风险分析",
+          "normalized_name": "风险分析",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前文献主要集中于研究决策支持技术、决策过程中的风险分析与风险识别等方面对控制错觉的影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "风险识别",
+          "normalized_name": "风险识别",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前文献主要集中于研究决策支持技术、决策过程中的风险分析与风险识别等方面对控制错觉的影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e4",
+          "mention": "控制错觉",
+          "normalized_name": "控制错觉",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前文献主要集中于研究决策支持技术、决策过程中的风险分析与风险识别等方面对控制错觉的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e5",
+          "mention": "DSS",
+          "normalized_name": "DSS",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "决策支持技术引发的控制错觉问题的研究主要集中于探究DSS的功能和特征对用户控制错觉的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e6",
+          "mention": "实验室实验法",
+          "normalized_name": "实验室实验法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "相关文献所采用的研究方法以实验室实验法为主",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e7",
+          "mention": "控制错觉现象",
+          "normalized_name": "控制错觉现象",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现有文献主要关注哪些因素会造成控制错觉现象",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e8",
+          "mention": "控制错觉的形成机制",
+          "normalized_name": "控制错觉的形成机制",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "未能运用控制错觉的形成机制深入地研究产生控制错觉的内在机理",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "Houghton等比较了团体决策和个体决策中控制错觉对决策成员风险识别的影响，结果表明：不论是团体决策或是个体决策，控制错觉都会相同程度的降低决策成员的风险识别，团体决策并不能提高决策成员的风险识别[。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "Houghton",
+          "normalized_name": "Houghton",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Houghton等比较了团体决策和个体决策中控制错觉对决策成员风险识别的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "控制错觉",
+          "normalized_name": "控制错觉",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "控制错觉对决策成员风险识别的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "风险识别",
+          "normalized_name": "风险识别",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "控制错觉对决策成员风险识别的影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "Lee等研究了在线拍卖和团购情境中控制错觉对顾客价格公平感知（Price Fairness Perception）的影响，发现消费者在参与商品定价的过程中会认为自己可以控制成交价格，这会使得他们认为该成交价格是公平的，同时提高购买的意向。张辉等研究了顾客参与对控制错觉的影响以及控制错觉与顾客满意度的关系，他们设计了顾客制作蛋糕和选购电脑这两项实验，研究发现：顾客较高的参与程度（如顾客自己可以挑选蛋糕颜色、形状、食材等或者顾客自己搜寻电脑信息）会导致顾客产生控制错觉，而控制错觉会导致顾客对商品质量等产生较高的预期，而商品实际情况与顾客预期的不一致会降低顾客满意度。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "Lee等",
+          "normalized_name": "Lee等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Lee等研究了在线拍卖和团购情境中控制错觉对顾客价格公平感知（Price Fairness Perception）的影响",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "姓氏+等，未给出全名，但可唯一识别为具体研究团队"
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "控制错觉",
+          "normalized_name": "控制错觉",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "控制错觉对顾客价格公平感知（Price Fairness Perception）的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e3",
+          "mention": "价格公平感知",
+          "normalized_name": "价格公平感知",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "控制错觉对顾客价格公平感知（Price Fairness Perception）的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e4",
+          "mention": "Price Fairness Perception",
+          "normalized_name": "Price Fairness Perception",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "价格公平感知（Price Fairness Perception）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e5",
+          "mention": "张辉等",
+          "normalized_name": "张辉等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "张辉等研究了顾客参与对控制错觉的影响以及控制错觉与顾客满意度的关系",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "姓氏+等，未给出全名，但可唯一识别为具体研究团队"
+        },
+        {
+          "entity_id": "22_e6",
+          "mention": "顾客满意度",
+          "normalized_name": "顾客满意度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "控制错觉与顾客满意度的关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "上述研究成果表明，控制错觉理论在信息系统领域中的应用不再局限于研究某些因素对控制错觉的影响，而开始关于控制错觉对其他方面的影响，如风险识别、顾客价格公平感知以及顾客满意度等。未来研究可以针对控制错觉所造成的影响制定相应的治理措施，如针对控制错觉的消极影响方面，可以研究如何减弱控制错觉对个体风险识别的影响以提高决策的正确性； 针对积极影响方面，可以利用控制错觉对消费者满意度的影响以提高其购物率或试用率等。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "控制错觉理论",
+          "normalized_name": "控制错觉理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "控制错觉理论在信息系统领域中的应用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "信息系统领域",
+          "normalized_name": "信息系统领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "控制错觉理论在信息系统领域中的应用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "风险识别",
+          "normalized_name": "风险识别",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如风险识别、顾客价格公平感知以及顾客满意度等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e4",
+          "mention": "顾客价格公平感知",
+          "normalized_name": "顾客价格公平感知",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如风险识别、顾客价格公平感知以及顾客满意度等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e5",
+          "mention": "顾客满意度",
+          "normalized_name": "顾客满意度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如风险识别、顾客价格公平感知以及顾客满意度等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "通过文献综述发现，控制错觉理论在信息系统研究中的应用主要集中于控制错觉的影响因素及其产生机理研究以及控制错觉现象及其影响研究这两个方面。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "控制错觉理论",
+          "normalized_name": "控制错觉理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "控制错觉理论在信息系统研究中的应用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "信息系统",
+          "normalized_name": "信息系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "控制错觉理论在信息系统研究中的应用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处信息系统为泛称，但图情领域放宽规则，有名称的信息系统应抽取；此处无具体名称，但作为领域内通用术语，可视为具体实体"
+        },
+        {
+          "entity_id": "24_e3",
+          "mention": "控制错觉",
+          "normalized_name": "控制错觉",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "控制错觉的影响因素及其产生机理研究以及控制错觉现象及其影响研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "控制错觉理论在信息系统研究中的应用主要存在以下问题： $\\textcircled{1}$ 现有文献主要研究了控制错觉的影响因素，但是未能深入剖析控制错觉的产生机理。$\\textcircled{2}$ 现有研究着重分析了控制错觉所引发的消极影响，但是较少关注如何消除控制错觉的消极影响以及如何发挥控制错觉的积极作用。$\\textcircled{3}$ 在研究方法上，目前主要以实验室实验法为主，但不论是研究对象还是决策环境都与真实情境存在一定的差异，这势必会减弱研究结论的效度。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "控制错觉理论",
+          "normalized_name": "控制错觉理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "控制错觉理论在信息系统研究中的应用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "信息系统研究",
+          "normalized_name": "信息系统研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "控制错觉理论在信息系统研究中的应用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e3",
+          "mention": "控制错觉",
+          "normalized_name": "控制错觉",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现有文献主要研究了控制错觉的影响因素",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e4",
+          "mention": "实验室实验法",
+          "normalized_name": "实验室实验法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前主要以实验室实验法为主",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "控制错觉理论在信息系统研究中的应用，未来需要注意以下3个问题： $\\textcircled{1}$ 可以借鉴心理学有关控制错觉产生机理的相关研究，深入分析信息系统领域中控制错觉产生的内在逻辑，以帮助人们正确理解信息系统领域的控制错觉现象。 $\\textcircled{2}$ 控制错觉往往会使人们高估自己的控制能力，多数情况下这种错觉都会带来消极影响，因此理应在深入理解控制错觉产生机理的基础上加强如何减弱控制错觉所带来的消极影响的研究；",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "控制错觉理论",
+          "normalized_name": "控制错觉理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "控制错觉理论在信息系统研究中的应用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e2",
+          "mention": "信息系统",
+          "normalized_name": "信息系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "控制错觉理论在信息系统研究中的应用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处指研究领域，可兼为subfield"
+        },
+        {
+          "entity_id": "26_e3",
+          "mention": "控制错觉",
+          "normalized_name": "控制错觉",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "深入分析信息系统领域中控制错觉产生的内在逻辑",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e4",
+          "mention": "控制错觉现象",
+          "normalized_name": "控制错觉现象",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以帮助人们正确理解信息系统领域的控制错觉现象",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "$\\textcircled{2}$ 控制错觉往往会使人们高估自己的控制能力，多数情况下这种错觉都会带来消极影响，因此理应在深入理解控制错觉产生机理的基础上加强如何减弱控制错觉所带来的消极影响的研究； 同时，如何有效利用控制错觉的积极作用也是值得关注的研究领域，如在系统设计中如何通过引入游戏化设计提升用户的感知系统易用性等。 $\\textcircled{3}$ 在研究方法上，可以将实验室实验法和现场实验法结合起来使用，以使研究更能反映现实情况，研究结论更具有应用价",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "控制错觉",
+          "normalized_name": "控制错觉",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "控制错觉往往会使人们高估自己的控制能力",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "游戏化设计",
+          "normalized_name": "游戏化设计",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在系统设计中如何通过引入游戏化设计提升用户的感知系统易用性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e3",
+          "mention": "实验室实验法",
+          "normalized_name": "实验室实验法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "可以将实验室实验法和现场实验法结合起来使用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e4",
+          "mention": "现场实验法",
+          "normalized_name": "现场实验法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "可以将实验室实验法和现场实验法结合起来使用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "在信息系统研究中，我们认为控制错觉理论具有广阔应用前景，值得学界关注领域主要有： $\\textcircled{1}$ 人机交互相关领域。 在人机交互领域，是否存在着控制错觉现象？",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "控制错觉理论",
+          "normalized_name": "控制错觉理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我们认为控制错觉理论具有广阔应用前景",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "人机交互",
+          "normalized_name": "人机交互",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "人机交互相关领域。 在人机交互领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e3",
+          "mention": "控制错觉现象",
+          "normalized_name": "控制错觉现象",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "是否存在着控制错觉现象",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        }
+      ]
+    }
+  ]
+}

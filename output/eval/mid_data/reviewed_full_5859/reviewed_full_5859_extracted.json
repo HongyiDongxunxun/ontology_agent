@@ -1,0 +1,1365 @@
+{
+  "base_name": "reviewed_full_5859",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "由于网络版的滞后，2007年只统计到2篇，不过从前两年的数据看，2007年全年的论文数量应该也在15 篇左右。 从总体看，我国图书馆学界对ISO9000质量管理体系的研究起步较晚，和其他管理方法相比，研究数量较少，研究热情较弱，目前正逐渐成为研究热点。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "ISO9000质量管理体系",
+          "normalized_name": "ISO9000质量管理体系",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "我国图书馆学界对ISO9000质量管理体系的研究起步较晚",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "在82 篇论文中，每个著者平均发表论文为1.41篇，如果以第一著者的数量（48）计算，平均每个著者发表论文为1.77篇。 由此可见，大部分著者只是偶尔涉足这方面的研究，可以说我国图书馆ISO9000质量管理体系研究至今尚未形成一个比较固定的研究群体，整体研究水平仍然较低。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "我国图书馆ISO9000质量管理体系研究",
+          "normalized_name": "我国图书馆ISO9000质量管理体系研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国图书馆ISO9000质量管理体系研究至今尚未形成一个比较固定的研究群体",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "作者，则在ISO9000 质量管理体系研究中共有6位核心作者(只统计第一著者)，约占第一著者总数的 $1 2 . 5 \\%$ ，在6位核心作者中，发表3篇论文的1位，发表两篇论文的有5位。 该研究进一步说明对ISO9000 质量管理体系研究的学者数量虽然不少，但是真正专门从事该领域研究的学者不多。 具体核心著者姓名及论文分布见表2。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "ISO9000 质量管理体系",
+          "normalized_name": "ISO9000 质量管理体系",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "ISO9000 质量管理体系研究中共有6位核心作者",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "表2",
+          "normalized_name": "表2",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "具体核心著者姓名及论文分布见表2",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "表2作为论文中的表格，属于论文的一部分，但也可视为具体可识别的制品"
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "杨芳从事 ISO9000质量管理体系研究集中在2004和2005年，发表的3篇论文涉及到可行性和必要性研究； 应用原则研究和实施ISO9000 质量管理体系应注意问题三个方面，可以说涉及图书馆应用该体系的几个主要方面。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "杨芳",
+          "normalized_name": "杨芳",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "杨芳从事 ISO9000质量管理体系研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "ISO9000质量管理体系",
+          "normalized_name": "ISO9000质量管理体系",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "杨芳从事 ISO9000质量管理体系研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "ISO9000 质量管理体系",
+          "normalized_name": "ISO9000质量管理体系",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "实施ISO9000 质量管理体系应注意问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "由于很多医学图书馆开展了ISO9000 质量管理体系研究，所以部分医学期刊也收录了该方面的论文。 在这33 种期刊中，核心期刊较少，说明目前的研究水平比较有限，需要高层次的研究。 论文分布见表3。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "医学图书馆",
+          "normalized_name": "医学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "很多医学图书馆开展了ISO9000 质量管理体系研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "ISO9000 质量管理体系",
+          "normalized_name": "ISO9000质量管理体系",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "很多医学图书馆开展了ISO9000 质量管理体系研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "33 种期刊",
+          "normalized_name": "33种期刊",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在这33 种期刊中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "期刊集合，非单一文献，但具体可识别"
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "刘妙慧《试论图书馆IS09000贯标的可行性及重要性》一文论述了该体系实施的可行性：“IS09000 质量管理标准源于企业组织质量管理需要，但其方法及功能适用于所有人工系统组织。 按照系统论观点，系统分为自然系统及人工系统，前者是自然界由于自然的作用而形成的，后者是由人工建立、满足人们某种需要的社会系统。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "刘妙慧",
+          "normalized_name": "刘妙慧",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "刘妙慧《试论图书馆IS09000贯标的可行性及重要性》一文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "《试论图书馆IS09000贯标的可行性及重要性》",
+          "normalized_name": "《试论图书馆IS09000贯标的可行性及重要性》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "刘妙慧《试论图书馆IS09000贯标的可行性及重要性》一文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "IS09000 质量管理标准",
+          "normalized_name": "ISO9000质量管理标准",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "IS09000 质量管理标准源于企业组织质量管理需要",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "系统论",
+          "normalized_name": "系统论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "按照系统论观点",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "俞利的《图书馆引入IS09001：2000 质量管理的可行性分析》一文也从图书馆属性、管理要素、标准的基本特点几个方面论述了图书馆引入实施IS09000 族系列标准是切实可行的。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "俞利",
+          "normalized_name": "俞利",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "俞利的《图书馆引入IS09001：2000 质量管理的可行性分析》一文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "《图书馆引入IS09001：2000 质量管理的可行性分析》",
+          "normalized_name": "《图书馆引入IS09001：2000 质量管理的可行性分析》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "俞利的《图书馆引入IS09001：2000 质量管理的可行性分析》一文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "IS09001：2000",
+          "normalized_name": "ISO 9001:2000",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "图书馆引入IS09001：2000 质量管理的可行性分析",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "IS09000 族系列标准",
+          "normalized_name": "ISO 9000族系列标准",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "图书馆引入实施IS09000 族系列标准是切实可行的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "刘妙慧的《试论图书馆ISO9000贯标的可行性及重要性》一文对引入ISO9000 标准的必要性也进行了论述，认为：“能够改善图书馆质量管理模式，促进管理质量进入良性循环； 能够提高图书馆服务质量，满足读者需求；",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "刘妙慧",
+          "normalized_name": "刘妙慧",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "刘妙慧的《试论图书馆ISO9000贯标的可行性及重要性》一文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "《试论图书馆ISO9000贯标的可行性及重要性》",
+          "normalized_name": "《试论图书馆ISO9000贯标的可行性及重要性》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "刘妙慧的《试论图书馆ISO9000贯标的可行性及重要性》一文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "ISO9000 标准",
+          "normalized_name": "ISO9000标准",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "引入ISO9000 标准的必要性",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "罗曼在《图书馆ISO9000认证研究》一文中认为，引入ISO9000标准“可以提高图书馆管理水平； 提高图书信息产品和服务质量；",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "罗曼",
+          "normalized_name": "罗曼",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "罗曼在《图书馆ISO9000认证研究》一文中认为",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "《图书馆ISO9000认证研究》",
+          "normalized_name": "《图书馆ISO9000认证研究》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "罗曼在《图书馆ISO9000认证研究》一文中认为",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "ISO9000标准",
+          "normalized_name": "ISO9000标准",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "引入ISO9000标准“可以提高图书馆管理水平",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "我国实施ISO9000 族系列标准的图书馆数量不多，时间不长，所以对这一标准在图书馆界应用的可行性和必要性还存在争论，相关的文章和相关章节占了一定的数量。经过多年国内外的理论和实践，特别是国外图书馆已经取得一些成功经验，加之ISO9000 族系列标准的应用从工业、企业到教育业和公共事业都取得了瞩目的效果，所以在这些探讨可行性和必要性的文章中，大多数持乐观支持态度，但是研究大都停留在浅层研究上，而且重复严重。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "ISO9000 族系列标准",
+          "normalized_name": "ISO9000 族系列标准",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "我国实施ISO9000 族系列标准的图书馆数量不多",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "杨芳的《2000 版IS09000 标准图书业八项原则释义》一文阐述了图书馆业实施质量管理的八项原则：“以顾客为中心； 领导作用；",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "杨芳",
+          "normalized_name": "杨芳",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "杨芳的《2000 版IS09000 标准图书业八项原则释义》一文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "《2000 版IS09000 标准图书业八项原则释义》",
+          "normalized_name": "《2000 版IS09000 标准图书业八项原则释义》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "杨芳的《2000 版IS09000 标准图书业八项原则释义》一文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "IS09000 标准",
+          "normalized_name": "IS09000 标准",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《2000 版IS09000 标准图书业八项原则释义》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "图书馆业",
+          "normalized_name": "图书馆业",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "阐述了图书馆业实施质量管理的八项原则",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为subfield"
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "八项原则",
+          "normalized_name": "八项原则",
+          "candidate_l3": "guideline",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "阐述了图书馆业实施质量管理的八项原则",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e6",
+          "mention": "以顾客为中心",
+          "normalized_name": "以顾客为中心",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以顾客为中心； 领导作用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e7",
+          "mention": "领导作用",
+          "normalized_name": "领导作用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以顾客为中心； 领导作用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "八项质量原则不是孤立的，正如胡家井在《如何在图书馆管理中体现ISO八项质量管理原则》一文中所讲：“‘以顾客为关注焦点’原则是其他七项原则的核心，‘领导作用’原则是前提，‘全员参与’原则和‘与供方互利的关系’原则是保障，‘过程方法’原则、‘管理的系统方法’原则、‘持续改进’原则和‘基于事实的决策方法’原则是方法论。 ”",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "胡家井",
+          "normalized_name": "胡家井",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "正如胡家井在《如何在图书馆管理中体现ISO八项质量管理原则》一文中所讲",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "《如何在图书馆管理中体现ISO八项质量管理原则》",
+          "normalized_name": "《如何在图书馆管理中体现ISO八项质量管理原则》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "胡家井在《如何在图书馆管理中体现ISO八项质量管理原则》一文中所讲",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "以顾客为关注焦点",
+          "normalized_name": "以顾客为关注焦点",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "‘以顾客为关注焦点’原则是其他七项原则的核心",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "领导作用",
+          "normalized_name": "领导作用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "‘领导作用’原则是前提",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e5",
+          "mention": "全员参与",
+          "normalized_name": "全员参与",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "‘全员参与’原则和‘与供方互利的关系’原则是保障",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e6",
+          "mention": "与供方互利的关系",
+          "normalized_name": "与供方互利的关系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "‘全员参与’原则和‘与供方互利的关系’原则是保障",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e7",
+          "mention": "过程方法",
+          "normalized_name": "过程方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "‘过程方法’原则、‘管理的系统方法’原则、‘持续改进’原则和‘基于事实的决策方法’原则是方法论",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e8",
+          "mention": "管理的系统方法",
+          "normalized_name": "管理的系统方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "‘过程方法’原则、‘管理的系统方法’原则、‘持续改进’原则和‘基于事实的决策方法’原则是方法论",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e9",
+          "mention": "持续改进",
+          "normalized_name": "持续改进",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "‘过程方法’原则、‘管理的系统方法’原则、‘持续改进’原则和‘基于事实的决策方法’原则是方法论",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e10",
+          "mention": "基于事实的决策方法",
+          "normalized_name": "基于事实的决策方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "‘过程方法’原则、‘管理的系统方法’原则、‘持续改进’原则和‘基于事实的决策方法’原则是方法论",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "目前，有一定数量的论文对图书馆应用ISO9000八项质量管理原则进行研究，大部分是对这八项原则重要性的强调和八项原则条文的阐释，更多的是说明如何在图书馆应用这八项原则来指导图书馆的ISO9000 实践。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "ISO9000八项质量管理原则",
+          "normalized_name": "ISO9000八项质量管理原则",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆应用ISO9000八项质量管理原则进行研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "ISO9000",
+          "normalized_name": "ISO9000",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "指导图书馆的ISO9000实践",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "目前，对图书馆实施ISO9000 质量管理体系流程的论述大都浅尝辄止，缺乏深入和详尽的研究； 大都照搬其他行业的模式，简单移植，尚未突现图书馆这一公益性服务组织的特点，因而缺少实际操作性和针对性。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "ISO9000 质量管理体系",
+          "normalized_name": "ISO9000质量管理体系",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "对图书馆实施ISO9000 质量管理体系流程的论述大都浅尝辄止",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对图书馆实施ISO9000 质量管理体系流程的论述大都浅尝辄止",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处'图书馆'作为具体机构类型出现，但未指明具体名称，根据图情领域放宽规则，作为服务组织抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "毛雅君等在《国家图书馆学刊》发表的《采用 IS09000标准构建服务质量管理体系案例分析》一文，介绍了意大利佛伦萨中央图书馆、澳门大学图书馆和海南大学图书馆的认证过程及其取得的效果，总结了我国图书馆实施该体系的研究思路。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "毛雅君",
+          "normalized_name": "毛雅君",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "毛雅君等在《国家图书馆学刊》发表的《采用 IS09000标准构建服务质量管理体系案例分析》一文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "《国家图书馆学刊》",
+          "normalized_name": "《国家图书馆学刊》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "毛雅君等在《国家图书馆学刊》发表的《采用 IS09000标准构建服务质量管理体系案例分析》一文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "《采用 IS09000标准构建服务质量管理体系案例分析》",
+          "normalized_name": "《采用 IS09000标准构建服务质量管理体系案例分析》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "毛雅君等在《国家图书馆学刊》发表的《采用 IS09000标准构建服务质量管理体系案例分析》一文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "IS09000标准",
+          "normalized_name": "IS09000标准",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《采用 IS09000标准构建服务质量管理体系案例分析》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e5",
+          "mention": "意大利佛伦萨中央图书馆",
+          "normalized_name": "意大利佛伦萨中央图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "介绍了意大利佛伦萨中央图书馆、澳门大学图书馆和海南大学图书馆的认证过程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e6",
+          "mention": "澳门大学图书馆",
+          "normalized_name": "澳门大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "介绍了意大利佛伦萨中央图书馆、澳门大学图书馆和海南大学图书馆的认证过程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e7",
+          "mention": "海南大学图书馆",
+          "normalized_name": "海南大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "介绍了意大利佛伦萨中央图书馆、澳门大学图书馆和海南大学图书馆的认证过程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e8",
+          "mention": "我国图书馆",
+          "normalized_name": "我国图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "总结了我国图书馆实施该体系的研究思路",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'我国图书馆'指代中国图书馆整体，虽非单一机构，但作为图情领域具体对象可抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "严峰在《国家图书馆学刊》发表了《以人为本的管理理念，精致完善的服务品质一一ISO9002 质量管理体系在台北市立图书馆的应用》一文，介绍了台北市立图书馆在“以人为本”服务理念指导下，应用ISO9002质量管理体系取得的成果，大大提高了该馆的服务品质。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "严峰",
+          "normalized_name": "严峰",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "严峰在《国家图书馆学刊》发表了《以人为本的管理理念，精致完善的服务品质一一ISO9002 质量管理体系在台北市立图书馆的应用》一文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "《国家图书馆学刊》",
+          "normalized_name": "《国家图书馆学刊》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "严峰在《国家图书馆学刊》发表了《以人为本的管理理念，精致完善的服务品质一一ISO9002 质量管理体系在台北市立图书馆的应用》一文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "《以人为本的管理理念，精致完善的服务品质一一ISO9002 质量管理体系在台北市立图书馆的应用》",
+          "normalized_name": "《以人为本的管理理念，精致完善的服务品质一一ISO9002 质量管理体系在台北市立图书馆的应用》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "发表了《以人为本的管理理念，精致完善的服务品质一一ISO9002 质量管理体系在台北市立图书馆的应用》一文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e4",
+          "mention": "ISO9002 质量管理体系",
+          "normalized_name": "ISO9002 质量管理体系",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "应用ISO9002质量管理体系取得的成果",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e5",
+          "mention": "台北市立图书馆",
+          "normalized_name": "台北市立图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "ISO9002 质量管理体系在台北市立图书馆的应用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "张丽康在《“ISO”质量标准体系与图书馆五定律比较研究》一文中对ISO9000质量管理体系与图书馆五定律的共同点和差异进行比较的基础上，探讨制定适合图书馆发展的科学标准对图书馆进行管理。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "张丽康",
+          "normalized_name": "张丽康",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "张丽康在《“ISO”质量标准体系与图书馆五定律比较研究》一文中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "《“ISO”质量标准体系与图书馆五定律比较研究》",
+          "normalized_name": "《“ISO”质量标准体系与图书馆五定律比较研究》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "张丽康在《“ISO”质量标准体系与图书馆五定律比较研究》一文中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "ISO9000质量管理体系",
+          "normalized_name": "ISO9000质量管理体系",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "对ISO9000质量管理体系与图书馆五定律的共同点和差异进行比较",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "图书馆五定律",
+          "normalized_name": "图书馆五定律",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对ISO9000质量管理体系与图书馆五定律的共同点和差异进行比较",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "案例分析，可以直观了解ISO9000 质量管理体系的构建以及效果； 比较研究可以分析出ISO9000 的特点和优异，更好地认识该体系。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "ISO9000 质量管理体系",
+          "normalized_name": "ISO9000质量管理体系",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "ISO9000 质量管理体系的构建以及效果",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "ISO9000",
+          "normalized_name": "ISO9000",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "比较研究可以分析出ISO9000 的特点和优异",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "比较研究可以分析出ISO9000 的特点和优异，更好地认识该体系。 我国实施ISO9000质量管理体系实践的图书馆不多，因此案例研究较少，比较研究也鲜见，更加缺少实证研究，这些都是以后学者需要关注的方向。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "ISO9000",
+          "normalized_name": "ISO9000",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "比较研究可以分析出ISO9000 的特点和优异",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "ISO9000质量管理体系",
+          "normalized_name": "ISO9000质量管理体系",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "我国实施ISO9000质量管理体系实践的图书馆不多",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "目前，我国对图书馆应用ISO9000质量管理体系的研究与国外相比，起步较晚，研究数量较少，研究热情较弱。值得可喜的是，近几年有越来越多学者关注这一领域，研究数量增加； 核心作者和核心期刊论文出现，专刊专题研究的开展等，说明图书馆对ISO9000质量管理体系的研究逐渐成为热点。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "ISO9000质量管理体系",
+          "normalized_name": "ISO9000质量管理体系",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "图书馆应用ISO9000质量管理体系的研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "核心作者",
+          "normalized_name": "核心作者",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "核心作者和核心期刊论文出现",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "图情领域术语，指高产或高影响力作者群体，非泛称"
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "核心期刊论文",
+          "normalized_name": "核心期刊论文",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "核心作者和核心期刊论文出现",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未指明具体论文名称，但作为类别实体在评价语境中可识别"
+        },
+        {
+          "entity_id": "20_e4",
+          "mention": "专刊专题研究",
+          "normalized_name": "专刊专题研究",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "专刊专题研究的开展",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "未指明具体专刊或专题名称，但作为有组织的研究活动可识别"
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "之前的学者对图书馆ISO9000 质量管理体系的研究过于肤浅，大都局限于简单的探讨可行性、必要性以及应用原则或相关知识的介绍，而且论文之间重复。目前，一些学者已经开始涉及ISO9000 应用模型、ISO9000 实践经验、案例研究等方面，但著者数量和论文数量仍然不多，质量也有待提高，因此，今后各位学者的研究应向深层次、高水平发展，例如加强 ISO9000 的应用研究、比较研究等。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "图书馆ISO9000 质量管理体系",
+          "normalized_name": "图书馆ISO9000质量管理体系",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "之前的学者对图书馆ISO9000 质量管理体系的研究过于肤浅",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "ISO9000",
+          "normalized_name": "ISO9000",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "大都局限于简单的探讨可行性、必要性以及应用原则或相关知识的介绍",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "可兼为knowledge_organization_system"
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "ISO9000 应用模型",
+          "normalized_name": "ISO9000应用模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一些学者已经开始涉及ISO9000 应用模型、ISO9000 实践经验、案例研究等方面",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "ISO9000 实践经验",
+          "normalized_name": "ISO9000实践经验",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一些学者已经开始涉及ISO9000 应用模型、ISO9000 实践经验、案例研究等方面",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为method"
+        },
+        {
+          "entity_id": "21_e5",
+          "mention": "案例研究",
+          "normalized_name": "案例研究",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一些学者已经开始涉及ISO9000 应用模型、ISO9000 实践经验、案例研究等方面",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "对图书馆应用ISO9000质量管理体系的研究方法比较单一，只有少数案例研究和比较研究，缺乏实证研究。在少数案例研究中国外案例的介绍和分析更为少见，对国内案例的介绍也只是泛泛而谈，缺乏深入分析及经验研究； 比较研究中未将ISO9000 质量管理体系与其他的管理模式进行比较，只是简单地将共同点和差异处罗列出来，并未获得有效的研究结果。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "ISO9000质量管理体系",
+          "normalized_name": "ISO9000质量管理体系",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "对图书馆应用ISO9000质量管理体系的研究方法比较单一",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "案例研究",
+          "normalized_name": "案例研究",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "只有少数案例研究和比较研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e3",
+          "mention": "比较研究",
+          "normalized_name": "比较研究",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "只有少数案例研究和比较研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e4",
+          "mention": "实证研究",
+          "normalized_name": "实证研究",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "缺乏实证研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "医院图书馆和高校图书馆是研究热点。在各类型图书馆中，对高校图书馆和医学图书馆实施IS09000 系列质量管理体系的研究相对较多，而对其他类型图书馆的探讨少之又少。 高校图书馆成为讨论的热点，是因为在实践中已经有少数高校图书馆实施了这一标准，形成了榜样的力量，而医院图书馆的热点是因为目前全国不少医院都把医院ISO9000质量体系认证看作是医院提高竞争力的一种手段。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "医院图书馆",
+          "normalized_name": "医院图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "医院图书馆和高校图书馆是研究热点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "高校图书馆",
+          "normalized_name": "高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "医院图书馆和高校图书馆是研究热点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "医学图书馆",
+          "normalized_name": "医学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对高校图书馆和医学图书馆实施IS09000 系列质量管理体系的研究相对较多",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e4",
+          "mention": "IS09000 系列质量管理体系",
+          "normalized_name": "ISO9000系列质量管理体系",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "对高校图书馆和医学图书馆实施IS09000 系列质量管理体系的研究相对较多",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e5",
+          "mention": "医院ISO9000质量体系认证",
+          "normalized_name": "医院ISO9000质量体系认证",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "医院ISO9000质量体系认证看作是医院提高竞争力的一种手段",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "高校图书馆成为讨论的热点，是因为在实践中已经有少数高校图书馆实施了这一标准，形成了榜样的力量，而医院图书馆的热点是因为目前全国不少医院都把医院ISO9000质量体系认证看作是医院提高竞争力的一种手段。 我国公共图书馆、专业图书馆对ISO9000的研究目前关注较少，学者应多关注以上两方面的研究。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "高校图书馆",
+          "normalized_name": "高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "高校图书馆成为讨论的热点",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称机构类别词，但此处有具体语境指代实施标准的少数高校图书馆，根据图情领域放宽规则抽取"
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "医院图书馆",
+          "normalized_name": "医院图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "医院图书馆的热点是因为目前全国不少医院都把医院ISO9000质量体系认证看作是医院提高竞争力的一种手段",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称机构类别词，但此处有具体语境指代实施ISO9000的医院图书馆，根据图情领域放宽规则抽取"
+        },
+        {
+          "entity_id": "24_e3",
+          "mention": "ISO9000",
+          "normalized_name": "ISO9000",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "医院ISO9000质量体系认证",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e4",
+          "mention": "公共图书馆",
+          "normalized_name": "公共图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "我国公共图书馆、专业图书馆对ISO9000的研究目前关注较少",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称机构类别词，但此处有具体语境指代我国公共图书馆，根据图情领域放宽规则抽取"
+        },
+        {
+          "entity_id": "24_e5",
+          "mention": "专业图书馆",
+          "normalized_name": "专业图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "我国公共图书馆、专业图书馆对ISO9000的研究目前关注较少",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称机构类别词，但此处有具体语境指代我国专业图书馆，根据图情领域放宽规则抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "目前学者将研究的目光局限于国内的图书馆界，对国外图书馆学界有关 ISO9000 标准的研究关注较少。 国外图书馆界对ISO9000标准的研究起步较早，已有相当部分图书馆开展了ISO9000实践，因此，研究国外的先进经验有助于我国图书馆学界更好地研究该体系，总结经验，避免误区。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "ISO9000 标准",
+          "normalized_name": "ISO9000标准",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "对国外图书馆学界有关 ISO9000 标准的研究关注较少",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "ISO9000标准",
+          "normalized_name": "ISO9000标准",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "国外图书馆界对ISO9000标准的研究起步较早",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e3",
+          "mention": "ISO9000实践",
+          "normalized_name": "ISO9000实践",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "已有相当部分图书馆开展了ISO9000实践",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为Event（movement）"
+        }
+      ]
+    }
+  ]
+}

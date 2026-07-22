@@ -1,0 +1,1815 @@
+{
+  "base_name": "reviewed_full_515",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "[摘要］介绍中国图书馆学会图书馆与知识产权研究专业委员会所主办的第二届图书馆法与知识产权论坛的概况,综述7位海内外学者有关图书馆员职业伦理问题和知识产权保护问题的发言要点，总结本届论坛取得的主要学术成果，认为其针对中国图书馆事业发展进程中的两大重要问题,为国内外学者提供了一个面对面互动交流的平台,使与会者获得了全新认识。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "中国图书馆学会图书馆与知识产权研究专业委员会",
+          "normalized_name": "中国图书馆学会图书馆与知识产权研究专业委员会",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中国图书馆学会图书馆与知识产权研究专业委员会所主办的第二届图书馆法与知识产权论坛",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "第二届图书馆法与知识产权论坛",
+          "normalized_name": "第二届图书馆法与知识产权论坛",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "第二届图书馆法与知识产权论坛的概况",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "图书馆员职业伦理问题",
+          "normalized_name": "图书馆员职业伦理问题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有关图书馆员职业伦理问题和知识产权保护问题的发言要点",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "知识产权保护问题",
+          "normalized_name": "知识产权保护问题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有关图书馆员职业伦理问题和知识产权保护问题的发言要点",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "论坛分上下午两个阶段进行，分别以图书馆员职业伦理和知识产权主题为侧重。 共有来自美国、日本、中国澳门和内地多所大学和图书馆的7位海内外学者作了主旨演讲或主题发言，使本次论坛具有鲜明的国际化特色。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "图书馆员职业伦理",
+          "normalized_name": "图书馆员职业伦理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分别以图书馆员职业伦理和知识产权主题为侧重",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "知识产权",
+          "normalized_name": "知识产权",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分别以图书馆员职业伦理和知识产权主题为侧重",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "美国",
+          "normalized_name": "美国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "共有来自美国、日本、中国澳门和内地多所大学和图书馆的7位海内外学者",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "日本",
+          "normalized_name": "日本",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "共有来自美国、日本、中国澳门和内地多所大学和图书馆的7位海内外学者",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e5",
+          "mention": "中国澳门",
+          "normalized_name": "中国澳门",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "共有来自美国、日本、中国澳门和内地多所大学和图书馆的7位海内外学者",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "中国图书馆学会学术研究委员会副主任、图书馆法与知识产权研究专业委员会主任、中山大学教授程焕文作了热情洋溢的开坛致辞。 他强调秩序的确立和职责的明确对图书馆员这一职业群体的重要性，并联系其他国家职业伦理建设的现状，指出图书馆事业的健康发展,不仅需要法律环境的保障，而且需要图书馆工作人员和信息服务提供者的严格自律。因而，他认为本届论坛的主题具有重要而深远的意义。 在简短的致辞之后，他还代表专业委员会向即将发表主旨讲演的国内外嘉宾赠送了纪念品。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "中国图书馆学会学术研究委员会",
+          "normalized_name": "中国图书馆学会学术研究委员会",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中国图书馆学会学术研究委员会副主任",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "图书馆法与知识产权研究专业委员会",
+          "normalized_name": "图书馆法与知识产权研究专业委员会",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书馆法与知识产权研究专业委员会主任",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "中山大学",
+          "normalized_name": "中山大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中山大学教授程焕文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "程焕文",
+          "normalized_name": "程焕文",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中山大学教授程焕文作了热情洋溢的开坛致辞",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "图书馆员",
+          "normalized_name": "图书馆员",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对图书馆员这一职业群体的重要性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处指代职业群体，但原文有具体限定'这一职业群体'，且'图书馆员'在规则中属于具体可识别的职业角色，故抽取"
+        },
+        {
+          "entity_id": "3_e6",
+          "mention": "本届论坛",
+          "normalized_name": "本届论坛",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "他认为本届论坛的主题具有重要而深远的意义",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未给出论坛具体名称，但'本届论坛'在上下文中指代具体会议事件"
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "后藤畅教授在讲演中主要论述了3方面的内容：首先，他以时间为序简要回顾了日本《图书馆员伦理纲领》制定的背景和经过; 接着，他从专门职业制度与伦理纲领、获知自由与伦理纲领两方面阐述了图书馆员伦理纲领的性质，指出制定伦理纲领是确立图书馆员这一专门职业所必需的。同时，图书馆员职业伦理纲领有必要担负起提倡争取读者信赖、守卫并拓展国民获知自由的责任。最后，后藤畅教授谈到，新自由主义影响下的现代专门职业理论主张专门职业应该回到与顾客（如医生对患者、律师对委托人)的关系上,并确立其存在的理由，这种主张在一定程度上与日本图书馆员伦理纲领的立场趋近。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "后藤畅",
+          "normalized_name": "后藤畅",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "后藤畅教授在讲演中主要论述了3方面的内容",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "日本《图书馆员伦理纲领》",
+          "normalized_name": "日本《图书馆员伦理纲领》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "日本《图书馆员伦理纲领》制定的背景和经过",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "图书馆员伦理纲领",
+          "normalized_name": "图书馆员伦理纲领",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "图书馆员伦理纲领的性质",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "专门职业制度",
+          "normalized_name": "专门职业制度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专门职业制度与伦理纲领",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "获知自由",
+          "normalized_name": "获知自由",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "获知自由与伦理纲领",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e6",
+          "mention": "新自由主义",
+          "normalized_name": "新自由主义",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "新自由主义影响下的现代专门职业理论",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e7",
+          "mention": "现代专门职业理论",
+          "normalized_name": "现代专门职业理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "新自由主义影响下的现代专门职业理论",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "后藤畅教授的讲演结束后，上海图书馆馆长吴建中教授等人就所关注的问题与后藤先生进行了现场讨论。 他对国际热点问题的熟悉程度之高、与国外学者的对话能力之强，体现了新一代中国学者的风貌。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "后藤畅",
+          "normalized_name": "后藤畅",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "后藤畅教授的讲演结束后",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "上海图书馆",
+          "normalized_name": "上海图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "上海图书馆馆长吴建中教授",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "吴建中",
+          "normalized_name": "吴建中",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "上海图书馆馆长吴建中教授",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "玛利亚女士作了“美国图书馆协会图书馆职业道德准则与图书馆事业\"的主旨讲演，程焕文教授友情客串现场翻译。 玛利亚女士在演讲中介绍了美国图书馆协会《图书馆员伦理准则》的制定与修订经过，介绍了图书馆职业伦理准则在美国图书馆从业人员心目中的重要地位和深远影响。 她提到，为了捍卫读者获取知识信息的自由权利和隐私权不受侵犯，美国图书馆员从遵守职业伦理角度出发，及时删除读者的借阅记录和网络浏览查询记录，并以此应对FBI等政府部门以反恐和安全为理由的随意搜查。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "玛利亚女士",
+          "normalized_name": "玛利亚女士",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "玛利亚女士作了“美国图书馆协会图书馆职业道德准则与图书馆事业\"的主旨讲演",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "美国图书馆协会图书馆职业道德准则与图书馆事业",
+          "normalized_name": "美国图书馆协会图书馆职业道德准则与图书馆事业",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "玛利亚女士作了“美国图书馆协会图书馆职业道德准则与图书馆事业\"的主旨讲演",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为演讲标题，非正式论文"
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "程焕文教授",
+          "normalized_name": "程焕文",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "程焕文教授友情客串现场翻译",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "美国图书馆协会",
+          "normalized_name": "美国图书馆协会",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国图书馆协会《图书馆员伦理准则》的制定与修订经过",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "《图书馆员伦理准则》",
+          "normalized_name": "《图书馆员伦理准则》",
+          "candidate_l3": "guideline",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "美国图书馆协会《图书馆员伦理准则》的制定与修订经过",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e6",
+          "mention": "图书馆职业伦理准则",
+          "normalized_name": "图书馆职业伦理准则",
+          "candidate_l3": "guideline",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "图书馆职业伦理准则在美国图书馆从业人员心目中的重要地位和深远影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为泛称，但结合上下文指代具体准则"
+        },
+        {
+          "entity_id": "6_e7",
+          "mention": "美国图书馆从业人员",
+          "normalized_name": "美国图书馆从业人员",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书馆职业伦理准则在美国图书馆从业人员心目中的重要地位和深远影响",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "群体泛称，但可唯一识别为美国图书馆员群体"
+        },
+        {
+          "entity_id": "6_e8",
+          "mention": "读者",
+          "normalized_name": "读者",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "为了捍卫读者获取知识信息的自由权利和隐私权不受侵犯",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称，但结合上下文指代图书馆用户群体"
+        },
+        {
+          "entity_id": "6_e9",
+          "mention": "知识信息",
+          "normalized_name": "知识信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为了捍卫读者获取知识信息的自由权利和隐私权不受侵犯",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称概念"
+        },
+        {
+          "entity_id": "6_e10",
+          "mention": "隐私权",
+          "normalized_name": "隐私权",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为了捍卫读者获取知识信息的自由权利和隐私权不受侵犯",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e11",
+          "mention": "美国图书馆员",
+          "normalized_name": "美国图书馆员",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国图书馆员从遵守职业伦理角度出发，及时删除读者的借阅记录和网络浏览查询记录",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "群体泛称，但可唯一识别为美国图书馆员群体"
+        },
+        {
+          "entity_id": "6_e12",
+          "mention": "职业伦理",
+          "normalized_name": "职业伦理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "美国图书馆员从遵守职业伦理角度出发",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e13",
+          "mention": "借阅记录",
+          "normalized_name": "借阅记录",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "及时删除读者的借阅记录和网络浏览查询记录",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e14",
+          "mention": "网络浏览查询记录",
+          "normalized_name": "网络浏览查询记录",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "及时删除读者的借阅记录和网络浏览查询记录",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e15",
+          "mention": "FBI",
+          "normalized_name": "FBI",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "并以此应对FBI等政府部门以反恐和安全为理由的随意搜查",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e16",
+          "mention": "政府部门",
+          "normalized_name": "政府部门",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "并以此应对FBI等政府部门以反恐和安全为理由的随意搜查",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称，但结合上下文指代美国政府机构"
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "玛利亚女士的举例，引起了现场听众的浓厚兴趣。 在回答听众有关如何看待“如果因为图书馆员删除读者借阅浏览记录而错过了对恐怖分子的搜查追踪\"的问题时,玛利亚女士认为，从职业伦理的角度来讲,尽可能地满足读者的信息需求,并且保护读者的信息安全与隐私权,就已经完成了一个称职图书馆员的本职责任。至于搜查恐怖分子，那是FBI等部门的责任,不是图书馆员的职业责任。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "玛利亚女士",
+          "normalized_name": "玛利亚女士",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "玛利亚女士的举例，引起了现场听众的浓厚兴趣",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "FBI",
+          "normalized_name": "FBI",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "那是FBI等部门的责任",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "她通过文献调查分析、网上信息检索、专题访问和问卷调查等多种方式研究了三地目前的状况,并比较和分析了港、澳、台的异同之处,强调了图书馆专业伦理规范建设的重要性。 她总结道：三地的图书馆员专业伦理各处于不同状态。其中,香港起步较早,图书馆员专业伦理条文比较简明,很有概括性地明确了图书馆活动的主要范畴,其英国文化特质与西方观念非常明显。台湾方面的专业伦理制定略晚于香港,但是相关学术研究比较深入、全面、具体,其伦理守则的学术性亦较明显。澳门在图书馆员专业伦理规范方面则落后于香港和台湾，直到目前仍没有成文的准则出现。问卷调查结果显示,澳门地区大部分馆员是进取的,而且具有专业操守,但是无论如何,澳门应借鉴港、台的经验,配合当地社会环境和图书馆的现况,制定一套属于澳门图书馆员的专业伦理守则,使馆员有更明确的方向。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "港、澳、台",
+          "normalized_name": "港、澳、台",
+          "candidate_l3": "region",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "比较和分析了港、澳、台的异同之处",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "candidate_l3 不在给定分类中，但作为地理区域实体应被抽取"
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "图书馆专业伦理规范",
+          "normalized_name": "图书馆专业伦理规范",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "强调了图书馆专业伦理规范建设的重要性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "香港",
+          "normalized_name": "香港",
+          "candidate_l3": "region",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "香港起步较早",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "candidate_l3 不在给定分类中，但作为地理区域实体应被抽取"
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "台湾",
+          "normalized_name": "台湾",
+          "candidate_l3": "region",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "台湾方面的专业伦理制定略晚于香港",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "candidate_l3 不在给定分类中，但作为地理区域实体应被抽取"
+        },
+        {
+          "entity_id": "8_e5",
+          "mention": "澳门",
+          "normalized_name": "澳门",
+          "candidate_l3": "region",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "澳门在图书馆员专业伦理规范方面则落后于香港和台湾",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "candidate_l3 不在给定分类中，但作为地理区域实体应被抽取"
+        },
+        {
+          "entity_id": "8_e6",
+          "mention": "图书馆员专业伦理条文",
+          "normalized_name": "图书馆员专业伦理条文",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆员专业伦理条文比较简明",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e7",
+          "mention": "英国文化特质",
+          "normalized_name": "英国文化特质",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "其英国文化特质与西方观念非常明显",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为phenomenon，但更接近concept"
+        },
+        {
+          "entity_id": "8_e8",
+          "mention": "西方观念",
+          "normalized_name": "西方观念",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "其英国文化特质与西方观念非常明显",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e9",
+          "mention": "伦理守则",
+          "normalized_name": "伦理守则",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "其伦理守则的学术性亦较明显",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e10",
+          "mention": "澳门图书馆员的专业伦理守则",
+          "normalized_name": "澳门图书馆员的专业伦理守则",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "制定一套属于澳门图书馆员的专业伦理守则",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "论坛的第二阶段是主题发言，由上海图书馆馆长助理周德明研究馆员主持。 来自美国关岛大学的ChihWang教授、美国新泽西城市大学的周敏副教授/参考咨询馆员、北京理工大学的党跃臣副研究馆员、四川大学公共管理学院信息资源管理系的赵媛副教授分别作了精彩发言。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "上海图书馆馆长助理周德明研究馆员",
+          "normalized_name": "周德明",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由上海图书馆馆长助理周德明研究馆员主持",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "美国关岛大学",
+          "normalized_name": "关岛大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "来自美国关岛大学的ChihWang教授",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "ChihWang教授",
+          "normalized_name": "ChihWang",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "来自美国关岛大学的ChihWang教授",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "美国新泽西城市大学",
+          "normalized_name": "新泽西城市大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国新泽西城市大学的周敏副教授/参考咨询馆员",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e5",
+          "mention": "周敏副教授/参考咨询馆员",
+          "normalized_name": "周敏",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国新泽西城市大学的周敏副教授/参考咨询馆员",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e6",
+          "mention": "北京理工大学",
+          "normalized_name": "北京理工大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "北京理工大学的党跃臣副研究馆员",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e7",
+          "mention": "党跃臣副研究馆员",
+          "normalized_name": "党跃臣",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "北京理工大学的党跃臣副研究馆员",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e8",
+          "mention": "四川大学公共管理学院信息资源管理系",
+          "normalized_name": "四川大学公共管理学院信息资源管理系",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "四川大学公共管理学院信息资源管理系的赵媛副教授",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e9",
+          "mention": "赵媛副教授",
+          "normalized_name": "赵媛",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "四川大学公共管理学院信息资源管理系的赵媛副教授",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "最后，他摘取了一些新闻报道,介绍了“911\"恐怖袭击以来美国政府的许多安全管制行为以及社会公众对此的反应。 王教授特别指出，资讯自由与资讯安全,究竟敦轻孰重，目前仍然是一个没有结论的问题。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "911",
+          "normalized_name": "911",
+          "candidate_l3": "event",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "介绍了“911\"恐怖袭击以来美国政府的许多安全管制行为",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "王教授",
+          "normalized_name": "王教授",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "王教授特别指出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "资讯自由",
+          "normalized_name": "资讯自由",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "资讯自由与资讯安全,究竟敦轻孰重",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e4",
+          "mention": "资讯安全",
+          "normalized_name": "资讯安全",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "资讯自由与资讯安全,究竟敦轻孰重",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "她首先介绍了电子资源的特点和对图书馆服务的影响，简要回顾了电子时代版权法案的修订情况,尤其是DMCA《DigitalMillennium Copyright Act》取消了第一次销售权,对图书馆服务带来的深远影响。 她指出,电子资讯特许协议的实质是条约双方在商议的合同上建立的契约关系，主要可以分为3种—一法定的协议条约（compulsory licenses）、谈判协议（negoti-ating licenses）、“塑料薄膜包装\"协议和\"按键\"协议（shrink-wrap license andclick－on license）。 条约的主要条款包括： $\\textcircled{1}$ 用户与使用者—一确认电子资源的用户身份和使用范围。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "DMCA《DigitalMillennium Copyright Act》",
+          "normalized_name": "DMCA《Digital Millennium Copyright Act》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "DMCA《DigitalMillennium Copyright Act》取消了第一次销售权",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "第一次销售权",
+          "normalized_name": "第一次销售权",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "DMCA《DigitalMillennium Copyright Act》取消了第一次销售权",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "法定的协议条约（compulsory licenses）",
+          "normalized_name": "法定的协议条约（compulsory licenses）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主要可以分为3种—一法定的协议条约（compulsory licenses）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "谈判协议（negoti-ating licenses）",
+          "normalized_name": "谈判协议（negotiating licenses）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "谈判协议（negoti-ating licenses）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "“塑料薄膜包装”协议和“按键”协议（shrink-wrap license andclick－on license）",
+          "normalized_name": "“塑料薄膜包装”协议和“按键”协议（shrink-wrap license and click-on license）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "“塑料薄膜包装”协议和“按键”协议（shrink-wrap license andclick－on license）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "条约的主要条款包括： $\\textcircled{1}$ 用户与使用者—一确认电子资源的用户身份和使用范围。 $\\textcircled{2}$ 馆际互借—从法律上讲,电子资源目前还不许可馆际互借,虚拟咨询与资源保留也受到限制。$\\textcircled{3}$ 赔偿条款——规定图书馆应负责读者在电子资源使用中造成的相应版权损失，同时电子资源提供商应确保得到电子资源所有者的合法授权。 $\\textcircled{4}$ 特许条约的中止—界定毁约行为，保留自己的合法付费文献。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "电子资源",
+          "normalized_name": "电子资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "确认电子资源的用户身份和使用范围",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "馆际互借",
+          "normalized_name": "馆际互借",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "馆际互借—从法律上讲,电子资源目前还不许可馆际互借",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "虚拟咨询",
+          "normalized_name": "虚拟咨询",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "虚拟咨询与资源保留也受到限制",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "资源保留",
+          "normalized_name": "资源保留",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "虚拟咨询与资源保留也受到限制",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为特定服务名称，但原文未给出全称"
+        },
+        {
+          "entity_id": "12_e5",
+          "mention": "赔偿条款",
+          "normalized_name": "赔偿条款",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "赔偿条款——规定图书馆应负责读者在电子资源使用中造成的相应版权损失",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e6",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "规定图书馆应负责读者在电子资源使用中造成的相应版权损失",
+          "is_specific_entity": false,
+          "confidence": 0.3,
+          "uncertainty": "此处'图书馆'为泛称机构类别词，未指称具体图书馆，按规则不抽取，但保留为低置信度候选"
+        },
+        {
+          "entity_id": "12_e7",
+          "mention": "电子资源提供商",
+          "normalized_name": "电子资源提供商",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "电子资源提供商应确保得到电子资源所有者的合法授权",
+          "is_specific_entity": false,
+          "confidence": 0.2,
+          "uncertainty": "泛称机构类别词，未指称具体提供商名称"
+        },
+        {
+          "entity_id": "12_e8",
+          "mention": "特许条约的中止",
+          "normalized_name": "特许条约的中止",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "特许条约的中止—界定毁约行为，保留自己的合法付费文献",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "北京理工大学图书馆的副研究馆员党跃臣作了《学位论文开发与管理中的著作权问题》的发言，内容主要分为5部分： $\\textcircled{1}$ 学位论文原始著作权的归属问题。 他援引了《著作权法实施条例》第11条的有关规定，指出学位论文属非职务作品,学生应当享有完整的著作权。 $\\textcircled{2}$ 学位论文的发表权问题。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "北京理工大学图书馆",
+          "normalized_name": "北京理工大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "北京理工大学图书馆的副研究馆员党跃臣",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "党跃臣",
+          "normalized_name": "党跃臣",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "北京理工大学图书馆的副研究馆员党跃臣",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "《学位论文开发与管理中的著作权问题》",
+          "normalized_name": "《学位论文开发与管理中的著作权问题》",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "党跃臣作了《学位论文开发与管理中的著作权问题》的发言",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "《著作权法实施条例》",
+          "normalized_name": "《著作权法实施条例》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "援引了《著作权法实施条例》第11条的有关规定",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "$\\textcircled{2}$ 学位论文的发表权问题。 从发表权的概念、学生与图书馆、研究生院签订的协议及其本意三方面进行论证,学位论文都不属于已发表作品，因此不涉及合理使用问题。 $\\textcircled{3}$ 学位论文的出版问题。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "学位论文",
+          "normalized_name": "学位论文",
+          "candidate_l3": "thesis",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "学位论文的发表权问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "发表权",
+          "normalized_name": "发表权",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从发表权的概念",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "学生",
+          "normalized_name": "学生",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "学生与图书馆、研究生院签订的协议",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'学生'为泛称，但结合上下文指代具体学位论文作者群体，且与具体机构'图书馆''研究生院'并列，故抽取"
+        },
+        {
+          "entity_id": "14_e4",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "学生与图书馆、研究生院签订的协议",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'图书馆'为泛称，但结合上下文指代具体高校图书馆，且与'研究生院'并列，故抽取"
+        },
+        {
+          "entity_id": "14_e5",
+          "mention": "研究生院",
+          "normalized_name": "研究生院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "学生与图书馆、研究生院签订的协议",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e6",
+          "mention": "已发表作品",
+          "normalized_name": "已发表作品",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学位论文都不属于已发表作品",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e7",
+          "mention": "合理使用",
+          "normalized_name": "合理使用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "不涉及合理使用问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "$\\textcircled{3}$ 学位论文的出版问题。 除法律有特殊规定的之外,任何未经著作权人许可的复制和发行行为都属于侵权行为。 $\\textcircled{4}$ 学位论文的信息网络传播权问题。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "学位论文",
+          "normalized_name": "学位论文",
+          "candidate_l3": "thesis",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "学位论文的出版问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "著作权人",
+          "normalized_name": "著作权人",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "未经著作权人许可的复制和发行行为",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "信息网络传播权",
+          "normalized_name": "信息网络传播权",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学位论文的信息网络传播权问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "$\\textcircled{4}$ 学位论文的信息网络传播权问题。 未经著作权人的许可和授权擅自将权利人的学位论文上载服务器进行网络传播，即构成对学位论文著作权人信息网络传播权的侵犯。 $\\textcircled{5}$ 学位论文管理和开发的规范化，主要有著作权转让和使用许可两种重要途径。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "信息网络传播权",
+          "normalized_name": "信息网络传播权",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学位论文的信息网络传播权问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "著作权转让",
+          "normalized_name": "著作权转让",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主要有著作权转让和使用许可两种重要途径",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "使用许可",
+          "normalized_name": "使用许可",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主要有著作权转让和使用许可两种重要途径",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "$\\textcircled{5}$ 学位论文管理和开发的规范化，主要有著作权转让和使用许可两种重要途径。 此外,党跃臣副研究馆员通过回答听众的问题介绍了独家使用许可和UMI版权解决方案的情况。 在互动交流中，李国新教授有关学位论文作者合理收益的机智而又风趣的提问，引发了现场的热烈讨论。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "党跃臣副研究馆员",
+          "normalized_name": "党跃臣",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "党跃臣副研究馆员通过回答听众的问题介绍了独家使用许可和UMI版权解决方案的情况",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "独家使用许可",
+          "normalized_name": "独家使用许可",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "介绍了独家使用许可和UMI版权解决方案的情况",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "UMI版权解决方案",
+          "normalized_name": "UMI版权解决方案",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "介绍了独家使用许可和UMI版权解决方案的情况",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "李国新教授",
+          "normalized_name": "李国新",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "李国新教授有关学位论文作者合理收益的机智而又风趣的提问",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "四川大学公共管理学院信息资源管理系的赵媛副教授从研究的必要性和意义、原则和征税范围与模式等方面简要阐述了其有关\"数字图书馆产业税收管辖权优先性问题”的研究成果。 她认为，对数字图书馆产业征税,将有利于吸引更多投资，有利于合理引导数字图书馆资金投入、优化数字图书馆内部产业结构，有利于提高数字图书馆产业的效益。 对数字图书馆征税应遵循以下几个原则： $\\textcircled{1}$ 区别征税原则。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "四川大学公共管理学院信息资源管理系",
+          "normalized_name": "四川大学公共管理学院信息资源管理系",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "四川大学公共管理学院信息资源管理系的赵媛副教授",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "赵媛",
+          "normalized_name": "赵媛",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "四川大学公共管理学院信息资源管理系的赵媛副教授",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "数字图书馆产业税收管辖权优先性问题",
+          "normalized_name": "数字图书馆产业税收管辖权优先性问题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "其有关'数字图书馆产业税收管辖权优先性问题'的研究成果",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e4",
+          "mention": "数字图书馆产业",
+          "normalized_name": "数字图书馆产业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对数字图书馆产业征税",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e5",
+          "mention": "区别征税原则",
+          "normalized_name": "区别征税原则",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对数字图书馆征税应遵循以下几个原则： ① 区别征税原则",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为guideline或policy，但原文未明确为正式文件，暂标concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "$\\textcircled{4}$ 鼓励信息资源共建共享原则。 关于数字图书馆的征税范围，她主张对提供有偿服务的数字图书馆都予征税，但应从整体性质、服务方式、公益性图书馆优惠政策等方面加以区分和限制。最后，她借鉴现有电子商务的征税模式,提出数字图书馆应采取“三税并行\"的征税模式。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "数字图书馆",
+          "normalized_name": "数字图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "关于数字图书馆的征税范围，她主张对提供有偿服务的数字图书馆都予征税",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "电子商务",
+          "normalized_name": "电子商务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "她借鉴现有电子商务的征税模式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "三税并行",
+          "normalized_name": "三税并行",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提出数字图书馆应采取“三税并行\"的征税模式",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为政策或模式名称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "主题发言后，主持人周德明对4位嘉宾的发言做了总结和点评，并对他们各有侧重的精彩讲演表示感谢。 至此，第二届图书馆法与知识产权论坛在热烈的掌声中圆满落幕。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "周德明",
+          "normalized_name": "周德明",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "主持人周德明对4位嘉宾的发言做了总结和点评",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "第二届图书馆法与知识产权论坛",
+          "normalized_name": "第二届图书馆法与知识产权论坛",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "第二届图书馆法与知识产权论坛在热烈的掌声中圆满落幕",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "总体来看，本次论坛对中国图书馆事业发展进程中的两大重要问题一-图书馆员职业伦理和知识产权保护，从广阔的国际视角进行了深入多元的探讨，提供了一个国内外学者面对面交流互动的平台,使与会者对美国、日本及港、澳、台等地区图书馆员职业伦理规范的制定和实施状况有了更广泛的了解与认识,获得了一些国外的最新情况。尤其是某些讨论内容如\"刑事司法与保守秘密的矛盾”,涉及到我国图书馆员职业道德准则尚未解决的部分问题，这无疑对更好地推广、实施、修订《中国图书馆员职业道德准则(试行)》具有借鉴意义。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "中国图书馆事业发展进程",
+          "normalized_name": "中国图书馆事业发展进程",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本次论坛对中国图书馆事业发展进程中的两大重要问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为trend"
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "图书馆员职业伦理",
+          "normalized_name": "图书馆员职业伦理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆员职业伦理和知识产权保护",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "知识产权保护",
+          "normalized_name": "知识产权保护",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆员职业伦理和知识产权保护",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "美国",
+          "normalized_name": "美国",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使与会者对美国、日本及港、澳、台等地区图书馆员职业伦理规范的制定和实施状况有了更广泛的了解与认识",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为地理区域实体，此处指代该地区的图书馆实践"
+        },
+        {
+          "entity_id": "21_e5",
+          "mention": "日本",
+          "normalized_name": "日本",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使与会者对美国、日本及港、澳、台等地区图书馆员职业伦理规范的制定和实施状况有了更广泛的了解与认识",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为地理区域实体，此处指代该地区的图书馆实践"
+        },
+        {
+          "entity_id": "21_e6",
+          "mention": "港、澳、台",
+          "normalized_name": "港、澳、台",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使与会者对美国、日本及港、澳、台等地区图书馆员职业伦理规范的制定和实施状况有了更广泛的了解与认识",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为地理区域实体，此处指代该地区的图书馆实践"
+        },
+        {
+          "entity_id": "21_e7",
+          "mention": "刑事司法与保守秘密的矛盾",
+          "normalized_name": "刑事司法与保守秘密的矛盾",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "某些讨论内容如\"刑事司法与保守秘密的矛盾\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e8",
+          "mention": "《中国图书馆员职业道德准则(试行)》",
+          "normalized_name": "《中国图书馆员职业道德准则(试行)》",
+          "candidate_l3": "guideline",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "推广、实施、修订《中国图书馆员职业道德准则(试行)》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "本次论坛邀请的发言嘉宾,从不同角度论述了网络和电子信息领域中不可忽视的知识产权问题,包括网络信息传播、电子资源引进、学位论文数据库的开发管理和数字图书馆建设等多个领域,既有对资讯传播自由的理性思考，又有对电子资讯引进的经验总结，还有对数据库和数字图书馆知识产权问题提出的前瞻性解决方案。 这些观点和见解的提出,对于信息工作者开阔理论思路和解决电子资源开发管理中的实践问题,都具有重要的参考价值。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "网络和电子信息领域",
+          "normalized_name": "网络和电子信息领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "网络和电子信息领域中不可忽视的知识产权问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "知识产权问题",
+          "normalized_name": "知识产权问题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "网络和电子信息领域中不可忽视的知识产权问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e3",
+          "mention": "网络信息传播",
+          "normalized_name": "网络信息传播",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括网络信息传播、电子资源引进、学位论文数据库的开发管理和数字图书馆建设等多个领域",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e4",
+          "mention": "电子资源引进",
+          "normalized_name": "电子资源引进",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括网络信息传播、电子资源引进、学位论文数据库的开发管理和数字图书馆建设等多个领域",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e5",
+          "mention": "学位论文数据库",
+          "normalized_name": "学位论文数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "学位论文数据库的开发管理和数字图书馆建设",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e6",
+          "mention": "数字图书馆",
+          "normalized_name": "数字图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "数字图书馆建设等多个领域",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e7",
+          "mention": "资讯传播自由",
+          "normalized_name": "资讯传播自由",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "既有对资讯传播自由的理性思考",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e8",
+          "mention": "电子资讯引进",
+          "normalized_name": "电子资讯引进",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "又有对电子资讯引进的经验总结",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e9",
+          "mention": "数据库",
+          "normalized_name": "数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "对数据库和数字图书馆知识产权问题提出的前瞻性解决方案",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处为泛称，但结合上下文指代具体数据库类型，按图情领域放宽规则抽取"
+        },
+        {
+          "entity_id": "22_e10",
+          "mention": "数字图书馆知识产权问题",
+          "normalized_name": "数字图书馆知识产权问题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对数据库和数字图书馆知识产权问题提出的前瞻性解决方案",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e11",
+          "mention": "电子资源开发管理",
+          "normalized_name": "电子资源开发管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "解决电子资源开发管理中的实践问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

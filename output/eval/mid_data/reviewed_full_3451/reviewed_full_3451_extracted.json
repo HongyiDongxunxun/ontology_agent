@@ -1,0 +1,998 @@
+{
+  "base_name": "reviewed_full_3451",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "形式整合主要是指对网上政府网站链接进行的整合，如提供网址导航，并且提供检索功能指引用户找到信息源，但是并不能将政府信息内容存档到本地数据库中。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "网上政府网站链接",
+          "normalized_name": "网上政府网站链接",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对网上政府网站链接进行的整合",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "网址导航",
+          "normalized_name": "网址导航",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如提供网址导航",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "检索功能",
+          "normalized_name": "检索功能",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "并且提供检索功能指引用户找到信息源",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "他们主要负责政府信息的选存、保管、编目、上架和提供公众链接。 他们对政府信息的整合主要是对政府网址进行的分类、导航并提供链接，但是并没有提供统一的检索入口，而是借助于“政府印刷局接入”(GPOAccess)进行网上政府信息的检索。对于印刷、光盘和缩微形式的政府出版物，国会图书馆没有进行整合，只是负责保存、分类和提供借阅。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "政府印刷局接入",
+          "normalized_name": "政府印刷局接入",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "借助于“政府印刷局接入”(GPOAccess)进行网上政府信息的检索",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "GPOAccess",
+          "normalized_name": "GPOAccess",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "借助于“政府印刷局接入”(GPOAccess)进行网上政府信息的检索",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "国会图书馆",
+          "normalized_name": "国会图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国会图书馆没有进行整合，只是负责保存、分类和提供借阅",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "通过美国国会图书馆的“FirstSearch”检索，可以检索到国会图书馆馆藏的政府出版物。 而对于网络形式（包括网络出版物和网页）的政府出版物，美国国会图书馆并没有进行整合，而是直接链接到美国“政府印刷局接入（GPOAccess）”进行检索。 $\\textcircled{2}$ 政府出版物目录和指南（Bibliographies and Guides)。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "美国国会图书馆",
+          "normalized_name": "美国国会图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "通过美国国会图书馆的“FirstSearch”检索",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "FirstSearch",
+          "normalized_name": "FirstSearch",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过美国国会图书馆的“FirstSearch”检索",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "政府印刷局接入（GPOAccess）",
+          "normalized_name": "政府印刷局接入（GPOAccess）",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "直接链接到美国“政府印刷局接入（GPOAccess）”进行检索",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "政府出版物目录和指南（Bibliographies and Guides）",
+          "normalized_name": "政府出版物目录和指南（Bibliographies and Guides）",
+          "candidate_l3": "reference_tool",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "政府出版物目录和指南（Bibliographies and Guides）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "$\\textcircled{3}$ 政府出版物网络资源（InternetResources)。 是美国国会图书馆对一些重要的政府网址进行的整合和导航。 比如，对美国州政府信息的整合，通过整合页面上各个州名称可以进入美国各州政府部门的网页[2]。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "政府出版物网络资源",
+          "normalized_name": "政府出版物网络资源",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "政府出版物网络资源（InternetResources)。 是美国国会图书馆对一些重要的政府网址进行的整合和导航。",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "美国国会图书馆",
+          "normalized_name": "美国国会图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "是美国国会图书馆对一些重要的政府网址进行的整合和导航。",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "这是由于在美国有专门的政府印刷局，它主要负责政府出版物的出版、发布，并将其内容整合成统一平台提供一站式的检索（GPOAccess)。 联邦层面政府所作的GPOAccess整合平台整合的政府出版物量大且全，提供的检索方式有多种途径，并且直接能够在数据库找到原文，从而使国会图书馆在政府公开信息的整合方面不需要做过多的重复劳动。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "政府印刷局",
+          "normalized_name": "政府印刷局",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在美国有专门的政府印刷局",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "GPOAccess",
+          "normalized_name": "GPOAccess",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "统一平台提供一站式的检索（GPOAccess）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "国会图书馆",
+          "normalized_name": "国会图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "从而使国会图书馆在政府公开信息的整合方面不需要做过多的重复劳动",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "通过该定位服务，用户可以获取加拿大国家图书馆目录中的加拿大联邦政府出版物书目记录、加拿大国家图书馆中收藏的政府出版物信息、寄存图书馆中链接的加拿大联邦政府电子出版物[3]。 该定位服务对加拿大所有寄存图书馆中政府出版物信息进行了整合，并且提供一站式的检索 (支持英语和法语检索)。该项目之所以叫“定位”，顾名思义就是进行的整合并没有直接将政府信息存档到本地，而只是定位到政府信息寄存的图书馆，这也是此项目最为突出的特点。 用户通过检索可以知道哪些寄存图书馆收藏了所需的政府出版物，并且在寄存图书馆的政府出版物馆藏信息中，用户不仅可以看到哪些寄存图书馆收藏了印刷版政府出版物，而且可以通过相对应的网络版政府出版物链接地址直接获取信息。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "加拿大国家图书馆",
+          "normalized_name": "加拿大国家图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "加拿大国家图书馆目录中的加拿大联邦政府出版物书目记录、加拿大国家图书馆中收藏的政府出版物信息",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "加拿大联邦政府出版物",
+          "normalized_name": "加拿大联邦政府出版物",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "加拿大国家图书馆目录中的加拿大联邦政府出版物书目记录",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "寄存图书馆",
+          "normalized_name": "寄存图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "寄存图书馆中链接的加拿大联邦政府电子出版物",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称但图情领域有特定制度含义，视为具体机构类型"
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "该定位服务",
+          "normalized_name": "该定位服务",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "该定位服务对加拿大所有寄存图书馆中政府出版物信息进行了整合",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "指代前文提到的定位服务系统"
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "该项目",
+          "normalized_name": "该项目",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "该项目之所以叫“定位”",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "指代前文描述的定位服务项目"
+        },
+        {
+          "entity_id": "6_e6",
+          "mention": "印刷版政府出版物",
+          "normalized_name": "印刷版政府出版物",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "哪些寄存图书馆收藏了印刷版政府出版物",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "6_e7",
+          "mention": "网络版政府出版物",
+          "normalized_name": "网络版政府出版物",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "相对应的网络版政府出版物链接地址",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "用户通过检索可以知道哪些寄存图书馆收藏了所需的政府出版物，并且在寄存图书馆的政府出版物馆藏信息中，用户不仅可以看到哪些寄存图书馆收藏了印刷版政府出版物，而且可以通过相对应的网络版政府出版物链接地址直接获取信息。 这实际上也提示我们，对于具有印刷版和网络版的政府出版物可以采取这样一种方法一一在馆藏信息中同时提供政府出版物印刷版的分类号和网络版的链接地址，以满足不同用户的需求。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "寄存图书馆",
+          "normalized_name": "寄存图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "哪些寄存图书馆收藏了所需的政府出版物",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'寄存图书馆'为特定制度下的图书馆类型，但未给出具体馆名，属于泛化类别词，严格按规则应不抽取。但考虑到图情领域放宽规则，且'寄存图书馆'是特定制度实体，故保留。"
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "政府出版物",
+          "normalized_name": "政府出版物",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "哪些寄存图书馆收藏了所需的政府出版物",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "印刷版政府出版物",
+          "normalized_name": "印刷版政府出版物",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "哪些寄存图书馆收藏了印刷版政府出版物",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "网络版政府出版物",
+          "normalized_name": "网络版政府出版物",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "网络版政府出版物链接地址",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e5",
+          "mention": "政府出版物印刷版的分类号",
+          "normalized_name": "政府出版物印刷版的分类号",
+          "candidate_l3": "index",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在馆藏信息中同时提供政府出版物印刷版的分类号",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "分类号本身是具体标识符，但未给出具体号码，属于类型提及。"
+        },
+        {
+          "entity_id": "7_e6",
+          "mention": "网络版的链接地址",
+          "normalized_name": "网络版的链接地址",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "网络版的链接地址",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "链接地址是具体资源定位符，但未给出具体URL，属于类型提及。"
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "另外，通过检索平台还可以找到出售所需政府出版物书店的信息。 因此，图书馆澳大利亚项目实际上整合了政府出版物书目的信息，使用户可以通过统一的检索平台找到所需政府出版物的信息，但该项目并没有存档政府信息的文本。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "检索平台",
+          "normalized_name": "检索平台",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过检索平台还可以找到出售所需政府出版物书店的信息",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未给出具体平台名称，但图情领域放宽规则下可视为具体系统"
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "图书馆澳大利亚项目",
+          "normalized_name": "图书馆澳大利亚项目",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "图书馆澳大利亚项目实际上整合了政府出版物书目的信息",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "用户通过这种形式的整合可以发现所需政府信息的线索，但不能在整合平台上直接获取政府信息的文本，而是要到原网站上获取。 因此，笔者认为这其实是一种不存档政府信息内容的整合，只是对外在的链接进行的形式整合。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "政府信息",
+          "normalized_name": "政府信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户通过这种形式的整合可以发现所需政府信息的线索",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "整合平台",
+          "normalized_name": "整合平台",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "不能在整合平台上直接获取政府信息的文本",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "未明确命名，但指代具体平台"
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "原网站",
+          "normalized_name": "原网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "而是要到原网站上获取",
+          "is_specific_entity": true,
+          "confidence": 0.75,
+          "uncertainty": "未明确命名，但指代具体政府网站"
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "内容整合是指不仅对政府信息的网站地址进行整合，而且对信息内容也进行整合，并提供一站式检索，将信息内容及其网页形式存档到本地数据库中，它是一种比较完全的整合。 对于内容整合，以澳大利亚PANDORA项目和日本国立国会图书馆的整合为代表。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "澳大利亚PANDORA项目",
+          "normalized_name": "澳大利亚PANDORA项目",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "以澳大利亚PANDORA项目和日本国立国会图书馆的整合为代表",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "日本国立国会图书馆",
+          "normalized_name": "日本国立国会图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "以澳大利亚PANDORA项目和日本国立国会图书馆的整合为代表",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "通过在此类信息中的一站式检索可以显示所需的政府信息结果列表[5，并且从列表中可以看到存档该信息的网址、存档的日期。 选取一条记录可以看到显示的政府信息保持了网页原貌，因此，PANDORA存档的不仅是政府信息的内容，而且也存档了政府信息网页的形式，是一种比较完全的深入的内容整合。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "PANDORA",
+          "normalized_name": "PANDORA",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "PANDORA存档的不仅是政府信息的内容，而且也存档了政府信息网页的形式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "日本国立国会图书馆是隶属于日本国会的国家图书馆，对众议院的会议录进行整合是国立国会图书馆开展政府信息整合的代表性项目之一。 其实，众议院对于会议记录形式的政府信息也进行了简单的整合，但是缺乏检索功能，用户只能进行浏览[。 日本国立国会图书馆主页[7提供有众议院会议录的链接，但这并不是简单链接到议会网站，而是将会议录整合成为“国会会议录检索系统”。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "日本国立国会图书馆",
+          "normalized_name": "日本国立国会图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "日本国立国会图书馆是隶属于日本国会的国家图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "日本国会",
+          "normalized_name": "日本国会",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "隶属于日本国会的国家图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "众议院",
+          "normalized_name": "众议院",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对众议院的会议录进行整合",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "国会会议录检索系统",
+          "normalized_name": "国会会议录检索系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "将会议录整合成为“国会会议录检索系统”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "该系统平台提供简单检索、复杂检索和浏览，用户可以直接通过该平台在数据库中找到所需会议录的内容[8]。 整合而成的数据库系统不仅便于公众检索利用，而且成为图书馆开展政府信息服务的基础。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "该系统平台",
+          "normalized_name": "该系统平台",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "该系统平台提供简单检索、复杂检索和浏览",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "指代模糊，需结合上下文确认具体平台名称"
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "简单检索",
+          "normalized_name": "简单检索",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提供简单检索、复杂检索和浏览",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "复杂检索",
+          "normalized_name": "复杂检索",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提供简单检索、复杂检索和浏览",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "数据库",
+          "normalized_name": "数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在数据库中找到所需会议录的内容",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未指明具体数据库名称，但图情领域放宽规则下可视为具体资源"
+        },
+        {
+          "entity_id": "13_e5",
+          "mention": "会议录",
+          "normalized_name": "会议录",
+          "candidate_l3": "conference_paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在数据库中找到所需会议录的内容",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e6",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "成为图书馆开展政府信息服务的基础",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "未指明具体图书馆名称，但图情领域放宽规则下可视为具体机构"
+        },
+        {
+          "entity_id": "13_e7",
+          "mention": "政府信息服务",
+          "normalized_name": "政府信息服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "成为图书馆开展政府信息服务的基础",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "因此日本议会网站链接了图书馆网站，这说明图书馆的资源整合只要做得好，对政府网站是可以产生影响的。 一个链接看似简单，实际上表明了政府对图书馆组织与整合资源能力的社会性承认，同时也是图书馆扩大社会影响、彰显自身价值的有效途径。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "日本议会网站",
+          "normalized_name": "日本议会网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "日本议会网站链接了图书馆网站",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "图书馆网站",
+          "normalized_name": "图书馆网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "日本议会网站链接了图书馆网站",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "未指明具体图书馆名称，但作为具体网站系统抽取"
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "政府网站",
+          "normalized_name": "政府网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "对政府网站是可以产生影响的",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但图情领域放宽规则中网站类可视为具体系统"
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "形式整合其实就是对政府网址进行的整合链接。 但是，由于信息的易逝性及政府机构变动等诸多原因，造成许多政府网站的信息消失而变成“死链”，因此，将政府信息进行抓取、存档到本地数据库中并进行的内容整合恰好弥补了这一不足。而且，数据库中的政府信息可以被直接推送给用户，这也节约了用户通过形式整合的链接进行二次查找信息的时间和成本，因此，这是未来的发展方向。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "政府网址",
+          "normalized_name": "政府网址",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "形式整合其实就是对政府网址进行的整合链接",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为Artifact中的information_system，但原文未指定具体系统名称"
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "死链",
+          "normalized_name": "死链",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "造成许多政府网站的信息消失而变成“死链”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "本地数据库",
+          "normalized_name": "本地数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "将政府信息进行抓取、存档到本地数据库中",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未指定具体数据库名称，但图情领域放宽规则下可抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "目前，《中华人民共和国政府信息公开条例》[9(以下简称《条例》）刚刚颁布，政府信息从政府部门传递到图书馆这一过程没有制度的保障，因此目前被呈送到图书馆中印刷形式的政府出版物数量还较少。但是，随着今后制度的完善，图书馆中政府出版物的数量也会逐渐增多，对国内公共图书馆中馆藏印刷型政府出版物的整合也会被列上议事日程。 图书馆要通过印刷型政府出版物的整合使有需求的用户能够在就近图书馆及时获取。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "《中华人民共和国政府信息公开条例》",
+          "normalized_name": "《中华人民共和国政府信息公开条例》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《中华人民共和国政府信息公开条例》[9(以下简称《条例》）刚刚颁布",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "《条例》",
+          "normalized_name": "《中华人民共和国政府信息公开条例》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《中华人民共和国政府信息公开条例》[9(以下简称《条例》）刚刚颁布",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "政府信息",
+          "normalized_name": "政府信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "政府信息从政府部门传递到图书馆这一过程没有制度的保障",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "印刷形式的政府出版物",
+          "normalized_name": "印刷形式的政府出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "被呈送到图书馆中印刷形式的政府出版物数量还较少",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可视为具体文献类型，但无唯一名称，故标为concept"
+        },
+        {
+          "entity_id": "17_e5",
+          "mention": "国内公共图书馆",
+          "normalized_name": "国内公共图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对国内公共图书馆中馆藏印刷型政府出版物的整合也会被列上议事日程",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "有地域限定，视为具体机构类别"
+        },
+        {
+          "entity_id": "17_e6",
+          "mention": "印刷型政府出版物",
+          "normalized_name": "印刷型政府出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆要通过印刷型政府出版物的整合使有需求的用户能够在就近图书馆及时获取",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "图书馆要通过印刷型政府出版物的整合使有需求的用户能够在就近图书馆及时获取。 另一方面，随着电子政务的推进，政府信息越来越多地以网络形式进行发布，那么是否需要将网络型政府出版物的整合和印刷型政府出版物整合兼容为一个统一的平台也将成为今后研究的问题。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "印刷型政府出版物",
+          "normalized_name": "印刷型政府出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆要通过印刷型政府出版物的整合使有需求的用户能够在就近图书馆及时获取",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "电子政务",
+          "normalized_name": "电子政务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着电子政务的推进",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "网络型政府出版物",
+          "normalized_name": "网络型政府出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "网络型政府出版物的整合和印刷型政府出版物整合兼容为一个统一的平台",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "再次，图书馆应与档案馆合作。 有信息专家指出“政府拥有 $8 0 \\%$ 的政府信息，档案馆拥有 $6 0 \\%$ 的政府信息\"0]，而《条例》又规定了图书馆和档案馆同时作为为公众提供政府信息服务的场所，所以图书馆可以考虑和档案馆合作，采取政府信息资源共建共享的策略。 例如，2005年加拿大的国家图书馆就和国家档案馆进行合作，共同对政府信息进行采集和存档[1]。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书馆应与档案馆合作",
+          "is_specific_entity": false,
+          "confidence": 0.6,
+          "uncertainty": "泛称机构，无具体限定，但图情领域可视为具体类型"
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "档案馆",
+          "normalized_name": "档案馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书馆应与档案馆合作",
+          "is_specific_entity": false,
+          "confidence": 0.6,
+          "uncertainty": "泛称机构，无具体限定"
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "《条例》",
+          "normalized_name": "《条例》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《条例》又规定了图书馆和档案馆同时作为为公众提供政府信息服务的场所",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未指明具体条例名称，但原文有书名号，视为具体政策文件"
+        },
+        {
+          "entity_id": "20_e4",
+          "mention": "政府信息资源共建共享",
+          "normalized_name": "政府信息资源共建共享",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采取政府信息资源共建共享的策略",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e5",
+          "mention": "加拿大国家图书馆",
+          "normalized_name": "加拿大国家图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "2005年加拿大的国家图书馆就和国家档案馆进行合作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e6",
+          "mention": "国家档案馆",
+          "normalized_name": "国家档案馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "加拿大的国家图书馆就和国家档案馆进行合作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "此处指加拿大国家档案馆"
+        }
+      ]
+    }
+  ]
+}

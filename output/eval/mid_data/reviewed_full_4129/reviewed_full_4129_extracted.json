@@ -1,0 +1,713 @@
+{
+  "base_name": "reviewed_full_4129",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "【摘要】本文分析了图书馆网站的现状及存在的主要问题，并阐述了图书馆网站的发展方向。",
+      "entities": []
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "随着因特网的发展和图书馆网络化信息化步伐的逐步加快，许多图书馆为适应新的工作环境和工作任务的需求，开始在因特网上建立自己的网站，以便在此借助现代化的设备和手段，为图书馆今后的生存和发展，开辟更为广阔的空间和领域。 因此，图书馆网站如今已经成为我国因特网上一道亮丽的风景。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "因特网",
+          "normalized_name": "因特网",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着因特网的发展和图书馆网络化信息化步伐的逐步加快",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "图书馆网站",
+          "normalized_name": "图书馆网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "图书馆网站如今已经成为我国因特网上一道亮丽的风景",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但图情领域放宽规则：有名称的网站应抽取，此处无具体名称，但作为系统类型实体保留"
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "是图书馆网站建设的核心内容,是网上读者最关心、最需要的服务项目。 电子资源包括中文数据库(如中文期刊网、超星计算机数字图书馆、中文经济信息网等)、英文数据库、专题数据库、电子资源导航、光盘数据库检索、电子期刊、文献传递、美国专利索引等。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "中文期刊网",
+          "normalized_name": "中文期刊网",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "电子资源包括中文数据库(如中文期刊网、超星计算机数字图书馆、中文经济信息网等)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "超星计算机数字图书馆",
+          "normalized_name": "超星计算机数字图书馆",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "电子资源包括中文数据库(如中文期刊网、超星计算机数字图书馆、中文经济信息网等)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "中文经济信息网",
+          "normalized_name": "中文经济信息网",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "电子资源包括中文数据库(如中文期刊网、超星计算机数字图书馆、中文经济信息网等)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "美国专利索引",
+          "normalized_name": "美国专利索引",
+          "candidate_l3": "index",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "电子资源包括...美国专利索引等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "由于图书馆的网络化还处于刚刚起步的阶段，因此也显现出了一些不足。其一,图书馆网站主页信息量小，内容和形式缺乏吸引力，更新不够及时。就大多数图书馆而言，主页更新频率低，网站建成后很少改动,内容陈旧。其二,网站的内容显得过于单调,仅局限于简单的馆情介绍、指南、书目查询以及个别较有特色的信息浏览，服务模式单一，没有提供多少网络服务，没有充分利用国际互联网交互性的先进功能为用户提供服务。其三，展览多、导向少。许多图书馆只注重在网上上载传统的数据,而不重视突出特色的动态服务与交流。例如多数图书馆网页上没有读者反馈、新书导读和图书评论等导向性的栏目。其四，图书馆“虚拟馆藏”建设力度不够。主要表现是链接多开发少。有些图书馆网站在很大规模上是由共享的电子资源数据库和外部链接构成的，对自己的馆藏资源的开发力度很小，既浪费资源，又体现不出自己的特色。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "图书馆网站主页",
+          "normalized_name": "图书馆网站主页",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "图书馆网站主页信息量小",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指代具体图书馆网站，但原文未明确具体馆名，故置信度略低"
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "书目查询",
+          "normalized_name": "书目查询",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "仅局限于简单的馆情介绍、指南、书目查询以及个别较有特色的信息浏览",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为具体服务功能，但非唯一命名，可视为技术手段"
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "国际互联网",
+          "normalized_name": "国际互联网",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "没有充分利用国际互联网交互性的先进功能为用户提供服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "虚拟馆藏",
+          "normalized_name": "虚拟馆藏",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆“虚拟馆藏”建设力度不够",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e5",
+          "mention": "电子资源数据库",
+          "normalized_name": "电子资源数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "共享的电子资源数据库和外部链接构成的",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未指明具体数据库名称，但作为类别实体可接受"
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "一个优秀的图书馆网站不仅要有大多数网站具有的文献资源，而且还应该有特色。 在网络环境下,网络信息要成为图书馆的虚拟馆藏，必须经过图书馆的技术加工过程。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "图书馆网站",
+          "normalized_name": "图书馆网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "一个优秀的图书馆网站不仅要有大多数网站具有的文献资源",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但图情领域放宽规则：有名称的网站应抽取"
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "虚拟馆藏",
+          "normalized_name": "虚拟馆藏",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "网络信息要成为图书馆的虚拟馆藏",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "在网络环境下,网络信息要成为图书馆的虚拟馆藏，必须经过图书馆的技术加工过程。 为了满足用户的深层次需求，网络信息资源开发利用的重点，应该从提供参考性的信息线索转向具体内容和直接获取信息。 目前，Internet上具有学术价值而没有出版的原始文献，越来越多地通过WWW或New sgroup,以电子出版物的形式发布和交流。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "Internet",
+          "normalized_name": "Internet",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前，Internet上具有学术价值而没有出版的原始文献",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "WWW",
+          "normalized_name": "WWW",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过WWW或New sgroup,以电子出版物的形式发布和交流",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "New sgroup",
+          "normalized_name": "Newsgroup",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过WWW或New sgroup,以电子出版物的形式发布和交流",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "原文拼写为'New sgroup'，可能为'Newsgroup'的OCR错误"
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "电子出版物",
+          "normalized_name": "电子出版物",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以电子出版物的形式发布和交流",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称程度较高，但图情领域有具体指代"
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "目前，Internet上具有学术价值而没有出版的原始文献，越来越多地通过WWW或New sgroup,以电子出版物的形式发布和交流。 因此，应根据特定用户的需求，有计划地组织信息资源和“链接\"WWW服务器，通过过网上信息资源下载用户惠点研究课题所需的信息资料，并将其存储在自己的Web 服务器上,建成具有本单位特色的虚拟馆藏，向本单位和网上用户提供特色服务。这样，既拓宽了本馆馆藏，又提高了网络信息的有序化程度。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "Internet",
+          "normalized_name": "Internet",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前，Internet上具有学术价值而没有出版的原始文献",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "WWW",
+          "normalized_name": "WWW",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过WWW或New sgroup,以电子出版物的形式发布和交流",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "New sgroup",
+          "normalized_name": "Newsgroup",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过WWW或New sgroup,以电子出版物的形式发布和交流",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "原文拼写可能为Newsgroup"
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "虚拟馆藏",
+          "normalized_name": "虚拟馆藏",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "建成具有本单位特色的虚拟馆藏",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "信息的时效性决定了要保持网站的生命力只有不断地捕捉信息、挖掘信息，持续不断地为读者输送新知识、新观念、新方法。图书馆网站维护人员不仅要及时发布有关图书馆内部最新动态和资源变化情况，还要关注网上资源的发展变化，努力在纷繁复杂的网络中挖掘资源，引导读者更有效地利用网络获取所需信息，使图书馆网站成为网上读者不可缺少的朋友。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "图书馆网站",
+          "normalized_name": "图书馆网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "信息的时效性决定了要保持网站的生命力只有不断地捕捉信息、挖掘信息，持续不断地为读者输送新知识、新观念、新方法。图书馆网站维护人员不仅要及时发布有关图书馆内部最新动态和资源变化情况",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "图书馆网站维护人员",
+          "normalized_name": "图书馆网站维护人员",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书馆网站维护人员不仅要及时发布有关图书馆内部最新动态和资源变化情况",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "该短语指代具体岗位角色，但未给出具体人名，根据规则仅抽取具体可唯一识别的人名，此处为泛称角色，应剔除。"
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "众所周知，一个网站要想赢利就必须能够适合网民的需要，因此，无论是图书馆网站还是其它网站，为了生存就必须围绕网民的需要来做，网民的需要成了主导网站发展的一个重要因素。 是否拥有良好的目标客户群和能否适应网民的需求将成为决定网站能否生存的关键。读者需要图书馆为其提供服务，而数字图书馆与传统图书馆的最大区别是通过网站为读者服务。 因此，任何一个图书馆网站都应该认真考虑设置一个有关知识服务与信息报道的创新途径，通过网络链接，主动及时地为网上读者提供各种服务。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "图书馆网站",
+          "normalized_name": "图书馆网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "图书馆网站还是其它网站",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称图书馆网站，但结合上下文指具体类型的网站，可视为具体实体"
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "数字图书馆",
+          "normalized_name": "数字图书馆",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "数字图书馆与传统图书馆的最大区别是通过网站为读者服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "传统图书馆",
+          "normalized_name": "传统图书馆",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "数字图书馆与传统图书馆的最大区别是通过网站为读者服务",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称传统图书馆，但作为对比实体可视为具体类型"
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "知识服务",
+          "normalized_name": "知识服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "设置一个有关知识服务与信息报道的创新途径",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "信息报道",
+          "normalized_name": "信息报道",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "设置一个有关知识服务与信息报道的创新途径",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "因此，任何一个图书馆网站都应该认真考虑设置一个有关知识服务与信息报道的创新途径，通过网络链接，主动及时地为网上读者提供各种服务。 针对目前图书馆网站服务模式单一，没有提供多少网络服务的问题,笔者认为，今后在图书馆网站上可以开展如下服务。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "图书馆网站",
+          "normalized_name": "图书馆网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "任何一个图书馆网站都应该认真考虑设置一个有关知识服务与信息报道的创新途径",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称图书馆网站，但结合上下文指代具体类型的系统，按图情领域放宽规则抽取"
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "知识服务",
+          "normalized_name": "知识服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "设置一个有关知识服务与信息报道的创新途径",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "信息报道",
+          "normalized_name": "信息报道",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "设置一个有关知识服务与信息报道的创新途径",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为具体服务名称，但原文未给出专名"
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "网络链接",
+          "normalized_name": "网络链接",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过网络链接，主动及时地为网上读者提供各种服务",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称技术手段，但原文中作为具体操作方式提及"
+        },
+        {
+          "entity_id": "12_e5",
+          "mention": "网上读者",
+          "normalized_name": "网上读者",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "主动及时地为网上读者提供各种服务",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称用户群体，但原文中作为具体服务对象提及，按图情领域放宽规则抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "联机目录长期以来提供作者、题名以及有限的主题词检索，检索范围限于本馆藏书或是多个图书馆的联合藏书,检索结果是书目信息。 在图书馆网站上，人们期望书目信息与藏书具体内容能无缝链接，这样，远程用户不仅能看到书目信息，而且能看到相应的信息对象。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "联机目录",
+          "normalized_name": "联机目录",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "联机目录长期以来提供作者、题名以及有限的主题词检索",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "图书馆网站",
+          "normalized_name": "图书馆网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在图书馆网站上，人们期望书目信息与藏书具体内容能无缝链接",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能指代具体图书馆网站，但原文未明确名称，按图情领域放宽规则抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "传统图书馆的用户服务的开展都是以图书馆为中心的，而在现代信息技术的支持下,图书馆用户可以足不出户,在任何时间或任何地点访问图书馆的站点。 图书馆网站具有支持远程教育的潜力，远程用户的增多，对图书馆的远程用户教育提出了新的挑战。 图书馆网站应充分利用现代技术的特点，开发在网上对远程用户进行教育与培训的新形式。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "图书馆网站",
+          "normalized_name": "图书馆网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "图书馆网站具有支持远程教育的潜力",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "远程用户教育",
+          "normalized_name": "远程用户教育",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对图书馆的远程用户教育提出了新的挑战",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "在网络环境下,参考咨询服务应主要依赖电子邮件来体现。用电子邮件进行参考咨询服务，有广泛的潜在用户基础，因为电子邮件的使用越来越普遍，且它具有时间的灵活性，无论用户身在何处,都可以通过电子邮件向图书馆咨询。另外,在图书馆网站上开辟聊天室也应是一种参考咨询的方式。它不仅可以使用户与图书馆员进行交流,还可以使用户之间进行交流，并且很容易实现多人交流，集中大家的智慧，促进问题的解决。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "电子邮件",
+          "normalized_name": "电子邮件",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "参考咨询服务应主要依赖电子邮件来体现",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为tool，但此处作为通信方式更偏向概念"
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "通过电子邮件向图书馆咨询",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "未指定具体图书馆名称，但图情领域放宽规则中图书馆作为机构类型可抽取"
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "图书馆网站",
+          "normalized_name": "图书馆网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在图书馆网站上开辟聊天室",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "未指定具体网站名称，但作为具体系统实例可抽取"
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "聊天室",
+          "normalized_name": "聊天室",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在图书馆网站上开辟聊天室也应是一种参考咨询的方式",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "综上所述，图书馆网站既是图书馆资源的检索界面，也是图书馆的服务基地，同时还是读者进入其它信息资源系统的一个中介。 图书馆网站以怎样的方式呈现在读者面前，与图书馆的服务质量息息相关。因为在网络环境下，图书馆并不是一个单纯的文献资源系统，而是一个以文献资源为基础的多元化综合信息服务体系。 网上读者通过图书馆所进行的信息获取与信息利用活动，以及围绕这个活动，图书馆为读者提供的用户培训、文献检索、专题服务、参考咨询等服务都是在网络上开展的。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "图书馆网站",
+          "normalized_name": "图书馆网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "图书馆网站既是图书馆资源的检索界面，也是图书馆的服务基地，同时还是读者进入其它信息资源系统的一个中介",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "文献资源系统",
+          "normalized_name": "文献资源系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "图书馆并不是一个单纯的文献资源系统",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为泛称，但结合上下文指代具体图书馆系统"
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "多元化综合信息服务体系",
+          "normalized_name": "多元化综合信息服务体系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "而是一个以文献资源为基础的多元化综合信息服务体系",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为描述性短语，非标准学术命名"
+        },
+        {
+          "entity_id": "18_e4",
+          "mention": "用户培训",
+          "normalized_name": "用户培训",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆为读者提供的用户培训、文献检索、专题服务、参考咨询等服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为具体服务类型抽取"
+        },
+        {
+          "entity_id": "18_e5",
+          "mention": "文献检索",
+          "normalized_name": "文献检索",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆为读者提供的用户培训、文献检索、专题服务、参考咨询等服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e6",
+          "mention": "专题服务",
+          "normalized_name": "专题服务",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆为读者提供的用户培训、文献检索、专题服务、参考咨询等服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e7",
+          "mention": "参考咨询",
+          "normalized_name": "参考咨询",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆为读者提供的用户培训、文献检索、专题服务、参考咨询等服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

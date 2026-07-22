@@ -5,15 +5,11 @@ pipeline.reviewer_agent — Agent 3: 图书馆学专业学长审查 + Likert 5�
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Optional
 
 from .llm import LLMClient
-from .taxonomy import (
-    TAXONOMY_HIERARCHY,
-    L2_LABELS,
-    L3_LABELS,
-)
+from .taxonomy import build_taxonomy_text
 
 # ===========================================================================
 # Agent 3 审查 Prompt — LangGPT 风格
@@ -54,7 +50,13 @@ REVIEWER_PROMPT = (
     "4. **概念 vs 定义**: 图情领域有公认定义方式的归为 definition，仅作为命名单元的归为 concept\n"
     "5. **标准/政策**: 标准文件本体归为 Artifact.Normative，标准制定事件归为 Event\n"
     "6. **机构类型**: 大学图书馆归为 service (专业服务职能)，大学归为 research (知识生产职能)\n"
-    "7. **无效判定审查**: 检查是否误将图情领域专业术语、具体文献名、具体系统名误判为无效实体\n\n"
+    "7. **无效判定审查**: 检查是否误将图情领域专业术语、具体文献名、具体系统名误判为无效实体\n"
+    "8. **Concept专项审查**:\n"
+    "   - concept是最大类别也是最易出错的，特别注意:\n"
+    "   - 图情领域常见概念(信息资源、知识管理、信息服务等)不应判为无效\n"
+    "   - concept vs definition: 看语境是否在做「定义」动作(有提出者+界定描述→definition)\n"
+    "   - concept vs phenomenon: 看是否有可观察性+独立学术命名+独立研究主题\n"
+    "   - concept vs information_system: 看评价的是抽象概念还是具体系统功能\n\n"
     "## Workflow\n"
     "1. 逐条阅读原始评价句和已分类的实体信息\n"
     "2. 从图书馆学专业角度判断该分类是否合理\n"
@@ -163,18 +165,6 @@ class ReviewerAgent:
         self.llm = llm or LLMClient()
         self.batch_size = batch_size
 
-    def _build_taxonomy_text(self) -> str:
-        lines: list[str] = []
-        for l1, l2_map in TAXONOMY_HIERARCHY.items():
-            lines.append(f"**L1 = {l1}**")
-            for l2, l3_list in l2_map.items():
-                l2_label = L2_LABELS.get(l2, l2)
-                l3_details = ", ".join(
-                    f"{code}({L3_LABELS.get(code, code)})" for code in l3_list
-                )
-                lines.append(f"  L2 = {l2} ({l2_label}) → L3: {l3_details}")
-        return "\n".join(lines)
-
     def review(
         self,
         sentence: str,
@@ -198,7 +188,7 @@ class ReviewerAgent:
         results: list,  # list[FinalEntityResult]
         sentence: str,
     ) -> list[ReviewResult]:
-        taxonomy_text = self._build_taxonomy_text()
+        taxonomy_text = build_taxonomy_text()
 
         entities_lines: list[str] = []
         for i, r in enumerate(results):

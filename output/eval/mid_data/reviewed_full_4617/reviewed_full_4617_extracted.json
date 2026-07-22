@@ -1,0 +1,4881 @@
+{
+  "base_name": "reviewed_full_4617",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "【结果】目前使用的抽取方法,在本质上都是基于词粒度知识单元或句粒度知识单元。科技文献知识单元抽取过程中的深度学习过程实际上是对词粒度知识单元和句粒度知识单元所具有的不同特点进行学习和捕获,这也是使用深度学习方法抽取科技文献知识单元的关键。【局限】以筛选得到的样本文献为基础进行综述,未能全面反映本领域的成果【结论】深度学习技术在知识单元抽取中的应用提高了抽取的准确性、覆盖性和鲁棒性,未来的相关研究不仅要考虑科技文献的文本结构化信息，更需要理解其内部知识内容和内在逻辑。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "词粒度知识单元",
+          "normalized_name": "词粒度知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于词粒度知识单元或句粒度知识单元",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "句粒度知识单元",
+          "normalized_name": "句粒度知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于词粒度知识单元或句粒度知识单元",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "深度学习",
+          "normalized_name": "深度学习",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "深度学习过程实际上是对词粒度知识单元和句粒度知识单元所具有的不同特点进行学习和捕获",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "深度学习方法",
+          "normalized_name": "深度学习方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用深度学习方法抽取科技文献知识单元的关键",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e5",
+          "mention": "科技文献知识单元",
+          "normalized_name": "科技文献知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "科技文献知识单元抽取过程中的深度学习过程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e6",
+          "mention": "知识单元抽取",
+          "normalized_name": "知识单元抽取",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "深度学习技术在知识单元抽取中的应用提高了抽取的准确性、覆盖性和鲁棒性",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "数据的激增促进了科学知识生产模式的变革，同时也为数据的有效利用带来严峻挑战。数据密集型科学研究，即科学研究的\"第四范式”,将科学知识生产模式的重心由传统的假设驱动转为数据驱动，并通过挖掘大量数据促进知识的发现[。科技文献作为科学技术发展水平的客观反映,包括研究目的、方法、结论等不同方面的知识,是科学研究的重要资料[2]。因此,科技文献本身也被视为重要的研究对象，可以通过挖掘其中蕴含的知识而为相关领域的科学研究提供支持。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "第四范式",
+          "normalized_name": "第四范式",
+          "candidate_l3": "paradigm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "数据密集型科学研究，即科学研究的\"第四范式\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "科技文献",
+          "normalized_name": "科技文献",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "科技文献作为科学技术发展水平的客观反映",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处为泛指科技文献类别，但原文中作为具体研究对象提及，且图情领域放宽规则允许抽取有名称的文献类型"
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "随着深度学习技术的飞速发展，卷积神经网络（ConvolutionalNeuralNetwork，CNN）、循环神经网络（RecurrentNeuralNetwork，RNN）、注意力机制（AttentionMechanism）、图卷积网络（GraphConvolutionalNetwork,GCN)等已经被广泛应用于各类信息抽取任务中[3]。 由于深度学习技术具有强大的特征表示和特征提取能力,越来越多的研究者开始使用神经网络等深度学习技术抽取科技文献中的知识单元。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "深度学习技术",
+          "normalized_name": "深度学习技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着深度学习技术的飞速发展",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "卷积神经网络（ConvolutionalNeuralNetwork，CNN）",
+          "normalized_name": "卷积神经网络（CNN）",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "卷积神经网络（ConvolutionalNeuralNetwork，CNN）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "循环神经网络（RecurrentNeuralNetwork，RNN）",
+          "normalized_name": "循环神经网络（RNN）",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "循环神经网络（RecurrentNeuralNetwork，RNN）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "注意力机制（AttentionMechanism）",
+          "normalized_name": "注意力机制（Attention Mechanism）",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "注意力机制（AttentionMechanism）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "图卷积网络（GraphConvolutionalNetwork,GCN）",
+          "normalized_name": "图卷积网络（GCN）",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "图卷积网络（GraphConvolutionalNetwork,GCN）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e6",
+          "mention": "信息抽取任务",
+          "normalized_name": "信息抽取任务",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "广泛应用于各类信息抽取任务中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e7",
+          "mention": "神经网络",
+          "normalized_name": "神经网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "开始使用神经网络等深度学习技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e8",
+          "mention": "科技文献",
+          "normalized_name": "科技文献",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "抽取科技文献中的知识单元",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但图情领域放宽规则，作为具体文献类型抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "虽然国内外对科技文献知识单元的研究较多，但是对于科技文献知识单元本身的概念目前尚无统一定义。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "科技文献知识单元",
+          "normalized_name": "科技文献知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "虽然国内外对科技文献知识单元的研究较多，但是对于科技文献知识单元本身的概念目前尚无统一定义",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "科技文献涵盖了科技图书、科技期刊、科技报告、专利文献、会议文献、学位论文、标准文献、产品资料、技术档案、政府出版物等不同类型的文字记录,蕴含着各类具有学术和应用价值的知识。 为挖掘这些知识,研究者往往会将这些知识解构为知识单元,并将其作为科技文献知识内容挖掘的处理单元。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "科技图书",
+          "normalized_name": "科技图书",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "科技文献涵盖了科技图书、科技期刊、科技报告、专利文献、会议文献、学位论文、标准文献、产品资料、技术档案、政府出版物等不同类型的文字记录",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "科技期刊",
+          "normalized_name": "科技期刊",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "科技文献涵盖了科技图书、科技期刊、科技报告、专利文献、会议文献、学位论文、标准文献、产品资料、技术档案、政府出版物等不同类型的文字记录",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "科技报告",
+          "normalized_name": "科技报告",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "科技文献涵盖了科技图书、科技期刊、科技报告、专利文献、会议文献、学位论文、标准文献、产品资料、技术档案、政府出版物等不同类型的文字记录",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "专利文献",
+          "normalized_name": "专利文献",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "科技文献涵盖了科技图书、科技期刊、科技报告、专利文献、会议文献、学位论文、标准文献、产品资料、技术档案、政府出版物等不同类型的文字记录",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e5",
+          "mention": "会议文献",
+          "normalized_name": "会议文献",
+          "candidate_l3": "conference_paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "科技文献涵盖了科技图书、科技期刊、科技报告、专利文献、会议文献、学位论文、标准文献、产品资料、技术档案、政府出版物等不同类型的文字记录",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e6",
+          "mention": "学位论文",
+          "normalized_name": "学位论文",
+          "candidate_l3": "thesis",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "科技文献涵盖了科技图书、科技期刊、科技报告、专利文献、会议文献、学位论文、标准文献、产品资料、技术档案、政府出版物等不同类型的文字记录",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e7",
+          "mention": "标准文献",
+          "normalized_name": "标准文献",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "科技文献涵盖了科技图书、科技期刊、科技报告、专利文献、会议文献、学位论文、标准文献、产品资料、技术档案、政府出版物等不同类型的文字记录",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e8",
+          "mention": "产品资料",
+          "normalized_name": "产品资料",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "科技文献涵盖了科技图书、科技期刊、科技报告、专利文献、会议文献、学位论文、标准文献、产品资料、技术档案、政府出版物等不同类型的文字记录",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e9",
+          "mention": "技术档案",
+          "normalized_name": "技术档案",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "科技文献涵盖了科技图书、科技期刊、科技报告、专利文献、会议文献、学位论文、标准文献、产品资料、技术档案、政府出版物等不同类型的文字记录",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e10",
+          "mention": "政府出版物",
+          "normalized_name": "政府出版物",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "科技文献涵盖了科技图书、科技期刊、科技报告、专利文献、会议文献、学位论文、标准文献、产品资料、技术档案、政府出版物等不同类型的文字记录",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e11",
+          "mention": "知识单元",
+          "normalized_name": "知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究者往往会将这些知识解构为知识单元",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "为挖掘这些知识,研究者往往会将这些知识解构为知识单元,并将其作为科技文献知识内容挖掘的处理单元。 由于不同时期的研究者对知识单元的认识存在差异,因此在知识单元的定义上有着不同的见解。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "知识单元",
+          "normalized_name": "知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将这些知识解构为知识单元",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "科技文献",
+          "normalized_name": "科技文献",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "将其作为科技文献知识内容挖掘的处理单元",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "泛称文献，但图情领域可视为具体文献类型"
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "早期学者在科技文献知识单元的定义上侧重于科技文献内部知识内容的描述。早在20世纪70年代末，Auerbach等就注意到了科技文献知识单元与科技文献内容本身在知识描述的粒度上有本质的区别,认为知识的控制单位应从文献整体深入到其中的数据、公式、事实、结论等基本单元[4]。20世纪80年代初,Brookes提出\"认知地图”,认为应该对科技文献内部的逻辑内容进行深入分析，从而获得科技文献知识内容中相互影响和联系的单元[5]。马费成也提出知识信息应从物理层次的文献单元向认知层次的知识单元转换[6]。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "Auerbach",
+          "normalized_name": "Auerbach",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Auerbach等就注意到了科技文献知识单元与科技文献内容本身在知识描述的粒度上有本质的区别",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "Brookes",
+          "normalized_name": "Brookes",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Brookes提出\"认知地图\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "认知地图",
+          "normalized_name": "认知地图",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Brookes提出\"认知地图\"",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "马费成",
+          "normalized_name": "马费成",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "马费成也提出知识信息应从物理层次的文献单元向认知层次的知识单元转换",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "近年来,研究者主要围绕科技文献知识内容的本质属性或特有属性进行辨析，从不同的描述层次出发对科技文献知识单元进行界定。 一部分研究者从粒度属性和内容属性这种\"微观\"层次出发对科技文献知识单元进行定义。 比如,索传军等和温有奎等从粒度属性出发描述科技文献知识单元,认为科技文献知识单元是指语义上相对完整地表达特定知识的最小的知识内容单元[7],是知识可分解成的最小独立单元[8]。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "科技文献知识单元",
+          "normalized_name": "科技文献知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从不同的描述层次出发对科技文献知识单元进行界定",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "索传军",
+          "normalized_name": "索传军",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "索传军等和温有奎等从粒度属性出发描述科技文献知识单元",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "温有奎",
+          "normalized_name": "温有奎",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "索传军等和温有奎等从粒度属性出发描述科技文献知识单元",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "徐荣生和王子舟等则从内容属性出发描述科技文献知识单元,认为科技文献知识单元是内容专业的、可以表达特定学科文献中最基本思维对象的形象、属性和关系的意象或概念[9],是客观知识系统中有实际意义的知识内容描述单位[10]。 另一部分研究者则从结构属性和功能属性的\"宏观\"层次出发对科技文献知识单元进行定义。 比如,文庭孝从结构属性出发描述科技文献知识单元,认为知识单元的定义需要落实在相关知识的结构构成上，这些知识内容需要按照一定的结构有序地联系在一起,形成序列化或结构化的知识单元[1]。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "徐荣生",
+          "normalized_name": "徐荣生",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "徐荣生和王子舟等则从内容属性出发描述科技文献知识单元",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "王子舟",
+          "normalized_name": "王子舟",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "徐荣生和王子舟等则从内容属性出发描述科技文献知识单元",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "科技文献知识单元",
+          "normalized_name": "科技文献知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "徐荣生和王子舟等则从内容属性出发描述科技文献知识单元",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "文庭孝",
+          "normalized_name": "文庭孝",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "文庭孝从结构属性出发描述科技文献知识单元",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "而对于\"宏观\"视角下的科技文献知识单元，研究者更关注表达科技文献知识的句段单元。 笔者认为,这两种视角的科技文献知识单元都符合人类表达知识的方式和规律,有各自的应用场景和适用范围。 为此,基于这两种认识视角,将科技文献知识单元划分为词粒度知识单元和句粒度知识单元。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "科技文献知识单元",
+          "normalized_name": "科技文献知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "宏观视角下的科技文献知识单元",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "词粒度知识单元",
+          "normalized_name": "词粒度知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将科技文献知识单元划分为词粒度知识单元和句粒度知识单元",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "句粒度知识单元",
+          "normalized_name": "句粒度知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将科技文献知识单元划分为词粒度知识单元和句粒度知识单元",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "词粒度知识单元指科技文献中以词或短语为载体、相对独立完整的知识模块。 词粒度知识单元又被称为\"知识实体”，具有细粒度、专业性强的特点。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "词粒度知识单元",
+          "normalized_name": "词粒度知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "词粒度知识单元指科技文献中以词或短语为载体、相对独立完整的知识模块",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "知识实体",
+          "normalized_name": "知识实体",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "词粒度知识单元又被称为\"知识实体\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "词粒度知识单元常以科技文献中反映术语、概念、主题等的词汇或短语的形式出现,描述科技文献在概念、方法、数值和事实等方面的细粒度知识内容。 比如,关景文等在对导弹领域的知识内容进行识别时，将相关文献中表示导弹实体的名词和嵌套修饰短语作为知识单元[14];",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "关景文",
+          "normalized_name": "关景文",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "关景文等在对导弹领域的知识内容进行识别时",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "导弹领域",
+          "normalized_name": "导弹领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "关景文等在对导弹领域的知识内容进行识别时",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "知识单元",
+          "normalized_name": "知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将相关文献中表示导弹实体的名词和嵌套修饰短语作为知识单元[14]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "词粒度知识单元具有明显的专业性。 这些知识单元涉及来自不同领域的专业词汇或短语,如术语、概念短语或技术名词等。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "词粒度知识单元",
+          "normalized_name": "词粒度知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "词粒度知识单元具有明显的专业性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "专业词汇",
+          "normalized_name": "专业词汇",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这些知识单元涉及来自不同领域的专业词汇或短语",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为typology"
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "术语",
+          "normalized_name": "术语",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如术语、概念短语或技术名词等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "概念短语",
+          "normalized_name": "概念短语",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如术语、概念短语或技术名词等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e5",
+          "mention": "技术名词",
+          "normalized_name": "技术名词",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如术语、概念短语或技术名词等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "句粒度知识单元是指科技文献中表达特定语义的语句，又被称为科技文献中的关键句段，具有明显的序列性和功能性特点。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "句粒度知识单元",
+          "normalized_name": "句粒度知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "句粒度知识单元是指科技文献中表达特定语义的语句",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "科技文献",
+          "normalized_name": "科技文献",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "句粒度知识单元是指科技文献中表达特定语义的语句",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为Artifact下的discursive类型，但此处作为抽象概念被定义"
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "从知识单元的外部来看，科技文献中的知识内容是由句粒度知识单元按照一定的逻辑层次组成的序列。 这两种解读反映了句粒度知识单元的序列性具有局部序列特征和全局序列特征。对于局部序列特征,李楠等将学术期刊摘要文本建模为词序列,并将词序列的局部特征作为句粒度知识单元的关键特征[19]; 对于全局序列特征，马晓慧等研究句子、段落、章节三种层次下的句粒度知识单元的提取，并在模型中对比了三种层次构成序列的全局特征对于知识单元提取的影响[20]。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "句粒度知识单元",
+          "normalized_name": "句粒度知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "科技文献中的知识内容是由句粒度知识单元按照一定的逻辑层次组成的序列",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "局部序列特征",
+          "normalized_name": "局部序列特征",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "句粒度知识单元的序列性具有局部序列特征和全局序列特征",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "全局序列特征",
+          "normalized_name": "全局序列特征",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "句粒度知识单元的序列性具有局部序列特征和全局序列特征",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "李楠",
+          "normalized_name": "李楠",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "李楠等将学术期刊摘要文本建模为词序列",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e5",
+          "mention": "学术期刊摘要文本",
+          "normalized_name": "学术期刊摘要文本",
+          "candidate_l3": "corpus",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "李楠等将学术期刊摘要文本建模为词序列",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指代一类文本而非具体语料库"
+        },
+        {
+          "entity_id": "15_e6",
+          "mention": "词序列",
+          "normalized_name": "词序列",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "李楠等将学术期刊摘要文本建模为词序列",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e7",
+          "mention": "马晓慧",
+          "normalized_name": "马晓慧",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "马晓慧等研究句子、段落、章节三种层次下的句粒度知识单元的提取",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "句粒度知识单元常用来表示反映科技文献中与目的、方法、结论、贡献等结构功能内容相关的关键信息，这些信息在科技文献中承担一定的语义和语法角色。根据科技文献内容所属领域的不同,研究者对句粒度知识单元的功能结构做出不同的归纳总结。 比如，孟旭阳等将图书情报领域的中文学术文献中的句粒度知识单元划分为标题、目的、方法和结论4种类型[21];",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "句粒度知识单元",
+          "normalized_name": "句粒度知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "句粒度知识单元常用来表示反映科技文献中与目的、方法、结论、贡献等结构功能内容相关的关键信息",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "孟旭阳",
+          "normalized_name": "孟旭阳",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "孟旭阳等将图书情报领域的中文学术文献中的句粒度知识单元划分为标题、目的、方法和结论4种类型[21]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "图书情报领域",
+          "normalized_name": "图书情报领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "孟旭阳等将图书情报领域的中文学术文献中的句粒度知识单元划分为标题、目的、方法和结论4种类型[21]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e4",
+          "mention": "标题",
+          "normalized_name": "标题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "划分为标题、目的、方法和结论4种类型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为句粒度知识单元的类型，具有具体学术命名"
+        },
+        {
+          "entity_id": "16_e5",
+          "mention": "目的",
+          "normalized_name": "目的",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "划分为标题、目的、方法和结论4种类型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为句粒度知识单元的类型，具有具体学术命名"
+        },
+        {
+          "entity_id": "16_e6",
+          "mention": "方法",
+          "normalized_name": "方法",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "划分为标题、目的、方法和结论4种类型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为句粒度知识单元的类型，具有具体学术命名"
+        },
+        {
+          "entity_id": "16_e7",
+          "mention": "结论",
+          "normalized_name": "结论",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "划分为标题、目的、方法和结论4种类型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为句粒度知识单元的类型，具有具体学术命名"
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "上述对词粒度知识单元和句粒度知识单元及其特点的认识，对科技文献知识单元抽取具有深刻的影响。近年来，深度学习逐渐成为信息抽取领域中一种重要的技术方法,在科技文献知识单元抽取中也有广泛的应用，目前使用深度学习技术抽取科技文献知识单元时所采用的方法或模型,在本质上都是基于词粒度知识单元或句粒度知识单元,由于深度学习取代了以往特征设计和特征提取的手工过程,因此通过构造不同类型的神经网络,深度学习模型可以自动地进行特征工程，从原始数据中学习到有意义的特征。这个过程中学习和捕获词粒度知识单元和句粒度知识单元所具有的不同特点，是使用深度学习方法抽取科技文献知识单元的关键问题。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "词粒度知识单元",
+          "normalized_name": "词粒度知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "词粒度知识单元和句粒度知识单元及其特点的认识",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "句粒度知识单元",
+          "normalized_name": "句粒度知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "词粒度知识单元和句粒度知识单元及其特点的认识",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "科技文献知识单元",
+          "normalized_name": "科技文献知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对科技文献知识单元抽取具有深刻的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "深度学习",
+          "normalized_name": "深度学习",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "深度学习逐渐成为信息抽取领域中一种重要的技术方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e5",
+          "mention": "信息抽取",
+          "normalized_name": "信息抽取",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息抽取领域中一种重要的技术方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e6",
+          "mention": "深度学习技术",
+          "normalized_name": "深度学习技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用深度学习技术抽取科技文献知识单元时所采用的方法或模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e7",
+          "mention": "神经网络",
+          "normalized_name": "神经网络",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过构造不同类型的神经网络",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e8",
+          "mention": "深度学习模型",
+          "normalized_name": "深度学习模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "深度学习模型可以自动地进行特征工程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e9",
+          "mention": "特征工程",
+          "normalized_name": "特征工程",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "深度学习模型可以自动地进行特征工程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e10",
+          "mention": "深度学习方法",
+          "normalized_name": "深度学习方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用深度学习方法抽取科技文献知识单元的关键问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "基于科技文献词粒度知识单元细粒度和专业性的特点，研究者在使用深度学习技术时会从这两个特点出发来表示和增强科技文献的内部字词,从而抽取词粒度的知识单元。具体而言,这两个特点主要体现在科技文献的内部文本和外部知识两个方面，从这两个方面出发构造的深度学习模型可以被概括为“基于内部文本词嵌入表示的抽取方法\"和“基于外部知识增强的抽取方法”。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "科技文献",
+          "normalized_name": "科技文献",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于科技文献词粒度知识单元细粒度和专业性的特点",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为领域概念，但未特指具体文献集合"
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "深度学习技术",
+          "normalized_name": "深度学习技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究者在使用深度学习技术时会从这两个特点出发",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "基于内部文本词嵌入表示的抽取方法",
+          "normalized_name": "基于内部文本词嵌入表示的抽取方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从这两个方面出发构造的深度学习模型可以被概括为“基于内部文本词嵌入表示的抽取方法”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e4",
+          "mention": "基于外部知识增强的抽取方法",
+          "normalized_name": "基于外部知识增强的抽取方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从这两个方面出发构造的深度学习模型可以被概括为“基于内部文本词嵌入表示的抽取方法”和“基于外部知识增强的抽取方法”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "嵌入技术可以将复杂的高维对象投射到低维向量空间中，因此可以用较低维的向量表示高维科技文献中具有复杂语义特征的词汇，这种低维表示（即“词嵌入\")可以输入深度学习模型中,并应用于下游的抽取任务。 这种从词汇出发进行特征表示的方法能有效地在语义层面上捕获细粒度的知识单元,使得深度学习模型能够处理科技文献中的词汇文本,并直接抽取相应的词粒度知识单元。 根据获取的词嵌入内容是否会随上下文内容动态变化，相关的词嵌入技术可以分为静态词嵌入和动态词嵌入两类。",
+      "entities": []
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "静态词嵌入又被称为上下文无关的词嵌入（Non-contextualWordEmbedding）,不会因为词语所处的上下文不同而变化[24]。 这里的\"静态\"意味着对于出现在不同上下文的同一个词，只会学习该词的单一表示，即在词嵌入训练完成后会得到一个只能代表该词的向量，所有包含这个词的文本都会使用该向量来表示这个词。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "静态词嵌入",
+          "normalized_name": "静态词嵌入",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "静态词嵌入又被称为上下文无关的词嵌入",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "上下文无关的词嵌入",
+          "normalized_name": "上下文无关的词嵌入",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "静态词嵌入又被称为上下文无关的词嵌入（Non-contextualWordEmbedding）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "Non-contextualWordEmbedding",
+          "normalized_name": "Non-contextualWordEmbedding",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "上下文无关的词嵌入（Non-contextualWordEmbedding）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "如图1所示,例句A\"我买了一个苹果手机\"和例句B\"你吃了一个苹果”,例句A和例句B中的\"苹果\"在向量空间中对应同一个向量。 在使用静态词嵌入抽取科技文献词粒度知识单元的研究中，基于神经网络语言模型(NeuralNetworkLanguage Models，NNLM)的静态词嵌入是最常见的一类词嵌入模型,通过训练神经网络,这类模型可以将文本数据映射为静态词嵌入。 具体到训练过程,给定一个目标词,这类模型能根据上下文预测出目标词训练神经网络,并将目标词嵌入一个低维向量空间中,通过这种方式,神经网络可以学习到词之间的语义关系，最终得到一个由向量组成的词汇表,其中每个词都被映射为一个向量,这些向量可以用于表示文本中的词并被深度学习模型用于知识单元抽取任务[25]。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "静态词嵌入",
+          "normalized_name": "静态词嵌入",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在使用静态词嵌入抽取科技文献词粒度知识单元的研究中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "神经网络语言模型(NeuralNetworkLanguage Models，NNLM)",
+          "normalized_name": "神经网络语言模型(NeuralNetworkLanguage Models，NNLM)",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于神经网络语言模型(NeuralNetworkLanguage Models，NNLM)的静态词嵌入是最常见的一类词嵌入模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "NNLM",
+          "normalized_name": "NNLM",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于神经网络语言模型(NeuralNetworkLanguage Models，NNLM)的静态词嵌入是最常见的一类词嵌入模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "深度学习模型",
+          "normalized_name": "深度学习模型",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "这些向量可以用于表示文本中的词并被深度学习模型用于知识单元抽取任务[25]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为method"
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "具体到训练过程,给定一个目标词,这类模型能根据上下文预测出目标词训练神经网络,并将目标词嵌入一个低维向量空间中,通过这种方式,神经网络可以学习到词之间的语义关系，最终得到一个由向量组成的词汇表,其中每个词都被映射为一个向量,这些向量可以用于表示文本中的词并被深度学习模型用于知识单元抽取任务[25]。 在基于神经网络语言模型的静态词嵌入中，Word2Vec和FastText是较为典型的两种静态词嵌入模型。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "Word2Vec",
+          "normalized_name": "Word2Vec",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Word2Vec和FastText是较为典型的两种静态词嵌入模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "FastText",
+          "normalized_name": "FastText",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Word2Vec和FastText是较为典型的两种静态词嵌入模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e3",
+          "mention": "神经网络语言模型",
+          "normalized_name": "神经网络语言模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于神经网络语言模型的静态词嵌入",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e4",
+          "mention": "静态词嵌入",
+          "normalized_name": "静态词嵌入",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于神经网络语言模型的静态词嵌入",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e5",
+          "mention": "知识单元抽取",
+          "normalized_name": "知识单元抽取",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用于表示文本中的词并被深度学习模型用于知识单元抽取任务",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为任务名称，非标准技术术语"
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "Word2Vec是较早得到应用的静态词嵌入模型，通过训练基于连续词袋(Continuous Bagof Words,CBOW)结构的神经网络或基于跳字(Skip-Gram)结构的神经网络，Word2Vec可以将词语表示为向量[26],并利用向量之间的相似度来识别科技文献中的词粒度知识单元。 比如,Pyysalo等通过Word2Vec词嵌入来表示医学领域论文中的词汇，并使用聚类算法来获取解剖学相关的细粒度知识单元,实验结果表明,Word2Vec词嵌入能有效提升专业词汇抽取的准确度[27]。 随着算法的不断优化,研究者在使用Word2Vec这种静态词嵌入时会对科技文献中尽可能多的词进行表征，并据此预测词嵌入所对应文本的标签(是否为知识单元,为何种知识单元)。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "Word2Vec",
+          "normalized_name": "Word2Vec",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Word2Vec是较早得到应用的静态词嵌入模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "连续词袋(Continuous Bag of Words,CBOW)结构",
+          "normalized_name": "连续词袋(Continuous Bag of Words,CBOW)结构",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于连续词袋(Continuous Bag of Words,CBOW)结构的神经网络",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "跳字(Skip-Gram)结构",
+          "normalized_name": "跳字(Skip-Gram)结构",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于跳字(Skip-Gram)结构的神经网络",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e4",
+          "mention": "Pyysalo等",
+          "normalized_name": "Pyysalo",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Pyysalo等通过Word2Vec词嵌入来表示医学领域论文中的词汇",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "原文为'Pyysalo等'，指代Pyysalo及其合作者，但核心实体为Pyysalo"
+        },
+        {
+          "entity_id": "23_e5",
+          "mention": "聚类算法",
+          "normalized_name": "聚类算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "使用聚类算法来获取解剖学相关的细粒度知识单元",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "随着算法的不断优化,研究者在使用Word2Vec这种静态词嵌入时会对科技文献中尽可能多的词进行表征，并据此预测词嵌入所对应文本的标签(是否为知识单元,为何种知识单元)。 例如,Kumar等在使用Word2Vec对科技文献词汇进行表示时，可以对相关文献中的全文词汇进行表征，从而学习到更符合语义特征的词嵌入，通过这种方式得到的Word2Vec词向量能更准确地识别文献中的专业词汇[28]。 此外,为获得高质量的词嵌入,还有研究者通过总结相应领域专业词汇的特点来强化词嵌入的训练过程。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "Word2Vec",
+          "normalized_name": "Word2Vec",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "研究者在使用Word2Vec这种静态词嵌入时",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "Kumar",
+          "normalized_name": "Kumar",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Kumar等在使用Word2Vec对科技文献词汇进行表示时",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "此外,为获得高质量的词嵌入,还有研究者通过总结相应领域专业词汇的特点来强化词嵌入的训练过程。 比如,马建霞等在抽取生态治理领域文献中的专业名词时,对生态治理领域的时间、地名和技术名称等实体特点进行了总结,并使用这些特征来获得质量更高的词嵌入,相关实验结果表明,加强了这些特点的Word2Vec词嵌入可以更准确抽取词粒度知识单元[29]。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "马建霞",
+          "normalized_name": "马建霞",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "马建霞等在抽取生态治理领域文献中的专业名词时",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "Word2Vec",
+          "normalized_name": "Word2Vec",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "加强了这些特点的Word2Vec词嵌入可以更准确抽取词粒度知识单元",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "它不仅能使用词语本身，还能使用词语的字符子串来训练并生成词向量。 由于fastText模型结构简单且能进行字符级别的嵌入，其在某些涉及特殊字符的知识单元抽取任务中往往展示出优于Word2Vec的效果。比如,Zhao等使用fastText词嵌入表示材料领域文献中的词语和专业词汇,在抽取分子、聚合物、属性和表征方式等词汇的效果上,使用fastText词嵌入优于使用Word2Vec词嵌人[31]; Hong等进一步验证了fastText模型在不同学科领域知识单元抽取上的效果，使用fastText模型同时对材料领域和社会学领域的科技文献的词语进行嵌入表示,实验结果表明，使用fastText向量的模型在不同领域的专业命名实体识别任务上均优于Word2Vec模型[32]。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "fastText",
+          "normalized_name": "fastText",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "由于fastText模型结构简单且能进行字符级别的嵌入",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e2",
+          "mention": "Word2Vec",
+          "normalized_name": "Word2Vec",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "使用fastText词嵌入优于使用Word2Vec词嵌人",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e3",
+          "mention": "Zhao等",
+          "normalized_name": "Zhao等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Zhao等使用fastText词嵌入表示材料领域文献中的词语和专业词汇",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "具体人名未给出全名，仅以'Zhao等'指代"
+        },
+        {
+          "entity_id": "26_e4",
+          "mention": "Hong等",
+          "normalized_name": "Hong等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Hong等进一步验证了fastText模型在不同学科领域知识单元抽取上的效果",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "具体人名未给出全名，仅以'Hong等'指代"
+        },
+        {
+          "entity_id": "26_e5",
+          "mention": "分子",
+          "normalized_name": "分子",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在抽取分子、聚合物、属性和表征方式等词汇的效果上",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为学术术语，在材料领域有具体指称"
+        },
+        {
+          "entity_id": "26_e6",
+          "mention": "聚合物",
+          "normalized_name": "聚合物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在抽取分子、聚合物、属性和表征方式等词汇的效果上",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e7",
+          "mention": "属性",
+          "normalized_name": "属性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在抽取分子、聚合物、属性和表征方式等词汇的效果上",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为通用术语，在材料领域有特定含义"
+        },
+        {
+          "entity_id": "26_e8",
+          "mention": "表征方式",
+          "normalized_name": "表征方式",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在抽取分子、聚合物、属性和表征方式等词汇的效果上",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e9",
+          "mention": "材料领域",
+          "normalized_name": "材料领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用fastText词嵌入表示材料领域文献中的词语和专业词汇",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e10",
+          "mention": "社会学领域",
+          "normalized_name": "社会学领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "同时对材料领域和社会学领域的科技文献的词语进行嵌入表示",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e11",
+          "mention": "知识单元抽取",
+          "normalized_name": "知识单元抽取",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "fastText模型在不同学科领域知识单元抽取上的效果",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e12",
+          "mention": "专业命名实体识别",
+          "normalized_name": "专业命名实体识别",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在不同领域的专业命名实体识别任务上均优于Word2Vec模型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "常使用基于深度语言模型的动态词嵌入抽取知识单元,通过构造学习能力更强的深度神经网络，这些模型可以灵活地表示具有不同上下文语义的词汇，从而解决一词多义的问题。 由于能对各种复杂文本的语义特征进行嵌入表示，基于深度语言模型的动态词嵌入在不同领域的科技文献词粒度知识单元抽取中往往都能取得较好的效果[34],其中,ELMo 和BERT是较为典型的两种动态词嵌入模型。",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "深度语言模型",
+          "normalized_name": "深度语言模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于深度语言模型的动态词嵌入抽取知识单元",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "动态词嵌入",
+          "normalized_name": "动态词嵌入",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于深度语言模型的动态词嵌入抽取知识单元",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e3",
+          "mention": "深度神经网络",
+          "normalized_name": "深度神经网络",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过构造学习能力更强的深度神经网络",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e4",
+          "mention": "ELMo",
+          "normalized_name": "ELMo",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "ELMo 和BERT是较为典型的两种动态词嵌入模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e5",
+          "mention": "BERT",
+          "normalized_name": "BERT",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "ELMo 和BERT是较为典型的两种动态词嵌入模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "研究者一般会从词级别的文本出发,根据科技文献中的词与上下文的联系生成相应的词嵌入，并与下游神经网络联合训练，从而实现知识单元的抽取和词嵌入的动态调整。 Sheikhshab等是较早使用ELMo的研究者[36],他们首先在 $\\mathrm { B C } 2 \\mathrm { G M } ^ { [ 3 7 ] }$ 和JNLPBA[38]两个生物领域文献数据集上生成词向量，然后使用下游神经网络抽取专业词汇,实验结果表明,使用ELMo词嵌入的模型能捕获专业词汇的上下文语义特征,并在抽取基因、蛋白质、细胞系等专业词汇的任务上达到较高的准确度。 除了在词级别的文本上训练，部分研究者还使用ELMo学习字符级别的文本嵌入。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "ELMo",
+          "normalized_name": "ELMo",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Sheikhshab等是较早使用ELMo的研究者",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "BC2GM",
+          "normalized_name": "BC2GM",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在BC2GM[37]和JNLPBA[38]两个生物领域文献数据集上生成词向量",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e3",
+          "mention": "JNLPBA",
+          "normalized_name": "JNLPBA",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在BC2GM[37]和JNLPBA[38]两个生物领域文献数据集上生成词向量",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e4",
+          "mention": "Sheikhshab",
+          "normalized_name": "Sheikhshab",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Sheikhshab等是较早使用ELMo的研究者",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "29",
+      "sentence": "ELMo也会与其他词嵌入联合使用以提升知识单元抽取效果。 比如,Zhao等将ELMo训练的词级别向量与卷积神经网络学习到的字符级别向量联合使用,以缓解一词多义问题,实验结果表明,联合使用这两种嵌入使得模型能获得较为准确的抽取效果[40]。",
+      "entities": [
+        {
+          "entity_id": "29_e1",
+          "mention": "ELMo",
+          "normalized_name": "ELMo",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "ELMo也会与其他词嵌入联合使用以提升知识单元抽取效果",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e2",
+          "mention": "Zhao等",
+          "normalized_name": "Zhao等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Zhao等将ELMo训练的词级别向量与卷积神经网络学习到的字符级别向量联合使用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "姓氏+等，具体个人名未给出全名"
+        },
+        {
+          "entity_id": "29_e3",
+          "mention": "卷积神经网络",
+          "normalized_name": "卷积神经网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "卷积神经网络学习到的字符级别向量",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e4",
+          "mention": "一词多义问题",
+          "normalized_name": "一词多义问题",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以缓解一词多义问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "BERT[41]是相关研究中使用最为广泛的一种动态词嵌入模型。 与ELMo类似,BERT也是通过构建上下文与目标字词的关系获取动态词嵌入，但是BERT主要基于Transformer语言模型[42]的多头注意力机制(Multi-Head Attention Mechanism)来捕获目标词的上下文特征，在训练中，BERT使用掩码语言模型(Masked Language Model)和下一句预测(NextSentencePrediction)两种方法分别捕捉字词和句段级别的表示。",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "BERT",
+          "normalized_name": "BERT",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "BERT[41]是相关研究中使用最为广泛的一种动态词嵌入模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "ELMo",
+          "normalized_name": "ELMo",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与ELMo类似,BERT也是通过构建上下文与目标字词的关系获取动态词嵌入",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e3",
+          "mention": "Transformer语言模型",
+          "normalized_name": "Transformer语言模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "BERT主要基于Transformer语言模型[42]的多头注意力机制",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e4",
+          "mention": "多头注意力机制",
+          "normalized_name": "多头注意力机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "多头注意力机制(Multi-Head Attention Mechanism)来捕获目标词的上下文特征",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e5",
+          "mention": "掩码语言模型",
+          "normalized_name": "掩码语言模型",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "BERT使用掩码语言模型(Masked Language Model)和下一句预测(NextSentencePrediction)两种方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e6",
+          "mention": "下一句预测",
+          "normalized_name": "下一句预测",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "BERT使用掩码语言模型(Masked Language Model)和下一句预测(NextSentencePrediction)两种方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "31",
+      "sentence": "与ELMo类似,BERT也是通过构建上下文与目标字词的关系获取动态词嵌入，但是BERT主要基于Transformer语言模型[42]的多头注意力机制(Multi-Head Attention Mechanism)来捕获目标词的上下文特征，在训练中，BERT使用掩码语言模型(Masked Language Model)和下一句预测(NextSentencePrediction)两种方法分别捕捉字词和句段级别的表示。 BERT在被提出后不久就被应用于词粒度知识单元的抽取中，且能较为准确地抽取词粒度知识单元。 在实际使用中，BERT会以无监督训练的方式获得不同粒度的文本嵌入表示。",
+      "entities": [
+        {
+          "entity_id": "31_e1",
+          "mention": "ELMo",
+          "normalized_name": "ELMo",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与ELMo类似,BERT也是通过构建上下文与目标字词的关系获取动态词嵌入",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e2",
+          "mention": "BERT",
+          "normalized_name": "BERT",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与ELMo类似,BERT也是通过构建上下文与目标字词的关系获取动态词嵌入",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e3",
+          "mention": "Transformer语言模型[42]",
+          "normalized_name": "Transformer语言模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "BERT主要基于Transformer语言模型[42]的多头注意力机制",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e4",
+          "mention": "多头注意力机制(Multi-Head Attention Mechanism)",
+          "normalized_name": "多头注意力机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "BERT主要基于Transformer语言模型[42]的多头注意力机制(Multi-Head Attention Mechanism)来捕获目标词的上下文特征",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e5",
+          "mention": "掩码语言模型(Masked Language Model)",
+          "normalized_name": "掩码语言模型",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "BERT使用掩码语言模型(Masked Language Model)和下一句预测(NextSentencePrediction)两种方法分别捕捉字词和句段级别的表示",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e6",
+          "mention": "下一句预测(NextSentencePrediction)",
+          "normalized_name": "下一句预测",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "BERT使用掩码语言模型(Masked Language Model)和下一句预测(NextSentencePrediction)两种方法分别捕捉字词和句段级别的表示",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "32",
+      "sentence": "BERT一般会与下游深度神经网络联合训练来抽取知识单元。 比如,Cho等在生物医学领域使用BERT对文献中词级别和字符级别的文本进行表示，并在下游LSTM神经网络上测试了不同级别嵌入抽取命名实体的效果,实验结果表明混合字和词级别的嵌入在NCBI、GM、CDR三个语料库上的抽取表现最好[43]。 一些学者还对BERT中的训练方法进行改进以获取更符合任务要求的动态词嵌入。",
+      "entities": [
+        {
+          "entity_id": "32_e1",
+          "mention": "BERT",
+          "normalized_name": "BERT",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "BERT一般会与下游深度神经网络联合训练来抽取知识单元",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e2",
+          "mention": "Cho",
+          "normalized_name": "Cho",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Cho等在生物医学领域使用BERT对文献中词级别和字符级别的文本进行表示",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e3",
+          "mention": "LSTM神经网络",
+          "normalized_name": "LSTM神经网络",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在下游LSTM神经网络上测试了不同级别嵌入抽取命名实体的效果",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e4",
+          "mention": "NCBI",
+          "normalized_name": "NCBI",
+          "candidate_l3": "corpus",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "混合字和词级别的嵌入在NCBI、GM、CDR三个语料库上的抽取表现最好",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e5",
+          "mention": "GM",
+          "normalized_name": "GM",
+          "candidate_l3": "corpus",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "混合字和词级别的嵌入在NCBI、GM、CDR三个语料库上的抽取表现最好",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e6",
+          "mention": "CDR",
+          "normalized_name": "CDR",
+          "candidate_l3": "corpus",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "混合字和词级别的嵌入在NCBI、GM、CDR三个语料库上的抽取表现最好",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "33",
+      "sentence": "一些学者还对BERT中的训练方法进行改进以获取更符合任务要求的动态词嵌入。 比如,刘荫等在BERT模型的基础上使用全词遮盖(Whole Word Masking,WWM)的方法获取电力领域专业词汇的上下文表示,并抽取电力设备、设备部件、故障现象等专业词汇，实验结果表明使用WWM的BERT模型获取的词向量能有效提升同类专业词汇的抽取准确性[16]。 值得注意的是,还有一些研究者同时使用其他的动态词嵌入模型生成更符合抽取任务需要的词向量。",
+      "entities": [
+        {
+          "entity_id": "33_e1",
+          "mention": "BERT",
+          "normalized_name": "BERT",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一些学者还对BERT中的训练方法进行改进",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e2",
+          "mention": "刘荫",
+          "normalized_name": "刘荫",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "刘荫等在BERT模型的基础上使用全词遮盖",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e3",
+          "mention": "全词遮盖（Whole Word Masking, WWM）",
+          "normalized_name": "全词遮盖（Whole Word Masking, WWM）",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用全词遮盖（Whole Word Masking, WWM）的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e4",
+          "mention": "WWM",
+          "normalized_name": "WWM",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用全词遮盖（Whole Word Masking, WWM）的方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "缩写，与全称对应"
+        },
+        {
+          "entity_id": "33_e5",
+          "mention": "BERT模型",
+          "normalized_name": "BERT模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "刘荫等在BERT模型的基础上使用全词遮盖",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e6",
+          "mention": "动态词嵌入模型",
+          "normalized_name": "动态词嵌入模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "同时使用其他的动态词嵌入模型生成更符合抽取任务需要的词向量",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "具体模型名称未给出，但作为类别模型可识别"
+        }
+      ]
+    },
+    {
+      "sentence_id": "34",
+      "sentence": "比如,Deng等使用中文动态词嵌入模型ERNIE进一步编码BERT处理过的词向量，从而更准确地抽取地理领域科技文献中的中文命名实体[44]。 类似的基于Transformer构造的动态词嵌人模型还包括XLNet[45]、ALBERT[46]、RoBERTa[47],这些模型也被应用于抽取科技文献词粒度知识单元的研究中，但是在使用的广泛程度上比BERT低。",
+      "entities": [
+        {
+          "entity_id": "34_e1",
+          "mention": "Deng等",
+          "normalized_name": "Deng等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Deng等使用中文动态词嵌入模型ERNIE进一步编码BERT处理过的词向量",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "姓氏+等，指代研究团队，具体个人名未给出"
+        },
+        {
+          "entity_id": "34_e2",
+          "mention": "中文动态词嵌入模型ERNIE",
+          "normalized_name": "ERNIE",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Deng等使用中文动态词嵌入模型ERNIE进一步编码BERT处理过的词向量",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e3",
+          "mention": "BERT",
+          "normalized_name": "BERT",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Deng等使用中文动态词嵌入模型ERNIE进一步编码BERT处理过的词向量",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e4",
+          "mention": "XLNet",
+          "normalized_name": "XLNet",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "类似的基于Transformer构造的动态词嵌人模型还包括XLNet[45]、ALBERT[46]、RoBERTa[47]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e5",
+          "mention": "ALBERT",
+          "normalized_name": "ALBERT",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "类似的基于Transformer构造的动态词嵌人模型还包括XLNet[45]、ALBERT[46]、RoBERTa[47]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e6",
+          "mention": "RoBERTa",
+          "normalized_name": "RoBERTa",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "类似的基于Transformer构造的动态词嵌人模型还包括XLNet[45]、ALBERT[46]、RoBERTa[47]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e7",
+          "mention": "Transformer",
+          "normalized_name": "Transformer",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "类似的基于Transformer构造的动态词嵌人模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "35",
+      "sentence": "为从缺乏标注数据的一些特定领域科技文献中抽取词粒度知识单元，当前的研究主要利用远程监督或领域迁移两种学习范式引入外部专业知识,但是远程监督生成的训练数据往往蕴含很多错误标签，领域迁移则可以将外部相似领域的知识特征有效迁移到目标任务模型中，在不需要额外标注好的数据的情况下提升知识单元抽取效果[62]。因此，在面对缺乏标注数据的特定学科领域时,领域迁移不仅可以减少标注数据的需求，还能提高模型的泛化能力，使其在相应领域拥有更强的知识特征提取能力[63]。",
+      "entities": [
+        {
+          "entity_id": "35_e1",
+          "mention": "远程监督",
+          "normalized_name": "远程监督",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当前的研究主要利用远程监督或领域迁移两种学习范式引入外部专业知识",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e2",
+          "mention": "领域迁移",
+          "normalized_name": "领域迁移",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当前的研究主要利用远程监督或领域迁移两种学习范式引入外部专业知识",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e3",
+          "mention": "知识单元抽取",
+          "normalized_name": "知识单元抽取",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在不需要额外标注好的数据的情况下提升知识单元抽取效果",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "36",
+      "sentence": "针对词粒度知识单元专业性强的特点,基于外部知识增强的抽取方法从科技文献的外部知识源出发，通过引入外部语料或模型增强特定学科领域的科技文献知识单元抽取效果。在大部分情况下，专业知识词汇或文本往往在特定的学科领域中使用,不像通用词汇或文本那样有比较多的标注数据。在使用深度学习模型抽取这些科技文献中的知识单元时,模型难以在有限的训练数据上捕获知识单元的特征,因而难以得到理想的抽取结果。为解决这个问题,研究者引入外部知识扩充标注数据或增强模型捕获的专业知识特征,从语料和模型两个角度出发优化深度学习模型抽取科技文献知识单元的效果。 具体而言，这两种角度下的外部知识增强手段包括远程监督和领域迁移。",
+      "entities": [
+        {
+          "entity_id": "36_e1",
+          "mention": "外部知识增强的抽取方法",
+          "normalized_name": "外部知识增强的抽取方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于外部知识增强的抽取方法从科技文献的外部知识源出发",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e2",
+          "mention": "深度学习模型",
+          "normalized_name": "深度学习模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在使用深度学习模型抽取这些科技文献中的知识单元时",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e3",
+          "mention": "远程监督",
+          "normalized_name": "远程监督",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这两种角度下的外部知识增强手段包括远程监督和领域迁移",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e4",
+          "mention": "领域迁移",
+          "normalized_name": "领域迁移",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这两种角度下的外部知识增强手段包括远程监督和领域迁移",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "37",
+      "sentence": "在使用远程监督提取科技文献知识单元的研究中，当特定领域科技文献的训练标注数据不足时,可以使用远程监督增强标注数据,具体到数据增强的过程,远程监督可以利用外部数据集对标注数据进行变换或扩充，从而得到更多更丰富的训练数据，进而提高知识单元抽取模型的训练效果。 但是引入的外部数据与科技文献的领域并不一定完全匹配,在扩充数据集时有可能生成不完整且有干扰的标注数据,进而影响知识单元的抽取效果。因此,研究者在使用远程监督时会设计不同的标注数据生成模式来尽可能降低这种干扰。",
+      "entities": [
+        {
+          "entity_id": "37_e1",
+          "mention": "远程监督",
+          "normalized_name": "远程监督",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在使用远程监督提取科技文献知识单元的研究中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e2",
+          "mention": "科技文献知识单元",
+          "normalized_name": "科技文献知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提取科技文献知识单元的研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e3",
+          "mention": "知识单元抽取模型",
+          "normalized_name": "知识单元抽取模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提高知识单元抽取模型的训练效果",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e4",
+          "mention": "标注数据生成模式",
+          "normalized_name": "标注数据生成模式",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "设计不同的标注数据生成模式来尽可能降低这种干扰",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "38",
+      "sentence": "在这个过程中研究者还需要设计相应的启发式规则算法降低外部数据的噪声，提升数据的匹配程度。 比如，Wang等提出基于本体引导(Ontology-Guided)的多类型消歧规则规范远程监督的数据生成，该规则首先使用TF-IDF解决标注数据不完整的问题，然后通过本体间的相似度降低生成标注数据的噪声,该方法显著改善了下游命名实体识别模型的训练效果,在化学领域的细粒度命名实体的抽取上达到最佳准确度[52]。在该研究的基础上,Wang等又设计了一种基于种子集生成标注数据的启发式规则，该规则通过大量未标记的语料库和一组词典更准确地生成标注语料,实验表明,使用该方法的模型能显著增强标注数据，从而比其他模型更准确地抽取化学物质、疾病症状和基因等知识单元[53]。 除了上述基于启发式规则的远程监督模式,其他远程监督模式还包括：Heist等结合知识图谱提出的基于描述性规则挖掘方法模式[54]（通过知识图谱中实体与实体的关系生成相应的数据增强规则）。",
+      "entities": [
+        {
+          "entity_id": "38_e1",
+          "mention": "Wang等",
+          "normalized_name": "Wang等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Wang等提出基于本体引导(Ontology-Guided)的多类型消歧规则规范远程监督的数据生成",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e2",
+          "mention": "本体引导(Ontology-Guided)的多类型消歧规则",
+          "normalized_name": "本体引导(Ontology-Guided)的多类型消歧规则",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于本体引导(Ontology-Guided)的多类型消歧规则规范远程监督的数据生成",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e3",
+          "mention": "TF-IDF",
+          "normalized_name": "TF-IDF",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "该规则首先使用TF-IDF解决标注数据不完整的问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e4",
+          "mention": "命名实体识别模型",
+          "normalized_name": "命名实体识别模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "该方法显著改善了下游命名实体识别模型的训练效果",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e5",
+          "mention": "化学领域",
+          "normalized_name": "化学领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在化学领域的细粒度命名实体的抽取上达到最佳准确度",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e6",
+          "mention": "Wang等",
+          "normalized_name": "Wang等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在该研究的基础上,Wang等又设计了一种基于种子集生成标注数据的启发式规则",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e7",
+          "mention": "基于种子集生成标注数据的启发式规则",
+          "normalized_name": "基于种子集生成标注数据的启发式规则",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Wang等又设计了一种基于种子集生成标注数据的启发式规则",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e8",
+          "mention": "语料库",
+          "normalized_name": "语料库",
+          "candidate_l3": "corpus",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "该规则通过大量未标记的语料库和一组词典更准确地生成标注语料",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未指定具体语料库名称，但作为具体资源类型抽取"
+        },
+        {
+          "entity_id": "38_e9",
+          "mention": "词典",
+          "normalized_name": "词典",
+          "candidate_l3": "reference_tool",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "该规则通过大量未标记的语料库和一组词典更准确地生成标注语料",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未指定具体词典名称，但作为具体资源类型抽取"
+        },
+        {
+          "entity_id": "38_e10",
+          "mention": "化学物质",
+          "normalized_name": "化学物质",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从而比其他模型更准确地抽取化学物质、疾病症状和基因等知识单元",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e11",
+          "mention": "疾病症状",
+          "normalized_name": "疾病症状",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从而比其他模型更准确地抽取化学物质、疾病症状和基因等知识单元",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e12",
+          "mention": "基因",
+          "normalized_name": "基因",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从而比其他模型更准确地抽取化学物质、疾病症状和基因等知识单元",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e13",
+          "mention": "知识单元",
+          "normalized_name": "知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从而比其他模型更准确地抽取化学物质、疾病症状和基因等知识单元",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e14",
+          "mention": "基于启发式规则的远程监督模式",
+          "normalized_name": "基于启发式规则的远程监督模式",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "除了上述基于启发式规则的远程监督模式,其他远程监督模式还包括",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e15",
+          "mention": "Heist等",
+          "normalized_name": "Heist等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Heist等结合知识图谱提出的基于描述性规则挖掘方法模式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e16",
+          "mention": "知识图谱",
+          "normalized_name": "知识图谱",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Heist等结合知识图谱提出的基于描述性规则挖掘方法模式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e17",
+          "mention": "基于描述性规则挖掘方法模式",
+          "normalized_name": "基于描述性规则挖掘方法模式",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Heist等结合知识图谱提出的基于描述性规则挖掘方法模式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e18",
+          "mention": "数据增强规则",
+          "normalized_name": "数据增强规则",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过知识图谱中实体与实体的关系生成相应的数据增强规则",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "39",
+      "sentence": "Shang 等提出的基于“Tie-or-Break\"规则的模式[55](依据词与词之间的关系生成相应的标注数据)等。 上述远程监督模式虽然能一定程度上从外部的数据集中生成新的标记数据增强模型在知识单元抽取任务上的训练过程，但是远程监督本身依赖于外部知识库的质量和规则算法的覆盖程度，如果知识库不完善或规则不适应领域，那么远程监督的效果也会受到很大的限制。",
+      "entities": [
+        {
+          "entity_id": "39_e1",
+          "mention": "Shang",
+          "normalized_name": "Shang",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Shang 等提出的基于“Tie-or-Break\"规则的模式[55]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e2",
+          "mention": "“Tie-or-Break\"规则",
+          "normalized_name": "Tie-or-Break规则",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于“Tie-or-Break\"规则的模式[55]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e3",
+          "mention": "远程监督模式",
+          "normalized_name": "远程监督模式",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "上述远程监督模式虽然能一定程度上从外部的数据集中生成新的标记数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e4",
+          "mention": "知识单元抽取任务",
+          "normalized_name": "知识单元抽取任务",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "增强模型在知识单元抽取任务上的训练过程",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e5",
+          "mention": "外部知识库",
+          "normalized_name": "外部知识库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "远程监督本身依赖于外部知识库的质量和规则算法的覆盖程度",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未指明具体知识库名称，但作为有名称的数据库类型实体，按图情领域放宽规则抽取"
+        },
+        {
+          "entity_id": "39_e6",
+          "mention": "规则算法",
+          "normalized_name": "规则算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "依赖于外部知识库的质量和规则算法的覆盖程度",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未指明具体算法名称，但作为有名称的算法类型实体，按图情领域放宽规则抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "40",
+      "sentence": "与离线语料不同，这种方法主要借助在线搜索引擎获取外部网络数据。 研究者首先根据任务需要生成查询词或短语,然后利用在线搜索引擎获取相关的网页或文档，借助这些外部网页或文档，模型在抽取任务上的鲁棒性与泛化性能往往能获得较大提升。 例如,Zhang等提出使用在线检索结果补充训练期间给定上下文数据,并在训练时利用神经网络检索器来获取与目标实体相关的句子，从而有效增强训练数据,提高模型在命名实体识别任务上的准确度[56];",
+      "entities": [
+        {
+          "entity_id": "40_e1",
+          "mention": "Zhang等",
+          "normalized_name": "Zhang等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Zhang等提出使用在线检索结果补充训练期间给定上下文数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e2",
+          "mention": "命名实体识别",
+          "normalized_name": "命名实体识别",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提高模型在命名实体识别任务上的准确度",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "41",
+      "sentence": "例如,Zhang等提出使用在线检索结果补充训练期间给定上下文数据,并在训练时利用神经网络检索器来获取与目标实体相关的句子，从而有效增强训练数据,提高模型在命名实体识别任务上的准确度[56]; Wang等提出基于外部检索结果增强训练数据的方法,通过在搜索引擎中检索与输入句子相关的文本改进命名实体识别模型的训练，从而提升模型在生物领域文献上的命名实体识别效果[57]。",
+      "entities": [
+        {
+          "entity_id": "41_e1",
+          "mention": "Zhang",
+          "normalized_name": "Zhang",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Zhang等提出使用在线检索结果补充训练期间给定上下文数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e2",
+          "mention": "神经网络检索器",
+          "normalized_name": "神经网络检索器",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用神经网络检索器来获取与目标实体相关的句子",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e3",
+          "mention": "命名实体识别",
+          "normalized_name": "命名实体识别",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提高模型在命名实体识别任务上的准确度",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e4",
+          "mention": "Wang",
+          "normalized_name": "Wang",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Wang等提出基于外部检索结果增强训练数据的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e5",
+          "mention": "搜索引擎",
+          "normalized_name": "搜索引擎",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过在搜索引擎中检索与输入句子相关的文本",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e6",
+          "mention": "命名实体识别模型",
+          "normalized_name": "命名实体识别模型",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "改进命名实体识别模型的训练",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e7",
+          "mention": "生物领域",
+          "normalized_name": "生物领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提升模型在生物领域文献上的命名实体识别效果",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "42",
+      "sentence": "领域迁移又被称为\"领域自适应”,基本思想是依靠以前学过的知识解决新问题,是一种通过将外部知识从一个领域向另一领域迁移来间接降低模型对标记数据需求的学习范式[58]。 基于领域迁移的知识特征增强流程如图4所示，领域迁移旨在从多个有标记数据的领域中获取重要知识,然后将知识应用于缺乏标记数据的目标任务，其中有标记的领域叫做源域(SourceDomain）,缺少标记的领域叫做目标域（TargetDomain），领域迁移通过建立源域到目标域之间的关系将外部的知识转化为模型的内部特征,进而实现增强特定领域的知识特征的目的。",
+      "entities": [
+        {
+          "entity_id": "42_e1",
+          "mention": "领域迁移",
+          "normalized_name": "领域迁移",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "领域迁移又被称为\"领域自适应\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e2",
+          "mention": "领域自适应",
+          "normalized_name": "领域自适应",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "领域迁移又被称为\"领域自适应\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e3",
+          "mention": "源域",
+          "normalized_name": "源域",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有标记的领域叫做源域(SourceDomain）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e4",
+          "mention": "SourceDomain",
+          "normalized_name": "SourceDomain",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有标记的领域叫做源域(SourceDomain）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e5",
+          "mention": "目标域",
+          "normalized_name": "目标域",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "缺少标记的领域叫做目标域（TargetDomain）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e6",
+          "mention": "TargetDomain",
+          "normalized_name": "TargetDomain",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "缺少标记的领域叫做目标域（TargetDomain）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "43",
+      "sentence": "基于领域迁移的知识特征增强流程如图4所示，领域迁移旨在从多个有标记数据的领域中获取重要知识,然后将知识应用于缺乏标记数据的目标任务，其中有标记的领域叫做源域(SourceDomain）,缺少标记的领域叫做目标域（TargetDomain），领域迁移通过建立源域到目标域之间的关系将外部的知识转化为模型的内部特征,进而实现增强特定领域的知识特征的目的。 由于不需要主动生成数据，领域迁移减少了生成错误数据的概率,因此,领域迁移正逐步成为研究者解决缺乏标注数据问题的主要学习范式。",
+      "entities": [
+        {
+          "entity_id": "43_e1",
+          "mention": "领域迁移",
+          "normalized_name": "领域迁移",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于领域迁移的知识特征增强流程如图4所示",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "43_e2",
+          "mention": "源域(SourceDomain)",
+          "normalized_name": "源域(SourceDomain)",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有标记的领域叫做源域(SourceDomain）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "43_e3",
+          "mention": "目标域(TargetDomain)",
+          "normalized_name": "目标域(TargetDomain)",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "缺少标记的领域叫做目标域（TargetDomain）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "44",
+      "sentence": "在基于领域迁移的科技文献知识单元抽取研究中，主流方法是在相同深度学习模型上进行参数迁移。研究者使用不同领域的科技文献在深度学习模型上进行初步训练,然后使用训练好的模型参数作为目标域模型参数的初始值,最后使用少量目标域的科技文献数据微调模型,从而提高科技文献中的知识单元抽取效果。 例如,Yao等使用BiLSTM和",
+      "entities": [
+        {
+          "entity_id": "44_e1",
+          "mention": "Yao",
+          "normalized_name": "Yao",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Yao等使用BiLSTM和",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "44_e2",
+          "mention": "BiLSTM",
+          "normalized_name": "BiLSTM",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Yao等使用BiLSTM和",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "45",
+      "sentence": "CRF在CLUENER2020数据集[59]上预训练了一个基础的命名实体识别模型，然后使用制造领域命名实体识别数据集在预训练后的模型上进行微调，与未使用预训练的基线模型相比，在CLUENER2020数据集上预训练的模型能显著增强对制造领域相关知识特征的识别，进而提升模型抽取知识单元的准确度[60]。",
+      "entities": [
+        {
+          "entity_id": "45_e1",
+          "mention": "CRF",
+          "normalized_name": "CRF",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "CRF在CLUENER2020数据集[59]上预训练了一个基础的命名实体识别模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "45_e2",
+          "mention": "CLUENER2020数据集",
+          "normalized_name": "CLUENER2020数据集",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "CRF在CLUENER2020数据集[59]上预训练了一个基础的命名实体识别模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "45_e3",
+          "mention": "命名实体识别模型",
+          "normalized_name": "命名实体识别模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "预训练了一个基础的命名实体识别模型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为software"
+        },
+        {
+          "entity_id": "45_e4",
+          "mention": "制造领域命名实体识别数据集",
+          "normalized_name": "制造领域命名实体识别数据集",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "使用制造领域命名实体识别数据集在预训练后的模型上进行微调",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "45_e5",
+          "mention": "制造领域相关知识特征",
+          "normalized_name": "制造领域相关知识特征",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "能显著增强对制造领域相关知识特征的识别",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛化短语，但具有领域限定"
+        },
+        {
+          "entity_id": "45_e6",
+          "mention": "知识单元",
+          "normalized_name": "知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提升模型抽取知识单元的准确度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "46",
+      "sentence": "研究者会调整源域数据使其与目标域的数据尽可能相似,从而达到在预训练中减少模型对目标域数据标记的效果，最后利用目标领域的少量标注数据微调或优化目标领域的模型。 在数据迁移中,当预训练的源域数据与目标任务相近时，模型往往会有更好的表现。比如，Celikmasat等在抽取医学领域文本中的药物、疾病、器官等命名实体时,发现使用生物领域数据进行迁移和预训练的模型比使用其他领域数据的模型在抽取准确度上有显著提升[61]; Guo等在抽取科技文献中化学反应产物的研究中也发现，当分别使用生物和化学领域文献进行模型预训练时,使用与目标域更相关的化学领域文献进行预训练抽取的准确度会更高[17]。",
+      "entities": [
+        {
+          "entity_id": "46_e1",
+          "mention": "Celikmasat等",
+          "normalized_name": "Celikmasat等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Celikmasat等在抽取医学领域文本中的药物、疾病、器官等命名实体时",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e2",
+          "mention": "医学领域",
+          "normalized_name": "医学领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "抽取医学领域文本中的药物、疾病、器官等命名实体",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e3",
+          "mention": "药物",
+          "normalized_name": "药物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "抽取医学领域文本中的药物、疾病、器官等命名实体",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e4",
+          "mention": "疾病",
+          "normalized_name": "疾病",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "抽取医学领域文本中的药物、疾病、器官等命名实体",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e5",
+          "mention": "器官",
+          "normalized_name": "器官",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "抽取医学领域文本中的药物、疾病、器官等命名实体",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e6",
+          "mention": "生物领域",
+          "normalized_name": "生物领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用生物领域数据进行迁移和预训练的模型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e7",
+          "mention": "Guo等",
+          "normalized_name": "Guo等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Guo等在抽取科技文献中化学反应产物的研究中也发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e8",
+          "mention": "科技文献",
+          "normalized_name": "科技文献",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "抽取科技文献中化学反应产物的研究",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但图情领域放宽规则中文献类可抽取"
+        },
+        {
+          "entity_id": "46_e9",
+          "mention": "化学反应产物",
+          "normalized_name": "化学反应产物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "抽取科技文献中化学反应产物的研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e10",
+          "mention": "生物领域文献",
+          "normalized_name": "生物领域文献",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "分别使用生物和化学领域文献进行模型预训练时",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但图情领域放宽规则中文献类可抽取"
+        },
+        {
+          "entity_id": "46_e11",
+          "mention": "化学领域文献",
+          "normalized_name": "化学领域文献",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "分别使用生物和化学领域文献进行模型预训练时",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但图情领域放宽规则中文献类可抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "47",
+      "sentence": "基于科技文献句粒度知识单元序列性和功能性的特点,研究者在使用深度学习技术时会从这两个特点出发提取和识别科技文献的句段特征，并根据这些特征使用深度学习技术分类或标记句段，从而将句粒度知识单元抽取任务建模为分类问题或序列标注问题。 序列性和功能性这两个特点主要体现在科技文献句段的内部关系和外部功能两个方面，从这两个角度出发构造的深度学习模型可以被概括为“基于句子序列特征提取的抽取方法\"和\"基于句子功能特征识别的抽取方法”。",
+      "entities": [
+        {
+          "entity_id": "47_e1",
+          "mention": "科技文献句粒度知识单元序列性和功能性",
+          "normalized_name": "科技文献句粒度知识单元序列性和功能性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于科技文献句粒度知识单元序列性和功能性的特点",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e2",
+          "mention": "深度学习技术",
+          "normalized_name": "深度学习技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究者在使用深度学习技术时会从这两个特点出发",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e3",
+          "mention": "句粒度知识单元抽取任务",
+          "normalized_name": "句粒度知识单元抽取任务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将句粒度知识单元抽取任务建模为分类问题或序列标注问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e4",
+          "mention": "分类问题",
+          "normalized_name": "分类问题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将句粒度知识单元抽取任务建模为分类问题或序列标注问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "在机器学习领域有特定含义，但此处作为任务建模的通用概念"
+        },
+        {
+          "entity_id": "47_e5",
+          "mention": "序列标注问题",
+          "normalized_name": "序列标注问题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将句粒度知识单元抽取任务建模为分类问题或序列标注问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "在机器学习领域有特定含义，但此处作为任务建模的通用概念"
+        },
+        {
+          "entity_id": "47_e6",
+          "mention": "序列性",
+          "normalized_name": "序列性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "序列性和功能性这两个特点主要体现在科技文献句段的内部关系和外部功能两个方面",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e7",
+          "mention": "功能性",
+          "normalized_name": "功能性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "序列性和功能性这两个特点主要体现在科技文献句段的内部关系和外部功能两个方面",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e8",
+          "mention": "基于句子序列特征提取的抽取方法",
+          "normalized_name": "基于句子序列特征提取的抽取方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于句子序列特征提取的抽取方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e9",
+          "mention": "基于句子功能特征识别的抽取方法",
+          "normalized_name": "基于句子功能特征识别的抽取方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于句子功能特征识别的抽取方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "48",
+      "sentence": "针对句粒度知识单元序列性的特点,基于句子序列特征提取的抽取方法从句段序列的内部关系出发,通过长短期依赖提取序列的不同特征,进而抽取句粒度知识单元。句段是由字词组成的序列,而句段中的字词在不同的空间距离上存在相关关系（又称依赖关系)。因此,在使用深度学习模型抽取句粒度知识单元时，会使用不同结构的神经网络对句段中字词的长短期依赖加以建模,并根据这种依赖关系提取科技文献的句粒度知识单元。相关研究主要从句段序列的局部特征或全局特征出发提取依赖，包括基于短期依赖的局部序列特征提取、基于长期依赖的全局序列特征提取以及基于长短期两种依赖的混合序列特征提取。",
+      "entities": [
+        {
+          "entity_id": "48_e1",
+          "mention": "句子序列特征",
+          "normalized_name": "句子序列特征",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于句子序列特征提取的抽取方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e2",
+          "mention": "长短期依赖",
+          "normalized_name": "长短期依赖",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过长短期依赖提取序列的不同特征",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e3",
+          "mention": "深度学习模型",
+          "normalized_name": "深度学习模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用深度学习模型抽取句粒度知识单元时",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e4",
+          "mention": "神经网络",
+          "normalized_name": "神经网络",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "会使用不同结构的神经网络对句段中字词的长短期依赖加以建模",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e5",
+          "mention": "局部序列特征提取",
+          "normalized_name": "局部序列特征提取",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于短期依赖的局部序列特征提取",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e6",
+          "mention": "全局序列特征提取",
+          "normalized_name": "全局序列特征提取",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于长期依赖的全局序列特征提取",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e7",
+          "mention": "混合序列特征提取",
+          "normalized_name": "混合序列特征提取",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于长短期两种依赖的混合序列特征提取",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "49",
+      "sentence": "短期依赖示例如图5所示，在\"我今天早上醒来后去公园散步\"这个句段中,单词\"早上\"和\"醒来\"之间存在短期依赖,因为它们在时间顺序上紧密相关,这两个单词之间的关系对于理解整个句段的含义至关重要。 由于相近字词往往具有较强的相关性,研究者主要使用标准卷积神经网络及其衍生模型来提取句子序列的短期依赖。",
+      "entities": [
+        {
+          "entity_id": "49_e1",
+          "mention": "标准卷积神经网络",
+          "normalized_name": "标准卷积神经网络",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "研究者主要使用标准卷积神经网络及其衍生模型来提取句子序列的短期依赖",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "49_e2",
+          "mention": "短期依赖",
+          "normalized_name": "短期依赖",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "单词\"早上\"和\"醒来\"之间存在短期依赖",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "50",
+      "sentence": "在使用标准的卷积神经网络模型捕获短期依赖时，首先将文本转换为二维矩阵的形式,用词嵌入技术将每个词表示为一个低维稠密的向量,然后将一个句子或一个段落表示为一个词向量矩阵,利用标准卷积神经网络中不同大小和数量的卷积核在词向量矩阵上进行滑动卷积，从而提取不同范围层次的短期依赖特征。 例如，Yao等利用不同的卷积核对生物医学文献中句段序列的短期依赖进行建模和特征提取,结果表明这种方法在生物医学命名实体识别及抽取中可以达到最佳的准确度[64]。Jin等为抽取论文摘要中表示背景、目标、方法、结果、结论的句子,在标准卷积神经网络模型中设置了多种尺寸的卷积核编码摘要文本，从而提取句段序列中多种距离间隔的短期依赖关联，在PubMedRCT和ICTA-PIBOSO两个医学论文数据集上的实验表明，使用卷积神经网络模型在抽取准确度上高于其他基线模型[65]。",
+      "entities": [
+        {
+          "entity_id": "50_e1",
+          "mention": "卷积神经网络模型",
+          "normalized_name": "卷积神经网络模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在使用标准的卷积神经网络模型捕获短期依赖时",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "50_e2",
+          "mention": "词嵌入技术",
+          "normalized_name": "词嵌入技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用词嵌入技术将每个词表示为一个低维稠密的向量",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "50_e3",
+          "mention": "Yao",
+          "normalized_name": "Yao",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Yao等利用不同的卷积核对生物医学文献中句段序列的短期依赖进行建模和特征提取",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "50_e4",
+          "mention": "生物医学命名实体识别及抽取",
+          "normalized_name": "生物医学命名实体识别及抽取",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在生物医学命名实体识别及抽取中可以达到最佳的准确度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "50_e5",
+          "mention": "Jin",
+          "normalized_name": "Jin",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Jin等为抽取论文摘要中表示背景、目标、方法、结果、结论的句子",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "50_e6",
+          "mention": "PubMedRCT",
+          "normalized_name": "PubMedRCT",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在PubMedRCT和ICTA-PIBOSO两个医学论文数据集上的实验表明",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "50_e7",
+          "mention": "ICTA-PIBOSO",
+          "normalized_name": "ICTA-PIBOSO",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在PubMedRCT和ICTA-PIBOSO两个医学论文数据集上的实验表明",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "51",
+      "sentence": "除了使用标准卷积神经网络外，也有学者使用标准卷积神经网络的衍生模型提取句段序列的短期依赖。 比如，Hu等通过迭代扩展卷积神经网络(Iterative Dilated Convolutional Neural Network,IDCNN)来扩大短期依赖提取的范围，从而有效提升句粒度知识单元短期依赖的捕获效率[66];Zhao 等在多标签卷积神经网络（MultipleLabelConvolutionalNeuralNetwork,MCNN）中同时对字符和词汇嵌入进行编码，有效解决了在抽取多种句粒度知识单元时遇到的多标签问题,并在生物医学领域文献中获得了较高的疾病名称抽取准确度[67]。",
+      "entities": [
+        {
+          "entity_id": "51_e1",
+          "mention": "标准卷积神经网络",
+          "normalized_name": "标准卷积神经网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "除了使用标准卷积神经网络外，也有学者使用标准卷积神经网络的衍生模型提取句段序列的短期依赖",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "51_e2",
+          "mention": "Hu等",
+          "normalized_name": "Hu等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Hu等通过迭代扩展卷积神经网络(Iterative Dilated Convolutional Neural Network,IDCNN)来扩大短期依赖提取的范围",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "51_e3",
+          "mention": "迭代扩展卷积神经网络(Iterative Dilated Convolutional Neural Network,IDCNN)",
+          "normalized_name": "迭代扩展卷积神经网络(Iterative Dilated Convolutional Neural Network,IDCNN)",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Hu等通过迭代扩展卷积神经网络(Iterative Dilated Convolutional Neural Network,IDCNN)来扩大短期依赖提取的范围",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "51_e4",
+          "mention": "Zhao 等",
+          "normalized_name": "Zhao等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Zhao 等在多标签卷积神经网络（MultipleLabelConvolutionalNeuralNetwork,MCNN）中同时对字符和词汇嵌入进行编码",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "51_e5",
+          "mention": "多标签卷积神经网络（MultipleLabelConvolutionalNeuralNetwork,MCNN）",
+          "normalized_name": "多标签卷积神经网络（MultipleLabelConvolutionalNeuralNetwork,MCNN）",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Zhao 等在多标签卷积神经网络（MultipleLabelConvolutionalNeuralNetwork,MCNN）中同时对字符和词汇嵌入进行编码",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "51_e6",
+          "mention": "生物医学领域",
+          "normalized_name": "生物医学领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "并在生物医学领域文献中获得了较高的疾病名称抽取准确度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "52",
+      "sentence": "与短期依赖不同,句段序列的长期依赖(或长距离依赖)是由句段序列中相距较远的字词之间产生的一种全局关系，通常这些字词跨越多个句段，如图6所示。该方法一般用于抽取长篇幅的句粒度知识单元（例如段落或章节）。 早在20世纪50年代，Hockett就率先对心理学和语言学领域中的长期依赖问题进行了讨论[68]。",
+      "entities": [
+        {
+          "entity_id": "52_e1",
+          "mention": "短期依赖",
+          "normalized_name": "短期依赖",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与短期依赖不同",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e2",
+          "mention": "长期依赖",
+          "normalized_name": "长期依赖",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "句段序列的长期依赖(或长距离依赖)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e3",
+          "mention": "长距离依赖",
+          "normalized_name": "长距离依赖",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "句段序列的长期依赖(或长距离依赖)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e4",
+          "mention": "图6",
+          "normalized_name": "图6",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如图6所示",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为论文中的图表编号，非独立文献"
+        },
+        {
+          "entity_id": "52_e5",
+          "mention": "句粒度知识单元",
+          "normalized_name": "句粒度知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "抽取长篇幅的句粒度知识单元（例如段落或章节）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e6",
+          "mention": "20世纪50年代",
+          "normalized_name": "20世纪50年代",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "早在20世纪50年代",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e7",
+          "mention": "Hockett",
+          "normalized_name": "Hockett",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Hockett就率先对心理学和语言学领域中的长期依赖问题进行了讨论",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e8",
+          "mention": "心理学",
+          "normalized_name": "心理学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "心理学和语言学领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e9",
+          "mention": "语言学",
+          "normalized_name": "语言学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "心理学和语言学领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e10",
+          "mention": "长期依赖问题",
+          "normalized_name": "长期依赖问题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对心理学和语言学领域中的长期依赖问题进行了讨论",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e11",
+          "mention": "[68]",
+          "normalized_name": "[68]",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "进行了讨论[68]",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "参考文献编号，具体文献未给出"
+        }
+      ]
+    },
+    {
+      "sentence_id": "53",
+      "sentence": "早在20世纪50年代，Hockett就率先对心理学和语言学领域中的长期依赖问题进行了讨论[68]。 事实上,长期依赖是一种在文本中广泛存在的语言现象。在使用句段序列的长期依赖抽取科技文献句粒度知识单元时，不仅需要模型能够接收长篇幅文本作为输入，还需要能够对相距较远字词之间的关系进行建模，卷积神经网络由于自身的原因无法满足这些要求,为此,研究者主要基于循环神经网络的原理和注意力机制提取科技文献句段序列的长期依赖。",
+      "entities": [
+        {
+          "entity_id": "53_e1",
+          "mention": "Hockett",
+          "normalized_name": "Hockett",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Hockett就率先对心理学和语言学领域中的长期依赖问题进行了讨论",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "53_e2",
+          "mention": "长期依赖",
+          "normalized_name": "长期依赖",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "长期依赖是一种在文本中广泛存在的语言现象",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "53_e3",
+          "mention": "卷积神经网络",
+          "normalized_name": "卷积神经网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "卷积神经网络由于自身的原因无法满足这些要求",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "53_e4",
+          "mention": "循环神经网络",
+          "normalized_name": "循环神经网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "研究者主要基于循环神经网络的原理和注意力机制提取科技文献句段序列的长期依赖",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "53_e5",
+          "mention": "注意力机制",
+          "normalized_name": "注意力机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究者主要基于循环神经网络的原理和注意力机制提取科技文献句段序列的长期依赖",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "54",
+      "sentence": "长短期记忆网络(LSTM)是目前主流的句段序列长期依赖提取方法,最早由Hochreiter等提出[69]。 该模型通过输入门、输出门和遗忘门结构有效解决了传统循环神经网络中的梯度爆炸问题,能够保存有用的信息并舍弃无用的信息，进而捕获句段的长期依赖。比如,Li等使用LSTM进行句粒度知识单元抽取,实验结果表明，LSTM能够比普通的RNN更有效地捕获长期依赖，并取得更高的抽取准确度[70]；Goncalves等使用LSTM抽取指定论文段落的准确度也高于其他基线模型的准确度,表明LSTM在长期依赖捕获上的有效性[7]。 此外,还有研究者提出双向长短期记忆网络(Bi-directionalLong-ShortTermMemory，Bi-LSTM)以捕获句段序列正反两个方向上的长期依赖。",
+      "entities": [
+        {
+          "entity_id": "54_e1",
+          "mention": "长短期记忆网络(LSTM)",
+          "normalized_name": "长短期记忆网络(LSTM)",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "长短期记忆网络(LSTM)是目前主流的句段序列长期依赖提取方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "54_e2",
+          "mention": "Hochreiter等",
+          "normalized_name": "Hochreiter等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "最早由Hochreiter等提出[69]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "具体人名未给出全名，仅以'等'指代"
+        },
+        {
+          "entity_id": "54_e3",
+          "mention": "传统循环神经网络",
+          "normalized_name": "传统循环神经网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "有效解决了传统循环神经网络中的梯度爆炸问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "54_e4",
+          "mention": "Li等",
+          "normalized_name": "Li等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Li等使用LSTM进行句粒度知识单元抽取",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "具体人名未给出全名，仅以'等'指代"
+        },
+        {
+          "entity_id": "54_e5",
+          "mention": "LSTM",
+          "normalized_name": "LSTM",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Li等使用LSTM进行句粒度知识单元抽取",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "54_e6",
+          "mention": "RNN",
+          "normalized_name": "RNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "LSTM能够比普通的RNN更有效地捕获长期依赖",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "54_e7",
+          "mention": "Goncalves等",
+          "normalized_name": "Goncalves等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Goncalves等使用LSTM抽取指定论文段落的准确度也高于其他基线模型的准确度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "具体人名未给出全名，仅以'等'指代"
+        },
+        {
+          "entity_id": "54_e8",
+          "mention": "双向长短期记忆网络(Bi-directionalLong-ShortTermMemory，Bi-LSTM)",
+          "normalized_name": "双向长短期记忆网络(Bi-directional Long-Short Term Memory, Bi-LSTM)",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "还有研究者提出双向长短期记忆网络(Bi-directionalLong-ShortTermMemory，Bi-LSTM)以捕获句段序列正反两个方向上的长期依赖",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "55",
+      "sentence": "此外,还有研究者提出双向长短期记忆网络(Bi-directionalLong-ShortTermMemory，Bi-LSTM)以捕获句段序列正反两个方向上的长期依赖。 Accuosto等利用Bi-LSTM对计算语言学领域论文的句段进行编码，建立单词级特征和句子级特征之间的长期依赖联系，从而获得句段序列的全局特征,成功抽取了论文中与论证结构相关的文字句段[22]。",
+      "entities": [
+        {
+          "entity_id": "55_e1",
+          "mention": "双向长短期记忆网络(Bi-directionalLong-ShortTermMemory，Bi-LSTM)",
+          "normalized_name": "双向长短期记忆网络(Bi-directional Long-Short Term Memory, Bi-LSTM)",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "研究者提出双向长短期记忆网络(Bi-directionalLong-ShortTermMemory，Bi-LSTM)以捕获句段序列正反两个方向上的长期依赖",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "55_e2",
+          "mention": "Accuosto",
+          "normalized_name": "Accuosto",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Accuosto等利用Bi-LSTM对计算语言学领域论文的句段进行编码",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "55_e3",
+          "mention": "Bi-LSTM",
+          "normalized_name": "Bi-LSTM",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Accuosto等利用Bi-LSTM对计算语言学领域论文的句段进行编码",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "55_e4",
+          "mention": "计算语言学",
+          "normalized_name": "计算语言学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对计算语言学领域论文的句段进行编码",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "56",
+      "sentence": "除了长短期记忆网络，注意力机制也常和循环神经网络结合使用以提取句段序列长期依赖。 注意力机制可以模拟人类注意力的行为，使深度学习模型能够聚焦于输入序列中的特定部分，并将注意力集中在最相关的信息上。这种机制使得模型能够根据不同的上下文动态地对输入序列中的不同位置进行加权，以更好地建立文本句段中字词间的联系，并且从大量的输入信息(或历史信息)中提取出对当前任务有帮助的特征。比如,Mehta等使用注意力机制获取文档上下文和句子之间的关系，并生成句子中不同单词上的注意力权重,这样的注意力机制有助于自动识别单词或短语，从而抽取论文摘要中表示研究价值的句段[73]。He等提出一种基于注意力机制和双向长短期记忆网络的特征提取模型,模型中的注意力机制用来捕获句子中最重要的语义信息，通过计算每个单词对于整个句子的重要性来分配不同的权重，从而通过句段序列中单词嵌入获得句段的全局特征,实验提取了生物医学领域文本的事件实体,表明使用注意力机制的模型能更有效地捕获句子中字词间的长期依赖[74]。",
+      "entities": [
+        {
+          "entity_id": "56_e1",
+          "mention": "长短期记忆网络",
+          "normalized_name": "长短期记忆网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "除了长短期记忆网络，注意力机制也常和循环神经网络结合使用以提取句段序列长期依赖",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e2",
+          "mention": "注意力机制",
+          "normalized_name": "注意力机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "注意力机制也常和循环神经网络结合使用以提取句段序列长期依赖",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e3",
+          "mention": "循环神经网络",
+          "normalized_name": "循环神经网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "注意力机制也常和循环神经网络结合使用以提取句段序列长期依赖",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e4",
+          "mention": "Mehta",
+          "normalized_name": "Mehta",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Mehta等使用注意力机制获取文档上下文和句子之间的关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e5",
+          "mention": "He",
+          "normalized_name": "He",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "He等提出一种基于注意力机制和双向长短期记忆网络的特征提取模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e6",
+          "mention": "双向长短期记忆网络",
+          "normalized_name": "双向长短期记忆网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "He等提出一种基于注意力机制和双向长短期记忆网络的特征提取模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e7",
+          "mention": "生物医学领域",
+          "normalized_name": "生物医学领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实验提取了生物医学领域文本的事件实体",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "57",
+      "sentence": "科技文献的句段既有局部序列特征，又有全局序列特征。 在时间复杂度和空间复杂度允许的情况下，同时揭示句段的局部序列特征和全局序列特征，有助于抽取更为全面完整的知识单元,从而准确反映文献内容表达的知识内容。基于混合依赖序列特征提取的抽取方法就反映了这种思想,混合依赖包括前文提到的短期依赖和长期依赖。 研究者一般会联合使用不同类型的深度神经网络提取并融合科技文献句段序列的局部特征和全局特征，并基于融合的特征抽取科技文献中的句粒度知识单元。",
+      "entities": [
+        {
+          "entity_id": "57_e1",
+          "mention": "混合依赖序列特征提取的抽取方法",
+          "normalized_name": "混合依赖序列特征提取的抽取方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于混合依赖序列特征提取的抽取方法就反映了这种思想",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "57_e2",
+          "mention": "短期依赖",
+          "normalized_name": "短期依赖",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "混合依赖包括前文提到的短期依赖和长期依赖",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "57_e3",
+          "mention": "长期依赖",
+          "normalized_name": "长期依赖",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "混合依赖包括前文提到的短期依赖和长期依赖",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "57_e4",
+          "mention": "深度神经网络",
+          "normalized_name": "深度神经网络",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "联合使用不同类型的深度神经网络提取并融合科技文献句段序列的局部特征和全局特征",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "57_e5",
+          "mention": "句粒度知识单元",
+          "normalized_name": "句粒度知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于融合的特征抽取科技文献中的句粒度知识单元",
+          "is_specific_entity": true,
+          "confidence": 0.88,
+          "uncertainty": "可能为特定领域术语"
+        }
+      ]
+    },
+    {
+      "sentence_id": "58",
+      "sentence": "相关研究和实践中通常将卷积神经网络与循环神经网络结合使用,卷积神经网络主要用来提取局部序列特征,循环神经网络和注意力机制主要用来提取全局序列特征，将提取到的特征拼接后输入下游的Softmax神经网络或条件随机场，下游神经网络会将不同特征对应的句子标注为相应的知识单元,并抽取这些句粒度知识单元。 比如,王倩等为抽取不同结构域的学术文本句段(引言、相关研究、方法、实验、总结等),在模型中使用卷积神经网络捕获句段序列的短期依赖,然后使用循环神经网络捕获句段的长期依赖,结果表明这种方法能有效抽取不同篇幅长度的学术文本句段[75]；与此类似,Safder等联合使用卷积神经网络和长短期记忆神经网络，分别提取论文文本的局部特征和全局特征，抽取论文中出现的算法伪代码和传达相关算法元数据的句段,取得了较好的结果[76];Goncalves等使用卷积神经网络与双向循环门单元（Bi-directionalGatedRecurrentUnit，Bi-GRU)建模句段序列的长短期依赖，准确抽取了生物医学领域论文摘要中与研究背景相关的句段[7]。",
+      "entities": [
+        {
+          "entity_id": "58_e1",
+          "mention": "卷积神经网络",
+          "normalized_name": "卷积神经网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "卷积神经网络主要用来提取局部序列特征",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "58_e2",
+          "mention": "循环神经网络",
+          "normalized_name": "循环神经网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "循环神经网络和注意力机制主要用来提取全局序列特征",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "58_e3",
+          "mention": "注意力机制",
+          "normalized_name": "注意力机制",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "循环神经网络和注意力机制主要用来提取全局序列特征",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "58_e4",
+          "mention": "Softmax神经网络",
+          "normalized_name": "Softmax神经网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "输入下游的Softmax神经网络或条件随机场",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "58_e5",
+          "mention": "条件随机场",
+          "normalized_name": "条件随机场",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "输入下游的Softmax神经网络或条件随机场",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "58_e6",
+          "mention": "王倩",
+          "normalized_name": "王倩",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "王倩等为抽取不同结构域的学术文本句段",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "58_e7",
+          "mention": "Safder",
+          "normalized_name": "Safder",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Safder等联合使用卷积神经网络和长短期记忆神经网络",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "58_e8",
+          "mention": "长短期记忆神经网络",
+          "normalized_name": "长短期记忆神经网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Safder等联合使用卷积神经网络和长短期记忆神经网络",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "58_e9",
+          "mention": "Goncalves",
+          "normalized_name": "Goncalves",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Goncalves等使用卷积神经网络与双向循环门单元",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "58_e10",
+          "mention": "双向循环门单元（Bi-directionalGatedRecurrentUnit，Bi-GRU）",
+          "normalized_name": "双向循环门单元（Bi-directionalGatedRecurrentUnit，Bi-GRU）",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Goncalves等使用卷积神经网络与双向循环门单元（Bi-directionalGatedRecurrentUnit，Bi-GRU）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "59",
+      "sentence": "还有部分学者结合注意力机制来更好地融合科技文献文本序列的局部特征和全局特征，并帮助下游模型较为准确地抽取到所需的句粒度知识单元。 比如,Wan等基于卷积神经网络结构捕获金融领域文本中的局部特征，同时利用自注意机制使用Transformer模型融合提取的局部特征和全局特征，并将这两种特征一起输入多层变换器编码器中，实验表明,利用Transformer构建的模型能有效识别金融领域文献中重要的特征，并在表示因果的句段的任务上优于其他基线模型[78]。",
+      "entities": [
+        {
+          "entity_id": "59_e1",
+          "mention": "注意力机制",
+          "normalized_name": "注意力机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "结合注意力机制来更好地融合科技文献文本序列的局部特征和全局特征",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "59_e2",
+          "mention": "Wan",
+          "normalized_name": "Wan",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Wan等基于卷积神经网络结构捕获金融领域文本中的局部特征",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "59_e3",
+          "mention": "卷积神经网络",
+          "normalized_name": "卷积神经网络",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Wan等基于卷积神经网络结构捕获金融领域文本中的局部特征",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "59_e4",
+          "mention": "自注意机制",
+          "normalized_name": "自注意机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用自注意机制使用Transformer模型融合提取的局部特征和全局特征",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "59_e5",
+          "mention": "Transformer模型",
+          "normalized_name": "Transformer模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用自注意机制使用Transformer模型融合提取的局部特征和全局特征",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "59_e6",
+          "mention": "多层变换器编码器",
+          "normalized_name": "多层变换器编码器",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "并将这两种特征一起输入多层变换器编码器中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能指代Transformer编码器，但原文为'多层变换器编码器'，忠实原文"
+        },
+        {
+          "entity_id": "59_e7",
+          "mention": "Transformer",
+          "normalized_name": "Transformer",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用Transformer构建的模型能有效识别金融领域文献中重要的特征",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "59_e8",
+          "mention": "基线模型",
+          "normalized_name": "基线模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "并在表示因果的句段的任务上优于其他基线模型[78]",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "基线模型为通用术语，但此处有具体比较语境，且[78]指向具体文献，故抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "60",
+      "sentence": "现有研究证明了捕获句段序列长短期依赖在抽取句粒度知识单元研究中的有效性。 目前，主要通过在深度学习模型中使用卷积神经网络、循环神经网络和注意力机制来捕获科技文献句段序列的短期依赖和长期依赖。",
+      "entities": [
+        {
+          "entity_id": "60_e1",
+          "mention": "句段序列长短期依赖",
+          "normalized_name": "句段序列长短期依赖",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "捕获句段序列长短期依赖在抽取句粒度知识单元研究中的有效性",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为method或technique，但原文中作为被捕获的对象，更接近concept"
+        },
+        {
+          "entity_id": "60_e2",
+          "mention": "句粒度知识单元",
+          "normalized_name": "句粒度知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "抽取句粒度知识单元研究中的有效性",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e3",
+          "mention": "深度学习模型",
+          "normalized_name": "深度学习模型",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在深度学习模型中使用卷积神经网络、循环神经网络和注意力机制",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e4",
+          "mention": "卷积神经网络",
+          "normalized_name": "卷积神经网络",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用卷积神经网络、循环神经网络和注意力机制",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e5",
+          "mention": "循环神经网络",
+          "normalized_name": "循环神经网络",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用卷积神经网络、循环神经网络和注意力机制",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e6",
+          "mention": "注意力机制",
+          "normalized_name": "注意力机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用卷积神经网络、循环神经网络和注意力机制",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e7",
+          "mention": "科技文献句段序列",
+          "normalized_name": "科技文献句段序列",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "捕获科技文献句段序列的短期依赖和长期依赖",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e8",
+          "mention": "短期依赖",
+          "normalized_name": "短期依赖",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "捕获科技文献句段序列的短期依赖和长期依赖",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e9",
+          "mention": "长期依赖",
+          "normalized_name": "长期依赖",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "捕获科技文献句段序列的短期依赖和长期依赖",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "61",
+      "sentence": "目前，主要通过在深度学习模型中使用卷积神经网络、循环神经网络和注意力机制来捕获科技文献句段序列的短期依赖和长期依赖。 其中,注意力机制通过与长短期神经网络结合展现出捕获句段序列长期依赖的优异能力[79]。 通过对句段中重要信息进行识别和选择，注意力机制可以动态分配不同的权重，从而使深度学习模型能够获取当前输入序列中的重要部分。",
+      "entities": [
+        {
+          "entity_id": "61_e1",
+          "mention": "卷积神经网络",
+          "normalized_name": "卷积神经网络",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在深度学习模型中使用卷积神经网络",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "61_e2",
+          "mention": "循环神经网络",
+          "normalized_name": "循环神经网络",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在深度学习模型中使用卷积神经网络、循环神经网络",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "61_e3",
+          "mention": "注意力机制",
+          "normalized_name": "注意力机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在深度学习模型中使用卷积神经网络、循环神经网络和注意力机制",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "61_e4",
+          "mention": "长短期神经网络",
+          "normalized_name": "长短期神经网络",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "注意力机制通过与长短期神经网络结合展现出捕获句段序列长期依赖的优异能力",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "61_e5",
+          "mention": "深度学习模型",
+          "normalized_name": "深度学习模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在深度学习模型中使用卷积神经网络",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为method"
+        }
+      ]
+    },
+    {
+      "sentence_id": "62",
+      "sentence": "通过对句段中重要信息进行识别和选择，注意力机制可以动态分配不同的权重，从而使深度学习模型能够获取当前输入序列中的重要部分。 注意力机制本身作为模型独立抽取科技文献句段序列特征的潜力不容忽视。事实上，有关注意力机制及相关模型的研究一直是领域关注的重点，结合了注意力机制的深度神经网络能够在文本中更加充分地学习到上下文序列特征和字词序列间的相关关系，在信息抽取任务上具有很大的潜力[80]。",
+      "entities": [
+        {
+          "entity_id": "62_e1",
+          "mention": "注意力机制",
+          "normalized_name": "注意力机制",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "注意力机制可以动态分配不同的权重",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "62_e2",
+          "mention": "深度学习模型",
+          "normalized_name": "深度学习模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从而使深度学习模型能够获取当前输入序列中的重要部分",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "62_e3",
+          "mention": "深度神经网络",
+          "normalized_name": "深度神经网络",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "结合了注意力机制的深度神经网络能够在文本中更加充分地学习到上下文序列特征",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "62_e4",
+          "mention": "信息抽取任务",
+          "normalized_name": "信息抽取任务",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在信息抽取任务上具有很大的潜力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "63",
+      "sentence": "句法结构指的是功能句段所包含的知识内容在科技文献中表现出的语法特点。 比如,表示研究背景、方法、结论、价值的句粒度知识单元的文本在描述方式上存在区别,这种区别主要体现在句法依存上。因此,在抽取句粒度知识单元时,通常使用深度学习模型识别句段的句法结构,即从句段序列的句法依存关系出发抽取知识单元。",
+      "entities": [
+        {
+          "entity_id": "63_e1",
+          "mention": "句法结构",
+          "normalized_name": "句法结构",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "句法结构指的是功能句段所包含的知识内容在科技文献中表现出的语法特点",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "63_e2",
+          "mention": "功能句段",
+          "normalized_name": "功能句段",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "功能句段所包含的知识内容在科技文献中表现出的语法特点",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "63_e3",
+          "mention": "句粒度知识单元",
+          "normalized_name": "句粒度知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "表示研究背景、方法、结论、价值的句粒度知识单元的文本在描述方式上存在区别",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "63_e4",
+          "mention": "深度学习模型",
+          "normalized_name": "深度学习模型",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通常使用深度学习模型识别句段的句法结构",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "63_e5",
+          "mention": "句法依存",
+          "normalized_name": "句法依存",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这种区别主要体现在句法依存上",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "63_e6",
+          "mention": "句法依存关系",
+          "normalized_name": "句法依存关系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从句段序列的句法依存关系出发抽取知识单元",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

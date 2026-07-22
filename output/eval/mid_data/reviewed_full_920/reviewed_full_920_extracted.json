@@ -1,0 +1,5560 @@
+{
+  "base_name": "reviewed_full_920",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "Key words:patent value； patent scope； patent lifetime；",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "patent value",
+          "normalized_name": "patent value",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Key words:patent value； patent scope； patent lifetime；",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "patent scope",
+          "normalized_name": "patent scope",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Key words:patent value； patent scope； patent lifetime；",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "patent lifetime",
+          "normalized_name": "patent lifetime",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Key words:patent value； patent scope； patent lifetime；",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "请的总和，占世界专利申请量的 $4 5 . 7 \\%$ ,连续多年位居世界第一。 与此形成强烈对比的是，中国有效专利平均维持年限为7.6年,与2015 年的平均维持年限7.2 年基本持平; 同时,2020 年我国支付的知识产权使用费高达377.82亿美元，相比2015年增加了157亿美",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "中国",
+          "normalized_name": "中国",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "中国有效专利平均维持年限为7.6年",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "世界专利申请量",
+          "normalized_name": "世界专利申请量",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "占世界专利申请量的45.7%",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "中国有效专利平均维持年限",
+          "normalized_name": "中国有效专利平均维持年限",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "中国有效专利平均维持年限为7.6年",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "知识产权使用费",
+          "normalized_name": "知识产权使用费",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2020年我国支付的知识产权使用费高达377.82亿美元",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "在建设世界科技强国的背景下,为了形成一批拥有自主知识产权的核心技术，国家\"十四五”规划首次将高价值专利纳入经济发展的主要目标,鼓励各地探讨培育、保护和激励高价值专利,推动科技自立自强。 因此,本文认为当前亟需对专利价值研究文献进行综合梳理和分析，从已有研究中总结研究重点、价值评估现状和未来展望，以期更好地优化专利政策，培育高价值专利。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "国家\"十四五”规划",
+          "normalized_name": "国家\"十四五”规划",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "国家\"十四五”规划首次将高价值专利纳入经济发展的主要目标",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "高价值专利",
+          "normalized_name": "高价值专利",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "首次将高价值专利纳入经济发展的主要目标",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为Artifact(专利作为法律文件)但此处侧重概念"
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "专利价值研究文献",
+          "normalized_name": "专利价值研究文献",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "当前亟需对专利价值研究文献进行综合梳理和分析",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "文献为泛指集合，但\"专利价值研究\"有明确主题限定，按召回优先抽取"
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "专利政策",
+          "normalized_name": "专利政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以期更好地优化专利政策",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "目前关于专利价值的定义方法主要有两个流派。第一个流派，基于专利激励理论，将专利价值定义为专利在市场上赚取的超额租金[1-2],认为专利价值体现为专利保护范围的激励效应。第二个流派，强调专利权人在专利保护范围内利用专利垄断权获得的利润，基于无形资产理论,将专利价值定义为专利的资产价值,也就是专利竞赛获胜者得到的利润回报[3-4],从而反映专利这一无形资产对公司价值的贡献。这类文献认为创新者的利润回报就是专利的价值,这一利润流直接取决于专利保护范围。需要指明的是,早期的专利价值研究文献基于文献计量学理论,将专利的技术价值等同于专利价值[5-6]。文献计量学认为论文的被引用次数能够有效测度科学研究质量，类似的，专利是受法律保护的技术方案,学者们认为专利的技术质量决定专利的价值。Albert等发现,相比低被引专利,高被引专利的技术重要性更高,相应地,专利的被引用次数被用于测度专利价值。然而,Bessen认为，专利的技术价值与专利价值是明显不同的。一方面，创新者同样可以通过市场领先优势和商业秘密等非专利保护方式获取技术的价值,这意味着专利价值通常会低于专利的技术价值; 另一方面，专利价值在一定程度上是内生的。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "专利激励理论",
+          "normalized_name": "专利激励理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于专利激励理论，将专利价值定义为专利在市场上赚取的超额租金",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "无形资产理论",
+          "normalized_name": "无形资产理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于无形资产理论,将专利价值定义为专利的资产价值",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "文献计量学理论",
+          "normalized_name": "文献计量学理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "早期的专利价值研究文献基于文献计量学理论,将专利的技术价值等同于专利价值",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "文献计量学",
+          "normalized_name": "文献计量学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "文献计量学认为论文的被引用次数能够有效测度科学研究质量",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "Albert",
+          "normalized_name": "Albert",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Albert等发现,相比低被引专利,高被引专利的技术重要性更高",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e6",
+          "mention": "Bessen",
+          "normalized_name": "Bessen",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Bessen认为，专利的技术价值与专利价值是明显不同的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "另一方面，专利价值在一定程度上是内生的。 创新者可以通过主张更多权利要求数量或者引用更多在先专利来提升专利保护强度增加专利价值，同时，创新者也可以围绕同一项技术申请多项专利，构建专利丛林，加强专利保护。国内的早期文献认为专利价值具有时效性、不确定性和模糊性,兼有技术价值、市场价值和权利(法律)价值[，随着研究的深入和拓展，国内学者就专利价值的内涵基本达成一致，将其视为专利给专利权人带来的经济回报[8]。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "专利丛林",
+          "normalized_name": "专利丛林",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "构建专利丛林，加强专利保护",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "专利价值",
+          "normalized_name": "专利价值",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利价值在一定程度上是内生的",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "多次出现，作为核心概念"
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "技术价值",
+          "normalized_name": "技术价值",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "兼有技术价值、市场价值和权利(法律)价值",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为专利价值的子概念"
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "市场价值",
+          "normalized_name": "市场价值",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "兼有技术价值、市场价值和权利(法律)价值",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为专利价值的子概念"
+        },
+        {
+          "entity_id": "5_e5",
+          "mention": "权利(法律)价值",
+          "normalized_name": "权利(法律)价值",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "兼有技术价值、市场价值和权利(法律)价值",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为专利价值的子概念"
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "Nordhaus(1969)最早开始专利价值决定因素的理论研究,在他的第一个模型中，专利寿命被视为其价值的决定性参数。 然而,现实中世界各国的专利保护期限都几乎保持不变,基本均为自申请日起20年,最优专利保护期限研究得出的政策含义基本没有实践意义和现实价值。不仅如此,大量实证研究发现,大量专利在法定保护期限内就已经被模仿或者替代[9]。因此,学者们意识到专利保护强度才是决定专利价值的关键因素，而专利保护范围直接决定其被法律保护的强度，专利保护范围越宽,竞争对手技术模仿的范围就越窄，制造非侵权产品的成本越高，专利产品被模仿的程度越低,被替代的风险也越小。 于是,从20世纪90 年代开始,学者们重点研究如何测度专利保护范围这一专利价值决定因素。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "Nordhaus(1969)",
+          "normalized_name": "Nordhaus(1969)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Nordhaus(1969)最早开始专利价值决定因素的理论研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "专利价值决定因素",
+          "normalized_name": "专利价值决定因素",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Nordhaus(1969)最早开始专利价值决定因素的理论研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "专利寿命",
+          "normalized_name": "专利寿命",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在他的第一个模型中，专利寿命被视为其价值的决定性参数",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "最优专利保护期限",
+          "normalized_name": "最优专利保护期限",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "最优专利保护期限研究得出的政策含义基本没有实践意义和现实价值",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "专利保护强度",
+          "normalized_name": "专利保护强度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学者们意识到专利保护强度才是决定专利价值的关键因素",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e6",
+          "mention": "专利保护范围",
+          "normalized_name": "专利保护范围",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利保护范围直接决定其被法律保护的强度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "社会福利的理论研究文献引入专利宽度以测度专利保护范围，虽然专利宽度的定义方法各不相同，但将专利保护范围作为创新利润回报决定性因素的认识是一致的。 Klemperer（1990）及Gilbert & Shapiro（1990）最早引入专利宽度的概念测度专利保护范围[10-1]。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "专利宽度",
+          "normalized_name": "专利宽度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社会福利的理论研究文献引入专利宽度以测度专利保护范围",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "Klemperer（1990）",
+          "normalized_name": "Klemperer（1990）",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Klemperer（1990）及Gilbert & Shapiro（1990）最早引入专利宽度的概念测度专利保护范围",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "Gilbert & Shapiro（1990）",
+          "normalized_name": "Gilbert & Shapiro（1990）",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Klemperer（1990）及Gilbert & Shapiro（1990）最早引入专利宽度的概念测度专利保护范围",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "Green&Scotchmer（1995）用技术方案的新颖性和创造性程度代替创新者分配的利润率衡量专利宽度,他们认为,专利新颖性和创造性程度越高,创新者分配的利润率也会越高[。 寇宗来等认为，理论文献关于专利宽度的不同定义在经济含义上具有相通之处[13]。事实上,如果专利本身的新颖性和创造性程度越高（Greene& Scotchmer,1995）,那么专利产品特性空间中不能被竞争对手模仿的范围会越大（Klemper-er,1990），竞争对手非侵权模仿的成本也就越高（Gall-ini,1992），最终创新者分配的利润率肯定也越大（Gil-bert&Shapiro,1995）,专利价值也就越高。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "Green&Scotchmer（1995）",
+          "normalized_name": "Green & Scotchmer (1995)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Green&Scotchmer（1995）用技术方案的新颖性和创造性程度代替创新者分配的利润率衡量专利宽度",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "寇宗来",
+          "normalized_name": "寇宗来",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "寇宗来等认为，理论文献关于专利宽度的不同定义在经济含义上具有相通之处",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "Greene& Scotchmer（1995）",
+          "normalized_name": "Greene & Scotchmer (1995)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如果专利本身的新颖性和创造性程度越高（Greene& Scotchmer,1995）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "Klemper-er（1990）",
+          "normalized_name": "Klemperer (1990)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "专利产品特性空间中不能被竞争对手模仿的范围会越大（Klemper-er,1990）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e5",
+          "mention": "Gall-ini（1992）",
+          "normalized_name": "Gallini (1992)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "竞争对手非侵权模仿的成本也就越高（Gall-ini,1992）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e6",
+          "mention": "Gil-bert&Shapiro（1995）",
+          "normalized_name": "Gilbert & Shapiro (1995)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "最终创新者分配的利润率肯定也越大（Gil-bert&Shapiro,1995）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e7",
+          "mention": "专利宽度",
+          "normalized_name": "专利宽度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用技术方案的新颖性和创造性程度代替创新者分配的利润率衡量专利宽度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e8",
+          "mention": "新颖性",
+          "normalized_name": "新颖性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利本身的新颖性和创造性程度越高",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为法律/学术术语时抽取，若为一般评价用语则不抽"
+        },
+        {
+          "entity_id": "8_e9",
+          "mention": "创造性",
+          "normalized_name": "创造性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利本身的新颖性和创造性程度越高",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为法律/学术术语时抽取，若为一般评价用语则不抽"
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "专利质量研究文献或从技术质量维度引入专利IPC分类号数量测度专利保护范围,或从法律质量维度引入权利要求数量界定专利保护范围,但大量经验研究表明,这两种测度方法均不能有效地测度专利保护范围。Lerner（1994）沿用Gilbert& Shapiro（1990）关于专利宽度的概念，并用专利四位IPC分类号的数量表征专利宽度[14]。Lerner（1994)认为专利四位 IPC分类号的数量与专利的经济重要性关联——专利 IPC分类号数量越多,竞争对手技术规避（Invent-around)",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "专利质量研究文献",
+          "normalized_name": "专利质量研究文献",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "专利质量研究文献或从技术质量维度引入专利IPC分类号数量测度专利保护范围",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛指文献集合，但作为研究领域文献整体可视为具体实体"
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "专利IPC分类号数量",
+          "normalized_name": "专利IPC分类号数量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引入专利IPC分类号数量测度专利保护范围",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "权利要求数量",
+          "normalized_name": "权利要求数量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从法律质量维度引入权利要求数量界定专利保护范围",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "专利保护范围",
+          "normalized_name": "专利保护范围",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "测度专利保护范围",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e5",
+          "mention": "Lerner（1994）",
+          "normalized_name": "Lerner（1994）",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Lerner（1994）沿用Gilbert& Shapiro（1990）关于专利宽度的概念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e6",
+          "mention": "Gilbert& Shapiro（1990）",
+          "normalized_name": "Gilbert& Shapiro（1990）",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Lerner（1994）沿用Gilbert& Shapiro（1990）关于专利宽度的概念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e7",
+          "mention": "专利宽度",
+          "normalized_name": "专利宽度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "关于专利宽度的概念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e8",
+          "mention": "专利四位IPC分类号的数量",
+          "normalized_name": "专利四位IPC分类号的数量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用专利四位IPC分类号的数量表征专利宽度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e9",
+          "mention": "专利的经济重要性",
+          "normalized_name": "专利的经济重要性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利四位 IPC分类号的数量与专利的经济重要性关联",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e10",
+          "mention": "技术规避（Invent-around）",
+          "normalized_name": "技术规避（Invent-around）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "竞争对手技术规避（Invent-around）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "的难度越大，专利价值也随之增加。 许珂等认为，专利技术宽度越宽，意味着企业通过技术手段控制市场的能力较强,其价值也越高[15]。然而,后续的实证文献并没有支持前述设定[3]。 一部分学者认为,理论上,专利保护范围应体现在专利的权利要求中。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "许珂等",
+          "normalized_name": "许珂",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "许珂等认为，专利技术宽度越宽",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "专利技术宽度",
+          "normalized_name": "专利技术宽度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利技术宽度越宽，意味着企业通过技术手段控制市场的能力较强",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "专利保护范围",
+          "normalized_name": "专利保护范围",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利保护范围应体现在专利的权利要求中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e4",
+          "mention": "权利要求",
+          "normalized_name": "权利要求",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利保护范围应体现在专利的权利要求中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "相应地,他们用权利要求数量取代IPC分类号数量来衡量专利宽度。 Lanjouw&Schankerman(2001）发现,权利要求数量越多,专利涉诉的概率越高[16]。然而,后续研究发现,使用权利要求数量定义专利保护范围会面临诸多挑战。 首先,专利保护范围往往与权利要求的措辞有关,在某些情况下,增加权利要求数量甚至会导致专利申请的范围变窄[17]。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "IPC分类号",
+          "normalized_name": "IPC分类号",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "用权利要求数量取代IPC分类号数量来衡量专利宽度",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "Lanjouw&Schankerman(2001）",
+          "normalized_name": "Lanjouw & Schankerman (2001)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Lanjouw&Schankerman(2001）发现,权利要求数量越多,专利涉诉的概率越高[16]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "权利要求数量",
+          "normalized_name": "权利要求数量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "权利要求数量越多,专利涉诉的概率越高",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "专利涉诉的概率",
+          "normalized_name": "专利涉诉的概率",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "权利要求数量越多,专利涉诉的概率越高",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为现象或概念"
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "专利保护范围",
+          "normalized_name": "专利保护范围",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用权利要求数量定义专利保护范围会面临诸多挑战",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "其次,权利要求数量的增加可能是专利申请人战略选择的结果，与专利宽度无关。 Stevnsborg& van Pottelsberghe de la Potterie（2007）指出，专利申请人主张更多权利要求可能是为了隐瞒实际发明以欺骗竞争对手或专利审查员，也可能是因为他们在提交专利申请时并不清楚自己真正的发明是什么[18]。 最后,权利要求数量的增加也可能是法律制度、技术和市场条件发生变化的结果,与专利保护范围几乎没有关系。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "Stevnsborg& van Pottelsberghe de la Potterie（2007）",
+          "normalized_name": "Stevnsborg & van Pottelsberghe de la Potterie (2007)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Stevnsborg& van Pottelsberghe de la Potterie（2007）指出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "权利要求",
+          "normalized_name": "权利要求",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "权利要求数量的增加可能是专利申请人战略选择的结果",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "专利宽度",
+          "normalized_name": "专利宽度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与专利宽度无关",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "专利保护范围",
+          "normalized_name": "专利保护范围",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与专利保护范围几乎没有关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "最后,权利要求数量的增加也可能是法律制度、技术和市场条件发生变化的结果,与专利保护范围几乎没有关系。 Van Zeebroeck,etal．（2009）研究发现，PCT国际专利申请方式的成功使得世界范围各国逐渐采用美国模式撰写专利，美国模式最大的特点是追求宽保护范围的专利。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "Van Zeebroeck,etal．（2009）",
+          "normalized_name": "Van Zeebroeck et al. (2009)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Van Zeebroeck,etal．（2009）研究发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "PCT国际专利申请方式",
+          "normalized_name": "PCT国际专利申请方式",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "PCT国际专利申请方式的成功使得世界范围各国逐渐采用美国模式撰写专利",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "美国模式",
+          "normalized_name": "美国模式",
+          "candidate_l3": "approach",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "世界范围各国逐渐采用美国模式撰写专利",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指专利撰写模式"
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "专利文本研究文献发现，独立权利要求的字数和数量更能有效地测度专利保护范围。 信息技术的快速发展使得学者能够对专利文本这一“黑匣子”中的复杂信息进行挖掘分析。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "专利文本",
+          "normalized_name": "专利文本",
+          "candidate_l3": "corpus",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "专利文本研究文献发现，独立权利要求的字数和数量更能有效地测度专利保护范围",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept，但此处作为被分析的数据资源，优先标corpus"
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "独立权利要求",
+          "normalized_name": "独立权利要求",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "独立权利要求的字数和数量更能有效地测度专利保护范围",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "专利保护范围",
+          "normalized_name": "专利保护范围",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "独立权利要求的字数和数量更能有效地测度专利保护范围",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e4",
+          "mention": "信息技术",
+          "normalized_name": "信息技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息技术的快速发展使得学者能够对专利文本这一“黑匣子”中的复杂信息进行挖掘分析",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为discipline，但此处作为技术概念提及"
+        },
+        {
+          "entity_id": "14_e5",
+          "mention": "专利文本这一“黑匣子”",
+          "normalized_name": "专利文本“黑匣子”",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对专利文本这一“黑匣子”中的复杂信息进行挖掘分析",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "“黑匣子”为比喻性学术命名，抽取完整短语"
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "信息技术的快速发展使得学者能够对专利文本这一“黑匣子”中的复杂信息进行挖掘分析。 Reitzig(2004)研究发现，权利要求的字数有助于测度专利保护范围,提升专利价值的评估质量。 依据世界各国专利法的普通规定，专利独立权利要求界定的保护范围最大。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "Reitzig(2004)",
+          "normalized_name": "Reitzig (2004)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Reitzig(2004)研究发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "专利文本",
+          "normalized_name": "专利文本",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对专利文本这一“黑匣子”中的复杂信息进行挖掘分析",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "权利要求",
+          "normalized_name": "权利要求",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "权利要求的字数有助于测度专利保护范围",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "专利保护范围",
+          "normalized_name": "专利保护范围",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "权利要求的字数有助于测度专利保护范围",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e5",
+          "mention": "专利独立权利要求",
+          "normalized_name": "专利独立权利要求",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利独立权利要求界定的保护范围最大",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "在Reitzig(2004)开创性研究的基础上,学者们开始讨论使用独立权利要求测度专利保护范围的可行性。 Okada,etal.(2018)指出[19],大部分技术领域专利申请的独立权利要求都采用\"递进结构”,并通过增加新的技术特征即增加字数来缩减独立权利要求的保护范围,因此,首项独立权利要求的字数和专利申请保护范围成反比。Kuhn,etal.（2019）对美国专利大数据的研究发现,先前文献的专利保护范围衡量标准（即,专利 IPC分类号数量和权利要求数量)难以提供准确信息，具有误导性，首项独立权利要求字数（有时也称为第一独立权利要求）更适合测度专利保护范围[20]。 Mar-co,etal．（2019）用独立权利要求的字数和独立权利要求的数量两种方法测度专利保护范围[21]。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "Reitzig(2004)",
+          "normalized_name": "Reitzig(2004)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在Reitzig(2004)开创性研究的基础上",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "Okada,etal.(2018)",
+          "normalized_name": "Okada,etal.(2018)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Okada,etal.(2018)指出[19]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "Kuhn,etal.（2019）",
+          "normalized_name": "Kuhn,etal.(2019)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Kuhn,etal.（2019）对美国专利大数据的研究发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e4",
+          "mention": "Mar-co,etal．（2019）",
+          "normalized_name": "Mar-co,etal.(2019)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Mar-co,etal．（2019）用独立权利要求的字数和独立权利要求的数量两种方法测度专利保护范围[21]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e5",
+          "mention": "独立权利要求",
+          "normalized_name": "独立权利要求",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用独立权利要求测度专利保护范围的可行性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e6",
+          "mention": "专利保护范围",
+          "normalized_name": "专利保护范围",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "测度专利保护范围的可行性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e7",
+          "mention": "递进结构",
+          "normalized_name": "递进结构",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大部分技术领域专利申请的独立权利要求都采用\"递进结构\"",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e8",
+          "mention": "首项独立权利要求字数",
+          "normalized_name": "首项独立权利要求字数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "首项独立权利要求的字数和专利申请保护范围成反比",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e9",
+          "mention": "专利 IPC分类号数量",
+          "normalized_name": "专利IPC分类号数量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利 IPC分类号数量和权利要求数量",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e10",
+          "mention": "权利要求数量",
+          "normalized_name": "权利要求数量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利 IPC分类号数量和权利要求数量",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e11",
+          "mention": "第一独立权利要求",
+          "normalized_name": "第一独立权利要求",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "首项独立权利要求字数（有时也称为第一独立权利要求）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "Mar-co,etal．（2019）用独立权利要求的字数和独立权利要求的数量两种方法测度专利保护范围[21]。 Teodor-escu&Kuhn（2021)同样认为，首项权利要求的字数可以有效地衡量专利保护范围[22]。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "Mar-co,etal．（2019）",
+          "normalized_name": "Mar-co, et al. (2019)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Mar-co,etal．（2019）用独立权利要求的字数和独立权利要求的数量两种方法测度专利保护范围",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "独立权利要求的字数",
+          "normalized_name": "独立权利要求的字数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用独立权利要求的字数和独立权利要求的数量两种方法测度专利保护范围",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "独立权利要求的数量",
+          "normalized_name": "独立权利要求的数量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用独立权利要求的字数和独立权利要求的数量两种方法测度专利保护范围",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "专利保护范围",
+          "normalized_name": "专利保护范围",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "测度专利保护范围",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e5",
+          "mention": "Teodor-escu&Kuhn（2021)",
+          "normalized_name": "Teodorescu & Kuhn (2021)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Teodor-escu&Kuhn（2021)同样认为，首项权利要求的字数可以有效地衡量专利保护范围",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e6",
+          "mention": "首项权利要求的字数",
+          "normalized_name": "首项权利要求的字数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "首项权利要求的字数可以有效地衡量专利保护范围",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "专利价值指标的实证检验主要包括如下两大类：一是将专利存续期维持费用作为专利价值的代理变量； 二是应用回归模型分析专利特征指标与专利价值的相关关系以识别专利价值指标。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "专利存续期维持费用",
+          "normalized_name": "专利存续期维持费用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将专利存续期维持费用作为专利价值的代理变量",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "回归模型",
+          "normalized_name": "回归模型",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "应用回归模型分析专利特征指标与专利价值的相关关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "专利特征指标",
+          "normalized_name": "专利特征指标",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分析专利特征指标与专利价值的相关关系",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但图情领域有具体研究指向"
+        },
+        {
+          "entity_id": "18_e4",
+          "mention": "专利价值指标",
+          "normalized_name": "专利价值指标",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "识别专利价值指标",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但作为研究主题被讨论"
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "(1)专利存续期文献研究。 专利价值的评估非常困难,因为专利价值分布是高度偏斜的。解决数据偏斜的一个有益尝试是使用专利存续期维持费用评估专利价值。专利维持决策隐含地反映了专利租金的价值，因为专利维持费用随着维持年限的增加而急速增加,同时,维持年限越长,专利被其他技术替代的风险越高。如果专利租金低于专利维持费用,专利权人就会做出放弃维持的决定。Pakes& Schankerman(1984)首先用专利维持决定数据构建模型估计专利价值的分布。Lanjouw改进了这一方法并用于专利价值评估[23]。张古鹏等改进了传统以存续期为基础的专利价值模型,研究发现,我国研究机构的平均专利价值显著低于企业[24]。专利价值与专利年龄的关系呈驼峰形状，专利预期价值首先随时间递减，专利授权后5年左右开始递增,授权后11年左右又呈递减趋势。宋爽等将专利存续期作为专利价值的代理变量，研究发现,相比于技术领域因素,区域技术差异对专利价值的影响更显著更稳定[25]。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "Pakes& Schankerman(1984)",
+          "normalized_name": "Pakes & Schankerman (1984)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Pakes& Schankerman(1984)首先用专利维持决定数据构建模型估计专利价值的分布",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "Lanjouw",
+          "normalized_name": "Lanjouw",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Lanjouw改进了这一方法并用于专利价值评估[23]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "张古鹏",
+          "normalized_name": "张古鹏",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "张古鹏等改进了传统以存续期为基础的专利价值模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e4",
+          "mention": "宋爽",
+          "normalized_name": "宋爽",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "宋爽等将专利存续期作为专利价值的代理变量",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e5",
+          "mention": "专利存续期",
+          "normalized_name": "专利存续期",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利存续期文献研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e6",
+          "mention": "专利维持费用",
+          "normalized_name": "专利维持费用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用专利存续期维持费用评估专利价值",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e7",
+          "mention": "专利租金",
+          "normalized_name": "专利租金",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利维持决策隐含地反映了专利租金的价值",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e8",
+          "mention": "专利价值模型",
+          "normalized_name": "专利价值模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "张古鹏等改进了传统以存续期为基础的专利价值模型",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "专利维持费用这一评估方法面临两个重大的挑战：一是无法直接揭示最有价值专利的价值。因为这一方法遗漏了那些维持到最终法定年限的专利,这些没有被观测到的专利恰恰是最有价值的专利。二是对专利价值评估结果比较敏感，易受其他因素影响,波动幅度较大。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "专利维持费用",
+          "normalized_name": "专利维持费用",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利维持费用这一评估方法面临两个重大的挑战",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "(2)专利特征指标与专利价值相关关系的回归分析。 这类文献重点讨论了专利被引用量、专利宽度、同族专利等专利特征指标与专利价值的相关关系。表1列举了主要文献的研究结论。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "专利被引用量",
+          "normalized_name": "专利被引用量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利被引用量、专利宽度、同族专利等专利特征指标",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "专利宽度",
+          "normalized_name": "专利宽度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利被引用量、专利宽度、同族专利等专利特征指标",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "同族专利",
+          "normalized_name": "同族专利",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利被引用量、专利宽度、同族专利等专利特征指标",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "表1",
+          "normalized_name": "表1",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "表1列举了主要文献的研究结论",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为论文中的表格，属于论文组成部分"
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "a.专利引用与专利价值。 Narin,etal．（1997）首次探讨了专利引用量与专利价值的相关关系。Tra-jtenberg（1990）将专利被引用量引入专利价值研究[26],认为专利在审查过程中的被引用次数可以很好地衡量其技术的重要性，从而反映创新的经济价值信息，研究结论显示，被引用次数加权后的专利数量与计算机断层扫描仪的社会收益高度相关。Lanjouw&Schankerman（2001）也证实了专利被引用量作为专利价值指标的有效性[16]。Harhoff,etal．（2003）将专利权人愿意出售专利的价格作为专利价值的代理变量，研究发现，专利引用数量和被引用数量与专利价值正相关。Hall,etal．（2005）用专利被引用存量代替简单的专利被引用数量,检验专利引用对上市公司股票市场价值的影响,研究发现，专利被引用存量会显著提升企业市场价值，而且自引用比外部引用更有价值，但自引用的影响会随着企业专利组合规模的增加而减小[27]。林德明等以中国专利奖的获奖专利为研究样本，研究发现，专利引用可以作为专利价值评价的有效指标[28]。邓洁等发现,专利被引用量能促进专利转化从而提升高校专利的价值[29]。 张克群等研究发现，专利",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "Narin,etal.",
+          "normalized_name": "Narin,etal.",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Narin,etal．（1997）首次探讨了专利引用量与专利价值的相关关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "Tra-jtenberg",
+          "normalized_name": "Trajtenberg",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Tra-jtenberg（1990）将专利被引用量引入专利价值研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e3",
+          "mention": "Lanjouw&Schankerman",
+          "normalized_name": "Lanjouw&Schankerman",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Lanjouw&Schankerman（2001）也证实了专利被引用量作为专利价值指标的有效性",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e4",
+          "mention": "Harhoff,etal.",
+          "normalized_name": "Harhoff,etal.",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Harhoff,etal．（2003）将专利权人愿意出售专利的价格作为专利价值的代理变量",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e5",
+          "mention": "Hall,etal.",
+          "normalized_name": "Hall,etal.",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Hall,etal．（2005）用专利被引用存量代替简单的专利被引用数量",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e6",
+          "mention": "林德明",
+          "normalized_name": "林德明",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "林德明等以中国专利奖的获奖专利为研究样本",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e7",
+          "mention": "邓洁",
+          "normalized_name": "邓洁",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "邓洁等发现,专利被引用量能促进专利转化从而提升高校专利的价值",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e8",
+          "mention": "张克群",
+          "normalized_name": "张克群",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "张克群等研究发现，专利",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e9",
+          "mention": "中国专利奖",
+          "normalized_name": "中国专利奖",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "林德明等以中国专利奖的获奖专利为研究样本",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e10",
+          "mention": "计算机断层扫描仪",
+          "normalized_name": "计算机断层扫描仪",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "被引用次数加权后的专利数量与计算机断层扫描仪的社会收益高度相关",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "在引证网络中的向量中心性对专利价值有显著的正向影响,但这一正向影响会随技术发展阶段变化,只适用于技术发展成熟期的专利[30]。李牧南等从被引次数、权利要求数量、维持率等维度构建了专利质量综合评价体系，并进一步分析了企业专利质量与其市场价值的关系[31]。宋艳等从技术、法律和经济三个不同维度探讨专利质量与企业绩效之间的关系及其作用机理[32]  \n。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "引证网络",
+          "normalized_name": "引证网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在引证网络中的向量中心性对专利价值有显著的正向影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "向量中心性",
+          "normalized_name": "向量中心性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在引证网络中的向量中心性对专利价值有显著的正向影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "专利价值",
+          "normalized_name": "专利价值",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在引证网络中的向量中心性对专利价值有显著的正向影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e4",
+          "mention": "技术发展成熟期",
+          "normalized_name": "技术发展成熟期",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "只适用于技术发展成熟期的专利[30]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e5",
+          "mention": "李牧南",
+          "normalized_name": "李牧南",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "李牧南等从被引次数、权利要求数量、维持率等维度构建了专利质量综合评价体系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e6",
+          "mention": "被引次数",
+          "normalized_name": "被引次数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "李牧南等从被引次数、权利要求数量、维持率等维度构建了专利质量综合评价体系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e7",
+          "mention": "权利要求数量",
+          "normalized_name": "权利要求数量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "李牧南等从被引次数、权利要求数量、维持率等维度构建了专利质量综合评价体系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e8",
+          "mention": "维持率",
+          "normalized_name": "维持率",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "李牧南等从被引次数、权利要求数量、维持率等维度构建了专利质量综合评价体系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e9",
+          "mention": "专利质量综合评价体系",
+          "normalized_name": "专利质量综合评价体系",
+          "candidate_l3": "framework",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "李牧南等从被引次数、权利要求数量、维持率等维度构建了专利质量综合评价体系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e10",
+          "mention": "企业专利质量",
+          "normalized_name": "企业专利质量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "进一步分析了企业专利质量与其市场价值的关系[31]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e11",
+          "mention": "市场价值",
+          "normalized_name": "市场价值",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "进一步分析了企业专利质量与其市场价值的关系[31]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e12",
+          "mention": "宋艳",
+          "normalized_name": "宋艳",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "宋艳等从技术、法律和经济三个不同维度探讨专利质量与企业绩效之间的关系及其作用机理[32]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e13",
+          "mention": "专利质量",
+          "normalized_name": "专利质量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "宋艳等从技术、法律和经济三个不同维度探讨专利质量与企业绩效之间的关系及其作用机理[32]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e14",
+          "mention": "企业绩效",
+          "normalized_name": "企业绩效",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "宋艳等从技术、法律和经济三个不同维度探讨专利质量与企业绩效之间的关系及其作用机理[32]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "专利拍卖市场有助于提高交易透明度和降低交易成本。这一新兴专利交易行为使得学者能够直接观测专利价值。Sneed&Johnson（2009）利用2006 年OceanTomo 公司拟拍卖的99项专利组合数据,检验了13个专利价值指标对专利拍卖成交概率和专利拍卖价格的影响,研究发现,经常被引用的专利更有价值，但后向引用对专利拍卖价格影响不显著[33]。Vimalnath,etal.(2018)在扩大专利拍卖数据样本后，同样证实了专利被引用数量对专利拍卖价格的正向影响[34]。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "Sneed&Johnson（2009）",
+          "normalized_name": "Sneed&Johnson (2009)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Sneed&Johnson（2009）利用2006 年OceanTomo 公司拟拍卖的99项专利组合数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "OceanTomo 公司",
+          "normalized_name": "OceanTomo公司",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "2006 年OceanTomo 公司拟拍卖的99项专利组合数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e3",
+          "mention": "99项专利组合数据",
+          "normalized_name": "99项专利组合数据",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用2006 年OceanTomo 公司拟拍卖的99项专利组合数据",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e4",
+          "mention": "13个专利价值指标",
+          "normalized_name": "13个专利价值指标",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检验了13个专利价值指标对专利拍卖成交概率和专利拍卖价格的影响",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "指标具体名称未给出，但作为一组具体指标抽取"
+        },
+        {
+          "entity_id": "24_e5",
+          "mention": "专利拍卖成交概率",
+          "normalized_name": "专利拍卖成交概率",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检验了13个专利价值指标对专利拍卖成交概率和专利拍卖价格的影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e6",
+          "mention": "专利拍卖价格",
+          "normalized_name": "专利拍卖价格",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检验了13个专利价值指标对专利拍卖成交概率和专利拍卖价格的影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e7",
+          "mention": "Vimalnath,etal.(2018)",
+          "normalized_name": "Vimalnath et al. (2018)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Vimalnath,etal.(2018)在扩大专利拍卖数据样本后，同样证实了专利被引用数量对专利拍卖价格的正向影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e8",
+          "mention": "专利被引用数量",
+          "normalized_name": "专利被引用数量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利被引用数量对专利拍卖价格的正向影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "然而，大量经验研究表明，专利被引用量作为专利价值指标的有效性正面临越来越严重的挑战。第一，专利被引用量存在滞后性和时间膨胀效应。Hall,etal.（2001）和Gambardella,etal.（2008）发现专利引用可能受到严重的噪音和测量误差的影响，因为专利被引用量随着时间的推移大量增加，专利在授权后10 年里通常仅获得一半的被引用量。他们认为，利用专利被引用量分析专利价值时必须控制合适的时间区间以解决数据截断问题。第二，专利被引用量对专利价值差异的解释力度非常有限。Bessen（2008)研究发现，专利被引用量仅能解释专利价值增量的 $4 \\% \\sim 7 \\%$ ,据此,Bessen(2008)指出，专利引用数据不是衡量专利价值的可靠标准。Nair,etal．（2011)研究结果显示，专利被引用量和专利申请国别数量与专利拍卖价格正向关联，解释了专利价值差异的 $1 4 . 7 9 \\%$ 。Fischer &Lei-dinger（2014)发现，专利被引用量解释了专利拍卖价格差异的 $9 . 5 8 \\%$ ，而且主要通过专利权人的自引用来实现[35]。第三,专利被引用量受专利申请策略的影响日益增强,其对专利技术质量的解释力却日益下降。Han&Sohn(2015)利用文本挖掘技术研究发现,当用专利维持时间衡量专利价值时,专利权利要求与前向引用专利权利要求的欧几里德距离与专利维持时间正向关联。Abrams,etal．（2018）发现专利被引用量与市场价值存在倒U型关系，这表明高被引用量可能来自专利的战略性使用而不是有重要影响力的创新。Poege,etal．（2019）基于480万同族专利和4300万篇科学论文的大规模匹配结果,用专利申请日后五年内接收到的被引用数量测度专利价值,研究发现，专利引用的科技文献质量与专利价值高度相关 [36]。Ku-hn,et al．（2020）对1976-2014年美国专利引用数据研究发现，专利引用的中心化程度越来越明显,大部分专利引用是由少数专利申请产生的; 更为重要的是，专利引用量对技术相关性的解释力正在逐年迅速下降,这一趋势并不是审查员引用带来的,而是专利申请人引用带来的[37]。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "专利被引用量",
+          "normalized_name": "专利被引用量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利被引用量作为专利价值指标的有效性正面临越来越严重的挑战",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "Hall,etal.（2001）",
+          "normalized_name": "Hall et al. (2001)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Hall,etal.（2001）和Gambardella,etal.（2008）发现专利引用可能受到严重的噪音和测量误差的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e3",
+          "mention": "Gambardella,etal.（2008）",
+          "normalized_name": "Gambardella et al. (2008)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Hall,etal.（2001）和Gambardella,etal.（2008）发现专利引用可能受到严重的噪音和测量误差的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e4",
+          "mention": "Bessen（2008)",
+          "normalized_name": "Bessen (2008)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Bessen（2008)研究发现，专利被引用量仅能解释专利价值增量的 $4 \\% \\sim 7 \\%$",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e5",
+          "mention": "Nair,etal．（2011)",
+          "normalized_name": "Nair et al. (2011)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Nair,etal．（2011)研究结果显示，专利被引用量和专利申请国别数量与专利拍卖价格正向关联",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e6",
+          "mention": "Fischer &Lei-dinger（2014)",
+          "normalized_name": "Fischer & Leidinger (2014)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Fischer &Lei-dinger（2014)发现，专利被引用量解释了专利拍卖价格差异的 $9 . 5 8 \\%$",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e7",
+          "mention": "Han&Sohn(2015)",
+          "normalized_name": "Han & Sohn (2015)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Han&Sohn(2015)利用文本挖掘技术研究发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e8",
+          "mention": "文本挖掘技术",
+          "normalized_name": "文本挖掘技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Han&Sohn(2015)利用文本挖掘技术研究发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e9",
+          "mention": "Abrams,etal．（2018）",
+          "normalized_name": "Abrams et al. (2018)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Abrams,etal．（2018）发现专利被引用量与市场价值存在倒U型关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e10",
+          "mention": "Poege,etal．（2019）",
+          "normalized_name": "Poege et al. (2019)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Poege,etal．（2019）基于480万同族专利和4300万篇科学论文的大规模匹配结果",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e11",
+          "mention": "Ku-hn,et al．（2020）",
+          "normalized_name": "Kuhn et al. (2020)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Ku-hn,et al．（2020）对1976-2014年美国专利引用数据研究发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e12",
+          "mention": "美国专利引用数据",
+          "normalized_name": "美国专利引用数据",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Ku-hn,et al．（2020）对1976-2014年美国专利引用数据研究发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "更为重要的是，专利引用量对技术相关性的解释力正在逐年迅速下降,这一趋势并不是审查员引用带来的,而是专利申请人引用带来的[37]。 由此,Kuhn,etal．（2020)认为,相比之前文献将被审查员引用作为专利价值指标，被专利申请人引用反而更能准确评估专利价值。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "专利引用量",
+          "normalized_name": "专利引用量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利引用量对技术相关性的解释力正在逐年迅速下降",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e2",
+          "mention": "技术相关性",
+          "normalized_name": "技术相关性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利引用量对技术相关性的解释力",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e3",
+          "mention": "审查员引用",
+          "normalized_name": "审查员引用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这一趋势并不是审查员引用带来的",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e4",
+          "mention": "专利申请人引用",
+          "normalized_name": "专利申请人引用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "而是专利申请人引用带来的",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e5",
+          "mention": "Kuhn, et al. (2020)",
+          "normalized_name": "Kuhn, et al. (2020)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Kuhn, et al. (2020)认为",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e6",
+          "mention": "专利价值",
+          "normalized_name": "专利价值",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "被专利申请人引用反而更能准确评估专利价值",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "b.专利保护范围、专利宽度与专利价值。 IPC 分类号数量与专利价值。Lerner（1994)研究发现，专利IPC 分类号数量的增加会带来生物技术公司市场价值的增加。然而,Lanjouw& Schankerman（1997）发现,用 IPC分类号数量表征的专利保护范围不会对专利涉诉的概率产生积极影响。Harhoff,etal．（2003）使用Lerner（1994）设计的专利保护范围变量，同样发现,专利宽度与专利价值（专利权人愿意出售专利的价格)没有显著相关关系。Reitzig（2003）基于127项半导体专利的价值评估结果（专家们依据专利价值从低到高依次赋值1-7），研究发现,对于交易筹码（bar-gainingchips)专利而言，技术规避难度对专利价值的重要性是有限的。 专利价格的实证文献同样没有发现IPC 分类号数量与专利价值正相关的证据。",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "IPC 分类号数量",
+          "normalized_name": "IPC分类号数量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "IPC 分类号数量与专利价值",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "Lerner（1994）",
+          "normalized_name": "Lerner（1994）",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Lerner（1994)研究发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e3",
+          "mention": "Lanjouw& Schankerman（1997）",
+          "normalized_name": "Lanjouw & Schankerman（1997）",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Lanjouw& Schankerman（1997）发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e4",
+          "mention": "Harhoff,etal．（2003）",
+          "normalized_name": "Harhoff et al.（2003）",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Harhoff,etal．（2003）使用Lerner（1994）设计的专利保护范围变量",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e5",
+          "mention": "Reitzig（2003）",
+          "normalized_name": "Reitzig（2003）",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Reitzig（2003）基于127项半导体专利的价值评估结果",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e6",
+          "mention": "IPC 分类号",
+          "normalized_name": "IPC分类号",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "IPC 分类号数量与专利价值",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e7",
+          "mention": "专利保护范围",
+          "normalized_name": "专利保护范围",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利保护范围、专利宽度与专利价值",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e8",
+          "mention": "专利宽度",
+          "normalized_name": "专利宽度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利宽度与专利价值",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e9",
+          "mention": "专利价值",
+          "normalized_name": "专利价值",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利宽度与专利价值",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e10",
+          "mention": "交易筹码（bar-gainingchips)专利",
+          "normalized_name": "交易筹码（bargaining chips）专利",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对于交易筹码（bar-gainingchips)专利而言",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e11",
+          "mention": "技术规避难度",
+          "normalized_name": "技术规避难度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "技术规避难度对专利价值的重要性是有限的",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "专利价格的实证文献同样没有发现IPC 分类号数量与专利价值正相关的证据。 Lee,et al.（2010）研究发现，专利宽度对专利拍卖成交概率和拍卖成交价格呈现负向影响[38]。Nair,etal．（2011）及Fischer&Leidinger（2014）发现,专利宽度对专利拍卖价格影响不显著。Vimalnath,etal.（2018)发现高价值专利和低价值专利的专利范围差异并不明显。Har-hoff,etal．（2003）和Reitzig（2003）认为,IPC分类号数量可能只适用于特定行业的专利价值评估。国内学者最近的研究同样证实了IPC分类号数量的行业局限性。郭状和冯仁涛等发现,IPC分类号数量与人工智能专利和生物技术专利的价值有显著的正相关关系[39-40]。杨武等以燃料电池作为研究对象,研究发现,IPC 分类号数量对专利价值影响不显著[41]。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "Lee,et al.（2010）",
+          "normalized_name": "Lee et al. (2010)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Lee,et al.（2010）研究发现，专利宽度对专利拍卖成交概率和拍卖成交价格呈现负向影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "Nair,etal．（2011）",
+          "normalized_name": "Nair et al. (2011)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Nair,etal．（2011）及Fischer&Leidinger（2014）发现,专利宽度对专利拍卖价格影响不显著",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e3",
+          "mention": "Fischer&Leidinger（2014）",
+          "normalized_name": "Fischer & Leidinger (2014)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Nair,etal．（2011）及Fischer&Leidinger（2014）发现,专利宽度对专利拍卖价格影响不显著",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e4",
+          "mention": "Vimalnath,etal.（2018)",
+          "normalized_name": "Vimalnath et al. (2018)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Vimalnath,etal.（2018)发现高价值专利和低价值专利的专利范围差异并不明显",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e5",
+          "mention": "Har-hoff,etal．（2003）",
+          "normalized_name": "Har-hoff et al. (2003)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Har-hoff,etal．（2003）和Reitzig（2003）认为,IPC分类号数量可能只适用于特定行业的专利价值评估",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e6",
+          "mention": "Reitzig（2003）",
+          "normalized_name": "Reitzig (2003)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Har-hoff,etal．（2003）和Reitzig（2003）认为,IPC分类号数量可能只适用于特定行业的专利价值评估",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e7",
+          "mention": "IPC 分类号",
+          "normalized_name": "IPC分类号",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "专利价格的实证文献同样没有发现IPC 分类号数量与专利价值正相关的证据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e8",
+          "mention": "郭状",
+          "normalized_name": "郭状",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "郭状和冯仁涛等发现,IPC分类号数量与人工智能专利和生物技术专利的价值有显著的正相关关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e9",
+          "mention": "冯仁涛",
+          "normalized_name": "冯仁涛",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "郭状和冯仁涛等发现,IPC分类号数量与人工智能专利和生物技术专利的价值有显著的正相关关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e10",
+          "mention": "人工智能专利",
+          "normalized_name": "人工智能专利",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "IPC分类号数量与人工智能专利和生物技术专利的价值有显著的正相关关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e11",
+          "mention": "生物技术专利",
+          "normalized_name": "生物技术专利",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "IPC分类号数量与人工智能专利和生物技术专利的价值有显著的正相关关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e12",
+          "mention": "杨武",
+          "normalized_name": "杨武",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "杨武等以燃料电池作为研究对象,研究发现,IPC 分类号数量对专利价值影响不显著",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e13",
+          "mention": "燃料电池",
+          "normalized_name": "燃料电池",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "杨武等以燃料电池作为研究对象",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "29",
+      "sentence": "权利要求数量与专利价值。 当用权利要求数量衡量专利保护范围时，权利要求数量与专利价值的关系也是不确定的。",
+      "entities": [
+        {
+          "entity_id": "29_e1",
+          "mention": "权利要求数量",
+          "normalized_name": "权利要求数量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "权利要求数量与专利价值",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e2",
+          "mention": "专利价值",
+          "normalized_name": "专利价值",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "权利要求数量与专利价值",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e3",
+          "mention": "专利保护范围",
+          "normalized_name": "专利保护范围",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当用权利要求数量衡量专利保护范围时",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "当用权利要求数量衡量专利保护范围时，权利要求数量与专利价值的关系也是不确定的。 Fischer&Leidinger（2014）发现,权利要求数量与专利拍卖价格是正相关,而Nair,et al.（2011)和Odasso,etal.（2015）研究结论显示,二者之间没有显著的相关关系。张克群等发现,权利要求数对专利拍卖价格有负向影响[42]。钱坤等研究发现,企业专利价值受专利权利要求数的影响较为显著[43]。 Hsu,etal．（2021）基于权利要求数量、专利申请国家数量等特征指标构建专利质量指数，然后将大学专利与具有相似特征的企业专利进行有效匹配,然后通过观测相似专利授权对企业股票市场价值的影响来估计大学专利的“潜在价值”。",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "Fischer&Leidinger（2014）",
+          "normalized_name": "Fischer & Leidinger (2014)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Fischer&Leidinger（2014）发现,权利要求数量与专利拍卖价格是正相关",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "Nair,et al.（2011)",
+          "normalized_name": "Nair et al. (2011)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Nair,et al.（2011)和Odasso,etal.（2015）研究结论显示,二者之间没有显著的相关关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e3",
+          "mention": "Odasso,etal.（2015）",
+          "normalized_name": "Odasso et al. (2015)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Nair,et al.（2011)和Odasso,etal.（2015）研究结论显示,二者之间没有显著的相关关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e4",
+          "mention": "张克群等",
+          "normalized_name": "张克群等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "张克群等发现,权利要求数对专利拍卖价格有负向影响[42]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "未给出具体人名，但作为研究团队引用可识别"
+        },
+        {
+          "entity_id": "30_e5",
+          "mention": "钱坤等",
+          "normalized_name": "钱坤等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "钱坤等研究发现,企业专利价值受专利权利要求数的影响较为显著[43]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "未给出具体人名，但作为研究团队引用可识别"
+        },
+        {
+          "entity_id": "30_e6",
+          "mention": "Hsu,etal．（2021）",
+          "normalized_name": "Hsu et al. (2021)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Hsu,etal．（2021）基于权利要求数量、专利申请国家数量等特征指标构建专利质量指数",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e7",
+          "mention": "权利要求数量",
+          "normalized_name": "权利要求数量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当用权利要求数量衡量专利保护范围时，权利要求数量与专利价值的关系也是不确定的",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e8",
+          "mention": "专利价值",
+          "normalized_name": "专利价值",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "权利要求数量与专利价值的关系也是不确定的",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e9",
+          "mention": "专利拍卖价格",
+          "normalized_name": "专利拍卖价格",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "权利要求数量与专利拍卖价格是正相关",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e10",
+          "mention": "专利质量指数",
+          "normalized_name": "专利质量指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Hsu,etal．（2021）基于权利要求数量、专利申请国家数量等特征指标构建专利质量指数",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e11",
+          "mention": "专利申请国家数量",
+          "normalized_name": "专利申请国家数量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于权利要求数量、专利申请国家数量等特征指标构建专利质量指数",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e12",
+          "mention": "大学专利",
+          "normalized_name": "大学专利",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "然后将大学专利与具有相似特征的企业专利进行有效匹配",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e13",
+          "mention": "企业专利",
+          "normalized_name": "企业专利",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "然后将大学专利与具有相似特征的企业专利进行有效匹配",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e14",
+          "mention": "股票市场价值",
+          "normalized_name": "股票市场价值",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过观测相似专利授权对企业股票市场价值的影响来估计大学专利的“潜在价值”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e15",
+          "mention": "潜在价值",
+          "normalized_name": "潜在价值",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "来估计大学专利的“潜在价值”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "31",
+      "sentence": "Hsu,etal．（2021）基于权利要求数量、专利申请国家数量等特征指标构建专利质量指数，然后将大学专利与具有相似特征的企业专利进行有效匹配,然后通过观测相似专利授权对企业股票市场价值的影响来估计大学专利的“潜在价值”。 研究发现,这一专利质量指数可以显著解释美国领先的研究型大学的技术许可收人[44] 。",
+      "entities": [
+        {
+          "entity_id": "31_e1",
+          "mention": "Hsu,etal．（2021）",
+          "normalized_name": "Hsu et al. (2021)",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Hsu,etal．（2021）基于权利要求数量、专利申请国家数量等特征指标构建专利质量指数",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e2",
+          "mention": "专利质量指数",
+          "normalized_name": "专利质量指数",
+          "candidate_l3": "index",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "构建专利质量指数",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e3",
+          "mention": "美国领先的研究型大学",
+          "normalized_name": "美国领先的研究型大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国领先的研究型大学的技术许可收人",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "虽含修饰语'领先的'，但'美国研究型大学'作为具体机构类别可识别"
+        }
+      ]
+    },
+    {
+      "sentence_id": "32",
+      "sentence": "Putnam（1996)首次将同族专利的海外申请数量引入专利价值指标研究[45]。 他指出，专利寻求保护的司法管辖区的数量,也就是海外同族专利数量，可能与其价值相关。Lanjouw& Schankerman（2001）,Harhoff&Reitzig（2OO2）,Guellec &van Pottelsberghede laPotterie（2000）,Harhoff,etal．（2003）同样发现,专利国外同族数量越多，其价值也更高。Gam-bardella,etal．（2008）利用欧洲专利价值调研问卷数据,发现专利申请国家数量即海外同族专利数量与专利的货币价值显著相关。然而,专利价格的实证结论并不一致。Sneed&Johnson（2009)发现,专利申请国别数越多，专利拍卖成交概率越低，专利拍卖成交价格也越低。Nair，etal．（2O11），Fischer&Leidinger(2014）和Odasso,etal.（2015）发现,专利申请国别数量与专利拍卖价格正向关联。张克群等发现,同族专利对专利拍卖价格的影响并不显著。",
+      "entities": [
+        {
+          "entity_id": "32_e1",
+          "mention": "Putnam（1996)",
+          "normalized_name": "Putnam (1996)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Putnam（1996)首次将同族专利的海外申请数量引入专利价值指标研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e2",
+          "mention": "同族专利",
+          "normalized_name": "同族专利",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Putnam（1996)首次将同族专利的海外申请数量引入专利价值指标研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e3",
+          "mention": "海外同族专利数量",
+          "normalized_name": "海外同族专利数量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "海外同族专利数量，可能与其价值相关",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e4",
+          "mention": "Lanjouw& Schankerman（2001）",
+          "normalized_name": "Lanjouw & Schankerman (2001)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Lanjouw& Schankerman（2001）,Harhoff&Reitzig（2OO2）,Guellec &van Pottelsberghede laPotterie（2000）,Harhoff,etal．（2003）同样发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e5",
+          "mention": "Harhoff&Reitzig（2OO2）",
+          "normalized_name": "Harhoff & Reitzig (2002)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Lanjouw& Schankerman（2001）,Harhoff&Reitzig（2OO2）,Guellec &van Pottelsberghede laPotterie（2000）,Harhoff,etal．（2003）同样发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e6",
+          "mention": "Guellec &van Pottelsberghede laPotterie（2000）",
+          "normalized_name": "Guellec & van Pottelsberghe de la Potterie (2000)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Lanjouw& Schankerman（2001）,Harhoff&Reitzig（2OO2）,Guellec &van Pottelsberghede laPotterie（2000）,Harhoff,etal．（2003）同样发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e7",
+          "mention": "Harhoff,etal．（2003）",
+          "normalized_name": "Harhoff et al. (2003)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Lanjouw& Schankerman（2001）,Harhoff&Reitzig（2OO2）,Guellec &van Pottelsberghede laPotterie（2000）,Harhoff,etal．（2003）同样发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e8",
+          "mention": "Gam-bardella,etal．（2008）",
+          "normalized_name": "Gambardella et al. (2008)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Gam-bardella,etal．（2008）利用欧洲专利价值调研问卷数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e9",
+          "mention": "欧洲专利价值调研问卷",
+          "normalized_name": "欧洲专利价值调研问卷",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Gam-bardella,etal．（2008）利用欧洲专利价值调研问卷数据",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e10",
+          "mention": "Sneed&Johnson（2009)",
+          "normalized_name": "Sneed & Johnson (2009)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Sneed&Johnson（2009)发现,专利申请国别数越多，专利拍卖成交概率越低",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e11",
+          "mention": "Nair，etal．（2O11）",
+          "normalized_name": "Nair et al. (2011)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Nair，etal．（2O11），Fischer&Leidinger(2014）和Odasso,etal.（2015）发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e12",
+          "mention": "Fischer&Leidinger(2014）",
+          "normalized_name": "Fischer & Leidinger (2014)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Nair，etal．（2O11），Fischer&Leidinger(2014）和Odasso,etal.（2015）发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e13",
+          "mention": "Odasso,etal.（2015）",
+          "normalized_name": "Odasso et al. (2015)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Nair，etal．（2O11），Fischer&Leidinger(2014）和Odasso,etal.（2015）发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e14",
+          "mention": "张克群等",
+          "normalized_name": "张克群等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "张克群等发现,同族专利对专利拍卖价格的影响并不显著",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "33",
+      "sentence": "专利是否涉诉或被异议。 Harhoff,etal．（2003）发现,在授权异议程序中得到支持的专利尤其有价值。Bessen(2008)发现,在控制专利和所有者特征后，涉诉专利的价值是非涉诉专利价值的6倍。周克放等认为，评价专利质量时应当重视专利无效审查和专利诉讼数据[46] 。",
+      "entities": [
+        {
+          "entity_id": "33_e1",
+          "mention": "Harhoff,etal．（2003）",
+          "normalized_name": "Harhoff et al. (2003)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Harhoff,etal．（2003）发现,在授权异议程序中得到支持的专利尤其有价值",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e2",
+          "mention": "Bessen(2008)",
+          "normalized_name": "Bessen (2008)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Bessen(2008)发现,在控制专利和所有者特征后，涉诉专利的价值是非涉诉专利价值的6倍",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e3",
+          "mention": "周克放等",
+          "normalized_name": "周克放等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "周克放等认为，评价专利质量时应当重视专利无效审查和专利诉讼数据[46]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "34",
+      "sentence": "Odasso,etal．（2015）首次引入专利拍卖中买卖双方的类型特征，研究发现,权利要求数量对拍卖专利成交价的正向效应仅体现在NPE 的专利购买决策中,对企业购买行为影响不显著; 归因于NPE 的购买行为，专利剩余寿命与拍卖专利的成交价正向关联。 Caviggioli&Ughetto（2016）进一步区分",
+      "entities": [
+        {
+          "entity_id": "34_e1",
+          "mention": "Odasso,etal．（2015）",
+          "normalized_name": "Odasso et al. (2015)",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Odasso,etal．（2015）首次引入专利拍卖中买卖双方的类型特征",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e2",
+          "mention": "专利拍卖",
+          "normalized_name": "专利拍卖",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "首次引入专利拍卖中买卖双方的类型特征",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e3",
+          "mention": "权利要求数量",
+          "normalized_name": "权利要求数量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "权利要求数量对拍卖专利成交价的正向效应",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e4",
+          "mention": "NPE",
+          "normalized_name": "NPE",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "仅体现在NPE 的专利购买决策中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e5",
+          "mention": "专利剩余寿命",
+          "normalized_name": "专利剩余寿命",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利剩余寿命与拍卖专利的成交价正向关联",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e6",
+          "mention": "Caviggioli&Ughetto（2016）",
+          "normalized_name": "Caviggioli & Ughetto (2016)",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Caviggioli&Ughetto（2016）进一步区分",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "35",
+      "sentence": "NPE 的类型,发现高智发明公司等超级集聚型NPE认为发明人数量越多，剩余寿命越长，专利价值越高，而防御型NPE 则倾向于对发明人数量少、专利宽度窄（四位IPC分类号数量)和剩余寿命长的专利给予更高的报价[47]。乔永忠等以表征高价值的国家专利金奖的获奖专利为样本，研究发现,不同类型专利权人获奖发明专利的质量存在明显差异。",
+      "entities": [
+        {
+          "entity_id": "35_e1",
+          "mention": "高智发明公司",
+          "normalized_name": "高智发明公司",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "发现高智发明公司等超级集聚型NPE认为发明人数量越多",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e2",
+          "mention": "超级集聚型NPE",
+          "normalized_name": "超级集聚型NPE",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "高智发明公司等超级集聚型NPE认为发明人数量越多",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e3",
+          "mention": "防御型NPE",
+          "normalized_name": "防御型NPE",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "防御型NPE 则倾向于对发明人数量少",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e4",
+          "mention": "IPC分类号",
+          "normalized_name": "IPC分类号",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "专利宽度窄（四位IPC分类号数量)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e5",
+          "mention": "乔永忠",
+          "normalized_name": "乔永忠",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "乔永忠等以表征高价值的国家专利金奖的获奖专利为样本",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e6",
+          "mention": "国家专利金奖",
+          "normalized_name": "国家专利金奖",
+          "candidate_l3": "award",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "以表征高价值的国家专利金奖的获奖专利为样本",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为Artifact"
+        }
+      ]
+    },
+    {
+      "sentence_id": "36",
+      "sentence": "专利年龄。 现有实证文献已证实专利年龄与专利价值之间存在显著的U型关系。",
+      "entities": [
+        {
+          "entity_id": "36_e1",
+          "mention": "专利年龄",
+          "normalized_name": "专利年龄",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利年龄。 现有实证文献已证实专利年龄与专利价值之间存在显著的U型关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e2",
+          "mention": "专利价值",
+          "normalized_name": "专利价值",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利年龄与专利价值之间存在显著的U型关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e3",
+          "mention": "U型关系",
+          "normalized_name": "U型关系",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利年龄与专利价值之间存在显著的U型关系",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "37",
+      "sentence": "Sneed&Johnson(2009)发现专利年龄与专利拍卖成交价格呈现U型关系,授权后9年9个月的专利拍卖成交概率最低。 Serrano（2010）发现维持9年的专利被交易的概率最低,仅为 $2 \\%$ ,而此时专利的放弃维持率达到 $2 7 . 8 \\%$ 。Vimalnath,etal.（2018)的研究同样支持了这一U型关系，授权年限超过10年2个月的专利更有价值,拍卖成交价更高。",
+      "entities": [
+        {
+          "entity_id": "37_e1",
+          "mention": "Sneed&Johnson(2009)",
+          "normalized_name": "Sneed & Johnson (2009)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Sneed&Johnson(2009)发现专利年龄与专利拍卖成交价格呈现U型关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e2",
+          "mention": "Serrano（2010）",
+          "normalized_name": "Serrano (2010)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Serrano（2010）发现维持9年的专利被交易的概率最低",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e3",
+          "mention": "Vimalnath,etal.（2018)",
+          "normalized_name": "Vimalnath et al. (2018)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Vimalnath,etal.（2018)的研究同样支持了这一U型关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "38",
+      "sentence": "早期的专利价值评价方法基本沿用无形资产评估的成本法、市场法和收益法。 Martin,etal.（2006）认为,成本法、市场法和收益法在评估专利价值时存在比较明显的局限[48]。市场法的基本原理是以市场上相似的产品或技术作为参照物衡量待评价的专利的价值,但每个专利的个性特征是十分显著,要找到真正可供比较的专利技术是十分困难的。 成本法的基本原理是将专利的研发成本视为专利的价值,然而，专利价值与自身的研发成本并没有严格的匹配关系，有时甚至是不成比例的。",
+      "entities": [
+        {
+          "entity_id": "38_e1",
+          "mention": "成本法",
+          "normalized_name": "成本法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "早期的专利价值评价方法基本沿用无形资产评估的成本法、市场法和收益法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e2",
+          "mention": "市场法",
+          "normalized_name": "市场法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "早期的专利价值评价方法基本沿用无形资产评估的成本法、市场法和收益法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e3",
+          "mention": "收益法",
+          "normalized_name": "收益法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "早期的专利价值评价方法基本沿用无形资产评估的成本法、市场法和收益法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e4",
+          "mention": "Martin,etal.（2006）",
+          "normalized_name": "Martin et al. (2006)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Martin,etal.（2006）认为,成本法、市场法和收益法在评估专利价值时存在比较明显的局限[48]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "39",
+      "sentence": "成本法的基本原理是将专利的研发成本视为专利的价值,然而，专利价值与自身的研发成本并没有严格的匹配关系，有时甚至是不成比例的。 收益法用专利权生命周期内实现的预期净收益的现值衡量专利的价值，但专利的经济寿命周期和利润分成率评估比较困难，直接影响价值评价结果的准确性。 在这一背景下,学者开始探索专利价值评价的新思路。",
+      "entities": [
+        {
+          "entity_id": "39_e1",
+          "mention": "成本法",
+          "normalized_name": "成本法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "成本法的基本原理是将专利的研发成本视为专利的价值",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e2",
+          "mention": "收益法",
+          "normalized_name": "收益法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "收益法用专利权生命周期内实现的预期净收益的现值衡量专利的价值",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e3",
+          "mention": "专利价值评价",
+          "normalized_name": "专利价值评价",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学者开始探索专利价值评价的新思路",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "40",
+      "sentence": "李振亚等(2010)综合考虑技术、市场、竞争、法律四大要素提出一种新的专利价值评估方法。 然而，专利价值指标体系面临价值指标重复计算、价值指标权重计算主观性强等挑战,更为重要的是,不同用途的专利,其价值影响因素差异非常明显,难以构建一个通用的专利价值评价指标体系（Harhoff,etal.2003）。 薛明皋（2013）及唐恒等(2014)针对专利质押贷款这一特定情境讨论专利价值的分析指标体系。",
+      "entities": [
+        {
+          "entity_id": "40_e1",
+          "mention": "李振亚等(2010)",
+          "normalized_name": "李振亚等(2010)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "李振亚等(2010)综合考虑技术、市场、竞争、法律四大要素提出一种新的专利价值评估方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e2",
+          "mention": "专利价值评估方法",
+          "normalized_name": "专利价值评估方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提出一种新的专利价值评估方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e3",
+          "mention": "专利价值指标体系",
+          "normalized_name": "专利价值指标体系",
+          "candidate_l3": "framework",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利价值指标体系面临价值指标重复计算、价值指标权重计算主观性强等挑战",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e4",
+          "mention": "Harhoff,etal.2003",
+          "normalized_name": "Harhoff et al. 2003",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "难以构建一个通用的专利价值评价指标体系（Harhoff,etal.2003）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e5",
+          "mention": "薛明皋（2013）",
+          "normalized_name": "薛明皋（2013）",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "薛明皋（2013）及唐恒等(2014)针对专利质押贷款这一特定情境讨论专利价值的分析指标体系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e6",
+          "mention": "唐恒等(2014)",
+          "normalized_name": "唐恒等(2014)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "薛明皋（2013）及唐恒等(2014)针对专利质押贷款这一特定情境讨论专利价值的分析指标体系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e7",
+          "mention": "专利质押贷款",
+          "normalized_name": "专利质押贷款",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "针对专利质押贷款这一特定情境",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e8",
+          "mention": "分析指标体系",
+          "normalized_name": "分析指标体系",
+          "candidate_l3": "framework",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "讨论专利价值的分析指标体系",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指代具体的指标体系，但原文未给出名称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "41",
+      "sentence": "薛明皋（2013）及唐恒等(2014)针对专利质押贷款这一特定情境讨论专利价值的分析指标体系。 彭华涛等(2021)研究发现,专利在休眠期和唤醒期具有不同价值表现。 休眠期的价值评价可以通过盈利性与权益性、技术性、创新性、区域性4个方面综合考虑,唤醒期的专利价值应从学术性、技术性、法律性3个角度判断。",
+      "entities": [
+        {
+          "entity_id": "41_e1",
+          "mention": "薛明皋（2013）",
+          "normalized_name": "薛明皋（2013）",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "薛明皋（2013）及唐恒等(2014)针对专利质押贷款这一特定情境讨论专利价值的分析指标体系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e2",
+          "mention": "唐恒等(2014)",
+          "normalized_name": "唐恒等(2014)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "薛明皋（2013）及唐恒等(2014)针对专利质押贷款这一特定情境讨论专利价值的分析指标体系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e3",
+          "mention": "专利质押贷款",
+          "normalized_name": "专利质押贷款",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "针对专利质押贷款这一特定情境讨论专利价值的分析指标体系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e4",
+          "mention": "专利价值的分析指标体系",
+          "normalized_name": "专利价值的分析指标体系",
+          "candidate_l3": "framework",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "讨论专利价值的分析指标体系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e5",
+          "mention": "彭华涛等(2021)",
+          "normalized_name": "彭华涛等(2021)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "彭华涛等(2021)研究发现,专利在休眠期和唤醒期具有不同价值表现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e6",
+          "mention": "休眠期",
+          "normalized_name": "休眠期",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利在休眠期和唤醒期具有不同价值表现",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e7",
+          "mention": "唤醒期",
+          "normalized_name": "唤醒期",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利在休眠期和唤醒期具有不同价值表现",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e8",
+          "mention": "盈利性与权益性",
+          "normalized_name": "盈利性与权益性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "休眠期的价值评价可以通过盈利性与权益性、技术性、创新性、区域性4个方面综合考虑",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为复合概念"
+        },
+        {
+          "entity_id": "41_e9",
+          "mention": "技术性",
+          "normalized_name": "技术性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "休眠期的价值评价可以通过盈利性与权益性、技术性、创新性、区域性4个方面综合考虑",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e10",
+          "mention": "创新性",
+          "normalized_name": "创新性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "休眠期的价值评价可以通过盈利性与权益性、技术性、创新性、区域性4个方面综合考虑",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e11",
+          "mention": "区域性",
+          "normalized_name": "区域性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "休眠期的价值评价可以通过盈利性与权益性、技术性、创新性、区域性4个方面综合考虑",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e12",
+          "mention": "学术性",
+          "normalized_name": "学术性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "唤醒期的专利价值应从学术性、技术性、法律性3个角度判断",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e13",
+          "mention": "法律性",
+          "normalized_name": "法律性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "唤醒期的专利价值应从学术性、技术性、法律性3个角度判断",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "42",
+      "sentence": "休眠期的价值评价可以通过盈利性与权益性、技术性、创新性、区域性4个方面综合考虑,唤醒期的专利价值应从学术性、技术性、法律性3个角度判断。 由此可见,专利价值的综合评价法并没有从根本上解决成本法、市场法和收益法的问题和不足，无法体现专利用途差异。",
+      "entities": [
+        {
+          "entity_id": "42_e1",
+          "mention": "成本法",
+          "normalized_name": "成本法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利价值的综合评价法并没有从根本上解决成本法、市场法和收益法的问题和不足",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e2",
+          "mention": "市场法",
+          "normalized_name": "市场法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利价值的综合评价法并没有从根本上解决成本法、市场法和收益法的问题和不足",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e3",
+          "mention": "收益法",
+          "normalized_name": "收益法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利价值的综合评价法并没有从根本上解决成本法、市场法和收益法的问题和不足",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "43",
+      "sentence": "马忠明等(2006)摒弃传统无形资产理论下的价值评估方法，认为专利具有类似于金融市场中的看涨期权的特性，可以应用实务期权方法评估专利价值。 实物期权方法的优点在于考虑了管理决策者在投资生产以及产品研发等问题决策中的选择权,将专利看作企业的投资机会来评估。实物期权方法的不足之处在于必须估算预期利润流,而且由于专利投资在不同年份阶段的特征不同,风险系数的变化使得偏微分方程的求解过程十分复杂（万小丽和朱雪忠,2008）。",
+      "entities": [
+        {
+          "entity_id": "43_e1",
+          "mention": "马忠明等(2006)",
+          "normalized_name": "马忠明等(2006)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "马忠明等(2006)摒弃传统无形资产理论下的价值评估方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "43_e2",
+          "mention": "传统无形资产理论",
+          "normalized_name": "传统无形资产理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "摒弃传统无形资产理论下的价值评估方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "43_e3",
+          "mention": "价值评估方法",
+          "normalized_name": "价值评估方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "摒弃传统无形资产理论下的价值评估方法",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但原文有具体语境限定"
+        },
+        {
+          "entity_id": "43_e4",
+          "mention": "专利",
+          "normalized_name": "专利",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "认为专利具有类似于金融市场中的看涨期权的特性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "43_e5",
+          "mention": "看涨期权",
+          "normalized_name": "看涨期权",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "具有类似于金融市场中的看涨期权的特性",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "43_e6",
+          "mention": "实务期权方法",
+          "normalized_name": "实务期权方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "可以应用实务期权方法评估专利价值",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "43_e7",
+          "mention": "实物期权方法",
+          "normalized_name": "实物期权方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实物期权方法的优点在于考虑了管理决策者在投资生产以及产品研发等问题决策中的选择权",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "43_e8",
+          "mention": "管理决策者",
+          "normalized_name": "管理决策者",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "考虑了管理决策者在投资生产以及产品研发等问题决策中的选择权",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "可能为泛称，但原文有具体角色限定"
+        },
+        {
+          "entity_id": "43_e9",
+          "mention": "预期利润流",
+          "normalized_name": "预期利润流",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "必须估算预期利润流",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "43_e10",
+          "mention": "偏微分方程",
+          "normalized_name": "偏微分方程",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "风险系数的变化使得偏微分方程的求解过程十分复杂",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "43_e11",
+          "mention": "万小丽和朱雪忠,2008",
+          "normalized_name": "万小丽和朱雪忠,2008",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "（万小丽和朱雪忠,2008）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "44",
+      "sentence": "随着计算技术的快速发展,部分学者探索应用机器学习方法评估专利价值。 赵蕴华等(2015)研究发现,机器学习方法在专利价值评估中起到一定作用,并存在潜在的方法用以更好地解决专利价值评估问题。慎金花等(2020)研究发现,果蝇算法优化后的BP 神经网络能够比较快速和准确地预测专利价值。刘澄等(2021)探索机器学习在专利价值评估领域的应用，建立基于BP神经网络的专利价值评估模型。",
+      "entities": [
+        {
+          "entity_id": "44_e1",
+          "mention": "赵蕴华等(2015)",
+          "normalized_name": "赵蕴华等(2015)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "赵蕴华等(2015)研究发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "44_e2",
+          "mention": "机器学习方法",
+          "normalized_name": "机器学习方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "部分学者探索应用机器学习方法评估专利价值",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "44_e3",
+          "mention": "慎金花等(2020)",
+          "normalized_name": "慎金花等(2020)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "慎金花等(2020)研究发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "44_e4",
+          "mention": "果蝇算法优化后的BP神经网络",
+          "normalized_name": "果蝇算法优化后的BP神经网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "果蝇算法优化后的BP神经网络能够比较快速和准确地预测专利价值",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "44_e5",
+          "mention": "刘澄等(2021)",
+          "normalized_name": "刘澄等(2021)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "刘澄等(2021)探索机器学习在专利价值评估领域的应用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "44_e6",
+          "mention": "BP神经网络",
+          "normalized_name": "BP神经网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建立基于BP神经网络的专利价值评估模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "44_e7",
+          "mention": "专利价值评估模型",
+          "normalized_name": "专利价值评估模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "建立基于BP神经网络的专利价值评估模型",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "45",
+      "sentence": "专利价值的内生性是指专利价值在一定程度上是创新者为了权衡专利保护范围和专利寿命而自主选择的结果。现有文献主要涉及专利保护范围与专利授权概率、专利授权速度的权衡问题。",
+      "entities": [
+        {
+          "entity_id": "45_e1",
+          "mention": "专利价值的内生性",
+          "normalized_name": "专利价值的内生性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利价值的内生性是指专利价值在一定程度上是创新者为了权衡专利保护范围和专利寿命而自主选择的结果",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "45_e2",
+          "mention": "专利保护范围",
+          "normalized_name": "专利保护范围",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "权衡专利保护范围和专利寿命而自主选择的结果",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "45_e3",
+          "mention": "专利寿命",
+          "normalized_name": "专利寿命",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "权衡专利保护范围和专利寿命而自主选择的结果",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "45_e4",
+          "mention": "专利授权概率",
+          "normalized_name": "专利授权概率",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现有文献主要涉及专利保护范围与专利授权概率、专利授权速度的权衡问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "45_e5",
+          "mention": "专利授权速度",
+          "normalized_name": "专利授权速度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现有文献主要涉及专利保护范围与专利授权概率、专利授权速度的权衡问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "46",
+      "sentence": "a.专利申请保护范围与专利授权概率的权衡。 Reitzig(2004)指出，专利价值研究面临严重的内生性问题。当引入专利申请决策时，专利价值研究最复杂最困难的地方在于权衡专利保护范围和授权概率。如果专利申请人追求更宽的保护范围,那么它被第三方异议成功的几率也越大,专利最终被授权的概率反而越低。Marco,etal．（2019）使用大数据同样证实了二者的权衡现象，他们发现，与保护范围更宽的专利相比,保护范围较窄的专利申请具有更高的授权率。",
+      "entities": [
+        {
+          "entity_id": "46_e1",
+          "mention": "Reitzig(2004)",
+          "normalized_name": "Reitzig (2004)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Reitzig(2004)指出，专利价值研究面临严重的内生性问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e2",
+          "mention": "Marco,etal．（2019）",
+          "normalized_name": "Marco et al. (2019)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Marco,etal．（2019）使用大数据同样证实了二者的权衡现象",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e3",
+          "mention": "专利价值研究",
+          "normalized_name": "专利价值研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利价值研究面临严重的内生性问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e4",
+          "mention": "内生性问题",
+          "normalized_name": "内生性问题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利价值研究面临严重的内生性问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e5",
+          "mention": "专利申请决策",
+          "normalized_name": "专利申请决策",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当引入专利申请决策时",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e6",
+          "mention": "专利保护范围",
+          "normalized_name": "专利保护范围",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "权衡专利保护范围和授权概率",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e7",
+          "mention": "授权概率",
+          "normalized_name": "授权概率",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "权衡专利保护范围和授权概率",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e8",
+          "mention": "大数据",
+          "normalized_name": "大数据",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Marco,etal．（2019）使用大数据同样证实了二者的权衡现象",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "47",
+      "sentence": "b.专利授权保护范围与专利授权速度的权衡。 Okada,etal．（2016，2018）研究发现，当专利申请人初始选择的保护范围较宽时，保护范围被缩减的概率和被缩减的幅度都会增加。 重要的专利申请往往会经历更频繁地缩减处理;",
+      "entities": [
+        {
+          "entity_id": "47_e1",
+          "mention": "Okada,etal．（2016，2018）",
+          "normalized_name": "Okada et al. (2016, 2018)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Okada,etal．（2016，2018）研究发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e2",
+          "mention": "专利授权保护范围",
+          "normalized_name": "专利授权保护范围",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利授权保护范围与专利授权速度的权衡",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e3",
+          "mention": "专利授权速度",
+          "normalized_name": "专利授权速度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利授权保护范围与专利授权速度的权衡",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "48",
+      "sentence": "与此同时，日本专利首项独立权利要求字数的倒数对申请人前向引用的数量具有显著的解释力。 Marco,et al．（2016）同样指出,如果保护范围更宽的专利申请需要花费更长的专利审查周期，那么专利保护范围和专利授权速度之间可能存在权衡（trade-off）。Marco,etal．（2019）发现,与保护范围更宽的专利相比,保护范围较窄的专利申请具有更短的审查时间和更少的审查修改次数。Choudhury,etal．（2018）利用企业内部人员特征数据和美国专利商标局专利审查过程的微观数据,发现企业从事创新时必须权衡专利保护范围的最大化和专利授权速度的最优化[49]。Hegde（2021)关注美国初创公司首次专利申请的影响，发现更宽的专利保护范围会增加初创企业的创新数量和创新质量,但对就业和经济增长几乎没有影响； 相反，专利授权延迟则会显著降低初创公司的就业和销售增长[50]。",
+      "entities": [
+        {
+          "entity_id": "48_e1",
+          "mention": "日本专利首项独立权利要求字数的倒数",
+          "normalized_name": "日本专利首项独立权利要求字数的倒数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "日本专利首项独立权利要求字数的倒数对申请人前向引用的数量具有显著的解释力",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e2",
+          "mention": "Marco,et al．（2016）",
+          "normalized_name": "Marco et al. (2016)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Marco,et al．（2016）同样指出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e3",
+          "mention": "Marco,etal．（2019）",
+          "normalized_name": "Marco et al. (2019)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Marco,etal．（2019）发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e4",
+          "mention": "Choudhury,etal．（2018）",
+          "normalized_name": "Choudhury et al. (2018)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Choudhury,etal．（2018）利用企业内部人员特征数据和美国专利商标局专利审查过程的微观数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e5",
+          "mention": "美国专利商标局",
+          "normalized_name": "美国专利商标局",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国专利商标局专利审查过程的微观数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e6",
+          "mention": "Hegde（2021)",
+          "normalized_name": "Hegde (2021)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Hegde（2021)关注美国初创公司首次专利申请的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e7",
+          "mention": "trade-off",
+          "normalized_name": "trade-off",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利保护范围和专利授权速度之间可能存在权衡（trade-off）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "49",
+      "sentence": "相反，专利授权延迟则会显著降低初创公司的就业和销售增长[50]。 Teodorescu &Kuhn（2021）以美国专利加速审查试点项目为研究对象，发现用首项权利要求的字数来衡量专利保护范围时，申请加速审查专利的保护范围往往更宽，从而带来更高的被引用率和涉诉概率[22]。张亚峰等首项独立权利要求字数测度专利保护范围，从而讨论专利转让价格的影响因素,研究发现专利价值是内生的，真正高价值的专利不仅具有法律意义上的高质量,技术上的高水平是其高价值的重要基础[51]。",
+      "entities": [
+        {
+          "entity_id": "49_e1",
+          "mention": "Teodorescu &Kuhn（2021）",
+          "normalized_name": "Teodorescu & Kuhn (2021)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Teodorescu &Kuhn（2021）以美国专利加速审查试点项目为研究对象",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "49_e2",
+          "mention": "美国专利加速审查试点项目",
+          "normalized_name": "美国专利加速审查试点项目",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "Teodorescu &Kuhn（2021）以美国专利加速审查试点项目为研究对象",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "49_e3",
+          "mention": "首项权利要求的字数",
+          "normalized_name": "首项权利要求的字数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "发现用首项权利要求的字数来衡量专利保护范围时",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "49_e4",
+          "mention": "专利保护范围",
+          "normalized_name": "专利保护范围",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用首项权利要求的字数来衡量专利保护范围时",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "49_e5",
+          "mention": "张亚峰等",
+          "normalized_name": "张亚峰等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "张亚峰等首项独立权利要求字数测度专利保护范围",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "49_e6",
+          "mention": "首项独立权利要求字数",
+          "normalized_name": "首项独立权利要求字数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "张亚峰等首项独立权利要求字数测度专利保护范围",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "49_e7",
+          "mention": "专利转让价格",
+          "normalized_name": "专利转让价格",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从而讨论专利转让价格的影响因素",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "50",
+      "sentence": "法学学者的研究同样证实了经济学家的观点。Kesan,etal．（2019）用最短独立权利要求的字数衡量专利保护范围,发现专利海盗（表现为非专利实施主体向目标企业发起专利诉讼以获取经济收益)专注于收购保护范围更广的高质量专利以提高专利货币化的可能性[52]。Bo0ton（2020)认为,专利制度应当视为市场经济主体之间明确交易的一种替代制度,这也恰好解释了为何未明确包含在专利权利要求范围内非实质性变化也能得到英国法院的保护。换言之，权利要求定义的专利保护范围受到专利申请策略的内生性影响[53] 。",
+      "entities": [
+        {
+          "entity_id": "50_e1",
+          "mention": "Kesan,etal．（2019）",
+          "normalized_name": "Kesan et al. (2019)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Kesan,etal．（2019）用最短独立权利要求的字数衡量专利保护范围",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "50_e2",
+          "mention": "最短独立权利要求的字数",
+          "normalized_name": "最短独立权利要求的字数",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用最短独立权利要求的字数衡量专利保护范围",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为method或technique，此处作为具体测量指标"
+        },
+        {
+          "entity_id": "50_e3",
+          "mention": "专利海盗",
+          "normalized_name": "专利海盗",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利海盗（表现为非专利实施主体向目标企业发起专利诉讼以获取经济收益）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "50_e4",
+          "mention": "非专利实施主体",
+          "normalized_name": "非专利实施主体",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利海盗（表现为非专利实施主体向目标企业发起专利诉讼以获取经济收益）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "50_e5",
+          "mention": "Bo0ton（2020)",
+          "normalized_name": "Booth (2020)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Bo0ton（2020)认为,专利制度应当视为市场经济主体之间明确交易的一种替代制度",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "原文OCR可能有误，推测为Booth"
+        },
+        {
+          "entity_id": "50_e6",
+          "mention": "专利制度",
+          "normalized_name": "专利制度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利制度应当视为市场经济主体之间明确交易的一种替代制度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "50_e7",
+          "mention": "英国法院",
+          "normalized_name": "英国法院",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "为何未明确包含在专利权利要求范围内非实质性变化也能得到英国法院的保护",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "50_e8",
+          "mention": "权利要求",
+          "normalized_name": "权利要求",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "权利要求定义的专利保护范围受到专利申请策略的内生性影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "50_e9",
+          "mention": "专利保护范围",
+          "normalized_name": "专利保护范围",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "权利要求定义的专利保护范围受到专利申请策略的内生性影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "50_e10",
+          "mention": "专利申请策略",
+          "normalized_name": "专利申请策略",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "权利要求定义的专利保护范围受到专利申请策略的内生性影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "51",
+      "sentence": "然而,基于专利价值代理变量或专利价格的实证研究并没有证实IPC分类号数量、权利要求数量等测度专利保护范围的变量作为专利价值指标的有效性。 专利被引用数量被普遍认为是有效的专利价值指标,但价值解释力度非常有限，在 $5 \\% \\sim 1 0 \\%$ 之间（Fischer&Leidinger,2014； Bessen,2008）,同时还面临滞后性、时间膨胀效应、中心化程度加剧等严峻挑战。",
+      "entities": [
+        {
+          "entity_id": "51_e1",
+          "mention": "IPC分类号数量",
+          "normalized_name": "IPC分类号数量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "IPC分类号数量、权利要求数量等测度专利保护范围的变量",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "51_e2",
+          "mention": "权利要求数量",
+          "normalized_name": "权利要求数量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "IPC分类号数量、权利要求数量等测度专利保护范围的变量",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "51_e3",
+          "mention": "专利被引用数量",
+          "normalized_name": "专利被引用数量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利被引用数量被普遍认为是有效的专利价值指标",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "51_e4",
+          "mention": "Fischer&Leidinger,2014",
+          "normalized_name": "Fischer & Leidinger, 2014",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "（Fischer&Leidinger,2014； Bessen,2008）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "51_e5",
+          "mention": "Bessen,2008",
+          "normalized_name": "Bessen, 2008",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "（Fischer&Leidinger,2014； Bessen,2008）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "51_e6",
+          "mention": "滞后性",
+          "normalized_name": "滞后性",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "同时还面临滞后性、时间膨胀效应、中心化程度加剧等严峻挑战",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为独立学术命名现象，但边界较模糊"
+        },
+        {
+          "entity_id": "51_e7",
+          "mention": "时间膨胀效应",
+          "normalized_name": "时间膨胀效应",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "同时还面临滞后性、时间膨胀效应、中心化程度加剧等严峻挑战",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "51_e8",
+          "mention": "中心化程度加剧",
+          "normalized_name": "中心化程度加剧",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "同时还面临滞后性、时间膨胀效应、中心化程度加剧等严峻挑战",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为独立学术命名现象，但边界较模糊"
+        }
+      ]
+    },
+    {
+      "sentence_id": "52",
+      "sentence": "Bessen,2008）,同时还面临滞后性、时间膨胀效应、中心化程度加剧等严峻挑战。 最近的专利大数据研究证实（Marco,etal.,2019； Hegde，2021），虽然专利保护范围和专利寿命直接决定专利价值,但是专利价值的实现需要合理权衡专利保护范围与专利寿命，也就是说，专利价值在一定程度上是内生的,为了实现专利价值最大化,创新者必须权衡专利保护范围与专利寿命，从而选择最优专利保护范围。",
+      "entities": [
+        {
+          "entity_id": "52_e1",
+          "mention": "Bessen,2008",
+          "normalized_name": "Bessen,2008",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Bessen,2008）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为会议论文或报告，但根据上下文优先标期刊论文"
+        },
+        {
+          "entity_id": "52_e2",
+          "mention": "滞后性",
+          "normalized_name": "滞后性",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "同时还面临滞后性、时间膨胀效应、中心化程度加剧等严峻挑战",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为图情领域可观察现象，有独立学术命名"
+        },
+        {
+          "entity_id": "52_e3",
+          "mention": "时间膨胀效应",
+          "normalized_name": "时间膨胀效应",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "同时还面临滞后性、时间膨胀效应、中心化程度加剧等严峻挑战",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为图情领域可观察现象，有独立学术命名"
+        },
+        {
+          "entity_id": "52_e4",
+          "mention": "中心化程度加剧",
+          "normalized_name": "中心化程度加剧",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "同时还面临滞后性、时间膨胀效应、中心化程度加剧等严峻挑战",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为图情领域可观察现象，有独立学术命名"
+        },
+        {
+          "entity_id": "52_e5",
+          "mention": "Marco,etal.,2019",
+          "normalized_name": "Marco,etal.,2019",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "最近的专利大数据研究证实（Marco,etal.,2019； Hegde，2021）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为会议论文或报告，但根据上下文优先标期刊论文"
+        },
+        {
+          "entity_id": "52_e6",
+          "mention": "Hegde，2021",
+          "normalized_name": "Hegde，2021",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "最近的专利大数据研究证实（Marco,etal.,2019； Hegde，2021）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为会议论文或报告，但根据上下文优先标期刊论文"
+        },
+        {
+          "entity_id": "52_e7",
+          "mention": "专利保护范围",
+          "normalized_name": "专利保护范围",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "虽然专利保护范围和专利寿命直接决定专利价值",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e8",
+          "mention": "专利寿命",
+          "normalized_name": "专利寿命",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "虽然专利保护范围和专利寿命直接决定专利价值",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e9",
+          "mention": "专利价值",
+          "normalized_name": "专利价值",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "虽然专利保护范围和专利寿命直接决定专利价值",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "53",
+      "sentence": "Hegde，2021），虽然专利保护范围和专利寿命直接决定专利价值,但是专利价值的实现需要合理权衡专利保护范围与专利寿命，也就是说，专利价值在一定程度上是内生的,为了实现专利价值最大化,创新者必须权衡专利保护范围与专利寿命，从而选择最优专利保护范围。 更为重要的是，专利保护范围与专利寿命的权衡还会因创新者的策略选择、产业属性特征以及政策环境的改变而动态变化。郑素丽等同样强调，专利价值的巨大差异是众多因素综合作用的结果。战略和制度等因素对专利价值的影响还需进一步深入研究和讨论，克服传统无形资产评估方法的不足,准确评价专利价值的新方法和新思路也亟待深入研究和拓展。",
+      "entities": [
+        {
+          "entity_id": "53_e1",
+          "mention": "Hegde",
+          "normalized_name": "Hegde",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Hegde，2021",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "53_e2",
+          "mention": "专利保护范围",
+          "normalized_name": "专利保护范围",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利保护范围和专利寿命直接决定专利价值",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "53_e3",
+          "mention": "专利寿命",
+          "normalized_name": "专利寿命",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利保护范围和专利寿命直接决定专利价值",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "53_e4",
+          "mention": "专利价值",
+          "normalized_name": "专利价值",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利保护范围和专利寿命直接决定专利价值",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "53_e5",
+          "mention": "郑素丽",
+          "normalized_name": "郑素丽",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "郑素丽等同样强调",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "53_e6",
+          "mention": "传统无形资产评估方法",
+          "normalized_name": "传统无形资产评估方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "克服传统无形资产评估方法的不足",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "55",
+      "sentence": "第一，关注专利申请策略差异性对最优专利保护范围和专利价值的影响。 现有文献证实了创新者申请专利时权衡专利保护范围和专利授权概率的困难性和复杂性，但对于不同专利申请策略下最优专利保护范围的理论研究还比较匮乏，可能导致最优专利保护范围的有偏估计,获得的政策含义可能是有偏误的,很难具有推广价值。需要指明的是,专利申请策略既包括宽保护范围和窄保护范围的选择，也包括专利申请优先权主张和分案申请选择，还包括权利要求的撰写方式,开放式权利要求还是封闭式权利要求等,下一步应当研究创新者在不同专利申请策略情形下如何实现最优专利保护范围和专利价值最大化。",
+      "entities": [
+        {
+          "entity_id": "55_e1",
+          "mention": "专利申请策略",
+          "normalized_name": "专利申请策略",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "第一，关注专利申请策略差异性对最优专利保护范围和专利价值的影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "55_e2",
+          "mention": "最优专利保护范围",
+          "normalized_name": "最优专利保护范围",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "关注专利申请策略差异性对最优专利保护范围和专利价值的影响",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为理论概念"
+        },
+        {
+          "entity_id": "55_e3",
+          "mention": "专利价值",
+          "normalized_name": "专利价值",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "关注专利申请策略差异性对最优专利保护范围和专利价值的影响",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "55_e4",
+          "mention": "宽保护范围",
+          "normalized_name": "宽保护范围",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利申请策略既包括宽保护范围和窄保护范围的选择",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "55_e5",
+          "mention": "窄保护范围",
+          "normalized_name": "窄保护范围",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专利申请策略既包括宽保护范围和窄保护范围的选择",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "55_e6",
+          "mention": "专利申请优先权主张",
+          "normalized_name": "专利申请优先权主张",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "也包括专利申请优先权主张和分案申请选择",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "55_e7",
+          "mention": "分案申请",
+          "normalized_name": "分案申请",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "也包括专利申请优先权主张和分案申请选择",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "55_e8",
+          "mention": "开放式权利要求",
+          "normalized_name": "开放式权利要求",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "还包括权利要求的撰写方式,开放式权利要求还是封闭式权利要求等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "55_e9",
+          "mention": "封闭式权利要求",
+          "normalized_name": "封闭式权利要求",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "还包括权利要求的撰写方式,开放式权利要求还是封闭式权利要求等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "56",
+      "sentence": "第二,重视产业异质性对最优专利保护范围和专利价值的影响。 现有文献研究表明，企业创新必须权衡专利授权保护范围和专利授权速度，但是结合不同产业技术生命周期和专利保护理论的深入研究还比较少，不能有效地识别专利保护范围影响专利价值的因果效应，对于不同产业部门企业如何选择最优专利保护范围无法提供科学的参考依据。伯克（Dan L.Burk)和莱姆利（Mark A.Lemley）指出,Kitch（1977）提出的“前景理论”与医药产业发展实情比较相符； Merges&Nelson(1990)提出的“累积创新理论”适合软件产业;",
+      "entities": [
+        {
+          "entity_id": "56_e1",
+          "mention": "伯克（Dan L.Burk）",
+          "normalized_name": "Dan L. Burk",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "伯克（Dan L.Burk)和莱姆利（Mark A.Lemley）指出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e2",
+          "mention": "莱姆利（Mark A.Lemley）",
+          "normalized_name": "Mark A. Lemley",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "伯克（Dan L.Burk)和莱姆利（Mark A.Lemley）指出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e3",
+          "mention": "Kitch（1977）",
+          "normalized_name": "Kitch (1977)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Kitch（1977）提出的“前景理论”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e4",
+          "mention": "前景理论",
+          "normalized_name": "前景理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Kitch（1977）提出的“前景理论”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e5",
+          "mention": "Merges&Nelson(1990)",
+          "normalized_name": "Merges & Nelson (1990)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Merges&Nelson(1990)提出的“累积创新理论”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e6",
+          "mention": "累积创新理论",
+          "normalized_name": "累积创新理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Merges&Nelson(1990)提出的“累积创新理论”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e7",
+          "mention": "医药产业",
+          "normalized_name": "医药产业",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与医药产业发展实情比较相符",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e8",
+          "mention": "软件产业",
+          "normalized_name": "软件产业",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "适合软件产业",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "57",
+      "sentence": "Shapiro(2001)的\"专利丛林理论\"更适用于半导体产业。 未来专利价值的研究应当重视产业属性特征对创新者最优专利保护范围选择的影响,探讨不同产业专利的最优申请策略和保护策略。",
+      "entities": [
+        {
+          "entity_id": "57_e1",
+          "mention": "Shapiro(2001)的\"专利丛林理论\"",
+          "normalized_name": "专利丛林理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Shapiro(2001)的\"专利丛林理论\"更适用于半导体产业",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "57_e2",
+          "mention": "半导体产业",
+          "normalized_name": "半导体产业",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "更适用于半导体产业",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "57_e3",
+          "mention": "专利价值",
+          "normalized_name": "专利价值",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "未来专利价值的研究应当重视产业属性特征",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛化概念，但作为独立研究主题被讨论"
+        },
+        {
+          "entity_id": "57_e4",
+          "mention": "产业属性特征",
+          "normalized_name": "产业属性特征",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "应当重视产业属性特征对创新者最优专利保护范围选择的影响",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "可能为泛化概念，但具有学术命名"
+        },
+        {
+          "entity_id": "57_e5",
+          "mention": "最优专利保护范围",
+          "normalized_name": "最优专利保护范围",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对创新者最优专利保护范围选择的影响",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "57_e6",
+          "mention": "最优申请策略",
+          "normalized_name": "最优申请策略",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "探讨不同产业专利的最优申请策略和保护策略",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "可能为泛化概念，但作为具体策略类型被讨论"
+        },
+        {
+          "entity_id": "57_e7",
+          "mention": "保护策略",
+          "normalized_name": "保护策略",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "探讨不同产业专利的最优申请策略和保护策略",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "可能为泛化概念，但作为具体策略类型被讨论"
+        }
+      ]
+    },
+    {
+      "sentence_id": "58",
+      "sentence": "我国作为一个知识产权大国，专利申请数量已连续多年稳居世界第一，在专利数量爆炸式增长的压力下，专利政策改革对专利保护范围的影响不容忽视。 现有文献较少定量评估专利政策对专利保护范围和社会创新成本的影响，企业为了实现专利价值,在扩大专利保护范围的同时可能以牺牲专利质量为代价，带来专利无效和专利诉讼的明显增加，增加社会创新成本，反过来阻碍专利商用化和专利价值实现。 2012年8月1日,国家知识产权局为了促进产业转型升级,开始实施《发明专利申请优先审查管理办法》,正式引入专利优先审查政策。",
+      "entities": [
+        {
+          "entity_id": "58_e1",
+          "mention": "国家知识产权局",
+          "normalized_name": "国家知识产权局",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "2012年8月1日,国家知识产权局为了促进产业转型升级,开始实施《发明专利申请优先审查管理办法》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "58_e2",
+          "mention": "《发明专利申请优先审查管理办法》",
+          "normalized_name": "《发明专利申请优先审查管理办法》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "开始实施《发明专利申请优先审查管理办法》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "58_e3",
+          "mention": "专利优先审查政策",
+          "normalized_name": "专利优先审查政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "正式引入专利优先审查政策",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "58_e4",
+          "mention": "专利无效",
+          "normalized_name": "专利无效",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "带来专利无效和专利诉讼的明显增加",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "58_e5",
+          "mention": "专利诉讼",
+          "normalized_name": "专利诉讼",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "带来专利无效和专利诉讼的明显增加",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "59",
+      "sentence": "官方统计数据显示,2020 年我国发明专利平均审查周期为20个月，而优先审查的发明专利平均审查周期低于6个月。 相比正常的专利审查，专利优先审查政策和快速预审政策可以将专利授权速度提升14个月左右。在这一背景下，未来专利价值研究应当重点关注专利优先审查政策和专利快速预审政策对最优专利保护范围和专利价值的影响。",
+      "entities": [
+        {
+          "entity_id": "59_e1",
+          "mention": "发明专利平均审查周期",
+          "normalized_name": "发明专利平均审查周期",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2020 年我国发明专利平均审查周期为20个月",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为指标性概念，但具有具体命名"
+        },
+        {
+          "entity_id": "59_e2",
+          "mention": "优先审查的发明专利平均审查周期",
+          "normalized_name": "优先审查的发明专利平均审查周期",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "优先审查的发明专利平均审查周期低于6个月",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为指标性概念，但具有具体命名"
+        },
+        {
+          "entity_id": "59_e3",
+          "mention": "专利优先审查政策",
+          "normalized_name": "专利优先审查政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "专利优先审查政策和快速预审政策可以将专利授权速度提升14个月左右",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "59_e4",
+          "mention": "快速预审政策",
+          "normalized_name": "快速预审政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "专利优先审查政策和快速预审政策可以将专利授权速度提升14个月左右",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "59_e5",
+          "mention": "专利价值研究",
+          "normalized_name": "专利价值研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "未来专利价值研究应当重点关注专利优先审查政策和专利快速预审政策",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "59_e6",
+          "mention": "最优专利保护范围",
+          "normalized_name": "最优专利保护范围",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对最优专利保护范围和专利价值的影响",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为指标性概念，但具有具体命名"
+        },
+        {
+          "entity_id": "59_e7",
+          "mention": "专利价值",
+          "normalized_name": "专利价值",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对最优专利保护范围和专利价值的影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "60",
+      "sentence": "“十四五”国家知识产权保护和运用规划明确指出，“指导规范知识产权交易,完善知识产权质押登记和转让许可备案管理制度,加强数据采集分析和披露利用健全知识产权价值评估体系,鼓励开发智能化知识产权评估工具。 ”随着大量专利真实交易信息的披露和专利交易价格大数据的形成，如何充分利用大数据技术和机器学习方法破解专利价值评估难题,提升专利价值评估新方法的准确性、通用性和稳健性也是未来专利价值研究的重点方向。",
+      "entities": [
+        {
+          "entity_id": "60_e1",
+          "mention": "“十四五”国家知识产权保护和运用规划",
+          "normalized_name": "“十四五”国家知识产权保护和运用规划",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "“十四五”国家知识产权保护和运用规划明确指出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e2",
+          "mention": "知识产权交易",
+          "normalized_name": "知识产权交易",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "指导规范知识产权交易",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e3",
+          "mention": "知识产权质押登记",
+          "normalized_name": "知识产权质押登记",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "完善知识产权质押登记和转让许可备案管理制度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e4",
+          "mention": "转让许可备案管理制度",
+          "normalized_name": "转让许可备案管理制度",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "完善知识产权质押登记和转让许可备案管理制度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e5",
+          "mention": "数据采集分析",
+          "normalized_name": "数据采集分析",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加强数据采集分析和披露利用",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为method"
+        },
+        {
+          "entity_id": "60_e6",
+          "mention": "知识产权价值评估体系",
+          "normalized_name": "知识产权价值评估体系",
+          "candidate_l3": "framework",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "健全知识产权价值评估体系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e7",
+          "mention": "智能化知识产权评估工具",
+          "normalized_name": "智能化知识产权评估工具",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "鼓励开发智能化知识产权评估工具",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为instrument"
+        },
+        {
+          "entity_id": "60_e8",
+          "mention": "专利交易价格大数据",
+          "normalized_name": "专利交易价格大数据",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "专利交易价格大数据的形成",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e9",
+          "mention": "大数据技术",
+          "normalized_name": "大数据技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如何充分利用大数据技术和机器学习方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e10",
+          "mention": "机器学习方法",
+          "normalized_name": "机器学习方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如何充分利用大数据技术和机器学习方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e11",
+          "mention": "专利价值评估",
+          "normalized_name": "专利价值评估",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "破解专利价值评估难题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e12",
+          "mention": "专利价值评估新方法",
+          "normalized_name": "专利价值评估新方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提升专利价值评估新方法的准确性、通用性和稳健性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

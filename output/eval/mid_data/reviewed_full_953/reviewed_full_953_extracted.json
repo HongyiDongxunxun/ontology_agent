@@ -1,0 +1,661 @@
+{
+  "base_name": "reviewed_full_953",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "二十世纪，科学技术经历了伟大的变革。 世界科技情报工作正处于--个竞争与联合的时代。也即是说，世界各国都在采取措施，千方百计地占有情报，展开了一场激烈的情报战。另-方面，情报大量生产、大量流通，科学家队伍不断扩大，情报需求量和内容日益扩大和复杂化。各国情报工作又需互相依存和协作，才能克服“情报危机”和满足庞大的科学家队伍的需要。从宏观 分析，可看出，世界各国情报工作的发展战略重点是：1）调整情报组织结构，用系统、网络的组织形式，适应情报的增长趋势。 2）用现代化的技术手段，提高情报的浓缩程度，建立各种“数据库”，有目的存贮有用情报。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "情报战",
+          "normalized_name": "情报战",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "展开了一场激烈的情报战",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "情报危机",
+          "normalized_name": "情报危机",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "才能克服“情报危机”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "数据库",
+          "normalized_name": "数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建立各种“数据库”",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处为泛称，但图情领域放宽规则，有名称的数据库应抽取；此处无具体名称，但作为战略重点提及，保留低置信度"
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "3、国与国，洲与洲间的科技情报机构形成系统。 系统化趋势，在八十年代发展尤为明显。 日本文部省拨了巨额资金，组织22个研究班，专门研究“巨大学术情报系统”。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "日本文部省",
+          "normalized_name": "日本文部省",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "日本文部省拨了巨额资金",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "巨大学术情报系统",
+          "normalized_name": "巨大学术情报系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "专门研究“巨大学术情报系统”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "面向课题的情报网络，包括：物理学的科技情报网、生命科学的科技情报网、行为科学、社会经济情报网等。 有一情报学家认为，“情报学的发展，将不是改进早已沿袭下来的分析综合、",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "物理学的科技情报网",
+          "normalized_name": "物理学的科技情报网",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "物理学的科技情报网",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "生命科学的科技情报网",
+          "normalized_name": "生命科学的科技情报网",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "生命科学的科技情报网",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "行为科学",
+          "normalized_name": "行为科学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "行为科学",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "社会经济情报网",
+          "normalized_name": "社会经济情报网",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "社会经济情报网",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "情报学家",
+          "normalized_name": "情报学家",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "有一情报学家认为",
+          "is_specific_entity": false,
+          "confidence": 0.3,
+          "uncertainty": "泛称，未指具体个人，按规则不抽取，但保留以体现召回优先"
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "情报检索和传播等方法，而是把这种发展导致以全新原理为基础的情报系统的出现。 ”科学愈发展，情报系统与网络愈发展。 这是当代情报工作的发展规律。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "情报检索",
+          "normalized_name": "情报检索",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "情报检索和传播等方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "情报系统",
+          "normalized_name": "情报系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以全新原理为基础的情报系统的出现",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未指明具体系统名称，但图情领域放宽规则下作为有名称的系统类型可抽取"
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "情报工作",
+          "normalized_name": "情报工作",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这是当代情报工作的发展规律",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为领域内独立研究主题被讨论"
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "联合国教科文组织 $\\bigstar$ 中期计划 $\\gtrdot$ 中指出，“建立世界情报网己成为建立国际经济秩序所要采取的发展战略的一个重要部分。 ”",
+      "entities": []
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "（二）数据化。 这是解决情报大量存贮和利用的重大技术革新。 这一趋势越来越明显。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "数据化",
+          "normalized_name": "数据化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "（二）数据化。 这是解决情报大量存贮和利用的重大技术革新",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "日本通商产业省提出了“数据库工业的振兴策略研究”，并计划把数据库服务业作为一个新的工业而抓紧建立和发展。 美国罗杰.K，萨米特在“今后二十年情报社会面临的问题”一文中，认为多个数据库的管理是今后情报界面临的五个主要问题之-。 目前情报数据库出现两个趋势：（1）商业化。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "日本通商产业省",
+          "normalized_name": "日本通商产业省",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "日本通商产业省提出了“数据库工业的振兴策略研究”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "数据库工业的振兴策略研究",
+          "normalized_name": "数据库工业的振兴策略研究",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "日本通商产业省提出了“数据库工业的振兴策略研究”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为政策文件或研究报告"
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "美国罗杰.K，萨米特",
+          "normalized_name": "罗杰.K，萨米特",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国罗杰.K，萨米特在“今后二十年情报社会面临的问题”一文中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "今后二十年情报社会面临的问题",
+          "normalized_name": "今后二十年情报社会面临的问题",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "美国罗杰.K，萨米特在“今后二十年情报社会面临的问题”一文中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为期刊文章或报告"
+        },
+        {
+          "entity_id": "7_e5",
+          "mention": "数据库服务业",
+          "normalized_name": "数据库服务业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "计划把数据库服务业作为一个新的工业而抓紧建立和发展",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为产业概念，非具体组织"
+        },
+        {
+          "entity_id": "7_e6",
+          "mention": "商业化",
+          "normalized_name": "商业化",
+          "candidate_l3": "trend",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前情报数据库出现两个趋势：（1）商业化",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "如核磁共振波谱数据库，晶体光谱数据库等。 情报数据化，标志着情报加工处理技术高度发展。预计，伴随着信息社会的到来，情报数据化将有重大的发展。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "核磁共振波谱数据库",
+          "normalized_name": "核磁共振波谱数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如核磁共振波谱数据库，晶体光谱数据库等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "晶体光谱数据库",
+          "normalized_name": "晶体光谱数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如核磁共振波谱数据库，晶体光谱数据库等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "情报数据化",
+          "normalized_name": "情报数据化",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "情报数据化，标志着情报加工处理技术高度发展",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为trend"
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "情报加工处理技术",
+          "normalized_name": "情报加工处理技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "情报数据化，标志着情报加工处理技术高度发展",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为method的泛称，但此处有具体限定"
+        },
+        {
+          "entity_id": "8_e5",
+          "mention": "信息社会",
+          "normalized_name": "信息社会",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "伴随着信息社会的到来",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "（三）情报服务日益发展和服务形式多佯化。 分析各国科技情报政策可以看到，各国极其重视情报服务工作。他们把情报服务工作，作为科技情报工作的出发点和归宿。 美国P·艾瑟顿在《情报服务系统与机构手册 $\\gtrdot$ 一书中指出：“政策制订者必须保证世界上的专业知识得以充分和适当的利用，以促进社会和经济的发展。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "美国P·艾瑟顿",
+          "normalized_name": "美国P·艾瑟顿",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国P·艾瑟顿在《情报服务系统与机构手册》一书中指出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "《情报服务系统与机构手册》",
+          "normalized_name": "《情报服务系统与机构手册》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "美国P·艾瑟顿在《情报服务系统与机构手册》一书中指出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "美国P·艾瑟顿在《情报服务系统与机构手册 $\\gtrdot$ 一书中指出：“政策制订者必须保证世界上的专业知识得以充分和适当的利用，以促进社会和经济的发展。 发展服务政策应是国家各个发展阶段的科学、技术和经济计划与政策的一个组成部分”。显然，许多国家是把情报服务作为情报服务的基本方针的。当前情报服务，不仅有服务对象广泛性，例如通过联机服务，向科学家、技术人员、商业各方面人士提供情报，而且服务针对性越来越强。苏联情报界提出了服务深化的情报保障问题。查尔斯·T·梅多在预测2001年的情报学时谈到“现在，至少是在美国，有着一个显著的趋势，即，向着一种新型的情报服务机构演变。 有许多在提供一种超过公共图书馆能力之外（而且常常是超过了它们的权益的）特种服务。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "美国P·艾瑟顿",
+          "normalized_name": "美国P·艾瑟顿",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国P·艾瑟顿在《情报服务系统与机构手册》一书中指出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "《情报服务系统与机构手册》",
+          "normalized_name": "《情报服务系统与机构手册》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "美国P·艾瑟顿在《情报服务系统与机构手册》一书中指出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "苏联情报界",
+          "normalized_name": "苏联情报界",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "苏联情报界提出了服务深化的情报保障问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为Agent中的Organization，但无具体组织名，故标为Abstract"
+        },
+        {
+          "entity_id": "10_e4",
+          "mention": "查尔斯·T·梅多",
+          "normalized_name": "查尔斯·T·梅多",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "查尔斯·T·梅多在预测2001年的情报学时谈到",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e5",
+          "mention": "公共图书馆",
+          "normalized_name": "公共图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "超过公共图书馆能力之外（而且常常是超过了它们的权益的）特种服务",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'公共图书馆'为泛指机构类别，但根据图情领域放宽规则，有功能限定修饰，且作为具体服务对比对象，故抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "有许多在提供一种超过公共图书馆能力之外（而且常常是超过了它们的权益的）特种服务。 ”情报提供和情报接受者之间的联系更加紧密。 英国图书馆研究与发展部1979一1981年研究重点中，提出“面向服务管理研究”。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "英国图书馆研究与发展部",
+          "normalized_name": "英国图书馆研究与发展部",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "英国图书馆研究与发展部1979一1981年研究重点中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "1979一1981年研究重点",
+          "normalized_name": "1979-1981年研究重点",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "英国图书馆研究与发展部1979一1981年研究重点中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为政策文件或研究计划"
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "面向服务管理研究",
+          "normalized_name": "面向服务管理研究",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "提出“面向服务管理研究”",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为研究主题或具体项目名称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "英国图书馆研究与发展部1979一1981年研究重点中，提出“面向服务管理研究”。 可以预测，未来情报工作的发展趋势，将更加面向用户，服务方式更加多样化，以加速“情报一一科学一一技术一生产”一体化的进程。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "英国图书馆研究与发展部",
+          "normalized_name": "英国图书馆研究与发展部",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "英国图书馆研究与发展部1979一1981年研究重点中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "面向服务管理研究",
+          "normalized_name": "面向服务管理研究",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "提出“面向服务管理研究”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "情报一一科学一一技术一生产",
+          "normalized_name": "情报—科学—技术—生产",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加速“情报一一科学一一技术一生产”一体化的进程",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "原文含多个连接符，可能为笔误或强调"
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "2、把开发利用文献资源作为当前情报工作的重点。 就全国范围来说，拥有相当丰富的情报资源，但分布不平衡，利用率低，重复浪费严重。 如何提高文献加工深度，根据全国科研重点开发利用这些情报资源，极其重要。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "文献资源",
+          "normalized_name": "文献资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "把开发利用文献资源作为当前情报工作的重点",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指代具体文献集合，但原文中为泛称，暂按概念处理"
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "情报资源",
+          "normalized_name": "情报资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "拥有相当丰富的情报资源",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "原文中为泛称，未指定具体资源，但作为图情领域核心概念抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "3、加强情报服务，加速情报活化为生产力。 情报作为“社会智力资源”，能否转化为生产力，取决于情报服务的深度和广度。 情报机构要在四化建设设中发挥作用，必须加强情报服务工作。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "情报服务",
+          "normalized_name": "情报服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加强情报服务，加速情报活化为生产力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为method或service"
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "情报",
+          "normalized_name": "情报",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "情报作为“社会智力资源”",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "图情领域核心术语，有独立学术命名"
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "社会智力资源",
+          "normalized_name": "社会智力资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "情报作为“社会智力资源”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "四化建设",
+          "normalized_name": "四化建设",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "情报机构要在四化建设设中发挥作用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "历史特定政策事件"
+        }
+      ]
+    }
+  ]
+}

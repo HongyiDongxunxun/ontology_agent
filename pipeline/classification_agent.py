@@ -11,9 +11,7 @@ from typing import Optional
 from .llm import LLMClient
 from .dynamic_term_db import DynamicTermDB
 from .taxonomy import (
-    TAXONOMY_HIERARCHY,
-    L2_LABELS,
-    L3_LABELS,
+    build_taxonomy_text,
     get_l1l2_from_l3,
     get_l2_label,
     get_l3_label,
@@ -45,7 +43,9 @@ CLASSIFICATION_PROMPT = (
     "- 通用词/虚义动词: 比较 ✗, 进行 ✗, 通过 ✗, 基于 ✗\n"
     "- 泛化评价用语: 重要意义 ✗, 研究成果 ✗\n"
     "- 无学术语义计量词: 篇数 ✗, 比例 ✗\n"
-    "判定标准: 该实体能否指向一个**具体可唯一识别**的对象?\n"
+    "- **新增**: 过于模糊的短语、无法归入任何L3类型的短语、仅描述性非命名性短语 → invalid\n"
+    "判定标准: 该实体能否指向一个**具体可唯一识别**的对象？能否归入分类体系中的某个L3类型？\n"
+    "**严格过滤**: 有疑问时 → 偏向标记为invalid。宁可漏判，不可错判为有效。\n"
     "若无效 → 仅填 valid_entity 和 invalid_reason，其余字段留空。\n\n"
     "### 逐级分类 (L1 → L2 → L3):\n"
     "1. **L1 判定** (4选1): Agent | Artifact | Abstract | Event — 基于被评价对象的**功能/语境**\n"
@@ -109,6 +109,27 @@ CLASSIFICATION_PROMPT = (
     "实体: 第二届全国灰色文献年会 | 原句: 本次会议在2018年第一次全国灰色文献年会的基础上进行了深入探讨。\n"
     "分类: l1=Event, l2=Event, l3_type_code=conference_meeting, reason=具体召开的学术会议事件\n"
     "规则: conference_paper 是会议论文(制品, Artifact)；conference_meeting 是会议召开本身(事件, Event)。\n\n"
+    "### 例7 — concept vs definition 精准区分 (图情领域高频混淆)\n"
+    "实体: 信息资源 | 原句: 信息资源是图书馆服务的核心要素。\n"
+    "分类: l1=Abstract, l2=Conceptual, l3_type_code=concept, reason=作为命名单元使用,未给出特定界定\n"
+    "实体: 信息资源 | 原句: 马费成将信息资源定义为具有价值性和可利用性的数据集合。\n"
+    "分类: l1=Abstract, l2=Conceptual, l3_type_code=definition, reason=给出了特定提出者的边界界定\n"
+    "规则: concept=命名单元本身；definition=对命名单元边界的特定界定(含提出者)。关键看语境是否在做「定义」动作。\n\n"
+    "### 例8 — concept vs phenomenon 区分\n"
+    "实体: 数据孤岛 | 原句: 各系统独立建设造就了一座座数据孤岛。\n"
+    "分类: l1=Abstract, l2=Phenomenon, l3_type_code=phenomenon, reason=可观察的客观现象,有独立学术命名\n"
+    "实体: 信息素养 | 原句: 信息素养教育是高校图书馆的重要职能。\n"
+    "分类: l1=Abstract, l2=Conceptual, l3_type_code=concept, reason=学术术语/命名单元,非现象\n"
+    "规则: phenomenon需同时满足: (1)图情领域可观察 (2)有独立学术命名 (3)作为独立研究主题被讨论。不满足任一条件→concept。\n\n"
+    "### 例9 — concept vs information_system 区分 (数字图书馆等歧义词)\n"
+    "实体: 数字图书馆 | 原句: 数字图书馆作为一种理念深刻影响了图书馆学界。\n"
+    "分类: l1=Abstract, l2=Conceptual, l3_type_code=concept, reason=被评价为一种理念/概念\n"
+    "实体: 数字图书馆 | 原句: 该数字图书馆平台支持全文检索和在线阅读。\n"
+    "分类: l1=Artifact, l2=System, l3_type_code=information_system, reason=被评价系统功能和特性\n"
+    "规则: 关键在于语境评价的是抽象概念还是具体系统功能。带「理念」「概念」「思想」→concept；带「平台」「系统」「功能」→information_system。\n\n"
+    "## Few-Shot 参考 (来自动态术语库的高置信度实体类型)\n"
+    "以下是从已确认术语库中检索到的与当前实体相似的参考分类，仅供参考:\n"
+    "{few_shot_hints}\n\n"
     "## Input\n"
     "{entities_text}\n\n"
     "# 原始评价句\n"
@@ -201,6 +222,8 @@ class ClassificationAgent:
     """
     Agent 2 — L1/L2/L3 精分类 + L4 规则匹配
     读取 Agent 1 中间结果，LLM 完成 L1/L2/L3 分类，L4 由 _match_l4_rules() 做字符串规则匹配。
+
+    V4.3: 支持 RAG few-shot 提示 + Self-Consistency 投票。
     """
 
     def __init__(
@@ -208,22 +231,20 @@ class ClassificationAgent:
         llm: Optional[LLMClient] = None,
         dynamic_term_db: Optional[DynamicTermDB] = None,
         batch_size: int = 12,
+        enable_voting: bool = False,
+        voting_rounds: int = 3,
+        voting_temperature: float = 0.3,
+        enable_rag: bool = False,
+        rag_k_examples: int = 5,
     ):
         self.llm = llm or LLMClient()
         self.dynamic_term_db = dynamic_term_db
         self.batch_size = batch_size
-
-    def _build_taxonomy_text(self) -> str:
-        lines: list[str] = []
-        for l1, l2_map in TAXONOMY_HIERARCHY.items():
-            lines.append(f"**L1 = {l1}**")
-            for l2, l3_list in l2_map.items():
-                l2_label = L2_LABELS.get(l2, l2)
-                l3_details = ", ".join(
-                    f"{code}({L3_LABELS.get(code, code)})" for code in l3_list
-                )
-                lines.append(f"  L2 = {l2} ({l2_label}) → L3: {l3_details}")
-        return "\n".join(lines)
+        self.enable_voting = enable_voting
+        self.voting_rounds = voting_rounds
+        self.voting_temperature = voting_temperature
+        self.enable_rag = enable_rag
+        self.rag_k_examples = rag_k_examples
 
     def _match_l4_rules(self, entity_name: str, normalized_name: str) -> tuple[str, Optional[str]]:
         """规则匹配 L4: 与 DynamicTermDB 做精确/包含字符串匹配 (不依赖 LLM)"""
@@ -283,7 +304,7 @@ class ClassificationAgent:
         sentence: str,
         sentence_id: str,
     ) -> list[FinalEntityResult]:
-        taxonomy_text = self._build_taxonomy_text()
+        taxonomy_text = build_taxonomy_text()
 
         entities_lines: list[str] = []
         for i, e in enumerate(entities):
@@ -295,13 +316,44 @@ class ClassificationAgent:
             entities_lines.append(info)
         entities_text = "\n".join(entities_lines)
 
+        # ── RAG Few-Shot: 从动态术语库检索相似实体 ──
+        few_shot_hints = ""
+        if self.enable_rag and self.dynamic_term_db and self.dynamic_term_db.size() > 0:
+            hints_parts: list[str] = []
+            for e in entities:
+                hint = self.dynamic_term_db.get_few_shot_hints(
+                    e.mention, k=self.rag_k_examples
+                )
+                if hint:
+                    hints_parts.append(f"实体「{e.mention}」的参考:\n{hint}")
+            if hints_parts:
+                few_shot_hints = "\n\n".join(hints_parts)
+
+        if not few_shot_hints:
+            few_shot_hints = "(暂无相似参考)"
+
         prompt = CLASSIFICATION_PROMPT.format(
             taxonomy_text=taxonomy_text,
             entities_text=entities_text,
             sentence=sentence,
+            few_shot_hints=few_shot_hints,
         )
 
-        data = self.llm.call_json(prompt, [])
+        schema_hint = (
+            '[{"entity_id": "...", "valid_entity": true/false, "invalid_reason": "", '
+            '"l1": "Agent|Artifact|Abstract|Event", "l2": "...", "l2_label": "...", '
+            '"l3_type_code": "...", "l3_label": "...", "evidence": "...", '
+            '"reason": "...", "other_suggestion": ""}]'
+        )
+
+        # ── Self-Consistency Voting ──
+        if self.enable_voting:
+            data, all_results, agreement = self.llm.call_json_voting(
+                prompt, [], self.voting_rounds, self.voting_temperature, schema_hint
+            )
+        else:
+            data = self.llm.call_json(prompt, [], schema_hint=schema_hint)
+
         if not isinstance(data, list):
             return self._fallback_results(entities, sentence, sentence_id)
 

@@ -1,0 +1,696 @@
+{
+  "base_name": "reviewed_full_8034",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "其目标是维持和保证资源的持续性。 但是，我国的生态农业，不仅仅是西方生态农业这种新的农业生产模式的引进，而且是借鉴了国外各种替代农业的新模式，并能因地制宜地发展起具有自己特色的生态农业。 1987年5月，由农业部主持，于安徽阜阳召开的全国农业生态座谈会上提出的定义是“生态农业是运用生态系统中的生物共生和物质再生原理，采用系统工程方法，吸收现代成就，因地制宜地组织农林牧渔比例，以实现生态效益，经济效益和社会效益的农业生产体系。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "生态农业",
+          "normalized_name": "生态农业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国的生态农业，不仅仅是西方生态农业这种新的农业生产模式的引进",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "西方生态农业",
+          "normalized_name": "西方生态农业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "西方生态农业这种新的农业生产模式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "替代农业",
+          "normalized_name": "替代农业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "借鉴了国外各种替代农业的新模式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "1987年5月",
+          "normalized_name": "1987年5月",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "1987年5月，由农业部主持，于安徽阜阳召开的全国农业生态座谈会",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e5",
+          "mention": "农业部",
+          "normalized_name": "农业部",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由农业部主持",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e6",
+          "mention": "安徽阜阳",
+          "normalized_name": "安徽阜阳",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "于安徽阜阳召开的全国农业生态座谈会",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为地点实体，但无更合适的L3类型，暂归为phenomenon"
+        },
+        {
+          "entity_id": "1_e7",
+          "mention": "全国农业生态座谈会",
+          "normalized_name": "全国农业生态座谈会",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "于安徽阜阳召开的全国农业生态座谈会上提出的定义",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e8",
+          "mention": "生态系统中的生物共生和物质再生原理",
+          "normalized_name": "生态系统中的生物共生和物质再生原理",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "运用生态系统中的生物共生和物质再生原理",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e9",
+          "mention": "系统工程方法",
+          "normalized_name": "系统工程方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用系统工程方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "1987年5月，由农业部主持，于安徽阜阳召开的全国农业生态座谈会上提出的定义是“生态农业是运用生态系统中的生物共生和物质再生原理，采用系统工程方法，吸收现代成就，因地制宜地组织农林牧渔比例，以实现生态效益，经济效益和社会效益的农业生产体系。 ”其含义与国际上的持续农业的目标与内涵基本上是一致的。而且，中国的生态农业是继传统农业、石油农业之后，人与自然协调发展的农业新模式。它不但不否定化肥、农药、激素等化学物质的投入以及劳动人才密集与技术密集相结合的特征。并通过合理地投入与巧妙的时空结合，使生态系统保持适度的物质循环强度和能量流动的通量，使农业向稳定协调的方向发展。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "农业部",
+          "normalized_name": "农业部",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由农业部主持",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "安徽阜阳",
+          "normalized_name": "安徽阜阳",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "于安徽阜阳召开的全国农业生态座谈会",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为地点实体，但无更合适类型，暂归phenomenon"
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "全国农业生态座谈会",
+          "normalized_name": "全国农业生态座谈会",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "于安徽阜阳召开的全国农业生态座谈会上提出的定义",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "生态农业",
+          "normalized_name": "生态农业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "生态农业是运用生态系统中的生物共生和物质再生原理",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e5",
+          "mention": "生态系统中的生物共生和物质再生原理",
+          "normalized_name": "生态系统中的生物共生和物质再生原理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "运用生态系统中的生物共生和物质再生原理",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为多个原理的集合"
+        },
+        {
+          "entity_id": "2_e6",
+          "mention": "系统工程方法",
+          "normalized_name": "系统工程方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用系统工程方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e7",
+          "mention": "持续农业",
+          "normalized_name": "持续农业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与国际上的持续农业的目标与内涵基本上是一致的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e8",
+          "mention": "传统农业",
+          "normalized_name": "传统农业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "继传统农业、石油农业之后",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e9",
+          "mention": "石油农业",
+          "normalized_name": "石油农业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "继传统农业、石油农业之后",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e10",
+          "mention": "人与自然协调发展的农业新模式",
+          "normalized_name": "人与自然协调发展的农业新模式",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "人与自然协调发展的农业新模式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为描述性短语而非固定术语"
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "1992年8月10日，中共中央办公厅，国务院办公厅，转发外交部、国家环保局《关于出席联合国环境与发展大会情况及有关对策的报告》通知中，明确提出“要增加农业生态投资，要推广生态农业”。1992年5月，国务院发出“关于发展高产、优质、高效农业的决定。 ”“高产、优质、高效农业”同生态农业的相继提出，标志着我国农业经济发展到了一个新的阶段，是历史的前进和要求，它们提出对于促进我国农业现代化的健康发展，对于实现我国国民经济发展的第二步和第三步战略目标有着重要的战略意义。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "中共中央办公厅",
+          "normalized_name": "中共中央办公厅",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中共中央办公厅，国务院办公厅，转发外交部、国家环保局《关于出席联合国环境与发展大会情况及有关对策的报告》通知",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "国务院办公厅",
+          "normalized_name": "国务院办公厅",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中共中央办公厅，国务院办公厅，转发外交部、国家环保局《关于出席联合国环境与发展大会情况及有关对策的报告》通知",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "外交部",
+          "normalized_name": "外交部",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "转发外交部、国家环保局《关于出席联合国环境与发展大会情况及有关对策的报告》通知",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "国家环保局",
+          "normalized_name": "国家环保局",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "转发外交部、国家环保局《关于出席联合国环境与发展大会情况及有关对策的报告》通知",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "《关于出席联合国环境与发展大会情况及有关对策的报告》",
+          "normalized_name": "《关于出席联合国环境与发展大会情况及有关对策的报告》",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "转发外交部、国家环保局《关于出席联合国环境与发展大会情况及有关对策的报告》通知",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e6",
+          "mention": "生态农业",
+          "normalized_name": "生态农业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "要增加农业生态投资，要推广生态农业",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e7",
+          "mention": "高产、优质、高效农业",
+          "normalized_name": "高产、优质、高效农业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国务院发出“关于发展高产、优质、高效农业的决定。 ”“高产、优质、高效农业”同生态农业的相继提出",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "”“高产、优质、高效农业”同生态农业的相继提出，标志着我国农业经济发展到了一个新的阶段，是历史的前进和要求，它们提出对于促进我国农业现代化的健康发展，对于实现我国国民经济发展的第二步和第三步战略目标有着重要的战略意义。 因为生态农业既提出了农业向高产、优质、高效迈进的目标，也重视对生态环境的改善及资源的保护和台理的开发利用，并且，也提出了一系列实现上述目标又符台中国国情的办法和措施。因此，它不但是农业现代化的重要组成部分，也是实现农业现代化的正确路子。另外，实现农业的现代化，既不能重归我国的传统农业，也不能走西方石油农业的路子，所以，在发展高产优质高效农业的同时，必须重视生态环境的改善和资源的保护以及合理开发利用，而不能把发展“二高一优”农业建立在损害生态环境和破坏资源的基础上。二者的目标是完全一致的，二者是相互补充，相互促进的，只有把二者结合起来，才能推动我国农业现代化沿着健康的方向发展。",
+      "entities": []
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "1.美国。 随着常规农业的普遍推行，进入70年代以后，一些农业研究工作者，生产的实践者及管理者们，开始意识到农业的发展与环境的污染，自然资源的消耗和生态系统平衡等之间的关系，许多农场对大自然的压力，自动发起“生态农业”、“生物动力农业”、“有机农业”、“自然保护农业”等新型替代农业模式的实践探索。 1980年，美国农业部开始支持有机农业的试验研究，1987年，联合国提出“持续发展\"战略以后。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "美国",
+          "normalized_name": "美国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国。 随着常规农业的普遍推行",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "生态农业",
+          "normalized_name": "生态农业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "自动发起“生态农业”、“生物动力农业”、“有机农业”、“自然保护农业”等新型替代农业模式的实践探索",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "生物动力农业",
+          "normalized_name": "生物动力农业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "自动发起“生态农业”、“生物动力农业”、“有机农业”、“自然保护农业”等新型替代农业模式的实践探索",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "有机农业",
+          "normalized_name": "有机农业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "自动发起“生态农业”、“生物动力农业”、“有机农业”、“自然保护农业”等新型替代农业模式的实践探索",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "自然保护农业",
+          "normalized_name": "自然保护农业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "自动发起“生态农业”、“生物动力农业”、“有机农业”、“自然保护农业”等新型替代农业模式的实践探索",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e6",
+          "mention": "美国农业部",
+          "normalized_name": "美国农业部",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1980年，美国农业部开始支持有机农业的试验研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e7",
+          "mention": "联合国",
+          "normalized_name": "联合国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1987年，联合国提出“持续发展\"战略以后",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e8",
+          "mention": "持续发展",
+          "normalized_name": "可持续发展",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "联合国提出“持续发展\"战略以后",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "原文为‘持续发展’，规范化名称为‘可持续发展’"
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "美国的持续发展计划确立后带来两个明显的变化。 一是农业部把水土资源保护，防治环境污染等持续发展措施，列入1986—1990—1995年的农业发展计划里，用于农产品价格补贴，贷款优惠，技术支持等方面计划的实施；",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "美国",
+          "normalized_name": "美国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国的持续发展计划确立后带来两个明显的变化",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "持续发展计划",
+          "normalized_name": "持续发展计划",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "美国的持续发展计划确立后带来两个明显的变化",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为policy"
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "农业部",
+          "normalized_name": "农业部",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "农业部把水土资源保护，防治环境污染等持续发展措施，列入1986—1990—1995年的农业发展计划里",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "1986—1990—1995年的农业发展计划",
+          "normalized_name": "1986—1990—1995年的农业发展计划",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "列入1986—1990—1995年的农业发展计划里",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "德国是个高收入水平的国家，人们有着强而广泛的环保意识，再加上德国的农产品主要是产品过剩。 所以，为了减轻产品对市场的压力，政府一直在推行休耕项目。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "德国",
+          "normalized_name": "德国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "德国是个高收入水平的国家",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "休耕项目",
+          "normalized_name": "休耕项目",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "政府一直在推行休耕项目",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为policy(Artifact)"
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "目前，政府把实地有机农业与减少农产品过剩联系在一起了。 因为有机农业的单产水平低于常规农业的单产水平，产品的价格又高于常规农业产品。 1989一1990年，政府把改造常规农业为有机农业作为一种农业发展战略，试图通过改变生产方式与技术来减少农产品的供给量和保持农户的收入水平。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "有机农业",
+          "normalized_name": "有机农业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "政府把实地有机农业与减少农产品过剩联系在一起了",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "常规农业",
+          "normalized_name": "常规农业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有机农业的单产水平低于常规农业的单产水平",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "1989一1990年",
+          "normalized_name": "1989-1990年",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "1989一1990年，政府把改造常规农业为有机农业作为一种农业发展战略",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "时间范围，可视为发展阶段"
+        },
+        {
+          "entity_id": "10_e4",
+          "mention": "农业发展战略",
+          "normalized_name": "农业发展战略",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "政府把改造常规农业为有机农业作为一种农业发展战略",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能兼为concept，但此处作为政策举措描述"
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "到1987年又指定了环境保护农业区，到1988年其面积已占全国农田总面积的 $4 \\%$ 。 这些环境保护农业区，在耕种及管理上走的是低投入，低产出农业，或者说是粗放型农业或复合型农业。科学研究对象区是将多数的劣等地，不适于生产谷物的农田转变为草地和森林，这样势必影响到农户的经济收入。 所以政府和农户签订共同管理协定，由政府补偿农户的损失。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "环境保护农业区",
+          "normalized_name": "环境保护农业区",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "到1987年又指定了环境保护农业区",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为政策区域概念，但原文未提供具体名称，仅作为泛化类型概念抽取"
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "粗放型农业",
+          "normalized_name": "粗放型农业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "走的是低投入，低产出农业，或者说是粗放型农业或复合型农业",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "复合型农业",
+          "normalized_name": "复合型农业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "走的是低投入，低产出农业，或者说是粗放型农业或复合型农业",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "科学研究对象区",
+          "normalized_name": "科学研究对象区",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "科学研究对象区是将多数的劣等地，不适于生产谷物的农田转变为草地和森林",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为特定政策区域命名，但原文未提供专有名称"
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "共同管理协定",
+          "normalized_name": "共同管理协定",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "政府和农户签订共同管理协定",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

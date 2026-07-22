@@ -1,0 +1,973 @@
+{
+  "base_name": "reviewed_full_5814",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "本文首先概述了美国商情数据库的发展情况，同时，阐述了我国商情数据库的发展现状，着重研究了在我国发展商情数据库的几个技术策略问题。 文章指出，万方数据作为我国商情数据库的先行者，作了大量的富有成效的探索性工作，被《人民日报》誉称为\"中国数据库业的曙光”。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "美国商情数据库",
+          "normalized_name": "美国商情数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "概述了美国商情数据库的发展情况",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "我国商情数据库",
+          "normalized_name": "中国商情数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "阐述了我国商情数据库的发展现状",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "有地域限定，但非具体数据库名称，可视为泛称"
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "万方数据",
+          "normalized_name": "万方数据",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "万方数据作为我国商情数据库的先行者",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "《人民日报》",
+          "normalized_name": "《人民日报》",
+          "candidate_l3": "publishing",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "被《人民日报》誉称为",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e5",
+          "mention": "中国数据库业的曙光",
+          "normalized_name": "中国数据库业的曙光",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "被《人民日报》誉称为'中国数据库业的曙光'",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此为比喻性评价，非严格学术命名，但作为具体引述保留"
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "Abstract In the process of establishing China's socialist market economic system $,$ business information seems extremely important $\\cdot$ A lot of developed countries regard business information as one of magic weapons to dominate the world $\\cdot$ This article firstly outlines the development of business database in the United States,at the same time,expounds the status quo in this field in China,and emphaticaly approaches some technical tactics in the development of China’s business database $\\cdot$ The author points out that Wanfang Data（Group）Corporation,as a forerunner in the field of business database in China,has done alot of effective and exploratory work,which is praised byThe People's Daily as\"the dawn of China's database industry\".",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "Wanfang Data（Group）Corporation",
+          "normalized_name": "万方数据（集团）公司",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Wanfang Data（Group）Corporation,as a forerunner in the field of business database in China",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "The People's Daily",
+          "normalized_name": "人民日报",
+          "candidate_l3": "publishing",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "praised byThe People's Daily as\"the dawn of China's database industry\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "China's database industry",
+          "normalized_name": "中国数据库产业",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "the dawn of China's database industry",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为subfield"
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "目前,我国正在建立社会主义的市场经济体制，商务情报显得愈来愈重要且异常活跃。 因此，研究和开发面向国民经济主战场的商情类数据库,应该是我们国家信息服务领域里的一个刻不容缓的任务。在这方面，“万方数据”作了一些探索性的工作，",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "商务情报",
+          "normalized_name": "商务情报",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "商务情报显得愈来愈重要且异常活跃",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "商情类数据库",
+          "normalized_name": "商情类数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "研究和开发面向国民经济主战场的商情类数据库",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "名称较泛，但图情领域放宽规则，有功能限定修饰"
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "万方数据",
+          "normalized_name": "万方数据",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在这方面，“万方数据”作了一些探索性的工作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "DIALOG1985 年初有数据库 269个,经济、商业类已有149 个，占 $5 5 \\%$ 。 美国DIALOG系统以商情数据库为显著特色著称于世,称雄于全球信息服务业。目前，我国正在建立社会主义的市场经济体制,商务情报愈来愈受到人们的重视,我们应该加大力度,积极开发研建商情类数据库。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "DIALOG",
+          "normalized_name": "DIALOG",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "DIALOG1985 年初有数据库 269个",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "美国DIALOG系统",
+          "normalized_name": "美国DIALOG系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "美国DIALOG系统以商情数据库为显著特色著称于世",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "“小荷才露尖尖角”,人民日报当时曾专门撰文誉称\"万方数据一—中国数据库业的曙光”。 她的出现,标志着我国科技信息机构在探索信息如何为国民经济主战场服务方面迈出了关键的可喜的一步,也标志着我国商情类数据库及数据库产业化、市场化的开始。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "人民日报",
+          "normalized_name": "人民日报",
+          "candidate_l3": "publishing",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "人民日报当时曾专门撰文誉称",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "万方数据",
+          "normalized_name": "万方数据",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "万方数据一—中国数据库业的曙光",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "中国数据库业",
+          "normalized_name": "中国数据库业",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "中国数据库业的曙光",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "商情类数据库",
+          "normalized_name": "商情类数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "我国商情类数据库及数据库产业化、市场化的开始",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "类别名称，非具体数据库名，但图情领域放宽规则下可抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "然而，到目前为至，我国商情数据库的经典之作应该首推\"万方数据\"的“中国企业、公司及产品数据库(CECDB)”,自1989 年至今中文版已出14版(种),英文版已出8版(种)。 该数据库的数据源由企业直接提供,1998版已收入我国16万多家企业的详尽信息。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "商情数据库",
+          "normalized_name": "商情数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "我国商情数据库的经典之作应该首推",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "万方数据",
+          "normalized_name": "万方数据",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "万方数据的“中国企业、公司及产品数据库(CECDB)”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "中国企业、公司及产品数据库(CECDB)",
+          "normalized_name": "中国企业、公司及产品数据库(CECDB)",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "万方数据的“中国企业、公司及产品数据库(CECDB)”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "该数据库的数据源由企业直接提供,1998版已收入我国16万多家企业的详尽信息。 该库拥有国内外用户近万家，联机系统年检量达10万人次，是国内最具权威的综合类商情库。 主要数据有60 多项,包括企业名称、负责人、地址、电话、传真、E-mail、营业额、利润等经济指标，以及主要产品及产量、价格、规格型号等技术经济指标。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "该数据库",
+          "normalized_name": "该数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "该数据库的数据源由企业直接提供",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "指代前文已提及的数据库，但原文未给出具体名称，仅以'该数据库'指称，属于不定指称，但根据图情领域放宽规则，若前文有明确名称则抽取，此处无前文，故置信度较低"
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "1998版",
+          "normalized_name": "1998版",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "1998版已收入我国16万多家企业的详尽信息",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "联机系统",
+          "normalized_name": "联机系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "联机系统年检量达10万人次",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未给出系统具体名称，但'联机系统'在数据库语境中可视为具体系统功能模块"
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "综合类商情库",
+          "normalized_name": "综合类商情库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "是国内最具权威的综合类商情库",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "主要数据有60 多项,包括企业名称、负责人、地址、电话、传真、E-mail、营业额、利润等经济指标，以及主要产品及产量、价格、规格型号等技术经济指标。 因其有为企业贸易往来牵线搭桥的作用，故被众多企业誉称为\"沟通贸易往来的电脑红娘”。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "企业名称",
+          "normalized_name": "企业名称",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括企业名称、负责人、地址、电话、传真、E-mail、营业额、利润等经济指标",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为数据字段名，可视为具体概念"
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "营业额",
+          "normalized_name": "营业额",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括企业名称、负责人、地址、电话、传真、E-mail、营业额、利润等经济指标",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为经济指标概念"
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "利润",
+          "normalized_name": "利润",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括企业名称、负责人、地址、电话、传真、E-mail、营业额、利润等经济指标",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为经济指标概念"
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "主要产品及产量",
+          "normalized_name": "主要产品及产量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以及主要产品及产量、价格、规格型号等技术经济指标",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为数据字段名"
+        },
+        {
+          "entity_id": "8_e5",
+          "mention": "价格",
+          "normalized_name": "价格",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以及主要产品及产量、价格、规格型号等技术经济指标",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为经济指标概念"
+        },
+        {
+          "entity_id": "8_e6",
+          "mention": "规格型号",
+          "normalized_name": "规格型号",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以及主要产品及产量、价格、规格型号等技术经济指标",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为数据字段名"
+        },
+        {
+          "entity_id": "8_e7",
+          "mention": "电脑红娘",
+          "normalized_name": "电脑红娘",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "故被众多企业誉称为\"沟通贸易往来的电脑红娘\"",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "比喻性命名，可视为具体概念"
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "我国商情数据库的研建是80年代中期开始的，但商情数据库真正纳入市场经济的轨道，开始真正起步,要以万方数据的CECDB在90年代初似一枝红杏吐苞开放之时为标准。 国家计委等有关单位对全国数据库及电子信息网络资源的普查结果显示，现在具有一定容量、能够对外提供服务、可提供社会各界有效利用的数据库已达1038个,其中纯经济类商情库297个，占 $2 8 . 6 1 \\%$ 。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "商情数据库",
+          "normalized_name": "商情数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "我国商情数据库的研建是80年代中期开始的",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "万方数据",
+          "normalized_name": "万方数据",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "以万方数据的CECDB在90年代初似一枝红杏吐苞开放之时为标准",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "CECDB",
+          "normalized_name": "CECDB",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以万方数据的CECDB在90年代初似一枝红杏吐苞开放之时为标准",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "国家计委",
+          "normalized_name": "国家计委",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国家计委等有关单位对全国数据库及电子信息网络资源的普查结果显示",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e5",
+          "mention": "全国数据库及电子信息网络资源的普查",
+          "normalized_name": "全国数据库及电子信息网络资源的普查",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "国家计委等有关单位对全国数据库及电子信息网络资源的普查结果显示",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "但总的来说,数据库的行业分布和内容几乎覆盖了科技工程、经济、商业、金融、财政、交通、税务、文教、卫生、新闻出版、能源、公安、民政和国家事务等诸方面。 从表1中可以看出,我国目前数据库的内容已由科技领域为主转变为经济和社会领域为主。 这次权威机构调查结果显示,经济与社会方面总数据库个数为572个，占 $5 5 . 1 1 \\%$ ;",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "数据库",
+          "normalized_name": "数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "数据库的行业分布和内容几乎覆盖了科技工程、经济、商业、金融、财政、交通、税务、文教、卫生、新闻出版、能源、公安、民政和国家事务等诸方面",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'数据库'为泛指，但根据图情领域放宽规则，作为数据资源类型可抽取"
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "表1",
+          "normalized_name": "表1",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "从表1中可以看出",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "权威机构",
+          "normalized_name": "权威机构",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "这次权威机构调查结果显示",
+          "is_specific_entity": false,
+          "confidence": 0.3,
+          "uncertainty": "未指明具体机构名称，属于泛称，但保留作为候选"
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "(2)上报国家科技管理机构的科技成果和星火科技成果,包括历年来各省、市、部委鉴定后上报的成果。 这是一类范围庞大又具有极高社会效益和经济效益的商情信息,其特点是数据可靠正规，权威适用。 (3)通过大众传媒采集商情信息，主要包括报刊、广播、电视、学术期刊、图书等。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "国家科技管理机构",
+          "normalized_name": "国家科技管理机构",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "上报国家科技管理机构的科技成果和星火科技成果",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "机构名称较泛，但带有'国家'限定，可视为具体机构"
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "星火科技成果",
+          "normalized_name": "星火科技成果",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "上报国家科技管理机构的科技成果和星火科技成果",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指代一类成果报告，但'星火科技'为具体项目名称"
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "大众传媒",
+          "normalized_name": "大众传媒",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过大众传媒采集商情信息",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为信息采集渠道的泛称，但具有独立学术命名"
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "学术期刊",
+          "normalized_name": "学术期刊",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "主要包括报刊、广播、电视、学术期刊、图书等",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为文献类型泛称，但图情领域放宽规则下可视为具体实体类型"
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "图书",
+          "normalized_name": "图书",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "主要包括报刊、广播、电视、学术期刊、图书等",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为文献类型泛称，但图情领域放宽规则下可视为具体实体类型"
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "(3)通过大众传媒采集商情信息，主要包括报刊、广播、电视、学术期刊、图书等。 应该说，它们是商情数据库的一个重要来源。其特点是涉及面大， $80 \\%$ 的商业信息可以通过此渠道获得。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "大众传媒",
+          "normalized_name": "大众传媒",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过大众传媒采集商情信息",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "商情信息",
+          "normalized_name": "商情信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过大众传媒采集商情信息",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "报刊",
+          "normalized_name": "报刊",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主要包括报刊、广播、电视、学术期刊、图书等",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称，但作为具体信息源类型抽取"
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "广播",
+          "normalized_name": "广播",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主要包括报刊、广播、电视、学术期刊、图书等",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称，但作为具体信息源类型抽取"
+        },
+        {
+          "entity_id": "12_e5",
+          "mention": "电视",
+          "normalized_name": "电视",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主要包括报刊、广播、电视、学术期刊、图书等",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称，但作为具体信息源类型抽取"
+        },
+        {
+          "entity_id": "12_e6",
+          "mention": "学术期刊",
+          "normalized_name": "学术期刊",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主要包括报刊、广播、电视、学术期刊、图书等",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称，但作为具体信息源类型抽取"
+        },
+        {
+          "entity_id": "12_e7",
+          "mention": "图书",
+          "normalized_name": "图书",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主要包括报刊、广播、电视、学术期刊、图书等",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称，但作为具体信息源类型抽取"
+        },
+        {
+          "entity_id": "12_e8",
+          "mention": "商情数据库",
+          "normalized_name": "商情数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "它们是商情数据库的一个重要来源",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "https://www.cnki.net(4)适用。 开发商情库的目的是为用户服务，因此，在处理数据时必须从使用者的角度出",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "开发商情库",
+          "normalized_name": "开发商情库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "开发商情库的目的是为用户服务",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为专有数据库名称，但缺乏上下文确认"
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "笔者认为，一个数据库的成功与否,很大程度上取决于它的维护工作。数据库作为一种商品,就必须遵循“用户至上\"的市场规律,维护工作解决不好,就会开发一个用户丢掉一个用户,从而导致数据库建成之日就是向死亡滑落之时。总之，数据库的建设有其特殊性，可以用“开发三分力，维护七分功\"来形容。无论为了建库已做了多大投入，一旦不能对数据进行及时更新和补充，前面的努力就会白费，成为无人问津的死库。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "数据库",
+          "normalized_name": "数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "一个数据库的成功与否,很大程度上取决于它的维护工作",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'数据库'为泛称，但图情领域放宽规则中数据库作为具体类型可抽取，且后文有'死库'等具体指涉，故保留"
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "用户至上",
+          "normalized_name": "用户至上",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "就必须遵循'用户至上'的市场规律",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "死库",
+          "normalized_name": "死库",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "成为无人问津的死库",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "图情领域术语，指不再被使用或更新的数据库"
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "经过多年探索和实践，万方数据已开发了六种商情类数据库。 最具影响力的就是“中国企业、公司及产品数据库\"(CECDB)。该库目前有中、英文及Big5码三种版本,1998 年该库被国家新闻出版署列为\"九五\"国家电子出版物重点工程项目，《人民日报》誉称CECDB为\"国内外工商界了解中国市场的一条捷径”。 另外，被列为\"九五\"国家电子出版物计划项目的商情库还有“中国百万商务通讯数据库”“中国寻医问药数据库”“中国科技成果数据库”等。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "万方数据",
+          "normalized_name": "万方数据",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "万方数据已开发了六种商情类数据库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "中国企业、公司及产品数据库",
+          "normalized_name": "中国企业、公司及产品数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "最具影响力的就是“中国企业、公司及产品数据库”(CECDB)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "CECDB",
+          "normalized_name": "CECDB",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "最具影响力的就是“中国企业、公司及产品数据库”(CECDB)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e4",
+          "mention": "国家新闻出版署",
+          "normalized_name": "国家新闻出版署",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1998 年该库被国家新闻出版署列为\"九五\"国家电子出版物重点工程项目",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e5",
+          "mention": "九五",
+          "normalized_name": "九五",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "列为\"九五\"国家电子出版物重点工程项目",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为stage"
+        },
+        {
+          "entity_id": "18_e6",
+          "mention": "国家电子出版物重点工程项目",
+          "normalized_name": "国家电子出版物重点工程项目",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "列为\"九五\"国家电子出版物重点工程项目",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e7",
+          "mention": "《人民日报》",
+          "normalized_name": "《人民日报》",
+          "candidate_l3": "publishing",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "《人民日报》誉称CECDB为\"国内外工商界了解中国市场的一条捷径\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e8",
+          "mention": "中国百万商务通讯数据库",
+          "normalized_name": "中国百万商务通讯数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "被列为\"九五\"国家电子出版物计划项目的商情库还有“中国百万商务通讯数据库”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e9",
+          "mention": "中国寻医问药数据库",
+          "normalized_name": "中国寻医问药数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "被列为\"九五\"国家电子出版物计划项目的商情库还有“中国寻医问药数据库”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e10",
+          "mention": "中国科技成果数据库",
+          "normalized_name": "中国科技成果数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "被列为\"九五\"国家电子出版物计划项目的商情库还有“中国科技成果数据库”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "总之，信息服务业只有在为国民经济主战场做好服务的同时才能取得自身的发展。商情数据库的开发是国民经济信息化的重要组成部分，这项工作的任务艰巨，前景广阔。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "商情数据库",
+          "normalized_name": "商情数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "商情数据库的开发是国民经济信息化的重要组成部分",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

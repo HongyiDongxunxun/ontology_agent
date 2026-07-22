@@ -1,0 +1,1787 @@
+{
+  "base_name": "reviewed_full_5854",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "大数据是当前学术界研究的热点领域，同时也是图书情报领域研究的重点内容。 近年来，有关大数据的研究如雨后春笋般呈现出来。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "大数据",
+          "normalized_name": "大数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大数据是当前学术界研究的热点领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "图书情报领域",
+          "normalized_name": "图书情报领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "同时也是图书情报领域研究的重点内容",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "在剔除掉会议通知等文章后，共检索出相关文献257篇。 近三年来，我国图书情报领域大数据研究呈现出一片繁荣景象，相关研究论文的数量增长很快，如图1所示。 2012年，全年研究论文数量为8篇，2013年全年研究论文增加到76篇，而这一数字到了2014年11月份则激增到173篇。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "图书情报领域",
+          "normalized_name": "图书情报领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国图书情报领域大数据研究呈现出一片繁荣景象",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "大数据研究",
+          "normalized_name": "大数据研究",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国图书情报领域大数据研究呈现出一片繁荣景象",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "在本文中，一共对排序在前20的关键词进行了统计，如表1所示。 出现次数最多的关键词是大数据，一共出现了207次，其次是图书馆和高校图书馆，分别出现了97次和30次，这在一定程度上说明了图书馆和高校图书馆对大数据研究的重视程度； 另一方面也反映出当前图书情报领域的研究机构或研究人员也多集中在图书馆或主要从事图书馆学的相关",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "大数据",
+          "normalized_name": "大数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "出现次数最多的关键词是大数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "其次是图书馆和高校图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处'图书馆'作为具体机构类型出现，但未指明具体名称，根据图情领域放宽规则，可视为具体实体"
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "高校图书馆",
+          "normalized_name": "高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "其次是图书馆和高校图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "同上，作为具体机构类型出现"
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "图书情报领域",
+          "normalized_name": "图书情报领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当前图书情报领域的研究机构或研究人员",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "图书馆学",
+          "normalized_name": "图书馆学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主要从事图书馆学的相关",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "被引次数和被下载次数在一定程度上能够反映该篇文章的学术影响力和学术价值。 被引次数如表2所示，其中被引次数最多的是《图书馆需要怎样的“大数据”》，一共被引57次，其次是《大数据时代的图书馆服务浅析》和《大数据时代图书馆的服务创新与发展》，分别被引47次和41次。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "《图书馆需要怎样的“大数据”》",
+          "normalized_name": "《图书馆需要怎样的“大数据”》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "被引次数最多的是《图书馆需要怎样的“大数据”》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "《大数据时代的图书馆服务浅析》",
+          "normalized_name": "《大数据时代的图书馆服务浅析》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "其次是《大数据时代的图书馆服务浅析》和《大数据时代图书馆的服务创新与发展》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "《大数据时代图书馆的服务创新与发展》",
+          "normalized_name": "《大数据时代图书馆的服务创新与发展》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "其次是《大数据时代的图书馆服务浅析》和《大数据时代图书馆的服务创新与发展》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "对学术期刊进行统计，一方面能够获取当前图书情报领域大数据研究的学术阵地有哪些； 另一方面能够获悉一个学术期刊对大数据研究的态度，即通过发文量体现其对大数据研究的重视程度和倾向性。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "图书情报领域",
+          "normalized_name": "图书情报领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当前图书情报领域大数据研究的学术阵地",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "大数据研究",
+          "normalized_name": "大数据研究",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当前图书情报领域大数据研究的学术阵地",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "大数据（BigData）一词比较贴切的概念阐述最早出现在《Nature》杂志2008年设立的“BigData”专刊中，但是目前对于大数据的定义尚未形成统一的认识。 大数据通常被认为是一种数据量较大、数据形式较多的非结构化数据。大数据研究机构Gartner的 Beyer认为大数据是数据量大、高运转速率和多样性的信息集合，它需要新的处理形式以加强决策支持、深入发现和优化处理。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "大数据（BigData）",
+          "normalized_name": "大数据（BigData）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大数据（BigData）一词比较贴切的概念阐述最早出现在《Nature》杂志2008年设立的“BigData”专刊中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "《Nature》杂志",
+          "normalized_name": "《Nature》杂志",
+          "candidate_l3": "publishing",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "最早出现在《Nature》杂志2008年设立的“BigData”专刊中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "“BigData”专刊",
+          "normalized_name": "“BigData”专刊",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《Nature》杂志2008年设立的“BigData”专刊",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为期刊特刊而非单篇论文，但作为具体出版物抽取"
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "大数据研究机构Gartner",
+          "normalized_name": "Gartner",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "大数据研究机构Gartner的 Beyer认为大数据是数据量大、高运转速率和多样性的信息集合",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "Beyer",
+          "normalized_name": "Beyer",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "大数据研究机构Gartner的 Beyer认为大数据是数据量大、高运转速率和多样性的信息集合",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "未提供全名，但作为具体个人名抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "此后，又有学者将大数据的基本特征概括为4V、 $4 \\mathrm { V } + 1 \\mathrm { C }$ 和5V。 目前，4V这种概括基本已经形成共识，即大数据具有4个基本特征，包括数据量大、类型多样、增长速度快、价值密度低-@。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "大数据",
+          "normalized_name": "大数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "又有学者将大数据的基本特征概括为4V、 $4 \\mathrm { V } + 1 \\mathrm { C }$ 和5V",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "4V",
+          "normalized_name": "4V",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将大数据的基本特征概括为4V、 $4 \\mathrm { V } + 1 \\mathrm { C }$ 和5V",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "$4 \\mathrm { V } + 1 \\mathrm { C }$",
+          "normalized_name": "4V+1C",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将大数据的基本特征概括为4V、 $4 \\mathrm { V } + 1 \\mathrm { C }$ 和5V",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "5V",
+          "normalized_name": "5V",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将大数据的基本特征概括为4V、 $4 \\mathrm { V } + 1 \\mathrm { C }$ 和5V",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "大数据的核心价值不仅仅在于数据本身，更在于通过对数据的收集、储存、分析而获得那部分内容，即相较于其他技术而言，大数据的“廉价、迅速、优化”这三方面的综合成本是最优的。 因此，许多国家和政府、企业以及学者们倾注了较高的研究热情，大数据的研究以及具体的应用几乎遍布了绝大多数领域。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "大数据",
+          "normalized_name": "大数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大数据的核心价值不仅仅在于数据本身",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "因此，许多国家和政府、企业以及学者们倾注了较高的研究热情，大数据的研究以及具体的应用几乎遍布了绝大多数领域。 而大数据在对图书馆事业、信息服务、知识服务、创新服务、情报研究等带来机遇的同时，也提出了更高更严峻的挑战。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "大数据",
+          "normalized_name": "大数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大数据的研究以及具体的应用几乎遍布了绝大多数领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "图书馆事业",
+          "normalized_name": "图书馆事业",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大数据对图书馆事业、信息服务、知识服务、创新服务、情报研究等带来机遇",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为subfield"
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "信息服务",
+          "normalized_name": "信息服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大数据对图书馆事业、信息服务、知识服务、创新服务、情报研究等带来机遇",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "知识服务",
+          "normalized_name": "知识服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大数据对图书馆事业、信息服务、知识服务、创新服务、情报研究等带来机遇",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e5",
+          "mention": "创新服务",
+          "normalized_name": "创新服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大数据对图书馆事业、信息服务、知识服务、创新服务、情报研究等带来机遇",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛化概念，但图情领域有独立命名"
+        },
+        {
+          "entity_id": "9_e6",
+          "mention": "情报研究",
+          "normalized_name": "情报研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大数据对图书馆事业、信息服务、知识服务、创新服务、情报研究等带来机遇",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "无论是从数据的角度，还是对数据加工处理的角度，亦或是从图书馆的本质属性出发，在大数据时代，大数据对图书馆产生了既广泛又深远的影响。 张文彦等认为对大数据进行研究是图书馆的本职所在，并且是图书馆顺应时代发展变化，主动参与到社会发展之中，主动谋求发展变化的所在，是一种求生存的体现。樊伟红等认为，一方面，大数据对图书馆提出挑战的同时，又给图书馆带来了不可回避的问题； 另一方面，大数据时代的到来可以看做是对图书馆的帮助。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "大数据",
+          "normalized_name": "大数据",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在大数据时代，大数据对图书馆产生了既广泛又深远的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "张文彦",
+          "normalized_name": "张文彦",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "张文彦等认为对大数据进行研究是图书馆的本职所在",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "樊伟红",
+          "normalized_name": "樊伟红",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "樊伟红等认为，一方面，大数据对图书馆提出挑战的同时",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "另一方面，大数据时代的到来可以看做是对图书馆的帮助。 韩翠峰认为，大数据将对图书馆数据存贮能力提出挑战、对信息服务提出更高标准的要求、对复杂数据的分析处理或将成为今后图书馆发展的主要方向[。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "大数据时代",
+          "normalized_name": "大数据时代",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大数据时代的到来可以看做是对图书馆的帮助",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "韩翠峰",
+          "normalized_name": "韩翠峰",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "韩翠峰认为，大数据将对图书馆数据存贮能力提出挑战",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "大数据将对图书馆数据存贮能力提出挑战",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'图书馆'为泛称机构，但根据图情领域放宽规则，作为具体服务组织类型可抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "在大数据时代，在研究对象由抽样样本变为全数据以后，基于大数据的一系列服务更具专业性和可信度，这使得图书馆以及科技信息机构、中介服务机构的服务得以朝着纵深方向深入开展。 尤其是上述机构在面对大数据时代的用户需求时，用户需求的内容、需求的形式，以及实现需求的途径、基于需求导向的服务创新和服务模式，都是今后大数据时代服务创新所要解决的重点问题。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "大数据时代",
+          "normalized_name": "大数据时代",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在大数据时代，在研究对象由抽样样本变为全数据以后",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为trend"
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "这使得图书馆以及科技信息机构、中介服务机构的服务得以朝着纵深方向深入开展",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处为泛称，但图情领域规则放宽，作为具体机构类型抽取"
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "科技信息机构",
+          "normalized_name": "科技信息机构",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "这使得图书馆以及科技信息机构、中介服务机构的服务得以朝着纵深方向深入开展",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "有功能限定修饰，视为具体机构类型"
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "中介服务机构",
+          "normalized_name": "中介服务机构",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "这使得图书馆以及科技信息机构、中介服务机构的服务得以朝着纵深方向深入开展",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "有功能限定修饰，视为具体机构类型"
+        },
+        {
+          "entity_id": "12_e5",
+          "mention": "服务创新",
+          "normalized_name": "服务创新",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于需求导向的服务创新和服务模式，都是今后大数据时代服务创新所要解决的重点问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e6",
+          "mention": "服务模式",
+          "normalized_name": "服务模式",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于需求导向的服务创新和服务模式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "尤其是上述机构在面对大数据时代的用户需求时，用户需求的内容、需求的形式，以及实现需求的途径、基于需求导向的服务创新和服务模式，都是今后大数据时代服务创新所要解决的重点问题。 可以说，在大数据时代图书馆与科技信息机构不仅要满足需求、实现需求，更要引领需求，创造需求。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "大数据时代",
+          "normalized_name": "大数据时代",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "尤其是上述机构在面对大数据时代的用户需求时",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为trend"
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在大数据时代图书馆与科技信息机构不仅要满足需求",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处为泛称机构，但图情领域放宽规则：有名称的图书馆应抽取；此处无具体名称，但结合上下文指代具体机构类型，保留"
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "科技信息机构",
+          "normalized_name": "科技信息机构",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在大数据时代图书馆与科技信息机构不仅要满足需求",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "同上，泛称但保留"
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "韩翠峰认为，大数据时代，图书馆服务质量的提升需要依靠大数据的支持，在此基础上，可通过重视用户数据，增加大数据分析服务，利用数据分析技术与工具，提高服务智能化来达到创新图书馆服务的目的[。陈茫认为，大数据从用户、数据、服务模式、检索方式等诸多方面对图书馆移动服务提出了挑战，而图书馆可以通过对信息资源的深度整合、对移动门户的智慧化建立、对个性化服务的多重功能赋予等综合服务的开展来应对[。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "韩翠峰",
+          "normalized_name": "韩翠峰",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "韩翠峰认为，大数据时代，图书馆服务质量的提升需要依靠大数据的支持",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "大数据",
+          "normalized_name": "大数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大数据时代，图书馆服务质量的提升需要依靠大数据的支持",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书馆服务质量的提升需要依靠大数据的支持",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e4",
+          "mention": "大数据分析服务",
+          "normalized_name": "大数据分析服务",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "增加大数据分析服务",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "14_e5",
+          "mention": "数据分析技术",
+          "normalized_name": "数据分析技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用数据分析技术与工具",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e6",
+          "mention": "数据分析工具",
+          "normalized_name": "数据分析工具",
+          "candidate_l3": "tool",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用数据分析技术与工具",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为software"
+        },
+        {
+          "entity_id": "14_e7",
+          "mention": "陈茫",
+          "normalized_name": "陈茫",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "陈茫认为，大数据从用户、数据、服务模式、检索方式等诸多方面对图书馆移动服务提出了挑战",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e8",
+          "mention": "图书馆移动服务",
+          "normalized_name": "图书馆移动服务",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对图书馆移动服务提出了挑战",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e9",
+          "mention": "移动门户",
+          "normalized_name": "移动门户",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "对移动门户的智慧化建立",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e10",
+          "mention": "个性化服务",
+          "normalized_name": "个性化服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对个性化服务的多重功能赋予",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "大数据时代的到来，以及科学研究范式的改变，使得以事实型数据为基础的数据密集型科研范式成为今后发展的趋势。相应的，信息服务作为图书情报机构的基本业务和主要服务形式必然要适应这种改变。邓仲华等讨论了大数据时代的一种信息服务模式，即嵌入科研过程的信息服务模式[。张植卿等认为，大数据时代的知识服务是一种嵌入式的、协作化的知识服务新模式，是为适应信息服务业发展趋势而形成的[。王天泥认为知识咨询是大数据时代图书馆知识服务的新增长点2。陈国兰探讨了利用大数据构建新型的图书馆知识服务体系，认为应从资源平台建设、大数据分析工具的学习与使用、多部门互动合作、新型服务引擎的建立等几个方面开展2。无论是嵌入式信息服务，还是嵌入式知识服务，当前不乏许多学者对嵌入式服务模式进行深入探讨，而在大数据时代，这种嵌入式的服务模式则更具实践意义。图书情报机构能够通过嵌入用户过程、科研过程，结合大数据的理念、方法、工具，为用户提供更为专业、针对性更强的增值服务，能够更好的协同用户解决问题，实现用户价值。 在这方面，一些学者探讨了大数据与竞争情报之间的关系。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "大数据时代",
+          "normalized_name": "大数据时代",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大数据时代的到来",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "科学研究范式",
+          "normalized_name": "科学研究范式",
+          "candidate_l3": "paradigm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "科学研究范式的改变",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "数据密集型科研范式",
+          "normalized_name": "数据密集型科研范式",
+          "candidate_l3": "paradigm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以事实型数据为基础的数据密集型科研范式成为今后发展的趋势",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "邓仲华",
+          "normalized_name": "邓仲华",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "邓仲华等讨论了大数据时代的一种信息服务模式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e5",
+          "mention": "嵌入科研过程的信息服务模式",
+          "normalized_name": "嵌入科研过程的信息服务模式",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "邓仲华等讨论了大数据时代的一种信息服务模式，即嵌入科研过程的信息服务模式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e6",
+          "mention": "张植卿",
+          "normalized_name": "张植卿",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "张植卿等认为，大数据时代的知识服务是一种嵌入式的、协作化的知识服务新模式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e7",
+          "mention": "知识服务",
+          "normalized_name": "知识服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大数据时代的知识服务是一种嵌入式的、协作化的知识服务新模式",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e8",
+          "mention": "王天泥",
+          "normalized_name": "王天泥",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "王天泥认为知识咨询是大数据时代图书馆知识服务的新增长点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e9",
+          "mention": "知识咨询",
+          "normalized_name": "知识咨询",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "王天泥认为知识咨询是大数据时代图书馆知识服务的新增长点",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e10",
+          "mention": "陈国兰",
+          "normalized_name": "陈国兰",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "陈国兰探讨了利用大数据构建新型的图书馆知识服务体系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e11",
+          "mention": "图书馆知识服务体系",
+          "normalized_name": "图书馆知识服务体系",
+          "candidate_l3": "framework",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "陈国兰探讨了利用大数据构建新型的图书馆知识服务体系",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e12",
+          "mention": "嵌入式信息服务",
+          "normalized_name": "嵌入式信息服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "无论是嵌入式信息服务，还是嵌入式知识服务",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e13",
+          "mention": "嵌入式知识服务",
+          "normalized_name": "嵌入式知识服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "无论是嵌入式信息服务，还是嵌入式知识服务",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e14",
+          "mention": "嵌入式服务模式",
+          "normalized_name": "嵌入式服务模式",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当前不乏许多学者对嵌入式服务模式进行深入探讨",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e15",
+          "mention": "大数据",
+          "normalized_name": "大数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "结合大数据的理念、方法、工具",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e16",
+          "mention": "竞争情报",
+          "normalized_name": "竞争情报",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一些学者探讨了大数据与竞争情报之间的关系",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "在这方面，一些学者探讨了大数据与竞争情报之间的关系。 顾穗珊探讨了大数据时代，由政府主导的竞争情报服务是如何开展的，认为大数据时代智慧政府在竞争情报服务方面具备较强的优势，能够为用户特别是中小型企业、资金或技术等方面不具备条件的企业提供高质量的竞争情报服务，使用户在大数据时代能够实现更多价值。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "顾穗珊",
+          "normalized_name": "顾穗珊",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "顾穗珊探讨了大数据时代，由政府主导的竞争情报服务是如何开展的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "大数据",
+          "normalized_name": "大数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "顾穗珊探讨了大数据时代",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "竞争情报",
+          "normalized_name": "竞争情报",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "探讨了大数据与竞争情报之间的关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e4",
+          "mention": "智慧政府",
+          "normalized_name": "智慧政府",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "认为大数据时代智慧政府在竞争情报服务方面具备较强的优势",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "资源建设一直都是图书情报机构工作的重点，同时也是图书报机构开展各种服务的基础和保障，图书情报机构各项职能、各类服务平台、服务系统的功能发挥也是依赖于资源。 大数据时代的到来使得资源的利用程度和开发深度得到了空前的深化，同时意味着资源组织和资源建设等项工作也必将得到空前的发展。应该说，大数据时代图书情报机构将会拥有更多种类、更多形式的数据资源，对资源的分析与利用将会比以往更加灵活，资源所发挥的效果、产生的价值、应用的领域也将远远超过以往。毛刚认为，图书馆的用户以及用户需求是图书馆资源的重要组成部分。在大数据时代，图书情报机构更应该重视用户资源以及用户需求资源，而大数据技术则为用户资源和用户需求资源的处理与应用提供了技术支撑。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "毛刚",
+          "normalized_name": "毛刚",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "毛刚认为，图书馆的用户以及用户需求是图书馆资源的重要组成部分",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "大数据时代",
+          "normalized_name": "大数据时代",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "大数据时代的到来使得资源的利用程度和开发深度得到了空前的深化",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "大数据技术",
+          "normalized_name": "大数据技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大数据技术则为用户资源和用户需求资源的处理与应用提供了技术支撑",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "杨强等分析了在大数据时代，大数据是如何影响馆藏资源的，分析了馆藏资源的发展趋势。在资源构成方面，网络资源比重将获得极大提升； 在资源组织方面，大数据的影响主要体现在了资源选择、资源著录、资源标引、资源分析等方面；",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "杨强",
+          "normalized_name": "杨强",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "杨强等分析了在大数据时代",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "大数据",
+          "normalized_name": "大数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在大数据时代，大数据是如何影响馆藏资源的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "馆藏资源",
+          "normalized_name": "馆藏资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大数据是如何影响馆藏资源的",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e4",
+          "mention": "网络资源",
+          "normalized_name": "网络资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "网络资源比重将获得极大提升",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e5",
+          "mention": "资源选择",
+          "normalized_name": "资源选择",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "资源选择、资源著录、资源标引、资源分析等方面",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为method或technique，但原文未明确操作程序，暂标concept"
+        },
+        {
+          "entity_id": "18_e6",
+          "mention": "资源著录",
+          "normalized_name": "资源著录",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "资源选择、资源著录、资源标引、资源分析等方面",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为method或technique，但原文未明确操作程序，暂标concept"
+        },
+        {
+          "entity_id": "18_e7",
+          "mention": "资源标引",
+          "normalized_name": "资源标引",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "资源选择、资源著录、资源标引、资源分析等方面",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为method或technique，但原文未明确操作程序，暂标concept"
+        },
+        {
+          "entity_id": "18_e8",
+          "mention": "资源分析",
+          "normalized_name": "资源分析",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "资源选择、资源著录、资源标引、资源分析等方面",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为method或technique，但原文未明确操作程序，暂标concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "在资源评价上，大数据时代对资源的评价除了要结合文献计量方法、科学计量方法等之外，还要加入网络计量和面向社会公众开放评价的要求。 何建新探讨了大数据时代数字资源共享的问题，尤其是在高校图书馆之间的数字资源共享放慢，何建新认为必须将高校图书馆的数字资源作为整体进行统一考虑，才能挖掘和发挥数据的真正价值。在高校图书馆数据共享平台的基础上，充分利用大数据技术，对数据资源进行共享以及统一开发利用，能够极大地提高数字资源的价值，进而使服务能够更好地迎合用户需求。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "文献计量方法",
+          "normalized_name": "文献计量方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "结合文献计量方法、科学计量方法等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "科学计量方法",
+          "normalized_name": "科学计量方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "结合文献计量方法、科学计量方法等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "何建新",
+          "normalized_name": "何建新",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "何建新探讨了大数据时代数字资源共享的问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e4",
+          "mention": "高校图书馆",
+          "normalized_name": "高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在高校图书馆之间的数字资源共享放慢",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处指具体机构类型，但结合上下文有具体限定，故抽取"
+        },
+        {
+          "entity_id": "19_e5",
+          "mention": "大数据技术",
+          "normalized_name": "大数据技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "充分利用大数据技术",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "图书馆学的研究范式可以归纳为传统范式、实践论范式、价值论范式、学理性范式、技术性范式等。 张晓琳认为，在大数据时代数据范式将成为图书馆学研究的一种新范式。通过对海量数据进行收集、分析、挖掘最后获得更有价值的信息，使用户价值能够得到进一步提升，是大数据时代图书馆服务主旨所在，这也就意味着图书馆学的研究将在大数据的驱动下逐渐步入新的时代。在情报学研究方面，李广建等将情报学研究的趋势归纳为5个方面，即单一领域情报研究过度到全领域情报研究； 对利用多种数据资源的综合利用；",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "传统范式",
+          "normalized_name": "传统范式",
+          "candidate_l3": "paradigm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆学的研究范式可以归纳为传统范式、实践论范式、价值论范式、学理性范式、技术性范式等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "实践论范式",
+          "normalized_name": "实践论范式",
+          "candidate_l3": "paradigm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆学的研究范式可以归纳为传统范式、实践论范式、价值论范式、学理性范式、技术性范式等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "价值论范式",
+          "normalized_name": "价值论范式",
+          "candidate_l3": "paradigm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆学的研究范式可以归纳为传统范式、实践论范式、价值论范式、学理性范式、技术性范式等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "学理性范式",
+          "normalized_name": "学理性范式",
+          "candidate_l3": "paradigm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆学的研究范式可以归纳为传统范式、实践论范式、价值论范式、学理性范式、技术性范式等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e5",
+          "mention": "技术性范式",
+          "normalized_name": "技术性范式",
+          "candidate_l3": "paradigm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆学的研究范式可以归纳为传统范式、实践论范式、价值论范式、学理性范式、技术性范式等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e6",
+          "mention": "张晓琳",
+          "normalized_name": "张晓琳",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "张晓琳认为，在大数据时代数据范式将成为图书馆学研究的一种新范式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e7",
+          "mention": "数据范式",
+          "normalized_name": "数据范式",
+          "candidate_l3": "paradigm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在大数据时代数据范式将成为图书馆学研究的一种新范式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e8",
+          "mention": "大数据时代",
+          "normalized_name": "大数据时代",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "在大数据时代数据范式将成为图书馆学研究的一种新范式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "21_e9",
+          "mention": "李广建",
+          "normalized_name": "李广建",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "李广建等将情报学研究的趋势归纳为5个方面",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "情报研究更加趋于智能化。 刘红霞等认为，大数据将使应用情报学的研究环境、研究对象、研究方法和研究工具发生巨大变化，具体而言就是：信息资源由结构化向非结构化过度、情报检索技术趋于弱化、情报研究方法趋于强化、情报交流更加复杂化、情报应用技术逐渐信息化和数字化、情报经营服务更为商业化和市场化。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "刘红霞",
+          "normalized_name": "刘红霞",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "刘红霞等认为",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "大数据",
+          "normalized_name": "大数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大数据将使应用情报学的研究环境、研究对象、研究方法和研究工具发生巨大变化",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e3",
+          "mention": "应用情报学",
+          "normalized_name": "应用情报学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大数据将使应用情报学的研究环境、研究对象、研究方法和研究工具发生巨大变化",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e4",
+          "mention": "情报检索技术",
+          "normalized_name": "情报检索技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "情报检索技术趋于弱化",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e5",
+          "mention": "情报研究方法",
+          "normalized_name": "情报研究方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "情报研究方法趋于强化",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e6",
+          "mention": "情报应用技术",
+          "normalized_name": "情报应用技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "情报应用技术逐渐信息化和数字化",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e7",
+          "mention": "情报经营服务",
+          "normalized_name": "情报经营服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "情报经营服务更为商业化和市场化",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为phenomenon"
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "目前的研究还停留在对国外研究者观点的转述、概念的界定、特点的解释、应用领域的初步探索、大数据分析应用工具介绍、现状分析与前景展望等阶段。相关研究缺乏更加深入的探讨，缺少具体的实证研究和应用研究。由于大数据时代的兴起不过是最近几年才开始的，从相关研究的出现到比较成熟的研究体系的形成需要经历一个时间积累，所以一个较为成熟的研究体系的初步形成尚需时日。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "大数据分析应用工具",
+          "normalized_name": "大数据分析应用工具",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "大数据分析应用工具介绍",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但图情领域放宽规则，有具体名称倾向时抽取"
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "大数据时代",
+          "normalized_name": "大数据时代",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "由于大数据时代的兴起不过是最近几年才开始的",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "这一问题同样与研究时日尚短、相关研究刚刚起步有关。 由于大数据时代的到来，学者们看到了大数据所带来的挑战，而应对挑战并且切入问题的研究视角不可避免的需要一个由表及里的过程，那么体现在研究内容上则是多集中在对图书情报机构的服务、资源，以及图书情报机构今后的发展方向和重点工作等方面。研究方向上的趋同，也不可避免的使许多研究结构、研究内容、研究重点存在趋同，如对大数据概念和特点的阐述，基本每篇文章必涉猎，只是篇幅有多有少； 谈及大数据必谈机遇与挑战等等。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "大数据时代",
+          "normalized_name": "大数据时代",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "由于大数据时代的到来",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "大数据",
+          "normalized_name": "大数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学者们看到了大数据所带来的挑战",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e3",
+          "mention": "图书情报机构",
+          "normalized_name": "图书情报机构",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "多集中在对图书情报机构的服务、资源",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称机构，但图情领域有具体指代范围，按规则抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "诚然，图书情报机构当前处于一个生死攸关、转型发展的关键时期，必须把握住时代发展的脉搏，抓住稍纵即逝的发展契机，尤其是在国家重视科技服务业发展，大力推动科技服务业服务于科技创新主体这一特定的历史时期，大数据的出现就像一针强心剂，为图书情报机构的发展注入了强有力的动力。但是大数据不是救命稻草，它只是特定时期出现的特定产物，图书情报机构今后的发展源泉在于创新，发展动力、根基和着眼点要放在用户和用户需求上。不要头脑过热、过于盲目的跟风，要脚踏实地将当前工作做好； 不要重蹈覆辙，不要回到以图书馆为中心的时代。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "图书情报机构",
+          "normalized_name": "图书情报机构",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书情报机构当前处于一个生死攸关、转型发展的关键时期",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称机构，但结合上下文指代具体类型的机构群体，按图情领域放宽规则抽取"
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "科技服务业",
+          "normalized_name": "科技服务业",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国家重视科技服务业发展，大力推动科技服务业服务于科技创新主体",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e3",
+          "mention": "大数据",
+          "normalized_name": "大数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大数据的出现就像一针强心剂",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e4",
+          "mention": "用户",
+          "normalized_name": "用户",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "发展动力、根基和着眼点要放在用户和用户需求上",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但在图情领域作为核心概念可抽取"
+        },
+        {
+          "entity_id": "25_e5",
+          "mention": "用户需求",
+          "normalized_name": "用户需求",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "发展动力、根基和着眼点要放在用户和用户需求上",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e6",
+          "mention": "以图书馆为中心的时代",
+          "normalized_name": "以图书馆为中心的时代",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "不要重蹈覆辙，不要回到以图书馆为中心的时代",
+          "is_specific_entity": true,
+          "confidence": 0.88,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "不要重蹈覆辙，不要回到以图书馆为中心的时代。 大数据可以只是工具，可以只是理念，可以只是一个突破口，对于我们来说仍然是要用好大数据为用户服务，解决用户具体问题，满足用户需求。因此，我们不要空谈大数据，不要空谈创新，更不要忽视了用户和用户需求。在相关研究中，能够看出学者们迫切的心态，而盲目的跟进和过于激进的打破当前工作节奏的做法，需要我们谨慎考虑。本文倒是建议，理性面对大数据，在做好当前工作、本职工作的同时，寻找大数据研究与应用的突破口，使大数据能够真正为我所用，为用户所享。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "大数据",
+          "normalized_name": "大数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大数据可以只是工具，可以只是理念，可以只是一个突破口",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "大数据的到来，为图书情报领域的相关研究和相关工作带来了一条崭新的发展道路，图书情报机构能够以此为契机更好的参与到社会发展与经济建设当中，为用户提供更多更好的专业化服务。今后的研究还应更加深入，寻找到几个大数据应用的切入点，以此为契机切实开展相关工作，使大数据能够真正从理论研究走向实践应用。",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "大数据",
+          "normalized_name": "大数据",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大数据的到来，为图书情报领域的相关研究和相关工作带来了一条崭新的发展道路",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "图书情报领域",
+          "normalized_name": "图书情报领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为图书情报领域的相关研究和相关工作带来了一条崭新的发展道路",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e3",
+          "mention": "图书情报机构",
+          "normalized_name": "图书情报机构",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书情报机构能够以此为契机更好的参与到社会发展与经济建设当中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "泛称机构，但图情领域放宽规则，视为具体机构类型"
+        },
+        {
+          "entity_id": "27_e4",
+          "mention": "大数据应用",
+          "normalized_name": "大数据应用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "寻找到几个大数据应用的切入点",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e5",
+          "mention": "理论研究",
+          "normalized_name": "理论研究",
+          "candidate_l3": "methodology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使大数据能够真正从理论研究走向实践应用",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为method"
+        },
+        {
+          "entity_id": "27_e6",
+          "mention": "实践应用",
+          "normalized_name": "实践应用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使大数据能够真正从理论研究走向实践应用",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,953 @@
+{
+  "base_name": "reviewed_full_4394",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "h指数在2005年被提出之初,其原创者Hirsch就已经考虑到该指数没有区分作者贡献和作者数量的问题,2006年开始很多研究人员也都陆续指出h指数最突出的缺点就是没有考虑到科研人员论文成果中合作者的数量[2]。独立作者对论文的投入或者贡献虽然很大，但他们的h指数与合作发表论文较多的作者相比没有优势。不排除有一部分研究人员的论文数量和 $\\mathbf { h }$ 指数都较高，但非第一作者或通信作者的论文数量占较大的比例,这种现象在规模较大的项目团队中表现会比较突出。而且，当前的科技评价工作往往采用论文数量和被引次数作为指标,这在一定程度上推动了这一现象，一些项目团队的研究人员在论文发表环节往往会把那些贡献较少甚至没有贡献的其它项目团队成员进行署名，甚至有些团队只要发表论文就把所有研究人员署名在作者项。这种情况目前还没有被纳入科研诚信标准，属于灰色地带。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "h指数",
+          "normalized_name": "h指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "h指数在2005年被提出之初",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "Hirsch",
+          "normalized_name": "Hirsch",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "其原创者Hirsch就已经考虑到该指数没有区分作者贡献和作者数量的问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "科研诚信标准",
+          "normalized_name": "科研诚信标准",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "这种情况目前还没有被纳入科研诚信标准",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "针对以上问题,2006年Batista提出根据h核内论文的作者数量的均值平分 $\\mathrm { h }$ 指数,但由于每个作者对于论文的投入和贡献都是不均衡的，平分的做法有欠公平，也会在某种程度上妨碍科研人员之间的合作[3]。 Egghe在2008年提出根据作者排名来计算论文的引文数量再提取h指数,2009年 Schreiber提出修正h指数的研究也都是基于类似的想法，根据合作作者数量重新计算论文的被引次数再提取h指数。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "Batista",
+          "normalized_name": "Batista",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "2006年Batista提出根据h核内论文的作者数量的均值平分h指数",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "h指数",
+          "normalized_name": "h指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "根据h核内论文的作者数量的均值平分h指数",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "Egghe",
+          "normalized_name": "Egghe",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Egghe在2008年提出根据作者排名来计算论文的引文数量再提取h指数",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "Schreiber",
+          "normalized_name": "Schreiber",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "2009年Schreiber提出修正h指数的研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "Hirsch本人也在2010 年提出了文献计量指标h-bar,能够给独立署名或较少合作发表论文的作者加分,不鼓励名义上的署名，同时又不能妨碍真正的合作。 他提出在 $\\mathrm { h }$ 指数基础上,将以下情况的论文计入h-bar核:独立作者;",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "Hirsch",
+          "normalized_name": "Hirsch",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Hirsch本人也在2010 年提出了文献计量指标h-bar",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "文献计量指标h-bar",
+          "normalized_name": "文献计量指标h-bar",
+          "candidate_l3": "index",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "提出了文献计量指标h-bar",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "h指数",
+          "normalized_name": "h指数",
+          "candidate_l3": "index",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在h指数基础上",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "h-bar核",
+          "normalized_name": "h-bar核",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将以下情况的论文计入h-bar核",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "再考虑将h核外符合条件的少数论文纳入到h-bar核。 hbar指数相比较 $\\mathrm { h }$ 指数具有一定的优势,他考虑了作者的贡献,同时在一定程度上能避免虚假或不必要的署名现象等。但是hbar也有缺点，主要表现在以下几点：",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "h核",
+          "normalized_name": "h核",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将h核外符合条件的少数论文纳入到h-bar核",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "h-bar核",
+          "normalized_name": "h-bar核",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将h核外符合条件的少数论文纳入到h-bar核",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "hbar指数",
+          "normalized_name": "hbar指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "hbar指数相比较h指数具有一定的优势",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "h指数",
+          "normalized_name": "h指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "hbar指数相比较h指数具有一定的优势",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "虚假或不必要的署名现象",
+          "normalized_name": "虚假或不必要的署名现象",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "能避免虚假或不必要的署名现象等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为描述性短语而非独立学术命名"
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "a.计算相比较 $\\mathrm { h }$ 指数来说略为复杂。 利用文献数据库计算hbar指数时，需要获得每篇论文被引次数以及每篇论文合作者的h指数数据,包括h核外的论文也要计算在内,会花费一定的时间。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "h指数",
+          "normalized_name": "h指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "计算相比较 h 指数来说略为复杂",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "hbar指数",
+          "normalized_name": "hbar指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用文献数据库计算hbar指数时",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "文献数据库",
+          "normalized_name": "文献数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用文献数据库计算hbar指数时",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "未指明具体数据库名称，但图情领域放宽规则下作为通用数据库类型可抽取"
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "h核",
+          "normalized_name": "h核",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括h核外的论文也要计算在内",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "主要有两种视角：一种是根据作者署名顺序和署名规则仅提取作为主要贡献人的署名成果，并纳入 $\\mathrm { h }$ 指数计算范畴。通常有两种情况：一是将第一作者和通讯作者纳入研究范畴; 二是将署名排在前3位的成果纳入研究范畴，根据作者署名次序，仅计算排名在前1、2或3位的论文被引次数后计算 $\\mathrm { h }$ 指数。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "第一作者",
+          "normalized_name": "第一作者",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将第一作者和通讯作者纳入研究范畴",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "通讯作者",
+          "normalized_name": "通讯作者",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将第一作者和通讯作者纳入研究范畴",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "h指数",
+          "normalized_name": "h指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "纳入h指数计算范畴",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "基于作者贡献的另一种研究视角就是根据作者署名顺序计算权重，将成果的被引次数加权后再重新计算序列提取h指数。 也就是说,根据每篇论文的作者数量平分引用次数或根据作者排序加权后计算引文次数再提取 $\\mathrm { h }$ 指数。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "h指数",
+          "normalized_name": "h指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "根据作者署名顺序计算权重，将成果的被引次数加权后再重新计算序列提取h指数",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "h 指数被提出以来,以其计算简单这一优势被快速用于评价科研人员成果水平，如果想获取某位研究人员的 $\\mathbf { h }$ 指数只需登陆Web of Science等数据库平台进行检索，点击检索结果界面中的引文分析功能，该功能直接提供 $\\mathrm { h }$ 指数，也可通过降序排列被引次数通过浏览获得 $\\mathrm { h }$ 指数数据。 科研管理部门、图书情报部门甚至科研人员自身都能够快速获取 $\\mathbf { h }$ 指数信息。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "h 指数",
+          "normalized_name": "h指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "h 指数被提出以来,以其计算简单这一优势被快速用于评价科研人员成果水平",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "Web of Science",
+          "normalized_name": "Web of Science",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "只需登陆Web of Science等数据库平台进行检索",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "科研管理部门",
+          "normalized_name": "科研管理部门",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "科研管理部门、图书情报部门甚至科研人员自身都能够快速获取h指数信息",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "该短语在句中指代一类部门，但未给出具体机构名称，属于泛化类别词，按规则不应抽取。但考虑到图情领域放宽规则，且该短语在句中作为具体行为主体出现，故保留。"
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "图书情报部门",
+          "normalized_name": "图书情报部门",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "科研管理部门、图书情报部门甚至科研人员自身都能够快速获取h指数信息",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "同上，属于泛化类别词，但作为具体行为主体保留。"
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "h指数和相关改进指数研究均以当前引文数据为基础,对研究人员当前成果的产出物进行评价，主要原因是Webof Science平台的引文数据统计是当前的，也就是说,现在登陆Webof Science平台提取研究人员的 $\\mathrm { h }$ 指数与较早时间，甚至几天前的结果都是不一致的。 而大多研究成果都是以检索时间点获取的静态数据进行研究,忽视了h指数的时间累积。 Web ofscience平台的引文数据是动态增长的,科研人员当前的 $\\mathrm { h }$ 指数数值都会经历逐渐累积的过程，需对科研人员不同时期的h指数进行监测来研究h指数的动态增长规律。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "h指数",
+          "normalized_name": "h指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "h指数和相关改进指数研究均以当前引文数据为基础",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "Web of Science平台",
+          "normalized_name": "Web of Science平台",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Web of Science平台的引文数据统计是当前的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "Web of Science平台",
+          "normalized_name": "Web of Science平台",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "现在登陆Web of Science平台提取研究人员的h指数",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "可兼为information_system"
+        },
+        {
+          "entity_id": "10_e4",
+          "mention": "h指数",
+          "normalized_name": "h指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现在登陆Web of Science平台提取研究人员的h指数",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e5",
+          "mention": "h指数",
+          "normalized_name": "h指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "忽视了h指数的时间累积",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e6",
+          "mention": "Web of Science平台",
+          "normalized_name": "Web of Science平台",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Web of Science平台的引文数据是动态增长的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e7",
+          "mention": "h指数",
+          "normalized_name": "h指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "科研人员当前的h指数数值都会经历逐渐累积的过程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e8",
+          "mention": "h指数",
+          "normalized_name": "h指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "需对科研人员不同时期的h指数进行监测来研究h指数的动态增长规律",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "根据上节提出的方法和步骤进行计算,通过Webof Science平台提供的来源数据下载功能,将来源文献及对应的引证文献的元数据下载并导入Excel进行处理和统计。 由于Webof Science平台每次支持最多500条记录的下载，所以对于动辄上万篇引证文献的数据量来说需分批多次下载，这个过程是非常耗时的。 利用Excel处理作者和引文数据,提取作者排序和引文时间数据。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "Web of Science",
+          "normalized_name": "Web of Science",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过Web of Science平台提供的来源数据下载功能",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "Excel",
+          "normalized_name": "Excel",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "将来源文献及对应的引证文献的元数据下载并导入Excel进行处理和统计",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "3.2.1 $\\mathrm { h }$ 指数与 $\\mathbf { h } _ { 1 }$ 趋势比较图1显示了4位研究人员 $\\mathrm { h }$ 指数逐年变化趋势,AK、KS和MI呈现出较高的线性拟合。 这是因为AK、KS、MI虽然分别隶属两个机构,但他们之间有较多的合作。 他们所发表的论文会全部贡献三人的 $\\mathrm { h }$ 核,所以通过 $\\mathrm { h }$ 指数很难看出三人科研实力的区别以及他们在团队中的角色和能力。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "h指数",
+          "normalized_name": "h指数",
+          "candidate_l3": "index",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "h指数与h1趋势比较图1显示了4位研究人员h指数逐年变化趋势",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "h1",
+          "normalized_name": "h1",
+          "candidate_l3": "index",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "h指数与h1趋势比较图1显示了4位研究人员h指数逐年变化趋势",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为h指数的变体或衍生指标"
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "AK",
+          "normalized_name": "AK",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "4位研究人员h指数逐年变化趋势,AK、KS和MI呈现出较高的线性拟合",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "KS",
+          "normalized_name": "KS",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "4位研究人员h指数逐年变化趋势,AK、KS和MI呈现出较高的线性拟合",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e5",
+          "mention": "MI",
+          "normalized_name": "MI",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "4位研究人员h指数逐年变化趋势,AK、KS和MI呈现出较高的线性拟合",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e6",
+          "mention": "h核",
+          "normalized_name": "h核",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "他们所发表的论文会全部贡献三人的h核",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "如果仅把作为主要贡献的成果，即排名第一的论文以及引证文献数量排出序列,逐年提取 $\\mathrm { h }$ 指数,即 $\\mathbf { h } _ { 1 }$ 指数，如图2所示,可以明显看出 $\\mathbf { h }$ 指数拟合度比较高的三人中， $\\mathrm { M I }$ 的 $\\mathbf { h } _ { 1 }$ 曲线处于快速上升期,结合表1,其总论文数量、第一作者论文数量都较高,平均排序、平均合作者数量却较低,说明MI作为第一贡献者的论文成果影响力或者说质量较高，被引用频次超出AK和KS。相比较， $\\mathrm { M I }$ 的 $\\mathrm { h }$ 指数趋势在三人中处于微弱的劣势，说明合作成果相对拉低了他的 $\\mathrm { h }$ 指数，而其作为主要贡献者的成果表现较为突出,进而提升了其 $\\mathbf { h } _ { 1 }$ 曲线的强度。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "h指数",
+          "normalized_name": "h指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "逐年提取 h 指数",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "h1指数",
+          "normalized_name": "h1指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "即 h1 指数",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "MI",
+          "normalized_name": "MI",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "MI 的 h1 曲线处于快速上升期",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为作者缩写，需确认全名"
+        },
+        {
+          "entity_id": "14_e4",
+          "mention": "AK",
+          "normalized_name": "AK",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "被引用频次超出AK和KS",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为作者缩写，需确认全名"
+        },
+        {
+          "entity_id": "14_e5",
+          "mention": "KS",
+          "normalized_name": "KS",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "被引用频次超出AK和KS",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为作者缩写，需确认全名"
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "与以上三人分属不同机构也不存在合作的科研人员AC的 $\\mathbf { h }$ 指数曲线一直处于增长状态,这符合大多数人 $\\mathbf { h }$ 指数时间增长趋势,但从图2可以看出,AC作为主要贡献者，其 $\\mathbf { h } _ { 1 }$ 指数却在近5年一直处于停滞状态，这说明一直贡献其 $\\mathrm { h }$ 指数的论文成果主要是合作成果。 当然不排除其部分作为主要贡献人的论文成果的价值还没有被充分发现的可能，未来也会有上升的空间。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "AC",
+          "normalized_name": "AC",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "与以上三人分属不同机构也不存在合作的科研人员AC的 h 指数曲线一直处于增长状态",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "h 指数",
+          "normalized_name": "h指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "科研人员AC的 h 指数曲线一直处于增长状态",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "h 1 指数",
+          "normalized_name": "h1指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "AC作为主要贡献者，其 h 1 指数却在近5年一直处于停滞状态",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "当然不排除其部分作为主要贡献人的论文成果的价值还没有被充分发现的可能，未来也会有上升的空间。 所以，虽然AC的 $\\mathrm { h }$ 指数曲线是三人中最为突出的,但 $\\mathbf { h } _ { 1 }$ 曲线却说明AC的科研发展空间和潜力是三人中最弱的。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "AC",
+          "normalized_name": "AC",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "AC的 h 指数曲线是三人中最为突出的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "h 指数曲线",
+          "normalized_name": "h指数曲线",
+          "candidate_l3": "index",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "AC的 h 指数曲线是三人中最为突出的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "h_1 曲线",
+          "normalized_name": "h_1曲线",
+          "candidate_l3": "index",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "h_1 曲线却说明AC的科研发展空间和潜力是三人中最弱的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "3.2.2h核第一作者贡献情况分析h指数和$\\mathbf { h } _ { 1 }$ 指数随时间只会增长不会下降,h核内第一作者论文数量是会下降的(见图3），尤其当与他人合作较多且被引次数增长较快的情况下,部分原本在 $\\mathrm { h }$ 核内的第一作者论文会随着被引频次增长缓慢而不在h核内,引起曲线的下降。 这种下降可能是总体趋势的下降,也可能会是短暂的下降,如果论文价值足够高的话,终究会回归h核。 图1中,KS的 $\\mathrm { h }$ 核内第一作者论文数在2006和2007年连续两年下降。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "h指数",
+          "normalized_name": "h指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "h指数和$\\mathbf { h } _ { 1 }$ 指数随时间只会增长不会下降",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "h 1 指数",
+          "normalized_name": "h1指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "h指数和$\\mathbf { h } _ { 1 }$ 指数随时间只会增长不会下降",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "KS",
+          "normalized_name": "KS",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "KS的 $\\mathrm { h }$ 核内第一作者论文数在2006和2007年连续两年下降",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "KS可能为学者姓名缩写，需结合上下文确认全称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "该团队种，高会军、张立宪、王常虹是联系较为紧密的合作者，王常虹作为非第一作者与高会军和张立宪合作发表论文数量较多，并依靠合作论文获得较高被引次数，其中与高会军合作48篇，与张立宪合作7篇，三人共同合作论文仅为3篇，尤其借助与高会军的合作使得其h指数高于张立宪。高会军、王常虹和张立宪合作较多的三人中，明显看出高会军 $\\mathbf { h }$ 指数的快速增长,其独立和第一作者署名成果数量较多，属于三人中未来科研潜力和成就最大的一个; 相比较张立宪独立研究能力较强,h指数多依靠自己的成果论文做贡献,属于稳定增长。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "高会军",
+          "normalized_name": "高会军",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "高会军、张立宪、王常虹是联系较为紧密的合作者",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "张立宪",
+          "normalized_name": "张立宪",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "高会军、张立宪、王常虹是联系较为紧密的合作者",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "王常虹",
+          "normalized_name": "王常虹",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "高会军、张立宪、王常虹是联系较为紧密的合作者",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e4",
+          "mention": "h指数",
+          "normalized_name": "h指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "借助与高会军的合作使得其h指数高于张立宪",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "相比较张立宪独立研究能力较强,h指数多依靠自己的成果论文做贡献,属于稳定增长。 王常虹虽然 $\\mathrm { h }$ 指数增长,但其没有独立或第一作者署名的论文，不宜作为学术带头人。四人中的刘国平属于科研年龄最长的一个，与其他三人几乎没有合作，其 $\\mathbf { h }$ 指数呈现出稳定的增长态势，属于健康稳健类型。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "张立宪",
+          "normalized_name": "张立宪",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "相比较张立宪独立研究能力较强",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "王常虹",
+          "normalized_name": "王常虹",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "王常虹虽然h指数增长",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "刘国平",
+          "normalized_name": "刘国平",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "四人中的刘国平属于科研年龄最长的一个",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

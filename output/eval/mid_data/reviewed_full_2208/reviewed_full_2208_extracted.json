@@ -1,0 +1,1928 @@
+{
+  "base_name": "reviewed_full_2208",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "摘要通过分析近年来重要国际机构开展的若干农业和粮食系统的前瞻工作，系统研究情景分析法的应用情况，包括情景研究类型、情景分析流程及情景构建技术，并总结情景分析法在典型农业前瞻实践中的特点。 分析表明，典型农业前瞻的情景分析按不同角度分类有多种类型，其流程随定性或定量分析类别不同有一定差异，情景的构建和分析综合采取多种方法与技术，尤其与模型应用紧密联系。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "情景分析法",
+          "normalized_name": "情景分析法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "系统研究情景分析法的应用情况",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "情景研究类型",
+          "normalized_name": "情景研究类型",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括情景研究类型、情景分析流程及情景构建技术",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为泛化分类，但原文中作为具体分类方案提及"
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "情景分析流程",
+          "normalized_name": "情景分析流程",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括情景研究类型、情景分析流程及情景构建技术",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "情景构建技术",
+          "normalized_name": "情景构建技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括情景研究类型、情景分析流程及情景构建技术",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e5",
+          "mention": "模型",
+          "normalized_name": "模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "尤其与模型应用紧密联系",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "原文未指定具体模型名称，但作为具体方法提及"
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "为了探讨未来粮食系统的可能前景及相应的发展路径,国际上一些农业研究及相关战略研究机构先后开展了若干农业前瞻研究。 前瞻研究是一种审慎的研究与思考活动，通过展现一系列未来可能路径以扩大认识的范围、扩展对新问题和新形势的认知,并支持战略思考和决策。 前瞻研究的主要方法包括文献回顾法、情景分析法、趋势外推法、SWOT法、技术路线图法、德尔菲法、头脑风暴法等。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "农业研究及相关战略研究机构",
+          "normalized_name": "农业研究及相关战略研究机构",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国际上一些农业研究及相关战略研究机构先后开展了若干农业前瞻研究",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "机构名称较泛化，但带有学科限定修饰，符合抽取规则"
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "文献回顾法",
+          "normalized_name": "文献回顾法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "前瞻研究的主要方法包括文献回顾法、情景分析法、趋势外推法、SWOT法、技术路线图法、德尔菲法、头脑风暴法等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "情景分析法",
+          "normalized_name": "情景分析法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "前瞻研究的主要方法包括文献回顾法、情景分析法、趋势外推法、SWOT法、技术路线图法、德尔菲法、头脑风暴法等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "趋势外推法",
+          "normalized_name": "趋势外推法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "前瞻研究的主要方法包括文献回顾法、情景分析法、趋势外推法、SWOT法、技术路线图法、德尔菲法、头脑风暴法等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e5",
+          "mention": "SWOT法",
+          "normalized_name": "SWOT法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "前瞻研究的主要方法包括文献回顾法、情景分析法、趋势外推法、SWOT法、技术路线图法、德尔菲法、头脑风暴法等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e6",
+          "mention": "技术路线图法",
+          "normalized_name": "技术路线图法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "前瞻研究的主要方法包括文献回顾法、情景分析法、趋势外推法、SWOT法、技术路线图法、德尔菲法、头脑风暴法等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e7",
+          "mention": "德尔菲法",
+          "normalized_name": "德尔菲法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "前瞻研究的主要方法包括文献回顾法、情景分析法、趋势外推法、SWOT法、技术路线图法、德尔菲法、头脑风暴法等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e8",
+          "mention": "头脑风暴法",
+          "normalized_name": "头脑风暴法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "前瞻研究的主要方法包括文献回顾法、情景分析法、趋势外推法、SWOT法、技术路线图法、德尔菲法、头脑风暴法等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "前瞻研究的主要方法包括文献回顾法、情景分析法、趋势外推法、SWOT法、技术路线图法、德尔菲法、头脑风暴法等。 其中情景分析法（scenario analysis）是一种重要的前瞻研究方法。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "文献回顾法",
+          "normalized_name": "文献回顾法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "前瞻研究的主要方法包括文献回顾法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "情景分析法",
+          "normalized_name": "情景分析法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "前瞻研究的主要方法包括文献回顾法、情景分析法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "趋势外推法",
+          "normalized_name": "趋势外推法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "前瞻研究的主要方法包括文献回顾法、情景分析法、趋势外推法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "SWOT法",
+          "normalized_name": "SWOT法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "前瞻研究的主要方法包括文献回顾法、情景分析法、趋势外推法、SWOT法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "技术路线图法",
+          "normalized_name": "技术路线图法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "前瞻研究的主要方法包括文献回顾法、情景分析法、趋势外推法、SWOT法、技术路线图法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e6",
+          "mention": "德尔菲法",
+          "normalized_name": "德尔菲法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "前瞻研究的主要方法包括文献回顾法、情景分析法、趋势外推法、SWOT法、技术路线图法、德尔菲法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e7",
+          "mention": "头脑风暴法",
+          "normalized_name": "头脑风暴法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "前瞻研究的主要方法包括文献回顾法、情景分析法、趋势外推法、SWOT法、技术路线图法、德尔菲法、头脑风暴法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e8",
+          "mention": "情景分析法（scenario analysis）",
+          "normalized_name": "情景分析法（scenario analysis）",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "其中情景分析法（scenario analysis）是一种重要的前瞻研究方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "情景分析法是在对经济、产业或技术的重大演变提出各种关键假设的基础上,通过详细、严密地对未来进行推理和描述来构想未来各种可能的方案。 情景分析法能有效描绘未来变化的进程，在战略规划、政策分析、决策管理等领域有很大的适用性。近年来，情景分析法越来越多地应用于具有高度复杂性和不确定性的全球性问题,在社会、经济、生态环境、农业和可持续发展前瞻研究中产生了一些代表性成果。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "情景分析法",
+          "normalized_name": "情景分析法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "情景分析法是在对经济、产业或技术的重大演变提出各种关键假设的基础上",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "本文选择2009年至今国际知名农业研究与战略研究机构开展的6个针对粮食安全和农业发展的代表性前瞻研究进行分析。 6个案例均以情景分析法作为核心方法,分析预测了未来远期全球粮食供应与消费、粮食贸易、饥饿风险的可能趋势,分析了气候变化、资源限制、技术发展可能带来的影响,探讨了未来粮食系统的可能前景及发展路径。 各案例的背景及情景分析概况见表1。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "2009年至今",
+          "normalized_name": "2009年至今",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "本文选择2009年至今国际知名农业研究与战略研究机构开展的6个针对粮食安全和农业发展的代表性前瞻研究进行分析",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "时间范围，可视为发展阶段"
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "国际知名农业研究与战略研究机构",
+          "normalized_name": "国际知名农业研究与战略研究机构",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国际知名农业研究与战略研究机构开展的6个针对粮食安全和农业发展的代表性前瞻研究",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "未给出具体机构名称，但原文有明确限定修饰，按规则需抽取"
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "粮食安全",
+          "normalized_name": "粮食安全",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "针对粮食安全和农业发展的代表性前瞻研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "农业发展",
+          "normalized_name": "农业发展",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "针对粮食安全和农业发展的代表性前瞻研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e5",
+          "mention": "情景分析法",
+          "normalized_name": "情景分析法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "6个案例均以情景分析法作为核心方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e6",
+          "mention": "粮食供应与消费",
+          "normalized_name": "粮食供应与消费",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分析预测了未来远期全球粮食供应与消费、粮食贸易、饥饿风险的可能趋势",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "复合概念，但原文作为独立短语出现"
+        },
+        {
+          "entity_id": "5_e7",
+          "mention": "粮食贸易",
+          "normalized_name": "粮食贸易",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分析预测了未来远期全球粮食供应与消费、粮食贸易、饥饿风险的可能趋势",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e8",
+          "mention": "饥饿风险",
+          "normalized_name": "饥饿风险",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分析预测了未来远期全球粮食供应与消费、粮食贸易、饥饿风险的可能趋势",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e9",
+          "mention": "气候变化",
+          "normalized_name": "气候变化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分析了气候变化、资源限制、技术发展可能带来的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e10",
+          "mention": "资源限制",
+          "normalized_name": "资源限制",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分析了气候变化、资源限制、技术发展可能带来的影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e11",
+          "mention": "技术发展",
+          "normalized_name": "技术发展",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分析了气候变化、资源限制、技术发展可能带来的影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e12",
+          "mention": "粮食系统",
+          "normalized_name": "粮食系统",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "探讨了未来粮食系统的可能前景及发展路径",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e13",
+          "mention": "表1",
+          "normalized_name": "表1",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "各案例的背景及情景分析概况见表1",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "表格作为论文组成部分，可视为话语性制品"
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "从表1可以看出,这些农业前瞻研究的时间跨度都很长—一至2050年或更远的未来; 地理范围都覆盖了全球。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "农业前瞻研究",
+          "normalized_name": "农业前瞻研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这些农业前瞻研究的时间跨度都很长",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为methodology或research_program，但原文未提供足够信息确定具体类型，暂标为subfield"
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "2050年",
+          "normalized_name": "2050年",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "一至2050年或更远的未来",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "地理范围都覆盖了全球。 构建的情景层次有的较简单，只有2个主情景; 有的较复杂，有主情景和子情景，甚至还构建了敏感性情景、特别情景、参考情景等。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "敏感性情景",
+          "normalized_name": "敏感性情景",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "甚至还构建了敏感性情景、特别情景、参考情景等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为特定研究中的命名概念，但缺乏上下文确认是否为独立学术术语"
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "特别情景",
+          "normalized_name": "特别情景",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "甚至还构建了敏感性情景、特别情景、参考情景等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为特定研究中的命名概念，但缺乏上下文确认是否为独立学术术语"
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "参考情景",
+          "normalized_name": "参考情景",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "甚至还构建了敏感性情景、特别情景、参考情景等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为特定研究中的命名概念，但缺乏上下文确认是否为独立学术术语"
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "情景发展过程中如果以定性的文字、资料描述分析为主,则为定性情景分析; 如果较多地使用了数字化信息和模型模拟，则为定量情景分析。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "定性情景分析",
+          "normalized_name": "定性情景分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以定性的文字、资料描述分析为主,则为定性情景分析",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "定量情景分析",
+          "normalized_name": "定量情景分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "较多地使用了数字化信息和模型模拟，则为定量情景分析",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "农业前瞻研究案例中,SCAR前瞻和 SLU前瞻属邢颖，董瑜，袁建霞，等.典型农业前瞻案例中情景分析法的应用分析于定性情景分析,IFPRI前瞻、Foresight前瞻和IIASA前瞻则是定量情景分析，均采用模型进行定量模拟。 如IFPRI前瞻综合利用了3个生物物理和社会经济模型,包括农业技术转移决策支持系统(DSSAT)模型和水文模型估算不同管理体系和气候变化情景下的作物产量，并将结果输入国际农业商品和贸易政策分析(IMPACT)模型，模拟未来全球市场各种农产品的生产、需求和价格。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "SCAR前瞻",
+          "normalized_name": "SCAR前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "SCAR前瞻和 SLU前瞻属邢颖，董瑜，袁建霞，等.典型农业前瞻案例中情景分析法的应用分析于定性情景分析",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "SLU前瞻",
+          "normalized_name": "SLU前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "SCAR前瞻和 SLU前瞻属邢颖，董瑜，袁建霞，等.典型农业前瞻案例中情景分析法的应用分析于定性情景分析",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "IFPRI前瞻",
+          "normalized_name": "IFPRI前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "IFPRI前瞻、Foresight前瞻和IIASA前瞻则是定量情景分析",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "Foresight前瞻",
+          "normalized_name": "Foresight前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "IFPRI前瞻、Foresight前瞻和IIASA前瞻则是定量情景分析",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e5",
+          "mention": "IIASA前瞻",
+          "normalized_name": "IIASA前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "IFPRI前瞻、Foresight前瞻和IIASA前瞻则是定量情景分析",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e6",
+          "mention": "情景分析法",
+          "normalized_name": "情景分析法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "典型农业前瞻案例中情景分析法的应用分析",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e7",
+          "mention": "农业技术转移决策支持系统(DSSAT)模型",
+          "normalized_name": "农业技术转移决策支持系统(DSSAT)模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括农业技术转移决策支持系统(DSSAT)模型和水文模型估算不同管理体系和气候变化情景下的作物产量",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e8",
+          "mention": "水文模型",
+          "normalized_name": "水文模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括农业技术转移决策支持系统(DSSAT)模型和水文模型估算不同管理体系和气候变化情景下的作物产量",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e9",
+          "mention": "国际农业商品和贸易政策分析(IMPACT)模型",
+          "normalized_name": "国际农业商品和贸易政策分析(IMPACT)模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "并将结果输入国际农业商品和贸易政策分析(IMPACT)模型，模拟未来全球市场各种农产品的生产、需求和价格",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "上述模型或为单独使用,或为综合利用，一个模型的输出结果作为另一个模型的输入信息,或为并行使用,同一案例根据研究问题的不同使用功能相同、原理和特点不同的模型。 Agrimonde前瞻属于定性和定量相结合的情景分析，利用了Agribiom模型分析计算粮食资源与利用间的平",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "Agrimonde前瞻",
+          "normalized_name": "Agrimonde前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "Agrimonde前瞻属于定性和定量相结合的情景分析",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "Agribiom模型",
+          "normalized_name": "Agribiom模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用了Agribiom模型分析计算粮食资源与利用间的平",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "按照实施情景分析的目标来分，回答“将发生什么\"这一问题为预测性情景(predictive scenarios）,回答“能发生什么\"为探索性情景（explorative scenarios），回答“如何实现一个具体的目标”为规范性情景（norma-tive scenarios）b@ 。",
+      "entities": []
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "根据这一分类法,IFPRI前瞻、Foresight 前瞻和IIASA前瞻是预测性情景分析。 3个研究都是在设定的情景条件下，利用定量模型模拟分析未来粮食系统的变化,预测未来主要农作物的产量、价格、国际贸易量、耕地面积、日均卡路里消费、5岁以下营养不良儿童比例等指标的变化情况。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "IFPRI前瞻",
+          "normalized_name": "IFPRI前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "IFPRI前瞻、Foresight 前瞻和IIASA前瞻是预测性情景分析",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "Foresight 前瞻",
+          "normalized_name": "Foresight 前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "IFPRI前瞻、Foresight 前瞻和IIASA前瞻是预测性情景分析",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "IIASA前瞻",
+          "normalized_name": "IIASA前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "IFPRI前瞻、Foresight 前瞻和IIASA前瞻是预测性情景分析",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "定量模型",
+          "normalized_name": "定量模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用定量模型模拟分析未来粮食系统的变化",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "3个研究都是在设定的情景条件下，利用定量模型模拟分析未来粮食系统的变化,预测未来主要农作物的产量、价格、国际贸易量、耕地面积、日均卡路里消费、5岁以下营养不良儿童比例等指标的变化情况。 SLU前瞻对影响全球粮食未来的重要驱动因素进行了鉴别、分析和赋值，分析不同因素不同状态的组合，并由专家小组进一步研讨确定未来情景，属于探索性情景分析。SCAR前瞻研究利用专家小组构建了两个情景，在这两种情景框架下，识别了向可持续粮食消费和生产系统转变的3个主要途径,为规范性情景分析。Agrimonde前瞻构建的AGO和AG1情景分别采用了两种情景分析类型。 其中AGO情景假定在完全自由的情况下，世界粮食生物量生产和使用按照历史发展特征向前发展，其分析为探索性分析；",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "SLU前瞻",
+          "normalized_name": "SLU前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "SLU前瞻对影响全球粮食未来的重要驱动因素进行了鉴别、分析和赋值",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "SCAR前瞻研究",
+          "normalized_name": "SCAR前瞻研究",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "SCAR前瞻研究利用专家小组构建了两个情景",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "Agrimonde前瞻",
+          "normalized_name": "Agrimonde前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "Agrimonde前瞻构建的AGO和AG1情景分别采用了两种情景分析类型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "AGO情景",
+          "normalized_name": "AGO情景",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Agrimonde前瞻构建的AGO和AG1情景分别采用了两种情景分析类型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e5",
+          "mention": "AG1情景",
+          "normalized_name": "AG1情景",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Agrimonde前瞻构建的AGO和AG1情景分别采用了两种情景分析类型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e6",
+          "mention": "探索性情景分析",
+          "normalized_name": "探索性情景分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "SLU前瞻...属于探索性情景分析",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e7",
+          "mention": "规范性情景分析",
+          "normalized_name": "规范性情景分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "SCAR前瞻研究...为规范性情景分析",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "国际一体化研究中心(International Central for Inte-grative Systems,ICIS)发展了一种综合分类方法[，该方法有3个分类标准：情景分析的功能是探究性研究还是决策支持，情景分析程序是客观的(如采用模型或某种规范程序)还是依赖主观直觉; 情景分析实施过程是复杂的(如涉及多个工作组或多次分析)还是简单的。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "国际一体化研究中心(International Central for Inte-grative Systems,ICIS)",
+          "normalized_name": "国际一体化研究中心 (International Central for Integrative Systems, ICIS)",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国际一体化研究中心(International Central for Inte-grative Systems,ICIS)发展了一种综合分类方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "综合分类方法",
+          "normalized_name": "综合分类方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "发展了一种综合分类方法[，该方法有3个分类标准",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "以客观分析、探究性研究为主。 其中，IFPRI前瞻、Foresight前瞻、SLU前瞻的情景分析都属于采用客观方法的探究性研究,Agrimonde前瞻属于兼有主客观性的探究性研究,SCAR前瞻为主观性的探究性研究，而IIASA前瞻则为较客观的决策支持研究。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "IFPRI前瞻",
+          "normalized_name": "IFPRI前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "IFPRI前瞻、Foresight前瞻、SLU前瞻的情景分析都属于采用客观方法的探究性研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "Foresight前瞻",
+          "normalized_name": "Foresight前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "IFPRI前瞻、Foresight前瞻、SLU前瞻的情景分析都属于采用客观方法的探究性研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "SLU前瞻",
+          "normalized_name": "SLU前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "IFPRI前瞻、Foresight前瞻、SLU前瞻的情景分析都属于采用客观方法的探究性研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "Agrimonde前瞻",
+          "normalized_name": "Agrimonde前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "Agrimonde前瞻属于兼有主客观性的探究性研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e5",
+          "mention": "SCAR前瞻",
+          "normalized_name": "SCAR前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "SCAR前瞻为主观性的探究性研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e6",
+          "mention": "IIASA前瞻",
+          "normalized_name": "IIASA前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "IIASA前瞻则为较客观的决策支持研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "以不同的分类角度对案例前瞻研究案例进行剖析表明,这些案例的情景分析类型多样，各项研究间目标、功能、主客观程度、定性或定量程度都各具特色，既有定量情景分析，也有定性情景分析，并以客观分析、探究性研究为主。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "情景分析",
+          "normalized_name": "情景分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这些案例的情景分析类型多样",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "定量情景分析",
+          "normalized_name": "定量情景分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "既有定量情景分析，也有定性情景分析",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "定性情景分析",
+          "normalized_name": "定性情景分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "既有定量情景分析，也有定性情景分析",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e4",
+          "mention": "客观分析",
+          "normalized_name": "客观分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "并以客观分析、探究性研究为主",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为methodology或method，此处按具体操作程序处理"
+        },
+        {
+          "entity_id": "16_e5",
+          "mention": "探究性研究",
+          "normalized_name": "探究性研究",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "并以客观分析、探究性研究为主",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为methodology或method，此处按具体操作程序处理"
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "农业前瞻依定性和定量情景分析的不同在流程上有所差异（见表2）。 法国Agrimonde前瞻采用了定性和定量相结合的情景分析方法，分析流程与其他农业前瞻差异较大。其他情景分析更多采用单向、线性的流程,各阶段有相互独立的操作内容。Agrimonde前瞻情景的构建与发展融合在一起,定量分析和定性分析形成了反馈和循环迭代过程以描述完整的情景。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "法国Agrimonde前瞻",
+          "normalized_name": "法国Agrimonde前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "法国Agrimonde前瞻采用了定性和定量相结合的情景分析方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "情景分析方法",
+          "normalized_name": "情景分析方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用了定性和定量相结合的情景分析方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "Agrimonde前瞻",
+          "normalized_name": "Agrimonde前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "Agrimonde前瞻情景的构建与发展融合在一起",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "为变 量赋值并输入Agribiom模型，模拟分析未来各种生 物量； 计算粮食资源与利用间的平衡，如不平衡调整</td></tr><tr><td>阶段三： 情景发展</td><td>利用定性资料进行详细的、令人信服的 情景描述</td><td>应用定量分析模型计算、评估和预测各 农业指标的未来值，提出具体的、有科 学依据的结果</td><td>假设;专家检验定量分析的一致性，利用定性假设补 充定量情景以呼应不同路径； 明确情景后示，反馈调 整初始定量假设，并再次模拟，重复上述过程</td></tr><tr><td>阶段四： 情景完善</td><td>提出情景方案和政策选择</td><td>提出情景方案和政策选择</td><td>描述完整情景，分析讨论假设及经验教训</td></tr></table>",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "Agribiom模型",
+          "normalized_name": "Agribiom模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为变量赋值并输入Agribiom模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "定量分析模型",
+          "normalized_name": "定量分析模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "应用定量分析模型计算、评估和预测各农业指标的未来值",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但结合上下文指代具体模型"
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "综上,农业前瞻案例中,定量情景分析的流程比定性分析复杂一些,主要体现在根据定量研究的需要增加了数据获取步骤和定量模拟分析步骤。 定性与定量",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "农业前瞻",
+          "normalized_name": "农业前瞻",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "农业前瞻案例中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "定量情景分析",
+          "normalized_name": "定量情景分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "定量情景分析的流程比定性分析复杂一些",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "定性分析",
+          "normalized_name": "定性分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "定量情景分析的流程比定性分析复杂一些",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e4",
+          "mention": "数据获取步骤",
+          "normalized_name": "数据获取步骤",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "增加了数据获取步骤和定量模拟分析步骤",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为method或technique，此处按具体技术步骤处理"
+        },
+        {
+          "entity_id": "19_e5",
+          "mention": "定量模拟分析步骤",
+          "normalized_name": "定量模拟分析步骤",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "增加了数据获取步骤和定量模拟分析步骤",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为method或technique，此处按具体技术步骤处理"
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "情景的构建是情景分析法的核心。情景的构建有多种技术,本研究通过案例分析,归纳出所选农业前瞻中情景的构建主要有5种技术：基于驱动力分析构建情景、参考已有情景构建新情景、通过模型构建情景、根据分析问题的需要构建情景、通过专家参与构建情景。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "情景分析法",
+          "normalized_name": "情景分析法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "情景的构建是情景分析法的核心",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "案例分析",
+          "normalized_name": "案例分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本研究通过案例分析",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "农业前瞻",
+          "normalized_name": "农业前瞻",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "归纳出所选农业前瞻中情景的构建主要有5种技术",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e4",
+          "mention": "基于驱动力分析构建情景",
+          "normalized_name": "基于驱动力分析构建情景",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于驱动力分析构建情景",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e5",
+          "mention": "参考已有情景构建新情景",
+          "normalized_name": "参考已有情景构建新情景",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "参考已有情景构建新情景",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e6",
+          "mention": "通过模型构建情景",
+          "normalized_name": "通过模型构建情景",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过模型构建情景",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e7",
+          "mention": "根据分析问题的需要构建情景",
+          "normalized_name": "根据分析问题的需要构建情景",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "根据分析问题的需要构建情景",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e8",
+          "mention": "通过专家参与构建情景",
+          "normalized_name": "通过专家参与构建情景",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过专家参与构建情景",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "粮食系统的驱动力主要包括人口数量、GDP增长率、人均收入、粮食消费量等社会经济驱动力，土地利用、水资源量、气候变化等自然资源驱动力，技术开发、扩散等技术驱动力以及管理驱动力等。 基于不同驱动力在未来发展的不同假设,可以构建情景，作为分析的起点。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "人口数量",
+          "normalized_name": "人口数量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "粮食系统的驱动力主要包括人口数量、GDP增长率、人均收入、粮食消费量等社会经济驱动力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为社会经济驱动力中的具体指标，具有独立学术命名"
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "GDP增长率",
+          "normalized_name": "GDP增长率",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "粮食系统的驱动力主要包括人口数量、GDP增长率、人均收入、粮食消费量等社会经济驱动力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "人均收入",
+          "normalized_name": "人均收入",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "粮食系统的驱动力主要包括人口数量、GDP增长率、人均收入、粮食消费量等社会经济驱动力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "粮食消费量",
+          "normalized_name": "粮食消费量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "粮食系统的驱动力主要包括人口数量、GDP增长率、人均收入、粮食消费量等社会经济驱动力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e5",
+          "mention": "土地利用",
+          "normalized_name": "土地利用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "土地利用、水资源量、气候变化等自然资源驱动力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e6",
+          "mention": "水资源量",
+          "normalized_name": "水资源量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "土地利用、水资源量、气候变化等自然资源驱动力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e7",
+          "mention": "气候变化",
+          "normalized_name": "气候变化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "土地利用、水资源量、气候变化等自然资源驱动力",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e8",
+          "mention": "技术开发",
+          "normalized_name": "技术开发",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "技术开发、扩散等技术驱动力",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为驱动力类别中的具体概念，但较为泛化"
+        },
+        {
+          "entity_id": "21_e9",
+          "mention": "扩散",
+          "normalized_name": "扩散",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "技术开发、扩散等技术驱动力",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "此处指技术扩散，作为驱动力类别中的具体概念"
+        },
+        {
+          "entity_id": "21_e10",
+          "mention": "管理驱动力",
+          "normalized_name": "管理驱动力",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以及管理驱动力等",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为驱动力分类中的具体类别概念"
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "IFPRI前瞻和英国Foresight前瞻的主情景都基于世界人口增长和GDP增长等主要社会经济驱动力而构建，子情景则基于未来气候变化的假设而构建。SCAR前瞻基于人口增长、农业生产与消费、资源限制、粮食安全状况、技术进展等的不同未来构建情景。IIASA前瞻情景构建所依据的主要驱动力是社会经济驱动力及气候变化、生物燃料的利用等。瑞典SLU前瞻全球情景的构建基于8个主要因素，包括人口增长、国际力量分布、经济发展、气候变化、自然资源、能源获取、新技术的开发和扩散、消费模式。Agrimonde前瞻以粮食获取和分配、饮食习惯的改变、非粮食产品的需求、经济自由化与国际贸易、环境管制、维持过去增产的能力及气候变化等因素为驱动力形成未来情景。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "IFPRI前瞻",
+          "normalized_name": "IFPRI前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "IFPRI前瞻和英国Foresight前瞻的主情景都基于世界人口增长和GDP增长等主要社会经济驱动力而构建",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "英国Foresight前瞻",
+          "normalized_name": "英国Foresight前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "IFPRI前瞻和英国Foresight前瞻的主情景都基于世界人口增长和GDP增长等主要社会经济驱动力而构建",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e3",
+          "mention": "SCAR前瞻",
+          "normalized_name": "SCAR前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "SCAR前瞻基于人口增长、农业生产与消费、资源限制、粮食安全状况、技术进展等的不同未来构建情景",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e4",
+          "mention": "IIASA前瞻",
+          "normalized_name": "IIASA前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "IIASA前瞻情景构建所依据的主要驱动力是社会经济驱动力及气候变化、生物燃料的利用等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e5",
+          "mention": "瑞典SLU前瞻",
+          "normalized_name": "瑞典SLU前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "瑞典SLU前瞻全球情景的构建基于8个主要因素",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e6",
+          "mention": "Agrimonde前瞻",
+          "normalized_name": "Agrimonde前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "Agrimonde前瞻以粮食获取和分配、饮食习惯的改变、非粮食产品的需求、经济自由化与国际贸易、环境管制、维持过去增产的能力及气候变化等因素为驱动力形成未来情景",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "已有的代表性前瞻研究如千年生态系统评估（MA）、政府间气候变化专门委员会(IPCC)排放情景特别报告(SRES)等利用情景分析法构建了社会经济、资源发展、气候变化专门情景，并具有重要的研究影响力，被广泛认可,可以在此基础上进一步构建农业发展情景。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "千年生态系统评估（MA）",
+          "normalized_name": "千年生态系统评估（MA）",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event",
+            "Artifact"
+          ],
+          "evidence": "已有的代表性前瞻研究如千年生态系统评估（MA）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "政府间气候变化专门委员会(IPCC)排放情景特别报告(SRES)",
+          "normalized_name": "政府间气候变化专门委员会(IPCC)排放情景特别报告(SRES)",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "政府间气候变化专门委员会(IPCC)排放情景特别报告(SRES)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "情景分析法",
+          "normalized_name": "情景分析法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用情景分析法构建了社会经济、资源发展、气候变化专门情景",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "模型的应用在情景构建中发挥了重要作用。 SLU前瞻利用了综合形态学分析模型构建了5个未来情景：首先利用模型识别影响粮食生产的不同驱动力（因素)，并确定各因素不同假设状态的取值，关联所有因素的状态值并评估他们的内部一致性,分析选择内部一致的状态值组合,以此作为构建情景的基础。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "SLU",
+          "normalized_name": "SLU",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "SLU前瞻利用了综合形态学分析模型构建了5个未来情景",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "综合形态学分析模型",
+          "normalized_name": "综合形态学分析模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "SLU前瞻利用了综合形态学分析模型构建了5个未来情景",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e3",
+          "mention": "粮食生产",
+          "normalized_name": "粮食生产",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "识别影响粮食生产的不同驱动力（因素）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "Foresight前瞻在3个主情景和15个子情景外,还针对全球特定地区粮食生产、需求和治理的不同状况，如南亚干旱、发展中国家灌溉效率改善等假设，开发了10个特别情景进行模拟来验证粮食安全对各种可能冲击事件的敏感性。IIASA前瞻在生物能源发展情景的构建中，为分析第一代生物燃料的生产对粮食系统的影响，根据第一代生物燃料在运输能源中的比重构建了4个敏感性情景。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "Foresight前瞻",
+          "normalized_name": "Foresight前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "Foresight前瞻在3个主情景和15个子情景外",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "南亚干旱",
+          "normalized_name": "南亚干旱",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如南亚干旱、发展中国家灌溉效率改善等假设",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e3",
+          "mention": "发展中国家灌溉效率改善",
+          "normalized_name": "发展中国家灌溉效率改善",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如南亚干旱、发展中国家灌溉效率改善等假设",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为假设性情景而非已观察现象"
+        },
+        {
+          "entity_id": "25_e4",
+          "mention": "粮食安全",
+          "normalized_name": "粮食安全",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "验证粮食安全对各种可能冲击事件的敏感性",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e5",
+          "mention": "IIASA前瞻",
+          "normalized_name": "IIASA前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "IIASA前瞻在生物能源发展情景的构建中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e6",
+          "mention": "生物能源发展情景",
+          "normalized_name": "生物能源发展情景",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "IIASA前瞻在生物能源发展情景的构建中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e7",
+          "mention": "第一代生物燃料",
+          "normalized_name": "第一代生物燃料",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为分析第一代生物燃料的生产对粮食系统的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e8",
+          "mention": "粮食系统",
+          "normalized_name": "粮食系统",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为分析第一代生物燃料的生产对粮食系统的影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "Agrimonde前瞻组建了由各种背景、专长和学科的专家组成的工作组,以及由20个来自法国粮食系统相关机构的代表组成的专家咨询委员会。 工作组和专家委员会检验定量分析的一致性,进一步构建定性假设，并通过将定性假设整合入定量假设，形成完整情景。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "Agrimonde前瞻",
+          "normalized_name": "Agrimonde前瞻",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "Agrimonde前瞻组建了由各种背景、专长和学科的专家组成的工作组",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e2",
+          "mention": "法国粮食系统相关机构",
+          "normalized_name": "法国粮食系统相关机构",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "20个来自法国粮食系统相关机构的代表组成的专家咨询委员会",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "机构名称未具体给出，但'法国粮食系统相关机构'作为有国家限定修饰的具体机构类别，按规则抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "工作组和专家委员会检验定量分析的一致性,进一步构建定性假设，并通过将定性假设整合入定量假设，形成完整情景。 SCAR前瞻研究由专家小组在基于文献的元分析、回顾其他前瞻研究的基础上通过专家讨论构建了两个相互对比的叙事情景。SLU前瞻项目成立了一个由来自不同领域的研究人员和不同组织的代表组成的专业小组，通过召开研讨会,识别影响粮食生产的驱动力、确定各驱动力的取值、进行交叉影响评估、识别备选情景。",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "SCAR前瞻研究",
+          "normalized_name": "SCAR前瞻研究",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "SCAR前瞻研究由专家小组在基于文献的元分析、回顾其他前瞻研究的基础上通过专家讨论构建了两个相互对比的叙事情景",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "SLU前瞻项目",
+          "normalized_name": "SLU前瞻项目",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "SLU前瞻项目成立了一个由来自不同领域的研究人员和不同组织的代表组成的专业小组",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "前瞻研究案例中，情景的构建根据研究的过程和分析的问题综合采取2-4种技术(见表3）。 其中，基于驱动力分析构建情景是重要的情景构建技术,6个前瞻研究案例都采用了驱动力分析法，具有高不确定性、高影响力的驱动力是影响情景变化的关键因素。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "驱动力分析法",
+          "normalized_name": "驱动力分析法",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "6个前瞻研究案例都采用了驱动力分析法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "29",
+      "sentence": "基于以上对近期国际重要机构典型农业和粮食前瞻案例的分析，笔者认为农业前瞻实践中情景分析法的应用具有如下主要特征： $\\textcircled{1}$ 情景分析类型多样，各项研究间目标、功能、主客观程度、定性或定量程度各具特点,既有定量情景分析，也有定性情景分析，并以客观分析、探究性研究为主。$\\textcircled{2}$ 情景分析流程随定性或定量分析类别不同有所差异，主要体现在分析数据的获取及是否利用了定量模型进行模拟,定性与定量情景分析相结合的研究过程较复杂。$\\textcircled{3}$ 农业前瞻研究的情景构建采用了包括基于驱动力分析、参考已有情景、利用模型、根据问题需要、专家参与等5种技术,驱动力分析法采用较多，其他技术往往与驱动力分析法结合使用来共同构建情景。$\\textcircled{4}$ 模型应用在情景的构建和分析中发挥着重要作用。 模型不仅应用于定量情景分析的情景发展，还应用于定性情景分析的情景构建;",
+      "entities": [
+        {
+          "entity_id": "29_e1",
+          "mention": "情景分析法",
+          "normalized_name": "情景分析法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "农业前瞻实践中情景分析法的应用具有如下主要特征",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e2",
+          "mention": "驱动力分析法",
+          "normalized_name": "驱动力分析法",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "驱动力分析法采用较多",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "情景分析法是一种仍在发展中的前瞻研究方法，随着其在实践中越来越多的应用，相关理论也在不断探讨中得以丰富。分析情景分析法在特定领域如农业领域应用的不同模式和特征,有助于更好地利用该方法为战略决策提供帮助。",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "情景分析法",
+          "normalized_name": "情景分析法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "情景分析法是一种仍在发展中的前瞻研究方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "农业领域",
+          "normalized_name": "农业领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分析情景分析法在特定领域如农业领域应用的不同模式和特征",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

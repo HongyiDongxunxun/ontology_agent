@@ -1,0 +1,2941 @@
+{
+  "base_name": "reviewed_full_4457",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "图书馆学在学科发展过程中,与情报学、文献学、档案学、目录学等学科逐步交融,研究内容与研究方法虽有差异，但却无法将其完全割裂,继而产生了图书情报(Library andInformation Science,LIS)这一研究领域[]。 随着大数据、物联网、云计算、“互联网 $^ +$ ”时代的到来，LIS的研究也发生了巨大变化[],在取得了一定研究成果的同时也产生了一些问题,如研究方法较单一、学术建制浅薄化[3],因此需要即时掌控LIS 的研究主题变化,正确把握LIS的研究方向,以促使LIS 良性发展经久不衰。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "图书馆学",
+          "normalized_name": "图书馆学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆学在学科发展过程中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "情报学",
+          "normalized_name": "情报学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与情报学、文献学、档案学、目录学等学科逐步交融",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "文献学",
+          "normalized_name": "文献学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与情报学、文献学、档案学、目录学等学科逐步交融",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "档案学",
+          "normalized_name": "档案学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与情报学、文献学、档案学、目录学等学科逐步交融",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e5",
+          "mention": "目录学",
+          "normalized_name": "目录学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与情报学、文献学、档案学、目录学等学科逐步交融",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e6",
+          "mention": "图书情报(Library and Information Science,LIS)",
+          "normalized_name": "图书情报(Library and Information Science, LIS)",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "继而产生了图书情报(Library and Information Science,LIS)这一研究领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e7",
+          "mention": "大数据",
+          "normalized_name": "大数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着大数据、物联网、云计算、“互联网$^+$”时代的到来",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e8",
+          "mention": "物联网",
+          "normalized_name": "物联网",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着大数据、物联网、云计算、“互联网$^+$”时代的到来",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e9",
+          "mention": "云计算",
+          "normalized_name": "云计算",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着大数据、物联网、云计算、“互联网$^+$”时代的到来",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e10",
+          "mention": "互联网$^+$",
+          "normalized_name": "互联网+",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着大数据、物联网、云计算、“互联网$^+$”时代的到来",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e11",
+          "mention": "LIS",
+          "normalized_name": "LIS",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "LIS的研究也发生了巨大变化",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "为研究LIS的发展趋势，已有很多学者基于定性与定量的研究方法探讨了LIS的主题变化、发展脉络等[4],但已有定性研究相对较为主观,定量研究大多数选取某一时间段的文献作为数据样本,如十年、二十年甚至更长,时间粒度较大，因此本研究将时间粒度减小。此外，博硕论文作为科学研究的强有力支撑,具有权威性、系统性、创新性、专业性等特点[5],因此本文选取博硕学位论文作为研究对象。 本文旨在将所选文献样本时间进行平均分割,以深入研究LIS持续关注点及研究主题转移弱化情况。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "LIS",
+          "normalized_name": "LIS",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为研究LIS的发展趋势",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "定性的研究方法",
+          "normalized_name": "定性研究方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于定性与定量的研究方法探讨了LIS的主题变化",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "定量的研究方法",
+          "normalized_name": "定量研究方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于定性与定量的研究方法探讨了LIS的主题变化",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "博硕论文",
+          "normalized_name": "博硕论文",
+          "candidate_l3": "thesis",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "博硕论文作为科学研究的强有力支撑",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但结合上下文指代具体学位论文类型，且图情领域放宽规则，可视为具体实体"
+        },
+        {
+          "entity_id": "2_e5",
+          "mention": "博硕学位论文",
+          "normalized_name": "博硕学位论文",
+          "candidate_l3": "thesis",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "本文选取博硕学位论文作为研究对象",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "同上，泛称但作为研究对象具体化"
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "国内的两大博硕论文库就是万方的CDDB及清华同方的CDMD本研究以CNKI收录的博士和硕士学位论文作为数据样本,选取文献分类目录中的\"图书情报与数字图书馆”，不作其他限定，共检索得到4926篇博硕论文（检索日期为2016年4月1日)。 通常而言，时间粒度设置越小,研究结果越精确，同时综合考虑多方面因素，本文将2000-2015年分为四个阶段，分别是2000-2003年、2004-2007年、2008-2011年、2012-2015年，经分析统计得到四个阶段的数据样本。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "万方的CDDB",
+          "normalized_name": "万方的CDDB",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "国内的两大博硕论文库就是万方的CDDB及清华同方的CDMD",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "清华同方的CDMD",
+          "normalized_name": "清华同方的CDMD",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "国内的两大博硕论文库就是万方的CDDB及清华同方的CDMD",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "CNKI",
+          "normalized_name": "CNKI",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "本研究以CNKI收录的博士和硕士学位论文作为数据样本",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "图书情报与数字图书馆",
+          "normalized_name": "图书情报与数字图书馆",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "选取文献分类目录中的\"图书情报与数字图书馆\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "关键词是文献的精髓,是文章内容的凝练,因此本研究提取LIS博硕学位论文的关键词作为主要研究对象。 首先需要对关键词进行数据预处理,合并同义词,如将\"大学图书馆”、“高等学校图书馆\"等合并为\"高校图书馆”,将\"都柏林核心集”、“DublinCore\"等合并为\"DC\"等；",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "LIS博硕学位论文",
+          "normalized_name": "LIS博硕学位论文",
+          "candidate_l3": "thesis",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "提取LIS博硕学位论文的关键词作为主要研究对象",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "大学图书馆",
+          "normalized_name": "大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "将\"大学图书馆\"、\"高等学校图书馆\"等合并为\"高校图书馆\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "高等学校图书馆",
+          "normalized_name": "高等学校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "将\"大学图书馆\"、\"高等学校图书馆\"等合并为\"高校图书馆\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "高校图书馆",
+          "normalized_name": "高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "将\"大学图书馆\"、\"高等学校图书馆\"等合并为\"高校图书馆\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "都柏林核心集",
+          "normalized_name": "都柏林核心集",
+          "candidate_l3": "metadata_schema",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "将\"都柏林核心集\"、\"DublinCore\"等合并为\"DC\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e6",
+          "mention": "DublinCore",
+          "normalized_name": "DublinCore",
+          "candidate_l3": "metadata_schema",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "将\"都柏林核心集\"、\"DublinCore\"等合并为\"DC\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e7",
+          "mention": "DC",
+          "normalized_name": "DC",
+          "candidate_l3": "metadata_schema",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "将\"都柏林核心集\"、\"DublinCore\"等合并为\"DC\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "高频关键词在一定程度上代表了该领域的研究主题,表2列出了四个时间段关键词词频排列在前十的高频关键词及其词频。由表2可简要分析出，从2000年至今学者们对数字图书馆、高校图书馆、信息服务及图书馆等方面具有较高的持续关注度,2004年开始本体、知识管理成为新的研究主题,2008年开始逐步关注公共图书馆,2012年开始出现文献计量、竞争情报、知识服务等研究热点主题。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "数字图书馆",
+          "normalized_name": "数字图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学者们对数字图书馆、高校图书馆、信息服务及图书馆等方面具有较高的持续关注度",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "高校图书馆",
+          "normalized_name": "高校图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学者们对数字图书馆、高校图书馆、信息服务及图书馆等方面具有较高的持续关注度",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "信息服务",
+          "normalized_name": "信息服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学者们对数字图书馆、高校图书馆、信息服务及图书馆等方面具有较高的持续关注度",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学者们对数字图书馆、高校图书馆、信息服务及图书馆等方面具有较高的持续关注度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处为泛称，但作为研究主题概念可抽取"
+        },
+        {
+          "entity_id": "5_e5",
+          "mention": "本体",
+          "normalized_name": "本体",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2004年开始本体、知识管理成为新的研究主题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e6",
+          "mention": "知识管理",
+          "normalized_name": "知识管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2004年开始本体、知识管理成为新的研究主题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e7",
+          "mention": "公共图书馆",
+          "normalized_name": "公共图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2008年开始逐步关注公共图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e8",
+          "mention": "文献计量",
+          "normalized_name": "文献计量",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2012年开始出现文献计量、竞争情报、知识服务等研究热点主题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e9",
+          "mention": "竞争情报",
+          "normalized_name": "竞争情报",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2012年开始出现文献计量、竞争情报、知识服务等研究热点主题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e10",
+          "mention": "知识服务",
+          "normalized_name": "知识服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2012年开始出现文献计量、竞争情报、知识服务等研究热点主题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "由于高频关键词的线性特征仅从表面体现研究情况，不能反映关键词之间的关系[],因此需要构造关键词的共词矩阵。 本研究利用SATI数据分析软件构建关键词的相关系数矩阵，经Excel处理得到关键词的ochiia系数相关矩阵，用1减去相关矩阵继而得到关键词的相异矩阵,作为聚类分析和战略坐标分析的数据基础。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "SATI数据分析软件",
+          "normalized_name": "SATI数据分析软件",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "本研究利用SATI数据分析软件构建关键词的相关系数矩阵",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "Excel",
+          "normalized_name": "Excel",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "经Excel处理得到关键词的ochiia系数相关矩阵",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "ochiia系数相关矩阵",
+          "normalized_name": "ochiia系数相关矩阵",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "经Excel处理得到关键词的ochiia系数相关矩阵",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "相异矩阵",
+          "normalized_name": "相异矩阵",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "用1减去相关矩阵继而得到关键词的相异矩阵",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "聚类分析",
+          "normalized_name": "聚类分析",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "作为聚类分析和战略坐标分析的数据基础",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e6",
+          "mention": "战略坐标分析",
+          "normalized_name": "战略坐标分析",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "作为聚类分析和战略坐标分析的数据基础",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "聚类分析是将联系紧密的关键词聚为一类，把另外的联系紧密的关键词聚为一类，再将联系紧密的类聚合为类团，最终聚为一个大类团的研究方法[。 经详细的比较分析，本研究利用SPSS采用组内联接、平方Eucilidean距离作为聚类标准,分别将四个时间段的高频关键词进行聚类分析，作出聚类树状图。根据聚类树状图所示结果，四个时间段的关键词可分别聚为8类、10类、9类、10类，便于进一步分析和研究。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "聚类分析",
+          "normalized_name": "聚类分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "聚类分析是将联系紧密的关键词聚为一类",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "SPSS",
+          "normalized_name": "SPSS",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "本研究利用SPSS采用组内联接、平方Eucilidean距离作为聚类标准",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "组内联接",
+          "normalized_name": "组内联接",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用组内联接、平方Eucilidean距离作为聚类标准",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为method下的具体技术"
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "平方Eucilidean距离",
+          "normalized_name": "平方欧氏距离",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用组内联接、平方Eucilidean距离作为聚类标准",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "原文拼写Eucilidean疑似Euclidean之误"
+        },
+        {
+          "entity_id": "7_e5",
+          "mention": "聚类树状图",
+          "normalized_name": "聚类树状图",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "作出聚类树状图。根据聚类树状图所示结果",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可视为可视化工具/图表，属于instrument"
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "为避免聚类类团命名过程中的主观性，本研究引入关键词粘合力指标对类团进行命名。粘合力是指该类团中的关键词对类团的贡献程度,类团名称基于粘合力值较大的关键词。 粘合力计算如公式1所示。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "关键词粘合力指标",
+          "normalized_name": "关键词粘合力指标",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引入关键词粘合力指标对类团进行命名",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "粘合力",
+          "normalized_name": "粘合力",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "粘合力是指该类团中的关键词对类团的贡献程度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "公式1",
+          "normalized_name": "公式1",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "粘合力计算如公式1所示",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为文中编号，非独立命名"
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "根据聚类分析的类团，分别计算2000-2015年四个时间段的战略坐标数据。 战略坐标用密度和向心度衡量聚类类团内部及类团之间的联系和相互影响状况[],在此基础上，绘制四个时间段的战略坐标图,通过战略坐标图分析聚类类团，即2000-2015年间LIS研究主题变化情况。 本研究中的向心度和密度分别利用聚类类团内部和外部关键词共现频次的平均值],聚类类团向心度和密度的均值作为战略坐标图的原点，战略坐标图的横坐标即为每个聚类类团的向心度减去向心度均值,纵坐标为每个聚类类团的密度减去密度均值，表5以2012-2015年时间段的战略坐标数据为例，其他",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "战略坐标",
+          "normalized_name": "战略坐标",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "战略坐标用密度和向心度衡量聚类类团内部及类团之间的联系和相互影响状况",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "密度",
+          "normalized_name": "密度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "战略坐标用密度和向心度衡量聚类类团内部及类团之间的联系和相互影响状况",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "在战略坐标语境中作为具体指标，非泛化计量词"
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "向心度",
+          "normalized_name": "向心度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "战略坐标用密度和向心度衡量聚类类团内部及类团之间的联系和相互影响状况",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "在战略坐标语境中作为具体指标，非泛化计量词"
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "聚类分析",
+          "normalized_name": "聚类分析",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "根据聚类分析的类团",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e5",
+          "mention": "LIS",
+          "normalized_name": "图书情报学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2000-2015年间LIS研究主题变化情况",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e6",
+          "mention": "2000-2015年",
+          "normalized_name": "2000-2015年",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "2000-2015年间LIS研究主题变化情况",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e7",
+          "mention": "2012-2015年",
+          "normalized_name": "2012-2015年",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "表5以2012-2015年时间段的战略坐标数据为例",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "根据2000-2015年四个时间段的关键词聚类分析结果，依据聚类类团的语义情况，从中可分析出2000年以来LIS持续研究主题及研究主题的弱化与转移情况。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "LIS",
+          "normalized_name": "图书情报学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2000年以来LIS持续研究主题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "本文以Mindmapper的形式可视化的展示了研究主题的演变情况,如图1所示。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "Mindmapper",
+          "normalized_name": "Mindmapper",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以Mindmapper的形式可视化的展示了研究主题的演变情况",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "通过图1可看出LIS研究主题的变化情况。2000-2015年四个时间段的持续研究主题主要集中在“图书馆管理与服务”、“信息服务与知识服务”“文献计量”、“校勘与版本”等四个方面，说明这四个方面在这十六年间是学者们重点关注的问题,但随着学科发展,学科研究主题也略微发生了变化。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "LIS",
+          "normalized_name": "LIS",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "LIS研究主题的变化情况",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "图书馆管理与服务",
+          "normalized_name": "图书馆管理与服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "持续研究主题主要集中在“图书馆管理与服务”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "信息服务与知识服务",
+          "normalized_name": "信息服务与知识服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "持续研究主题主要集中在“信息服务与知识服务”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "文献计量",
+          "normalized_name": "文献计量",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "持续研究主题主要集中在“文献计量”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e5",
+          "mention": "校勘与版本",
+          "normalized_name": "校勘与版本",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "持续研究主题主要集中在“校勘与版本”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "2012年开始，图书馆管理与服务集中在公共图书馆的公共文化服务的研究上，包括公共文化服务的问题对策研究、绩效评价研究、均等化建设等方面[20-21]。 从中可分析出，LIS研究主题也是紧跟时代步伐与时俱进的。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "公共图书馆",
+          "normalized_name": "公共图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书馆管理与服务集中在公共图书馆的公共文化服务的研究上",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "公共文化服务",
+          "normalized_name": "公共文化服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "集中在公共图书馆的公共文化服务的研究上",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "绩效评价",
+          "normalized_name": "绩效评价",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括公共文化服务的问题对策研究、绩效评价研究、均等化建设等方面",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为concept或method，此处作为研究方法抽取"
+        },
+        {
+          "entity_id": "14_e4",
+          "mention": "均等化建设",
+          "normalized_name": "均等化建设",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括公共文化服务的问题对策研究、绩效评价研究、均等化建设等方面",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e5",
+          "mention": "LIS",
+          "normalized_name": "LIS",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从中可分析出，LIS研究主题也是紧跟时代步伐与时俱进的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "信息服务是LIS的重要研究内容。 2001年图书馆信息服务主要关注文献信息服务，郑德俊提出了信息实体虚拟化、信息资源数字化、信息传递网络化、信息利用共享化的文献信息服务模式[22]。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "LIS",
+          "normalized_name": "LIS",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息服务是LIS的重要研究内容",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "郑德俊",
+          "normalized_name": "郑德俊",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "郑德俊提出了信息实体虚拟化、信息资源数字化、信息传递网络化、信息利用共享化的文献信息服务模式[22]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "信息实体虚拟化",
+          "normalized_name": "信息实体虚拟化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "郑德俊提出了信息实体虚拟化、信息资源数字化、信息传递网络化、信息利用共享化的文献信息服务模式[22]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "信息资源数字化",
+          "normalized_name": "信息资源数字化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "郑德俊提出了信息实体虚拟化、信息资源数字化、信息传递网络化、信息利用共享化的文献信息服务模式[22]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e5",
+          "mention": "信息传递网络化",
+          "normalized_name": "信息传递网络化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "郑德俊提出了信息实体虚拟化、信息资源数字化、信息传递网络化、信息利用共享化的文献信息服务模式[22]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e6",
+          "mention": "信息利用共享化",
+          "normalized_name": "信息利用共享化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "郑德俊提出了信息实体虚拟化、信息资源数字化、信息传递网络化、信息利用共享化的文献信息服务模式[22]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e7",
+          "mention": "文献信息服务模式",
+          "normalized_name": "文献信息服务模式",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "郑德俊提出了信息实体虚拟化、信息资源数字化、信息传递网络化、信息利用共享化的文献信息服务模式[22]",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "2001年图书馆信息服务主要关注文献信息服务，郑德俊提出了信息实体虚拟化、信息资源数字化、信息传递网络化、信息利用共享化的文献信息服务模式[22]。 随着技术的不断发展,2004-2007年间,研究学者则比较关注MyLibrary与信息服务,MyLibrary是个性化信息服务的最佳实现方式[23]。 为适应个性化多样化的用户需求,个性化信息服务逐步成为热点研究主题,研究学者针对个性化信息服务的模式、技术、系统进行了深入研究。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "郑德俊",
+          "normalized_name": "郑德俊",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "郑德俊提出了信息实体虚拟化、信息资源数字化、信息传递网络化、信息利用共享化的文献信息服务模式[22]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "信息实体虚拟化",
+          "normalized_name": "信息实体虚拟化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "郑德俊提出了信息实体虚拟化、信息资源数字化、信息传递网络化、信息利用共享化的文献信息服务模式[22]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "信息资源数字化",
+          "normalized_name": "信息资源数字化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "郑德俊提出了信息实体虚拟化、信息资源数字化、信息传递网络化、信息利用共享化的文献信息服务模式[22]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e4",
+          "mention": "信息传递网络化",
+          "normalized_name": "信息传递网络化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "郑德俊提出了信息实体虚拟化、信息资源数字化、信息传递网络化、信息利用共享化的文献信息服务模式[22]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e5",
+          "mention": "信息利用共享化",
+          "normalized_name": "信息利用共享化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "郑德俊提出了信息实体虚拟化、信息资源数字化、信息传递网络化、信息利用共享化的文献信息服务模式[22]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e6",
+          "mention": "文献信息服务模式",
+          "normalized_name": "文献信息服务模式",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "郑德俊提出了信息实体虚拟化、信息资源数字化、信息传递网络化、信息利用共享化的文献信息服务模式[22]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e7",
+          "mention": "MyLibrary",
+          "normalized_name": "MyLibrary",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "研究学者则比较关注MyLibrary与信息服务,MyLibrary是个性化信息服务的最佳实现方式[23]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e8",
+          "mention": "个性化信息服务",
+          "normalized_name": "个性化信息服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "个性化信息服务逐步成为热点研究主题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "2004-2011年间，信息服务逐步转化为知识服务，产生了知识管理与知识服务研究主题,一直持续至今,信息服务与知识服务在发展过程中逐步融合。 知识服务是LIS的研究热点，包括知识服务模式、知识服务评价、知识服务关键技术等研究内容[24-25],同时知识服务与知识管理相辅相成，管理旨在服务，服务寓于管理。 2008-2011年间，除知识管理与知识服务外， $\\mathrm { \\ W e b } 2 . 0$ 与信息服务的研究也相对比较多。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "知识服务",
+          "normalized_name": "知识服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息服务逐步转化为知识服务，产生了知识管理与知识服务研究主题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "知识管理",
+          "normalized_name": "知识管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "产生了知识管理与知识服务研究主题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "信息服务",
+          "normalized_name": "信息服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息服务逐步转化为知识服务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "LIS",
+          "normalized_name": "LIS",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识服务是LIS的研究热点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e5",
+          "mention": "知识服务模式",
+          "normalized_name": "知识服务模式",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括知识服务模式、知识服务评价、知识服务关键技术等研究内容",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e6",
+          "mention": "知识服务评价",
+          "normalized_name": "知识服务评价",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括知识服务模式、知识服务评价、知识服务关键技术等研究内容",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e7",
+          "mention": "知识服务关键技术",
+          "normalized_name": "知识服务关键技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括知识服务模式、知识服务评价、知识服务关键技术等研究内容",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e8",
+          "mention": "Web 2.0",
+          "normalized_name": "Web 2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Web 2.0 与信息服务的研究也相对比较多",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "2008-2011年间，除知识管理与知识服务外， $\\mathrm { \\ W e b } 2 . 0$ 与信息服务的研究也相对比较多。 自 $\\mathrm { \\ W e b } 2 . 0$ 提出以来，图书馆2.0随之出现，图书馆2.0强调以用户为中心,因此对图书馆信息服务的研究具有十分重要的意义[26]。 2012-2015年间，竞争情报成为一大研究主题,竞争情报主要针对企业,包括竞争情报系统、竞争情报战略、竞争情报获取等方面。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "知识管理",
+          "normalized_name": "知识管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "除知识管理与知识服务外",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "知识服务",
+          "normalized_name": "知识服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "除知识管理与知识服务外",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "Web2.0",
+          "normalized_name": "Web2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Web2.0与信息服务的研究也相对比较多",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e4",
+          "mention": "信息服务",
+          "normalized_name": "信息服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Web2.0与信息服务的研究也相对比较多",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e5",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆2.0随之出现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e6",
+          "mention": "竞争情报",
+          "normalized_name": "竞争情报",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "竞争情报成为一大研究主题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e7",
+          "mention": "竞争情报系统",
+          "normalized_name": "竞争情报系统",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括竞争情报系统、竞争情报战略、竞争情报获取等方面",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e8",
+          "mention": "竞争情报战略",
+          "normalized_name": "竞争情报战略",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括竞争情报系统、竞争情报战略、竞争情报获取等方面",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e9",
+          "mention": "竞争情报获取",
+          "normalized_name": "竞争情报获取",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括竞争情报系统、竞争情报战略、竞争情报获取等方面",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "信息计量是LIS的重要研究方法之一，因此一直为学者们青睐,成为经久不衰的研究主题,但信息计量的研究并非停滞，而是产生了新的更加细致的研究方法。自2000年以来，引文分析一直被研究者使用，成为重要的信息计量学研究方法，引文分析在其发展过程中，出现了基于路径的引文分析、引文网络分析[27-28]等等。信息计量在2004年开始将重心逐步转化为文献计量，文献计量的主要研究方法集中在共词分析、h指数、聚类分析、知识图谱、社会网络分析等方面。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "信息计量",
+          "normalized_name": "信息计量",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息计量是LIS的重要研究方法之一",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "LIS",
+          "normalized_name": "LIS",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息计量是LIS的重要研究方法之一",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "引文分析",
+          "normalized_name": "引文分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "自2000年以来，引文分析一直被研究者使用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e4",
+          "mention": "基于路径的引文分析",
+          "normalized_name": "基于路径的引文分析",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "出现了基于路径的引文分析、引文网络分析[27-28]等等",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e5",
+          "mention": "引文网络分析",
+          "normalized_name": "引文网络分析",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "出现了基于路径的引文分析、引文网络分析[27-28]等等",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e6",
+          "mention": "文献计量",
+          "normalized_name": "文献计量",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息计量在2004年开始将重心逐步转化为文献计量",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e7",
+          "mention": "共词分析",
+          "normalized_name": "共词分析",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "文献计量的主要研究方法集中在共词分析、h指数、聚类分析、知识图谱、社会网络分析等方面",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e8",
+          "mention": "h指数",
+          "normalized_name": "h指数",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "文献计量的主要研究方法集中在共词分析、h指数、聚类分析、知识图谱、社会网络分析等方面",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e9",
+          "mention": "聚类分析",
+          "normalized_name": "聚类分析",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "文献计量的主要研究方法集中在共词分析、h指数、聚类分析、知识图谱、社会网络分析等方面",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e10",
+          "mention": "知识图谱",
+          "normalized_name": "知识图谱",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "文献计量的主要研究方法集中在共词分析、h指数、聚类分析、知识图谱、社会网络分析等方面",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e11",
+          "mention": "社会网络分析",
+          "normalized_name": "社会网络分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "文献计量的主要研究方法集中在共词分析、h指数、聚类分析、知识图谱、社会网络分析等方面",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "校勘与注释主要针对中国古典文献,是文献学领域的重要研究内容，校勘与注释在纂修过程中占据重要地位[29]。随着校勘学的逐步成熟,在古典文献修订过程中,逐步衍生了目录学、版本学的研究[30-31],成为研究主题。随着国家对文物保护的重视，古籍的校勘修订不仅对历史研究有至关重要的作用,同时也是对我国文物的修缮，其价值与意义影响深远。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "中国古典文献",
+          "normalized_name": "中国古典文献",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "校勘与注释主要针对中国古典文献",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "文献学",
+          "normalized_name": "文献学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "是文献学领域的重要研究内容",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "校勘学",
+          "normalized_name": "校勘学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着校勘学的逐步成熟",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e4",
+          "mention": "目录学",
+          "normalized_name": "目录学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "逐步衍生了目录学、版本学的研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e5",
+          "mention": "版本学",
+          "normalized_name": "版本学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "逐步衍生了目录学、版本学的研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "随着科学技术的进步与发展，LIS的研究也紧跟时代步伐，出现了研究主题的部分弱化、细化与转移现象。2000-2003年的研究主题\"信息检索与搜索引擎”、“互联网知识产权”“DC元数据”、“互操作体系结构\"出现了弱化与转移。2012-2015年，出现了新的研究主题，“云计算与云服务”“用户评价实证研究”、“信息素养与信息行为\"等。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "LIS",
+          "normalized_name": "LIS",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "LIS的研究也紧跟时代步伐",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "信息检索与搜索引擎",
+          "normalized_name": "信息检索与搜索引擎",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2000-2003年的研究主题\"信息检索与搜索引擎\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "互联网知识产权",
+          "normalized_name": "互联网知识产权",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2000-2003年的研究主题\"信息检索与搜索引擎”、“互联网知识产权”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "DC元数据",
+          "normalized_name": "DC元数据",
+          "candidate_l3": "metadata_schema",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "2000-2003年的研究主题\"信息检索与搜索引擎”、“互联网知识产权”“DC元数据”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e5",
+          "mention": "互操作体系结构",
+          "normalized_name": "互操作体系结构",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2000-2003年的研究主题\"信息检索与搜索引擎”、“互联网知识产权”“DC元数据”、“互操作体系结构\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e6",
+          "mention": "云计算与云服务",
+          "normalized_name": "云计算与云服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2012-2015年，出现了新的研究主题，“云计算与云服务”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e7",
+          "mention": "用户评价实证研究",
+          "normalized_name": "用户评价实证研究",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2012-2015年，出现了新的研究主题，“云计算与云服务”“用户评价实证研究”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e8",
+          "mention": "信息素养与信息行为",
+          "normalized_name": "信息素养与信息行为",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2012-2015年，出现了新的研究主题，“云计算与云服务”“用户评价实证研究”、“信息素养与信息行为\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "知识产权是法学与LIS的交叉研究主题,LIS的知识产权主要针对数字图书馆的数字资源方面。2000-2007年，LIS 的知识产权研究内容主要包括数字图书馆的合理使用、数字图书馆知识产权政策、数字图书馆数据库问题等，2008-2011年逐步发展成为数字资源的长期保存问题,2012年以后该主题在LIS的研究出现了弱化与转移。2000年开始,信息检索与搜索引擎成为新的研究主题,信息检索的研究相对搜索引擎更加丰富，主要集中在基于本体的语义检索方面的研究[32-33],一直持续至2012年左右，而搜索引擎的研究在2008年以前相对较多，主要针对中文搜索引擎、网络搜索引擎以及个性化搜索引擎等方面[34-35]。此外,2000年出现的研究主题DC元数据在2004-2011年间发展为本体与元数据,提出了LIS的本体构建方法、基于本体的语义检索、基于本体的知识组织等研究[36-38],2012年以后,本体与元数据的研究出现了弱化现象。2004年产生的研究主题评价指标体系与层次分析法，主要是利用层次分析法对评价指标体系进行实证研究，2012-2015年该研究主题中出现了开放存取期刊,开放存取期刊的质量评价、质量控制、学术影响力成为影响开放知识库建设的重要因素，因此对开放存取期刊的评价也至关重要。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "LIS",
+          "normalized_name": "LIS",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识产权是法学与LIS的交叉研究主题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "数字图书馆",
+          "normalized_name": "数字图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "LIS的知识产权主要针对数字图书馆的数字资源方面",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e3",
+          "mention": "合理使用",
+          "normalized_name": "合理使用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "数字图书馆的合理使用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e4",
+          "mention": "数字图书馆知识产权政策",
+          "normalized_name": "数字图书馆知识产权政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "数字图书馆知识产权政策",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e5",
+          "mention": "数字图书馆数据库问题",
+          "normalized_name": "数字图书馆数据库问题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "数字图书馆数据库问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为多个实体的组合，但原文如此"
+        },
+        {
+          "entity_id": "22_e6",
+          "mention": "数字资源的长期保存",
+          "normalized_name": "数字资源的长期保存",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "逐步发展成为数字资源的长期保存问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e7",
+          "mention": "信息检索",
+          "normalized_name": "信息检索",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息检索与搜索引擎成为新的研究主题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e8",
+          "mention": "搜索引擎",
+          "normalized_name": "搜索引擎",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息检索与搜索引擎成为新的研究主题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e9",
+          "mention": "基于本体的语义检索",
+          "normalized_name": "基于本体的语义检索",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主要集中在基于本体的语义检索方面的研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e10",
+          "mention": "中文搜索引擎",
+          "normalized_name": "中文搜索引擎",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主要针对中文搜索引擎",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e11",
+          "mention": "网络搜索引擎",
+          "normalized_name": "网络搜索引擎",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主要针对中文搜索引擎、网络搜索引擎",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e12",
+          "mention": "个性化搜索引擎",
+          "normalized_name": "个性化搜索引擎",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主要针对中文搜索引擎、网络搜索引擎以及个性化搜索引擎",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e13",
+          "mention": "DC元数据",
+          "normalized_name": "DC元数据",
+          "candidate_l3": "metadata_schema",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "2000年出现的研究主题DC元数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e14",
+          "mention": "本体",
+          "normalized_name": "本体",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "发展为本体与元数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e15",
+          "mention": "元数据",
+          "normalized_name": "元数据",
+          "candidate_l3": "metadata_schema",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "发展为本体与元数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e16",
+          "mention": "LIS的本体构建方法",
+          "normalized_name": "LIS的本体构建方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提出了LIS的本体构建方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e17",
+          "mention": "基于本体的语义检索",
+          "normalized_name": "基于本体的语义检索",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于本体的语义检索",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e18",
+          "mention": "基于本体的知识组织",
+          "normalized_name": "基于本体的知识组织",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于本体的知识组织",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e19",
+          "mention": "评价指标体系",
+          "normalized_name": "评价指标体系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2004年产生的研究主题评价指标体系与层次分析法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e20",
+          "mention": "层次分析法",
+          "normalized_name": "层次分析法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2004年产生的研究主题评价指标体系与层次分析法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e21",
+          "mention": "开放存取期刊",
+          "normalized_name": "开放存取期刊",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2012-2015年该研究主题中出现了开放存取期刊",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e22",
+          "mention": "开放存取期刊的质量评价",
+          "normalized_name": "开放存取期刊的质量评价",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "开放存取期刊的质量评价、质量控制、学术影响力",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e23",
+          "mention": "开放存取期刊的质量控制",
+          "normalized_name": "开放存取期刊的质量控制",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "开放存取期刊的质量评价、质量控制、学术影响力",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e24",
+          "mention": "开放存取期刊的学术影响力",
+          "normalized_name": "开放存取期刊的学术影响力",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "开放存取期刊的质量评价、质量控制、学术影响力",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e25",
+          "mention": "开放知识库",
+          "normalized_name": "开放知识库",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "成为影响开放知识库建设的重要因素",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "每个研究领域都会出现研究主题的弱化与转移，究其原因，该主题的研究与应用已经逐步趋于成熟,亦或随着社会发展，主题的研究价值与研究意义逐渐减小,因此研究主题必须适应时代需求，寻求新的增长点，支撑学科领域的长久发展。",
+      "entities": []
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "根据研究主题的演变情况，为进一步分析每一时间段研究主题的发展成熟度情况,利用战略坐标图将其可视化的展示出来，通过战略坐标图的象限分布情况，以厘清LIS研究主题的发展脉络。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "战略坐标图",
+          "normalized_name": "战略坐标图",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用战略坐标图将其可视化的展示出来",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "LIS",
+          "normalized_name": "LIS",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以厘清LIS研究主题的发展脉络",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "由2000-2003年的战略坐标图可以看出，持续研究主题之一“图书馆信息服务\"处于第一象限,具有较高的向心度和密度，因此该研究主题发展较为成熟，并处于核心地位。图书馆信息服务在发展过程中出现了变化,2004-2007年演变的MyLibrary与信息服务、知识管理与知识服务，由图2中右上图可以看出知识管理与知识服务仍然处于第一象限,而MyLibrary与信息服务则处于第四象限,但都处于Y轴右侧，具有较高的向心度，说明一直处于核心位置。2008-2011年， $\\mathbb { W } \\mathrm { e b } 2 . 0$ 与信息服务处于第一象限,核心地位再次被确认,发展逐步成熟，而知识管理与知识服务的发展开始边缘化，说明发展已基本成熟，没有产生新的研究内容。2012-2015年，信息服务与知识服务经过一段时间的发展，向心度和密度出现前所未有的高度，说明信息服务与知识服务仍然处于核心地位并取得较好的发展。经分析,图书馆信息服务这一主题发展脉络基本处于战略坐标图的第一象限，占据了有利地位，取得了长久有效发展。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "图书馆信息服务",
+          "normalized_name": "图书馆信息服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "持续研究主题之一“图书馆信息服务\"处于第一象限",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "MyLibrary",
+          "normalized_name": "MyLibrary",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "2004-2007年演变的MyLibrary与信息服务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e3",
+          "mention": "知识管理",
+          "normalized_name": "知识管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识管理与知识服务仍然处于第一象限",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e4",
+          "mention": "知识服务",
+          "normalized_name": "知识服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识管理与知识服务仍然处于第一象限",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e5",
+          "mention": "Web2.0",
+          "normalized_name": "Web2.0",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2008-2011年，Web2.0与信息服务处于第一象限",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "“图书馆管理与服务\"这一发展脉络，2000-2003年间的图书馆管理与服务，处于战略坐标图的第三象限,向心度和密度都较低,处于研究边缘地带。2004年出现的虚拟参考咨询一跃进入第四象限，逐步开始占据核心地位。2008-2011年发展迅速，图书馆管理与服务演变的图书馆信息资源共享及高校图书馆信息资源共享迅速处于战略坐标图第一象限,说明在核心地位的驱动下，该主题取得了十分快速的发展并趋向成熟,需寻求新的增长点。2012年以后，演变来的公共图书馆文化服务上升为第二象限,密度有所提高,说明发展趋于成熟，而信息资源共享处于第四象限，向心度有所提高，演变的新主题地位也开始有所提升。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "虚拟参考咨询",
+          "normalized_name": "虚拟参考咨询",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2004年出现的虚拟参考咨询一跃进入第四象限",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e2",
+          "mention": "图书馆信息资源共享",
+          "normalized_name": "图书馆信息资源共享",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆管理与服务演变的图书馆信息资源共享及高校图书馆信息资源共享",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e3",
+          "mention": "高校图书馆信息资源共享",
+          "normalized_name": "高校图书馆信息资源共享",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆管理与服务演变的图书馆信息资源共享及高校图书馆信息资源共享",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e4",
+          "mention": "公共图书馆文化服务",
+          "normalized_name": "公共图书馆文化服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "演变来的公共图书馆文化服务上升为第二象限",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e5",
+          "mention": "信息资源共享",
+          "normalized_name": "信息资源共享",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息资源共享处于第四象限",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "2000年的信息计量与引文分析以及逐步发展的文献计量在2011年以前都处于第三象限,向心度密度都较低,处于研究的边缘阶段,2012年以后的文献计量与知识图谱处于第二象限,虽然向心度仍然不高，但密度得到提升，说明发展趋于成熟。2000-2015年的持续研究主题之一的“校勘与注释”“校勘与版本”一直处于战略坐标图的第三象限,向心度密度都较低,处于研究的边缘，由于文献学、目录学等在LIS不占有绝对优势,未产生新的研究主题与热点。",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "信息计量",
+          "normalized_name": "信息计量",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2000年的信息计量与引文分析以及逐步发展的文献计量在2011年以前都处于第三象限",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "引文分析",
+          "normalized_name": "引文分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2000年的信息计量与引文分析以及逐步发展的文献计量在2011年以前都处于第三象限",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e3",
+          "mention": "文献计量",
+          "normalized_name": "文献计量",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "逐步发展的文献计量在2011年以前都处于第三象限",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e4",
+          "mention": "知识图谱",
+          "normalized_name": "知识图谱",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2012年以后的文献计量与知识图谱处于第二象限",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e5",
+          "mention": "战略坐标图",
+          "normalized_name": "战略坐标图",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一直处于战略坐标图的第三象限",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e6",
+          "mention": "校勘与注释",
+          "normalized_name": "校勘与注释",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2000-2015年的持续研究主题之一的“校勘与注释”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e7",
+          "mention": "校勘与版本",
+          "normalized_name": "校勘与版本",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "“校勘与注释”“校勘与版本”一直处于战略坐标图的第三象限",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e8",
+          "mention": "文献学",
+          "normalized_name": "文献学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "由于文献学、目录学等在LIS不占有绝对优势",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e9",
+          "mention": "目录学",
+          "normalized_name": "目录学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "由于文献学、目录学等在LIS不占有绝对优势",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e10",
+          "mention": "LIS",
+          "normalized_name": "LIS",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "由于文献学、目录学等在LIS不占有绝对优势",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "2000-2003年的战略坐标图中，研究主题互操作体系结构处于第四象限,具有较高的向心度,但密度较低,因此虽处于核心位置,但发展尚处于起步阶段，因此在之后的战略坐标图中不复存在,出现了研究主题的消退。同样,信息检索与搜索引擎由2000-2003年的第二象限跳跃至2004-2007年的第四象限，向心度和密度出现了反转，但2008年以后也出现了消退。2000-2003年的DC元数据发展为2004-2007年的本体与元数据都处于战略坐标图的第一象限，2008-2011年的本体与元数据处于第二象限，向心度逐步减小，说明研究不再处于核心地位，2011年以后则出现了消退。另外，2000-2003年的互联网知识产权处于第四象限，演变为的2004-2007年的数字图书馆法律问题则处于第一象限，2008-2011年的数字资源长期保存则回到第三象限，出现了动荡不稳定的发展,2011年以后也出现了消退。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "互操作体系结构",
+          "normalized_name": "互操作体系结构",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究主题互操作体系结构处于第四象限",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "信息检索",
+          "normalized_name": "信息检索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息检索与搜索引擎由2000-2003年的第二象限跳跃至2004-2007年的第四象限",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e3",
+          "mention": "搜索引擎",
+          "normalized_name": "搜索引擎",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息检索与搜索引擎由2000-2003年的第二象限跳跃至2004-2007年的第四象限",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e4",
+          "mention": "DC元数据",
+          "normalized_name": "DC元数据",
+          "candidate_l3": "metadata_schema",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "2000-2003年的DC元数据发展为2004-2007年的本体与元数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e5",
+          "mention": "本体与元数据",
+          "normalized_name": "本体与元数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2004-2007年的本体与元数据都处于战略坐标图的第一象限",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为复合概念，但原文中作为整体研究主题出现"
+        },
+        {
+          "entity_id": "28_e6",
+          "mention": "互联网知识产权",
+          "normalized_name": "互联网知识产权",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2000-2003年的互联网知识产权处于第四象限",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e7",
+          "mention": "数字图书馆法律问题",
+          "normalized_name": "数字图书馆法律问题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "演变为的2004-2007年的数字图书馆法律问题则处于第一象限",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e8",
+          "mention": "数字资源长期保存",
+          "normalized_name": "数字资源长期保存",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2008-2011年的数字资源长期保存则回到第三象限",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "29",
+      "sentence": "此外，LIS在发展过程中，某些研究主题出现弱化的同时，预示着出现新的研究主题，2012-2015年是新的研究主题出现的高发时段。 2012-2015的战略坐标图中，云计算与云服务处于第一象限,向心度和密度较高，发展较为成熟,并处于核心地位; 用户评价实证研究处于第三象限,向心度和密度较低,由于发展尚不稳定,处于研究的边缘地带;",
+      "entities": [
+        {
+          "entity_id": "29_e1",
+          "mention": "LIS",
+          "normalized_name": "LIS",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "LIS在发展过程中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e2",
+          "mention": "云计算",
+          "normalized_name": "云计算",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "云计算与云服务处于第一象限",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e3",
+          "mention": "云服务",
+          "normalized_name": "云服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "云计算与云服务处于第一象限",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e4",
+          "mention": "用户评价实证研究",
+          "normalized_name": "用户评价实证研究",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户评价实证研究处于第三象限",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "信息素养与信息行为处于第四象限,向心度较高,密度较低,因此其地位处于核心地带，但发展刚刚起步，还需进一步深入的研究。 2004年产生的评价指标体系与层次分析法发展至2012-2015年间的层次分析法与开放存取期刊，三个时间段一直处于第三象限,说明该主题向心度密度都较低,研究尚不完整,不占据核心位置。",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "信息素养",
+          "normalized_name": "信息素养",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息素养与信息行为处于第四象限",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "信息行为",
+          "normalized_name": "信息行为",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息素养与信息行为处于第四象限",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e3",
+          "mention": "评价指标体系",
+          "normalized_name": "评价指标体系",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2004年产生的评价指标体系与层次分析法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为具体指标体系，但原文未给出名称，按方法抽取"
+        },
+        {
+          "entity_id": "30_e4",
+          "mention": "层次分析法",
+          "normalized_name": "层次分析法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2004年产生的评价指标体系与层次分析法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e5",
+          "mention": "开放存取期刊",
+          "normalized_name": "开放存取期刊",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "层次分析法与开放存取期刊",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为phenomenon或movement，但此处作为主题概念出现"
+        }
+      ]
+    },
+    {
+      "sentence_id": "31",
+      "sentence": "2000-2015年四个时段的战略坐标图形象直观的展示了LIS研究主题的研究变化情况,并明确了研究主题在整个研究领域中的地位及发展成熟度。纵观四个时段的战略坐标图，有的研究主题分解为更为细致的内容，有的研究主题出现弱化和转移，有的研究主题出现分散，有的研究主题出现消逝，但同样也是紧随时代科技发展，随着云计算、物联网、大数据及互联网 $^ +$ 的迅猛发展，LIS将产生新的研究热潮,以支撑学科的长久有效发展。",
+      "entities": [
+        {
+          "entity_id": "31_e1",
+          "mention": "战略坐标图",
+          "normalized_name": "战略坐标图",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2000-2015年四个时段的战略坐标图形象直观的展示了LIS研究主题的研究变化情况",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e2",
+          "mention": "LIS",
+          "normalized_name": "LIS",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "展示了LIS研究主题的研究变化情况",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e3",
+          "mention": "云计算",
+          "normalized_name": "云计算",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着云计算、物联网、大数据及互联网的迅猛发展",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e4",
+          "mention": "物联网",
+          "normalized_name": "物联网",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着云计算、物联网、大数据及互联网的迅猛发展",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e5",
+          "mention": "大数据",
+          "normalized_name": "大数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着云计算、物联网、大数据及互联网的迅猛发展",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e6",
+          "mention": "互联网",
+          "normalized_name": "互联网",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着云计算、物联网、大数据及互联网的迅猛发展",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "32",
+      "sentence": "本文将2000-2015年平均划分为四个时间段,缩小时间粒度,更加明确的解读研究主题的演变。 经分析，本文得出以下研究结论：第一，一直以来成为研究热点的主题主要有：公共图书馆文化服务、信息资源共享、信息服务与知识服务、知识管理与竞争情报、文献计量与知识图谱、校勘与版本、层次分析法与开放存取等; 第二，随着时代演变、技术变迁,产生了很多新的研究主题,如云计算与云服务、信息素养与信息行为等，将带领我们进入LIS研究的新纪元;",
+      "entities": [
+        {
+          "entity_id": "32_e1",
+          "mention": "公共图书馆文化服务",
+          "normalized_name": "公共图书馆文化服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一直以来成为研究热点的主题主要有：公共图书馆文化服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e2",
+          "mention": "信息资源共享",
+          "normalized_name": "信息资源共享",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一直以来成为研究热点的主题主要有：信息资源共享",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e3",
+          "mention": "信息服务与知识服务",
+          "normalized_name": "信息服务与知识服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一直以来成为研究热点的主题主要有：信息服务与知识服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e4",
+          "mention": "知识管理与竞争情报",
+          "normalized_name": "知识管理与竞争情报",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一直以来成为研究热点的主题主要有：知识管理与竞争情报",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e5",
+          "mention": "文献计量与知识图谱",
+          "normalized_name": "文献计量与知识图谱",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一直以来成为研究热点的主题主要有：文献计量与知识图谱",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e6",
+          "mention": "校勘与版本",
+          "normalized_name": "校勘与版本",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一直以来成为研究热点的主题主要有：校勘与版本",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e7",
+          "mention": "层次分析法",
+          "normalized_name": "层次分析法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一直以来成为研究热点的主题主要有：层次分析法与开放存取等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e8",
+          "mention": "开放存取",
+          "normalized_name": "开放存取",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event",
+            "Abstract"
+          ],
+          "evidence": "一直以来成为研究热点的主题主要有：层次分析法与开放存取等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "32_e9",
+          "mention": "云计算与云服务",
+          "normalized_name": "云计算与云服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "产生了很多新的研究主题,如云计算与云服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e10",
+          "mention": "信息素养与信息行为",
+          "normalized_name": "信息素养与信息行为",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "产生了很多新的研究主题,如信息素养与信息行为等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e11",
+          "mention": "LIS",
+          "normalized_name": "LIS",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将带领我们进入LIS研究的新纪元",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "33",
+      "sentence": "第三，知识管理与知识服务一直处于战略坐标图的第一象限,处于核心地带，发展也较为成熟。 LIS经过几百年的发展，紧随时代发展,逐步走向成熟,但学科发展需要新知识的交替融合，同样也需要旧知识的积累和沉淀,本文研究的LIS 发展脉络，期望对LIS的学科可持续发展提供一定的借鉴和指导。",
+      "entities": [
+        {
+          "entity_id": "33_e1",
+          "mention": "知识管理",
+          "normalized_name": "知识管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识管理与知识服务一直处于战略坐标图的第一象限",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e2",
+          "mention": "知识服务",
+          "normalized_name": "知识服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识管理与知识服务一直处于战略坐标图的第一象限",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e3",
+          "mention": "战略坐标图",
+          "normalized_name": "战略坐标图",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一直处于战略坐标图的第一象限",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为具体研究工具或方法"
+        },
+        {
+          "entity_id": "33_e4",
+          "mention": "LIS",
+          "normalized_name": "LIS",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "LIS经过几百年的发展",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

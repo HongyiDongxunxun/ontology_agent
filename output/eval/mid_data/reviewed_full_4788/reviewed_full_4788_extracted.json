@@ -1,0 +1,4362 @@
+{
+  "base_name": "reviewed_full_4788",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "之后,WikiSum[4]、Multi-News[5]等数据集也相继出现。 以上评估算法、大规模数据集的相继出现极大地推动了该领域技术的发展。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "WikiSum",
+          "normalized_name": "WikiSum",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "WikiSum[4]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "Multi-News",
+          "normalized_name": "Multi-News",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Multi-News[5]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "深度神经网络(Deep NeuralNetworks，DNN)的突破性发展对于多文档摘要任务起到了极大的推进作用,其中,序列到序列（Sequence to Sequence,Seq2Seq)模型被广泛应用于生成式文本摘要任务。2016年,文本摘要技术引入Copy机制[和Coverage机制[],解决了序列到序列架构存在未登录词(OutofVocabulary,OOV)和生成重复的问题。2017年，Yasunaga等[8]将摘要过程分解为句子显著性评估和摘要句选择两个模块，通过将句子中存在的实体和关系映射到句子图中，使模型更好地理解文档间更深层次的关系，提升生成摘要的质量。除了深度学习的方法,Paulus等[9在文本摘要任务中首次提出结合强化学习的方法，考虑了更多损失函数，提高生成摘要的可读性。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "深度神经网络(Deep NeuralNetworks，DNN)",
+          "normalized_name": "深度神经网络(Deep Neural Networks, DNN)",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "深度神经网络(Deep NeuralNetworks，DNN)的突破性发展",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "多文档摘要任务",
+          "normalized_name": "多文档摘要任务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对于多文档摘要任务起到了极大的推进作用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "序列到序列（Sequence to Sequence,Seq2Seq)模型",
+          "normalized_name": "序列到序列(Sequence to Sequence, Seq2Seq)模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "序列到序列（Sequence to Sequence,Seq2Seq)模型被广泛应用于生成式文本摘要任务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "生成式文本摘要任务",
+          "normalized_name": "生成式文本摘要任务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "被广泛应用于生成式文本摘要任务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e5",
+          "mention": "Copy机制",
+          "normalized_name": "Copy机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "文本摘要技术引入Copy机制[和Coverage机制[]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e6",
+          "mention": "Coverage机制",
+          "normalized_name": "Coverage机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "文本摘要技术引入Copy机制[和Coverage机制[]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e7",
+          "mention": "未登录词(OutofVocabulary,OOV)",
+          "normalized_name": "未登录词(Out of Vocabulary, OOV)",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "解决了序列到序列架构存在未登录词(OutofVocabulary,OOV)和生成重复的问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e8",
+          "mention": "Yasunaga等",
+          "normalized_name": "Yasunaga",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Yasunaga等[8]将摘要过程分解为句子显著性评估和摘要句选择两个模块",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "姓氏，具体全名未给出"
+        },
+        {
+          "entity_id": "2_e9",
+          "mention": "句子显著性评估",
+          "normalized_name": "句子显著性评估",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将摘要过程分解为句子显著性评估和摘要句选择两个模块",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e10",
+          "mention": "摘要句选择",
+          "normalized_name": "摘要句选择",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将摘要过程分解为句子显著性评估和摘要句选择两个模块",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e11",
+          "mention": "句子图",
+          "normalized_name": "句子图",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过将句子中存在的实体和关系映射到句子图中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e12",
+          "mention": "Paulus等",
+          "normalized_name": "Paulus",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Paulus等[9在文本摘要任务中首次提出结合强化学习的方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "姓氏，具体全名未给出"
+        },
+        {
+          "entity_id": "2_e13",
+          "mention": "强化学习",
+          "normalized_name": "强化学习",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "首次提出结合强化学习的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "相比于传统算法,深度学习通过捕捉数据之间的非线性关系，对具有不同特征和潜在关系的数据进行建模，“理解\"输入文本的含义,减少了人工特征提取方法和外部语言知识对摘要任务的限制。近年来,随着深度学习与多文档摘要技术的进一步融合，对多文档摘要领域的研究达到新高度,许多学者针对具体问题提出更为复杂的神经网络模型。例如，为解决输入文档内容高度冗余和训练数据短缺的问题,Cho等[10]利用胶囊网络结构对行列式点过程模型进行改进,有效建模句子对的相似性，降低生成摘要的冗余性。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "深度学习",
+          "normalized_name": "深度学习",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "相比于传统算法,深度学习通过捕捉数据之间的非线性关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "传统算法",
+          "normalized_name": "传统算法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "相比于传统算法,深度学习通过捕捉数据之间的非线性关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "多文档摘要技术",
+          "normalized_name": "多文档摘要技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着深度学习与多文档摘要技术的进一步融合",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "多文档摘要领域",
+          "normalized_name": "多文档摘要领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对多文档摘要领域的研究达到新高度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "神经网络模型",
+          "normalized_name": "神经网络模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "许多学者针对具体问题提出更为复杂的神经网络模型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e6",
+          "mention": "Cho等[10]",
+          "normalized_name": "Cho等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Cho等[10]利用胶囊网络结构对行列式点过程模型进行改进",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e7",
+          "mention": "胶囊网络结构",
+          "normalized_name": "胶囊网络结构",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Cho等[10]利用胶囊网络结构对行列式点过程模型进行改进",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e8",
+          "mention": "行列式点过程模型",
+          "normalized_name": "行列式点过程模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对行列式点过程模型进行改进",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "现有文献从不同角度对多文档摘要任务进行过综述，如黄文彬等[\"按照输入数据粒度的不同进行分类,总结了以单词、句子以及段落作为输入数据的三类的多文档摘要技术的特点与难点;李金鹏等[12]详细介绍抽取式摘要与生成式摘要的具体工作;Jalil等[13]总结并对比抽取式多文档摘要不同算法的优缺点。与现有综述不同,本文根据一般多文档摘要框架图对已有方法进行分类阐述,全面对比传统摘要方法和基于深度学习的摘要方法，主要工作如下：",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "黄文彬",
+          "normalized_name": "黄文彬",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "黄文彬等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "李金鹏",
+          "normalized_name": "李金鹏",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "李金鹏等[12]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "Jalil",
+          "normalized_name": "Jalil",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Jalil等[13]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "多文档摘要",
+          "normalized_name": "多文档摘要",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "多文档摘要任务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "抽取式摘要",
+          "normalized_name": "抽取式摘要",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "抽取式摘要与生成式摘要的具体工作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e6",
+          "mention": "生成式摘要",
+          "normalized_name": "生成式摘要",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "抽取式摘要与生成式摘要的具体工作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e7",
+          "mention": "多文档摘要框架图",
+          "normalized_name": "多文档摘要框架图",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "根据一般多文档摘要框架图对已有方法进行分类阐述",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e8",
+          "mention": "传统摘要方法",
+          "normalized_name": "传统摘要方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "全面对比传统摘要方法和基于深度学习的摘要方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e9",
+          "mention": "基于深度学习的摘要方法",
+          "normalized_name": "基于深度学习的摘要方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "全面对比传统摘要方法和基于深度学习的摘要方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "(2)概括实现多文档摘要算法的一般框架,将实现过程划分为文档连接、文档预处理、摘要内容选择、组织排序、摘要生成5个模块。 重点针对文档连接和摘要内容选择两个模块的相关算法进行综述，对每种重点技术以及在其基础上的改进、创新进行对比分析，总结每种方法的优势和不足。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "多文档摘要算法",
+          "normalized_name": "多文档摘要算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "概括实现多文档摘要算法的一般框架",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "文档连接",
+          "normalized_name": "文档连接",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将实现过程划分为文档连接、文档预处理、摘要内容选择、组织排序、摘要生成5个模块",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为method"
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "文档预处理",
+          "normalized_name": "文档预处理",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将实现过程划分为文档连接、文档预处理、摘要内容选择、组织排序、摘要生成5个模块",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为method"
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "摘要内容选择",
+          "normalized_name": "摘要内容选择",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将实现过程划分为文档连接、文档预处理、摘要内容选择、组织排序、摘要生成5个模块",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为method"
+        },
+        {
+          "entity_id": "5_e5",
+          "mention": "组织排序",
+          "normalized_name": "组织排序",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将实现过程划分为文档连接、文档预处理、摘要内容选择、组织排序、摘要生成5个模块",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为method"
+        },
+        {
+          "entity_id": "5_e6",
+          "mention": "摘要生成",
+          "normalized_name": "摘要生成",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将实现过程划分为文档连接、文档预处理、摘要内容选择、组织排序、摘要生成5个模块",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为method"
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "(3)对多文档摘要的技术难点、主要应用、数据集及评价指标进行综述,分析主流方法的特点、适用场景及其模型的主干网络。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "多文档摘要",
+          "normalized_name": "多文档摘要",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对多文档摘要的技术难点、主要应用、数据集及评价指标进行综述",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "数据集",
+          "normalized_name": "数据集",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "对多文档摘要的技术难点、主要应用、数据集及评价指标进行综述",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'数据集'为泛称，但根据图情领域放宽规则，作为评价对象的具体数据集名称未给出，故保留为泛称实体，置信度较低"
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "评价指标",
+          "normalized_name": "评价指标",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对多文档摘要的技术难点、主要应用、数据集及评价指标进行综述",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，未给出具体指标名称"
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "主干网络",
+          "normalized_name": "主干网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分析主流方法的特点、适用场景及其模型的主干网络",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "单文档摘要通常通过关注句子间的关系评估句子的重要性,生成简洁且全面的摘要。多文档摘要既注意句子间的关系,也注意文档间的关系，实现过程更为复杂。在多文档摘要任务中，输入文档数量过多通常会增加模型负担，可能导致模型退化问题; 不同文档信息之间可能存在冲突或重复，因此生成摘要过程中既要保证摘要的连贯性还要降低冗余性。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "单文档摘要",
+          "normalized_name": "单文档摘要",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "单文档摘要通常通过关注句子间的关系评估句子的重要性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "多文档摘要",
+          "normalized_name": "多文档摘要",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "多文档摘要既注意句子间的关系，也注意文档间的关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "模型退化问题",
+          "normalized_name": "模型退化问题",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "可能导致模型退化问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "多文档摘要任务涉及文档数量庞大且文档间可能会存在冗余、矛盾或互相补充等情况。 为完整捕捉跨文档文本单元之间的关系，一般需要在输入前对多个文档进行连接。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "多文档摘要任务",
+          "normalized_name": "多文档摘要任务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "多文档摘要任务涉及文档数量庞大且文档间可能会存在冗余、矛盾或互相补充等情况",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "文档",
+          "normalized_name": "文档",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "多文档摘要任务涉及文档数量庞大且文档间可能会存在冗余、矛盾或互相补充等情况",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为通用学术术语，在上下文中指代具体处理对象"
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "跨文档文本单元",
+          "normalized_name": "跨文档文本单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为完整捕捉跨文档文本单元之间的关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "然后,进行停止词删除、词干分析、特殊字符删除、分割、打标签等预处理,将完整的文本划分为段落、句子或者短语等文本单元。 作为任务中最关键的一环,摘要内容选择首先生成文档内容表示、理解文档含义,然后根据特征规则或概率模型对句子进行权重分配,再根据权重选择句子或生成词语组成候选摘要。最后,组织候选摘要中的文本单元,增强摘要的连贯性,多数方法将句子按照其在源文档的原位置进行排序。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "停止词删除",
+          "normalized_name": "停止词删除",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "进行停止词删除、词干分析、特殊字符删除、分割、打标签等预处理",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "词干分析",
+          "normalized_name": "词干分析",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "进行停止词删除、词干分析、特殊字符删除、分割、打标签等预处理",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "特殊字符删除",
+          "normalized_name": "特殊字符删除",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "进行停止词删除、词干分析、特殊字符删除、分割、打标签等预处理",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "分割",
+          "normalized_name": "分割",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "进行停止词删除、词干分析、特殊字符删除、分割、打标签等预处理",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'分割'指文本分割技术，但名称较泛，可能指代多种具体实现"
+        },
+        {
+          "entity_id": "9_e5",
+          "mention": "打标签",
+          "normalized_name": "打标签",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "进行停止词删除、词干分析、特殊字符删除、分割、打标签等预处理",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'打标签'指文本标注技术，但名称较泛"
+        },
+        {
+          "entity_id": "9_e6",
+          "mention": "摘要内容选择",
+          "normalized_name": "摘要内容选择",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "作为任务中最关键的一环,摘要内容选择首先生成文档内容表示、理解文档含义",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e7",
+          "mention": "文档内容表示",
+          "normalized_name": "文档内容表示",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "摘要内容选择首先生成文档内容表示、理解文档含义",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e8",
+          "mention": "概率模型",
+          "normalized_name": "概率模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "根据特征规则或概率模型对句子进行权重分配",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "<table><tr><td colspan=\"2\">常用数据集</td><td>开始年限</td><td>应用领域</td><td>技术难点</td></tr><tr><td rowspan=\"5\">单文档摘要</td><td rowspan=\"3\">Gigaword LCSTS[14] CNN/DM Newsroom[15]</td><td rowspan=\"3\">1958年</td><td>领域论文摘要自动生成</td><td></td></tr><tr><td></td><td>(1)模型大多具有普适性,但在细分 场景下生成摘要细节含量不足;</td></tr><tr><td>文献自动标引</td><td>(2)生成摘要可能存在事实性错误。</td></tr><tr><td rowspan=\"3\">Rotten Tomatoes DUC/TAC</td><td></td><td>新闻标题生成 新闻、产品评论等多种形式文档信息的总结</td><td>(1)跨文档句子间关系的建模;</td></tr><tr><td>WikiSum</td><td>智能机器人[17] 20世纪80年代</td><td></td></tr><tr><td>ScisummNet[18] Multi-News</td><td>临床试验干预的有效性预测[19]</td><td>(2)生成摘要冗余性高、覆盖细节信 息不全、可能存在事实性错误。 </td></tr></table>",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "Gigaword",
+          "normalized_name": "Gigaword",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Gigaword LCSTS[14] CNN/DM Newsroom[15]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "LCSTS",
+          "normalized_name": "LCSTS",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Gigaword LCSTS[14] CNN/DM Newsroom[15]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "CNN/DM Newsroom",
+          "normalized_name": "CNN/DM Newsroom",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Gigaword LCSTS[14] CNN/DM Newsroom[15]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e4",
+          "mention": "Rotten Tomatoes",
+          "normalized_name": "Rotten Tomatoes",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Rotten Tomatoes DUC/TAC",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e5",
+          "mention": "DUC/TAC",
+          "normalized_name": "DUC/TAC",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Rotten Tomatoes DUC/TAC",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e6",
+          "mention": "WikiSum",
+          "normalized_name": "WikiSum",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "WikiSum",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e7",
+          "mention": "ScisummNet",
+          "normalized_name": "ScisummNet",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "ScisummNet[18] Multi-News",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e8",
+          "mention": "Multi-News",
+          "normalized_name": "Multi-News",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "ScisummNet[18] Multi-News",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "Zhao等[21提出在连接前根据文档中心性对源文档内容进行重要性排序的方法，降序选择内容拼接输入。 分层连接通过建模语篇关系中的不同层次结构,保留跨文档关系,使模型获得更丰富的文档含义[22]。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "Zhao等[21",
+          "normalized_name": "Zhao等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Zhao等[21提出在连接前根据文档中心性对源文档内容进行重要性排序的方法",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "引用标记[21]可能指代文献，但Zhao等作为人名提及"
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "文档中心性",
+          "normalized_name": "文档中心性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "根据文档中心性对源文档内容进行重要性排序",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "分层连接",
+          "normalized_name": "分层连接",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分层连接通过建模语篇关系中的不同层次结构",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "按照实现技术的不同,连接方式可以分为基于图结构的方法和基于聚类的方法。 基于图结构的方法通常以相似图、主题图或语篇图等形式实现文本单元的连接,再通过合适的算法选取显著性高的句子。基于聚类的方法则是将具有特定关系的文本单元进行聚类,再从中选取显著性高的信息作为摘要。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "基于图结构的方法",
+          "normalized_name": "基于图结构的方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于图结构的方法通常以相似图、主题图或语篇图等形式实现文本单元的连接",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "基于聚类的方法",
+          "normalized_name": "基于聚类的方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于聚类的方法则是将具有特定关系的文本单元进行聚类",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "相似图",
+          "normalized_name": "相似图",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于图结构的方法通常以相似图、主题图或语篇图等形式实现文本单元的连接",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "主题图",
+          "normalized_name": "主题图",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于图结构的方法通常以相似图、主题图或语篇图等形式实现文本单元的连接",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e5",
+          "mention": "语篇图",
+          "normalized_name": "语篇图",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于图结构的方法通常以相似图、主题图或语篇图等形式实现文本单元的连接",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "基于图神经网络的方法可以更好地捕捉到图中句子间的语义语法关系,摘要效果远好于传统方法。 Antognini等[23]使用预训练模型和长短期记忆（LongShort-TermMemory,LSTM)模型得到句子的通用嵌入和特定领域嵌入，通过图卷积网络(GraphConvolutionalNetwork,GCN)合并句子关系图和特定领域嵌入获得每个句子的高级表示，从而使模型更好地理解文档内容，捕捉跨文档关系。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "图神经网络",
+          "normalized_name": "图神经网络",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于图神经网络的方法可以更好地捕捉到图中句子间的语义语法关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "Antognini等[23]",
+          "normalized_name": "Antognini等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Antognini等[23]使用预训练模型和长短期记忆（LongShort-TermMemory,LSTM)模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "预训练模型",
+          "normalized_name": "预训练模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Antognini等[23]使用预训练模型和长短期记忆（LongShort-TermMemory,LSTM)模型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "长短期记忆（LongShort-TermMemory,LSTM)模型",
+          "normalized_name": "长短期记忆（LSTM）模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用预训练模型和长短期记忆（LongShort-TermMemory,LSTM)模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e5",
+          "mention": "图卷积网络(GraphConvolutionalNetwork,GCN)",
+          "normalized_name": "图卷积网络（GCN）",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过图卷积网络(GraphConvolutionalNetwork,GCN)合并句子关系图和特定领域嵌入",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "Zhao等[24提出一种基于句图压缩的无监督多文档摘要方法，该方法主要考虑句子间的语篇关系，以近似话语图为基础结合深度嵌入技术构建句子图,根据图中句子间的距离形成语义簇，然后使用压缩技术将每个簇压缩为一个代表显著内容的单句。 但该方法过于依赖外部规则,容易出现错误传播。针对此问题，Wang等[25]将给定文档 $D$ 划分为更小的文本单元 $d =$ $\\{ d _ { 1 } , d _ { 2 } , . . . , d _ { n } \\}$ ，利用更小的文本单元构造异构图 $G =$ $( V , E )$ ,图中包括段落节点 $V _ { \\mathfrak { p } }$ 、词语节点 $\\boldsymbol { V } _ { \\boldsymbol { W } }$ 以及不同节点间的无向边 $E$ ,图中同类节点内部不存在边,有效抑制了错误传播问题。为减少计算量,Zhou等[26]使用实体节点代替词语节点，应用图注意网络实现节点之间的信息流动,并迭代更新节点表示。受异构图的启发,Cui等[27采用神经主题模型发现潜在主题,利用主题作为文本单元连接文档，并提供全局信息指导摘要的生成。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "Zhao等[24]",
+          "normalized_name": "Zhao等[24]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Zhao等[24]提出一种基于句图压缩的无监督多文档摘要方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "基于句图压缩的无监督多文档摘要方法",
+          "normalized_name": "基于句图压缩的无监督多文档摘要方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提出一种基于句图压缩的无监督多文档摘要方法",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "句图压缩",
+          "normalized_name": "句图压缩",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于句图压缩的无监督多文档摘要方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e4",
+          "mention": "深度嵌入技术",
+          "normalized_name": "深度嵌入技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以近似话语图为基础结合深度嵌入技术构建句子图",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e5",
+          "mention": "近似话语图",
+          "normalized_name": "近似话语图",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以近似话语图为基础结合深度嵌入技术构建句子图",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e6",
+          "mention": "Wang等[25]",
+          "normalized_name": "Wang等[25]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Wang等[25]将给定文档 D 划分为更小的文本单元",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e7",
+          "mention": "异构图",
+          "normalized_name": "异构图",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用更小的文本单元构造异构图 G = ( V , E )",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e8",
+          "mention": "Zhou等[26]",
+          "normalized_name": "Zhou等[26]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Zhou等[26]使用实体节点代替词语节点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e9",
+          "mention": "图注意网络",
+          "normalized_name": "图注意网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "应用图注意网络实现节点之间的信息流动",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e10",
+          "mention": "Cui等[27]",
+          "normalized_name": "Cui等[27]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Cui等[27]采用神经主题模型发现潜在主题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e11",
+          "mention": "神经主题模型",
+          "normalized_name": "神经主题模型",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用神经主题模型发现潜在主题",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "为捕捉更丰富的跨文档信息，Li等[28]利用图注意机制将图表示融入编码过程中,并使用图结构指导解码过程。 在此基础上,Hickmann等[29]对比分析以句子或段落两种粒度节点作为顶点的句子图指导生成的摘要质量，发现基于段落的方法性能更好。为保证摘要的覆盖率和连贯性，Chen等[30]将摘要任务抽象为子图选择问题,认为子图间具有相似节点代表摘要存在冗余，而带有不连通节点则表示摘要不连贯。 上述分析了多种基于图的多文档摘要模型,具体内容如表2所示。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "Li等[28]",
+          "normalized_name": "Li等[28]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Li等[28]利用图注意机制将图表示融入编码过程中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "图注意机制",
+          "normalized_name": "图注意机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用图注意机制将图表示融入编码过程中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "Hickmann等[29]",
+          "normalized_name": "Hickmann等[29]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Hickmann等[29]对比分析以句子或段落两种粒度节点作为顶点的句子图指导生成的摘要质量",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "句子图",
+          "normalized_name": "句子图",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以句子或段落两种粒度节点作为顶点的句子图",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为具体方法或模型，但原文未给出正式命名"
+        },
+        {
+          "entity_id": "17_e5",
+          "mention": "Chen等[30]",
+          "normalized_name": "Chen等[30]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Chen等[30]将摘要任务抽象为子图选择问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e6",
+          "mention": "子图选择问题",
+          "normalized_name": "子图选择问题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将摘要任务抽象为子图选择问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e7",
+          "mention": "基于图的多文档摘要模型",
+          "normalized_name": "基于图的多文档摘要模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "上述分析了多种基于图的多文档摘要模型",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但原文中作为具体类别提及，且图情领域放宽规则允许抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "图神经网络从句子图中学习句间关系和语义表示，可以拟合多个领域的数据,生成摘要质量较高但也存在自身问题。比如，已有基于图的方法一般综合考虑单词、句子或者段落之间的关系,很少考虑到文档级别。由于文档中句子和单词数量过多,因此基于图的方法在面对较长文本输入时可能会存在计算资源需求过大的问题。除此之外,部分图方法受限于大规模数据集的缺乏而难以适用于低资源领域。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "图神经网络",
+          "normalized_name": "图神经网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图神经网络从句子图中学习句间关系和语义表示",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "句子图",
+          "normalized_name": "句子图",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图神经网络从句子图中学习句间关系和语义表示",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "基于图的方法",
+          "normalized_name": "基于图的方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "已有基于图的方法一般综合考虑单词、句子或者段落之间的关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e4",
+          "mention": "文档级别",
+          "normalized_name": "文档级别",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "很少考虑到文档级别",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为概念或分析粒度"
+        },
+        {
+          "entity_id": "18_e5",
+          "mention": "大规模数据集",
+          "normalized_name": "大规模数据集",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "部分图方法受限于大规模数据集的缺乏而难以适用于低资源领域",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e6",
+          "mention": "低资源领域",
+          "normalized_name": "低资源领域",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "难以适用于低资源领域",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "传统基于聚类的摘要方法通常在无监督的情况下进行[31],通过计算给定文档集群 $D = \\{ d _ { 1 } , d _ { 2 } , . . . ,$ $d _ { \\mathbf { \\Gamma } _ { n } } \\}$ 中句子 $\\{ S _ { i , j } \\}$ 的相似度，构成聚类 $C =$ $\\{ c _ { 1 } , c _ { 2 } , . . . , c _ { n } \\}$ ,并在聚类中选择距离质心最近的句子作为摘要。 聚类的数量、方式、类别以及粒度等条件决定了生成摘要的质量。 Alambo等[32]构建了一个以主题为中心的无监督多文档摘要框架,通过文档间的相似性比较突显核心文档,将外围文档的语义单元通过相似性聚类到对应集群中，最后选择主题覆盖率最大的路径生成摘要。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "Alambo等[32]",
+          "normalized_name": "Alambo等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Alambo等[32]构建了一个以主题为中心的无监督多文档摘要框架",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "无监督多文档摘要框架",
+          "normalized_name": "无监督多文档摘要框架",
+          "candidate_l3": "framework",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Alambo等[32]构建了一个以主题为中心的无监督多文档摘要框架",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "此外,输入文档多数是有固定结构的文本，而生活中则有大量有价值的非结构化信息,为有效利用这些信息,Saeed等[33]利用两级聚类技术生成多个加权节点的链接集，通过邻接图连接文档集群实现跨文档连接。 一般的聚类方法专注于句子主题,很少考虑句子间存在不对齐的情况,为解决此问题,Ernst等[34]使用OpenIE在更细粒度的命题级别提取释义命题,避免对非对齐文本进行分组,然后微调跨语言模型并将命题二分类，在对命题进行聚类打分后，融合高分文本簇生成摘要。还有些研究侧重考虑句子位置、句子长度、聚类数量等影响摘要生成质量和覆盖范围的重要指标,提出多目标优化下的聚类方法。 例如,Alqaisi等[35提出一种基于聚类的多目标优化方法,通过使用带有 Silhouette的K-Medoid聚类算法识别源文档的主要主题并确定聚类数量，采用NSGA-II算法同时最大化三个独立目标：覆盖率、相关性和多样性。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "Saeed等[33]",
+          "normalized_name": "Saeed等[33]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Saeed等[33]利用两级聚类技术生成多个加权节点的链接集",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "两级聚类技术",
+          "normalized_name": "两级聚类技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用两级聚类技术生成多个加权节点的链接集",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "邻接图",
+          "normalized_name": "邻接图",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过邻接图连接文档集群实现跨文档连接",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e4",
+          "mention": "Ernst等[34]",
+          "normalized_name": "Ernst等[34]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Ernst等[34]使用OpenIE在更细粒度的命题级别提取释义命题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e5",
+          "mention": "OpenIE",
+          "normalized_name": "OpenIE",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "使用OpenIE在更细粒度的命题级别提取释义命题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e6",
+          "mention": "跨语言模型",
+          "normalized_name": "跨语言模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "微调跨语言模型并将命题二分类",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e7",
+          "mention": "Alqaisi等[35]",
+          "normalized_name": "Alqaisi等[35]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Alqaisi等[35提出一种基于聚类的多目标优化方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e8",
+          "mention": "基于聚类的多目标优化方法",
+          "normalized_name": "基于聚类的多目标优化方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Alqaisi等[35提出一种基于聚类的多目标优化方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e9",
+          "mention": "Silhouette",
+          "normalized_name": "Silhouette",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用带有 Silhouette的K-Medoid聚类算法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e10",
+          "mention": "K-Medoid聚类算法",
+          "normalized_name": "K-Medoid聚类算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "使用带有 Silhouette的K-Medoid聚类算法识别源文档的主要主题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e11",
+          "mention": "NSGA-II算法",
+          "normalized_name": "NSGA-II算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "采用NSGA-II算法同时最大化三个独立目标",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "在基于聚类方法生成的摘要中，每个句子都可以连接到生成该句子的一组主题或者命题,为输出提供了解释说明。这些解释可以扩展知识,为生成句子提供来自源文档中上下文的事实补充。但受限于聚类算法本身的缺点，在面临低资源数据集时，可能会产生不同类别下数据不平衡的情况，导致摘要句质量不均。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "聚类方法",
+          "normalized_name": "聚类方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在基于聚类方法生成的摘要中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "聚类算法",
+          "normalized_name": "聚类算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "受限于聚类算法本身的缺点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "低资源数据集",
+          "normalized_name": "低资源数据集",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在面临低资源数据集时",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "摘要内容选择通常分为三个步骤：文本单元语义的理解与表示、句子重要性估计和候选摘要集的生成。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "文本单元语义的理解与表示",
+          "normalized_name": "文本单元语义的理解与表示",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "文本单元语义的理解与表示",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为method或technique，此处按具体技术手段处理"
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "句子重要性估计",
+          "normalized_name": "句子重要性估计",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "句子重要性估计",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为method或technique，此处按具体技术手段处理"
+        },
+        {
+          "entity_id": "22_e3",
+          "mention": "候选摘要集的生成",
+          "normalized_name": "候选摘要集的生成",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "候选摘要集的生成",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为method或technique，此处按具体技术手段处理"
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "生成式摘要最初依赖于卷积神经网络（ConvolutionalNeural Networks,CNN)和循环神经网络（Recurrent Neural Networks,RNN)的结构,捕获输入序列中包含的顺序关系和句法语义信息，但两种模型都存在自身的局限性。 由于卷积核尺寸的限制，CNN只能通过增加层次并行处理更多文本信息,因此难以捕获远程信息,更难以跨文档建模语义单元的关系; 过长的输入序列会导致RNN模型发生梯度爆炸或消失。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "卷积神经网络（ConvolutionalNeural Networks,CNN）",
+          "normalized_name": "卷积神经网络（Convolutional Neural Networks, CNN）",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "生成式摘要最初依赖于卷积神经网络（ConvolutionalNeural Networks,CNN）和循环神经网络（Recurrent Neural Networks,RNN）的结构",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "循环神经网络（Recurrent Neural Networks,RNN）",
+          "normalized_name": "循环神经网络（Recurrent Neural Networks, RNN）",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "生成式摘要最初依赖于卷积神经网络（ConvolutionalNeural Networks,CNN）和循环神经网络（Recurrent Neural Networks,RNN）的结构",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "CNN",
+          "normalized_name": "卷积神经网络（CNN）",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "CNN只能通过增加层次并行处理更多文本信息",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e4",
+          "mention": "RNN",
+          "normalized_name": "循环神经网络（RNN）",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "过长的输入序列会导致RNN模型发生梯度爆炸或消失",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "Transformer模型的非循环体系结构可以更有效地解决上述问题。 Transformer模型由注意力机制组成，部分常见注意力机制如图4所示，其中每个方格为一个标记。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "Transformer模型",
+          "normalized_name": "Transformer模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Transformer模型的非循环体系结构可以更有效地解决上述问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "注意力机制",
+          "normalized_name": "注意力机制",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Transformer模型由注意力机制组成",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "输入序列过长增加了端到端架构的训练难度，为解决此问题,Liu等[4提出一种两阶段架构，利用抽取模型选择显著性高的段落,再通过Transformer模型生成摘要。 该方法将多个输入文档视为单个文档,没有考虑文档间的层次结构和关系。 针对此问题，Liu等39]提出分层编码方式，利用局部Transformer模型进行段落级编码,通过逻辑回归函数选择评分靠前的段落编码,进行多头池化操作后再利用全局Transformer模型使被选择段落可以从其他段落收集信息，捕获上下文关系。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "Liu等[4",
+          "normalized_name": "Liu等[4]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Liu等[4提出一种两阶段架构",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "引用标记不完整，可能为Liu等[4]"
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "两阶段架构",
+          "normalized_name": "两阶段架构",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Liu等[4提出一种两阶段架构",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为method或framework，根据上下文描述为架构"
+        },
+        {
+          "entity_id": "25_e3",
+          "mention": "抽取模型",
+          "normalized_name": "抽取模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用抽取模型选择显著性高的段落",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未给出具体模型名称，但作为有命名的模型组件抽取"
+        },
+        {
+          "entity_id": "25_e4",
+          "mention": "Transformer模型",
+          "normalized_name": "Transformer模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "再通过Transformer模型生成摘要",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e5",
+          "mention": "Liu等39]",
+          "normalized_name": "Liu等[39]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Liu等39]提出分层编码方式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "引用标记不完整，可能为Liu等[39]"
+        },
+        {
+          "entity_id": "25_e6",
+          "mention": "分层编码方式",
+          "normalized_name": "分层编码方式",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Liu等39]提出分层编码方式",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为model或technique"
+        },
+        {
+          "entity_id": "25_e7",
+          "mention": "局部Transformer模型",
+          "normalized_name": "局部Transformer模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用局部Transformer模型进行段落级编码",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e8",
+          "mention": "逻辑回归函数",
+          "normalized_name": "逻辑回归函数",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过逻辑回归函数选择评分靠前的段落编码",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e9",
+          "mention": "多头池化操作",
+          "normalized_name": "多头池化操作",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "进行多头池化操作后再利用全局Transformer模型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e10",
+          "mention": "全局Transformer模型",
+          "normalized_name": "全局Transformer模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用全局Transformer模型使被选择段落可以从其他段落收集信息",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "针对此问题，Liu等39]提出分层编码方式，利用局部Transformer模型进行段落级编码,通过逻辑回归函数选择评分靠前的段落编码,进行多头池化操作后再利用全局Transformer模型使被选择段落可以从其他段落收集信息，捕获上下文关系。 针对生成摘要存在的细节覆盖不足问题,Perez-Beltrachini等[40]利用行列式点过程引导Tranformer模型分配权重，提升生成摘要的多样性和主题相关性。 为突显源文档中的重要信息,Liu等[41]为每个输入序列构建高亮矩阵,以表示关键短语在矩阵中的位置和重要性,引入单头和多头突出注意力机制,在编码环节赋予关键短语更大的权重。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "Liu等[39]",
+          "normalized_name": "Liu等[39]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Liu等39]提出分层编码方式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e2",
+          "mention": "分层编码方式",
+          "normalized_name": "分层编码方式",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Liu等39]提出分层编码方式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e3",
+          "mention": "局部Transformer模型",
+          "normalized_name": "局部Transformer模型",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用局部Transformer模型进行段落级编码",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e4",
+          "mention": "逻辑回归函数",
+          "normalized_name": "逻辑回归函数",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过逻辑回归函数选择评分靠前的段落编码",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e5",
+          "mention": "全局Transformer模型",
+          "normalized_name": "全局Transformer模型",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用全局Transformer模型使被选择段落可以从其他段落收集信息",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e6",
+          "mention": "Perez-Beltrachini等[40]",
+          "normalized_name": "Perez-Beltrachini等[40]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Perez-Beltrachini等[40]利用行列式点过程引导Tranformer模型分配权重",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e7",
+          "mention": "行列式点过程",
+          "normalized_name": "行列式点过程",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用行列式点过程引导Tranformer模型分配权重",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e8",
+          "mention": "Tranformer模型",
+          "normalized_name": "Transformer模型",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用行列式点过程引导Tranformer模型分配权重",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e9",
+          "mention": "Liu等[41]",
+          "normalized_name": "Liu等[41]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Liu等[41]为每个输入序列构建高亮矩阵",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e10",
+          "mention": "高亮矩阵",
+          "normalized_name": "高亮矩阵",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "为每个输入序列构建高亮矩阵",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e11",
+          "mention": "单头突出注意力机制",
+          "normalized_name": "单头突出注意力机制",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "引入单头和多头突出注意力机制",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e12",
+          "mention": "多头突出注意力机制",
+          "normalized_name": "多头突出注意力机制",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "引入单头和多头突出注意力机制",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "为突显源文档中的重要信息,Liu等[41]为每个输入序列构建高亮矩阵,以表示关键短语在矩阵中的位置和重要性,引入单头和多头突出注意力机制,在编码环节赋予关键短语更大的权重。 然而，简单的自我注意力机制和跨文档分享注意力机制并不能完全捕捉到文档间语义关系,Ma等[42]将依存分析与Transformer体系结构相结合，在编码部分引入外部解析器捕捉依存关系树，通过语言引导的多头注意力机制,将依赖解析信息和源文档结合起来,以互补的方式生成语义丰富的特征。",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "Liu等[41]",
+          "normalized_name": "Liu等[41]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Liu等[41]为每个输入序列构建高亮矩阵",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "高亮矩阵",
+          "normalized_name": "高亮矩阵",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为每个输入序列构建高亮矩阵",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e3",
+          "mention": "单头和多头突出注意力机制",
+          "normalized_name": "单头和多头突出注意力机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引入单头和多头突出注意力机制",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e4",
+          "mention": "自我注意力机制",
+          "normalized_name": "自我注意力机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "简单的自我注意力机制和跨文档分享注意力机制并不能完全捕捉到文档间语义关系",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e5",
+          "mention": "跨文档分享注意力机制",
+          "normalized_name": "跨文档分享注意力机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "简单的自我注意力机制和跨文档分享注意力机制并不能完全捕捉到文档间语义关系",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e6",
+          "mention": "Ma等[42]",
+          "normalized_name": "Ma等[42]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Ma等[42]将依存分析与Transformer体系结构相结合",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e7",
+          "mention": "依存分析",
+          "normalized_name": "依存分析",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将依存分析与Transformer体系结构相结合",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e8",
+          "mention": "Transformer体系结构",
+          "normalized_name": "Transformer体系结构",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将依存分析与Transformer体系结构相结合",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e9",
+          "mention": "外部解析器",
+          "normalized_name": "外部解析器",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在编码部分引入外部解析器捕捉依存关系树",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为通用组件名，但原文中作为具体工具提及"
+        },
+        {
+          "entity_id": "27_e10",
+          "mention": "依存关系树",
+          "normalized_name": "依存关系树",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "捕捉依存关系树",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e11",
+          "mention": "语言引导的多头注意力机制",
+          "normalized_name": "语言引导的多头注意力机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过语言引导的多头注意力机制",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "Transformer模型采用自注意力机制捕捉输入序列中任意位置的依赖关系，因此它在处理不同位置的单词时并不改变它们之间的距离，这种特性使得Transformer模型可以更好地捕捉跨文档关系，准许更长的输入序列。虽然Transformer的结构解决了CNN和RNN不能并行计算的问题，但其捕捉局部细节信息能力较差，效率不高。除此之外，Transformer模型的位置编码在语义空间中并不具有可变换性,仅作为人为设计的一类索引,因此将位置编码与生成词向量相加不能很好地表征位置信息。 本节对基于Transformer的编码器-解码器的结构和注意力机制的改进进行全面总结，如表3所示。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "Transformer模型",
+          "normalized_name": "Transformer模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Transformer模型采用自注意力机制捕捉输入序列中任意位置的依赖关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "自注意力机制",
+          "normalized_name": "自注意力机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Transformer模型采用自注意力机制捕捉输入序列中任意位置的依赖关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e3",
+          "mention": "CNN",
+          "normalized_name": "CNN",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "虽然Transformer的结构解决了CNN和RNN不能并行计算的问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e4",
+          "mention": "RNN",
+          "normalized_name": "RNN",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "虽然Transformer的结构解决了CNN和RNN不能并行计算的问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e5",
+          "mention": "位置编码",
+          "normalized_name": "位置编码",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Transformer模型的位置编码在语义空间中并不具有可变换性",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e6",
+          "mention": "编码器-解码器",
+          "normalized_name": "编码器-解码器",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本节对基于Transformer的编码器-解码器的结构和注意力机制的改进进行全面总结",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e7",
+          "mention": "注意力机制",
+          "normalized_name": "注意力机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本节对基于Transformer的编码器-解码器的结构和注意力机制的改进进行全面总结",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "29",
+      "sentence": "最近研究表明,迁移学习(TransferLearning)可以有效提升大多数自然语言处理任务的性能。 当前,预训练模型也常见于摘要任务[43-45],但大多数都集中在训练数据丰富的单文档摘要任务中。",
+      "entities": [
+        {
+          "entity_id": "29_e1",
+          "mention": "迁移学习(TransferLearning)",
+          "normalized_name": "迁移学习(TransferLearning)",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "迁移学习(TransferLearning)可以有效提升大多数自然语言处理任务的性能",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e2",
+          "mention": "自然语言处理任务",
+          "normalized_name": "自然语言处理任务",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "迁移学习(TransferLearning)可以有效提升大多数自然语言处理任务的性能",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e3",
+          "mention": "预训练模型",
+          "normalized_name": "预训练模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当前,预训练模型也常见于摘要任务[43-45]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e4",
+          "mention": "摘要任务",
+          "normalized_name": "摘要任务",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "预训练模型也常见于摘要任务[43-45]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e5",
+          "mention": "单文档摘要任务",
+          "normalized_name": "单文档摘要任务",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大多数都集中在训练数据丰富的单文档摘要任务中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "当前,预训练模型也常见于摘要任务[43-45],但大多数都集中在训练数据丰富的单文档摘要任务中。 为探索预训练模型在多文档摘要任务中的表现,Goodwin等[46]比较在Few-Shot 和 Zero-Shot 学习设置下BART[47] $\\mathrm { T } 5 ^ { [ 4 8 ] }$ 和PEGASUS[49]三种预训练模型在4种摘要数据集上生成摘要的质量，实验表明，在Few-Shot的学习设置下,三种模型的评估结果差别不大,证明预训练模型在多文档摘要任务中还存在改进空间。",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "预训练模型",
+          "normalized_name": "预训练模型",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "预训练模型也常见于摘要任务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "Goodwin",
+          "normalized_name": "Goodwin",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Goodwin等[46]比较",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e3",
+          "mention": "Few-Shot",
+          "normalized_name": "Few-Shot",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在Few-Shot 和 Zero-Shot 学习设置下",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e4",
+          "mention": "Zero-Shot",
+          "normalized_name": "Zero-Shot",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在Few-Shot 和 Zero-Shot 学习设置下",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e5",
+          "mention": "BART",
+          "normalized_name": "BART",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "BART[47]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e6",
+          "mention": "T5",
+          "normalized_name": "T5",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "T5[48]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e7",
+          "mention": "PEGASUS",
+          "normalized_name": "PEGASUS",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "PEGASUS[49]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e8",
+          "mention": "多文档摘要任务",
+          "normalized_name": "多文档摘要任务",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为探索预训练模型在多文档摘要任务中的表现",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e9",
+          "mention": "单文档摘要任务",
+          "normalized_name": "单文档摘要任务",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大多数都集中在训练数据丰富的单文档摘要任务中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "31",
+      "sentence": "基于通用预训练模型方法：BART预训练模型是由Facebook提出的基于双向和自回归Transformer架构的预训练模型,相比于BERT模型更适用于序列生成任务。 为处理更长的输入序列，Pasunuru等38]将包括本地和全局注意机制的Longformer[50]集成到BART模型中，在每个句子后加入全局注意力机制并探索各种尺寸的上下文局部注意机制窗口，使模型可以对更长文档进行编码。",
+      "entities": [
+        {
+          "entity_id": "31_e1",
+          "mention": "BART预训练模型",
+          "normalized_name": "BART预训练模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "BART预训练模型是由Facebook提出的基于双向和自回归Transformer架构的预训练模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e2",
+          "mention": "Facebook",
+          "normalized_name": "Facebook",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "BART预训练模型是由Facebook提出的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e3",
+          "mention": "BERT模型",
+          "normalized_name": "BERT模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "相比于BERT模型更适用于序列生成任务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e4",
+          "mention": "Pasunuru",
+          "normalized_name": "Pasunuru",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Pasunuru等38]将包括本地和全局注意机制的Longformer[50]集成到BART模型中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e5",
+          "mention": "Longformer",
+          "normalized_name": "Longformer",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将包括本地和全局注意机制的Longformer[50]集成到BART模型中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "32",
+      "sentence": "为处理更长的输入序列，Pasunuru等38]将包括本地和全局注意机制的Longformer[50]集成到BART模型中，在每个句子后加入全局注意力机制并探索各种尺寸的上下文局部注意机制窗口，使模型可以对更长文档进行编码。 除此之外,还利用单独的图编码器将图编码集成到BART模型中，有效提升了模型的整体性能。输入文档过程中，直接通过线性模型进行连接可能导致信息与共享背景产生冲突，对生成摘要产生不良影响,为此,Moro等[51基于BERT语言模型进行三元组的训练,通过梯度下降使共享背景下源文档生成目标摘要的概率最大化,得到生成文档的潜在表示，为摘要生成部分消除噪音。 除BART模型外，还有一些针对长序列输入的语言模型如T5模型和BigBird[52]模型也适用于多文档摘要任务。",
+      "entities": [
+        {
+          "entity_id": "32_e1",
+          "mention": "Pasunuru等",
+          "normalized_name": "Pasunuru等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Pasunuru等38]将包括本地和全局注意机制的Longformer[50]集成到BART模型中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e2",
+          "mention": "Longformer",
+          "normalized_name": "Longformer",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "将包括本地和全局注意机制的Longformer[50]集成到BART模型中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e3",
+          "mention": "BART模型",
+          "normalized_name": "BART模型",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "将包括本地和全局注意机制的Longformer[50]集成到BART模型中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e4",
+          "mention": "全局注意力机制",
+          "normalized_name": "全局注意力机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在每个句子后加入全局注意力机制并探索各种尺寸的上下文局部注意机制窗口",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e5",
+          "mention": "上下文局部注意机制",
+          "normalized_name": "上下文局部注意机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "探索各种尺寸的上下文局部注意机制窗口",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e6",
+          "mention": "图编码器",
+          "normalized_name": "图编码器",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用单独的图编码器将图编码集成到BART模型中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e7",
+          "mention": "Moro等",
+          "normalized_name": "Moro等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Moro等[51基于BERT语言模型进行三元组的训练",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e8",
+          "mention": "BERT语言模型",
+          "normalized_name": "BERT语言模型",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Moro等[51基于BERT语言模型进行三元组的训练",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e9",
+          "mention": "T5模型",
+          "normalized_name": "T5模型",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "还有一些针对长序列输入的语言模型如T5模型和BigBird[52]模型也适用于多文档摘要任务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e10",
+          "mention": "BigBird",
+          "normalized_name": "BigBird",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "还有一些针对长序列输入的语言模型如T5模型和BigBird[52]模型也适用于多文档摘要任务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "33",
+      "sentence": "除BART模型外，还有一些针对长序列输入的语言模型如T5模型和BigBird[52]模型也适用于多文档摘要任务。 Guo等[53]在T5模型的注意力机制基础上，将PEGASUS模型中的预训练策略引入可伸缩的T5架构中，提出新的瞬时全局注意力机制，关注文档内部关系的同时有效地动态捕捉跨文档信息。",
+      "entities": [
+        {
+          "entity_id": "33_e1",
+          "mention": "BART模型",
+          "normalized_name": "BART模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "除BART模型外",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e2",
+          "mention": "T5模型",
+          "normalized_name": "T5模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "还有一些针对长序列输入的语言模型如T5模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e3",
+          "mention": "BigBird[52]模型",
+          "normalized_name": "BigBird模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "BigBird[52]模型也适用于多文档摘要任务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e4",
+          "mention": "Guo等[53]",
+          "normalized_name": "Guo等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Guo等[53]在T5模型的注意力机制基础上",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "具体人名未给出，仅以Guo等指代"
+        },
+        {
+          "entity_id": "33_e5",
+          "mention": "PEGASUS模型",
+          "normalized_name": "PEGASUS模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将PEGASUS模型中的预训练策略引入可伸缩的T5架构中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e6",
+          "mention": "瞬时全局注意力机制",
+          "normalized_name": "瞬时全局注意力机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提出新的瞬时全局注意力机制",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "34",
+      "sentence": "该模型使用通用高效的Longformer-Encoder-Decoder(LED)模型处理源文档,基于关键实体估计句子重要性,屏蔽文档中显著句子后训练模型根据上下文信息重构句子，使模型学会识别和聚合相关文档群中的显著信息，减少对大型数据集的依赖。 由于PRIMERA模型根据实体选择重要句子,参考摘要由不同源位置的句子组成,导致其不连贯。Puduppully等[55]提出基于质心的摘要方法，在排除噪声文档后以信息量最大的文档作为参考摘要，将其余文档作为输入在NewSHead语料库对LED模型进行训练，生成摘要评估结果优于",
+      "entities": [
+        {
+          "entity_id": "34_e1",
+          "mention": "Longformer-Encoder-Decoder(LED)模型",
+          "normalized_name": "Longformer-Encoder-Decoder(LED)模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用通用高效的Longformer-Encoder-Decoder(LED)模型处理源文档",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e2",
+          "mention": "PRIMERA模型",
+          "normalized_name": "PRIMERA模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "由于PRIMERA模型根据实体选择重要句子",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e3",
+          "mention": "Puduppully等[55]",
+          "normalized_name": "Puduppully等[55]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Puduppully等[55]提出基于质心的摘要方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e4",
+          "mention": "基于质心的摘要方法",
+          "normalized_name": "基于质心的摘要方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Puduppully等[55]提出基于质心的摘要方法",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e5",
+          "mention": "NewSHead语料库",
+          "normalized_name": "NewSHead语料库",
+          "candidate_l3": "corpus",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在NewSHead语料库对LED模型进行训练",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e6",
+          "mention": "LED模型",
+          "normalized_name": "LED模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在NewSHead语料库对LED模型进行训练",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "35",
+      "sentence": "综上，大多数方法偏向于在编码器中结合预训练语言模型捕获跨文档关系，但没能很好地解决输入特征过长和二次记忆增长的问题。由实验结果可知,通用预训练模型在多文档摘要任务中效果不够理想，而特定预训练语言模型还没有得到很好的探索。",
+      "entities": [
+        {
+          "entity_id": "35_e1",
+          "mention": "预训练语言模型",
+          "normalized_name": "预训练语言模型",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大多数方法偏向于在编码器中结合预训练语言模型捕获跨文档关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e2",
+          "mention": "多文档摘要",
+          "normalized_name": "多文档摘要",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通用预训练模型在多文档摘要任务中效果不够理想",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e3",
+          "mention": "通用预训练模型",
+          "normalized_name": "通用预训练模型",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通用预训练模型在多文档摘要任务中效果不够理想",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能指代一类模型，非单一具体模型"
+        },
+        {
+          "entity_id": "35_e4",
+          "mention": "特定预训练语言模型",
+          "normalized_name": "特定预训练语言模型",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "特定预训练语言模型还没有得到很好的探索",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "未给出具体模型名称，但作为类别实体可抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "36",
+      "sentence": "理解输入文档语义后，应根据权重选择相应的句子或生成新的单词组成摘要候选集。 在文本单元的选择上，不应该仅考虑文本单元的权重，还应该考虑高权重文本单元之间的重复性等指标，避免生成摘要具有过高的冗余性。",
+      "entities": [
+        {
+          "entity_id": "36_e1",
+          "mention": "输入文档",
+          "normalized_name": "输入文档",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "理解输入文档语义后",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指代具体文档，但未给出名称"
+        },
+        {
+          "entity_id": "36_e2",
+          "mention": "摘要候选集",
+          "normalized_name": "摘要候选集",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "生成新的单词组成摘要候选集",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为抽象数据集，但未命名"
+        }
+      ]
+    },
+    {
+      "sentence_id": "37",
+      "sentence": "在深度学习出现之前，文档摘要选择候选摘要集合通常采用基于最大边界相关（MaximalMarginalRelevance,MMR)算法、贪心算法、元启发式算法等传统算法。",
+      "entities": [
+        {
+          "entity_id": "37_e1",
+          "mention": "深度学习",
+          "normalized_name": "深度学习",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在深度学习出现之前",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e2",
+          "mention": "最大边界相关（MaximalMarginalRelevance,MMR)算法",
+          "normalized_name": "最大边界相关（MaximalMarginalRelevance, MMR）算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于最大边界相关（MaximalMarginalRelevance,MMR)算法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e3",
+          "mention": "贪心算法",
+          "normalized_name": "贪心算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "贪心算法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e4",
+          "mention": "元启发式算法",
+          "normalized_name": "元启发式算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "元启发式算法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "38",
+      "sentence": "MMR算法[5]旨在在保证相关性的基础上降低摘要的冗余性，具体实现如公式1所示。",
+      "entities": [
+        {
+          "entity_id": "38_e1",
+          "mention": "MMR算法",
+          "normalized_name": "MMR算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "MMR算法[5]旨在在保证相关性的基础上降低摘要的冗余性",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "39",
+      "sentence": "$S i m _ { 1 }$ 表示第 $i$ 句与文档的相似度, $S i m _ { 2 }$ 表示候选句子与已选句子的相似度,λ为可调参数。 举例来说,Akhtar等[57]在选择摘要句的过程中，通过结合句子本身特征评分与MMR分数，引导模型选择分数较高且与已选摘要句相似度较低的句子作为最终摘要。",
+      "entities": [
+        {
+          "entity_id": "39_e1",
+          "mention": "Akhtar等[57]",
+          "normalized_name": "Akhtar等[57]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Akhtar等[57]在选择摘要句的过程中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e2",
+          "mention": "MMR",
+          "normalized_name": "MMR",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过结合句子本身特征评分与MMR分数",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "40",
+      "sentence": "贪心算法相当于MMR算法的一种变形，该算法在文本摘要中从相关度最高的句子开始选取,迭代地添加文本单元直到最大限度。在求解问题时，贪心算法并不考虑整体情况的最优解，而是考虑当前情况的最优解，因此,贪心策略的选择与生成摘要质量直接相关。",
+      "entities": [
+        {
+          "entity_id": "40_e1",
+          "mention": "贪心算法",
+          "normalized_name": "贪心算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "贪心算法相当于MMR算法的一种变形",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e2",
+          "mention": "MMR算法",
+          "normalized_name": "MMR算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "贪心算法相当于MMR算法的一种变形",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e3",
+          "mention": "文本摘要",
+          "normalized_name": "文本摘要",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "该算法在文本摘要中从相关度最高的句子开始选取",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "41",
+      "sentence": "元启发式算法不依赖算法组织结构,因此拥有更加通用的启发式策略,更有可能收敛到全局最优解。",
+      "entities": [
+        {
+          "entity_id": "41_e1",
+          "mention": "元启发式算法",
+          "normalized_name": "元启发式算法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "元启发式算法不依赖算法组织结构",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "42",
+      "sentence": "一般的基于Seq2Seq架构的多文档摘要方法存在事实细节复现不准确、无法处理词汇表外单词以及生成摘要冗余性高的缺点。 指针生成网络[58]作为带有Attention机制的编码器-解码器模型融合了指针网络、CopyNet与覆盖机制的功能,既可以通过指向从源文本中复制单词,也可以保留产生新单词的功能,具体结构如图5所示。",
+      "entities": [
+        {
+          "entity_id": "42_e1",
+          "mention": "Seq2Seq架构",
+          "normalized_name": "Seq2Seq架构",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一般的基于Seq2Seq架构的多文档摘要方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e2",
+          "mention": "指针生成网络[58]",
+          "normalized_name": "指针生成网络",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "指针生成网络[58]作为带有Attention机制的编码器-解码器模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e3",
+          "mention": "Attention机制",
+          "normalized_name": "Attention机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "带有Attention机制的编码器-解码器模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e4",
+          "mention": "编码器-解码器模型",
+          "normalized_name": "编码器-解码器模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "带有Attention机制的编码器-解码器模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e5",
+          "mention": "指针网络",
+          "normalized_name": "指针网络",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "融合了指针网络、CopyNet与覆盖机制的功能",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e6",
+          "mention": "CopyNet",
+          "normalized_name": "CopyNet",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "融合了指针网络、CopyNet与覆盖机制的功能",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e7",
+          "mention": "覆盖机制",
+          "normalized_name": "覆盖机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "融合了指针网络、CopyNet与覆盖机制的功能",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "43",
+      "sentence": "模型通过编码和解码过程中的时序变量计算出某一时刻的生成概率 $p _ { g e n }$ ，利用 $p _ { g e n }$ 可以将词汇表中生成的单词和从原文中复制的单词结合起来。 利用指针生成网络相当于构建扩展词汇表，既包含原有词汇表又包含句子中含有的单词,有效解决了词汇表中未登录词的问题。",
+      "entities": [
+        {
+          "entity_id": "43_e1",
+          "mention": "指针生成网络",
+          "normalized_name": "指针生成网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用指针生成网络相当于构建扩展词汇表",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "43_e2",
+          "mention": "词汇表",
+          "normalized_name": "词汇表",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "既包含原有词汇表又包含句子中含有的单词",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "43_e3",
+          "mention": "未登录词",
+          "normalized_name": "未登录词",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有效解决了词汇表中未登录词的问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "44",
+      "sentence": "PG-MMR[59]和Hi-MAP[5]模型均使用MMR算法融合指针生成网络生成摘要的方法，但是MMR算法在其中的作用不同。 PG-MMR模型通过考虑句子的长度、句子的绝对或相对位置、句子质量和句子文档相似性得到每个句子的重要性估计，将得分最高的句子输入指针网络生成新句子，再根据MMR算法迭代选择句子直到超过最大摘要长度限制。",
+      "entities": [
+        {
+          "entity_id": "44_e1",
+          "mention": "PG-MMR",
+          "normalized_name": "PG-MMR",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "PG-MMR[59]和Hi-MAP[5]模型均使用MMR算法融合指针生成网络生成摘要的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "44_e2",
+          "mention": "Hi-MAP",
+          "normalized_name": "Hi-MAP",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "PG-MMR[59]和Hi-MAP[5]模型均使用MMR算法融合指针生成网络生成摘要的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "44_e3",
+          "mention": "MMR算法",
+          "normalized_name": "MMR算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "PG-MMR[59]和Hi-MAP[5]模型均使用MMR算法融合指针生成网络生成摘要的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "44_e4",
+          "mention": "指针生成网络",
+          "normalized_name": "指针生成网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "PG-MMR[59]和Hi-MAP[5]模型均使用MMR算法融合指针生成网络生成摘要的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "44_e5",
+          "mention": "PG-MMR模型",
+          "normalized_name": "PG-MMR模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "PG-MMR模型通过考虑句子的长度、句子的绝对或相对位置、句子质量和句子文档相似性得到每个句子的重要性估计",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "44_e6",
+          "mention": "指针网络",
+          "normalized_name": "指针网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "将得分最高的句子输入指针网络生成新句子",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "45",
+      "sentence": "Hi-MAP模型则是先通过MMR算法对多文档摘要源句进行筛选,然后在生成摘要的过程中利用每个句子的MMR算法分数修改注意力权重，以平衡生成摘要的重要性和冗余性。 由于源文档输入过长和结构稀疏的特点，从源文档中提取显著性信息是一项具有挑战性的任务。Chen等[6]通过构建事件语义图并利用图序列匹配进行主导事件检测，再使用引入事件语义权重的事件感知指针生成器对关键事件进行总结生成最终摘要，有效突出了源文档中的显著的事件信息。",
+      "entities": [
+        {
+          "entity_id": "45_e1",
+          "mention": "Hi-MAP模型",
+          "normalized_name": "Hi-MAP模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Hi-MAP模型则是先通过MMR算法对多文档摘要源句进行筛选",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "45_e2",
+          "mention": "MMR算法",
+          "normalized_name": "MMR算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过MMR算法对多文档摘要源句进行筛选",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "45_e3",
+          "mention": "Chen等[6]",
+          "normalized_name": "Chen等[6]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Chen等[6]通过构建事件语义图并利用图序列匹配进行主导事件检测",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "引用标记[6]指向具体文献，但作者名仅给出姓氏，无法唯一识别个人"
+        },
+        {
+          "entity_id": "45_e4",
+          "mention": "事件语义图",
+          "normalized_name": "事件语义图",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过构建事件语义图并利用图序列匹配进行主导事件检测",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "45_e5",
+          "mention": "事件感知指针生成器",
+          "normalized_name": "事件感知指针生成器",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "使用引入事件语义权重的事件感知指针生成器对关键事件进行总结",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "46",
+      "sentence": "指针生成网络解决了生成摘要冗余性高和存在事实性错误的问题,提高了生成摘要的细节准确率，更适用于生成式多文档摘要。但指针生成网络架构较为复杂，训练过程相较于其他模型更加困难。",
+      "entities": [
+        {
+          "entity_id": "46_e1",
+          "mention": "指针生成网络",
+          "normalized_name": "指针生成网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "指针生成网络解决了生成摘要冗余性高和存在事实性错误的问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e2",
+          "mention": "生成式多文档摘要",
+          "normalized_name": "生成式多文档摘要",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "更适用于生成式多文档摘要",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "47",
+      "sentence": "不同于元启发式算法输出最优解的结果,强化学习是求解一个最优策略的过程。 如果经过一个策略时由从状态空间映射到动作空间得到的解是最优的，那么这个策略就叫做最优策略。",
+      "entities": [
+        {
+          "entity_id": "47_e1",
+          "mention": "元启发式算法",
+          "normalized_name": "元启发式算法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "不同于元启发式算法输出最优解的结果",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e2",
+          "mention": "强化学习",
+          "normalized_name": "强化学习",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "强化学习是求解一个最优策略的过程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e3",
+          "mention": "最优策略",
+          "normalized_name": "最优策略",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "强化学习是求解一个最优策略的过程",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e4",
+          "mention": "状态空间",
+          "normalized_name": "状态空间",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "由从状态空间映射到动作空间得到的解是最优的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e5",
+          "mention": "动作空间",
+          "normalized_name": "动作空间",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "由从状态空间映射到动作空间得到的解是最优的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "48",
+      "sentence": "为组合优化多文档生成摘要质量,Su等[6]提出一种新的基于强化学习的框架PoBRL，使用强化学习的方法单独优化子问题,最后利用PoBRL将每个学习到的策略混合在一起，生成简洁而完整的表示摘要。 在PoBRL先提取后生成的摘要框架中，训练过程中抽取模块以最大似然估计为目标,选择与参考摘要具有高相似度的句子; 而在测试过程中,抽取模块与生成模块相接，抽取的最终目标则是提供显著内容。",
+      "entities": [
+        {
+          "entity_id": "48_e1",
+          "mention": "Su等[6]",
+          "normalized_name": "Su等[6]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Su等[6]提出一种新的基于强化学习的框架PoBRL",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e2",
+          "mention": "PoBRL",
+          "normalized_name": "PoBRL",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "提出一种新的基于强化学习的框架PoBRL",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e3",
+          "mention": "强化学习",
+          "normalized_name": "强化学习",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于强化学习的框架PoBRL",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e4",
+          "mention": "最大似然估计",
+          "normalized_name": "最大似然估计",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "训练过程中抽取模块以最大似然估计为目标",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "49",
+      "sentence": "而在测试过程中,抽取模块与生成模块相接，抽取的最终目标则是提供显著内容。 为解决抽取模块目标在训练和测试时不一致的问题,Song等[62]提出一种测试时间目标优化的方法,依据信用意识自我批评学习进行微调,将奖励定义为选定句子S作为输入到生成模块输出句子的质量，基于探索行为的影响重新分配奖励，通过梯度下降获得最大预期奖励。一般方法普遍针对有限的参考摘要和简单的最大似然目标进行训练，为提升多文档摘要训练的效率,Parnell等[63]通过奖励平衡ROUGE评估参数和覆盖率，利用策略梯度的低方差和无偏的现代梯度估计器RELAX，以少量负对数似然(NegativeLogLikehood)方式微调预训练模型,有效地限制计算量并降低了参数飘移的风险。",
+      "entities": [
+        {
+          "entity_id": "49_e1",
+          "mention": "Song等[62]",
+          "normalized_name": "Song等[62]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Song等[62]提出一种测试时间目标优化的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "49_e2",
+          "mention": "测试时间目标优化的方法",
+          "normalized_name": "测试时间目标优化的方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Song等[62]提出一种测试时间目标优化的方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "49_e3",
+          "mention": "信用意识自我批评学习",
+          "normalized_name": "信用意识自我批评学习",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "依据信用意识自我批评学习进行微调",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "49_e4",
+          "mention": "Parnell等[63]",
+          "normalized_name": "Parnell等[63]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Parnell等[63]通过奖励平衡ROUGE评估参数和覆盖率",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "49_e5",
+          "mention": "ROUGE",
+          "normalized_name": "ROUGE",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "奖励平衡ROUGE评估参数和覆盖率",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "49_e6",
+          "mention": "RELAX",
+          "normalized_name": "RELAX",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用策略梯度的低方差和无偏的现代梯度估计器RELAX",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "49_e7",
+          "mention": "负对数似然(NegativeLogLikehood)",
+          "normalized_name": "负对数似然(NegativeLogLikehood)",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以少量负对数似然(NegativeLogLikehood)方式微调预训练模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "50",
+      "sentence": "多文档摘要存在输入数据量大、冗余性高以及内容矛盾的情况，目前的基于强化学习的方法通常不需要显示模型，难以掌握动态环境，只能通过简单的试错不断探索，有可能导致采样效率低下。",
+      "entities": [
+        {
+          "entity_id": "50_e1",
+          "mention": "多文档摘要",
+          "normalized_name": "多文档摘要",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "多文档摘要存在输入数据量大、冗余性高以及内容矛盾的情况",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "50_e2",
+          "mention": "基于强化学习的方法",
+          "normalized_name": "基于强化学习的方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前的基于强化学习的方法通常不需要显示模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "51",
+      "sentence": "受限于主题一致性和文档的数量，高质量大规模多文档数据集数量较少，每个数据集的创建方式和特点如下。",
+      "entities": [
+        {
+          "entity_id": "51_e1",
+          "mention": "高质量大规模多文档数据集",
+          "normalized_name": "高质量大规模多文档数据集",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "高质量大规模多文档数据集数量较少",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "名称较泛化，但结合上下文指代具体类型的数据资源"
+        }
+      ]
+    },
+    {
+      "sentence_id": "52",
+      "sentence": "DUC/TAC数据集：全部来自各个主题下的新闻领域,数据集样本量大约在百量级且含有人工注释的参考摘要，既适用于单文档摘要也适用于多文档摘要,但仅适用于摘要模型的测评。",
+      "entities": [
+        {
+          "entity_id": "52_e1",
+          "mention": "DUC/TAC数据集",
+          "normalized_name": "DUC/TAC数据集",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "DUC/TAC数据集：全部来自各个主题下的新闻领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e2",
+          "mention": "单文档摘要",
+          "normalized_name": "单文档摘要",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "既适用于单文档摘要也适用于多文档摘要",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e3",
+          "mention": "多文档摘要",
+          "normalized_name": "多文档摘要",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "既适用于单文档摘要也适用于多文档摘要",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "53",
+      "sentence": "文章大致被分为80/10/10个训练/开发/测试子集,分别得到1865 750、233252和232998个示例。 WikiSum数据集的数据来源包含多个领域,更适用于生成式摘要任务的训练和评估。",
+      "entities": [
+        {
+          "entity_id": "53_e1",
+          "mention": "WikiSum数据集",
+          "normalized_name": "WikiSum数据集",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "WikiSum数据集的数据来源包含多个领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "54",
+      "sentence": "ScisummNet数据集:第一个大型人工注释科学论文语料库，源文档来源于ACL文集论文的引用网络和被引用次数最多的1000篇参考文献，参考摘要则是由CL/NLP专家人工撰写生成。",
+      "entities": [
+        {
+          "entity_id": "54_e1",
+          "mention": "ScisummNet数据集",
+          "normalized_name": "ScisummNet数据集",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "ScisummNet数据集:第一个大型人工注释科学论文语料库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "54_e2",
+          "mention": "ACL文集",
+          "normalized_name": "ACL文集",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "源文档来源于ACL文集论文的引用网络",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为publishing(出版传播组织)"
+        }
+      ]
+    },
+    {
+      "sentence_id": "55",
+      "sentence": "Multi-News数据集：第一个大规模多文档摘要新闻数据集，源文档数据由newser.com网站上的新闻文章组成,参考摘要由专业编辑撰写，除此之外该数据集中还包含引用的原始文章的链接。 Multi-News数据集规模庞大、来源广泛，其中超过1500个网站作为源文档来源达到5次及以上，适用于多文档摘要神经模型的训练。",
+      "entities": [
+        {
+          "entity_id": "55_e1",
+          "mention": "Multi-News数据集",
+          "normalized_name": "Multi-News数据集",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Multi-News数据集：第一个大规模多文档摘要新闻数据集",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "55_e2",
+          "mention": "newser.com",
+          "normalized_name": "newser.com",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "源文档数据由newser.com网站上的新闻文章组成",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "56",
+      "sentence": "Multi-XScience数据集[64]：通过搜集arXiv论文,使用微软学术图构建多文献对和参考摘要。 Multi-XScience数据集的训练/开发/测试的文章数为$3 0 ~ 3 6 9 / 5 ~ 0 6 6 / 5 ~ 0 9 3$ ,源文档数量较短,与其他通用数据集相比包含更少的位置和提取偏差，因此更适用于具有高度文本抽象性的摘要模型。",
+      "entities": [
+        {
+          "entity_id": "56_e1",
+          "mention": "Multi-XScience数据集",
+          "normalized_name": "Multi-XScience数据集",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Multi-XScience数据集[64]：通过搜集arXiv论文,使用微软学术图构建多文献对和参考摘要",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e2",
+          "mention": "arXiv",
+          "normalized_name": "arXiv",
+          "candidate_l3": "preprint",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过搜集arXiv论文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e3",
+          "mention": "微软学术图",
+          "normalized_name": "微软学术图",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "使用微软学术图构建多文献对和参考摘要",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "57",
+      "sentence": "WCEP数据集[65]：以WCEP中的新闻源文章和在Common CrawlNews 数据库中搜索类似文章作为源文档，以新闻事件在WCEP中的摘要作为参考摘要构建数据集。 在应用方面，WCEP数据集与现实世界用例有更好的一致性。",
+      "entities": [
+        {
+          "entity_id": "57_e1",
+          "mention": "WCEP数据集[65]",
+          "normalized_name": "WCEP数据集",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "WCEP数据集[65]：以WCEP中的新闻源文章和在Common CrawlNews 数据库中搜索类似文章作为源文档",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "57_e2",
+          "mention": "Common CrawlNews 数据库",
+          "normalized_name": "Common CrawlNews数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在Common CrawlNews 数据库中搜索类似文章作为源文档",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "58",
+      "sentence": "按照查询标题层级的不同分为步骤询问和方法询问,拼接不同文章中相应的回答内容得到参考摘要。 HowSumm数据集包含11121个长摘要和84348个短摘要,适用于教育、工业和清洁领域。",
+      "entities": [
+        {
+          "entity_id": "58_e1",
+          "mention": "HowSumm数据集",
+          "normalized_name": "HowSumm数据集",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "HowSumm数据集包含11121个长摘要和84348个短摘要",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "59",
+      "sentence": "多文档摘要的评价方法通常分为人工评价和自动评价的方法。人工评价从摘要内容、可读性和流畅性三个方面进行打分，自动评价通过计算生成摘要与参考摘要的相似性判断摘要质量。",
+      "entities": [
+        {
+          "entity_id": "59_e1",
+          "mention": "人工评价",
+          "normalized_name": "人工评价",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "多文档摘要的评价方法通常分为人工评价和自动评价的方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "59_e2",
+          "mention": "自动评价",
+          "normalized_name": "自动评价",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "多文档摘要的评价方法通常分为人工评价和自动评价的方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "60",
+      "sentence": "人工评价方法是通过取若干专家根据标准摘要对生成摘要评分的均值进行评定的方法。 从评价方式上来看，摘要评价受到专家主观性的影响，因此常在评价部分引用金字塔(Pyramid)[9方法降低人工差异性对分数的影响。 该方法定义摘要内容单元（SummaryContentUnits)作为参考摘要的基本单元。",
+      "entities": [
+        {
+          "entity_id": "60_e1",
+          "mention": "金字塔(Pyramid)[9",
+          "normalized_name": "金字塔(Pyramid)",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "常在评价部分引用金字塔(Pyramid)[9方法降低人工差异性对分数的影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "原文包含引用标记[9]，可能为文献编号，实体名称为'金字塔(Pyramid)'方法"
+        },
+        {
+          "entity_id": "60_e2",
+          "mention": "摘要内容单元（SummaryContentUnits)",
+          "normalized_name": "摘要内容单元（SummaryContentUnits）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "该方法定义摘要内容单元（SummaryContentUnits)作为参考摘要的基本单元",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "62",
+      "sentence": "相比人工方法，自动评价方法可以节省大量的时间和人力，但更注重生成摘要与参考摘要间的相似性，忽视了生成摘要的可读性和流畅性，因此其精准程度低于人工评价方法。 自动评价算法可以大致分为ROUGE[70]算法和基本元素法[71]。",
+      "entities": [
+        {
+          "entity_id": "62_e1",
+          "mention": "ROUGE[70]算法",
+          "normalized_name": "ROUGE算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "自动评价算法可以大致分为ROUGE[70]算法和基本元素法[71]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "62_e2",
+          "mention": "基本元素法[71]",
+          "normalized_name": "基本元素法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "自动评价算法可以大致分为ROUGE[70]算法和基本元素法[71]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "63",
+      "sentence": "受BLEU/NIST算法评价机器翻译[72]的启发，Lin等[70提出计算在摘要对中共同出现的一元模型数量进行评估的方法。 ROUGE是评估生成摘要的一组指标，通过计算生成摘要与参考摘要的单元重叠度得到摘要对的相似性进行评估。",
+      "entities": [
+        {
+          "entity_id": "63_e1",
+          "mention": "BLEU",
+          "normalized_name": "BLEU",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "受BLEU/NIST算法评价机器翻译[72]的启发",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "63_e2",
+          "mention": "NIST",
+          "normalized_name": "NIST",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "受BLEU/NIST算法评价机器翻译[72]的启发",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "63_e3",
+          "mention": "Lin等",
+          "normalized_name": "Lin等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Lin等[70提出计算在摘要对中共同出现的一元模型数量进行评估的方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "具体人名未给出全名，仅以'Lin等'指代"
+        },
+        {
+          "entity_id": "63_e4",
+          "mention": "ROUGE",
+          "normalized_name": "ROUGE",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "ROUGE是评估生成摘要的一组指标",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "64",
+      "sentence": "在对摘要对进行基本元素抽取之后，以特定方式对基本元素进行变换,保证基本元素形式一致，最后根据摘要对中基本元素的重叠程度对自动摘要进行打分。 由于构建的依存关系树可能存在误差，该方法的评分结果可能会受到影响。",
+      "entities": [
+        {
+          "entity_id": "64_e1",
+          "mention": "摘要对",
+          "normalized_name": "摘要对",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在对摘要对进行基本元素抽取之后",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "64_e2",
+          "mention": "基本元素",
+          "normalized_name": "基本元素",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在对摘要对进行基本元素抽取之后",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为领域内特定术语，但未给出具体命名"
+        },
+        {
+          "entity_id": "64_e3",
+          "mention": "依存关系树",
+          "normalized_name": "依存关系树",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "由于构建的依存关系树可能存在误差",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "65",
+      "sentence": "作为最常见的摘要评估方法，除了以上两种评估算法外，还存在多种形式的多文档摘要自动评估指标。Gao等[73]提出一种无监督的多文档摘要评价指标 SUPERT,用于比较生成摘要与伪参考摘要之间的语义相似性。SUPERT利用上下文向量嵌入和软标记对齐技术从输入文档中选择重要信息以评估摘要质量。Wolhandler等[74]提出一种用于评估摘要“分散\"程度即覆盖其内容所需的源文档数量的评估方法。该方法对源文档的一个给定子集定义覆盖率评分，再通过增加最小文档数提升覆盖率得分至最高，最后通过测量所有规模子集下汇总信息数量得到相应的覆盖率曲线。",
+      "entities": [
+        {
+          "entity_id": "65_e1",
+          "mention": "Gao等[73]",
+          "normalized_name": "Gao等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Gao等[73]提出一种无监督的多文档摘要评价指标 SUPERT",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "65_e2",
+          "mention": "SUPERT",
+          "normalized_name": "SUPERT",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提出一种无监督的多文档摘要评价指标 SUPERT",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "65_e3",
+          "mention": "上下文向量嵌入",
+          "normalized_name": "上下文向量嵌入",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "SUPERT利用上下文向量嵌入和软标记对齐技术从输入文档中选择重要信息",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "65_e4",
+          "mention": "软标记对齐技术",
+          "normalized_name": "软标记对齐技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "SUPERT利用上下文向量嵌入和软标记对齐技术从输入文档中选择重要信息",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "65_e5",
+          "mention": "Wolhandler等[74]",
+          "normalized_name": "Wolhandler等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Wolhandler等[74]提出一种用于评估摘要\"分散\"程度即覆盖其内容所需的源文档数量的评估方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "65_e6",
+          "mention": "覆盖率评分",
+          "normalized_name": "覆盖率评分",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "该方法对源文档的一个给定子集定义覆盖率评分",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为method中的子概念"
+        },
+        {
+          "entity_id": "65_e7",
+          "mention": "覆盖率曲线",
+          "normalized_name": "覆盖率曲线",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过测量所有规模子集下汇总信息数量得到相应的覆盖率曲线",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为method中的子概念"
+        }
+      ]
+    },
+    {
+      "sentence_id": "66",
+      "sentence": "通过利用生成摘要代替源文档作为其他的自然语言处理子任务如机器问答、文本分类等的输入数据,以子任务完成的质量间接体现摘要质量，这种评价方法一般被称为外部测评。 但该方法也有一定的缺陷，如不存在统一的评价标准,耗时长且更加依赖于任务应用的场景。综上，人工评价方法更加全面,但是随着多文档摘要数据集规模增大,摘要对间的比对需要耗费的时间和人力",
+      "entities": [
+        {
+          "entity_id": "66_e1",
+          "mention": "生成摘要",
+          "normalized_name": "生成摘要",
+          "candidate_l3": "artifact",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过利用生成摘要代替源文档作为其他的自然语言处理子任务如机器问答、文本分类等的输入数据",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为concept或artifact，此处作为人工制品（摘要文本）"
+        },
+        {
+          "entity_id": "66_e2",
+          "mention": "机器问答",
+          "normalized_name": "机器问答",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "其他的自然语言处理子任务如机器问答、文本分类等的输入数据",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "66_e3",
+          "mention": "文本分类",
+          "normalized_name": "文本分类",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "其他的自然语言处理子任务如机器问答、文本分类等的输入数据",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "66_e4",
+          "mention": "外部测评",
+          "normalized_name": "外部测评",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这种评价方法一般被称为外部测评",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "66_e5",
+          "mention": "人工评价方法",
+          "normalized_name": "人工评价方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "人工评价方法更加全面",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "66_e6",
+          "mention": "多文档摘要数据集",
+          "normalized_name": "多文档摘要数据集",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "随着多文档摘要数据集规模增大",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

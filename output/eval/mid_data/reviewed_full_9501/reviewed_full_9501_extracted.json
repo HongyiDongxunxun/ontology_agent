@@ -1,0 +1,1841 @@
+{
+  "base_name": "reviewed_full_9501",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "数字资源整合是现阶段数字图书馆建设进程中面临的一个重大问题及重要环节，是为了解决“数字资源孤岛”和“数字资源超载”而提出的一种理念和方法。 随着数字图书馆的蓬勃发展，全球范围内的数字资源激增，各种数字资源，包括图书馆馆藏数据库、光盘数据库、网络数据库、全文电子书刊等等的数量急速增加，而问题也随之产生，不同的数字资源都有其物理和逻辑结构，具有各自不同的检索系统和发布系统，再加上数字资源本身存储格式和类目划分方法复杂多样，其内容交叉重复量大，数字资源与生俱来的异构性、分布性和资源描述的多样性给读者检索和利用带来了不便，也给图书馆信息资源共建共享的目标制造了障碍，而目前人们对数字资源的组织和揭示能力远远落后于数字资源的增长速度。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "数字资源整合",
+          "normalized_name": "数字资源整合",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "数字资源整合是现阶段数字图书馆建设进程中面临的一个重大问题及重要环节",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "数字图书馆",
+          "normalized_name": "数字图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "数字资源整合是现阶段数字图书馆建设进程中面临的一个重大问题及重要环节",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "数字资源孤岛",
+          "normalized_name": "数字资源孤岛",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为了解决“数字资源孤岛”和“数字资源超载”而提出的一种理念和方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "数字资源超载",
+          "normalized_name": "数字资源超载",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为了解决“数字资源孤岛”和“数字资源超载”而提出的一种理念和方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e5",
+          "mention": "图书馆馆藏数据库",
+          "normalized_name": "图书馆馆藏数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "各种数字资源，包括图书馆馆藏数据库、光盘数据库、网络数据库、全文电子书刊等等的数量急速增加",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为泛称，但图情领域放宽规则，有名称的数据库应抽取"
+        },
+        {
+          "entity_id": "1_e6",
+          "mention": "光盘数据库",
+          "normalized_name": "光盘数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "各种数字资源，包括图书馆馆藏数据库、光盘数据库、网络数据库、全文电子书刊等等的数量急速增加",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为泛称，但图情领域放宽规则，有名称的数据库应抽取"
+        },
+        {
+          "entity_id": "1_e7",
+          "mention": "网络数据库",
+          "normalized_name": "网络数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "各种数字资源，包括图书馆馆藏数据库、光盘数据库、网络数据库、全文电子书刊等等的数量急速增加",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为泛称，但图情领域放宽规则，有名称的数据库应抽取"
+        },
+        {
+          "entity_id": "1_e8",
+          "mention": "全文电子书刊",
+          "normalized_name": "全文电子书刊",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "各种数字资源，包括图书馆馆藏数据库、光盘数据库、网络数据库、全文电子书刊等等的数量急速增加",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但图情领域放宽规则，有名称的数据库应抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "随着数字图书馆的蓬勃发展，全球范围内的数字资源激增，各种数字资源，包括图书馆馆藏数据库、光盘数据库、网络数据库、全文电子书刊等等的数量急速增加，而问题也随之产生，不同的数字资源都有其物理和逻辑结构，具有各自不同的检索系统和发布系统，再加上数字资源本身存储格式和类目划分方法复杂多样，其内容交叉重复量大，数字资源与生俱来的异构性、分布性和资源描述的多样性给读者检索和利用带来了不便，也给图书馆信息资源共建共享的目标制造了障碍，而目前人们对数字资源的组织和揭示能力远远落后于数字资源的增长速度。 由此我们可以看出，数字资源整合不仅是数字图书馆建设的重要任务，也是信息资源管理领域的一个重要的研究课题和亟待解决的问题。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "数字图书馆",
+          "normalized_name": "数字图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着数字图书馆的蓬勃发展",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "图书馆馆藏数据库",
+          "normalized_name": "图书馆馆藏数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "各种数字资源，包括图书馆馆藏数据库、光盘数据库、网络数据库、全文电子书刊等等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "光盘数据库",
+          "normalized_name": "光盘数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "各种数字资源，包括图书馆馆藏数据库、光盘数据库、网络数据库、全文电子书刊等等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "网络数据库",
+          "normalized_name": "网络数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "各种数字资源，包括图书馆馆藏数据库、光盘数据库、网络数据库、全文电子书刊等等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e5",
+          "mention": "全文电子书刊",
+          "normalized_name": "全文电子书刊",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "各种数字资源，包括图书馆馆藏数据库、光盘数据库、网络数据库、全文电子书刊等等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为corpus"
+        },
+        {
+          "entity_id": "2_e6",
+          "mention": "数字资源整合",
+          "normalized_name": "数字资源整合",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "数字资源整合不仅是数字图书馆建设的重要任务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e7",
+          "mention": "数字图书馆建设",
+          "normalized_name": "数字图书馆建设",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "数字资源整合不仅是数字图书馆建设的重要任务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e8",
+          "mention": "信息资源管理领域",
+          "normalized_name": "信息资源管理领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "也是信息资源管理领域的一个重要的研究课题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "一般认为，数字资源整合包括两个层面的内容：数字资源的聚合及融合，数字资源聚合是相对来说比较低级一点的层面，即运用信息集成技术将异构资源系统集成在一起，数字资源融合是较高级的层面，是运用知识组织技术，在信息资源集合之上进行语法及语义的重组。我们国内各个图书馆的发展并不一致，有的处在聚合层面，有的已经处于融合层面，数字资源整合已由上世纪90 年代的初步试验逐渐步入实用阶段。 在此发展过程中，需具体应用到以下技术：",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "数字资源整合",
+          "normalized_name": "数字资源整合",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "数字资源整合包括两个层面的内容：数字资源的聚合及融合",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "数字资源的聚合",
+          "normalized_name": "数字资源的聚合",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "数字资源整合包括两个层面的内容：数字资源的聚合及融合",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "数字资源融合",
+          "normalized_name": "数字资源融合",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "数字资源融合是较高级的层面",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "信息集成技术",
+          "normalized_name": "信息集成技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "运用信息集成技术将异构资源系统集成在一起",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "知识组织技术",
+          "normalized_name": "知识组织技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "运用知识组织技术，在信息资源集合之上进行语法及语义的重组",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "SFX是指一种对内容敏感的链接技术，可以针对任何资源的记录提供所有能够获得内容和服务的链接，包括电子期刊的全文、文摘信息、OPAC 信息、引文信息、主题网关信息等。 超链接技术使信息之间形成一个单链纽带关系，但是超链接技术无法实现一个施链个体指向多个被链个体。在实际应用中，这种情况在学术资源中反映尤甚，有些学术数据库不仅要维护去到四面八方的链接，而且每个链接地址都要根据每种链接对象所采用的特定协议和具体情况来确定。对于资源提供商来说，逐一建立对应外部资源的链接已是一种负担，始终保持链接的正确就更加困难。对于图书馆和用户来说，尽管非常了解资源灵活链接的需求，但是却没有实施这种链接的途径，链接的建立通常是资源提供商之间的事情。SFX技术的出现改变了这种重复投入、体系交错、不可控制的局面，图书馆员的介入起到了帮助用户获得更合适链接的作用。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "SFX",
+          "normalized_name": "SFX",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "SFX是指一种对内容敏感的链接技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "OPAC",
+          "normalized_name": "OPAC",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "包括电子期刊的全文、文摘信息、OPAC 信息、引文信息、主题网关信息等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "超链接技术",
+          "normalized_name": "超链接技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "超链接技术使信息之间形成一个单链纽带关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "SFX技术",
+          "normalized_name": "SFX技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract",
+            "Artifact"
+          ],
+          "evidence": "SFX技术的出现改变了这种重复投入、体系交错、不可控制的局面",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "SFX技术可视为SFX系统的技术实现，兼有technique和information_system属性"
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "SFX 的技术优势有四个方面：（1）遵循OpenURL（Openuniform Resource Locator）协议（开放环境信息传递的规范化语法)，扩展了资源链接的范围。 作为需要与外界建立链接的资源，只要遵循OpenURL，原则上就可以与任何资源(或者服务）建立链接，而无需关注链接对象的平台和规则；",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "SFX",
+          "normalized_name": "SFX",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "SFX 的技术优势有四个方面",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "OpenURL（Openuniform Resource Locator）协议",
+          "normalized_name": "OpenURL协议",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "遵循OpenURL（Openuniform Resource Locator）协议",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "SFX包括本地重定向模块（Local Redirection Compo\"nent）和本地链接服务模块（Local Service Component）两大模块。 由于其易用性，国际上一些著名的资源提供商，如ISI、CSA、OVID、UMI、EBSCO、Elsevier、High Wire 等，都纷纷在其数据库系统中嵌入了SFX。 国内许多大型图书馆也引入了这一系统，如复旦大学图书馆、北京师范大学图书馆等等。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "SFX",
+          "normalized_name": "SFX",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "SFX包括本地重定向模块（Local Redirection Compo\"nent）和本地链接服务模块（Local Service Component）两大模块",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "本地重定向模块（Local Redirection Compo\"nent）",
+          "normalized_name": "本地重定向模块（Local Redirection Component）",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "SFX包括本地重定向模块（Local Redirection Compo\"nent）和本地链接服务模块（Local Service Component）两大模块",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "原文有OCR乱码，normalized_name已修正"
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "本地链接服务模块（Local Service Component）",
+          "normalized_name": "本地链接服务模块（Local Service Component）",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "SFX包括本地重定向模块（Local Redirection Compo\"nent）和本地链接服务模块（Local Service Component）两大模块",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "ISI",
+          "normalized_name": "ISI",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国际上一些著名的资源提供商，如ISI、CSA、OVID、UMI、EBSCO、Elsevier、High Wire 等，都纷纷在其数据库系统中嵌入了SFX",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "CSA",
+          "normalized_name": "CSA",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国际上一些著名的资源提供商，如ISI、CSA、OVID、UMI、EBSCO、Elsevier、High Wire 等，都纷纷在其数据库系统中嵌入了SFX",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e6",
+          "mention": "OVID",
+          "normalized_name": "OVID",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国际上一些著名的资源提供商，如ISI、CSA、OVID、UMI、EBSCO、Elsevier、High Wire 等，都纷纷在其数据库系统中嵌入了SFX",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e7",
+          "mention": "UMI",
+          "normalized_name": "UMI",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国际上一些著名的资源提供商，如ISI、CSA、OVID、UMI、EBSCO、Elsevier、High Wire 等，都纷纷在其数据库系统中嵌入了SFX",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e8",
+          "mention": "EBSCO",
+          "normalized_name": "EBSCO",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国际上一些著名的资源提供商，如ISI、CSA、OVID、UMI、EBSCO、Elsevier、High Wire 等，都纷纷在其数据库系统中嵌入了SFX",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e9",
+          "mention": "Elsevier",
+          "normalized_name": "Elsevier",
+          "candidate_l3": "publishing",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国际上一些著名的资源提供商，如ISI、CSA、OVID、UMI、EBSCO、Elsevier、High Wire 等，都纷纷在其数据库系统中嵌入了SFX",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e10",
+          "mention": "High Wire",
+          "normalized_name": "High Wire",
+          "candidate_l3": "publishing",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国际上一些著名的资源提供商，如ISI、CSA、OVID、UMI、EBSCO、Elsevier、High Wire 等，都纷纷在其数据库系统中嵌入了SFX",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e11",
+          "mention": "复旦大学图书馆",
+          "normalized_name": "复旦大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国内许多大型图书馆也引入了这一系统，如复旦大学图书馆、北京师范大学图书馆等等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e12",
+          "mention": "北京师范大学图书馆",
+          "normalized_name": "北京师范大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国内许多大型图书馆也引入了这一系统，如复旦大学图书馆、北京师范大学图书馆等等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "国内许多大型图书馆也引入了这一系统，如复旦大学图书馆、北京师范大学图书馆等等。 国内图书馆多数采用和Metalib系统一起引进的方法，建立起Metalib/SFX，具有国际先进水平的信息门户和资源链接系统。通过SFX服务器，用户可通过选单服务直接链接到该资料的网址，从参考文献到电子全文、从引文链接到扩展链接、从google 搜索到全文的直接转换，极大的方便了用户。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "复旦大学图书馆",
+          "normalized_name": "复旦大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如复旦大学图书馆、北京师范大学图书馆等等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "北京师范大学图书馆",
+          "normalized_name": "北京师范大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如复旦大学图书馆、北京师范大学图书馆等等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "Metalib系统",
+          "normalized_name": "Metalib系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "国内图书馆多数采用和Metalib系统一起引进的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "Metalib/SFX",
+          "normalized_name": "Metalib/SFX",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建立起Metalib/SFX，具有国际先进水平的信息门户和资源链接系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e5",
+          "mention": "SFX服务器",
+          "normalized_name": "SFX服务器",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过SFX服务器，用户可通过选单服务直接链接到该资料的网址",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e6",
+          "mention": "google",
+          "normalized_name": "Google",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "从google 搜索到全文的直接转换",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "从严格意义上来讲，Web Service 并不是一种技术，而是封装在独立实体中的一组功能，它包括一系列的技术，其核心是力图构建一种松散耦合环境下服务的描述、发现、调用以及集成的通用框架模型。 从深层次看，Web Service是一种新的Web应用程序分支，他们是自包含、自描述、模块化的应用，可以在网络（通常为Web）中被描述、发布、查找以及通过Web 来调用。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "Web Service",
+          "normalized_name": "Web Service",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从严格意义上来讲，Web Service 并不是一种技术，而是封装在独立实体中的一组功能",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "松散耦合环境下服务的描述、发现、调用以及集成的通用框架模型",
+          "normalized_name": "松散耦合环境下服务的描述、发现、调用以及集成的通用框架模型",
+          "candidate_l3": "framework",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "其核心是力图构建一种松散耦合环境下服务的描述、发现、调用以及集成的通用框架模型",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "该短语较长，可能为描述性定义而非标准命名"
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "Web应用程序",
+          "normalized_name": "Web应用程序",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Web Service是一种新的Web应用程序分支",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "从深层次看，Web Service是一种新的Web应用程序分支，他们是自包含、自描述、模块化的应用，可以在网络（通常为Web）中被描述、发布、查找以及通过Web 来调用。 Web Service 是基于网络的、分布式的模块化组件，它能够最大限度地利用现有的技术，通过指定新的标准和协议来实现，这些新的标准和协议主要有XML、SOAP、WSDL、UDDI等，这一系列标准和协议定义了应用程序如何在Web上实现互操作。 XML（Extensi-ble MarkupLanguage：可扩展标记语言）由万维网协会(W3C）创建，是一套定义语义标记的规则，这些标记将文档分成许多部件并对这些部件加以标识，是一种元标记语言。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "Web Service",
+          "normalized_name": "Web Service",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Web Service是一种新的Web应用程序分支",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "XML",
+          "normalized_name": "XML",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "这些新的标准和协议主要有XML、SOAP、WSDL、UDDI等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "SOAP",
+          "normalized_name": "SOAP",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "这些新的标准和协议主要有XML、SOAP、WSDL、UDDI等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "WSDL",
+          "normalized_name": "WSDL",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "这些新的标准和协议主要有XML、SOAP、WSDL、UDDI等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e5",
+          "mention": "UDDI",
+          "normalized_name": "UDDI",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "这些新的标准和协议主要有XML、SOAP、WSDL、UDDI等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e6",
+          "mention": "万维网协会(W3C)",
+          "normalized_name": "万维网协会(W3C)",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "XML（Extensi-ble MarkupLanguage：可扩展标记语言）由万维网协会(W3C）创建",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e7",
+          "mention": "可扩展标记语言",
+          "normalized_name": "可扩展标记语言",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "XML（Extensi-ble MarkupLanguage：可扩展标记语言）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "UDDI（Universal Description，Discovery and Inte\"gration：统一描述、发现和集成）是一套基于Web 的、分布式的、为Web Service 提供的、信息注册中心的实现标准规范，同时也包含一组使企业能将自身提供的Web Service注册，以使别的企业能够发现的访问协议的实现标准。 由于Web Service完全基于HTTP、XML等通用的Internet协议和数据格式，因此Web Service可以完全屏蔽不同软件平台的差异，实现可互操作性，我们可以利用WebService将图书馆需要集成的数据按照统一的格式提供出来，从而实现分布计算、异构平台数据共享的目的。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "UDDI（Universal Description，Discovery and Inte\"gration：统一描述、发现和集成）",
+          "normalized_name": "UDDI（Universal Description, Discovery and Integration：统一描述、发现和集成）",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "UDDI（Universal Description，Discovery and Inte\"gration：统一描述、发现和集成）是一套基于Web 的、分布式的、为Web Service 提供的、信息注册中心的实现标准规范",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "Web Service",
+          "normalized_name": "Web Service",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为Web Service 提供的、信息注册中心的实现标准规范",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "HTTP",
+          "normalized_name": "HTTP",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Web Service完全基于HTTP、XML等通用的Internet协议和数据格式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e4",
+          "mention": "XML",
+          "normalized_name": "XML",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Web Service完全基于HTTP、XML等通用的Internet协议和数据格式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e5",
+          "mention": "Internet协议",
+          "normalized_name": "Internet协议",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Web Service完全基于HTTP、XML等通用的Internet协议和数据格式",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但此处有具体协议名称支撑"
+        },
+        {
+          "entity_id": "10_e6",
+          "mention": "WebService",
+          "normalized_name": "WebService",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我们可以利用WebService将图书馆需要集成的数据按照统一的格式提供出来",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e7",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "将图书馆需要集成的数据按照统一的格式提供出来",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'图书馆'为泛指机构类型，但结合上下文指代具体应用场景中的图书馆，按图情领域放宽规则抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "P2P 是一种具有较高扩展性的分布式系统结构。其技术实质在于将互联网的集中管理模式引向分散管理模式，将内容从中央单一节点引向网络的边缘，从而充分利用互联网中众多终端节点所蕴涵的处理能力和潜在资源，相对于传统的集中式客户机/服务器模型，P2P弱化了服务器的概念，系统中的各个节点不再区分服务器和客户端的角色关系，每个节点既可请求服务，也可提供服务，节点之间可以直接交换资源和服务而不必通过服务器。 P2P起源于最初的联网通信方式，目前主要应用于 $\\textcircled{1}$ 及时通信，如ICQ、OICQ及IP 电话技术；",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "P2P",
+          "normalized_name": "P2P",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "P2P 是一种具有较高扩展性的分布式系统结构",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "分布式系统结构",
+          "normalized_name": "分布式系统结构",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "P2P 是一种具有较高扩展性的分布式系统结构",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "集中式客户机/服务器模型",
+          "normalized_name": "集中式客户机/服务器模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "相对于传统的集中式客户机/服务器模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "ICQ",
+          "normalized_name": "ICQ",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "及时通信，如ICQ、OICQ及IP 电话技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "OICQ",
+          "normalized_name": "OICQ",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "及时通信，如ICQ、OICQ及IP 电话技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e6",
+          "mention": "IP 电话技术",
+          "normalized_name": "IP电话技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "及时通信，如ICQ、OICQ及IP 电话技术",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "$\\textcircled{3}$ 搜索引擎，基于P2P 的适应性信息检索系统的设计。 由于P2P技术具有以下优点： $\\textcircled{1}$ 既是国知网\\*\\*nttps://www.cnki.net",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "搜索引擎",
+          "normalized_name": "搜索引擎",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "搜索引擎，基于P2P 的适应性信息检索系统的设计",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "P2P",
+          "normalized_name": "P2P",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于P2P 的适应性信息检索系统的设计",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "适应性信息检索系统",
+          "normalized_name": "适应性信息检索系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于P2P 的适应性信息检索系统的设计",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "国知网",
+          "normalized_name": "国知网",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "既是国知网",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "$\\textcircled{4}$ 在使网络信息分散化的同时，相同特性的P2P设备可以构成存在于互联网这张大网中的子网，使信息按新方式又一次集中。 我们可以看到P2P 技术的又一功能，即基于P2P 思想的知识交流型学习。P2P 是一种技术，但它更是一种思想，是有着会改变整个互联网现状潜能的思想。它将人们直接联系起来，让人们可以通过互联网实现直接的交互，从而使得网络沟通变得更为容易、资源共享更为直接，因而它在加强网络人际交流、文件交换和分布计算等方面大有前途。 随着P2P 技术的兴起，基于P2P 思想的知识交流也开始在网络上出现。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "P2P",
+          "normalized_name": "P2P",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "P2P 是一种技术，但它更是一种思想",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "P2P 技术",
+          "normalized_name": "P2P技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我们可以看到P2P 技术的又一功能",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "基于P2P 思想的知识交流型学习",
+          "normalized_name": "基于P2P思想的知识交流型学习",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于P2P 思想的知识交流型学习",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为method"
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "基于P2P 思想的知识交流",
+          "normalized_name": "基于P2P思想的知识交流",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于P2P 思想的知识交流也开始在网络上出现",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为phenomenon"
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "随着P2P 技术的兴起，基于P2P 思想的知识交流也开始在网络上出现。 我们相信，作为一种越来越具有普遍应用价值的技术，P2P也必将在数字图书馆资源整合方面发挥它应有的功用。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "P2P 技术",
+          "normalized_name": "P2P技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着P2P 技术的兴起",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "P2P",
+          "normalized_name": "P2P",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于P2P 思想的知识交流",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "数字图书馆",
+          "normalized_name": "数字图书馆",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "P2P也必将在数字图书馆资源整合方面发挥它应有的功用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept或service组织类型，但此处指系统平台"
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "信息网格是利用网格技术实现信息的共享、管理和提供信息服务的系统，主要解决广域、异构信息的共享、互联和互操作问题，以满足企业、政府部门等组织信息共享的需求。 网格是高性能计算机、数据源、因特网三种技术的有机组合，它具有高性能、一体化、知识生产、资源共享、异地协同工作、支持开放标准、功能动态变化等优点，在数字图书馆资源整合方面可发挥以下功用： $\\textcircled{1}$ 海量数据处理，信息网格能存储和管理海量数据，不仅对数据进行高效的分析和处理，还能提供可视化和多媒体的数据服务； $\\textcircled{2}$ 高性能计算与信息处理，信息网格能大规模、高精度、高质量地处理问题，提供高速度、高效率、实时与及时的计算及信息处理能力；",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "信息网格",
+          "normalized_name": "信息网格",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息网格是利用网格技术实现信息的共享、管理和提供信息服务的系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "网格",
+          "normalized_name": "网格",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "网格是高性能计算机、数据源、因特网三种技术的有机组合",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "数字图书馆",
+          "normalized_name": "数字图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在数字图书馆资源整合方面可发挥以下功用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼指具体机构，但此处为抽象概念"
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "$\\textcircled{6}$ 知识生产和管理，信息网格可以通过组合来协同解决用户的各种复杂问题，从而产生出具有附加值的新服务、新数据和新信息等资源，即可进行知识的再生产，以满足用户的需求。 由此可见，基于网格的数字图书馆可以将现今存在的数字图书馆的资源进行整合，达到最大程度的复用资源。网格技术必将普遍应用，在数字图书馆资源整合方面发挥巨大的功用。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "信息网格",
+          "normalized_name": "信息网格",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识生产和管理，信息网格可以通过组合来协同解决用户的各种复杂问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "网格技术",
+          "normalized_name": "网格技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "网格技术必将普遍应用，在数字图书馆资源整合方面发挥巨大的功用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "数字图书馆",
+          "normalized_name": "数字图书馆",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于网格的数字图书馆可以将现今存在的数字图书馆的资源进行整合",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "资源整合本身就是一种服务，同时是涉及技术和管理以构建各种服务的基础。 要达到资源合理整合的目标，还需利用到 $Z 3 9 . 5 0$ 协议（American National Standard InfomationRetrieval Application Service Definition and Protocol Specificationfor Open System Interconnection）、OAI 协议（Open Archives Ini-tiative）、OPENURL等相关协议，采用合理模式，如SOA服务架构，以期实现资源的高度融合和共享。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "Z39.50协议（American National Standard InfomationRetrieval Application Service Definition and Protocol Specificationfor Open System Interconnection）",
+          "normalized_name": "Z39.50协议（American National Standard Information Retrieval Application Service Definition and Protocol Specification for Open System Interconnection）",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用到 $Z 3 9 . 5 0$ 协议（American National Standard InfomationRetrieval Application Service Definition and Protocol Specificationfor Open System Interconnection）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "OAI协议（Open Archives Initiative）",
+          "normalized_name": "OAI协议（Open Archives Initiative）",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "OAI 协议（Open Archives Ini-tiative）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "OPENURL",
+          "normalized_name": "OpenURL",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "OPENURL等相关协议",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "SOA服务架构",
+          "normalized_name": "SOA服务架构",
+          "candidate_l3": "framework",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用合理模式，如SOA服务架构",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "要达到资源合理整合的目标，还需利用到 $Z 3 9 . 5 0$ 协议（American National Standard InfomationRetrieval Application Service Definition and Protocol Specificationfor Open System Interconnection）、OAI 协议（Open Archives Ini-tiative）、OPENURL等相关协议，采用合理模式，如SOA服务架构，以期实现资源的高度融合和共享。 随着语义网、知识网格大环境的逐步形成，数字资源整合支撑技术的日渐完善，数字资源整合领域正在悄然并迅速发生着变化，理论、应用、技术已经成为我国数字资源整合领域重要的话题和发展脉络，并逐渐呈现出以下态势：",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "$Z 3 9 . 5 0$ 协议（American National Standard InfomationRetrieval Application Service Definition and Protocol Specificationfor Open System Interconnection）",
+          "normalized_name": "Z39.50 协议",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用到 $Z 3 9 . 5 0$ 协议（American National Standard InfomationRetrieval Application Service Definition and Protocol Specificationfor Open System Interconnection）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "OAI 协议（Open Archives Ini-tiative）",
+          "normalized_name": "OAI 协议",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "OAI 协议（Open Archives Ini-tiative）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "OPENURL",
+          "normalized_name": "OpenURL",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "OPENURL等相关协议",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e4",
+          "mention": "SOA服务架构",
+          "normalized_name": "SOA 服务架构",
+          "candidate_l3": "framework",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用合理模式，如SOA服务架构",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e5",
+          "mention": "语义网",
+          "normalized_name": "语义网",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着语义网、知识网格大环境的逐步形成",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e6",
+          "mention": "知识网格",
+          "normalized_name": "知识网格",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着语义网、知识网格大环境的逐步形成",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e7",
+          "mention": "数字资源整合",
+          "normalized_name": "数字资源整合",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "数字资源整合支撑技术的日渐完善，数字资源整合领域正在悄然并迅速发生着变化",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "当前数字资源整合的具体形态有跨库检索系统、印刷型文献与电子资源的整合、联合目录式的整合、电子资源地址的整合、全文电子期刊和电子期刊论文索引、文摘的链接整合、学科信息门户整合、学科导航和学科信息智能导航系统以及学科电子资源搜索系统等等。 而从实际情况上来看，目前应用在数字图书馆“资源门户”中的关键技术一—跨库检索技术并不能尽如人意。一方面，追求对所有资源的跨库检索只是一种理想状态，实际中只能做到兼容尽可能多的资源； 而另一方面，对几十种以上的资源笼统地实现跨库检索并无实用价值，用户的需求是针对某个学科主题、文献类型以及个性化需求的资源导航和检索。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "跨库检索系统",
+          "normalized_name": "跨库检索系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "当前数字资源整合的具体形态有跨库检索系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "印刷型文献与电子资源的整合",
+          "normalized_name": "印刷型文献与电子资源的整合",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当前数字资源整合的具体形态有跨库检索系统、印刷型文献与电子资源的整合",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为具体整合方式，但无独立学术命名，暂标为现象"
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "联合目录式的整合",
+          "normalized_name": "联合目录式的整合",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当前数字资源整合的具体形态有跨库检索系统、印刷型文献与电子资源的整合、联合目录式的整合",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为具体整合方式，但无独立学术命名，暂标为现象"
+        },
+        {
+          "entity_id": "19_e4",
+          "mention": "电子资源地址的整合",
+          "normalized_name": "电子资源地址的整合",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当前数字资源整合的具体形态有跨库检索系统、印刷型文献与电子资源的整合、联合目录式的整合、电子资源地址的整合",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为具体整合方式，但无独立学术命名，暂标为现象"
+        },
+        {
+          "entity_id": "19_e5",
+          "mention": "全文电子期刊和电子期刊论文索引、文摘的链接整合",
+          "normalized_name": "全文电子期刊和电子期刊论文索引、文摘的链接整合",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当前数字资源整合的具体形态有跨库检索系统、印刷型文献与电子资源的整合、联合目录式的整合、电子资源地址的整合、全文电子期刊和电子期刊论文索引、文摘的链接整合",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为具体整合方式，但无独立学术命名，暂标为现象"
+        },
+        {
+          "entity_id": "19_e6",
+          "mention": "学科信息门户整合",
+          "normalized_name": "学科信息门户整合",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当前数字资源整合的具体形态有跨库检索系统、印刷型文献与电子资源的整合、联合目录式的整合、电子资源地址的整合、全文电子期刊和电子期刊论文索引、文摘的链接整合、学科信息门户整合",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为具体整合方式，但无独立学术命名，暂标为现象"
+        },
+        {
+          "entity_id": "19_e7",
+          "mention": "学科导航和学科信息智能导航系统",
+          "normalized_name": "学科导航和学科信息智能导航系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "当前数字资源整合的具体形态有跨库检索系统、印刷型文献与电子资源的整合、联合目录式的整合、电子资源地址的整合、全文电子期刊和电子期刊论文索引、文摘的链接整合、学科信息门户整合、学科导航和学科信息智能导航系统",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e8",
+          "mention": "学科电子资源搜索系统",
+          "normalized_name": "学科电子资源搜索系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "当前数字资源整合的具体形态有跨库检索系统、印刷型文献与电子资源的整合、联合目录式的整合、电子资源地址的整合、全文电子期刊和电子期刊论文索引、文摘的链接整合、学科信息门户整合、学科导航和学科信息智能导航系统以及学科电子资源搜索系统",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e9",
+          "mention": "数字图书馆",
+          "normalized_name": "数字图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "目前应用在数字图书馆“资源门户”中的关键技术一—跨库检索技术",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处为泛指数字图书馆类型，但图情领域放宽规则，有名称的图书馆应抽取"
+        },
+        {
+          "entity_id": "19_e10",
+          "mention": "跨库检索技术",
+          "normalized_name": "跨库检索技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前应用在数字图书馆“资源门户”中的关键技术一—跨库检索技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "而另一方面，对几十种以上的资源笼统地实现跨库检索并无实用价值，用户的需求是针对某个学科主题、文献类型以及个性化需求的资源导航和检索。 从资源揭示的角度看，目前普遍应用的导航系统只是在数据库名称以及文献及期刊的名称的层面上揭示资源，只是粗线条的资源整合，无法满足用户希望快速定位到目标资源的需求，用户需要的是更深层面、更小单元的资源揭示、查找和定位。从资源获取角度看，通过导航到数据库查找的方法对目标资源的链接依然取决于资源本身，资源之间的链接呈现出体系交错、不可控制的复杂关系。我们可以由此推断出，其一，数字资源整合范围由静态的规范性资源扩大到动态的非规范性资源，如对网络信息资源的整合，相对规范性资源来说，网络信息资源具有大数量、多类型、多媒体、跨时间、跨地域、跨行业、多语种、信息的分散、无序和自由性等特点，其整合更为困难； 其二，数字资源整合的范围与规模不断扩大，不再是仅仅局限于资源本身，而是应该开始探索如何重组、集成与资源相关的应用程序和服务，扩展其可重用性，数字资源整合的重点由对资源的整合扩展到对应用程序、服务等功能的整合；",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "跨库检索",
+          "normalized_name": "跨库检索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对几十种以上的资源笼统地实现跨库检索并无实用价值",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "导航系统",
+          "normalized_name": "导航系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "目前普遍应用的导航系统只是在数据库名称以及文献及期刊的名称的层面上揭示资源",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但图情领域有具体系统名称时需抽取，此处无具体名称，暂保留"
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "数字资源整合",
+          "normalized_name": "数字资源整合",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "数字资源整合范围由静态的规范性资源扩大到动态的非规范性资源",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e4",
+          "mention": "网络信息资源",
+          "normalized_name": "网络信息资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如对网络信息资源的整合",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "其三，数字资源整合发展与用户个性化需求更加紧密地融合。 用户的需求是多样化的，数字资源整合系统不再仅仅关注资源的集成与整合，而开始重视需求方面的差异性和个性化。面向用户的信息资源整合与基于整合的信息服务已经成为未来的趋势。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "数字资源整合系统",
+          "normalized_name": "数字资源整合系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "数字资源整合系统不再仅仅关注资源的集成与整合",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "面向用户的信息资源整合",
+          "normalized_name": "面向用户的信息资源整合",
+          "candidate_l3": "approach",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "面向用户的信息资源整合与基于整合的信息服务已经成为未来的趋势",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "基于整合的信息服务",
+          "normalized_name": "基于整合的信息服务",
+          "candidate_l3": "approach",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "面向用户的信息资源整合与基于整合的信息服务已经成为未来的趋势",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "万维网中的信息，如果要让电脑进行处理的话，就必须首先将这些信息加工成计算机可以理解的原始信息后才能进行处理，这是相当麻烦的事情。 语义网（Semantic Web）就是能够根据语义进行判断的网络。 简单地说，语义网是一种能理解人类语言的智能网络，它不但能够理解人类的语言，而且还可以使人与电脑之间的交流变得像人与人之间交流一样轻松。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "万维网",
+          "normalized_name": "万维网",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "万维网中的信息",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "语义网（Semantic Web）",
+          "normalized_name": "语义网（Semantic Web）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "语义网（Semantic Web）就是能够根据语义进行判断的网络",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "简单地说，语义网是一种能理解人类语言的智能网络，它不但能够理解人类的语言，而且还可以使人与电脑之间的交流变得像人与人之间交流一样轻松。 运用本体来描述网络信息资源的语义，是语义网超越目前万维网（WWW)局限的首要前提。本体作为知识组织体系应用于语义网，促使更大范围内数字资源的知识整合成为可能，这也是知识网格智能大环境形成的必要条件。然而，单一的本体是无法涵盖客观世界的所有应用和领域，语义网指的是由分散在各处的针对各种不同应用领域的许多本体组成。这样，它不但能够理解词语和概念，而且还能够理解它们之间的逻辑关系。从而有助于信息共享、再利用，并使网络能够提供动态的、个性化的、主动的服务。语义网主要通过元数据和结构化的分类词汇（Taxonomy）来组织网络资源，并以分层的体系结构扩展了互联网的基本功能，为各种网络软件代理提供了智能化工作的环境。尽管语义网目前还停留在研究阶段，但在搜索引擎中的应用已经得到证实和成功，Google搜索引擎技术的功能特点就是发挥了语义网最擅长的易用性和高相关性，采用互联网综合智能来决定网页的重要性（即它的核心PageRank 技术)，而非传统搜索中靠人为主观判断。由于大部分科技创新和突破，都是对已有知识的重新组合和更新，因此语义网也为新的科技创新提供了无尽的资源，它可以在很短的时间内，完成一个人甚至需要一辈子才能做出的组合结果。语义网/知识网格虽然走的不是同一条技术构建路线，但其最终目的都是一样的，即都是力图将Web资源组织成具有语义的知识空间，它们将是数字资源整合的最终方向和归宿。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "语义网",
+          "normalized_name": "语义网",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "语义网是一种能理解人类语言的智能网络",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "本体",
+          "normalized_name": "本体",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "运用本体来描述网络信息资源的语义",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "万维网（WWW）",
+          "normalized_name": "万维网（WWW）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "语义网超越目前万维网（WWW）局限的首要前提",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e4",
+          "mention": "知识组织体系",
+          "normalized_name": "知识组织体系",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "本体作为知识组织体系应用于语义网",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e5",
+          "mention": "知识网格",
+          "normalized_name": "知识网格",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识网格智能大环境形成的必要条件",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e6",
+          "mention": "元数据",
+          "normalized_name": "元数据",
+          "candidate_l3": "metadata_schema",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "语义网主要通过元数据和结构化的分类词汇（Taxonomy）来组织网络资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e7",
+          "mention": "结构化的分类词汇（Taxonomy）",
+          "normalized_name": "结构化的分类词汇（Taxonomy）",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "语义网主要通过元数据和结构化的分类词汇（Taxonomy）来组织网络资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e8",
+          "mention": "Google搜索引擎",
+          "normalized_name": "Google搜索引擎",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Google搜索引擎技术的功能特点就是发挥了语义网最擅长的易用性和高相关性",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e9",
+          "mention": "PageRank 技术",
+          "normalized_name": "PageRank 技术",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "它的核心PageRank 技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e10",
+          "mention": "语义网/知识网格",
+          "normalized_name": "语义网/知识网格",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "语义网/知识网格虽然走的不是同一条技术构建路线",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "数字资源整合的发展和技术的变革与创新密切相关，其实质就是新兴技术对传统图书馆资源管理的一场深刻变革，对数字资源整合理论进行系统、全面的研究，把握对数字资源整合未来具有重大影响的新型技术，无疑对数字资源整合的可持续发展具有重大意义。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "数字资源整合",
+          "normalized_name": "数字资源整合",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "数字资源整合的发展和技术的变革与创新密切相关",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "新兴技术",
+          "normalized_name": "新兴技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "新兴技术对传统图书馆资源管理的一场深刻变革",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但此处有具体语境指代技术类型"
+        },
+        {
+          "entity_id": "24_e3",
+          "mention": "传统图书馆",
+          "normalized_name": "传统图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "新兴技术对传统图书馆资源管理的一场深刻变革",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "指代传统图书馆这一机构类型，但非具体图书馆名称"
+        },
+        {
+          "entity_id": "24_e4",
+          "mention": "数字资源整合理论",
+          "normalized_name": "数字资源整合理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对数字资源整合理论进行系统、全面的研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e5",
+          "mention": "新型技术",
+          "normalized_name": "新型技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "把握对数字资源整合未来具有重大影响的新型技术",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但此处有具体语境指代技术类型"
+        }
+      ]
+    }
+  ]
+}

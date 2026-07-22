@@ -1,0 +1,2331 @@
+{
+  "base_name": "reviewed_full_6436",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "摘要随着信息技术的迅速发展和移动设备的广泛普及，越来越多的图书馆开通了移动图书馆服务,移动图书馆APP的推广与应用也相应增加。 文章通过调查，分析了当前我国移动图书馆APP的应用现状,指出存在的问题，并提出建立通用移动图书馆APP系统的建议。 表5。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "移动图书馆APP",
+          "normalized_name": "移动图书馆APP",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "移动图书馆APP的推广与应用也相应增加",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept，但此处指具体系统类型"
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "我国移动图书馆APP",
+          "normalized_name": "中国移动图书馆APP",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "分析了当前我国移动图书馆APP的应用现状",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "有地域限定，但未给出具体系统名称"
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "通用移动图书馆APP系统",
+          "normalized_name": "通用移动图书馆APP系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "提出建立通用移动图书馆APP系统的建议",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "建议性系统，非已存在实体"
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "Abstract：With rapid development of information technologyand the popularity of mobile devices，moreand more libraries opened the mobile library service,and the promotion and application of mobile library APP also increased.Inorder to provideareference forthedevelopmentof mobile libraries,the paperanalyzes the present research on mobile libraries APP based on the investigation.The article points out the current problems and proposes to establish a universal mobile library APP system.5 tabs.16refs.",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "mobile library APP",
+          "normalized_name": "mobile library APP",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "the promotion and application of mobile library APP also increased",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "mobile libraries",
+          "normalized_name": "mobile libraries",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "more and more libraries opened the mobile library service",
+          "is_specific_entity": false,
+          "confidence": 0.6,
+          "uncertainty": "泛称，未指定具体图书馆，但图情领域放宽规则下可考虑为具体服务类型"
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "mobile library APP system",
+          "normalized_name": "mobile library APP system",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "proposes to establish a universal mobile library APP system",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "美国大学与研究图书馆协会2010年发布报告,将\"移动设备指数增长，新的应用将推动新的服务\"列为研究型图书馆十大发展趋势之一[3]。 可见,图书馆界已越来越重视移动图书馆服务。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "美国大学与研究图书馆协会",
+          "normalized_name": "美国大学与研究图书馆协会",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国大学与研究图书馆协会2010年发布报告",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "移动设备指数增长",
+          "normalized_name": "移动设备指数增长",
+          "candidate_l3": "trend",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将\"移动设备指数增长，新的应用将推动新的服务\"列为研究型图书馆十大发展趋势之一",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "研究型图书馆",
+          "normalized_name": "研究型图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "研究型图书馆十大发展趋势之一",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "移动图书馆服务",
+          "normalized_name": "移动图书馆服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆界已越来越重视移动图书馆服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "现指依托比较成熟的无线移动网络，使用各种移动设备来方便灵活地提供图书馆信息的服务方式，是数字图书馆服务的延伸与补充[5]。 它主要包括三种服务模式：短信服务（SMS）、网站服务（WAP）、应用程序服务（APP)[6]，而移动图书馆APP服务无疑是目前三种服务模式中备受关注的热点。 依据“5A\"理论（即任何用户在任何时候、任何地点，均可以获得任何图书馆拥有的任何信息资源[7）和移动图书馆APP的相关特点，影响图书馆APP应用的五个因素主要是：跨平台性、图书馆合作性、资源集成性、功能完善性、服务利用性。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "无线移动网络",
+          "normalized_name": "无线移动网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现指依托比较成熟的无线移动网络",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "数字图书馆",
+          "normalized_name": "数字图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "是数字图书馆服务的延伸与补充",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "短信服务（SMS）",
+          "normalized_name": "短信服务（SMS）",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "三种服务模式：短信服务（SMS）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "网站服务（WAP）",
+          "normalized_name": "网站服务（WAP）",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "三种服务模式：短信服务（SMS）、网站服务（WAP）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "应用程序服务（APP）",
+          "normalized_name": "应用程序服务（APP）",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "三种服务模式：短信服务（SMS）、网站服务（WAP）、应用程序服务（APP）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e6",
+          "mention": "移动图书馆APP",
+          "normalized_name": "移动图书馆APP",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "移动图书馆APP服务无疑是目前三种服务模式中备受关注的热点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e7",
+          "mention": "“5A”理论",
+          "normalized_name": "5A理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "依据“5A”理论（即任何用户在任何时候、任何地点，均可以获得任何图书馆拥有的任何信息资源）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e8",
+          "mention": "跨平台性",
+          "normalized_name": "跨平台性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "影响图书馆APP应用的五个因素主要是：跨平台性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e9",
+          "mention": "图书馆合作性",
+          "normalized_name": "图书馆合作性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "影响图书馆APP应用的五个因素主要是：跨平台性、图书馆合作性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e10",
+          "mention": "资源集成性",
+          "normalized_name": "资源集成性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "影响图书馆APP应用的五个因素主要是：跨平台性、图书馆合作性、资源集成性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e11",
+          "mention": "功能完善性",
+          "normalized_name": "功能完善性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "影响图书馆APP应用的五个因素主要是：跨平台性、图书馆合作性、资源集成性、功能完善性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e12",
+          "mention": "服务利用性",
+          "normalized_name": "服务利用性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "影响图书馆APP应用的五个因素主要是：跨平台性、图书馆合作性、资源集成性、功能完善性、服务利用性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "Andre Becker $\\mathbf { D } ^ { [ 8 ] }$ 等通过对大学生的调查发现：手机中最常使用的操作平台是iOS和Android，其中iOS系统名列第一； 其他常用的系统还有Blackberry;",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "Andre Becker",
+          "normalized_name": "Andre Becker",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Andre Becker 等通过对大学生的调查发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "iOS",
+          "normalized_name": "iOS",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "手机中最常使用的操作平台是iOS和Android",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "Android",
+          "normalized_name": "Android",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "手机中最常使用的操作平台是iOS和Android",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "Blackberry",
+          "normalized_name": "Blackberry",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "其他常用的系统还有Blackberry",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "几乎很少人使用 Symbian和Win-dows系统。 在国内,iOS和Android依然是最常用的平台，因此，笔者就对这两个平台中现有的移动图书馆APP进行了调查（调查时间截止到2015年2月24日，在应用平台中以“图书馆”为关键词进行搜索，剔除明显不是移动图书馆APP后得到的移动图书馆APP),如表1所示。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "Symbian",
+          "normalized_name": "Symbian",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "几乎很少人使用 Symbian和Win-dows系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "Win-dows系统",
+          "normalized_name": "Windows系统",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "几乎很少人使用 Symbian和Win-dows系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "iOS",
+          "normalized_name": "iOS",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在国内,iOS和Android依然是最常用的平台",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "Android",
+          "normalized_name": "Android",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在国内,iOS和Android依然是最常用的平台",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "移动图书馆APP",
+          "normalized_name": "移动图书馆APP",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "对这两个平台中现有的移动图书馆APP进行了调查",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "泛称，但图情领域放宽规则，有具体功能限定"
+        },
+        {
+          "entity_id": "6_e6",
+          "mention": "表1",
+          "normalized_name": "表1",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如表1所示",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为论文内嵌表格，非独立数据集"
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "从表1可知,图书馆移动APP实现跨平台的有4个，分别为：超星移动图书馆、移动图书馆、国家数字图书馆(同\"掌上国图\"）、上海移动图书馆（同\"上海图书馆\"），占总数的 $2 1 . 1 \\% ( 4 / 1 9 )$ ； 目前图书馆APP的跨平台性较差，超过 $70 \\%$ 的图书馆APP应用仅处于单一平台的应用阶段。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "超星移动图书馆",
+          "normalized_name": "超星移动图书馆",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "超星移动图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "移动图书馆",
+          "normalized_name": "移动图书馆",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "移动图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "国家数字图书馆(同\"掌上国图\")",
+          "normalized_name": "国家数字图书馆(掌上国图)",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "国家数字图书馆(同\"掌上国图\")",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "上海移动图书馆（同\"上海图书馆\"）",
+          "normalized_name": "上海移动图书馆(上海图书馆)",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "上海移动图书馆（同\"上海图书馆\"）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "余世英等[9]指出,我国现有移动图书馆APP主要有三种建设模式：自主建设模式、联盟合作模式和第三方开发模式。 由表2可知，安卓平台中图书馆APP开发单位有两种：图书馆和科技公司。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "余世英等[9]",
+          "normalized_name": "余世英等[9]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "余世英等[9]指出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "移动图书馆APP",
+          "normalized_name": "移动图书馆APP",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "我国现有移动图书馆APP主要有三种建设模式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "自主建设模式",
+          "normalized_name": "自主建设模式",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "三种建设模式：自主建设模式、联盟合作模式和第三方开发模式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "联盟合作模式",
+          "normalized_name": "联盟合作模式",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "三种建设模式：自主建设模式、联盟合作模式和第三方开发模式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e5",
+          "mention": "第三方开发模式",
+          "normalized_name": "第三方开发模式",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "三种建设模式：自主建设模式、联盟合作模式和第三方开发模式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e6",
+          "mention": "安卓平台",
+          "normalized_name": "安卓平台",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "安卓平台中图书馆APP开发单位有两种",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e7",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书馆APP开发单位有两种：图书馆和科技公司",
+          "is_specific_entity": false,
+          "confidence": 0.6,
+          "uncertainty": "此处'图书馆'为泛称机构类别词，未指定具体图书馆名称，但根据图情领域放宽规则，若上下文可唯一识别则抽取；此处无具体名称，故置信度低"
+        },
+        {
+          "entity_id": "8_e8",
+          "mention": "科技公司",
+          "normalized_name": "科技公司",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书馆APP开发单位有两种：图书馆和科技公司",
+          "is_specific_entity": false,
+          "confidence": 0.5,
+          "uncertainty": "泛称机构类别词，未指定具体公司名称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "由表2可知，安卓平台中图书馆APP开发单位有两种：图书馆和科技公司。 采用自主建设模式的APP最多(华中大、吉大、国图和上图等4个， $4 4 . 4 \\%$ 0，合作联盟模式的次之（阅阅、移动、超星3个， $3 3 . 3 \\%$ )，第三方开发模式的最少（360 和安卓2个， $2 2 . 2 \\%$ )。 采用合作联盟模式的APP中，有的选择与图书馆管理系统供应商合作，如超星和移动；",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "安卓平台",
+          "normalized_name": "安卓平台",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "安卓平台中图书馆APP开发单位有两种",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "华中大",
+          "normalized_name": "华中科技大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "华中大、吉大、国图和上图等4个",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "吉大",
+          "normalized_name": "吉林大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "华中大、吉大、国图和上图等4个",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "国图",
+          "normalized_name": "中国国家图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "华中大、吉大、国图和上图等4个",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e5",
+          "mention": "上图",
+          "normalized_name": "上海图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "华中大、吉大、国图和上图等4个",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e6",
+          "mention": "阅阅",
+          "normalized_name": "阅阅",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "合作联盟模式的次之（阅阅、移动、超星3个",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为APP名称"
+        },
+        {
+          "entity_id": "9_e7",
+          "mention": "移动",
+          "normalized_name": "移动",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "合作联盟模式的次之（阅阅、移动、超星3个",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为APP名称或中国移动简称"
+        },
+        {
+          "entity_id": "9_e8",
+          "mention": "超星",
+          "normalized_name": "超星",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "合作联盟模式的次之（阅阅、移动、超星3个",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e9",
+          "mention": "360",
+          "normalized_name": "360",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "第三方开发模式的最少（360 和安卓2个",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e10",
+          "mention": "安卓",
+          "normalized_name": "安卓",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "第三方开发模式的最少（360 和安卓2个",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "此处指代具体APP名称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "因此，真正能提供网络资源的移动图书馆APP只有国图。 这表明：现有移动图书馆的资源集成性较差，但第三方机构的参与有助于增强资源集成性。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "国图",
+          "normalized_name": "中国国家图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "真正能提供网络资源的移动图书馆APP只有国图",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "移动图书馆APP",
+          "normalized_name": "移动图书馆APP",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "真正能提供网络资源的移动图书馆APP只有国图",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能指代一类应用，但原文中作为具体对象提及"
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "第三方机构",
+          "normalized_name": "第三方机构",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "第三方机构的参与有助于增强资源集成性",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "原文未给出具体机构名称，但作为具体可识别的机构类别（非泛称）在上下文中指代明确"
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "所调查的移动图书馆APP普遍具有馆藏查询功能和个人中心功能； 超过一半的图书馆APP提供收藏图书、借阅信息、讲座通知、条形码扫描功能；",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "移动图书馆APP",
+          "normalized_name": "移动图书馆APP",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "所调查的移动图书馆APP普遍具有馆藏查询功能和个人中心功能",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "馆藏查询功能",
+          "normalized_name": "馆藏查询功能",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "所调查的移动图书馆APP普遍具有馆藏查询功能和个人中心功能",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "个人中心功能",
+          "normalized_name": "个人中心功能",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "所调查的移动图书馆APP普遍具有馆藏查询功能和个人中心功能",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "收藏图书",
+          "normalized_name": "收藏图书",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "超过一半的图书馆APP提供收藏图书、借阅信息、讲座通知、条形码扫描功能",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "功能名称，可视为具体技术手段"
+        },
+        {
+          "entity_id": "12_e5",
+          "mention": "借阅信息",
+          "normalized_name": "借阅信息",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "超过一半的图书馆APP提供收藏图书、借阅信息、讲座通知、条形码扫描功能",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "功能名称，可视为具体技术手段"
+        },
+        {
+          "entity_id": "12_e6",
+          "mention": "讲座通知",
+          "normalized_name": "讲座通知",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "超过一半的图书馆APP提供收藏图书、借阅信息、讲座通知、条形码扫描功能",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "功能名称，可视为具体技术手段"
+        },
+        {
+          "entity_id": "12_e7",
+          "mention": "条形码扫描功能",
+          "normalized_name": "条形码扫描功能",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "超过一半的图书馆APP提供收藏图书、借阅信息、讲座通知、条形码扫描功能",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "只有少量图书馆APP提供网络资源搜索、预约图书、到期提醒等服务。 其中馆藏查询功能和网络资源搜索功能所占比例与资源来源情况相吻合。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "图书馆APP",
+          "normalized_name": "图书馆APP",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "只有少量图书馆APP提供网络资源搜索、预约图书、到期提醒等服务",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指代一类APP，但图情领域放宽规则，有名称的APP应抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "在这些服务中，传统的图书馆服务占据主要地位,如较多的图书馆APP提供馆藏查询、个人中心、收藏图书、借阅信息、讲座通知、图书馆简介、新闻公告、分馆导航等； 此外，一些新的移动图书馆服务开始逐步涌现，如条形码扫描、预约图书、公开课、有声读物、豆瓣或亚马逊评论等。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "图书馆APP",
+          "normalized_name": "图书馆APP",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如较多的图书馆APP提供馆藏查询、个人中心、收藏图书、借阅信息、讲座通知、图书馆简介、新闻公告、分馆导航等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指代多个具体APP，但作为类别提及，根据图情领域放宽规则抽取"
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "馆藏查询",
+          "normalized_name": "馆藏查询",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如较多的图书馆APP提供馆藏查询、个人中心、收藏图书、借阅信息、讲座通知、图书馆简介、新闻公告、分馆导航等",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为服务功能，可视为具体技术手段"
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "个人中心",
+          "normalized_name": "个人中心",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如较多的图书馆APP提供馆藏查询、个人中心、收藏图书、借阅信息、讲座通知、图书馆简介、新闻公告、分馆导航等",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为服务功能，可视为具体技术手段"
+        },
+        {
+          "entity_id": "14_e4",
+          "mention": "收藏图书",
+          "normalized_name": "收藏图书",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如较多的图书馆APP提供馆藏查询、个人中心、收藏图书、借阅信息、讲座通知、图书馆简介、新闻公告、分馆导航等",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为服务功能，可视为具体技术手段"
+        },
+        {
+          "entity_id": "14_e5",
+          "mention": "借阅信息",
+          "normalized_name": "借阅信息",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如较多的图书馆APP提供馆藏查询、个人中心、收藏图书、借阅信息、讲座通知、图书馆简介、新闻公告、分馆导航等",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为服务功能，可视为具体技术手段"
+        },
+        {
+          "entity_id": "14_e6",
+          "mention": "讲座通知",
+          "normalized_name": "讲座通知",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如较多的图书馆APP提供馆藏查询、个人中心、收藏图书、借阅信息、讲座通知、图书馆简介、新闻公告、分馆导航等",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为服务功能，可视为具体技术手段"
+        },
+        {
+          "entity_id": "14_e7",
+          "mention": "图书馆简介",
+          "normalized_name": "图书馆简介",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如较多的图书馆APP提供馆藏查询、个人中心、收藏图书、借阅信息、讲座通知、图书馆简介、新闻公告、分馆导航等",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为服务功能，可视为具体技术手段"
+        },
+        {
+          "entity_id": "14_e8",
+          "mention": "新闻公告",
+          "normalized_name": "新闻公告",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如较多的图书馆APP提供馆藏查询、个人中心、收藏图书、借阅信息、讲座通知、图书馆简介、新闻公告、分馆导航等",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为服务功能，可视为具体技术手段"
+        },
+        {
+          "entity_id": "14_e9",
+          "mention": "分馆导航",
+          "normalized_name": "分馆导航",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如较多的图书馆APP提供馆藏查询、个人中心、收藏图书、借阅信息、讲座通知、图书馆简介、新闻公告、分馆导航等",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为服务功能，可视为具体技术手段"
+        },
+        {
+          "entity_id": "14_e10",
+          "mention": "条形码扫描",
+          "normalized_name": "条形码扫描",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如条形码扫描、预约图书、公开课、有声读物、豆瓣或亚马逊评论等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e11",
+          "mention": "预约图书",
+          "normalized_name": "预约图书",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如条形码扫描、预约图书、公开课、有声读物、豆瓣或亚马逊评论等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e12",
+          "mention": "公开课",
+          "normalized_name": "公开课",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如条形码扫描、预约图书、公开课、有声读物、豆瓣或亚马逊评论等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e13",
+          "mention": "有声读物",
+          "normalized_name": "有声读物",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如条形码扫描、预约图书、公开课、有声读物、豆瓣或亚马逊评论等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e14",
+          "mention": "豆瓣",
+          "normalized_name": "豆瓣",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如条形码扫描、预约图书、公开课、有声读物、豆瓣或亚马逊评论等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e15",
+          "mention": "亚马逊",
+          "normalized_name": "亚马逊",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如条形码扫描、预约图书、公开课、有声读物、豆瓣或亚马逊评论等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "作为数字图书馆的延伸,移动图书馆已具备基本服务功能，但涉及馆际互借、文献传递、全文阅读等功能则基本没有[]。同时，学界较为关注的许多服务功能也较少实现,如预约借书、电子书借阅服务、有声读物、RSS聚合、视频点播、参考咨询服务、室内定位等。笔者所在的吉林大学图书馆APP目前可以实现电子书借阅服务，至于其他图书馆则因访问权限的限制而无从知晓，这也从另一个角度说明了“服务可利用”的重要性。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "移动图书馆",
+          "normalized_name": "移动图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "作为数字图书馆的延伸,移动图书馆已具备基本服务功能",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "馆际互借",
+          "normalized_name": "馆际互借",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "涉及馆际互借、文献传递、全文阅读等功能则基本没有",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "文献传递",
+          "normalized_name": "文献传递",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "涉及馆际互借、文献传递、全文阅读等功能则基本没有",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "全文阅读",
+          "normalized_name": "全文阅读",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "涉及馆际互借、文献传递、全文阅读等功能则基本没有",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为功能描述而非独立学术概念"
+        },
+        {
+          "entity_id": "15_e5",
+          "mention": "预约借书",
+          "normalized_name": "预约借书",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如预约借书、电子书借阅服务、有声读物、RSS聚合、视频点播、参考咨询服务、室内定位等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e6",
+          "mention": "电子书借阅服务",
+          "normalized_name": "电子书借阅服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如预约借书、电子书借阅服务、有声读物、RSS聚合、视频点播、参考咨询服务、室内定位等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e7",
+          "mention": "有声读物",
+          "normalized_name": "有声读物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如预约借书、电子书借阅服务、有声读物、RSS聚合、视频点播、参考咨询服务、室内定位等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e8",
+          "mention": "RSS聚合",
+          "normalized_name": "RSS聚合",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如预约借书、电子书借阅服务、有声读物、RSS聚合、视频点播、参考咨询服务、室内定位等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e9",
+          "mention": "视频点播",
+          "normalized_name": "视频点播",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如预约借书、电子书借阅服务、有声读物、RSS聚合、视频点播、参考咨询服务、室内定位等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e10",
+          "mention": "参考咨询服务",
+          "normalized_name": "参考咨询服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如预约借书、电子书借阅服务、有声读物、RSS聚合、视频点播、参考咨询服务、室内定位等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e11",
+          "mention": "室内定位",
+          "normalized_name": "室内定位",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如预约借书、电子书借阅服务、有声读物、RSS聚合、视频点播、参考咨询服务、室内定位等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e12",
+          "mention": "吉林大学图书馆APP",
+          "normalized_name": "吉林大学图书馆APP",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "笔者所在的吉林大学图书馆APP目前可以实现电子书借阅服务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e13",
+          "mention": "服务可利用",
+          "normalized_name": "服务可利用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这也从另一个角度说明了“服务可利用”的重要性",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为引用的特定术语"
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "总之，现有服务功能大多是简单平移数字图书馆的服务功能，不能体现出移动图书馆服务的特色[12]。此外,预约借书、馆际互借与文献传递、在线阅读、全文获取或电子书下载、电子书借阅服务、网络资源搜索等功能尚需进一步完善。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "数字图书馆",
+          "normalized_name": "数字图书馆",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "简单平移数字图书馆的服务功能",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "移动图书馆",
+          "normalized_name": "移动图书馆",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "不能体现出移动图书馆服务的特色",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "预约借书",
+          "normalized_name": "预约借书",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "预约借书、馆际互借与文献传递、在线阅读、全文获取或电子书下载、电子书借阅服务、网络资源搜索等功能",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可视为服务功能概念，非严格学术术语"
+        },
+        {
+          "entity_id": "16_e4",
+          "mention": "馆际互借与文献传递",
+          "normalized_name": "馆际互借与文献传递",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "预约借书、馆际互借与文献传递、在线阅读、全文获取或电子书下载、电子书借阅服务、网络资源搜索等功能",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可视为服务功能概念"
+        },
+        {
+          "entity_id": "16_e5",
+          "mention": "在线阅读",
+          "normalized_name": "在线阅读",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "预约借书、馆际互借与文献传递、在线阅读、全文获取或电子书下载、电子书借阅服务、网络资源搜索等功能",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可视为服务功能概念"
+        },
+        {
+          "entity_id": "16_e6",
+          "mention": "全文获取",
+          "normalized_name": "全文获取",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "全文获取或电子书下载",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可视为服务功能概念"
+        },
+        {
+          "entity_id": "16_e7",
+          "mention": "电子书下载",
+          "normalized_name": "电子书下载",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "全文获取或电子书下载",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可视为服务功能概念"
+        },
+        {
+          "entity_id": "16_e8",
+          "mention": "电子书借阅服务",
+          "normalized_name": "电子书借阅服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "电子书借阅服务",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可视为服务功能概念"
+        },
+        {
+          "entity_id": "16_e9",
+          "mention": "网络资源搜索",
+          "normalized_name": "网络资源搜索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "网络资源搜索等功能",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可视为服务功能概念"
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "从表4可知：馆藏查询的可访问率与不可访问率表面上几乎持平,甚至前者略大于后者。但是考虑到阅阅、“移动”和超星共集成了700多家图书馆，远超过上图所集成的数量，因此实际上是较多的图书馆APP需通过登录认证后，才可利用其馆藏查询服务。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "馆藏查询",
+          "normalized_name": "馆藏查询",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "馆藏查询的可访问率与不可访问率表面上几乎持平",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "阅阅",
+          "normalized_name": "阅阅",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "阅阅、“移动”和超星共集成了700多家图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "移动",
+          "normalized_name": "移动",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "阅阅、“移动”和超星共集成了700多家图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能指移动图书馆APP"
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "超星",
+          "normalized_name": "超星",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "阅阅、“移动”和超星共集成了700多家图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e5",
+          "mention": "图书馆APP",
+          "normalized_name": "图书馆APP",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "较多的图书馆APP需通过登录认证后",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "泛称但图情领域放宽规则，视为具体软件类型"
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "上述分析表明：大多数图书馆APP设置有访问权限控制，未经注册的非认证用户较难利用到图书馆的主流服务，导致移动图书馆APP的服务利用效果不理想。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "图书馆APP",
+          "normalized_name": "图书馆APP",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "大多数图书馆APP设置有访问权限控制",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "移动图书馆APP",
+          "normalized_name": "移动图书馆APP",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "导致移动图书馆APP的服务利用效果不理想",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "表5表明，相对于其他两种类型的移动图书馆APP,第三方图书馆超星的APP集成性强，共享性也相对较强。 首先表现为系统兼容性，可兼容两种主要系统；",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "移动图书馆APP",
+          "normalized_name": "移动图书馆APP",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "相对于其他两种类型的移动图书馆APP",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "第三方图书馆超星",
+          "normalized_name": "超星",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "第三方图书馆超星的APP集成性强",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "此外，还体现在资源和服务的综合性上，文献类型众多、资源内容丰富、服务多样化。 自建模式的华中大移动图书馆APP则主要是根据本馆特色提供有针对性的资源和服务，在通用性上受到较大局限。而在移动图书馆合作性上，上图表现的比华中大和超星好，它联合了本地区的总分馆，可以“一卡通用”，超星则需找到用户所在学校或地区后，“对号入坐”。因为其他地区的用户不能通过馆际互借利用文献，所以虽然公共图书馆APP的合作性较强,但是仍局限于地方性。在功能完善性方面,有的馆藏查询的藏书状态只是显示藏书信息，不能够预约图书。华中大和上图都不能支持在线阅读,即使是针对馆藏资源的也没有，更不用说提供全文获取或下载电子图书的功能。在服务利用性方面,基本都受到访问权限的限制。 华中大和上图不登录就可利用其馆藏查询功能，而三个APP的个人中心功能都需用借阅证号登录。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "华中大移动图书馆APP",
+          "normalized_name": "华中大移动图书馆APP",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "自建模式的华中大移动图书馆APP则主要是根据本馆特色提供有针对性的资源和服务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "上图",
+          "normalized_name": "上海图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "上图表现的比华中大和超星好，它联合了本地区的总分馆",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "华中大",
+          "normalized_name": "华中科技大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "上图表现的比华中大和超星好",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "超星",
+          "normalized_name": "超星",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "上图表现的比华中大和超星好",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e5",
+          "mention": "公共图书馆APP",
+          "normalized_name": "公共图书馆APP",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "公共图书馆APP的合作性较强",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能指代多个具体APP，但原文中作为类名出现，按图情放宽规则抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "综上所述，当前移动图书馆APP发展前景较好，它具有如下特征：基本功能完善，如馆藏查询和读者服务功能； 检索灵活，除了关键词检索，还都具有条码扫描功能,个别提供语音搜索功能； 基于元数据的一站式检索；",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "移动图书馆APP",
+          "normalized_name": "移动图书馆APP",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "当前移动图书馆APP发展前景较好",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "馆藏查询",
+          "normalized_name": "馆藏查询",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基本功能完善，如馆藏查询和读者服务功能",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e3",
+          "mention": "读者服务",
+          "normalized_name": "读者服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基本功能完善，如馆藏查询和读者服务功能",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e4",
+          "mention": "关键词检索",
+          "normalized_name": "关键词检索",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检索灵活，除了关键词检索",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e5",
+          "mention": "条码扫描",
+          "normalized_name": "条码扫描",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "还都具有条码扫描功能",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e6",
+          "mention": "语音搜索",
+          "normalized_name": "语音搜索",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "个别提供语音搜索功能",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e7",
+          "mention": "元数据",
+          "normalized_name": "元数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于元数据的一站式检索",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e8",
+          "mention": "一站式检索",
+          "normalized_name": "一站式检索",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于元数据的一站式检索",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "(1)系统跨平台性不够，各系统之间缺乏合作交流。目前，主要的支持系统有安卓、苹果、黑莓,但大量的移动图书馆APP只限于某一系统,没有实现不同系统之间的兼容。这样的模式加大了移动图书馆APP建设的工作量，并且会造成非兼容图书馆的使用限制。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "安卓",
+          "normalized_name": "安卓",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "主要的支持系统有安卓、苹果、黑莓",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "苹果",
+          "normalized_name": "苹果",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "主要的支持系统有安卓、苹果、黑莓",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e3",
+          "mention": "黑莓",
+          "normalized_name": "黑莓",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "主要的支持系统有安卓、苹果、黑莓",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e4",
+          "mention": "移动图书馆APP",
+          "normalized_name": "移动图书馆APP",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "大量的移动图书馆APP只限于某一系统",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能指代具体应用，但原文未给出名称，故保留"
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "(2)移动图书馆之间合作性不强，同一系统内的移动图书馆APP各自为政，缺乏统一标准。高校图书馆的合作性最弱，公共图书馆的合作性较强，第三方系统也缺乏合作性。虽然公共图书馆的总分馆也有合作，但依然受地方限制，不能实现全国用户通用。虽然第三方系统能集成各省市各类图书馆，利用方便，节省时间，但图书馆各自独立，缺乏交流。虽然自主建设的移动图书馆特色性强,但呈现为混乱分散的局面。总而言之，目前的图书馆APP是各建各的，没有统一标准予以控制，重复性严重，如吉大移动图书馆APP既有自主建设版，又有与超星合作版。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "移动图书馆APP",
+          "normalized_name": "移动图书馆APP",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "同一系统内的移动图书馆APP各自为政",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "高校图书馆",
+          "normalized_name": "高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "高校图书馆的合作性最弱",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "泛称机构，但此处作为具体类型机构讨论，按规则保留"
+        },
+        {
+          "entity_id": "25_e3",
+          "mention": "公共图书馆",
+          "normalized_name": "公共图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "公共图书馆的合作性较强",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "泛称机构，但此处作为具体类型机构讨论，按规则保留"
+        },
+        {
+          "entity_id": "25_e4",
+          "mention": "第三方系统",
+          "normalized_name": "第三方系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "第三方系统也缺乏合作性",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "指代具体类型的系统，但名称较泛"
+        },
+        {
+          "entity_id": "25_e5",
+          "mention": "总分馆",
+          "normalized_name": "总分馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "公共图书馆的总分馆也有合作",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "指公共图书馆的分支机构模式"
+        },
+        {
+          "entity_id": "25_e6",
+          "mention": "吉大移动图书馆APP",
+          "normalized_name": "吉大移动图书馆APP",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "吉大移动图书馆APP既有自主建设版，又有与超星合作版",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e7",
+          "mention": "超星",
+          "normalized_name": "超星",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "与超星合作版",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "拥有馆藏资源的图书馆APP所占比例接近 $80 \\%$ ,而网络资源获取率不到二分之一，但所有图书馆APP都不能获取数据库资源。 馆藏资源毕竟有限，网络信息资源和数据库资源能够极大地充实移动图书馆的信息资源。尤其是针对高校师生而言,数据库资源极为重要，不容忽视。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "图书馆APP",
+          "normalized_name": "图书馆APP",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "拥有馆藏资源的图书馆APP所占比例接近 80%",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e2",
+          "mention": "数据库资源",
+          "normalized_name": "数据库资源",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "所有图书馆APP都不能获取数据库资源",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为泛称，但图情领域放宽规则，有名称的数据库应抽取，此处无具体名称，但作为资源类型可视为具体实体"
+        },
+        {
+          "entity_id": "26_e3",
+          "mention": "移动图书馆",
+          "normalized_name": "移动图书馆",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "网络信息资源和数据库资源能够极大地充实移动图书馆的信息资源",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为泛称，但图情领域放宽规则，有名称的移动图书馆系统应抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "大多数图书馆APP都不具备预约借书、馆际互借与文献传递、在线阅读、全文获取或电子书下载、电子书借阅、网络资源搜索等功能。 这些功能都有利于增强资源的易获取性和移动图书馆的易用性[13],并且能够提升用户的满意度。正如“Chris\"YangH等[14]指出，满意度会显著影响用户的潜在需求和实际行为。因此它们的缺失，将影响用户的使用行为意向和使用态度，从而削弱资源开放的质量。",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "图书馆APP",
+          "normalized_name": "图书馆APP",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "大多数图书馆APP都不具备预约借书、馆际互借与文献传递、在线阅读、全文获取或电子书下载、电子书借阅、网络资源搜索等功能",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "Chris\"YangH等[14]",
+          "normalized_name": "Chris YangH等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "正如\"Chris\"YangH等[14]指出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "(5)多数服务利用受限，访问权限弱。 现有的图书馆APP访问权限很弱，非认证用户都很难利用到移动图书馆的主流服务，移动图书馆APP的利用性差[15]。 绝大多数的图书馆APP需通过登录认证后，才可利用其馆藏查询功能。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "图书馆APP",
+          "normalized_name": "图书馆APP",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "现有的图书馆APP访问权限很弱",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "移动图书馆",
+          "normalized_name": "移动图书馆",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "非认证用户都很难利用到移动图书馆的主流服务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e3",
+          "mention": "移动图书馆APP",
+          "normalized_name": "移动图书馆APP",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "移动图书馆APP的利用性差",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e4",
+          "mention": "馆藏查询功能",
+          "normalized_name": "馆藏查询功能",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "才可利用其馆藏查询功能",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "KarenCoombs[16]曾指出，移动设备能够剧烈影响图书馆服务用户的方式，图书馆应该将其信息资源传播到各种手持移动设备上去。然而目前移动图书馆APP的使用，仅能实现“任何用户”和“随时随地”的目标，还不能实现“用户使用任何图书馆及任何资源”的目标。之所以会这样，原因在于移动图书馆APP的资源开放程度还有待于进一步提高。因此要提高其资源开放性，尤其在使用任何图书馆和任何信息资源方面，图书馆界现在应该考虑建立一个不限于支持系统、由第三方和图书馆合作、采用统一标准、集成各地区各类型图书馆信息资源的通用移动图书馆系统。 此系统基于APP服务，提供一站式检索、云服务共享及个性化服务等功能。",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "KarenCoombs",
+          "normalized_name": "KarenCoombs",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "KarenCoombs[16]曾指出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "移动图书馆APP",
+          "normalized_name": "移动图书馆APP",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "目前移动图书馆APP的使用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e3",
+          "mention": "通用移动图书馆系统",
+          "normalized_name": "通用移动图书馆系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建立一个不限于支持系统、由第三方和图书馆合作、采用统一标准、集成各地区各类型图书馆信息资源的通用移动图书馆系统",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "系统名称未正式命名，为描述性短语"
+        },
+        {
+          "entity_id": "30_e4",
+          "mention": "一站式检索",
+          "normalized_name": "一站式检索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提供一站式检索、云服务共享及个性化服务等功能",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e5",
+          "mention": "云服务共享",
+          "normalized_name": "云服务共享",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提供一站式检索、云服务共享及个性化服务等功能",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e6",
+          "mention": "个性化服务",
+          "normalized_name": "个性化服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提供一站式检索、云服务共享及个性化服务等功能",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "31",
+      "sentence": "这样非本馆用户既可以查询馆藏，也可以通过申请账号进人个人中心实现个性化服务。 既然移动互联网本身已经突破了地域的限制，移动图书馆也应该尽可能顺应时势超越本馆的服务范围，提高向非本馆用户开放的程度。此外，那些由第三方集成的移动图书馆间也应该增强合作性，降低各自访问门槛，结成一个移动图书馆联盟,共同为用户提供服务。",
+      "entities": [
+        {
+          "entity_id": "31_e1",
+          "mention": "移动图书馆",
+          "normalized_name": "移动图书馆",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "移动图书馆也应该尽可能顺应时势超越本馆的服务范围",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e2",
+          "mention": "移动图书馆联盟",
+          "normalized_name": "移动图书馆联盟",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "结成一个移动图书馆联盟,共同为用户提供服务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "32",
+      "sentence": "要扩展资源集成性，就要先解决资源授权的问题，因为网络资源和数据库资源都涉及到版权问题。 但是上文分析表明，第三方的助力可以大大增强现有移动图书馆APP的资源集成性。 图书馆可与第三方合作来进行移动图书馆资源建设，集成多方资源。",
+      "entities": [
+        {
+          "entity_id": "32_e1",
+          "mention": "移动图书馆APP",
+          "normalized_name": "移动图书馆APP",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "第三方的助力可以大大增强现有移动图书馆APP的资源集成性",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e2",
+          "mention": "移动图书馆",
+          "normalized_name": "移动图书馆",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "图书馆可与第三方合作来进行移动图书馆资源建设",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处指代系统/服务，非具体图书馆机构"
+        }
+      ]
+    },
+    {
+      "sentence_id": "34",
+      "sentence": "如个别馆已在实体图书馆中安装电子书借阅机，用户通过使用图书馆APP中的二维码扫描电子书功能，就可以将电子书下载到移动设备上，随时随地进行阅读。 要实现这样的功能，首先就需要拥有海量的数字化资源。而这些数字化资源一方面需通过采购，另一方面则是由本馆已有的特色馆藏转化而成，因此需要较强的数字化能力。",
+      "entities": [
+        {
+          "entity_id": "34_e1",
+          "mention": "电子书借阅机",
+          "normalized_name": "电子书借阅机",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "个别馆已在实体图书馆中安装电子书借阅机",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e2",
+          "mention": "图书馆APP",
+          "normalized_name": "图书馆APP",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "用户通过使用图书馆APP中的二维码扫描电子书功能",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e3",
+          "mention": "二维码扫描电子书功能",
+          "normalized_name": "二维码扫描电子书功能",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户通过使用图书馆APP中的二维码扫描电子书功能",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为software功能模块"
+        },
+        {
+          "entity_id": "34_e4",
+          "mention": "数字化资源",
+          "normalized_name": "数字化资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "首先就需要拥有海量的数字化资源",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛化程度较高，但图情领域有独立学术命名"
+        },
+        {
+          "entity_id": "34_e5",
+          "mention": "特色馆藏",
+          "normalized_name": "特色馆藏",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本馆已有的特色馆藏转化而成",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛化程度较高，但图情领域有独立学术命名"
+        },
+        {
+          "entity_id": "34_e6",
+          "mention": "数字化能力",
+          "normalized_name": "数字化能力",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "因此需要较强的数字化能力",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛化程度较高，但图情领域有独立学术命名"
+        }
+      ]
+    },
+    {
+      "sentence_id": "35",
+      "sentence": "随着信息技术的发展，移动图书馆服务已成为各类型图书馆的服务内容之一，图书馆界学者也越来越关注该领域的研究。 然而，当前移动图书馆的研究对资源开放性和APP的应用现状涉及较少，且缺乏深度,因此需进一步加强这两方面的研究。本文对多个移动图书馆APP的应用现状进行了调查，比较分析后发现它们都存在不同程度的问题，如系统兼容性不够、移动图书馆间合作性不强、资源集成性弱等等。为了有效解决这些问题，移动图书馆建设时应注意基于APP服务，增强访问权限，扩展资源集成性，以建立一个通用的移动图书馆APP系统为目标。在建设移动图书馆APP时，应加大向用户开放信息资源的力度，增强图书馆与用户的结合程度，促使图书馆朝着社会化和个性化的方向发展，从而更好地为用户服务。",
+      "entities": [
+        {
+          "entity_id": "35_e1",
+          "mention": "移动图书馆服务",
+          "normalized_name": "移动图书馆服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "移动图书馆服务已成为各类型图书馆的服务内容之一",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e2",
+          "mention": "移动图书馆APP",
+          "normalized_name": "移动图书馆APP",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "当前移动图书馆的研究对资源开放性和APP的应用现状涉及较少",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "APP为泛称，但结合'移动图书馆APP'在上下文中指代具体应用类型，按图情领域放宽规则抽取"
+        },
+        {
+          "entity_id": "35_e3",
+          "mention": "系统兼容性",
+          "normalized_name": "系统兼容性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "它们都存在不同程度的问题，如系统兼容性不够",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e4",
+          "mention": "资源集成性",
+          "normalized_name": "资源集成性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "资源集成性弱",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e5",
+          "mention": "移动图书馆APP系统",
+          "normalized_name": "移动图书馆APP系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以建立一个通用的移动图书馆APP系统为目标",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

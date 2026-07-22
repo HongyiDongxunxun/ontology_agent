@@ -1,0 +1,1581 @@
+{
+  "base_name": "reviewed_full_3452",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "(摘要）针对国外图书馆知识管理在基础理论、人力资源管理和知识共享与转化三个方面的研究进展情况，对其进行总结和评价，为我国在图书馆知识管理研究方面提供借鉴与后示。 研究结果表明，虽然国外图书馆知识管理研究已经全面展开，但基础理论研究相对薄弱，特别是在人力资源管理和知识共享方面遇到一些难题，这些问题将成为今后研究的焦点。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "图书馆知识管理",
+          "normalized_name": "图书馆知识管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国外图书馆知识管理在基础理论、人力资源管理和知识共享与转化三个方面的研究进展情况",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "基础理论",
+          "normalized_name": "基础理论",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国外图书馆知识管理在基础理论、人力资源管理和知识共享与转化三个方面的研究进展情况",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处作为具体研究领域出现，非泛称"
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "人力资源管理",
+          "normalized_name": "人力资源管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国外图书馆知识管理在基础理论、人力资源管理和知识共享与转化三个方面的研究进展情况",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "知识共享与转化",
+          "normalized_name": "知识共享与转化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国外图书馆知识管理在基础理论、人力资源管理和知识共享与转化三个方面的研究进展情况",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "School of Economic and Management， South China Normal University, Guangzhou 510006 {AbstractByintroducing thsituationofresearchprogressofforeignlibraryknowledge management (L)intheaspectsofbasictheory, humanresourcemanagemnt,knoledgesharingandtransforation,thispapersumariesandevaluatesonthat,soastopovidereferecesand inspirationsfortheLresearchiCina.TheresearchrsultssotataltoughthethorystudesofLabroadhavebeeal-oundstarted, thebasiceseaostiyakspalatteeilodulsneeauceagtoe sharing and transformation.The paper lastly points out that these problems will become the focus of further research.",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "School of Economic and Management， South China Normal University",
+          "normalized_name": "School of Economic and Management, South China Normal University",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "School of Economic and Management， South China Normal University, Guangzhou 510006",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "library knowledge management",
+          "normalized_name": "library knowledge management",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "research progress of foreign library knowledge management (L)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "L",
+          "normalized_name": "library knowledge management",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "library knowledge management (L)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "缩写，指代library knowledge management"
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "本文以4大外文数据库一一ARL、EBSCO、Elsevier、ACM为检索对象，对结果剔除后得到了相关文献56篇。 下面以这些文献内容为依据，对近几年国外图书馆知识管理的发展和研究情况做一个总结与评价。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "ARL",
+          "normalized_name": "ARL",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "4大外文数据库一一ARL、EBSCO、Elsevier、ACM",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "EBSCO",
+          "normalized_name": "EBSCO",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "4大外文数据库一一ARL、EBSCO、Elsevier、ACM",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "Elsevier",
+          "normalized_name": "Elsevier",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "4大外文数据库一一ARL、EBSCO、Elsevier、ACM",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "ACM",
+          "normalized_name": "ACM",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "4大外文数据库一一ARL、EBSCO、Elsevier、ACM",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "国外学者对知识管理和图书馆学的关系与归属问题存在较大争议。信息专业人员和图书馆员认为，知识可以通过存储、检索及网络传递等进行管理，所以知识管理属于图书馆学、信息科学的范畴。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "知识管理",
+          "normalized_name": "知识管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国外学者对知识管理和图书馆学的关系与归属问题存在较大争议",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "图书馆学",
+          "normalized_name": "图书馆学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国外学者对知识管理和图书馆学的关系与归属问题存在较大争议",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "信息科学",
+          "normalized_name": "信息科学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识管理属于图书馆学、信息科学的范畴",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "一些学者认为，知识管理与图书馆学存在相似和交叉，但本质不同。Loughridge[1]认为,知识管理从理论到实践与图书馆学、信息管理有很大的差异。知识管理更多强调知识诱导、创造性、团队工作及更多涉及组织战略发展。Michae[2]指出，知识管理在图书馆学和信息服务中非常重要。然而，几乎没什么人意识到分类学和分类结构是图书馆学与信息科学最基本的研究领域。Bulter[3]认为，许多知识管理工程看似集中在图书馆信息学熟悉的领域，但图书馆员从未首创过知识管理。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "Loughridge",
+          "normalized_name": "Loughridge",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Loughridge[1]认为,知识管理从理论到实践与图书馆学、信息管理有很大的差异",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "Michae",
+          "normalized_name": "Michae",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Michae[2]指出，知识管理在图书馆学和信息服务中非常重要",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "Bulter",
+          "normalized_name": "Bulter",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Bulter[3]认为，许多知识管理工程看似集中在图书馆信息学熟悉的领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "知识管理",
+          "normalized_name": "知识管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识管理与图书馆学存在相似和交叉，但本质不同",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e5",
+          "mention": "图书馆学",
+          "normalized_name": "图书馆学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识管理与图书馆学存在相似和交叉",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e6",
+          "mention": "信息管理",
+          "normalized_name": "信息管理",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识管理从理论到实践与图书馆学、信息管理有很大的差异",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e7",
+          "mention": "信息服务",
+          "normalized_name": "信息服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识管理在图书馆学和信息服务中非常重要",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e8",
+          "mention": "分类学",
+          "normalized_name": "分类学",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "几乎没什么人意识到分类学和分类结构是图书馆学与信息科学最基本的研究领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e9",
+          "mention": "分类结构",
+          "normalized_name": "分类结构",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "几乎没什么人意识到分类学和分类结构是图书馆学与信息科学最基本的研究领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e10",
+          "mention": "信息科学",
+          "normalized_name": "信息科学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分类学和分类结构是图书馆学与信息科学最基本的研究领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e11",
+          "mention": "图书馆信息学",
+          "normalized_name": "图书馆信息学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "许多知识管理工程看似集中在图书馆信息学熟悉的领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "笔者认为，知识管理的出现是信息管理发展的必然结果，出现新的特点是合乎发展逻辑的，不应该把它们分开看待。知识管理是图书馆学和信息管理学发展到一定阶段的产物，它们在理论上一脉相承。图书馆不但需要知识管理来发展自己，更有责任去拓展知识管理的应用空间。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "知识管理",
+          "normalized_name": "知识管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识管理的出现是信息管理发展的必然结果",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "信息管理",
+          "normalized_name": "信息管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息管理发展的必然结果",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "图书馆学",
+          "normalized_name": "图书馆学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识管理是图书馆学和信息管理学发展到一定阶段的产物",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "信息管理学",
+          "normalized_name": "信息管理学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识管理是图书馆学和信息管理学发展到一定阶段的产物",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "是一个相对缺乏竞争的服务环境，图书馆学和信息学研究是一般环境下的知识管理。因此，图书馆知识管理需要基础通用的定义作为指导。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "图书馆学",
+          "normalized_name": "图书馆学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆学和信息学研究是一般环境下的知识管理",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "信息学",
+          "normalized_name": "信息学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆学和信息学研究是一般环境下的知识管理",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "知识管理",
+          "normalized_name": "知识管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆学和信息学研究是一般环境下的知识管理",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "图书馆知识管理",
+          "normalized_name": "图书馆知识管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆知识管理需要基础通用的定义作为指导",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "此外,图书馆员对知识管理的理解存在差异。 DavenPortand Cronin[4]指出,大量信息专业人员没有很好地区分知识管理和信息管理两门学科。Southon等人[5]指出，有些图书馆员和信息专业人员认为知识管理不过是一种描述信息资源管理的流行观点。要加强图书馆员对知识管理工作的理解与认同，也需要一个更为本质的定义。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "DavenPortand Cronin[4]",
+          "normalized_name": "DavenPort and Cronin",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "DavenPortand Cronin[4]指出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "Southon等人[5]",
+          "normalized_name": "Southon等人",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Southon等人[5]指出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "知识管理",
+          "normalized_name": "知识管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆员对知识管理的理解存在差异",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "信息管理",
+          "normalized_name": "信息管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "没有很好地区分知识管理和信息管理两门学科",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e5",
+          "mention": "信息资源管理",
+          "normalized_name": "信息资源管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识管理不过是一种描述信息资源管理的流行观点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "Holsapple和Joshi[6]提出的定义是:知识管理是组织实体为完成目标和规划，以增加自身价值的方式，系统的、有目的地拓展、开发与应用可用知识的努力及活动。 笔者认为这个定义具有一般性，图书馆开展知识管理可以以此概念为借鉴。2.2.2基本内容Lee和Hwa-Wei[7]认为,21世纪图书馆的角色是学习和知识中心，图书馆应该表现出强大的知识管理领导能力。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "Holsapple和Joshi[6]",
+          "normalized_name": "Holsapple和Joshi",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Holsapple和Joshi[6]提出的定义是",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "知识管理",
+          "normalized_name": "知识管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识管理是组织实体为完成目标和规划",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "Lee和Hwa-Wei[7]",
+          "normalized_name": "Lee和Hwa-Wei",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Lee和Hwa-Wei[7]认为,21世纪图书馆的角色是学习和知识中心",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "21世纪图书馆",
+          "normalized_name": "21世纪图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "21世纪图书馆的角色是学习和知识中心",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指代特定类型的图书馆，但原文中为泛称概念"
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "Holsapple和Joshi提出了知识管理研究与发展的4个层次：个人知识管理、组织知识管理、跨组织知识管理、国家知识管理。 图书馆开展知识管理从自身发展而言属于组织知识管理，从职能来讲又包含了为个人、组织和国家提供知识管理服务的性质。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "Holsapple",
+          "normalized_name": "Holsapple",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Holsapple和Joshi提出了知识管理研究与发展的4个层次",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "Joshi",
+          "normalized_name": "Joshi",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Holsapple和Joshi提出了知识管理研究与发展的4个层次",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "知识管理研究与发展",
+          "normalized_name": "知识管理研究与发展",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识管理研究与发展的4个层次",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e4",
+          "mention": "个人知识管理",
+          "normalized_name": "个人知识管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "个人知识管理、组织知识管理、跨组织知识管理、国家知识管理",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e5",
+          "mention": "组织知识管理",
+          "normalized_name": "组织知识管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "个人知识管理、组织知识管理、跨组织知识管理、国家知识管理",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e6",
+          "mention": "跨组织知识管理",
+          "normalized_name": "跨组织知识管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "个人知识管理、组织知识管理、跨组织知识管理、国家知识管理",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e7",
+          "mention": "国家知识管理",
+          "normalized_name": "国家知识管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "个人知识管理、组织知识管理、跨组织知识管理、国家知识管理",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "促进客户和潜在客户的专业建议。 虽然这个内容概括的比较全面，但还不够精炼与通用。笔者认为图书馆的知识管理在内容上至少应该包括两个方面：人力资源管理，提供科学的管理体系和人才结构； 知识共享管理，对图书馆内外的知识进行挖掘、转化与传播。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "笔者认为图书馆的知识管理在内容上至少应该包括两个方面",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'图书馆'为泛指机构类别，但结合上下文'图书馆的知识管理'可能指代具体图书馆或图书馆行业，按图情领域放宽规则，保留抽取"
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "人力资源管理",
+          "normalized_name": "人力资源管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "人力资源管理，提供科学的管理体系和人才结构",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "知识共享管理",
+          "normalized_name": "知识共享管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识共享管理，对图书馆内外的知识进行挖掘、转化与传播",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "图书馆开展知识管理要把人作为首要因素来对待。Daven-port[9]指出，知识管理需要管理人员，只有对组织内相关群体给予明确的责任，知识才会被管理好。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "Daven-port[9]",
+          "normalized_name": "Davenport",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Daven-port[9]指出，知识管理需要管理人员",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "对图书馆员是否具备领导和执行知识管理能力的问题，国外学者提出了不同见解。 一些学者认为图书馆员从事知识管理工作具有一定优势。Broadbent[10]指出，图书馆员在编辑和获取资源方面有优秀的技能，知识管理也并不是为某一领域的团体或组织所独有。Duffy[1]指出,图书馆员应大胆坚持，他们有能力在图书馆中采取正确的知识管理原则。笔者也认为图书馆员在知识信息组织方面有专业优势。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "Broadbent",
+          "normalized_name": "Broadbent",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Broadbent[10]指出，图书馆员在编辑和获取资源方面有优秀的技能",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "Duffy",
+          "normalized_name": "Duffy",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Duffy[1]指出,图书馆员应大胆坚持",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "还有学者认为，图书馆员从事知识管理活动，不仅要积极提升知识服务能力，而且要打破自身束缚，重塑职业角色。Charlotte等人指出，对“图书馆员”的认识观念妨碍了他们进入到知识管理的工作部门中去。Klobas[12]认为，图书馆员精通知识传递方面的知识和技能，但是很少有机会让他们为组织做贡献。Southon等人[13]认为，信息专业人员的角色存在问题，他们被认为只是组织需要养的负担，与企业知识管理人员的活动相比呈边缘化趋势。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "Charlotte",
+          "normalized_name": "Charlotte",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Charlotte等人指出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "Klobas[12]",
+          "normalized_name": "Klobas",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Klobas[12]认为",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "Southon等人[13]",
+          "normalized_name": "Southon",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Southon等人[13]认为",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e4",
+          "mention": "知识管理",
+          "normalized_name": "知识管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆员从事知识管理活动",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e5",
+          "mention": "知识服务能力",
+          "normalized_name": "知识服务能力",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "积极提升知识服务能力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e6",
+          "mention": "图书馆员",
+          "normalized_name": "图书馆员",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对“图书馆员”的认识观念妨碍了他们进入到知识管理的工作部门中去",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为概念被讨论，非指具体个人"
+        },
+        {
+          "entity_id": "14_e7",
+          "mention": "信息专业人员",
+          "normalized_name": "信息专业人员",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息专业人员的角色存在问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为概念被讨论，非指具体个人"
+        },
+        {
+          "entity_id": "14_e8",
+          "mention": "企业知识管理人员",
+          "normalized_name": "企业知识管理人员",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与企业知识管理人员的活动相比呈边缘化趋势",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为概念被讨论，非指具体个人"
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "面对不利因素，图书馆员必须打破陈旧的知识结构，学习掌握新知识技能。 RonJantz[14]指出，知识管理将帮助图书馆转变为一个高效的知识共享组织，而馆员的职能是利用先进的硬件和软件帮助用户找到最优答案或相关资源。David[15]指出，为应对变化，图书馆员的任务应向知识信息存储、检索和传递方面转变。另外，图书馆学与情报学教育要针对市场需求来调整课程设置，以加强人才适用性。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "RonJantz[14]",
+          "normalized_name": "RonJantz",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "RonJantz[14]指出，知识管理将帮助图书馆转变为一个高效的知识共享组织",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "David[15]",
+          "normalized_name": "David",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "David[15]指出，为应对变化，图书馆员的任务应向知识信息存储、检索和传递方面转变",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "知识管理",
+          "normalized_name": "知识管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识管理将帮助图书馆转变为一个高效的知识共享组织",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "图书馆学与情报学教育",
+          "normalized_name": "图书馆学与情报学教育",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆学与情报学教育要针对市场需求来调整课程设置",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "如何将所有人员组织到知识管理体系中去，Pradeepa[16]提出了一个较为成熟的构想。他认为，馆员独自承担知识管理的重任有困难，比较好的办法是由馆员组建一个知识管理团队。 组建团队可采用两种策略： $\\textcircled{1}$ 在图书馆原有行政业务等级结构基础上赋予知识管理功能，这样期刊、读者服务等业务部门的馆员就负责知识管理的各个不同方面，研究馆员担任知识主管的职务；",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "Pradeepa[16]",
+          "normalized_name": "Pradeepa",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Pradeepa[16]提出了一个较为成熟的构想",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "馆员",
+          "normalized_name": "馆员",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "馆员独自承担知识管理的重任有困难",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'馆员'为泛称，但结合上下文指代具体图书馆中的馆员角色，且图情领域规则允许抽取具体角色"
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "知识管理团队",
+          "normalized_name": "知识管理团队",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "由馆员组建一个知识管理团队",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e4",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在图书馆原有行政业务等级结构基础上赋予知识管理功能",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'图书馆'为泛称，但结合上下文指代具体图书馆机构，且图情领域规则允许抽取"
+        },
+        {
+          "entity_id": "16_e5",
+          "mention": "期刊",
+          "normalized_name": "期刊",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "期刊、读者服务等业务部门的馆员",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "此处'期刊'指代期刊业务部门，作为组织部门抽取"
+        },
+        {
+          "entity_id": "16_e6",
+          "mention": "读者服务",
+          "normalized_name": "读者服务",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "期刊、读者服务等业务部门的馆员",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "此处'读者服务'指代读者服务部门，作为组织部门抽取"
+        },
+        {
+          "entity_id": "16_e7",
+          "mention": "研究馆员",
+          "normalized_name": "研究馆员",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "研究馆员担任知识主管的职务",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'研究馆员'为具体职称角色，结合上下文指代具体人员"
+        },
+        {
+          "entity_id": "16_e8",
+          "mention": "知识主管",
+          "normalized_name": "知识主管",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究馆员担任知识主管的职务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "国外学者对知识共享的研究从显性与隐性两方面展开，尤其注重隐性知识的转化研究。 Jan Duffy[17]把显性知识定义为“文献化的、公共的、结构化的、内容固定的、客观具体化可被感知的知识”； 隐性知识是：“没有记录下来、有前后联系、动态创立的、内在的和基于经验的，通常存在于人的思想、行动与感知意识当中的知识”",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "Jan Duffy",
+          "normalized_name": "Jan Duffy",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Jan Duffy[17]把显性知识定义为",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "显性知识",
+          "normalized_name": "显性知识",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国外学者对知识共享的研究从显性与隐性两方面展开，尤其注重隐性知识的转化研究。 Jan Duffy[17]把显性知识定义为",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "隐性知识",
+          "normalized_name": "隐性知识",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国外学者对知识共享的研究从显性与隐性两方面展开，尤其注重隐性知识的转化研究。 隐性知识是",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "对于馆员的知识可以登记整理、索引排列，并通过创建和维护数据库使这些资源可检索与获取。 Lee和Hwa-Wei指出，应对全体馆员的知识和经验加以评估与分享，并建立包含奖励及激励机制的组织文化，鼓励图书馆员通过书写、讨论、演讲、辅导、顾问等形式来共享和传递隐性知识。组织文化应重点强调合作、共享和创新理念。 图书馆还可以通过内部网络建立特别兴趣组和聊天室，鼓励有经验的工作人员将知识与经验传授给新成员，帮助新人尽快获得经验。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "Lee和Hwa-Wei",
+          "normalized_name": "Lee和Hwa-Wei",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Lee和Hwa-Wei指出，应对全体馆员的知识和经验加以评估与分享",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "数据库",
+          "normalized_name": "数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过创建和维护数据库使这些资源可检索与获取",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'数据库'为通用指称，但图情领域放宽规则中数据库作为具体系统应抽取"
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "组织文化",
+          "normalized_name": "组织文化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "建立包含奖励及激励机制的组织文化",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e4",
+          "mention": "隐性知识",
+          "normalized_name": "隐性知识",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "鼓励图书馆员通过书写、讨论、演讲、辅导、顾问等形式来共享和传递隐性知识",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e5",
+          "mention": "特别兴趣组",
+          "normalized_name": "特别兴趣组",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过内部网络建立特别兴趣组和聊天室",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e6",
+          "mention": "聊天室",
+          "normalized_name": "聊天室",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过内部网络建立特别兴趣组和聊天室",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "图书馆员应通过与用户进行正式或非正式的个性化交流来挖掘用户的隐性知识，并通过网络系统存储利用这些知识。 Lee和Hwa-Wei指出，图书馆必须对服务记录进行分析，以便尽可能掌握每一位用户的兴趣和需求信息。 这些记录包括用户的注册信息、用户调查结果、流通和馆际互借记录、FAQ、电子期刊与数字资源的使用情况等。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "Lee和Hwa-Wei",
+          "normalized_name": "Lee和Hwa-Wei",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Lee和Hwa-Wei指出，图书馆必须对服务记录进行分析",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "隐性知识",
+          "normalized_name": "隐性知识",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "挖掘用户的隐性知识",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "网络系统",
+          "normalized_name": "网络系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过网络系统存储利用这些知识",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "名称较泛，但图情领域放宽规则，有功能限定"
+        },
+        {
+          "entity_id": "19_e4",
+          "mention": "服务记录",
+          "normalized_name": "服务记录",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "图书馆必须对服务记录进行分析",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "具体指图书馆业务记录，非泛称"
+        },
+        {
+          "entity_id": "19_e5",
+          "mention": "注册信息",
+          "normalized_name": "注册信息",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "用户的注册信息",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "具体数据类型"
+        },
+        {
+          "entity_id": "19_e6",
+          "mention": "用户调查结果",
+          "normalized_name": "用户调查结果",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "用户调查结果",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "具体数据类型"
+        },
+        {
+          "entity_id": "19_e7",
+          "mention": "流通和馆际互借记录",
+          "normalized_name": "流通和馆际互借记录",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "流通和馆际互借记录",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e8",
+          "mention": "FAQ",
+          "normalized_name": "FAQ",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "FAQ",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e9",
+          "mention": "电子期刊",
+          "normalized_name": "电子期刊",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "电子期刊与数字资源的使用情况",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛指电子期刊资源，但图情领域放宽规则"
+        },
+        {
+          "entity_id": "19_e10",
+          "mention": "数字资源",
+          "normalized_name": "数字资源",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "电子期刊与数字资源的使用情况",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛指数字资源，但图情领域放宽规则"
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "这些记录包括用户的注册信息、用户调查结果、流通和馆际互借记录、FAQ、电子期刊与数字资源的使用情况等。 此外，笔者认为，只有通过更为完善和人性化的知识服务，使用户产生良性的归属感，才能从根本上赢得用户的隐性知识。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "注册信息",
+          "normalized_name": "注册信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这些记录包括用户的注册信息",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但结合上下文指具体记录类型"
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "用户调查结果",
+          "normalized_name": "用户调查结果",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户调查结果",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但结合上下文指具体记录类型"
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "流通和馆际互借记录",
+          "normalized_name": "流通和馆际互借记录",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "流通和馆际互借记录",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e4",
+          "mention": "FAQ",
+          "normalized_name": "FAQ",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "FAQ",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e5",
+          "mention": "电子期刊",
+          "normalized_name": "电子期刊",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "电子期刊与数字资源的使用情况",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可视为资源类型，但非具体期刊名称"
+        },
+        {
+          "entity_id": "20_e6",
+          "mention": "数字资源",
+          "normalized_name": "数字资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "电子期刊与数字资源的使用情况",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但结合上下文指具体记录类型"
+        },
+        {
+          "entity_id": "20_e7",
+          "mention": "知识服务",
+          "normalized_name": "知识服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "更为完善和人性化的知识服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e8",
+          "mention": "归属感",
+          "normalized_name": "归属感",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用户产生良性的归属感",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e9",
+          "mention": "隐性知识",
+          "normalized_name": "隐性知识",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "赢得用户的隐性知识",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "这种体系最需要的是知识专家和具有最佳实践经验的人。 Lemer和Tirole[18]指出； 组织的知识管理如何吸引专家的目光？",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "Lemer",
+          "normalized_name": "Lemer",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Lemer和Tirole[18]指出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "Tirole",
+          "normalized_name": "Tirole",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Lemer和Tirole[18]指出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "通过对国外图书馆知识管理理论研究的进展分析，可以看到基础研究相对比较薄弱，在人力资源管理和知识共享两个方面还存在一些棘手的问题。知识作为图书馆学的研究和管理对象是母庸置疑的，但是如何让知识管理理论服务于图书馆自身建设将是一个长期而艰巨的工程。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "国外图书馆知识管理理论研究",
+          "normalized_name": "国外图书馆知识管理理论研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过对国外图书馆知识管理理论研究的进展分析",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能兼为research_program"
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "人力资源管理",
+          "normalized_name": "人力资源管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在人力资源管理和知识共享两个方面还存在一些棘手的问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e3",
+          "mention": "知识共享",
+          "normalized_name": "知识共享",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在人力资源管理和知识共享两个方面还存在一些棘手的问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e4",
+          "mention": "知识",
+          "normalized_name": "知识",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识作为图书馆学的研究和管理对象是母庸置疑的",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "高度泛化，但作为图书馆学核心概念且原文中作为具体研究对象提及，故抽取"
+        },
+        {
+          "entity_id": "25_e5",
+          "mention": "图书馆学",
+          "normalized_name": "图书馆学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识作为图书馆学的研究和管理对象是母庸置疑的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e6",
+          "mention": "知识管理理论",
+          "normalized_name": "知识管理理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如何让知识管理理论服务于图书馆自身建设",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

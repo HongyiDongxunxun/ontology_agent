@@ -1,0 +1,961 @@
+{
+  "base_name": "reviewed_full_3759",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "[摘要］阐述国家地学文献共享服务体系建设的总体思路、总体目标和基本原则，总结体系建设取得的进展，对体系建设中存在的问题进行分析探讨，提出国家地学文献共享服务体系建设应进一步加强机制研究、人才队伍建设以及培训与宣传推广等建议。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "国家地学文献共享服务体系",
+          "normalized_name": "国家地学文献共享服务体系",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "国家地学文献共享服务体系建设的总体思路",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "地学文献凝聚了地质工作成果的精华，是地质工作价值的重要体现之一，也是实现地学文化传播、促进地球科学创新与进步的重要载体，是国家地质工作、地球科学及相关领域发展的重要信息支撑。 随着信息技术的快速发展，地学文献信息服务发生了重大变革。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "地学文献",
+          "normalized_name": "地学文献",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "地学文献凝聚了地质工作成果的精华",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为Artifact，但此处作为抽象概念讨论其价值"
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "地学文化传播",
+          "normalized_name": "地学文化传播",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现地学文化传播",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "可能为phenomenon，但缺乏独立学术命名证据"
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "地球科学",
+          "normalized_name": "地球科学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "促进地球科学创新与进步",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "信息技术",
+          "normalized_name": "信息技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着信息技术的快速发展",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e5",
+          "mention": "地学文献信息服务",
+          "normalized_name": "地学文献信息服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "地学文献信息服务发生了重大变革",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为subfield，但此处作为服务概念讨论"
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "国家地学共享服务体系建设总体框架（见图1）分为数据资源层、系统平台建设层和服务产品层3个层面，每一个层面建设遵循统一技术标准和规范，以利于资源互通，实现资源利用效益最大化。 数据资源层以中国地质图书馆采购、自建资源为基础，集成整合地质调查局直属单位、地质勘查行业单位和地质院校等相关资源，构建地学文献资源保障体系；",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "国家地学共享服务体系建设总体框架",
+          "normalized_name": "国家地学共享服务体系建设总体框架",
+          "candidate_l3": "framework",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国家地学共享服务体系建设总体框架（见图1）分为数据资源层、系统平台建设层和服务产品层3个层面",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "数据资源层",
+          "normalized_name": "数据资源层",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分为数据资源层、系统平台建设层和服务产品层3个层面",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "系统平台建设层",
+          "normalized_name": "系统平台建设层",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分为数据资源层、系统平台建设层和服务产品层3个层面",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "服务产品层",
+          "normalized_name": "服务产品层",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分为数据资源层、系统平台建设层和服务产品层3个层面",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "中国地质图书馆",
+          "normalized_name": "中国地质图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "数据资源层以中国地质图书馆采购、自建资源为基础",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e6",
+          "mention": "地质调查局",
+          "normalized_name": "地质调查局",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "集成整合地质调查局直属单位、地质勘查行业单位和地质院校等相关资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e7",
+          "mention": "地质勘查行业单位",
+          "normalized_name": "地质勘查行业单位",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "集成整合地质调查局直属单位、地质勘查行业单位和地质院校等相关资源",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但有限定词'地质勘查行业'，视为具体机构类别"
+        },
+        {
+          "entity_id": "3_e8",
+          "mention": "地质院校",
+          "normalized_name": "地质院校",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "集成整合地质调查局直属单位、地质勘查行业单位和地质院校等相关资源",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但有限定词'地质'，视为具体机构类别"
+        },
+        {
+          "entity_id": "3_e9",
+          "mention": "地学文献资源保障体系",
+          "normalized_name": "地学文献资源保障体系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "构建地学文献资源保障体系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "为满足社会对日益增长的地学文献与知识的需求，基于现代信息技术，开展国内外地学文献信息采集、加工与集成工作，不断完善地学文献信息服务平台，开展地质调查成果知识库和地质调查成果评价体系，开发丰富多样的地学文献信息服务产品，建立以中国地质图书馆为地学文献资源中心，以中国地质调查局六大区域地质调查中心、中国地质科学院和其他专业地质调查机构为骨干节点，辐射地学院校、地质调查院等地质勘查行业单位的国家地学文献共享服务体系，提高地学文献信息的共享程度，满足地质调查、矿产勘查、地质科研和管理的需要，全面提升地学文献和地质调查成果的服务能力与水平，实现地学文献资源的传播价值，为地球科学的进步与创新提供知识源泉。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "中国地质图书馆",
+          "normalized_name": "中国地质图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "建立以中国地质图书馆为地学文献资源中心",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "中国地质调查局六大区域地质调查中心",
+          "normalized_name": "中国地质调查局六大区域地质调查中心",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "以中国地质调查局六大区域地质调查中心、中国地质科学院和其他专业地质调查机构为骨干节点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "中国地质科学院",
+          "normalized_name": "中国地质科学院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "以中国地质调查局六大区域地质调查中心、中国地质科学院和其他专业地质调查机构为骨干节点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "地学文献信息服务平台",
+          "normalized_name": "地学文献信息服务平台",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "不断完善地学文献信息服务平台",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "地质调查成果知识库",
+          "normalized_name": "地质调查成果知识库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "开展地质调查成果知识库和地质调查成果评价体系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e6",
+          "mention": "地质调查成果评价体系",
+          "normalized_name": "地质调查成果评价体系",
+          "candidate_l3": "framework",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "开展地质调查成果知识库和地质调查成果评价体系",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为methodology或typology"
+        },
+        {
+          "entity_id": "4_e7",
+          "mention": "国家地学文献共享服务体系",
+          "normalized_name": "国家地学文献共享服务体系",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建立以中国地质图书馆为地学文献资源中心……辐射地学院校、地质调查院等地质勘查行业单位的国家地学文献共享服务体系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "一方面，通过前期积累与项目建设，体系中心馆馆藏文献印本文献量已达77万余卷（册），包括近代地质学启蒙时期以来近200年的国内外地学文献，世界各国地质图件1万余套，拥有27个大型文献数据库2]，累积数据量达102TB，基本形成了以地学、全文数据库为主，综合学科、文摘型参考数据库为辅，中外文电子期刊、学位论文、电子图书兼具且重点突出、布局合理的电子资源结构，极大地方便了地质学科领域的用户使用资源。另一方面，体系参与单位，通过联合联机编目、共建共享协议和馆际互借，利用了体系内其他单位的资源，扩大了本单位的资源服务量，体系内各单位资源保障能力得到明显加强。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "体系中心馆",
+          "normalized_name": "体系中心馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "体系中心馆馆藏文献印本文献量已达77万余卷（册）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能指代具体图书馆，但名称不完整"
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "近代地质学启蒙时期",
+          "normalized_name": "近代地质学启蒙时期",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "包括近代地质学启蒙时期以来近200年的国内外地学文献",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "时间范围模糊，但作为学术史阶段可识别"
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "世界各国地质图件",
+          "normalized_name": "世界各国地质图件",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "世界各国地质图件1万余套",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为数据集类型，但非具体命名"
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "27个大型文献数据库",
+          "normalized_name": "27个大型文献数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "拥有27个大型文献数据库",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "未列出具体数据库名称，但数量明确"
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "地学",
+          "normalized_name": "地学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基本形成了以地学、全文数据库为主",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e6",
+          "mention": "全文数据库",
+          "normalized_name": "全文数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以地学、全文数据库为主",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为数据库类型，非具体名称"
+        },
+        {
+          "entity_id": "6_e7",
+          "mention": "综合学科",
+          "normalized_name": "综合学科",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "综合学科、文摘型参考数据库为辅",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e8",
+          "mention": "文摘型参考数据库",
+          "normalized_name": "文摘型参考数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "综合学科、文摘型参考数据库为辅",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为数据库类型，非具体名称"
+        },
+        {
+          "entity_id": "6_e9",
+          "mention": "中外文电子期刊",
+          "normalized_name": "中外文电子期刊",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "中外文电子期刊、学位论文、电子图书兼具",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为文献类型，非具体期刊名称"
+        },
+        {
+          "entity_id": "6_e10",
+          "mention": "学位论文",
+          "normalized_name": "学位论文",
+          "candidate_l3": "thesis",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "中外文电子期刊、学位论文、电子图书兼具",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为文献类型，非具体论文名称"
+        },
+        {
+          "entity_id": "6_e11",
+          "mention": "电子图书",
+          "normalized_name": "电子图书",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "中外文电子期刊、学位论文、电子图书兼具",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为文献类型，非具体图书名称"
+        },
+        {
+          "entity_id": "6_e12",
+          "mention": "地质学科",
+          "normalized_name": "地质学科",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "极大地方便了地质学科领域的用户使用资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e13",
+          "mention": "体系参与单位",
+          "normalized_name": "体系参与单位",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "体系参与单位，通过联合联机编目、共建共享协议和馆际互借",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "指代具体参与机构，但未列出名称"
+        },
+        {
+          "entity_id": "6_e14",
+          "mention": "联合联机编目",
+          "normalized_name": "联合联机编目",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过联合联机编目、共建共享协议和馆际互借",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e15",
+          "mention": "共建共享协议",
+          "normalized_name": "共建共享协议",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过联合联机编目、共建共享协议和馆际互借",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e16",
+          "mention": "馆际互借",
+          "normalized_name": "馆际互借",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过联合联机编目、共建共享协议和馆际互借",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "在不断提升网络带宽、存储和服务器等设施建设水平的基础上，通过成熟信息技术在数字图书馆建设中的应用，项目建设了可容纳亿级元数据的文献资源集中仓储，并构建了一套方便用户进行主题词检索的一站式文献搜索引擎。 该搜索引擎能在千万级别的元数据记录条目中以毫秒级的速度检索出命中的结果，并进行进一步的条件筛选。 项目建设的门户网站、能实现随时随地获取文献信息的移动服务系统和远程访问系统等服务系统，使地学文献信息得到了极大程度的揭示和利用。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "数字图书馆",
+          "normalized_name": "数字图书馆",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过成熟信息技术在数字图书馆建设中的应用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "亿级元数据的文献资源集中仓储",
+          "normalized_name": "亿级元数据的文献资源集中仓储",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "项目建设了可容纳亿级元数据的文献资源集中仓储",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "一站式文献搜索引擎",
+          "normalized_name": "一站式文献搜索引擎",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "构建了一套方便用户进行主题词检索的一站式文献搜索引擎",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "门户网站",
+          "normalized_name": "门户网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "项目建设的门户网站",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指具体项目门户，但名称未给出"
+        },
+        {
+          "entity_id": "7_e5",
+          "mention": "移动服务系统",
+          "normalized_name": "移动服务系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "能实现随时随地获取文献信息的移动服务系统",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指具体系统，但名称未给出"
+        },
+        {
+          "entity_id": "7_e6",
+          "mention": "远程访问系统",
+          "normalized_name": "远程访问系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "远程访问系统等服务系统",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指具体系统，但名称未给出"
+        },
+        {
+          "entity_id": "7_e7",
+          "mention": "地学文献信息",
+          "normalized_name": "地学文献信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使地学文献信息得到了极大程度的揭示和利用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "门户网站还展示了109片整装勘查区地学文献专题产品、地学科普、情报等专题产品，提供在线信息服务等，依赖于上述建设，体系中心馆2014年读者到馆访问达到21万人次； 互联网对外服务能力持续增强，服务效果明显改善。 2014年，地质图书馆门户网站IP访问量达到52万次，门户网站页面访问量突破271万次，文献下载量高达424万篇。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "109片整装勘查区地学文献专题产品",
+          "normalized_name": "109片整装勘查区地学文献专题产品",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "门户网站还展示了109片整装勘查区地学文献专题产品",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "地学科普",
+          "normalized_name": "地学科普",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "地学科普、情报等专题产品",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "体系中心馆",
+          "normalized_name": "体系中心馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "体系中心馆2014年读者到馆访问达到21万人次",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指地质图书馆体系中的中心馆"
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "地质图书馆",
+          "normalized_name": "地质图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "2014年，地质图书馆门户网站IP访问量达到52万次",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e5",
+          "mention": "地质图书馆门户网站",
+          "normalized_name": "地质图书馆门户网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "地质图书馆门户网站IP访问量达到52万次",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "2014年，地质图书馆门户网站IP访问量达到52万次，门户网站页面访问量突破271万次，文献下载量高达424万篇。 数据显示，人们对集成了地学文献信息服务人口的地质图书馆及其门户网站的关注度和依赖度不断增强，社会效益日渐明显。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "地质图书馆",
+          "normalized_name": "地质图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "地质图书馆门户网站IP访问量达到52万次",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "地质图书馆门户网站",
+          "normalized_name": "地质图书馆门户网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "地质图书馆门户网站IP访问量达到52万次",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "地学文献信息服务人口",
+          "normalized_name": "地学文献信息服务人口",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "集成了地学文献信息服务人口的地质图书馆及其门户网站",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为专有名词或系统模块名称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "国家地学文献共建共享服务体系在地学文献资源共建共享、资源利用推广等方面做了一些工作，但与共建共享单位的沟通交流还不够深入，许多协议只停留在书面上，真正实施的内容较少。此外，体系建设的宣传还不够全面、深入，很多建设内容没有得到大力推广和有效利用。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "国家地学文献共建共享服务体系",
+          "normalized_name": "国家地学文献共建共享服务体系",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "国家地学文献共建共享服务体系在地学文献资源共建共享、资源利用推广等方面做了一些工作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "地学文献资源",
+          "normalized_name": "地学文献资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在地学文献资源共建共享、资源利用推广等方面做了一些工作",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为database"
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "在地学文献信息服务方面，体系一直致力于资源建设的基础性工作，在文献信息服务载体、方式、内容、对象等方面做过很多尝试与探讨，也取得了一些效果，但大多仍停留在目录检索、集成层面，更深层次的内容服务开展得较少。随着地质工作的不断深人，体系建设者迫切需要开发知识化、个性化、专业化的高针对性地学文献信息服务产品，提升服务能力和水平。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "地学文献信息服务",
+          "normalized_name": "地学文献信息服务",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在地学文献信息服务方面，体系一直致力于资源建设的基础性工作",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指代具体机构或服务类型，但原文未给出明确机构名称，暂按服务类组织处理"
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "目录检索",
+          "normalized_name": "目录检索",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大多仍停留在目录检索、集成层面",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "集成",
+          "normalized_name": "集成",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大多仍停留在目录检索、集成层面",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'集成'作为具体技术手段，非泛化动词"
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "地质工作",
+          "normalized_name": "地质工作",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着地质工作的不断深人",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "国家地学文献共享服务体系取得了一定的成绩，但共建共享服务深度和广度仍不足，一方面共建共享的组织机构仍需继续扩充，特别是需要增强与中国科学院相关研究院所、行业单位的共建，另一方面，共建共享服务的内容也需进一步深化，机制需要进一步完善。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "国家地学文献共享服务体系",
+          "normalized_name": "国家地学文献共享服务体系",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "国家地学文献共享服务体系取得了一定的成绩",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "中国科学院",
+          "normalized_name": "中国科学院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "需要增强与中国科学院相关研究院所、行业单位的共建",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "应加强体系建设的机制研究，正确理解资源拥有和获取的关系，吸引更多单位积极参与，提高参与单位的责任意识，深化地学文献信息资源共建共享内容，实现体系内共赢的局面。 根据高校共享服务体系建设经验，行政主管部门牵头并指导体系建设是取得成效的关键环节[3]。地学文献共享服务在现有通过技术和协议形成的体系架构中，还需要得到行政主管部门的强势介人，对体系建设、运行的各环节给于指导。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "地学文献信息资源共建共享",
+          "normalized_name": "地学文献信息资源共建共享",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "深化地学文献信息资源共建共享内容",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "高校共享服务体系建设经验",
+          "normalized_name": "高校共享服务体系建设经验",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "根据高校共享服务体系建设经验",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "经验本身为抽象实体，但此处作为具体经验引用"
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "行政主管部门",
+          "normalized_name": "行政主管部门",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "行政主管部门牵头并指导体系建设是取得成效的关键环节",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "未指明具体部门名称，但上下文暗示为具体机构（如教育部、自然资源部等）"
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "地学文献共享服务",
+          "normalized_name": "地学文献共享服务",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "地学文献共享服务在现有通过技术和协议形成的体系架构中",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "要保障共享体系能够长期高效地运行，一方面需要一批信息素质高且掌握专门技术的复合型人才，以了解用户的需求，并能有效地利用先进的技术手段对信息资源进行开发和传递[4； 另一方面还需要设立专职人员，目前国家地学文献共享服务体系的日常工作大多数由参与单位人员兼职完成，在服务能力和质量上还有许多不足。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "国家地学文献共享服务体系",
+          "normalized_name": "国家地学文献共享服务体系",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "目前国家地学文献共享服务体系的日常工作大多数由参与单位人员兼职完成",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "另一方面还需要设立专职人员，目前国家地学文献共享服务体系的日常工作大多数由参与单位人员兼职完成，在服务能力和质量上还有许多不足。 因此要进一步推进体系的工作向前发展，就需要不断加强人才队伍建设，除要考虑学科背景和学历外，还要考虑人才的统筹建设、人才的知识能力水平布局建设和人才队伍的可持续发展建设等[5]。人才队伍建设到位，体系建设以及体系所能提供的服务产品研究与开发才能有保障，才能实现体系建设的终极目标，满足各类用户的需求。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "国家地学文献共享服务体系",
+          "normalized_name": "国家地学文献共享服务体系",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "目前国家地学文献共享服务体系的日常工作大多数由参与单位人员兼职完成",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,604 @@
+{
+  "base_name": "reviewed_full_9537",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "为更好地适应大数据环境，城建档案馆必须加快信息化建设。在掌握了海量数据的前提下要尽快实现档案信息数字化，从而为大数据下档案编研工作打好基础。 首先，要建立健全档案信息管理系统。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "城建档案馆",
+          "normalized_name": "城建档案馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "城建档案馆必须加快信息化建设",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "档案信息管理系统",
+          "normalized_name": "档案信息管理系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "要建立健全档案信息管理系统",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "其次，进行数字化加工，尽快实现对存量档案数字化的这一目标。 这是当前一段时期内城建档案工作的重点任务。 具体来讲就是要将实物档案转化为数码照片，形成数字资源；",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "存量档案数字化",
+          "normalized_name": "存量档案数字化",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "尽快实现对存量档案数字化的这一目标",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "城建档案工作",
+          "normalized_name": "城建档案工作",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当前一段时期内城建档案工作的重点任务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "数码照片",
+          "normalized_name": "数码照片",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将实物档案转化为数码照片",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "数字资源",
+          "normalized_name": "数字资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "形成数字资源",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "要特别关注一些重大活动，除了收集有关纸质档案，还要收集好照片、音频、视频等档案资源。 然后，将其及时转化为图文一体化的电子资源，为后续的档案编研工作奠定基础。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "纸质档案",
+          "normalized_name": "纸质档案",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "收集有关纸质档案",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为档案类型概念，具有独立学术命名"
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "照片",
+          "normalized_name": "照片",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "收集好照片、音频、视频等档案资源",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为档案资源类型，具有独立学术命名"
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "音频",
+          "normalized_name": "音频",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "收集好照片、音频、视频等档案资源",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为档案资源类型，具有独立学术命名"
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "视频",
+          "normalized_name": "视频",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "收集好照片、音频、视频等档案资源",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为档案资源类型，具有独立学术命名"
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "图文一体化的电子资源",
+          "normalized_name": "图文一体化的电子资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将其及时转化为图文一体化的电子资源",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为档案数字化概念，具有独立学术命名"
+        },
+        {
+          "entity_id": "3_e6",
+          "mention": "档案编研工作",
+          "normalized_name": "档案编研工作",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为后续的档案编研工作奠定基础",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为档案学领域核心概念，具有独立学术命名"
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "总之，大数据时代并不仅仅是技术层面的创新，更代表着一种思维的革命。大数据时代的到来给城建档案编研工作带来了极大的挑战与难得的发展机遇。 我们城建档案工作者要充分认识到这一点，创新思维，坚持科学规划、合理部署、积极建设的原则，提高档案编研思想与水平。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "大数据时代",
+          "normalized_name": "大数据时代",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大数据时代并不仅仅是技术层面的创新，更代表着一种思维的革命",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为trend"
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "城建档案编研工作",
+          "normalized_name": "城建档案编研工作",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大数据时代的到来给城建档案编研工作带来了极大的挑战与难得的发展机遇",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "若视为具体工作领域，也可归为phenomenon"
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "对于信息时代而言，其显著特征就是信息数量巨大，增长速度较快。目前，档案规模增长速度呈现逐年递增的状态，档案发展进入大数据阶段，这也为档案编研工作提供了海量的资源。立足内容进行分析，编研工作得以开展的前提是具有丰富的馆藏资源。随着馆藏资源的成倍增加，拓宽了编研工作人员的眼界，选择范围扩大，可用素材增加，题材多样，内容详实。其次，从形式方面进行探讨，表现形式的多样性是编研工作发展成果的体现。在大数据时代，其突出优势是数据形式呈现多元化，使得档案编研工作者获取了更加灵活的编排方式，形式不再受到限制，编研成果更具潜力和吸引力，传播范围不断扩大，最大化地发挥档案信息的自身价值。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "大数据阶段",
+          "normalized_name": "大数据阶段",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "档案发展进入大数据阶段",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "大数据时代",
+          "normalized_name": "大数据时代",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "在大数据时代",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "对于信息技术而言，其包含多种技术类型，促使档案编研工作具备了更加高效的技术支持，编研工作凸显多元化的优势。在数字处理技术的应用下，档案信息进行数字化处理，能够进行反复输出，编排方式更加灵活，达到迅速检索的目的，编研工作效率得以大幅提升，编研工作的劳动量被降低，编研工作者获得更多从事创造性劳动的时间，编研质量得以增强，层次化清晰；多媒体技术的特征是能够实现信息的整合性处理，也就是说，将文字、图像以及声音等进行综合处理，突破单一纸质载体出版模式的束缚，表现形式凸显多样化，满足人们对图文相结合阅读方式的需求，档案编研工作成果能够更好地满足用户需求，被使用者所接受和认可，最大化地服务社会。网络和通信技术促使互动性增强，达到编研和传播的联合化，实现了对传统档案编研工作限制的突破。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "数字处理技术",
+          "normalized_name": "数字处理技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在数字处理技术的应用下，档案信息进行数字化处理",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "多媒体技术",
+          "normalized_name": "多媒体技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "多媒体技术的特征是能够实现信息的整合性处理",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "网络和通信技术",
+          "normalized_name": "网络和通信技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "网络和通信技术促使互动性增强",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "编研成果的主要来源是一次和二次加工，很少包含较高水平、深层次化的研究成果。 正是这些情况的存在使得传统档案编研工作缺乏较为广阔的受众面，编研成果与社会需求不相适应，很难有效发挥档案信息的社会价值。在信息时代背景下，人们对信息的获取受到充分的尊重，同时，整个社会的信息意识增强，对档案信息的需求更具社会化与多元化的趋势，知识性增强，这在根本上与传统编研思想和观念相背离。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "传统档案编研工作",
+          "normalized_name": "传统档案编研工作",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使得传统档案编研工作缺乏较为广阔的受众面",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为subfield"
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "信息时代",
+          "normalized_name": "信息时代",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "在信息时代背景下",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "传统编研思想",
+          "normalized_name": "传统编研思想",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这在根本上与传统编研思想和观念相背离",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "在信息社会中，知识凸显价值，整个社会对知识和创新的追求呈现不可阻挡的趋势。档案编研工作具有创造性，需要对信息进行不断开发与凝集，与信息社会的需求相统一。编研成果是编研工作的最终表现，其质量水平对社会其自身价值的体现息息相关，受重视程度不容忽视。档案编研成果需要具有较为广泛的社会影响，对档案自身的价值进行全面、综合性的体现和升华，因此，需要高度重视编研成果的知识含量与知识水准。对于编研成果的检验，主要依靠社会各个领域人群对知识需求所形成的满足程度，满足度越高，编研成果水平也就越高。但是，鉴于档案编研工作在资金、人员等方面的不足，加之社会大众对知识关注和了解的差异，使得档案编研工作缺乏深入研究，编研的成果缺乏细致处理，精华较少。在编研工作的具体操作中，成本知识含量不高，甚至存在知识垃圾的现象，很难满足社会对高质量信息的需求，对档案工作的价值造成不良影响。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "档案编研工作",
+          "normalized_name": "档案编研工作",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "档案编研工作具有创造性，需要对信息进行不断开发与凝集",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能兼为subfield，但原文更强调操作程序"
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "编研成果",
+          "normalized_name": "编研成果",
+          "candidate_l3": "artifact",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "编研成果是编研工作的最终表现，其质量水平对社会其自身价值的体现息息相关",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称，但图情领域有具体指代，可视为具体制品"
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "知识垃圾",
+          "normalized_name": "知识垃圾",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "甚至存在知识垃圾的现象",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "信息时代，信息技术得以推广和应用，整个社会的信息意识增强，因此，需要档案编研工作者也要提升素质，其自身能力面临挑战。 首先，在信息发展时期，编研工作整个过程都需要信息技术的支持，因此，如果档案工作者不能及时、熟练地掌握新技术，编研工作效率很难得到保证，无法提升，严重影响编研成果的价值。其次，在信息社会中，社交网络异常发达，大量社会焦点和热点不断转换，人们能够通过多种方式和渠道获取信息，档案是原始资源，属于凭证，其自身价值无法比拟。但是，如果档案编译工作者缺乏信息意识，就无法正确认识人们对信息的需求和侧重，编译成果无法有效呈现档案价值。 最后，信息社会更加关注创新，新知识和理念不断出现，因此，档案编译工作者需要具备创新素质，保证与时俱进。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "档案编研工作者",
+          "normalized_name": "档案编研工作者",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "需要档案编研工作者也要提升素质",
+          "is_specific_entity": false,
+          "confidence": 0.3,
+          "uncertainty": "泛化身份类别词，不指称具体个人"
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "档案工作者",
+          "normalized_name": "档案工作者",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如果档案工作者不能及时、熟练地掌握新技术",
+          "is_specific_entity": false,
+          "confidence": 0.3,
+          "uncertainty": "泛化身份类别词，不指称具体个人"
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "档案编译工作者",
+          "normalized_name": "档案编译工作者",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如果档案编译工作者缺乏信息意识",
+          "is_specific_entity": false,
+          "confidence": 0.3,
+          "uncertainty": "泛化身份类别词，不指称具体个人"
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "社交网络",
+          "normalized_name": "社交网络",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社交网络异常发达",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e5",
+          "mention": "档案",
+          "normalized_name": "档案",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "档案是原始资源，属于凭证",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "档案资源整理的目标是进行合理、有效的使用。 档案资源编研的目标是满足整个社会对档案信息的使用需求，社会属性突出。由此可见，在档案资源以及编研工作的社会属性的影响下，档案编研工作也需要适应社会化的发展趋势。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "档案资源编研",
+          "normalized_name": "档案资源编研",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "档案资源编研的目标是满足整个社会对档案信息的使用需求",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为subfield"
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "档案编研工作",
+          "normalized_name": "档案编研工作",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "档案编研工作也需要适应社会化的发展趋势",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "与'档案资源编研'概念重叠，但原文分别出现"
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "对于联合编研，由代表性部门引导，相关部门积极配合，将编研力量进行整合与组织，拓宽渠道，采取多层次、全方位的编研工作方式。 这一编研方式与现代社会高度融合的特点相契合，是档案信息开发的重要形式，促使档案编译的主体范畴得到扩展，是发展社会化编研和信息资源社会共享的必然。 随着整个社会档案观念的增强，为联合编研提供了新的机遇。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "联合编研",
+          "normalized_name": "联合编研",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对于联合编研，由代表性部门引导，相关部门积极配合",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "档案信息开发",
+          "normalized_name": "档案信息开发",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "是档案信息开发的重要形式",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "社会化编研",
+          "normalized_name": "社会化编研",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "是发展社会化编研和信息资源社会共享的必然",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e4",
+          "mention": "信息资源社会共享",
+          "normalized_name": "信息资源社会共享",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "是发展社会化编研和信息资源社会共享的必然",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "在当前的档案专业中，存在较多综合信息管理系统，功能复杂，但是，针对的目标是档案的管理和应用，在档案编研功能方面较为薄弱，很多停留在文字编排方面，档案编研自动化程度有待提升。在信息处理技术的应用下，将其有效应用在档案编研工作中，为档案编研自动化水平的提升提供技术保障。 例如，应用智能搜索引擎技术，实现对数据资源的快速、高效地查找，实现对资源最为合理的应用。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "综合信息管理系统",
+          "normalized_name": "综合信息管理系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "存在较多综合信息管理系统",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "名称较泛，但图情领域放宽规则，有名称的系统应抽取"
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "智能搜索引擎技术",
+          "normalized_name": "智能搜索引擎技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "应用智能搜索引擎技术，实现对数据资源的快速、高效地查找",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "随着互联网技术的发展，档案编研成果与网络传播关系密切，推动了档案编研成果在传输领域的本质飞跃。 在互联网技术的应用下，档案各个部门能够促进编研成果的发布与传播，速度较快、效率较高、影响范围扩大，能够为使用者提供更加便利的环境，随时进行编研成果的查阅。在互联网技术的支持下，使得档案编研成果与使用者距离得以拉近，促使档案编研成果更好地服务于不同的专业和层次，档案编研成果真正惠及群众。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "互联网技术",
+          "normalized_name": "互联网技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着互联网技术的发展",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "档案编研成果",
+          "normalized_name": "档案编研成果",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "档案编研成果与网络传播关系密切",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可视为图情领域具体概念"
+        }
+      ]
+    }
+  ]
+}

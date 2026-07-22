@@ -1,0 +1,4632 @@
+{
+  "base_name": "reviewed_full_8563",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "引用内容分析源于引文分析，通过分析引用锚点的上下文文本信息研究被引文献与施引文献间的知识引用关系，相对于以题录信息为主体的引文分析，引用内容分析不再依赖传统计量指标进行测度，而是通过对引用上下文文本进行语义分析,识别被引文献的学术贡献点被施引文献的利用程度或其对施引文献的影响程度,在揭示文献间知识关系方面更为直接和明确,在论文评价、学术推荐等多种应用上潜力巨大,也为当前学术评价从“量评\"向\"质评”方向发展提供了新的研究思路。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "引文分析",
+          "normalized_name": "引文分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用内容分析源于引文分析，通过分析引用锚点的上下文文本信息研究被引文献与施引文献间的知识引用关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "引用内容分析",
+          "normalized_name": "引用内容分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用内容分析源于引文分析，通过分析引用锚点的上下文文本信息研究被引文献与施引文献间的知识引用关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "引用锚点",
+          "normalized_name": "引用锚点",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过分析引用锚点的上下文文本信息研究被引文献与施引文献间的知识引用关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "被引文献",
+          "normalized_name": "被引文献",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究被引文献与施引文献间的知识引用关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e5",
+          "mention": "施引文献",
+          "normalized_name": "施引文献",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究被引文献与施引文献间的知识引用关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e6",
+          "mention": "知识引用关系",
+          "normalized_name": "知识引用关系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究被引文献与施引文献间的知识引用关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e7",
+          "mention": "传统计量指标",
+          "normalized_name": "传统计量指标",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "相对于以题录信息为主体的引文分析，引用内容分析不再依赖传统计量指标进行测度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e8",
+          "mention": "学术贡献点",
+          "normalized_name": "学术贡献点",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "识别被引文献的学术贡献点被施引文献的利用程度或其对施引文献的影响程度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e9",
+          "mention": "论文评价",
+          "normalized_name": "论文评价",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在论文评价、学术推荐等多种应用上潜力巨大",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e10",
+          "mention": "学术推荐",
+          "normalized_name": "学术推荐",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在论文评价、学术推荐等多种应用上潜力巨大",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "目前,引用内容分析在概念上还没有统一的定义，已有多位研究者根据自身研究目的提出了相近的概念，如表1所示。Small将\"引文语境\"定义为施引文献文本中提及参考文献的段落或文本片段，“引文语境分析\"则指对引文语境进行分析; 类似地，祝青松等[2提出\"引文上下文\"和\"引文内容分析\"两个概念，前者与\"引文语境\"概念类似,后者则与\"引文语境分析\"相对应;",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "Small",
+          "normalized_name": "Small",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Small将\"引文语境\"定义为施引文献文本中提及参考文献的段落或文本片段",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "引文语境",
+          "normalized_name": "引文语境",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Small将\"引文语境\"定义为施引文献文本中提及参考文献的段落或文本片段",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "引文语境分析",
+          "normalized_name": "引文语境分析",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "“引文语境分析\"则指对引文语境进行分析",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "祝青松",
+          "normalized_name": "祝青松",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "祝青松等[2提出\"引文上下文\"和\"引文内容分析\"两个概念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e5",
+          "mention": "引文上下文",
+          "normalized_name": "引文上下文",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "祝青松等[2提出\"引文上下文\"和\"引文内容分析\"两个概念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e6",
+          "mention": "引文内容分析",
+          "normalized_name": "引文内容分析",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "祝青松等[2提出\"引文上下文\"和\"引文内容分析\"两个概念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "同一时期,胡志刚[5提出类似的\"全文引文分析\"概念。 刘盛博等[将\"引用内容\"定义为表征施引文献引用参考文献的文本内容,将\"引用内容分析\"表述为对引用内容的位置分布和主题的一系列分析，并采用5W1H方法系统探讨引用内容分析的研究范畴[7]； 刘浏等[8在综述中同样采用了“引用内容\"和\"引用内容分析\"这两个概念。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "胡志刚",
+          "normalized_name": "胡志刚",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "胡志刚[5提出类似的\"全文引文分析\"概念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "全文引文分析",
+          "normalized_name": "全文引文分析",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "胡志刚[5提出类似的\"全文引文分析\"概念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "刘盛博",
+          "normalized_name": "刘盛博",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "刘盛博等[将\"引用内容\"定义为表征施引文献引用参考文献的文本内容",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "引用内容",
+          "normalized_name": "引用内容",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "刘盛博等[将\"引用内容\"定义为表征施引文献引用参考文献的文本内容",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "引用内容分析",
+          "normalized_name": "引用内容分析",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将\"引用内容分析\"表述为对引用内容的位置分布和主题的一系列分析",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e6",
+          "mention": "5W1H方法",
+          "normalized_name": "5W1H方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用5W1H方法系统探讨引用内容分析的研究范畴",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e7",
+          "mention": "刘浏",
+          "normalized_name": "刘浏",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "刘浏等[8在综述中同样采用了\"引用内容\"和\"引用内容分析\"这两个概念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "本文认为，“引文上下文”“引用内容”“引文内容”“全文本引文分析\"等概念在本质上是一致的，均表示施引文献全文中引用标记周围的句子，大多以全文内容为数据源开展针对性分析。但从区分引文分析的角度，引用内容分析更便于普通用户的理解。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "引文上下文",
+          "normalized_name": "引文上下文",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "“引文上下文”“引用内容”“引文内容”“全文本引文分析\"等概念在本质上是一致的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "引用内容",
+          "normalized_name": "引用内容",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "“引文上下文”“引用内容”“引文内容”“全文本引文分析\"等概念在本质上是一致的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "引文内容",
+          "normalized_name": "引文内容",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "“引文上下文”“引用内容”“引文内容”“全文本引文分析\"等概念在本质上是一致的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "全文本引文分析",
+          "normalized_name": "全文本引文分析",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "“引文上下文”“引用内容”“引文内容”“全文本引文分析\"等概念在本质上是一致的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "引用内容分析",
+          "normalized_name": "引用内容分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用内容分析更便于普通用户的理解",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "与常规的引文分析相比[9-10],引用内容分析无论在数据对象还是在分析方法上均有明显的不同，如表2所示。 在数据源上，引文分析主要采用论文元数据,常以篇为单元进行处理,而引用内容分析通常利用全文开展句子级或篇章级分析；",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "引文分析",
+          "normalized_name": "引文分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与常规的引文分析相比",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "引用内容分析",
+          "normalized_name": "引用内容分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用内容分析无论在数据对象还是在分析方法上均有明显的不同",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "论文元数据",
+          "normalized_name": "论文元数据",
+          "candidate_l3": "metadata_schema",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "引文分析主要采用论文元数据",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "根据研究目的和应用目标的不同，现有面向引用内容的研究主要可归纳为引用动机识别、知识流动分析、引用内容学术评价分析以及学术推荐分析等研究方向。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "引用动机识别",
+          "normalized_name": "引用动机识别",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现有面向引用内容的研究主要可归纳为引用动机识别、知识流动分析、引用内容学术评价分析以及学术推荐分析等研究方向",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "知识流动分析",
+          "normalized_name": "知识流动分析",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现有面向引用内容的研究主要可归纳为引用动机识别、知识流动分析、引用内容学术评价分析以及学术推荐分析等研究方向",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "引用内容学术评价分析",
+          "normalized_name": "引用内容学术评价分析",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现有面向引用内容的研究主要可归纳为引用动机识别、知识流动分析、引用内容学术评价分析以及学术推荐分析等研究方向",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "学术推荐分析",
+          "normalized_name": "学术推荐分析",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现有面向引用内容的研究主要可归纳为引用动机识别、知识流动分析、引用内容学术评价分析以及学术推荐分析等研究方向",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "与之相似的表述还有引文功能、引用功能。 引用动机可以为引文的学术评价提供参考，还可以结合引用内容特征，用于发现学科领域之间的引用规律。目前关于引用动机的分类还没有形成统一标准,主要的分类形式如表3所示。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "引文功能",
+          "normalized_name": "引文功能",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与之相似的表述还有引文功能、引用功能",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "引用功能",
+          "normalized_name": "引用功能",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与之相似的表述还有引文功能、引用功能",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "引用动机",
+          "normalized_name": "引用动机",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用动机可以为引文的学术评价提供参考",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "表3",
+          "normalized_name": "表3",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Artifact",
+            "Abstract"
+          ],
+          "evidence": "主要的分类形式如表3所示",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "表3作为分类呈现的载体，可视为Artifact中的信息制品，也可视为Abstract中的分类方案"
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "知识流动指在特定环境中，知识在有一定需求的主体之间流动的过程[23]。 引文网络承载了大量学术文献间的引用与被引用关系,其中,引用关系中蕴含了知识\"继承\"和\"发展\"的特征。 在引文网络中，知识节点代表一篇学术文献,表示知识流动的主体;",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "引文网络",
+          "normalized_name": "引文网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引文网络承载了大量学术文献间的引用与被引用关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "知识流动",
+          "normalized_name": "知识流动",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识流动指在特定环境中，知识在有一定需求的主体之间流动的过程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "基于引用内容的知识流动除了关注宏观层面的计量特征外,还增加了引用位置、引用动机、知识单元等特征，从更深层次揭示引用内容蕴含的语义信息以及学术文献的语义关联。 Chu等[24]将引用位置划分为引言、文献综述、研究方法、结果、讨论/总结5类,建立章节级别的引文网络,通过计算引用内容的相似度来评估文献之间的共被引关系，以探索生物信息领域知识流动的模式。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "Chu等[24]",
+          "normalized_name": "Chu等[24]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Chu等[24]将引用位置划分为引言、文献综述、研究方法、结果、讨论/总结5类",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "引用位置",
+          "normalized_name": "引用位置",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "增加了引用位置、引用动机、知识单元等特征",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "引用动机",
+          "normalized_name": "引用动机",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "增加了引用位置、引用动机、知识单元等特征",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "知识单元",
+          "normalized_name": "知识单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "增加了引用位置、引用动机、知识单元等特征",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "引言",
+          "normalized_name": "引言",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将引用位置划分为引言、文献综述、研究方法、结果、讨论/总结5类",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为引用位置分类的类别名称，具有特定学术命名"
+        },
+        {
+          "entity_id": "11_e6",
+          "mention": "文献综述",
+          "normalized_name": "文献综述",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将引用位置划分为引言、文献综述、研究方法、结果、讨论/总结5类",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为引用位置分类的类别名称"
+        },
+        {
+          "entity_id": "11_e7",
+          "mention": "研究方法",
+          "normalized_name": "研究方法",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将引用位置划分为引言、文献综述、研究方法、结果、讨论/总结5类",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为引用位置分类的类别名称"
+        },
+        {
+          "entity_id": "11_e8",
+          "mention": "结果",
+          "normalized_name": "结果",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将引用位置划分为引言、文献综述、研究方法、结果、讨论/总结5类",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为引用位置分类的类别名称"
+        },
+        {
+          "entity_id": "11_e9",
+          "mention": "讨论/总结",
+          "normalized_name": "讨论/总结",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将引用位置划分为引言、文献综述、研究方法、结果、讨论/总结5类",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为引用位置分类的类别名称"
+        },
+        {
+          "entity_id": "11_e10",
+          "mention": "生物信息领域",
+          "normalized_name": "生物信息领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以探索生物信息领域知识流动的模式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "目前国内外基于引用内容的知识流动相关研究较少，主要是因为引用内容的获取、引用特征的识别以及知识点的抽取均有一定难度。随着知识挖掘技术的发展，基于引用内容的知识流动研究将受到更多关注。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "引用内容",
+          "normalized_name": "引用内容",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于引用内容的知识流动相关研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "知识流动",
+          "normalized_name": "知识流动",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于引用内容的知识流动相关研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "引用特征的识别",
+          "normalized_name": "引用特征的识别",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用特征的识别以及知识点的抽取均有一定难度",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为method或technique"
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "知识点的抽取",
+          "normalized_name": "知识点的抽取",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用特征的识别以及知识点的抽取均有一定难度",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为method或technique"
+        },
+        {
+          "entity_id": "12_e5",
+          "mention": "知识挖掘技术",
+          "normalized_name": "知识挖掘技术",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着知识挖掘技术的发展",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "科技成果评价是个人或团体、机构、期刊以及国家等科研实体评价活动的基础，包括定量和定性分析两类方法。 定量评价将所有被引文献等同处理，忽略了引用动机和引用情感等更能体现文献内在价值的深层次信息，其科学性和合理性一直存在争议[29]。 定性评价的主要方法是同行评议。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "定量评价",
+          "normalized_name": "定量评价",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "定量评价将所有被引文献等同处理",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "定性评价",
+          "normalized_name": "定性评价",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "定性评价的主要方法是同行评议",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "同行评议",
+          "normalized_name": "同行评议",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "定性评价的主要方法是同行评议",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "定性评价的主要方法是同行评议。 本质上，作者在文献中的每次施引行为,都可视为一次相对客观和专业的同行评议[30],将引用内容分析引入学术评价中，可以减少定量评价中的模糊性,从引用文本语义的角度分析施引文献作者对被引文献学术贡献的评价。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "同行评议",
+          "normalized_name": "同行评议",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "定性评价的主要方法是同行评议",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "引用内容分析",
+          "normalized_name": "引用内容分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将引用内容分析引入学术评价中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "基于引用内容的评价通常关注文内提及频次、引用位置、引用动机、引用情感、评价内容分类等引用特征。Sombatsompop等[31]对4个不同学科研究人员的研究表现进行定量和定性评估,在定性评估中根据引用位置计算位置影响因子,并通过引用内容确定引文的显著性水平。Wan等[32]将引用的重要性定义为引用强度,采用共现次数、所在章节、时间间隔、引文句子长度、引用出现的平均密度、是否自引6个特征预测引用强度,通过引用强度的求和计算单篇论文的学术价值。刘盛博等[33]等将引用内容性质分为正向、负向和中性三类,对文章进行引用内容性质评价; 随后,该团队进一步将中性引用划分为背景介绍、理论基础和实验基础三类,对诺贝尔奖获得者的论文的影响力进行分析，发现通过基于引用内容的影响力分析，可以提供一篇论文被引用的多方面原因[34]。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "Sombatsompop等[31]",
+          "normalized_name": "Sombatsompop等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Sombatsompop等[31]对4个不同学科研究人员的研究表现进行定量和定性评估",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "Wan等[32]",
+          "normalized_name": "Wan等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Wan等[32]将引用的重要性定义为引用强度",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "刘盛博等[33]",
+          "normalized_name": "刘盛博等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "刘盛博等[33]等将引用内容性质分为正向、负向和中性三类",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "引用强度",
+          "normalized_name": "引用强度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Wan等[32]将引用的重要性定义为引用强度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e5",
+          "mention": "共现次数",
+          "normalized_name": "共现次数",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用共现次数、所在章节、时间间隔、引文句子长度、引用出现的平均密度、是否自引6个特征预测引用强度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e6",
+          "mention": "所在章节",
+          "normalized_name": "所在章节",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用共现次数、所在章节、时间间隔、引文句子长度、引用出现的平均密度、是否自引6个特征预测引用强度",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e7",
+          "mention": "时间间隔",
+          "normalized_name": "时间间隔",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用共现次数、所在章节、时间间隔、引文句子长度、引用出现的平均密度、是否自引6个特征预测引用强度",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e8",
+          "mention": "引文句子长度",
+          "normalized_name": "引文句子长度",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用共现次数、所在章节、时间间隔、引文句子长度、引用出现的平均密度、是否自引6个特征预测引用强度",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e9",
+          "mention": "引用出现的平均密度",
+          "normalized_name": "引用出现的平均密度",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用共现次数、所在章节、时间间隔、引文句子长度、引用出现的平均密度、是否自引6个特征预测引用强度",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e10",
+          "mention": "是否自引",
+          "normalized_name": "是否自引",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用共现次数、所在章节、时间间隔、引文句子长度、引用出现的平均密度、是否自引6个特征预测引用强度",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e11",
+          "mention": "诺贝尔奖获得者",
+          "normalized_name": "诺贝尔奖获得者",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对诺贝尔奖获得者的论文的影响力进行分析",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "泛称，但指代具体群体"
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "随后,该团队进一步将中性引用划分为背景介绍、理论基础和实验基础三类,对诺贝尔奖获得者的论文的影响力进行分析，发现通过基于引用内容的影响力分析，可以提供一篇论文被引用的多方面原因[34]。 Le等[21]认为引用句可以为被引文献的学术贡献评价提供客观证据,根据贡献类型的不同将引用句分为突破性、重大改进/解决关键问题、创新性、应用性等类别,实现了同行评价证据和文献学术贡献点的识别。Zhu等[35]将论文在施引文献中的文内引用频次的平方和用于测度论文的影响力。Ollagnier等[36结合被引文献在施引文献中的引用频次和引用粒度要素设计了中心性指标,用于测度被引文献对施引文献的贡献大小。姜霖等[37将引用行为分为综述性引用和情感性引用,并通过情感引用中的语义单元进行情感的量化,用情感值衡量单篇文献的学术影响力。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "Le等[21]",
+          "normalized_name": "Le等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Le等[21]认为引用句可以为被引文献的学术贡献评价提供客观证据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "Zhu等[35]",
+          "normalized_name": "Zhu等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Zhu等[35]将论文在施引文献中的文内引用频次的平方和用于测度论文的影响力",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "Ollagnier等[36]",
+          "normalized_name": "Ollagnier等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Ollagnier等[36结合被引文献在施引文献中的引用频次和引用粒度要素设计了中心性指标",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e4",
+          "mention": "姜霖等[37]",
+          "normalized_name": "姜霖等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "姜霖等[37将引用行为分为综述性引用和情感性引用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e5",
+          "mention": "中性引用",
+          "normalized_name": "中性引用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "该团队进一步将中性引用划分为背景介绍、理论基础和实验基础三类",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e6",
+          "mention": "背景介绍",
+          "normalized_name": "背景介绍",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将中性引用划分为背景介绍、理论基础和实验基础三类",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为引用分类标签"
+        },
+        {
+          "entity_id": "16_e7",
+          "mention": "理论基础",
+          "normalized_name": "理论基础",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将中性引用划分为背景介绍、理论基础和实验基础三类",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为引用分类标签"
+        },
+        {
+          "entity_id": "16_e8",
+          "mention": "实验基础",
+          "normalized_name": "实验基础",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将中性引用划分为背景介绍、理论基础和实验基础三类",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为引用分类标签"
+        },
+        {
+          "entity_id": "16_e9",
+          "mention": "诺贝尔奖获得者",
+          "normalized_name": "诺贝尔奖获得者",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对诺贝尔奖获得者的论文的影响力进行分析",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "群体指称，但具有唯一身份标识"
+        },
+        {
+          "entity_id": "16_e10",
+          "mention": "引用句",
+          "normalized_name": "引用句",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Le等[21]认为引用句可以为被引文献的学术贡献评价提供客观证据",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e11",
+          "mention": "突破性",
+          "normalized_name": "突破性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将引用句分为突破性、重大改进/解决关键问题、创新性、应用性等类别",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为引用句分类标签"
+        },
+        {
+          "entity_id": "16_e12",
+          "mention": "重大改进/解决关键问题",
+          "normalized_name": "重大改进/解决关键问题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将引用句分为突破性、重大改进/解决关键问题、创新性、应用性等类别",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为引用句分类标签"
+        },
+        {
+          "entity_id": "16_e13",
+          "mention": "创新性",
+          "normalized_name": "创新性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将引用句分为突破性、重大改进/解决关键问题、创新性、应用性等类别",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为引用句分类标签"
+        },
+        {
+          "entity_id": "16_e14",
+          "mention": "应用性",
+          "normalized_name": "应用性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将引用句分为突破性、重大改进/解决关键问题、创新性、应用性等类别",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为引用句分类标签"
+        },
+        {
+          "entity_id": "16_e15",
+          "mention": "文内引用频次",
+          "normalized_name": "文内引用频次",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Zhu等[35]将论文在施引文献中的文内引用频次的平方和用于测度论文的影响力",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e16",
+          "mention": "中心性指标",
+          "normalized_name": "中心性指标",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Ollagnier等[36结合被引文献在施引文献中的引用频次和引用粒度要素设计了中心性指标",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e17",
+          "mention": "引用粒度",
+          "normalized_name": "引用粒度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "结合被引文献在施引文献中的引用频次和引用粒度要素设计了中心性指标",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e18",
+          "mention": "综述性引用",
+          "normalized_name": "综述性引用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "姜霖等[37将引用行为分为综述性引用和情感性引用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e19",
+          "mention": "情感性引用",
+          "normalized_name": "情感性引用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "姜霖等[37将引用行为分为综述性引用和情感性引用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e20",
+          "mention": "情感值",
+          "normalized_name": "情感值",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过情感引用中的语义单元进行情感的量化,用情感值衡量单篇文献的学术影响力",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "现有基于引用内容的评价方法能从不同角度反映被引文献对施引文献的学术贡献程度，但这些研究中涉及的提及频次、引用位置、引文跨度等特征的获取以及语义分析技术有一定难度,因此目前均处于小规模的尝试阶段,大规模应用仍具有挑战性。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "引用内容",
+          "normalized_name": "引用内容",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于引用内容的评价方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "提及频次",
+          "normalized_name": "提及频次",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提及频次、引用位置、引文跨度等特征",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "引用位置",
+          "normalized_name": "引用位置",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提及频次、引用位置、引文跨度等特征",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "引文跨度",
+          "normalized_name": "引文跨度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提及频次、引用位置、引文跨度等特征",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e5",
+          "mention": "语义分析技术",
+          "normalized_name": "语义分析技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "语义分析技术有一定难度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "论文作者通常会引用与自身研究领域最相关的文献。 因此,引用关系天然地可以在一定程度上体现论文的主题相关性、作者研究领域的重叠，与论文推荐、专家推荐等推荐任务具有非常高的契合度。在推荐分析中引入引用内容分析,能够提高推荐的内容相关性。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "引用关系",
+          "normalized_name": "引用关系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用关系天然地可以在一定程度上体现论文的主题相关性、作者研究领域的重叠",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "论文推荐",
+          "normalized_name": "论文推荐",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与论文推荐、专家推荐等推荐任务具有非常高的契合度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "专家推荐",
+          "normalized_name": "专家推荐",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与论文推荐、专家推荐等推荐任务具有非常高的契合度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e4",
+          "mention": "引用内容分析",
+          "normalized_name": "引用内容分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在推荐分析中引入引用内容分析",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "论文推荐系统不仅依赖于论文文本，还与引文和引用内容密切相关[38]。在 Scienstein论文推荐系统[39]中,除通过传统的检索式匹配推荐论文外,还引入了引文共被引分析，通过引文距离的大小确定共被引论文的相似性，从而提高推荐论文的相似性。Eto[40]通过比较引用内容相似度排除共被引网络中不相关的文献，以提高推荐论文的相关性。Khadka等[4]将引用位置、引文上下文和引文类型等引文知识引入推荐系统中,解决最新科学出版物个性化推荐问题。此外,引用内容和论文引用关系还可以用来发现论文之间的隐藏关联，以克服推荐系统中依赖先验用户配置文件的弊端[42]。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "Scienstein论文推荐系统",
+          "normalized_name": "Scienstein论文推荐系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在 Scienstein论文推荐系统[39]中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "Eto",
+          "normalized_name": "Eto",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Eto[40]通过比较引用内容相似度排除共被引网络中不相关的文献",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "Khadka等",
+          "normalized_name": "Khadka",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Khadka等[4]将引用位置、引文上下文和引文类型等引文知识引入推荐系统中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e4",
+          "mention": "引文共被引分析",
+          "normalized_name": "引文共被引分析",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "还引入了引文共被引分析",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e5",
+          "mention": "引用内容相似度",
+          "normalized_name": "引用内容相似度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过比较引用内容相似度排除共被引网络中不相关的文献",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e6",
+          "mention": "引用位置",
+          "normalized_name": "引用位置",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将引用位置、引文上下文和引文类型等引文知识引入推荐系统中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e7",
+          "mention": "引文上下文",
+          "normalized_name": "引文上下文",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将引用位置、引文上下文和引文类型等引文知识引入推荐系统中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e8",
+          "mention": "引文类型",
+          "normalized_name": "引文类型",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将引用位置、引文上下文和引文类型等引文知识引入推荐系统中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "基于引用内容的专家推荐可以解释作者及其学科研究领域之间的明确关系。 Kim等[43]在共被引的",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "Kim等[43]",
+          "normalized_name": "Kim等[43]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Kim等[43]在共被引的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "基础上，通过引用位置、引用内容和邻近性，揭示作者学科的内隐关系，识别不同作者研究主题的相关性。 王景周等[44通过分析投稿论文的参考文献、引用内容、引用动机和引用情感进行同行评议专家的遴选，以发现\"小同行\"专家,但该方法的整个流程未实现自动化。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "王景周等[44",
+          "normalized_name": "王景周",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "王景周等[44通过分析投稿论文的参考文献、引用内容、引用动机和引用情感进行同行评议专家的遴选",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "参考文献",
+          "normalized_name": "参考文献",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过分析投稿论文的参考文献、引用内容、引用动机和引用情感",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处参考文献为具体文献列表，但未给出具体文献名称，置信度略低"
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "引用内容",
+          "normalized_name": "引用内容",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过分析投稿论文的参考文献、引用内容、引用动机和引用情感",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为学术概念被讨论"
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "引用动机",
+          "normalized_name": "引用动机",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过分析投稿论文的参考文献、引用内容、引用动机和引用情感",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为学术概念被讨论"
+        },
+        {
+          "entity_id": "21_e5",
+          "mention": "引用情感",
+          "normalized_name": "引用情感",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过分析投稿论文的参考文献、引用内容、引用动机和引用情感",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为学术概念被讨论"
+        },
+        {
+          "entity_id": "21_e6",
+          "mention": "同行评议专家",
+          "normalized_name": "同行评议专家",
+          "candidate_l3": "reviewer",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "进行同行评议专家的遴选",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处指具体遴选对象，但未给出具体人名，作为角色类型抽取"
+        },
+        {
+          "entity_id": "21_e7",
+          "mention": "小同行",
+          "normalized_name": "小同行",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以发现\"小同行\"专家",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "另一种是将引用内容作为论文内容摘要的补充,生成基于论文内容和引用内容的混合摘要[48-50]。 混合摘要不仅包含论文的主要内容，还包含施引作者对其贡献的评价，相比基于论文内容的摘要包含更加丰富的信息。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "混合摘要",
+          "normalized_name": "混合摘要",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "生成基于论文内容和引用内容的混合摘要[48-50]。 混合摘要不仅包含论文的主要内容，还包含施引作者对其贡献的评价",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "引用内容抽取是引用内容分析的基础，包括显式引用句和隐式引用句的抽取。显式引用句包括一个或多个引用参考[51],仅依靠引用标记就可以识别，如图3中实下划线所示; 隐式引用句出现在显式引用句周围,不包含任何引用参考，但提供有关被引论文内容的附加信息[52],其识别没有明显的语言和句法线索，需要根据语义信息来判断，如图3中虚下划线所示。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "显式引用句",
+          "normalized_name": "显式引用句",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "显式引用句包括一个或多个引用参考[51]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "隐式引用句",
+          "normalized_name": "隐式引用句",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "隐式引用句出现在显式引用句周围",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "引用参考[51]",
+          "normalized_name": "引用参考[51]",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "显式引用句包括一个或多个引用参考[51]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e4",
+          "mention": "引用参考[52]",
+          "normalized_name": "引用参考[52]",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "隐式引用句出现在显式引用句周围,不包含任何引用参考，但提供有关被引论文内容的附加信息[52]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "早期引用句抽取采用人工判读的方式，仅能适应小规模的引用内容选取，当前学术成果增长迅速，这种方式显然不能满足研究者的数据需求[8]。近年来,很多平台提供XML、HTML等半结构化的数据,此类数据中显式引用句的抽取相对简单,通过标签和简单的规则即可达到较好的识别效果[53-54]。 但多数情况下，为获得更加全面的数据,还需要从PDF等非结构化数据中解析引文元数据，再通过元数据信息抽取引用句。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "XML",
+          "normalized_name": "XML",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "很多平台提供XML、HTML等半结构化的数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "HTML",
+          "normalized_name": "HTML",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "很多平台提供XML、HTML等半结构化的数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e3",
+          "mention": "PDF",
+          "normalized_name": "PDF",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "从PDF等非结构化数据中解析引文元数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "Sula等[55通过分析PDF文档中的格式信息提取字体大小、页面布局、页码等有用的元数据来识别引用句，在不同的期刊中识别准确率差别较大，最高达$9 7 \\%$ ,最低仅为 $1 8 \\%$ 。Hatop[56将PDF文档中的引文元数据抽取分为参考文献定位、参考文献分割和参考文献分块三个步骤，其中参考文献分块部分通过序列标注的方法进行，在两种期刊中的识别F值分别为 $89 \\%$ 和 $80 \\%$ 。An等[57]发现引文字符串中的单词通常按片段组织,提出了基于序列分割和片段标记的片段序列标记模型,该模型首先对序列进行分割，然后采用条件随机场（ConditionalRandomFields,CRF)推断片段的标签序列,最终引文元数据的平均识别准确率高达 $9 8 . 2 4 \\%$ 。 还有一些开源工具可以自动抽取引用信息，比如CERMINE[58]、GROBID[59]等。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "Sula等[55",
+          "normalized_name": "Sula等[55]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Sula等[55通过分析PDF文档中的格式信息提取字体大小、页面布局、页码等有用的元数据来识别引用句",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "Hatop[56",
+          "normalized_name": "Hatop[56]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Hatop[56将PDF文档中的引文元数据抽取分为参考文献定位、参考文献分割和参考文献分块三个步骤",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e3",
+          "mention": "An等[57]",
+          "normalized_name": "An等[57]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "An等[57]发现引文字符串中的单词通常按片段组织",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e4",
+          "mention": "条件随机场（ConditionalRandomFields,CRF）",
+          "normalized_name": "条件随机场（ConditionalRandomFields, CRF）",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用条件随机场（ConditionalRandomFields,CRF)推断片段的标签序列",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e5",
+          "mention": "CERMINE[58]",
+          "normalized_name": "CERMINE[58]",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "还有一些开源工具可以自动抽取引用信息，比如CERMINE[58]、GROBID[59]等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e6",
+          "mention": "GROBID[59]",
+          "normalized_name": "GROBID[59]",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "还有一些开源工具可以自动抽取引用信息，比如CERMINE[58]、GROBID[59]等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "引用句片段示意如图4所示，同一引用句中包含两个引用标识，橙色椭圆标注的引用标识对应橙色下划线标注的引用句前半句,绿色椭圆标注的引用标识则对应引用句的后半句。 Abu-Jbara等[5通过单词分类、序列标签和片段分类的方法，识别引用句中与特定被引文献相关的句子片段,其中片段分类的方法识别效果最好。Khalid等[60]开发了一种基于转换依赖树的剪枝启发式算法,尝试从引用句中删除非引文文本,识别F值为 $80 \\%$ 。目前此类研究相对较少。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "Abu-Jbara等[5",
+          "normalized_name": "Abu-Jbara等[5]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Abu-Jbara等[5通过单词分类、序列标签和片段分类的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e2",
+          "mention": "Khalid等[60]",
+          "normalized_name": "Khalid等[60]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Khalid等[60]开发了一种基于转换依赖树的剪枝启发式算法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e3",
+          "mention": "单词分类",
+          "normalized_name": "单词分类",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过单词分类、序列标签和片段分类的方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e4",
+          "mention": "序列标签",
+          "normalized_name": "序列标签",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过单词分类、序列标签和片段分类的方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e5",
+          "mention": "片段分类",
+          "normalized_name": "片段分类",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过单词分类、序列标签和片段分类的方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e6",
+          "mention": "基于转换依赖树的剪枝启发式算法",
+          "normalized_name": "基于转换依赖树的剪枝启发式算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "开发了一种基于转换依赖树的剪枝启发式算法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "最早通过固定窗口、线索词等方式识别隐式引用句。 固定大小的窗口[6]可以有效检测隐式引用句,但会产生很多噪音[62]。线索词方法首先从人工构造的语料库中抽取引文上下文的线索词,然后基于规则识别隐式引用句[63],由于不同学科论文撰写的习惯不同,这种方法的迁移性较差。",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "固定窗口",
+          "normalized_name": "固定窗口",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "固定大小的窗口[6]可以有效检测隐式引用句",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "线索词方法",
+          "normalized_name": "线索词方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "线索词方法首先从人工构造的语料库中抽取引文上下文的线索词",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e3",
+          "mention": "隐式引用句",
+          "normalized_name": "隐式引用句",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "最早通过固定窗口、线索词等方式识别隐式引用句",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "目前,机器学习方法是隐式引用句识别的主流，根据是否需要标注数据，可分为监督学习方法和无监督学习方法两类。 监督学习方法通常采用CRF、隐马尔科夫模型(HiddenMarkov Model,HMM）、支持向量机(Support Vector Machine,SVM)等传统机器学习模型。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "机器学习方法",
+          "normalized_name": "机器学习方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "机器学习方法是隐式引用句识别的主流",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "隐式引用句识别",
+          "normalized_name": "隐式引用句识别",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "机器学习方法是隐式引用句识别的主流",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e3",
+          "mention": "监督学习方法",
+          "normalized_name": "监督学习方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "可分为监督学习方法和无监督学习方法两类",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e4",
+          "mention": "无监督学习方法",
+          "normalized_name": "无监督学习方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "可分为监督学习方法和无监督学习方法两类",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e5",
+          "mention": "CRF",
+          "normalized_name": "CRF",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "监督学习方法通常采用CRF、隐马尔科夫模型(HiddenMarkov Model,HMM）、支持向量机(Support Vector Machine,SVM)等传统机器学习模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e6",
+          "mention": "隐马尔科夫模型(HiddenMarkov Model,HMM）",
+          "normalized_name": "隐马尔科夫模型(HiddenMarkov Model, HMM)",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "监督学习方法通常采用CRF、隐马尔科夫模型(HiddenMarkov Model,HMM）、支持向量机(Support Vector Machine,SVM)等传统机器学习模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e7",
+          "mention": "支持向量机(Support Vector Machine,SVM)",
+          "normalized_name": "支持向量机(Support Vector Machine, SVM)",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "监督学习方法通常采用CRF、隐马尔科夫模型(HiddenMarkov Model,HMM）、支持向量机(Support Vector Machine,SVM)等传统机器学习模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "29",
+      "sentence": "监督学习方法通常采用CRF、隐马尔科夫模型(HiddenMarkov Model,HMM）、支持向量机(Support Vector Machine,SVM)等传统机器学习模型。 Angrosh等[64]采用CRF进行隐式引用句的识别，识别准确率高达 $9 6 . 1 5 \\%$ ,但该研究仅识别了相关工作部分的引用内容。Sondhi等[65]认为引用内容倾向于与被引文献共享相似的词汇，因此基于语言模型计算两者间相互生成的概率,以此构建HMM识别隐式引用，平均识别准确率达 $9 8 . 7 \\%$ ,但其召回率较低,仅为 $5 0 . 3 \\%$ 。雷声伟等[66引入4个新的特征(是否在统一段落、是否包含其他引文标记、前面句子类型、后面句子类型),采用SVM和CRF两种方法进行引用句的识别,SVM效果优于CRF。这些研究中需要标注大量的训练数据,费时费力。",
+      "entities": [
+        {
+          "entity_id": "29_e1",
+          "mention": "CRF",
+          "normalized_name": "CRF",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "监督学习方法通常采用CRF、隐马尔科夫模型(HiddenMarkov Model,HMM）、支持向量机(Support Vector Machine,SVM)等传统机器学习模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e2",
+          "mention": "隐马尔科夫模型(HiddenMarkov Model,HMM）",
+          "normalized_name": "隐马尔科夫模型(HiddenMarkov Model, HMM)",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "监督学习方法通常采用CRF、隐马尔科夫模型(HiddenMarkov Model,HMM）、支持向量机(Support Vector Machine,SVM)等传统机器学习模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e3",
+          "mention": "支持向量机(Support Vector Machine,SVM)",
+          "normalized_name": "支持向量机(Support Vector Machine, SVM)",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "监督学习方法通常采用CRF、隐马尔科夫模型(HiddenMarkov Model,HMM）、支持向量机(Support Vector Machine,SVM)等传统机器学习模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e4",
+          "mention": "Angrosh等[64]",
+          "normalized_name": "Angrosh",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Angrosh等[64]采用CRF进行隐式引用句的识别",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e5",
+          "mention": "Sondhi等[65]",
+          "normalized_name": "Sondhi",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Sondhi等[65]认为引用内容倾向于与被引文献共享相似的词汇",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e6",
+          "mention": "HMM",
+          "normalized_name": "HMM",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以此构建HMM识别隐式引用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e7",
+          "mention": "雷声伟等[66]",
+          "normalized_name": "雷声伟",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "雷声伟等[66引入4个新的特征",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e8",
+          "mention": "SVM",
+          "normalized_name": "SVM",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "采用SVM和CRF两种方法进行引用句的识别,SVM效果优于CRF",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "Jebari等[54]将显式引用句后的句子作为隐式引用句的候选，采用Sentence2Vec表示显式引用后的所有句子、Topic2Vec表示被引论文的主题,通过计算主题与候选句子的相似度进行隐式引用句的识别。 该方法为每条显式引用都分配了一个隐式引用句,这显然与实际不符; 此外,该工作没有对模型效果进行评价。",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "Jebari等[54]",
+          "normalized_name": "Jebari等[54]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Jebari等[54]将显式引用句后的句子作为隐式引用句的候选",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "Sentence2Vec",
+          "normalized_name": "Sentence2Vec",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用Sentence2Vec表示显式引用后的所有句子",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e3",
+          "mention": "Topic2Vec",
+          "normalized_name": "Topic2Vec",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Topic2Vec表示被引论文的主题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e4",
+          "mention": "隐式引用句",
+          "normalized_name": "隐式引用句",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将显式引用句后的句子作为隐式引用句的候选",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e5",
+          "mention": "显式引用",
+          "normalized_name": "显式引用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "该方法为每条显式引用都分配了一个隐式引用句",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "31",
+      "sentence": "此外,该工作没有对模型效果进行评价。 类似地,金贤日等[67]同样基于相似度识别隐式引用句,不同于前者,该研究计算显式引用句附近的句子与被参考文献内容的相似度，最终在两篇高被引论文隐式引用句的识别中得到比较理想的效果。但该研究的实验数据集较小，仅包含207条引用内容,测试集也仅包含两篇论文,其方法的有效性仍有待验证。",
+      "entities": [
+        {
+          "entity_id": "31_e1",
+          "mention": "金贤日等[67]",
+          "normalized_name": "金贤日",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "金贤日等[67]同样基于相似度识别隐式引用句",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e2",
+          "mention": "隐式引用句",
+          "normalized_name": "隐式引用句",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "识别隐式引用句",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e3",
+          "mention": "显式引用句",
+          "normalized_name": "显式引用句",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "计算显式引用句附近的句子与被参考文献内容的相似度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e4",
+          "mention": "被参考文献",
+          "normalized_name": "被参考文献",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "被参考文献内容的相似度",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但图情领域引用分析中可视为具体文献类型"
+        },
+        {
+          "entity_id": "31_e5",
+          "mention": "高被引论文",
+          "normalized_name": "高被引论文",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "两篇高被引论文隐式引用句的识别",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未给出具体论文名称，但作为类别可识别"
+        }
+      ]
+    },
+    {
+      "sentence_id": "32",
+      "sentence": "隐式引用句抽取的相关工作如表4所示。 可以看出，监督学习方法在小规模数据集上的识别效果较好,但数据量较大时,识别F值仅为 $4 9 . 5 \\%$ ; 目前基于无监督学习方法的相关研究较少,还未出现在较大数据集上验证有效的相关工作。",
+      "entities": [
+        {
+          "entity_id": "32_e1",
+          "mention": "监督学习方法",
+          "normalized_name": "监督学习方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "监督学习方法在小规模数据集上的识别效果较好",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e2",
+          "mention": "无监督学习方法",
+          "normalized_name": "无监督学习方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于无监督学习方法的相关研究较少",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "33",
+      "sentence": "目前基于无监督学习方法的相关研究较少,还未出现在较大数据集上验证有效的相关工作。 随着BERT[68]、GPT[9等大规模预训练语言模型的出现,语义表示技术日趋成熟,这为无监督学习方法识别隐式引用句提供了发展机遇。",
+      "entities": [
+        {
+          "entity_id": "33_e1",
+          "mention": "BERT",
+          "normalized_name": "BERT",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "随着BERT[68]、GPT[9等大规模预训练语言模型的出现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e2",
+          "mention": "GPT",
+          "normalized_name": "GPT",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "随着BERT[68]、GPT[9等大规模预训练语言模型的出现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e3",
+          "mention": "大规模预训练语言模型",
+          "normalized_name": "大规模预训练语言模型",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着BERT[68]、GPT[9等大规模预训练语言模型的出现",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e4",
+          "mention": "语义表示技术",
+          "normalized_name": "语义表示技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "语义表示技术日趋成熟",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e5",
+          "mention": "无监督学习方法",
+          "normalized_name": "无监督学习方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "无监督学习方法识别隐式引用句提供了发展机遇",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e6",
+          "mention": "隐式引用句",
+          "normalized_name": "隐式引用句",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "无监督学习方法识别隐式引用句提供了发展机遇",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "34",
+      "sentence": "目前,引用位置的划分没有统一标准。 Cano[71依据引用内容距离施引文献开篇位置的字数比例,将前$1 5 \\%$ 的文献内容定义为开始位置，后 $20 \\%$ 定义为结尾位置,其余内容定义为中间位置。",
+      "entities": [
+        {
+          "entity_id": "34_e1",
+          "mention": "Cano",
+          "normalized_name": "Cano",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Cano[71依据引用内容距离施引文献开篇位置的字数比例",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "36",
+      "sentence": "陆伟等[74借助自定义的标题词表以及标题与类别之间的距离信息，采用CRF进行序列标注,实现基于章节标题的学术文献结构功能识别。 该方法存在未登录词问题,当出现词表中不存在的标题时,识别准确率会受到较大影响。Tuarob等[80]结合章节标题的模式、样式和结构信息，采用随机森林(RandomForest,RF)划分直接边界,识别结果F值为 $9 2 . 3 8 \\%$ ，但其实验数据量较小,仅包含217篇学术文档。王东波等[75]对比了CRF、Bi-LSTM和SVM在章节划分中的效果，发现在小规模数据集中，CRF效果最佳; 在CRF的基础上增加章节标题特征信息以及章节内容特征信息，可有效提高识别效果。",
+      "entities": [
+        {
+          "entity_id": "36_e1",
+          "mention": "陆伟",
+          "normalized_name": "陆伟",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "陆伟等[74借助自定义的标题词表以及标题与类别之间的距离信息",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e2",
+          "mention": "标题词表",
+          "normalized_name": "标题词表",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "自定义的标题词表",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e3",
+          "mention": "CRF",
+          "normalized_name": "CRF",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用CRF进行序列标注",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e4",
+          "mention": "学术文献结构功能识别",
+          "normalized_name": "学术文献结构功能识别",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于章节标题的学术文献结构功能识别",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e5",
+          "mention": "Tuarob",
+          "normalized_name": "Tuarob",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Tuarob等[80]结合章节标题的模式、样式和结构信息",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e6",
+          "mention": "随机森林",
+          "normalized_name": "随机森林",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用随机森林(RandomForest,RF)划分直接边界",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e7",
+          "mention": "RandomForest",
+          "normalized_name": "RandomForest",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随机森林(RandomForest,RF)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e8",
+          "mention": "RF",
+          "normalized_name": "RF",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随机森林(RandomForest,RF)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e9",
+          "mention": "王东波",
+          "normalized_name": "王东波",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "王东波等[75]对比了CRF、Bi-LSTM和SVM在章节划分中的效果",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e10",
+          "mention": "Bi-LSTM",
+          "normalized_name": "Bi-LSTM",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对比了CRF、Bi-LSTM和SVM在章节划分中的效果",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e11",
+          "mention": "SVM",
+          "normalized_name": "SVM",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对比了CRF、Bi-LSTM和SVM在章节划分中的效果",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "37",
+      "sentence": "近年来，深度学习技术在包括篇章结构划分的多项自然语言处理任务中取得了很好的效果。 王佳敏等[76]通过卷积神经网络（ConvolutionalNeuralNetwork,CNN)和LSTM对已知类别的词向量进行表示学习，采用投票方法融合不同层次和不同模型的识别结果，识别效果优于传统机器学习算法SVM。秦成磊等[73]构建基于BERT的单词级、句子级和段落级三个层次的注意力网络模型，以充分利用章节信息,对比传统机器学习模型,识别效果具有较大的提升,但该模型的跨领域泛化能力较差。",
+      "entities": [
+        {
+          "entity_id": "37_e1",
+          "mention": "深度学习技术",
+          "normalized_name": "深度学习技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "深度学习技术在包括篇章结构划分的多项自然语言处理任务中取得了很好的效果",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e2",
+          "mention": "篇章结构划分",
+          "normalized_name": "篇章结构划分",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括篇章结构划分的多项自然语言处理任务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e3",
+          "mention": "王佳敏",
+          "normalized_name": "王佳敏",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "王佳敏等[76]通过卷积神经网络（ConvolutionalNeuralNetwork,CNN)和LSTM",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e4",
+          "mention": "卷积神经网络（ConvolutionalNeuralNetwork,CNN)",
+          "normalized_name": "卷积神经网络（CNN）",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过卷积神经网络（ConvolutionalNeuralNetwork,CNN)和LSTM",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e5",
+          "mention": "LSTM",
+          "normalized_name": "LSTM",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过卷积神经网络（ConvolutionalNeuralNetwork,CNN)和LSTM",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e6",
+          "mention": "投票方法",
+          "normalized_name": "投票方法",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用投票方法融合不同层次和不同模型的识别结果",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e7",
+          "mention": "SVM",
+          "normalized_name": "SVM",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "识别效果优于传统机器学习算法SVM",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e8",
+          "mention": "秦成磊",
+          "normalized_name": "秦成磊",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "秦成磊等[73]构建基于BERT的单词级、句子级和段落级三个层次的注意力网络模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e9",
+          "mention": "BERT",
+          "normalized_name": "BERT",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "构建基于BERT的单词级、句子级和段落级三个层次的注意力网络模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e10",
+          "mention": "注意力网络模型",
+          "normalized_name": "注意力网络模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "构建基于BERT的单词级、句子级和段落级三个层次的注意力网络模型",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "38",
+      "sentence": "篇章结构划分的部分相关工作如表5所示。 在基于传统机器学习方法的研究中，普遍使用较小的数据集,识别效果虽然比较理想,但仅适用于某个领域或某个领域中的几种期刊。深度学习方法实现了大规模的处理,但当涉及多种期刊、多个领域时，识别效果仍有较大提升空间。",
+      "entities": [
+        {
+          "entity_id": "38_e1",
+          "mention": "传统机器学习方法",
+          "normalized_name": "传统机器学习方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在基于传统机器学习方法的研究中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e2",
+          "mention": "深度学习方法",
+          "normalized_name": "深度学习方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "深度学习方法实现了大规模的处理",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "39",
+      "sentence": "引文情感分析旨在分析施引作者对被引文献的态度[81]。 与博客、在线论坛等经典领域中的情绪检测不同,科学论文有一套特有的行文风格,通常不会在引文中使用明显的意见表达词,这使得引文情感分析具有一定的挑战性。",
+      "entities": [
+        {
+          "entity_id": "39_e1",
+          "mention": "引文情感分析",
+          "normalized_name": "引文情感分析",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引文情感分析旨在分析施引作者对被引文献的态度[81]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e2",
+          "mention": "博客",
+          "normalized_name": "博客",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与博客、在线论坛等经典领域中的情绪检测不同",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e3",
+          "mention": "在线论坛",
+          "normalized_name": "在线论坛",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与博客、在线论坛等经典领域中的情绪检测不同",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e4",
+          "mention": "情绪检测",
+          "normalized_name": "情绪检测",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与博客、在线论坛等经典领域中的情绪检测不同",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e5",
+          "mention": "引文情感分析",
+          "normalized_name": "引文情感分析",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这使得引文情感分析具有一定的挑战性",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "40",
+      "sentence": "引文情感分析主要采用SVM、朴素贝叶斯（NaiveBayes,NB）、RF等机器学习模型,结合各种特征识别引文上下文的情感极性。早在2011年，Athar6]采用SVM和NB作为分类器，结合N-Grams、词性标签、依赖关系等特征进行引用句的情感分析，该工作需要人工选择大量特征。随后该团队采用SVM结合特征进一步探索了包含隐式引用句的引用内容情感分析，发现考虑隐式引用句可以获得更好的识别效果[52]。类似地,Abu-Jbara等[82]同样采用SVM作为分类器进行情感识别,不同之处在于引入了引文数、自引等引文特有的特征。Ma等[83]借助作者的声誉信息判断引文极性。Amjad等[84]则将动词作为特征，通过VerbNet为每个动词赋予标签,使用机器学习模型进行引文情感识别。",
+      "entities": [
+        {
+          "entity_id": "40_e1",
+          "mention": "SVM",
+          "normalized_name": "SVM",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "引文情感分析主要采用SVM、朴素贝叶斯（NaiveBayes,NB）、RF等机器学习模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e2",
+          "mention": "朴素贝叶斯（NaiveBayes,NB）",
+          "normalized_name": "朴素贝叶斯（NaiveBayes,NB）",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "引文情感分析主要采用SVM、朴素贝叶斯（NaiveBayes,NB）、RF等机器学习模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e3",
+          "mention": "RF",
+          "normalized_name": "RF",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "引文情感分析主要采用SVM、朴素贝叶斯（NaiveBayes,NB）、RF等机器学习模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e4",
+          "mention": "N-Grams",
+          "normalized_name": "N-Grams",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "结合N-Grams、词性标签、依赖关系等特征进行引用句的情感分析",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e5",
+          "mention": "VerbNet",
+          "normalized_name": "VerbNet",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过VerbNet为每个动词赋予标签",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "41",
+      "sentence": "近年来，有学者尝试将深度学习的方法用于引文情感识别。 Munkhdalai等[85]使用具有注意力机制的Bi-LSTM模型,在5000个引用句中获得了F值为$7 6 . 0 \\%$ 的结果。Ravi等[8]将句法依赖特征与引用句级联作为CNN与LSTM的输入，在较小的训练集上取得了与传统机器学习相当的识别效果。Yousif等[87]认为引文情感分类任务和引用动机分类任务具有相关性,提出基于CNN和Bi-LSTM的多任务学习模型进行联合学习,并利用共享信息提高分类性能,在引文情感分类任务中识别F值为 $8 8 . 3 \\%$ 。",
+      "entities": [
+        {
+          "entity_id": "41_e1",
+          "mention": "深度学习",
+          "normalized_name": "深度学习",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有学者尝试将深度学习的方法用于引文情感识别",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e2",
+          "mention": "引文情感识别",
+          "normalized_name": "引文情感识别",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将深度学习的方法用于引文情感识别",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e3",
+          "mention": "Munkhdalai等[85]",
+          "normalized_name": "Munkhdalai等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Munkhdalai等[85]使用具有注意力机制的Bi-LSTM模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e4",
+          "mention": "Bi-LSTM模型",
+          "normalized_name": "Bi-LSTM模型",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "使用具有注意力机制的Bi-LSTM模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e5",
+          "mention": "Ravi等[8]",
+          "normalized_name": "Ravi等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Ravi等[8]将句法依赖特征与引用句级联作为CNN与LSTM的输入",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e6",
+          "mention": "CNN",
+          "normalized_name": "CNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "将句法依赖特征与引用句级联作为CNN与LSTM的输入",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e7",
+          "mention": "LSTM",
+          "normalized_name": "LSTM",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "将句法依赖特征与引用句级联作为CNN与LSTM的输入",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e8",
+          "mention": "传统机器学习",
+          "normalized_name": "传统机器学习",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在较小的训练集上取得了与传统机器学习相当的识别效果",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e9",
+          "mention": "Yousif等[87]",
+          "normalized_name": "Yousif等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Yousif等[87]认为引文情感分类任务和引用动机分类任务具有相关性",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e10",
+          "mention": "引文情感分类任务",
+          "normalized_name": "引文情感分类任务",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引文情感分类任务和引用动机分类任务具有相关性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e11",
+          "mention": "引用动机分类任务",
+          "normalized_name": "引用动机分类任务",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引文情感分类任务和引用动机分类任务具有相关性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e12",
+          "mention": "CNN和Bi-LSTM的多任务学习模型",
+          "normalized_name": "CNN和Bi-LSTM的多任务学习模型",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "提出基于CNN和Bi-LSTM的多任务学习模型进行联合学习",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "42",
+      "sentence": "引文情感分析相关的主要工作汇总如表6所示，包括基于传统机器学习方法和基于深度学习方法的研究。 可以看出，早期引文情感分析的工作主要依赖各种复杂的特征工程,采用SVM、NB、RF等传统机器分类模型进行。近几年的研究工作则更青睐于使用注意力机制、Word2Vec、CNN、Bi-LSTM等深度学习技术，辅以简单的特征来提升情感分类效果。",
+      "entities": [
+        {
+          "entity_id": "42_e1",
+          "mention": "引文情感分析",
+          "normalized_name": "引文情感分析",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引文情感分析相关的主要工作汇总如表6所示",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e2",
+          "mention": "传统机器学习方法",
+          "normalized_name": "传统机器学习方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于传统机器学习方法和基于深度学习方法的研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e3",
+          "mention": "深度学习方法",
+          "normalized_name": "深度学习方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于传统机器学习方法和基于深度学习方法的研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e4",
+          "mention": "SVM",
+          "normalized_name": "SVM",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "采用SVM、NB、RF等传统机器分类模型进行",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e5",
+          "mention": "NB",
+          "normalized_name": "NB",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "采用SVM、NB、RF等传统机器分类模型进行",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e6",
+          "mention": "RF",
+          "normalized_name": "RF",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "采用SVM、NB、RF等传统机器分类模型进行",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e7",
+          "mention": "注意力机制",
+          "normalized_name": "注意力机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用注意力机制、Word2Vec、CNN、Bi-LSTM等深度学习技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e8",
+          "mention": "Word2Vec",
+          "normalized_name": "Word2Vec",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用注意力机制、Word2Vec、CNN、Bi-LSTM等深度学习技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e9",
+          "mention": "CNN",
+          "normalized_name": "CNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "使用注意力机制、Word2Vec、CNN、Bi-LSTM等深度学习技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e10",
+          "mention": "Bi-LSTM",
+          "normalized_name": "Bi-LSTM",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "使用注意力机制、Word2Vec、CNN、Bi-LSTM等深度学习技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "43",
+      "sentence": "引用内容是施引作者对被引文献主题的总结和归纳，是科学文献中重要的继承元素，相比被引文献的文本信息,引用内容包含的噪音信息较少,并且能说明文献之间的影响和主题间的关系[9I]。在引用内容分析的基础上进行主题识别,能更好地表征被引文献的研究主题和主要贡献,有利于引文关联关系的进一步语义揭示和内容挖掘[92]。 引用内容主题识别方法主要分为三类：基于词频统计的方法、基于聚类的方法以及基于概率主题模型的方法。",
+      "entities": [
+        {
+          "entity_id": "43_e1",
+          "mention": "引用内容",
+          "normalized_name": "引用内容",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用内容是施引作者对被引文献主题的总结和归纳",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "43_e2",
+          "mention": "基于词频统计的方法",
+          "normalized_name": "基于词频统计的方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用内容主题识别方法主要分为三类：基于词频统计的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "43_e3",
+          "mention": "基于聚类的方法",
+          "normalized_name": "基于聚类的方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用内容主题识别方法主要分为三类：基于词频统计的方法、基于聚类的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "43_e4",
+          "mention": "基于概率主题模型的方法",
+          "normalized_name": "基于概率主题模型的方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用内容主题识别方法主要分为三类：基于词频统计的方法、基于聚类的方法以及基于概率主题模型的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "44",
+      "sentence": "基于词频统计的主题识别方法简单易操作。祝清松等[92]基于引用句内容,采用C-value算法识别碳纳米管纤维领域高被引论文的主题,在一定程度上解决了引文被同等看待、无法揭示论文被引原因的问题。 徐庶睿等[93]利用术语集获取主题词,统计引用句中的主题词重复率，以此分析学科交叉的分布和交叉类型。",
+      "entities": [
+        {
+          "entity_id": "44_e1",
+          "mention": "词频统计的主题识别方法",
+          "normalized_name": "词频统计的主题识别方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于词频统计的主题识别方法简单易操作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "44_e2",
+          "mention": "祝清松",
+          "normalized_name": "祝清松",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "祝清松等[92]基于引用句内容",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "44_e3",
+          "mention": "C-value算法",
+          "normalized_name": "C-value算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "采用C-value算法识别碳纳米管纤维领域高被引论文的主题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "44_e4",
+          "mention": "碳纳米管纤维领域",
+          "normalized_name": "碳纳米管纤维领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "识别碳纳米管纤维领域高被引论文的主题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "44_e5",
+          "mention": "徐庶睿",
+          "normalized_name": "徐庶睿",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "徐庶睿等[93]利用术语集获取主题词",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "44_e6",
+          "mention": "术语集",
+          "normalized_name": "术语集",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用术语集获取主题词",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但图情领域放宽规则，有名称的术语集应抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "45",
+      "sentence": "基于聚类的方法通过引用内容的相关性或引用关联关系识别主题。 Aljaber等[94]发现引文术语倾向于捕捉论文的一般主题关键词,因此开发了一种改进的标准层次聚类方法，当聚类较小时（主题是特定的),文档相似度主要使用标准全文术语计算,而当聚类变大时(主题更具有一般性),相似度则主要通过引文中的术语来计算,该聚类方法效果显著优于标准层次聚类算法。Bornmann等[95]分别从被引文献的题目和摘要、施引文献的题目和摘要、施引文献的引用句中抽取关键词,建立三个不同的关键词共现网络，通过共现关系进行聚类，发现相比于题目和摘要,引用内容中抽取的关键词在语义上更接近被引文献的研究内容。赵磊等[53]分别从文献标题和摘要、引用内容、全文内容三个不同的内容层面抽取特征词,使用近邻传播(Affinity Propagation,AP)算法进行聚类,发现这三者识别的主题存在差异,其中引用内容层面识别的主题可以作为其他两个层面主题的补充。",
+      "entities": [
+        {
+          "entity_id": "45_e1",
+          "mention": "Aljaber等[94]",
+          "normalized_name": "Aljaber等[94]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Aljaber等[94]发现引文术语倾向于捕捉论文的一般主题关键词",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "45_e2",
+          "mention": "标准层次聚类方法",
+          "normalized_name": "标准层次聚类方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "开发了一种改进的标准层次聚类方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "45_e3",
+          "mention": "标准层次聚类算法",
+          "normalized_name": "标准层次聚类算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "该聚类方法效果显著优于标准层次聚类算法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "45_e4",
+          "mention": "Bornmann等[95]",
+          "normalized_name": "Bornmann等[95]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Bornmann等[95]分别从被引文献的题目和摘要、施引文献的题目和摘要、施引文献的引用句中抽取关键词",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "45_e5",
+          "mention": "赵磊等[53]",
+          "normalized_name": "赵磊等[53]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "赵磊等[53]分别从文献标题和摘要、引用内容、全文内容三个不同的内容层面抽取特征词",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "45_e6",
+          "mention": "近邻传播(Affinity Propagation,AP)算法",
+          "normalized_name": "近邻传播(Affinity Propagation,AP)算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "使用近邻传播(Affinity Propagation,AP)算法进行聚类",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "46",
+      "sentence": "基于概率主题模型的方法是目前应用最为广泛的主题识别方法。Liu等9采用隐含狄利克雷分布(LatentDirichletAllocation,LDA)模型分析和比较了引文摘要和引用内容中的主题分布，发现两个来源的主题集有一定的重叠度,但侧重点不同,基于摘要的主题比基于引用内容的主题具有更广泛的术语。Zhou等[97提出基于LDA的两级主题模型,该模型同时考虑了文档引用关系和文档本身的内容，其主题识别效果优于仅基于引用内容或仅基于文本内容的LDA。Bai等[98]认为潜在主题和引文网络之间具有潜在相关性,并基于此提出基于贝叶斯深度生成模型的神经关系主题模型,通过多层感知网络对引文进行非线性过滤，使推理网络学习更具有代表性的文献内容主题,从而提高主题建模和论文推荐的性能。Jebari等[99将引用内容应用于主题演化分析,抽取引用句中的名词短语,通过动态主题模型获取主题分布，并在生物医学和生命科学领域验证了模型的有效性。",
+      "entities": [
+        {
+          "entity_id": "46_e1",
+          "mention": "概率主题模型",
+          "normalized_name": "概率主题模型",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于概率主题模型的方法是目前应用最为广泛的主题识别方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e2",
+          "mention": "Liu等",
+          "normalized_name": "Liu等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Liu等9采用隐含狄利克雷分布(LatentDirichletAllocation,LDA)模型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "具体人名未给出，仅以'Liu等'指代"
+        },
+        {
+          "entity_id": "46_e3",
+          "mention": "隐含狄利克雷分布(LatentDirichletAllocation,LDA)模型",
+          "normalized_name": "隐含狄利克雷分布(LatentDirichletAllocation, LDA)模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用隐含狄利克雷分布(LatentDirichletAllocation,LDA)模型分析和比较了引文摘要和引用内容中的主题分布",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e4",
+          "mention": "LDA",
+          "normalized_name": "LDA",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于摘要的主题比基于引用内容的主题具有更广泛的术语",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "LDA作为模型简称，已在前文展开"
+        },
+        {
+          "entity_id": "46_e5",
+          "mention": "Zhou等",
+          "normalized_name": "Zhou等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Zhou等[97提出基于LDA的两级主题模型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "具体人名未给出，仅以'Zhou等'指代"
+        },
+        {
+          "entity_id": "46_e6",
+          "mention": "基于LDA的两级主题模型",
+          "normalized_name": "基于LDA的两级主题模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Zhou等[97提出基于LDA的两级主题模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e7",
+          "mention": "Bai等",
+          "normalized_name": "Bai等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Bai等[98]认为潜在主题和引文网络之间具有潜在相关性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "具体人名未给出，仅以'Bai等'指代"
+        },
+        {
+          "entity_id": "46_e8",
+          "mention": "潜在主题",
+          "normalized_name": "潜在主题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "潜在主题和引文网络之间具有潜在相关性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e9",
+          "mention": "引文网络",
+          "normalized_name": "引文网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "潜在主题和引文网络之间具有潜在相关性",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e10",
+          "mention": "基于贝叶斯深度生成模型的神经关系主题模型",
+          "normalized_name": "基于贝叶斯深度生成模型的神经关系主题模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于此提出基于贝叶斯深度生成模型的神经关系主题模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e11",
+          "mention": "多层感知网络",
+          "normalized_name": "多层感知网络",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过多层感知网络对引文进行非线性过滤",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e12",
+          "mention": "Jebari等",
+          "normalized_name": "Jebari等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Jebari等[99将引用内容应用于主题演化分析",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "具体人名未给出，仅以'Jebari等'指代"
+        },
+        {
+          "entity_id": "46_e13",
+          "mention": "动态主题模型",
+          "normalized_name": "动态主题模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过动态主题模型获取主题分布",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e14",
+          "mention": "生物医学和生命科学领域",
+          "normalized_name": "生物医学和生命科学领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在生物医学和生命科学领域验证了模型的有效性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "领域名称，非具体组织"
+        }
+      ]
+    },
+    {
+      "sentence_id": "47",
+      "sentence": "可以看出，将引用内容引入主题识别,能够对基于论文文本的主题识别进行补充和增强，提供更加丰富的信息。但目前大多数工作仅利用显式引用句信息,忽略了隐式引用句对被引文献的进一步描述; 此外,目前的工作均通过抽取实体、术语或关键词来进行主题识别,未充分利用引用句的语法结构和语义等更丰富的内容信息。",
+      "entities": [
+        {
+          "entity_id": "47_e1",
+          "mention": "引用内容",
+          "normalized_name": "引用内容",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将引用内容引入主题识别",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e2",
+          "mention": "主题识别",
+          "normalized_name": "主题识别",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将引用内容引入主题识别",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e3",
+          "mention": "基于论文文本的主题识别",
+          "normalized_name": "基于论文文本的主题识别",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "能够对基于论文文本的主题识别进行补充和增强",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e4",
+          "mention": "显式引用句",
+          "normalized_name": "显式引用句",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "仅利用显式引用句信息",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e5",
+          "mention": "隐式引用句",
+          "normalized_name": "隐式引用句",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "忽略了隐式引用句对被引文献的进一步描述",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e6",
+          "mention": "被引文献",
+          "normalized_name": "被引文献",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "隐式引用句对被引文献的进一步描述",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e7",
+          "mention": "引用句的语法结构",
+          "normalized_name": "引用句的语法结构",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "未充分利用引用句的语法结构和语义等更丰富的内容信息",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e8",
+          "mention": "语义",
+          "normalized_name": "语义",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用句的语法结构和语义等更丰富的内容信息",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "48",
+      "sentence": "引用内容视角的知识类型与引用行为的发生位置、情感倾向等因素密切相关[22],对面向引用内容的知识流动分析、学术评价分析等均有重要影响。 引用知识类型的识别包括规则和机器学习两类方法。",
+      "entities": [
+        {
+          "entity_id": "48_e1",
+          "mention": "引用内容视角的知识类型",
+          "normalized_name": "引用内容视角的知识类型",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用内容视角的知识类型与引用行为的发生位置、情感倾向等因素密切相关",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为复合概念，但原文中作为独立命名短语出现"
+        },
+        {
+          "entity_id": "48_e2",
+          "mention": "引用行为的发生位置",
+          "normalized_name": "引用行为的发生位置",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用内容视角的知识类型与引用行为的发生位置、情感倾向等因素密切相关",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为引用分析中的具体维度概念"
+        },
+        {
+          "entity_id": "48_e3",
+          "mention": "情感倾向",
+          "normalized_name": "情感倾向",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用内容视角的知识类型与引用行为的发生位置、情感倾向等因素密切相关",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e4",
+          "mention": "知识流动分析",
+          "normalized_name": "知识流动分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对面向引用内容的知识流动分析、学术评价分析等均有重要影响",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可视为一种分析方法"
+        },
+        {
+          "entity_id": "48_e5",
+          "mention": "学术评价分析",
+          "normalized_name": "学术评价分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对面向引用内容的知识流动分析、学术评价分析等均有重要影响",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可视为一种分析方法"
+        },
+        {
+          "entity_id": "48_e6",
+          "mention": "引用知识类型的识别",
+          "normalized_name": "引用知识类型的识别",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用知识类型的识别包括规则和机器学习两类方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e7",
+          "mention": "规则",
+          "normalized_name": "规则方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用知识类型的识别包括规则和机器学习两类方法",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "原文中'规则'指代规则方法，但mention保持原文"
+        },
+        {
+          "entity_id": "48_e8",
+          "mention": "机器学习",
+          "normalized_name": "机器学习方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用知识类型的识别包括规则和机器学习两类方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "49",
+      "sentence": "基于规则的识别方法需要人工定义线索词，并借助定义好的线索词进行规则匹配,以此确定引用知识类型。 Nanba等[17]手动定义了160个线索词,这些线索词包括“basedon”、“weuse”等动词和“although the”、“but\"等转折词,如果引用句中包含这类线索词,则将引用句划分为相应的类别。",
+      "entities": [
+        {
+          "entity_id": "49_e1",
+          "mention": "Nanba等[17]",
+          "normalized_name": "Nanba等[17]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Nanba等[17]手动定义了160个线索词",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "49_e2",
+          "mention": "160个线索词",
+          "normalized_name": "160个线索词",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Nanba等[17]手动定义了160个线索词",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "线索词集合作为人工定义的结构化资源，可视为数据集"
+        },
+        {
+          "entity_id": "49_e3",
+          "mention": "basedon",
+          "normalized_name": "basedon",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这些线索词包括“basedon”、“weuse”等动词",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "49_e4",
+          "mention": "weuse",
+          "normalized_name": "weuse",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这些线索词包括“basedon”、“weuse”等动词",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "49_e5",
+          "mention": "although the",
+          "normalized_name": "although the",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这些线索词包括“basedon”、“weuse”等动词和“although the”、“but\"等转折词",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "49_e6",
+          "mention": "but",
+          "normalized_name": "but",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这些线索词包括“basedon”、“weuse”等动词和“although the”、“but\"等转折词",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "50",
+      "sentence": "Nanba等[17]手动定义了160个线索词,这些线索词包括“basedon”、“weuse”等动词和“although the”、“but\"等转折词,如果引用句中包含这类线索词,则将引用句划分为相应的类别。 类似地,Pham等[18]也通过线索词和规则匹配识别知识类型,不同之处在于，该工作通过WordNet和词性标注对规则进一步扩充,同时在规则匹配过程中采用树分类方法。彭泽等[22]先识别引用句的引用位置和情感倾向，其中情感倾向根据定义的情感词表以及句子中情感词与否定词、副词之间的关系来确定,然后通过引用位置和情感倾向共同进行知识类别的划分。",
+      "entities": [
+        {
+          "entity_id": "50_e1",
+          "mention": "Nanba等[17]",
+          "normalized_name": "Nanba等[17]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Nanba等[17]手动定义了160个线索词",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "50_e2",
+          "mention": "Pham等[18]",
+          "normalized_name": "Pham等[18]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Pham等[18]也通过线索词和规则匹配识别知识类型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "50_e3",
+          "mention": "WordNet",
+          "normalized_name": "WordNet",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "该工作通过WordNet和词性标注对规则进一步扩充",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "50_e4",
+          "mention": "彭泽等[22]",
+          "normalized_name": "彭泽等[22]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "彭泽等[22]先识别引用句的引用位置和情感倾向",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "51",
+      "sentence": "基于机器学习的方法通过监督学习进行知识类别的识别。Dong等[19]建立了一个涵盖文本和语法的特征集合描述引用句,采用BayesNet取得了较好的识别结果; 还引入了自监督学习,以减少模型训练中需要标注的数据量。",
+      "entities": [
+        {
+          "entity_id": "51_e1",
+          "mention": "Dong等[19]",
+          "normalized_name": "Dong等[19]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Dong等[19]建立了一个涵盖文本和语法的特征集合描述引用句",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "51_e2",
+          "mention": "BayesNet",
+          "normalized_name": "BayesNet",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "采用BayesNet取得了较好的识别结果",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "51_e3",
+          "mention": "自监督学习",
+          "normalized_name": "自监督学习",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "还引入了自监督学习",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "52",
+      "sentence": "还引入了自监督学习,以减少模型训练中需要标注的数据量。 Andrade 等[100]将TF-IDF、LDA和GloVe三种文本表示级联组合，捕获引用句中的统计信息、主题信息以及上下文信息，选取Passive-Aggressive[101]分类器进行引用知识分类,相比单一的表示方法，混合表示方法识别效果更好。Bakhti等[102]分别建立引用句表示矩阵和作者信息矩阵，通过CNN提取引用句和作者特征，其引用知识分类效果明显优于传统机器学习方法。Zhao等[45]采用具有注意力机制和位置指示的Bi-LSTM,分别对引用角色和知识类型进行识别,相比其他针对整个句子的分类方法，该方法还考虑了句子中引用角色与知识的关联关系。",
+      "entities": [
+        {
+          "entity_id": "52_e1",
+          "mention": "自监督学习",
+          "normalized_name": "自监督学习",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "还引入了自监督学习,以减少模型训练中需要标注的数据量",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e2",
+          "mention": "Andrade 等[100]",
+          "normalized_name": "Andrade",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Andrade 等[100]将TF-IDF、LDA和GloVe三种文本表示级联组合",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e3",
+          "mention": "TF-IDF",
+          "normalized_name": "TF-IDF",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将TF-IDF、LDA和GloVe三种文本表示级联组合",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e4",
+          "mention": "LDA",
+          "normalized_name": "LDA",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将TF-IDF、LDA和GloVe三种文本表示级联组合",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e5",
+          "mention": "GloVe",
+          "normalized_name": "GloVe",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将TF-IDF、LDA和GloVe三种文本表示级联组合",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e6",
+          "mention": "Passive-Aggressive[101]分类器",
+          "normalized_name": "Passive-Aggressive分类器",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "选取Passive-Aggressive[101]分类器进行引用知识分类",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e7",
+          "mention": "混合表示方法",
+          "normalized_name": "混合表示方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "相比单一的表示方法，混合表示方法识别效果更好",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e8",
+          "mention": "Bakhti等[102]",
+          "normalized_name": "Bakhti",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Bakhti等[102]分别建立引用句表示矩阵和作者信息矩阵",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e9",
+          "mention": "CNN",
+          "normalized_name": "CNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过CNN提取引用句和作者特征",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e10",
+          "mention": "传统机器学习方法",
+          "normalized_name": "传统机器学习方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "其引用知识分类效果明显优于传统机器学习方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e11",
+          "mention": "Zhao等[45]",
+          "normalized_name": "Zhao",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Zhao等[45]采用具有注意力机制和位置指示的Bi-LSTM",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e12",
+          "mention": "Bi-LSTM",
+          "normalized_name": "Bi-LSTM",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "采用具有注意力机制和位置指示的Bi-LSTM",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "53",
+      "sentence": "(1)Scite①是目前世界上最大的基于引用内容的科研论文搜索平台，由美国学者JoshNicholson发起,分析超过2600万篇论文数据，提取了8亿多个引用句内容片段。 该平台通过智能引文发现和评估科学文章,为用户提供引用句内容和其对应的分类。",
+      "entities": [
+        {
+          "entity_id": "53_e1",
+          "mention": "Scite",
+          "normalized_name": "Scite",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Scite①是目前世界上最大的基于引用内容的科研论文搜索平台",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "53_e2",
+          "mention": "JoshNicholson",
+          "normalized_name": "Josh Nicholson",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由美国学者JoshNicholson发起",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "54",
+      "sentence": "同时，该系统的评价模型还会根据线索词规则，自动识别每个句子的引用性质，将目标文献的所有引用内容评价结果返回给用户。 但该系统并未对外开放。",
+      "entities": [
+        {
+          "entity_id": "54_e1",
+          "mention": "该系统",
+          "normalized_name": "该系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "该系统的评价模型还会根据线索词规则，自动识别每个句子的引用性质",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "指代前文提及的具体系统，但原文未给出系统名称，需结合上下文确认"
+        },
+        {
+          "entity_id": "54_e2",
+          "mention": "线索词规则",
+          "normalized_name": "线索词规则",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "根据线索词规则，自动识别每个句子的引用性质",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "54_e3",
+          "mention": "目标文献",
+          "normalized_name": "目标文献",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "将目标文献的所有引用内容评价结果返回给用户",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "指代前文提及的特定文献，但原文未给出文献名称，需结合上下文确认"
+        }
+      ]
+    },
+    {
+      "sentence_id": "55",
+      "sentence": "(3)CiteOpinion[21]是由中国科学院文献情报中心乐小虬团队开发的代表作学术贡献循证分析工具，从代表作施引文献引用句内容分析入手，发现同行对代表作学术贡献评价的证据(突破性、重大改进/解决关键问题、创新性、应用性等),为学术评价提供客观依据。 与其他检索类服务系统不同,该工具还提供单篇代表作的即时分析,包括引用句抽取、引用句情感分析(正向/负向/中性）同行评价证据识别、贡献点识别等功能,并提供学术贡献评价循证分析报告。 目前该工具已经开放服务。",
+      "entities": [
+        {
+          "entity_id": "55_e1",
+          "mention": "CiteOpinion[21]",
+          "normalized_name": "CiteOpinion",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "CiteOpinion[21]是由中国科学院文献情报中心乐小虬团队开发的代表作学术贡献循证分析工具",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "55_e2",
+          "mention": "中国科学院文献情报中心",
+          "normalized_name": "中国科学院文献情报中心",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "CiteOpinion[21]是由中国科学院文献情报中心乐小虬团队开发的代表作学术贡献循证分析工具",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "55_e3",
+          "mention": "乐小虬",
+          "normalized_name": "乐小虬",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "CiteOpinion[21]是由中国科学院文献情报中心乐小虬团队开发的代表作学术贡献循证分析工具",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "55_e4",
+          "mention": "代表作学术贡献循证分析工具",
+          "normalized_name": "代表作学术贡献循证分析工具",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "CiteOpinion[21]是由中国科学院文献情报中心乐小虬团队开发的代表作学术贡献循证分析工具",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "该短语为系统描述性名称，可能非正式系统名"
+        },
+        {
+          "entity_id": "55_e5",
+          "mention": "引用句抽取",
+          "normalized_name": "引用句抽取",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "该工具还提供单篇代表作的即时分析,包括引用句抽取、引用句情感分析(正向/负向/中性）同行评价证据识别、贡献点识别等功能",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "55_e6",
+          "mention": "引用句情感分析",
+          "normalized_name": "引用句情感分析",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "该工具还提供单篇代表作的即时分析,包括引用句抽取、引用句情感分析(正向/负向/中性）同行评价证据识别、贡献点识别等功能",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "55_e7",
+          "mention": "同行评价证据识别",
+          "normalized_name": "同行评价证据识别",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "该工具还提供单篇代表作的即时分析,包括引用句抽取、引用句情感分析(正向/负向/中性）同行评价证据识别、贡献点识别等功能",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "55_e8",
+          "mention": "贡献点识别",
+          "normalized_name": "贡献点识别",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "该工具还提供单篇代表作的即时分析,包括引用句抽取、引用句情感分析(正向/负向/中性）同行评价证据识别、贡献点识别等功能",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "55_e9",
+          "mention": "学术贡献评价循证分析报告",
+          "normalized_name": "学术贡献评价循证分析报告",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "并提供学术贡献评价循证分析报告",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "该短语为系统输出物，可能非正式报告名称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "56",
+      "sentence": "引用内容分析从施引文献引用文本内容的角度揭示科技文献间的知识关系，可以克服引文计量分析中使用指标评价带来的不具体、不准确的问题,分析结果对于科技评价、知识流动及引文推荐等应用更为直接和有效，因而近年来已逐渐发展为科学计量学的一个分支,无论在基本理论还是技术方法上都取得了一些实质性进展。然而,由于自然语言的复杂性,引用内容分析领域仍然存在许多挑战，主要问题有：",
+      "entities": [
+        {
+          "entity_id": "56_e1",
+          "mention": "科学计量学",
+          "normalized_name": "科学计量学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "已逐渐发展为科学计量学的一个分支",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e2",
+          "mention": "引用内容分析",
+          "normalized_name": "引用内容分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用内容分析领域仍然存在许多挑战",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "57",
+      "sentence": "(1)在理论研究方面，缺乏将引用内容分析作为一个独立分支进行系统化、体系化研究,无论研究范畴还是技术规范均未形成统一体系;",
+      "entities": [
+        {
+          "entity_id": "57_e1",
+          "mention": "引用内容分析",
+          "normalized_name": "引用内容分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "缺乏将引用内容分析作为一个独立分支进行系统化、体系化研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "59",
+      "sentence": "(3)受自然语言深度语义理解技术限制,引用内容分析中的引用句抽取、知识点识别、引用知识关系识别、情感分析等关键技术在性能上与应用需求还有一定差距;",
+      "entities": [
+        {
+          "entity_id": "59_e1",
+          "mention": "自然语言深度语义理解技术",
+          "normalized_name": "自然语言深度语义理解技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "受自然语言深度语义理解技术限制",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "59_e2",
+          "mention": "引用内容分析",
+          "normalized_name": "引用内容分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用内容分析中的引用句抽取、知识点识别、引用知识关系识别、情感分析等关键技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "59_e3",
+          "mention": "引用句抽取",
+          "normalized_name": "引用句抽取",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用内容分析中的引用句抽取、知识点识别、引用知识关系识别、情感分析等关键技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "59_e4",
+          "mention": "知识点识别",
+          "normalized_name": "知识点识别",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用内容分析中的引用句抽取、知识点识别、引用知识关系识别、情感分析等关键技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "59_e5",
+          "mention": "引用知识关系识别",
+          "normalized_name": "引用知识关系识别",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用内容分析中的引用句抽取、知识点识别、引用知识关系识别、情感分析等关键技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "59_e6",
+          "mention": "情感分析",
+          "normalized_name": "情感分析",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用内容分析中的引用句抽取、知识点识别、引用知识关系识别、情感分析等关键技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "61",
+      "sentence": "(1)作为学科分支开展引用内容分析知识体系研究,规范研究范畴,针对典型应用建立技术规范;",
+      "entities": [
+        {
+          "entity_id": "61_e1",
+          "mention": "引用内容分析",
+          "normalized_name": "引用内容分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "作为学科分支开展引用内容分析知识体系研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "61_e2",
+          "mention": "知识体系研究",
+          "normalized_name": "知识体系研究",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "作为学科分支开展引用内容分析知识体系研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为subfield"
+        }
+      ]
+    },
+    {
+      "sentence_id": "62",
+      "sentence": "(3)引用内容语义分析技术研究,在性能上满足不同应用需求。",
+      "entities": [
+        {
+          "entity_id": "62_e1",
+          "mention": "引用内容语义分析技术",
+          "normalized_name": "引用内容语义分析技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用内容语义分析技术研究",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为method或technique，根据上下文偏向具体技术手段"
+        }
+      ]
+    },
+    {
+      "sentence_id": "63",
+      "sentence": "总之,引用内容分析相对于计量指标分析具有独特的优势，在多个应用上展现出新的发展态势，有利于推动科技评价向\"质评\"方向发展。随着自然语言处理技术的快速迭代,相信引用内容分析未来可期。",
+      "entities": [
+        {
+          "entity_id": "63_e1",
+          "mention": "引用内容分析",
+          "normalized_name": "引用内容分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用内容分析相对于计量指标分析具有独特的优势",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "63_e2",
+          "mention": "计量指标分析",
+          "normalized_name": "计量指标分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引用内容分析相对于计量指标分析具有独特的优势",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "63_e3",
+          "mention": "自然语言处理技术",
+          "normalized_name": "自然语言处理技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着自然语言处理技术的快速迭代",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

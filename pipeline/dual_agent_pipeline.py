@@ -25,9 +25,11 @@ from .reviewer_agent import (
     ReviewResult,
 )
 from .dynamic_term_db import DynamicTermDB
+from .rag import RAGExampleDB
+from .voting import ExtractionVoter
 
 
-class DualAgentPipeline:
+class AgentPipeline:
     """三Agent管道: Agent 1 抽取 → Agent 2 分类 → Agent 3 审查(Likert)"""
 
     def __init__(
@@ -36,6 +38,8 @@ class DualAgentPipeline:
         llm_classification: Optional[LLMClient] = None,
         llm_reviewer: Optional[LLMClient] = None,
         dynamic_term_db: Optional[DynamicTermDB] = None,
+        rag_db: Optional["RAGExampleDB"] = None,
+        voter: Optional["ExtractionVoter"] = None,
         batch_size: int = 12,
         mid_data_dir: str = "",
         verbose: bool = True,
@@ -45,6 +49,8 @@ class DualAgentPipeline:
         self.llm_classification = llm_classification or LLMClient()
         self.llm_reviewer = llm_reviewer or LLMClient()
         self.dynamic_term_db = dynamic_term_db
+        self.rag_db = rag_db
+        self.voter = voter
         self.batch_size = batch_size
         self.mid_data_dir = mid_data_dir
 
@@ -53,6 +59,11 @@ class DualAgentPipeline:
             llm=self.llm_classification,
             dynamic_term_db=self.dynamic_term_db,
             batch_size=self.batch_size,
+            enable_voting=getattr(self, '_enable_voting', False),
+            voting_rounds=getattr(self, '_voting_rounds', 3),
+            voting_temperature=getattr(self, '_voting_temperature', 0.3),
+            enable_rag=getattr(self, '_enable_rag', False),
+            rag_k_examples=getattr(self, '_rag_k_examples', 5),
         )
         self.reviewer_agent = ReviewerAgent(
             llm=self.llm_reviewer,
@@ -68,17 +79,39 @@ class DualAgentPipeline:
         - base_name: 文件基础名 (如 "reviewed_full_1")
         - 返回: 所有 FinalEntityResult
         """
-        self._log(f"[DualAgent] 开始处理 {base_name}, 共 {len(sentences)} 句")
+        self._log(f"[AgentPipeline] 开始处理 {base_name}, 共 {len(sentences)} 句")
 
         all_extractions: list[SentenceExtractionOutput] = []
 
-        # ── Agent 1: Entity Extraction ──
+        # ── Agent 1: Entity Extraction (with optional RAG + Voting) ──
         total_s = len(sentences)
+        rag_hits = 0
+        voted_count = 0
         for idx, (sid, stmt) in enumerate(sentences, 1):
-            extraction = self.extraction_agent.extract(stmt, sentence_id=sid)
+            # RAG: 检索相似 few-shot 示例
+            few_shot = ""
+            if self.rag_db and self.rag_db.is_ready():
+                few_shot = self.rag_db.build_few_shot_text(stmt, k=5, max_examples=5)
+                if few_shot:
+                    rag_hits += 1
+
+            # Voting: 判断是否需要投票
+            use_voting = False
+            if self.voter and self.voter.rounds > 1:
+                use_voting = self.voter.should_use_voting(stmt)
+
+            if use_voting:
+                extraction = self.voter.extract_with_voting(stmt, sid, enable=True)
+                voted_count += 1
+            else:
+                extraction = self.extraction_agent.extract(
+                    stmt, sentence_id=sid, few_shot_text=few_shot,
+                )
+
             all_extractions.append(extraction)
             if idx % 5 == 0 or idx == total_s:
-                print(f"  [{base_name}] 抽取 [{idx}/{total_s}] 句, 累计 {sum(len(e.entities) for e in all_extractions)} 实体")
+                print(f"  [{base_name}] 抽取 [{idx}/{total_s}] 句, 累计 {sum(len(e.entities) for e in all_extractions)} 实体"
+                      + (f" (RAG:{rag_hits} vote:{voted_count})" if (rag_hits or voted_count) else ""))
 
         # ── 写中间结果到 mid_data/ ──
         if self.mid_data_dir:
@@ -209,7 +242,6 @@ def export_summary_json(
             / max(sum(1 for r in results if r.likert_confidence > 0), 1),
             2,
         ),
-        "dynamic_term_db_size": len(results) if results else 0,  # placeholder, updated in run.py
     }
 
     with open(path, "w", encoding="utf-8") as f:

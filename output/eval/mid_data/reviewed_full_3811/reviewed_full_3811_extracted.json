@@ -1,0 +1,2503 @@
+{
+  "base_name": "reviewed_full_3811",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "摘要以RAORMAP为基础,通过各国相关网站调查及文献资料研究,以英国的科研教育机构、科研资助机构以及美国的政府部门三种较具代表性的机构类型为研究对象进行踪迹分析。 调查研究结果显示，当前国际上各类机构制定的开放获取政策内容较为详尽，且实施机构数量较多，同时仍然面临执行力度不足、投入机制不完善以及相关责任落实不明确等方面的挑战。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "RAORMAP",
+          "normalized_name": "RAORMAP",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "摘要以RAORMAP为基础",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "英国",
+          "normalized_name": "英国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "以英国的科研教育机构、科研资助机构以及美国的政府部门三种较具代表性的机构类型为研究对象",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "美国",
+          "normalized_name": "美国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "以英国的科研教育机构、科研资助机构以及美国的政府部门三种较具代表性的机构类型为研究对象",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "开放获取政策",
+          "normalized_name": "开放获取政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "当前国际上各类机构制定的开放获取政策内容较为详尽",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "据开放获取知识库强制性存储政策登记系统(the Registry of Open Access Repositories Manda-toryArchiving Policies,ROARMAP)统计,截止到2015年6月底,有719个制定开放获取政策的机构在此网站进行了注册。 从整体上看,无论在发达国家还是发展中国家,近几年开放获取在实践与政策建设方面均取得了很大进步。与此同时，理论界也展开了对此领域的研究与探讨，一定程度上为开放获取的实践及政策的制定提供了理论依据和指导。 本文试图通过ROARMAP进行统计调查，概括目前国际开放获取政策制定及实施的现状，总结有代表性国家的机构制定和实施开放获取政策的经验，并发现当前开放获取政策实施所面临的挑战,为构建完善的机构开放获取政策体系提供理论依据。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "开放获取知识库强制性存储政策登记系统(the Registry of Open Access Repositories Manda-toryArchiving Policies,ROARMAP)",
+          "normalized_name": "开放获取知识库强制性存储政策登记系统(the Registry of Open Access Repositories Mandatory Archiving Policies, ROARMAP)",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "据开放获取知识库强制性存储政策登记系统(the Registry of Open Access Repositories Manda-toryArchiving Policies,ROARMAP)统计",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "ROARMAP",
+          "normalized_name": "ROARMAP",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "据开放获取知识库强制性存储政策登记系统(the Registry of Open Access Repositories Manda-toryArchiving Policies,ROARMAP)统计",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "开放获取",
+          "normalized_name": "开放获取",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event",
+            "Abstract"
+          ],
+          "evidence": "近几年开放获取在实践与政策建设方面均取得了很大进步",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "开放获取政策",
+          "normalized_name": "开放获取政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "开放获取在实践与政策建设方面均取得了很大进步",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "如图1所示,从地域分布来看，目前实施开放获取政策的各机构主要集中在欧洲和美洲地区，这与开放获取政策最早是由欧美发达国家制定并实施是分不开的。 另外截止到2015年7月5日，在美洲，美国实施开放获取政策的机构占 $6 6 . 8 4 \\%$ ；",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "开放获取政策",
+          "normalized_name": "开放获取政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "目前实施开放获取政策的各机构主要集中在欧洲和美洲地区",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "欧洲",
+          "normalized_name": "欧洲",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主要集中在欧洲和美洲地区",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为地理区域，非严格学术实体，但图情领域放宽规则下可视为具体地域实体"
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "美洲",
+          "normalized_name": "美洲",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主要集中在欧洲和美洲地区",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为地理区域，非严格学术实体，但图情领域放宽规则下可视为具体地域实体"
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "美国",
+          "normalized_name": "美国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在美洲，美国实施开放获取政策的机构占66.84%",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "另外截止到2015年7月5日，在美洲，美国实施开放获取政策的机构占 $6 6 . 8 4 \\%$ ； 在欧洲，北欧和南欧在欧洲实施开放获取政策的机构中占据较大比例，其中英国的机构数量占欧洲数量的 $2 6 . 3 4 \\%$ ,对于国家数量较多，且实施开放获取政策的机构在地域上分布较均匀的欧洲来说，英国处于领先地位。 ROARMAP把注册实施OA政策的机构按照机构单元划分为五类：基金、基金与研究机构、多研究机构、整个研究机构和研究机构子机构。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "美国",
+          "normalized_name": "美国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在美洲，美国实施开放获取政策的机构",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "欧洲",
+          "normalized_name": "欧洲",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在欧洲，北欧和南欧在欧洲实施开放获取政策的机构中占据较大比例",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "北欧",
+          "normalized_name": "北欧",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "北欧和南欧在欧洲实施开放获取政策的机构中占据较大比例",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "地域划分，非严格行政实体"
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "南欧",
+          "normalized_name": "南欧",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "北欧和南欧在欧洲实施开放获取政策的机构中占据较大比例",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "地域划分，非严格行政实体"
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "英国",
+          "normalized_name": "英国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "英国的机构数量占欧洲数量的26.34%",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e6",
+          "mention": "ROARMAP",
+          "normalized_name": "ROARMAP",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "ROARMAP把注册实施OA政策的机构按照机构单元划分为五类",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e7",
+          "mention": "开放获取政策",
+          "normalized_name": "开放获取政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "美国实施开放获取政策的机构",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "根据统计发现,近十年实施开放获取政策各类型机构均呈现快速增长趋势，其中研究型机构所占比例最大( $70 \\%$ )（见表1）。 从现有数量上看，研究型机构在实施开放获取政策方面处于主导地位。这与研究机构的机构性质是分不开的，研究型机构主要包括高校、科研单位，此类机构科研成果较多，更加注重通过开放获取政策的实施促进学术科研成果的传播与交流。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "开放获取政策",
+          "normalized_name": "开放获取政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "近十年实施开放获取政策各类型机构均呈现快速增长趋势",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "研究型机构",
+          "normalized_name": "研究型机构",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "研究型机构在实施开放获取政策方面处于主导地位",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "机构类型较泛，但原文有具体限定修饰"
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "高校",
+          "normalized_name": "高校",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "研究型机构主要包括高校、科研单位",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但作为研究型机构的具体子类，且原文有明确指代"
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "科研单位",
+          "normalized_name": "科研单位",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "研究型机构主要包括高校、科研单位",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但作为研究型机构的具体子类，且原文有明确指代"
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "但是ROARMAP的分类仅仅从单元个体上对实施开放获取政策的机构进行了区分，本文为更好地分析各机构类型实施开放获取政策的情况，按照很多学者通用的基本划分方法进行分析研究,如李麟等把实施开放获取政策的机构按机构性质归纳为国际机构、政府机构、科研资助机构、科研教育机构、出版机构等。根据以上统计分析,本文对于国际开放获取政策实践的研究主要集中在英、美等发达国家中包括科学教育机构和科研资助机构在内的研究型机构以及政府机构。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "ROARMAP",
+          "normalized_name": "ROARMAP",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "ROARMAP的分类仅仅从单元个体上对实施开放获取政策的机构进行了区分",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "开放获取政策",
+          "normalized_name": "开放获取政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "实施开放获取政策的机构",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "李麟",
+          "normalized_name": "李麟",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "李麟等把实施开放获取政策的机构按机构性质归纳为国际机构、政府机构、科研资助机构、科研教育机构、出版机构等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "国际机构",
+          "normalized_name": "国际机构",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "李麟等把实施开放获取政策的机构按机构性质归纳为国际机构、政府机构、科研资助机构、科研教育机构、出版机构等",
+          "is_specific_entity": false,
+          "confidence": 0.6,
+          "uncertainty": "泛化机构类别词，但作为分类体系中的具体类型提及，保留低置信度"
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "政府机构",
+          "normalized_name": "政府机构",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "李麟等把实施开放获取政策的机构按机构性质归纳为国际机构、政府机构、科研资助机构、科研教育机构、出版机构等",
+          "is_specific_entity": false,
+          "confidence": 0.6,
+          "uncertainty": "泛化机构类别词，但作为分类体系中的具体类型提及，保留低置信度"
+        },
+        {
+          "entity_id": "6_e6",
+          "mention": "科研资助机构",
+          "normalized_name": "科研资助机构",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "李麟等把实施开放获取政策的机构按机构性质归纳为国际机构、政府机构、科研资助机构、科研教育机构、出版机构等",
+          "is_specific_entity": false,
+          "confidence": 0.6,
+          "uncertainty": "泛化机构类别词，但作为分类体系中的具体类型提及，保留低置信度"
+        },
+        {
+          "entity_id": "6_e7",
+          "mention": "科研教育机构",
+          "normalized_name": "科研教育机构",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "李麟等把实施开放获取政策的机构按机构性质归纳为国际机构、政府机构、科研资助机构、科研教育机构、出版机构等",
+          "is_specific_entity": false,
+          "confidence": 0.6,
+          "uncertainty": "泛化机构类别词，但作为分类体系中的具体类型提及，保留低置信度"
+        },
+        {
+          "entity_id": "6_e8",
+          "mention": "出版机构",
+          "normalized_name": "出版机构",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "李麟等把实施开放获取政策的机构按机构性质归纳为国际机构、政府机构、科研资助机构、科研资助机构、科研教育机构、出版机构等",
+          "is_specific_entity": false,
+          "confidence": 0.6,
+          "uncertainty": "泛化机构类别词，但作为分类体系中的具体类型提及，保留低置信度"
+        },
+        {
+          "entity_id": "6_e9",
+          "mention": "国际开放获取政策实践",
+          "normalized_name": "国际开放获取政策实践",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本文对于国际开放获取政策实践的研究主要集中在英、美等发达国家中",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为research_program"
+        },
+        {
+          "entity_id": "6_e10",
+          "mention": "英",
+          "normalized_name": "英国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "英、美等发达国家",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e11",
+          "mention": "美",
+          "normalized_name": "美国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "英、美等发达国家",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e12",
+          "mention": "科学教育机构",
+          "normalized_name": "科学教育机构",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "包括科学教育机构和科研资助机构在内的研究型机构",
+          "is_specific_entity": false,
+          "confidence": 0.6,
+          "uncertainty": "泛化机构类别词，但作为分类体系中的具体类型提及，保留低置信度"
+        },
+        {
+          "entity_id": "6_e13",
+          "mention": "研究型机构",
+          "normalized_name": "研究型机构",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "包括科学教育机构和科研资助机构在内的研究型机构",
+          "is_specific_entity": false,
+          "confidence": 0.6,
+          "uncertainty": "泛化机构类别词，但作为分类体系中的具体类型提及，保留低置信度"
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "基于相关文献的研究基础，并综合考虑各国实施开放获取政策的机构类型、影响力、成熟度、对以后开放获取政策实践的参考价值等方面的因素，笔者通过网络调查分析发现,英国科研教育机构与科研资助机构，以及美国的政府机构颁布实施的开放获取政策无论从内容上还是实施力度等方面都较具代表性，因此本文对相关的实践概况与具体实践案例进行了系统的总结与梳理，以期为国内同行的研究提供借鉴参考。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "开放获取政策",
+          "normalized_name": "开放获取政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "综合考虑各国实施开放获取政策的机构类型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "英国科研教育机构",
+          "normalized_name": "英国科研教育机构",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "英国科研教育机构与科研资助机构",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "机构类型较泛，但有限定词'英国'，可视为具体组织类别"
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "科研资助机构",
+          "normalized_name": "科研资助机构",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "英国科研教育机构与科研资助机构",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "未给出具体机构名称，但'科研资助机构'在政策语境中常指代具体类型组织"
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "美国政府机构",
+          "normalized_name": "美国政府机构",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国的政府机构颁布实施的开放获取政策",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "有限定词'美国'，可视为具体国家层面的机构类别"
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "根据ROARMAP统计，目前世界上大约有500多所高校及相关高校下属院系推出了开放获取政策。 其中在推行开放获取政策的实践方面，英国、美国的科研教育机构数量较多。从增长速度来看，英国在2009年之前数量较少，经过2010年和2011年的增长停滞后,从2012年开始呈现快速增长趋势。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "ROARMAP",
+          "normalized_name": "ROARMAP",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "根据ROARMAP统计",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "开放获取政策",
+          "normalized_name": "开放获取政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "推出了开放获取政策",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "英国",
+          "normalized_name": "英国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "英国、美国的科研教育机构数量较多",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "美国",
+          "normalized_name": "美国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "英国、美国的科研教育机构数量较多",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "研究水平、图书馆藏量、教学质量等8项指标的总分进行统计的英国高校排名的前20位名单，结合ROARMAP的注册表进行统计,发现有19所高校推出了开放获取政策（见表2），可见英国科研教育机构对开放获取十分重视,普及率较高。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "英国高校排名",
+          "normalized_name": "英国高校排名",
+          "candidate_l3": "index",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "英国高校排名的前20位名单",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能指代具体的排名体系（如THE/QS/REF），但原文未明确命名，按原文短语抽取"
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "ROARMAP",
+          "normalized_name": "ROARMAP",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "结合ROARMAP的注册表进行统计",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "开放获取政策",
+          "normalized_name": "开放获取政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "有19所高校推出了开放获取政策",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "英国科研教育机构",
+          "normalized_name": "英国科研教育机构",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "英国科研教育机构对开放获取十分重视",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但带有国家限定，可视为具体机构群体"
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "据表1发现,英国各科研教育机构制定的开放获取政策内容较为详尽，开放获取的内容要求主要以同行评议的论文为开放对象，且实施强制性政策，推广力度较强，且大部分均有资金保障，如大部分规定了论文处理费（Article Processing charges,APCs）由资助机构提供或本机构承担,保证了开放获取运动在高校科研机构的顺利进行,对各国完善科研教育机构开放获取政策的构建具有借鉴意义。 其中，近两年来最新制定并成功实施开放获取政策的高校包括：具有完整开放获取政策体系的杜伦大学、激励机制较为明确的约克大学和突破传统开放获取内容的华威大学等，笔者对这3所高校开放获取政策的特色内容进行了简要整理与概括：",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "英国各科研教育机构",
+          "normalized_name": "英国各科研教育机构",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "英国各科研教育机构制定的开放获取政策内容较为详尽",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "机构名称未具体列出，但'英国'限定修饰，可视为具体地域的机构群体"
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "开放获取政策",
+          "normalized_name": "开放获取政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "英国各科研教育机构制定的开放获取政策内容较为详尽",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "同行评议的论文",
+          "normalized_name": "同行评议的论文",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "开放获取的内容要求主要以同行评议的论文为开放对象",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e4",
+          "mention": "论文处理费（Article Processing charges,APCs）",
+          "normalized_name": "论文处理费（Article Processing charges, APCs）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大部分规定了论文处理费（Article Processing charges,APCs）由资助机构提供或本机构承担",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e5",
+          "mention": "开放获取运动",
+          "normalized_name": "开放获取运动",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "保证了开放获取运动在高校科研机构的顺利进行",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e6",
+          "mention": "杜伦大学",
+          "normalized_name": "杜伦大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "具有完整开放获取政策体系的杜伦大学",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e7",
+          "mention": "约克大学",
+          "normalized_name": "约克大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "激励机制较为明确的约克大学",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e8",
+          "mention": "华威大学",
+          "normalized_name": "华威大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "突破传统开放获取内容的华威大学",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "杜伦大学为尽可能广泛地开放并传播本校世界级的研究成果，促进研究成果的重用并增强其在学术研究团体及社会中的影响力,于2013年1月推出了开放获取政策，此政策适用于本校全体教师的科研成果以及获得博士学位学生的学位论文。 政策规定，自2013年1月1日起,作者在3个月内必须向“杜伦大学学术研究在线\"（Durham Research Online，DRO)提交已发表的电子版的同行评议期刊论文和会议论文;",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "杜伦大学",
+          "normalized_name": "杜伦大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "杜伦大学为尽可能广泛地开放并传播本校世界级的研究成果",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "开放获取政策",
+          "normalized_name": "开放获取政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "于2013年1月推出了开放获取政策",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "杜伦大学学术研究在线",
+          "normalized_name": "杜伦大学学术研究在线",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "向“杜伦大学学术研究在线”（Durham Research Online，DRO)提交",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "Durham Research Online",
+          "normalized_name": "Durham Research Online",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "向“杜伦大学学术研究在线”（Durham Research Online，DRO)提交",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "DRO",
+          "normalized_name": "DRO",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "向“杜伦大学学术研究在线”（Durham Research Online，DRO)提交",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e6",
+          "mention": "同行评议期刊论文",
+          "normalized_name": "同行评议期刊论文",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "提交已发表的电子版的同行评议期刊论文和会议论文",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "泛称，但图情领域放宽规则中作为具体文献类型可抽取"
+        },
+        {
+          "entity_id": "11_e7",
+          "mention": "会议论文",
+          "normalized_name": "会议论文",
+          "candidate_l3": "conference_paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "提交已发表的电子版的同行评议期刊论文和会议论文",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "泛称，但图情领域放宽规则中作为具体文献类型可抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "政策规定，自2013年1月1日起,作者在3个月内必须向“杜伦大学学术研究在线\"（Durham Research Online，DRO)提交已发表的电子版的同行评议期刊论文和会议论文; 此政策还明确规定了研究人员、资助者、学校和监管人员等开放获取的各主体所应承担的责任[。除此之外,为支持开放获取的顺利进行，该校还颁布了杜伦大学研究成果在线使用政策、研究成果下载政策、电子论文下载政策，形成了较为完整的政策体系，保障了开放获取资源的正常使用[1-13] 。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "杜伦大学学术研究在线",
+          "normalized_name": "杜伦大学学术研究在线",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "作者在3个月内必须向“杜伦大学学术研究在线”（Durham Research Online，DRO)提交已发表的电子版的同行评议期刊论文和会议论文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "Durham Research Online",
+          "normalized_name": "Durham Research Online",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "作者在3个月内必须向“杜伦大学学术研究在线”（Durham Research Online，DRO)提交已发表的电子版的同行评议期刊论文和会议论文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "DRO",
+          "normalized_name": "DRO",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "作者在3个月内必须向“杜伦大学学术研究在线”（Durham Research Online，DRO)提交已发表的电子版的同行评议期刊论文和会议论文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "同行评议期刊论文",
+          "normalized_name": "同行评议期刊论文",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "提交已发表的电子版的同行评议期刊论文和会议论文",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "泛称，但图情领域放宽规则中作为具体文献类型可抽取"
+        },
+        {
+          "entity_id": "12_e5",
+          "mention": "会议论文",
+          "normalized_name": "会议论文",
+          "candidate_l3": "conference_paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "提交已发表的电子版的同行评议期刊论文和会议论文",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "泛称，但图情领域放宽规则中作为具体文献类型可抽取"
+        },
+        {
+          "entity_id": "12_e6",
+          "mention": "开放获取",
+          "normalized_name": "开放获取",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event",
+            "Abstract"
+          ],
+          "evidence": "此政策还明确规定了研究人员、资助者、学校和监管人员等开放获取的各主体所应承担的责任",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "12_e7",
+          "mention": "杜伦大学研究成果在线使用政策",
+          "normalized_name": "杜伦大学研究成果在线使用政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "该校还颁布了杜伦大学研究成果在线使用政策、研究成果下载政策、电子论文下载政策",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e8",
+          "mention": "研究成果下载政策",
+          "normalized_name": "研究成果下载政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "该校还颁布了杜伦大学研究成果在线使用政策、研究成果下载政策、电子论文下载政策",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e9",
+          "mention": "电子论文下载政策",
+          "normalized_name": "电子论文下载政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "该校还颁布了杜伦大学研究成果在线使用政策、研究成果下载政策、电子论文下载政策",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "约克大学[4 2011年颁布开放获取政策,并于2014年6月推行了内容较为详尽的开放获取政策，其主要面向本校全体教师的科研成果及研究生学习过程中所发表的研究成果也包括博士论文和硕士论文; 政策规定主要框架包括研究信息系统(CRIS）和机构知识库,其中CRIS是本校研究成果的官方记录用以进行绩效考核、科研考核,此形式将成为一种有效的激励机制。政策还对具体流程中的相关环节如准备出版、标准化的作者认证、确认成果归属机构为本校、确认科研经费来源、保留版权、记录所有本人在CRIS发表的成果、存储全文、同行评议的期刊文章和会议论文的副本等方面做了详细的说明，并明确了相关主体的责任，确保了开放获取的实施效果。 另外,作为白玫瑰研究在线(WRRO)的成员之一,目前约克大学还通过WR-RO作为机构知识库用来存储研究成果，此平台主要收集元数据和来自CRIS 的全文数据。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "约克大学",
+          "normalized_name": "约克大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "约克大学[4 2011年颁布开放获取政策",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "开放获取政策",
+          "normalized_name": "开放获取政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "约克大学[4 2011年颁布开放获取政策",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "研究信息系统(CRIS）",
+          "normalized_name": "研究信息系统(CRIS)",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "政策规定主要框架包括研究信息系统(CRIS）和机构知识库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "机构知识库",
+          "normalized_name": "机构知识库",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "政策规定主要框架包括研究信息系统(CRIS）和机构知识库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e5",
+          "mention": "白玫瑰研究在线(WRRO)",
+          "normalized_name": "白玫瑰研究在线(WRRO)",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "作为白玫瑰研究在线(WRRO)的成员之一",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e6",
+          "mention": "WR-RO",
+          "normalized_name": "WR-RO",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "目前约克大学还通过WR-RO作为机构知识库用来存储研究成果",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e7",
+          "mention": "开放获取",
+          "normalized_name": "开放获取",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event",
+            "Abstract"
+          ],
+          "evidence": "确保了开放获取的实施效果",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "华威大学于2013年4月推出开放获取政策，打破了大多数开放获取政策仅局限于同行评议期刊论文或者会议论文的规定,扩大了开放获取的范围,承认不同类型的研究成果,如专著、图书章节、报告、视频和音频等，指出了开放获取的意义,如使研究与创新的关联更加紧密，促使公众参与到研究中，提高研究本身的进展效率等; 建议并支持“绿色OA\"路线(如像WRAP机构知识库一样使用自存档或其他类型的开放知识库)作为可持续、有效地获取科研成果手段;",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "华威大学",
+          "normalized_name": "华威大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "华威大学于2013年4月推出开放获取政策",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "开放获取政策",
+          "normalized_name": "开放获取政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "华威大学于2013年4月推出开放获取政策",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "同行评议期刊论文",
+          "normalized_name": "同行评议期刊论文",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "打破了大多数开放获取政策仅局限于同行评议期刊论文或者会议论文的规定",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e4",
+          "mention": "会议论文",
+          "normalized_name": "会议论文",
+          "candidate_l3": "conference_paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "打破了大多数开放获取政策仅局限于同行评议期刊论文或者会议论文的规定",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e5",
+          "mention": "专著",
+          "normalized_name": "专著",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "承认不同类型的研究成果,如专著、图书章节、报告、视频和音频等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处为泛称，但原文明确列举为具体类型，按召回优先抽取"
+        },
+        {
+          "entity_id": "14_e6",
+          "mention": "图书章节",
+          "normalized_name": "图书章节",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "承认不同类型的研究成果,如专著、图书章节、报告、视频和音频等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e7",
+          "mention": "报告",
+          "normalized_name": "报告",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "承认不同类型的研究成果,如专著、图书章节、报告、视频和音频等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e8",
+          "mention": "绿色OA",
+          "normalized_name": "绿色OA",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event",
+            "Abstract"
+          ],
+          "evidence": "建议并支持“绿色OA\"路线",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "14_e9",
+          "mention": "WRAP机构知识库",
+          "normalized_name": "WRAP机构知识库",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "像WRAP机构知识库一样使用自存档或其他类型的开放知识库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e10",
+          "mention": "开放知识库",
+          "normalized_name": "开放知识库",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "使用自存档或其他类型的开放知识库",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处为泛称，但原文作为具体类型列举，按召回优先抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "近几年越来越多的资助机构也推出开放获取政策以支持开放获取，促进科研成果的传播。 笔者通过ROARMAP的统计发现,欧洲推出开放获取政策的科研资助机构数量在2012年以前增长较为缓慢,2012－2014年期间增长迅速，目前已成为世界上推出开放获取政策的科研资助机构数量最多的大洲，其中英国的资助机构所占比例较大。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "开放获取政策",
+          "normalized_name": "开放获取政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "越来越多的资助机构也推出开放获取政策以支持开放获取",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "ROARMAP",
+          "normalized_name": "ROARMAP",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "笔者通过ROARMAP的统计发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "欧洲",
+          "normalized_name": "欧洲",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "欧洲推出开放获取政策的科研资助机构数量在2012年以前增长较为缓慢",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为地理区域，但此处作为抽象实体中的学科/区域概念"
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "英国",
+          "normalized_name": "英国",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "其中英国的资助机构所占比例较大",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为地理区域，但此处作为抽象实体中的学科/区域概念"
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "在2005年颁布开放获取政策,旨在使公共资助于科研的经费最大地实现经济和社会回报,并在2012年7月17日进行了修订，2013年4月1日生效[。 此开放获取政策不仅面向研究者群体,而且还面向商业领域、慈善机构以及公共部门的潜在用户和一般纳税公众; 并且仅适用于同行评议的研究论文(包括没有出版商委托的评审论文)以及研究理事会的会议论文。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "开放获取政策",
+          "normalized_name": "开放获取政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在2005年颁布开放获取政策",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "2012年7月17日",
+          "normalized_name": "2012年7月17日",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "在2012年7月17日进行了修订",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "2013年4月1日",
+          "normalized_name": "2013年4月1日",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "2013年4月1日生效",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e4",
+          "mention": "同行评议的研究论文",
+          "normalized_name": "同行评议的研究论文",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "仅适用于同行评议的研究论文",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e5",
+          "mention": "研究理事会的会议论文",
+          "normalized_name": "研究理事会的会议论文",
+          "candidate_l3": "conference_paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以及研究理事会的会议论文",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "并且仅适用于同行评议的研究论文(包括没有出版商委托的评审论文)以及研究理事会的会议论文。 另外，尽管研究理事会为实现最大限度的再利用,支持立即开放获取,但是此政策除支持“绿色OA\"外,也支持“金色OA”; 政策还规定用于开放获取的经费将会直接发放给研究机构。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "同行评议的研究论文",
+          "normalized_name": "同行评议的研究论文",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "仅适用于同行评议的研究论文(包括没有出版商委托的评审论文)以及研究理事会的会议论文",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "研究理事会的会议论文",
+          "normalized_name": "研究理事会的会议论文",
+          "candidate_l3": "conference_paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "仅适用于同行评议的研究论文(包括没有出版商委托的评审论文)以及研究理事会的会议论文",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "研究理事会",
+          "normalized_name": "研究理事会",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "研究理事会的会议论文",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为具体机构名，但原文未给出全称"
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "绿色OA",
+          "normalized_name": "绿色OA",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event",
+            "Abstract"
+          ],
+          "evidence": "支持立即开放获取,但是此政策除支持“绿色OA\"外,也支持“金色OA\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e5",
+          "mention": "金色OA",
+          "normalized_name": "金色OA",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event",
+            "Abstract"
+          ],
+          "evidence": "支持立即开放获取,但是此政策除支持“绿色OA\"外,也支持“金色OA\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e6",
+          "mention": "开放获取",
+          "normalized_name": "开放获取",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event",
+            "Abstract"
+          ],
+          "evidence": "支持立即开放获取",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e7",
+          "mention": "研究机构",
+          "normalized_name": "研究机构",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "用于开放获取的经费将会直接发放给研究机构",
+          "is_specific_entity": false,
+          "confidence": 0.6,
+          "uncertainty": "泛称，未指定具体机构名称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "开放获取对医学卫生领域有重大意义，能够加快提高世界医学卫生整体水平。笔者通过调查发现,近两年英国医学卫生领域的相关资助机构积极推出了开放获取政策,如英国糖尿病协会(DiabetesUK)在2014年6月1日开始实施开放获取政策，规定协会资助项目的研究成果须在首次发表后6个月之内实现开放获取,实现此政策的方法也包括“金色OA”和“绿色OA”,但为使受益最大化并减少开放获取出版的风险，此机构鼓励通过“金色OA”路线实现开放获取。 英国白血病和淋巴瘤研究机构在2014年10月1日推出开放获取政策，规定任何已经发表在同行评审的期刊并承认本机构的全部或部分资助的原始研究论文的电子版，均须在杂志出版商最终官方日期6个月内，通过英国PubMed Central 实现开放获取。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "英国糖尿病协会(DiabetesUK)",
+          "normalized_name": "英国糖尿病协会(DiabetesUK)",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "英国糖尿病协会(DiabetesUK)在2014年6月1日开始实施开放获取政策",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "开放获取政策",
+          "normalized_name": "开放获取政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "英国糖尿病协会(DiabetesUK)在2014年6月1日开始实施开放获取政策",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "金色OA",
+          "normalized_name": "金色OA",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现此政策的方法也包括“金色OA”和“绿色OA”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e4",
+          "mention": "绿色OA",
+          "normalized_name": "绿色OA",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现此政策的方法也包括“金色OA”和“绿色OA”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e5",
+          "mention": "英国白血病和淋巴瘤研究机构",
+          "normalized_name": "英国白血病和淋巴瘤研究机构",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "英国白血病和淋巴瘤研究机构在2014年10月1日推出开放获取政策",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e6",
+          "mention": "英国PubMed Central",
+          "normalized_name": "英国PubMed Central",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过英国PubMed Central 实现开放获取",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "主要表现在其各国及地区积极采取立法或提出草案等方式大力支持开放获取运动。 美、英、德等也认识到推进开放获取是政府的责任，学者张晓林等也认为政府的这种责任是促进科学自身发展和实现科学的社会价值的职业责任。 近几年美国联邦政府和各州政府都加快了开放获取的立法进程。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "开放获取运动",
+          "normalized_name": "开放获取运动",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "各国及地区积极采取立法或提出草案等方式大力支持开放获取运动",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "张晓林",
+          "normalized_name": "张晓林",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "学者张晓林等也认为政府的这种责任是促进科学自身发展和实现科学的社会价值的职业责任",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "美国联邦政府",
+          "normalized_name": "美国联邦政府",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "近几年美国联邦政府和各州政府都加快了开放获取的立法进程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e4",
+          "mention": "各州政府",
+          "normalized_name": "各州政府",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国联邦政府和各州政府都加快了开放获取的立法进程",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处'各州政府'虽为泛称，但在'美国联邦政府和各州政府'的并列结构中，'各州政府'指代美国各州的具体政府机构，具有可识别性，故抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "从2003年6月，美国国会通过了《公共获取科学法案》(Public Access of Science Act)的立法提案,支持对公共资金资助的科学研究成果的开放获取,到2013年2月22日，美国白宫科技政策办公室颁布了给各个联邦机构的备忘录—《关于增加对联邦资助科学研究成果的获取》（Increasing Access to the Results ofFederallyFunded Scientific Research)的政策指令,要求美国国内年度科研与发展经费1亿美元以上的各个联邦机构都要制定相关政策，以支持提高联邦政府资助的研究成果的公开获取，均反映了美国政府对公共资助的科研成果开放获取的支持。同时，美国相关政府还推出开放数据项目，如美国国家海洋和大气管理局(The U. S. National Oceanic and Atmospheric Ad-ministration，NOAA）宣布将获取的研究数据向公众提供开放获取和互操作，并促进研究数据的再利用。此外,政府机构还与公共服务部门合作，为开放获取注入了新的动力。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "《公共获取科学法案》",
+          "normalized_name": "《公共获取科学法案》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "美国国会通过了《公共获取科学法案》(Public Access of Science Act)的立法提案",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "Public Access of Science Act",
+          "normalized_name": "Public Access of Science Act",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《公共获取科学法案》(Public Access of Science Act)的立法提案",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "美国白宫科技政策办公室",
+          "normalized_name": "美国白宫科技政策办公室",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国白宫科技政策办公室颁布了给各个联邦机构的备忘录",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e4",
+          "mention": "《关于增加对联邦资助科学研究成果的获取》",
+          "normalized_name": "《关于增加对联邦资助科学研究成果的获取》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "颁布了给各个联邦机构的备忘录—《关于增加对联邦资助科学研究成果的获取》（Increasing Access to the Results ofFederallyFunded Scientific Research)的政策指令",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e5",
+          "mention": "Increasing Access to the Results ofFederallyFunded Scientific Research",
+          "normalized_name": "Increasing Access to the Results of Federally Funded Scientific Research",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《关于增加对联邦资助科学研究成果的获取》（Increasing Access to the Results ofFederallyFunded Scientific Research)的政策指令",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e6",
+          "mention": "美国国家海洋和大气管理局",
+          "normalized_name": "美国国家海洋和大气管理局",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国国家海洋和大气管理局(The U. S. National Oceanic and Atmospheric Ad-ministration，NOAA）宣布将获取的研究数据向公众提供开放获取和互操作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e7",
+          "mention": "NOAA",
+          "normalized_name": "NOAA",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国国家海洋和大气管理局(The U. S. National Oceanic and Atmospheric Ad-ministration，NOAA）宣布将获取的研究数据向公众提供开放获取和互操作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e8",
+          "mention": "开放获取",
+          "normalized_name": "开放获取",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event",
+            "Abstract"
+          ],
+          "evidence": "支持对公共资金资助的科学研究成果的开放获取",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "此法案还规定到2014年1月1日,每个州立大学要建立一个开放获取研究任务组,每个任务组还需在2015年1月1日之前,列出其相应的调查结果和建议。 此法案于2013年8月9日向公众推出并正式生效。纽约州为确保公众能够获取由国家资助的研究成果，于2013年3月6日提出了“纳税人获取公共资助的研究成果”的法案，规定每个为研究提供直接资助的机构应该制定公共获取政策，并对政策所应包含的具体内容进行了相应规定，一定程度上促进了公共获取政策的实施。 加利福尼亚州还提出了有关公众获取机构资助的健康医学研究成果的提案。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "纽约州",
+          "normalized_name": "纽约州",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "纽约州为确保公众能够获取由国家资助的研究成果，于2013年3月6日提出了“纳税人获取公共资助的研究成果”的法案",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "“纳税人获取公共资助的研究成果”的法案",
+          "normalized_name": "“纳税人获取公共资助的研究成果”的法案",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "提出了“纳税人获取公共资助的研究成果”的法案",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "加利福尼亚州",
+          "normalized_name": "加利福尼亚州",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "加利福尼亚州还提出了有关公众获取机构资助的健康医学研究成果的提案",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "其他相关国家开放获取政策的实施中国国家自然科学基金委员会也于2014年5月发布关于实施开放获取政策的声明,规定国家自然科学基金全部或部分资助的科研项目投稿并在学术期刊上发表的研究论文，作者应在论文发表时把同行评议后录用的最终定稿存储到国家自然科学基金委员会的知识库,于12个月内开放获取,并于2015年5月开始,基金委正式发布“国家自然科学基金委员会基础研究知识库”，存储13.5万篇期刊论文,截至10月22日下载量超过24万次。财团法人日本科学技术振兴机构(JST)在2013年4月发布开放获取政策,规定在尊重科研人员发表自由的前提下,以机构知识库系统、JST科研基金资助科研成果论文等方式，促使日本科研课题所产生的期刊论文在网络上免费获取。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "中国国家自然科学基金委员会",
+          "normalized_name": "中国国家自然科学基金委员会",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中国国家自然科学基金委员会也于2014年5月发布关于实施开放获取政策的声明",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "关于实施开放获取政策的声明",
+          "normalized_name": "关于实施开放获取政策的声明",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "发布关于实施开放获取政策的声明",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e3",
+          "mention": "国家自然科学基金委员会的知识库",
+          "normalized_name": "国家自然科学基金委员会的知识库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "存储到国家自然科学基金委员会的知识库",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e4",
+          "mention": "国家自然科学基金委员会基础研究知识库",
+          "normalized_name": "国家自然科学基金委员会基础研究知识库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基金委正式发布“国家自然科学基金委员会基础研究知识库”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e5",
+          "mention": "财团法人日本科学技术振兴机构(JST)",
+          "normalized_name": "财团法人日本科学技术振兴机构(JST)",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "财团法人日本科学技术振兴机构(JST)在2013年4月发布开放获取政策",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e6",
+          "mention": "开放获取政策",
+          "normalized_name": "开放获取政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "财团法人日本科学技术振兴机构(JST)在2013年4月发布开放获取政策",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e7",
+          "mention": "机构知识库系统",
+          "normalized_name": "机构知识库系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以机构知识库系统、JST科研基金资助科研成果论文等方式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e8",
+          "mention": "JST科研基金",
+          "normalized_name": "JST科研基金",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "JST科研基金资助科研成果论文",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "本部分总结了当前各机构所制定的开放获取政策的总体特征,为以后相关机构制定和完善此类政策提供理论依据。 笔者主要总结了以下几方面的特征：",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "开放获取政策",
+          "normalized_name": "开放获取政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "当前各机构所制定的开放获取政策的总体特征",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "第一,从相关保障制度来看，首先，大部分政策保障了开放获取内容的质量，均对所收录的内容进行了规定，要求提交内容必须是同行评议论文的最终版本或者是博士、硕士学位论文，有的还规定是图书或其中章节等内容,从来源上保证了存储内容的科学性及可靠性。 其次，资金资助方面的规定提供了经济保障。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "开放获取",
+          "normalized_name": "开放获取",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "大部分政策保障了开放获取内容的质量",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "同行评议论文",
+          "normalized_name": "同行评议论文",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "要求提交内容必须是同行评议论文的最终版本",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛指类型，但图情领域放宽规则中作为具体文献类型可抽取"
+        },
+        {
+          "entity_id": "24_e3",
+          "mention": "博士、硕士学位论文",
+          "normalized_name": "博士、硕士学位论文",
+          "candidate_l3": "thesis",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "或者是博士、硕士学位论文",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛指类型，但作为具体学位论文类型可抽取"
+        },
+        {
+          "entity_id": "24_e4",
+          "mention": "图书",
+          "normalized_name": "图书",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "有的还规定是图书或其中章节等内容",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛指类型，但作为具体文献类型可抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "其次，资金资助方面的规定提供了经济保障。 为数过半的机构规定实施了APCs机制,而且规定论文处理所需费用由本机构或者相关资助机构提供，缓解了开放获取过程中提交主体的经济压力，提高了他们的积极性。另外据统计发现,凡是实施APCs机制的机构,均已“金色\"开放获取路线为主，以“绿色”开放获取路线为辅,通过评审环节也使所提交内容的科学性更有保障。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "APCs机制",
+          "normalized_name": "APCs机制",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为数过半的机构规定实施了APCs机制",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "金色开放获取路线",
+          "normalized_name": "金色开放获取路线",
+          "candidate_l3": "approach",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "均已“金色\"开放获取路线为主",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e3",
+          "mention": "绿色开放获取路线",
+          "normalized_name": "绿色开放获取路线",
+          "candidate_l3": "approach",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以“绿色”开放获取路线为辅",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "第二,从政策实施形式来看，一方面，实施强制性政策的机构数量远远多于实施导向性政策的机构数量,总体上呈现一种导向性政策逐渐被强制性政策所取代的趋势。强制性政策内容的规定，更有利于开放获取运动的开展。另一方面，政策体系中相关激励政策的制定有待进一步加强,仅有小部分机构就开放获取相关激励措施作出具体规定,如约克大学通过CRIS系统作为本校研究成果的官方记录用以进行绩效考核、科研考核，一定程度上调动了个体参与的积极性与主动性。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "强制性政策",
+          "normalized_name": "强制性政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "实施强制性政策的机构数量远远多于实施导向性政策的机构数量",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但结合上下文指具体政策类型，予以抽取"
+        },
+        {
+          "entity_id": "26_e2",
+          "mention": "导向性政策",
+          "normalized_name": "导向性政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "实施强制性政策的机构数量远远多于实施导向性政策的机构数量",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但结合上下文指具体政策类型，予以抽取"
+        },
+        {
+          "entity_id": "26_e3",
+          "mention": "开放获取运动",
+          "normalized_name": "开放获取运动",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "更有利于开放获取运动的开展",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e4",
+          "mention": "约克大学",
+          "normalized_name": "约克大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如约克大学通过CRIS系统作为本校研究成果的官方记录",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e5",
+          "mention": "CRIS系统",
+          "normalized_name": "CRIS系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "约克大学通过CRIS系统作为本校研究成果的官方记录",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "第三，从实现方式上来看，开放获取方式较为灵活,一般研究机构基于机构知识库的建立要求通过自存储实现开放获取,同时也鼓励通过开放出版的形式实现免费获取。另外，科研成果提交及发布的时滞期均在6～12月,保证了相关出版商的利益和研究者相应的权益。",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "开放获取",
+          "normalized_name": "开放获取",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "开放获取方式较为灵活",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "机构知识库",
+          "normalized_name": "机构知识库",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "一般研究机构基于机构知识库的建立要求通过自存储实现开放获取",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e3",
+          "mention": "自存储",
+          "normalized_name": "自存储",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过自存储实现开放获取",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e4",
+          "mention": "开放出版",
+          "normalized_name": "开放出版",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过开放出版的形式实现免费获取",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "根据各方面的调查分析来看，开放获取将会为越来越多的研究机构所重视，同时也将慢慢成为政府制定政策所要探讨的话题。开放获取政策是保证开放获取运动顺利进行的前提和保障，本文总结了未来各类型机构制定和完善开放获取政策体系以及在政策实施过程中将面临的挑战,主要概括为以下几个方面：",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "开放获取",
+          "normalized_name": "开放获取",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "开放获取将会为越来越多的研究机构所重视",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "开放获取政策",
+          "normalized_name": "开放获取政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "开放获取政策是保证开放获取运动顺利进行的前提和保障",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e3",
+          "mention": "开放获取运动",
+          "normalized_name": "开放获取运动",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "开放获取政策是保证开放获取运动顺利进行的前提和保障",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "29",
+      "sentence": "从开放获取政策制定及实施的执行力度来看，虽然注册ROARMAP的机构指定的政策绝大部分是强制性政策,仅有小部分为导向性政策，但是强制性政策中并未明确提出相关奖励或制裁手段,导致其执行力度并未达到良好的效果; 另外,目前将开放获取扩展到法律层面的国家仅是少数，目前大部分国家实施的开放获取政策只是从机构层面进行制定，约束力不足。",
+      "entities": [
+        {
+          "entity_id": "29_e1",
+          "mention": "ROARMAP",
+          "normalized_name": "ROARMAP",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "注册ROARMAP的机构指定的政策绝大部分是强制性政策",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e2",
+          "mention": "开放获取政策",
+          "normalized_name": "开放获取政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "从开放获取政策制定及实施的执行力度来看",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为Abstract > concept"
+        },
+        {
+          "entity_id": "29_e3",
+          "mention": "强制性政策",
+          "normalized_name": "强制性政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "指定的政策绝大部分是强制性政策",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "属于政策类型，非具体政策文件名称"
+        },
+        {
+          "entity_id": "29_e4",
+          "mention": "导向性政策",
+          "normalized_name": "导向性政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "仅有小部分为导向性政策",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "属于政策类型，非具体政策文件名称"
+        },
+        {
+          "entity_id": "29_e5",
+          "mention": "开放获取",
+          "normalized_name": "开放获取",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event",
+            "Abstract"
+          ],
+          "evidence": "将开放获取扩展到法律层面的国家仅是少数",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "另外,目前将开放获取扩展到法律层面的国家仅是少数，目前大部分国家实施的开放获取政策只是从机构层面进行制定，约束力不足。 在此方面,应向英美等国家学习,加大政府对开放获取运动的认可程度，从法律层面增强开放获取政策制定及实施的力度。",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "开放获取",
+          "normalized_name": "开放获取",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "目前将开放获取扩展到法律层面的国家仅是少数",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "开放获取政策",
+          "normalized_name": "开放获取政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "目前大部分国家实施的开放获取政策只是从机构层面进行制定",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e3",
+          "mention": "英美",
+          "normalized_name": "英美",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "应向英美等国家学习",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "指代国家，非具体组织名，但可视为治理主体"
+        },
+        {
+          "entity_id": "30_e4",
+          "mention": "开放获取运动",
+          "normalized_name": "开放获取运动",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "加大政府对开放获取运动的认可程度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "31",
+      "sentence": "从相关投入机制来看，目前欧美等国家的相关资助机构对开放获取的投入较大，且在政策制定方面有明确体现,比如通过设立APCs机制来专内支付论文费用，建立本机构的知识库作为实现开放获取的载体等,但目前大部分机构的开放获取没有对APCs机制进行详细规定，导致开放获取政策的执行得不到经济保障，运行动力不足； 虽然机构知识库数量增加，但是很多机构由于本机构规模小、资金短缺等局限性因素所建立的机构知识库不成熟，或根本没有机构知识库，无法通过自存储的形式实现开放获取。",
+      "entities": [
+        {
+          "entity_id": "31_e1",
+          "mention": "APCs机制",
+          "normalized_name": "APCs机制",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过设立APCs机制来专内支付论文费用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e2",
+          "mention": "机构知识库",
+          "normalized_name": "机构知识库",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建立本机构的知识库作为实现开放获取的载体",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称机构知识库，但作为具体载体类型可抽取"
+        },
+        {
+          "entity_id": "31_e3",
+          "mention": "开放获取",
+          "normalized_name": "开放获取",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event",
+            "Abstract"
+          ],
+          "evidence": "实现开放获取的载体",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "31_e4",
+          "mention": "开放获取政策",
+          "normalized_name": "开放获取政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "开放获取政策的执行得不到经济保障",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "32",
+      "sentence": "从开放获取政策实施过程中所涉及的相关主体来看，除对开放获取的内容等客观对象做了基本要求外，极少有政策对各主体的相关责任落实到具体的管理程序中,容易造成开放获取的效率不高、管理不善等问题。以后各类机构在政策制定方向上应将各相关责任落实到具体的政策实施行为、资助行为和资源管理行为中,落实到政策的各项具体实施环节中。",
+      "entities": [
+        {
+          "entity_id": "32_e1",
+          "mention": "开放获取",
+          "normalized_name": "开放获取",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event",
+            "Abstract"
+          ],
+          "evidence": "从开放获取政策实施过程中所涉及的相关主体来看",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "33",
+      "sentence": "机构制定的开放获取政策是把国家宏观层面上对开放获取所制定的政策落实到微观层面的具体表现，是实现开放获取运动的重要保障。虽然我国目前机构知识库的建设已达到了一定数量，但是各类机构对开放获取政策的具体制定与实施仅处于起步阶段，仅有中国科学院、中科院国家科学图书馆等大陆四家机构及香港大学、国立中兴大学等4所港台机构制定了强制性开放获取政策并在ROARMAP进行了注册。总结国际上机构制定和实施开放获取政策的总体概况，并分析相关成功案例,对以后我国各类机构制定开放获取政策具有重要的借鉴意义。",
+      "entities": [
+        {
+          "entity_id": "33_e1",
+          "mention": "开放获取政策",
+          "normalized_name": "开放获取政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "机构制定的开放获取政策是把国家宏观层面上对开放获取所制定的政策落实到微观层面的具体表现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e2",
+          "mention": "开放获取运动",
+          "normalized_name": "开放获取运动",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "是实现开放获取运动的重要保障",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "33_e3",
+          "mention": "机构知识库",
+          "normalized_name": "机构知识库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "我国目前机构知识库的建设已达到了一定数量",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e4",
+          "mention": "中国科学院",
+          "normalized_name": "中国科学院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "仅有中国科学院、中科院国家科学图书馆等大陆四家机构",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e5",
+          "mention": "中科院国家科学图书馆",
+          "normalized_name": "中科院国家科学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "仅有中国科学院、中科院国家科学图书馆等大陆四家机构",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e6",
+          "mention": "香港大学",
+          "normalized_name": "香港大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "香港大学、国立中兴大学等4所港台机构",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e7",
+          "mention": "国立中兴大学",
+          "normalized_name": "国立中兴大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "香港大学、国立中兴大学等4所港台机构",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e8",
+          "mention": "ROARMAP",
+          "normalized_name": "ROARMAP",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在ROARMAP进行了注册",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

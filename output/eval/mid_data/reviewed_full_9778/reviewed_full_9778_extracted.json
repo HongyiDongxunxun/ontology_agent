@@ -1,0 +1,3233 @@
+{
+  "base_name": "reviewed_full_9778",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "随着信息技术的发展和互联网的不断成熟，具有信息自组织特点的Web2.0用户交互环境逐渐取代传统的用户只能通过浏览器获取信息的单一的Webl.O时代。 Web2.O的出现已引起社会各界的广泛关注，其交互、参与和协作的理念也迅速渗透到了各行各业，图书馆2.0就是在Web2.0的大背景下出现的。近年来我国图书情报学界也纷纷着手图书馆2.0研究，图书馆20迅速成为新的研究热点。$\\star 2 0 0 6$ 年发表第一篇图书馆2.0文献以来，我国的图书馆2.0研究经过了五年的发展，取得了显著的成绩，理论研究日趋完善，实践应用日益广泛。 本文采用定量与定性分析相结合的方法，对 $2 0 0 6 - 2 0 1 0$ 年我国图书馆2.0领域的期刊论文进行了统计和梳理，希望可以探寻我国图书馆2.0的研究现状及其发展趋势。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "Web2.0",
+          "normalized_name": "Web2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "具有信息自组织特点的Web2.0用户交互环境",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "Web1.0",
+          "normalized_name": "Web1.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "传统的用户只能通过浏览器获取信息的单一的Webl.O时代",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆2.0就是在Web2.0的大背景下出现的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "图书情报学界",
+          "normalized_name": "图书情报学界",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "近年来我国图书情报学界也纷纷着手图书馆2.0研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e5",
+          "mention": "2006年发表第一篇图书馆2.0文献",
+          "normalized_name": "2006年发表第一篇图书馆2.0文献",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "2006年发表第一篇图书馆2.0文献以来",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "文献名称未明确给出，仅根据时间推断"
+        },
+        {
+          "entity_id": "1_e6",
+          "mention": "2006-2010年我国图书馆2.0领域的期刊论文",
+          "normalized_name": "2006-2010年我国图书馆2.0领域的期刊论文",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "对2006-2010年我国图书馆2.0领域的期刊论文进行了统计和梳理",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛指该时段内的论文集合，非单篇具体论文"
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "本文将 $2 0 0 6 - 2 0 1 0$ 年作为研究的时段，数据源选取中国期刊全文数据库（CNKI)，该库基本上收录了各个学科的重要论文，而且是国内规模最大、使用最为广泛的学术论文数据库，通过对它收录的图书馆2.0相关论文进行研究和分析，能够从一定层面上反映发展和研究现状。 在统计分析工作中，以“图书馆2.0”为检索词，以“题名/主题/关键字”为检索项，采取“精确匹配”，对“全部期刊”进行检索，除去重复论文和通知，共从CNKI中检索出208篇相关文献，作为进行研究分析的样本，截止日期是2010$- 1 1 - 2 6$ 日。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "中国期刊全文数据库（CNKI）",
+          "normalized_name": "中国期刊全文数据库（CNKI）",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "数据源选取中国期刊全文数据库（CNKI）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "CNKI",
+          "normalized_name": "CNKI",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "共从CNKI中检索出208篇相关文献",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以“图书馆2.0”为检索词",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "2006年第1期《大学图书馆学报》上发表范并思和胡小菁题为《图书馆2.0：构建新的图书馆服务》的论文，在国内第一个将图书馆2.0引入图书情报界，拉开了中国图书情报界研究图书馆2.0的序幕。 $\\star 2 0 0 6$ 年研究图书馆2.0至今已五年，相关文献量几乎是以指数型方式增长，如图所示，说明该领域正处于快速发展时期，这可以看出从2006年开始我国的图书馆2.0研究越来越普遍，呈现出良好的发展势头。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "2006年第1期《大学图书馆学报》",
+          "normalized_name": "《大学图书馆学报》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "2006年第1期《大学图书馆学报》上发表范并思和胡小菁题为《图书馆2.0：构建新的图书馆服务》的论文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "范并思",
+          "normalized_name": "范并思",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "范并思和胡小菁题为《图书馆2.0：构建新的图书馆服务》的论文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "胡小菁",
+          "normalized_name": "胡小菁",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "范并思和胡小菁题为《图书馆2.0：构建新的图书馆服务》的论文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "《图书馆2.0：构建新的图书馆服务》",
+          "normalized_name": "《图书馆2.0：构建新的图书馆服务》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "范并思和胡小菁题为《图书馆2.0：构建新的图书馆服务》的论文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在国内第一个将图书馆2.0引入图书情报界",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e6",
+          "mention": "图书情报界",
+          "normalized_name": "图书情报界",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "拉开了中国图书情报界研究图书馆2.0的序幕",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e7",
+          "mention": "中国图书情报界",
+          "normalized_name": "中国图书情报界",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "拉开了中国图书情报界研究图书馆2.0的序幕",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "可见，研究热点是：图书馆2.0、Web2.0、高校图书馆、个性化服务、数字图书馆、图书馆服务、OPAC、图书馆员和服务模式等，这些研究热点多集中在宏观层面以及技术方面的研究。同时，笔者对五年间出现频次高于7次的关键词进行了分析，高校图书馆、个性化服务、数字图书馆、OPAC为关键词的文献总体呈现增长趋势，一定程度上代表了学术界对图书馆2.0关注的加深。“高校图书馆”对图书馆2.0的研究在2007年和2009年间增长显著，2008年对“维基、信息共享空间”、2009年“Drupal、RSS、博客”、2010年“信息服务”等的研究也逐渐升温，这也反映了图书馆2.0领域研究热点的变化，很多学者开始从技术方面探索图书馆2.0。五年来图书馆2.0的研究由宏观、理论研究向实践研究和微观层面发展，充分体现了图书馆2.0领域学者意识的转变，图书馆2.0研究向技术、方法、系统及服务质量等方向发展。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究热点是：图书馆2.0、Web2.0、高校图书馆、个性化服务、数字图书馆、图书馆服务、OPAC、图书馆员和服务模式等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "Web2.0",
+          "normalized_name": "Web2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究热点是：图书馆2.0、Web2.0、高校图书馆、个性化服务、数字图书馆、图书馆服务、OPAC、图书馆员和服务模式等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "高校图书馆",
+          "normalized_name": "高校图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究热点是：图书馆2.0、Web2.0、高校图书馆、个性化服务、数字图书馆、图书馆服务、OPAC、图书馆员和服务模式等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为service类型组织，但此处作为研究热点概念出现"
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "个性化服务",
+          "normalized_name": "个性化服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究热点是：图书馆2.0、Web2.0、高校图书馆、个性化服务、数字图书馆、图书馆服务、OPAC、图书馆员和服务模式等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "数字图书馆",
+          "normalized_name": "数字图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究热点是：图书馆2.0、Web2.0、高校图书馆、个性化服务、数字图书馆、图书馆服务、OPAC、图书馆员和服务模式等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e6",
+          "mention": "图书馆服务",
+          "normalized_name": "图书馆服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究热点是：图书馆2.0、Web2.0、高校图书馆、个性化服务、数字图书馆、图书馆服务、OPAC、图书馆员和服务模式等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e7",
+          "mention": "OPAC",
+          "normalized_name": "OPAC",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究热点是：图书馆2.0、Web2.0、高校图书馆、个性化服务、数字图书馆、图书馆服务、OPAC、图书馆员和服务模式等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e8",
+          "mention": "图书馆员",
+          "normalized_name": "图书馆员",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究热点是：图书馆2.0、Web2.0、高校图书馆、个性化服务、数字图书馆、图书馆服务、OPAC、图书馆员和服务模式等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处作为研究热点概念，非指具体个人"
+        },
+        {
+          "entity_id": "4_e9",
+          "mention": "服务模式",
+          "normalized_name": "服务模式",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究热点是：图书馆2.0、Web2.0、高校图书馆、个性化服务、数字图书馆、图书馆服务、OPAC、图书馆员和服务模式等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e10",
+          "mention": "维基",
+          "normalized_name": "维基",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2008年对“维基、信息共享空间”、2009年“Drupal、RSS、博客”、2010年“信息服务”等的研究也逐渐升温",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e11",
+          "mention": "信息共享空间",
+          "normalized_name": "信息共享空间",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2008年对“维基、信息共享空间”、2009年“Drupal、RSS、博客”、2010年“信息服务”等的研究也逐渐升温",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e12",
+          "mention": "Drupal",
+          "normalized_name": "Drupal",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "2009年“Drupal、RSS、博客”、2010年“信息服务”等的研究也逐渐升温",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e13",
+          "mention": "RSS",
+          "normalized_name": "RSS",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2009年“Drupal、RSS、博客”、2010年“信息服务”等的研究也逐渐升温",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e14",
+          "mention": "博客",
+          "normalized_name": "博客",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2009年“Drupal、RSS、博客”、2010年“信息服务”等的研究也逐渐升温",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e15",
+          "mention": "信息服务",
+          "normalized_name": "信息服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2010年“信息服务”等的研究也逐渐升温",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "从目前研究论文的整体情况来看，研究的热点问题主要集中在三个方面：图书馆2.0的基础理论研究，图书馆2.0的技术应用研究，图书馆2.0的服务应用研究。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆2.0的基础理论研究，图书馆2.0的技术应用研究，图书馆2.0的服务应用研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "图书馆2.0的基础理论研究",
+          "normalized_name": "图书馆2.0的基础理论研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆2.0的基础理论研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为research_program"
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "图书馆2.0的技术应用研究",
+          "normalized_name": "图书馆2.0的技术应用研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆2.0的技术应用研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为research_program"
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "图书馆2.0的服务应用研究",
+          "normalized_name": "图书馆2.0的服务应用研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆2.0的服务应用研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为research_program"
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "到目前为止，国内外对图书馆2.0的概念还没有形成一个统一的认识，众多的研究者们都从不同的侧面对其进行了定义。 范并思、胡小菁开宗明义地指出图书馆20就是Web2.0的技术或服务在图书馆信息服务中的应用。这一概念在国内图书馆界得到了广泛认同。 叶鹰[2提出$\\mathrm { { W e b 2 . 0 + L i b = L i b 2 . 0 } }$ 。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国内外对图书馆2.0的概念还没有形成一个统一的认识",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "范并思",
+          "normalized_name": "范并思",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "范并思、胡小菁开宗明义地指出图书馆20就是Web2.0的技术或服务在图书馆信息服务中的应用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "胡小菁",
+          "normalized_name": "胡小菁",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "范并思、胡小菁开宗明义地指出图书馆20就是Web2.0的技术或服务在图书馆信息服务中的应用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "Web2.0",
+          "normalized_name": "Web2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆20就是Web2.0的技术或服务在图书馆信息服务中的应用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "叶鹰",
+          "normalized_name": "叶鹰",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "叶鹰[2提出$\\mathrm { { W e b 2 . 0 + L i b = L i b 2 . 0 } }$",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e6",
+          "mention": "Web2.0 + Lib = Lib2.0",
+          "normalized_name": "Web2.0 + Lib = Lib2.0",
+          "candidate_l3": "definition",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "叶鹰[2提出$\\mathrm { { W e b 2 . 0 + L i b = L i b 2 . 0 } }$",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "叶鹰[2提出$\\mathrm { { W e b 2 . 0 + L i b = L i b 2 . 0 } }$ 。 刘炜、葛秋妍3指出图书馆2.0不仅仅是一些技术的组合，更是一种新的服务模式和管理理念。图书馆2.0的核心是以用户为中心，它强调以用户需求为导向而不是以技术为导向。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "叶鹰",
+          "normalized_name": "叶鹰",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "叶鹰[2提出$\\mathrm { { W e b 2 . 0 + L i b = L i b 2 . 0 } }$",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "Web2.0",
+          "normalized_name": "Web2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "叶鹰[2提出$\\mathrm { { W e b 2 . 0 + L i b = L i b 2 . 0 } }$",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "Lib2.0",
+          "normalized_name": "Lib2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "叶鹰[2提出$\\mathrm { { W e b 2 . 0 + L i b = L i b 2 . 0 } }$",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "刘炜",
+          "normalized_name": "刘炜",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "刘炜、葛秋妍3指出图书馆2.0不仅仅是一些技术的组合",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e5",
+          "mention": "葛秋妍",
+          "normalized_name": "葛秋妍",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "刘炜、葛秋妍3指出图书馆2.0不仅仅是一些技术的组合",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e6",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "刘炜、葛秋妍3指出图书馆2.0不仅仅是一些技术的组合，更是一种新的服务模式和管理理念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "图书馆2.0是一种新的服务理念，也是进行图书馆2.0建设的基础。 范并思强调了用户为中心和用户参与的理念，注重人性化服务和用户体验，“永远的Beta版”突出了Web2.0的思想，图书馆2.0是不断前进和发展的。刘炜、葛秋妍提出了图书馆2.0应用的五项原则：为读者而存在的； 应保持最大程度的开放性和中立性；",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆2.0是一种新的服务理念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "范并思",
+          "normalized_name": "范并思",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "范并思强调了用户为中心和用户参与的理念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "用户为中心",
+          "normalized_name": "用户为中心",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "范并思强调了用户为中心和用户参与的理念",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "用户参与",
+          "normalized_name": "用户参与",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "范并思强调了用户为中心和用户参与的理念",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e5",
+          "mention": "永远的Beta版",
+          "normalized_name": "永远的Beta版",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "“永远的Beta版”突出了Web2.0的思想",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e6",
+          "mention": "Web2.0",
+          "normalized_name": "Web2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "“永远的Beta版”突出了Web2.0的思想",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e7",
+          "mention": "刘炜",
+          "normalized_name": "刘炜",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "刘炜、葛秋妍提出了图书馆2.0应用的五项原则",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e8",
+          "mention": "葛秋妍",
+          "normalized_name": "葛秋妍",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "刘炜、葛秋妍提出了图书馆2.0应用的五项原则",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e9",
+          "mention": "图书馆2.0应用的五项原则",
+          "normalized_name": "图书馆2.0应用的五项原则",
+          "candidate_l3": "framework",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "刘炜、葛秋妍提出了图书馆2.0应用的五项原则",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "尽管对于图书馆20的概念和理念的描述各有不同，但是可以发现其都是围绕“以用户为中心”的核心和“开源、互动”的精神本质展开的。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "图书馆20",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "尽管对于图书馆20的概念和理念的描述各有不同",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "以用户为中心",
+          "normalized_name": "以用户为中心",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "其都是围绕“以用户为中心”的核心",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "开源",
+          "normalized_name": "开源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "“开源、互动”的精神本质",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "互动",
+          "normalized_name": "互动",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "“开源、互动”的精神本质",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "（1）图书馆2.0的人文思考。 图书馆2.0强调以用户为中心的理念，体现了图书馆2.0的人本主义的追求。 丁玉东和张春峰从两个方面阐述了图书馆2.0的人文主义因素。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆2.0的人文思考。 图书馆2.0强调以用户为中心的理念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "丁玉东",
+          "normalized_name": "丁玉东",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "丁玉东和张春峰从两个方面阐述了图书馆2.0的人文主义因素",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "张春峰",
+          "normalized_name": "张春峰",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "丁玉东和张春峰从两个方面阐述了图书馆2.0的人文主义因素",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "丁玉东和张春峰从两个方面阐述了图书馆2.0的人文主义因素。 倪丽萍从用户、经济、法律的角度，阐述了Web20环境下数字图书馆建设中的人文问题及对策。蒋志伟等从人文角度思考我国图书馆2.0目前存在的三大历史性矛盾。面对图书馆所处的环境不断变化，崔雁认为图书馆应从馆藏、服务、技术、合作与共享几方面加以应对，而郑巧英等从管理理念、服务模式、技术支撑、资源建设四个方面，提出了图书馆2.0的整体规划以适应变化。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "丁玉东",
+          "normalized_name": "丁玉东",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "丁玉东和张春峰从两个方面阐述了图书馆2.0的人文主义因素",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "张春峰",
+          "normalized_name": "张春峰",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "丁玉东和张春峰从两个方面阐述了图书馆2.0的人文主义因素",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "阐述了图书馆2.0的人文主义因素",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "倪丽萍",
+          "normalized_name": "倪丽萍",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "倪丽萍从用户、经济、法律的角度，阐述了Web20环境下数字图书馆建设中的人文问题及对策",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "Web20",
+          "normalized_name": "Web2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Web20环境下数字图书馆建设中的人文问题及对策",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "原文为Web20，可能为Web2.0的笔误"
+        },
+        {
+          "entity_id": "11_e6",
+          "mention": "数字图书馆",
+          "normalized_name": "数字图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Web20环境下数字图书馆建设中的人文问题及对策",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e7",
+          "mention": "蒋志伟",
+          "normalized_name": "蒋志伟",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "蒋志伟等从人文角度思考我国图书馆2.0目前存在的三大历史性矛盾",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e8",
+          "mention": "崔雁",
+          "normalized_name": "崔雁",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "崔雁认为图书馆应从馆藏、服务、技术、合作与共享几方面加以应对",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e9",
+          "mention": "郑巧英",
+          "normalized_name": "郑巧英",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "郑巧英等从管理理念、服务模式、技术支撑、资源建设四个方面，提出了图书馆2.0的整体规划以适应变化",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "图书馆员应该如何提高自身素质，以适应图书馆2.0时代的图书馆服务已成为众多学者讨论的热点。 唐光雄从图书馆2.0的技术角度出发，指出在图书馆2.0时代必须重视图书馆员技术素养的提高。王喜明则通过对高校贴吧和公共图书馆贴吧中关于图书馆员的较为普遍的批评性言论进行研究，提出解决Web2.0时代图书馆员的形象塑造问题。刘磊等通过对五个城市23所已开展图书馆2.0服务的高校图书馆展开调研，分析图书馆员对图书馆20的认知程度、利用情况及对开展图书馆20服务的看法，并提出建议。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "唐光雄",
+          "normalized_name": "唐光雄",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "唐光雄从图书馆2.0的技术角度出发",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆2.0时代的图书馆服务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "王喜明",
+          "normalized_name": "王喜明",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "王喜明则通过对高校贴吧和公共图书馆贴吧中关于图书馆员的较为普遍的批评性言论进行研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "高校贴吧",
+          "normalized_name": "高校贴吧",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "高校贴吧和公共图书馆贴吧",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e5",
+          "mention": "公共图书馆贴吧",
+          "normalized_name": "公共图书馆贴吧",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "高校贴吧和公共图书馆贴吧",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e6",
+          "mention": "Web2.0",
+          "normalized_name": "Web2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Web2.0时代图书馆员的形象塑造问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e7",
+          "mention": "刘磊",
+          "normalized_name": "刘磊",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "刘磊等通过对五个城市23所已开展图书馆2.0服务的高校图书馆展开调研",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e8",
+          "mention": "图书馆2.0服务",
+          "normalized_name": "图书馆2.0服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "已开展图书馆2.0服务的高校图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "通常认为，图书馆2.0应用的Web2.O技术有：博客（BLOG）、维基百科全书（WIKI）、新闻聚合（RSS）、标签（TAG）、即时通信（IM）等。 张海鸥、李剑分别对十几所高校图书馆2.0进行应用调查，李剑指出了实际应用中出现的问题：普及程度较低、应用面狭窄、功能缺失、使用效果不佳等，认为应从观念转变、技术拓展、宣传推广、用户教育等方面入手来改善。范并思和胡小菁提出目前图书馆2.0的应用存在着信息技术应用的适用性、数据资源建设与利用的扩展性、图书馆员的适应性和研发方向的目标性等问题。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通常认为，图书馆2.0应用的Web2.O技术有",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "博客（BLOG）",
+          "normalized_name": "博客（BLOG）",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "博客（BLOG）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "维基百科全书（WIKI）",
+          "normalized_name": "维基百科全书（WIKI）",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "维基百科全书（WIKI）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "新闻聚合（RSS）",
+          "normalized_name": "新闻聚合（RSS）",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "新闻聚合（RSS）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e5",
+          "mention": "标签（TAG）",
+          "normalized_name": "标签（TAG）",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "标签（TAG）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e6",
+          "mention": "即时通信（IM）",
+          "normalized_name": "即时通信（IM）",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "即时通信（IM）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e7",
+          "mention": "张海鸥",
+          "normalized_name": "张海鸥",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "张海鸥、李剑分别对十几所高校图书馆2.0进行应用调查",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e8",
+          "mention": "李剑",
+          "normalized_name": "李剑",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "张海鸥、李剑分别对十几所高校图书馆2.0进行应用调查，李剑指出了实际应用中出现的问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e9",
+          "mention": "范并思",
+          "normalized_name": "范并思",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "范并思和胡小菁提出目前图书馆2.0的应用存在着信息技术应用的适用性",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e10",
+          "mention": "胡小菁",
+          "normalized_name": "胡小菁",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "范并思和胡小菁提出目前图书馆2.0的应用存在着信息技术应用的适用性",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "图书馆博客是图书馆2.0成功实践的范例之一。 楚存坤基于博客技术探讨学科馆员应用学科博客构建高校科研平台的思路和方法。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "图书馆博客",
+          "normalized_name": "图书馆博客",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆博客是图书馆2.0成功实践的范例之一",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆博客是图书馆2.0成功实践的范例之一",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "楚存坤",
+          "normalized_name": "楚存坤",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "楚存坤基于博客技术探讨学科馆员应用学科博客构建高校科研平台的思路和方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e4",
+          "mention": "博客技术",
+          "normalized_name": "博客技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "楚存坤基于博客技术探讨学科馆员应用学科博客构建高校科研平台的思路和方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e5",
+          "mention": "学科博客",
+          "normalized_name": "学科博客",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "探讨学科馆员应用学科博客构建高校科研平台的思路和方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e6",
+          "mention": "高校科研平台",
+          "normalized_name": "高校科研平台",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "构建高校科研平台的思路和方法",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指具体平台，但原文未给出名称，暂标为概念"
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "楚存坤基于博客技术探讨学科馆员应用学科博客构建高校科研平台的思路和方法。 陈若韵指出图书馆博客实践的行进中有许多隐忧。金武刚认为理念的缺失是图书馆博客备受冷落的主因，并总结出六种常见的误区。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "楚存坤",
+          "normalized_name": "楚存坤",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "楚存坤基于博客技术探讨学科馆员应用学科博客构建高校科研平台的思路和方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "博客技术",
+          "normalized_name": "博客技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "楚存坤基于博客技术探讨学科馆员应用学科博客构建高校科研平台的思路和方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "学科博客",
+          "normalized_name": "学科博客",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "应用学科博客构建高校科研平台",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "陈若韵",
+          "normalized_name": "陈若韵",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "陈若韵指出图书馆博客实践的行进中有许多隐忧",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e5",
+          "mention": "图书馆博客",
+          "normalized_name": "图书馆博客",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆博客实践的行进中有许多隐忧",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e6",
+          "mention": "金武刚",
+          "normalized_name": "金武刚",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "金武刚认为理念的缺失是图书馆博客备受冷落的主因",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "向菁、苏悦分别介绍维基在国内外图书馆领域的应用现状和应用前景。 黄晨提出以维基作为参考咨询的升级模型的新观点。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "向菁",
+          "normalized_name": "向菁",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "向菁、苏悦分别介绍维基在国内外图书馆领域的应用现状和应用前景",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "苏悦",
+          "normalized_name": "苏悦",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "向菁、苏悦分别介绍维基在国内外图书馆领域的应用现状和应用前景",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "维基",
+          "normalized_name": "维基",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "维基在国内外图书馆领域的应用现状和应用前景",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能指Wiki软件，具体版本未明确"
+        },
+        {
+          "entity_id": "16_e4",
+          "mention": "黄晨",
+          "normalized_name": "黄晨",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "黄晨提出以维基作为参考咨询的升级模型的新观点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e5",
+          "mention": "参考咨询",
+          "normalized_name": "参考咨询",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以维基作为参考咨询的升级模型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e6",
+          "mention": "升级模型",
+          "normalized_name": "升级模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以维基作为参考咨询的升级模型的新观点",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "模型名称较泛，但结合上下文指具体提议"
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "图书馆2.0中RSS技术主要应用于信息资源内容的聚合、共享、推送、订阅和发布。 于宁等通过抽取国内50所高校图书馆为样本，对其RSS服务的开展程度、服务方式等进行调查，认为应用模式较为单一，多集中用于图书馆最新消息的订阅，缺乏对RSS功能的深入挖掘，RSS技术应用范围与服务层次有待进一步扩大与提高。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆2.0中RSS技术主要应用于信息资源内容的聚合、共享、推送、订阅和发布",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "RSS技术",
+          "normalized_name": "RSS技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆2.0中RSS技术主要应用于信息资源内容的聚合、共享、推送、订阅和发布",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "于宁等",
+          "normalized_name": "于宁",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "于宁等通过抽取国内50所高校图书馆为样本",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为多个作者，但于宁为具体人名"
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "国内50所高校图书馆",
+          "normalized_name": "国内50所高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "抽取国内50所高校图书馆为样本",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未列出具体图书馆名称，但作为样本集合具有具体性"
+        },
+        {
+          "entity_id": "17_e5",
+          "mention": "RSS服务",
+          "normalized_name": "RSS服务",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对其RSS服务的开展程度、服务方式等进行调查",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "图书馆2.0中IM技术为图书馆的参考咨询服务提供了更加方便快捷的工具，也对咨询员及其服务提出了更高的要求。 张轶等在前台一中介一后台这一IM整合系统架构基础上，利用widget工具，将各种IM工具进行整合并应用于图书馆网上参考咨询服务。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆2.0中IM技术为图书馆的参考咨询服务提供了更加方便快捷的工具",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "IM技术",
+          "normalized_name": "IM技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆2.0中IM技术为图书馆的参考咨询服务提供了更加方便快捷的工具",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "张轶",
+          "normalized_name": "张轶",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "张轶等在前台一中介一后台这一IM整合系统架构基础上",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e4",
+          "mention": "前台一中介一后台这一IM整合系统架构",
+          "normalized_name": "前台一中介一后台IM整合系统架构",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "前台一中介一后台这一IM整合系统架构",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e5",
+          "mention": "widget工具",
+          "normalized_name": "widget工具",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用widget工具，将各种IM工具进行整合",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "widget工具可能为泛称，但图情领域放宽规则，有名称的工具应抽取"
+        },
+        {
+          "entity_id": "18_e6",
+          "mention": "IM工具",
+          "normalized_name": "IM工具",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "将各种IM工具进行整合并应用于图书馆网上参考咨询服务",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "IM工具为具体技术工具类别，非泛称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "Tag（互动标签）的引入充分体现了图书馆2.0“以用户为中心，强调用户参与”的核心。王惠以PennTags、VuFind和厦门大学图书馆应用Tag成功案例，梳理和探讨Tag给图书馆2.0服务带来的改变。钟远薪等提出了一个基于Ajax的嵌入式Tag系统解决方案。而于明洁则提出了利用Tag在图书馆网站上构建书目信息描述与检索新组织方式的设想，并阐述了相应的运作模式。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "Tag",
+          "normalized_name": "Tag",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Tag（互动标签）的引入充分体现了图书馆2.0“以用户为中心，强调用户参与”的核心",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆2.0“以用户为中心，强调用户参与”的核心",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "王惠",
+          "normalized_name": "王惠",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "王惠以PennTags、VuFind和厦门大学图书馆应用Tag成功案例",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e4",
+          "mention": "PennTags",
+          "normalized_name": "PennTags",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "王惠以PennTags、VuFind和厦门大学图书馆应用Tag成功案例",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e5",
+          "mention": "VuFind",
+          "normalized_name": "VuFind",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "王惠以PennTags、VuFind和厦门大学图书馆应用Tag成功案例",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e6",
+          "mention": "厦门大学图书馆",
+          "normalized_name": "厦门大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "王惠以PennTags、VuFind和厦门大学图书馆应用Tag成功案例",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e7",
+          "mention": "钟远薪",
+          "normalized_name": "钟远薪",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "钟远薪等提出了一个基于Ajax的嵌入式Tag系统解决方案",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e8",
+          "mention": "Ajax",
+          "normalized_name": "Ajax",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于Ajax的嵌入式Tag系统解决方案",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e9",
+          "mention": "嵌入式Tag系统",
+          "normalized_name": "嵌入式Tag系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "提出了一个基于Ajax的嵌入式Tag系统解决方案",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e10",
+          "mention": "于明洁",
+          "normalized_name": "于明洁",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "于明洁则提出了利用Tag在图书馆网站上构建书目信息描述与检索新组织方式的设想",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "掘客（Digg）技术是集多种Web2.O元素于一体的新型网络社区。马国栋和卢志国提出了利用掘客技术加强网站建设，具体可应用在书评、电子资源评价、对现有服务的大众化评价，弥补图书馆传统信息服务过程中的一些不足，加强用户知识共享意识。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "掘客（Digg）技术",
+          "normalized_name": "掘客（Digg）技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "掘客（Digg）技术是集多种Web2.O元素于一体的新型网络社区",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "马国栋",
+          "normalized_name": "马国栋",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "马国栋和卢志国提出了利用掘客技术加强网站建设",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "卢志国",
+          "normalized_name": "卢志国",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "马国栋和卢志国提出了利用掘客技术加强网站建设",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e4",
+          "mention": "掘客技术",
+          "normalized_name": "掘客技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "马国栋和卢志国提出了利用掘客技术加强网站建设",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e5",
+          "mention": "书评",
+          "normalized_name": "书评",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "具体可应用在书评、电子资源评价、对现有服务的大众化评价",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为具体应用场景，非泛称"
+        },
+        {
+          "entity_id": "20_e6",
+          "mention": "电子资源评价",
+          "normalized_name": "电子资源评价",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "具体可应用在书评、电子资源评价、对现有服务的大众化评价",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为具体应用场景，非泛称"
+        },
+        {
+          "entity_id": "20_e7",
+          "mention": "大众化评价",
+          "normalized_name": "大众化评价",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对现有服务的大众化评价",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为具体应用场景，非泛称"
+        },
+        {
+          "entity_id": "20_e8",
+          "mention": "用户知识共享意识",
+          "normalized_name": "用户知识共享意识",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加强用户知识共享意识",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "（1）内容管理系统（CMS)。 图书馆利用开源软件构建新型的信息服务系统—-图书馆2.0是一种趋势。 Dspace与Drupal是两种典型的内容管理系统。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "内容管理系统（CMS）",
+          "normalized_name": "内容管理系统（CMS）",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "内容管理系统（CMS）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书馆利用开源软件构建新型的信息服务系统",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处'图书馆'为泛指机构类别，但根据图情领域放宽规则，作为具体服务组织可抽取"
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆2.0是一种趋势",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "Dspace",
+          "normalized_name": "Dspace",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Dspace与Drupal是两种典型的内容管理系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e5",
+          "mention": "Drupal",
+          "normalized_name": "Drupal",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Dspace与Drupal是两种典型的内容管理系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "奉国和等利用Dspace构建图书馆知识仓储系统。 Dru-pal：夏翠娟认为借助Drupal强大的模块化设计可以整合图书馆原有系统。王欣等利用Drupal及其海量的扩展模块增强图书馆网站的功能、提升图书馆服务。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "奉国和",
+          "normalized_name": "奉国和",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "奉国和等利用Dspace构建图书馆知识仓储系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "Dspace",
+          "normalized_name": "Dspace",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "奉国和等利用Dspace构建图书馆知识仓储系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e3",
+          "mention": "图书馆知识仓储系统",
+          "normalized_name": "图书馆知识仓储系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用Dspace构建图书馆知识仓储系统",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为系统类型名称而非具体系统实例"
+        },
+        {
+          "entity_id": "22_e4",
+          "mention": "夏翠娟",
+          "normalized_name": "夏翠娟",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "夏翠娟认为借助Drupal强大的模块化设计可以整合图书馆原有系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e5",
+          "mention": "Drupal",
+          "normalized_name": "Drupal",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "夏翠娟认为借助Drupal强大的模块化设计可以整合图书馆原有系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e6",
+          "mention": "王欣",
+          "normalized_name": "王欣",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "王欣等利用Drupal及其海量的扩展模块增强图书馆网站的功能",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "魏群义等5针对用户、资源、管理、服务四个方面需求，以SOA架构为基础，构建“基于用户、面向服务”的五层图书馆2.0系统架构，并从SNS用户社区、个人书斋、LKS、统计管理与决策等方面详细阐述了重庆大学图书馆在图书馆2.0领域的实践。马瑞也介绍了其采用SOA架构，为用户提供OpenAPI，并将开放图书馆数据资源的IL-AS2.0系统。焦玉英和刘颖认为图书馆20环境下集成服务涉及的内容有：信息资源集成、技术集成、服务集成和人员集成。王凌从软环境和硬环境的角度构建出基于图书馆2.0应用中的集成服务环境的框架：由图书馆文化、管理模式、服务模式、人员培训、自动化系统、信息资源建设、数字馆藏质量管理系统等组成。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "魏群义",
+          "normalized_name": "魏群义",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "魏群义等5针对用户、资源、管理、服务四个方面需求",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "SOA架构",
+          "normalized_name": "SOA架构",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以SOA架构为基础",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "图书馆2.0系统架构",
+          "normalized_name": "图书馆2.0系统架构",
+          "candidate_l3": "framework",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "构建“基于用户、面向服务”的五层图书馆2.0系统架构",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e4",
+          "mention": "SNS用户社区",
+          "normalized_name": "SNS用户社区",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从SNS用户社区、个人书斋、LKS、统计管理与决策等方面详细阐述了",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e5",
+          "mention": "个人书斋",
+          "normalized_name": "个人书斋",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从SNS用户社区、个人书斋、LKS、统计管理与决策等方面详细阐述了",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e6",
+          "mention": "LKS",
+          "normalized_name": "LKS",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从SNS用户社区、个人书斋、LKS、统计管理与决策等方面详细阐述了",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为缩写，全称未在原文中给出"
+        },
+        {
+          "entity_id": "23_e7",
+          "mention": "统计管理与决策",
+          "normalized_name": "统计管理与决策",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从SNS用户社区、个人书斋、LKS、统计管理与决策等方面详细阐述了",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e8",
+          "mention": "重庆大学图书馆",
+          "normalized_name": "重庆大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "重庆大学图书馆在图书馆2.0领域的实践",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e9",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "重庆大学图书馆在图书馆2.0领域的实践",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e10",
+          "mention": "马瑞",
+          "normalized_name": "马瑞",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "马瑞也介绍了其采用SOA架构",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e11",
+          "mention": "OpenAPI",
+          "normalized_name": "OpenAPI",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为用户提供OpenAPI",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e12",
+          "mention": "IL-AS2.0系统",
+          "normalized_name": "IL-AS2.0系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "将开放图书馆数据资源的IL-AS2.0系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e13",
+          "mention": "焦玉英",
+          "normalized_name": "焦玉英",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "焦玉英和刘颖认为图书馆20环境下集成服务涉及的内容有",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e14",
+          "mention": "刘颖",
+          "normalized_name": "刘颖",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "焦玉英和刘颖认为图书馆20环境下集成服务涉及的内容有",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e15",
+          "mention": "图书馆20",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "焦玉英和刘颖认为图书馆20环境下集成服务涉及的内容有",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "原文为'图书馆20'，疑为'图书馆2.0'的笔误"
+        },
+        {
+          "entity_id": "23_e16",
+          "mention": "集成服务",
+          "normalized_name": "集成服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆20环境下集成服务涉及的内容有",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e17",
+          "mention": "信息资源集成",
+          "normalized_name": "信息资源集成",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "集成服务涉及的内容有：信息资源集成、技术集成、服务集成和人员集成",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e18",
+          "mention": "技术集成",
+          "normalized_name": "技术集成",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "集成服务涉及的内容有：信息资源集成、技术集成、服务集成和人员集成",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e19",
+          "mention": "服务集成",
+          "normalized_name": "服务集成",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "集成服务涉及的内容有：信息资源集成、技术集成、服务集成和人员集成",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e20",
+          "mention": "人员集成",
+          "normalized_name": "人员集成",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "集成服务涉及的内容有：信息资源集成、技术集成、服务集成和人员集成",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e21",
+          "mention": "王凌",
+          "normalized_name": "王凌",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "王凌从软环境和硬环境的角度构建出基于图书馆2.0应用中的集成服务环境的框架",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e22",
+          "mention": "集成服务环境的框架",
+          "normalized_name": "集成服务环境的框架",
+          "candidate_l3": "framework",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "构建出基于图书馆2.0应用中的集成服务环境的框架",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e23",
+          "mention": "图书馆文化",
+          "normalized_name": "图书馆文化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "由图书馆文化、管理模式、服务模式、人员培训、自动化系统、信息资源建设、数字馆藏质量管理系统等组成",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e24",
+          "mention": "管理模式",
+          "normalized_name": "管理模式",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "由图书馆文化、管理模式、服务模式、人员培训、自动化系统、信息资源建设、数字馆藏质量管理系统等组成",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e25",
+          "mention": "服务模式",
+          "normalized_name": "服务模式",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "由图书馆文化、管理模式、服务模式、人员培训、自动化系统、信息资源建设、数字馆藏质量管理系统等组成",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e26",
+          "mention": "人员培训",
+          "normalized_name": "人员培训",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "由图书馆文化、管理模式、服务模式、人员培训、自动化系统、信息资源建设、数字馆藏质量管理系统等组成",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e27",
+          "mention": "自动化系统",
+          "normalized_name": "自动化系统",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "由图书馆文化、管理模式、服务模式、人员培训、自动化系统、信息资源建设、数字馆藏质量管理系统等组成",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e28",
+          "mention": "信息资源建设",
+          "normalized_name": "信息资源建设",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "由图书馆文化、管理模式、服务模式、人员培训、自动化系统、信息资源建设、数字馆藏质量管理系统等组成",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e29",
+          "mention": "数字馆藏质量管理系统",
+          "normalized_name": "数字馆藏质量管理系统",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "由图书馆文化、管理模式、服务模式、人员培训、自动化系统、信息资源建设、数字馆藏质量管理系统等组成",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "谭英从功能设计、技术支持、外部环境三个方面分析了OPAC系统革新的方案。 王红霞基于WorldCatLocal丰富的资源整合能力和无缝链接服务，强大的检索功能和结果呈现分析功能，贴心的社群功能和个性化服务，提出图书馆资源整合与服务集成方案。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "谭英",
+          "normalized_name": "谭英",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "谭英从功能设计、技术支持、外部环境三个方面分析了OPAC系统革新的方案",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "OPAC系统",
+          "normalized_name": "OPAC系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "分析了OPAC系统革新的方案",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e3",
+          "mention": "王红霞",
+          "normalized_name": "王红霞",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "王红霞基于WorldCatLocal丰富的资源整合能力和无缝链接服务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e4",
+          "mention": "WorldCatLocal",
+          "normalized_name": "WorldCatLocal",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "王红霞基于WorldCatLocal丰富的资源整合能力和无缝链接服务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "（3）信息共享空间。 付佳佳认为高校信息共享空间的建设贯彻了图书馆20的核心理念，在虚拟层面将图书馆2.0的应用与服务嵌入到了读者熟悉的应用环境，形成图书馆用户服务虚拟社区，是图书馆2.0实现的重要途径。 陈廉芳对高校图书馆面向学科构建虚拟学习社区进行了探讨。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "付佳佳",
+          "normalized_name": "付佳佳",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "付佳佳认为高校信息共享空间的建设贯彻了图书馆20的核心理念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "信息共享空间",
+          "normalized_name": "信息共享空间",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息共享空间。 付佳佳认为高校信息共享空间的建设贯彻了图书馆20的核心理念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e3",
+          "mention": "图书馆20",
+          "normalized_name": "图书馆20",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "贯彻了图书馆20的核心理念",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为'图书馆2.0'的笔误"
+        },
+        {
+          "entity_id": "25_e4",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在虚拟层面将图书馆2.0的应用与服务嵌入到了读者熟悉的应用环境",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e5",
+          "mention": "陈廉芳",
+          "normalized_name": "陈廉芳",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "陈廉芳对高校图书馆面向学科构建虚拟学习社区进行了探讨",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e6",
+          "mention": "虚拟学习社区",
+          "normalized_name": "虚拟学习社区",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "陈廉芳对高校图书馆面向学科构建虚拟学习社区进行了探讨",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "图书馆2.0的出现，给图书馆赋予了一种新的服务理念，促进图书馆服务模式的重大转变。刘磊8认为图书馆2.0服务模式的构成要素包括人、资源、技术和服务等四个方面，从交流互动、资源建设、个性化服务三个不同角度构建出高校图书馆2.0服务的互动模式、资源建设模式和个性化服务模式，并由此构建出高校图书馆2.0服务的应用总模式。徐险峰提出五个个性化信息服务模式：个性化信息定制、个性化信息推送、个性化参考咨询、个性化信息智能代理、“我的图书馆”（MyLibrary）服务模式。毛海波用Web服务技术构造数字资源访问接口和主动服务系统，提出了以用户为中心的主动服务模式，为用户主动提供全方位、立体式和不间断的专题服务和个性化服务的图书馆2.0服务模式。江树青构建图书馆2.0信息服务模型，提出将图书馆2.0信息服务模式分解为资源整合平台、技术支撑平台和服务界面平台等三个平台来进行构建。黄敏等探讨图书馆2.0服务模式下的用户参与激励措施，并建立了优化的图书馆2.0用户参与激励模式。黄维莉、弓箭各自从核心技术和学科馆员制度两个方面分析研究服务模式。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆2.0的出现，给图书馆赋予了一种新的服务理念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e2",
+          "mention": "刘磊",
+          "normalized_name": "刘磊",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "刘磊8认为图书馆2.0服务模式的构成要素包括人、资源、技术和服务等四个方面",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e3",
+          "mention": "徐险峰",
+          "normalized_name": "徐险峰",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "徐险峰提出五个个性化信息服务模式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e4",
+          "mention": "毛海波",
+          "normalized_name": "毛海波",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "毛海波用Web服务技术构造数字资源访问接口和主动服务系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e5",
+          "mention": "江树青",
+          "normalized_name": "江树青",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "江树青构建图书馆2.0信息服务模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e6",
+          "mention": "黄敏",
+          "normalized_name": "黄敏",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "黄敏等探讨图书馆2.0服务模式下的用户参与激励措施",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e7",
+          "mention": "黄维莉",
+          "normalized_name": "黄维莉",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "黄维莉、弓箭各自从核心技术和学科馆员制度两个方面分析研究服务模式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e8",
+          "mention": "弓箭",
+          "normalized_name": "弓箭",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "黄维莉、弓箭各自从核心技术和学科馆员制度两个方面分析研究服务模式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e9",
+          "mention": "我的图书馆",
+          "normalized_name": "我的图书馆",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "“我的图书馆”（MyLibrary）服务模式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e10",
+          "mention": "MyLibrary",
+          "normalized_name": "MyLibrary",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "“我的图书馆”（MyLibrary）服务模式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e11",
+          "mention": "Web服务技术",
+          "normalized_name": "Web服务技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "毛海波用Web服务技术构造数字资源访问接口和主动服务系统",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e12",
+          "mention": "主动服务系统",
+          "normalized_name": "主动服务系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "用Web服务技术构造数字资源访问接口和主动服务系统",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e13",
+          "mention": "图书馆2.0信息服务模型",
+          "normalized_name": "图书馆2.0信息服务模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "江树青构建图书馆2.0信息服务模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e14",
+          "mention": "图书馆2.0用户参与激励模式",
+          "normalized_name": "图书馆2.0用户参与激励模式",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "建立了优化的图书馆2.0用户参与激励模式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "图书馆2.0以用户为中心的互动环境给数字参考咨询服务带来了新的机遇。 朱月梅、陆丹指出合作数字参考咨询是图书馆数字参考咨询服务的未来发展方向，并将Web2.0中的Blog、Wiki、RSS等技术应用于合作数字参考咨询。钱榕从数字参考咨询的服务理念，服务模式和参考馆员三个方面论述了图书馆2.0数字参考咨询服务的主要特征。 并提出服务的过程中应注意知识产权的保护、信息资源的平衡调度、参考咨询服务社区的管理和如何判断共创知识的准确性等问题。",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆2.0以用户为中心的互动环境给数字参考咨询服务带来了新的机遇",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "数字参考咨询服务",
+          "normalized_name": "数字参考咨询服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆2.0以用户为中心的互动环境给数字参考咨询服务带来了新的机遇",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e3",
+          "mention": "朱月梅",
+          "normalized_name": "朱月梅",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "朱月梅、陆丹指出合作数字参考咨询是图书馆数字参考咨询服务的未来发展方向",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e4",
+          "mention": "陆丹",
+          "normalized_name": "陆丹",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "朱月梅、陆丹指出合作数字参考咨询是图书馆数字参考咨询服务的未来发展方向",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e5",
+          "mention": "合作数字参考咨询",
+          "normalized_name": "合作数字参考咨询",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "朱月梅、陆丹指出合作数字参考咨询是图书馆数字参考咨询服务的未来发展方向",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e6",
+          "mention": "Web2.0",
+          "normalized_name": "Web2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "并将Web2.0中的Blog、Wiki、RSS等技术应用于合作数字参考咨询",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e7",
+          "mention": "Blog",
+          "normalized_name": "Blog",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "并将Web2.0中的Blog、Wiki、RSS等技术应用于合作数字参考咨询",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e8",
+          "mention": "Wiki",
+          "normalized_name": "Wiki",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "并将Web2.0中的Blog、Wiki、RSS等技术应用于合作数字参考咨询",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e9",
+          "mention": "RSS",
+          "normalized_name": "RSS",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "并将Web2.0中的Blog、Wiki、RSS等技术应用于合作数字参考咨询",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e10",
+          "mention": "钱榕",
+          "normalized_name": "钱榕",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "钱榕从数字参考咨询的服务理念，服务模式和参考馆员三个方面论述了图书馆2.0数字参考咨询服务的主要特征",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e11",
+          "mention": "数字参考咨询的服务理念",
+          "normalized_name": "数字参考咨询的服务理念",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "钱榕从数字参考咨询的服务理念，服务模式和参考馆员三个方面论述了图书馆2.0数字参考咨询服务的主要特征",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为复合概念"
+        },
+        {
+          "entity_id": "27_e12",
+          "mention": "服务模式",
+          "normalized_name": "服务模式",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "钱榕从数字参考咨询的服务理念，服务模式和参考馆员三个方面论述了图书馆2.0数字参考咨询服务的主要特征",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为泛化概念，但在此语境中作为具体论述方面"
+        },
+        {
+          "entity_id": "27_e13",
+          "mention": "参考馆员",
+          "normalized_name": "参考馆员",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "钱榕从数字参考咨询的服务理念，服务模式和参考馆员三个方面论述了图书馆2.0数字参考咨询服务的主要特征",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为角色概念，非具体个人"
+        },
+        {
+          "entity_id": "27_e14",
+          "mention": "图书馆2.0数字参考咨询服务",
+          "normalized_name": "图书馆2.0数字参考咨询服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "钱榕从数字参考咨询的服务理念，服务模式和参考馆员三个方面论述了图书馆2.0数字参考咨询服务的主要特征",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e15",
+          "mention": "知识产权",
+          "normalized_name": "知识产权",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "并提出服务的过程中应注意知识产权的保护、信息资源的平衡调度、参考咨询服务社区的管理和如何判断共创知识的准确性等问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e16",
+          "mention": "信息资源",
+          "normalized_name": "信息资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "并提出服务的过程中应注意知识产权的保护、信息资源的平衡调度、参考咨询服务社区的管理和如何判断共创知识的准确性等问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为泛化概念，但在此语境中作为具体论述对象"
+        },
+        {
+          "entity_id": "27_e17",
+          "mention": "参考咨询服务社区",
+          "normalized_name": "参考咨询服务社区",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "并提出服务的过程中应注意知识产权的保护、信息资源的平衡调度、参考咨询服务社区的管理和如何判断共创知识的准确性等问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e18",
+          "mention": "共创知识",
+          "normalized_name": "共创知识",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "并提出服务的过程中应注意知识产权的保护、信息资源的平衡调度、参考咨询服务社区的管理和如何判断共创知识的准确性等问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "通过对目前我国图书馆2.0论文的定量与定性分析，得到如下结论：",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "图书馆2.0论文",
+          "normalized_name": "图书馆2.0论文",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过对目前我国图书馆2.0论文的定量与定性分析",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指代一组论文，而非单篇具体论文"
+        }
+      ]
+    },
+    {
+      "sentence_id": "29",
+      "sentence": "（1）理论研究不够深入、系统，亟待进一步深化、创新。 图书馆2.0论文数量的迅速增长说明图书馆2.0研究越来越受到理论研究者的重视。",
+      "entities": [
+        {
+          "entity_id": "29_e1",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆2.0论文数量的迅速增长说明图书馆2.0研究越来越受到理论研究者的重视",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "图书馆2.0论文数量的迅速增长说明图书馆2.0研究越来越受到理论研究者的重视。 从文献数量来看，理论研究成果较多，大多只做了一般性研究，对微观层面的问题涉猎较少，文章质量参差不齐，未能实现对理论的深入系统探讨，观点的提法和论述如出一辙，缺乏理论创新和参考价值，尚未形成科学系统的图书馆2.0研究理论框架和结构体系。 未来研究可从理论逐渐延伸至应用实践方面，亦应增强研究深度，更多采用微观层面研究，可借鉴和移植一些其他学科的理论与方法。",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆2.0论文数量的迅速增长说明图书馆2.0研究越来越受到理论研究者的重视",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "图书馆2.0研究理论框架",
+          "normalized_name": "图书馆2.0研究理论框架",
+          "candidate_l3": "framework",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "尚未形成科学系统的图书馆2.0研究理论框架和结构体系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "31",
+      "sentence": "（2）理论研究成果的实践指导性不强，应加强理论研究与应用研究的协调发展。尽管图书馆2.0应用、模式类研究成果较多，但大部分研究成果没有得到转化。论文应用研究大多泛泛而谈，多数仅限于理论探讨，没有涉及到具体的策略步骤。一方面是由于理论研究相对滞后； 另一方面也是因为研究者没有真正将成果应用于图书馆工作实践，无法提供例证与经验，从而制约了图书馆2.0的研究。",
+      "entities": [
+        {
+          "entity_id": "31_e1",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "尽管图书馆2.0应用、模式类研究成果较多",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "32",
+      "sentence": "（3）研究方法单一，应注重研究方法的科学性与多样化。 图书馆2.0的研究多采用定性研究方法，一些文章在关联性对比主题的研究中使用了比较方法。定量研究方法的较少，研究结论的主观性较强，对实践的指导作用有限，不能够为图书馆2.0的具体方案和策略提供数据支持，研究结论的客观性和可操作性较差。未来研究可科学地选择研究方法，注重定性与定量研究相结合，理论与实证研究相结合。",
+      "entities": [
+        {
+          "entity_id": "32_e1",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆2.0的研究多采用定性研究方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e2",
+          "mention": "定性研究方法",
+          "normalized_name": "定性研究方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆2.0的研究多采用定性研究方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e3",
+          "mention": "比较方法",
+          "normalized_name": "比较方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一些文章在关联性对比主题的研究中使用了比较方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e4",
+          "mention": "定量研究方法",
+          "normalized_name": "定量研究方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "定量研究方法的较少",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e5",
+          "mention": "理论与实证研究相结合",
+          "normalized_name": "理论与实证研究相结合",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "注重定性与定量研究相结合，理论与实证研究相结合",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可视为一种研究取向或方法论原则"
+        }
+      ]
+    },
+    {
+      "sentence_id": "33",
+      "sentence": "综上所述，目前我国图书馆2.0研究仍处于发展阶段，理论研究与应用研究尚不成熟。今后在拓宽研究视野的同时，应加强对图书馆2.0基础问题的深入探讨，形成具有理论深度和实践价值的研究成果，指导图书馆2.0实践，完善图书馆2.0的理论体系。",
+      "entities": [
+        {
+          "entity_id": "33_e1",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前我国图书馆2.0研究仍处于发展阶段",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e2",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "应加强对图书馆2.0基础问题的深入探讨",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e3",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "指导图书馆2.0实践",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e4",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "完善图书馆2.0的理论体系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

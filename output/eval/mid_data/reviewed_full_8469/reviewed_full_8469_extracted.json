@@ -1,0 +1,496 @@
+{
+  "base_name": "reviewed_full_8469",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "6",
+      "sentence": "据报道，在我省科技情报队伍中，受过半年以下情报业务培训的人员只占总数的 $2 \\%$ 。 由于情报队伍的不稳定性，在职情报干部的知识更新仍然很突出，普遍存在知识老化问题，至使队伍已经开始出现知识老化的趋势。人员的老化，意味着最佳创造时期的结束。 现代生理学和心理学研究表明：一个人的年龄与智力有一定的定量关系。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "我省科技情报队伍",
+          "normalized_name": "我省科技情报队伍",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在我省科技情报队伍中",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "具体省份未指明，但作为有地域限定的机构群体可抽取"
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "现代生理学",
+          "normalized_name": "现代生理学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现代生理学和心理学研究表明",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "心理学",
+          "normalized_name": "心理学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现代生理学和心理学研究表明",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "预计到1995年，在我省科技情报队伍中，具有中级技术职务的人员至少有 $7 4 . 4 \\%$ 的人员达到老化年龄（在高级技术职务中，目前百分之百的人员已达到老化年龄），其中绝大部分是当前情报队伍的精兵强将。 因此，我省科技情报队伍急待更新与培养。从当前国内外的经验来看，克服知识老化最有效的途径是大力发展在职教育事业。国外有人对通过在职教育所获得的知识作过统计，结果是，一个人如果一生工作45年，他将从“知识及时化”（即在职教育)中获得的知识约占一生中获得的全部知识的 $80 \\sim 9 0 \\%$ 。他们重视在职教育的理论根据是，可以防止知识老化，可以充分发挥现有队伍智力资源的作用[4]。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "我省科技情报队伍",
+          "normalized_name": "我省科技情报队伍",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在我省科技情报队伍中，具有中级技术职务的人员至少有 $7 4 . 4 \\%$ 的人员达到老化年龄",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "指代具体省份的科技情报队伍，但省份名称未明确给出，属于有地域限定的具体机构"
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "在职教育事业",
+          "normalized_name": "在职教育事业",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "克服知识老化最有效的途径是大力发展在职教育事业",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为一项有组织的教育举措，可视为事件"
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "知识及时化",
+          "normalized_name": "知识及时化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "他从“知识及时化”（即在职教育)中获得的知识约占一生中获得的全部知识的 $80 \\sim 9 0 \\%$",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "为了适应科技、经济和社会发展的需要，特别是发展外向型经济的需要，我省科技情报队伍要有一个较大的发展。 从整个情报队伍的状况来看，目前我国科技情报人员占科技人员的比例仅为 $1 \\%$ 左右，而苏联占 $8 \\%$ ，美、日占 $5 \\%$ ，西欧各国约占 $4 \\% [ 5 ]$ 。而我省只占 $0 . 4 7 \\%$ ，相比之下，差距非常大。随着科学技术的飞速发展，我省科技情报队伍也应有所增长，若按情报人员占科技人员的比例为 $1 . 5 \\%$ 计算，预计“八五”期间则需发展情报人员达4000人左右，是目前我省科技情报人员800人的5倍，这是一支很可观的队伍。 为此，",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "苏联",
+          "normalized_name": "苏联",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "苏联占8%",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "美、日",
+          "normalized_name": "美国、日本",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美、日占5%",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "西欧各国",
+          "normalized_name": "西欧各国",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "西欧各国约占4%",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "泛称，但作为国家/地区集合体可唯一识别"
+        },
+        {
+          "entity_id": "10_e4",
+          "mention": "八五",
+          "normalized_name": "八五",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "预计“八五”期间则需发展情报人员达4000人左右",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "从现在起每年将需增加570多情报人员。从目前情况看，要达到这个数值是很难完成的，必中国册研社会上级领局C应增加情报投资比例，改善情报环境，以适应现代社会发展的需要。在扩大队伍规模的同时，要调整情报队伍的结构，特别是在队伍的知识结构方面，必须有一个合理而完整的专业结构，才能适应新时期情报工作的发展。由于当代科学技术的发展具有综合化、专业化的趋势，专业学科综向深入又横向发展，导至当代情报工作不仅限于某-科学领域内，它将渗透于各个学科领域之中。因此，情报事业将需要各方面的专门人才，不仅需要各种科学和技术专家，而且还需要管理专家和技术、经济、外贸和商品经营人才，这样才能适应九十年代经济振兴时期对情报人才的需要。为此，在“八五”期间，应注重调配一批具有经、贸、公关知识、富于开拓创新、善于经营管理的中青年科技人员和企业家，调入一些经济、外贸、金融、法律和公共关系等专业的大学毕业生，以增强 队伍的活力，促使科技情报的职能向技术经济情报延伸。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "中国册研社会上级领局C",
+          "normalized_name": "中国册研社会上级领局C",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "必中国册研社会上级领局C应增加情报投资比例",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "原文存在OCR乱码或笔误，无法确定准确机构名称，但根据上下文推测为某政府或行业领导机构"
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "情报投资比例",
+          "normalized_name": "情报投资比例",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "应增加情报投资比例",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "情报环境",
+          "normalized_name": "情报环境",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "改善情报环境",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "八五",
+          "normalized_name": "八五",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "在“八五”期间",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "技术经济情报",
+          "normalized_name": "技术经济情报",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "促使科技情报的职能向技术经济情报延伸",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "“十年树木，百年树人”。 人才培养周期很长，从现在开始，就要采取各种形式和措施，稳定现有队伍，提高队伍的素质，培养、造就一大批情报业务骨干和情报专家，为情报事业腾飞打好基础，避免出现青黄不接、后继乏人的情况，这是关系到情报事业盛衰的大计，务必要引起各级有关领导的关注。 为此，笔者提出如下几点建议。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "情报业务骨干",
+          "normalized_name": "情报业务骨干",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "培养、造就一大批情报业务骨干和情报专家",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可视为图情领域内具有独立学术命名的概念，但边界较模糊"
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "情报专家",
+          "normalized_name": "情报专家",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "培养、造就一大批情报业务骨干和情报专家",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "同上，作为图情领域内特定角色概念抽取"
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "青黄不接",
+          "normalized_name": "青黄不接",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "避免出现青黄不接、后继乏人的情况",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为图情领域内可观察的人才断层现象，有独立学术命名"
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "后继乏人",
+          "normalized_name": "后继乏人",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "避免出现青黄不接、后继乏人的情况",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "同上，作为人才断层的具体表现"
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "党的十三大报告明确提出“百年大计，教育为本”。当前情报工作人员，无论是从数量上还是从知识结构和人员素质看，都不能适应社会对情报工作的需求。情报事业的发展，关键是人才，但基础在教育。为了造就一大批情报人才，当务之急是发展情报教育事业，特别是要强化在职情报人员的教育，把它作为当前科技情报队伍业务建设的重点，其目的不是为了给予学历，而是为了改善各个岗位的专业、知识结构，有针对性地进行实用性的系统训练[3]，使非情报专业人员能够比较系统地掌握情报理论与工作方法，以提高情报人员的素质。国家科委情报局编制的《中国国家科技情报政策要点》（草案）中提出“在职教育主要是采取轮训办法，逐步实现全员培训，特明要注意管理干部和中青年科技情报人员的培养和深造。 科技情报事业需要造就一批高级情报专家。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "党的十三大报告",
+          "normalized_name": "党的十三大报告",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "党的十三大报告明确提出“百年大计，教育为本”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "情报工作人员",
+          "normalized_name": "情报工作人员",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "当前情报工作人员，无论是从数量上还是从知识结构和人员素质看，都不能适应社会对情报工作的需求",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处为泛称群体，但结合上下文指代具体职业群体，按规则抽取"
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "情报教育事业",
+          "normalized_name": "情报教育事业",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当务之急是发展情报教育事业",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "国家科委情报局",
+          "normalized_name": "国家科委情报局",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国家科委情报局编制的《中国国家科技情报政策要点》（草案）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e5",
+          "mention": "《中国国家科技情报政策要点》",
+          "normalized_name": "《中国国家科技情报政策要点》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "国家科委情报局编制的《中国国家科技情报政策要点》（草案）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e6",
+          "mention": "情报理论与工作方法",
+          "normalized_name": "情报理论与工作方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使非情报专业人员能够比较系统地掌握情报理论与工作方法",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处为复合短语，可拆分为'情报理论'和'工作方法'，但原文作为整体出现"
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "科技情报人员是科技队伍的一个组成部分。对于科技情报人员在晋升专业技术职务和工资待遇等方面，不要说从优，起码应与其他科技人员的待遇一样，否则目前这支队伍难以稳定。在实行科技情报人员技术职务聘任中，科技情报人员的技术职务系列应单列。 在这次专中幽技杰职务聘任工作中，比较突出的一个矛盾是指标与晋升的矛盾，其结果是，在某种程度上影响了团结和工作积极性。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "科技情报人员",
+          "normalized_name": "科技情报人员",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "科技情报人员是科技队伍的一个组成部分",
+          "is_specific_entity": false,
+          "confidence": 0.3,
+          "uncertainty": "泛化身份类别词，不指称具体个人，但作为群体在评价中被讨论，根据召回优先原则保留"
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "科技队伍",
+          "normalized_name": "科技队伍",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "科技情报人员是科技队伍的一个组成部分",
+          "is_specific_entity": false,
+          "confidence": 0.4,
+          "uncertainty": "泛称，不指具体组织，但作为抽象共同体被提及"
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "专业技术职务",
+          "normalized_name": "专业技术职务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对于科技情报人员在晋升专业技术职务和工资待遇等方面",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "工资待遇",
+          "normalized_name": "工资待遇",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对于科技情报人员在晋升专业技术职务和工资待遇等方面",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e5",
+          "mention": "技术职务聘任",
+          "normalized_name": "技术职务聘任",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "在实行科技情报人员技术职务聘任中",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e6",
+          "mention": "技术职务系列",
+          "normalized_name": "技术职务系列",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "科技情报人员的技术职务系列应单列",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e7",
+          "mention": "指标与晋升的矛盾",
+          "normalized_name": "指标与晋升的矛盾",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "比较突出的一个矛盾是指标与晋升的矛盾",
+          "is_specific_entity": true,
+          "confidence": 0.88,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "诺贝尔奖金获得者、经济学家舒尔兹也曾说过“要建立一个现代化社会，大量的人力投资是必要的条件之一。 ”(6)回顾过去，我省科技情报队伍的建设已初具规模，这支队伍在为各级领导的决策和为科研、生产的服务中作出了应有的贡献；",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "诺贝尔奖金获得者、经济学家舒尔兹",
+          "normalized_name": "舒尔兹",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "诺贝尔奖金获得者、经济学家舒尔兹也曾说过",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "我省科技情报队伍",
+          "normalized_name": "我省科技情报队伍",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "回顾过去，我省科技情报队伍的建设已初具规模",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'我省'为指代，但'科技情报队伍'作为具体组织实体抽取"
+        }
+      ]
+    }
+  ]
+}

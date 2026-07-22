@@ -1,0 +1,864 @@
+{
+  "base_name": "reviewed_full_5593",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "“九五\"期间，企业信息化建设取得了很大进展，特别是在内部网和 $\\mathrm { Y 2 k }$ 两大因素促进下，许多企业早期的网络和系统在这几年进行了更新。 但是，无论从企业信息化深度一即对劳动生产率的贡献，还是广度一一即开展企业信息化建设的比重和已开展信息化建设企业的业务覆盖面，与国际先进水平均有十分巨大的差距。 2001年,在加入WTO后，我们的企业将直面国际竞争，同时，全球企业信息化的步伐进一步加快。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "企业信息化建设",
+          "normalized_name": "企业信息化建设",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "企业信息化建设取得了很大进展",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "内部网",
+          "normalized_name": "内部网",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在内部网和Y2k两大因素促进下",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "Y2k",
+          "normalized_name": "Y2k",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract",
+            "Event"
+          ],
+          "evidence": "在内部网和Y2k两大因素促进下",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为Event（千年虫事件）"
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "WTO",
+          "normalized_name": "WTO",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在加入WTO后",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "综上所述，在我国全面推广企业管理信息化的时机已经基本成熟，我国企业已开始应用网络技术来提高管理水平，并带动企业生产经营方式的转变。但由于我国目前仍处于工业化过程中，经济体制正在转换，企业面临着改革与发展的双重任务，在信息化方面还存在许多困难和问题。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "企业管理信息化",
+          "normalized_name": "企业管理信息化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在我国全面推广企业管理信息化的时机已经基本成熟",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "网络技术",
+          "normalized_name": "网络技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国企业已开始应用网络技术来提高管理水平",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "另一方面，是因为它们率先步入了信息经济时代，掌握着引导全球经济发展的主动权。 对此，处于发展中国家的企业要想在全球化竞争中得以生存和发展，必须加速实现信息化，赶超国外先进水平。特别应该认识到，借助信息化缩小差距，是发展中国家企业的一个机遇。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "信息经济时代",
+          "normalized_name": "信息经济时代",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "率先步入了信息经济时代",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "发展中国家",
+          "normalized_name": "发展中国家",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "处于发展中国家的企业",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "信息化",
+          "normalized_name": "信息化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加速实现信息化",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "相当多的企业决策者对企业信息化这项“一把手工程”的认识不够，投入不足，支持不力，甚至只是把它仅仅看成是纯技术性问题，使企业的信息化工作难以迅速推进； 当企业信息化进行到一定程度，需进行企业管理制度、组织机构、运行机制的深层次变革时，企业主要领导常常又缺乏对实施中涉及到的诸多利益格局调整等重大问题进行有力的组织协调。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "企业信息化",
+          "normalized_name": "企业信息化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "企业决策者对企业信息化这项“一把手工程”的认识不够",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "一把手工程",
+          "normalized_name": "一把手工程",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "企业信息化这项“一把手工程”",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为特定术语或比喻"
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "当企业信息化进行到一定程度，需进行企业管理制度、组织机构、运行机制的深层次变革时，企业主要领导常常又缺乏对实施中涉及到的诸多利益格局调整等重大问题进行有力的组织协调。 各级政府和有关部门对利用信息技术改善企业管理的巨大作用了解不够，观念普遍落后于企业的探索和实践，缺乏对企业管理信息化工作的规划和引导。许多企业对搞生产建设或生活设施建设肯投资，但对于加强信息化就舍不得花钱，或只满足于生产自动化和财务实行计算机管理，尚不能借助互联网来加强企业与外部市场的沟通或对信息流、资金流、物资流和企业组织管理体系等进行整合。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "企业管理制度",
+          "normalized_name": "企业管理制度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "需进行企业管理制度、组织机构、运行机制的深层次变革",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "组织机构",
+          "normalized_name": "组织机构",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "需进行企业管理制度、组织机构、运行机制的深层次变革",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "运行机制",
+          "normalized_name": "运行机制",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "需进行企业管理制度、组织机构、运行机制的深层次变革",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "信息技术",
+          "normalized_name": "信息技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用信息技术改善企业管理的巨大作用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "企业管理信息化",
+          "normalized_name": "企业管理信息化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "缺乏对企业管理信息化工作的规划和引导",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e6",
+          "mention": "生产自动化",
+          "normalized_name": "生产自动化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "只满足于生产自动化和财务实行计算机管理",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e7",
+          "mention": "财务实行计算机管理",
+          "normalized_name": "财务实行计算机管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "只满足于生产自动化和财务实行计算机管理",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e8",
+          "mention": "互联网",
+          "normalized_name": "互联网",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "尚不能借助互联网来加强企业与外部市场的沟通",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e9",
+          "mention": "信息流",
+          "normalized_name": "信息流",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对信息流、资金流、物资流和企业组织管理体系等进行整合",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e10",
+          "mention": "资金流",
+          "normalized_name": "资金流",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对信息流、资金流、物资流和企业组织管理体系等进行整合",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e11",
+          "mention": "物资流",
+          "normalized_name": "物资流",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对信息流、资金流、物资流和企业组织管理体系等进行整合",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e12",
+          "mention": "企业组织管理体系",
+          "normalized_name": "企业组织管理体系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对信息流、资金流、物资流和企业组织管理体系等进行整合",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "据 2000 年对520家国家重点企业的调查，有 $26 \\%$ 的企业还没有自己的互联网主页，在 $74 \\%$ 开通主页的企业中多数对网络的维护不及时，有 $70 \\%$ 的企业反映对信息化的投入不足，有 $20 \\%$ 的企业认为缺乏专业信息技术人才。据一项抽样调查，我国中小企业中有一半还没有配备计算机。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "520家国家重点企业",
+          "normalized_name": "520家国家重点企业",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "据 2000 年对520家国家重点企业的调查",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "企业群体，非单一组织，但具有具体限定（国家重点）"
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "互联网主页",
+          "normalized_name": "互联网主页",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有 $26 \\%$ 的企业还没有自己的互联网主页",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "专业信息技术人才",
+          "normalized_name": "专业信息技术人才",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有 $20 \\%$ 的企业认为缺乏专业信息技术人才",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但作为独立学术概念讨论人才短缺问题"
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "我国中小企业",
+          "normalized_name": "中国中小企业",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "我国中小企业中有一半还没有配备计算机",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "企业群体，非单一组织，但具有国家限定"
+        },
+        {
+          "entity_id": "7_e5",
+          "mention": "计算机",
+          "normalized_name": "计算机",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国中小企业中有一半还没有配备计算机",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "我国信息产业是在低水平上的快速发展，自主知识产权、核心技术或软件，仍是由世界顶级的研究和发展机构IT厂商所拥有; 产品的关键部件和软件开发的平台技术，基本上是由境外厂商或者是研发机构所提供，国内厂商多是完成组装、拼装或属地化的应用开发；",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "我国信息产业",
+          "normalized_name": "中国信息产业",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国信息产业是在低水平上的快速发展",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为discipline或subfield，但此处作为可观察的产业现象更合适"
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "自主知识产权",
+          "normalized_name": "自主知识产权",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "自主知识产权、核心技术或软件",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "核心技术",
+          "normalized_name": "核心技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "自主知识产权、核心技术或软件",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但此处作为具体技术能力指称"
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "世界顶级的研究和发展机构",
+          "normalized_name": "世界顶级的研究和发展机构",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "世界顶级的研究和发展机构IT厂商",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "未给出具体机构名称，但原文明确指称特定类型组织，按召回优先原则抽取"
+        },
+        {
+          "entity_id": "8_e5",
+          "mention": "IT厂商",
+          "normalized_name": "IT厂商",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "世界顶级的研究和发展机构IT厂商",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称，但原文中作为具体实体类别指称，按召回优先原则抽取"
+        },
+        {
+          "entity_id": "8_e6",
+          "mention": "境外厂商",
+          "normalized_name": "境外厂商",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "境外厂商或者是研发机构",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "泛称，但原文中作为具体实体类别指称，按召回优先原则抽取"
+        },
+        {
+          "entity_id": "8_e7",
+          "mention": "研发机构",
+          "normalized_name": "研发机构",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "境外厂商或者是研发机构",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "泛称，但原文中作为具体实体类别指称，按召回优先原则抽取"
+        },
+        {
+          "entity_id": "8_e8",
+          "mention": "国内厂商",
+          "normalized_name": "国内厂商",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国内厂商多是完成组装、拼装或属地化的应用开发",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "泛称，但原文中作为具体实体类别指称，按召回优先原则抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "目前，我国企业信息化尚无统一标准，相关法律法规不够完善，物流、生产、财务、结算的社会化体系支撑不够。专业人才缺乏，也造成一些企业信息化建设的盲目性。",
+      "entities": []
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "日本经济产业省为促进其企业信息化建设，制定了5年赶超欧美的战略规划，为此专门设立了“信息化工作推进战略本部”，制定IT基本法，明确了推进企业信息化的方针政策。我国也应尽快组织有关信息技术、管理咨询、软件厂商及典型企业等多方面的业内专家。 研究制定全国企业信息化的战略规划和工作方案。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "日本经济产业省",
+          "normalized_name": "日本经济产业省",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "日本经济产业省为促进其企业信息化建设",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "信息化工作推进战略本部",
+          "normalized_name": "信息化工作推进战略本部",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "为此专门设立了“信息化工作推进战略本部”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "IT基本法",
+          "normalized_name": "IT基本法",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "制定IT基本法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "研究制定全国企业信息化的战略规划和工作方案。 通过政府引导，明确企业信息化的方针目标，帮助企业管理者转变观念、树立信息化意识，增强信息化建设的紧迫感和责任感，及时出台《关于推进企业信息化工作的指导意见》，加快与信息化相关的基础设施建设。加速计算机与管理类复合型人才的培养，清理调整不利于推动企业信息化的政策规定，明确相关的优惠扶持政策，催生国内龙头软件企业，推动软件工程化，建立软件工程项目管理体制和运作机制，研究制定网络安全运行相关的法律法规，有效化解企业信息化工作中出现的种种问题，争取在 $3 \\mathord { \\sim } 5$ 年内使大多数大中型企业基本实现企业信息化。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "《关于推进企业信息化工作的指导意见》",
+          "normalized_name": "《关于推进企业信息化工作的指导意见》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "及时出台《关于推进企业信息化工作的指导意见》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "企业信息化",
+          "normalized_name": "企业信息化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究制定全国企业信息化的战略规划和工作方案",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "多次出现，作为核心概念"
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "软件工程化",
+          "normalized_name": "软件工程化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "推动软件工程化",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为method或technique，但原文未展开具体操作程序"
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "目前，导致我国企业信息化水平低的主要原因之一，是企业经营管理人员缺乏必要的信息化知识，对用信息技术改造企业生产经营管理的作用认识不足。 因此，政府要采取多种形式、通过多种渠道开展多层次的信息化知识宣传、培训和推广。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "企业信息化",
+          "normalized_name": "企业信息化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "导致我国企业信息化水平低的主要原因之一",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "信息技术",
+          "normalized_name": "信息技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用信息技术改造企业生产经营管理的作用认识不足",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "实现网上信息发布、信息分类查询、网上合同谈判、网上交易、网上结算、网上税收、信用评估及交易记录发布等。 旨在减少企业交易成本、产品库存、货款拖欠、资金占用。 初期,实现在该平台上提供网上信息发布和信息分类查询服务，对国家重点企业实行免费发布各类商务信息。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "网上信息发布",
+          "normalized_name": "网上信息发布",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现网上信息发布、信息分类查询、网上合同谈判、网上交易、网上结算、网上税收、信用评估及交易记录发布等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为功能描述，但作为独立学术概念可识别"
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "信息分类查询",
+          "normalized_name": "信息分类查询",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现网上信息发布、信息分类查询、网上合同谈判、网上交易、网上结算、网上税收、信用评估及交易记录发布等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为功能描述，但作为独立学术概念可识别"
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "网上合同谈判",
+          "normalized_name": "网上合同谈判",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现网上信息发布、信息分类查询、网上合同谈判、网上交易、网上结算、网上税收、信用评估及交易记录发布等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为功能描述，但作为独立学术概念可识别"
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "网上交易",
+          "normalized_name": "网上交易",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现网上信息发布、信息分类查询、网上合同谈判、网上交易、网上结算、网上税收、信用评估及交易记录发布等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为功能描述，但作为独立学术概念可识别"
+        },
+        {
+          "entity_id": "15_e5",
+          "mention": "网上结算",
+          "normalized_name": "网上结算",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现网上信息发布、信息分类查询、网上合同谈判、网上交易、网上结算、网上税收、信用评估及交易记录发布等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为功能描述，但作为独立学术概念可识别"
+        },
+        {
+          "entity_id": "15_e6",
+          "mention": "网上税收",
+          "normalized_name": "网上税收",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现网上信息发布、信息分类查询、网上合同谈判、网上交易、网上结算、网上税收、信用评估及交易记录发布等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为功能描述，但作为独立学术概念可识别"
+        },
+        {
+          "entity_id": "15_e7",
+          "mention": "信用评估",
+          "normalized_name": "信用评估",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现网上信息发布、信息分类查询、网上合同谈判、网上交易、网上结算、网上税收、信用评估及交易记录发布等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为功能描述，但作为独立学术概念可识别"
+        },
+        {
+          "entity_id": "15_e8",
+          "mention": "交易记录发布",
+          "normalized_name": "交易记录发布",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现网上信息发布、信息分类查询、网上合同谈判、网上交易、网上结算、网上税收、信用评估及交易记录发布等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为功能描述，但作为独立学术概念可识别"
+        },
+        {
+          "entity_id": "15_e9",
+          "mention": "企业交易成本",
+          "normalized_name": "企业交易成本",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "旨在减少企业交易成本、产品库存、货款拖欠、资金占用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e10",
+          "mention": "产品库存",
+          "normalized_name": "产品库存",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "旨在减少企业交易成本、产品库存、货款拖欠、资金占用",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为通用商业术语，但作为独立概念可识别"
+        },
+        {
+          "entity_id": "15_e11",
+          "mention": "货款拖欠",
+          "normalized_name": "货款拖欠",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "旨在减少企业交易成本、产品库存、货款拖欠、资金占用",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为通用商业术语，但作为独立概念可识别"
+        },
+        {
+          "entity_id": "15_e12",
+          "mention": "资金占用",
+          "normalized_name": "资金占用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "旨在减少企业交易成本、产品库存、货款拖欠、资金占用",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为通用商业术语，但作为独立概念可识别"
+        },
+        {
+          "entity_id": "15_e13",
+          "mention": "国家重点企业",
+          "normalized_name": "国家重点企业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对国家重点企业实行免费发布各类商务信息",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为政策分类概念，非具体组织名"
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "为推进信息化，日本国会于2000 年通过了《日本高度信息网络社会形成基本法》（以下简称《基本法》)，明确了信息化的基本方针、领导机构和信息化推进重点。 该法为日本政府采取相应的措施提供了法律依据。我国在推进企业信息化的过程中，也应制定相应的法律和法规，制定推动信息化建设政策措施的基本方针，发展信息网络，扩大信息网络的应用，丰富网络信息内容，实施信息化战略。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "日本国会",
+          "normalized_name": "日本国会",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "日本国会于2000 年通过了《日本高度信息网络社会形成基本法》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "《日本高度信息网络社会形成基本法》",
+          "normalized_name": "《日本高度信息网络社会形成基本法》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过了《日本高度信息网络社会形成基本法》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "《基本法》",
+          "normalized_name": "《日本高度信息网络社会形成基本法》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《日本高度信息网络社会形成基本法》（以下简称《基本法》）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

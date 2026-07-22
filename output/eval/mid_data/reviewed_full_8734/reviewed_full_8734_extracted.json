@@ -1,0 +1,2848 @@
+{
+  "base_name": "reviewed_full_8734",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "随着大数据时代的到来，用户可获取的信息资源越来越多，数字出版技术的发展更是导致了科学文献信息的爆炸式增长。 在当前数字出版模式下，科学文献大多采用类似传统印刷型出版物的非结构化形式在线出版(如HTML、PDF格式),使得大量科学发现和科学结论被淹没在海量科学文本之中,科研人员需要花费大量时间查找文献、阅读并发现其中的关键信息，因此难以快速获取所需的科学信息以及其中的关联关系，为科学知识的交流、共享和重用带来了很大障碍。 2009 年牛津大学的D.Shotton教授首次正式提出了“语义出版(Semantic Publishing)”概念,受到学术界和出版界的广泛关注。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "大数据时代",
+          "normalized_name": "大数据时代",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着大数据时代的到来",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "数字出版技术",
+          "normalized_name": "数字出版技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "数字出版技术的发展更是导致了科学文献信息的爆炸式增长",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "HTML",
+          "normalized_name": "HTML",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如HTML、PDF格式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "PDF格式",
+          "normalized_name": "PDF格式",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如HTML、PDF格式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e5",
+          "mention": "牛津大学",
+          "normalized_name": "牛津大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "2009 年牛津大学的D.Shotton教授",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e6",
+          "mention": "D.Shotton",
+          "normalized_name": "D.Shotton",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "牛津大学的D.Shotton教授首次正式提出了",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e7",
+          "mention": "语义出版(Semantic Publishing)",
+          "normalized_name": "语义出版(Semantic Publishing)",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "首次正式提出了“语义出版(Semantic Publishing)”概念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "2009 年牛津大学的D.Shotton教授首次正式提出了“语义出版(Semantic Publishing)”概念,受到学术界和出版界的广泛关注。 D．Shotton认为语义出版是一种语义增强的期刊出版形式，采用语义网技术对期刊论文中的信息进行语义标注和语义关联，丰富出版物的内容,增强论文的语义，促进知识传播和学术交流。 基于语义出版思想，2009年非盈利性学术组织概念网络联盟(Concept Web Alliance)提出了一种新的科学信息出版模式——纳米出版(Nanopublication）,旨在建立一种结构化和语义化的细粒度知识表示和发布方式。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "牛津大学",
+          "normalized_name": "牛津大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "2009 年牛津大学的D.Shotton教授首次正式提出了",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "D.Shotton",
+          "normalized_name": "D.Shotton",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "2009 年牛津大学的D.Shotton教授首次正式提出了",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "语义出版(Semantic Publishing)",
+          "normalized_name": "语义出版(Semantic Publishing)",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "首次正式提出了“语义出版(Semantic Publishing)”概念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "D．Shotton",
+          "normalized_name": "D.Shotton",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "D．Shotton认为语义出版是一种语义增强的期刊出版形式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e5",
+          "mention": "语义网技术",
+          "normalized_name": "语义网技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用语义网技术对期刊论文中的信息进行语义标注和语义关联",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e6",
+          "mention": "概念网络联盟(Concept Web Alliance)",
+          "normalized_name": "概念网络联盟(Concept Web Alliance)",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "非盈利性学术组织概念网络联盟(Concept Web Alliance)提出了一种新的科学信息出版模式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e7",
+          "mention": "纳米出版(Nanopublication)",
+          "normalized_name": "纳米出版(Nanopublication)",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提出了一种新的科学信息出版模式——纳米出版(Nanopublication）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "基于语义出版思想，2009年非盈利性学术组织概念网络联盟(Concept Web Alliance)提出了一种新的科学信息出版模式——纳米出版(Nanopublication）,旨在建立一种结构化和语义化的细粒度知识表示和发布方式。 在纳米出版模式下,淹没在非结构化科学文本或海量数据集中的科学事实或科学结论被抽取出来，对其进行结构化和语义化表示，形成带有语境和支持信息的独立纳米出版物，一方面增强了科学信息的机器可读性，另一方面可促进科学知识的传播与交流。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "概念网络联盟(Concept Web Alliance)",
+          "normalized_name": "概念网络联盟 (Concept Web Alliance)",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "非盈利性学术组织概念网络联盟(Concept Web Alliance)提出了一种新的科学信息出版模式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "纳米出版(Nanopublication)",
+          "normalized_name": "纳米出版 (Nanopublication)",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提出了一种新的科学信息出版模式——纳米出版(Nanopublication）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "为了解决在大数据背景下科学知识的发现、连接和监护问题,概念网络联盟于2009年5月首次提出了纳米出版物的概念，指出纳米出版物是可出版信息的最小单元，是能够被唯一标识且具有作者归属的关于任何事物的一个断言。 在此概念基础上,2010 年荷兰阿姆斯特丹自由大学的P.Groth等人提出了纳米出版模型,并初步提出了生成纳米出版物的技术规范。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "概念网络联盟",
+          "normalized_name": "概念网络联盟",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "概念网络联盟于2009年5月首次提出了纳米出版物的概念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "纳米出版物",
+          "normalized_name": "纳米出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "首次提出了纳米出版物的概念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "荷兰阿姆斯特丹自由大学",
+          "normalized_name": "阿姆斯特丹自由大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "2010 年荷兰阿姆斯特丹自由大学的P.Groth等人提出了纳米出版模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "P.Groth",
+          "normalized_name": "P.Groth",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "荷兰阿姆斯特丹自由大学的P.Groth等人提出了纳米出版模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "纳米出版模型",
+          "normalized_name": "纳米出版模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "P.Groth等人提出了纳米出版模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "在此概念基础上,2010 年荷兰阿姆斯特丹自由大学的P.Groth等人提出了纳米出版模型,并初步提出了生成纳米出版物的技术规范。 2011年3月欧洲创新药物计划资助的Open PHACTS（Open Pharmacological Concept Triple Store）项目开始实施，采用纳米出版模式作为药物数据的统一表示形式以利于数据集成和互操作,从而为药物发现研究提供了语义基础设施，实现了纳米出版物的首次实际应用。2012年6月Open PHACTS项目发布了纳米出版物指南，定义了纳米出版物的组成元素和表示方法,在2015年发布了纳米出版物指南最新版本，同时创建了nanopub.org 网站,有力地推动了纳米出版的发展。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "荷兰阿姆斯特丹自由大学",
+          "normalized_name": "荷兰阿姆斯特丹自由大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "2010 年荷兰阿姆斯特丹自由大学的P.Groth等人提出了纳米出版模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "P.Groth",
+          "normalized_name": "P.Groth",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "荷兰阿姆斯特丹自由大学的P.Groth等人提出了纳米出版模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "纳米出版模型",
+          "normalized_name": "纳米出版模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提出了纳米出版模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "欧洲创新药物计划",
+          "normalized_name": "欧洲创新药物计划",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "欧洲创新药物计划资助的Open PHACTS项目",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e5",
+          "mention": "Open PHACTS（Open Pharmacological Concept Triple Store）项目",
+          "normalized_name": "Open PHACTS项目",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "欧洲创新药物计划资助的Open PHACTS（Open Pharmacological Concept Triple Store）项目开始实施",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e6",
+          "mention": "纳米出版模式",
+          "normalized_name": "纳米出版模式",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用纳米出版模式作为药物数据的统一表示形式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e7",
+          "mention": "纳米出版物指南",
+          "normalized_name": "纳米出版物指南",
+          "candidate_l3": "guideline",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Open PHACTS项目发布了纳米出版物指南",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e8",
+          "mention": "nanopub.org 网站",
+          "normalized_name": "nanopub.org网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "创建了nanopub.org 网站",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "完整性密钥（IntegrityKey)是纳米出版物ID的一部分,用于核查纳米出版物是否发生变化,确保纳米出版物的稳定性和永久性。 苏黎世联邦理工大学的学者T.Kuhn推荐使用可信任的URIs(TrustyURIs)表示完整性密钥,即采用哈希加密算法对纳米出版物的内容添加哈希值以确保纳米出版物的可验证性和永久性。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "完整性密钥（IntegrityKey）",
+          "normalized_name": "完整性密钥（IntegrityKey）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "完整性密钥（IntegrityKey)是纳米出版物ID的一部分",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "纳米出版物",
+          "normalized_name": "纳米出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "完整性密钥（IntegrityKey)是纳米出版物ID的一部分",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "苏黎世联邦理工大学",
+          "normalized_name": "苏黎世联邦理工大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "苏黎世联邦理工大学的学者T.Kuhn推荐使用可信任的URIs(TrustyURIs)表示完整性密钥",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "T.Kuhn",
+          "normalized_name": "T.Kuhn",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "苏黎世联邦理工大学的学者T.Kuhn推荐使用可信任的URIs(TrustyURIs)表示完整性密钥",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "可信任的URIs(TrustyURIs)",
+          "normalized_name": "可信任的URIs（TrustyURIs）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "推荐使用可信任的URIs(TrustyURIs)表示完整性密钥",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e6",
+          "mention": "哈希加密算法",
+          "normalized_name": "哈希加密算法",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用哈希加密算法对纳米出版物的内容添加哈希值",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "为了更加清晰地说明纳米出版物的结构,我们以生物医学领域中的一个科学论断“Trastuzumab is indi-cated forbreastcancer\"（曲妥单抗用于治疗乳腺癌）为例,将其表示为纳米出版物,如图3所示。 在该图中，论断描述了“ex:trastuzumab\"和“ex:breast-cancer\"两个实体及其之间“ex:is-indicated-for”的关系;",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "纳米出版物",
+          "normalized_name": "纳米出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为了更加清晰地说明纳米出版物的结构",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "Trastuzumab is indi-cated forbreastcancer",
+          "normalized_name": "Trastuzumab is indicated for breast cancer",
+          "candidate_l3": "knowledge_claim",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "科学论断“Trastuzumab is indi-cated forbreastcancer\"（曲妥单抗用于治疗乳腺癌）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "曲妥单抗用于治疗乳腺癌",
+          "normalized_name": "曲妥单抗用于治疗乳腺癌",
+          "candidate_l3": "knowledge_claim",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "科学论断“Trastuzumab is indi-cated forbreastcancer\"（曲妥单抗用于治疗乳腺癌）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "ex:trastuzumab",
+          "normalized_name": "ex:trastuzumab",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "论断描述了“ex:trastuzumab\"和“ex:breast-cancer\"两个实体",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e5",
+          "mention": "ex:breast-cancer",
+          "normalized_name": "ex:breast-cancer",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "论断描述了“ex:trastuzumab\"和“ex:breast-cancer\"两个实体",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e6",
+          "mention": "ex:is-indicated-for",
+          "normalized_name": "ex:is-indicated-for",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "及其之间“ex:is-indicated-for”的关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "(1)科学论断的抽取：构建纳米出版的首要工作是从非结构化的科学文献中识别并抽取出重要的科学观点或结论，将其作为纳米出版物的论断。 鉴于科学文献通常具有比较固定的篇章结构，且科学观点或科学结论通常出现在科学文献的特定位置(如结论)，因此通过对科学文献进行篇章结构解析，有助于快速定位重要的科学论断。关于科学文献的篇章结构目前有多个模型，其中一个代表性的模型是英国阿伯里斯特威斯大学开发的用于描述有实验方法驱动的科学研究的元数据模型 CISP(Core Information about ScientificPapers）[,该模型将科学研究的主要方面划分为八个类别,分别为:研究目的、动机、研究对象、研究方法、实验过程、观察、实验结果和结论。 CISP的制定者还开发了基于CISP的辅助人工标注工具 SAPIENT（Seman-tic Annotation of Papers: Interface & Enrichment Tool）,可用于辅助人工识别科学文献中表示上述八个关键类的自然句[ 。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "纳米出版",
+          "normalized_name": "纳米出版",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "构建纳米出版的首要工作是从非结构化的科学文献中识别并抽取出重要的科学观点或结论",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "英国阿伯里斯特威斯大学",
+          "normalized_name": "阿伯里斯特威斯大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "英国阿伯里斯特威斯大学开发的用于描述有实验方法驱动的科学研究的元数据模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "CISP(Core Information about ScientificPapers）",
+          "normalized_name": "CISP (Core Information about Scientific Papers)",
+          "candidate_l3": "metadata_schema",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "元数据模型 CISP(Core Information about ScientificPapers）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "SAPIENT（Seman-tic Annotation of Papers: Interface & Enrichment Tool）",
+          "normalized_name": "SAPIENT (Semantic Annotation of Papers: Interface & Enrichment Tool)",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于CISP的辅助人工标注工具 SAPIENT（Seman-tic Annotation of Papers: Interface & Enrichment Tool）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "其次,需要将逻辑三元组中的自然语言词汇转换为规范词汇，并采用URI标识符进行唯一标识,才能将其转换为 RDF三元组。 鉴于纳米出版模型中并没有提供用于规范化表示的词表或本体，因此可重用已有的开放公共词表或本体，而且这更有助于纳米出版物与其他资源信息的集成。Open PHACTS 组织推荐了一些常用词表用于描述生命科学领域的概念,如表1所示。 为了对RDF三元组中规范化表示的实体或概念进行唯一标识，一些学术机构专门建立了提供URIs标识的服务系统,如欧洲生物信息研究所为共享生命科学实验数据而构建的一个维护数据唯一性的服务系统Identifiers.org,该系统主要为生命科学领域的实体对象提供URIs,其形式为 $< \\mathrm { h t - }$ tp: //identifiers.org/[namespace]/ [entity]>[]。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "逻辑三元组",
+          "normalized_name": "逻辑三元组",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "需要将逻辑三元组中的自然语言词汇转换为规范词汇",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "URI标识符",
+          "normalized_name": "URI标识符",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "并采用URI标识符进行唯一标识",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "RDF三元组",
+          "normalized_name": "RDF三元组",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "才能将其转换为 RDF三元组",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "纳米出版模型",
+          "normalized_name": "纳米出版模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "鉴于纳米出版模型中并没有提供用于规范化表示的词表或本体",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e5",
+          "mention": "Open PHACTS 组织",
+          "normalized_name": "Open PHACTS 组织",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Open PHACTS 组织推荐了一些常用词表用于描述生命科学领域的概念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e6",
+          "mention": "欧洲生物信息研究所",
+          "normalized_name": "欧洲生物信息研究所",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "欧洲生物信息研究所为共享生命科学实验数据而构建的一个维护数据唯一性的服务系统Identifiers.org",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e7",
+          "mention": "Identifiers.org",
+          "normalized_name": "Identifiers.org",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "欧洲生物信息研究所为共享生命科学实验数据而构建的一个维护数据唯一性的服务系统Identifiers.org",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "(3)科学论断出处信息的构建：为来自科学文献的论断添加元数据,主要包含论断的作者、机构、时间和地点信息等。 在构建纳米出版物时,主要采用出处本体中的属性来描述上述元数据。 形式化表示的论断元数据(即出处信息)构成了一个RDF命名图,称作纳米出版物的出处图。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "纳米出版物",
+          "normalized_name": "纳米出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在构建纳米出版物时,主要采用出处本体中的属性来描述上述元数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "出处本体",
+          "normalized_name": "出处本体",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "主要采用出处本体中的属性来描述上述元数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "RDF命名图",
+          "normalized_name": "RDF命名图",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "形式化表示的论断元数据(即出处信息)构成了一个RDF命名图,称作纳米出版物的出处图",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e4",
+          "mention": "出处图",
+          "normalized_name": "出处图",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "称作纳米出版物的出处图",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "（4)纳米出版物出版信息的构建：为形式化表示的纳米出版物添加元数据，主要包含纳米出版物的创建者、创建时间、版权和版本信息等,为纳米出版物提供背景和语境信息。 在构建纳米出版物时,主要采用DC核心元数据和出处本体中的属性来描述。 形式化表示的纳米出版物元数据（即出版信息）构成了一个RDF命名图，称作纳米出版物的出版信息图。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "纳米出版物",
+          "normalized_name": "纳米出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "纳米出版物出版信息的构建：为形式化表示的纳米出版物添加元数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "DC核心元数据",
+          "normalized_name": "DC核心元数据",
+          "candidate_l3": "metadata_schema",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "主要采用DC核心元数据和出处本体中的属性来描述",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "出处本体",
+          "normalized_name": "出处本体",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "主要采用DC核心元数据和出处本体中的属性来描述",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能指PROV-O等具体本体，但原文仅称'出处本体'"
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "RDF命名图",
+          "normalized_name": "RDF命名图",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "构成了一个RDF命名图，称作纳米出版物的出版信息图",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "纳米出版物的出版信息图",
+          "normalized_name": "纳米出版物的出版信息图",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "构成了一个RDF命名图，称作纳米出版物的出版信息图",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "从图4可以看出,纳米出版在生物医学领域的应用相对比较成熟，占据了目前 $80 \\%$ 左右的应用。 从发布为纳米出版物的数据来源来看，主要分为两大类：一类是科研工作者自行将个人研究成果发布为纳米出版物，旨在促进最新研究成果的传播与交流;",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "纳米出版",
+          "normalized_name": "纳米出版",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "纳米出版在生物医学领域的应用相对比较成熟",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "生物医学领域",
+          "normalized_name": "生物医学领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "纳米出版在生物医学领域的应用相对比较成熟",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "纳米出版物",
+          "normalized_name": "纳米出版物",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "发布为纳米出版物的数据来源来看",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "另一类是将已有关系型数据库中的数据以纳米出版形式发布，旨在发现数据之间新的关联关系以及提高数据的可信度。 在第一类应用中，一个具有代表性的案例是2015年荷兰莱顿大学的E.Mina等人采用纳米出版模型将关于亨廷顿病(一种显性遗传性神经系统变性病）的实验结果和实验过程发布为关联数据，从而弥补了传统期刊出版方式无法将实验数据展示给读者的缺点，并且增强了数据之间的关联性和互操作性。 E.Mina首先将科学文献中以自然语言表达的实验结果转化为RDF三元组,以此作为纳米出版物的论断,然后基于以工作流为中心的研究对象模型（Workflow-centric Re-searchObjectModel,简称WROM）标注实验过程和实验数据,以此作为论断的出处信息[。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "纳米出版",
+          "normalized_name": "纳米出版",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将已有关系型数据库中的数据以纳米出版形式发布",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "荷兰莱顿大学",
+          "normalized_name": "莱顿大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "2015年荷兰莱顿大学的E.Mina等人",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "E.Mina",
+          "normalized_name": "E.Mina",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "荷兰莱顿大学的E.Mina等人",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "亨廷顿病",
+          "normalized_name": "亨廷顿病",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "关于亨廷顿病(一种显性遗传性神经系统变性病）的实验结果和实验过程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e5",
+          "mention": "RDF三元组",
+          "normalized_name": "RDF三元组",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将科学文献中以自然语言表达的实验结果转化为RDF三元组",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e6",
+          "mention": "以工作流为中心的研究对象模型（Workflow-centric Re-searchObjectModel,简称WROM）",
+          "normalized_name": "以工作流为中心的研究对象模型（Workflow-centric Research Object Model, WROM）",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于以工作流为中心的研究对象模型（Workflow-centric Re-searchObjectModel,简称WROM）标注实验过程和实验数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "E.Mina首先将科学文献中以自然语言表达的实验结果转化为RDF三元组,以此作为纳米出版物的论断,然后基于以工作流为中心的研究对象模型（Workflow-centric Re-searchObjectModel,简称WROM）标注实验过程和实验数据,以此作为论断的出处信息[。 针对第二类应用，一个代表性应用是2005年实施的欧盟创新医学联合计划项目OpenPHACTS。 该项目将纳米出版应用到面向药物发现研究的语义基础设施中，采用纳米出版模式表示生物活性数据及结论性信息，构建一个药物数据集成平台，一方面提高数据的可信度和引用率，另一方面促进数据集成和互操作。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "E.Mina",
+          "normalized_name": "E.Mina",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "E.Mina首先将科学文献中以自然语言表达的实验结果转化为RDF三元组",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "RDF三元组",
+          "normalized_name": "RDF三元组",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将科学文献中以自然语言表达的实验结果转化为RDF三元组",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "纳米出版物",
+          "normalized_name": "纳米出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以此作为纳米出版物的论断",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e4",
+          "mention": "以工作流为中心的研究对象模型（Workflow-centric Re-searchObjectModel,简称WROM）",
+          "normalized_name": "以工作流为中心的研究对象模型（Workflow-centric Re-searchObjectModel,简称WROM）",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于以工作流为中心的研究对象模型（Workflow-centric Re-searchObjectModel,简称WROM）标注实验过程和实验数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e5",
+          "mention": "WROM",
+          "normalized_name": "WROM",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于以工作流为中心的研究对象模型（Workflow-centric Re-searchObjectModel,简称WROM）标注实验过程和实验数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e6",
+          "mention": "欧盟创新医学联合计划项目OpenPHACTS",
+          "normalized_name": "欧盟创新医学联合计划项目OpenPHACTS",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "2005年实施的欧盟创新医学联合计划项目OpenPHACTS",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e7",
+          "mention": "OpenPHACTS",
+          "normalized_name": "OpenPHACTS",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "2005年实施的欧盟创新医学联合计划项目OpenPHACTS",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e8",
+          "mention": "纳米出版",
+          "normalized_name": "纳米出版",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "该项目将纳米出版应用到面向药物发现研究的语义基础设施中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e9",
+          "mention": "药物数据集成平台",
+          "normalized_name": "药物数据集成平台",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "构建一个药物数据集成平台",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "该项目将纳米出版应用到面向药物发现研究的语义基础设施中，采用纳米出版模式表示生物活性数据及结论性信息，构建一个药物数据集成平台，一方面提高数据的可信度和引用率，另一方面促进数据集成和互操作。 另一个代表性应用是2017年美国伦斯勒理工学院的J.P．Mccusker等人采用纳米出版模式对来自不同数据库中的药物－靶点、蛋白质-蛋白质、疾病-基因间关联关系进行统一的语义化表示和集中存储，通过这种方式解决了数据的碎片化问题,为药物再利用提供了数据支撑[。 第二类应用的实现需要依赖于各种RDF自动转换工具，将不同领域和格式的结构化数据自动转换为RDF格式表示的纳米出版物。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "纳米出版",
+          "normalized_name": "纳米出版",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "该项目将纳米出版应用到面向药物发现研究的语义基础设施中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "药物发现研究",
+          "normalized_name": "药物发现研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "面向药物发现研究的语义基础设施",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "语义基础设施",
+          "normalized_name": "语义基础设施",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "面向药物发现研究的语义基础设施",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "纳米出版模式",
+          "normalized_name": "纳米出版模式",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用纳米出版模式表示生物活性数据及结论性信息",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e5",
+          "mention": "生物活性数据",
+          "normalized_name": "生物活性数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "表示生物活性数据及结论性信息",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e6",
+          "mention": "药物数据集成平台",
+          "normalized_name": "药物数据集成平台",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "构建一个药物数据集成平台",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e7",
+          "mention": "2017年",
+          "normalized_name": "2017年",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "另一个代表性应用是2017年美国伦斯勒理工学院的J.P．Mccusker等人",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e8",
+          "mention": "美国伦斯勒理工学院",
+          "normalized_name": "伦斯勒理工学院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "2017年美国伦斯勒理工学院的J.P．Mccusker等人",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e9",
+          "mention": "J.P．Mccusker",
+          "normalized_name": "J.P. Mccusker",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国伦斯勒理工学院的J.P．Mccusker等人",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e10",
+          "mention": "药物－靶点",
+          "normalized_name": "药物-靶点",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "药物－靶点、蛋白质-蛋白质、疾病-基因间关联关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e11",
+          "mention": "蛋白质-蛋白质",
+          "normalized_name": "蛋白质-蛋白质",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "药物－靶点、蛋白质-蛋白质、疾病-基因间关联关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e12",
+          "mention": "疾病-基因间关联关系",
+          "normalized_name": "疾病-基因关联关系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "疾病-基因间关联关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e13",
+          "mention": "数据的碎片化问题",
+          "normalized_name": "数据碎片化",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "解决了数据的碎片化问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e14",
+          "mention": "药物再利用",
+          "normalized_name": "药物再利用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为药物再利用提供了数据支撑",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e15",
+          "mention": "RDF自动转换工具",
+          "normalized_name": "RDF自动转换工具",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "依赖于各种RDF自动转换工具",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e16",
+          "mention": "RDF格式",
+          "normalized_name": "RDF格式",
+          "candidate_l3": "metadata_schema",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "自动转换为RDF格式表示的纳米出版物",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "除了生物医学领域外,一些研究者也对纳米出版在其他领域的应用进行了探索。 2014年,奥地利维也纳理工大学的A.Lipani等人基于信息检索本体对描述信息检索实验的科学文献进行了语义标注，从而将信息检索实验数据以纳米出版物形式发布，以增强检索实验的可重复性[。2015年,北卡罗来纳大学教堂山分校的P.Golden等人采用纳米出版模式对考古、历史和艺术史中有关历史时期的描述进行形式化表示，并发布为关联数据。2015年,马里兰大学人文科技学院的R.Viglianti用纳米出版模式将传统乐谱发布为关联数据,增强了音乐记谱法的寻址能力 。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "纳米出版",
+          "normalized_name": "纳米出版",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一些研究者也对纳米出版在其他领域的应用进行了探索",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "奥地利维也纳理工大学",
+          "normalized_name": "维也纳理工大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "奥地利维也纳理工大学的A.Lipani等人",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "A.Lipani",
+          "normalized_name": "A.Lipani",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "奥地利维也纳理工大学的A.Lipani等人",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e4",
+          "mention": "信息检索本体",
+          "normalized_name": "信息检索本体",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于信息检索本体对描述信息检索实验的科学文献进行了语义标注",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e5",
+          "mention": "纳米出版物",
+          "normalized_name": "纳米出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将信息检索实验数据以纳米出版物形式发布",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e6",
+          "mention": "北卡罗来纳大学教堂山分校",
+          "normalized_name": "北卡罗来纳大学教堂山分校",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "北卡罗来纳大学教堂山分校的P.Golden等人",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e7",
+          "mention": "P.Golden",
+          "normalized_name": "P.Golden",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "北卡罗来纳大学教堂山分校的P.Golden等人",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e8",
+          "mention": "纳米出版模式",
+          "normalized_name": "纳米出版模式",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用纳米出版模式对考古、历史和艺术史中有关历史时期的描述进行形式化表示",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e9",
+          "mention": "关联数据",
+          "normalized_name": "关联数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "并发布为关联数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e10",
+          "mention": "马里兰大学人文科技学院",
+          "normalized_name": "马里兰大学人文科技学院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "马里兰大学人文科技学院的R.Viglianti",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e11",
+          "mention": "R.Viglianti",
+          "normalized_name": "R.Viglianti",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "马里兰大学人文科技学院的R.Viglianti",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e12",
+          "mention": "音乐记谱法",
+          "normalized_name": "音乐记谱法",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "增强了音乐记谱法的寻址能力",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "自2013年起,国内也有学者开始对纳米出版进行研究和探讨，但总体仍处于起步阶段。 中科院文献情报中心的吴思竹等于2013年最早在国内对纳米出版这一语义出版模式进行了介绍,并对纳米出版的概念、源文件、语义模式、结构描述、应用价值、在知识发现中的作用等方面进行了理论探讨。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "纳米出版",
+          "normalized_name": "纳米出版",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国内也有学者开始对纳米出版进行研究和探讨",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "中科院文献情报中心",
+          "normalized_name": "中科院文献情报中心",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中科院文献情报中心的吴思竹等于2013年最早在国内对纳米出版这一语义出版模式进行了介绍",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "吴思竹",
+          "normalized_name": "吴思竹",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中科院文献情报中心的吴思竹等于2013年最早在国内对纳米出版这一语义出版模式进行了介绍",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "语义出版模式",
+          "normalized_name": "语义出版模式",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对纳米出版这一语义出版模式进行了介绍",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "随后，山西医科大学图书馆的苏云梅和武建光于2015年探讨了纳米出版与知识发现之间的关系，并以人类遗传疾病塞克尔综合征为例分析了纳米出版语义关联模式的偏差、不足及其原因23-24，但没有进行实践应用。 上海师范大学人文与传播学院的吕元智于2015年构建了基于纳米出版模式的数字档案资源的语义描述框架，旨在对数字档案资源的外部结构进行粗粒度描述，如档案提名、分类号、主题词等,这种应用方式与纳米出版面向细粒度知识表示的宗旨有很大偏差，不能看作是一个真正的纳米出版应用。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "山西医科大学图书馆",
+          "normalized_name": "山西医科大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "山西医科大学图书馆的苏云梅和武建光于2015年探讨了纳米出版与知识发现之间的关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "苏云梅",
+          "normalized_name": "苏云梅",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "山西医科大学图书馆的苏云梅和武建光于2015年探讨了纳米出版与知识发现之间的关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "武建光",
+          "normalized_name": "武建光",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "山西医科大学图书馆的苏云梅和武建光于2015年探讨了纳米出版与知识发现之间的关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e4",
+          "mention": "纳米出版",
+          "normalized_name": "纳米出版",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "探讨了纳米出版与知识发现之间的关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e5",
+          "mention": "知识发现",
+          "normalized_name": "知识发现",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "探讨了纳米出版与知识发现之间的关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e6",
+          "mention": "人类遗传疾病塞克尔综合征",
+          "normalized_name": "人类遗传疾病塞克尔综合征",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以人类遗传疾病塞克尔综合征为例分析了纳米出版语义关联模式的偏差、不足及其原因",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e7",
+          "mention": "上海师范大学人文与传播学院",
+          "normalized_name": "上海师范大学人文与传播学院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "上海师范大学人文与传播学院的吕元智于2015年构建了基于纳米出版模式的数字档案资源的语义描述框架",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e8",
+          "mention": "吕元智",
+          "normalized_name": "吕元智",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "上海师范大学人文与传播学院的吕元智于2015年构建了基于纳米出版模式的数字档案资源的语义描述框架",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e9",
+          "mention": "数字档案资源",
+          "normalized_name": "数字档案资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "构建了基于纳米出版模式的数字档案资源的语义描述框架",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e10",
+          "mention": "语义描述框架",
+          "normalized_name": "语义描述框架",
+          "candidate_l3": "framework",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "构建了基于纳米出版模式的数字档案资源的语义描述框架",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "从纳米出版的发展及应用现状来看，纳米出版最早诞生于生物医学领域，并在该领域有较成熟的应用。 这是因为：一方面，生物医学领域往往需要连接、整合数以万计的实验结果，用于验证实验结果或指导新的科学发现，而将研究结果以纳米出版物形式发布能够满足上述需求并有利于数据之间关联关系的发现;",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "纳米出版",
+          "normalized_name": "纳米出版",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从纳米出版的发展及应用现状来看，纳米出版最早诞生于生物医学领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "生物医学领域",
+          "normalized_name": "生物医学领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "纳米出版最早诞生于生物医学领域，并在该领域有较成熟的应用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "纳米出版物",
+          "normalized_name": "纳米出版物",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "将研究结果以纳米出版物形式发布能够满足上述需求",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "另一方面，生物医学领域的科学文献通常结构比较严谨，对实验过程及其结论的描述非常严格规范，且该领域对于规范化词汇的要求较高，拥有大量专门词汇和领域本体,因此将科学文献中的自然语言论断转换为结构化表示相对比较容易。 纳米出版在非生物医学领域的应用拓展了纳米出版的应用范围,目前主要应用在计算机科学、历史和艺术学等学科领域,但在其他学科的应用仍是空白。若要达到不同学科间的知识共享和交流目的，需要将所有学科的知识都进行结构化和形式化表示，因此将纳米出版的应用拓展到其他学科领域有助于推动跨学科科学交流和知识共享。从目前国内对纳米出版的研究情况来看，主要集中在对纳米出版应用价值的探讨和纳米出版在一些领域中应用框架的构建，但缺乏对纳米出版的实际应用的研究实现。因此,如何将纳米出版模式应用于不同学科领域的科学文献或数据库中，对科学知识细粒度表示还有很大的探索空间。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "生物医学领域",
+          "normalized_name": "生物医学领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "生物医学领域的科学文献通常结构比较严谨",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "纳米出版",
+          "normalized_name": "纳米出版",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "纳米出版在非生物医学领域的应用拓展了纳米出版的应用范围",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "计算机科学",
+          "normalized_name": "计算机科学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前主要应用在计算机科学、历史和艺术学等学科领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e4",
+          "mention": "历史学",
+          "normalized_name": "历史学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前主要应用在计算机科学、历史和艺术学等学科领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e5",
+          "mention": "艺术学",
+          "normalized_name": "艺术学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前主要应用在计算机科学、历史和艺术学等学科领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "随着各学科领域各种科学结论和数据的急速增加，以及对其进行自动语义集成、关联和推理的迫切需求,对纳米出版的应用进行拓展是十分必要的。 苏黎世联邦理工大学的T.Kuhn等人认为,将所有科学数据都以纳米出版形式表示似乎是不太可能的，甚至会限制实际的应用范围。基于此,北卡罗来纳大学教堂山分校的P.Golden等人提出,纳米出版物的论断应该根据使用它们的研究者的实际需要来进行构建，只要实际上能对目标用户有用即可，无需将数据严格统一化,否则会造成数据过度复杂,反而给用户的使用带来困难。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "纳米出版",
+          "normalized_name": "纳米出版",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对纳米出版的应用进行拓展是十分必要的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "苏黎世联邦理工大学",
+          "normalized_name": "苏黎世联邦理工大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "苏黎世联邦理工大学的T.Kuhn等人认为",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "T.Kuhn",
+          "normalized_name": "T.Kuhn",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "苏黎世联邦理工大学的T.Kuhn等人认为",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "北卡罗来纳大学教堂山分校",
+          "normalized_name": "北卡罗来纳大学教堂山分校",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "北卡罗来纳大学教堂山分校的P.Golden等人提出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e5",
+          "mention": "P.Golden",
+          "normalized_name": "P.Golden",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "北卡罗来纳大学教堂山分校的P.Golden等人提出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "假设性声明是根据现有知识通过文本挖掘或直接推理而得，将这类声明进行聚合是知识发现的源泉。 不同学科领域对知识的描述方式和利用程度有很大不同，抽取的论断内容也有所不同。 下面分别以生物医学、历史和社会学领域的科学文献为例，展示不同学科领域科学论断不同的特点，说明如何采用纳米出版模型将不同类型的科学论断表示为纳米出版物。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "纳米出版模型",
+          "normalized_name": "纳米出版模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "说明如何采用纳米出版模型将不同类型的科学论断表示为纳米出版物",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "纳米出版物",
+          "normalized_name": "纳米出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将不同类型的科学论断表示为纳米出版物",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e3",
+          "mention": "生物医学",
+          "normalized_name": "生物医学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分别以生物医学、历史和社会学领域的科学文献为例",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e4",
+          "mention": "历史",
+          "normalized_name": "历史",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分别以生物医学、历史和社会学领域的科学文献为例",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e5",
+          "mention": "社会学",
+          "normalized_name": "社会学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分别以生物医学、历史和社会学领域的科学文献为例",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "生物医学文献中的科学声明多为通过科学实验得出的科学结论,多表现为相关关系，通常位于文献的结论部分，并在文献的摘要部分也有所提及。 譬如，在华盛顿大学P.Liu等人于2010年发表的一篇科学论文中，作者采用横断面研究方法探索了亚甲基四氢叶酸还原酶基因多态性与白人女性月经初潮年龄和自然绝经年龄的关系。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "华盛顿大学",
+          "normalized_name": "华盛顿大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在华盛顿大学P.Liu等人于2010年发表的一篇科学论文中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "P.Liu",
+          "normalized_name": "P.Liu",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在华盛顿大学P.Liu等人于2010年发表的一篇科学论文中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "横断面研究方法",
+          "normalized_name": "横断面研究方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "作者采用横断面研究方法探索了亚甲基四氢叶酸还原酶基因多态性与白人女性月经初潮年龄和自然绝经年龄的关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e4",
+          "mention": "亚甲基四氢叶酸还原酶基因多态性",
+          "normalized_name": "亚甲基四氢叶酸还原酶基因多态性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "作者采用横断面研究方法探索了亚甲基四氢叶酸还原酶基因多态性与白人女性月经初潮年龄和自然绝经年龄的关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e5",
+          "mention": "白人女性月经初潮年龄",
+          "normalized_name": "白人女性月经初潮年龄",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "作者采用横断面研究方法探索了亚甲基四氢叶酸还原酶基因多态性与白人女性月经初潮年龄和自然绝经年龄的关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e6",
+          "mention": "自然绝经年龄",
+          "normalized_name": "自然绝经年龄",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "作者采用横断面研究方法探索了亚甲基四氢叶酸还原酶基因多态性与白人女性月经初潮年龄和自然绝经年龄的关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "“The results of our study suggest that the MTHFR gene may influence the onset of menarche and natural menopause”（亚甲基四氢叶酸还原酶基因影响月经初 潮和自然绝经）。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "MTHFR gene",
+          "normalized_name": "MTHFR gene",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "MTHFR gene may influence the onset of menarche and natural menopause",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "menarche",
+          "normalized_name": "menarche",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "influence the onset of menarche and natural menopause",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e3",
+          "mention": "natural menopause",
+          "normalized_name": "natural menopause",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "influence the onset of menarche and natural menopause",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "与自然科学领域不同，人文科学领域的许多科学声明是作者的经验性观点或假设，通常是无法用实验验证和证伪的。因此,对于人文领域的科学文献,主要抽取以理论论述方式得出的观点或结论性知识，这类知识通常散落于科学文献的不同章节，多表现为对某一事物特点或属性的描述。 譬如，在法国国家科学研究中心P.Beaujard于2010 年发表的一篇科学论文中，作者提出一个观点，其文本内容为：",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "法国国家科学研究中心",
+          "normalized_name": "法国国家科学研究中心",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在法国国家科学研究中心P.Beaujard于2010 年发表的一篇科学论文中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "P.Beaujard",
+          "normalized_name": "P.Beaujard",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在法国国家科学研究中心P.Beaujard于2010 年发表的一篇科学论文中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e3",
+          "mention": "2010 年",
+          "normalized_name": "2010年",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "P.Beaujard于2010 年发表的一篇科学论文",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "时间点，非典型事件实体，但作为可唯一识别的时间节点"
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "从该段文本中可提取出关于春秋时期时间跨度的描述作为纳米出版物的论断内容,即“China\"(中国)的一个历史时期“Spring-and-Autumn\"（春秋时期)起止于“771BC”和“481BC”。 在该论断中,将时间实体“Spring-and-Autumn\"表示为DBpedia 本体中“dbpedia:",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "China",
+          "normalized_name": "China",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "即“China\"(中国)的一个历史时期",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e2",
+          "mention": "Spring-and-Autumn",
+          "normalized_name": "Spring-and-Autumn",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一个历史时期“Spring-and-Autumn\"（春秋时期)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e3",
+          "mention": "771BC",
+          "normalized_name": "771BC",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "起止于“771BC”和“481BC”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e4",
+          "mention": "481BC",
+          "normalized_name": "481BC",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "起止于“771BC”和“481BC”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e5",
+          "mention": "DBpedia",
+          "normalized_name": "DBpedia",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "表示为DBpedia 本体中“dbpedia:",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "社会科学领域中的科学文献主要有两大类：以逻辑论证为基础的理论型文献和以数据为基础的实验型文献。 理论型文献的论述结构较为多样，没有统一的、较为固定的篇章结构，其论证结论一般为述评或建议等，其逻辑关系较为复杂,难以简化为三元组形式。此外,纳米出版的目的是将细粒度科学知识以结构化形式出版,构成一个网状的知识图谱，这些知识通常都是比较客观的科学事实或结论,而述评或建议的主观性往往较强，转化为纳米出版物的意义不大。相反，以数据为基础的实验型文献论述结构固定，实验结论较为客观,并且其结论相对较容易转化为三元组形式。因此,在社会科学领域,主要是将实验型文献中的科学结论发布为纳米出版物，这里科学结论通常位于文献的结论部分，并在文献的摘要部分也有所提及。 譬如，在美国明德学院的M.Lawrence于2016年发表的一篇学术论文中，作者采用因果推断实验方法探索了父母受过高等教育情况与子女受高等教育情况两者之间的关系。",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "理论型文献",
+          "normalized_name": "理论型文献",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "理论型文献的论述结构较为多样",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "实验型文献",
+          "normalized_name": "实验型文献",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以数据为基础的实验型文献论述结构固定",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e3",
+          "mention": "纳米出版",
+          "normalized_name": "纳米出版",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "纳米出版的目的是将细粒度科学知识以结构化形式出版",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e4",
+          "mention": "知识图谱",
+          "normalized_name": "知识图谱",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "构成一个网状的知识图谱",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e5",
+          "mention": "纳米出版物",
+          "normalized_name": "纳米出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "转化为纳米出版物的意义不大",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e6",
+          "mention": "美国明德学院",
+          "normalized_name": "明德学院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在美国明德学院的M.Lawrence于2016年发表的一篇学术论文中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e7",
+          "mention": "M.Lawrence",
+          "normalized_name": "M.Lawrence",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在美国明德学院的M.Lawrence于2016年发表的一篇学术论文中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e8",
+          "mention": "因果推断实验方法",
+          "normalized_name": "因果推断实验方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "作者采用因果推断实验方法探索了父母受过高等教育情况与子女受高等教育情况两者之间的关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "29",
+      "sentence": "在该论断中，我们采用心理学本体（PsychologyOntology,简称APAONTO）、DBpedia本体、知识库序列本体（SequenceOntology，简称 SO）和医学主题词表（Medical Subject Headings,简称 MESH)对该结论中的实体和关系进行规范化表示。由于在心理学本体中没有找到直接对应“malecollegegraduates”的概念,我们对该本体进行扩展,为已有类“apanoto:CollegeGradu-ates\"新增两个新的子类“MaleCollegeGraduates”和“Fe-maleCollegeGraduates”。然后,将实体“college”表示为心理学本体中类“apaonto:College”的实例，将实体“malecollegegraduates”表示为新增类“apaonto:Ma-leCollegeGradutes\"的实例。采用医学主题词表中的规范词汇“mesh:Probability\"和“mesh:Child\"分别表示名词\"probability\"和\"child”。最后，将上述两个逻辑表示转换为一组RDF三元组,作为纳米出版物的论断。图7为对上述结论使用Turtle格式表示的纳米出版物论断。",
+      "entities": [
+        {
+          "entity_id": "29_e1",
+          "mention": "心理学本体（PsychologyOntology,简称APAONTO）",
+          "normalized_name": "心理学本体（PsychologyOntology,简称APAONTO）",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "采用心理学本体（PsychologyOntology,简称APAONTO）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e2",
+          "mention": "DBpedia本体",
+          "normalized_name": "DBpedia本体",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "DBpedia本体",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e3",
+          "mention": "知识库序列本体（SequenceOntology，简称 SO）",
+          "normalized_name": "知识库序列本体（SequenceOntology，简称 SO）",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "知识库序列本体（SequenceOntology，简称 SO）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e4",
+          "mention": "医学主题词表（Medical Subject Headings,简称 MESH）",
+          "normalized_name": "医学主题词表（Medical Subject Headings,简称 MESH）",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "医学主题词表（Medical Subject Headings,简称 MESH）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e5",
+          "mention": "apaonto:CollegeGraduates",
+          "normalized_name": "apaonto:CollegeGraduates",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "已有类“apanoto:CollegeGradu-ates\"",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e6",
+          "mention": "MaleCollegeGraduates",
+          "normalized_name": "MaleCollegeGraduates",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "新增两个新的子类“MaleCollegeGraduates”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e7",
+          "mention": "FemaleCollegeGraduates",
+          "normalized_name": "FemaleCollegeGraduates",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "新增两个新的子类“Fe-maleCollegeGraduates”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e8",
+          "mention": "apaonto:College",
+          "normalized_name": "apaonto:College",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "心理学本体中类“apaonto:College”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e9",
+          "mention": "apaonto:MaleCollegeGraduates",
+          "normalized_name": "apaonto:MaleCollegeGraduates",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "新增类“apaonto:Ma-leCollegeGradutes\"",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e10",
+          "mention": "mesh:Probability",
+          "normalized_name": "mesh:Probability",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "医学主题词表中的规范词汇“mesh:Probability\"",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e11",
+          "mention": "mesh:Child",
+          "normalized_name": "mesh:Child",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "医学主题词表中的规范词汇“mesh:Child\"",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e12",
+          "mention": "RDF三元组",
+          "normalized_name": "RDF三元组",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "转换为一组RDF三元组",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e13",
+          "mention": "纳米出版物",
+          "normalized_name": "纳米出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "作为纳米出版物的论断",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e14",
+          "mention": "Turtle格式",
+          "normalized_name": "Turtle格式",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用Turtle格式表示的纳米出版物论断",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "通过对纳米出版物在上述三个不同学科领域的应用实践,我们认为纳米出版在不同学科领域的应用具有以下几个特点：",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "纳米出版物",
+          "normalized_name": "纳米出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "纳米出版物在上述三个不同学科领域的应用实践",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "纳米出版",
+          "normalized_name": "纳米出版",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "纳米出版在不同学科领域的应用具有以下几个特点",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "31",
+      "sentence": "(1)不同学科领域中可表示为纳米出版物的科学论断类型不同。以实验为基础的学科领域中可表示为纳米出版物的有事实性声明和观察性声明，该类声明一般位于科学文献的摘要或结论部分,可直接锁定这两部分进行论断的抽取。非实验性学科领域中可表示为纳米出版物的通常是作者的观点或公认的共识，这类声明在科学文献中的位置不确定，需要根据实际情况设置线索词进行论断的抽取。",
+      "entities": [
+        {
+          "entity_id": "31_e1",
+          "mention": "纳米出版物",
+          "normalized_name": "纳米出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "不同学科领域中可表示为纳米出版物的科学论断类型不同",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e2",
+          "mention": "事实性声明",
+          "normalized_name": "事实性声明",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以实验为基础的学科领域中可表示为纳米出版物的有事实性声明和观察性声明",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e3",
+          "mention": "观察性声明",
+          "normalized_name": "观察性声明",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以实验为基础的学科领域中可表示为纳米出版物的有事实性声明和观察性声明",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "32",
+      "sentence": "(2)不同学科领域中将科学结论表示为纳米出版物的精确度不同。 自然科学与人文科学最大的区别在于：前者是对自然客观事实的认识，后者是对社会现象的认识。",
+      "entities": [
+        {
+          "entity_id": "32_e1",
+          "mention": "纳米出版物",
+          "normalized_name": "纳米出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将科学结论表示为纳米出版物的精确度不同",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e2",
+          "mention": "自然科学",
+          "normalized_name": "自然科学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "自然科学与人文科学最大的区别在于",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e3",
+          "mention": "人文科学",
+          "normalized_name": "人文科学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "自然科学与人文科学最大的区别在于",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "33",
+      "sentence": "自然科学与人文科学最大的区别在于：前者是对自然客观事实的认识，后者是对社会现象的认识。 在自然科学领域,大部分实验结论是不受主观影响的，对事实的反映是唯一确定并可重复性验证的，因此自然科学领域中的纳米出版物通常具有一致性，很少存在冲突矛盾。与自然科学领域不同，人文科学领域产生的许多科学声明受主体文化背景影响较大,对同一现象的理解存在一定偏差,因此对人文科学领域中的观点和结论采用纳米出版物表示时需要有一定的容差，对结论限制得太精确反而会影响实际应用效果。",
+      "entities": [
+        {
+          "entity_id": "33_e1",
+          "mention": "纳米出版物",
+          "normalized_name": "纳米出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "自然科学领域中的纳米出版物通常具有一致性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e2",
+          "mention": "纳米出版物",
+          "normalized_name": "纳米出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对人文科学领域中的观点和结论采用纳米出版物表示时需要有一定的容差",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "34",
+      "sentence": "在自然科学领域，科学知识更新速度较快，产生的科学成果数量也较多，给科研工作者在短时间内查阅资料带来困扰。 纳米出版物是最小出版单元,是适应于大数据时代研究成果快速出版的一种出版方式，有利于自然科学领域研究成果的快速发布。科学结论的纳米出版物化有利于验证实验结果和方法的有效性以及促进知识共享和重用。在人文和社会科学领域,纳米出版可作为文化遗产数据、金融数据、医疗与健康数据等多种类型数据的统一出版方式，以实现不同领域的知识关联，进而促进隐性知识显性化。此外，人文社科领域研究范式的转变需要数据质量保障机制,纳米出版物的每一个论断都附带有出处信息，将数据表示为纳米出版物保障了数据的质量和可信度。",
+      "entities": [
+        {
+          "entity_id": "34_e1",
+          "mention": "纳米出版物",
+          "normalized_name": "纳米出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "纳米出版物是最小出版单元,是适应于大数据时代研究成果快速出版的一种出版方式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e2",
+          "mention": "大数据时代",
+          "normalized_name": "大数据时代",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "适应于大数据时代研究成果快速出版的一种出版方式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e3",
+          "mention": "科学结论的纳米出版物化",
+          "normalized_name": "科学结论的纳米出版物化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "科学结论的纳米出版物化有利于验证实验结果和方法的有效性",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为phenomenon或trend"
+        },
+        {
+          "entity_id": "34_e4",
+          "mention": "隐性知识显性化",
+          "normalized_name": "隐性知识显性化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "促进隐性知识显性化",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e5",
+          "mention": "人文社科领域研究范式的转变",
+          "normalized_name": "人文社科领域研究范式的转变",
+          "candidate_l3": "paradigm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "人文社科领域研究范式的转变需要数据质量保障机制",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        }
+      ]
+    },
+    {
+      "sentence_id": "35",
+      "sentence": "鉴于此,在对不同学科的科学声明或结论使用纳米出版进行语义化表示时，需要善于捕捉各学科的特点,构建符合该学科领域特征的纳米出版物。",
+      "entities": [
+        {
+          "entity_id": "35_e1",
+          "mention": "纳米出版",
+          "normalized_name": "纳米出版",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在对不同学科的科学声明或结论使用纳米出版进行语义化表示时",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e2",
+          "mention": "科学声明",
+          "normalized_name": "科学声明",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在对不同学科的科学声明或结论使用纳米出版进行语义化表示时",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为Artifact > Info > Discursive > paper"
+        },
+        {
+          "entity_id": "35_e3",
+          "mention": "结论",
+          "normalized_name": "结论",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在对不同学科的科学声明或结论使用纳米出版进行语义化表示时",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛化程度较高，但在此语境中作为具体知识主张的指称"
+        },
+        {
+          "entity_id": "35_e4",
+          "mention": "纳米出版物",
+          "normalized_name": "纳米出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "构建符合该学科领域特征的纳米出版物",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "36",
+      "sentence": "纳米出版的提出实现了科研信息从全文期刊形式发布到细粒度知识单元形式发布的转换，将科学事实和科学结论以结构化形式独立发布，用出处信息表示结论的来源增加其信任度,用URI对结论进行唯一标识,任何人都可通过网络对其进行检索和引用，使得研究成果的被引用率不再受限于期刊的知名度,因此在一定程度上可缩小不同地区的研究者因基础设施或地区的差别而对科学做出贡献的差距。",
+      "entities": [
+        {
+          "entity_id": "36_e1",
+          "mention": "纳米出版",
+          "normalized_name": "纳米出版",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "纳米出版的提出实现了科研信息从全文期刊形式发布到细粒度知识单元形式发布的转换",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e2",
+          "mention": "URI",
+          "normalized_name": "URI",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用URI对结论进行唯一标识",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "37",
+      "sentence": "在下一步工作中,我们拟探索纳米出版在社会科学领域中的应用，以期拓展纳米出版的应用范围。 鉴于纳米出版本身存在的缺陷,我们拟结合其他语义出版模型构造一个新的语义出版模型,不仅能对科学文献中的科学结论进行语义化表示，还能对科学结论的原文出处、论证过程等进行语义化表示,以提高纳米出版物的可信度和有效性。",
+      "entities": [
+        {
+          "entity_id": "37_e1",
+          "mention": "纳米出版",
+          "normalized_name": "纳米出版",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "探索纳米出版在社会科学领域中的应用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e2",
+          "mention": "社会科学领域",
+          "normalized_name": "社会科学领域",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "纳米出版在社会科学领域中的应用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e3",
+          "mention": "语义出版模型",
+          "normalized_name": "语义出版模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "结合其他语义出版模型构造一个新的语义出版模型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

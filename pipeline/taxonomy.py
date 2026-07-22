@@ -177,3 +177,17 @@ def get_l2_label(l2_code: str) -> str:
 
 def get_l3_label(l3_code: str) -> str:
     return L3_LABELS.get(l3_code, l3_code)
+
+
+def build_taxonomy_text() -> str:
+    """构建分类体系文本描述，供 Agent 2/3 Prompt 使用"""
+    lines: list[str] = []
+    for l1, l2_map in TAXONOMY_HIERARCHY.items():
+        lines.append(f"**L1 = {l1}**")
+        for l2, l3_list in l2_map.items():
+            l2_label = L2_LABELS.get(l2, l2)
+            l3_details = ", ".join(
+                f"{code}({L3_LABELS.get(code, code)})" for code in l3_list
+            )
+            lines.append(f"  L2 = {l2} ({l2_label}) → L3: {l3_details}")
+    return "\n".join(lines)

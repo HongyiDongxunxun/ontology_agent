@@ -1,0 +1,833 @@
+{
+  "base_name": "reviewed_full_3486",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "2",
+      "sentence": "20世纪90年代至今，各国纷纷致力于数字图书馆理论与技术的研究，而在此传统图书馆向数字图书馆转变的过程中，大学图书馆扮演了非常重要的角色。 本文对各国近10年来大学数字图书馆建设项目进行简单回顾，以供借鉴。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "数字图书馆",
+          "normalized_name": "数字图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "各国纷纷致力于数字图书馆理论与技术的研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "大学图书馆",
+          "normalized_name": "大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "大学图书馆扮演了非常重要的角色",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处为泛称机构，但结合上下文指代具体类型机构，按图情领域放宽规则抽取"
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "大学数字图书馆建设项目",
+          "normalized_name": "大学数字图书馆建设项目",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "对各国近10年来大学数字图书馆建设项目进行简单回顾",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未给出具体项目名称，但作为一类有组织的建设计划，按事件抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "该校成立于1991年，仅有信息科学、生命科学、材料科学三个学科，图书馆馆藏也较少。 该校认为，21世纪的新型大学图书馆应收集和提供以学术期刊为中心的学术资料信息，不应像现有的大学图书馆那样收集所有的图书资料，也没有必要长期保存它们。 同时根据学校学科面窄、馆藏印刷型资料少的特点，学校规划建设日本第一座真正的电子图书馆，即1992年开始实施的“Mandala”系统，该系统包括以下子系统：(1)信息输人系统；",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "信息科学",
+          "normalized_name": "信息科学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "仅有信息科学、生命科学、材料科学三个学科",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "生命科学",
+          "normalized_name": "生命科学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "仅有信息科学、生命科学、材料科学三个学科",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "材料科学",
+          "normalized_name": "材料科学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "仅有信息科学、生命科学、材料科学三个学科",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "日本第一座真正的电子图书馆",
+          "normalized_name": "日本第一座真正的电子图书馆",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "学校规划建设日本第一座真正的电子图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "具体名称未给出，但描述为具体项目"
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "Mandala",
+          "normalized_name": "Mandala",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "1992年开始实施的“Mandala”系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "在1995年和i997年又两次举办了“数字图书馆研究、开发和实践的国际研讨会\"，在1997年的会议期间展示日立、NACSIS、纪伊国屋书店等开发的数字图书馆系统产品，这次会议的名称也由此改为“网络文化社会的图书馆国际研讨”，数字图书馆的研讨只是其中的一部分。 图书馆情报大学举办的数字图书馆专题研讨会和有关的国际会议为数字图书馆建设和发展方面的信息、思想、技术成果提供了交流和展示的舞台，推动了日本数字图书馆的研究和开发。 此外，图书馆情报大学还开展了一些研究活动。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "数字图书馆研究、开发和实践的国际研讨会",
+          "normalized_name": "数字图书馆研究、开发和实践的国际研讨会",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "在1995年和i997年又两次举办了“数字图书馆研究、开发和实践的国际研讨会”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "日立",
+          "normalized_name": "日立",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "展示日立、NACSIS、纪伊国屋书店等开发的数字图书馆系统产品",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为日立公司，属于企业研发机构"
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "NACSIS",
+          "normalized_name": "NACSIS",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "展示日立、NACSIS、纪伊国屋书店等开发的数字图书馆系统产品",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "纪伊国屋书店",
+          "normalized_name": "纪伊国屋书店",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "展示日立、NACSIS、纪伊国屋书店等开发的数字图书馆系统产品",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "数字图书馆系统产品",
+          "normalized_name": "数字图书馆系统产品",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "展示日立、NACSIS、纪伊国屋书店等开发的数字图书馆系统产品",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "产品为泛指，但结合上下文指具体系统"
+        },
+        {
+          "entity_id": "4_e6",
+          "mention": "网络文化社会的图书馆国际研讨",
+          "normalized_name": "网络文化社会的图书馆国际研讨",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "这次会议的名称也由此改为“网络文化社会的图书馆国际研讨”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e7",
+          "mention": "图书馆情报大学",
+          "normalized_name": "图书馆情报大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书馆情报大学举办的数字图书馆专题研讨会和有关的国际会议",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e8",
+          "mention": "数字图书馆专题研讨会",
+          "normalized_name": "数字图书馆专题研讨会",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "图书馆情报大学举办的数字图书馆专题研讨会",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e9",
+          "mention": "日本数字图书馆",
+          "normalized_name": "日本数字图书馆",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "推动了日本数字图书馆的研究和开发",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可视为研究领域或现象"
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "此外，图书馆情报大学还开展了一些研究活动。 如“SOPA”浏览器，这是一种ULIS图书馆OPAC的更先进的书目查询系统，能够显示出每本书",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "图书馆情报大学",
+          "normalized_name": "图书馆情报大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书馆情报大学还开展了一些研究活动",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "SOPA",
+          "normalized_name": "SOPA",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如“SOPA”浏览器",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "ULIS图书馆OPAC",
+          "normalized_name": "ULIS图书馆OPAC",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "这是一种ULIS图书馆OPAC的更先进的书目查询系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "方法、元数据、编码规则、标识语言、数据格式、交换协议、资源组织、管理结构等有关标准规范探讨和研究，期望在不久的将来能出台我国政府网站建设的元数据标准。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "元数据",
+          "normalized_name": "元数据",
+          "candidate_l3": "metadata_schema",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "方法、元数据、编码规则、标识语言、数据格式、交换协议、资源组织、管理结构等有关标准规范探讨和研究",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'元数据'作为通用概念出现，但结合上下文'元数据标准'，可视为对元数据规范的指代，但未给出具体名称，置信度较低"
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "编码规则",
+          "normalized_name": "编码规则",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "方法、元数据、编码规则、标识语言、数据格式、交换协议、资源组织、管理结构等有关标准规范探讨和研究",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "未给出具体编码规则名称，如'Unicode'或'GB2312'，仅作为通用类别提及"
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "标识语言",
+          "normalized_name": "标识语言",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "方法、元数据、编码规则、标识语言、数据格式、交换协议、资源组织、管理结构等有关标准规范探讨和研究",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "未给出具体标识语言名称，如'XML'或'HTML'，仅作为通用类别提及"
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "数据格式",
+          "normalized_name": "数据格式",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "方法、元数据、编码规则、标识语言、数据格式、交换协议、资源组织、管理结构等有关标准规范探讨和研究",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "未给出具体数据格式名称，如'CSV'或'JSON'，仅作为通用类别提及"
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "交换协议",
+          "normalized_name": "交换协议",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "方法、元数据、编码规则、标识语言、数据格式、交换协议、资源组织、管理结构等有关标准规范探讨和研究",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "未给出具体交换协议名称，如'OAI-PMH'或'Z39.50'，仅作为通用类别提及"
+        },
+        {
+          "entity_id": "6_e6",
+          "mention": "资源组织",
+          "normalized_name": "资源组织",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "方法、元数据、编码规则、标识语言、数据格式、交换协议、资源组织、管理结构等有关标准规范探讨和研究",
+          "is_specific_entity": true,
+          "confidence": 0.75,
+          "uncertainty": "作为图情领域术语，有独立学术命名，但未特指某种具体组织方式"
+        },
+        {
+          "entity_id": "6_e7",
+          "mention": "管理结构",
+          "normalized_name": "管理结构",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "方法、元数据、编码规则、标识语言、数据格式、交换协议、资源组织、管理结构等有关标准规范探讨和研究",
+          "is_specific_entity": true,
+          "confidence": 0.75,
+          "uncertainty": "作为图情领域术语，有独立学术命名，但未特指某种具体结构"
+        },
+        {
+          "entity_id": "6_e8",
+          "mention": "我国政府网站建设的元数据标准",
+          "normalized_name": "我国政府网站建设的元数据标准",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "期望在不久的将来能出台我国政府网站建设的元数据标准",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "该标准尚未出台，但作为具体目标实体被提及，有明确限定范围"
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "高校是美国数字图书馆建设的主力之一。 例如，美国DL-1项目的6个计划就是以6所大学为主进行开发的。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "美国",
+          "normalized_name": "美国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "高校是美国数字图书馆建设的主力之一",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "美国DL-1项目",
+          "normalized_name": "美国DL-1项目",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "美国DL-1项目的6个计划就是以6所大学为主进行开发的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "DL-1的47个项目研究开发点由过去的6所大学（位于4个州),扩大到 20所大学(位于14个州)。 DL-I项目还在高校造就了一批强大的实验基地，因为DL-1对中标单位的要求之一便是自建实验基地(Testded),这些基地包括：(1)卡内基梅隆大学(CMU)的Informedia数字录象和演说资料实验基地； (2)康纳尔大学的连网计算机科技参考图书馆NCSTRL是世界上100多机构参加的国际项目；",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "DL-1",
+          "normalized_name": "DL-1",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "DL-1的47个项目研究开发点由过去的6所大学（位于4个州),扩大到 20所大学(位于14个州)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "卡内基梅隆大学",
+          "normalized_name": "卡内基梅隆大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "卡内基梅隆大学(CMU)的Informedia数字录象和演说资料实验基地",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "CMU",
+          "normalized_name": "卡内基梅隆大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "卡内基梅隆大学(CMU)的Informedia数字录象和演说资料实验基地",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "Informedia数字录象和演说资料实验基地",
+          "normalized_name": "Informedia数字录象和演说资料实验基地",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "卡内基梅隆大学(CMU)的Informedia数字录象和演说资料实验基地",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e5",
+          "mention": "康纳尔大学",
+          "normalized_name": "康奈尔大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "康纳尔大学的连网计算机科技参考图书馆NCSTRL",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e6",
+          "mention": "连网计算机科技参考图书馆NCSTRL",
+          "normalized_name": "连网计算机科技参考图书馆NCSTRL",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "康纳尔大学的连网计算机科技参考图书馆NCSTRL是世界上100多机构参加的国际项目",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e7",
+          "mention": "NCSTRL",
+          "normalized_name": "连网计算机科技参考图书馆NCSTRL",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "康纳尔大学的连网计算机科技参考图书馆NCSTRL是世界上100多机构参加的国际项目",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "此外，由美国国家人文科学基金提供部分资助，美国加里福尼亚大学、加州大学伯克利分校、斯坦福大学、杜克大学和弗吉尼亚大学合作进行了“美国遗产模拟档案计划\"，创建一个基于EAD(一种用于档案的原数据方案）标引的共享数据库，促进对美国历史和文化文献的整理和利用。 该项目的主要目标是开发一个实验系统，提供对分布式数字图书馆资源的检索，并评价该\"模拟档案\"原型系统的有效性和灵活性。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "美国国家人文科学基金",
+          "normalized_name": "美国国家人文科学基金",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由美国国家人文科学基金提供部分资助",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "美国加里福尼亚大学",
+          "normalized_name": "加利福尼亚大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国加里福尼亚大学、加州大学伯克利分校、斯坦福大学、杜克大学和弗吉尼亚大学合作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "加州大学伯克利分校",
+          "normalized_name": "加州大学伯克利分校",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国加里福尼亚大学、加州大学伯克利分校、斯坦福大学、杜克大学和弗吉尼亚大学合作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "斯坦福大学",
+          "normalized_name": "斯坦福大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国加里福尼亚大学、加州大学伯克利分校、斯坦福大学、杜克大学和弗吉尼亚大学合作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e5",
+          "mention": "杜克大学",
+          "normalized_name": "杜克大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国加里福尼亚大学、加州大学伯克利分校、斯坦福大学、杜克大学和弗吉尼亚大学合作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e6",
+          "mention": "弗吉尼亚大学",
+          "normalized_name": "弗吉尼亚大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国加里福尼亚大学、加州大学伯克利分校、斯坦福大学、杜克大学和弗吉尼亚大学合作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e7",
+          "mention": "美国遗产模拟档案计划",
+          "normalized_name": "美国遗产模拟档案计划",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "合作进行了“美国遗产模拟档案计划\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e8",
+          "mention": "EAD",
+          "normalized_name": "EAD",
+          "candidate_l3": "metadata_schema",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于EAD(一种用于档案的原数据方案）标引的共享数据库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e9",
+          "mention": "模拟档案",
+          "normalized_name": "模拟档案",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "评价该\"模拟档案\"原型系统的有效性和灵活性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能指代原型系统名称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "第三阶段现正在进行中，项目的主要目的是带动整个高等教育界开发数字图书馆资源，促进开发技术在高等教育系统的应用。 经过数年探索，该项目已在数字图书馆的技术与管理方面积累了丰富的经验。很多具有普遍性的问题，如数据化处理问题、版权问题、用户费用问题。 人为因素在数字图书馆中的作用也得到了研究。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "数字图书馆",
+          "normalized_name": "数字图书馆",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "带动整个高等教育界开发数字图书馆资源",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "高等教育系统",
+          "normalized_name": "高等教育系统",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "促进开发技术在高等教育系统的应用",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "数据化处理问题",
+          "normalized_name": "数据化处理问题",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "很多具有普遍性的问题，如数据化处理问题",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为独立研究主题被讨论"
+        },
+        {
+          "entity_id": "10_e4",
+          "mention": "版权问题",
+          "normalized_name": "版权问题",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "很多具有普遍性的问题，如数据化处理问题、版权问题",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e5",
+          "mention": "用户费用问题",
+          "normalized_name": "用户费用问题",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "很多具有普遍性的问题，如数据化处理问题、版权问题、用户费用问题",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "ELINOR(Electronic Library Information Online Retrieval）数字图书馆项目是英国DeMontfort大学、英国图书馆和IBM英国公司合作进行的实验性项目，始于1992年。该项目重要目标之一是构建一个数字图书馆原型系统，使DeMontfort大学师生能通过校园网利用PC机或工作站直接存取经常被使用的图书、期刊、课程资料的全文以及多媒体学习软件包等。ELINOR中的大部分文献是用DIP(文献图像处理)技术扫描进人系统并以TIFFG4位映像图像形式存储，目次页、索引页等用OCR技术转换成ASCI文件，以便索引和自由检索。 此外，还有Cranfield工业大学的\"EURILIA\"数字图书馆项目；",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "ELINOR(Electronic Library Information Online Retrieval）数字图书馆项目",
+          "normalized_name": "ELINOR数字图书馆项目",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "ELINOR(Electronic Library Information Online Retrieval）数字图书馆项目是英国DeMontfort大学、英国图书馆和IBM英国公司合作进行的实验性项目",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "英国DeMontfort大学",
+          "normalized_name": "DeMontfort大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "英国DeMontfort大学、英国图书馆和IBM英国公司合作进行的实验性项目",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "英国图书馆",
+          "normalized_name": "英国图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "英国DeMontfort大学、英国图书馆和IBM英国公司合作进行的实验性项目",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "IBM英国公司",
+          "normalized_name": "IBM英国公司",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "英国DeMontfort大学、英国图书馆和IBM英国公司合作进行的实验性项目",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "DIP(文献图像处理)技术",
+          "normalized_name": "DIP技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "ELINOR中的大部分文献是用DIP(文献图像处理)技术扫描进人系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e6",
+          "mention": "OCR技术",
+          "normalized_name": "OCR技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目次页、索引页等用OCR技术转换成ASCI文件",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e7",
+          "mention": "Cranfield工业大学的\"EURILIA\"数字图书馆项目",
+          "normalized_name": "EURILIA数字图书馆项目",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "还有Cranfield工业大学的\"EURILIA\"数字图书馆项目",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e8",
+          "mention": "Cranfield工业大学",
+          "normalized_name": "Cranfield工业大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Cranfield工业大学的\"EURILIA\"数字图书馆项目",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

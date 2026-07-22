@@ -1,0 +1,1125 @@
+{
+  "base_name": "reviewed_full_6125",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "3",
+      "sentence": "我国的政府信息化建设是沿着机关内部办公自动化管理部门的电子化工程（如金关工程、金税工程等“金”字工程）一“全面的政府上网工程”这条线展开的。 我国政府信息化工作，起步于上世纪80 年代中后期。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "金关工程",
+          "normalized_name": "金关工程",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "如金关工程、金税工程等“金”字工程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "金税工程",
+          "normalized_name": "金税工程",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "如金关工程、金税工程等“金”字工程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "“金”字工程",
+          "normalized_name": "“金”字工程",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "如金关工程、金税工程等“金”字工程",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可视为金关工程、金税工程等系列政策举措的统称"
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "“全面的政府上网工程”",
+          "normalized_name": "“全面的政府上网工程”",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "一“全面的政府上网工程”这条线展开的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "1993年，国务院成立了国家经济信息化联席会议，开始实施了金桥、金关、金卡、金税等信息化重大工程。 1996年，国务院成立了国务院信息化工作领导小组，加强了对全国信息化工作的统一领导，大大推动了政府信息化建设。 我国政府信息化工作主要在两个方面：一个是“金”字系列工程，另一个是政府上网工程。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "国务院",
+          "normalized_name": "国务院",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国务院成立了国家经济信息化联席会议",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "国家经济信息化联席会议",
+          "normalized_name": "国家经济信息化联席会议",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国务院成立了国家经济信息化联席会议",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "金桥",
+          "normalized_name": "金桥",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "开始实施了金桥、金关、金卡、金税等信息化重大工程",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为Artifact(project)"
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "金关",
+          "normalized_name": "金关",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "开始实施了金桥、金关、金卡、金税等信息化重大工程",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为Artifact(project)"
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "金卡",
+          "normalized_name": "金卡",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "开始实施了金桥、金关、金卡、金税等信息化重大工程",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为Artifact(project)"
+        },
+        {
+          "entity_id": "4_e6",
+          "mention": "金税",
+          "normalized_name": "金税",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "开始实施了金桥、金关、金卡、金税等信息化重大工程",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为Artifact(project)"
+        },
+        {
+          "entity_id": "4_e7",
+          "mention": "国务院信息化工作领导小组",
+          "normalized_name": "国务院信息化工作领导小组",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国务院成立了国务院信息化工作领导小组",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e8",
+          "mention": "政府上网工程",
+          "normalized_name": "政府上网工程",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "另一个是政府上网工程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "我国政府信息化经过近二十年的发展，已经取得了阶段性的成果：各类政府机构IT应用基础设施建设相对完备，网络建设在“政府上网工程”的推动下已获得了较大的进展，大部分政府职能部门都已建成了覆盖全系统的专网。办公自动化、管理信息化的水平不断提高，适应政府机关办公业务和辅助领导科学决策需求的电子信息资源建设初具规模。早期启动\"金”字工程已经发挥作用，其他“金”字工程也已陆续启动。地方政府建设数字城市的步伐也明显加快，上海、深圳等沿海开放城市纷纷提出建设数字化城市或数码港的概念，其中电子政务的建设是数字城市建设的核心内容之一。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "政府上网工程",
+          "normalized_name": "政府上网工程",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "网络建设在“政府上网工程”的推动下已获得了较大的进展",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "金”字工程",
+          "normalized_name": "金字工程",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "早期启动\"金”字工程已经发挥作用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "原文中‘金’字工程为泛称，但结合上下文指代具体系列工程，故抽取"
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "上海",
+          "normalized_name": "上海",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "上海、深圳等沿海开放城市纷纷提出建设数字化城市或数码港的概念",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为城市名，在上下文中作为现象实例出现，但更偏向地理实体，暂归为phenomenon"
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "深圳",
+          "normalized_name": "深圳",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "上海、深圳等沿海开放城市纷纷提出建设数字化城市或数码港的概念",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "同上"
+        },
+        {
+          "entity_id": "5_e5",
+          "mention": "数字化城市",
+          "normalized_name": "数字化城市",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "建设数字化城市或数码港的概念",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e6",
+          "mention": "数码港",
+          "normalized_name": "数码港",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "建设数字化城市或数码港的概念",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e7",
+          "mention": "电子政务",
+          "normalized_name": "电子政务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "电子政务的建设是数字城市建设的核心内容之一",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "政府信息化建设需要法律和法规来保障，这一点在政府信息化建设过程中尤为重要。 目前，我国在信息化法制建设方面，还处于起步阶段。最近出台了几个法规，可以说是一个进步，但是还远远不能满足政府信息化建设的要求。",
+      "entities": []
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "无论是办公自动化，还是政府上网，都是政府业务工作的手段，而不是目的，离开了业务部门的参与，也就无所谓“电子政府”了。 要提高政府信息化水平，必须将信息化工作与政府的业务工作很好地结合起来，先要将政府部门的业务工作计算机化、网络化。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "办公自动化",
+          "normalized_name": "办公自动化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "无论是办公自动化，还是政府上网，都是政府业务工作的手段",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "政府上网",
+          "normalized_name": "政府上网",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "无论是办公自动化，还是政府上网，都是政府业务工作的手段",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "电子政府",
+          "normalized_name": "电子政府",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "也就无所谓“电子政府”了",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "(6）网络安全问题。 政府上网的信息，各机关之间互相传递的信息，如何保证安全，是一个非常重要的问题。很多单位在互联网和内部办公自动化网之间，没有从物理上完全隔开，这样就会在安全性和保密性上存在很大隐患。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "政府上网",
+          "normalized_name": "政府上网",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "政府上网的信息，各机关之间互相传递的信息，如何保证安全",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为movement"
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "互联网",
+          "normalized_name": "互联网",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "很多单位在互联网和内部办公自动化网之间",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "内部办公自动化网",
+          "normalized_name": "内部办公自动化网",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "很多单位在互联网和内部办公自动化网之间",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "除此之外，与政府信息化发展比较成熟的国家相比，我国在政府信息网络的统一性、应用系统的复杂性、资源开发的流程化、管理体制等方面还存在一定的差距。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "政府信息化",
+          "normalized_name": "政府信息化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与政府信息化发展比较成熟的国家相比",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "政府信息网络",
+          "normalized_name": "政府信息网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国在政府信息网络的统一性",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指具体系统，但原文未给出名称，按概念处理"
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "针对我国政府信息化发展的不足与差距，究其原因，一是政府公务员的观念有待提高。因为电子政务的发展，势必对公共权力的行使和运用起到一定的限制和监督作用，这一点容易引起少数公务员的抵触情绪，从这个意义上说，更新观念，主动接受电子政务这一新的管理手段，对公务员的权力观、利益观是一个严格的考验； 二是传统政府运作机制的障碍。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "政府信息化",
+          "normalized_name": "政府信息化",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "针对我国政府信息化发展的不足与差距",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "电子政务",
+          "normalized_name": "电子政务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "因为电子政务的发展，势必对公共权力的行使和运用起到一定的限制和监督作用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "传统政府运作机制",
+          "normalized_name": "传统政府运作机制",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "二是传统政府运作机制的障碍",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "二是传统政府运作机制的障碍。 目前我国的政府管理运作体制及机制，多数都是在计划经济体制下形成和确立起来的。随着市场经济的发展，计划经济体制下的产物都有可能成为推动政府信息化的重要障碍； 三是多数公务人员的信息知识和运用信息工具的水平还不高，难以适应电子政务发展的要求;",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "政府管理运作体制",
+          "normalized_name": "政府管理运作体制",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前我国的政府管理运作体制及机制",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "计划经济体制",
+          "normalized_name": "计划经济体制",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "多数都是在计划经济体制下形成和确立起来的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "市场经济",
+          "normalized_name": "市场经济",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着市场经济的发展",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "政府信息化",
+          "normalized_name": "政府信息化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "推动政府信息化的重要障碍",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e5",
+          "mention": "电子政务",
+          "normalized_name": "电子政务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "难以适应电子政务发展的要求",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "六是信息安全成为当前政府信息化中的关键问题。 特别是美国9．11事件后，这个问题显得尤为突出。只有下决心自主地研制保障信息安全的产品，掌握这方面的技术，才能为信息化提供安全保障。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "信息安全",
+          "normalized_name": "信息安全",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息安全成为当前政府信息化中的关键问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "政府信息化",
+          "normalized_name": "政府信息化",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息安全成为当前政府信息化中的关键问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "美国9．11事件",
+          "normalized_name": "美国9·11事件",
+          "candidate_l3": "event",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "特别是美国9．11事件后",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "政府机构的改革必然要求加快政府信息化建设，信息技术的发展和应用的普及必然要求政府机构的改革。 从世界范围看，这两者是相辅相成的。 按照政府信息化建设的要求，深化政府机构的改革，把政府信息化与转变政府职能和政府机构改革结合起来。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "政府信息化",
+          "normalized_name": "政府信息化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "政府机构的改革必然要求加快政府信息化建设",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "信息技术",
+          "normalized_name": "信息技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息技术的发展和应用的普及必然要求政府机构的改革",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为discipline子领域"
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "在这方面，关键是要处理好政府组织结构、行政流程和政务信息的重组和整合等问题。 从政府组织结构的重组和整合来看，要深化政府机构改革，通过重组整合，使政府机构的运行更加符合电子政务的发展需求； 从政府行政流程的重组和整合来看，要对计划经济体制时期形成的传统行政流程进行大刀阔斧的改造，包括建立统一的政府部门工作规范、改革现行的行政审批制度、使政府管理和服务更加符合电子政务“简便、集中和高效”的客观要求；",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "政府组织结构",
+          "normalized_name": "政府组织结构",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "关键是要处理好政府组织结构、行政流程和政务信息的重组和整合等问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为学术概念被讨论，但可能偏向泛化"
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "行政流程",
+          "normalized_name": "行政流程",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "关键是要处理好政府组织结构、行政流程和政务信息的重组和整合等问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为学术概念被讨论，但可能偏向泛化"
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "政务信息",
+          "normalized_name": "政务信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "关键是要处理好政府组织结构、行政流程和政务信息的重组和整合等问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为学术概念被讨论，但可能偏向泛化"
+        },
+        {
+          "entity_id": "23_e4",
+          "mention": "电子政务",
+          "normalized_name": "电子政务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使政府机构的运行更加符合电子政务的发展需求",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e5",
+          "mention": "计划经济体制",
+          "normalized_name": "计划经济体制",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对计划经济体制时期形成的传统行政流程进行大刀阔斧的改造",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e6",
+          "mention": "行政审批制度",
+          "normalized_name": "行政审批制度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "改革现行的行政审批制度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "政府信息化和电子政务是一个完整、综合的发展体系，但在以往以厂商为主导的信息化过程中，往往出现种种偏差，形成“重电子、轻政务”、“重硬件，轻软件”等问题。其实，政府管理体制的改革和重组是目的，是为了给社会提供综合服务，信息化技术是手段，是帮助政府实现政府职能从管理向服务转变的技术手段。电子政务最重要的内涵，是运用信息及通信技术，适应政府职能和管理模式转变的需求，打破政府机关的组织界限，构建一个电子化的虚拟政府。这种在优化的信息系统上整合实现的管理模型，就是电子政务的整合之道。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "政府信息化",
+          "normalized_name": "政府信息化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "政府信息化和电子政务是一个完整、综合的发展体系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "电子政务",
+          "normalized_name": "电子政务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "政府信息化和电子政务是一个完整、综合的发展体系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e3",
+          "mention": "重电子、轻政务",
+          "normalized_name": "重电子、轻政务",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "形成“重电子、轻政务”、“重硬件，轻软件”等问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e4",
+          "mention": "重硬件，轻软件",
+          "normalized_name": "重硬件，轻软件",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "形成“重电子、轻政务”、“重硬件，轻软件”等问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e5",
+          "mention": "电子化的虚拟政府",
+          "normalized_name": "电子化的虚拟政府",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "构建一个电子化的虚拟政府",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e6",
+          "mention": "电子政务的整合之道",
+          "normalized_name": "电子政务的整合之道",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这种在优化的信息系统上整合实现的管理模型，就是电子政务的整合之道",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "从 20 世纪90 年代以来，我国政府就一直致力于用信息技术提高政府运作效率。 但由于历史的原因，导致政府信息化发展过程中存在着较为普遍的“信息孤岛”与重复建设的问题。 要解决这个问题，我们不可能把原有的基础设施和应用系统完全抛弃，不可能全部采用新产品、新技术重新构建基础设施和应用系统。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "信息孤岛",
+          "normalized_name": "信息孤岛",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "政府信息化发展过程中存在着较为普遍的“信息孤岛”与重复建设的问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "其次就是利用先进的信息整合平台，“整合”原有的基础设施，“整合”原有的应用系统。 这样一种信息整合平台，不仅可以充分整合和利用原有的政务应用系统，能够快速方便地使现有的基础设施和应用系统连接到平台，保护原有投资，并可以平滑地实现应用升级和扩充，从而从根本上消除“信息孤岛”； 而且要对资金统一管理，从资金源头上下功夫，切实解决重复建设的难题。",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "信息整合平台",
+          "normalized_name": "信息整合平台",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用先进的信息整合平台",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "名称较泛，但图情领域放宽规则，有功能限定修饰"
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "信息孤岛",
+          "normalized_name": "信息孤岛",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从根本上消除“信息孤岛”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "这里需要特别指出的是，目前电子政务建设方面似乎存在某种误区，认为设备愈先进愈好，以至于出现了一种盲目追求硬件设备的档次、盲目攀比等不良现象。实际上，电子政务的建设和完善是一个漫长的过程，在这个过程中，我们之所以强调要建设统一标准的政务资源整合平台，决不意味着要简单追求硬件设备的先进性，而是强调未来的可连接性和整体布局、应用的合理性，否则就有可能使电子政务的发展脱离方向，给国家造成巨大浪费。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "电子政务",
+          "normalized_name": "电子政务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前电子政务建设方面似乎存在某种误区",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "政务资源整合平台",
+          "normalized_name": "政务资源整合平台",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建设统一标准的政务资源整合平台",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "名称较短，但属于图情领域放宽规则中的信息系统"
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "政府上网是社会信息化进程中的一个关键环节，政府上网的最终目的在于把信息资源开发和利用起来，这是一个长期、不间断的过程。 盘活信息源，把有价值的信息发送上网，建立科学、合理的政府网站运行机制。",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "政府上网",
+          "normalized_name": "政府上网",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "政府上网是社会信息化进程中的一个关键环节",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为movement"
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "社会信息化进程",
+          "normalized_name": "社会信息化进程",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "政府上网是社会信息化进程中的一个关键环节",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e3",
+          "mention": "政府网站",
+          "normalized_name": "政府网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建立科学、合理的政府网站运行机制",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "31",
+      "sentence": "政府信息有一定的保密性，关系到政府运作和国家安全，做好信息安全保密工作是进行政府信息化的前提。 加强信息安全保密，首先，加强信息安全保密制度。",
+      "entities": [
+        {
+          "entity_id": "31_e1",
+          "mention": "政府信息",
+          "normalized_name": "政府信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "政府信息有一定的保密性",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "31_e2",
+          "mention": "国家安全",
+          "normalized_name": "国家安全",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "关系到政府运作和国家安全",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e3",
+          "mention": "信息安全保密制度",
+          "normalized_name": "信息安全保密制度",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "加强信息安全保密制度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "32",
+      "sentence": "具体来讲靠Linux 解决操作系统安全，加强安全管理，提高安全管理的后备性和有效性。 对内部网和公共网实现物理隔离，保证党政机关的内部信息网络不受外部攻击。从整体上考虑网络安全建设，最大限度保障政府信息化的安全。",
+      "entities": [
+        {
+          "entity_id": "32_e1",
+          "mention": "Linux",
+          "normalized_name": "Linux",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "靠Linux 解决操作系统安全",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "33",
+      "sentence": "信息安全是我国政府信息化建设的关键，电子政务标准化指南将信息安全作为电子政务技术体系中的6个组成部分之一。从政府层面来看，电子政务安全体系框架亟待研究制定，电子签章、信息公开等方面的法律法规的前期研究工作也迫在眉睫； 从用户层面来看，电子政务建设的用户从规划、实施等方面都已对信息安全进行了充分考虑，并且信息安全方面的费用在整个信息化建设中所占比例越来越大；",
+      "entities": [
+        {
+          "entity_id": "33_e1",
+          "mention": "电子政务标准化指南",
+          "normalized_name": "电子政务标准化指南",
+          "candidate_l3": "guideline",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "电子政务标准化指南将信息安全作为电子政务技术体系中的6个组成部分之一",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e2",
+          "mention": "电子政务技术体系",
+          "normalized_name": "电子政务技术体系",
+          "candidate_l3": "framework",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "电子政务标准化指南将信息安全作为电子政务技术体系中的6个组成部分之一",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e3",
+          "mention": "电子政务安全体系框架",
+          "normalized_name": "电子政务安全体系框架",
+          "candidate_l3": "framework",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "电子政务安全体系框架亟待研究制定",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e4",
+          "mention": "电子签章",
+          "normalized_name": "电子签章",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "电子签章、信息公开等方面的法律法规的前期研究工作也迫在眉睫",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e5",
+          "mention": "信息公开",
+          "normalized_name": "信息公开",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "电子签章、信息公开等方面的法律法规的前期研究工作也迫在眉睫",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "35",
+      "sentence": "政府信息化建设必须以法律为基础，必须有法可依。 当前我国政府信息化的管理方面急需制定相关完善的法律，只有这样我国的政府信息化建设才能在良性的法律轨道上持续、快速、健康地发展。尽快建立完善的政府信息化建设评估标准和制度，并把它作为政府官员业绩评价的一个重要组成部分，建立起有效的约束机制和激励机制。",
+      "entities": [
+        {
+          "entity_id": "35_e1",
+          "mention": "政府信息化建设",
+          "normalized_name": "政府信息化建设",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "政府信息化建设必须以法律为基础",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "35_e2",
+          "mention": "政府信息化建设评估标准",
+          "normalized_name": "政府信息化建设评估标准",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "尽快建立完善的政府信息化建设评估标准和制度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e3",
+          "mention": "约束机制",
+          "normalized_name": "约束机制",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "建立起有效的约束机制和激励机制",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e4",
+          "mention": "激励机制",
+          "normalized_name": "激励机制",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "建立起有效的约束机制和激励机制",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "38",
+      "sentence": "我国经过20年的探索，有成功的经验，也有诸多误区和不足。 2001年，国务院办公厅制定了全国政府系统政务信息化建设的5年计划，即《全国政府系统信息化建设2001－2005年规划纲要》（国办发【2001】25号)，对我国政府信息化的指导思想、方针、政策等作出明确的规定。",
+      "entities": [
+        {
+          "entity_id": "38_e1",
+          "mention": "国务院办公厅",
+          "normalized_name": "国务院办公厅",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "2001年，国务院办公厅制定了全国政府系统政务信息化建设的5年计划",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e2",
+          "mention": "《全国政府系统信息化建设2001－2005年规划纲要》",
+          "normalized_name": "《全国政府系统信息化建设2001－2005年规划纲要》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "即《全国政府系统信息化建设2001－2005年规划纲要》（国办发【2001】25号)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e3",
+          "mention": "国办发【2001】25号",
+          "normalized_name": "国办发【2001】25号",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "即《全国政府系统信息化建设2001－2005年规划纲要》（国办发【2001】25号)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

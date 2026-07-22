@@ -1,0 +1,431 @@
+{
+  "base_name": "reviewed_full_2360",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "北京地区图书馆事业的真正发展是在1949年以后。解放后，北京各类型图书馆事业均有巨大的发展。从性质上来看，图书馆成了广大劳动人民获得知识，提高科学文化水平的教育机构。从数量上看，解放初期北京各类型图书馆仅有55所，而至80年代末期，已发展到5,000多所。 比解放初期增加105倍。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "北京地区图书馆事业",
+          "normalized_name": "北京地区图书馆事业",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "北京地区图书馆事业的真正发展是在1949年以后",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为subfield"
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "北京各类型图书馆",
+          "normalized_name": "北京各类型图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "北京各类型图书馆事业均有巨大的发展",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛指各类型图书馆，非单一机构"
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "还有一批重点高等院校的图书馆，如：北京大学图书馆、清华大学图书馆、北京师范大学图书馆、中国人民大学图书馆等。 这些图书馆的藏书十分丰富，都在一百万册以上。工作人员的水平也较高。它们在本系统内起着中心图书馆的作用，在北京以至全国的图书馆事业协作、协调活动中，发挥着核心作用。 这类特大型图书馆在北京计有15所。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "北京大学图书馆",
+          "normalized_name": "北京大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "一批重点高等院校的图书馆，如：北京大学图书馆、清华大学图书馆、北京师范大学图书馆、中国人民大学图书馆等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "清华大学图书馆",
+          "normalized_name": "清华大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "一批重点高等院校的图书馆，如：北京大学图书馆、清华大学图书馆、北京师范大学图书馆、中国人民大学图书馆等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "北京师范大学图书馆",
+          "normalized_name": "北京师范大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "一批重点高等院校的图书馆，如：北京大学图书馆、清华大学图书馆、北京师范大学图书馆、中国人民大学图书馆等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "中国人民大学图书馆",
+          "normalized_name": "中国人民大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "一批重点高等院校的图书馆，如：北京大学图书馆、清华大学图书馆、北京师范大学图书馆、中国人民大学图书馆等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "例如，北京市少年儿童图书馆、中国民族图书馆、故宫博物院图书馆、中国农业科学院文献情报中心、中国医学科学院图书馆、军事医学科学院图书馆、机械工业部情报所资料馆以及部分专业性高等院校图书馆等。 这类图书馆的藏书较专、深，文献类型较多，外文书刊所占的比例较大。其中很多属于专业性科学图书馆，它们在本专业范围内起着中心图书馆的作用。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "北京市少年儿童图书馆",
+          "normalized_name": "北京市少年儿童图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "例如，北京市少年儿童图书馆、中国民族图书馆、故宫博物院图书馆、中国农业科学院文献情报中心、中国医学科学院图书馆、军事医学科学院图书馆、机械工业部情报所资料馆以及部分专业性高等院校图书馆等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "中国民族图书馆",
+          "normalized_name": "中国民族图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "例如，北京市少年儿童图书馆、中国民族图书馆、故宫博物院图书馆、中国农业科学院文献情报中心、中国医学科学院图书馆、军事医学科学院图书馆、机械工业部情报所资料馆以及部分专业性高等院校图书馆等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "故宫博物院图书馆",
+          "normalized_name": "故宫博物院图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "例如，北京市少年儿童图书馆、中国民族图书馆、故宫博物院图书馆、中国农业科学院文献情报中心、中国医学科学院图书馆、军事医学科学院图书馆、机械工业部情报所资料馆以及部分专业性高等院校图书馆等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "中国农业科学院文献情报中心",
+          "normalized_name": "中国农业科学院文献情报中心",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "例如，北京市少年儿童图书馆、中国民族图书馆、故宫博物院图书馆、中国农业科学院文献情报中心、中国医学科学院图书馆、军事医学科学院图书馆、机械工业部情报所资料馆以及部分专业性高等院校图书馆等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e5",
+          "mention": "中国医学科学院图书馆",
+          "normalized_name": "中国医学科学院图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "例如，北京市少年儿童图书馆、中国民族图书馆、故宫博物院图书馆、中国农业科学院文献情报中心、中国医学科学院图书馆、军事医学科学院图书馆、机械工业部情报所资料馆以及部分专业性高等院校图书馆等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e6",
+          "mention": "军事医学科学院图书馆",
+          "normalized_name": "军事医学科学院图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "例如，北京市少年儿童图书馆、中国民族图书馆、故宫博物院图书馆、中国农业科学院文献情报中心、中国医学科学院图书馆、军事医学科学院图书馆、机械工业部情报所资料馆以及部分专业性高等院校图书馆等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e7",
+          "mention": "机械工业部情报所资料馆",
+          "normalized_name": "机械工业部情报所资料馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "例如，北京市少年儿童图书馆、中国民族图书馆、故宫博物院图书馆、中国农业科学院文献情报中心、中国医学科学院图书馆、军事医学科学院图书馆、机械工业部情报所资料馆以及部分专业性高等院校图书馆等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "服务对象主要是本单位的专业人员（高校图书馆的服务对象是教师、学生）。 值得指出的是在这类图书馆中，有些图书馆在本系统中也起着中心图书馆的作用，如：全国地质图书馆、中医研究院图书情报中心、中国建筑图书馆等，它们在各自专业的图书馆系统中发挥着重要的核心作用。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "全国地质图书馆",
+          "normalized_name": "全国地质图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如：全国地质图书馆、中医研究院图书情报中心、中国建筑图书馆等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "中医研究院图书情报中心",
+          "normalized_name": "中医研究院图书情报中心",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如：全国地质图书馆、中医研究院图书情报中心、中国建筑图书馆等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "中国建筑图书馆",
+          "normalized_name": "中国建筑图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如：全国地质图书馆、中医研究院图书情报中心、中国建筑图书馆等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "其中有些是历史较短、藏书较少、规模较小的研究所图书馆（室），如：中国科学院自动化研究所图书馆、能源研究所图书馆等。 它们藏书虽然不多，但少而精，专业性很强，藏书质量较高。 还有一些厂矿所属的科技图书馆，其任务是围绕本厂矿的生产，搜集有关的技术资料、产品类本、产品标准以及专利说明书等，为本厂矿的技术人员及部分技术工人服务。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "中国科学院自动化研究所图书馆",
+          "normalized_name": "中国科学院自动化研究所图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中国科学院自动化研究所图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "能源研究所图书馆",
+          "normalized_name": "能源研究所图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "能源研究所图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "产品标准",
+          "normalized_name": "产品标准",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "产品标准",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "专利说明书",
+          "normalized_name": "专利说明书",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "专利说明书",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "它的规模一般较小，如：北京无线电厂科技图书馆（藏书20,000册）、内燃机厂科技图书馆（藏书32,000册），京棉一厂技术资料室（藏书10,000册）。 当然也有些厂矿技术图书馆规模较大，如：首都钢铁厂科技图书馆的藏书就较丰富。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "北京无线电厂科技图书馆",
+          "normalized_name": "北京无线电厂科技图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "北京无线电厂科技图书馆（藏书20,000册）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "内燃机厂科技图书馆",
+          "normalized_name": "内燃机厂科技图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "内燃机厂科技图书馆（藏书32,000册）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "京棉一厂技术资料室",
+          "normalized_name": "京棉一厂技术资料室",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "京棉一厂技术资料室（藏书10,000册）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "首都钢铁厂科技图书馆",
+          "normalized_name": "首都钢铁厂科技图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "首都钢铁厂科技图书馆的藏书就较丰富",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "例如首都图书馆，是北京市最大的综合性公共图书馆。 它既具有科学性,又具有大众性。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "首都图书馆",
+          "normalized_name": "首都图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "例如首都图书馆，是北京市最大的综合性公共图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "工会图书馆系统的协作网络以及医学图书馆系统、中医图书馆系统、地质、农业、化工、纺织等各专业图书馆系统的协作网络或协作活动等。 通过各种网络或各种形式的协作活动，进一步发挥了北京地区图书馆事业的整体效应，在为北京市的经济建设、科研工作以及文化教育等方面的服务工作中，发挥了更大的作用。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "工会图书馆系统",
+          "normalized_name": "工会图书馆系统",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "工会图书馆系统的协作网络",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "医学图书馆系统",
+          "normalized_name": "医学图书馆系统",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "医学图书馆系统、中医图书馆系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "中医图书馆系统",
+          "normalized_name": "中医图书馆系统",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中医图书馆系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "北京地区图书馆事业",
+          "normalized_name": "北京地区图书馆事业",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "进一步发挥了北京地区图书馆事业的整体效应",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为discipline或subfield"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "base_name": "reviewed_full_4156",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "12",
+      "sentence": "随着科学技术的发展，图书文献的数量、品种也在成倍的增长，采访人员每天要处理的书目信息量也在成倍的增加，如何又快又准地处理这些文献信息呢9图书馆集成系统及网络技术的开发利用，为采访工作的数据处理及信息处理提供了可靠的数据源，如图2所示。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "图书馆集成系统",
+          "normalized_name": "图书馆集成系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "图书馆集成系统及网络技术的开发利用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "网络技术",
+          "normalized_name": "网络技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆集成系统及网络技术的开发利用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "这里所说的开放式的信息流，主要基于以下几点考虑：第一，由于图书馆的文献资料实现了自动化管理，建立了自己的馆藏书目数据库及征订书目数据库，从而图书征订阶段的查重、下订单、入库等工作也实现了自动化。 以往需要几天甚至一周的，现在只需要2一3小时就可以完成。 一些信息如读者需求、流通的借阅等，现在都可以通过计算机来完成。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由于图书馆的文献资料实现了自动化管理",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'图书馆'为泛称，但根据图情领域放宽规则，若上下文可指代具体图书馆则抽取；此处无具体名称，但作为机构类型在评价句中可视为具体实体"
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "馆藏书目数据库",
+          "normalized_name": "馆藏书目数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建立了自己的馆藏书目数据库及征订书目数据库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "征订书目数据库",
+          "normalized_name": "征订书目数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建立了自己的馆藏书目数据库及征订书目数据库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "计算机",
+          "normalized_name": "计算机",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "现在都可以通过计算机来完成",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "此处'计算机'可能指代硬件设备或泛指计算系统，但根据图情领域放宽规则，作为具体工具可抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "应。 该护卫舰所载的淡水对救助灾民虽然不起重大作用，但从情报学的角度看，显示出情报速发具有十分鲜明的时效性，而情报迟发则可能大幅度降低甚至丧失时效性，造成不应有的损失。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "情报学",
+          "normalized_name": "情报学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从情报学的角度看",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "情报速发",
+          "normalized_name": "情报速发",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "显示出情报速发具有十分鲜明的时效性",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为自创术语，非广泛认可的学术概念"
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "情报迟发",
+          "normalized_name": "情报迟发",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "而情报迟发则可能大幅度降低甚至丧失时效性",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为自创术语，非广泛认可的学术概念"
+        }
+      ]
+    }
+  ]
+}

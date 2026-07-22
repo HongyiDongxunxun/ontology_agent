@@ -1,0 +1,1719 @@
+{
+  "base_name": "reviewed_full_7337",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "文摘本文从日本的教育改革和学校信息化的进展、信息教育的实况、信息教育的地位及措施、政府的学校图书馆政策、学校图书馆的信息化进展等方面论述了日本学校信息教育的现状及学校图书馆在信息教育中的地位、作用和对策。 本文主要观点是，学校的信息教育的重点在于培养学生“信息综合利用能力”，学校图书馆的主要任务就是紧紧围绕这一重点，充实其适应高度信息化社会的学习信息中心的机能，充分发挥其在学校信息教育中的主导作用。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "日本",
+          "normalized_name": "日本",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "日本的教育改革和学校信息化的进展",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "教育改革",
+          "normalized_name": "教育改革",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "日本的教育改革和学校信息化的进展",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "学校信息化",
+          "normalized_name": "学校信息化",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学校信息化的进展",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "信息教育",
+          "normalized_name": "信息教育",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息教育的实况、信息教育的地位及措施",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e5",
+          "mention": "学校图书馆政策",
+          "normalized_name": "学校图书馆政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "政府的学校图书馆政策",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e6",
+          "mention": "学校图书馆",
+          "normalized_name": "学校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "学校图书馆的信息化进展",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e7",
+          "mention": "信息综合利用能力",
+          "normalized_name": "信息综合利用能力",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学校的信息教育的重点在于培养学生“信息综合利用能力”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e8",
+          "mention": "学习信息中心",
+          "normalized_name": "学习信息中心",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "充实其适应高度信息化社会的学习信息中心的机能",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "日本的学校教育正在尝试依靠利用学校图书馆教育以及基于1960年第一代计算机而发展起来的自动教学机进行全部的课堂教学改革。 但是，还没有达到完全改变教师传统观念的程度，依靠黑板和粉笔授课，仍是教学的基本形式，",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "日本",
+          "normalized_name": "日本",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "日本的学校教育正在尝试依靠利用学校图书馆教育以及基于1960年第一代计算机而发展起来的自动教学机进行全部的课堂教学改革",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "学校图书馆",
+          "normalized_name": "学校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "依靠利用学校图书馆教育",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处为泛称，但图情领域放宽规则，有名称的图书馆应抽取，但原文未给出具体名称，故confidence较低"
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "1960年第一代计算机",
+          "normalized_name": "1960年第一代计算机",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于1960年第一代计算机而发展起来的自动教学机",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "第一代计算机为泛称，但结合年代和上下文可视为具体历史实体"
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "自动教学机",
+          "normalized_name": "自动教学机",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于1960年第一代计算机而发展起来的自动教学机",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e5",
+          "mention": "黑板",
+          "normalized_name": "黑板",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "依靠黑板和粉笔授课",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "黑板为具体教学工具，但非学术性工具，confidence较低"
+        },
+        {
+          "entity_id": "2_e6",
+          "mention": "粉笔",
+          "normalized_name": "粉笔",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "依靠黑板和粉笔授课",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "粉笔为具体教学工具，但非学术性工具，confidence较低"
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "但是，“信息化\"正逐渐给传统的学校教育形式带来巨大的变革，最初，计算机是作为热心老师的私有财产被带入学校使用的,而如今，计算机已成为学校教育不可缺少的教具而用公费购置。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "信息化",
+          "normalized_name": "信息化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "“信息化”正逐渐给传统的学校教育形式带来巨大的变革",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "计算机",
+          "normalized_name": "计算机",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "计算机是作为热心老师的私有财产被带入学校使用的",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为Artifact/Functional/Tool/software，但原文未指定具体型号或软件名，故按抽象概念处理"
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "1996年7月，日本中央教育审议会首次咨询报告《展望21世纪日本的教育发展趋势》一文，用了足足8页纸的篇幅，论述了信息化和教育，文中指出信息化发展中应注意的教育问题,并将培养\"信息综合利用能力\"的必要性放在首位进行了论述。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "日本中央教育审议会",
+          "normalized_name": "日本中央教育审议会",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "日本中央教育审议会首次咨询报告《展望21世纪日本的教育发展趋势》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "《展望21世纪日本的教育发展趋势》",
+          "normalized_name": "《展望21世纪日本的教育发展趋势》",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "日本中央教育审议会首次咨询报告《展望21世纪日本的教育发展趋势》一文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "信息综合利用能力",
+          "normalized_name": "信息综合利用能力",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "培养\"信息综合利用能力\"的必要性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "面向21世纪初，日本正在进行教育制度改革，其力度不亚于明治时期的学制改革及战败后的6.3制改革，改革的内容包括：学校全部实行每周五天制，在公立学校实行初中、高中-贯教育，缓和大学人学年龄等。 与此同步进行，围绕着教育质的转换的是，回应信息化",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "日本",
+          "normalized_name": "日本",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "日本正在进行教育制度改革",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "明治时期的学制改革",
+          "normalized_name": "明治时期的学制改革",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "其力度不亚于明治时期的学制改革及战败后的6.3制改革",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "战败后的6.3制改革",
+          "normalized_name": "战败后的6.3制改革",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "其力度不亚于明治时期的学制改革及战败后的6.3制改革",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "信息化",
+          "normalized_name": "信息化",
+          "candidate_l3": "trend",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "回应信息化",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "关于信息教育的必要性不是近几年才提出的，早在1985年\"回应信息化社会的初等、中等教育的各方调研协作会议\"第1次会议就将此归纳发表过。 另外，1986年4月，在临时教育审议会第2次咨询报史文物，这些特殊战利品的最公正合理的归属之地除中国以外，别无他所。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "回应信息化社会的初等、中等教育的各方调研协作会议",
+          "normalized_name": "回应信息化社会的初等、中等教育的各方调研协作会议",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "早在1985年\"回应信息化社会的初等、中等教育的各方调研协作会议\"第1次会议就将此归纳发表过",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "临时教育审议会",
+          "normalized_name": "临时教育审议会",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在临时教育审议会第2次咨询报史文物",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "机构名称可能不完整，原文为'临时教育审议会第2次咨询报史文物'，但'临时教育审议会'本身是具体组织"
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "另外，1986年4月，在临时教育审议会第2次咨询报史文物，这些特殊战利品的最公正合理的归属之地除中国以外，别无他所。 确言之，相对于其有限的价值，这些卷册所包含的是更深重的感情与象征的意义，只是近数十年来变幻无常的政治，阻碍了此事得以更早的理智的解决，所有对此建议的评论可寄",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "临时教育审议会",
+          "normalized_name": "临时教育审议会",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在临时教育审议会第2次咨询报史文物",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "告中提出了引人注目的提案，即：“有必要通过推进面向初等、中等教育的信息手段的运用，谋求信息综合利用能力的培养。 信息综合利用能力：能自主地选择信息及信息手段并会运用的基础性资质。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "信息综合利用能力",
+          "normalized_name": "信息综合利用能力",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "谋求信息综合利用能力的培养。 信息综合利用能力：能自主地选择信息及信息手段并会运用的基础性资质。",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "在同年11月的审议总结提出，要在中学的技术、家政班设置\"信息基础\"作为新领域，在高中普通班设置\"信息\"作为选修课，这已被写进现行学习指导纲领中。 但是由于两者都不是必修课，所以实际上做的并不充分。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "信息基础",
+          "normalized_name": "信息基础",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "要在中学的技术、家政班设置\"信息基础\"作为新领域",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "信息",
+          "normalized_name": "信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在高中普通班设置\"信息\"作为选修课",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "现行学习指导纲领",
+          "normalized_name": "现行学习指导纲领",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "这已被写进现行学习指导纲领中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "因此，在1996年中教审第1次咨询报告中更进一步从初中等教育的信息综合利用能力教育的必要性上深刻地阐述了必须要在学校配备信息化通信机器及网络环境，构建\"崭新的学校\"，而且提议把国立教育会馆作为全国信息教育中心。 （由于行政改革，国立教育会馆已被并入国立教育研究所等机构）。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "1996年中教审第1次咨询报告",
+          "normalized_name": "1996年中教审第1次咨询报告",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在1996年中教审第1次咨询报告中更进一步从初中等教育的信息综合利用能力教育的必要性上深刻地阐述了必须要在学校配备信息化通信机器及网络环境",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "国立教育会馆",
+          "normalized_name": "国立教育会馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "提议把国立教育会馆作为全国信息教育中心",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "国立教育研究所",
+          "normalized_name": "国立教育研究所",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国立教育会馆已被并入国立教育研究所等机构",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "由于1987年的教课审最终咨询报告指出了信息教育的重要性，因此，文部省从1987年开始持续进行了公立学校信息教育的实况调查。 以下从最近公布的1997年度、1998年度3月31日至今的调查结果中，就教育用计算机的配备实况作如下分析：",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "1987年的教课审最终咨询报告",
+          "normalized_name": "1987年教课审最终咨询报告",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "1987年的教课审最终咨询报告指出了信息教育的重要性",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "文部省",
+          "normalized_name": "文部省",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "文部省从1987年开始持续进行了公立学校信息教育的实况调查",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "1997年度",
+          "normalized_name": "1997年度",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "最近公布的1997年度、1998年度3月31日至今的调查结果",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "年度作为时间阶段，可视为stage"
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "1998年度3月31日至今",
+          "normalized_name": "1998年度3月31日至今",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "最近公布的1997年度、1998年度3月31日至今的调查结果",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "时间范围，可视为stage"
+        },
+        {
+          "entity_id": "13_e5",
+          "mention": "教育用计算机",
+          "normalized_name": "教育用计算机",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "就教育用计算机的配备实况作如下分析",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "每个学校的平均设置台数(在各设置场所设置的计算机的台数)。 即使全部作为教育用计算机，按学生40人计算，小学1台/4人，初中1台/2人略多一点，不能充分满足。高中可以达到全部学生同时利用的数量。 按照文部省教育用计算机的计划配置，到1999年，小学要达到1台/2人，初中、普通高中要达到1台/1人，特殊教育学校要达到1台/1人。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "文部省",
+          "normalized_name": "文部省",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "按照文部省教育用计算机的计划配置",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "教育用计算机",
+          "normalized_name": "教育用计算机",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "按照文部省教育用计算机的计划配置",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为Artifact>Functional>Tool? 但原文未指定具体型号/系统，故标为概念"
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "其设置台数，高中1台多点,而小学和初中则2台或接近3台。 由此可见，在高中图书馆，计算机只被用在藏书管理方面。而在小学和初中，除配备了管理用计算机,还配备了供学生使用的检索用计算机。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "高中图书馆",
+          "normalized_name": "高中图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在高中图书馆，计算机只被用在藏书管理方面",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "藏书管理",
+          "normalized_name": "藏书管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "计算机只被用在藏书管理方面",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为领域内通用概念，但具有独立命名"
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "检索用计算机",
+          "normalized_name": "检索用计算机",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "还配备了供学生使用的检索用计算机",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "可能为通用设备描述，但原文中作为具体功能设备提及"
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "据 $1 9 9 6 \\sim 1 9 9 7$ 年高中教育改革推进研究协作学校研究收录报道，在研究成果要点中，涉及到信息教育的学校只占28所学校中的8所，重视信息综合利用能力的只有其中的2所。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "高中教育改革推进研究协作学校研究",
+          "normalized_name": "高中教育改革推进研究协作学校研究",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "据1996~1997年高中教育改革推进研究协作学校研究收录报道",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为研究计划或项目名称，但原文未提供更详细名称"
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "信息教育",
+          "normalized_name": "信息教育",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "涉及到信息教育的学校只占28所学校中的8所",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "信息综合利用能力",
+          "normalized_name": "信息综合利用能力",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "重视信息综合利用能力的只有其中的2所",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "在同年度的高中教育课程研究指定学校中，25所学校有11所在教育课程上重视引进信息教育及计算机网络，多媒体教学等教育。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "高中教育课程研究指定学校",
+          "normalized_name": "高中教育课程研究指定学校",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在同年度的高中教育课程研究指定学校中，25所学校有11所在教育课程上重视引进信息教育及计算机网络，多媒体教学等教育",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "该短语可能指代一个具体的项目或机构名单，但原文未给出具体名称，仅作为类别指称，根据召回优先原则暂保留"
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "信息教育",
+          "normalized_name": "信息教育",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "重视引进信息教育及计算机网络，多媒体教学等教育",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "计算机网络",
+          "normalized_name": "计算机网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "重视引进信息教育及计算机网络，多媒体教学等教育",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e4",
+          "mention": "多媒体教学",
+          "normalized_name": "多媒体教学",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "重视引进信息教育及计算机网络，多媒体教学等教育",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "为此，高中教育课程研究指定学校之一的奈良立志贵高中部谷勇校长呼呼：要把重点放在信息教育上。 其观点是：（1）当今信息教育的本质是\"培养信息综合利用能力”，也就是说，信息教育的目标是“使之理解信息与人类社会的关系，使之认识在今后的社会中，自已搜集、思考、判断信息，进行创造活动的重要性。 \"培养信息手段(计算机)的操作能力是整个信息教育中最基础的能力，是与信息教育的全部的目标紧密相关的。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "奈良立志贵高中",
+          "normalized_name": "奈良立志贵高中",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "高中教育课程研究指定学校之一的奈良立志贵高中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "部谷勇",
+          "normalized_name": "部谷勇",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "奈良立志贵高中部谷勇校长",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "信息教育",
+          "normalized_name": "信息教育",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "要把重点放在信息教育上",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "信息综合利用能力",
+          "normalized_name": "信息综合利用能力",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当今信息教育的本质是'培养信息综合利用能力'",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e5",
+          "mention": "信息手段(计算机)的操作能力",
+          "normalized_name": "信息手段(计算机)的操作能力",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "培养信息手段(计算机)的操作能力是整个信息教育中最基础的能力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "括号内为原文补充说明"
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "信息教育与学校的整个教育活动有关，因此，不应该设想特定的担任者的存在，而要将关系密切的和不密切的学科都要考虑在内。 在此，来分析一下计算机综合利用在最近公开发表的新学习指导纲领中所占据的地位以及担任信息教育的教师的现状。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "新学习指导纲领",
+          "normalized_name": "新学习指导纲领",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "最近公开发表的新学习指导纲领",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "计算机及信息通信网络等在社会科学、数学、理科方面的综合利用，计算机及教育器械在音乐方面的运用都很值得推广。再者，信息和计算机在职业技术、家政学科中被作为技术方面的必修科目，放在了信息教育的中心学科的位置。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "计算机",
+          "normalized_name": "计算机",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "计算机及信息通信网络等在社会科学、数学、理科方面的综合利用",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为Artifact(具体设备)或Abstract(概念)，此处作为学科领域中的概念更合适"
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "信息通信网络",
+          "normalized_name": "信息通信网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "计算机及信息通信网络等在社会科学、数学、理科方面的综合利用",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为Artifact(具体系统)或Abstract(概念)，此处作为学科领域中的概念更合适"
+        },
+        {
+          "entity_id": "28_e3",
+          "mention": "社会科学",
+          "normalized_name": "社会科学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "计算机及信息通信网络等在社会科学、数学、理科方面的综合利用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e4",
+          "mention": "数学",
+          "normalized_name": "数学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "计算机及信息通信网络等在社会科学、数学、理科方面的综合利用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e5",
+          "mention": "理科",
+          "normalized_name": "理科",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "计算机及信息通信网络等在社会科学、数学、理科方面的综合利用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e6",
+          "mention": "计算机",
+          "normalized_name": "计算机",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "计算机及教育器械在音乐方面的运用都很值得推广",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为Artifact(具体设备)或Abstract(概念)，此处作为学科领域中的概念更合适"
+        },
+        {
+          "entity_id": "28_e7",
+          "mention": "教育器械",
+          "normalized_name": "教育器械",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "计算机及教育器械在音乐方面的运用都很值得推广",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为Artifact(具体设备)或Abstract(概念)，此处作为学科领域中的概念更合适"
+        },
+        {
+          "entity_id": "28_e8",
+          "mention": "音乐",
+          "normalized_name": "音乐",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "计算机及教育器械在音乐方面的运用都很值得推广",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e9",
+          "mention": "信息",
+          "normalized_name": "信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息和计算机在职业技术、家政学科中被作为技术方面的必修科目",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为discipline(信息学科)或concept(信息概念)，此处作为学科领域中的概念更合适"
+        },
+        {
+          "entity_id": "28_e10",
+          "mention": "计算机",
+          "normalized_name": "计算机",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息和计算机在职业技术、家政学科中被作为技术方面的必修科目",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为Artifact(具体设备)或Abstract(概念)，此处作为学科领域中的概念更合适"
+        },
+        {
+          "entity_id": "28_e11",
+          "mention": "职业技术",
+          "normalized_name": "职业技术",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息和计算机在职业技术、家政学科中被作为技术方面的必修科目",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e12",
+          "mention": "家政学科",
+          "normalized_name": "家政学科",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息和计算机在职业技术、家政学科中被作为技术方面的必修科目",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e13",
+          "mention": "信息教育",
+          "normalized_name": "信息教育",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "放在了信息教育的中心学科的位置",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "应该引起重视的是在普通学科中增设\"信息\"这一必修科目。 其科目的目标是“通过学习信息及信息技术的综合利用的知识和技能，培养与信息有关的科学的见解和思维方法，同时使之理解信息及信息技术在社会中所起到的作用和影响，培育能主动适应信息化进展的能力和态度”。",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "信息",
+          "normalized_name": "信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在普通学科中增设\"信息\"这一必修科目",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "信息技术",
+          "normalized_name": "信息技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过学习信息及信息技术的综合利用的知识和技能",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "31",
+      "sentence": "在高中，能用计算机进行指导的老师也只占2成多点。由于新设置独立的\"信息\"学科，因此，要避免削弱对其它学科的信息教育的投人。",
+      "entities": [
+        {
+          "entity_id": "31_e1",
+          "mention": "信息",
+          "normalized_name": "信息",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "新设置独立的\"信息\"学科",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept，但此处作为学科名称出现"
+        }
+      ]
+    },
+    {
+      "sentence_id": "32",
+      "sentence": "新学习指导纲领的特点之一是增加了“综合性的学习时间。 \"其内涵就是：以横向的、综合性的学习及学生的兴趣、爱好、关心为基础的学习中所产生创造思维的教育活动的过程。",
+      "entities": [
+        {
+          "entity_id": "32_e1",
+          "mention": "新学习指导纲领",
+          "normalized_name": "新学习指导纲领",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "新学习指导纲领的特点之一是增加了“综合性的学习时间”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e2",
+          "mention": "综合性的学习时间",
+          "normalized_name": "综合性的学习时间",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "增加了“综合性的学习时间”",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为政策文件中的特定术语"
+        }
+      ]
+    },
+    {
+      "sentence_id": "33",
+      "sentence": "抓住\"综合性的学习时间\"的充分利用，受通产省的委托，民间团体正在积极开发用于教育事业的通信技术方面的教材，信息教育必定会成为综合学习的重要的主题之一。",
+      "entities": [
+        {
+          "entity_id": "33_e1",
+          "mention": "通产省",
+          "normalized_name": "通产省",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "受通产省的委托",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e2",
+          "mention": "通信技术",
+          "normalized_name": "通信技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用于教育事业的通信技术方面的教材",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e3",
+          "mention": "信息教育",
+          "normalized_name": "信息教育",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息教育必定会成为综合学习的重要的主题之一",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "34",
+      "sentence": "1998年公布的学校图书馆政策，可以说都与信息教育有关，其主要的实施政策如下：",
+      "entities": [
+        {
+          "entity_id": "34_e1",
+          "mention": "1998年公布的学校图书馆政策",
+          "normalized_name": "1998年公布的学校图书馆政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "1998年公布的学校图书馆政策",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "政策文件名称不完整，需确认具体政策名称"
+        },
+        {
+          "entity_id": "34_e2",
+          "mention": "学校图书馆政策",
+          "normalized_name": "学校图书馆政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "1998年公布的学校图书馆政策",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但结合上下文有具体时间限定"
+        }
+      ]
+    },
+    {
+      "sentence_id": "35",
+      "sentence": "充分利用公立中学的多余教室，在确保学生能够拥有轻松学习，精神愉快舒畅的\"读书空间\"的同时、有必要谋求\"信息关连设施\"的配备，即配备能自由接触信息机器及信息资料，其面积、形状适合5\\~10人为单位的小组调查学习的设施。 为此，在1998年第2次补充预算案中，又大幅增加了有关的公立学校的设施装备经费，其中三分之一为国库补助。",
+      "entities": [
+        {
+          "entity_id": "35_e1",
+          "mention": "公立中学",
+          "normalized_name": "公立中学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "充分利用公立中学的多余教室",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "机构类型明确但无具体校名，按图情领域放宽规则，有地名/功能限定修饰的具体机构需抽取，此处'公立中学'为泛称，但结合上下文'公立学校'可视为具体机构类别，暂保留"
+        },
+        {
+          "entity_id": "35_e2",
+          "mention": "读书空间",
+          "normalized_name": "读书空间",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "确保学生能够拥有轻松学习，精神愉快舒畅的'读书空间'",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e3",
+          "mention": "信息关连设施",
+          "normalized_name": "信息关连设施",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有必要谋求'信息关连设施'的配备",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e4",
+          "mention": "1998年第2次补充预算案",
+          "normalized_name": "1998年第2次补充预算案",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "在1998年第2次补充预算案中，又大幅增加了有关的公立学校的设施装备经费",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e5",
+          "mention": "公立学校",
+          "normalized_name": "公立学校",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "大幅增加了有关的公立学校的设施装备经费",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "同上，泛称但结合具体政策语境，保留"
+        }
+      ]
+    },
+    {
+      "sentence_id": "36",
+      "sentence": "为提高图书馆员的素质，从培育信息综合利用能力的观点出发，1999年在修订的图书馆员学习科目中，新增加了“信息手段的利用\"的内容。",
+      "entities": [
+        {
+          "entity_id": "36_e1",
+          "mention": "图书馆员",
+          "normalized_name": "图书馆员",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "为提高图书馆员的素质",
+          "is_specific_entity": false,
+          "confidence": 0.0,
+          "uncertainty": "泛化身份类别词，不指称具体个人，按规则不抽取"
+        },
+        {
+          "entity_id": "36_e2",
+          "mention": "1999年",
+          "normalized_name": "1999年",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "1999年在修订的图书馆员学习科目中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e3",
+          "mention": "图书馆员学习科目",
+          "normalized_name": "图书馆员学习科目",
+          "candidate_l3": "guideline",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "修订的图书馆员学习科目",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为规范性文件或课程体系，根据上下文倾向于规范性制品"
+        },
+        {
+          "entity_id": "36_e4",
+          "mention": "信息手段的利用",
+          "normalized_name": "信息手段的利用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "新增加了“信息手段的利用”的内容",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "37",
+      "sentence": "中教审咨询报告指出：“在学校设施中，特别是对于学校图书馆来说，除在学校教育中起着不可缺少的满足图书资料需求的作用外，还有必要配备各种软件及信息设备，谋求充实其高度信息通信社会的学习信息中心的机能。\"因此，今后学校图书馆被纳入学校信息教育体制之中是必然的趋势。其中，学校图书馆如何保持主体性.占据主导的地位是今后研究的课题。",
+      "entities": [
+        {
+          "entity_id": "37_e1",
+          "mention": "学校图书馆",
+          "normalized_name": "学校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在学校设施中，特别是对于学校图书馆来说",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e2",
+          "mention": "中教审咨询报告",
+          "normalized_name": "中教审咨询报告",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "中教审咨询报告指出",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为机构名称缩写，但原文如此"
+        },
+        {
+          "entity_id": "37_e3",
+          "mention": "高度信息通信社会",
+          "normalized_name": "高度信息通信社会",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "谋求充实其高度信息通信社会的学习信息中心的机能",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为特定政策术语"
+        },
+        {
+          "entity_id": "37_e4",
+          "mention": "学校信息教育体制",
+          "normalized_name": "学校信息教育体制",
+          "candidate_l3": "framework",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "今后学校图书馆被纳入学校信息教育体制之中是必然的趋势",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "38",
+      "sentence": "目前，学校图书馆的计算机多被用在资料管理及检索上。 仅仅把计算机作为图书馆员的情报工具用在参考上，这不应该是学校图书馆所期望的。 学校图书馆的计算机利用也要担任起信息教育的作用，谋求学生能够轻松地熟练地利用计算机及网络。",
+      "entities": [
+        {
+          "entity_id": "38_e1",
+          "mention": "学校图书馆",
+          "normalized_name": "学校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "学校图书馆的计算机多被用在资料管理及检索上",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "有地名/学科限定，但未给出具体名称，按图情领域放宽规则抽取"
+        },
+        {
+          "entity_id": "38_e2",
+          "mention": "计算机",
+          "normalized_name": "计算机",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "学校图书馆的计算机多被用在资料管理及检索上",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称计算机，但结合语境指具体设备/工具，按图情领域放宽规则抽取"
+        },
+        {
+          "entity_id": "38_e3",
+          "mention": "资料管理",
+          "normalized_name": "资料管理",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "计算机多被用在资料管理及检索上",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为具体功能方法抽取"
+        },
+        {
+          "entity_id": "38_e4",
+          "mention": "检索",
+          "normalized_name": "检索",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "计算机多被用在资料管理及检索上",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为具体技术手段抽取"
+        },
+        {
+          "entity_id": "38_e5",
+          "mention": "图书馆员",
+          "normalized_name": "图书馆员",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "仅仅把计算机作为图书馆员的情报工具用在参考上",
+          "is_specific_entity": false,
+          "confidence": 0.3,
+          "uncertainty": "泛称身份类别词，不指具体个人，按规则不抽取，但为召回保留"
+        },
+        {
+          "entity_id": "38_e6",
+          "mention": "情报工具",
+          "normalized_name": "情报工具",
+          "candidate_l3": "tool",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "仅仅把计算机作为图书馆员的情报工具用在参考上",
+          "is_specific_entity": true,
+          "confidence": 0.75,
+          "uncertainty": "泛称工具，但结合语境指具体功能类型，按图情领域放宽规则抽取"
+        },
+        {
+          "entity_id": "38_e7",
+          "mention": "参考",
+          "normalized_name": "参考",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用在参考上",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "作为具体服务方法抽取"
+        },
+        {
+          "entity_id": "38_e8",
+          "mention": "信息教育",
+          "normalized_name": "信息教育",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学校图书馆的计算机利用也要担任起信息教育的作用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e9",
+          "mention": "网络",
+          "normalized_name": "网络",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "谋求学生能够轻松地熟练地利用计算机及网络",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称网络，但结合语境指互联网，按图情领域放宽规则抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "40",
+      "sentence": "学校图书馆的实践活动，多发表在学校图书馆及图书馆研究团体的杂志、研究会刊等。 这在学校尚没有学校图书馆专职职员的现状下，虽然可扩大到有热心于学校图书馆的职员的学校中，但却难于人所共知。希望有关学校图书馆的实践活动也能在教学科研单位的杂志、研究会刊登载。 按照新学习指导纲领编写新教材的工作正在进行。",
+      "entities": [
+        {
+          "entity_id": "40_e1",
+          "mention": "学校图书馆",
+          "normalized_name": "学校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "学校图书馆的实践活动",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e2",
+          "mention": "图书馆研究团体",
+          "normalized_name": "图书馆研究团体",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书馆研究团体的杂志、研究会刊",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为泛称，但结合上下文指具体团体"
+        },
+        {
+          "entity_id": "40_e3",
+          "mention": "新学习指导纲领",
+          "normalized_name": "新学习指导纲领",
+          "candidate_l3": "guideline",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "按照新学习指导纲领编写新教材的工作正在进行",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "41",
+      "sentence": "按照新学习指导纲领编写新教材的工作正在进行。 将各学科充分利用学校图书馆的信息综合利用学习编人教科书推荐,尤其对成为信息教育中心学科的中学技术、家政学科和高中情报学科来说，更有必要积极致力于此。",
+      "entities": [
+        {
+          "entity_id": "41_e1",
+          "mention": "学校图书馆",
+          "normalized_name": "学校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "将各学科充分利用学校图书馆的信息综合利用学习编人教科书推荐",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'学校图书馆'为泛指机构类别词，但根据图情领域放宽规则，有'学校'限定修饰，可视为具体机构类型，但未指明具体校名，置信度较低"
+        },
+        {
+          "entity_id": "41_e2",
+          "mention": "中学技术",
+          "normalized_name": "中学技术",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "尤其对成为信息教育中心学科的中学技术、家政学科和高中情报学科来说",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e3",
+          "mention": "家政学科",
+          "normalized_name": "家政学科",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "尤其对成为信息教育中心学科的中学技术、家政学科和高中情报学科来说",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e4",
+          "mention": "高中情报学科",
+          "normalized_name": "高中情报学科",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "尤其对成为信息教育中心学科的中学技术、家政学科和高中情报学科来说",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "42",
+      "sentence": "另外，被修订的教育职员许可法施行规则规定，在获取情报学科许可之际，必修图书馆情报学，这种变动对于扩大对图书馆的理解是很有必要的。",
+      "entities": [
+        {
+          "entity_id": "42_e1",
+          "mention": "教育职员许可法施行规则",
+          "normalized_name": "教育职员许可法施行规则",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "被修订的教育职员许可法施行规则",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e2",
+          "mention": "情报学科",
+          "normalized_name": "情报学科",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在获取情报学科许可之际",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e3",
+          "mention": "图书馆情报学",
+          "normalized_name": "图书馆情报学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "必修图书馆情报学",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "43",
+      "sentence": "当今教育界重要的主题是\"心的教育\"和\"信息教育”。“心的教育\"着重的是读书的重要性，而\"信息教育\"则以培育信息综合利用能力为目的。毫无疑问两者都应成为学校图书馆主体性的教育活动。学校图书馆应成为学校的中心而存在，这一学校图书馆运动的观点要广为人知。",
+      "entities": [
+        {
+          "entity_id": "43_e1",
+          "mention": "心的教育",
+          "normalized_name": "心的教育",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当今教育界重要的主题是\"心的教育\"和\"信息教育\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "43_e2",
+          "mention": "信息教育",
+          "normalized_name": "信息教育",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当今教育界重要的主题是\"心的教育\"和\"信息教育\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "43_e3",
+          "mention": "学校图书馆运动",
+          "normalized_name": "学校图书馆运动",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "这一学校图书馆运动的观点要广为人知",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "44",
+      "sentence": "在此,不仅要宣传传统学校图书馆的主张，而且要考虑对于信息化社会的新学校来说，需要什么样的学校图书馆? 有必要探索\"新的学校图书馆\"的模式。",
+      "entities": [
+        {
+          "entity_id": "44_e1",
+          "mention": "传统学校图书馆",
+          "normalized_name": "传统学校图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "宣传传统学校图书馆的主张",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为service类型组织，但原文未指定具体机构名称"
+        },
+        {
+          "entity_id": "44_e2",
+          "mention": "信息化社会",
+          "normalized_name": "信息化社会",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对于信息化社会的新学校来说",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "44_e3",
+          "mention": "新的学校图书馆",
+          "normalized_name": "新的学校图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "探索'新的学校图书馆'的模式",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为service类型组织，但原文未指定具体机构名称"
+        }
+      ]
+    }
+  ]
+}

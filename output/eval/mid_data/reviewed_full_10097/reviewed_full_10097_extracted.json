@@ -1,0 +1,1943 @@
+{
+  "base_name": "reviewed_full_10097",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "〔Abstract）Product design support system is built onthe basis of knowledgereuse.Knowledgereasoning，as akey technology，can help maintainand expand the knowledgerepositorysoas torealize knowledgereuse．This paperreviewsonthe develop ment of product design oriented knowledge reasoning from 3 aspects：case $-$ based reasoning，uncertain reasoning and hybrid reasoning·It alsoanalyzes theadvantagesanddisadvantagesofeach methodand technologyas wellasunresolvedquestions，and explores further development of reasoning technology.",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "Product design support system",
+          "normalized_name": "Product design support system",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Product design support system is built on the basis of knowledge reuse.",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "knowledge reuse",
+          "normalized_name": "knowledge reuse",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Product design support system is built on the basis of knowledge reuse.",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "knowledge reasoning",
+          "normalized_name": "knowledge reasoning",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Knowledge reasoning, as a key technology, can help maintain and expand the knowledge repository so as to realize knowledge reuse.",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "knowledge repository",
+          "normalized_name": "knowledge repository",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "maintain and expand the knowledge repository",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e5",
+          "mention": "case-based reasoning",
+          "normalized_name": "case-based reasoning",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "case-based reasoning, uncertain reasoning and hybrid reasoning",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e6",
+          "mention": "uncertain reasoning",
+          "normalized_name": "uncertain reasoning",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "case-based reasoning, uncertain reasoning and hybrid reasoning",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e7",
+          "mention": "hybrid reasoning",
+          "normalized_name": "hybrid reasoning",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "case-based reasoning, uncertain reasoning and hybrid reasoning",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e8",
+          "mention": "reasoning technology",
+          "normalized_name": "reasoning technology",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "explores further development of reasoning technology",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "在产品设计过程中，设计人员大多在过去相似设计案例的基础上进行修改调整而生成新的设计方案。 由此可见，绝大多数的产品设计都是对己有设计知识的重用。重用已有的知识可以节省资源，并提高产品可靠质量。 面向产品设计的知识推理就是针对用户提出的问题，对产品设计知识库中的知识进行推理，得到问题的答案，最终实现知识的重用。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "产品设计知识库",
+          "normalized_name": "产品设计知识库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "对产品设计知识库中的知识进行推理",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "CONDES[2]是基于规则推理的产品概念设计系统。 规则推理适用于知识比较规范、严谨的领域，但是规则推理不能适应知识库的动态发展； 问题必须和规则相匹配；",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "CONDES[2]",
+          "normalized_name": "CONDES[2]",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "CONDES[2]是基于规则推理的产品概念设计系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "规则推理",
+          "normalized_name": "规则推理",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "CONDES[2]是基于规则推理的产品概念设计系统。 规则推理适用于知识比较规范、严谨的领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "推理效率低下、自适应能力差等。 随着人工智能的发展，案例推理和不确定推理等相关推理模式得到运用，综合使用多种推理方法的混合推理也逐渐成为知识推理发展的热点。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "案例推理",
+          "normalized_name": "案例推理",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "案例推理和不确定推理等相关推理模式得到运用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "不确定推理",
+          "normalized_name": "不确定推理",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "案例推理和不确定推理等相关推理模式得到运用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "混合推理",
+          "normalized_name": "混合推理",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "综合使用多种推理方法的混合推理也逐渐成为知识推理发展的热点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "知识推理",
+          "normalized_name": "知识推理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识推理发展的热点",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "案例推理是利用案例库存储历史经验，检索案例库以找到与现有问题相似的案例，是重用过去的知识来解决当前问题的一种推理方法[3]。 案例推理具有信息的完全表达、增量式学习、知识获取较为容易、求解效率高的优点，早期出现基于案例推理的机械辅助设计系统CADET[4]，能检索出以往成功的设计，同时避免出现过的问题。 经典的案例推理步骤是Aamodt在1994 年提出的著名的4阶段循环的“4R”理论，分别是检索、重用、修正和保存。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "案例推理",
+          "normalized_name": "案例推理",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "案例推理是利用案例库存储历史经验",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "案例库",
+          "normalized_name": "案例库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用案例库存储历史经验",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "CADET",
+          "normalized_name": "CADET",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于案例推理的机械辅助设计系统CADET[4]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "Aamodt",
+          "normalized_name": "Aamodt",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Aamodt在1994 年提出的著名的4阶段循环的“4R”理论",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e5",
+          "mention": "4R理论",
+          "normalized_name": "4R理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "著名的4阶段循环的“4R”理论",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "产品创新设计原型系统PIRS[5]中，采用87个属性作为特征，案例检索时将待检索的案例与案例库中的案例进行匹配。 特征向量表示模型简单，结构清晰，但是只能定量的描述简单案例，这种方法存在很多缺陷：如果对新问题不熟悉就无法确定案例的特征，也无法表示案例中隐含的信息，并且很难确定一组适用于所有产品案例的权重值。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "产品创新设计原型系统PIRS",
+          "normalized_name": "产品创新设计原型系统PIRS",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "产品创新设计原型系统PIRS[5]中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "特征向量表示模型",
+          "normalized_name": "特征向量表示模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "特征向量表示模型简单，结构清晰",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "维修案例推理[采用六元组形式的产品本体。 语义网络表示法明确、简洁，表示范围广泛，表示能力强； 但是网络结构复杂时推理就难以进行，不便于表达判断性知识与深层知识。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "维修案例推理",
+          "normalized_name": "维修案例推理",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "维修案例推理[采用六元组形式的产品本体",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "六元组形式的产品本体",
+          "normalized_name": "六元组形式的产品本体",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "采用六元组形式的产品本体",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "语义网络表示法",
+          "normalized_name": "语义网络表示法",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "语义网络表示法明确、简洁",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "如采用面向对象的产品设计[7]，实现了模块化设计，具有较高的推理效率。 其优点是自然，易于理解； 继承的层次性和结构性能降低问题描述和推理的复杂度；",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "面向对象的产品设计",
+          "normalized_name": "面向对象的产品设计",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如采用面向对象的产品设计[7]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "模块化设计",
+          "normalized_name": "模块化设计",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现了模块化设计",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "便于知识库的修改和维护，推理效率高。 面向对象表示法具有良好的兼容性和灵活性，能够结合其它表示方法进行表示，常用面向对象表示法与框架表示法结合[8]，案例作为对象，一个框架描述一个对象，框架的槽描述对象的特征，框架的值用来描述案例对象的特征参数。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "面向对象表示法",
+          "normalized_name": "面向对象表示法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "面向对象表示法具有良好的兼容性和灵活性",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "框架表示法",
+          "normalized_name": "框架表示法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "常用面向对象表示法与框架表示法结合",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "复杂产品的知识类型多样、结构复杂，单一表示方法表示产品案例存在一定的局限性，一些案例还包含许多非结构化的设计信息，因此，要确定合理的案例表示方法来解决问题。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "复杂产品",
+          "normalized_name": "复杂产品",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "复杂产品的知识类型多样",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "案例表示方法",
+          "normalized_name": "案例表示方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "要确定合理的案例表示方法来解决问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "最相邻近方法适用于案例由特征向量表示的系统。该方法通过计算新旧案例各特征的加权平均和来度量案例的相似性，其优点是方便实用，在案例数量较小的情况检索效率较高，但是案例库中案例数量增加时其检索效率下降。一些研究针对最近相邻法的不足提出了改进：自动武器设计系统[9]结合聚类算法对其进行改进，首先进行案例的聚类，推理时新案例直接根据聚类的均值在聚类中搜索相近案例。产品设计[10]研究结合模糊推理对其进行改进，解决相似度计算中属性的非线性影响和权重的不精确性问题。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "最相邻近方法",
+          "normalized_name": "最相邻近方法",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "最相邻近方法适用于案例由特征向量表示的系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "自动武器设计系统[9]",
+          "normalized_name": "自动武器设计系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "自动武器设计系统[9]结合聚类算法对其进行改进",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "聚类算法",
+          "normalized_name": "聚类算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "自动武器设计系统[9]结合聚类算法对其进行改进",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "产品设计[10]",
+          "normalized_name": "产品设计",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "产品设计[10]研究结合模糊推理对其进行改进",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "模糊推理",
+          "normalized_name": "模糊推理",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "产品设计[10]研究结合模糊推理对其进行改进",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "归纳索引法不断的从案例的各组织成分中归纳出最能将该案例与其它案例区分开来的成分，并对案例库建立索引，将案例组织成一个层次结构。 归纳法适用于案例比较多的情况； 但是归纳索引必须有足够的典型案例，才能进行有效的归纳；",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "归纳索引法",
+          "normalized_name": "归纳索引法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "归纳索引法不断的从案例的各组织成分中归纳出最能将该案例与其它案例区分开来的成分",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "案例库",
+          "normalized_name": "案例库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "对案例库建立索引",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "归纳法",
+          "normalized_name": "归纳法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "归纳法适用于案例比较多的情况",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "如产品包装设计研究[1]中，按产品特性对产品包装的影响程度依次检索，直至得到与该产品各个特性最接近的产品包装设计方案。 该策略常和其它策略一起使用，特别在大型案例库及领域理解还不一致的情况。需要人工确定产品案例中重要影响的特征。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "产品包装设计研究[1]",
+          "normalized_name": "产品包装设计研究",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如产品包装设计研究[1]中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "大型案例库",
+          "normalized_name": "大型案例库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "特别在大型案例库及领域理解还不一致的情况",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "一些研究结合多种检索策略，智能方案设计支持系统[12]中，检索策略结合最近相邻策略和知识引导策略。 首先根据关键指标对案例库进行初步检索，然后将初步检索后得到的各案例指标集轮流与设计方案要求指标集输入神经网络推理机进行相似度计算。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "智能方案设计支持系统[12]",
+          "normalized_name": "智能方案设计支持系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "智能方案设计支持系统[12]中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "最近相邻策略",
+          "normalized_name": "最近相邻策略",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检索策略结合最近相邻策略和知识引导策略",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "知识引导策略",
+          "normalized_name": "知识引导策略",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检索策略结合最近相邻策略和知识引导策略",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e4",
+          "mention": "神经网络推理机",
+          "normalized_name": "神经网络推理机",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact",
+            "Abstract"
+          ],
+          "evidence": "输入神经网络推理机进行相似度计算",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "案例修正就是对案例进行调整、修改，使其更能准确地反映问题的本质特征，并向实际情况逐渐逼近。 案例修正[13-14]的方法主要有4类：替换修正，将旧的案例中的相关值进行替换；",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "案例修正",
+          "normalized_name": "案例修正",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "案例修正就是对案例进行调整、修改",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "替换修正",
+          "normalized_name": "替换修正",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "替换修正，将旧的案例中的相关值进行替换",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "目前实现上述修正方法主要是运用一些人工智能和机器学习的技术，如数据挖掘、约束满意问题解决、基于规则推理等。 其中规则推理是比较常用的方法，在混合推理部分进行介绍。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "数据挖掘",
+          "normalized_name": "数据挖掘",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如数据挖掘、约束满意问题解决、基于规则推理等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "约束满意问题解决",
+          "normalized_name": "约束满意问题解决",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如数据挖掘、约束满意问题解决、基于规则推理等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "基于规则推理",
+          "normalized_name": "基于规则推理",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如数据挖掘、约束满意问题解决、基于规则推理等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "规则推理",
+          "normalized_name": "规则推理",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "规则推理是比较常用的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "现有的复杂产品设计研究理论大多是针对单级案例的检索方法进行讨论的，而实际工程设计中，一个复杂产品案例包含有多个且具有多层次结构的功能，由此很多研究提出多级案例推理算法模型，对案例进行深入检索。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "复杂产品设计研究理论",
+          "normalized_name": "复杂产品设计研究理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现有的复杂产品设计研究理论大多是针对单级案例的检索方法进行讨论的",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "单级案例的检索方法",
+          "normalized_name": "单级案例的检索方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "针对单级案例的检索方法进行讨论的",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "多级案例推理算法模型",
+          "normalized_name": "多级案例推理算法模型",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact",
+            "Abstract"
+          ],
+          "evidence": "很多研究提出多级案例推理算法模型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "类似研究有：大型水轮机结构投标方案设计[17]、大型复杂产品方案设计[18]。 多级案例推理与重用方法的实施，使得只需修改或者替换历史相似设计实例的部分模块就可以得到目标方案，并且有可能在实例不充分的情况下获得有效的设计方案，丰富了复杂产品方案设计与知识重用技术的研究内容。 还有一些学者将案例分为两个层次[19]：原型案例概括设计过程的基本特征并对应一组功能案例；",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "大型水轮机结构投标方案设计[17]",
+          "normalized_name": "大型水轮机结构投标方案设计",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "大型水轮机结构投标方案设计[17]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "大型复杂产品方案设计[18]",
+          "normalized_name": "大型复杂产品方案设计",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "大型复杂产品方案设计[18]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "多级案例推理与重用方法",
+          "normalized_name": "多级案例推理与重用方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "多级案例推理与重用方法的实施",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e4",
+          "mention": "复杂产品方案设计与知识重用技术",
+          "normalized_name": "复杂产品方案设计与知识重用技术",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "丰富了复杂产品方案设计与知识重用技术的研究内容",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e5",
+          "mention": "原型案例",
+          "normalized_name": "原型案例",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "原型案例概括设计过程的基本特征",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e6",
+          "mention": "功能案例",
+          "normalized_name": "功能案例",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对应一组功能案例",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "功能案例检索限制在所选择的原型案例的范围内，推理进行两次检索和匹配，通过限定检索空间提高检索效率。 一些研究引入其它的方法来进行案例库的构建[20]：使用自组织映射神经网络实现案例的动态聚类，并在此基础上构造分层多级案例库，采用粗、细两级检索策略进行相似案例的选择。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "自组织映射神经网络",
+          "normalized_name": "自组织映射神经网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "使用自组织映射神经网络实现案例的动态聚类",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "分层多级案例库",
+          "normalized_name": "分层多级案例库",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "构造分层多级案例库",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "粗、细两级检索策略",
+          "normalized_name": "粗、细两级检索策略",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用粗、细两级检索策略进行相似案例的选择",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "与传统单级案例推理相比较，多级案例推理将复杂产品设计过程中的所有特征属性映射至各级模块中，使整个产品案例的检索分解为各级模块检索，简化了复杂产品的检索难度，因此多级案例推理方法更具灵活性，检索结果更准确合理，能有效提高案例推理系统性能。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "多级案例推理",
+          "normalized_name": "多级案例推理",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "多级案例推理将复杂产品设计过程中的所有特征属性映射至各级模块中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "单级案例推理",
+          "normalized_name": "单级案例推理",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与传统单级案例推理相比较",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "复杂产品",
+          "normalized_name": "复杂产品",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "复杂产品设计过程中的所有特征属性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "案例推理系统",
+          "normalized_name": "案例推理系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "能有效提高案例推理系统性能",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "产品设计问题的求解必须面向结构不良的复杂问题，设计问题的信息常常具有不确定性、模糊性和不完备性。不确定推理的过程就是由初始证据的可信度值和规则强度出发，更新结论的可信度值生成新的证据及其可信度值，重复过程直到得出结论为止[21]。产品设计的推理中最常用的不确定推理方法有：模糊Petri 网，模糊神经网络，定性推理、多色集合理论等。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "模糊Petri 网",
+          "normalized_name": "模糊Petri网",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "模糊Petri 网",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "模糊神经网络",
+          "normalized_name": "模糊神经网络",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "模糊神经网络",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e3",
+          "mention": "定性推理",
+          "normalized_name": "定性推理",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "定性推理",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e4",
+          "mention": "多色集合理论",
+          "normalized_name": "多色集合理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "多色集合理论",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "模糊Petri 网是基于模糊产生式规则的FPN 模型和基于递归的逆向知识推理算法。具有较强的动态分析能力，突出的并发性； 适合描述系统的并发，资源的竞争、同步等特性，因而常用于产品设计中流程的建模、工作流、计算机系统设计等方面[22]。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "模糊Petri 网",
+          "normalized_name": "模糊Petri网",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "模糊Petri 网是基于模糊产生式规则的FPN 模型和基于递归的逆向知识推理算法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "模糊产生式规则",
+          "normalized_name": "模糊产生式规则",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于模糊产生式规则的FPN 模型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "FPN 模型",
+          "normalized_name": "FPN模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于模糊产生式规则的FPN 模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e4",
+          "mention": "基于递归的逆向知识推理算法",
+          "normalized_name": "基于递归的逆向知识推理算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact",
+            "Abstract"
+          ],
+          "evidence": "基于递归的逆向知识推理算法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "提出基于面向对象知识Petri 网的产品设计和规划集成方法； 一些研究结合其它方法针对Petri 网进行改进[24].提出基于分层有色Petri网的设计流程建模方法，既能层次化的描述复杂的建模过程，避免了系统结构过于庞大缺乏柔性，又把简单模型和详细模块有效的结合在一起。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "面向对象知识Petri 网",
+          "normalized_name": "面向对象知识Petri网",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提出基于面向对象知识Petri 网的产品设计和规划集成方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "分层有色Petri网",
+          "normalized_name": "分层有色Petri网",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提出基于分层有色Petri网的设计流程建模方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "神经网络的推理过程实际上是数值计算，神经网络利用遗传算法的学习能力，辅助专家系统自动获取知识，形成决策规则。 把神经网络应用于知识推理，能够充分利用其学习能力、集团运算能力以及大规模并行分布式存储与处理能力，实现求解空间的并行联想搜索和自适应推理。 如桥梁甲板的结构优化问题研究[25]，将人工神经网络与遗传算法相结合，用于桥梁甲板的结构优化问题，通过集成推理，使得到优化方案的时间大大减少。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "神经网络",
+          "normalized_name": "神经网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "神经网络的推理过程实际上是数值计算",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "遗传算法",
+          "normalized_name": "遗传算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact",
+            "Abstract"
+          ],
+          "evidence": "神经网络利用遗传算法的学习能力",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e3",
+          "mention": "专家系统",
+          "normalized_name": "专家系统",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract",
+            "Artifact"
+          ],
+          "evidence": "辅助专家系统自动获取知识",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e4",
+          "mention": "知识推理",
+          "normalized_name": "知识推理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "把神经网络应用于知识推理",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e5",
+          "mention": "人工神经网络",
+          "normalized_name": "人工神经网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将人工神经网络与遗传算法相结合",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e6",
+          "mention": "桥梁甲板的结构优化问题",
+          "normalized_name": "桥梁甲板的结构优化问题",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如桥梁甲板的结构优化问题研究[25]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "如桥梁甲板的结构优化问题研究[25]，将人工神经网络与遗传算法相结合，用于桥梁甲板的结构优化问题，通过集成推理，使得到优化方案的时间大大减少。 但模糊神经网络还存在着一些不足：难以表达知识，需要大量数据，且训练时间长； 依赖于设计特征和特征值的相似性，难以处理事先未训练的异常情况。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "人工神经网络",
+          "normalized_name": "人工神经网络",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将人工神经网络与遗传算法相结合",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e2",
+          "mention": "遗传算法",
+          "normalized_name": "遗传算法",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将人工神经网络与遗传算法相结合",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e3",
+          "mention": "模糊神经网络",
+          "normalized_name": "模糊神经网络",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "模糊神经网络还存在着一些不足",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "定性推理在信息不完全情况下可以给出系统的行为预测及大致的设计方向，能够部分提高概念设计阶段的计算机辅助设计水平。文献[26]研究了定性推理在产品概念设计中的应用，利用定性推理在信息不完全情况下所具有的定性行为预测功能，能够部分提高概念设计阶段的计算机辅助设计水平。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "定性推理",
+          "normalized_name": "定性推理",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "定性推理在信息不完全情况下可以给出系统的行为预测及大致的设计方向",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "文献[26]",
+          "normalized_name": "文献[26]",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "文献[26]研究了定性推理在产品概念设计中的应用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e3",
+          "mention": "产品概念设计",
+          "normalized_name": "产品概念设计",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "定性推理在产品概念设计中的应用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e4",
+          "mention": "概念设计阶段",
+          "normalized_name": "概念设计阶段",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "概念设计阶段的计算机辅助设计水平",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e5",
+          "mention": "计算机辅助设计",
+          "normalized_name": "计算机辅助设计",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "计算机辅助设计水平",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "29",
+      "sentence": "多色集合中元素及集合可通过颜色来描述，用来表示研究对象和其元素的性质，能很好地描述功能方法树中层与层之间的关系，因而用多色集合理论可以作为功能分解和方案求解的推理基础，文献[27］则采用多色集合理论建立工艺规划模型，并结合模糊算法和遗传算法进行决策推理。",
+      "entities": [
+        {
+          "entity_id": "29_e1",
+          "mention": "多色集合",
+          "normalized_name": "多色集合",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "多色集合中元素及集合可通过颜色来描述",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e2",
+          "mention": "功能方法树",
+          "normalized_name": "功能方法树",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "能很好地描述功能方法树中层与层之间的关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e3",
+          "mention": "多色集合理论",
+          "normalized_name": "多色集合理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用多色集合理论可以作为功能分解和方案求解的推理基础",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e4",
+          "mention": "模糊算法",
+          "normalized_name": "模糊算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "结合模糊算法和遗传算法进行决策推理",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e5",
+          "mention": "遗传算法",
+          "normalized_name": "遗传算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "结合模糊算法和遗传算法进行决策推理",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "随着系统要求的提高，单个推理方法逐渐不能满足推理要求，混合推理是使用两种或两种以上的推理技术，通过一定的信息交换和相互协作共同生成概念设计优化方案，解决单一推理方法效率低下、不能快速获得最优方案的缺点。",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "混合推理",
+          "normalized_name": "混合推理",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "混合推理是使用两种或两种以上的推理技术",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "推理技术",
+          "normalized_name": "推理技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用两种或两种以上的推理技术",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e3",
+          "mention": "概念设计优化方案",
+          "normalized_name": "概念设计优化方案",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "共同生成概念设计优化方案",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "31",
+      "sentence": "类似研究有计算机辅助产品的过程设计[30]。 但规则推理进行案例修正主要存在以下问题：如何保证规则的一致性及完备性； 如何提高推理速度等。",
+      "entities": [
+        {
+          "entity_id": "31_e1",
+          "mention": "计算机辅助产品的过程设计",
+          "normalized_name": "计算机辅助产品的过程设计",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "类似研究有计算机辅助产品的过程设计[30]",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e2",
+          "mention": "规则推理",
+          "normalized_name": "规则推理",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "规则推理进行案例修正主要存在以下问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "32",
+      "sentence": "如规则推理解决参数之间的关联问题，如斗式提升机设计专家系统[31]研究，利用规则推理初算一个可行解，再根据这个可行解进行案例推理。 针对复杂产品中的案例推理和规则推理相结合可以处理不同的知识，产品设计中可用规则推理定位需求再进行案例推理。",
+      "entities": [
+        {
+          "entity_id": "32_e1",
+          "mention": "斗式提升机设计专家系统[31]",
+          "normalized_name": "斗式提升机设计专家系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如斗式提升机设计专家系统[31]研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e2",
+          "mention": "规则推理",
+          "normalized_name": "规则推理",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用规则推理初算一个可行解",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e3",
+          "mention": "案例推理",
+          "normalized_name": "案例推理",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "再根据这个可行解进行案例推理",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "33",
+      "sentence": "结合神经网络和案例推理主要有两种方式：一是利用与求解问题及初始条件相关的案例训练神经网络，神经网络的运算结果还原后就是案例推理的结果，如[32]产品设计系统，利用神经网络对案例训练，能增强案例推理的自学习，自适应能力。二是将神经网络用于案例的相似度计算：如[33]导弹产品设计，将知识表示成广义模糊产生式规则，然后将规则转化为神经网络，通过神经网络对样本的学习自动修正网络的拓扑结构和连接权值。 经过神经网络计算后的输出即是当前设计任务与各案例的相似度。",
+      "entities": [
+        {
+          "entity_id": "33_e1",
+          "mention": "案例推理",
+          "normalized_name": "案例推理",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "结合神经网络和案例推理主要有两种方式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e2",
+          "mention": "神经网络",
+          "normalized_name": "神经网络",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用与求解问题及初始条件相关的案例训练神经网络",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e3",
+          "mention": "[32]产品设计系统",
+          "normalized_name": "[32]产品设计系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如[32]产品设计系统",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e4",
+          "mention": "[33]导弹产品设计",
+          "normalized_name": "[33]导弹产品设计",
+          "candidate_l3": "conference_paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如[33]导弹产品设计",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为论文或项目"
+        },
+        {
+          "entity_id": "33_e5",
+          "mention": "广义模糊产生式规则",
+          "normalized_name": "广义模糊产生式规则",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将知识表示成广义模糊产生式规则",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "34",
+      "sentence": "由于本体具有共享和重用的特性，本体技术也逐渐应用到产品设计的支持系统中。通过语义技术，信息能被计算机本身所理解，计算机能在理解的基础上进行推理操作。本体推理的目标一方面是从已知的知识中推理隐含的知识，另一方面是冲突检测、优化表达等。",
+      "entities": [
+        {
+          "entity_id": "34_e1",
+          "mention": "本体",
+          "normalized_name": "本体",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "由于本体具有共享和重用的特性",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e2",
+          "mention": "本体技术",
+          "normalized_name": "本体技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本体技术也逐渐应用到产品设计的支持系统中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e3",
+          "mention": "语义技术",
+          "normalized_name": "语义技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过语义技术，信息能被计算机本身所理解",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e4",
+          "mention": "本体推理",
+          "normalized_name": "本体推理",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本体推理的目标一方面是从已知的知识中推理隐含的知识",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "35",
+      "sentence": "SPARQL偏重于对本体进行查询，Jena推理引擎支持查询。 这些方法无法单纯的应用到复杂产品的推理中，仅仅使用本体无法全面的对复杂产品领域的知识进行表示和推理，因此常常将语义网技术结合其它方法来进行知识推理。",
+      "entities": [
+        {
+          "entity_id": "35_e1",
+          "mention": "SPARQL",
+          "normalized_name": "SPARQL",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "SPARQL偏重于对本体进行查询",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e2",
+          "mention": "Jena推理引擎",
+          "normalized_name": "Jena推理引擎",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Jena推理引擎支持查询",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e3",
+          "mention": "语义网技术",
+          "normalized_name": "语义网技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将语义网技术结合其它方法来进行知识推理",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "36",
+      "sentence": "有些学者针对本体表示和案例推理的方法进行改进，如[40]用本体描述复杂产品案例的子案例，以框架组织子案例成复杂产品案例，采用语义相似度计算子案例的相似度，采用最近相邻策略来进行整体案例的相似度计算。 与传统案例知识的表示相比，结合语义网的案例表示方法具有如下特点：良好可扩展性，采用本体进行表示，这种案例组织结构自然，结构清晰； 数据与方法相独立，本体数据与案例推理方法相独立；",
+      "entities": [
+        {
+          "entity_id": "36_e1",
+          "mention": "本体",
+          "normalized_name": "本体",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "针对本体表示和案例推理的方法进行改进",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e2",
+          "mention": "案例推理",
+          "normalized_name": "案例推理",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "针对本体表示和案例推理的方法进行改进",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e3",
+          "mention": "语义相似度",
+          "normalized_name": "语义相似度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用语义相似度计算子案例的相似度",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e4",
+          "mention": "最近相邻策略",
+          "normalized_name": "最近相邻策略",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用最近相邻策略来进行整体案例的相似度计算",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e5",
+          "mention": "语义网",
+          "normalized_name": "语义网",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "结合语义网的案例表示方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "37",
+      "sentence": "对产品设计来说需要用到各种知识，经验型和案例型知识通常可以用案例推理来解决，而启发式知识、过程知识、约束知识等解决产品结构参数设计比较适合用规则推理来解决。产品设计中存在一些模糊知识，无法用确定的知识表示方法进行表示，因而适用不确定推理进行表示。而混合推理能够结合多种方法的优势，能够弥补单一推理方法的缺陷，也成为近年来复杂产品知识表示研究的重点。",
+      "entities": [
+        {
+          "entity_id": "37_e1",
+          "mention": "案例推理",
+          "normalized_name": "案例推理",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "经验型和案例型知识通常可以用案例推理来解决",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e2",
+          "mention": "规则推理",
+          "normalized_name": "规则推理",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "启发式知识、过程知识、约束知识等解决产品结构参数设计比较适合用规则推理来解决",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e3",
+          "mention": "不确定推理",
+          "normalized_name": "不确定推理",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "适用不确定推理进行表示",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e4",
+          "mention": "混合推理",
+          "normalized_name": "混合推理",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "混合推理能够结合多种方法的优势",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e5",
+          "mention": "复杂产品知识表示",
+          "normalized_name": "复杂产品知识表示",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "复杂产品知识表示研究的重点",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "38",
+      "sentence": "随着语义网的发展，结合语义网技术的复杂产品推理也成为一个新的研究方向，复杂产品设计中存在大量概念和复杂的关系，通过语义技术可以使计算机在理解的基础上推理出隐含的语义关联，维护知识的一致性，实现知识的共享与重用。",
+      "entities": [
+        {
+          "entity_id": "38_e1",
+          "mention": "语义网",
+          "normalized_name": "语义网",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着语义网的发展",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e2",
+          "mention": "语义网技术",
+          "normalized_name": "语义网技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "结合语义网技术的复杂产品推理",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e3",
+          "mention": "复杂产品推理",
+          "normalized_name": "复杂产品推理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "结合语义网技术的复杂产品推理也成为一个新的研究方向",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e4",
+          "mention": "语义关联",
+          "normalized_name": "语义关联",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "推理出隐含的语义关联",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e5",
+          "mention": "知识的一致性",
+          "normalized_name": "知识的一致性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "维护知识的一致性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e6",
+          "mention": "知识的共享与重用",
+          "normalized_name": "知识的共享与重用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现知识的共享与重用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

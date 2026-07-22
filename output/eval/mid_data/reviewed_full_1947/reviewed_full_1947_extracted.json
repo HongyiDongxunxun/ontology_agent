@@ -1,0 +1,1252 @@
+{
+  "base_name": "reviewed_full_1947",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "[Abstract）In this information exploding time，people are accustomed themselves to make use of various searching engine for certain infomation，but the findingsare not always satisfactory.This paper，analyzing searching resultsof diferent subject keywords，investigatesand analyzes theapplication of metadata tagKeywords，and puts forward some suggestion on how to improve the searching eficiency.",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "metadata tagKeywords",
+          "normalized_name": "metadata tagKeywords",
+          "candidate_l3": "metadata_schema",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "investigatesand analyzes theapplication of metadata tagKeywords",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为元数据标签的泛称，但原文以专有名词形式出现，按召回优先原则抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "如何快速、全面、准确地获得人们需要的信息，特别是学术性信息，已成为人们越来越关注的问题。 元数据，正是在这种条件下应运而生，通过元数据，可以在一定程度上解决数据的管理、数据的使用，数据的共享，数据的检索等问题，从根本上提高网络信息资源组织的质量，从而提高信息检索的质量。目前用户检索信息习惯于用关键词途径来查找，本文通过元数据标签Keywords在利用搜索引擎检索的网页中的使用现状调查研究，探讨提高网络信息检索效率的方法。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "元数据",
+          "normalized_name": "元数据",
+          "candidate_l3": "metadata_schema",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "元数据，正是在这种条件下应运而生",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "元数据标签Keywords",
+          "normalized_name": "元数据标签Keywords",
+          "candidate_l3": "metadata_schema",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "本文通过元数据标签Keywords在利用搜索引擎检索的网页中的使用现状调查研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "搜索引擎",
+          "normalized_name": "搜索引擎",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用搜索引擎检索的网页",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "未指明具体搜索引擎名称，但图情领域放宽规则下作为信息系统可抽取"
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "关键词",
+          "normalized_name": "关键词",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户检索信息习惯于用关键词途径来查找",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "但是网络蜘蛛带回来的 $\\mathrm { h m l }$ 语言的网页没有足够的支持自动分类和内容检索的元数据信息。 搜索引擎查找到的结果往往很多，但真正有用的信息却很少，查准率比较低，用户必须花费大量时间识别有价值的信息。 例如在搜索引擎google 中检索“知识经济”，结果约为1250 000个相关网页，其中包括了大量的非相关结果，如“http://www·dsa· $\\mathrm { c n } ^ { / }$ 直销人俱乐部”等。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "网络蜘蛛",
+          "normalized_name": "网络蜘蛛",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "网络蜘蛛带回来的html语言的网页",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "搜索引擎",
+          "normalized_name": "搜索引擎",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "搜索引擎查找到的结果往往很多",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处为泛称，但图情领域放宽规则，作为系统类型可抽取"
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "google",
+          "normalized_name": "Google",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在搜索引擎google中检索",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "知识经济",
+          "normalized_name": "知识经济",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检索“知识经济”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "http://www·dsa·cn/直销人俱乐部",
+          "normalized_name": "http://www.dsa.cn/直销人俱乐部",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如“http://www·dsa·cn/直销人俱乐部”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "URL含乱码，但可识别为具体网站"
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "任何网页只要在浏览器上打开其源代码，其HTML 就展现在眼前了。 元数据标签即 META 标签，用以定义元数据，是HTML语言head区的一个辅助性标签，描述一个HTML 网页文档的属性，其中 META 标签中的Keywords是说明该网页的核心关键词，这项标签是被几大英文搜索引擎（Altavisa、Infoseek 和Webcrawler）声明支持的元数据标签，而且是在许四洋的调查中排在英文网页第一位的元数据标签种类，其应用率远远高于其他标签种类。它对一个网站搜索引擎友好状况以及网站/网页是否可以利用搜索引擎自然检索获得较好效果起到重要的作用。 用户检索信息习惯于用关键词途径来查找，如果网站的网页中使用这个语句，搜索引擎就能及时地发现该网站，把网站的关键字加入到自己的数据库中，用户就能通过搜索引擎搜索到该网站，增加网站的点击率。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "HTML",
+          "normalized_name": "HTML",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "任何网页只要在浏览器上打开其源代码，其HTML 就展现在眼前了",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "META 标签",
+          "normalized_name": "META标签",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "元数据标签即 META 标签，用以定义元数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "Keywords",
+          "normalized_name": "Keywords",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "META 标签中的Keywords是说明该网页的核心关键词",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "Altavisa",
+          "normalized_name": "Altavisa",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "几大英文搜索引擎（Altavisa、Infoseek 和Webcrawler）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e5",
+          "mention": "Infoseek",
+          "normalized_name": "Infoseek",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "几大英文搜索引擎（Altavisa、Infoseek 和Webcrawler）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e6",
+          "mention": "Webcrawler",
+          "normalized_name": "Webcrawler",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "几大英文搜索引擎（Altavisa、Infoseek 和Webcrawler）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e7",
+          "mention": "许四洋",
+          "normalized_name": "许四洋",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在许四洋的调查中排在英文网页第一位的元数据标签种类",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "根据网络调查机构艾瑞（iResearch）的最新数据显示，选取了2005 年中国搜索引擎市场占有率较高且最受用户欢迎的5个中文搜索引擎：百度、谷歌、雅虎中国、搜狐、中搜； 选取国外比较有影响力的5个英文搜索引擎：Al-tavista、Hotbot、Overture、Excite、Yahoo。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "艾瑞（iResearch）",
+          "normalized_name": "艾瑞（iResearch）",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "根据网络调查机构艾瑞（iResearch）的最新数据显示",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "百度",
+          "normalized_name": "百度",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "选取了2005 年中国搜索引擎市场占有率较高且最受用户欢迎的5个中文搜索引擎：百度、谷歌、雅虎中国、搜狐、中搜",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "谷歌",
+          "normalized_name": "谷歌",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "选取了2005 年中国搜索引擎市场占有率较高且最受用户欢迎的5个中文搜索引擎：百度、谷歌、雅虎中国、搜狐、中搜",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "雅虎中国",
+          "normalized_name": "雅虎中国",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "选取了2005 年中国搜索引擎市场占有率较高且最受用户欢迎的5个中文搜索引擎：百度、谷歌、雅虎中国、搜狐、中搜",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "搜狐",
+          "normalized_name": "搜狐",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "选取了2005 年中国搜索引擎市场占有率较高且最受用户欢迎的5个中文搜索引擎：百度、谷歌、雅虎中国、搜狐、中搜",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e6",
+          "mention": "中搜",
+          "normalized_name": "中搜",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "选取了2005 年中国搜索引擎市场占有率较高且最受用户欢迎的5个中文搜索引擎：百度、谷歌、雅虎中国、搜狐、中搜",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e7",
+          "mention": "Al-tavista",
+          "normalized_name": "Al-tavista",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "选取国外比较有影响力的5个英文搜索引擎：Al-tavista、Hotbot、Overture、Excite、Yahoo",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e8",
+          "mention": "Hotbot",
+          "normalized_name": "Hotbot",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "选取国外比较有影响力的5个英文搜索引擎：Al-tavista、Hotbot、Overture、Excite、Yahoo",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e9",
+          "mention": "Overture",
+          "normalized_name": "Overture",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "选取国外比较有影响力的5个英文搜索引擎：Al-tavista、Hotbot、Overture、Excite、Yahoo",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e10",
+          "mention": "Excite",
+          "normalized_name": "Excite",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "选取国外比较有影响力的5个英文搜索引擎：Al-tavista、Hotbot、Overture、Excite、Yahoo",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e11",
+          "mention": "Yahoo",
+          "normalized_name": "Yahoo",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "选取国外比较有影响力的5个英文搜索引擎：Al-tavista、Hotbot、Overture、Excite、Yahoo",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "统计搜索引擎检索的网页中含Keywords 的网页数量及使用率，网页使用的元数据标签的数量情况说明元数据对搜索引擎的支持力度。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "统计搜索引擎",
+          "normalized_name": "统计搜索引擎",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "统计搜索引擎检索的网页中含Keywords 的网页数量及使用率",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛指搜索引擎类型，但根据图情领域放宽规则，有名称的系统应抽取"
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "Keywords",
+          "normalized_name": "Keywords",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "统计搜索引擎检索的网页中含Keywords 的网页数量及使用率",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "元数据标签",
+          "normalized_name": "元数据标签",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "网页使用的元数据标签的数量情况说明元数据对搜索引擎的支持力度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "元数据",
+          "normalized_name": "元数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "元数据对搜索引擎的支持力度",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "从表1、表2的统计可知，中英文网页使用元数据标签 Keywords 的情况分别为 $3 9 . 8 0 \\%$ 和 $5 7 . 2 0 \\%$ ，在英文网页中的使用情况优于中文网页，与许四洋 2001年统计的 Key-words 在中文网页使用率 $7 . 7 8 \\%$ 相比，中文网页使用 Keywords有较大幅度的提高，说明中文网页的制作者已开始注重元数据标签的使用，但与英文网页使用Keywords的情况相比还有一定差距，说明元数据标签在中文网页的使用率仍较低，普及力度仍不够。元数据对中文搜索引擎的支持力度明显小于英文搜索引擎。造成这种现状的原因是：资源提供者不了解甚至不知道元数据； 资源提供者不重视元数据标签的作用；",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "元数据标签 Keywords",
+          "normalized_name": "元数据标签 Keywords",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "中英文网页使用元数据标签 Keywords 的情况",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "许四洋",
+          "normalized_name": "许四洋",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "与许四洋 2001年统计的 Key-words 在中文网页使用率 7.78% 相比",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "2001年",
+          "normalized_name": "2001年",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "许四洋 2001年统计的 Key-words 在中文网页使用率 7.78%",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "时间点，非严格事件，但可视为阶段标记"
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "Key-words",
+          "normalized_name": "Key-words",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "许四洋 2001年统计的 Key-words 在中文网页使用率 7.78%",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e5",
+          "mention": "元数据",
+          "normalized_name": "元数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "元数据对中文搜索引擎的支持力度明显小于英文搜索引擎",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e6",
+          "mention": "中文搜索引擎",
+          "normalized_name": "中文搜索引擎",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "元数据对中文搜索引擎的支持力度明显小于英文搜索引擎",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "泛指中文搜索引擎类别，非具体系统名称，但图情领域放宽规则下可视为具体类别"
+        },
+        {
+          "entity_id": "8_e7",
+          "mention": "英文搜索引擎",
+          "normalized_name": "英文搜索引擎",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "元数据对中文搜索引擎的支持力度明显小于英文搜索引擎",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "同上，泛指类别"
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "元数据标签Keywords 的值是概括说明网页内容的一组关键词，检索词被元数据标签命中是指Keywords值中有一个关键词为检索词，即网页作者提供的Keywords 中确实包括了检索入口词，说明该搜索引擎支持作者提供的元数据标签Keywords 中的内容。 Keywords 的值被搜索引擎检索的网页命中的情况，说明该搜索引擎支持元数据标签的力度。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "元数据标签Keywords",
+          "normalized_name": "元数据标签Keywords",
+          "candidate_l3": "metadata_schema",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "元数据标签Keywords 的值是概括说明网页内容的一组关键词",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "检索词",
+          "normalized_name": "检索词",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检索词被元数据标签命中是指Keywords值中有一个关键词为检索词",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "检索入口词",
+          "normalized_name": "检索入口词",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "即网页作者提供的Keywords 中确实包括了检索入口词",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "从表3、表4可知，含Keywords的中英文网页中检索词被命中的比率为 $5 4 . 2 7 \\%$ 和 $5 3 . 1 5 \\%$ ，说明许多网页制作者虽然使用了元数据标签Keywords，但由于不能正确描述Keywords的值，用户所使用的关键词不能被元数据标签命中，导致许多相关网页被搜索引擎的“蜘蛛”漏抓或误抓; 另一方面，由于同义词、近义词的原因也影响了搜索引擎的检索效率。 因各搜索引擎分别调查了100个网页，从表中可知，谷歌、百度、搜狐、雅虎和中搜这5个中文搜索引擎对元数据标签Keywords 的支持力度分别为 $21 \\%$ 、 $19 \\%$ 、$26 \\%$ 、 $20 \\%$ 和 $22 \\%$ ；",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "Keywords",
+          "normalized_name": "Keywords",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "含Keywords的中英文网页中检索词被命中的比率",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "元数据标签Keywords",
+          "normalized_name": "元数据标签Keywords",
+          "candidate_l3": "metadata_schema",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "许多网页制作者虽然使用了元数据标签Keywords",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "搜索引擎",
+          "normalized_name": "搜索引擎",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "导致许多相关网页被搜索引擎的“蜘蛛”漏抓或误抓",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "泛称，但图情领域放宽规则：有名称的搜索引擎应抽取"
+        },
+        {
+          "entity_id": "10_e4",
+          "mention": "谷歌",
+          "normalized_name": "谷歌",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "谷歌、百度、搜狐、雅虎和中搜这5个中文搜索引擎",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e5",
+          "mention": "百度",
+          "normalized_name": "百度",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "谷歌、百度、搜狐、雅虎和中搜这5个中文搜索引擎",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e6",
+          "mention": "搜狐",
+          "normalized_name": "搜狐",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "谷歌、百度、搜狐、雅虎和中搜这5个中文搜索引擎",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e7",
+          "mention": "雅虎",
+          "normalized_name": "雅虎",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "谷歌、百度、搜狐、雅虎和中搜这5个中文搜索引擎",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e8",
+          "mention": "中搜",
+          "normalized_name": "中搜",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "谷歌、百度、搜狐、雅虎和中搜这5个中文搜索引擎",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "Altavista、Hotbot、Overture、Excite和Yahoo 这5个英文搜索引擎对元数据标签Keywords 的支持力度分别为 $33 \\%$ 、 $28 \\%$ 、 $21 \\%$ 、 $3 5 \\%$ 和 $3 5 \\%$ 。 显然，中文搜索引擎对元数据的支持力度小于英文搜索引擎。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "Altavista",
+          "normalized_name": "Altavista",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Altavista、Hotbot、Overture、Excite和Yahoo 这5个英文搜索引擎",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "Hotbot",
+          "normalized_name": "Hotbot",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Altavista、Hotbot、Overture、Excite和Yahoo 这5个英文搜索引擎",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "Overture",
+          "normalized_name": "Overture",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Altavista、Hotbot、Overture、Excite和Yahoo 这5个英文搜索引擎",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "Excite",
+          "normalized_name": "Excite",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Altavista、Hotbot、Overture、Excite和Yahoo 这5个英文搜索引擎",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "Yahoo",
+          "normalized_name": "Yahoo",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Altavista、Hotbot、Overture、Excite和Yahoo 这5个英文搜索引擎",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e6",
+          "mention": "元数据标签Keywords",
+          "normalized_name": "元数据标签Keywords",
+          "candidate_l3": "metadata_schema",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "对元数据标签Keywords 的支持力度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "元数据标签中的Keywords 是说明该网页的核心关键词，Keywords值中所含关键词个数说明其标引的力度，一定数量的关键词能较好的反映网页的内容，从而能提高检索效率。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "Keywords",
+          "normalized_name": "Keywords",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "元数据标签中的Keywords 是说明该网页的核心关键词",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "从表5、表6可知，含元数据标签Keywords的中英文网页中Keywords 的值分别平均标引了10个、14个关键词。 调查中发现有的网页制作者为了提高自己的被点击率，重复罗列关键词，甚至罗列许多与网页内容无关的词，这也是造成目前有的搜索引擎不愿意使用元数据的原因。 如在“中搜”中查找有关本体的信息，检索到一条记录“本体一中国·长江电气股份有限公司”，查其Keywords 的值竟然有195 个关键词。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "元数据标签Keywords",
+          "normalized_name": "元数据标签Keywords",
+          "candidate_l3": "metadata_schema",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "含元数据标签Keywords的中英文网页中Keywords 的值分别平均标引了10个、14个关键词",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "中搜",
+          "normalized_name": "中搜",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如在“中搜”中查找有关本体的信息",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "本体一中国·长江电气股份有限公司",
+          "normalized_name": "本体一中国·长江电气股份有限公司",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "检索到一条记录“本体一中国·长江电气股份有限公司”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为网页标题或文档名称，按论文兜底处理"
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "如在“中搜”中查找有关本体的信息，检索到一条记录“本体一中国·长江电气股份有限公司”，查其Keywords 的值竟然有195 个关键词。 有的网页虽然含有K标签，但由于没有描述值的内容而形同虚设，如 $<$ metaname $= ^ { \\prime \\prime }$ keywords\"content$= ^ { \\prime \\prime \\prime \\prime } / >$ ，<meta name $= ^ { \\prime \\prime }$ Keywords content $= ^ { \\prime \\prime }$ 要添加的检索关键词 $^ { \\prime \\prime } >$ 等，因而严重影响了搜索引擎的检索效率。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "中搜",
+          "normalized_name": "中搜",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如在“中搜”中查找有关本体的信息",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "本体一中国·长江电气股份有限公司",
+          "normalized_name": "本体一中国·长江电气股份有限公司",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "检索到一条记录“本体一中国·长江电气股份有限公司”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "Keywords",
+          "normalized_name": "Keywords",
+          "candidate_l3": "metadata_schema",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "查其Keywords 的值竟然有195 个关键词",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e4",
+          "mention": "K标签",
+          "normalized_name": "K标签",
+          "candidate_l3": "metadata_schema",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "有的网页虽然含有K标签",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e5",
+          "mention": "搜索引擎",
+          "normalized_name": "搜索引擎",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "严重影响了搜索引擎的检索效率",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处为泛指，但图情领域放宽规则，有名称的搜索引擎应抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "搜索引擎作为一种网络检索工具，在一定程度上解决了人们在网络上查找信息的问题，但与联机和光盘检索工具的查准率相比，搜索引擎由于缺乏对网络信息自身的质量控制，缺乏对受控语言的使用，导致网络检索的低查准率。从研究的结果中我们可以看出，目前网络的网站大都忽视对元数据的描述，使得利用其检索的结果显得杂乱无章，搜索引擎要结合使用元数据来提高网页的可索性和标引质量。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "搜索引擎",
+          "normalized_name": "搜索引擎",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "搜索引擎作为一种网络检索工具",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "联机和光盘检索工具",
+          "normalized_name": "联机和光盘检索工具",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "与联机和光盘检索工具的查准率相比",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "联机和光盘检索工具为泛称，但图情领域放宽规则，作为具体检索工具类型抽取"
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "受控语言",
+          "normalized_name": "受控语言",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "缺乏对受控语言的使用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "元数据",
+          "normalized_name": "元数据",
+          "candidate_l3": "metadata_schema",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "忽视对元数据的描述",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "由于目前还没有统一的元数据标准出台，导致元数据的普及有一定难度，各自为政的局面难以使网页的制作者提供标准、统一的资源描述，难以满足用户检索文献的需求。元数据的研究人员应该尽快建立元数据标准，促进网络信息资源的规范组织，做好其定义及使用方法的普及工作，使网页/网站的制作者能够掌握基本的资源描述方法。同时大力宣传元数据标签在提高资源的访问数量和检索命中率中所起的作用，使网页的制作者充分认识到利用元数据标签的重要性，在发布网上信息资源的同时，也主动提供对资源的描述。计算机及网络界人士应尽快开发出功能齐全、使用方便的元数据著录系统，提供网上信息资源的描述工具，使资源的描述工作自动化，为资源的提供者创造方便条件。作为资源的提供者，在组织信息内容的同时，也应该关注资源的描述工作，因为这项工作不仅方便了网上用户，也会使资源提供者本身获得收益。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "元数据标准",
+          "normalized_name": "元数据标准",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "由于目前还没有统一的元数据标准出台",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "元数据标签",
+          "normalized_name": "元数据标签",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大力宣传元数据标签在提高资源的访问数量和检索命中率中所起的作用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "元数据著录系统",
+          "normalized_name": "元数据著录系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "计算机及网络界人士应尽快开发出功能齐全、使用方便的元数据著录系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "目前大部分用户习惯用关键词途径来检索文献信息，而衡量一个检索系统检索效率的主要指标是：检全率和检准率，词汇控制则是检索系统检索效率的语言保证。 后控制词表就是为了解决检准率太低的问题而产生的。 所谓后控制，就是“标引不控制 $^ +$ 检索控制”模式。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "关键词途径",
+          "normalized_name": "关键词途径",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大部分用户习惯用关键词途径来检索文献信息",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "检索系统",
+          "normalized_name": "检索系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "衡量一个检索系统检索效率的主要指标",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但图情领域放宽规则：检索系统作为信息系统类型可抽取"
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "检全率",
+          "normalized_name": "检全率",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检全率和检准率",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "检准率",
+          "normalized_name": "检准率",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检全率和检准率",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e5",
+          "mention": "词汇控制",
+          "normalized_name": "词汇控制",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "词汇控制则是检索系统检索效率的语言保证",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e6",
+          "mention": "后控制词表",
+          "normalized_name": "后控制词表",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "后控制词表就是为了解决检准率太低的问题而产生的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e7",
+          "mention": "标引不控制 + 检索控制",
+          "normalized_name": "标引不控制 + 检索控制",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "所谓后控制，就是“标引不控制 + 检索控制”模式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "用户通过输入某一概念的任意词的同义词作为检索词，经过后控制词表找出其标识词，然后通过对所有同义词的匹配查找，检出符合条件的记录。 后控制词表的建立，大大提高了网络信息的检全率和检准率，同时也使得计算机自动标引更加切实可行。该词表应该具有以下特点：不由网页/网站的制作者使用，网上用户也不必知道这个词表； 收录的词应该有尽可能多的用代关系，包括同义词、近义词、易错词等;",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "后控制词表",
+          "normalized_name": "后控制词表",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "经过后控制词表找出其标识词",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "标识词",
+          "normalized_name": "标识词",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "经过后控制词表找出其标识词",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "同义词",
+          "normalized_name": "同义词",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过对所有同义词的匹配查找",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e4",
+          "mention": "网络信息",
+          "normalized_name": "网络信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大大提高了网络信息的检全率和检准率",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可视为泛化概念，但图情领域有独立学术命名"
+        },
+        {
+          "entity_id": "18_e5",
+          "mention": "检全率",
+          "normalized_name": "检全率",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大大提高了网络信息的检全率和检准率",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e6",
+          "mention": "检准率",
+          "normalized_name": "检准率",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大大提高了网络信息的检全率和检准率",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e7",
+          "mention": "计算机自动标引",
+          "normalized_name": "计算机自动标引",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使得计算机自动标引更加切实可行",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e8",
+          "mention": "近义词",
+          "normalized_name": "近义词",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括同义词、近义词、易错词等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e9",
+          "mention": "易错词",
+          "normalized_name": "易错词",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括同义词、近义词、易错词等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

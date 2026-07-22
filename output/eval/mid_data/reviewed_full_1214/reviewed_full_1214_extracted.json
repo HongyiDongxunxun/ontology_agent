@@ -1,0 +1,863 @@
+{
+  "base_name": "reviewed_full_1214",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "中国（本文只针对中国大陆地区）软件产业的发展是国家发展计划关注的重点项目之一。 软件产业规模可否持续发展，与可运用的软件人力资源息息相关，而软件产业规模与人力资源的关系和未来趋势的变化却不易把握。其主要困难有：衡量的影响因素不容易全面理清，测量变量的数据不易收集齐全，变量之间非线性关系，以及测量的变量涉及时间和周期的延迟。仅单纯的由线性回归预测模型，预测软件产业规模和人力资源之间的关系，不容易衡量两者之间的复杂性。 为此，本研究尝试采用系统动力学分析方法，构建软件产业规模和人力资源的动态模型，然后据此推测未来的软件产业规模与人力资源的变化趋势，并以动力系统模拟的结果做为据，进一步讨论可能影响软件产业发展的问题以及政府的对策和角色。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "中国",
+          "normalized_name": "中国",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "中国（本文只针对中国大陆地区）软件产业的发展",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可视为地域实体，但作为抽象实体中的discipline"
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "软件产业",
+          "normalized_name": "软件产业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "软件产业的发展是国家发展计划关注的重点项目之一",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "国家发展计划",
+          "normalized_name": "国家发展计划",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "国家发展计划关注的重点项目之一",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "软件人力资源",
+          "normalized_name": "软件人力资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与可运用的软件人力资源息息相关",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e5",
+          "mention": "线性回归预测模型",
+          "normalized_name": "线性回归预测模型",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "仅单纯的由线性回归预测模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e6",
+          "mention": "系统动力学分析方法",
+          "normalized_name": "系统动力学分析方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本研究尝试采用系统动力学分析方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e7",
+          "mention": "动态模型",
+          "normalized_name": "动态模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "构建软件产业规模和人力资源的动态模型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e8",
+          "mention": "动力系统模拟",
+          "normalized_name": "动力系统模拟",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以动力系统模拟的结果做为据",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "软件产业的规模仍在持续上升，依据国家发改委高技术产业司统计，2006年1至9月累计软件产值已达2677亿人民币。 可以预期，2006整年度软件产业产值将突破5000亿元人民币。按此趋势，若无重大环境冲击，规模还将继续扩大。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "国家发改委高技术产业司",
+          "normalized_name": "国家发改委高技术产业司",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "依据国家发改委高技术产业司统计",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "软件产业",
+          "normalized_name": "软件产业",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "软件产业的规模仍在持续上升",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "软件产业规模的迅速扩大，使其对人力资源的需求也更为急迫。 根据2002年9月国务院办公厅转发、国务院信息化工作办公室制定的《振兴软件产业行动纲要》，到2005年，中国软件专业人才应达到80万人，人才结构比例：高级软件人才6万人，中级软件人才28万人，初级软件人才46万人。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "《振兴软件产业行动纲要》",
+          "normalized_name": "《振兴软件产业行动纲要》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "根据2002年9月国务院办公厅转发、国务院信息化工作办公室制定的《振兴软件产业行动纲要》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "国务院办公厅",
+          "normalized_name": "国务院办公厅",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国务院办公厅转发",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "国务院信息化工作办公室",
+          "normalized_name": "国务院信息化工作办公室",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国务院信息化工作办公室制定的《振兴软件产业行动纲要》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "根据2002年9月国务院办公厅转发、国务院信息化工作办公室制定的《振兴软件产业行动纲要》，到2005年，中国软件专业人才应达到80万人，人才结构比例：高级软件人才6万人，中级软件人才28万人，初级软件人才46万人。 而依照信息产业部统计的数据，2005年软件从业人员的人数约90万人，远超过该《纲要》预定的指标。再以2000年软件产业规模600亿人民币增长至2005年的3900亿人民币的规模做相对比较，合理的软件产业人口应为120万人。以此推断，2005年实际从业人数仍缺30万人。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "国务院办公厅",
+          "normalized_name": "国务院办公厅",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国务院办公厅转发",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "国务院信息化工作办公室",
+          "normalized_name": "国务院信息化工作办公室",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国务院信息化工作办公室制定的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "《振兴软件产业行动纲要》",
+          "normalized_name": "《振兴软件产业行动纲要》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "制定的《振兴软件产业行动纲要》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "信息产业部",
+          "normalized_name": "信息产业部",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "信息产业部统计的数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "中国软件人才流失一直十分严重。 整体而言，离职、转业、下岗退休，是影响人力积累的因素。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "中国软件人才流失",
+          "normalized_name": "中国软件人才流失",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "中国软件人才流失一直十分严重",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "大学文化以上程度的毕业学生和科研人员出国留学，也是软件人才流失不容忽视的一条渠道。 2004年2月16日中国教育部公布的2003年度留学人员情况统计结果指出：从1978年到2003年，各类出国留学人员总数达70.02万人，留学回国人员总数达17.28万人。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "中国教育部",
+          "normalized_name": "中国教育部",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "2004年2月16日中国教育部公布的2003年度留学人员情况统计结果",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "2003年度留学人员情况统计结果",
+          "normalized_name": "2003年度留学人员情况统计结果",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "中国教育部公布的2003年度留学人员情况统计结果",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "其中 2001年至2005年已有相关的历史数据可供验证。 然后，比对2001年至2005年的历史数据，检验本文的系统动力模型的效度，认定模拟出的结果与历史数据的趋势相符后，再进一步从2001年至2016年，模拟出长期的趋势。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "系统动力模型",
+          "normalized_name": "系统动力模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检验本文的系统动力模型的效度",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "按经济运行的常态推论，随着软件产业规模增长，对于软件从业人员的需求随之增加，此为正向因果循环。 参考信息产业部与中国科技统计年鉴，中国软件产业在2000年，产业规模为600亿人民币，从业人员为33万人，人均产值为18万元；",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "软件产业",
+          "normalized_name": "软件产业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着软件产业规模增长",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "信息产业部",
+          "normalized_name": "信息产业部",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "参考信息产业部与中国科技统计年鉴",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "中国科技统计年鉴",
+          "normalized_name": "中国科技统计年鉴",
+          "candidate_l3": "reference_tool",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "参考信息产业部与中国科技统计年鉴",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "中国软件产业",
+          "normalized_name": "中国软件产业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "中国软件产业在2000年，产业规模为600亿人民币",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "另据2002年信息产业部的调查，软件产业的人力 $68 \\%$ 来自于软件本科专业。 其次是培训机构，占 $10 \\%$ ，在职培训占 $7 \\%$ ，其余为外国人才和归国学人。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "2002年信息产业部的调查",
+          "normalized_name": "2002年信息产业部调查",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "另据2002年信息产业部的调查",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "信息产业部",
+          "normalized_name": "信息产业部",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "2002年信息产业部的调查",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "软件产业",
+          "normalized_name": "软件产业",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "软件产业的人力",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "软件本科专业",
+          "normalized_name": "软件本科专业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "软件本科专业",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e5",
+          "mention": "培训机构",
+          "normalized_name": "培训机构",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "其次是培训机构",
+          "is_specific_entity": false,
+          "confidence": 0.6,
+          "uncertainty": "泛称，但带修饰，可视为具体类型"
+        },
+        {
+          "entity_id": "13_e6",
+          "mention": "在职培训",
+          "normalized_name": "在职培训",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在职培训占7%",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e7",
+          "mention": "外国人才",
+          "normalized_name": "外国人才",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "外国人才和归国学人",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e8",
+          "mention": "归国学人",
+          "normalized_name": "归国学人",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "外国人才和归国学人",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "其次是培训机构，占 $10 \\%$ ，在职培训占 $7 \\%$ ，其余为外国人才和归国学人。 大专院校和人培训机构的人才数量，本文参考高等院校的人才供给，依照《2004年度中国软件产业发展研究报告》中的估计，设定高等院校培养的软件人才每年将以 $20 \\%$ 的速度增长，估计大专院校和培训机构的人才合计占 $80 \\%$ 的份额。软件培训机构方面，参考平均值，设定成长速度为$10 \\%$ ，此部分估算占产业人力 $20 \\%$ 份额。以2002年的比例为基准，大专院校软件科系和培训机构的人才总量占 $85 \\%$ ，外籍人才和归国学人占人力供给的 $1 5 \\%$ 。 以此作为人才供给的流入量。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "《2004年度中国软件产业发展研究报告》",
+          "normalized_name": "《2004年度中国软件产业发展研究报告》",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "依照《2004年度中国软件产业发展研究报告》中的估计",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "对照信息产业部公布2005年软件产值3900亿人民币，再比对图4呈现的结果，其中2001年至2005年的发展趋势大致与信息产业部公布的已实现数据发展路径吻合。故本文所设定的各项变量的参数为可接受的估计值； 即以上述参数为基准的系统动力学模型及其方程符合已知2001至2005的发展规律。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "信息产业部",
+          "normalized_name": "信息产业部",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "信息产业部公布2005年软件产值3900亿人民币",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "系统动力学模型",
+          "normalized_name": "系统动力学模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以系统动力学模型及其方程符合已知2001至2005的发展规律",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "即以上述参数为基准的系统动力学模型及其方程符合已知2001至2005的发展规律。 若各项条件不变，以此推论未来发展趋势，软件产业规模2009年将会突破8000亿人民币产值，2011年将达16000亿人民币产值，2016年将突破64000亿人民币。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "系统动力学模型",
+          "normalized_name": "系统动力学模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "系统动力学模型及其方程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "软件产业",
+          "normalized_name": "软件产业",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "软件产业规模2009年将会突破8000亿人民币产值",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "在产业人力方面，对照信息产业部公布2005年软件从业人员估算90万人，比对模拟后的图形，模拟结果大致与2001至2005年的已知数据相同，预期2010年可用人力将突破 200万人，到2016年软件产业人力将达到1200万人的规模。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "信息产业部",
+          "normalized_name": "信息产业部",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对照信息产业部公布2005年软件从业人员估算90万人",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "软件从业人员",
+          "normalized_name": "软件从业人员",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对照信息产业部公布2005年软件从业人员估算90万人",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但此处有具体数字限定，视为具体概念"
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "2005年",
+          "normalized_name": "2005年",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "对照信息产业部公布2005年软件从业人员估算90万人",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e4",
+          "mention": "2001至2005年",
+          "normalized_name": "2001至2005年",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "比对模拟后的图形，模拟结果大致与2001至2005年的已知数据相同",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e5",
+          "mention": "2010年",
+          "normalized_name": "2010年",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "预期2010年可用人力将突破200万人",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e6",
+          "mention": "2016年",
+          "normalized_name": "2016年",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "到2016年软件产业人力将达到1200万人的规模",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e7",
+          "mention": "软件产业",
+          "normalized_name": "软件产业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "到2016年软件产业人力将达到1200万人的规模",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但作为产业概念抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "2006年6月发布的中国《软件与信息服务业“十一五”专项规划》（以下简称《专项规划》）提出了具体可行的发展目标：“国内市场销售额以$30 \\%$ 左右的速度持续增长，2010年突破13000亿元大关，软件产业出口额达到125亿美元； 形成若干软件年销售额超过50亿元的软件骨干企业；",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "《软件与信息服务业“十一五”专项规划》",
+          "normalized_name": "《软件与信息服务业“十一五”专项规划》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "2006年6月发布的中国《软件与信息服务业“十一五”专项规划》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "《专项规划》",
+          "normalized_name": "《软件与信息服务业“十一五”专项规划》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "（以下简称《专项规划》）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "综上所述，人力资本是扩大软件产业规模的根本，软件产业的人才培育和发展必须放在发展软件产业政府施政方针的首位。所以，在进行软件产业的专项规划时，有必要将软件产业人力资源的发展、软件产业技术层次的发展和总体生活环境的发展一并考虑，从整体系统的观点将软件人才培育的相关行业与机构纳人软件产业作为软件产业链中的重要子系统，才能真正达到发展软件产业的目标，也才能够达成现阶段以人为本的和谐社会。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "人力资本",
+          "normalized_name": "人力资本",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "人力资本是扩大软件产业规模的根本",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "软件产业",
+          "normalized_name": "软件产业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "人力资本是扩大软件产业规模的根本",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "软件产业",
+          "normalized_name": "软件产业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "软件产业的人才培育和发展必须放在发展软件产业政府施政方针的首位",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "软件产业",
+          "normalized_name": "软件产业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在进行软件产业的专项规划时",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e5",
+          "mention": "软件产业",
+          "normalized_name": "软件产业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将软件产业人力资源的发展、软件产业技术层次的发展和总体生活环境的发展一并考虑",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e6",
+          "mention": "软件产业",
+          "normalized_name": "软件产业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将软件人才培育的相关行业与机构纳人软件产业作为软件产业链中的重要子系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e7",
+          "mention": "软件产业",
+          "normalized_name": "软件产业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "才能真正达到发展软件产业的目标",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e8",
+          "mention": "软件人才",
+          "normalized_name": "软件人才",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "软件产业的人才培育和发展",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e9",
+          "mention": "软件人才",
+          "normalized_name": "软件人才",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将软件人才培育的相关行业与机构纳人软件产业",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e10",
+          "mention": "软件产业链",
+          "normalized_name": "软件产业链",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "作为软件产业链中的重要子系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e11",
+          "mention": "以人为本",
+          "normalized_name": "以人为本",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以人为本的和谐社会",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e12",
+          "mention": "和谐社会",
+          "normalized_name": "和谐社会",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以人为本的和谐社会",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

@@ -28,13 +28,13 @@ ENTITY_EXTRACTION_PROMPT = (
     "1. 泛化身份类别词 (不指称具体个人):\n"
     "   科学家、学者、研究者、专家、教授、馆长、图书馆员、工程师、作者、学生、读者、用户\n"
     "2. 泛化机构类别词 (不指称具体组织):\n"
-    "   大学图书馆、高校、研究机构、公共图书馆、档案馆、公司、出版社\n"
+    "   单独出现的裸「高校」「研究机构」「公共图书馆」「大学图书馆」等不抽；但有地名/学科/功能限定修饰的具体机构需抽取\n"
     "3. 通用连接词/虚义动词: 比较、进行、存在、通过、基于、根据、利用、实现、导致、产生、构成、形成、推动、促进、影响\n"
     "4. 泛指代词/不定指称: 这方面、该问题、上述研究、本文、笔者、相关文献、某论文\n"
     "5. 无学术语义的计量词: 篇数、比例、数量、百分比、平均值、标准差\n"
     "6. 泛化评价用语: 重要、显著、明显、突出、不足、深远、深刻、广泛\n"
     "   判定标准: 该短语能否指向一个**具体可唯一识别**的对象?\n"
-    "   若不能，且属于以上任一类别 → **一律不抽取**。\n\n"
+    "   **图情领域放宽规则**: 有名称的数据库、信息系统、软件工具、图书馆、标准、分类法、叙词表等即使名称较短也应抽取。\n\n"
     "### 原文忠实原则:\n"
     "1. mention 必须是**原文中出现的原词/原短语**，严禁概括、总结、改名\n"
     "2. normalized_name 是规范化形式 (去OCR乱码、统一简繁)，无特殊问题时与 mention 一致\n"
@@ -179,6 +179,9 @@ ENTITY_EXTRACTION_PROMPT = (
     "输入: 长期以来各文化机构独自推进的智改数转造就了一座座数据孤岛,底层关联不足进而会引发上层文化服务割裂。\n"
     '输出: {{\"entities\":[{{\"mention\":\"数据孤岛\",\"normalized_name\":\"数据孤岛\",\"candidate_l3\":\"phenomenon\",\"candidate_l1\":[\"Abstract\"],\"evidence\":\"造就了一座座数据孤岛\",\"is_specific_entity\":true,\"confidence\":0.95,\"uncertainty\":\"\"}}]}}\n'
     "> 「文化服务割裂」若无独立学术命名则不抽取。\n\n"
+    "### 正例9 (concept)\n"
+    "输入: 信息资源共享是图书馆界的长期追求，而数字图书馆为此提供了技术基础。\n"
+    '输出: {{\"entities\":[{{\"mention\":\"信息资源共享\",\"normalized_name\":\"信息资源共享\",\"candidate_l3\":\"concept\",\"candidate_l1\":[\"Abstract\"],\"evidence\":\"信息资源共享是图书馆界的长期追求\",\"is_specific_entity\":true,\"confidence\":0.95,\"uncertainty\":\"\"}},{{\"mention\":\"数字图书馆\",\"normalized_name\":\"数字图书馆\",\"candidate_l3\":\"concept\",\"candidate_l1\":[\"Abstract\",\"Artifact\"],\"evidence\":\"数字图书馆为此提供了技术基础\",\"is_specific_entity\":true,\"confidence\":0.9,\"uncertainty\":\"\"}}]}}\n\n'
     "### 正例8 (debate + movement)\n"
     "输入: 情报学中对于Information与Intelligence的争论应该是有益的。开放获取意味着文章一旦被创造出来,将通过网络让读者免费获取和利用。\n"
     '输出: {{\"entities\":[{{\"mention\":\"Information与Intelligence的争论\",\"normalized_name\":\"Information与Intelligence的争论\",\"candidate_l3\":\"debate\",\"candidate_l1\":[\"Event\"],\"evidence\":\"情报学中对于Information与Intelligence的争论应该是有益的\",\"is_specific_entity\":true,\"confidence\":0.92,\"uncertainty\":\"\"}},{{\"mention\":\"开放获取\",\"normalized_name\":\"开放获取\",\"candidate_l3\":\"movement\",\"candidate_l1\":[\"Event\"],\"evidence\":\"开放获取意味着文章一旦被创造出来\",\"is_specific_entity\":true,\"confidence\":0.9,\"uncertainty\":\"可兼为concept\"}}]}}\n'
@@ -297,9 +300,17 @@ class EntityExtractionAgent:
     def __init__(self, llm: Optional[LLMClient] = None):
         self.llm = llm or LLMClient()
 
-    def extract(self, statement: str, sentence_id: str = "") -> SentenceExtractionOutput:
+    def extract(
+        self, statement: str, sentence_id: str = "",
+        few_shot_text: str = "",
+    ) -> SentenceExtractionOutput:
         prompt = ENTITY_EXTRACTION_PROMPT.format(statement=statement)
-        data = self.llm.call_json(prompt, {})
+        # Inject RAG few-shot examples if provided
+        if few_shot_text:
+            # Insert few-shot before ## Input section
+            prompt = prompt.replace("## Input", few_shot_text + "\n\n## Input")
+        schema_hint = '{"entities": [{"mention": "...", "normalized_name": "...", "candidate_l3": "...", "candidate_l1": [...], "evidence": "...", "is_specific_entity": true, "confidence": 0.0, "uncertainty": ""}]}'
+        data = self.llm.call_json(prompt, {}, schema_hint=schema_hint)
         if not isinstance(data, dict):
             return SentenceExtractionOutput(
                 sentence_id=sentence_id, sentence=statement, entities=[]

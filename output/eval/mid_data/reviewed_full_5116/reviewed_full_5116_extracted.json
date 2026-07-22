@@ -1,0 +1,109 @@
+{
+  "base_name": "reviewed_full_5116",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "9",
+      "sentence": "由表5看出，在山东省高校图书馆馆长队伍中，$1 9 9 7 { \\sim } 1 9 9 8$ 年所发表的科研成果亦不尽人意，虽然共发表论文295 篇，但却没有一篇能够在国家一级刊物《中国图书馆学报》上发表，在《大学图书馆学报》上发表的也仅有5篇; 虽然有18 部著作出版，但是图书情报专业方面的著作仅有4部，而且都是多人合编的普通教材。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "山东省高校图书馆馆长队伍",
+          "normalized_name": "山东省高校图书馆馆长队伍",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在山东省高校图书馆馆长队伍中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "《中国图书馆学报》",
+          "normalized_name": "《中国图书馆学报》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "国家一级刊物《中国图书馆学报》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "《大学图书馆学报》",
+          "normalized_name": "《大学图书馆学报》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在《大学图书馆学报》上发表的也仅有5篇",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "另外，建议成立\"省、市高校图书馆馆长科学研究协会\",并与设有图书情报专业的大学密切合作，积极开展信息科学的研究，注意跟踪世界图书及情报事业的发展动态，提高服务育人的质量，从而不断地提高全国高校图书馆馆长队伍的科研能力和科研水平。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "省、市高校图书馆馆长科学研究协会",
+          "normalized_name": "省、市高校图书馆馆长科学研究协会",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "建议成立\"省、市高校图书馆馆长科学研究协会\"",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "该实体为建议中拟成立的机构，尚未实际存在，但名称具体可识别"
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "图书情报专业",
+          "normalized_name": "图书情报专业",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与设有图书情报专业的大学密切合作",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "信息科学",
+          "normalized_name": "信息科学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "积极开展信息科学的研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "世界图书及情报事业的发展动态",
+          "normalized_name": "世界图书及情报事业的发展动态",
+          "candidate_l3": "trend",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "注意跟踪世界图书及情报事业的发展动态",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "该短语包含具体领域限定，可视为具体趋势"
+        }
+      ]
+    }
+  ]
+}

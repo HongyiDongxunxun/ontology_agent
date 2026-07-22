@@ -1,0 +1,2145 @@
+{
+  "base_name": "reviewed_full_575",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "摘要旧的/意义“十三五\"期间,图书馆面临的社会环境、人文环境、技术环境、网络环境和服务环境等将发生很大的变化，全新环境要求图书馆必须顺时而为、创新思路、抢占先机,实现战略转型和跨越式发展。 方法/过程依据信息技术的进步趋势，图书馆内在发展规律和外在环境的客观要求，就如何实现转型提出了策略和办法。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "十三五",
+          "normalized_name": "十三五",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "摘要旧的/意义“十三五\"期间",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书馆面临的社会环境、人文环境、技术环境、网络环境和服务环境等将发生很大的变化",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "此处'图书馆'为泛称，但根据图情领域放宽规则，作为机构类型可抽取"
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "信息技术",
+          "normalized_name": "信息技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "依据信息技术的进步趋势",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "方法/过程依据信息技术的进步趋势，图书馆内在发展规律和外在环境的客观要求，就如何实现转型提出了策略和办法。 结果/结论文章从宏观层面探讨了未来图书馆的主要发展趋势：托管服务、大融合、国际化和高附加值服务等,指出了图书馆的主要转型方向“互联网 $^ +$ \"图书馆、智慧图书馆和移动APP服务。",
+      "entities": []
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "Method/rocessAcordingtothetrendsofinfomationtechnology，thechangesof intealdevelopmentlwandteextealenvion mentof lbrary,theauthorputs forwardsomestrategiesandmeasuresonhowtoachievethetransformation．Result/ConclusionThis paperprospects teainevelopmentrendoflibraryintefutureostedsrvice,argeintegationnteationalizatioandighalue added services，etc，and discusses the main transition direction of library in the future:\"Internet $^ +$ \" library，intellgence library，and mobile APP service.",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "Internet $^ +$  library",
+          "normalized_name": "Internet + library",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "main transition direction of library in the future:\"Internet $^ +$ \" library",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "原文含OCR乱码$^ +$，推测为Internet+"
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "intellgence library",
+          "normalized_name": "intelligence library",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "main transition direction of library in the future:\"Internet $^ +$ \" library，intellgence library",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "原文拼写intellgence，推测为intelligence"
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "mobile APP service",
+          "normalized_name": "mobile APP service",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "main transition direction of library in the future:\"Internet $^ +$ \" library，intellgence library，and mobile APP service",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "内部方面，图书馆未来事业发展和内在变化驱动等带来新理念、新理论、新技术、新管理和新服务，特别是用户对“互联网 $^ +$ ”下移动服务、智慧服务、个性化服务、嵌入式知识服务等有新期盼,馆员对图书馆未来环境、作用、地位、形象、影响力等有新定位和新追求。 全新环境要求图书馆必须顺时而为、创新思路、抢占先机,把握发展趋势,实现战略转型和跨越式发展。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "内部方面，图书馆未来事业发展和内在变化驱动等带来新理念、新理论、新技术、新管理和新服务",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'图书馆'作为泛称机构出现，但根据图情领域放宽规则，作为核心主体可抽取"
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "互联网 $^ +$ ",
+          "normalized_name": "互联网+",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户对“互联网 $^ +$ ”下移动服务、智慧服务、个性化服务、嵌入式知识服务等有新期盼",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "移动服务",
+          "normalized_name": "移动服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户对“互联网 $^ +$ ”下移动服务、智慧服务、个性化服务、嵌入式知识服务等有新期盼",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "智慧服务",
+          "normalized_name": "智慧服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户对“互联网 $^ +$ ”下移动服务、智慧服务、个性化服务、嵌入式知识服务等有新期盼",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "个性化服务",
+          "normalized_name": "个性化服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户对“互联网 $^ +$ ”下移动服务、智慧服务、个性化服务、嵌入式知识服务等有新期盼",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e6",
+          "mention": "嵌入式知识服务",
+          "normalized_name": "嵌入式知识服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户对“互联网 $^ +$ ”下移动服务、智慧服务、个性化服务、嵌入式知识服务等有新期盼",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e7",
+          "mention": "馆员",
+          "normalized_name": "馆员",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "馆员对图书馆未来环境、作用、地位、形象、影响力等有新定位和新追求",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "此处'馆员'为泛称，但根据图情领域放宽规则，作为具体职业群体可抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "关于图书馆的未来发展，作者已在《国家图书馆学刊》2016年第3期以“基于‘互联网 $^ +$ ’的图书馆未来发展新趋势”为题,从高度互联网化、人工智能化、情境计算、场景服务、流量为王、有偿服务、大联盟、绿色发展和O20服务等多方面进行了较系统的论述。 但经过持续研究,作者发现图书馆在以下方面还面临着新机遇：",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "《国家图书馆学刊》",
+          "normalized_name": "《国家图书馆学刊》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "作者已在《国家图书馆学刊》2016年第3期以“基于‘互联网 $^ +$ ’的图书馆未来发展新趋势”为题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "基于‘互联网 $^ +$ ’的图书馆未来发展新趋势",
+          "normalized_name": "基于‘互联网+’的图书馆未来发展新趋势",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以“基于‘互联网 $^ +$ ’的图书馆未来发展新趋势”为题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "高度互联网化",
+          "normalized_name": "高度互联网化",
+          "candidate_l3": "trend",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从高度互联网化、人工智能化、情境计算、场景服务、流量为王、有偿服务、大联盟、绿色发展和O20服务等多方面进行了较系统的论述",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "人工智能化",
+          "normalized_name": "人工智能化",
+          "candidate_l3": "trend",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从高度互联网化、人工智能化、情境计算、场景服务、流量为王、有偿服务、大联盟、绿色发展和O20服务等多方面进行了较系统的论述",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "5_e5",
+          "mention": "情境计算",
+          "normalized_name": "情境计算",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从高度互联网化、人工智能化、情境计算、场景服务、流量为王、有偿服务、大联盟、绿色发展和O20服务等多方面进行了较系统的论述",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e6",
+          "mention": "场景服务",
+          "normalized_name": "场景服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从高度互联网化、人工智能化、情境计算、场景服务、流量为王、有偿服务、大联盟、绿色发展和O20服务等多方面进行了较系统的论述",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e7",
+          "mention": "流量为王",
+          "normalized_name": "流量为王",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从高度互联网化、人工智能化、情境计算、场景服务、流量为王、有偿服务、大联盟、绿色发展和O20服务等多方面进行了较系统的论述",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e8",
+          "mention": "有偿服务",
+          "normalized_name": "有偿服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从高度互联网化、人工智能化、情境计算、场景服务、流量为王、有偿服务、大联盟、绿色发展和O20服务等多方面进行了较系统的论述",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e9",
+          "mention": "大联盟",
+          "normalized_name": "大联盟",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从高度互联网化、人工智能化、情境计算、场景服务、流量为王、有偿服务、大联盟、绿色发展和O20服务等多方面进行了较系统的论述",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指具体联盟，但此处为泛化概念"
+        },
+        {
+          "entity_id": "5_e10",
+          "mention": "绿色发展",
+          "normalized_name": "绿色发展",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从高度互联网化、人工智能化、情境计算、场景服务、流量为王、有偿服务、大联盟、绿色发展和O20服务等多方面进行了较系统的论述",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e11",
+          "mention": "O20服务",
+          "normalized_name": "O2O服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从高度互联网化、人工智能化、情境计算、场景服务、流量为王、有偿服务、大联盟、绿色发展和O20服务等多方面进行了较系统的论述",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "原文为O20，可能为O2O笔误"
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "不管是音视频资料、图片、电子照片、文档等各种资源的存储、管理和共享，还是数字图书馆运维、网络安全保障等，专业公司都能为用户提供所需的托管服务。 现在世界不少有实力的大型机构出于社会效益、经济效益等的长远考虑，都在积极规划和开展托管服务业务,如美国的 OCLC（Online Computer LibraryCenter,即联机计算机图书馆中心）就已接到了200多个图书馆的托管服务,很多世界一流的大学、研究机构都成了它的用户。相信，国内能提供托管服务的公司会越来越多，实力会越来越强，信誉度和安全性会越来越高，这为图书馆实行委托托管服务提供了更多的选择。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "OCLC（Online Computer LibraryCenter,即联机计算机图书馆中心）",
+          "normalized_name": "OCLC（Online Computer Library Center，即联机计算机图书馆中心）",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如美国的 OCLC（Online Computer LibraryCenter,即联机计算机图书馆中心）就已接到了200多个图书馆的托管服务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "数字图书馆",
+          "normalized_name": "数字图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "还是数字图书馆运维、网络安全保障等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "联盟各成员要在资源、管理、服务、信息共享、用户共享、在线预约服务、线下连锁服务体验等领域展开深度的实质性合作，抛弃各自为政、唯我独大的旧理念,打破体制、机制限制,从根本上解决图书馆与用户间存在的信息提供与信息需求断层现象，真正实现用户需求网络提供或异地供给服务的模式。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "从根本上解决图书馆与用户间存在的信息提供与信息需求断层现象",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'图书馆'为泛指机构类别，但结合上下文'联盟各成员'可能指具体图书馆联盟成员，因缺乏具体名称，置信度较低"
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "用户",
+          "normalized_name": "用户",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆与用户间存在的信息提供与信息需求断层现象",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "信息提供与信息需求断层现象",
+          "normalized_name": "信息提供与信息需求断层现象",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从根本上解决图书馆与用户间存在的信息提供与信息需求断层现象",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "用户需求网络提供或异地供给服务的模式",
+          "normalized_name": "用户需求网络提供或异地供给服务的模式",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "真正实现用户需求网络提供或异地供给服务的模式",
+          "is_specific_entity": true,
+          "confidence": 0.88,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "图书馆的大融合不是图书馆资源、服务等的简单叠加,而是图书馆间的相互渗透、相互融合，进而衍生新型图书馆的组织、管理和服务。这种新型图书馆业态具有很强的影响力、竞争力和引领功能,能够提高图书馆的创新、创意能力，有效改变旧的管理方式、运行方式和服务方式,优化图书馆行业体系,提升用户对图书馆的认同度和满意度，为图书馆事业发展创造良好的外部环境。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "图书馆的大融合",
+          "normalized_name": "图书馆的大融合",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆的大融合不是图书馆资源、服务等的简单叠加",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "新型图书馆业态",
+          "normalized_name": "新型图书馆业态",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这种新型图书馆业态具有很强的影响力、竞争力和引领功能",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "图书馆除了馆际间的大融合外,还要重视图书馆内部各种因素、各种技术、各种形态和各种服务的融合,建设好融合图书馆。 融合图书馆是一种新形态,而且是图书馆未来存在的高级形态，它主要以人人互联、数据互联、智慧互联、资源融合、各类型图书馆(如传统图书馆、数字图书馆、移动图书馆等)融合为主要特征,实现用户的专业化、深度化、个性化服务需求，为用户提供情景化、智慧化知识服务。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "融合图书馆",
+          "normalized_name": "融合图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "建设好融合图书馆。 融合图书馆是一种新形态",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "人人互联",
+          "normalized_name": "人人互联",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "人人互联、数据互联、智慧互联、资源融合",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "数据互联",
+          "normalized_name": "数据互联",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "人人互联、数据互联、智慧互联、资源融合",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e4",
+          "mention": "智慧互联",
+          "normalized_name": "智慧互联",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "人人互联、数据互联、智慧互联、资源融合",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e5",
+          "mention": "资源融合",
+          "normalized_name": "资源融合",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "人人互联、数据互联、智慧互联、资源融合",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e6",
+          "mention": "传统图书馆",
+          "normalized_name": "传统图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "各类型图书馆(如传统图书馆、数字图书馆、移动图书馆等)融合",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e7",
+          "mention": "数字图书馆",
+          "normalized_name": "数字图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "各类型图书馆(如传统图书馆、数字图书馆、移动图书馆等)融合",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e8",
+          "mention": "移动图书馆",
+          "normalized_name": "移动图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "各类型图书馆(如传统图书馆、数字图书馆、移动图书馆等)融合",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "高附加值服务是个变量，它在不同的发展阶段有不同的内涵追求和发展目标。高附加值服务要侧重用户的高品位需求,可采取订单式服务、一对一服务或其它服务形式,主动嵌入到用户的科研或工作中,切实解决他们遇到的问题和困难，圆满完成用户交与的任务。开展高附加值服务的图书馆，必须协调好全馆的人力、物力和技术,集中攻关，联合工作,运用好新理念、新技术和新设备。 现阶段,图书馆可考虑为政府或企、事业单位提供政策咨询、工作咨询或业务咨询,提交咨询报告、发展分析报告；",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "订单式服务",
+          "normalized_name": "订单式服务",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "可采取订单式服务、一对一服务或其它服务形式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "一对一服务",
+          "normalized_name": "一对一服务",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "可采取订单式服务、一对一服务或其它服务形式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "咨询报告",
+          "normalized_name": "咨询报告",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "提交咨询报告、发展分析报告",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未指明具体报告名称，但作为具体制品类型抽取"
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "发展分析报告",
+          "normalized_name": "发展分析报告",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "提交咨询报告、发展分析报告",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未指明具体报告名称，但作为具体制品类型抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "图书馆的战略转型方向众多，除本文重点论述的几种外,比较重要的还有“机构知识库建设由初中级向高级转型’、“基于馆藏的文献服务向基于大数据的知识服务转型、“颠覆性时代的被颠覆者向颠覆者转型、“区域性合作向跨系统、跨地区合作转型\"等。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "机构知识库建设由初中级向高级转型",
+          "normalized_name": "机构知识库建设由初中级向高级转型",
+          "candidate_l3": "trend",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "机构知识库建设由初中级向高级转型",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "基于馆藏的文献服务向基于大数据的知识服务转型",
+          "normalized_name": "基于馆藏的文献服务向基于大数据的知识服务转型",
+          "candidate_l3": "trend",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于馆藏的文献服务向基于大数据的知识服务转型",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "颠覆性时代的被颠覆者向颠覆者转型",
+          "normalized_name": "颠覆性时代的被颠覆者向颠覆者转型",
+          "candidate_l3": "trend",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "颠覆性时代的被颠覆者向颠覆者转型",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "19_e4",
+          "mention": "区域性合作向跨系统、跨地区合作转型",
+          "normalized_name": "区域性合作向跨系统、跨地区合作转型",
+          "candidate_l3": "trend",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "区域性合作向跨系统、跨地区合作转型",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "a.避免“互联网 $^ +$ ”与图书馆二者的简单叠加，要相互深度融合，产生 $1 + 1 > 2$ 的效果，完成图书馆的行业升级和转型。 b.解决好与虚拟空间的智慧互联,依托互联网使各图书馆、各信息机构相连,通过大数据完成各单位间的信息交换,借助云计算、物联网、移动通信网等新信息技术改变信息的闭塞与孤立状态,处理好图书馆、信息技术、用户、参与者等要素的关系。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "互联网",
+          "normalized_name": "互联网",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "避免“互联网 $^ +$ ”与图书馆二者的简单叠加",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "避免“互联网 $^ +$ ”与图书馆二者的简单叠加",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "此处指具体图书馆机构，但原文未给出具体名称，按图情领域放宽规则，作为泛称机构不抽取？需判断：原文中“图书馆”出现多次，但未限定具体名称，属于泛化机构类别词，按规则不抽取。但用户输入中“各图书馆”为泛指，故不抽取。"
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "虚拟空间",
+          "normalized_name": "虚拟空间",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "解决好与虚拟空间的智慧互联",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "大数据",
+          "normalized_name": "大数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过大数据完成各单位间的信息交换",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e5",
+          "mention": "云计算",
+          "normalized_name": "云计算",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "借助云计算、物联网、移动通信网等新信息技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e6",
+          "mention": "物联网",
+          "normalized_name": "物联网",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "借助云计算、物联网、移动通信网等新信息技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e7",
+          "mention": "移动通信网",
+          "normalized_name": "移动通信网",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "借助云计算、物联网、移动通信网等新信息技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e8",
+          "mention": "新信息技术",
+          "normalized_name": "新信息技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "借助云计算、物联网、移动通信网等新信息技术",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为泛称，但原文中作为具体列举后的总称，保留"
+        },
+        {
+          "entity_id": "21_e9",
+          "mention": "信息闭塞",
+          "normalized_name": "信息闭塞",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "改变信息的闭塞与孤立状态",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "是否作为独立学术命名存疑，但图情领域常见"
+        },
+        {
+          "entity_id": "21_e10",
+          "mention": "孤立状态",
+          "normalized_name": "孤立状态",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "改变信息的闭塞与孤立状态",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "同上"
+        },
+        {
+          "entity_id": "21_e11",
+          "mention": "信息技术",
+          "normalized_name": "信息技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "处理好图书馆、信息技术、用户、参与者等要素的关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e12",
+          "mention": "用户",
+          "normalized_name": "用户",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "处理好图书馆、信息技术、用户、参与者等要素的关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为图情领域核心概念，非泛称"
+        },
+        {
+          "entity_id": "21_e13",
+          "mention": "参与者",
+          "normalized_name": "参与者",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "处理好图书馆、信息技术、用户、参与者等要素的关系",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "比如,先依托目前信息技术、网络条件和用户需求，优化微信公众服务平台、数字图书馆服务平台和移动图书馆服务平台等的功能，丰富平台的服务内容，积极推广基于移动互联、云计算、大数据等互联网平台的移动服务、智慧服务和云服务，实现这些“互联网 $^ +$ ”图书馆的基本内容和基本服务。 切忌好高骛远、纸上谈兵。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "微信公众服务平台",
+          "normalized_name": "微信公众服务平台",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "优化微信公众服务平台、数字图书馆服务平台和移动图书馆服务平台等的功能",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "数字图书馆服务平台",
+          "normalized_name": "数字图书馆服务平台",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "优化微信公众服务平台、数字图书馆服务平台和移动图书馆服务平台等的功能",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e3",
+          "mention": "移动图书馆服务平台",
+          "normalized_name": "移动图书馆服务平台",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "优化微信公众服务平台、数字图书馆服务平台和移动图书馆服务平台等的功能",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e4",
+          "mention": "移动互联",
+          "normalized_name": "移动互联",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于移动互联、云计算、大数据等互联网平台的移动服务、智慧服务和云服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e5",
+          "mention": "云计算",
+          "normalized_name": "云计算",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于移动互联、云计算、大数据等互联网平台的移动服务、智慧服务和云服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e6",
+          "mention": "大数据",
+          "normalized_name": "大数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于移动互联、云计算、大数据等互联网平台的移动服务、智慧服务和云服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e7",
+          "mention": "移动服务",
+          "normalized_name": "移动服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "积极推广基于移动互联、云计算、大数据等互联网平台的移动服务、智慧服务和云服务",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "22_e8",
+          "mention": "智慧服务",
+          "normalized_name": "智慧服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "积极推广基于移动互联、云计算、大数据等互联网平台的移动服务、智慧服务和云服务",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "22_e9",
+          "mention": "云服务",
+          "normalized_name": "云服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "积极推广基于移动互联、云计算、大数据等互联网平台的移动服务、智慧服务和云服务",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "22_e10",
+          "mention": "互联网 $^+$ 图书馆",
+          "normalized_name": "互联网+图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现这些“互联网 $^+$ ”图书馆的基本内容和基本服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "第三,确立图书馆“互联网 $^ +$ ”的功能体系。a.在管理、服务、资源、技术、设施和信息化等层面上实现开放连接、协同融合、智慧互联、智能服务、资源共享和绿色生态。b.在技术层面上,要考虑为多样化用户推送情景化、智能化和个性化的移动知识服务。c.在管理层面上,要充分体现互联网的平等、开放、快捷、高效、互动、去中心化的显著特点,体现出互联网思维的用户思维、开放思维和服务思维的显著特征。d.在服务层面上,强调知识创新主体的多元共存、多向支持、互动共赢的协同服务模式，注重以用户服务需求分析、服务资源组织、服务方式设计、服务内容可视以及服务结果反馈的整个服务生命周期过程的统一与融合。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "确立图书馆“互联网$^+$”的功能体系",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'图书馆'为泛指机构类别，但结合上下文可能指代具体图书馆，因缺乏具体名称，置信度较低"
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "互联网$^+$",
+          "normalized_name": "互联网+",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "确立图书馆“互联网$^+$”的功能体系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "互联网思维",
+          "normalized_name": "互联网思维",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "体现出互联网思维的用户思维、开放思维和服务思维的显著特征",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e4",
+          "mention": "用户思维",
+          "normalized_name": "用户思维",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "体现出互联网思维的用户思维、开放思维和服务思维的显著特征",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e5",
+          "mention": "开放思维",
+          "normalized_name": "开放思维",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "体现出互联网思维的用户思维、开放思维和服务思维的显著特征",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e6",
+          "mention": "服务思维",
+          "normalized_name": "服务思维",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "体现出互联网思维的用户思维、开放思维和服务思维的显著特征",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e7",
+          "mention": "协同服务模式",
+          "normalized_name": "协同服务模式",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "强调知识创新主体的多元共存、多向支持、互动共赢的协同服务模式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "23_e8",
+          "mention": "服务生命周期",
+          "normalized_name": "服务生命周期",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "注重以用户服务需求分析、服务资源组织、服务方式设计、服务内容可视以及服务结果反馈的整个服务生命周期过程的统一与融合",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "图书馆会借用“互联网 $^ +$ ”服务模式和综合化信息服务平台充分展示资源和服务，体现出图书馆对社会信息化、网络化的重要保障作用，满足“互联网 $^ +$ ”时代用户对图书馆的基本要求。 全新的服务模式和服务平台可实现业务流程重组、数据共享、资源和服务上线、系统和平台跨界融合，极大提升图书馆的数字化、网络化和智能化水平,使图书馆进入新业态,从而有效支撑国家“互联网 $^ +$ ”的发展。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "互联网 $^ +$ ",
+          "normalized_name": "互联网+",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆会借用“互联网 $^ +$ ”服务模式和综合化信息服务平台充分展示资源和服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "综合化信息服务平台",
+          "normalized_name": "综合化信息服务平台",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "图书馆会借用“互联网 $^ +$ ”服务模式和综合化信息服务平台充分展示资源和服务",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但图情领域放宽规则，有功能限定修饰的具体系统名称应抽取"
+        },
+        {
+          "entity_id": "24_e3",
+          "mention": "社会信息化",
+          "normalized_name": "社会信息化",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "体现出图书馆对社会信息化、网络化的重要保障作用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e4",
+          "mention": "网络化",
+          "normalized_name": "网络化",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "体现出图书馆对社会信息化、网络化的重要保障作用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e5",
+          "mention": "业务流程重组",
+          "normalized_name": "业务流程重组",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "全新的服务模式和服务平台可实现业务流程重组、数据共享、资源和服务上线、系统和平台跨界融合",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e6",
+          "mention": "数据共享",
+          "normalized_name": "数据共享",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "全新的服务模式和服务平台可实现业务流程重组、数据共享、资源和服务上线、系统和平台跨界融合",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e7",
+          "mention": "资源和服务上线",
+          "normalized_name": "资源和服务上线",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "全新的服务模式和服务平台可实现业务流程重组、数据共享、资源和服务上线、系统和平台跨界融合",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为描述性短语，但作为独立概念被提及"
+        },
+        {
+          "entity_id": "24_e8",
+          "mention": "系统和平台跨界融合",
+          "normalized_name": "系统和平台跨界融合",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "全新的服务模式和服务平台可实现业务流程重组、数据共享、资源和服务上线、系统和平台跨界融合",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为描述性短语，但作为独立概念被提及"
+        },
+        {
+          "entity_id": "24_e9",
+          "mention": "数字化",
+          "normalized_name": "数字化",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "极大提升图书馆的数字化、网络化和智能化水平",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e10",
+          "mention": "智能化",
+          "normalized_name": "智能化",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "极大提升图书馆的数字化、网络化和智能化水平",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e11",
+          "mention": "新业态",
+          "normalized_name": "新业态",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使图书馆进入新业态",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但在此语境中作为具体概念被讨论"
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "智慧图书馆是图书馆数字化、网络化、智能化、全球化与信息化在特定历史阶段相互交融结合的产物，是数字化图书馆、复合图书馆发展理念与实践的延续整合与升华，是建立在物联网和数字图书馆等基础之上的，具有物联网和数字图书馆等多重特征的高级图书馆,更是图书馆未来发展的重要方向和主要存在方式。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "智慧图书馆",
+          "normalized_name": "智慧图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "智慧图书馆是图书馆数字化、网络化、智能化、全球化与信息化在特定历史阶段相互交融结合的产物",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "数字化图书馆",
+          "normalized_name": "数字化图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "是数字化图书馆、复合图书馆发展理念与实践的延续整合与升华",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e3",
+          "mention": "复合图书馆",
+          "normalized_name": "复合图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "是数字化图书馆、复合图书馆发展理念与实践的延续整合与升华",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e4",
+          "mention": "物联网",
+          "normalized_name": "物联网",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "是建立在物联网和数字图书馆等基础之上的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e5",
+          "mention": "数字图书馆",
+          "normalized_name": "数字图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "是建立在物联网和数字图书馆等基础之上的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "a.智慧图书馆建设涉及技术、非技术、管理和实践等多个层面。 技术是根本,管理是保障,实践是关键，非技术不可或缺。几者虽各有侧重，但又要高度统一和相互协作、创新。b.智慧图书馆的建设要处理好智慧系统、智能设施和智慧服务等智慧图书馆构成要素间的关系，重视它在系统构架、数据采集、信息存储与处理、关联性等方面与数字图书馆等的区别;要借助云计算、物联网、全面感知、智能信息过滤、交互、ICT技术等,掌握数字化、网络化和智能化的信息技术特征，无缝发现和及时获取知识及学术信息;要构建于感知化、互联化和智能化的基础之上，通过改变与用户的交互方式,提高交互的明确性、灵活性和响应速度来实现智慧化服务和智慧化管理，做好基于情境计算的内容推送和场景服务；要整合信息管理系统，实现馆内各种数字信息、多媒体信息、文本信息和非文本信息的连通，并使服务突破时空的限制,变得无时不在和无所不在。c.积极引进成熟的技术和设备,比如RFID技术、物联网技术、智联网技术、自助借还系统、自主选座系统、自助打印系统、多媒体导航系统、资源统计和分析系统、文献检索系统、情报分析与服务系统、绩效评价系统和设备自动监控系统等，创建智慧服务体验区，打造智慧服务“特色品牌”。d.有效整合现有的网络资源、信息平台、数字化服务系统、虚拟社区、智能化设施等,凸显智慧图书馆的先进性、开放性、系统性、泛在性和智慧性。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "智慧图书馆",
+          "normalized_name": "智慧图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "a.智慧图书馆建设涉及技术、非技术、管理和实践等多个层面",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e2",
+          "mention": "智慧系统",
+          "normalized_name": "智慧系统",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "b.智慧图书馆的建设要处理好智慧系统、智能设施和智慧服务等智慧图书馆构成要素间的关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e3",
+          "mention": "智能设施",
+          "normalized_name": "智能设施",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "b.智慧图书馆的建设要处理好智慧系统、智能设施和智慧服务等智慧图书馆构成要素间的关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e4",
+          "mention": "智慧服务",
+          "normalized_name": "智慧服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "b.智慧图书馆的建设要处理好智慧系统、智能设施和智慧服务等智慧图书馆构成要素间的关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e5",
+          "mention": "数字图书馆",
+          "normalized_name": "数字图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "b.重视它在系统构架、数据采集、信息存储与处理、关联性等方面与数字图书馆等的区别",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e6",
+          "mention": "云计算",
+          "normalized_name": "云计算",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "b.要借助云计算、物联网、全面感知、智能信息过滤、交互、ICT技术等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e7",
+          "mention": "物联网",
+          "normalized_name": "物联网",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "b.要借助云计算、物联网、全面感知、智能信息过滤、交互、ICT技术等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e8",
+          "mention": "全面感知",
+          "normalized_name": "全面感知",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "b.要借助云计算、物联网、全面感知、智能信息过滤、交互、ICT技术等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为技术术语或概念"
+        },
+        {
+          "entity_id": "26_e9",
+          "mention": "智能信息过滤",
+          "normalized_name": "智能信息过滤",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "b.要借助云计算、物联网、全面感知、智能信息过滤、交互、ICT技术等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e10",
+          "mention": "ICT技术",
+          "normalized_name": "ICT技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "b.要借助云计算、物联网、全面感知、智能信息过滤、交互、ICT技术等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e11",
+          "mention": "情境计算",
+          "normalized_name": "情境计算",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "b.做好基于情境计算的内容推送和场景服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e12",
+          "mention": "RFID技术",
+          "normalized_name": "RFID技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "c.积极引进成熟的技术和设备,比如RFID技术、物联网技术、智联网技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e13",
+          "mention": "物联网技术",
+          "normalized_name": "物联网技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "c.积极引进成熟的技术和设备,比如RFID技术、物联网技术、智联网技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e14",
+          "mention": "智联网技术",
+          "normalized_name": "智联网技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "c.积极引进成熟的技术和设备,比如RFID技术、物联网技术、智联网技术",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e15",
+          "mention": "自助借还系统",
+          "normalized_name": "自助借还系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "c.比如RFID技术、物联网技术、智联网技术、自助借还系统、自主选座系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e16",
+          "mention": "自主选座系统",
+          "normalized_name": "自主选座系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "c.比如RFID技术、物联网技术、智联网技术、自助借还系统、自主选座系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e17",
+          "mention": "自助打印系统",
+          "normalized_name": "自助打印系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "c.自助打印系统、多媒体导航系统、资源统计和分析系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e18",
+          "mention": "多媒体导航系统",
+          "normalized_name": "多媒体导航系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "c.自助打印系统、多媒体导航系统、资源统计和分析系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e19",
+          "mention": "资源统计和分析系统",
+          "normalized_name": "资源统计和分析系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "c.资源统计和分析系统、文献检索系统、情报分析与服务系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e20",
+          "mention": "文献检索系统",
+          "normalized_name": "文献检索系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "c.资源统计和分析系统、文献检索系统、情报分析与服务系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e21",
+          "mention": "情报分析与服务系统",
+          "normalized_name": "情报分析与服务系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "c.文献检索系统、情报分析与服务系统、绩效评价系统和设备自动监控系统等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e22",
+          "mention": "绩效评价系统",
+          "normalized_name": "绩效评价系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "c.情报分析与服务系统、绩效评价系统和设备自动监控系统等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e23",
+          "mention": "设备自动监控系统",
+          "normalized_name": "设备自动监控系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "c.绩效评价系统和设备自动监控系统等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e24",
+          "mention": "智慧服务体验区",
+          "normalized_name": "智慧服务体验区",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "c.创建智慧服务体验区，打造智慧服务“特色品牌”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e25",
+          "mention": "虚拟社区",
+          "normalized_name": "虚拟社区",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "d.有效整合现有的网络资源、信息平台、数字化服务系统、虚拟社区、智能化设施等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e26",
+          "mention": "智能化设施",
+          "normalized_name": "智能化设施",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "d.有效整合现有的网络资源、信息平台、数字化服务系统、虚拟社区、智能化设施等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "第三,积极学习和借鉴一些成功的案例。 a.南京大学图书馆的智慧图书馆建设很有创新性。它包括实体场馆的建设和改造、信息服务平台的建设、智慧型服务的建设三大类，除了大家熟悉的微信、微博、虚拟咨询、文献传递和一站式检索外,以知识发现 $\\mathrm { F i n d } +$ 、移动图书馆 $\\mathrm { M o b i + }$ 、个性化服务Book $^ +$ 、借阅终端Pad$^ +$ 、学科服务 Subject $^ +$ 和机构知识库服务Paper $^ +$ 等为核心内容的智能化服务“ $^ +$ ”系统尤其值得称道，基本涵盖了图书馆知识发现、个性化服务和移动服务等。 b.上海交通大学图书馆安装了RFID 智能标签,引进了基于Primo的知识发现平台以及LibGuides系统，并通过手机、iPad和信息共享空间等设备和设施，将分布于不同领域、不同类型的信息进行处理与共享。",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "南京大学图书馆",
+          "normalized_name": "南京大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "南京大学图书馆的智慧图书馆建设很有创新性",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "智慧图书馆",
+          "normalized_name": "智慧图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "南京大学图书馆的智慧图书馆建设很有创新性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e3",
+          "mention": "Find+",
+          "normalized_name": "Find+",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以知识发现 Find+、移动图书馆 Mobi+、个性化服务Book+、借阅终端Pad+、学科服务 Subject+ 和机构知识库服务Paper+ 等为核心内容的智能化服务“+”系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e4",
+          "mention": "Mobi+",
+          "normalized_name": "Mobi+",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以知识发现 Find+、移动图书馆 Mobi+、个性化服务Book+、借阅终端Pad+、学科服务 Subject+ 和机构知识库服务Paper+ 等为核心内容的智能化服务“+”系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e5",
+          "mention": "Book+",
+          "normalized_name": "Book+",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以知识发现 Find+、移动图书馆 Mobi+、个性化服务Book+、借阅终端Pad+、学科服务 Subject+ 和机构知识库服务Paper+ 等为核心内容的智能化服务“+”系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e6",
+          "mention": "Pad+",
+          "normalized_name": "Pad+",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以知识发现 Find+、移动图书馆 Mobi+、个性化服务Book+、借阅终端Pad+、学科服务 Subject+ 和机构知识库服务Paper+ 等为核心内容的智能化服务“+”系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e7",
+          "mention": "Subject+",
+          "normalized_name": "Subject+",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以知识发现 Find+、移动图书馆 Mobi+、个性化服务Book+、借阅终端Pad+、学科服务 Subject+ 和机构知识库服务Paper+ 等为核心内容的智能化服务“+”系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e8",
+          "mention": "Paper+",
+          "normalized_name": "Paper+",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以知识发现 Find+、移动图书馆 Mobi+、个性化服务Book+、借阅终端Pad+、学科服务 Subject+ 和机构知识库服务Paper+ 等为核心内容的智能化服务“+”系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e9",
+          "mention": "上海交通大学图书馆",
+          "normalized_name": "上海交通大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "上海交通大学图书馆安装了RFID 智能标签,引进了基于Primo的知识发现平台以及LibGuides系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e10",
+          "mention": "RFID 智能标签",
+          "normalized_name": "RFID智能标签",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "上海交通大学图书馆安装了RFID 智能标签",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e11",
+          "mention": "Primo",
+          "normalized_name": "Primo",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "引进了基于Primo的知识发现平台",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e12",
+          "mention": "LibGuides系统",
+          "normalized_name": "LibGuides系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "引进了基于Primo的知识发现平台以及LibGuides系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "它可突破传统图书馆的时空限制,实现人、物、信息在任何时间、任何地点的互联互通，海量信息在信息管理和服务平台上的聚合、优化和推送，并催生与之相适应的全新的服务模式，强占信息服务的制高点。在智慧图书馆，基于位置的自适应服务,无处不在的移动、自主设备支持，响应式、智能化、个性化服务等将常态化，自动参考问答、个性化推荐等技术广泛采用，立体互联、全面感知、智慧便捷和绿色发展等特性更加显著。智慧图书馆的高级形态是融合图书馆,它具有融合化、互动化、可视化、泛在化和智能化五大特点，是“五化”的高度统一，是物理图书馆与虚拟图书馆的深度融合，是通体革命，也是人机互动对全服务链的全时空域的渗透，是万物皆入口的新模式和新形态的新高度。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "智慧图书馆",
+          "normalized_name": "智慧图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在智慧图书馆，基于位置的自适应服务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "融合图书馆",
+          "normalized_name": "融合图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "智慧图书馆的高级形态是融合图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e3",
+          "mention": "物理图书馆",
+          "normalized_name": "物理图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "是物理图书馆与虚拟图书馆的深度融合",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e4",
+          "mention": "虚拟图书馆",
+          "normalized_name": "虚拟图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "是物理图书馆与虚拟图书馆的深度融合",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e5",
+          "mention": "自动参考问答",
+          "normalized_name": "自动参考问答",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "自动参考问答、个性化推荐等技术广泛采用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e6",
+          "mention": "个性化推荐",
+          "normalized_name": "个性化推荐",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "自动参考问答、个性化推荐等技术广泛采用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "29",
+      "sentence": "是较早开展移动服务的国家。 国内移动图书馆的建设始于2003年,2010年后进入较快发展阶段。至2012年，国内移动图书馆的服务主要体现在以SMS短信服务、WAP网站服务为主，内容多为传统图书馆服务的转移，而同期的国外图书馆则以WAP网站服务为主,短信服务为辅。之后,特别是近几年，随着信息技术的发展和智能手机等移动端的普及,移动图书馆的建设和新型的移动图书馆服务得到了迅猛发展。",
+      "entities": [
+        {
+          "entity_id": "29_e1",
+          "mention": "移动图书馆",
+          "normalized_name": "移动图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国内移动图书馆的建设始于2003年",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e2",
+          "mention": "SMS短信服务",
+          "normalized_name": "SMS短信服务",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以SMS短信服务、WAP网站服务为主",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e3",
+          "mention": "WAP网站服务",
+          "normalized_name": "WAP网站服务",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以SMS短信服务、WAP网站服务为主",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e4",
+          "mention": "智能手机",
+          "normalized_name": "智能手机",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着信息技术的发展和智能手机等移动端的普及",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "值得注意的是，今天用户对移动图书馆的认可度、信任度和依附度还不高，移动图书馆不受时空限制、即时感知、无所不在的特性还远没有显现,其功能、服务、资源、人性化等明显不足,图书馆的移动服务急需向APP等更高层次的移动应用服务转型。",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "移动图书馆",
+          "normalized_name": "移动图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "今天用户对移动图书馆的认可度、信任度和依附度还不高",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "APP",
+          "normalized_name": "APP",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "图书馆的移动服务急需向APP等更高层次的移动应用服务转型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "32",
+      "sentence": "a.APP服务除能提供用户所需的短信、网站等类似服务内容外,还可以提供新技术服务，如拍照、语言、条码读取、NFC 服务等。 b.目前大多数的图书馆APP应用还处于单一平台的应用,图书馆的APP服务局限性多、服务区域小,支持系统单一，用户不能有效获取馆藏的数据库资源或进行全文阅读等。c.要提升APP的服务能力和服务效果，必须解决制约其发展的访问权限问题、资源授权问题、资源集成问题、海量资源的馆藏问题和基本服务能力不足问题。通过放开服务权限，与第三方合作,组建移动图书馆联盟,增加数字资源数量和优化基本的服务功能等手段,实现APP服务质的飞跃。",
+      "entities": [
+        {
+          "entity_id": "32_e1",
+          "mention": "APP服务",
+          "normalized_name": "APP服务",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "a.APP服务除能提供用户所需的短信、网站等类似服务内容外",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指代移动应用服务这一概念，但原文中作为具体服务类型提及"
+        },
+        {
+          "entity_id": "32_e2",
+          "mention": "NFC 服务",
+          "normalized_name": "NFC服务",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如拍照、语言、条码读取、NFC 服务等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e3",
+          "mention": "图书馆APP应用",
+          "normalized_name": "图书馆APP应用",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "目前大多数的图书馆APP应用还处于单一平台的应用",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛指图书馆移动应用，但作为具体系统类型提及"
+        },
+        {
+          "entity_id": "32_e4",
+          "mention": "移动图书馆联盟",
+          "normalized_name": "移动图书馆联盟",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "组建移动图书馆联盟",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "33",
+      "sentence": "a.重视对Beacon近场感知技术的应用。 实现移动应用从线上服务向线下实体延伸、走向情境化服务的转变，使移动图书馆服务由内容驱动转化为内容与情境共同驱动，借助APP运行,可以Native APP的方式开发,也可以Hybrid APP(即 Native APP $^ +$ Web APP）的方式实现和扩展各种应用服务(8）。b.运用LBS(location based service）基于位置的服务实现情景化信息推送，凸显图书馆服务情境的感知性，使服务贯穿到信息搜索、信息获取、信息交流、信息利用、信息共享传播等用户信息行为的整个",
+      "entities": [
+        {
+          "entity_id": "33_e1",
+          "mention": "Beacon近场感知技术",
+          "normalized_name": "Beacon近场感知技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "重视对Beacon近场感知技术的应用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e2",
+          "mention": "Native APP",
+          "normalized_name": "Native APP",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "可以Native APP的方式开发",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e3",
+          "mention": "Hybrid APP",
+          "normalized_name": "Hybrid APP",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "也可以Hybrid APP(即 Native APP $^ +$ Web APP）的方式实现和扩展各种应用服务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e4",
+          "mention": "Web APP",
+          "normalized_name": "Web APP",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "也可以Hybrid APP(即 Native APP $^ +$ Web APP）的方式实现和扩展各种应用服务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e5",
+          "mention": "LBS(location based service）基于位置的服务",
+          "normalized_name": "LBS（基于位置的服务）",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "运用LBS(location based service）基于位置的服务实现情景化信息推送",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

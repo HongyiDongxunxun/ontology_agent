@@ -1,0 +1,206 @@
+{
+  "base_name": "reviewed_full_6027",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "16",
+      "sentence": "《中华人民共和国高等学校图书馆工作条例》规定：“高等学校应加强图书馆专业队伍建设，·有计划地配备包括图书馆学、外语（或古汉语）和各学科的专业人员。”根据我校特点，图书馆情报学专业人员和图书馆所面向服务的各学科专业人员、现代技术人员（不要求具备专门的学科知识的初级人员）之间，要有一个合理的比例。 现有专业结构比例是：",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "《中华人民共和国高等学校图书馆工作条例》",
+          "normalized_name": "《中华人民共和国高等学校图书馆工作条例》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《中华人民共和国高等学校图书馆工作条例》规定",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "图书馆学",
+          "normalized_name": "图书馆学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括图书馆学、外语（或古汉语）和各学科的专业人员",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "外语",
+          "normalized_name": "外语",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括图书馆学、外语（或古汉语）和各学科的专业人员",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能指语言学科或语言技能，此处按学科抽取"
+        },
+        {
+          "entity_id": "16_e4",
+          "mention": "古汉语",
+          "normalized_name": "古汉语",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括图书馆学、外语（或古汉语）和各学科的专业人员",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能指学科或语言技能"
+        },
+        {
+          "entity_id": "16_e5",
+          "mention": "图书馆情报学",
+          "normalized_name": "图书馆情报学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆情报学专业人员和图书馆所面向服务的各学科专业人员",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "37",
+      "sentence": "综观我馆专业队伍结构现状，首先是缺少一批高层次人才，尤其是缺少年轻的高层次人才。这部分人才的解决，一方面有少数人可以自学成才，另一方面，必须从组织上采取改革性措施，打破以往传统的个别培养方式，而代之以举办研究生班、双学位班进行成批培养。我们设想在1986年评定职称以后，由获得高级职称的专业人员和图书馆学系教师联合举办研究生班和双学位班，兼收在职研究生和双学位生，此外，还要有计划地选送优秀的年轻专业人员到有代表性的先进国家（日、美、苏等）去学习、进修，这样，经过十年左右时间，基本上可以接近或达到高层次人才的理想比例目标。",
+      "entities": [
+        {
+          "entity_id": "37_e1",
+          "mention": "我馆",
+          "normalized_name": "我馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "综观我馆专业队伍结构现状",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "需结合上下文确认具体图书馆名称"
+        },
+        {
+          "entity_id": "37_e2",
+          "mention": "研究生班",
+          "normalized_name": "研究生班",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "举办研究生班、双学位班进行成批培养",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e3",
+          "mention": "双学位班",
+          "normalized_name": "双学位班",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "举办研究生班、双学位班进行成批培养",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e4",
+          "mention": "1986年评定职称",
+          "normalized_name": "1986年评定职称",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "在1986年评定职称以后",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "具体政策名称未明确"
+        },
+        {
+          "entity_id": "37_e5",
+          "mention": "图书馆学系",
+          "normalized_name": "图书馆学系",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由获得高级职称的专业人员和图书馆学系教师联合举办",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e6",
+          "mention": "日、美、苏",
+          "normalized_name": "日本、美国、苏联",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有代表性的先进国家（日、美、苏等）",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为国家实体，但在此语境中作为先进国家代表被提及"
+        }
+      ]
+    },
+    {
+      "sentence_id": "45",
+      "sentence": "综上所述，集中到一点，就是东北师大图书馆专业队伍现状，基本上是属于传统图书馆的范畴。而现代化图书馆专业队伍建设规划的实质，就是要改变这种传统结构，向现代化结构过渡。这种过渡能否实现，归根结底取决于人们对图书馆专业队伍能否重新认识，并对传统观念能否彻底转变，特别是有握决策实权的校、馆两级领导能否做到这一点，乃是图书馆专业队伍建设成败的关键。 ·",
+      "entities": [
+        {
+          "entity_id": "45_e1",
+          "mention": "东北师大图书馆",
+          "normalized_name": "东北师范大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "东北师大图书馆专业队伍现状",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "45_e2",
+          "mention": "传统图书馆",
+          "normalized_name": "传统图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基本上是属于传统图书馆的范畴",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "45_e3",
+          "mention": "现代化图书馆",
+          "normalized_name": "现代化图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "向现代化结构过渡",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

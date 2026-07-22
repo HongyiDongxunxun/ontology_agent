@@ -1,0 +1,3895 @@
+{
+  "base_name": "reviewed_full_4468",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "信息过载背景下，会话推荐系统通过分析用户当前会话序列(在一段时间内用户与站点发生的连续交互行为)学习用户会话兴趣,实现实时推荐[]。 会话推荐系统不仅可以捕获用户的短期事务型意图[2],还可以依据不完整用户信息实现有效推荐[3],已成为当前热门研究方向。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "信息过载",
+          "normalized_name": "信息过载",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息过载背景下",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "会话推荐系统",
+          "normalized_name": "会话推荐系统",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "会话推荐系统通过分析用户当前会话序列",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "Processes)模型[7等，主要通过估计连续两个项目之间的转移概率实现会话推荐。 然而,这两类早期方法仅关注特定步长的项目转移，无法捕捉项目之间的长期依赖,使会话兴趣学习不充分[8]。 为提升会话推荐性能,基于循环神经网络(Recurrent NeuralNetwork，RNN）的会话推荐方法，如GRU4REC(Gated RecurrentUnits for Recommendation)模型[9]、NARM(Neural Attentive Recommendation Machine)模型[10]等,通过考虑项目之间的长期依赖对会话兴趣表示进行学习。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "Processes)模型[7",
+          "normalized_name": "Processes模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Processes)模型[7等，主要通过估计连续两个项目之间的转移概率实现会话推荐",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "mention包含括号和引用标记，可能为OCR或格式问题"
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "循环神经网络",
+          "normalized_name": "循环神经网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于循环神经网络(Recurrent NeuralNetwork，RNN）的会话推荐方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "Recurrent NeuralNetwork",
+          "normalized_name": "Recurrent Neural Network",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于循环神经网络(Recurrent NeuralNetwork，RNN）的会话推荐方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "RNN",
+          "normalized_name": "RNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于循环神经网络(Recurrent NeuralNetwork，RNN）的会话推荐方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e5",
+          "mention": "GRU4REC(Gated RecurrentUnits for Recommendation)模型[9]",
+          "normalized_name": "GRU4REC模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "GRU4REC(Gated RecurrentUnits for Recommendation)模型[9]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e6",
+          "mention": "NARM(Neural Attentive Recommendation Machine)模型[10]",
+          "normalized_name": "NARM模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "NARM(Neural Attentive Recommendation Machine)模型[10]等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "为提升会话推荐性能,基于循环神经网络(Recurrent NeuralNetwork，RNN）的会话推荐方法，如GRU4REC(Gated RecurrentUnits for Recommendation)模型[9]、NARM(Neural Attentive Recommendation Machine)模型[10]等,通过考虑项目之间的长期依赖对会话兴趣表示进行学习。 凭借序列建模的显著优势,RNN一度成为实现会话推荐的主流技术[]。然而,基于RNN的会话推荐方法过于强调项目之间的顺序依赖，无法对项目之间结构化的复杂关系进行有效建模[12]。 为进一步提升会话推荐性能,基于图神经网络（Graph Neural Network，GNN)的会话推荐方法,如 SR-GNN（Session-Based Recommendation withGraph Neural Networks)模型[13]、GCE-GNN(GlobalContext Enhanced Graph Neural Networks）模 型[14]等,将会话数据组织为会话图,并借助GNN的信息传播机制对会话图进行学习。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "循环神经网络",
+          "normalized_name": "循环神经网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于循环神经网络(Recurrent NeuralNetwork，RNN）的会话推荐方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "RNN",
+          "normalized_name": "RNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于循环神经网络(Recurrent NeuralNetwork，RNN）的会话推荐方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "GRU4REC",
+          "normalized_name": "GRU4REC",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如GRU4REC(Gated RecurrentUnits for Recommendation)模型[9]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "Gated Recurrent Units for Recommendation",
+          "normalized_name": "Gated Recurrent Units for Recommendation",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "GRU4REC(Gated RecurrentUnits for Recommendation)模型[9]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "NARM",
+          "normalized_name": "NARM",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "NARM(Neural Attentive Recommendation Machine)模型[10]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e6",
+          "mention": "Neural Attentive Recommendation Machine",
+          "normalized_name": "Neural Attentive Recommendation Machine",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "NARM(Neural Attentive Recommendation Machine)模型[10]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e7",
+          "mention": "图神经网络",
+          "normalized_name": "图神经网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于图神经网络（Graph Neural Network，GNN)的会话推荐方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e8",
+          "mention": "GNN",
+          "normalized_name": "GNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于图神经网络（Graph Neural Network，GNN)的会话推荐方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e9",
+          "mention": "SR-GNN",
+          "normalized_name": "SR-GNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如 SR-GNN（Session-Based Recommendation withGraph Neural Networks)模型[13]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e10",
+          "mention": "Session-Based Recommendation with Graph Neural Networks",
+          "normalized_name": "Session-Based Recommendation with Graph Neural Networks",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "SR-GNN（Session-Based Recommendation withGraph Neural Networks)模型[13]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e11",
+          "mention": "GCE-GNN",
+          "normalized_name": "GCE-GNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "GCE-GNN(GlobalContext Enhanced Graph Neural Networks）模 型[14]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e12",
+          "mention": "Global Context Enhanced Graph Neural Networks",
+          "normalized_name": "Global Context Enhanced Graph Neural Networks",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "GCE-GNN(GlobalContext Enhanced Graph Neural Networks）模 型[14]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "为进一步提升会话推荐性能,基于图神经网络（Graph Neural Network，GNN)的会话推荐方法,如 SR-GNN（Session-Based Recommendation withGraph Neural Networks)模型[13]、GCE-GNN(GlobalContext Enhanced Graph Neural Networks）模 型[14]等,将会话数据组织为会话图,并借助GNN的信息传播机制对会话图进行学习。 由于GNN可以通过建模项目之间的复杂转移关系更充分地理解用户的会话兴趣[15],因此基于GNN的会话推荐方法在会话推荐领域广泛流行。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "图神经网络（Graph Neural Network，GNN）",
+          "normalized_name": "图神经网络（Graph Neural Network，GNN）",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于图神经网络（Graph Neural Network，GNN)的会话推荐方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "SR-GNN（Session-Based Recommendation withGraph Neural Networks)模型[13]",
+          "normalized_name": "SR-GNN（Session-Based Recommendation with Graph Neural Networks）模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如 SR-GNN（Session-Based Recommendation withGraph Neural Networks)模型[13]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "GCE-GNN(GlobalContext Enhanced Graph Neural Networks）模型[14]",
+          "normalized_name": "GCE-GNN（Global Context Enhanced Graph Neural Networks）模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "GCE-GNN(GlobalContext Enhanced Graph Neural Networks）模 型[14]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "GNN",
+          "normalized_name": "GNN",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "借助GNN的信息传播机制对会话图进行学习",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "会话图",
+          "normalized_name": "会话图",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将会话数据组织为会话图",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "在中国知网数据库中，以\"会话推荐\"分别与\"关联规则”“马尔科夫”“循环神经网络\"和\"图神经网络\"组合生成检索式对相关研究进行检索和统计。 从图1中可以观察到：会话推荐研究在国内外的研究数量呈递增趋势; 基于GNN的会话推荐方法在近期研究中的占比呈现递增趋势。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "中国知网数据库",
+          "normalized_name": "中国知网数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在中国知网数据库中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "会话推荐",
+          "normalized_name": "会话推荐",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以\"会话推荐\"分别与\"关联规则”“马尔科夫”“循环神经网络\"和\"图神经网络\"组合生成检索式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "关联规则",
+          "normalized_name": "关联规则",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以\"会话推荐\"分别与\"关联规则”“马尔科夫”“循环神经网络\"和\"图神经网络\"组合生成检索式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "马尔科夫",
+          "normalized_name": "马尔科夫",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以\"会话推荐\"分别与\"关联规则”“马尔科夫”“循环神经网络\"和\"图神经网络\"组合生成检索式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e5",
+          "mention": "循环神经网络",
+          "normalized_name": "循环神经网络",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以\"会话推荐\"分别与\"关联规则”“马尔科夫”“循环神经网络\"和\"图神经网络\"组合生成检索式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e6",
+          "mention": "图神经网络",
+          "normalized_name": "图神经网络",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以\"会话推荐\"分别与\"关联规则”“马尔科夫”“循环神经网络\"和\"图神经网络\"组合生成检索式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e7",
+          "mention": "GNN",
+          "normalized_name": "GNN",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于GNN的会话推荐方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "基于GNN的会话推荐方法在近期研究中的占比呈现递增趋势。 由此可见,会话推荐研究符合国内外的热门研究趋势，且GNN是实现会话推荐系统的热点技术。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "GNN",
+          "normalized_name": "GNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于GNN的会话推荐方法在近期研究中的占比呈现递增趋势",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "会话推荐方法",
+          "normalized_name": "会话推荐方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于GNN的会话推荐方法在近期研究中的占比呈现递增趋势",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "会话推荐",
+          "normalized_name": "会话推荐",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "会话推荐研究符合国内外的热门研究趋势",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "会话推荐系统",
+          "normalized_name": "会话推荐系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "GNN是实现会话推荐系统的热点技术",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "例如：文献[11]分别从含义、应用场景、主要算法、实验设置等方面对会话推荐系统进行全面分类与总结。 文献[15]采用实证研究方法对神经网络和非神经网络会话推荐方法进行对比分析，并指出两类会话推荐方法在准确率和召回率指标上不存在绝对的优劣之分。 然而，这些综述主要将",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "会话推荐系统",
+          "normalized_name": "会话推荐系统",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对会话推荐系统进行全面分类与总结",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "神经网络",
+          "normalized_name": "神经网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对神经网络和非神经网络会话推荐方法进行对比分析",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "非神经网络会话推荐方法",
+          "normalized_name": "非神经网络会话推荐方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对神经网络和非神经网络会话推荐方法进行对比分析",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "实证研究方法",
+          "normalized_name": "实证研究方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "文献[15]采用实证研究方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "RNN作为实现会话推荐的前沿技术，尚未在当前主流的GNN技术背景下对会话推荐方法的新型研究范式展开系统性评述。本文聚焦GNN技术背景下会话推荐方法呈现出的新特点,对GNN会话推荐方法的研究框架、评价资源以及未来研究趋势进行系统性归纳、总结和讨论，为进一步优化会话推荐方法提供借鉴与参考。 具体而言,本文的研究工作体现",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "RNN",
+          "normalized_name": "RNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "RNN作为实现会话推荐的前沿技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "GNN",
+          "normalized_name": "GNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "尚未在当前主流的GNN技术背景下对会话推荐方法的新型研究范式展开系统性评述",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "会话推荐",
+          "normalized_name": "会话推荐",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "RNN作为实现会话推荐的前沿技术",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "GNN会话推荐方法",
+          "normalized_name": "GNN会话推荐方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对GNN会话推荐方法的研究框架、评价资源以及未来研究趋势进行系统性归纳",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "(1)依据GNN会话推荐方法的研究特点，从会话图构建、会话图学习和会话兴趣表示三个方面归纳研究框架,并在研究框架下总结对比相关方法的研究思路和优劣势。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "GNN会话推荐方法",
+          "normalized_name": "GNN会话推荐方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "依据GNN会话推荐方法的研究特点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "会话图构建",
+          "normalized_name": "会话图构建",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从会话图构建、会话图学习和会话兴趣表示三个方面归纳研究框架",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为method"
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "会话图学习",
+          "normalized_name": "会话图学习",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从会话图构建、会话图学习和会话兴趣表示三个方面归纳研究框架",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为method"
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "会话兴趣表示",
+          "normalized_name": "会话兴趣表示",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从会话图构建、会话图学习和会话兴趣表示三个方面归纳研究框架",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为method"
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "(2)依据GNN会话推荐方法的实验设置，从数据集、评价指标和基线模型三个方面总结评价资源，并分析现有评价资源存在的不足，为验证和发展GNN会话推荐方法提供实验基础。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "GNN会话推荐方法",
+          "normalized_name": "GNN会话推荐方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "依据GNN会话推荐方法的实验设置",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "数据集",
+          "normalized_name": "数据集",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "从数据集、评价指标和基线模型三个方面总结评价资源",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'数据集'为泛称，但根据图情领域放宽规则，作为评价资源的具体类别可抽取"
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "评价指标",
+          "normalized_name": "评价指标",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "从数据集、评价指标和基线模型三个方面总结评价资源",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'评价指标'为泛称，但作为评价资源的具体类别可抽取"
+        },
+        {
+          "entity_id": "10_e4",
+          "mention": "基线模型",
+          "normalized_name": "基线模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从数据集、评价指标和基线模型三个方面总结评价资源",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'基线模型'为泛称，但作为评价资源的具体类别可抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "本文的技术基础是GNN,其主要思想是迭代地聚合来自邻居节点的信息，并将聚合的邻居信息与中心节点表示进行整合，实现信息传播[8]。 相较于CNN、RNN、注意力机制等深度学习方法,GNN在会话推荐中的优势主要体现为：",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "GNN",
+          "normalized_name": "GNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "本文的技术基础是GNN",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "CNN",
+          "normalized_name": "CNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "相较于CNN、RNN、注意力机制等深度学习方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "RNN",
+          "normalized_name": "RNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "相较于CNN、RNN、注意力机制等深度学习方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "注意力机制",
+          "normalized_name": "注意力机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "相较于CNN、RNN、注意力机制等深度学习方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "深度学习方法",
+          "normalized_name": "深度学习方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "相较于CNN、RNN、注意力机制等深度学习方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e6",
+          "mention": "会话推荐",
+          "normalized_name": "会话推荐",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "GNN在会话推荐中的优势主要体现为",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "会话序列可依据项目转移关系对应地组织为图数据，而图数据为建模项目之间的复杂转移关系提供了结构化基础[16]。 然而,其他深度学习技术仅在欧氏空间探究会话序列直接反映的会话兴趣，无法在非欧氏空间借助图结构挖掘蕴含在项目复杂转移关系中的隐式兴趣[8],致使会话兴趣表示不充分。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "图数据",
+          "normalized_name": "图数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "会话序列可依据项目转移关系对应地组织为图数据",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "欧氏空间",
+          "normalized_name": "欧氏空间",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "其他深度学习技术仅在欧氏空间探究会话序列直接反映的会话兴趣",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "非欧氏空间",
+          "normalized_name": "非欧氏空间",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "无法在非欧氏空间借助图结构挖掘蕴含在项目复杂转移关系中的隐式兴趣",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "图结构",
+          "normalized_name": "图结构",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "借助图结构挖掘蕴含在项目复杂转移关系中的隐式兴趣",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e5",
+          "mention": "会话兴趣",
+          "normalized_name": "会话兴趣",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "致使会话兴趣表示不充分",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为领域术语，但原文中作为独立概念出现"
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "项目之间的高阶连通性包含丰富的结构化语义,引入高阶项目转移关系有利于削弱噪声交互对会话兴趣建模的影响[18]。 相较于其他深度学习技术,GNN可利用信息传播机制有效地建模图中节点之间的高阶连通性,因此更有利于建模准确的会话兴趣表示。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "高阶项目转移关系",
+          "normalized_name": "高阶项目转移关系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引入高阶项目转移关系有利于削弱噪声交互对会话兴趣建模的影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "GNN",
+          "normalized_name": "图神经网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "相较于其他深度学习技术,GNN可利用信息传播机制有效地建模图中节点之间的高阶连通性",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "信息传播机制",
+          "normalized_name": "信息传播机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "GNN可利用信息传播机制有效地建模图中节点之间的高阶连通性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "会话兴趣表示",
+          "normalized_name": "会话兴趣表示",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "建模准确的会话兴趣表示",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "依据GNN会话推荐方法在图数据、图学习、图利用三方面的侧重,本文将研究框架归纳为三个方面，如图2所示。 会话图构建类研究重点关注如何科学地将会话数据组织为会话图，会话图学习类研究聚焦于GNN中信息传播机制的选择与设计，会话兴趣表示类研究重点关注项目整合方式的选择与设计。围绕研究框架中的三个核心问题对相关研究进行文献梳理,对比每个核心问题下相关方法的优势与劣势,全面且系统地了解现有研究范式。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "GNN会话推荐方法",
+          "normalized_name": "GNN会话推荐方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "依据GNN会话推荐方法在图数据、图学习、图利用三方面的侧重",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "图数据",
+          "normalized_name": "图数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "依据GNN会话推荐方法在图数据、图学习、图利用三方面的侧重",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "图学习",
+          "normalized_name": "图学习",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "依据GNN会话推荐方法在图数据、图学习、图利用三方面的侧重",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e4",
+          "mention": "图利用",
+          "normalized_name": "图利用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "依据GNN会话推荐方法在图数据、图学习、图利用三方面的侧重",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e5",
+          "mention": "会话图构建类研究",
+          "normalized_name": "会话图构建类研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "会话图构建类研究重点关注如何科学地将会话数据组织为会话图",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为method"
+        },
+        {
+          "entity_id": "14_e6",
+          "mention": "会话图学习类研究",
+          "normalized_name": "会话图学习类研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "会话图学习类研究聚焦于GNN中信息传播机制的选择与设计",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为method"
+        },
+        {
+          "entity_id": "14_e7",
+          "mention": "GNN",
+          "normalized_name": "GNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "会话图学习类研究聚焦于GNN中信息传播机制的选择与设计",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e8",
+          "mention": "会话兴趣表示类研究",
+          "normalized_name": "会话兴趣表示类研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "会话兴趣表示类研究重点关注项目整合方式的选择与设计",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为method"
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "在基于GNN的会话推荐方法研究中，构建合理的会话图模型是成功应用GNN的基础[]。 依据会话数据的丰富性,将会话图构建方法分为两类：基于单会话的图构建方法和基于多会话的图构建方法。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "GNN",
+          "normalized_name": "GNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于GNN的会话推荐方法研究中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "会话图模型",
+          "normalized_name": "会话图模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "构建合理的会话图模型是成功应用GNN的基础",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "基于单会话的图构建方法",
+          "normalized_name": "基于单会话的图构建方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将会话图构建方法分为两类：基于单会话的图构建方法和基于多会话的图构建方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "基于多会话的图构建方法",
+          "normalized_name": "基于多会话的图构建方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将会话图构建方法分为两类：基于单会话的图构建方法和基于多会话的图构建方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "基于单会话的图构建方法主要依据单个会话构建会话图,依据是否考虑会话内项目的非连续关系，相关研究可进一步分为两类：",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "单会话的图构建方法",
+          "normalized_name": "单会话的图构建方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于单会话的图构建方法主要依据单个会话构建会话图",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "会话图",
+          "normalized_name": "会话图",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主要依据单个会话构建会话图",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "$\\textcircled{1}$ 基于会话内连续关系的图构建方法，如图3(a)所示。 此类方法操作相对直接,主要将单个会话内的每个项目视作图中的节点，通过在两个连续项目之间添加边构建会话图模型。 如SR-GNN模型[13]、GC-SAN(Graph Contextualized Self-AttentionNetwork）模型[19]、TAGNN（Target Attentive GraphNeural Networks)模型[20]、Beyond Clicks 模型[21]、FA-",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "基于会话内连续关系的图构建方法",
+          "normalized_name": "基于会话内连续关系的图构建方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于会话内连续关系的图构建方法，如图3(a)所示",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "会话图模型",
+          "normalized_name": "会话图模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过在两个连续项目之间添加边构建会话图模型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "SR-GNN模型",
+          "normalized_name": "SR-GNN模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如SR-GNN模型[13]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "GC-SAN(Graph Contextualized Self-Attention Network）模型",
+          "normalized_name": "GC-SAN(Graph Contextualized Self-Attention Network)模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "GC-SAN(Graph Contextualized Self-AttentionNetwork）模型[19]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e5",
+          "mention": "TAGNN（Target Attentive Graph Neural Networks)模型",
+          "normalized_name": "TAGNN(Target Attentive Graph Neural Networks)模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "TAGNN（Target Attentive GraphNeural Networks)模型[20]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e6",
+          "mention": "Beyond Clicks 模型",
+          "normalized_name": "Beyond Clicks 模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Beyond Clicks 模型[21]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "GNR（Feature Augmentation Based Graph NeuralRecommendation)模型[22]等经典研究均采用此类方法对会话图进行构建。 然而,在实际推荐场景中，用户会话序列的长度较短[13],如Diginetica数据集（一种典型的会话推荐数据集)上的会话平均长度仅为5.71,导致会话图模型中的结构化信息不充分。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "GNR（Feature Augmentation Based Graph NeuralRecommendation)模型[22]",
+          "normalized_name": "GNR（Feature Augmentation Based Graph Neural Recommendation）模型",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "GNR（Feature Augmentation Based Graph NeuralRecommendation)模型[22]等经典研究均采用此类方法对会话图进行构建",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "Diginetica数据集",
+          "normalized_name": "Diginetica数据集",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如Diginetica数据集（一种典型的会话推荐数据集)上的会话平均长度仅为5.71",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "考虑到仅在连续项目之间添加边可能会忽略远程项目关 系，SGNN-HN（Star Graph NeuralNetworks with Highway Networks)模型[24]在会话内引入一个虚拟的\"星\"节点作为会话中心,并将其与当前会话中的所有项目连接。 由于考虑项目之间的非连续关系可以有效稠密化会话图结构[23-24],所有此类方法往往比基于会话内连续关系的图构建方法表现出更优异的会话推荐性能。然而,此类研究仅聚焦单个会话，仍然无法摆脱单个会话固有的数据稀疏性。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "SGNN-HN（Star Graph NeuralNetworks with Highway Networks)模型[24]",
+          "normalized_name": "SGNN-HN（Star Graph NeuralNetworks with Highway Networks）模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "SGNN-HN（Star Graph NeuralNetworks with Highway Networks)模型[24]在会话内引入一个虚拟的\"星\"节点作为会话中心",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "会话推荐",
+          "normalized_name": "会话推荐",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "此类方法往往比基于会话内连续关系的图构建方法表现出更优异的会话推荐性能",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "数据稀疏性",
+          "normalized_name": "数据稀疏性",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "仍然无法摆脱单个会话固有的数据稀疏性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "基于多会话的图构建方法的出发点是丰富单个会话中的有限交互行为[14]，利用多个会话中的项目关系构建更丰富的会话图模型。 依据会话图在结构上的差异,相关研究可进一步分为两类：",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "多会话的图构建方法",
+          "normalized_name": "多会话的图构建方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于多会话的图构建方法的出发点是丰富单个会话中的有限交互行为",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "会话图模型",
+          "normalized_name": "会话图模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用多个会话中的项目关系构建更丰富的会话图模型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "$\\textcircled{1}$ 基于超图的图构建方法，如图3(c)所示。 此类方法主要通过规定超边为项目建立联系，以有效利用项目之间的非成对关系构建会话图模型。如DHCN （Dual Channel Hypergraph ConvolutionalNetworks）模 型[25]和 HIDE（Hypergraph NeuralNetworks with IntentDisentanglement)模型[26]将每个会话作为一个超边，通过集成全局会话构建超图。类似地，SHARE（Session-Based HypergraphAttention Network for Recommendation)模型[27]依据滑动窗口对超边进行定义，并在全局层面为每个会话构造一个超图。此外,COTREC（Self-SupervisedGraph Co-Training for Session-BasedRecommendation)模型[28]结合会话之间的关系构建以会话为节点的超图，为显式地整合跨会话信息提",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "DHCN （Dual Channel Hypergraph ConvolutionalNetworks）模 型[25]",
+          "normalized_name": "DHCN (Dual Channel Hypergraph Convolutional Networks) 模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如DHCN （Dual Channel Hypergraph ConvolutionalNetworks）模 型[25]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "HIDE（Hypergraph NeuralNetworks with IntentDisentanglement)模型[26]",
+          "normalized_name": "HIDE (Hypergraph Neural Networks with Intent Disentanglement) 模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "HIDE（Hypergraph NeuralNetworks with IntentDisentanglement)模型[26]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "SHARE（Session-Based HypergraphAttention Network for Recommendation)模型[27]",
+          "normalized_name": "SHARE (Session-Based Hypergraph Attention Network for Recommendation) 模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "SHARE（Session-Based HypergraphAttention Network for Recommendation)模型[27]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "COTREC（Self-SupervisedGraph Co-Training for Session-BasedRecommendation)模型[28]",
+          "normalized_name": "COTREC (Self-Supervised Graph Co-Training for Session-Based Recommendation) 模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "COTREC（Self-SupervisedGraph Co-Training for Session-BasedRecommendation)模型[28]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "供了充分基础。 然而，由于同属一个超边的节点之间无法有效体现时序关系，此类研究在时序关系利用上存在限制。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "超边",
+          "normalized_name": "超边",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "由于同属一个超边的节点之间无法有效体现时序关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "时序关系",
+          "normalized_name": "时序关系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "此类研究在时序关系利用上存在限制",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "$\\textcircled{2}$ 基于常规图的图构建方法，如图3(d)所示。 此类方法主要利用额外会话中的项目关系丰富单个会话中的项目转移关系，为跨会话项目建立联系。 现有研究中，额外会话具体包括其他交互类型会话[21,29-31]、同一用户的历史会话[32-33],整个数据集中的部分或全部会话[34-35]、知识相关的会话序列[36-37]等。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "图3(d)",
+          "normalized_name": "图3(d)",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如图3(d)所示",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "其他交互类型会话[21,29-31]",
+          "normalized_name": "其他交互类型会话[21,29-31]",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "其他交互类型会话[21,29-31]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "引用标记[21,29-31]指向具体文献"
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "同一用户的历史会话[32-33]",
+          "normalized_name": "同一用户的历史会话[32-33]",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "同一用户的历史会话[32-33]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "引用标记[32-33]指向具体文献"
+        },
+        {
+          "entity_id": "23_e4",
+          "mention": "整个数据集中的部分或全部会话[34-35]",
+          "normalized_name": "整个数据集中的部分或全部会话[34-35]",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "整个数据集中的部分或全部会话[34-35]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "引用标记[34-35]指向具体文献"
+        },
+        {
+          "entity_id": "23_e5",
+          "mention": "知识相关的会话序列[36-37]",
+          "normalized_name": "知识相关的会话序列[36-37]",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "知识相关的会话序列[36-37]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "引用标记[36-37]指向具体文献"
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "现有研究中，额外会话具体包括其他交互类型会话[21,29-31]、同一用户的历史会话[32-33],整个数据集中的部分或全部会话[34-35]、知识相关的会话序列[36-37]等。 例如,Beyond Clicks模型[21]综合考虑点击、购买等多种交互类型的会话序列构建会话图，以充分捕捉更有效的用户会话兴趣。 A-PGNN（Personalized GraphNeural Networks with Attention Mechanism）模型[32]和 HetGNN （Heterogeneous Global Graph Neural",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "Beyond Clicks模型[21]",
+          "normalized_name": "Beyond Clicks模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Beyond Clicks模型[21]综合考虑点击、购买等多种交互类型的会话序列构建会话图",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "A-PGNN（Personalized GraphNeural Networks with Attention Mechanism）模型[32]",
+          "normalized_name": "A-PGNN（Personalized Graph Neural Networks with Attention Mechanism）模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "A-PGNN（Personalized GraphNeural Networks with Attention Mechanism）模型[32]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e3",
+          "mention": "HetGNN （Heterogeneous Global Graph Neural",
+          "normalized_name": "HetGNN（Heterogeneous Global Graph Neural Network）",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "HetGNN （Heterogeneous Global Graph Neural",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "原文截断，完整名称可能为HetGNN（Heterogeneous Global Graph Neural Network）"
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "DAT-MDI(Dual Attention Transfer withMulti-Dimensional Integration）模型[34]和 GEL-GNN(Global Enhanced Graph Neural NetworkwithLSTM)模型[35]利用所有会话中的项目转换协助当前会话中的项目转移,进而综合利用局部和全局上下文实现会话推荐目的。 然而，此类研究在引入额外会话时不可避免地增加了噪声信息引入的风险，因此如何避免噪声引入或消解引入的噪声是此类研究的重点。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "DAT-MDI(Dual Attention Transfer withMulti-Dimensional Integration）模型[34]",
+          "normalized_name": "DAT-MDI(Dual Attention Transfer with Multi-Dimensional Integration)模型",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "DAT-MDI(Dual Attention Transfer withMulti-Dimensional Integration）模型[34]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "GEL-GNN(Global Enhanced Graph Neural NetworkwithLSTM)模型[35]",
+          "normalized_name": "GEL-GNN(Global Enhanced Graph Neural Network with LSTM)模型",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "GEL-GNN(Global Enhanced Graph Neural NetworkwithLSTM)模型[35]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "<table><tr><td colspan=\"2\">图构建方法</td><td>研究思路</td><td>优点/缺点</td></tr><tr><td rowspan=\"2\">基于单会话的 图构建方法</td><td>关系</td><td>基于会话内连续 将单个会话内的每个项目视作图中的节点,通过在·优点:操作相对直接,构建逻辑简单; 两个连续项目之间添加边构建会话图模型。",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "基于单会话的图构建方法",
+          "normalized_name": "基于单会话的图构建方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于单会话的图构建方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "会话图模型",
+          "normalized_name": "会话图模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过在两个连续项目之间添加边构建会话图模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "两个连续项目之间添加边构建会话图模型。 </td><td>·缺点：无法克服会话数据固有的稀疏性问题。</td></tr><tr><td>续关系</td><td>考虑会话内非连 利用非连续项目关系弥补连续项目关系数据的稀疏·优点：利用非连续关系有效稠密化会话图结构； 性，以综合连续和非连续关系构建会话图模型。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "会话图模型",
+          "normalized_name": "会话图模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "两个连续项目之间添加边构建会话图模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "稀疏性问题",
+          "normalized_name": "稀疏性问题",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "无法克服会话数据固有的稀疏性问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "28_e3",
+          "mention": "非连续项目关系",
+          "normalized_name": "非连续项目关系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用非连续项目关系弥补连续项目关系数据的稀疏性",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e4",
+          "mention": "连续项目关系",
+          "normalized_name": "连续项目关系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用非连续项目关系弥补连续项目关系数据的稀疏性",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "29",
+      "sentence": "</td></tr><tr><td rowspan=\"2\">基于多会话的 图构建方法</td><td>基于超图</td><td>通过规定超边为项目建立联系,以有效利用项目之 间的非成对关系构建会话图模型。 </td><td>·优点：利用项目之间的非成对关系有效丰富会 话图结构;·缺点：在时序关系利用上存在限制。 </td></tr><tr><td>基于常规图</td><td>利用额外会话中的项目关系来丰富单个会话中的项 目转移关系,以有效利用跨会话项目关系。",
+      "entities": [
+        {
+          "entity_id": "29_e1",
+          "mention": "基于多会话的 图构建方法",
+          "normalized_name": "基于多会话的图构建方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于多会话的 图构建方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e2",
+          "mention": "基于超图",
+          "normalized_name": "基于超图",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于超图",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e3",
+          "mention": "基于常规图",
+          "normalized_name": "基于常规图",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于常规图",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "</td></tr><tr><td>基于常规图</td><td>利用额外会话中的项目关系来丰富单个会话中的项 目转移关系,以有效利用跨会话项目关系。 </td><td>·优点：利用跨会话项目转移关系有效丰富会话 图结构；·缺点：增加了噪声信息引入的风险。 </td></tr></table>",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "常规图",
+          "normalized_name": "常规图",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于常规图",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指代特定类型的图结构，但原文未给出更具体名称"
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "跨会话项目关系",
+          "normalized_name": "跨会话项目关系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以有效利用跨会话项目关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e3",
+          "mention": "会话图结构",
+          "normalized_name": "会话图结构",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用跨会话项目转移关系有效丰富会话图结构",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "31",
+      "sentence": "在基于GNN的会话推荐方法中,会话图学习主要利用GNN的信息传播机制对项目之间的转移关系进行学习。依据信息传播机制的差异，现有的会话图学习方法主要分为4类：基于直推式图卷积网络（Graph Convolution Network,GCN）的图学习方法、基于归纳式图卷积网络（Graph Sample andAggregate,GraphSAGE)的图学习方法、基于图注意网络(Graph Attention Network,GAT)的图学习方法和基于门控图神经网络（Gated Graph SequenceNeuralNetworks,GGNN)的图学习方法。 4种会话图学习方法的示意如图4所示， $i _ { 2 } \\ r , i _ { 3 } \\ r , i _ { 4 }$ 和 $i _ { 5 }$ 均为中心节点 $i _ { 1 }$ 的一阶邻居节点, $w _ { 1 j }$ 表示任意邻居节点 $i _ { j }$ 对中心节点 $i _ { 1 }$ 的重要性。",
+      "entities": [
+        {
+          "entity_id": "31_e1",
+          "mention": "GNN",
+          "normalized_name": "GNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于GNN的会话推荐方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e2",
+          "mention": "会话推荐方法",
+          "normalized_name": "会话推荐方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于GNN的会话推荐方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e3",
+          "mention": "会话图学习",
+          "normalized_name": "会话图学习",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "会话图学习主要利用GNN的信息传播机制",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e4",
+          "mention": "信息传播机制",
+          "normalized_name": "信息传播机制",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用GNN的信息传播机制",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e5",
+          "mention": "直推式图卷积网络（Graph Convolution Network,GCN）",
+          "normalized_name": "直推式图卷积网络（Graph Convolution Network, GCN）",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于直推式图卷积网络（Graph Convolution Network,GCN）的图学习方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e6",
+          "mention": "归纳式图卷积网络（Graph Sample andAggregate,GraphSAGE）",
+          "normalized_name": "归纳式图卷积网络（Graph Sample and Aggregate, GraphSAGE）",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于归纳式图卷积网络（Graph Sample andAggregate,GraphSAGE)的图学习方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e7",
+          "mention": "图注意网络(Graph Attention Network,GAT)",
+          "normalized_name": "图注意网络（Graph Attention Network, GAT）",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于图注意网络(Graph Attention Network,GAT)的图学习方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e8",
+          "mention": "门控图神经网络（Gated Graph SequenceNeuralNetworks,GGNN）",
+          "normalized_name": "门控图神经网络（Gated Graph Sequence Neural Networks, GGNN）",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于门控图神经网络（Gated Graph SequenceNeuralNetworks,GGNN)的图学习方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "32",
+      "sentence": "GCN的信息传播过程如图4(a)所示，采用池化操作不加区分地对所有邻居节点进行聚合，然后以聚合信息更新中心节点表示[38]。 由于GCN具有简单的运算逻辑,基于GCN的图学习方法被广泛应用于会话图学习。 如为适应流式会话推荐，GAG(Global Attributed Graph Neural Network)模型[39]基于GCN开发出一种带有Wasserstein库的全局属性感知的GCN。",
+      "entities": [
+        {
+          "entity_id": "32_e1",
+          "mention": "GCN",
+          "normalized_name": "GCN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "GCN的信息传播过程如图4(a)所示",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e2",
+          "mention": "池化操作",
+          "normalized_name": "池化操作",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用池化操作不加区分地对所有邻居节点进行聚合",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e3",
+          "mention": "GAG(Global Attributed Graph Neural Network)模型",
+          "normalized_name": "GAG(Global Attributed Graph Neural Network)模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "GAG(Global Attributed Graph Neural Network)模型[39]基于GCN开发出一种带有Wasserstein库的全局属性感知的GCN",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e4",
+          "mention": "Wasserstein库",
+          "normalized_name": "Wasserstein库",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "带有Wasserstein库的全局属性感知的GCN",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为特定库名，但原文未展开全称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "33",
+      "sentence": "CAGE(Context-Aware Graph Embedding)模型[4I通过在新闻会话图上执行GCN有效实现了基于会话的新闻推荐系统。 尽管此类方法广泛应用于会话图学习,但由于GCN需要在会话图中通过聚合所有邻居节点实现信息传播，故此类方法效率较低、难以应用于大规模会话数据。",
+      "entities": [
+        {
+          "entity_id": "33_e1",
+          "mention": "CAGE(Context-Aware Graph Embedding)模型",
+          "normalized_name": "CAGE(Context-Aware Graph Embedding)模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "CAGE(Context-Aware Graph Embedding)模型[4I通过在新闻会话图上执行GCN有效实现了基于会话的新闻推荐系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e2",
+          "mention": "GCN",
+          "normalized_name": "GCN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过在新闻会话图上执行GCN有效实现了基于会话的新闻推荐系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e3",
+          "mention": "新闻推荐系统",
+          "normalized_name": "新闻推荐系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "有效实现了基于会话的新闻推荐系统",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "34",
+      "sentence": "GraphSAGE的信息传播过程如图4(b)所示，为每个中心节点采样固定数量的邻居,然后采用池化操作对邻居信息进行聚合，进而结合聚合的邻居信息对中心节点表示进行更新。 由于GraphSAGE具有较强的可扩展性和灵活性[42]，相关研究常利用GraphSAGE对规模较大或关系复杂的会话图进行学习。 如为有效实现多行为感知的会话推荐，Beyond Clicks模型[21]综合点击、加购和购买等多种交互行为构建会话图，并采用GraphSAGE对会话图进行学习，以获取不同类型邻居感知的项目表示。",
+      "entities": [
+        {
+          "entity_id": "34_e1",
+          "mention": "GraphSAGE",
+          "normalized_name": "GraphSAGE",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "GraphSAGE的信息传播过程如图4(b)所示",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e2",
+          "mention": "Beyond Clicks模型",
+          "normalized_name": "Beyond Clicks模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Beyond Clicks模型[21]综合点击、加购和购买等多种交互行为构建会话图",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "35",
+      "sentence": "MA-GNN模型[23]利用共享内存网络增强GraphSAGE,捕获长期和短期的用户兴趣实现更有效的时序推荐。 尽管GraphSAGE可以有效增强GCN的灵活性，但此类方法在会话图学习中无法考虑邻居节点的权重，故在信息传播过程中无法合理区分不同邻居节点对中心节点的重要性。",
+      "entities": [
+        {
+          "entity_id": "35_e1",
+          "mention": "MA-GNN模型[23]",
+          "normalized_name": "MA-GNN模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "MA-GNN模型[23]利用共享内存网络增强GraphSAGE",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e2",
+          "mention": "GraphSAGE",
+          "normalized_name": "GraphSAGE",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用共享内存网络增强GraphSAGE",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e3",
+          "mention": "GCN",
+          "normalized_name": "GCN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "GraphSAGE可以有效增强GCN的灵活性",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "36",
+      "sentence": "GAT的信息传播过程如图4(c)所示，主要利用注意力机制差异化整合节点的邻居节点信息，进而结合邻居节点信息更新中心节点的表示。 由于GAT可以结合邻居节点的权重更准确地学习会话图，基于GAT的会话图学习方法在相关研究中得到广泛关注。 如GCE-GNN模型[14]利用GAT分别对会话图和全局图中的项目关系进行学习，综合项目的全局和局部上下文实现会话推荐。",
+      "entities": [
+        {
+          "entity_id": "36_e1",
+          "mention": "GAT",
+          "normalized_name": "GAT",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "GAT的信息传播过程如图4(c)所示，主要利用注意力机制差异化整合节点的邻居节点信息",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e2",
+          "mention": "注意力机制",
+          "normalized_name": "注意力机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主要利用注意力机制差异化整合节点的邻居节点信息",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e3",
+          "mention": "GCE-GNN模型",
+          "normalized_name": "GCE-GNN模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如GCE-GNN模型[14]利用GAT分别对会话图和全局图中的项目关系进行学习",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e4",
+          "mention": "会话图",
+          "normalized_name": "会话图",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于GAT的会话图学习方法在相关研究中得到广泛关注",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e5",
+          "mention": "全局图",
+          "normalized_name": "全局图",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用GAT分别对会话图和全局图中的项目关系进行学习",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e6",
+          "mention": "会话推荐",
+          "normalized_name": "会话推荐",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "综合项目的全局和局部上下文实现会话推荐",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "37",
+      "sentence": "AMAN(Adaptive Multi-AttentionNetwork)模型[30]采用GAT在有向异质图上对多行为感知的项目表示进行学习，综合不同行为重要性学习更准确的会话意图。 然而,GAT主要用于建模非顺序感知的无向会话图，故此类研究在顺序感知的会话图学习方面存在限制。",
+      "entities": [
+        {
+          "entity_id": "37_e1",
+          "mention": "AMAN(Adaptive Multi-AttentionNetwork)模型",
+          "normalized_name": "AMAN(Adaptive Multi-AttentionNetwork)模型",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "AMAN(Adaptive Multi-AttentionNetwork)模型[30]采用GAT在有向异质图上对多行为感知的项目表示进行学习",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e2",
+          "mention": "GAT",
+          "normalized_name": "GAT",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "AMAN(Adaptive Multi-AttentionNetwork)模型[30]采用GAT在有向异质图上对多行为感知的项目表示进行学习",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e3",
+          "mention": "有向异质图",
+          "normalized_name": "有向异质图",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用GAT在有向异质图上对多行为感知的项目表示进行学习",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e4",
+          "mention": "无向会话图",
+          "normalized_name": "无向会话图",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "GAT主要用于建模非顺序感知的无向会话图",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e5",
+          "mention": "顺序感知的会话图",
+          "normalized_name": "顺序感知的会话图",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "此类研究在顺序感知的会话图学习方面存在限制",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "38",
+      "sentence": "GGNN的信息传播过程如图4(d)所示，将中心节点的前项邻居和后项邻居信息进行聚合，然后将聚合信息输入门控循环单元(GateRecurrentUnit,GRU)实现节点表示更新[45]。 由于GGNN可以有效考虑项目之间的顺序关系，且会话图中的节点本质上具有顺序关联，因此基于GGNN的会话图学习方法在基于GNN的会话推荐中应用更为广泛。作为将GNN引入会话推荐的开创性工作,SR-GNN模型[13]采用GGNN对会话图进行学习，并证明了图神经网络在会话推荐中的优势。 类似地,GC-SAN模型[19]和TAGNN模型[20]同样采用GGNN对会话图进行学习，结合项目之间的转移关系对项目表示进行有效学习。",
+      "entities": [
+        {
+          "entity_id": "38_e1",
+          "mention": "GGNN",
+          "normalized_name": "GGNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "GGNN的信息传播过程如图4(d)所示",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e2",
+          "mention": "门控循环单元(GateRecurrentUnit,GRU)",
+          "normalized_name": "门控循环单元(GateRecurrentUnit,GRU)",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "将聚合信息输入门控循环单元(GateRecurrentUnit,GRU)实现节点表示更新",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e3",
+          "mention": "SR-GNN模型",
+          "normalized_name": "SR-GNN模型",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "SR-GNN模型[13]采用GGNN对会话图进行学习",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e4",
+          "mention": "GC-SAN模型",
+          "normalized_name": "GC-SAN模型",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "GC-SAN模型[19]和TAGNN模型[20]同样采用GGNN对会话图进行学习",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e5",
+          "mention": "TAGNN模型",
+          "normalized_name": "TAGNN模型",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "GC-SAN模型[19]和TAGNN模型[20]同样采用GGNN对会话图进行学习",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e6",
+          "mention": "GNN",
+          "normalized_name": "GNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于GNN的会话推荐",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e7",
+          "mention": "图神经网络",
+          "normalized_name": "图神经网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "证明了图神经网络在会话推荐中的优势",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "39",
+      "sentence": "类似地,GC-SAN模型[19]和TAGNN模型[20]同样采用GGNN对会话图进行学习，结合项目之间的转移关系对项目表示进行有效学习。 尽管GGNN在会话图学习的过程可以有效地考虑项目之间的顺序关联,但文献[2]指出仅利用GGNN并不总利于学习充分的会话表示,其往往需要搭配注意力网络、去噪机制等合理的情景建模方法才可实现有效的会话推荐。",
+      "entities": [
+        {
+          "entity_id": "39_e1",
+          "mention": "GC-SAN模型[19]",
+          "normalized_name": "GC-SAN模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "GC-SAN模型[19]和TAGNN模型[20]同样采用GGNN对会话图进行学习",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e2",
+          "mention": "TAGNN模型[20]",
+          "normalized_name": "TAGNN模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "GC-SAN模型[19]和TAGNN模型[20]同样采用GGNN对会话图进行学习",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e3",
+          "mention": "GGNN",
+          "normalized_name": "GGNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "GC-SAN模型[19]和TAGNN模型[20]同样采用GGNN对会话图进行学习",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e4",
+          "mention": "注意力网络",
+          "normalized_name": "注意力网络",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "往往需要搭配注意力网络、去噪机制等合理的情景建模方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e5",
+          "mention": "去噪机制",
+          "normalized_name": "去噪机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "往往需要搭配注意力网络、去噪机制等合理的情景建模方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e6",
+          "mention": "情景建模方法",
+          "normalized_name": "情景建模方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "往往需要搭配注意力网络、去噪机制等合理的情景建模方法",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但原文有具体限定词'合理的情景建模方法'，且结合上下文指代具体技术组合，故抽取"
+        },
+        {
+          "entity_id": "39_e7",
+          "mention": "会话推荐",
+          "normalized_name": "会话推荐",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "才可实现有效的会话推荐",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "40",
+      "sentence": "综上,不同会话图学习方法均具有显著特点且存在差异，各类方法的研究思路及其优点和缺点总结如表2所示，可为后续研究提供借鉴和参考。",
+      "entities": [
+        {
+          "entity_id": "40_e1",
+          "mention": "会话图学习方法",
+          "normalized_name": "会话图学习方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "不同会话图学习方法均具有显著特点且存在差异",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指代一类方法，但原文中作为具体方法类别提及"
+        }
+      ]
+    },
+    {
+      "sentence_id": "41",
+      "sentence": "<table><tr><td>图学习方法</td><td>研究思路</td><td>优点/缺点</td></tr><tr><td>基于GCN</td><td>采用池化操作等同地对所有邻居节点进行信息聚·优点：具有简单的运算逻辑; 合，然后以聚合信息更新中心节点表示。",
+      "entities": [
+        {
+          "entity_id": "41_e1",
+          "mention": "基于GCN",
+          "normalized_name": "基于GCN",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于GCN",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "GCN为图卷积网络缩写，属于具体算法技术"
+        },
+        {
+          "entity_id": "41_e2",
+          "mention": "池化操作",
+          "normalized_name": "池化操作",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用池化操作等同地对所有邻居节点进行信息聚合",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "42",
+      "sentence": "合，然后以聚合信息更新中心节点表示。 </td><td>·缺点：不适用于大规模会话图学习。</td></tr><tr><td>基于GraphSAGE</td><td>为每个中心节点采样固定数量的邻居,然后采用·优点：具有较强的可扩展性和灵活性; 邻居信息对中心节点表示进行更新。",
+      "entities": [
+        {
+          "entity_id": "42_e1",
+          "mention": "GraphSAGE",
+          "normalized_name": "GraphSAGE",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于GraphSAGE",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "43",
+      "sentence": "邻居信息对中心节点表示进行更新。 </td><td>池化操作对邻居信息进行聚合,进而结合聚合的·缺点:在信息传播过程中无法合理区分不同邻居节点对中心节点的</td></tr><tr><td>基于GAT</td><td>息，然后结合邻居节点信息更新中心节点的表示。</td><td>利用注意力机制差异化整合节点的邻居节点信·优点:在信息传播过程中,结合邻居节点权重更准确地学习会话图;·缺点：在顺序感知的会话图学习方面存在限制。将中心节点的前项邻居和后项邻居信息进行聚·优点:在会话图学习的过程中有效地考虑项目之间的顺序关联； </td></tr><tr><td>基于GGNN</td><td></td><td>合,然后将聚合信息输入GRU实现节点表示更新。",
+      "entities": [
+        {
+          "entity_id": "43_e1",
+          "mention": "GAT",
+          "normalized_name": "GAT",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于GAT",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "43_e2",
+          "mention": "注意力机制",
+          "normalized_name": "注意力机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用注意力机制差异化整合节点的邻居节点信",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "43_e3",
+          "mention": "GGNN",
+          "normalized_name": "GGNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于GGNN",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "43_e4",
+          "mention": "GRU",
+          "normalized_name": "GRU",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "将聚合信息输入GRU实现节点表示更新",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "44",
+      "sentence": "</td></tr><tr><td>基于GGNN</td><td></td><td>合,然后将聚合信息输入GRU实现节点表示更新。 ·缺点:需要搭配合理的情景建模方法才可实现有效的会话推荐。 </td></tr></table>",
+      "entities": [
+        {
+          "entity_id": "44_e1",
+          "mention": "GGNN",
+          "normalized_name": "GGNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于GGNN",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "44_e2",
+          "mention": "GRU",
+          "normalized_name": "GRU",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "将聚合信息输入GRU实现节点表示更新",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "44_e3",
+          "mention": "会话推荐",
+          "normalized_name": "会话推荐",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "才可实现有效的会话推荐",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "45",
+      "sentence": "GNN中的信息传播不能有效地捕获项目之间的远程依赖关系[46]，且会话图会造成序列信息损失[2,因此依据GNN学习到的任意项目表示都无法充分代表用户的当前会话兴趣。为有效表示会话兴趣,整合会话序列中的多个项目是基于GNN会话推荐方法的重要一步。 依据项目整合方式的不同，现有会话兴趣表示方法主要分为三类：基于注意力的会话兴趣表示方法、基于RNN的会话兴趣表示方法和基于位置的会话兴趣表示方法，如图5所示。",
+      "entities": [
+        {
+          "entity_id": "45_e1",
+          "mention": "GNN",
+          "normalized_name": "GNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "GNN中的信息传播不能有效地捕获项目之间的远程依赖关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "45_e2",
+          "mention": "基于注意力的会话兴趣表示方法",
+          "normalized_name": "基于注意力的会话兴趣表示方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于注意力的会话兴趣表示方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "45_e3",
+          "mention": "基于RNN的会话兴趣表示方法",
+          "normalized_name": "基于RNN的会话兴趣表示方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于RNN的会话兴趣表示方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "45_e4",
+          "mention": "基于位置的会话兴趣表示方法",
+          "normalized_name": "基于位置的会话兴趣表示方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于位置的会话兴趣表示方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "46",
+      "sentence": "最后融合局部和全局会话兴趣，得到完整的会话兴趣表示。 基于该思路,SR-GNN模型[13]、GAG模型[39]、SGNN-HN 模 型[24]、DCTN 模型[40]和 GNN-BiGRU-TA(Integration of GNN，Bi-GRU and the Attention",
+      "entities": [
+        {
+          "entity_id": "46_e1",
+          "mention": "SR-GNN模型[13]",
+          "normalized_name": "SR-GNN模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "SR-GNN模型[13]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e2",
+          "mention": "GAG模型[39]",
+          "normalized_name": "GAG模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "GAG模型[39]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e3",
+          "mention": "SGNN-HN模型[24]",
+          "normalized_name": "SGNN-HN模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "SGNN-HN模型[24]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e4",
+          "mention": "DCTN模型[40]",
+          "normalized_name": "DCTN模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "DCTN模型[40]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e5",
+          "mention": "GNN-BiGRU-TA(Integration of GNN，Bi-GRU and the Attention",
+          "normalized_name": "GNN-BiGRU-TA",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "GNN-BiGRU-TA(Integration of GNN，Bi-GRU and the Attention",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "47",
+      "sentence": "Mechanism)模型[47]对基于GNN学习到项目表示进行差异化整合，以合理地对会话兴趣进行表示。 然而,仅利用注意力机制往往会忽略项目在会话中的位置信息，因此相关研究通常将注意力机制应用于位置信息感知的项目表示。",
+      "entities": [
+        {
+          "entity_id": "47_e1",
+          "mention": "Mechanism)模型[47]",
+          "normalized_name": "Mechanism模型[47]",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Mechanism)模型[47]对基于GNN学习到项目表示进行差异化整合",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "mention中可能包含OCR乱码或格式错误，原文可能为'Mechanism模型[47]'"
+        },
+        {
+          "entity_id": "47_e2",
+          "mention": "GNN",
+          "normalized_name": "GNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于GNN学习到项目表示",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e3",
+          "mention": "注意力机制",
+          "normalized_name": "注意力机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "仅利用注意力机制往往会忽略项目在会话中的位置信息",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e4",
+          "mention": "位置信息",
+          "normalized_name": "位置信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "注意力机制往往会忽略项目在会话中的位置信息",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "48",
+      "sentence": "基于RNN的会话兴趣表示方法主要通过建模项目之间的顺序依赖建模会话兴趣表示，如图5(b)所示，采用RNN获取各个项目的隐藏状态，然后通过整合各个项目的隐藏状态输出会话兴趣的最终表示。如长短时记忆网络(Long Short-TermMemory,LSTM）模型、DGRec 模型[44]和 EFRec（EnhancingSession-Based Social Recommendation）模型[48]通过对会话内部的项目依赖进行学习，有效建模了社会化会话推荐场景下不同用户的会话兴趣。此外，基于 GRU、FGNN(Full Graph Neural Network)模型[49]利用序列中的项目表示迭代更新用户偏好,以有效平衡连续转移模型和灵活转移模式之间的关系。然而,此类研究无法克服噪声项对会话兴趣表示造成的影响,因此如何在RNN基础上引入噪声去除机制是改进此类方法的主要思路。",
+      "entities": [
+        {
+          "entity_id": "48_e1",
+          "mention": "RNN",
+          "normalized_name": "RNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于RNN的会话兴趣表示方法主要通过建模项目之间的顺序依赖建模会话兴趣表示",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e2",
+          "mention": "长短时记忆网络(Long Short-TermMemory,LSTM）模型",
+          "normalized_name": "长短时记忆网络（LSTM）模型",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如长短时记忆网络(Long Short-TermMemory,LSTM）模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e3",
+          "mention": "DGRec 模型[44]",
+          "normalized_name": "DGRec模型",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "DGRec 模型[44]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e4",
+          "mention": "EFRec（EnhancingSession-Based Social Recommendation）模型[48]",
+          "normalized_name": "EFRec（EnhancingSession-Based Social Recommendation）模型",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "EFRec（EnhancingSession-Based Social Recommendation）模型[48]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e5",
+          "mention": "GRU",
+          "normalized_name": "GRU",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于 GRU、FGNN(Full Graph Neural Network)模型[49]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e6",
+          "mention": "FGNN(Full Graph Neural Network)模型[49]",
+          "normalized_name": "FGNN（Full Graph Neural Network）模型",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "FGNN(Full Graph Neural Network)模型[49]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "49",
+      "sentence": "基于位置的会话兴趣表示方法如图5(c)所示，将项目在当前会话中的位置编码为位置向量，然后组合位置向量与项目表示，将位置信息融入项目表示，实现更准确的会话兴趣建模。 在相关研究中，NISER(Normalized Item and Session Representationswith Graph Neural Networks)模型[50]、GCE-GNN 模型[14]和 MGS（Mirror Graph Network for Session-BasedRecommendation)模型[51]增加了反映物品相对顺序的位置嵌入，从而有效地获得位置感知的物品表示。DSAN(Dual Sparse Attention Network)模型[2将候选项目的位置信息作为查询项，采用双重注意力机制信息，消除噪声对会话兴趣学习造成的消极影响。由于位置信息本质上仅考虑了项目自身信息，故仅考虑项目位置无法综合会话内项目间关系完整表示会话兴趣。通常情况下，基于位置的会话兴趣表示方法会将项目位置编码与注意力机制或RNN相结合来学习会话兴趣表示。 综上,不同基于位置的会话兴趣表示方法的研究思路及其优点和缺点总结如表3所示。",
+      "entities": [
+        {
+          "entity_id": "49_e1",
+          "mention": "NISER(Normalized Item and Session Representationswith Graph Neural Networks)模型[50]",
+          "normalized_name": "NISER模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "NISER(Normalized Item and Session Representationswith Graph Neural Networks)模型[50]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "49_e2",
+          "mention": "GCE-GNN 模型[14]",
+          "normalized_name": "GCE-GNN模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "GCE-GNN 模型[14]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "49_e3",
+          "mention": "MGS（Mirror Graph Network for Session-BasedRecommendation)模型[51]",
+          "normalized_name": "MGS模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "MGS（Mirror Graph Network for Session-BasedRecommendation)模型[51]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "49_e4",
+          "mention": "DSAN(Dual Sparse Attention Network)模型[2",
+          "normalized_name": "DSAN模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "DSAN(Dual Sparse Attention Network)模型[2",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "50",
+      "sentence": "</td></tr><tr><td>局会话兴趣，得到完整的会话兴趣表示。 </td><td>·缺点：仅利用注意力机制会忽略项目在会话中的位置信息。</td></tr><tr><td rowspan=\"2\">基于RNN</td><td>采用RNN获取各个项目的隐藏状态,通过整合各个·优点：利用项目之间的顺序依赖建模会话兴趣表示; </td><td></td></tr><tr><td>项目的隐藏状态输出会话兴趣的最终表示。",
+      "entities": [
+        {
+          "entity_id": "50_e1",
+          "mention": "注意力机制",
+          "normalized_name": "注意力机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "仅利用注意力机制会忽略项目在会话中的位置信息",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "50_e2",
+          "mention": "RNN",
+          "normalized_name": "RNN",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于RNN",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "51",
+      "sentence": "</td><td></td></tr><tr><td>项目的隐藏状态输出会话兴趣的最终表示。 </td><td>·缺点：无法有效克服噪声项对会话兴趣表示造成的影响。</td></tr><tr><td rowspan=\"2\">基于位置</td><td>将项目在当前会话中的位置编码为位置向量,然后组·优点:将位置信息融入项目表示,实现更准确的会话兴趣建模; </td><td></td></tr><tr><td></td><td>合位置向量与项目表示,将位置信息融入项目表示。",
+      "entities": [
+        {
+          "entity_id": "51_e1",
+          "mention": "位置向量",
+          "normalized_name": "位置向量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将项目在当前会话中的位置编码为位置向量",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "51_e2",
+          "mention": "项目表示",
+          "normalized_name": "项目表示",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "组合位置向量与项目表示",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为通用术语，但在此上下文中作为具体技术概念出现"
+        },
+        {
+          "entity_id": "51_e3",
+          "mention": "会话兴趣建模",
+          "normalized_name": "会话兴趣建模",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现更准确的会话兴趣建模",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "52",
+      "sentence": "</td><td></td></tr><tr><td></td><td>合位置向量与项目表示,将位置信息融入项目表示。 ·缺点：无法综合会话内项目间关系完整表示会话兴趣。 </td></tr></table>",
+      "entities": [
+        {
+          "entity_id": "52_e1",
+          "mention": "位置向量",
+          "normalized_name": "位置向量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "合位置向量与项目表示",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e2",
+          "mention": "项目表示",
+          "normalized_name": "项目表示",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "合位置向量与项目表示",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e3",
+          "mention": "会话内项目间关系",
+          "normalized_name": "会话内项目间关系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "无法综合会话内项目间关系完整表示会话兴趣",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e4",
+          "mention": "会话兴趣",
+          "normalized_name": "会话兴趣",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "无法综合会话内项目间关系完整表示会话兴趣",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "54",
+      "sentence": "(1)对于会话图构建,现有研究主要包括基于单会话和基于多会话的图构建方法。 然而，现有会话图模型大多仅关注项目之间的转移关系，在异质关系利用方面存在不足。推荐系统中，多源异构关系（如多类型交互关系、社交关系、知识图谱等)不仅为建模会话兴趣提供丰富的辅助信息，而且可以有效缓解会话序列的数据稀疏性。因此,如何融合多源异构关系丰富会话图结构值得进一步研究。",
+      "entities": [
+        {
+          "entity_id": "54_e1",
+          "mention": "基于单会话的图构建方法",
+          "normalized_name": "基于单会话的图构建方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现有研究主要包括基于单会话和基于多会话的图构建方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "54_e2",
+          "mention": "基于多会话的图构建方法",
+          "normalized_name": "基于多会话的图构建方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现有研究主要包括基于单会话和基于多会话的图构建方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "54_e3",
+          "mention": "会话图模型",
+          "normalized_name": "会话图模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现有会话图模型大多仅关注项目之间的转移关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "54_e4",
+          "mention": "多源异构关系",
+          "normalized_name": "多源异构关系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "多源异构关系（如多类型交互关系、社交关系、知识图谱等）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "54_e5",
+          "mention": "多类型交互关系",
+          "normalized_name": "多类型交互关系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "多源异构关系（如多类型交互关系、社交关系、知识图谱等）",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "54_e6",
+          "mention": "社交关系",
+          "normalized_name": "社交关系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "多源异构关系（如多类型交互关系、社交关系、知识图谱等）",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "54_e7",
+          "mention": "知识图谱",
+          "normalized_name": "知识图谱",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact",
+            "Abstract"
+          ],
+          "evidence": "多源异构关系（如多类型交互关系、社交关系、知识图谱等）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "54_e8",
+          "mention": "会话兴趣",
+          "normalized_name": "会话兴趣",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "不仅为建模会话兴趣提供丰富的辅助信息",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "54_e9",
+          "mention": "数据稀疏性",
+          "normalized_name": "数据稀疏性",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "可以有效缓解会话序列的数据稀疏性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "55",
+      "sentence": "现有研究主要通过应用或改进这4种学习方法进行会话图学习。 然而,现有方法大多为传统GNN框架的变体，无法克服GNN本身具有的缺陷，如GNN的过平滑[53]、鲁棒性较差[54]等问题。此外，一些复杂的会话图学习方法以增加计算量为代价获得性能增益[55],但是否采用复杂的传播方法应取决于计算代价和性能收益之间的权衡。",
+      "entities": [
+        {
+          "entity_id": "55_e1",
+          "mention": "GNN",
+          "normalized_name": "GNN",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "无法克服GNN本身具有的缺陷",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "55_e2",
+          "mention": "过平滑[53]",
+          "normalized_name": "过平滑",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "GNN的过平滑[53]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "55_e3",
+          "mention": "鲁棒性较差[54]",
+          "normalized_name": "鲁棒性较差",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "鲁棒性较差[54]",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "评价性描述，但作为具体问题被引用"
+        }
+      ]
+    },
+    {
+      "sentence_id": "56",
+      "sentence": "(3)对于会话兴趣表示，现有研究主要包括基于注意力机制、RNN和位置的会话兴趣表示方法。 然而,尚未有研究明确证明哪种会话推荐方法具有绝对优势。 此外,现有研究在表示用户会话兴趣时，大多将会话兴趣单一且确定的表示。",
+      "entities": [
+        {
+          "entity_id": "56_e1",
+          "mention": "注意力机制",
+          "normalized_name": "注意力机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于注意力机制、RNN和位置的会话兴趣表示方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e2",
+          "mention": "RNN",
+          "normalized_name": "RNN",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于注意力机制、RNN和位置的会话兴趣表示方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e3",
+          "mention": "会话兴趣表示方法",
+          "normalized_name": "会话兴趣表示方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于注意力机制、RNN和位置的会话兴趣表示方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e4",
+          "mention": "会话推荐方法",
+          "normalized_name": "会话推荐方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "哪种会话推荐方法具有绝对优势",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "58",
+      "sentence": "评价资源是客观评估科学研究的基础，全面整合评价资源有利于促进相关研究不断完善。 通过梳理和整合相关研究中的实验设置,本文从数据集、评价标准和基线模型三个方面总结基于GNN的会话推荐方法相关的评价资源。",
+      "entities": [
+        {
+          "entity_id": "58_e1",
+          "mention": "数据集",
+          "normalized_name": "数据集",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "从数据集、评价标准和基线模型三个方面总结基于GNN的会话推荐方法相关的评价资源",
+          "is_specific_entity": false,
+          "confidence": 0.3,
+          "uncertainty": "此处'数据集'为泛称，未指代具体数据集名称，不满足具体可唯一识别条件"
+        },
+        {
+          "entity_id": "58_e2",
+          "mention": "评价标准",
+          "normalized_name": "评价标准",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "从数据集、评价标准和基线模型三个方面总结基于GNN的会话推荐方法相关的评价资源",
+          "is_specific_entity": false,
+          "confidence": 0.3,
+          "uncertainty": "此处'评价标准'为泛称，未指代具体标准名称，不满足具体可唯一识别条件"
+        },
+        {
+          "entity_id": "58_e3",
+          "mention": "基线模型",
+          "normalized_name": "基线模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从数据集、评价标准和基线模型三个方面总结基于GNN的会话推荐方法相关的评价资源",
+          "is_specific_entity": false,
+          "confidence": 0.3,
+          "uncertainty": "此处'基线模型'为泛称，未指代具体模型名称，不满足具体可唯一识别条件"
+        },
+        {
+          "entity_id": "58_e4",
+          "mention": "GNN",
+          "normalized_name": "图神经网络",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于GNN的会话推荐方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "58_e5",
+          "mention": "会话推荐方法",
+          "normalized_name": "会话推荐方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于GNN的会话推荐方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "59",
+      "sentence": "在GNN会话推荐研究中，用于实验验证的数据集主要集中在5个应用领域：电子商务推荐、新闻推荐、音乐推荐、地点推荐和影视推荐。 不同应用领域中典型数据集的统计信息如表5所示。",
+      "entities": [
+        {
+          "entity_id": "59_e1",
+          "mention": "GNN会话推荐研究",
+          "normalized_name": "GNN会话推荐研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在GNN会话推荐研究中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "59_e2",
+          "mention": "电子商务推荐",
+          "normalized_name": "电子商务推荐",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "5个应用领域：电子商务推荐、新闻推荐、音乐推荐、地点推荐和影视推荐",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "59_e3",
+          "mention": "新闻推荐",
+          "normalized_name": "新闻推荐",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "5个应用领域：电子商务推荐、新闻推荐、音乐推荐、地点推荐和影视推荐",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "59_e4",
+          "mention": "音乐推荐",
+          "normalized_name": "音乐推荐",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "5个应用领域：电子商务推荐、新闻推荐、音乐推荐、地点推荐和影视推荐",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "59_e5",
+          "mention": "地点推荐",
+          "normalized_name": "地点推荐",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "5个应用领域：电子商务推荐、新闻推荐、音乐推荐、地点推荐和影视推荐",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "59_e6",
+          "mention": "影视推荐",
+          "normalized_name": "影视推荐",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "5个应用领域：电子商务推荐、新闻推荐、音乐推荐、地点推荐和影视推荐",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "59_e7",
+          "mention": "表5",
+          "normalized_name": "表5",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "不同应用领域中典型数据集的统计信息如表5所示",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "60",
+      "sentence": "近期相关研究主要采用非位置敏感型指标和位置敏感型指标对会话推荐的准确性进行评价[3]。 两类评价指标均致力于评估Top-K个推荐结果的准确性，但相对于非位置敏感型指标，位置敏感型指标在考虑推荐结果准确性的基础上，同时考虑了有效推荐项目的位置信息[58]。 非位置敏感型指标主要包括：准确率(Precision）、召回率(Recall)和命中率(HitRatio,HR);",
+      "entities": [
+        {
+          "entity_id": "60_e1",
+          "mention": "非位置敏感型指标",
+          "normalized_name": "非位置敏感型指标",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "近期相关研究主要采用非位置敏感型指标和位置敏感型指标对会话推荐的准确性进行评价[3]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e2",
+          "mention": "位置敏感型指标",
+          "normalized_name": "位置敏感型指标",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "近期相关研究主要采用非位置敏感型指标和位置敏感型指标对会话推荐的准确性进行评价[3]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e3",
+          "mention": "准确率(Precision)",
+          "normalized_name": "准确率(Precision)",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "非位置敏感型指标主要包括：准确率(Precision）、召回率(Recall)和命中率(HitRatio,HR)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e4",
+          "mention": "召回率(Recall)",
+          "normalized_name": "召回率(Recall)",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "非位置敏感型指标主要包括：准确率(Precision）、召回率(Recall)和命中率(HitRatio,HR)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e5",
+          "mention": "命中率(HitRatio,HR)",
+          "normalized_name": "命中率(HitRatio,HR)",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "非位置敏感型指标主要包括：准确率(Precision）、召回率(Recall)和命中率(HitRatio,HR)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "61",
+      "sentence": "在基于GNN的会话推荐方法研究中，通常有三类基线模型(传统会话推荐模型，基于RNN的会话推荐模型和基于GNN的会话推荐模型)用于对比实验。 三类代表性基线模型的关键信息说明如表6所示。",
+      "entities": [
+        {
+          "entity_id": "61_e1",
+          "mention": "GNN",
+          "normalized_name": "GNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于GNN的会话推荐方法研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "61_e2",
+          "mention": "传统会话推荐模型",
+          "normalized_name": "传统会话推荐模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "三类基线模型(传统会话推荐模型，基于RNN的会话推荐模型和基于GNN的会话推荐模型)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "61_e3",
+          "mention": "基于RNN的会话推荐模型",
+          "normalized_name": "基于RNN的会话推荐模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "三类基线模型(传统会话推荐模型，基于RNN的会话推荐模型和基于GNN的会话推荐模型)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "61_e4",
+          "mention": "基于GNN的会话推荐模型",
+          "normalized_name": "基于GNN的会话推荐模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "三类基线模型(传统会话推荐模型，基于RNN的会话推荐模型和基于GNN的会话推荐模型)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "63",
+      "sentence": "(1)在数据集方面，现有研究已在不同应用场景下验证了GNN会话推荐方法的有效性，但数据集的采集年份相对陈旧。此外,数据偏见问题在现有数据集中较为常见。由于数据偏见是影响机器学习模型性能的关键因素[],因此如何消解会话推荐数据集中的偏见问题值得进一步探索。",
+      "entities": [
+        {
+          "entity_id": "63_e1",
+          "mention": "GNN会话推荐方法",
+          "normalized_name": "GNN会话推荐方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现有研究已在不同应用场景下验证了GNN会话推荐方法的有效性",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "63_e2",
+          "mention": "数据偏见",
+          "normalized_name": "数据偏见",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "数据偏见问题在现有数据集中较为常见",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "63_e3",
+          "mention": "机器学习模型",
+          "normalized_name": "机器学习模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "数据偏见是影响机器学习模型性能的关键因素",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "64",
+      "sentence": "(2)在评价指标方面，现有研究主要采用非位置敏感型指标和位置敏感型指标对会话推荐的准确性进行评估，大多仅关注会话推荐的准确性评价。因此现有评价指标在多样性[8]、可解释性[69]、公平性[70]等方面的度量相对不足,这可能导致会话推荐方法面临\"信息茧房\"[71]、可信度差[]等困境。",
+      "entities": [
+        {
+          "entity_id": "64_e1",
+          "mention": "非位置敏感型指标",
+          "normalized_name": "非位置敏感型指标",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现有研究主要采用非位置敏感型指标和位置敏感型指标对会话推荐的准确性进行评估",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "64_e2",
+          "mention": "位置敏感型指标",
+          "normalized_name": "位置敏感型指标",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现有研究主要采用非位置敏感型指标和位置敏感型指标对会话推荐的准确性进行评估",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "64_e3",
+          "mention": "多样性",
+          "normalized_name": "多样性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现有评价指标在多样性[8]、可解释性[69]、公平性[70]等方面的度量相对不足",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为评价维度，有独立学术命名"
+        },
+        {
+          "entity_id": "64_e4",
+          "mention": "可解释性",
+          "normalized_name": "可解释性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现有评价指标在多样性[8]、可解释性[69]、公平性[70]等方面的度量相对不足",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "64_e5",
+          "mention": "公平性",
+          "normalized_name": "公平性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现有评价指标在多样性[8]、可解释性[69]、公平性[70]等方面的度量相对不足",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "64_e6",
+          "mention": "信息茧房",
+          "normalized_name": "信息茧房",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这可能导致会话推荐方法面临'信息茧房'[71]、可信度差[]等困境",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "65",
+      "sentence": "(3)在基线模型方面，现有研究主要采用非深度会话推荐模型、基于RNN的会话推荐模型以及基于GNN的会话推荐模型进行对比实验。 自2022年以来，基于GNN的会话推荐方法不断成熟,基于GNN的会话推荐模型在基线模型中占比不断变多，其他会话推荐模型的占比不断变少。然而，现有研究的基线模型尚未结合特定实现流程进行细致化分类，导致对比实验结果缺乏说服力。未来研究可结合本文归纳的研究框架(即会话图构建、会话图学习和会话兴趣表示)对基线模型进行细致化分类，更有针对性地评估新型研究的创新。",
+      "entities": [
+        {
+          "entity_id": "65_e1",
+          "mention": "非深度会话推荐模型",
+          "normalized_name": "非深度会话推荐模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现有研究主要采用非深度会话推荐模型、基于RNN的会话推荐模型以及基于GNN的会话推荐模型进行对比实验",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "65_e2",
+          "mention": "基于RNN的会话推荐模型",
+          "normalized_name": "基于RNN的会话推荐模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现有研究主要采用非深度会话推荐模型、基于RNN的会话推荐模型以及基于GNN的会话推荐模型进行对比实验",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "65_e3",
+          "mention": "基于GNN的会话推荐模型",
+          "normalized_name": "基于GNN的会话推荐模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现有研究主要采用非深度会话推荐模型、基于RNN的会话推荐模型以及基于GNN的会话推荐模型进行对比实验",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "65_e4",
+          "mention": "基于GNN的会话推荐方法",
+          "normalized_name": "基于GNN的会话推荐方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于GNN的会话推荐方法不断成熟",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "65_e5",
+          "mention": "会话图构建",
+          "normalized_name": "会话图构建",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本文归纳的研究框架(即会话图构建、会话图学习和会话兴趣表示)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为method"
+        },
+        {
+          "entity_id": "65_e6",
+          "mention": "会话图学习",
+          "normalized_name": "会话图学习",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本文归纳的研究框架(即会话图构建、会话图学习和会话兴趣表示)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为method"
+        },
+        {
+          "entity_id": "65_e7",
+          "mention": "会话兴趣表示",
+          "normalized_name": "会话兴趣表示",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本文归纳的研究框架(即会话图构建、会话图学习和会话兴趣表示)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为method"
+        }
+      ]
+    },
+    {
+      "sentence_id": "66",
+      "sentence": "尽管基于GNN的会话推荐已取得一定进展,但现有GNN会话推荐方法的相关研究数量仍然递增态势。 基于现有研究的不足，结合推荐系统的领域实时研究热点，给出基于GNN的会话推荐方法的未来研究趋势。",
+      "entities": [
+        {
+          "entity_id": "66_e1",
+          "mention": "GNN",
+          "normalized_name": "GNN",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于GNN的会话推荐",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "66_e2",
+          "mention": "会话推荐",
+          "normalized_name": "会话推荐",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于GNN的会话推荐",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为subfield"
+        },
+        {
+          "entity_id": "66_e3",
+          "mention": "GNN会话推荐方法",
+          "normalized_name": "GNN会话推荐方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现有GNN会话推荐方法的相关研究数量仍然递增态势",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "66_e4",
+          "mention": "推荐系统",
+          "normalized_name": "推荐系统",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "结合推荐系统的领域实时研究热点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "67",
+      "sentence": "可解释性推荐不仅可为用户提供准确的推荐结果,还可以为用户提供推荐解释,辅助用户或系统设计人员了解推荐原因,进而做出科学决策[72]。 由于",
+      "entities": [
+        {
+          "entity_id": "67_e1",
+          "mention": "可解释性推荐",
+          "normalized_name": "可解释性推荐",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "可解释性推荐不仅可为用户提供准确的推荐结果",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "67_e2",
+          "mention": "用户",
+          "normalized_name": "用户",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "辅助用户或系统设计人员了解推荐原因",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'用户'为具体角色，但非唯一可识别个人，根据规则'用户'为泛称，但图情领域'用户'常作为具体角色出现，此处保留"
+        },
+        {
+          "entity_id": "67_e3",
+          "mention": "系统设计人员",
+          "normalized_name": "系统设计人员",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "辅助用户或系统设计人员了解推荐原因",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "同上，'系统设计人员'为泛称，但作为具体角色保留"
+        }
+      ]
+    }
+  ]
+}

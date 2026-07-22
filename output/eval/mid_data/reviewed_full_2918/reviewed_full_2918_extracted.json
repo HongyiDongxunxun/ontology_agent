@@ -1,0 +1,1560 @@
+{
+  "base_name": "reviewed_full_2918",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "20世纪90年代以来，一种新型的服务形式InformationCommons（Ic）开始在北美、欧洲以及一些其他地区的学术图书馆内兴起。 十余年的实践证明，这种以满足用户信息需求的转变为出发点，高度整合的新的服务形式的出现，使图书馆更好地应对了信息技术发展带来的挑战，为图书馆的发展带来了契机。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "InformationCommons（Ic）",
+          "normalized_name": "InformationCommons（Ic）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一种新型的服务形式InformationCommons（Ic）开始在北美、欧洲以及一些其他地区的学术图书馆内兴起",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "北美",
+          "normalized_name": "北美",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "开始在北美、欧洲以及一些其他地区的学术图书馆内兴起",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为地理区域，可视为现象层实体"
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "欧洲",
+          "normalized_name": "欧洲",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "开始在北美、欧洲以及一些其他地区的学术图书馆内兴起",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为地理区域，可视为现象层实体"
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "学术图书馆",
+          "normalized_name": "学术图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在北美、欧洲以及一些其他地区的学术图书馆内兴起",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处为泛称，但结合上下文指具体类型的图书馆，且图情领域放宽规则，可抽取"
+        },
+        {
+          "entity_id": "1_e5",
+          "mention": "信息技术",
+          "normalized_name": "信息技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使图书馆更好地应对了信息技术发展带来的挑战",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "InformationCommons服务受到了广大用户的欢迎,其实践进展也很迅速，成为了目前欧美国家图书馆尤其是学术图书馆的主要服务形式。但关于IC的理论研究却相对滞后，大部分是具体图书馆在创建和使用信息共享空间的实践中总结的分析报告或研究报告。国内关于IC的理论研究，从2004年开始在国内学术资源中出现，并呈急速上升趋势。由于在实践上我国大学图书馆信息共享空间建设还处于筹划准备阶段，没有成型的案例经验可以借鉴，因此国内的理论研究从内容上看，大多局限于对国外信息共享空间的介绍、资料的引译，以及对国外大学图书馆的案例介绍等。 笔者通过对国外数据库的文献调查，与具体IC网站的采访，将收集到的公开发表的理论研究成果在研究主题上进行了统计。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "InformationCommons",
+          "normalized_name": "Information Commons",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "InformationCommons服务受到了广大用户的欢迎",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "欧美国家图书馆",
+          "normalized_name": "欧美国家图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "成为了目前欧美国家图书馆尤其是学术图书馆的主要服务形式",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "有地域限定，但非单一具体机构名称"
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "学术图书馆",
+          "normalized_name": "学术图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "成为了目前欧美国家图书馆尤其是学术图书馆的主要服务形式",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "有功能限定，但非单一具体机构名称"
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "IC",
+          "normalized_name": "Information Commons",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "但关于IC的理论研究却相对滞后",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e5",
+          "mention": "信息共享空间",
+          "normalized_name": "信息共享空间",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大部分是具体图书馆在创建和使用信息共享空间的实践中总结的分析报告或研究报告",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e6",
+          "mention": "2004年",
+          "normalized_name": "2004年",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "国内关于IC的理论研究，从2004年开始在国内学术资源中出现",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e7",
+          "mention": "我国大学图书馆",
+          "normalized_name": "我国大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在实践上我国大学图书馆信息共享空间建设还处于筹划准备阶段",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "有地域限定，但非单一具体机构名称"
+        },
+        {
+          "entity_id": "2_e8",
+          "mention": "国外大学图书馆",
+          "normalized_name": "国外大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对国外大学图书馆的案例介绍等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "有地域限定，但非单一具体机构名称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "美国法学专家Bollier[1-2]针对版权法对信息自由传播利用的限制，倡导建立与私有产权和市场机制相制衡的、对信息自由获取的共有（Commons）空间。于是，首次提出用Information Commons一词来特指在信息领域的Commons建构，其旨在恢复信息资源的公共财产属性，建立信息共用空间，保障每个人作为信息生产者和消费者对于信息空间的自由使用（思想的自由表达）和对于信息资源的开放获取（信息资源的合理使用）,以建立与私有产权、市场垄断和政治专制相抗衡的公共领域。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "Bollier",
+          "normalized_name": "Bollier",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国法学专家Bollier[1-2]针对版权法对信息自由传播利用的限制",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "Information Commons",
+          "normalized_name": "Information Commons",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "首次提出用Information Commons一词来特指在信息领域的Commons建构",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "Commons",
+          "normalized_name": "Commons",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对信息自由获取的共有（Commons）空间",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "在原文中作为抽象概念出现，与Information Commons有区别"
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "从图书馆整体来讲，它本身就是信息共有的一个重要组成部分，美国图书馆协会（ALA）前主席NancyKranich就是这一理念的主要倡导者，他在文献[3-6]中从开放获取的视角，全面系统地阐述了开放获取运动与IC的关系。 针对社会上对信息学术研究和其他资源的利用而不断增加的种种限制，阐明了必须以民主运动来争取信息资源的开放获取和共享的理由,并指出图书馆整体作为Information Com-mons为向所有人免费提供科学研究成果的民主的知识社会的建设做出重要贡献。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "美国图书馆协会（ALA）",
+          "normalized_name": "美国图书馆协会（ALA）",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国图书馆协会（ALA）前主席NancyKranich",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "NancyKranich",
+          "normalized_name": "NancyKranich",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国图书馆协会（ALA）前主席NancyKranich",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "开放获取运动",
+          "normalized_name": "开放获取运动",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "从开放获取的视角，全面系统地阐述了开放获取运动与IC的关系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "IC",
+          "normalized_name": "Information Commons",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "开放获取运动与IC的关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "IC为Information Commons的缩写，原文未展开全称"
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "Information Commons",
+          "normalized_name": "Information Commons",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆整体作为Information Commons",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e6",
+          "mention": "民主运动",
+          "normalized_name": "民主运动",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "必须以民主运动来争取信息资源的开放获取和共享",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处指争取开放获取的社会运动，非政治运动"
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "让所有的人都能够以无所不在的存取方式，通过足够的宽带、最新的通讯技术和无限制的多语言环境得到所需要的各类信息资源。 这种信息共有理念的发展，为我们在信息社会环境中思考图书馆存在的价值提供了更为广阔的空间。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "信息共有理念",
+          "normalized_name": "信息共有理念",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这种信息共有理念的发展",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "本文谈到的IC主要指在具体图书馆中构建的IC服务形式。 关于IC的研究文献中，案例研究占大部分，并且在一些图书馆的IC主页上发布有该馆在IC构建过程中的研究报告。 这些理论研究的主题包括IC的概念、构建的步骤与模式，以及治理、评价与发展等内容。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "IC",
+          "normalized_name": "信息共享空间",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本文谈到的IC主要指在具体图书馆中构建的IC服务形式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "IC为Information Commons的缩写，原文未给出全称，但作为图情领域专有概念应抽取"
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "IC",
+          "normalized_name": "信息共享空间",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "关于IC的研究文献中，案例研究占大部分",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "同上，同一实体在不同句中出现"
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "IC",
+          "normalized_name": "信息共享空间",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在一些图书馆的IC主页上发布有该馆在IC构建过程中的研究报告",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "同上"
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "IC",
+          "normalized_name": "信息共享空间",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这些理论研究的主题包括IC的概念、构建的步骤与模式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "同上"
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "关于图书馆IC的概念,以图书馆IC构建的最早实践者与研究者之一-一美国北卡罗来纳大学(Universityof NorthCarolia,UNc)Charlotte图书馆的Donald Beagle在文献[8]中界定的概念流传最为广泛。论文界定了IC的两种截然不同的概念： $\\textcircled{1}$ 一种独特的在线环境。 在该环境下，用户通过图形用户界面可以获得多种数字服务，通过安装在网络工作站上的搜索引擎可以同时检索馆藏以及其它数字资源。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "图书馆IC",
+          "normalized_name": "图书馆IC",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "关于图书馆IC的概念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "美国北卡罗来纳大学(Universityof NorthCarolia,UNc)Charlotte图书馆",
+          "normalized_name": "北卡罗来纳大学夏洛特分校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国北卡罗来纳大学(Universityof NorthCarolia,UNc)Charlotte图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "Donald Beagle",
+          "normalized_name": "Donald Beagle",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Donald Beagle在文献[8]中界定的概念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "文献[8]",
+          "normalized_name": "文献[8]",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "文献[8]中界定的概念",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "具体文献名称未知，仅以原文引用标记抽取"
+        },
+        {
+          "entity_id": "7_e5",
+          "mention": "IC",
+          "normalized_name": "IC",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "论文界定了IC的两种截然不同的概念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e6",
+          "mention": "图形用户界面",
+          "normalized_name": "图形用户界面",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过图形用户界面可以获得多种数字服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e7",
+          "mention": "搜索引擎",
+          "normalized_name": "搜索引擎",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过安装在网络工作站上的搜索引擎可以同时检索馆藏以及其它数字资源",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未指定具体搜索引擎名称，但作为通用软件工具在上下文中具有具体功能指代"
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "$\\textcircled{3}$ 整合信息共享空间（integratedcommons）,即提供用于研究、教育和学习的特定场所，尤其强调数字信息。 很多图书馆采用了第三种形式的信息共享空间，将计算机技术和图书馆资源结合，由图书馆员、计算机专家和多媒体工作者在一个平台上联合提供咨询服务。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "信息共享空间（integratedcommons）",
+          "normalized_name": "信息共享空间（integratedcommons）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "整合信息共享空间（integratedcommons）,即提供用于研究、教育和学习的特定场所",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "图书馆员",
+          "normalized_name": "图书馆员",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由图书馆员、计算机专家和多媒体工作者在一个平台上联合提供咨询服务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "计算机专家",
+          "normalized_name": "计算机专家",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由图书馆员、计算机专家和多媒体工作者在一个平台上联合提供咨询服务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "多媒体工作者",
+          "normalized_name": "多媒体工作者",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由图书馆员、计算机专家和多媒体工作者在一个平台上联合提供咨询服务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "2003年,MacWhinnie撰写论文[1o]把信息共享空间描述为“共同学习的场所，多媒体工作站，高科技教室以及小组研究空间。 这些特征有助于增强小组学习，鼓励教师将技术和新的信息资源融入所教的课程中去，并为图书馆指导学生提供先进的技术环境。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "MacWhinnie",
+          "normalized_name": "MacWhinnie",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "MacWhinnie撰写论文[1o]把信息共享空间描述为",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "信息共享空间",
+          "normalized_name": "信息共享空间",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "把信息共享空间描述为“共同学习的场所，多媒体工作站，高科技教室以及小组研究空间”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "各馆的IC形式因馆而异,但是都遵循一个原则,即以满足学生学习方式与信息需求的转变为目标。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "IC",
+          "normalized_name": "IC",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "各馆的IC形式因馆而异",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "IC可能指代Information Commons，但原文未展开全称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "国外图书馆IC的建设大都以项目形式执行，包括规划、执行与结果测评等。 如美国布里汉杨大学图书馆成功开展IC服务,文献[11]论述了HaroldB.Lee Library IC构建的进程与获得的经验，包括对IC概念的发展、接受与执行，对IC运行头18个月提供服务的实践结果进行了分析，并对该图书馆IC的未来发展方向做出预测。文献[12-13]则对内华达州立大学LiedLibrary的IC进行了案例分析，从分析IC的理论源流入手，回顾了参考咨询服务、用户需求转变以及技术发展等问题，具体的构建流程包括IC计划、空间设计、人员设置以及评价问题。 国内文献[14-15]也是对国外图书馆具体构建案例的分析。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "美国布里汉杨大学图书馆",
+          "normalized_name": "美国布里汉杨大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国布里汉杨大学图书馆成功开展IC服务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "HaroldB.Lee Library",
+          "normalized_name": "HaroldB.Lee Library",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "文献[11]论述了HaroldB.Lee Library IC构建的进程与获得的经验",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "内华达州立大学LiedLibrary",
+          "normalized_name": "内华达州立大学LiedLibrary",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "文献[12-13]则对内华达州立大学LiedLibrary的IC进行了案例分析",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "IC",
+          "normalized_name": "IC",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国外图书馆IC的建设大都以项目形式执行",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "IC为Information Commons的缩写，此处作为独立概念使用"
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "参考咨询服务",
+          "normalized_name": "参考咨询服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "回顾了参考咨询服务、用户需求转变以及技术发展等问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e6",
+          "mention": "用户需求转变",
+          "normalized_name": "用户需求转变",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "回顾了参考咨询服务、用户需求转变以及技术发展等问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为trend"
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "通过案例文献的分析可以发现，IC的构成一般为3层模型，即物理层、虚拟层和支持层。 物理层提供具有可伸缩性的电子教室、促进小组研究的讨论室、指导读者写作和提高研究技能的咨询区，以及帮助读者开发数字作品的多媒体制作室等；",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "IC",
+          "normalized_name": "IC",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "IC的构成一般为3层模型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为Information Commons的缩写"
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "3层模型",
+          "normalized_name": "3层模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "IC的构成一般为3层模型",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "模型名称较泛化，但原文明确为具体结构"
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "物理层",
+          "normalized_name": "物理层",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "物理层提供具有可伸缩性的电子教室",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "虚拟层",
+          "normalized_name": "虚拟层",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "IC的构成一般为3层模型，即物理层、虚拟层和支持层",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e5",
+          "mention": "支持层",
+          "normalized_name": "支持层",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "IC的构成一般为3层模型，即物理层、虚拟层和支持层",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e6",
+          "mention": "电子教室",
+          "normalized_name": "电子教室",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "物理层提供具有可伸缩性的电子教室",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为具体设施类型，但原文未给出唯一名称"
+        },
+        {
+          "entity_id": "12_e7",
+          "mention": "讨论室",
+          "normalized_name": "讨论室",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "促进小组研究的讨论室",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛化空间类型，但原文作为IC组成部分具体提及"
+        },
+        {
+          "entity_id": "12_e8",
+          "mention": "咨询区",
+          "normalized_name": "咨询区",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "指导读者写作和提高研究技能的咨询区",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛化空间类型，但原文作为IC组成部分具体提及"
+        },
+        {
+          "entity_id": "12_e9",
+          "mention": "多媒体制作室",
+          "normalized_name": "多媒体制作室",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "帮助读者开发数字作品的多媒体制作室",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛化空间类型，但原文作为IC组成部分具体提及"
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "DonaldBeagle于2006年组织编著了关于图书馆构建IC的‘The Information Commons Handbook \"书[17],相信将为图书馆的IC实践提供更全面科学的指导。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "DonaldBeagle",
+          "normalized_name": "Donald Beagle",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "DonaldBeagle于2006年组织编著了关于图书馆构建IC的‘The Information Commons Handbook",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "The Information Commons Handbook",
+          "normalized_name": "The Information Commons Handbook",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "关于图书馆构建IC的‘The Information Commons Handbook",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "通过对共有（Commons）理念的分析评论，很多领域的学者预先地描述了“共有的悲剧'(The tragedyof the in-formation commons)。 1968年,Garrer Hardin发表了《公共地的悲剧(The Tragedyof the Information Commons)》[18],指出如不加以管理，公共物品就存在被滥用和破坏的风险。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "共有（Commons）理念",
+          "normalized_name": "共有（Commons）理念",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过对共有（Commons）理念的分析评论",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "共有的悲剧（The tragedy of the information commons）",
+          "normalized_name": "共有的悲剧（The tragedy of the information commons）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "预先地描述了“共有的悲剧”（The tragedy of the information commons）",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "Garrer Hardin",
+          "normalized_name": "Garrer Hardin",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1968年，Garrer Hardin发表了《公共地的悲剧（The Tragedy of the Information Commons）》[18]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e4",
+          "mention": "《公共地的悲剧（The Tragedy of the Information Commons）》",
+          "normalized_name": "《公共地的悲剧（The Tragedy of the Information Commons）》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Garrer Hardin发表了《公共地的悲剧（The Tragedy of the Information Commons）》[18]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "就像员工被培训和教育以更好地了解用户需求，从而提供更适当的服务，用户也通过图书馆工作人员对其进行的用户培训，以更有效率更有效果的方式选择和使用资源，资源被更好地用于支持用户的学术需求，而清除那些无关紧要的上网聊天，发私人邮件，以及网络购物等一些不合适的行为。 对用户与员工进行培训的方式，提高了用户的信息素养，更好地节约用户的时间的同时获得更多的资源服务。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "图书馆工作人员",
+          "normalized_name": "图书馆工作人员",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "用户也通过图书馆工作人员对其进行的用户培训",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但图情领域规则放宽：有具体职能限定（图书馆工作人员）可视为具体角色"
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "用户培训",
+          "normalized_name": "用户培训",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户也通过图书馆工作人员对其进行的用户培训",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "信息素养",
+          "normalized_name": "信息素养",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提高了用户的信息素养",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "共有的悲剧将会继续对IC服务造成一定程度的损害，对于IC的指导者和实践者来说，应充分认识这些趋势并尝试建立有效的防治机制，或者至少在一定程度上达到减少这些信息滥用带来的不良效果的作用。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "IC服务",
+          "normalized_name": "IC服务",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "共有的悲剧将会继续对IC服务造成一定程度的损害",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "IC可能为缩写，需确认全称（如Information Commons或Information Center）"
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "信息滥用",
+          "normalized_name": "信息滥用",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "减少这些信息滥用带来的不良效果",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "服务是IC的核心内容，加强服务质量的评价与跟踪是IC 成功的保证。目前，对于IC评估的研究还不够深入，没有形成成熟的评估体系。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "IC",
+          "normalized_name": "IC",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "服务是IC的核心内容",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "IC可能指Information Commons或Information Center，需上下文确认"
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "理论文献中论述的对IC的评价问题大多通过对读者的调查反馈，以及图书馆IC部门对入馆率的统计来实现。美国研究图书馆协会(Associationof ResearchLibraries,简称ARL）基于“感知与期望”模型而开发的LibQUAL+TM质量评价工具，可通过网络对图书馆服务质量进行定量分析，图书馆在评价IC质量时可以用来借鉴[20]。文献[21]则从读者学习角度出发,运用chickeringand Gameson（1991)的有效学习基准框架对以学习者为中心的IC进行评价，主要包括空间与服务等5个主要方面。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "美国研究图书馆协会(Associationof ResearchLibraries,简称ARL）",
+          "normalized_name": "美国研究图书馆协会(Association of Research Libraries,简称ARL)",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国研究图书馆协会(Associationof ResearchLibraries,简称ARL）基于“感知与期望”模型而开发的LibQUAL+TM质量评价工具",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "LibQUAL+TM质量评价工具",
+          "normalized_name": "LibQUAL+TM质量评价工具",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "美国研究图书馆协会(Associationof ResearchLibraries,简称ARL）基于“感知与期望”模型而开发的LibQUAL+TM质量评价工具",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "“感知与期望”模型",
+          "normalized_name": "“感知与期望”模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于“感知与期望”模型而开发的LibQUAL+TM质量评价工具",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e4",
+          "mention": "chickeringand Gameson（1991)的有效学习基准框架",
+          "normalized_name": "Chickering and Gameson (1991)的有效学习基准框架",
+          "candidate_l3": "framework",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "运用chickeringand Gameson（1991)的有效学习基准框架对以学习者为中心的IC进行评价",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "那么，LC与IC存在怎样的区别与联系？ 文献[22]通过资料调查和访问一些LC网站,总结发现,IC与LC主要在于术语上的差异。 很多Learning Commons 用In-formationCommons表示，反之亦然。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "LC",
+          "normalized_name": "LC",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "LC与IC存在怎样的区别与联系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "LC可能指代Learning Commons或Library Commons，需上下文确认"
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "IC",
+          "normalized_name": "IC",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "LC与IC存在怎样的区别与联系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "IC可能指代Information Commons或Information Center，需上下文确认"
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "文献[22]",
+          "normalized_name": "文献[22]",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "文献[22]通过资料调查和访问一些LC网站",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "Learning Commons",
+          "normalized_name": "Learning Commons",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "很多Learning Commons 用In-formationCommons表示",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e5",
+          "mention": "In-formationCommons",
+          "normalized_name": "Information Commons",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "很多Learning Commons 用In-formationCommons表示",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "原文拼写为In-formationCommons，可能为Information Commons的变体或笔误"
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "很多Learning Commons 用In-formationCommons表示，反之亦然。 然而它们终究是不同的。 很多图书馆已经建设有Information Commons,其中一些馆的Information Commons含有Learning Commons的功能。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "Learning Commons",
+          "normalized_name": "Learning Commons",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "很多Learning Commons 用In-formationCommons表示",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "In-formationCommons",
+          "normalized_name": "Information Commons",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "很多Learning Commons 用In-formationCommons表示",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "原文拼写为In-formationCommons，规范化后为Information Commons"
+        },
+        {
+          "entity_id": "22_e3",
+          "mention": "Information Commons",
+          "normalized_name": "Information Commons",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "很多图书馆已经建设有Information Commons",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "很多图书馆已经建设有Information Commons,其中一些馆的Information Commons含有Learning Commons的功能。 事实上，LC是IC模式的发展。 是一个比IC更广泛的概念。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "Information Commons",
+          "normalized_name": "Information Commons",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "很多图书馆已经建设有Information Commons",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "Learning Commons",
+          "normalized_name": "Learning Commons",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "其中一些馆的Information Commons含有Learning Commons的功能",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "LC",
+          "normalized_name": "LC",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "LC是IC模式的发展",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "LC为Learning Commons的缩写"
+        },
+        {
+          "entity_id": "23_e4",
+          "mention": "IC",
+          "normalized_name": "IC",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "LC是IC模式的发展",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "IC为Information Commons的缩写"
+        },
+        {
+          "entity_id": "23_e5",
+          "mention": "IC模式",
+          "normalized_name": "IC模式",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "LC是IC模式的发展",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "IC模式可视为一种服务模式或概念模型"
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "是一个比IC更广泛的概念。 Beagle[23]也认为LC是图书馆IC的发展方向，他通过采用美国教育委员会制定的一个关于模式变革的矩阵模型，分析了从IC到LC的转化。认为LC相对于IC而言，在其基础上与更多的部门合作（如教师发展中心以及教学中心等)，从校园范围出发，不再以图书馆为中心，更多地满足",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "IC",
+          "normalized_name": "IC",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "是一个比IC更广泛的概念",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "Beagle[23]",
+          "normalized_name": "Beagle",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Beagle[23]也认为LC是图书馆IC的发展方向",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e3",
+          "mention": "LC",
+          "normalized_name": "LC",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Beagle[23]也认为LC是图书馆IC的发展方向",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e4",
+          "mention": "美国教育委员会制定的一个关于模式变革的矩阵模型",
+          "normalized_name": "美国教育委员会模式变革矩阵模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过采用美国教育委员会制定的一个关于模式变革的矩阵模型",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e5",
+          "mention": "教师发展中心",
+          "normalized_name": "教师发展中心",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "与更多的部门合作（如教师发展中心以及教学中心等）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e6",
+          "mention": "教学中心",
+          "normalized_name": "教学中心",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "与更多的部门合作（如教师发展中心以及教学中心等）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "作者是该杂志副主编兼学术新闻电讯栏目的编辑，他通过亲临蒙特霍克大学(Mt．Holyoke)威利斯图书馆的感受,从一站式用户体验、可伸缩性、组织变革、交流与互动、协作空间、技术支持等多个方面描述了信息共享空间(IC)倍受读者欢迎的成功因素。 认为：无论起什么名字，信息共享空间仍是图书馆，事实上它是校园图书馆的一种新版本一一“大学图书馆2.0”上海大学图书馆任树怀老师在国内2007年第二届Web2.0会议以及中国图书馆学会年会上，都以信息共享空间与图书馆2.0为主题做了相关报告[25-26],他认为图书馆2.0以信息共享空间为背景，两者密切相连，体现了用户与图书馆的互动、用户参与建设、以及重视用户体验等观点。 这些都与图书馆2.0有着密不可分的联系。",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "蒙特霍克大学(Mt．Holyoke)威利斯图书馆",
+          "normalized_name": "蒙特霍克大学威利斯图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "他通过亲临蒙特霍克大学(Mt．Holyoke)威利斯图书馆的感受",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "信息共享空间(IC)",
+          "normalized_name": "信息共享空间",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从一站式用户体验、可伸缩性、组织变革、交流与互动、协作空间、技术支持等多个方面描述了信息共享空间(IC)倍受读者欢迎的成功因素",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e3",
+          "mention": "大学图书馆2.0",
+          "normalized_name": "大学图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "事实上它是校园图书馆的一种新版本一一“大学图书馆2.0”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e4",
+          "mention": "上海大学图书馆",
+          "normalized_name": "上海大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "上海大学图书馆任树怀老师",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e5",
+          "mention": "任树怀",
+          "normalized_name": "任树怀",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "上海大学图书馆任树怀老师",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e6",
+          "mention": "2007年第二届Web2.0会议",
+          "normalized_name": "2007年第二届Web2.0会议",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "在国内2007年第二届Web2.0会议",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e7",
+          "mention": "中国图书馆学会年会",
+          "normalized_name": "中国图书馆学会年会",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "以及中国图书馆学会年会上",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e8",
+          "mention": "图书馆2.0",
+          "normalized_name": "图书馆2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "他认为图书馆2.0以信息共享空间为背景",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "图书馆IC建构的核心是从馆舍物理层和网络虚拟层出发，通过一定的支持层的支撑，将空间、资源和人员进行有效整合。 文献[9]指出IC的信息资源整合主要体现在资源整合、业务流程及功能整合、人员整合等方面。Susan Beatty [27]从加拿大卡尔加里大学图书馆IC构建实例出发，其中心旨在介绍图书馆作为信息资源部门与学校信息技术部门人员协作建设的IC中服务与资源的整合。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "图书馆IC",
+          "normalized_name": "图书馆IC",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆IC建构的核心是从馆舍物理层和网络虚拟层出发",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "文献[9]",
+          "normalized_name": "文献[9]",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "文献[9]指出IC的信息资源整合主要体现在资源整合、业务流程及功能整合、人员整合等方面",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e3",
+          "mention": "Susan Beatty",
+          "normalized_name": "Susan Beatty",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Susan Beatty [27]从加拿大卡尔加里大学图书馆IC构建实例出发",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e4",
+          "mention": "加拿大卡尔加里大学图书馆",
+          "normalized_name": "卡尔加里大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Susan Beatty [27]从加拿大卡尔加里大学图书馆IC构建实例出发",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e5",
+          "mention": "IC",
+          "normalized_name": "IC",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "其中心旨在介绍图书馆作为信息资源部门与学校信息技术部门人员协作建设的IC中服务与资源的整合",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "IC为Information Commons的缩写，此处作为独立概念出现"
+        }
+      ]
+    },
+    {
+      "sentence_id": "29",
+      "sentence": "此外,IC与e-literacy[21],IC与参考咨询服务[30]的联系与作用，都有学者撰文探讨。 这些都为以后学者尤其是国内IC研究的初始阶段提供了很好的基础与借鉴作用。",
+      "entities": [
+        {
+          "entity_id": "29_e1",
+          "mention": "IC",
+          "normalized_name": "IC",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "IC与e-literacy[21],IC与参考咨询服务[30]的联系与作用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "IC可能指Information Commons或Information Center，需结合上下文确认"
+        },
+        {
+          "entity_id": "29_e2",
+          "mention": "e-literacy",
+          "normalized_name": "e-literacy",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "IC与e-literacy[21]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e3",
+          "mention": "参考咨询服务",
+          "normalized_name": "参考咨询服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "IC与参考咨询服务[30]的联系与作用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e4",
+          "mention": "国内IC研究的初始阶段",
+          "normalized_name": "国内IC研究的初始阶段",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "这些都为以后学者尤其是国内IC研究的初始阶段提供了很好的基础与借鉴作用",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "阶段划分较模糊，但原文明确提及"
+        }
+      ]
+    }
+  ]
+}

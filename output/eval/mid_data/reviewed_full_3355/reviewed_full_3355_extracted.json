@@ -1,0 +1,1226 @@
+{
+  "base_name": "reviewed_full_3355",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "【摘要】本文旨在通过对国外信息素质培养特点的研究来借鉴其先进经验，从而为完善我国IL培养实践提供参照作用。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "国外信息素质培养特点",
+          "normalized_name": "国外信息素质培养特点",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过对国外信息素质培养特点的研究来借鉴其先进经验",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为concept或subfield，但作为独立研究主题被讨论，优先标phenomenon"
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "信息素质",
+          "normalized_name": "信息素质",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国外信息素质培养特点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "IL培养实践",
+          "normalized_name": "信息素质培养实践",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "完善我国IL培养实践",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "IL为信息素质缩写，normalized_name展开为全称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "信息作为一种战略资源，在网络化、数字化、虚拟化、信息化和智能化为特征的新信息环境中扮演着越来越重要的角色。它全方位、全角度的冲击和影响，推动着信息素质（IL）成为世界各国教育界、信息产业界乃至社会各界关注的一个热门话题，也使得IL培养受到前所未有的重视。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "信息素质（IL）",
+          "normalized_name": "信息素质（IL）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "推动着信息素质（IL）成为世界各国教育界、信息产业界乃至社会各界关注的一个热门话题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "从最初1974年美国信息产业协会（IIA）主席保罗·泽考斯基（Paul Zurkowski）的“使用信息工具及熟悉信息源”到1979年美国信息产业协会的“信息工具利用的知识与技能\"，再到1989 年美国图书馆协会(ALA）下设的IL主席委员会对IL概念的权威解释，各国的研究机构和各级各类学校纷纷围绕信息素质的定义及内涵展开了讨论和研究。 他们在强调IL作用的同时，更将IL放在了素质结构的整体中去考虑。不仅包括熟练运用当代信息技术获取、识别、加工、传递和创造信息的基本技能，更重要的是在当代信息技术所创造的新环境中，有独立学习的能力及创新意识、批判精神及强烈的社会责任感和参与意识。 这期间国外也开始出现了对具备信息素质个体的专有特征进行理论分析的研究，如 Doyle 的采用 Delphi 法得出的“具备信息素质个体的10 个特征\"、Bruce 基于信息利用过程研究思路的“具备信息素质个体的7个层面”及Neely的“高等教育中具备信息素质个体的社会与心理特征”等。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "美国信息产业协会（IIA）",
+          "normalized_name": "美国信息产业协会（IIA）",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "从最初1974年美国信息产业协会（IIA）主席保罗·泽考斯基（Paul Zurkowski）的“使用信息工具及熟悉信息源”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "保罗·泽考斯基（Paul Zurkowski）",
+          "normalized_name": "保罗·泽考斯基（Paul Zurkowski）",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国信息产业协会（IIA）主席保罗·泽考斯基（Paul Zurkowski）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "美国图书馆协会(ALA）",
+          "normalized_name": "美国图书馆协会（ALA）",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1989 年美国图书馆协会(ALA）下设的IL主席委员会",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "IL",
+          "normalized_name": "信息素质（IL）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "IL主席委员会对IL概念的权威解释",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "IL为信息素质的缩写，原文中已定义"
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "Doyle",
+          "normalized_name": "Doyle",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Doyle 的采用 Delphi 法得出的“具备信息素质个体的10 个特征”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e6",
+          "mention": "Delphi 法",
+          "normalized_name": "Delphi法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Doyle 的采用 Delphi 法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e7",
+          "mention": "具备信息素质个体的10 个特征",
+          "normalized_name": "具备信息素质个体的10个特征",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Doyle 的采用 Delphi 法得出的“具备信息素质个体的10 个特征”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e8",
+          "mention": "Bruce",
+          "normalized_name": "Bruce",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Bruce 基于信息利用过程研究思路的“具备信息素质个体的7个层面”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e9",
+          "mention": "具备信息素质个体的7个层面",
+          "normalized_name": "具备信息素质个体的7个层面",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Bruce 基于信息利用过程研究思路的“具备信息素质个体的7个层面”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e10",
+          "mention": "Neely",
+          "normalized_name": "Neely",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Neely的“高等教育中具备信息素质个体的社会与心理特征”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e11",
+          "mention": "高等教育中具备信息素质个体的社会与心理特征",
+          "normalized_name": "高等教育中具备信息素质个体的社会与心理特征",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Neely的“高等教育中具备信息素质个体的社会与心理特征”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "这期间国外也开始出现了对具备信息素质个体的专有特征进行理论分析的研究，如 Doyle 的采用 Delphi 法得出的“具备信息素质个体的10 个特征\"、Bruce 基于信息利用过程研究思路的“具备信息素质个体的7个层面”及Neely的“高等教育中具备信息素质个体的社会与心理特征”等。 随后，2003年9月的《布拉格宣言》对IL概念从更广泛社会层面和意义层面进行了诠释，它更强调的是IL中的组织信息、利用信息、交流和评价信息的能力，更强调有效参与信息社会的前提条件是终身学习这一基本人权的一部分等。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "Doyle",
+          "normalized_name": "Doyle",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如 Doyle 的采用 Delphi 法得出的“具备信息素质个体的10 个特征”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "Delphi 法",
+          "normalized_name": "Delphi法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Doyle 的采用 Delphi 法得出的“具备信息素质个体的10 个特征”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "具备信息素质个体的10 个特征",
+          "normalized_name": "具备信息素质个体的10个特征",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Doyle 的采用 Delphi 法得出的“具备信息素质个体的10 个特征”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "Bruce",
+          "normalized_name": "Bruce",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Bruce 基于信息利用过程研究思路的“具备信息素质个体的7个层面”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "具备信息素质个体的7个层面",
+          "normalized_name": "具备信息素质个体的7个层面",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Bruce 基于信息利用过程研究思路的“具备信息素质个体的7个层面”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e6",
+          "mention": "Neely",
+          "normalized_name": "Neely",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Neely的“高等教育中具备信息素质个体的社会与心理特征”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e7",
+          "mention": "高等教育中具备信息素质个体的社会与心理特征",
+          "normalized_name": "高等教育中具备信息素质个体的社会与心理特征",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Neely的“高等教育中具备信息素质个体的社会与心理特征”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e8",
+          "mention": "《布拉格宣言》",
+          "normalized_name": "《布拉格宣言》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "2003年9月的《布拉格宣言》对IL概念从更广泛社会层面和意义层面进行了诠释",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e9",
+          "mention": "IL",
+          "normalized_name": "信息素养",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "《布拉格宣言》对IL概念从更广泛社会层面和意义层面进行了诠释",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "随着对信息主体的要求不同，IL内涵也经历了不断发展变化的过程。 从最初七八十年代的单纯对明确信息—查找信息—获取信息——组织信息—利用信息一—评价结果和过程知识和技能的要求，到90 年代各个阶段对信息主体除知识技能要求外，还增加了相应的意识、观念和伦理道德要求，这些表明了IL概念的内涵逐渐经历了由最初单纯的信息技能掌握到人的整体素质重要层面的演进，以及信息素质重要性被社会广泛认可的发展过程，尤其到美国图书馆协会和教育传播与技术协会在1998 年制定的学生学习的信息素质、独立学习和社区责任九大信息素质标准后，进一步丰富了信息素质的内涵。而国外学者对IL定义及内涵理论研究的进步也不断推动着IL培养教育的蓬勃开展。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "IL",
+          "normalized_name": "信息素质",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着对信息主体的要求不同，IL内涵也经历了不断发展变化的过程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "美国图书馆协会",
+          "normalized_name": "美国图书馆协会",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国图书馆协会和教育传播与技术协会在1998 年制定的学生学习的信息素质、独立学习和社区责任九大信息素质标准",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "教育传播与技术协会",
+          "normalized_name": "教育传播与技术协会",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国图书馆协会和教育传播与技术协会在1998 年制定的学生学习的信息素质、独立学习和社区责任九大信息素质标准",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "学生学习的信息素质、独立学习和社区责任九大信息素质标准",
+          "normalized_name": "学生学习的信息素质、独立学习和社区责任九大信息素质标准",
+          "candidate_l3": "guideline",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "美国图书馆协会和教育传播与技术协会在1998 年制定的学生学习的信息素质、独立学习和社区责任九大信息素质标准",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "欧美一些国家信息素质培养的专项资金投入，走在了其他国家的前列。这些国家往往会有一个较权威的机构或部门统一指导信息素质培养的发展，经费一般由国家和学校分别负担，一些基金会和捐款也专门用于信息素质培养的实施。 如美国国会在提供20 亿美元拨款“到2000年使网络联结所有的教室和图书馆\";",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "美国国会",
+          "normalized_name": "美国国会",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如美国国会在提供20 亿美元拨款",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "南非好望角城地区的5所大学联盟收到了100万美元的赠款来合作发展信息素质项目。 近几年，在保障硬件建设的同时，各发达国家还努力进行了一系列软件建设和信息技术教育的普及工作，这些措施为开展信息技术教育提供了强有力的物质支持，也为信息素质培养注入了保障。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "南非好望角城地区的5所大学联盟",
+          "normalized_name": "南非好望角城地区的5所大学联盟",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "南非好望角城地区的5所大学联盟收到了100万美元的赠款",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "信息素质项目",
+          "normalized_name": "信息素质项目",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "合作发展信息素质项目",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "信息技术教育",
+          "normalized_name": "信息技术教育",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "进行了一系列软件建设和信息技术教育的普及工作",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "信息素质培养",
+          "normalized_name": "信息素质培养",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "也为信息素质培养注入了保障",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "国外“information literacy school”的提法要求了学校的所有成员（包括教学、研究、行政人员以及学生）都要具备IL，在专业课教学、实践等学校教育的各环节内融入IL培养，同时要求图书情报专业人员在课程设计和改革中处于战略决策者和革新者的主导位置，并与其他人员充分合作，由此可以看出，国外信息素质培养的对象宽泛，从中小学生，到大学生、图书馆员、教师等。如何对不同用户群进行信息素质培养是目前国外信息素质培养研究的一项重要内容。美国是信息素养研究和实践较早的国家，针对信息素养教育的不同阶段，已制定了相应的信息素养能力标准，把信息素养教育融入到了每一个教育阶段，包括基础教育、高等教育、专业教育、职业生涯教育等。英国在初等教育和中等教育中开展得较好，它对各个教育达到的目标制定了专门的国家课程标准。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "information literacy school",
+          "normalized_name": "information literacy school",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国外“information literacy school”的提法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "IL",
+          "normalized_name": "信息素养",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "都要具备IL",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "美国",
+          "normalized_name": "美国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国是信息素养研究和实践较早的国家",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "信息素养能力标准",
+          "normalized_name": "信息素养能力标准",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "制定了相应的信息素养能力标准",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e5",
+          "mention": "英国",
+          "normalized_name": "英国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "英国在初等教育和中等教育中开展得较好",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e6",
+          "mention": "国家课程标准",
+          "normalized_name": "国家课程标准",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "制定了专门的国家课程标准",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "国外还非常重视同一层次学生在不同教育过程中IL 培养的不同差异，如PISA20OO 提倡的就是进一步关注不同信息素质培养过程的指标和评估。既具宽泛性又有针对性，国外信息素质培养非常重视教师一图书馆员在IL培养中的领导作用。早从1986 年开始，日本就开始要求地方教育当局要专门负责教师IL训练的任务。美国为开设信息技术课程，将教育技术投资中的 $30 \\%$ 用于师资培训。法国为了实施“人人学习计算机”的庞大计划，通过教师培训学院和教师进修学院，培养计算机专业教师。德国把媒体教育纳入师资培训内容，以提高每个教师使用媒体及指导学生使用媒体的能力，推进教育现代化、信息化为中心的课程改革。日本开设“教育信息化方案技术”的教职课程，加强对师范教育在校生和学校现任教师信息化培训及学生领导知的养。h新加坡方面要求全国教师要接受MT应用能力培训，并把它作为师资聘用的重要标准之一； 另一方面还加大了师范教育课程的力度和比重，使未来教师在校学习时就成为信息化技术应用的楷模。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "PISA20OO",
+          "normalized_name": "PISA2000",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如PISA20OO 提倡的就是进一步关注不同信息素质培养过程的指标和评估",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "日本",
+          "normalized_name": "日本",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "早从1986 年开始，日本就开始要求地方教育当局要专门负责教师IL训练的任务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "美国",
+          "normalized_name": "美国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国为开设信息技术课程，将教育技术投资中的 $30 \\%$ 用于师资培训",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "法国",
+          "normalized_name": "法国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "法国为了实施“人人学习计算机”的庞大计划，通过教师培训学院和教师进修学院，培养计算机专业教师",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e5",
+          "mention": "“人人学习计算机”",
+          "normalized_name": "人人学习计算机",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "法国为了实施“人人学习计算机”的庞大计划",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e6",
+          "mention": "德国",
+          "normalized_name": "德国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "德国把媒体教育纳入师资培训内容",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e7",
+          "mention": "日本",
+          "normalized_name": "日本",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "日本开设“教育信息化方案技术”的教职课程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e8",
+          "mention": "“教育信息化方案技术”",
+          "normalized_name": "教育信息化方案技术",
+          "candidate_l3": "course",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "日本开设“教育信息化方案技术”的教职课程",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "candidate_l3 不在给定分类体系中，暂用 course 作为占位符，实际应归为 method 或 technique"
+        },
+        {
+          "entity_id": "9_e9",
+          "mention": "新加坡",
+          "normalized_name": "新加坡",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "新加坡方面要求全国教师要接受MT应用能力培训",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "随着世界各国IL培养活动的广泛深入开展，各国教育管理专业机构纷纷出台了有权威指导性和规范性的政策说明或标准，用以指导IL培养宏观目标的确定及规范IL培养内容。各国根据实际分别面向不同层次、不同级别，有面向高等教育、中等教育中IL教育的，也有面向小学及商业机构IL教育的，还有面对同一阶段不同课程教学的IL教育的，可谓面面俱到。不仅如此，在国外，IL培养不仅被视为对基本文化素质教育的一种补充，而且是在数字信息时代对教育观及教育活动的重新释义、设计和构建。不管是影响最大的ACRL的“高等教育信息素质能力标准\"，还是NRC 的\"信息技术通晓”及美国的（K一12）的IL标准，都已把IL培养的目的从以讲授各种专用信息源的使用方法为重点转变为以与信息利用相关的一组评判性思考能力为重点。除了国家机构或协会制定相应的标准和指南外，一些大学还制定了切合自身特色的信息素质培养标准，尽管这些标准也有不尽人意的地方，但他们对IL教育活动实行规范化、标准化管理的做法以及相关标准文件对我国的IL教育研究与实践有很重要的借鉴作用，既可以为我们提供重要参考，又可以为IL教育教学、考试、评估管理等提供可操作的依据。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "IL",
+          "normalized_name": "信息素养",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着世界各国IL培养活动的广泛深入开展",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "ACRL",
+          "normalized_name": "美国大学与研究图书馆协会",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "影响最大的ACRL的“高等教育信息素质能力标准\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "高等教育信息素质能力标准",
+          "normalized_name": "高等教育信息素质能力标准",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "ACRL的“高等教育信息素质能力标准\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "NRC",
+          "normalized_name": "美国国家研究委员会",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "NRC 的\"信息技术通晓\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "信息技术通晓",
+          "normalized_name": "信息技术通晓",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "NRC 的\"信息技术通晓\"",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e6",
+          "mention": "美国的（K一12）的IL标准",
+          "normalized_name": "美国K-12信息素养标准",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "美国的（K一12）的IL标准",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "国外IL培养着眼点面向的是整个国家，是政府技术，因此，他们的IL培养有专门的国家机构作为全国IL 培养的教育中心，统一联盟来指导规划IL培养。从大规模实施信息素质教育的时间来看，国外对信息素质教育的正式介入都是从80 年代后半期开始的。1989年成立美国图书馆协会领导的信息素质委员会(Coalition for Information Literacy)，宗旨就是要给国家的信息素质培养创造好的环境保障。其开办的美国信息素质国家论坛，最初成员不足12个。 现在已发展到有代表企业商界、政府部门、教育机构等65个以上的国家性组织，各种成员超过500万，还有继续发展的势头。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "美国图书馆协会",
+          "normalized_name": "美国图书馆协会",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1989年成立美国图书馆协会领导的信息素质委员会",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "信息素质委员会",
+          "normalized_name": "信息素质委员会",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国图书馆协会领导的信息素质委员会(Coalition for Information Literacy)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "Coalition for Information Literacy",
+          "normalized_name": "Coalition for Information Literacy",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "信息素质委员会(Coalition for Information Literacy)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "美国信息素质国家论坛",
+          "normalized_name": "美国信息素质国家论坛",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "其开办的美国信息素质国家论坛",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "现在已发展到有代表企业商界、政府部门、教育机构等65个以上的国家性组织，各种成员超过500万，还有继续发展的势头。 美国高等教育协会（TheAmericanAssociation for Higher Education：AAHE）新建了一个行动委员会，在年会上定期提出有关信息素质教育的规划。图书馆协会、大学和研究图书馆协会（ACRL）等图书馆组织在全美国推动IL培养方面发挥了巨大作用，即国外一直由最具有信息素质教育理论指导能力的图书馆、教育机构、政府部门乃至企业公司等组成的专业协会（联盟）制定相应的教育标准或规范来指导具体的信息素质教育工作。另一方面，IL的基础性决定了IL培养的全民性，轰轰烈烈的信息素质运动也说明了国外信息素质培养已经形成了全民需求，有非常广泛的群众基础。总之，在大社会环境的保障下，国外IL培养已经发展成为一种全民性运动，由图书馆牵头、在专业学会或协会的指导下、广大学校全面参与的全面培养群众信息素质的社会运动。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "美国高等教育协会（TheAmericanAssociation for Higher Education：AAHE）",
+          "normalized_name": "美国高等教育协会（AAHE）",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国高等教育协会（TheAmericanAssociation for Higher Education：AAHE）新建了一个行动委员会",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "大学和研究图书馆协会（ACRL）",
+          "normalized_name": "大学和研究图书馆协会（ACRL）",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书馆协会、大学和研究图书馆协会（ACRL）等图书馆组织在全美国推动IL培养方面发挥了巨大作用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "信息素质运动",
+          "normalized_name": "信息素质运动",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "轰轰烈烈的信息素质运动也说明了国外信息素质培养已经形成了全民需求",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "目前，国外信息素质培养采用的是传统与在线的有机结合。 传统的面对面交流学习的信息素质培养方式有着不可替代的优势，但有开放性、形象性、交互性和个性化特点的在线信息素质培养也是不可或缺的方式，尤其 20 世纪90年代之后，后者发展很快，其主要有两种形式，一是开发普通网站，即图书馆或相关机构以单独或合作的形式利用网站开发技术自行构建信息素质教学网站，国外一般称之为“指南\"。 如综合信息素质教育指南TILT、CUS information Competence 基于学科（或课程）的在线信息素质教育指南、在线馆藏目录指南等，其中又以信息检索技能的教育和培训占了决定性优势。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "TILT",
+          "normalized_name": "TILT",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如综合信息素质教育指南TILT",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "CUS information Competence",
+          "normalized_name": "CUS information Competence",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "CUS information Competence 基于学科（或课程）的在线信息素质教育指南",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为指南名称，但原文未明确是否为系统或指南，暂按信息素质教育指南处理"
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "如综合信息素质教育指南TILT、CUS information Competence 基于学科（或课程）的在线信息素质教育指南、在线馆藏目录指南等，其中又以信息检索技能的教育和培训占了决定性优势。 这种方式成本比较低，但在课件开发和更新维护方面比较费时费力，同时课件所提供的功能相对来说不是很强大。 其他国家如加拿大、澳大利亚等国的一些学校和教育机构也建立了专门的信息素质教育网站。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "TILT",
+          "normalized_name": "TILT",
+          "candidate_l3": "guideline",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如综合信息素质教育指南TILT",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "CUS information Competence 基于学科（或课程）的在线信息素质教育指南",
+          "normalized_name": "CUS information Competence 基于学科（或课程）的在线信息素质教育指南",
+          "candidate_l3": "guideline",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "CUS information Competence 基于学科（或课程）的在线信息素质教育指南",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "在线馆藏目录指南",
+          "normalized_name": "在线馆藏目录指南",
+          "candidate_l3": "guideline",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在线馆藏目录指南",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "信息检索技能",
+          "normalized_name": "信息检索技能",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以信息检索技能的教育和培训占了决定性优势",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e5",
+          "mention": "加拿大",
+          "normalized_name": "加拿大",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "其他国家如加拿大、澳大利亚等国的一些学校和教育机构",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e6",
+          "mention": "澳大利亚",
+          "normalized_name": "澳大利亚",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "其他国家如加拿大、澳大利亚等国的一些学校和教育机构",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e7",
+          "mention": "信息素质教育网站",
+          "normalized_name": "信息素质教育网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建立了专门的信息素质教育网站",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "除了为用户提供检索技能培训、互动练习之外，还包含了大量的信息素质教育方面的资源，如信息素质教育网上书目、信息素质电子函递名单、信息素质教育过程、信息素质教育在线论坛等。 网站多以超文本文件的形式提供信息，主页设计一般都非常直观、生动，有利于激发用户的学习积极性。但是，这样的网站也存在一定的局限性，如网站的开发和维护的成本都比较大，缺少专业人士的指导等。 二是利用在线教学平台，即在已有在线教学平台的基础上，用户教育馆员根据系统提供的功能模块方便快捷地实施教学活动。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "信息素质教育网上书目",
+          "normalized_name": "信息素质教育网上书目",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如信息素质教育网上书目、信息素质电子函递名单、信息素质教育过程、信息素质教育在线论坛等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "信息素质电子函递名单",
+          "normalized_name": "信息素质电子函递名单",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如信息素质教育网上书目、信息素质电子函递名单、信息素质教育过程、信息素质教育在线论坛等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "信息素质教育过程",
+          "normalized_name": "信息素质教育过程",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如信息素质教育网上书目、信息素质电子函递名单、信息素质教育过程、信息素质教育在线论坛等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为资源集合或概念"
+        },
+        {
+          "entity_id": "16_e4",
+          "mention": "信息素质教育在线论坛",
+          "normalized_name": "信息素质教育在线论坛",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如信息素质教育网上书目、信息素质电子函递名单、信息素质教育过程、信息素质教育在线论坛等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e5",
+          "mention": "在线教学平台",
+          "normalized_name": "在线教学平台",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "二是利用在线教学平台，即在已有在线教学平台的基础上",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称但图情领域放宽规则，视为具体系统类型"
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "如威斯康星大学Parkside分校图书馆和鲁根特大学图书馆分别利用学校引进的WebCT和Blackboard 发布课件来实施IL培养活动。 目前，美国及发达国家许多高校之所以采取这种方式，是因为其已经购买和实施了某一在线教育平台，开发课件简单快捷，易于维护更新，但经济成本比较高。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "威斯康星大学Parkside分校图书馆",
+          "normalized_name": "威斯康星大学Parkside分校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "威斯康星大学Parkside分校图书馆和鲁根特大学图书馆分别利用学校引进的WebCT和Blackboard 发布课件来实施IL培养活动",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "鲁根特大学图书馆",
+          "normalized_name": "鲁根特大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "威斯康星大学Parkside分校图书馆和鲁根特大学图书馆分别利用学校引进的WebCT和Blackboard 发布课件来实施IL培养活动",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "WebCT",
+          "normalized_name": "WebCT",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用学校引进的WebCT和Blackboard 发布课件来实施IL培养活动",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "Blackboard",
+          "normalized_name": "Blackboard",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用学校引进的WebCT和Blackboard 发布课件来实施IL培养活动",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e5",
+          "mention": "IL培养活动",
+          "normalized_name": "信息素养培养活动",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实施IL培养活动",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "IL为Information Literacy缩写，此处指信息素养"
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "总之，国外实现IL培养强调的是交互性和个性化，充分体现了建构主义提出的教学理念。其教育的重点从原有的技术要求转向培养学生的“基于资源”的独立学习和终身学习能力及评判性思维能力，国家的相关政策有力地推动着IL培养教育的发展，使IL培养教育呈现出整体推进的态势。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "IL",
+          "normalized_name": "信息素养",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国外实现IL培养强调的是交互性和个性化",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "IL为Information Literacy的缩写，原文未给出全称，但根据图情领域惯例可识别"
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "建构主义",
+          "normalized_name": "建构主义",
+          "candidate_l3": "paradigm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "充分体现了建构主义提出的教学理念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "基于资源",
+          "normalized_name": "基于资源",
+          "candidate_l3": "approach",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "培养学生的“基于资源”的独立学习和终身学习能力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为特定教学取向，有引号标识"
+        },
+        {
+          "entity_id": "19_e4",
+          "mention": "独立学习",
+          "normalized_name": "独立学习",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "培养学生的“基于资源”的独立学习和终身学习能力",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e5",
+          "mention": "终身学习",
+          "normalized_name": "终身学习",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "培养学生的“基于资源”的独立学习和终身学习能力",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e6",
+          "mention": "评判性思维能力",
+          "normalized_name": "评判性思维能力",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "培养学生的“基于资源”的独立学习和终身学习能力及评判性思维能力",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

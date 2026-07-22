@@ -1,0 +1,579 @@
+{
+  "base_name": "reviewed_full_5483",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "情报是可以传递的，是与物质、能量紧密联系的； 情报是有生命的，是一个人类文明的过程；",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "情报",
+          "normalized_name": "情报",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "情报是可以传递的，是与物质、能量紧密联系的",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "物质",
+          "normalized_name": "物质",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与物质、能量紧密联系的",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "能量",
+          "normalized_name": "能量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与物质、能量紧密联系的",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "人类文明",
+          "normalized_name": "人类文明",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "是一个人类文明的过程",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "相反，当我们讲到情报涉及行动、过程时，就强调了情报的动态特征。 情报通过这些行动可以生产、产生、传递和失去，这一点表示情报是有生命的。情报的生命是由它的时间概念所决定的，在这一时间内称得上是情报，而在另一时间内就不是情报了，因为在另一时间内再得到它就分文不值了。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "情报",
+          "normalized_name": "情报",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当我们讲到情报涉及行动、过程时，就强调了情报的动态特征",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为phenomenon"
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "情报作为商品的概念，与物质、产品作为商品的概念是有一定区别的。 物质、产品作为商品是看得见、摸得着的实物，而情报却不是这样，它必须附在某种载体上才能表示出来，它的载体可以是纸型（书籍、期刊）、声像型（磁带、磁盘、磁鼓、光盘、录像盘、电视唱片）、缩微型（缩微胶卷、缩微平片、缩微卡片），也可以是计算机输出型（终端打印、终端显示）。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "情报作为商品的概念",
+          "normalized_name": "情报作为商品的概念",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "情报作为商品的概念，与物质、产品作为商品的概念是有一定区别的",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "纸型（书籍、期刊）",
+          "normalized_name": "纸型（书籍、期刊）",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "它的载体可以是纸型（书籍、期刊）",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "载体类型分类"
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "声像型（磁带、磁盘、磁鼓、光盘、录像盘、电视唱片）",
+          "normalized_name": "声像型（磁带、磁盘、磁鼓、光盘、录像盘、电视唱片）",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "它的载体可以是纸型（书籍、期刊）、声像型（磁带、磁盘、磁鼓、光盘、录像盘、电视唱片）",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "载体类型分类"
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "缩微型（缩微胶卷、缩微平片、缩微卡片）",
+          "normalized_name": "缩微型（缩微胶卷、缩微平片、缩微卡片）",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "它的载体可以是纸型（书籍、期刊）、声像型（磁带、磁盘、磁鼓、光盘、录像盘、电视唱片）、缩微型（缩微胶卷、缩微平片、缩微卡片）",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "载体类型分类"
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "计算机输出型（终端打印、终端显示）",
+          "normalized_name": "计算机输出型（终端打印、终端显示）",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "也可以是计算机输出型（终端打印、终端显示）",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "载体类型分类"
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "如买一张一元的票去听音乐会,目的是为了欣赏或消遣，那么这一元钱买的就是情报部份，而没有载体。 因此说情报是特殊形式的商品，它不具有真正实物商品的特点。或许有人要说，情报既是商品，它应该是可以计量和测定的，但我们不能用测量能量和物质这类商品的方法，去直接或间接地计量和测定情报，至少目前我们还缺乏从数量上计量和测定其特性的手段。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "情报",
+          "normalized_name": "情报",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这一元钱买的就是情报部份，而没有载体。因此说情报是特殊形式的商品",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为phenomenon"
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "研究商品在市场上流通和交换过程的科学称之为市场学。它必须由三大要素组成，即商品、顾客（用户）、市场工具（或称市场手段）。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "市场学",
+          "normalized_name": "市场学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究商品在市场上流通和交换过程的科学称之为市场学",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "商品",
+          "normalized_name": "商品",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "即商品、顾客（用户）、市场工具（或称市场手段）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为市场学基本要素概念"
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "顾客（用户）",
+          "normalized_name": "顾客（用户）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "即商品、顾客（用户）、市场工具（或称市场手段）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为市场学基本要素概念"
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "市场工具（或称市场手段）",
+          "normalized_name": "市场工具（或称市场手段）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "即商品、顾客（用户）、市场工具（或称市场手段）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为市场学基本要素概念"
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "情报市场学与实物商品市场学的主要研究内容是类同的，现归纳如下：",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "情报市场学",
+          "normalized_name": "情报市场学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "情报市场学与实物商品市场学的主要研究内容是类同的",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "实物商品市场学",
+          "normalized_name": "实物商品市场学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "情报市场学与实物商品市场学的主要研究内容是类同的",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "信息的概念比情报的概念在范围上大得多，情报在信息中只是一小部分。因此，信息市场比情报市场的范围也大得多。 信息市场不但包括图书馆、专业情报中心提供的资料、情报和服务，而且还包括：技术市场（如设备的安装、设备的输入、输出和技术人员的培训，设备的改型、改造、发展）；",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "信息",
+          "normalized_name": "信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息的概念比情报的概念在范围上大得多",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "情报",
+          "normalized_name": "情报",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息的概念比情报的概念在范围上大得多",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "信息市场",
+          "normalized_name": "信息市场",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息市场比情报市场的范围也大得多",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e4",
+          "mention": "情报市场",
+          "normalized_name": "情报市场",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息市场比情报市场的范围也大得多",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e5",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "信息市场不但包括图书馆、专业情报中心提供的资料、情报和服务",
+          "is_specific_entity": false,
+          "confidence": 0.3,
+          "uncertainty": "泛称，未指定具体图书馆名称，按规则不抽取"
+        },
+        {
+          "entity_id": "16_e6",
+          "mention": "专业情报中心",
+          "normalized_name": "专业情报中心",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "信息市场不但包括图书馆、专业情报中心提供的资料、情报和服务",
+          "is_specific_entity": false,
+          "confidence": 0.3,
+          "uncertainty": "泛称，未指定具体机构名称，按规则不抽取"
+        },
+        {
+          "entity_id": "16_e7",
+          "mention": "技术市场",
+          "normalized_name": "技术市场",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "还包括：技术市场（如设备的安装、设备的输入、输出和技术人员的培训，设备的改型、改造、发展）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "信息作为商品可以满足人们的需要。这样，信息便同其他实物商品一样有了使用价值，人们可以把信息转变成资本、劳力、能源和物质。 譬如，采用了信息不但可以省钱、节能、省工、省时和省料，而且还以新知识给人们新的启迪。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "信息",
+          "normalized_name": "信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息作为商品可以满足人们的需要",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "在句中作为抽象概念出现，非具体信息对象"
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "资本",
+          "normalized_name": "资本",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "人们可以把信息转变成资本、劳力、能源和物质",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "经济学概念，非图情领域特有"
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "劳力",
+          "normalized_name": "劳力",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "人们可以把信息转变成资本、劳力、能源和物质",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "经济学概念，非图情领域特有"
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "能源",
+          "normalized_name": "能源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "人们可以把信息转变成资本、劳力、能源和物质",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "经济学概念，非图情领域特有"
+        },
+        {
+          "entity_id": "17_e5",
+          "mention": "物质",
+          "normalized_name": "物质",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "人们可以把信息转变成资本、劳力、能源和物质",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "经济学概念，非图情领域特有"
+        },
+        {
+          "entity_id": "17_e6",
+          "mention": "新知识",
+          "normalized_name": "新知识",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以新知识给人们新的启迪",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛化概念，非具体知识体系"
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "譬如，采用了信息不但可以省钱、节能、省工、省时和省料，而且还以新知识给人们新的启迪。 这一点正是信息的自然属性。 “",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "信息的自然属性",
+          "normalized_name": "信息的自然属性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这一点正是信息的自然属性",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "该短语在句中作为特定学术概念被讨论，但缺乏更具体的命名，置信度中等"
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "大家都清楚，机器人的设计方案，专利权是美国的，但日本把这一专利买了下来，然后大批生产这种机器人，并在汽车工业的自动化生产中大量使用，获得了巨大的经济效益，使日本的汽车年产量超过了美国，成了汽车王国。 这一点正好说明了信息的社会属性。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "美国",
+          "normalized_name": "美国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "专利权是美国的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "日本",
+          "normalized_name": "日本",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "日本把这一专利买了下来",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "汽车工业",
+          "normalized_name": "汽车工业",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在汽车工业的自动化生产中大量使用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e4",
+          "mention": "信息的社会属性",
+          "normalized_name": "信息的社会属性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这一点正好说明了信息的社会属性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "信息作为商品，其使用价值和价值并不排斥，信息的生产者（专业人员、生产公司）有时可同时占有这两种价值。 如某公司编制了一套计算机管理炼钢的软件程序系统，应用结果不但大大地节省了人力、物力、时间、资金；",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "专业人员",
+          "normalized_name": "专业人员",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "信息的生产者（专业人员、生产公司）",
+          "is_specific_entity": false,
+          "confidence": 0.3,
+          "uncertainty": "泛化身份类别词，不指称具体个人"
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "生产公司",
+          "normalized_name": "生产公司",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "信息的生产者（专业人员、生产公司）",
+          "is_specific_entity": false,
+          "confidence": 0.3,
+          "uncertainty": "泛化机构类别词，无具体名称"
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "某公司",
+          "normalized_name": "某公司",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如某公司编制了一套计算机管理炼钢的软件程序系统",
+          "is_specific_entity": false,
+          "confidence": 0.2,
+          "uncertainty": "泛指代词/不定指称，无法唯一识别"
+        },
+        {
+          "entity_id": "23_e4",
+          "mention": "计算机管理炼钢的软件程序系统",
+          "normalized_name": "计算机管理炼钢的软件程序系统",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "某公司编制了一套计算机管理炼钢的软件程序系统",
+          "is_specific_entity": false,
+          "confidence": 0.4,
+          "uncertainty": "描述性短语，非具体软件名称"
+        }
+      ]
+    }
+  ]
+}

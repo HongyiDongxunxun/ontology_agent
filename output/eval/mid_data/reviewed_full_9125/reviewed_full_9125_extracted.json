@@ -1,0 +1,1460 @@
+{
+  "base_name": "reviewed_full_9125",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "总统图书馆是美国图书馆史上一个特殊的图书馆类型，也是世界图书馆史上的一个特殊现象。 它现由十一个总统图书馆组成。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "总统图书馆",
+          "normalized_name": "总统图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "总统图书馆是美国图书馆史上一个特殊的图书馆类型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "美国图书馆史",
+          "normalized_name": "美国图书馆史",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "总统图书馆是美国图书馆史上一个特殊的图书馆类型",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "世界图书馆史",
+          "normalized_name": "世界图书馆史",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "也是世界图书馆史上的一个特殊现象",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "这些分布在全国范围内的总统图书馆主要是依靠总统个人及民间组织捐赠建立起来的，并由设在华盛顿特区的国家档案文件局总统图书馆管理处负责运作和管理。 与传统图书馆不同的是,这类图书馆主要保存和收集历届总统任职期间的文件、史料和纪念品。 每个总统图书馆均由一个图书馆和博物馆组成，总统图书馆面向公众开放。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "总统图书馆",
+          "normalized_name": "总统图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "这些分布在全国范围内的总统图书馆主要是依靠总统个人及民间组织捐赠建立起来的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "国家档案文件局总统图书馆管理处",
+          "normalized_name": "国家档案文件局总统图书馆管理处",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由设在华盛顿特区的国家档案文件局总统图书馆管理处负责运作和管理",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "华盛顿特区",
+          "normalized_name": "华盛顿特区",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "设在华盛顿特区的国家档案文件局总统图书馆管理处",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为地名，可视为governance的下级行政区域"
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "尽管胡佛的许多文稿被国会图书馆所收藏，而且其他历届总统的部分资料也由其他图书馆、历史协会或私人收藏,但遗憾的是，许多资料仍被遗失甚至遭到毁坏。 而这些了解、研究美国历史的最直接的文件的丢失，对于总结历史经验教训,研究美国历史上的总统，健全美国的社会制度，影响是巨大的。很显然罗斯福总统已经认识到总统文件的重要作用，并认识到了它们的散失所带来的严重后果，从而提出了建立总统图书馆的设想。 这是罗斯福建立总统图书馆的历史原因。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "胡佛",
+          "normalized_name": "胡佛",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "尽管胡佛的许多文稿被国会图书馆所收藏",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "国会图书馆",
+          "normalized_name": "国会图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "尽管胡佛的许多文稿被国会图书馆所收藏",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "罗斯福总统",
+          "normalized_name": "罗斯福总统",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "很显然罗斯福总统已经认识到总统文件的重要作用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "总统图书馆",
+          "normalized_name": "总统图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "提出了建立总统图书馆的设想",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "总统文件在存入白宫档案时起，就永远归国家档案文件局保管，并存放在总统图书馆。 该法令的出现，标志着美国政府在集中保管公务文件方面迈出一大步，美国联邦政府的全部公务档案因而实现了集中统一管理。 1986 年里根签署一项法令,规定自他以后，总统图书馆的馆建规模和个人捐款数额应有所限制。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "总统文件",
+          "normalized_name": "总统文件",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "总统文件在存入白宫档案时起，就永远归国家档案文件局保管",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "白宫档案",
+          "normalized_name": "白宫档案",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "总统文件在存入白宫档案时起",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "国家档案文件局",
+          "normalized_name": "国家档案文件局",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "永远归国家档案文件局保管",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "总统图书馆",
+          "normalized_name": "总统图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "存放在总统图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "该法令",
+          "normalized_name": "该法令",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "该法令的出现，标志着美国政府在集中保管公务文件方面迈出一大步",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "原文未给出法令具体名称，但指代前文已提及的特定法令"
+        },
+        {
+          "entity_id": "4_e6",
+          "mention": "美国政府",
+          "normalized_name": "美国政府",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "标志着美国政府在集中保管公务文件方面迈出一大步",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e7",
+          "mention": "美国联邦政府",
+          "normalized_name": "美国联邦政府",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国联邦政府的全部公务档案因而实现了集中统一管理",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e8",
+          "mention": "1986 年里根签署一项法令",
+          "normalized_name": "1986年里根签署的法令",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "1986 年里根签署一项法令,规定自他以后，总统图书馆的馆建规模和个人捐款数额应有所限制",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e9",
+          "mention": "里根",
+          "normalized_name": "里根",
+          "candidate_l3": "policy_advocate",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1986 年里根签署一项法令",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "特别是在他一生最后的十年里，他几乎每天都亲自带领游客参观、讲解。 正是总统图书馆这些富有特色的资料和藏品，每年吸引着数万名研究人员和百万以上的参观者前来光顾。 举办各种不同的座谈会和研讨会是图书馆面向社会的又一种活动。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "总统图书馆",
+          "normalized_name": "总统图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "正是总统图书馆这些富有特色的资料和藏品",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "举办各种不同的座谈会和研讨会是图书馆面向社会的又一种活动。 总统图书馆正在成为对美国公众进行历史教育的重要场所，发挥着历史博物馆与图书馆的双重作用。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "总统图书馆",
+          "normalized_name": "总统图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "总统图书馆正在成为对美国公众进行历史教育的重要场所",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "在众多的信件当中,有许多内容都与第二次世界大战有关。 其中最著名的有爱因斯坦于1939年8月2日写给罗斯福探讨核武器使用可行性问题的信件。 1941年8月罗斯福敦促白宫助理梅恩·科伊援助苏联抵抗纳粹德国的备忘录等。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "爱因斯坦",
+          "normalized_name": "爱因斯坦",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "爱因斯坦于1939年8月2日写给罗斯福探讨核武器使用可行性问题的信件",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "罗斯福",
+          "normalized_name": "罗斯福",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "爱因斯坦于1939年8月2日写给罗斯福探讨核武器使用可行性问题的信件",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "梅恩·科伊",
+          "normalized_name": "梅恩·科伊",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "罗斯福敦促白宫助理梅恩·科伊援助苏联抵抗纳粹德国的备忘录",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "第二次世界大战",
+          "normalized_name": "第二次世界大战",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有许多内容都与第二次世界大战有关",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e5",
+          "mention": "纳粹德国",
+          "normalized_name": "纳粹德国",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "援助苏联抵抗纳粹德国的备忘录",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "人们正是通过对这些信件的研究，写出了大量研究罗斯福的著作和论文。 最著名的有詹姆森·M·泊恩斯所著的《罗斯福：狮子和狐狸》(1956 年)和《罗斯福：自由的战士》。 弗兰克·弗雷德所著的《罗斯福》(5卷,1952－1969 年)。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "罗斯福",
+          "normalized_name": "罗斯福",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "研究罗斯福的著作和论文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "詹姆森·M·泊恩斯",
+          "normalized_name": "詹姆森·M·泊恩斯",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "最著名的有詹姆森·M·泊恩斯所著的《罗斯福：狮子和狐狸》(1956 年)和《罗斯福：自由的战士》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "《罗斯福：狮子和狐狸》",
+          "normalized_name": "《罗斯福：狮子和狐狸》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "詹姆森·M·泊恩斯所著的《罗斯福：狮子和狐狸》(1956 年)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "《罗斯福：自由的战士》",
+          "normalized_name": "《罗斯福：自由的战士》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "詹姆森·M·泊恩斯所著的《罗斯福：狮子和狐狸》(1956 年)和《罗斯福：自由的战士》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e5",
+          "mention": "弗兰克·弗雷德",
+          "normalized_name": "弗兰克·弗雷德",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "弗兰克·弗雷德所著的《罗斯福》(5卷,1952－1969 年)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e6",
+          "mention": "《罗斯福》",
+          "normalized_name": "《罗斯福》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "弗兰克·弗雷德所著的《罗斯福》(5卷,1952－1969 年)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "正是通过对这些文献的研究，他发表了许多闻名世界的广播演讲。 罗斯福图书馆也因此成为惟一一座由在位总统利用的图书馆。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "罗斯福图书馆",
+          "normalized_name": "罗斯福图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "罗斯福图书馆也因此成为惟一一座由在位总统利用的图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "音响资料记录了他在1932年的8次竞选演说，还有1962年8月10日在总统图书馆落成仪式上的最后一次公开演讲。 另外，由私人赞助收集的胡佛 443次会谈记录，补充和丰富了馆藏。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "1932年的8次竞选演说",
+          "normalized_name": "1932年的8次竞选演说",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "音响资料记录了他在1932年的8次竞选演说",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为Event中的stage，但更偏向具体历史事件记录"
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "1962年8月10日在总统图书馆落成仪式上的最后一次公开演讲",
+          "normalized_name": "1962年8月10日在总统图书馆落成仪式上的最后一次公开演讲",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "还有1962年8月10日在总统图书馆落成仪式上的最后一次公开演讲",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为Event中的stage，但更偏向具体历史事件记录"
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "总统图书馆",
+          "normalized_name": "总统图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在总统图书馆落成仪式上",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处未指明具体总统图书馆名称，但作为机构实体可识别"
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "胡佛 443次会谈记录",
+          "normalized_name": "胡佛443次会谈记录",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "由私人赞助收集的胡佛 443次会谈记录",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "新馆的面积从原来的32000平方英尺扩大到44500平方英尺，其中10000 平方英尺建造了7个美术馆,新馆增加了一个180 个座位的音响厅、60人的多功能厅、30人的会议室及15人的小型会议室。 用于翻新工程筹集的800 万美元，胡佛总统图书馆协会用其中的300 万美元举办展览和教育计划，使它成为本地区主要的文化和教育机构。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "胡佛总统图书馆协会",
+          "normalized_name": "胡佛总统图书馆协会",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "胡佛总统图书馆协会用其中的300 万美元举办展览和教育计划",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "除总统文件外，杜鲁门执政期间的国务卿迪安·艾奇逊等人的文件也收藏于此。 另外,该馆进行了大量的口授史的工作,采访杜鲁门政府时期的政府官员和亲朋好友，记录他们对杜鲁门的印象，这项工作保留了大量活生生的史料，这些口授资料都已整理成册。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "杜鲁门",
+          "normalized_name": "杜鲁门",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "除总统文件外，杜鲁门执政期间的国务卿迪安·艾奇逊等人的文件也收藏于此",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "迪安·艾奇逊",
+          "normalized_name": "迪安·艾奇逊",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "杜鲁门执政期间的国务卿迪安·艾奇逊等人的文件也收藏于此",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "该馆",
+          "normalized_name": "该馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "另外,该馆进行了大量的口授史的工作",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "指代前文提及的图书馆/档案馆，具体名称未在句中给出"
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "口授史",
+          "normalized_name": "口授史",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "该馆进行了大量的口授史的工作",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e5",
+          "mention": "杜鲁门政府",
+          "normalized_name": "杜鲁门政府",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "采访杜鲁门政府时期的政府官员和亲朋好友",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "“当图书馆拥有丰富的资料,学者们来到这里探索过去半世纪的事情，我希望他们所关注的思想、原则和未来趋势能够对人们祈盼达到自由、和平的未来境界产生指导作用。 ”艾森豪威尔在图书馆奠基仪式上的讲话精辟地阐明了总统图书馆的实质。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "艾森豪威尔",
+          "normalized_name": "艾森豪威尔",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "艾森豪威尔在图书馆奠基仪式上的讲话",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "总统图书馆",
+          "normalized_name": "总统图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "精辟地阐明了总统图书馆的实质",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "翌日，肯尼迪总统在达拉斯市遇刺身亡。 特别值得一提的是肯尼迪家族专门为图书馆制作了一部30 分钟的传记影片：《约翰·肯尼迪(1917－1963年)》。 到图书馆参观的人们都可以免费欣赏到这些珍贵的历史画面。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "肯尼迪总统",
+          "normalized_name": "肯尼迪总统",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "肯尼迪总统在达拉斯市遇刺身亡",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "肯尼迪家族",
+          "normalized_name": "肯尼迪家族",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "肯尼迪家族专门为图书馆制作了一部30分钟的传记影片",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "家族作为集体行为主体，可视为Agent"
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "《约翰·肯尼迪(1917－1963年)》",
+          "normalized_name": "《约翰·肯尼迪(1917－1963年)》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "制作了一部30分钟的传记影片：《约翰·肯尼迪(1917－1963年)》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "到图书馆参观的人们都可以免费欣赏到这些珍贵的历史画面。 透过这些丰富的文献、电影、录像及口述资料，人们对于肯尼迪所面临的挑战、制定的决策、奋斗的目标有了一个完整清晰的了解。 1984年成立了肯尼迪图书馆基金会,它是一个非盈利组织,旨在帮助图书馆制定长期战略目标、拓宽馆藏范围、提高馆藏能力、促进图书馆事业的发展。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "肯尼迪图书馆基金会",
+          "normalized_name": "肯尼迪图书馆基金会",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1984年成立了肯尼迪图书馆基金会,它是一个非盈利组织",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "该馆在互联网上还有一个数字化图片档案库,均从馆藏资料中选出，大约为 $1 0 0 \\mathrm { { K B } }$ 。 图文并茂的国际互联网，真实再现了约翰逊各个时期的风采。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "数字化图片档案库",
+          "normalized_name": "数字化图片档案库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "该馆在互联网上还有一个数字化图片档案库",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为信息系统，但根据上下文侧重数据资源，优先标database"
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "约翰逊",
+          "normalized_name": "约翰逊",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "真实再现了约翰逊各个时期的风采",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未提供全名，但为具体人名，按原文抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "特别值得一提的是，尼克松图书馆与尼克松文献部是两回事儿，尼克松图书馆的馆藏文献不包括上述资料。尼克松图书馆也与其他总统图书馆不同，它由私人而非政府管理。 该图书馆座落于加州南部城镇约巴林达,离他本人出生的故居仅几十米。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "尼克松图书馆",
+          "normalized_name": "尼克松图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "尼克松图书馆与尼克松文献部是两回事儿",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "尼克松文献部",
+          "normalized_name": "尼克松文献部",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "尼克松图书馆与尼克松文献部是两回事儿",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "约巴林达",
+          "normalized_name": "约巴林达",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "该图书馆座落于加州南部城镇约巴林达",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "地名实体，作为具体地点可视为现象层"
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "显示白宫岁月（1969一1974 年)的展品包括美苏缓和，与中国建立外交关系，水门事件以及总统因此下台的资料。 这里还有一组非同寻常的展品，是尼克松会见十位外国著名领导人的真人般大小的站立塑像，其中有尼克松在北京会见毛泽东主席和周恩来总理的一组塑像。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "白宫岁月（1969一1974 年)的展品",
+          "normalized_name": "白宫岁月（1969-1974年）的展品",
+          "candidate_l3": "exhibition",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "显示白宫岁月（1969一1974 年)的展品包括美苏缓和，与中国建立外交关系，水门事件以及总统因此下台的资料",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "candidate_l3 不在给定分类中，近似为 Event 下的展览类"
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "美苏缓和",
+          "normalized_name": "美苏缓和",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括美苏缓和，与中国建立外交关系，水门事件以及总统因此下台的资料",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e3",
+          "mention": "与中国建立外交关系",
+          "normalized_name": "与中国建立外交关系",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "包括美苏缓和，与中国建立外交关系，水门事件以及总统因此下台的资料",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为 phenomenon"
+        },
+        {
+          "entity_id": "22_e4",
+          "mention": "水门事件",
+          "normalized_name": "水门事件",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract",
+            "Event"
+          ],
+          "evidence": "包括美苏缓和，与中国建立外交关系，水门事件以及总统因此下台的资料",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e5",
+          "mention": "尼克松",
+          "normalized_name": "尼克松",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "尼克松会见十位外国著名领导人的真人般大小的站立塑像",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "虽为政治人物，但在展览语境中作为历史人物被提及，近似 scholar"
+        },
+        {
+          "entity_id": "22_e6",
+          "mention": "毛泽东主席",
+          "normalized_name": "毛泽东",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "尼克松在北京会见毛泽东主席和周恩来总理的一组塑像",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e7",
+          "mention": "周恩来总理",
+          "normalized_name": "周恩来",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "尼克松在北京会见毛泽东主席和周恩来总理的一组塑像",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "尼克松本人和前总统福特、里根以及时任总统布什出席了仪式，并先后讲话。 布什、福特、里根在讲话中高度评价了尼克松1946 年从政以来的政绩。布什总统还赞扬尼克松1972 年的中国之行结束了美中两国 20 余年相互隔绝的局面。中国外长钱其琛就图书馆开幕发了贺信，向为开辟中美关系作出贡献的尼克松先生表示热烈的祝贺和良好的祝愿。 中国政府向图书馆赠送了一幅反映尼克松访华情形的大型绒绣。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "尼克松",
+          "normalized_name": "尼克松",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "尼克松本人和前总统福特、里根以及时任总统布什出席了仪式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "福特",
+          "normalized_name": "福特",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "尼克松本人和前总统福特、里根以及时任总统布什出席了仪式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "里根",
+          "normalized_name": "里根",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "尼克松本人和前总统福特、里根以及时任总统布什出席了仪式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e4",
+          "mention": "布什",
+          "normalized_name": "布什",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "尼克松本人和前总统福特、里根以及时任总统布什出席了仪式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e5",
+          "mention": "钱其琛",
+          "normalized_name": "钱其琛",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中国外长钱其琛就图书馆开幕发了贺信",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e6",
+          "mention": "尼克松1972 年的中国之行",
+          "normalized_name": "尼克松1972年的中国之行",
+          "candidate_l3": "event",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "布什总统还赞扬尼克松1972 年的中国之行结束了美中两国 20 余年相互隔绝的局面",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "该馆毗邻Bentley历史图书馆及大学校园北部的部分建筑，为二层粉砖楼，青铜色玻璃结构，透过窗外，可看到著名雕塑家乔治·里基的杰作，两个巨大的不锈钢三角形在作往复运动。 从整体角度看，与校园风格协调，浑然一体。图书馆外部造型独具魅力，内部功能完备齐全。 馆内拥有一个165 个座位的多功能视听室、会议室、文献研究室及音像研究室，一间专为福特提供的办公室，可控温度和湿度的书库及先进的报警系统，收藏和拷贝实验室。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "Bentley历史图书馆",
+          "normalized_name": "Bentley历史图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "该馆毗邻Bentley历史图书馆及大学校园北部的部分建筑",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "乔治·里基",
+          "normalized_name": "乔治·里基",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "著名雕塑家乔治·里基的杰作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e3",
+          "mention": "福特",
+          "normalized_name": "福特",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "一间专为福特提供的办公室",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能指代具体个人，但原文未提供全名，仅以姓氏出现"
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "馆内备有一份手稿文集目录可供读者检索。 图书馆通过函寄方式为研究者提供检索服务，同时还拥有一个良好检索工具一一主题检索信息数据库。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "手稿文集目录",
+          "normalized_name": "手稿文集目录",
+          "candidate_l3": "index",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "馆内备有一份手稿文集目录可供读者检索",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "主题检索信息数据库",
+          "normalized_name": "主题检索信息数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "同时还拥有一个良好检索工具一一主题检索信息数据库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "该馆有许多卡特在重要场所时的谈话录音，它们不仅录下了谈话背景，一些录音经过处理加进了有关背景材料的注释。有些录音还记录下对重要事件所做出的重大决定、人事变动、机构改革等等。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "卡特",
+          "normalized_name": "卡特",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "该馆有许多卡特在重要场所时的谈话录音",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "该馆的博物馆为访问者提供了一个独特的空间，透过房间布置、物品、文件、照片、音像资料，访问者对当代总统的经历有一个透彻的了解。最吸引人的地方有椭圆形办公室的原样复制品，由计算机控制的“市政会议”",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "椭圆形办公室的原样复制品",
+          "normalized_name": "椭圆形办公室的原样复制品",
+          "candidate_l3": "artifact",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "最吸引人的地方有椭圆形办公室的原样复制品",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "计算机控制的“市政会议”",
+          "normalized_name": "计算机控制的“市政会议”",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "由计算机控制的“市政会议”",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为系统或展览装置"
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "该中心是一个致力于促进解决国际冲突，推动民主和人权，帮助发展中国家消灭贫困、饥饿和疾病的民间机构。 十几年来，卡特和卡特中心的专家们活跃于民间外交和人道主义活动的舞台，使卡特中心的名声和影响越来越大。卡特中心既搞研究又开展活动。 早在80年代,中心就与中国残疾人联合会有过合作。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "卡特中心",
+          "normalized_name": "卡特中心",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "卡特和卡特中心的专家们活跃于民间外交和人道主义活动的舞台，使卡特中心的名声和影响越来越大",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "卡特",
+          "normalized_name": "卡特",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "卡特和卡特中心的专家们活跃于民间外交和人道主义活动的舞台",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e3",
+          "mention": "中国残疾人联合会",
+          "normalized_name": "中国残疾人联合会",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中心就与中国残疾人联合会有过合作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "29",
+      "sentence": "该馆位于得克萨斯州的农业和机械大学内，是美国建成的第十一个总统图书馆。 得克萨斯州因此也成为美国惟一拥有两座总统图书馆的州。",
+      "entities": [
+        {
+          "entity_id": "29_e1",
+          "mention": "得克萨斯州的农业和机械大学",
+          "normalized_name": "得克萨斯农业与机械大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "该馆位于得克萨斯州的农业和机械大学内",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e2",
+          "mention": "总统图书馆",
+          "normalized_name": "总统图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "是美国建成的第十一个总统图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "此处指具体机构类型，但结合上下文指代具体图书馆，故抽取"
+        },
+        {
+          "entity_id": "29_e3",
+          "mention": "得克萨斯州",
+          "normalized_name": "得克萨斯州",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "得克萨斯州因此也成为美国惟一拥有两座总统图书馆的州",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "该馆是到目前为止计算机化程度最高的总统图书馆。 馆内建立了自动化系统，配有先进的扫描仪，开展文献处理和参考服务。",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "总统图书馆",
+          "normalized_name": "总统图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "该馆是到目前为止计算机化程度最高的总统图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "自动化系统",
+          "normalized_name": "自动化系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "馆内建立了自动化系统",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "名称较泛，但图情领域放宽规则，有具体指代"
+        },
+        {
+          "entity_id": "30_e3",
+          "mention": "扫描仪",
+          "normalized_name": "扫描仪",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "配有先进的扫描仪",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "扫描仪为通用设备，但在此语境中作为具体工具提及"
+        }
+      ]
+    },
+    {
+      "sentence_id": "31",
+      "sentence": "里根图书馆馆长曾经说过，当你通过一位美国总统的眼睛来看美国的历史，你无疑会有一种独特的感受。 罗斯福倡导并建立的首座总统图书馆，不仅为以后总统建立图书馆树立了典范，而且为图书馆事业开创了新的类型，丰富、发展和完善了图书馆的职能和作用。",
+      "entities": [
+        {
+          "entity_id": "31_e1",
+          "mention": "里根图书馆",
+          "normalized_name": "里根图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "里根图书馆馆长曾经说过",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e2",
+          "mention": "罗斯福",
+          "normalized_name": "罗斯福",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "罗斯福倡导并建立的首座总统图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e3",
+          "mention": "首座总统图书馆",
+          "normalized_name": "首座总统图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "罗斯福倡导并建立的首座总统图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "指罗斯福总统图书馆，但原文未给出全称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "32",
+      "sentence": "这些经过时光冲刷淘洗留下的文字，为希望了解并探究美国历史的人们，提供了若干未经删改和粉饰的原始资料。 胡佛曾说过：“总统文件是历史学家获得第一手信息的重要来源,它涵盖了特定时期社会和政治背景。”胡佛精辟地阐明了总统图书馆的实质。它的建立,横可纵览各个时期美国社会的政治、经济、文化、军事、外交、科技等各个层面，纵可透视美国历史发展的基本轨迹，为从深层次上认识美国提供了一个有价值的视角。",
+      "entities": [
+        {
+          "entity_id": "32_e1",
+          "mention": "胡佛",
+          "normalized_name": "胡佛",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "胡佛曾说过：“总统文件是历史学家获得第一手信息的重要来源,它涵盖了特定时期社会和政治背景。”胡佛精辟地阐明了总统图书馆的实质。",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e2",
+          "mention": "总统图书馆",
+          "normalized_name": "总统图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "胡佛精辟地阐明了总统图书馆的实质。它的建立,横可纵览各个时期美国社会的政治、经济、文化、军事、外交、科技等各个层面",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "33",
+      "sentence": "总统图书馆有机地将图书馆、博物馆的功能融为一体，较充分地发挥了它的社会效益，方法独特。 它的服务对象主要是学者、政府官员和普通公民。",
+      "entities": [
+        {
+          "entity_id": "33_e1",
+          "mention": "总统图书馆",
+          "normalized_name": "总统图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "总统图书馆有机地将图书馆、博物馆的功能融为一体",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e2",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "总统图书馆有机地将图书馆、博物馆的功能融为一体",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e3",
+          "mention": "博物馆",
+          "normalized_name": "博物馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "总统图书馆有机地将图书馆、博物馆的功能融为一体",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "34",
+      "sentence": "还举行巡回展览、学校节目，在博物馆中举办各种专题展览。 这些活动使美国总统图书馆的影响日益扩大，促进了图书馆与社会、公众的联系，呈现出强劲的活力。",
+      "entities": [
+        {
+          "entity_id": "34_e1",
+          "mention": "美国总统图书馆",
+          "normalized_name": "美国总统图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "这些活动使美国总统图书馆的影响日益扩大",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "35",
+      "sentence": "美国总统图书馆为社会服务，向民众进行历史教育的许多方法值得我们借鉴。 国家图书馆应充分认识自己的资源特点和优势，灵活多样地开展各种服务，发挥应有的作用。",
+      "entities": [
+        {
+          "entity_id": "35_e1",
+          "mention": "美国总统图书馆",
+          "normalized_name": "美国总统图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国总统图书馆为社会服务，向民众进行历史教育的许多方法值得我们借鉴",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e2",
+          "mention": "国家图书馆",
+          "normalized_name": "国家图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国家图书馆应充分认识自己的资源特点和优势",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "36",
+      "sentence": "馆员均有较高素质，对馆藏极熟。 总统图书馆的这一做法，大大节省了研究者的时间，为研究者研究创造了良好的条件。国家图书馆应借鉴总统图书馆的做法，为广大科研人员创造利用图书馆的良好环境,可以通过电话、来函、E一mail等方式为重点科研人员开展预约服务，节省他们的时间，使他们能把更多的时间用在科学研究上。",
+      "entities": [
+        {
+          "entity_id": "36_e1",
+          "mention": "总统图书馆",
+          "normalized_name": "总统图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "总统图书馆的这一做法，大大节省了研究者的时间",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e2",
+          "mention": "国家图书馆",
+          "normalized_name": "国家图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国家图书馆应借鉴总统图书馆的做法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

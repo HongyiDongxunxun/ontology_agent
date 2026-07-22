@@ -1,0 +1,251 @@
+{
+  "base_name": "reviewed_full_1497",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "去年，13个馆开展活动共104次，内容有百科知识笔试、猜谜、书画、演讲、征文等。 其中较为突出的是根据当地实际搞特色活动，如三星乡馆与农、工、副业公司联合举办的“我为三星献一计”、“他为三星作贡献”等征文活动,受到了乡领导的好评。有的馆举办了“爱家乡百科知识\"有奖竞赛及“小主人报—我在1990年中”等活动，很受欢迎。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "三星乡馆",
+          "normalized_name": "三星乡馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "三星乡馆与农、工、副业公司联合举办的“我为三星献一计”、“他为三星作贡献”等征文活动",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "“我为三星献一计”",
+          "normalized_name": "“我为三星献一计”",
+          "candidate_l3": "event",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "“我为三星献一计”、“他为三星作贡献”等征文活动",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "“他为三星作贡献”",
+          "normalized_name": "“他为三星作贡献”",
+          "candidate_l3": "event",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "“我为三星献一计”、“他为三星作贡献”等征文活动",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "“爱家乡百科知识”有奖竞赛",
+          "normalized_name": "“爱家乡百科知识”有奖竞赛",
+          "candidate_l3": "event",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "有的馆举办了“爱家乡百科知识”有奖竞赛及“小主人报—我在1990年中”等活动",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e5",
+          "mention": "“小主人报—我在1990年中”",
+          "normalized_name": "“小主人报—我在1990年中”",
+          "candidate_l3": "event",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "有的馆举办了“爱家乡百科知识”有奖竞赛及“小主人报—我在1990年中”等活动",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "有13个乡镇馆坚持收集为农、工、副业服务的信息，并与104个专业户建立联系制度。新河乡有个养鱼专业户，去年6月初次放养鱼苗碰到了难题，由于乡馆为他提供了有关资料，治好了鱼病，获净利15000元。五效乡种田大户朱少贤利用乡图书室提供的“小麦用磷酸二氢钾喷施麦穗”的信息，使小麦每亩增产150斤右左。还有不少馆与乡职校联合举办辅导班，将平时积累的各类信息资料提供给老师，使老师的讲课受到了专业户的欢迎。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "新河乡",
+          "normalized_name": "新河乡",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "新河乡有个养鱼专业户",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "五效乡",
+          "normalized_name": "五效乡",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "五效乡种田大户朱少贤",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "朱少贤",
+          "normalized_name": "朱少贤",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "五效乡种田大户朱少贤",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "小麦用磷酸二氢钾喷施麦穗",
+          "normalized_name": "小麦用磷酸二氢钾喷施麦穗",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "小麦用磷酸二氢钾喷施麦穗",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "去年初，向化乡政府为实行厂站联办图书馆专门发了文件，一年共集资230C元。 其办法是：1．乡馆在乡、村办企业设图书流通站，他们赶制了20只图书流通站，在乡、村办企业中周转流通，很受企业职工欢迎。 2．厂只要提取公益金 $2 \\%$ 左右(一般100元)交乡图书馆，由乡馆统一采购、编目、组织藏书。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "向化乡政府",
+          "normalized_name": "向化乡政府",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "向化乡政府为实行厂站联办图书馆专门发了文件",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "厂站联办图书馆",
+          "normalized_name": "厂站联办图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为实行厂站联办图书馆专门发了文件",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "乡馆",
+          "normalized_name": "乡图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "乡馆在乡、村办企业设图书流通站",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "指代乡图书馆"
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "图书流通站",
+          "normalized_name": "图书流通站",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在乡、村办企业设图书流通站",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e5",
+          "mention": "乡图书馆",
+          "normalized_name": "乡图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由乡馆统一采购、编目、组织藏书",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "对武打、言情这类热门书，除做好阅读指导工作外，应大大缩短出借期，如一星期，甚至一至三天。 在调查中发现，不少馆实行“快借”后效果较好，不但能加快图书周转和减少读者的“老是借不到”的怨言，也大大增加收入。 ，",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "武打",
+          "normalized_name": "武打",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对武打、言情这类热门书",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "言情",
+          "normalized_name": "言情",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对武打、言情这类热门书",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "快借",
+          "normalized_name": "快借",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "不少馆实行“快借”后效果较好",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,746 @@
+{
+  "base_name": "reviewed_full_9434",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "跨入20世纪以来，随着我国经济持续高速发展和现代技术的日益普及，社会形态及居民的生活环境和生活方式都发生了很大的变化，这种变化必将对公共图书馆产生根本性的影响。 这种影响最直接的结果就是，公共图书馆服务的社区化、网络化和品牌化在我国逐渐成为新的发展趋势。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "公共图书馆",
+          "normalized_name": "公共图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "这种变化必将对公共图书馆产生根本性的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "公共图书馆服务的社区化、网络化和品牌化",
+          "normalized_name": "公共图书馆服务的社区化、网络化和品牌化",
+          "candidate_l3": "trend",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "公共图书馆服务的社区化、网络化和品牌化在我国逐渐成为新的发展趋势",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "他们大都按人口数量及区域范围规定建造图书馆，实行总馆分馆制，数量多，分布合理，在社区中开展图书馆服务是其核心点。 但我国自有近代图书馆以来，大致都按行政划分设立图书馆，造成分布不合理，功能重复交叉，服务多限于本馆阵地，局限性大，再加上交通的限制，读者时间分配与图书馆开放时间冲突等，给读者利用图书馆带来诸多不便。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "总馆分馆制",
+          "normalized_name": "总馆分馆制",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实行总馆分馆制",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "我国图书馆事业发展到现在，已到了对图书馆服务的社区化不得不重视的时候了。实际上，在发达国家和地区，既有非常成熟的经验可以借鉴，也有富有说服力的效果可以参考。大量的数据可以说明图书馆服务社区化对图书馆功能发挥的重要作用。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "我国图书馆事业",
+          "normalized_name": "中国图书馆事业",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国图书馆事业发展到现在",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为discipline"
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "图书馆服务的社区化",
+          "normalized_name": "图书馆服务社区化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "已到了对图书馆服务的社区化不得不重视的时候了",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "发达国家和地区",
+          "normalized_name": "发达国家和地区",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在发达国家和地区，既有非常成熟的经验可以借鉴",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛化地域指称，但作为独立学术讨论对象可抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "在公共图书馆服务社区化方面欧美国家有着更成熟的经验。 如在美国，按INTAMEL（即国际都市图书馆协会）20O1年的统计，纽约皇后区有人口223万人，公共图书馆系统包括1个总馆和62个分馆，平均约 35000人有一个图书馆；",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "公共图书馆",
+          "normalized_name": "公共图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在公共图书馆服务社区化方面欧美国家有着更成熟的经验",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'公共图书馆'作为泛称出现，但结合上下文'纽约皇后区公共图书馆系统'可视为具体机构系统的一部分，且图情领域放宽规则允许有名称的图书馆抽取"
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "INTAMEL",
+          "normalized_name": "国际都市图书馆协会",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "按INTAMEL（即国际都市图书馆协会）20O1年的统计",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "纽约皇后区",
+          "normalized_name": "纽约皇后区",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "纽约皇后区有人口223万人",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "公共图书馆系统",
+          "normalized_name": "公共图书馆系统",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "公共图书馆系统包括1个总馆和62个分馆",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处指纽约皇后区的具体公共图书馆系统，非泛称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "到馆读者是1773万人次（其中中心馆只有116 万人次)，全年流通量为2770万册次。 显然，这些公共图书馆系统的服务效率和效果比香港公共图书馆系统又高了不少。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "香港公共图书馆系统",
+          "normalized_name": "香港公共图书馆系统",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "这些公共图书馆系统的服务效率和效果比香港公共图书馆系统又高了不少",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "目前来看，图书馆采取总、分馆制，对各种文献资源、数字资源和人力资源进行统一的调配，才是实现图书馆服务社区化的最佳方式。 佛山市2003年底提出了建设全市联合图书馆的设想，并规划按照整合全市各级各类图书馆、完善图书馆服务体系和服务方式，实现“同城生活、同城便利”的全市性信息资源共享和信息服务共享的方式来打造“佛山市联合图书馆”系统。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "总、分馆制",
+          "normalized_name": "总分馆制",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆采取总、分馆制",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "佛山市联合图书馆",
+          "normalized_name": "佛山市联合图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "佛山市2003年底提出了建设全市联合图书馆的设想，并规划按照整合全市各级各类图书馆、完善图书馆服务体系和服务方式，实现“同城生活、同城便利”的全市性信息资源共享和信息服务共享的方式来打造“佛山市联合图书馆”系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "佛山市联合图书馆系统",
+          "normalized_name": "佛山市联合图书馆系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "打造“佛山市联合图书馆”系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "服务网络化是图书馆目前正在发展的阶段，并已渐成为图书馆服务一种主导方式。作为图书馆功能实现的手段，图书馆服务的网络化已成为一种必然的趋势。 从图书馆的层面来看，网络化服务目前最主要的目标是实现无时间限制、无地域限制、无对象限制的网上检索、阅读、外借、咨询服务的一体化。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "服务网络化是图书馆目前正在发展的阶段",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'图书馆'作为泛指机构出现，但根据图情领域放宽规则，可视为具体机构类型实体"
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "网上检索",
+          "normalized_name": "网上检索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现无时间限制、无地域限制、无对象限制的网上检索、阅读、外借、咨询服务的一体化",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "阅读",
+          "normalized_name": "阅读",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现无时间限制、无地域限制、无对象限制的网上检索、阅读、外借、咨询服务的一体化",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为服务类型概念"
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "外借",
+          "normalized_name": "外借",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现无时间限制、无地域限制、无对象限制的网上检索、阅读、外借、咨询服务的一体化",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为服务类型概念"
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "咨询服务",
+          "normalized_name": "咨询服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现无时间限制、无地域限制、无对象限制的网上检索、阅读、外借、咨询服务的一体化",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为服务类型概念"
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "从图书馆的层面来看，网络化服务目前最主要的目标是实现无时间限制、无地域限制、无对象限制的网上检索、阅读、外借、咨询服务的一体化。 数字图书馆是图书馆服务网络化的一种最重要的方式。数字图书馆应该是一个全开放的网络，是未来数字化社会的重要组成部分，也是未来的一种社会生活形态。图书馆作为一种最主要的社会信息机构，是数字图书馆其中的一个部分，而且应该是最重要的部分，因为，一则图书馆拥有最庞大的信息资源，二则图书馆本身就既是一个社会信息服务机构，又是一个社会文化服务机构。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "数字图书馆",
+          "normalized_name": "数字图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "数字图书馆是图书馆服务网络化的一种最重要的方式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "从图书馆的层面来看",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "我国北京、上海、广州等发达的大都市地区已建成了图书馆数字化服务体系的雏形，并且，这种数字化服务体系正向中小城市普及。 假以时日，积累足够的运作经验后，我国公共图书馆服务的网络化必将迎来更大的发展。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "北京",
+          "normalized_name": "北京",
+          "candidate_l3": "location",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国北京、上海、广州等发达的大都市地区",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "上海",
+          "normalized_name": "上海",
+          "candidate_l3": "location",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国北京、上海、广州等发达的大都市地区",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "广州",
+          "normalized_name": "广州",
+          "candidate_l3": "location",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国北京、上海、广州等发达的大都市地区",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "图书馆数字化服务体系",
+          "normalized_name": "图书馆数字化服务体系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "已建成了图书馆数字化服务体系的雏形",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "13_e5",
+          "mention": "公共图书馆服务的网络化",
+          "normalized_name": "公共图书馆服务的网络化",
+          "candidate_l3": "trend",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国公共图书馆服务的网络化必将迎来更大的发展",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "基层图书馆、文化馆、科技情报所、资料室加盟，在线注册成为成员馆后，即可实现免费的资源共享。 该数字图书馆知被读者t资源n均下截量达1.42亿页，目前每天接到和解答来自大陆、港澳台地区，以及美、英、日、澳等国家读者提出的网上咨询课题达400多例，远程提供电子书刊文献2000多篇 (部)，成为我国第一个实用化的省级数字图书馆雏形，取得了巨大的社会效益。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "基层图书馆",
+          "normalized_name": "基层图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "基层图书馆、文化馆、科技情报所、资料室加盟",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称但带'基层'限定，可视为具体机构类型"
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "文化馆",
+          "normalized_name": "文化馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "基层图书馆、文化馆、科技情报所、资料室加盟",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称但带'文化'限定，可视为具体机构类型"
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "科技情报所",
+          "normalized_name": "科技情报所",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "基层图书馆、文化馆、科技情报所、资料室加盟",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称但带'科技'限定，可视为具体机构类型"
+        },
+        {
+          "entity_id": "14_e4",
+          "mention": "资料室",
+          "normalized_name": "资料室",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "基层图书馆、文化馆、科技情报所、资料室加盟",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称但带'资料'限定，可视为具体机构类型"
+        },
+        {
+          "entity_id": "14_e5",
+          "mention": "成员馆",
+          "normalized_name": "成员馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在线注册成为成员馆后",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称但指具体加盟的图书馆"
+        },
+        {
+          "entity_id": "14_e6",
+          "mention": "该数字图书馆",
+          "normalized_name": "该数字图书馆",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "该数字图书馆知被读者t资源n均下截量达1.42亿页",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "原文指代前文提及的具体数字图书馆"
+        },
+        {
+          "entity_id": "14_e7",
+          "mention": "大陆",
+          "normalized_name": "中国大陆",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "来自大陆、港澳台地区",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e8",
+          "mention": "港澳台地区",
+          "normalized_name": "港澳台地区",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "来自大陆、港澳台地区",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e9",
+          "mention": "美",
+          "normalized_name": "美国",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "美、英、日、澳等国家",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e10",
+          "mention": "英",
+          "normalized_name": "英国",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "美、英、日、澳等国家",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e11",
+          "mention": "日",
+          "normalized_name": "日本",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "美、英、日、澳等国家",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e12",
+          "mention": "澳",
+          "normalized_name": "澳大利亚",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "美、英、日、澳等国家",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e13",
+          "mention": "省级数字图书馆",
+          "normalized_name": "省级数字图书馆",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "成为我国第一个实用化的省级数字图书馆雏形",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "带'省级'限定，指具体类型的数字图书馆"
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "它可以是单个图书馆所独有的，也可以是多个图书馆共有的。 图书馆品牌服务是无形资产的积累，它以高尚的职业道德、高超的技艺、高质量的服务，构建了图书馆在市场的认同度、信誉度、知名度，增加了图书馆服务的附加值。图书馆服务经过长期的演化，已进入了一个强调服务品牌化的时代。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "图书馆品牌服务",
+          "normalized_name": "图书馆品牌服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆品牌服务是无形资产的积累",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "服务品牌化",
+          "normalized_name": "服务品牌化",
+          "candidate_l3": "trend",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "已进入了一个强调服务品牌化的时代",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "首先是优化效应，即通过创立品牌服务，可以提高馆员综合素质、技术水平和管理能力，从而提升图书馆服务质量，为读者提供更周到、全面和深化的服务；",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "品牌服务",
+          "normalized_name": "品牌服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过创立品牌服务，可以提高馆员综合素质、技术水平和管理能力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为具体服务名称的泛称，但原文中作为独立概念出现"
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "提升图书馆服务质量",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "未指明具体图书馆名称，但图情领域放宽规则中图书馆作为机构应抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "品牌服务是传播公共图书馆形象的一种极好的载体。图书馆形象是图书馆在公众中的信誉度的体现，对图书馆的发展有直接的影响。图书馆的公众形象好，就能吸引更多的读者。越来越多公共图书馆都已认识到品牌服务对图书馆形象的巨大影响，并从自发地开展品牌服务转为自觉地开发品牌服务，将品牌服务意识渗透到整个图书馆服务的方方面面。 如佛山图书馆从1997年以来所开展的公益讲座，近年已发展到每年举办60场以上，形成了自身的特色和影响力，成为该馆服务的一块品牌。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "佛山图书馆",
+          "normalized_name": "佛山图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如佛山图书馆从1997年以来所开展的公益讲座",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "公益讲座",
+          "normalized_name": "公益讲座",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "佛山图书馆从1997年以来所开展的公益讲座",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为Event（作为持续性活动）"
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "另一方面，这么大的群众影响力也吸引了众多的专家、学者，从全国各地包括上海、北京这样的大都市到佛山这个最尔之地来开讲座，来传递自己的研究成果，与佛山市民面对面地交流。 这种良性互动使佛山市图书馆的社会形象甚至在很大程度上超出了图书馆的范畴，对该馆其它服务工作的开展也起到了很好的推动作用。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "上海",
+          "normalized_name": "上海",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从全国各地包括上海、北京这样的大都市",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为地名，在上下文中作为地点实体出现，但非学术实体，可考虑不抽取"
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "北京",
+          "normalized_name": "北京",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从全国各地包括上海、北京这样的大都市",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "同上"
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "佛山",
+          "normalized_name": "佛山",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "到佛山这个最尔之地来开讲座",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为地名，在上下文中作为地点实体出现，但非学术实体，可考虑不抽取"
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "佛山市图书馆",
+          "normalized_name": "佛山市图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "这种良性互动使佛山市图书馆的社会形象",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "图书馆品牌服务体现的是一种群体行为。品牌服务总是通过一定的人员组织、围绕某一主题或专题来提供的服务，它是图书馆的一种服务特色，而不是某一个员工自发的个人行为。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "图书馆品牌服务",
+          "normalized_name": "图书馆品牌服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆品牌服务体现的是一种群体行为",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

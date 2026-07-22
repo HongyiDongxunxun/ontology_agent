@@ -1,0 +1,1755 @@
+{
+  "base_name": "reviewed_full_10009",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "【摘要】在湖南省创建两型社会的背景下，通过调查长株潭地区高校图书馆电子文献资源的分布情况，描述了长株潭地区高校图书馆电子文献资源建设中存在资源分布不平衡、资源浪费较为严重、电子文献资源共建进展缓慢等问题，以此为基础对这些问题进行了分析，并且从电子文献资源的共建、整合、共享三个方面给出了相应的建议与对策。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "湖南省",
+          "normalized_name": "湖南省",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在湖南省创建两型社会的背景下",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可视为地域概念，但作为行政区域可归入Abstract"
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "长株潭地区",
+          "normalized_name": "长株潭地区",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "长株潭地区高校图书馆电子文献资源的分布情况",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "地域概念，但作为特定区域可视为现象"
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "高校图书馆",
+          "normalized_name": "高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "长株潭地区高校图书馆电子文献资源的分布情况",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "有地域修饰，视为具体机构类型"
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "电子文献资源",
+          "normalized_name": "电子文献资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "电子文献资源的分布情况",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e5",
+          "mention": "资源分布不平衡",
+          "normalized_name": "资源分布不平衡",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "存在资源分布不平衡",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为描述性短语，但作为问题现象可抽取"
+        },
+        {
+          "entity_id": "1_e6",
+          "mention": "资源浪费",
+          "normalized_name": "资源浪费",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "资源浪费较为严重",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为描述性短语，但作为问题现象可抽取"
+        },
+        {
+          "entity_id": "1_e7",
+          "mention": "电子文献资源共建",
+          "normalized_name": "电子文献资源共建",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "电子文献资源共建进展缓慢",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "长沙、株洲、湘潭经济一体化，创建资源节约型，环境友好型”的两型社会是湖南省委省政府发展湖南经济的宏观战略决策。 我们可以利用这一契机，建立长株潭高校图书馆电子文献资源共建共享体系，有效促进电子资源的有序化，改善长沙、株洲、湘潭三地区之间资源分布不平衡，学科资源建设不平衡，缩小文献资源分布上的贫富不均的差距，广泛开展长株潭地区电子文献信息资源共建共享活动，满足三地区的教育科研活动的需要。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "长株潭高校图书馆电子文献资源共建共享体系",
+          "normalized_name": "长株潭高校图书馆电子文献资源共建共享体系",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建立长株潭高校图书馆电子文献资源共建共享体系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "电子文献信息资源共建共享活动",
+          "normalized_name": "电子文献信息资源共建共享活动",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "广泛开展长株潭地区电子文献信息资源共建共享活动",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "通过表1的数据分析可以得出，长株潭三地区高校图书馆电子文献资源分布极不平衡，虽然长沙、株洲、湘潭三地区数据库平均数目相差不多，但长沙地区的高校数目及电子文献数据库总数都远远大于株洲与湘潭，长沙地区高校图书馆数据库总数目为1044个，而株洲为101个，湘潭地区为192个，从数据库的拥有量上说，长沙比株洲、湘潭资源更丰富。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "长株潭三地区高校图书馆",
+          "normalized_name": "长株潭三地区高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "长株潭三地区高校图书馆电子文献资源分布极不平衡",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "长沙地区高校图书馆",
+          "normalized_name": "长沙地区高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "长沙地区高校图书馆数据库总数目为1044个",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "株洲",
+          "normalized_name": "株洲",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "株洲为101个",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "指代株洲地区高校图书馆"
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "湘潭地区",
+          "normalized_name": "湘潭地区",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "湘潭地区为192个",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "指代湘潭地区高校图书馆"
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "从调查结果可以看出，虽然长株潭三地高校都同属于一个系统，但各高校之间资源分布不平衡，如中南大学、湖南大学、湖南师范大学等本科院校电子文献资源较多，17所高校拥有991个数据库，平均每个高校拥有58.3个数据库。 而其他大专院校的电子文献信息资源得不到保障，39所大专院校拥有361个数据库，平均每个大专院校拥有9.2个数据库。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "长株潭三地高校",
+          "normalized_name": "长株潭三地高校",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "长株潭三地高校都同属于一个系统",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但具有地域限定，可视为具体机构集合"
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "中南大学",
+          "normalized_name": "中南大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如中南大学、湖南大学、湖南师范大学等本科院校",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "湖南大学",
+          "normalized_name": "湖南大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如中南大学、湖南大学、湖南师范大学等本科院校",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "湖南师范大学",
+          "normalized_name": "湖南师范大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如中南大学、湖南大学、湖南师范大学等本科院校",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "数据库",
+          "normalized_name": "数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "17所高校拥有991个数据库",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "泛称，但作为具体资源类型抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "长株潭高校各自为政，对电子文献信息资源的建设缺乏整体观念，各个单位追求大而全、小而全的思想比较突出，文献收藏重复与残缺不齐的现象较为严重见表4）。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "长株潭高校",
+          "normalized_name": "长株潭高校",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "长株潭高校各自为政",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "电子文献信息资源",
+          "normalized_name": "电子文献信息资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对电子文献信息资源的建设缺乏整体观念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "文献收藏重复与残缺不齐",
+          "normalized_name": "文献收藏重复与残缺不齐",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "文献收藏重复与残缺不齐的现象较为严重",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为描述性短语而非独立学术命名"
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "在长株潭地区中，有22所院校参加了湖南省高校数字化图书馆的团购，团购的数字资源已在表中注释出来。 除了这些团购的资源，我们发现仍有大量的数据库被重复订购。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "长株潭地区",
+          "normalized_name": "长株潭地区",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在长株潭地区中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "湖南省高校数字化图书馆",
+          "normalized_name": "湖南省高校数字化图书馆",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "参加了湖南省高校数字化图书馆的团购",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "数字资源",
+          "normalized_name": "数字资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "团购的数字资源已在表中注释出来",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "数据库",
+          "normalized_name": "数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "仍有大量的数据库被重复订购",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "其中CNKI和万方的子数据库重复订购的数目是不一样的。 如CNKI的中国学术期刊网CNKI）订购数目为36，中国优秀硕博士学位论文全文数据库CNKI）为25，中国重要会议论文全文数据库CNKI）为18。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "CNKI",
+          "normalized_name": "CNKI",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "CNKI和万方的子数据库重复订购的数目是不一样的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "万方",
+          "normalized_name": "万方",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "CNKI和万方的子数据库重复订购的数目是不一样的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "中国学术期刊网（CNKI）",
+          "normalized_name": "中国学术期刊网（CNKI）",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如CNKI的中国学术期刊网CNKI）订购数目为36",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "中国优秀硕博士学位论文全文数据库（CNKI）",
+          "normalized_name": "中国优秀硕博士学位论文全文数据库（CNKI）",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "中国优秀硕博士学位论文全文数据库CNKI）为25",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e5",
+          "mention": "中国重要会议论文全文数据库（CNKI）",
+          "normalized_name": "中国重要会议论文全文数据库（CNKI）",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "中国重要会议论文全文数据库CNKI）为18",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "从上面的数据可以看出，长株潭三地区高校图书馆电子文献资源的重复订购是比较严重的。比如54所学校中有36所高校都订购了CNKI。而对于一些有价值的数据库在三个地区却没有一个高校订购。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "长株潭三地区高校图书馆",
+          "normalized_name": "长株潭三地区高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "长株潭三地区高校图书馆电子文献资源的重复订购",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "CNKI",
+          "normalized_name": "CNKI",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "36所高校都订购了CNKI",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "长株潭高校之间电子文献资源共享水平较低，目前在三地区的高校之间，馆与馆之间的合作不多，缺乏相互交流与沟通，更没有形成面向社会的数据共享，造成科技信息资源的巨大浪费，严重制约科技研究与发展。资源共享的理念还仅仅停留在口头上，实践的不多。由于共建共享进展缓慢，导致各高校图书馆虽然都订购，或自建了电子文献信息数据库，每个馆所拥有的数字资源越来越多，但这些电子文献由于分布于不同的平台，处于异构的数据库之中，而不能得到有效的使用。资源开发利用率不高，服务方式和能力还无法满足科技发展需求。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "长株潭高校",
+          "normalized_name": "长株潭高校",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "长株潭高校之间电子文献资源共享水平较低",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "电子文献资源共享",
+          "normalized_name": "电子文献资源共享",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "长株潭高校之间电子文献资源共享水平较低",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "科技信息资源",
+          "normalized_name": "科技信息资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "造成科技信息资源的巨大浪费",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "资源共享",
+          "normalized_name": "资源共享",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "资源共享的理念还仅仅停留在口头上",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "共建共享",
+          "normalized_name": "共建共享",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "由于共建共享进展缓慢",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e6",
+          "mention": "电子文献信息数据库",
+          "normalized_name": "电子文献信息数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "订购，或自建了电子文献信息数据库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e7",
+          "mention": "数字资源",
+          "normalized_name": "数字资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "每个馆所拥有的数字资源越来越多",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "长株潭地区高校图书馆已实现了自动化与网络化建设，多数高校图书馆都已建立了比较丰富的电子文献体系，订购了许多商业数据库，部分高校图书馆正在酝酿和实施特色馆藏资源数字化工作。 可以看出，长株潭高校图书馆的建设取得了较大的成绩。但在取得成绩的同时，我们还要看到长株潭地区高校图书馆建设中存在的不足。第一，资源分布不平衡。 长株潭三地区高校图书馆电子文献资源分布不平衡，本科与专科院校之间资源分布很不平衡，一些重点院校如中南大学、湖南大学数据库数目达100多个，而一些院校根本就没有电子文献资源。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "长株潭地区高校图书馆",
+          "normalized_name": "长株潭地区高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "长株潭地区高校图书馆已实现了自动化与网络化建设",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "中南大学",
+          "normalized_name": "中南大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "一些重点院校如中南大学、湖南大学数据库数目达100多个",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "湖南大学",
+          "normalized_name": "湖南大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "一些重点院校如中南大学、湖南大学数据库数目达100多个",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "长株潭地区公办和民办院校数据库分布不平衡。 第二，外文数据库分布不平衡。 在外文数据库建设方面，只有中南大学、湖南大学、湖南师范大学、湘潭大学、国防科技大学拥有较多的外文资源，其他高校资源较少，大多数大专院校甚至没有外文电子文献资源。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "长株潭地区",
+          "normalized_name": "长株潭地区",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "长株潭地区公办和民办院校数据库分布不平衡",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "中南大学",
+          "normalized_name": "中南大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "只有中南大学、湖南大学、湖南师范大学、湘潭大学、国防科技大学拥有较多的外文资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "湖南大学",
+          "normalized_name": "湖南大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "只有中南大学、湖南大学、湖南师范大学、湘潭大学、国防科技大学拥有较多的外文资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e4",
+          "mention": "湖南师范大学",
+          "normalized_name": "湖南师范大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "只有中南大学、湖南大学、湖南师范大学、湘潭大学、国防科技大学拥有较多的外文资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e5",
+          "mention": "湘潭大学",
+          "normalized_name": "湘潭大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "只有中南大学、湖南大学、湖南师范大学、湘潭大学、国防科技大学拥有较多的外文资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e6",
+          "mention": "国防科技大学",
+          "normalized_name": "国防科技大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "只有中南大学、湖南大学、湖南师范大学、湘潭大学、国防科技大学拥有较多的外文资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "在外文数据库建设方面，只有中南大学、湖南大学、湖南师范大学、湘潭大学、国防科技大学拥有较多的外文资源，其他高校资源较少，大多数大专院校甚至没有外文电子文献资源。 第三，软硬件平台建设不平衡。 由于经费紧张，只有一些重点院校的图书馆才有大量资金，像中南大学、湖南大学、湖南师范大学每年用于购买电子文献资源的经费上千万元，而一般的大专院校经费紧张，没有多余的资金投入到图书馆的建设中去。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "中南大学",
+          "normalized_name": "中南大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "只有中南大学、湖南大学、湖南师范大学、湘潭大学、国防科技大学拥有较多的外文资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "湖南大学",
+          "normalized_name": "湖南大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "只有中南大学、湖南大学、湖南师范大学、湘潭大学、国防科技大学拥有较多的外文资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "湖南师范大学",
+          "normalized_name": "湖南师范大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "只有中南大学、湖南大学、湖南师范大学、湘潭大学、国防科技大学拥有较多的外文资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "湘潭大学",
+          "normalized_name": "湘潭大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "只有中南大学、湖南大学、湖南师范大学、湘潭大学、国防科技大学拥有较多的外文资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e5",
+          "mention": "国防科技大学",
+          "normalized_name": "国防科技大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "只有中南大学、湖南大学、湖南师范大学、湘潭大学、国防科技大学拥有较多的外文资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e6",
+          "mention": "外文电子文献资源",
+          "normalized_name": "外文电子文献资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大多数大专院校甚至没有外文电子文献资源",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e7",
+          "mention": "软硬件平台",
+          "normalized_name": "软硬件平台",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "第三，软硬件平台建设不平衡",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e8",
+          "mention": "电子文献资源",
+          "normalized_name": "电子文献资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "每年用于购买电子文献资源的经费上千万元",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "比如，很多大专院校虽然订购电子文献资源，但并没有能力建立本地镜像，这在很大程度上影响了用户对资源的使用。 第四，重复建设与资源短缺。 在长株潭三地区中，有22所高校参加了湖南省高校数字化图书馆数字资源的联合采购，但仍有一些资源存在重复采购的情况。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "电子文献资源",
+          "normalized_name": "电子文献资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "订购电子文献资源",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "本地镜像",
+          "normalized_name": "本地镜像",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "建立本地镜像",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "湖南省高校数字化图书馆",
+          "normalized_name": "湖南省高校数字化图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "湖南省高校数字化图书馆数字资源的联合采购",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e4",
+          "mention": "数字资源",
+          "normalized_name": "数字资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "湖南省高校数字化图书馆数字资源的联合采购",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "长株潭高校图书馆电子文献资源整合及共享的前提是共建，没有共建，资源整合与共享将成为空谈。长株潭地区高校图书馆电子文献资源的整合与共享的前提是逐步建立起一个结构科学、内容全面、层次分明、布局合理、可持续支持数字图书馆信息服务的初具规模的数字资源保障体系。只有本地区内拥有种类丰富、内容全面、层次分明、布局合理的电子文献资源，资源的整合才具有更加重要的意义。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "长株潭高校图书馆",
+          "normalized_name": "长株潭高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "长株潭高校图书馆电子文献资源整合及共享的前提是共建",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "电子文献资源",
+          "normalized_name": "电子文献资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "长株潭高校图书馆电子文献资源整合及共享的前提是共建",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "数字图书馆",
+          "normalized_name": "数字图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract",
+            "Artifact"
+          ],
+          "evidence": "可持续支持数字图书馆信息服务的初具规模的数字资源保障体系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "数字资源保障体系",
+          "normalized_name": "数字资源保障体系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "初具规模的数字资源保障体系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "在长株潭地区电子文献资源调查中发现，该区域在电子文献资源的联合采购上已有了一些进步，本区域有22所高校联合参与了湖南省高校数字化图书馆的17个数据库的联合采购。并且通过高校图工委的协调、组织和谈判，相继联合购买了一些外文数据库，如WSN电子期刊、Springer电子期刊，大幅度地降低了单馆采购数据库的价格。但是我们仍然发现，有大量的数据库重复采购严重，并没有参与到联合采购中，如中国学术期刊网CNKI)、超星数字图书馆等见表4)。所以该地区应进一步加强资源的联合建设，高校图工委应制定一套管理制度和技术规范，并建立一种良性协作运行机制，对重复率较高的数据库实施联合采购，共同建设该地区高校图书馆的馆藏资源。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "长株潭地区",
+          "normalized_name": "长株潭地区",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在长株潭地区电子文献资源调查中发现",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "湖南省高校数字化图书馆",
+          "normalized_name": "湖南省高校数字化图书馆",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "湖南省高校数字化图书馆的17个数据库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "高校图工委",
+          "normalized_name": "高校图工委",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "通过高校图工委的协调、组织和谈判",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e4",
+          "mention": "WSN电子期刊",
+          "normalized_name": "WSN电子期刊",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如WSN电子期刊、Springer电子期刊",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e5",
+          "mention": "Springer电子期刊",
+          "normalized_name": "Springer电子期刊",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如WSN电子期刊、Springer电子期刊",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e6",
+          "mention": "中国学术期刊网CNKI",
+          "normalized_name": "中国学术期刊网(CNKI)",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如中国学术期刊网CNKI)、超星数字图书馆等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e7",
+          "mention": "超星数字图书馆",
+          "normalized_name": "超星数字图书馆",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如中国学术期刊网CNKI)、超星数字图书馆等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "在加强联合采购的同时，各个馆应根据本校专业设置订购相对应的数字资源，如中南大学湘雅医学院，其订购了较多的关于医学的数据库，满足本校科研教学需要，从而形成具有本馆特色的数字化资源。 从区域的角度上考虑，当每一个馆都建设成具有本馆特色的数字资源，那么本区域内的数据库种类将较为丰富、多样，增强了本区域内电子文献信息的保障能力。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "中南大学湘雅医学院",
+          "normalized_name": "中南大学湘雅医学院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如中南大学湘雅医学院，其订购了较多的关于医学的数据库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "数据库",
+          "normalized_name": "数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "订购了较多的关于医学的数据库",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但结合语境指具体数据库资源"
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "在信息高速增长的社会中，任何图书馆都无法收集完整的信息资源，长株潭地区高校图书馆电子文献资源建设必须依托权威的管理机构暂时可由省高校图工委承担）制定重大方针政策和发展规划，协调长株潭各高校图书馆之间的分工与协作，解决数字资源建设的共性问题，进行资源的协调采购、共建共享、联合保障，构建开放式的资源建设模式。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "长株潭地区高校图书馆",
+          "normalized_name": "长株潭地区高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "长株潭地区高校图书馆电子文献资源建设",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "省高校图工委",
+          "normalized_name": "省高校图工委",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "暂时可由省高校图工委承担",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "数字资源建设",
+          "normalized_name": "数字资源建设",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "解决数字资源建设的共性问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "开放式的资源建设模式",
+          "normalized_name": "开放式的资源建设模式",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "构建开放式的资源建设模式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "网络资源是一个巨大的信息宝藏，各馆可以根据各校专业设置，分工协调，有目的地大量收集 Internet上有关本校重点学科的信息资源，构筑虚拟馆藏，使之成为馆藏的补充资源和重要组成部分，同时还能节省经费和馆藏空间。 目前，湖南高校图书馆学科导航库的建设只在极少数图书馆开展，且存在内容重复交叉的现象，因此，加强分工合作，联合深度开发网络信息资源十分必要。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "湖南高校图书馆学科导航库",
+          "normalized_name": "湖南高校图书馆学科导航库",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "湖南高校图书馆学科导航库的建设只在极少数图书馆开展",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "Internet",
+          "normalized_name": "Internet",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Internet上有关本校重点学科的信息资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "虚拟馆藏",
+          "normalized_name": "虚拟馆藏",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "构筑虚拟馆藏",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "在图书馆数字资源的建设过程中，一定要坚持数字信息资源的自主权，通过对网络资源的加工，使网络上无序的电子文献资源有序化，同时图书馆拥有该类资源的知识主权，使得区域电子文献资源整合与共享过程中，不用担心知识主权问题，本馆的资源可以被区域内各馆访问。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "图书馆数字资源",
+          "normalized_name": "图书馆数字资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在图书馆数字资源的建设过程中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "数字信息资源",
+          "normalized_name": "数字信息资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一定要坚持数字信息资源的自主权",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e3",
+          "mention": "网络资源",
+          "normalized_name": "网络资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过对网络资源的加工",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e4",
+          "mention": "电子文献资源",
+          "normalized_name": "电子文献资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使网络上无序的电子文献资源有序化",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e5",
+          "mention": "知识主权",
+          "normalized_name": "知识主权",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆拥有该类资源的知识主权",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e6",
+          "mention": "区域电子文献资源整合与共享",
+          "normalized_name": "区域电子文献资源整合与共享",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使得区域电子文献资源整合与共享过程中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "基于元数据的电子文献资源整合是指对所有电子资源实现统一元数据仓储管理，元数据集成在本地，通过统一检索入口，对元数据仓储进行检索并依据元数据中的全文路径元素对对象数据进行定位。 但原有分散的资源系统仍然可独立地提供检索服务，是一种实现异构数据源的集中式管理、集中式存储的方法。此种整合方案的关键是获取元数据，对于中文商业电子期刊、图书数据库资源的元数据，可以通过与数据厂商谈判，相对来说较晚获取，通过对各馆元数据的标准化建设，实现各馆元数据的汇聚，通过对元数据的查询，即可查询资源的馆藏信息，为信息的获取提供帮助。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "元数据",
+          "normalized_name": "元数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于元数据的电子文献资源整合是指对所有电子资源实现统一元数据仓储管理",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e2",
+          "mention": "电子文献资源整合",
+          "normalized_name": "电子文献资源整合",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于元数据的电子文献资源整合是指对所有电子资源实现统一元数据仓储管理",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e3",
+          "mention": "元数据仓储",
+          "normalized_name": "元数据仓储",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对所有电子资源实现统一元数据仓储管理",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e4",
+          "mention": "统一检索入口",
+          "normalized_name": "统一检索入口",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过统一检索入口，对元数据仓储进行检索",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e5",
+          "mention": "全文路径元素",
+          "normalized_name": "全文路径元素",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "依据元数据中的全文路径元素对对象数据进行定位",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e6",
+          "mention": "异构数据源",
+          "normalized_name": "异构数据源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "是一种实现异构数据源的集中式管理、集中式存储的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e7",
+          "mention": "集中式管理",
+          "normalized_name": "集中式管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "是一种实现异构数据源的集中式管理、集中式存储的方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e8",
+          "mention": "集中式存储",
+          "normalized_name": "集中式存储",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "是一种实现异构数据源的集中式管理、集中式存储的方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e9",
+          "mention": "元数据标准化建设",
+          "normalized_name": "元数据标准化建设",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过对各馆元数据的标准化建设，实现各馆元数据的汇聚",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e10",
+          "mention": "馆藏信息",
+          "normalized_name": "馆藏信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "即可查询资源的馆藏信息",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "本区域内建设了一些特色数据库，这些数据库包括学位论文数据库、以个人信息为基础的人物数据库如毛泽东数字图书馆》、湖南人物库》)，以本校专业特色的数据库（有色金属特色文献数据库》、国防科技文献数据库》)，以区域内特色文化为基础的数据库如红色旅游资源数据库》）等。 特色数据库的建设要充分体现统一规划、统一标准、共建共享的原则。 各地区、各单位在统一规划的前提下因地制宜，充分利用现有的网络和软、硬件环境，整合现有的各类信息资源，不搞重复建设，发挥各自的优势与特色。",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "学位论文数据库",
+          "normalized_name": "学位论文数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "这些数据库包括学位论文数据库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "毛泽东数字图书馆",
+          "normalized_name": "毛泽东数字图书馆",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以个人信息为基础的人物数据库如毛泽东数字图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e3",
+          "mention": "湖南人物库",
+          "normalized_name": "湖南人物库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以个人信息为基础的人物数据库如毛泽东数字图书馆》、湖南人物库》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e4",
+          "mention": "有色金属特色文献数据库",
+          "normalized_name": "有色金属特色文献数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以本校专业特色的数据库（有色金属特色文献数据库》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e5",
+          "mention": "国防科技文献数据库",
+          "normalized_name": "国防科技文献数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以本校专业特色的数据库（有色金属特色文献数据库》、国防科技文献数据库》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e6",
+          "mention": "红色旅游资源数据库",
+          "normalized_name": "红色旅游资源数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以区域内特色文化为基础的数据库如红色旅游资源数据库》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "各地区、各单位在统一规划的前提下因地制宜，充分利用现有的网络和软、硬件环境，整合现有的各类信息资源，不搞重复建设，发挥各自的优势与特色。 对于本馆自建特色数据库，本馆拥有该资源的元数据和对象数据，不存在电子文献资源的版权问题，对于这类资源，可以创建基于元数据的资源整合方案。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "元数据",
+          "normalized_name": "元数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本馆拥有该资源的元数据和对象数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "对象数据",
+          "normalized_name": "对象数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本馆拥有该资源的元数据和对象数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e3",
+          "mention": "电子文献资源",
+          "normalized_name": "电子文献资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "不存在电子文献资源的版权问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e4",
+          "mention": "基于元数据的资源整合方案",
+          "normalized_name": "基于元数据的资源整合方案",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "可以创建基于元数据的资源整合方案",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "29",
+      "sentence": "应用层的整合是基于中间件，屏蔽不同数据库的检索界面和检索方式、检索式构造规则、检索算符、检索字段等，使用户能在同一个检索平台下，实现多数据库同时检索，构成统一的检索界面，从而实现数字资源系统间的分布式异构整合检索。 在大量的数据库中，有一些数据库是无法获取元数据的，特别是外文数据库，针对这些数据库可以建立基于应用层的数据资源整合。 我们可以依托中国高等教育文献保障体系，各馆加入该体系，把外文电子期刊文献协作服务与CALIS建设结合起来，配合CALIS各级文献信息中心建立相应的外文电子期刊中心，协调外文电子期刊共建，建立电子期刊传递系统，为高校图书馆外文电子期刊的共享提供现实的保障。",
+      "entities": [
+        {
+          "entity_id": "29_e1",
+          "mention": "中国高等教育文献保障体系",
+          "normalized_name": "中国高等教育文献保障体系",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "依托中国高等教育文献保障体系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e2",
+          "mention": "CALIS",
+          "normalized_name": "CALIS",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "配合CALIS各级文献信息中心",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "31",
+      "sentence": "我们知道，任何图书馆的馆藏资源都不可能完全满足读者的需要，外文文献更是如此。 在长株潭电子文献资源整合与共享建设中，原文传递是图书馆联盟的一项重要的服务项目，对于提高文献的可获取性具有极大的作用，应是建设本区域电子文献保障系统的重要手段。",
+      "entities": [
+        {
+          "entity_id": "31_e1",
+          "mention": "长株潭电子文献资源整合与共享建设",
+          "normalized_name": "长株潭电子文献资源整合与共享建设",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "在长株潭电子文献资源整合与共享建设中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e2",
+          "mention": "原文传递",
+          "normalized_name": "原文传递",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "原文传递是图书馆联盟的一项重要的服务项目",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e3",
+          "mention": "图书馆联盟",
+          "normalized_name": "图书馆联盟",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "原文传递是图书馆联盟的一项重要的服务项目",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e4",
+          "mention": "电子文献保障系统",
+          "normalized_name": "电子文献保障系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建设本区域电子文献保障系统",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "32",
+      "sentence": "对于本馆没有收藏的电子文献，可以向其他成员馆提出申请，其他馆有义务保障各成员馆原文获取权。对于联盟中各高校订购较多的数据库，比如中国期刊网，可采取联盟订购的方式实现。对于订购较少的电子文献可采取原文传递的方式实现。联盟建立相应的奖励与惩罚机制，建立相应的原文传递机制和联合咨询服务机制。",
+      "entities": [
+        {
+          "entity_id": "32_e1",
+          "mention": "中国期刊网",
+          "normalized_name": "中国期刊网",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "对于联盟中各高校订购较多的数据库，比如中国期刊网",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "33",
+      "sentence": "长株潭高校图书馆电子文献资源整合及共享系统应为，将电子文献资源作最完整、最大限度的整合，集信息重组、信息集成、信息中介、信息定制服务模式于一体，利用计算机及网络为读者提供文献信息服务的系统。使读者能够在一个入口、一个检索界面、经过一次检索就可以获得全方位的电子资源和全面的相关信息的一体化集成式服务。",
+      "entities": [
+        {
+          "entity_id": "33_e1",
+          "mention": "长株潭高校图书馆",
+          "normalized_name": "长株潭高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "长株潭高校图书馆电子文献资源整合及共享系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e2",
+          "mention": "电子文献资源整合及共享系统",
+          "normalized_name": "电子文献资源整合及共享系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "长株潭高校图书馆电子文献资源整合及共享系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e3",
+          "mention": "信息重组",
+          "normalized_name": "信息重组",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "集信息重组、信息集成、信息中介、信息定制服务模式于一体",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e4",
+          "mention": "信息集成",
+          "normalized_name": "信息集成",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "集信息重组、信息集成、信息中介、信息定制服务模式于一体",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e5",
+          "mention": "信息中介",
+          "normalized_name": "信息中介",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "集信息重组、信息集成、信息中介、信息定制服务模式于一体",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e6",
+          "mention": "信息定制服务模式",
+          "normalized_name": "信息定制服务模式",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "集信息重组、信息集成、信息中介、信息定制服务模式于一体",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "34",
+      "sentence": "总之，整合后的三地高校图书馆联盟，拥有丰富馆藏体系、全方位、多层次的电子文献资源的保障系统，提高区域内电子文献资源的保障率的同时，可提高电子文献资源的可获得性，提高信息资源的拥有率。",
+      "entities": [
+        {
+          "entity_id": "34_e1",
+          "mention": "高校图书馆联盟",
+          "normalized_name": "高校图书馆联盟",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "整合后的三地高校图书馆联盟",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e2",
+          "mention": "电子文献资源",
+          "normalized_name": "电子文献资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "全方位、多层次的电子文献资源的保障系统",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e3",
+          "mention": "信息资源",
+          "normalized_name": "信息资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提高信息资源的拥有率",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

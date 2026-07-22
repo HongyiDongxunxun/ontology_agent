@@ -1,0 +1,1602 @@
+{
+  "base_name": "reviewed_full_3643",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "2014年，教育部高校图书馆学专业教学指导委员会年度工作会议所提出的\"本科图书馆学教学质量国家标准（2013年版）”把“社群信息学\"列为未来将要建设的前瞻性课程。 尽管国内相关研究的成果较少,研究术语不同，研究的社会背景存在差异，国内图书情报界还是表现出对社群情报学较强的学术敏感度，并致力于将其应用于实现国内信息公平获取和发展图书情报学教育。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "教育部高校图书馆学专业教学指导委员会",
+          "normalized_name": "教育部高校图书馆学专业教学指导委员会",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "教育部高校图书馆学专业教学指导委员会年度工作会议",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "本科图书馆学教学质量国家标准（2013年版）",
+          "normalized_name": "本科图书馆学教学质量国家标准（2013年版）",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "本科图书馆学教学质量国家标准（2013年版）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "社群信息学",
+          "normalized_name": "社群信息学",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "把“社群信息学”列为未来将要建设的前瞻性课程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "社群情报学",
+          "normalized_name": "社群情报学",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国内图书情报界还是表现出对社群情报学较强的学术敏感度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "与‘社群信息学’可能为同一概念的不同译名"
+        },
+        {
+          "entity_id": "1_e5",
+          "mention": "图书情报界",
+          "normalized_name": "图书情报界",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国内图书情报界还是表现出对社群情报学较强的学术敏感度",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可视为学科共同体，但非具体组织"
+        },
+        {
+          "entity_id": "1_e6",
+          "mention": "图书情报学教育",
+          "normalized_name": "图书情报学教育",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "发展图书情报学教育",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为教育领域，非具体实体"
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "国内学者已从社群信息学理论研究层面进行了综述和评论[1-3],本文认为,对于一个极具社会需求背景的研究领域而言，除了解现有研究成果之外，掌握该领域展开的系统工作也具有较强的实践参考价值和理论研究指导意义，同时CI还是一个在教育和研究方面结合相当紧密的领域，因此本文试图从教育和研究两个方面介绍国外图书情报界在该领域的做法和成果，以期对我国图书情报界开展相关教育和研究提供借鉴。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "社群信息学",
+          "normalized_name": "社群信息学",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国内学者已从社群信息学理论研究层面进行了综述和评论",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "CI",
+          "normalized_name": "社群信息学",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "CI还是一个在教育和研究方面结合相当紧密的领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "CI为社群信息学的英文缩写"
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "图书情报界",
+          "normalized_name": "图书情报界",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国外图书情报界在该领域的做法和成果",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可视为学科共同体，非具体组织"
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "到目前为止,社会信息学在国外共有86个研究中心，明确使用SI为课程和学位名称的教育机构共有30家，而提供相同课程内容不同课程名称的教育机构在全球则多达100余家[5]。 与 SI相比,CI则是一个较新的研究领域，从全球来看，目前加拿大、美国、英国、澳大利亚、南非、瑞典、日本等国家的图书情报专业、计算机科学专业、人文社会科学专业等开设了社群信息学的课程,有的还设有博士和硕士学位教育[6]。 鉴于国外CI课程开设并没有固定院系、固定层次，因此本文以现有文献、网络资源为依据，对CI课程设置基本情况进行总结,并对其特点进行归纳。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "社会信息学",
+          "normalized_name": "社会信息学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社会信息学在国外共有86个研究中心",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "SI",
+          "normalized_name": "SI",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "明确使用SI为课程和学位名称的教育机构共有30家",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "SI为社会信息学的缩写"
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "CI",
+          "normalized_name": "CI",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "CI则是一个较新的研究领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "社群信息学",
+          "normalized_name": "社群信息学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "开设了社群信息学的课程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "CI为社群信息学的缩写"
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "加拿大",
+          "normalized_name": "加拿大",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加拿大、美国、英国、澳大利亚、南非、瑞典、日本等国家的图书情报专业",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处作为国家名称，属于地理实体，但按分类体系归入discipline作为地域限定"
+        },
+        {
+          "entity_id": "3_e6",
+          "mention": "美国",
+          "normalized_name": "美国",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加拿大、美国、英国、澳大利亚、南非、瑞典、日本等国家的图书情报专业",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e7",
+          "mention": "英国",
+          "normalized_name": "英国",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加拿大、美国、英国、澳大利亚、南非、瑞典、日本等国家的图书情报专业",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e8",
+          "mention": "澳大利亚",
+          "normalized_name": "澳大利亚",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加拿大、美国、英国、澳大利亚、南非、瑞典、日本等国家的图书情报专业",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e9",
+          "mention": "南非",
+          "normalized_name": "南非",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加拿大、美国、英国、澳大利亚、南非、瑞典、日本等国家的图书情报专业",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e10",
+          "mention": "瑞典",
+          "normalized_name": "瑞典",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加拿大、美国、英国、澳大利亚、南非、瑞典、日本等国家的图书情报专业",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e11",
+          "mention": "日本",
+          "normalized_name": "日本",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加拿大、美国、英国、澳大利亚、南非、瑞典、日本等国家的图书情报专业",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e12",
+          "mention": "图书情报专业",
+          "normalized_name": "图书情报专业",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书情报专业、计算机科学专业、人文社会科学专业等开设了社群信息学的课程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e13",
+          "mention": "计算机科学专业",
+          "normalized_name": "计算机科学专业",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书情报专业、计算机科学专业、人文社会科学专业等开设了社群信息学的课程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e14",
+          "mention": "人文社会科学专业",
+          "normalized_name": "人文社会科学专业",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书情报专业、计算机科学专业、人文社会科学专业等开设了社群信息学的课程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "国外目前开设CI课程的教育机构主要集中在美国和加拿大。 美国开设CI课程的院校有16个，是目前CI教育的主要力量，而美国伊利诺依大学香槟分校图书情报学研究生院是其中的中坚力量。该学院依靠CI领域的研究专家,采用多种教学模式将CI领域的研究、教学和实践结合在一起,包括“CommunityInformat-ics（CI）Studio（CIS,社群信息学工作室）”,“Communi-tyInformatics Corps：The Next Generation（社群信息学学生联合会）”、“Community Informatics Club（社群信息学实验室）”，“Community Archives（社群档案）\"等课程和教学项目。这些教学项目同时也是学生的研究项目，且无论是课程还是研究项目，都需要学生深人社区进行考察并解决问题。值得注意的是，为了克服大学研究人员、学生和社区成员在教学和研究中的实际困难,美国LIS领域的协会组织给予其资金帮助，“Com-munity Informatics Corps：The Next Generation（社群信息学学生联合会）”得到了U.S．Institute of MuseumandLibraryServices（IMLS,美国图书馆与博物馆服务研究所)的资助，而其中受资助的学生继而自发成立了新的学习项目。 同时,GSLIS（伊利诺伊大学图书情报研究生院)联合美国教育部向修满相关课程12个学分的两年制硕士研究生提供社群信息学资格认证]。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "美国伊利诺依大学香槟分校图书情报学研究生院",
+          "normalized_name": "伊利诺伊大学香槟分校图书情报学研究生院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国伊利诺依大学香槟分校图书情报学研究生院是其中的中坚力量",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "CommunityInformat-ics（CI）Studio（CIS,社群信息学工作室）",
+          "normalized_name": "Community Informatics Studio（CIS,社群信息学工作室）",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "包括“CommunityInformat-ics（CI）Studio（CIS,社群信息学工作室）”,“Communi-tyInformatics Corps：The Next Generation（社群信息学学生联合会）”、“Community Informatics Club（社群信息学实验室）”，“Community Archives（社群档案）\"等课程和教学项目",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为课程项目"
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "Communi-tyInformatics Corps：The Next Generation（社群信息学学生联合会）",
+          "normalized_name": "Community Informatics Corps：The Next Generation（社群信息学学生联合会）",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "包括“CommunityInformat-ics（CI）Studio（CIS,社群信息学工作室）”,“Communi-tyInformatics Corps：The Next Generation（社群信息学学生联合会）”、“Community Informatics Club（社群信息学实验室）”，“Community Archives（社群档案）\"等课程和教学项目",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为课程项目"
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "Community Informatics Club（社群信息学实验室）",
+          "normalized_name": "Community Informatics Club（社群信息学实验室）",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "包括“CommunityInformat-ics（CI）Studio（CIS,社群信息学工作室）”,“Communi-tyInformatics Corps：The Next Generation（社群信息学学生联合会）”、“Community Informatics Club（社群信息学实验室）”，“Community Archives（社群档案）\"等课程和教学项目",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为课程项目"
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "Community Archives（社群档案）",
+          "normalized_name": "Community Archives（社群档案）",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "包括“CommunityInformat-ics（CI）Studio（CIS,社群信息学工作室）”,“Communi-tyInformatics Corps：The Next Generation（社群信息学学生联合会）”、“Community Informatics Club（社群信息学实验室）”，“Community Archives（社群档案）\"等课程和教学项目",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为课程项目"
+        },
+        {
+          "entity_id": "4_e6",
+          "mention": "U.S．Institute of MuseumandLibraryServices（IMLS,美国图书馆与博物馆服务研究所）",
+          "normalized_name": "U.S. Institute of Museum and Library Services（IMLS,美国图书馆与博物馆服务研究所）",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "“Com-munity Informatics Corps：The Next Generation（社群信息学学生联合会）”得到了U.S．Institute of MuseumandLibraryServices（IMLS,美国图书馆与博物馆服务研究所)的资助",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e7",
+          "mention": "GSLIS（伊利诺伊大学图书情报研究生院）",
+          "normalized_name": "伊利诺伊大学图书情报研究生院（GSLIS）",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "同时,GSLIS（伊利诺伊大学图书情报研究生院)联合美国教育部向修满相关课程12个学分的两年制硕士研究生提供社群信息学资格认证",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e8",
+          "mention": "美国教育部",
+          "normalized_name": "美国教育部",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "GSLIS（伊利诺伊大学图书情报研究生院)联合美国教育部向修满相关课程12个学分的两年制硕士研究生提供社群信息学资格认证",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e9",
+          "mention": "社群信息学",
+          "normalized_name": "社群信息学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "向修满相关课程12个学分的两年制硕士研究生提供社群信息学资格认证",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "同时,GSLIS（伊利诺伊大学图书情报研究生院)联合美国教育部向修满相关课程12个学分的两年制硕士研究生提供社群信息学资格认证]。 这一做法密切了该领域教育与社会就业需求之间的联系，更加符合CI的实践特质。 表2是GSLIS在CI领域所有开设课程的情况：",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "GSLIS（伊利诺伊大学图书情报研究生院）",
+          "normalized_name": "伊利诺伊大学图书情报研究生院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "GSLIS（伊利诺伊大学图书情报研究生院）联合美国教育部向修满相关课程12个学分的两年制硕士研究生提供社群信息学资格认证",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "美国教育部",
+          "normalized_name": "美国教育部",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "GSLIS（伊利诺伊大学图书情报研究生院）联合美国教育部向修满相关课程12个学分的两年制硕士研究生提供社群信息学资格认证",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "社群信息学",
+          "normalized_name": "社群信息学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提供社群信息学资格认证",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "CI",
+          "normalized_name": "社群信息学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "更加符合CI的实践特质",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "CI为社群信息学的英文缩写"
+        },
+        {
+          "entity_id": "5_e5",
+          "mention": "GSLIS",
+          "normalized_name": "伊利诺伊大学图书情报研究生院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "表2是GSLIS在CI领域所有开设课程的情况",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "CI本身的实践特性，以及CI课程内容与实践的紧密结合，使得CI课程在教学方法上也凸显实践特色，最具代表性的是以“基于工作室的学习（studio-basedlearning,SBL)\"为基础的“社群信息学工作室（CIS）\"课程教学，而SBL的方法旨在帮助学生融入社群信息学的理念和方法中[9-I]。CIS 课程的开设源就来自于实践的需求。 美国联邦机构和一些基金会要求图书馆参与社区事务建设，以满足社区公众的信息需求，并为此设立相关资助项目，比如“ThePromiseofLibrariesTransforming Communities,Institute for Museum and Li-brary Services，2012（图书馆改变社区的希望，美国博物馆和图书馆服务研究所,2012）”，“IMLS&TheMac-Arthur Foundation's Leaming Labs,2011（美国博物馆和图书馆服务研究所和麦克阿瑟基金会资助的学习实验室项目,2011）\"和“TheKnightFoundation's（2009）In-formation Needs of Communities in a Democracy(骑士基金会资助，民主社会中社区信息需求,2009)[12-14等。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "基于工作室的学习（studio-basedlearning,SBL）",
+          "normalized_name": "基于工作室的学习（studio-based learning, SBL）",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以“基于工作室的学习（studio-basedlearning,SBL）\"为基础的“社群信息学工作室（CIS）\"课程教学",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "社群信息学工作室（CIS）",
+          "normalized_name": "社群信息学工作室（CIS）",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以“基于工作室的学习（studio-basedlearning,SBL）\"为基础的“社群信息学工作室（CIS）\"课程教学",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "SBL",
+          "normalized_name": "SBL",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "SBL的方法旨在帮助学生融入社群信息学的理念和方法中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "美国联邦机构",
+          "normalized_name": "美国联邦机构",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国联邦机构和一些基金会要求图书馆参与社区事务建设",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "泛称，但带国家限定，视为具体组织类别"
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "The Promise of Libraries Transforming Communities, Institute for Museum and Library Services，2012",
+          "normalized_name": "The Promise of Libraries Transforming Communities, Institute for Museum and Library Services, 2012",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "比如“ThePromiseofLibrariesTransforming Communities,Institute for Museum and Li-brary Services，2012（图书馆改变社区的希望，美国博物馆和图书馆服务研究所,2012）\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e6",
+          "mention": "美国博物馆和图书馆服务研究所",
+          "normalized_name": "美国博物馆和图书馆服务研究所",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国博物馆和图书馆服务研究所,2012",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e7",
+          "mention": "IMLS & The MacArthur Foundation's Learning Labs,2011",
+          "normalized_name": "IMLS & The MacArthur Foundation's Learning Labs, 2011",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "IMLS&TheMac-Arthur Foundation's Leaming Labs,2011（美国博物馆和图书馆服务研究所和麦克阿瑟基金会资助的学习实验室项目,2011）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e8",
+          "mention": "麦克阿瑟基金会",
+          "normalized_name": "麦克阿瑟基金会",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国博物馆和图书馆服务研究所和麦克阿瑟基金会资助的学习实验室项目",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e9",
+          "mention": "The Knight Foundation's (2009) Information Needs of Communities in a Democracy",
+          "normalized_name": "The Knight Foundation's (2009) Information Needs of Communities in a Democracy",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "TheKnightFoundation's（2009）In-formation Needs of Communities in a Democracy(骑士基金会资助，民主社会中社区信息需求,2009)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e10",
+          "mention": "骑士基金会",
+          "normalized_name": "骑士基金会",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "骑士基金会资助，民主社会中社区信息需求",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "CIS 课程正是为LIS的教师、研究者和实践者提供理论和方法论的帮助，以推动LIS主导的社区活动的开展，其核心是把教学的重点从教师转向学生。其教学过程的核心是\"提出假设—批判讨论——反复论证”,包括以下阶段：首先是学生在老师的指导下设计问题，并在对该问题的理解之上明确个人、团队、社区和项目4个层面上的最终目标; 第二步是相关领域文献的大量阅读和积极讨论;",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "CIS 课程",
+          "normalized_name": "CIS 课程",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "CIS 课程正是为LIS的教师、研究者和实践者提供理论和方法论的帮助",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "LIS",
+          "normalized_name": "LIS",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "CIS 课程正是为LIS的教师、研究者和实践者提供理论和方法论的帮助",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "提出假设—批判讨论——反复论证",
+          "normalized_name": "提出假设—批判讨论——反复论证",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "其教学过程的核心是\"提出假设—批判讨论——反复论证\"",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "本文在该部分着重介绍国外CI领域研究实践活动，包括主要研究机构、学术会议、学术期刊以及主要学术研究成果。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "国外CI领域研究实践活动",
+          "normalized_name": "国外CI领域研究实践活动",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国外CI领域研究实践活动",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "CI为缩写，可能指Competitive Intelligence或其它，需结合上下文确认"
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "主要研究机构",
+          "normalized_name": "主要研究机构",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "主要研究机构",
+          "is_specific_entity": false,
+          "confidence": 0.3,
+          "uncertainty": "泛称，未给出具体机构名称，不满足实体性门槛"
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "学术会议",
+          "normalized_name": "学术会议",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "学术会议",
+          "is_specific_entity": false,
+          "confidence": 0.2,
+          "uncertainty": "泛称，未给出具体会议名称，不满足实体性门槛"
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "学术期刊",
+          "normalized_name": "学术期刊",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "学术期刊",
+          "is_specific_entity": false,
+          "confidence": 0.2,
+          "uncertainty": "泛称，未给出具体期刊名称，不满足实体性门槛"
+        },
+        {
+          "entity_id": "8_e5",
+          "mention": "主要学术研究成果",
+          "normalized_name": "主要学术研究成果",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "主要学术研究成果",
+          "is_specific_entity": false,
+          "confidence": 0.2,
+          "uncertainty": "泛称，未给出具体成果名称，不满足实体性门槛"
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "尽管CI领域的学术论文分散发表在众多学术和实践类期刊中，但该领域也拥有以CI命名的国际期刊——《社群信息学杂志》（the Journal of Community",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "CI",
+          "normalized_name": "CI",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "尽管CI领域的学术论文分散发表在众多学术和实践类期刊中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "CI为Community Informatics的缩写，作为子领域实体"
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "《社群信息学杂志》",
+          "normalized_name": "《社群信息学杂志》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "该领域也拥有以CI命名的国际期刊——《社群信息学杂志》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "the Journal of Community",
+          "normalized_name": "the Journal of Community",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《社群信息学杂志》（the Journal of Community）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "Informatics)。 该杂志由设立在加拿大温哥华的 theCentre for Community Informatics Research，Developmentand Training(CCIRDT)出版发行，其主编就是该机构主席 M.Gurstein博士,同时该杂志也是CIRN组织的有机组成部分。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "Informatics",
+          "normalized_name": "Informatics",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Informatics)。 该杂志由设立在加拿大温哥华的 theCentre for Community Informatics Research，Developmentand Training(CCIRDT)出版发行",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为期刊名称，但原文表述为'Informatics)'，需结合上下文确认"
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "theCentre for Community Informatics Research，Developmentand Training(CCIRDT)",
+          "normalized_name": "Centre for Community Informatics Research, Development and Training (CCIRDT)",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "设立在加拿大温哥华的 theCentre for Community Informatics Research，Developmentand Training(CCIRDT)出版发行",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "M.Gurstein博士",
+          "normalized_name": "M. Gurstein",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "其主编就是该机构主席 M.Gurstein博士",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "CIRN组织",
+          "normalized_name": "CIRN",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "该杂志也是CIRN组织的有机组成部分",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "CIRN可能为组织缩写，具体全称未给出"
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "对国外CI领域研究成果的介绍与评价有助于了解图书情报学研究的最新方向和理念。同时，国内研究者也注意到了介绍国外新理论、新理念的一些负面影响26。因此,本文认为，系统分析与介绍某研究领域在教育与研究中的实践更有助于研究人员了解其形成与发展的过程，从而为其开辟新研究领域并促成其发展提供有效的借鉴。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "CI领域",
+          "normalized_name": "CI领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对国外CI领域研究成果的介绍与评价",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "图书情报学",
+          "normalized_name": "图书情报学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有助于了解图书情报学研究的最新方向和理念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "国外CI发展受益于研究与教育彼此之间的紧密衔接和相互支持。研究人员基于新的社会需求探索新的研究课题与领域，并在积累研究成果的基础上将其应用于教育活动，从而形成了社会需求和研究教学之间的完整链接。 主要表现为： $\\textcircled{1}$ 研究群体同时承担教育职责，为其研究和教学活动彼此联系提供了可能，比如美国伊利诺依大学图书情报研究生院的A．Alkali-mat 博士和K．Williams 博士以及CCIRDT机构主席",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "美国伊利诺依大学图书情报研究生院",
+          "normalized_name": "美国伊利诺依大学图书情报研究生院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国伊利诺依大学图书情报研究生院的A．Alkali-mat 博士和K．Williams 博士",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "A．Alkali-mat 博士",
+          "normalized_name": "A．Alkali-mat 博士",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国伊利诺依大学图书情报研究生院的A．Alkali-mat 博士和K．Williams 博士",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "K．Williams 博士",
+          "normalized_name": "K．Williams 博士",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国伊利诺依大学图书情报研究生院的A．Alkali-mat 博士和K．Williams 博士",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "CCIRDT机构",
+          "normalized_name": "CCIRDT机构",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "CCIRDT机构主席",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "机构全称未在原文中给出，仅以缩写形式出现"
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "M．Gurstein博士不仅是有代表性的CI研究人员，同时也在学校教学岗位兼职。$\\textcircled{2}$ 研究项目本身与教学活动融为一体,例如社群信息学行动（The Community Infor-matics Initiative,CII）。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "M．Gurstein博士",
+          "normalized_name": "M. Gurstein",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "M．Gurstein博士不仅是有代表性的CI研究人员",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "社群信息学行动（The Community Informatics Initiative,CII）",
+          "normalized_name": "社群信息学行动（The Community Informatics Initiative, CII）",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "社群信息学行动（The Community Informatics Initiative,CII）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "文献调研发现，无论是CI实践项目、研究项目，还是教育项目都受到了来自于基金会和协会组织的资助。 雄厚的资金支持使得并不能直接产生经济效益的LIS研究课题得以顺利开展,这一点是国内LIS 同行所盼望的。 其中“U.S．In-stitute of Museum and Library Services（IMLS,美国图书馆与博物馆服务研究所）”是主要的CI研究与教育资助机构。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "CI实践项目",
+          "normalized_name": "CI实践项目",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "无论是CI实践项目、研究项目，还是教育项目都受到了来自于基金会和协会组织的资助",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "CI为缩写，可能指Competitive Intelligence或其它，但原文语境明确"
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "研究项目",
+          "normalized_name": "研究项目",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "无论是CI实践项目、研究项目，还是教育项目都受到了来自于基金会和协会组织的资助",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "教育项目",
+          "normalized_name": "教育项目",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "无论是CI实践项目、研究项目，还是教育项目都受到了来自于基金会和协会组织的资助",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "基金会",
+          "normalized_name": "基金会",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "受到了来自于基金会和协会组织的资助",
+          "is_specific_entity": false,
+          "confidence": 0.5,
+          "uncertainty": "泛称，未指明具体基金会名称，但原文语境中作为资助主体，可视为组织类别"
+        },
+        {
+          "entity_id": "17_e5",
+          "mention": "协会组织",
+          "normalized_name": "协会组织",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "受到了来自于基金会和协会组织的资助",
+          "is_specific_entity": false,
+          "confidence": 0.5,
+          "uncertainty": "泛称，未指明具体协会名称"
+        },
+        {
+          "entity_id": "17_e6",
+          "mention": "LIS研究课题",
+          "normalized_name": "LIS研究课题",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "并不能直接产生经济效益的LIS研究课题得以顺利开展",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e7",
+          "mention": "U.S．In-stitute of Museum and Library Services（IMLS,美国图书馆与博物馆服务研究所）",
+          "normalized_name": "美国图书馆与博物馆服务研究所",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "其中“U.S．In-stitute of Museum and Library Services（IMLS,美国图书馆与博物馆服务研究所）”是主要的CI研究与教育资助机构",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e8",
+          "mention": "CI研究与教育资助机构",
+          "normalized_name": "CI研究与教育资助机构",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "是主要的CI研究与教育资助机构",
+          "is_specific_entity": false,
+          "confidence": 0.6,
+          "uncertainty": "泛称，但指代IMLS，可视为角色描述"
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "植根于实践且服务于实践的CI研究与教育必须有适合的研究方法论作为指导。国外CI研究与教育对研究方法尤为重视。主要研究方法是参与行动为导向的实证研究,参与社群ICT实践,与社群一起解决其信息问题。 常用的方法有：利益相关者分析、调查、兴趣小组、文献述评、内容分析、电子化讨论、田野调查、案例分析、利益相关者分析、定点访问、参与观察、咨询日志分析、利用统计数据分析、现存公共数据分析、社群事件研究方法等。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "CI研究",
+          "normalized_name": "CI研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "植根于实践且服务于实践的CI研究与教育必须有适合的研究方法论作为指导",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "CI教育",
+          "normalized_name": "CI教育",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "植根于实践且服务于实践的CI研究与教育必须有适合的研究方法论作为指导",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "参与行动为导向的实证研究",
+          "normalized_name": "参与行动为导向的实证研究",
+          "candidate_l3": "methodology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主要研究方法是参与行动为导向的实证研究",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e4",
+          "mention": "利益相关者分析",
+          "normalized_name": "利益相关者分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "常用的方法有：利益相关者分析",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e5",
+          "mention": "调查",
+          "normalized_name": "调查",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "常用的方法有：利益相关者分析、调查",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能指代具体调查方法，但原文未限定，按通用方法抽取"
+        },
+        {
+          "entity_id": "20_e6",
+          "mention": "兴趣小组",
+          "normalized_name": "兴趣小组",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "常用的方法有：利益相关者分析、调查、兴趣小组",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指焦点小组或特定社群方法"
+        },
+        {
+          "entity_id": "20_e7",
+          "mention": "文献述评",
+          "normalized_name": "文献述评",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "常用的方法有：利益相关者分析、调查、兴趣小组、文献述评",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e8",
+          "mention": "内容分析",
+          "normalized_name": "内容分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "常用的方法有：利益相关者分析、调查、兴趣小组、文献述评、内容分析",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e9",
+          "mention": "电子化讨论",
+          "normalized_name": "电子化讨论",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "常用的方法有：利益相关者分析、调查、兴趣小组、文献述评、内容分析、电子化讨论",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指在线讨论或论坛分析"
+        },
+        {
+          "entity_id": "20_e10",
+          "mention": "田野调查",
+          "normalized_name": "田野调查",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "常用的方法有：利益相关者分析、调查、兴趣小组、文献述评、内容分析、电子化讨论、田野调查",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e11",
+          "mention": "案例分析",
+          "normalized_name": "案例分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "常用的方法有：利益相关者分析、调查、兴趣小组、文献述评、内容分析、电子化讨论、田野调查、案例分析",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e12",
+          "mention": "定点访问",
+          "normalized_name": "定点访问",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "常用的方法有：利益相关者分析、调查、兴趣小组、文献述评、内容分析、电子化讨论、田野调查、案例分析、利益相关者分析、定点访问",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e13",
+          "mention": "参与观察",
+          "normalized_name": "参与观察",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "常用的方法有：利益相关者分析、调查、兴趣小组、文献述评、内容分析、电子化讨论、田野调查、案例分析、利益相关者分析、定点访问、参与观察",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e14",
+          "mention": "咨询日志分析",
+          "normalized_name": "咨询日志分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "常用的方法有：利益相关者分析、调查、兴趣小组、文献述评、内容分析、电子化讨论、田野调查、案例分析、利益相关者分析、定点访问、参与观察、咨询日志分析",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e15",
+          "mention": "利用统计数据分析",
+          "normalized_name": "利用统计数据分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "常用的方法有：利益相关者分析、调查、兴趣小组、文献述评、内容分析、电子化讨论、田野调查、案例分析、利益相关者分析、定点访问、参与观察、咨询日志分析、利用统计数据分析",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指统计分析方法，但原文表述较泛"
+        },
+        {
+          "entity_id": "20_e16",
+          "mention": "现存公共数据分析",
+          "normalized_name": "现存公共数据分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "常用的方法有：利益相关者分析、调查、兴趣小组、文献述评、内容分析、电子化讨论、田野调查、案例分析、利益相关者分析、定点访问、参与观察、咨询日志分析、利用统计数据分析、现存公共数据分析",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指二次数据分析或公共数据挖掘"
+        },
+        {
+          "entity_id": "20_e17",
+          "mention": "社群事件研究方法",
+          "normalized_name": "社群事件研究方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "常用的方法有：利益相关者分析、调查、兴趣小组、文献述评、内容分析、电子化讨论、田野调查、案例分析、利益相关者分析、定点访问、参与观察、咨询日志分析、利用统计数据分析、现存公共数据分析、社群事件研究方法等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "在以上结论基础上，本文绘制出国外CI教育与研究实践活动的发展模式图(见图1)，以展示其显著的教育、研究与实践一体化特色。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "国外CI教育与研究实践活动的发展模式图(见图1)",
+          "normalized_name": "国外CI教育与研究实践活动的发展模式图",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本文绘制出国外CI教育与研究实践活动的发展模式图(见图1)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能兼为Artifact（图表制品），但此处侧重其作为模式模型的抽象意义"
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "基于上述的调查研究，笔者发现： $\\textcircled{1}$ 美国CI研究与教学实践活动开展范围较广，开设CI课程的美国高校院系较多，同时澳大利亚、加拿大也是CI研究成果较多的国家，并具有较大的影响力；$\\textcircled{2} \\textcircled { \\mathrm { { C I } } }$ 的兴起与 SI有密切关系，这一点在美国以外的国家体现得较为明显，而在美国CI研究与教育则体现出较多的\"社区\"特色；$\\textcircled{3}$ 国外CI研究与教育彼此之间的合作与交流十分充分,学术交流平台初步形成；$\\textcircled{4} \\textcircled { \\mathrm { C I } }$ 课程并不完全设立在图书情报专业院系，有的设立在计算机科学院系，有的则与SI相似，设立在社会学和人文科学院系；$\\textcircled{5}$ CI教育目前呈现出初步发展阶段的模糊性，很多CI课程和其他相关课程(SI)结合在一起，或是开设--个阶段即告停止。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "美国CI研究与教学实践活动",
+          "normalized_name": "美国CI研究与教学实践活动",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "美国CI研究与教学实践活动开展范围较广",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "CI为缩写，可能指Competitive Intelligence或Community Informatics，需结合上下文确认"
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "CI课程",
+          "normalized_name": "CI课程",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "开设CI课程的美国高校院系较多",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "CI为缩写，需确认全称"
+        },
+        {
+          "entity_id": "22_e3",
+          "mention": "澳大利亚",
+          "normalized_name": "澳大利亚",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "澳大利亚、加拿大也是CI研究成果较多的国家",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e4",
+          "mention": "加拿大",
+          "normalized_name": "加拿大",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "澳大利亚、加拿大也是CI研究成果较多的国家",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e5",
+          "mention": "SI",
+          "normalized_name": "SI",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "CI的兴起与SI有密切关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "SI可能指Social Informatics或Systems Integration，需确认"
+        },
+        {
+          "entity_id": "22_e6",
+          "mention": "国外CI研究与教育",
+          "normalized_name": "国外CI研究与教育",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "国外CI研究与教育彼此之间的合作与交流十分充分",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "CI为缩写"
+        },
+        {
+          "entity_id": "22_e7",
+          "mention": "学术交流平台",
+          "normalized_name": "学术交流平台",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学术交流平台初步形成",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "此处为泛称，但结合语境指代具体形成的平台网络，故抽取"
+        },
+        {
+          "entity_id": "22_e8",
+          "mention": "图书情报专业院系",
+          "normalized_name": "图书情报专业院系",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "CI课程并不完全设立在图书情报专业院系",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称但带有学科限定，视为具体机构类型"
+        },
+        {
+          "entity_id": "22_e9",
+          "mention": "计算机科学院系",
+          "normalized_name": "计算机科学院系",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "有的设立在计算机科学院系",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称但带有学科限定"
+        },
+        {
+          "entity_id": "22_e10",
+          "mention": "社会学和人文科学院系",
+          "normalized_name": "社会学和人文科学院系",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "设立在社会学和人文科学院系",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称但带有学科限定"
+        },
+        {
+          "entity_id": "22_e11",
+          "mention": "CI教育",
+          "normalized_name": "CI教育",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "CI教育目前呈现出初步发展阶段的模糊性",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "CI为缩写"
+        },
+        {
+          "entity_id": "22_e12",
+          "mention": "SI",
+          "normalized_name": "SI",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "很多CI课程和其他相关课程(SI)结合在一起",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "同上，SI需确认"
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "CI是近10年来逐渐显现的一个LIS国际化研究课题,具有深厚的社会需求背景。国外经验表明,新课题研究的深人与拓展与相关教育开展的情况紧密结合。在研究课题选择、研究深人、教育支撑和社会需求之间形成良性循环是国内图书情报界借鉴和思考国外经验的主要目的。对于CI研究对国内社会发展的启示意义已有论述[27.3],而如何实现CI对国内社会发展的价值则需要借助研究和教育的双重力量。 进言之，CI国内研究如何实现向LIS教育的延伸和对接，进而实现CI课程教育构建？",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "CI",
+          "normalized_name": "CI",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "CI是近10年来逐渐显现的一个LIS国际化研究课题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "LIS",
+          "normalized_name": "LIS",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "CI是近10年来逐渐显现的一个LIS国际化研究课题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "图书情报界",
+          "normalized_name": "图书情报界",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在国内图书情报界借鉴和思考国外经验的主要目的",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为discipline"
+        },
+        {
+          "entity_id": "23_e4",
+          "mention": "CI课程教育",
+          "normalized_name": "CI课程教育",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现CI课程教育构建",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为复合概念"
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "如何实现与国内社会需求之间的对接，在解决社会问题和实现就业之间形成双赢？ 这些将是国内LIS面对的挑战，但同时也为国内图书情报学反思研究与教育模式、拓展和深化学科发展空间提供了契机。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "国内LIS",
+          "normalized_name": "国内LIS",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这些将是国内LIS面对的挑战",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "LIS为Library and Information Science缩写，指代学科"
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "国内图书情报学",
+          "normalized_name": "国内图书情报学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为国内图书情报学反思研究与教育模式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

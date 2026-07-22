@@ -1,0 +1,724 @@
+{
+  "base_name": "reviewed_full_1573",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "最近，国家档案局颁发了《各级国家档案馆收集档案范围的规定》（以下简称《规定》)，这是一个重要的指导性文件，它使全国各级国家档案馆的档案收集工作有了一个统一的依据，它的贯彻落实，将促进档案馆事业的进一步发展。 为了更好地掌握和贯彻这个《规定》，有必要对目前档案馆的馆藏现状作些分析，以便相应地采取措施，作出规划，具体部署，使档案馆的收集工作更顺利地开展。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "国家档案局",
+          "normalized_name": "国家档案局",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国家档案局颁发了《各级国家档案馆收集档案范围的规定》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "《各级国家档案馆收集档案范围的规定》",
+          "normalized_name": "《各级国家档案馆收集档案范围的规定》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "国家档案局颁发了《各级国家档案馆收集档案范围的规定》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "《规定》",
+          "normalized_name": "《各级国家档案馆收集档案范围的规定》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "国家档案局颁发了《各级国家档案馆收集档案范围的规定》（以下简称《规定》）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "县级档案馆藏量平均已达二万零三百卷（册），其中有十九个馆的藏量超过三万卷（册），四万卷（册）以上的有六个馆，馆藏最多的一个县档案馆有八万零一百五十三卷（册）。 馆藏量大幅度增加，是不容置疑的事实，也确实令人鼓舞。但是，馆藏门类是否齐全，结构是否合理？ 对照《规定》的要求还有多大差距？",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "《规定》",
+          "normalized_name": "《规定》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "对照《规定》的要求还有多大差距",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指代某具体政策文件，但原文未给出全称，需结合上下文确认"
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "历史档案数量很少。 一九八五年底止，全省馆藏历史档案共只有四十一万零八百八.十三卷。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "历史档案",
+          "normalized_name": "历史档案",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "历史档案数量很少",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处指代具体档案类型，但未指明具体档案名称，属于泛化概念"
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "一九八五年底止，全省馆藏历史档案共只有四十一万零八百八.十三卷。 革命历史档案更少，全省只有五千八百八十三卷。地、县级档案馆历史档案只有十三万一千三百多卷，有十一个县馆是空白。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "全省馆藏历史档案",
+          "normalized_name": "全省馆藏历史档案",
+          "candidate_l3": "corpus",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "全省馆藏历史档案共只有四十一万零八百八.十三卷",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指代全省档案馆藏，但原文未明确具体档案馆名称，按图情领域放宽规则，作为档案集合体抽取"
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "革命历史档案",
+          "normalized_name": "革命历史档案",
+          "candidate_l3": "corpus",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "革命历史档案更少，全省只有五千八百八十三卷",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为特定类型档案集合体抽取"
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "地、县级档案馆",
+          "normalized_name": "地、县级档案馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "地、县级档案馆历史档案只有十三万一千三百多卷",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "原文未给出具体档案馆名称，但'地、县级档案馆'作为机构类别有地域限定，按规则抽取"
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "历史档案",
+          "normalized_name": "历史档案",
+          "candidate_l3": "corpus",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "地、县级档案馆历史档案只有十三万一千三百多卷",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为特定类型档案集合体抽取"
+        },
+        {
+          "entity_id": "7_e5",
+          "mention": "十一个县馆",
+          "normalized_name": "十一个县馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "有十一个县馆是空白",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "原文未给出具体县馆名称，但'县馆'作为机构类别有地域限定，按规则抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "门类单一的状况仍未改变。 过去，在相当长时期内，档案馆的馆藏档案基本上是“清一色”的文书档案。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "档案馆",
+          "normalized_name": "档案馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "档案馆的馆藏档案基本上是“清一色”的文书档案",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'档案馆'为泛称，但结合上下文指代具体类型的机构，且图情领域放宽规则允许抽取有功能限定的机构，故抽取"
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "文书档案",
+          "normalized_name": "文书档案",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "档案馆的馆藏档案基本上是“清一色”的文书档案",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "目前，就全省范围来看，各门类的档案都已拥有。 但是，馆藏档案门类-单一的状况在相当部分档案馆仍然没有改变，主要表现在两个方面：一是这些档案的数量相当少，在馆藏档案中所占比例很小。 科技档案，全省各级综合档案馆只有一万五千六百余卷（册、盒），仅占馆藏档案总数的百分之零点九；",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "科技档案",
+          "normalized_name": "科技档案",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "科技档案，全省各级综合档案馆只有一万五千六百余卷（册、盒）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "由于各地的地理环境和自然条件不同，人们的生产活动方式不同，发展历史也不同，这样产生的档案内容也就各异，形成浓厚的地方特色，这也是地方档案馆的重要特点。 但是，从目前地、县两级档案馆的馆藏现状来看，其地方特色并不明显。共性的多，具有“个性”的少。象闻名中外的瓷器、烟花产地县，档案馆很少收集保存有关这些地方传统产品的生产技术等活动方面的档案。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "地方档案馆",
+          "normalized_name": "地方档案馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "形成浓厚的地方特色，这也是地方档案馆的重要特点",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "有地名限定修饰，但未给出具体名称，属于半泛化机构，按规则抽取"
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "地、县两级档案馆",
+          "normalized_name": "地、县两级档案馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "从目前地、县两级档案馆的馆藏现状来看",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "有行政层级限定，但未给出具体档案馆名称"
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "瓷器",
+          "normalized_name": "瓷器",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "象闻名中外的瓷器、烟花产地县",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "烟花",
+          "normalized_name": "烟花",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "象闻名中外的瓷器、烟花产地县",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "档案馆收集保管一些与档案内容相关的资料是有重要作用的。 目前，这个省的馆藏资料不是很丰富的，全省只有七十一万册。特别是馆际之间很不平衡。省档案馆只有资料一万三千五百余册，仅占馆藏总量的百分之四，还不如有些县馆的资料多。 在县级馆中，馆藏资料一万册以上的有十二个，其余的一般只有几千册，少的只有几百册。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "省档案馆",
+          "normalized_name": "省档案馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "省档案馆只有资料一万三千五百余册",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "县级馆",
+          "normalized_name": "县级馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在县级馆中，馆藏资料一万册以上的有十二个",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处'县级馆'指代具体层级的档案馆群体，但未给出具体馆名，属于泛化机构类别词，按规则不抽取。"
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "以上情况说明，目前，档案馆馆藏形势虽然很好，但不可盲目乐观，存在问题是不少的。一个总概念就是，馆藏量大增，但门类少，结构不合理，没有形成比较理想的馆藏体系，体现不出综合档案馆的“综合性”。馆藏的问题就是收集的问题。它反映了过去在档案的收集工作中，只注意了纵度，没有注意横度。也就是说，只注意了收集工作向机构的纵度延伸，从一级机构到二级机构甚至更基层单位； 忽略了收集工作向档案门类的横向发展，只注意了收集文书档案，没有注意收集其他门类的档案，以及有关资料。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "综合档案馆",
+          "normalized_name": "综合档案馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "体现不出综合档案馆的“综合性”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "文书档案",
+          "normalized_name": "文书档案",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "只注意了收集文书档案",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "上述这个省目前档案馆藏中的问题，具有一定的代表性。 为了解决这些问题，实现《规定》提出的各级档案馆“将应该由本馆收集的一切具有历史凭证作用和科学研究价值的各种门类、各种载体形态的档案，完整、齐全地收集进馆，建立内容丰富、结构合理的馆藏体系”的要求，我们要研究制订出一些相应的对策。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "《规定》",
+          "normalized_name": "《规定》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "实现《规定》提出的各级档案馆“将应该由本馆收集的一切具有历史凭证作用和科学研究价值的各种门类、各种载体形态的档案，完整、齐全地收集进馆，建立内容丰富、结构合理的馆藏体系”的要求",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "《规定》为简称，具体指代何种政策文件需结合上下文确认"
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "从现在起，首先要从指导思想上来一个转变。 对于已经完成规定范围内机构文书档案接收任务的档案馆，要克服“差不多”思想，把重点放在扩充档案门类，完善馆藏结构上来。 要按照《规定》中确定的原则范围，结合本地实际，制订出更具体的收集范围。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "《规定》",
+          "normalized_name": "《规定》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "按照《规定》中确定的原则范围",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指代具体政策文件，但原文未给出全称，需结合上下文确认"
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "笔者根据一些档案馆收集工作的情况，认为以下几种档案目前应及时收集进馆：土壤普查档案、农业资源调查与区域规划档案、地名普查档案、人口普查档案、林业三定发证档案、正在进行的工业普查档案（待结束后）、音象档案和科技档案及有关资料。 在收集中，要特别注意对具有本地地方特色档案的收集。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "土壤普查档案",
+          "normalized_name": "土壤普查档案",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "土壤普查档案、农业资源调查与区域规划档案、地名普查档案、人口普查档案、林业三定发证档案、正在进行的工业普查档案",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "农业资源调查与区域规划档案",
+          "normalized_name": "农业资源调查与区域规划档案",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "土壤普查档案、农业资源调查与区域规划档案、地名普查档案、人口普查档案、林业三定发证档案、正在进行的工业普查档案",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "地名普查档案",
+          "normalized_name": "地名普查档案",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "土壤普查档案、农业资源调查与区域规划档案、地名普查档案、人口普查档案、林业三定发证档案、正在进行的工业普查档案",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "人口普查档案",
+          "normalized_name": "人口普查档案",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "土壤普查档案、农业资源调查与区域规划档案、地名普查档案、人口普查档案、林业三定发证档案、正在进行的工业普查档案",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e5",
+          "mention": "林业三定发证档案",
+          "normalized_name": "林业三定发证档案",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "土壤普查档案、农业资源调查与区域规划档案、地名普查档案、人口普查档案、林业三定发证档案、正在进行的工业普查档案",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e6",
+          "mention": "工业普查档案",
+          "normalized_name": "工业普查档案",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "正在进行的工业普查档案（待结束后）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e7",
+          "mention": "音象档案",
+          "normalized_name": "音像档案",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "音象档案和科技档案及有关资料",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "原文为'音象'，疑为'音像'之误"
+        },
+        {
+          "entity_id": "21_e8",
+          "mention": "科技档案",
+          "normalized_name": "科技档案",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "音象档案和科技档案及有关资料",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "档案馆收集档案，涉及到社会各方面，有很多的矛盾和关系要正确处理好。 从一些档案馆的情况看，科技档案、专门档案和音象档案收集得少，其中一条重要原因就是有很多矛盾和较复杂的关系难以处理。看来，要贯彻执行《规定》，保证收集工作的正常进行，必须要解决好矛盾，处理好一些关系。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "《规定》",
+          "normalized_name": "《规定》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "要贯彻执行《规定》，保证收集工作的正常进行",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "《规定》可能指代具体法规文件，但原文未给出全称，需结合上下文确认"
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "建“小档案柜”，截留部分重要档案不移交。 各级档案馆是国家所有的永久保管档案的基地，档案室则不然，它不是永久保管档案的基地，必须按时向档案馆移交应该移交的全部档案，不能以任何理由拒交、拖延和截留。况且，档案室一般保管条件较差，制度也不严谨，有些门类的档案有特殊的保管要求，因而，档案馆接收档案室的档案也具有对档案的抢救和保护的性质。为了保证按时移交接收，有必要象文书档案一样，对其它门类的档案规定存室的时限，并且这个时限不能过长。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "各级档案馆",
+          "normalized_name": "各级档案馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "各级档案馆是国家所有的永久保管档案的基地",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称'各级'，但'档案馆'作为具体机构类型在规则中允许抽取"
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "档案室",
+          "normalized_name": "档案室",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "档案室则不然，它不是永久保管档案的基地",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称但指代具体机构类型，在档案学语境中可视为具体实体"
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "文书档案",
+          "normalized_name": "文书档案",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有必要象文书档案一样，对其它门类的档案规定存室的时限",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "二是未设专门档案馆的一级（指行政区域），这些专门档案如何处置，是否移交给上级专门档案馆？ 关于第一点，笔者认为，所谓专门档案馆，是档案的专门性，而档案的专门性是指业务、技术与档案载体形态的专门性，不能把反映行政管理的文书档案与之相混。 这样，在产生专门档案的部门，其全部档案就有了两个流向：纯属专门档案移交给专门档案馆，属文书档案则应移交给综合档案馆。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "专门档案馆",
+          "normalized_name": "专门档案馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "未设专门档案馆的一级（指行政区域），这些专门档案如何处置，是否移交给上级专门档案馆",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'专门档案馆'作为机构类型出现，但结合上下文'上级专门档案馆'和'综合档案馆'，可视为具体机构类型的指称，但缺乏具体名称，置信度较低"
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "综合档案馆",
+          "normalized_name": "综合档案馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "属文书档案则应移交给综合档案馆",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "同上，作为机构类型指称，缺乏具体名称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "这样，在产生专门档案的部门，其全部档案就有了两个流向：纯属专门档案移交给专门档案馆，属文书档案则应移交给综合档案馆。 如此，专门档案馆才能体现专门性，综合档案馆才能体现综合性。不然，专门档案馆发展越多，综合档案馆就越不“综合”了。关于第二点，笔者认为，未设专门档案馆的一级，其专门档案不宜向上级专门档案馆移交（除必须移交的外），而应移交给本级综合档案馆。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "专门档案馆",
+          "normalized_name": "专门档案馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "纯属专门档案移交给专门档案馆",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e2",
+          "mention": "综合档案馆",
+          "normalized_name": "综合档案馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "属文书档案则应移交给综合档案馆",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "上级部门设置在地方部门（或单位）的档案，由条条（上级主管部门）接收，还是由块块（地方的综合档案馆）接收？ 国家档案局的《规定》规定，“属于地方和上级主管部门双重领导的单位形成的以反映地方某项事业或建设活动为主的档案”，由地方综合档案馆接收，这是很正确的。由于以前对这个问题没有做出规定，所以不少档案馆基本上没有接收这些“双管”部门的档案。以条条管为主的部门，只是该部门事务的管理形式问题，其档案内容记录和反映的是本地历史面貌的一方面，本地档案馆缺少了这一方面的档案，就不能完整地反映该地方的历史真实面貌。同时，从利用的角度来说，这些部门的档案上交给“条条”管，与移交给当地档案馆，利用起来哪里方便？ 当然只能是后者。",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "国家档案局的《规定》",
+          "normalized_name": "国家档案局的《规定》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "国家档案局的《规定》规定",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "地方综合档案馆",
+          "normalized_name": "地方综合档案馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由地方综合档案馆接收",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "应当肯定，各级档案馆对抓收集、丰富馆藏的重要意义还是有认识的。然而，关于这个问题的认识的深度却有很大差距，目前档案馆馆藏暴露出的问题就说明了这一点。要贯彻实施好《规定》，最重要的是要深化对档案收集的认识。",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "各级档案馆",
+          "normalized_name": "各级档案馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "各级档案馆对抓收集、丰富馆藏的重要意义还是有认识的",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称但带限定词'各级'，可视为具体机构类别"
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "《规定》",
+          "normalized_name": "《规定》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "要贯彻实施好《规定》",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "未给出全称，但作为具体政策文件引用"
+        }
+      ]
+    },
+    {
+      "sentence_id": "32",
+      "sentence": "有了一个明确的指导思为，“维护党和国家历史真实面貌”，既是整个档案工作的根本指导思想，也是档案收集工作的根本指导思想。 维护党和国家历史真实面貌是历史赋予档案工作者的特殊的神圣使命。 我们维护党和国家历史真实面貌，是通过档案来实现的。",
+      "entities": [
+        {
+          "entity_id": "32_e1",
+          "mention": "维护党和国家历史真实面貌",
+          "normalized_name": "维护党和国家历史真实面貌",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "维护党和国家历史真实面貌是历史赋予档案工作者的特殊的神圣使命",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "该短语为政策性表述，可能被视为政策口号而非严格学术概念，但因其在档案学领域有独立命名和讨论，故抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "33",
+      "sentence": "我们维护党和国家历史真实面貌，是通过档案来实现的。 《规定》里把“维护党和国家历史真实面貌”作为档案馆收集工作的思想“前提”，是非常正确的。 这一问题解决了，收集工作中的一切问题都可以解决。",
+      "entities": [
+        {
+          "entity_id": "33_e1",
+          "mention": "《规定》",
+          "normalized_name": "《规定》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《规定》里把“维护党和国家历史真实面貌”作为档案馆收集工作的思想“前提”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能指具体政策文件，但原文未给出全称"
+        },
+        {
+          "entity_id": "33_e2",
+          "mention": "档案馆",
+          "normalized_name": "档案馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "作为档案馆收集工作的思想“前提”",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未指明具体档案馆名称，但作为机构类型在特定语境中可视为具体实体"
+        }
+      ]
+    }
+  ]
+}

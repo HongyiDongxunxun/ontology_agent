@@ -1,0 +1,365 @@
+{
+  "base_name": "reviewed_full_4130",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "随着INTERNET的发展，我国图书馆在网上建立站点的越来越多。 随着网络的普及，网站所起的门户作用将越来越大,它不仅是图书馆的门面和宣传阵地，而且还能实实在在地提供信息服务。 我国图书馆网站按所属性质有如下类别： $\\textcircled{1}$ 高校图书馆网站，这一类网站在图书馆网站中所占的份额最多，内容也比较丰富，如北京大学的图书馆网站(wwW $\\cdot \\operatorname { l i b } \\cdot \\operatorname { p k u } \\cdot \\operatorname { e d u } \\cdot \\operatorname { c n } \\quad )$ 就有数据库检索、全国文理中心、数字图书馆等内容;",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "北京大学",
+          "normalized_name": "北京大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如北京大学的图书馆网站(wwW · lib · pku · edu · cn)就有数据库检索、全国文理中心、数字图书馆等内容",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "北京大学图书馆网站",
+          "normalized_name": "北京大学图书馆网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如北京大学的图书馆网站(wwW · lib · pku · edu · cn)就有数据库检索、全国文理中心、数字图书馆等内容",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "数据库检索",
+          "normalized_name": "数据库检索",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "就有数据库检索、全国文理中心、数字图书馆等内容",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为service"
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "全国文理中心",
+          "normalized_name": "全国文理中心",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "就有数据库检索、全国文理中心、数字图书馆等内容",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e5",
+          "mention": "数字图书馆",
+          "normalized_name": "数字图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "就有数据库检索、全国文理中心、数字图书馆等内容",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为information_system"
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "从社会方面来看，社会信息化程度偏低、政府投资较少是阻碍图书馆网站发展的主要中国知网https://www.cnki.net",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "中国知网",
+          "normalized_name": "中国知网",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "主要中国知网https://www.cnki.net",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "(1)网络的使用尚不普及。中国互联网络信息中心不久前宣布，中国内地网民人数已从1997年的62万发展到目前的2000多万，虽然增长很快，但不到人口总数的1/600。 在这些网民中，究竟有多少人去查询图书馆的信息，尚不得知。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "中国互联网络信息中心",
+          "normalized_name": "中国互联网络信息中心",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中国互联网络信息中心不久前宣布",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "中国内地网民",
+          "normalized_name": "中国内地网民",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "中国内地网民人数已从1997年的62万发展到目前的2000多万",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可视为统计群体，非严格学术命名，但作为可观察现象"
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "(2)不能与图书馆管理系统相联，服务方式单一。很多图书馆的管理系统与因特网的WWW主页没有一定的联系，彼此隔离，书目实时查询、书刊续借等在网上开展不了。 图书馆形成这种状况有三个方面的原因：首先是图书馆管理系统是购买或由外单位开发的，对整个数据库结构及工作流程,图书馆工作人员不清楚;",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "图书馆管理系统",
+          "normalized_name": "图书馆管理系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "不能与图书馆管理系统相联",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "因特网的WWW主页",
+          "normalized_name": "因特网的WWW主页",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "图书馆的管理系统与因特网的WWW主页没有一定的联系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "书目实时查询",
+          "normalized_name": "书目实时查询",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "书目实时查询、书刊续借等在网上开展不了",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为service"
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "书刊续借",
+          "normalized_name": "书刊续借",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "书目实时查询、书刊续借等在网上开展不了",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为service"
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "在公共图书馆系统，除了极少数的图书馆(如国家图书馆、上海图书馆等)有域名外,很大一部分图书馆是没有域名的，它们挂在其他域名的子目录下面，有的甚至连二级域名都没有。 这样，造成读者很难记住图书馆的网址，更谈不上去查询其内容了。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "公共图书馆系统",
+          "normalized_name": "公共图书馆系统",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在公共图书馆系统",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称但有限定词'公共'，可视为具体系统类型"
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "国家图书馆",
+          "normalized_name": "国家图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如国家图书馆、上海图书馆等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "上海图书馆",
+          "normalized_name": "上海图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如国家图书馆、上海图书馆等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "(2)建立功能强大的数据库管理系统。 信息量大、管理有效及功能强大的数据库，是图书馆网站生存与发展的根本保障。要提高网上图书馆的服务质量，首先应抓住这个根本，加大对数据建设的投入力度。如中山图书馆与北京超星电子等几家单位推出的网上在线读书，于2000 年7月开始将电子图书提供网上阅览，目前上网的图书资料约1000 多万页，取得了很好的社会效益。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "中山图书馆",
+          "normalized_name": "中山图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如中山图书馆与北京超星电子等几家单位推出的网上在线读书",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "北京超星电子",
+          "normalized_name": "北京超星电子",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如中山图书馆与北京超星电子等几家单位推出的网上在线读书",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "网上在线读书",
+          "normalized_name": "网上在线读书",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如中山图书馆与北京超星电子等几家单位推出的网上在线读书",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为服务名称或系统名称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "(4)优化页面设计，及时维护更新。 网页能够给读者带来最直接的视觉感受，它是文字与图形、文学与美术的巧妙结合。 一个别中国知网https:/www.cnki.net",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "中国知网",
+          "normalized_name": "中国知网",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "一个别中国知网https:/www.cnki.net",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "具匠心、颇有创意的网站，除了在版面设计上有独到之处外，一般还应具备主题鲜明突出、页面简洁明快、色彩协调清新、图片精美小巧、文字整齐扼要等特点。 要努力克服目前图书馆网站信息量小、更新不及时等弊端，着力优化页面设计，合理设置栏目。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "图书馆网站",
+          "normalized_name": "图书馆网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "要努力克服目前图书馆网站信息量小、更新不及时等弊端",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'图书馆网站'为泛指图书馆类网站，但根据图情领域放宽规则，有名称的图书馆网站应抽取；此处无具体名称，但作为评价对象，可视为具体实体"
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "(6)利用地方特色提高网民的回头率。 网上图书馆要在竞争日益激烈的因特网环境中生存下去，一个明智的办法，就是利用地方特色提高网民的回头率。 如桂林图书馆的网站，就有十几个关于地方特色的全文数据库。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "桂林图书馆",
+          "normalized_name": "桂林图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如桂林图书馆的网站",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "地方特色的全文数据库",
+          "normalized_name": "地方特色的全文数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "就有十几个关于地方特色的全文数据库",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "具体数据库名称未给出，但'地方特色的全文数据库'在语境中为具体资源"
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "总之，图书馆网站内容是读者了解图书馆的关键，务必准确、精炼，以保证网民能在较短时间内捕捉到网站的核心内容。 为了建设好图书馆网站，可用以下几句话来概括：精心策划网站架构,准确提炼网站内容,精心设计网站版面，全力进行网站推广，全面加强网站管理，着力变阵地服务为网络服务。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "图书馆网站",
+          "normalized_name": "图书馆网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "图书馆网站内容是读者了解图书馆的关键",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指代具体图书馆网站，但原文未明确限定，按图情领域放宽规则抽取"
+        }
+      ]
+    }
+  ]
+}

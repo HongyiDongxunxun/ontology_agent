@@ -1,0 +1,2327 @@
+{
+  "base_name": "reviewed_full_2901",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "[关键词]农村信息化农业信息服务体系信息技术 [中图分类号]F320.1[文献标识码]A［文章编号]1003-2797(2007)06-0080-06 [Abstract] Since the construction of overseas agricultural informatization depends on generalizing applied information technology to build a perfect agricultural information service system and agricultural informatization regulations and laws， it is a good experience that we should use for reference in our agricultural informatization construction·On the basis of colligating the theories and practice on agricultural information service system and information technology applications, the author sets up some opinions which are worth researching in order to give some suggestion and revelation on the research and construction of our western agricultural informatization·",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "agricultural informatization",
+          "normalized_name": "agricultural informatization",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Since the construction of overseas agricultural informatization depends on generalizing applied information technology to build a perfect agricultural information service system and agricultural informatization regulations and laws",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "agricultural information service system",
+          "normalized_name": "agricultural information service system",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "build a perfect agricultural information service system and agricultural informatization regulations and laws",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "agricultural informatization regulations and laws",
+          "normalized_name": "agricultural informatization regulations and laws",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "agricultural informatization regulations and laws",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "information technology",
+          "normalized_name": "information technology",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "generalizing applied information technology to build a perfect agricultural information service system",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "农业信息化是在农业生产、流通、消费以及农村经济、社会、技术等各个环节全面运用现代信息技术和智能工具，实现农业生产经营、农产品营销、农产品消费的科学化、智能化过程。 连续三年,中央一号文件都明确提出了加强农业和农村的信息化建设这一惠及“三农”的政策要求:2005 年中央一号文件提出了“加强农业信息化建设”。 2006 年中央一号文件明确要求“积极推进农业信息化建设”,2007 年中央一号文件强调\"加快农业信息化建设”。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "农业信息化",
+          "normalized_name": "农业信息化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "农业信息化是在农业生产、流通、消费以及农村经济、社会、技术等各个环节全面运用现代信息技术和智能工具",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "中央一号文件",
+          "normalized_name": "中央一号文件",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "连续三年,中央一号文件都明确提出了加强农业和农村的信息化建设这一惠及“三农”的政策要求",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "2005 年中央一号文件",
+          "normalized_name": "2005年中央一号文件",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "2005 年中央一号文件提出了“加强农业信息化建设”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "2006 年中央一号文件",
+          "normalized_name": "2006年中央一号文件",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "2006 年中央一号文件明确要求“积极推进农业信息化建设”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e5",
+          "mention": "2007 年中央一号文件",
+          "normalized_name": "2007年中央一号文件",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "2007 年中央一号文件强调\"加快农业信息化建设\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "2006 年中央一号文件明确要求“积极推进农业信息化建设”,2007 年中央一号文件强调\"加快农业信息化建设”。 农业信息化是个涉及多部门、多学科的综合系统工程，国家对农业信息化建设的高度重视，必将引发对农业信息化新的研究热点。 本文拟对国内外有关农业信息化现状与发展、经验与措施的研究，以及对作为信息化支撑的信息服务体系、信息技术应用等方面的研究与实践加以综合分析，旨在为国内农村信息化研究与建设提供可资参考的信息。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "2006 年中央一号文件",
+          "normalized_name": "2006年中央一号文件",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "2006 年中央一号文件明确要求“积极推进农业信息化建设”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "2007 年中央一号文件",
+          "normalized_name": "2007年中央一号文件",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "2007 年中央一号文件强调\"加快农业信息化建设”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "农业信息化",
+          "normalized_name": "农业信息化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "农业信息化是个涉及多部门、多学科的综合系统工程",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "农业信息化建设",
+          "normalized_name": "农业信息化建设",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国家对农业信息化建设的高度重视",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "信息服务体系",
+          "normalized_name": "信息服务体系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "作为信息化支撑的信息服务体系",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e6",
+          "mention": "信息技术应用",
+          "normalized_name": "信息技术应用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息技术应用等方面的研究与实践",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e7",
+          "mention": "农村信息化",
+          "normalized_name": "农村信息化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "旨在为国内农村信息化研究与建设提供可资参考的信息",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "随着世界各国农业信息化建设的蓬勃发展，农业信息化发展较早的发达国家在农业信息化建设中形成了一些共同的特征，它们是“建立有以国家为主体的完善的农业信息体系、实现了农业基础设施高度信息化、建立了完善的农业市场信息服务系统、健全了相关农业信息化的政策法规\"[1],并向\"集成化、专业化、网络化、多媒体化、实用化和普及化\"[2]发展。特别需要指出的是，前面五个化均体现了对信息技术的重视，由此，农业信息化程度相比较发达的欧美国家信息技术应用和网络化特征也相当突出，而\"普及化\"包含了农业信息的获取、分析与利用贯穿于整个农业生产过程和农业教育的普及两层含义，说明了对于农业信息化主体的重视。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "农业信息体系",
+          "normalized_name": "农业信息体系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "建立有以国家为主体的完善的农业信息体系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "农业市场信息服务系统",
+          "normalized_name": "农业市场信息服务系统",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "建立了完善的农业市场信息服务系统",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "集成化",
+          "normalized_name": "集成化",
+          "candidate_l3": "trend",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "向'集成化、专业化、网络化、多媒体化、实用化和普及化'发展",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "专业化",
+          "normalized_name": "专业化",
+          "candidate_l3": "trend",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "向'集成化、专业化、网络化、多媒体化、实用化和普及化'发展",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "网络化",
+          "normalized_name": "网络化",
+          "candidate_l3": "trend",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "向'集成化、专业化、网络化、多媒体化、实用化和普及化'发展",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "4_e6",
+          "mention": "多媒体化",
+          "normalized_name": "多媒体化",
+          "candidate_l3": "trend",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "向'集成化、专业化、网络化、多媒体化、实用化和普及化'发展",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "4_e7",
+          "mention": "实用化",
+          "normalized_name": "实用化",
+          "candidate_l3": "trend",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "向'集成化、专业化、网络化、多媒体化、实用化和普及化'发展",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "4_e8",
+          "mention": "普及化",
+          "normalized_name": "普及化",
+          "candidate_l3": "trend",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "向'集成化、专业化、网络化、多媒体化、实用化和普及化'发展",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "在农业信息化席卷全球的浪潮中，农业信息化发展相对落后的亚洲各国也给予了高度重视，并积极作出响应，以发展的态势迎接挑战，纷纷走出一条条非常有特色的农业信息化发展道路。“印度以软件产业的高速发展为契机，在基础设施落后的状况下，从农村信息需求入手，结合行政体系，采取公私合营模式走出一条可持续性解决农村最后一公里的新路\"[6]。同时，通过利用新的信息通信技术来寻找农业发展，印度的农业信息化就是“在各地的农产品批发市场之间和政府农业市场委员会等部门之间建立起一个供给链模式的网络\"[7]。日本的农业信息化形成了“因地制宜发展地域农业信息系统，大力发展农产品电子商务，推动农产品流通方式的根本变革,推进IT技术在农场作业中的应用，大力发展日本型的精确农业的特点\"[8]。韩国采取农业信息化的\"追赶型”模式，其新村运动卓有成效。越南的农业信息化起步虽晚，但政府吸取了许多国家的经验，由农业和农村发展部实现电子化管理过程[9]。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "印度",
+          "normalized_name": "印度",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "印度以软件产业的高速发展为契机",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "公私合营模式",
+          "normalized_name": "公私合营模式",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采取公私合营模式走出一条可持续性解决农村最后一公里的新路",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "农村最后一公里",
+          "normalized_name": "农村最后一公里",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "可持续性解决农村最后一公里的新路",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "日本",
+          "normalized_name": "日本",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "日本的农业信息化形成了“因地制宜发展地域农业信息系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "地域农业信息系统",
+          "normalized_name": "地域农业信息系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "因地制宜发展地域农业信息系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e6",
+          "mention": "农产品电子商务",
+          "normalized_name": "农产品电子商务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大力发展农产品电子商务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e7",
+          "mention": "精确农业",
+          "normalized_name": "精确农业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大力发展日本型的精确农业的特点",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e8",
+          "mention": "韩国",
+          "normalized_name": "韩国",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "韩国采取农业信息化的\"追赶型”模式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e9",
+          "mention": "追赶型模式",
+          "normalized_name": "追赶型模式",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "韩国采取农业信息化的\"追赶型”模式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e10",
+          "mention": "新村运动",
+          "normalized_name": "新村运动",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "其新村运动卓有成效",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e11",
+          "mention": "越南",
+          "normalized_name": "越南",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "越南的农业信息化起步虽晚",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e12",
+          "mention": "农业和农村发展部",
+          "normalized_name": "农业和农村发展部",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由农业和农村发展部实现电子化管理过程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "农业信息服务体系是农业信息化运行机制中的一个子系统，集信息收集、处理、传播、应用为一体，为农业信息化提供技术和组织保障。 市场经济比较发达的国家，都把农业信息服务体系作为一个重要的支撑系统，采取加强市场信息服务体系建设、注重农业信息立法、加大国际合作，加强农产品市场信息服务，促进经济结构调整等有力的措施建设。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "农业信息服务体系",
+          "normalized_name": "农业信息服务体系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "农业信息服务体系是农业信息化运行机制中的一个子系统",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "农业信息化",
+          "normalized_name": "农业信息化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "农业信息服务体系是农业信息化运行机制中的一个子系统",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "美国农业部在全国“建立了庞大的市场信息网络，建立功能完善的农业信息体系组织机构，健全农业信息体系发展的政策法规\"[10]，日本政府十分重视，“建立了完善的农业市场信息服务系统、发挥了民间在提供市场信息方面的作用，并重视计算机在农村的普及与应用\"[11],同时将农业市场信息服务系统作为服务体系建设中的一个重点来抓，日本农业信息化发展中这些成功经验值得我们借鉴。法国形成政府、民间、大学等多元化、全方位的信息服务格局和多元化的信息服务主体，“信息服务主体包括国家农业部门、农业商会、各级各类农业科研、教学单位及各种农业行业组织和专业技术协会、民间信息媒体和各种农产品生产合作社以及互助社\"[12]等。虽然欧盟官方机构是农业信息服务的主体，除了官方的信息服务外，“农业协会(包括行业组织、农业商会）、期货市场和保险机构提供的信息服务也占很大一部分，是欧盟防范农业风险的重要组成部分\"[13]。 此外,韩国自上而下设立的三级农业服务体系,集科研、推广和培训三位一体，统一于农业服务体系之中，程序简化、领导集中、推动其新农村运动的开展。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "美国农业部",
+          "normalized_name": "美国农业部",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国农业部在全国“建立了庞大的市场信息网络",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "日本政府",
+          "normalized_name": "日本政府",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "日本政府十分重视，“建立了完善的农业市场信息服务系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "农业市场信息服务系统",
+          "normalized_name": "农业市场信息服务系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建立了完善的农业市场信息服务系统",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "法国",
+          "normalized_name": "法国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "法国形成政府、民间、大学等多元化、全方位的信息服务格局",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e5",
+          "mention": "国家农业部门",
+          "normalized_name": "国家农业部门",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "信息服务主体包括国家农业部门",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e6",
+          "mention": "农业商会",
+          "normalized_name": "农业商会",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "信息服务主体包括国家农业部门、农业商会",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e7",
+          "mention": "欧盟",
+          "normalized_name": "欧盟",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "欧盟官方机构是农业信息服务的主体",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e8",
+          "mention": "农业协会",
+          "normalized_name": "农业协会",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "农业协会(包括行业组织、农业商会）、期货市场和保险机构提供的信息服务也占很大一部分",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e9",
+          "mention": "韩国",
+          "normalized_name": "韩国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "韩国自上而下设立的三级农业服务体系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e10",
+          "mention": "三级农业服务体系",
+          "normalized_name": "三级农业服务体系",
+          "candidate_l3": "framework",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "韩国自上而下设立的三级农业服务体系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e11",
+          "mention": "新农村运动",
+          "normalized_name": "新农村运动",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "推动其新农村运动的开展",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "农业信息技术在国外农业信息化过程中得到了迅速的发展和广泛应用，包括3S 技术、精确农业（Precision Farming）、计算机网络系统和专家系统、模型系统、智能信息系统的应用[15-16]。 重视信息技术的应用,美国“农业公司、专业协会、合作社和农场都在普遍使用计算机及网络技术\"[17],澳大利亚政府重视农业专家系统的研究和应用，“开发出的农业专家系统有39个，已投入使用15 个\"[18],信息技术的使用名列世界前茅。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "3S 技术",
+          "normalized_name": "3S技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括3S 技术、精确农业（Precision Farming）、计算机网络系统和专家系统、模型系统、智能信息系统的应用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "精确农业（Precision Farming）",
+          "normalized_name": "精确农业（Precision Farming）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括3S 技术、精确农业（Precision Farming）、计算机网络系统和专家系统、模型系统、智能信息系统的应用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "计算机网络系统",
+          "normalized_name": "计算机网络系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "包括3S 技术、精确农业（Precision Farming）、计算机网络系统和专家系统、模型系统、智能信息系统的应用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为泛称，但结合上下文指具体技术系统"
+        },
+        {
+          "entity_id": "10_e4",
+          "mention": "专家系统",
+          "normalized_name": "专家系统",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "包括3S 技术、精确农业（Precision Farming）、计算机网络系统和专家系统、模型系统、智能信息系统的应用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e5",
+          "mention": "模型系统",
+          "normalized_name": "模型系统",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "包括3S 技术、精确农业（Precision Farming）、计算机网络系统和专家系统、模型系统、智能信息系统的应用",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但作为具体技术系统提及"
+        },
+        {
+          "entity_id": "10_e6",
+          "mention": "智能信息系统",
+          "normalized_name": "智能信息系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "包括3S 技术、精确农业（Precision Farming）、计算机网络系统和专家系统、模型系统、智能信息系统的应用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e7",
+          "mention": "美国",
+          "normalized_name": "美国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国“农业公司、专业协会、合作社和农场都在普遍使用计算机及网络技术\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e8",
+          "mention": "澳大利亚政府",
+          "normalized_name": "澳大利亚政府",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "澳大利亚政府重视农业专家系统的研究和应用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e9",
+          "mention": "农业专家系统",
+          "normalized_name": "农业专家系统",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "澳大利亚政府重视农业专家系统的研究和应用，“开发出的农业专家系统有39个",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "国外农业信息化高度发达，与其农业信息技术应用研究是分不开的，主要集中在5个方面：“计算机及网络技术普遍应用于农庄管理,管理信息系统应用于财务会计、业务分析、计划管理，税务、畜牧和作物生产跟踪记录，以及农业专家系统； 3S技术应用与精准农业成为当前热点;",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "计算机及网络技术",
+          "normalized_name": "计算机及网络技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "计算机及网络技术普遍应用于农庄管理",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "管理信息系统",
+          "normalized_name": "管理信息系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "管理信息系统应用于财务会计、业务分析、计划管理",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "农业专家系统",
+          "normalized_name": "农业专家系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以及农业专家系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "3S技术",
+          "normalized_name": "3S技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "3S技术应用与精准农业成为当前热点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "精准农业",
+          "normalized_name": "精准农业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "3S技术应用与精准农业成为当前热点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "\"[19]。 解决农业信息化生产中某个问题的具体研究集中在对具体应用系统的研究上，如：“由美国环境保护组织和加利福尼亚杀虫剂调节部门共同承担的UC-IPM计划，扩大了基于计算机的农作物预测能力，设计有蔬菜、水果和草皮15 种疾病模型可用\"[20]； 巴西有由国家气象协会开发的两个系统（VISUALTEM-PO和VISUALCLIMA)用于气象和农业气候信息的传播。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "美国环境保护组织",
+          "normalized_name": "美国环境保护组织",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由美国环境保护组织和加利福尼亚杀虫剂调节部门共同承担的UC-IPM计划",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "加利福尼亚杀虫剂调节部门",
+          "normalized_name": "加利福尼亚杀虫剂调节部门",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由美国环境保护组织和加利福尼亚杀虫剂调节部门共同承担的UC-IPM计划",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "UC-IPM计划",
+          "normalized_name": "UC-IPM计划",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "由美国环境保护组织和加利福尼亚杀虫剂调节部门共同承担的UC-IPM计划",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "国家气象协会",
+          "normalized_name": "国家气象协会",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "巴西有由国家气象协会开发的两个系统（VISUALTEM-PO和VISUALCLIMA）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e5",
+          "mention": "VISUALTEM-PO",
+          "normalized_name": "VISUALTEM-PO",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "巴西有由国家气象协会开发的两个系统（VISUALTEM-PO和VISUALCLIMA）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e6",
+          "mention": "VISUALCLIMA",
+          "normalized_name": "VISUALCLIMA",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "巴西有由国家气象协会开发的两个系统（VISUALTEM-PO和VISUALCLIMA）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "巴西有由国家气象协会开发的两个系统（VISUALTEM-PO和VISUALCLIMA)用于气象和农业气候信息的传播。 印度的\"农业信息分发系统AgrIDS,旨在及时和个性化地分配专家的知识给农事团体以改善作物的生产流通量\"[21]等。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "巴西",
+          "normalized_name": "巴西",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "巴西有由国家气象协会开发的两个系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "国家气象协会",
+          "normalized_name": "国家气象协会",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "巴西有由国家气象协会开发的两个系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "VISUALTEM-PO",
+          "normalized_name": "VISUALTEM-PO",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "两个系统（VISUALTEM-PO和VISUALCLIMA）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "VISUALCLIMA",
+          "normalized_name": "VISUALCLIMA",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "两个系统（VISUALTEM-PO和VISUALCLIMA）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e5",
+          "mention": "印度",
+          "normalized_name": "印度",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "印度的\"农业信息分发系统AgrIDS\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e6",
+          "mention": "农业信息分发系统AgrIDS",
+          "normalized_name": "农业信息分发系统AgrIDS",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "印度的\"农业信息分发系统AgrIDS\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "同时国外注重信息技术与农业信息资源的发掘和分析结合，突出表现为农业数据库作为了农业信息服务的信息体系中的重要内容。国外有4个大型农业信息数据库，即\"联合国粮农组织的农业数据库（AGRIS）、国际食物信息数据库(IFIS）、美国农业部农业联机存取数据库（AGRICOLA）、国际农业与生物科学中心数据库(ABI)\"[22],它们为农业信息化发展提供了最基本的信息保障。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "联合国粮农组织的农业数据库（AGRIS）",
+          "normalized_name": "联合国粮农组织的农业数据库（AGRIS）",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "联合国粮农组织的农业数据库（AGRIS）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "国际食物信息数据库(IFIS）",
+          "normalized_name": "国际食物信息数据库(IFIS)",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "国际食物信息数据库(IFIS）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "美国农业部农业联机存取数据库（AGRICOLA）",
+          "normalized_name": "美国农业部农业联机存取数据库（AGRICOLA）",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "美国农业部农业联机存取数据库（AGRICOLA）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e4",
+          "mention": "国际农业与生物科学中心数据库(ABI)",
+          "normalized_name": "国际农业与生物科学中心数据库(ABI)",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "国际农业与生物科学中心数据库(ABI)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "“我国农业农村信息化的发展与发达国家相比，总体落后 $1 0 { \\sim } 2 0$ 年，大致经历了单机辅助管理、系统规划起步和网络技术应用3个阶段\"[23],有学者认为，中国农业通过\"农业信息基础设施建设阶段，农业信息技术的集成开发与应用阶段，最终进入信息农业\"[24]。 目前,对我国农业信息化发展整体的现状，原农业部部长杜青林有较全面的总结，即已经取得初步成就：“各级农业部门启动\"十五\"农村市场信息服务行动计划,扩大农业信息化覆盖范围，农业信息化工作体系初步形成、农业信息网络逐步完善、农业信息资源整合和开发利用得到了加强、农业信息服务模式不断创新。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "我国农业农村信息化",
+          "normalized_name": "我国农业农村信息化",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国农业农村信息化的发展与发达国家相比",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "单机辅助管理",
+          "normalized_name": "单机辅助管理",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "大致经历了单机辅助管理、系统规划起步和网络技术应用3个阶段",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "系统规划起步",
+          "normalized_name": "系统规划起步",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "大致经历了单机辅助管理、系统规划起步和网络技术应用3个阶段",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "网络技术应用",
+          "normalized_name": "网络技术应用",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "大致经历了单机辅助管理、系统规划起步和网络技术应用3个阶段",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e5",
+          "mention": "农业信息基础设施建设阶段",
+          "normalized_name": "农业信息基础设施建设阶段",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "中国农业通过\"农业信息基础设施建设阶段，农业信息技术的集成开发与应用阶段，最终进入信息农业\"",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e6",
+          "mention": "农业信息技术的集成开发与应用阶段",
+          "normalized_name": "农业信息技术的集成开发与应用阶段",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "中国农业通过\"农业信息基础设施建设阶段，农业信息技术的集成开发与应用阶段，最终进入信息农业\"",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e7",
+          "mention": "信息农业",
+          "normalized_name": "信息农业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "最终进入信息农业",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e8",
+          "mention": "原农业部部长杜青林",
+          "normalized_name": "杜青林",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "原农业部部长杜青林有较全面的总结",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e9",
+          "mention": "十五农村市场信息服务行动计划",
+          "normalized_name": "十五农村市场信息服务行动计划",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "各级农业部门启动\"十五农村市场信息服务行动计划\"",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e10",
+          "mention": "农业信息化工作体系",
+          "normalized_name": "农业信息化工作体系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "农业信息化工作体系初步形成",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e11",
+          "mention": "农业信息网络",
+          "normalized_name": "农业信息网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "农业信息网络逐步完善",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e12",
+          "mention": "农业信息资源整合和开发利用",
+          "normalized_name": "农业信息资源整合和开发利用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "农业信息资源整合和开发利用得到了加强",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e13",
+          "mention": "农业信息服务模式",
+          "normalized_name": "农业信息服务模式",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "农业信息服务模式不断创新",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "从实践上讲，“全国 $9 7 \\%$ 的地市和 $80 \\%$ 的县级农业部门都涉及信息化管理和服务机构，可以直接向农民传递信息的农村信息员已发展到18万人，初步建立从上到下的农业信息化队伍，形成从中央到地方的农业信息组织体系\"[27]; 建立了以中国农业信息网为核心、集20多个专业网为一体的国家农业门户网站，及\"科技教育信息网”、“种植业信息网\"等子网络;",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "中国农业信息网",
+          "normalized_name": "中国农业信息网",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建立了以中国农业信息网为核心、集20多个专业网为一体的国家农业门户网站",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "科技教育信息网",
+          "normalized_name": "科技教育信息网",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "及\"科技教育信息网\"、\"种植业信息网\"等子网络",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "种植业信息网",
+          "normalized_name": "种植业信息网",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "及\"科技教育信息网\"、\"种植业信息网\"等子网络",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "然而，我国农业信息化现状还不能让人满意，表现在各地区农业信息化发展水平不均衡，整体而言政府的支持力度不够、信息体系的基础设施比较薄弱、农村信息化人才短缺、农业信息法制法规建设十分薄弱。目前，“国家在农业信息化方面还没有专门的法律法规”[28]; “农业信息的规范化程度不高、信息传输渠道不畅，农业共同的信息平台技术支撑能力没有充分发挥，以及农业信息技术成果类型少、商品化不高\"[29];",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "农业信息化",
+          "normalized_name": "农业信息化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国农业信息化现状还不能让人满意",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "国家",
+          "normalized_name": "国家",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国家在农业信息化方面还没有专门的法律法规",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'国家'指代中国政府，作为治理主体可视为具体组织"
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "农业信息法制法规",
+          "normalized_name": "农业信息法制法规",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "农业信息法制法规建设十分薄弱",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛指法规体系，非单一具体文件"
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "农业信息的规范化",
+          "normalized_name": "农业信息的规范化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "农业信息的规范化程度不高",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "可视为概念或标准相关"
+        },
+        {
+          "entity_id": "17_e5",
+          "mention": "信息传输渠道",
+          "normalized_name": "信息传输渠道",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息传输渠道不畅",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称概念，非具体系统"
+        },
+        {
+          "entity_id": "17_e6",
+          "mention": "农业共同的信息平台",
+          "normalized_name": "农业共同的信息平台",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "农业共同的信息平台技术支撑能力没有充分发挥",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "指代一类平台，非具体命名系统"
+        },
+        {
+          "entity_id": "17_e7",
+          "mention": "农业信息技术成果",
+          "normalized_name": "农业信息技术成果",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "农业信息技术成果类型少",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称概念，非具体成果"
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "“农村农业市场化程度不高、信息化环境有待进一步完善、服务体系不健全、信息化产品开发及服务水平偏低\"[33]。 并且，我们看到还存在着“互联网在农村的\"准空白”现象、农村信息化“边缘化\"的现象\"[34]； 西部“农业产业化程度不高，信息网络体系不健全，无信息服务中介组织，基层缺少能够主动、科学地进行信息管理的人员、缺乏实用大型数据库、信息技术实用性差、农业信息服务体系还没有完成\"[35],形成了中、东、西部的农业信息化发展水平严重不平衡，区域发展差异明显。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "互联网在农村的\"准空白\"现象",
+          "normalized_name": "互联网在农村的\"准空白\"现象",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "还存在着\"互联网在农村的\"准空白”现象",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "农村信息化\"边缘化\"的现象",
+          "normalized_name": "农村信息化\"边缘化\"的现象",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "农村信息化\"边缘化\"的现象",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "农业信息化发展水平严重不平衡",
+          "normalized_name": "农业信息化发展水平严重不平衡",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "形成了中、东、西部的农业信息化发展水平严重不平衡",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为trend"
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "与发达国家相比，中国农村信息服务体系建设起步较晚，农业信息体系建设已经取得了明显的“阶段性成效，组织体系逐步完善、网络平台初具规模、信息采集与资源开发渠道日趋完善、信息发布覆盖面逐步扩大”[36]。但与国外相比，中国农村信息服务体系建设存在不足：农业信息“采集范围狭窄、传输渠道不畅、服务手段落后、服务面窄\"[37]; “政府的农村信息公共管理与服务职能缺位\"[38]；",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "中国农村信息服务体系建设",
+          "normalized_name": "中国农村信息服务体系建设",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与发达国家相比，中国农村信息服务体系建设起步较晚",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为概念"
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "农业信息体系建设",
+          "normalized_name": "农业信息体系建设",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "农业信息体系建设已经取得了明显的阶段性成效",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为概念"
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "网络平台",
+          "normalized_name": "网络平台",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "网络平台初具规模",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处指代农村信息服务网络平台，但未给出具体名称"
+        },
+        {
+          "entity_id": "19_e4",
+          "mention": "信息采集与资源开发渠道",
+          "normalized_name": "信息采集与资源开发渠道",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息采集与资源开发渠道日趋完善",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为图情领域术语抽取"
+        },
+        {
+          "entity_id": "19_e5",
+          "mention": "信息发布覆盖面",
+          "normalized_name": "信息发布覆盖面",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息发布覆盖面逐步扩大",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为图情领域术语抽取"
+        },
+        {
+          "entity_id": "19_e6",
+          "mention": "政府的农村信息公共管理与服务职能缺位",
+          "normalized_name": "政府的农村信息公共管理与服务职能缺位",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "政府的农村信息公共管理与服务职能缺位",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "结合国外发展经验，从而提出各种措施，较全面、典型的有：“大力开展农业信息知识教育和培训、做好信息资源的统筹整合工作，开发整合农村市场信息资源，加强农业信息标准的制定和实施\"[40]; “发挥政府在农村信息服务体系建设中的主导作用、加强东、中、西部地区体系建设的分类指导、提高农民的信息意识和信息消费水平\"[41];",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "农业信息知识教育和培训",
+          "normalized_name": "农业信息知识教育和培训",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大力开展农业信息知识教育和培训",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为method或technique，但原文中作为措施提及，更接近concept"
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "信息资源的统筹整合工作",
+          "normalized_name": "信息资源的统筹整合工作",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "做好信息资源的统筹整合工作",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "短语较长，可能为具体措施描述，但无独立学术命名"
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "农村市场信息资源",
+          "normalized_name": "农村市场信息资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "开发整合农村市场信息资源",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e4",
+          "mention": "农业信息标准",
+          "normalized_name": "农业信息标准",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "加强农业信息标准的制定和实施",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "未给出具体标准名称，但作为类别提及，图情领域放宽规则下可抽取"
+        },
+        {
+          "entity_id": "20_e5",
+          "mention": "农村信息服务体系建设",
+          "normalized_name": "农村信息服务体系建设",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "发挥政府在农村信息服务体系建设中的主导作用",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为policy_initiative，但原文未明确时间或实施过程"
+        },
+        {
+          "entity_id": "20_e6",
+          "mention": "东、中、西部地区",
+          "normalized_name": "东、中、西部地区",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加强东、中、西部地区体系建设的分类指导",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e7",
+          "mention": "农民的信息意识",
+          "normalized_name": "农民的信息意识",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提高农民的信息意识和信息消费水平",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e8",
+          "mention": "信息消费水平",
+          "normalized_name": "信息消费水平",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提高农民的信息意识和信息消费水平",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "关于农业信息服务体系的专门系统化研究则主要集中于地方农业信息服务体系的构建方面，例如湖北省当阳市\"四位一体\"的农业信息服务体系[44]、甘肃省河西地区的三级农业信息网络[45]、浙江省苍南县农业信息服务体系[46]、宁夏农业信息服务体系的构建[47],国家社会科学基金项目“基层农业信息服务体系建设研究\"在对25个省市实际调研情况的基础上，从组织模式、服务内容、传播渠道、利益分配机制和支持保障体系等5个方面，对我国目前存在的几种主要服务模式进行了系统归纳和比较分析\"[48]。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "湖北省当阳市\"四位一体\"的农业信息服务体系",
+          "normalized_name": "湖北省当阳市\"四位一体\"的农业信息服务体系",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "湖北省当阳市\"四位一体\"的农业信息服务体系[44]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "甘肃省河西地区的三级农业信息网络",
+          "normalized_name": "甘肃省河西地区的三级农业信息网络",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "甘肃省河西地区的三级农业信息网络[45]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "浙江省苍南县农业信息服务体系",
+          "normalized_name": "浙江省苍南县农业信息服务体系",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "浙江省苍南县农业信息服务体系[46]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "宁夏农业信息服务体系的构建",
+          "normalized_name": "宁夏农业信息服务体系的构建",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "宁夏农业信息服务体系的构建[47]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e5",
+          "mention": "国家社会科学基金项目“基层农业信息服务体系建设研究\"",
+          "normalized_name": "国家社会科学基金项目“基层农业信息服务体系建设研究\"",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "国家社会科学基金项目“基层农业信息服务体系建设研究\"在对25个省市实际调研情况的基础上",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "此外,研究还集中在服务中的手段、渠道、采集、推广的具体措施与方法上，关于农业信息服务体系的理论研究则非常少见，较全面的有两篇学位论文，一是李应博的《我国农业信息服务体系研究》,提出并构建农业信息服务组织结构，从国家和地方两个层面建立了农业信息服务体系的框架，进行农业服务体系的运行方式、运行机制和运行保障研究，应用DEA模型进行农业信息服务体系的运行效果评价，此研究成果已结集成书于2006 年12月出版。二是郑红维的《我国农村信息服务体系综合评价与发展战略研究》,构建了一套能综合反映农村信息服务的软、硬件体系建设和效益情况的指标体系。两篇均收入中国优秀博硕士学位论文数据库。此外，由中国农业大学的李道亮主持的国家社会科学基金项目(O4CTQO06),对基层农业信息服务体系建设展开了较深入系统的研究。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "李应博的《我国农业信息服务体系研究》",
+          "normalized_name": "《我国农业信息服务体系研究》",
+          "candidate_l3": "thesis",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "较全面的有两篇学位论文，一是李应博的《我国农业信息服务体系研究》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "李应博",
+          "normalized_name": "李应博",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "一是李应博的《我国农业信息服务体系研究》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e3",
+          "mention": "农业信息服务组织结构",
+          "normalized_name": "农业信息服务组织结构",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提出并构建农业信息服务组织结构",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e4",
+          "mention": "DEA模型",
+          "normalized_name": "DEA模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "应用DEA模型进行农业信息服务体系的运行效果评价",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e5",
+          "mention": "郑红维的《我国农村信息服务体系综合评价与发展战略研究》",
+          "normalized_name": "《我国农村信息服务体系综合评价与发展战略研究》",
+          "candidate_l3": "thesis",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "二是郑红维的《我国农村信息服务体系综合评价与发展战略研究》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e6",
+          "mention": "郑红维",
+          "normalized_name": "郑红维",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "二是郑红维的《我国农村信息服务体系综合评价与发展战略研究》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e7",
+          "mention": "中国优秀博硕士学位论文数据库",
+          "normalized_name": "中国优秀博硕士学位论文数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "两篇均收入中国优秀博硕士学位论文数据库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e8",
+          "mention": "中国农业大学",
+          "normalized_name": "中国农业大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由中国农业大学的李道亮主持",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e9",
+          "mention": "李道亮",
+          "normalized_name": "李道亮",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由中国农业大学的李道亮主持",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e10",
+          "mention": "国家社会科学基金项目(O4CTQO06)",
+          "normalized_name": "国家社会科学基金项目(O4CTQO06)",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "由中国农业大学的李道亮主持的国家社会科学基金项目(O4CTQO06)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "对于信息技术应用于“农情监测、农产品品质检测、农业化学制品的施用检测、土壤养分管理和经营决策\"[49]展开研究，例如研究\"建立了网络化、数字化的农业空间信息管理及辅助决策系统”[50]、“分布式的小麦高产专家系统”[51]、“网上蔬菜施肥智能咨询系统\"[52]、作物模型[53]、智能农业数据资源平台[54]和农业信息管理系统[55]等。 这些研究专题跨农业、生物、计算机、人工智能、信息控制、信息管理等学科领域,多学科研究人员的参与丰富了农业信息技术应用与开发的范围，但是这些研究中也存在着缺陷,大多数是阐述如何从理论上设计与实现，框架多于应用，比较分析这些系统在农业信息化应用实例与效果的较少（国外则侧重这类主题研究,见本文1.3节的叙述),同时，虽然研究各种平台和管理系统也很多，但农业信息资源开发中并未形成如国外四大农业数据库一样具权威性的、使用普及率高的、具有影响力的农业信息数据库。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "农情监测",
+          "normalized_name": "农情监测",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息技术应用于“农情监测、农产品品质检测、农业化学制品的施用检测、土壤养分管理和经营决策\"",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "农产品品质检测",
+          "normalized_name": "农产品品质检测",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息技术应用于“农情监测、农产品品质检测、农业化学制品的施用检测、土壤养分管理和经营决策\"",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "农业化学制品的施用检测",
+          "normalized_name": "农业化学制品的施用检测",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息技术应用于“农情监测、农产品品质检测、农业化学制品的施用检测、土壤养分管理和经营决策\"",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e4",
+          "mention": "土壤养分管理",
+          "normalized_name": "土壤养分管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息技术应用于“农情监测、农产品品质检测、农业化学制品的施用检测、土壤养分管理和经营决策\"",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e5",
+          "mention": "经营决策",
+          "normalized_name": "经营决策",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息技术应用于“农情监测、农产品品质检测、农业化学制品的施用检测、土壤养分管理和经营决策\"",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e6",
+          "mention": "网络化、数字化的农业空间信息管理及辅助决策系统",
+          "normalized_name": "网络化、数字化的农业空间信息管理及辅助决策系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建立了网络化、数字化的农业空间信息管理及辅助决策系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e7",
+          "mention": "分布式的小麦高产专家系统",
+          "normalized_name": "分布式的小麦高产专家系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "分布式的小麦高产专家系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e8",
+          "mention": "网上蔬菜施肥智能咨询系统",
+          "normalized_name": "网上蔬菜施肥智能咨询系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "网上蔬菜施肥智能咨询系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e9",
+          "mention": "作物模型",
+          "normalized_name": "作物模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "作物模型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e10",
+          "mention": "智能农业数据资源平台",
+          "normalized_name": "智能农业数据资源平台",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "智能农业数据资源平台",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e11",
+          "mention": "农业信息管理系统",
+          "normalized_name": "农业信息管理系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "农业信息管理系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e12",
+          "mention": "农业",
+          "normalized_name": "农业",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这些研究专题跨农业、生物、计算机、人工智能、信息控制、信息管理等学科领域",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e13",
+          "mention": "生物",
+          "normalized_name": "生物",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这些研究专题跨农业、生物、计算机、人工智能、信息控制、信息管理等学科领域",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e14",
+          "mention": "计算机",
+          "normalized_name": "计算机",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这些研究专题跨农业、生物、计算机、人工智能、信息控制、信息管理等学科领域",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e15",
+          "mention": "人工智能",
+          "normalized_name": "人工智能",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这些研究专题跨农业、生物、计算机、人工智能、信息控制、信息管理等学科领域",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e16",
+          "mention": "信息控制",
+          "normalized_name": "信息控制",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这些研究专题跨农业、生物、计算机、人工智能、信息控制、信息管理等学科领域",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e17",
+          "mention": "信息管理",
+          "normalized_name": "信息管理",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这些研究专题跨农业、生物、计算机、人工智能、信息控制、信息管理等学科领域",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e18",
+          "mention": "国外四大农业数据库",
+          "normalized_name": "国外四大农业数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "农业信息资源开发中并未形成如国外四大农业数据库一样具权威性的、使用普及率高的、具有影响力的农业信息数据库",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "具体名称未给出，但作为有名称的数据库集合，按图情领域放宽规则抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "影响我国农业信息化进程因素及对策的研究，包括主、客观两方面的因素。 国内外在对客观影响因素的分析与建设上有着共同的关注度，集中在信息资源、硬件环境、应用的信息技术与软件开发等问题进行研究与建设，影响农业信息化的主观因素包含了对信息服务提供主体、信息服务对象的研究，国内外对信息服务对象的需求研究较为重视，但国外对信息服务提供主体的研究与建设更为突出。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "农业信息化",
+          "normalized_name": "农业信息化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "影响我国农业信息化进程因素及对策的研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "信息资源",
+          "normalized_name": "信息资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "集中在信息资源、硬件环境、应用的信息技术与软件开发等问题进行研究与建设",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为Artifact(若指具体数据库或系统则需更明确上下文)"
+        },
+        {
+          "entity_id": "24_e3",
+          "mention": "硬件环境",
+          "normalized_name": "硬件环境",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "集中在信息资源、硬件环境、应用的信息技术与软件开发等问题进行研究与建设",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e4",
+          "mention": "信息技术",
+          "normalized_name": "信息技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "应用的信息技术与软件开发等问题进行研究与建设",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e5",
+          "mention": "软件开发",
+          "normalized_name": "软件开发",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "应用的信息技术与软件开发等问题进行研究与建设",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e6",
+          "mention": "信息服务提供主体",
+          "normalized_name": "信息服务提供主体",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "影响农业信息化的主观因素包含了对信息服务提供主体、信息服务对象的研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e7",
+          "mention": "信息服务对象",
+          "normalized_name": "信息服务对象",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "影响农业信息化的主观因素包含了对信息服务提供主体、信息服务对象的研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "为此，研究者们通过研究农业信息服务体系与农业信息技术，学习借鉴国外这两方面建设的经验，结合影响我国农业信息化进程的主、客观因素分析，提出了种种建设性的措施：一是从客观上加强基础设施、资源与平台、信息技术等硬件环境的建设； 从政府投入、法律规范、标准化、保险、科技体制及成果转换等方面加强软环境建设;",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "农业信息服务体系",
+          "normalized_name": "农业信息服务体系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究农业信息服务体系与农业信息技术",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "农业信息技术",
+          "normalized_name": "农业信息技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究农业信息服务体系与农业信息技术",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e3",
+          "mention": "农业信息化进程",
+          "normalized_name": "农业信息化进程",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "影响我国农业信息化进程的主、客观因素分析",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为trend"
+        }
+      ]
+    },
+    {
+      "sentence_id": "29",
+      "sentence": "以及\"政府要高度重视、强化组织管理协调、加大政策倾斜、推进科技体制改革、构造农业信息化的激励机制、大力发展农业教育、开展形式多样的培训，多途径解决信息化'最后一公里'问题,健全农业信息化市场服务体系和推广体系，制定农业信息化的法律法规，健全法律体系等条措施\"[69]。 2007年中央一号文件也强调：用信息技术装备农业,健全农业信息收集和发布制度，整合涉农信息资源，加强信息服务平台建设，加强农村一体化的信息基础设施建设，创新服务模式。",
+      "entities": [
+        {
+          "entity_id": "29_e1",
+          "mention": "2007年中央一号文件",
+          "normalized_name": "2007年中央一号文件",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "2007年中央一号文件也强调：用信息技术装备农业",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e2",
+          "mention": "农业信息化",
+          "normalized_name": "农业信息化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "构造农业信息化的激励机制",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e3",
+          "mention": "信息服务平台",
+          "normalized_name": "信息服务平台",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "加强信息服务平台建设",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但图情领域放宽规则，有功能限定"
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "《2006一2007年中国农村农业信息化发展研究年度报告》将我国农村农业信息化发展趋势概述为“集成化、专业化是发展的总体趋势、社会力量的广泛参与是必然选择、农村特色网站是未来发展的方向、未来五年是发展的关键时期”。农业部指出我国农业信息化工作面临新的发展趋势是\"政府主导化、需求复杂化、渠道多样化、工作交织化和发展社会化。 \"[70]。",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "《2006一2007年中国农村农业信息化发展研究年度报告》",
+          "normalized_name": "《2006-2007年中国农村农业信息化发展研究年度报告》",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《2006一2007年中国农村农业信息化发展研究年度报告》将我国农村农业信息化发展趋势概述为",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "农业部",
+          "normalized_name": "农业部",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "农业部指出我国农业信息化工作面临新的发展趋势",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

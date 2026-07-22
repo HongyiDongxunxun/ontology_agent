@@ -1,0 +1,1592 @@
+{
+  "base_name": "reviewed_full_7688",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "〔摘要]针对我国民营图书馆开展专门图书馆学理论研究尚未出现的状况,本着明确民营图书馆的界定、民营图书馆类型及其研究现状,分别从三个方面向读者展示民营图书馆研究的几个主要领域,从而明确民营图书馆的内涵及外延,为进一步加强对民营图书馆的研究打下基础。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "民营图书馆",
+          "normalized_name": "民营图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "针对我国民营图书馆开展专门图书馆学理论研究尚未出现的状况",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "专门图书馆学理论",
+          "normalized_name": "专门图书馆学理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "针对我国民营图书馆开展专门图书馆学理论研究尚未出现的状况",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "我国图书馆界关注基层图书馆建设、图书馆为弱势群体服务等问题。 目前，在对民营图书馆的管理与规范方面，国家政策还是空白。因此，民营图书馆事业如何发展、如何定位、如何规范与管理等问题引起了学界的思考。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "我国图书馆界",
+          "normalized_name": "中国图书馆界",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国图书馆界关注基层图书馆建设、图书馆为弱势群体服务等问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为community，但此处作为学科共同体抽象实体"
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "基层图书馆",
+          "normalized_name": "基层图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "关注基层图书馆建设",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "弱势群体",
+          "normalized_name": "弱势群体",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆为弱势群体服务等问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "民营图书馆",
+          "normalized_name": "民营图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在对民营图书馆的管理与规范方面",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e5",
+          "mention": "国家政策",
+          "normalized_name": "国家政策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "国家政策还是空白",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但此处指具体政策空白，按图情领域放宽规则抽取"
+        },
+        {
+          "entity_id": "2_e6",
+          "mention": "民营图书馆事业",
+          "normalized_name": "民营图书馆事业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "民营图书馆事业如何发展、如何定位、如何规范与管理等问题引起了学界的思考",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "民营图书馆又被称为私人图书馆、民办图书馆、私营图书馆，虽然大家用法不一，但笔者认为，它们所指称的对象应该是一致的。但是，王子舟教授指出[2]，民办图书馆包括公益性和经营型两个类型，只有经营型的民办图书馆才能称为民营图书馆。可见,王教授认为民办图书馆与民营图书馆是两个不同的概念，民营图书馆一定是以赢利为目的而举办的。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "王子舟",
+          "normalized_name": "王子舟",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "王子舟教授指出[2]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "民办图书馆",
+          "normalized_name": "民办图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "民办图书馆包括公益性和经营型两个类型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "民营图书馆",
+          "normalized_name": "民营图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "只有经营型的民办图书馆才能称为民营图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "私营图书馆指私人经营的图书馆”也排除了社会团体等组织创办经营的图书馆类型。 而“民营”是与“公办”“公立”“公营”相对应的一个概念，用“民营图书馆”来指称拟讨论的现实图书馆类型，更加合适与贴切。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "私营图书馆",
+          "normalized_name": "私营图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "私营图书馆指私人经营的图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "民营图书馆",
+          "normalized_name": "民营图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用“民营图书馆”来指称拟讨论的现实图书馆类型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "笔者认为，在界定以及定义“民营图书馆”时一定要考虑“民营”与“图书馆”两个概念的共同特征，至少应该包括三个构成要素：",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "民营图书馆",
+          "normalized_name": "民营图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "界定以及定义“民营图书馆”时一定要考虑“民营”与“图书馆”两个概念的共同特征",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "民营",
+          "normalized_name": "民营",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "考虑“民营”与“图书馆”两个概念的共同特征",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "考虑“民营”与“图书馆”两个概念的共同特征",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "从理论上讲，现代意义上的图书馆都应该是开放的。因图书馆类型的多样性、群众利用的方便性等因素，实际上其开放程度也是不同的。 如对某个区域内的所有公众开放(县、省公共图书馆等)、对某个单位内部的所有人员开放(中小学图书馆、高校图书馆、工会图书馆、组织机构图书馆、科研图书馆等),而可以勉强称得上是对全体公民开放的图书馆也仅限于国家图书馆了。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "县、省公共图书馆",
+          "normalized_name": "县、省公共图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对某个区域内的所有公众开放(县、省公共图书馆等)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处为类别列举，非具体机构名称，但根据图情领域放宽规则，有地名限定的公共图书馆类型可视为具体机构类别"
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "中小学图书馆",
+          "normalized_name": "中小学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对某个单位内部的所有人员开放(中小学图书馆、高校图书馆、工会图书馆、组织机构图书馆、科研图书馆等)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处为类别列举，非具体机构名称，但根据图情领域放宽规则，有单位限定的图书馆类型可视为具体机构类别"
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "高校图书馆",
+          "normalized_name": "高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对某个单位内部的所有人员开放(中小学图书馆、高校图书馆、工会图书馆、组织机构图书馆、科研图书馆等)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处为类别列举，非具体机构名称，但根据图情领域放宽规则，有单位限定的图书馆类型可视为具体机构类别"
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "工会图书馆",
+          "normalized_name": "工会图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对某个单位内部的所有人员开放(中小学图书馆、高校图书馆、工会图书馆、组织机构图书馆、科研图书馆等)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处为类别列举，非具体机构名称，但根据图情领域放宽规则，有单位限定的图书馆类型可视为具体机构类别"
+        },
+        {
+          "entity_id": "7_e5",
+          "mention": "组织机构图书馆",
+          "normalized_name": "组织机构图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对某个单位内部的所有人员开放(中小学图书馆、高校图书馆、工会图书馆、组织机构图书馆、科研图书馆等)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处为类别列举，非具体机构名称，但根据图情领域放宽规则，有单位限定的图书馆类型可视为具体机构类别"
+        },
+        {
+          "entity_id": "7_e6",
+          "mention": "科研图书馆",
+          "normalized_name": "科研图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对某个单位内部的所有人员开放(中小学图书馆、高校图书馆、工会图书馆、组织机构图书馆、科研图书馆等)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处为类别列举，非具体机构名称，但根据图情领域放宽规则，有单位限定的图书馆类型可视为具体机构类别"
+        },
+        {
+          "entity_id": "7_e7",
+          "mention": "国家图书馆",
+          "normalized_name": "国家图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "可以勉强称得上是对全体公民开放的图书馆也仅限于国家图书馆了",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "如对某个区域内的所有公众开放(县、省公共图书馆等)、对某个单位内部的所有人员开放(中小学图书馆、高校图书馆、工会图书馆、组织机构图书馆、科研图书馆等),而可以勉强称得上是对全体公民开放的图书馆也仅限于国家图书馆了。 从这个角度上说，民营图书馆的开放性也应遵循上述规则，现实中的实际情况也是如此。所以，其开放性是与“封闭”“藏书楼”相对应的。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "县、省公共图书馆",
+          "normalized_name": "县、省公共图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如对某个区域内的所有公众开放(县、省公共图书馆等)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "中小学图书馆",
+          "normalized_name": "中小学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对某个单位内部的所有人员开放(中小学图书馆、高校图书馆、工会图书馆、组织机构图书馆、科研图书馆等)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "高校图书馆",
+          "normalized_name": "高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对某个单位内部的所有人员开放(中小学图书馆、高校图书馆、工会图书馆、组织机构图书馆、科研图书馆等)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "工会图书馆",
+          "normalized_name": "工会图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对某个单位内部的所有人员开放(中小学图书馆、高校图书馆、工会图书馆、组织机构图书馆、科研图书馆等)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e5",
+          "mention": "组织机构图书馆",
+          "normalized_name": "组织机构图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对某个单位内部的所有人员开放(中小学图书馆、高校图书馆、工会图书馆、组织机构图书馆、科研图书馆等)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e6",
+          "mention": "科研图书馆",
+          "normalized_name": "科研图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对某个单位内部的所有人员开放(中小学图书馆、高校图书馆、工会图书馆、组织机构图书馆、科研图书馆等)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e7",
+          "mention": "国家图书馆",
+          "normalized_name": "国家图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "可以勉强称得上是对全体公民开放的图书馆也仅限于国家图书馆了",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e8",
+          "mention": "民营图书馆",
+          "normalized_name": "民营图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "民营图书馆的开放性也应遵循上述规则",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e9",
+          "mention": "藏书楼",
+          "normalized_name": "藏书楼",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "其开放性是与“封闭”“藏书楼”相对应的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "笔者认为，现代图书馆的基本理念、职业道德与精神可以简单地通过《中国图书馆员职业道德准则(试行)》以及中山大学程焕文教授的\"爱国、爱馆、爱书、爱人\"的\"四爱\"来概括。图书馆基本业务工作应该指能够体现图书馆核心竞争力的业务活动，它也是图书馆区别于其他社会信息服务事业／产业的标志。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "《中国图书馆员职业道德准则(试行)》",
+          "normalized_name": "《中国图书馆员职业道德准则(试行)》",
+          "candidate_l3": "guideline",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《中国图书馆员职业道德准则(试行)》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "中山大学",
+          "normalized_name": "中山大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中山大学程焕文教授",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "程焕文",
+          "normalized_name": "程焕文",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中山大学程焕文教授",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e4",
+          "mention": "爱国、爱馆、爱书、爱人",
+          "normalized_name": "爱国、爱馆、爱书、爱人",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "程焕文教授的\"爱国、爱馆、爱书、爱人\"的\"四爱\"",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e5",
+          "mention": "四爱",
+          "normalized_name": "四爱",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "\"爱国、爱馆、爱书、爱人\"的\"四爱\"",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "简称，与全称对应"
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "在上述三点中，第一点是紧扣“民营”这个要素的，而后两点是针对“图书馆”之特色而用来界定民营图书馆的重要指标。这里要强调的是,“民营图书馆的\"营\"不等于\"赢”“营”是经营，是服务，是开放。我们不能一谈到“经营”就认为一定要\"赢利”它只是管理、运行、发挥组织功能的一种手段和方式，与“赢利”是性质不同的两个概念。换句话说，“民营图书馆”是要“经营”的、“服务”的、“开放\"的,它可以“赢利”但其一定不是以“赢利\"为目的的。这一点是我们在界定现实中的民营图书馆时的重要标准之一。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "民营图书馆",
+          "normalized_name": "民营图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "界定民营图书馆的重要指标",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "综上所述,笔者认为,民营图书馆是不由政府出资建立、运行与维护，开放式地向社会公众提供有序化信息资源的图书馆。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "民营图书馆",
+          "normalized_name": "民营图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "民营图书馆是不由政府出资建立、运行与维护，开放式地向社会公众提供有序化信息资源的图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "山东济宁的科教图书馆采取加盟连锁式的经营方式，坚持“以馆养馆”的办馆原则，取得了较好的社会效益和经济效益。 截止到2006年中，它已在山东、辽宁、河北、河南、陕西、江苏、安徽、福建、甘肃等省份拥有20多家加盟连锁馆，总服务面积15000余平方米，年接待各类读者1000余万人次[3],为群众提供了一个学习知识的平台,主要开展的服务包括借阅、图书零售、教育培训、电子阅览室、玩具吧、公益讲座等。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "山东济宁的科教图书馆",
+          "normalized_name": "山东济宁的科教图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "山东济宁的科教图书馆采取加盟连锁式的经营方式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "加盟连锁馆",
+          "normalized_name": "加盟连锁馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "它已在山东、辽宁、河北、河南、陕西、江苏、安徽、福建、甘肃等省份拥有20多家加盟连锁馆",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处指代多个具体加盟馆，但原文未给出具体馆名，仅作为类别提及，可考虑不抽取"
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "电子阅览室",
+          "normalized_name": "电子阅览室",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "主要开展的服务包括借阅、图书零售、教育培训、电子阅览室、玩具吧、公益讲座等",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "电子阅览室作为服务类型，非具体唯一机构，可考虑不抽取"
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "玩具吧",
+          "normalized_name": "玩具吧",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "主要开展的服务包括借阅、图书零售、教育培训、电子阅览室、玩具吧、公益讲座等",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "玩具吧作为服务类型，非具体唯一机构，可考虑不抽取"
+        },
+        {
+          "entity_id": "13_e5",
+          "mention": "公益讲座",
+          "normalized_name": "公益讲座",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "主要开展的服务包括借阅、图书零售、教育培训、电子阅览室、玩具吧、公益讲座等",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "公益讲座为泛称服务类型，非具体会议事件，可考虑不抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "2004年7月，她们与北京天下溪教育研究所合作,并增加了此项捐助活动的公开透明性。 天下溪乡村图书馆计划立志要为发展中国乡村社会图书馆建立起可以“复制的模式”为改善农村文化落后的状况贡献一份力量。 从2006年1月起，他们推出一项新的行动给你的家乡捐一座图书馆”希望能满足很多人想要为家乡或者第二故乡做点事的心愿，调动更多社会个体的公益热情。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "北京天下溪教育研究所",
+          "normalized_name": "北京天下溪教育研究所",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "她们与北京天下溪教育研究所合作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "天下溪乡村图书馆计划",
+          "normalized_name": "天下溪乡村图书馆计划",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "天下溪乡村图书馆计划立志要为发展中国乡村社会图书馆建立起可以“复制的模式”",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "给你的家乡捐一座图书馆",
+          "normalized_name": "给你的家乡捐一座图书馆",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "他们推出一项新的行动给你的家乡捐一座图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.88,
+          "uncertainty": "行动名称可能为口语化表述，但原文中作为具体行动名称出现"
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "美国青树教育基金为中国边远地区学校捐建图书馆的项目始于2002年。该基金会建设图书馆的层次相对比较高，主要建立三种类型的图书馆。 $\\textcircled{1}$ 建立高级学校图书馆中心，每个图书馆中心配备1-6万册图书，装备1台服务器，2-5个工作站，1台打印机，1部数码相机，2-4个条码扫描器，1套图书馆管理软件,并建立网络连接;",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "美国青树教育基金",
+          "normalized_name": "美国青树教育基金",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国青树教育基金为中国边远地区学校捐建图书馆的项目始于2002年",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "高级学校图书馆中心",
+          "normalized_name": "高级学校图书馆中心",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "建立高级学校图书馆中心，每个图书馆中心配备1-6万册图书",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "图书馆管理软件",
+          "normalized_name": "图书馆管理软件",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "1套图书馆管理软件",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未给出具体软件名称，但图情领域放宽规则下可抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "而前者则基于成员共同的阅读兴趣与爱好组成的群体，后来逐渐演化成为民营图书馆。 最出名的是读来读去读书社，虽然它因非法集资问题被查处,但其开办初期产生了广泛的社会影响,最初的运行方式也可以成为此类民营图书馆的范例。大家所熟知的美国富兰克林等人组织的读书俱乐部类似于此。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "读来读去读书社",
+          "normalized_name": "读来读去读书社",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "最出名的是读来读去读书社",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "美国富兰克林",
+          "normalized_name": "本杰明·富兰克林",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "大家所熟知的美国富兰克林等人组织的读书俱乐部",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "原文仅提姓氏，可能指本杰明·富兰克林"
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "读书俱乐部",
+          "normalized_name": "读书俱乐部",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国富兰克林等人组织的读书俱乐部",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处指具体俱乐部，但名称未明确给出"
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "由民政部、中央文明办、国家广电总局、新闻出版总署共同主办的“万家社区图书馆援建和万家社区读书活动”自2003年5月开展以来,共援建2.7万个社区，援建图书近千万册，受到了社区居民的欢迎。 为了巩固社区图书室援建工作的成果，活动组委会决定继续开展援建活动，同时巩固原有的成果。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "民政部",
+          "normalized_name": "民政部",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由民政部、中央文明办、国家广电总局、新闻出版总署共同主办的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "中央文明办",
+          "normalized_name": "中央文明办",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由民政部、中央文明办、国家广电总局、新闻出版总署共同主办的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "国家广电总局",
+          "normalized_name": "国家广电总局",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由民政部、中央文明办、国家广电总局、新闻出版总署共同主办的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e4",
+          "mention": "新闻出版总署",
+          "normalized_name": "新闻出版总署",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由民政部、中央文明办、国家广电总局、新闻出版总署共同主办的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e5",
+          "mention": "万家社区图书馆援建和万家社区读书活动",
+          "normalized_name": "万家社区图书馆援建和万家社区读书活动",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "由民政部、中央文明办、国家广电总局、新闻出版总署共同主办的“万家社区图书馆援建和万家社区读书活动”自2003年5月开展以来",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e6",
+          "mention": "社区图书室",
+          "normalized_name": "社区图书室",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "为了巩固社区图书室援建工作的成果",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "社区图书室作为具体机构类型，但未给出具体名称，可能为泛称；但结合上下文指代已援建的实体，故抽取"
+        },
+        {
+          "entity_id": "20_e7",
+          "mention": "活动组委会",
+          "normalized_name": "活动组委会",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "活动组委会决定继续开展援建活动",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "虽未给出全称，但指代具体组织"
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "企业是推动社会经济发展的主体，在文化事业建设中,应当贡献自己的力量。 由企业出资建立的图书馆，主要表现为企业工会图书馆、企业图书馆、企业科技图书馆等，但这类图书馆因其在现时社会生活中所起到的作用甚微,似有逐渐淡出图书馆事业的迹象。从全国企业图书馆现状来看，生存状况堪忧。企业图书馆是传统计划经济中\"企业办社会的产物，一方面在新的市场经济环境下，它未来的发展命运可想而知; 另一方面,其服务对象范围狭窄,主要面向本企业职工及家属。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "企业工会图书馆",
+          "normalized_name": "企业工会图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由企业出资建立的图书馆，主要表现为企业工会图书馆、企业图书馆、企业科技图书馆等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "企业工会图书馆作为具体类型，但未给出唯一名称，属于类型指称而非具体唯一实体"
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "企业图书馆",
+          "normalized_name": "企业图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由企业出资建立的图书馆，主要表现为企业工会图书馆、企业图书馆、企业科技图书馆等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "企业图书馆作为具体类型，但未给出唯一名称，属于类型指称而非具体唯一实体"
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "企业科技图书馆",
+          "normalized_name": "企业科技图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由企业出资建立的图书馆，主要表现为企业工会图书馆、企业图书馆、企业科技图书馆等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "企业科技图书馆作为具体类型，但未给出唯一名称，属于类型指称而非具体唯一实体"
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "全国企业图书馆",
+          "normalized_name": "全国企业图书馆",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从全国企业图书馆现状来看，生存状况堪忧",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "全国企业图书馆作为整体现象，非具体唯一实体"
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "此类图书馆的开设，可能出于商业的目的，也可能出于热心公益事业、为社会做贡献的目的，但无论哪一种目的，要达到的结果都是由企业出资，为公众建立了可以免费使用的图书馆。 因此，笔者认为这也是一种民营图书馆。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "民营图书馆",
+          "normalized_name": "民营图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这也是一种民营图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "2006年9月，全国最大的社区图书馆一一城开国际学园社区图书馆落户南昌，总面积达2000平方米,是目前国内最大的社区型图书馆。馆内藏书可达10万余册，分为4大类：生活时尚、杂志、工具词典、综合等类,包罗了文、史、哲、理等社会科学、人文历史、自然科学的丰富书目。图书馆设有社区讲堂、手工教室、电子阅览室、全家庭阅览区、学生自习区、视听室、儿童素质教育厅、休闲阅览区、舞蹈室、钢琴室等设施，特别增设儿童阅览室和老年阅读室，可以满足不同人群的阅读需求[10]。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "城开国际学园社区图书馆",
+          "normalized_name": "城开国际学园社区图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "全国最大的社区图书馆一一城开国际学园社区图书馆落户南昌",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "南昌",
+          "normalized_name": "南昌",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "城开国际学园社区图书馆落户南昌",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "笔者利用《中国期刊网》对“民营图书馆”“民办图书馆”“私人图书馆”等相关关键词进行检索，发现国内讨论民营图书馆理论与实践的论文很少，最早出现于1996年，尽管每年对此问题都有所论述,但到目前仅有16篇。 由此可见,业内同仁对此问题的关注与研究是远远不够的。这种情况的产生，一方面是它为“新生”事物，专业理论与实践根基还比较薄弱; 另一方面是它一直没有引起人们的关注。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "《中国期刊网》",
+          "normalized_name": "《中国期刊网》",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用《中国期刊网》对“民营图书馆”“民办图书馆”“私人图书馆”等相关关键词进行检索",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e2",
+          "mention": "民营图书馆",
+          "normalized_name": "民营图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对“民营图书馆”“民办图书馆”“私人图书馆”等相关关键词进行检索",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e3",
+          "mention": "民办图书馆",
+          "normalized_name": "民办图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对“民营图书馆”“民办图书馆”“私人图书馆”等相关关键词进行检索",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e4",
+          "mention": "私人图书馆",
+          "normalized_name": "私人图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对“民营图书馆”“民办图书馆”“私人图书馆”等相关关键词进行检索",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "民营图书馆的优势在于办馆资金有保障,适应形势变化快,可以充分调动人员积极性和利用图书馆资源。与此同时,其家族化的发展也易导致业务水平低，管理水平差，忽视图书馆的社会公益性等弊端。 孙勇[I]、曹红毅[12]、唐承秀和吴慰慈[16]等人对此展开了讨论。",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "孙勇",
+          "normalized_name": "孙勇",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "孙勇[I]、曹红毅[12]、唐承秀和吴慰慈[16]等人对此展开了讨论",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "曹红毅",
+          "normalized_name": "曹红毅",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "孙勇[I]、曹红毅[12]、唐承秀和吴慰慈[16]等人对此展开了讨论",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e3",
+          "mention": "唐承秀",
+          "normalized_name": "唐承秀",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "孙勇[I]、曹红毅[12]、唐承秀和吴慰慈[16]等人对此展开了讨论",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e4",
+          "mention": "吴慰慈",
+          "normalized_name": "吴慰慈",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "孙勇[I]、曹红毅[12]、唐承秀和吴慰慈[16]等人对此展开了讨论",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "研究者认为，民营图书馆对发展基层中小型图书馆，特别是乡村图书馆(室)、西部地区图书馆有着\"柳暗花明又一村”的效果。如闫丽[17认为，随着乡村群众求知欲，尤其是对农业知识需求的渴望，增加了对图书馆的需求，但公共图书馆又无法满足,私营图书馆(室)在投资、经营机制等多个方面存在灵活优势，可以弥补公立图书馆之不足。在进行农村图书馆建设研究时，王素芳[18]专门讨论了国内外非政府组织(包括国外慈善基金会、国内文化团体、村民自办三种形式)在建设农村图书馆中的重要作用，详细地介绍了它们建设农村图书馆项目的具体实施情况，认为虽然面临着资金、图书馆管理规范及持续运作、专业人员不足等种种困难，但也为这些民营乡镇图书馆的发展开拓了外部资源,政府应该给予鼓励和引导。 持相同观点的还有纪文杰[19-20]、陈华[13]、高学瀚[21]、曹湘平[22]、周晓季[14]等。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "民营图书馆",
+          "normalized_name": "民营图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "民营图书馆对发展基层中小型图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "乡村图书馆(室)",
+          "normalized_name": "乡村图书馆(室)",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "特别是乡村图书馆(室)、西部地区图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e3",
+          "mention": "西部地区图书馆",
+          "normalized_name": "西部地区图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "特别是乡村图书馆(室)、西部地区图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e4",
+          "mention": "闫丽",
+          "normalized_name": "闫丽",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如闫丽[17认为",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e5",
+          "mention": "公共图书馆",
+          "normalized_name": "公共图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "但公共图书馆又无法满足",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e6",
+          "mention": "私营图书馆(室)",
+          "normalized_name": "私营图书馆(室)",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "私营图书馆(室)在投资、经营机制等多个方面存在灵活优势",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e7",
+          "mention": "王素芳",
+          "normalized_name": "王素芳",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "王素芳[18]专门讨论了国内外非政府组织",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e8",
+          "mention": "非政府组织",
+          "normalized_name": "非政府组织",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国内外非政府组织(包括国外慈善基金会、国内文化团体、村民自办三种形式)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e9",
+          "mention": "国外慈善基金会",
+          "normalized_name": "国外慈善基金会",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国内外非政府组织(包括国外慈善基金会、国内文化团体、村民自办三种形式)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但作为非政府组织的具体类型，且原文有明确列举，故抽取"
+        },
+        {
+          "entity_id": "28_e10",
+          "mention": "国内文化团体",
+          "normalized_name": "国内文化团体",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国内外非政府组织(包括国外慈善基金会、国内文化团体、村民自办三种形式)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但作为非政府组织的具体类型，且原文有明确列举，故抽取"
+        },
+        {
+          "entity_id": "28_e11",
+          "mention": "村民自办",
+          "normalized_name": "村民自办",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国内外非政府组织(包括国外慈善基金会、国内文化团体、村民自办三种形式)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但作为非政府组织的具体类型，且原文有明确列举，故抽取"
+        },
+        {
+          "entity_id": "28_e12",
+          "mention": "农村图书馆",
+          "normalized_name": "农村图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在建设农村图书馆中的重要作用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e13",
+          "mention": "纪文杰",
+          "normalized_name": "纪文杰",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "持相同观点的还有纪文杰[19-20]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e14",
+          "mention": "陈华",
+          "normalized_name": "陈华",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "持相同观点的还有纪文杰[19-20]、陈华[13]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e15",
+          "mention": "高学瀚",
+          "normalized_name": "高学瀚",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "持相同观点的还有纪文杰[19-20]、陈华[13]、高学瀚[21]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e16",
+          "mention": "曹湘平",
+          "normalized_name": "曹湘平",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "持相同观点的还有纪文杰[19-20]、陈华[13]、高学瀚[21]、曹湘平[22]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e17",
+          "mention": "周晓季",
+          "normalized_name": "周晓季",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "持相同观点的还有纪文杰[19-20]、陈华[13]、高学瀚[21]、曹湘平[22]、周晓季[14]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "29",
+      "sentence": "研究者在宏观政策上呼呼给予民营图书馆重大扶持。 如陈华认为[13],鼓励私营是新世纪我国图书馆事业发展的战略选择,是一项双赢的事业，应公私经营,共谋发展。 张学梅[23]则明确提出了国家应该对私营图书馆的发展要特别关注与支持。",
+      "entities": [
+        {
+          "entity_id": "29_e1",
+          "mention": "陈华",
+          "normalized_name": "陈华",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如陈华认为[13]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e2",
+          "mention": "张学梅",
+          "normalized_name": "张学梅",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "张学梅[23]则明确提出了",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e3",
+          "mention": "私营图书馆",
+          "normalized_name": "私营图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国家应该对私营图书馆的发展要特别关注与支持",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "张学梅[23]则明确提出了国家应该对私营图书馆的发展要特别关注与支持。 基本上所有论文都明确提出了这个问题。",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "张学梅",
+          "normalized_name": "张学梅",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "张学梅[23]则明确提出了国家应该对私营图书馆的发展要特别关注与支持",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "私营图书馆",
+          "normalized_name": "私营图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国家应该对私营图书馆的发展要特别关注与支持",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "31",
+      "sentence": "王子舟和马艳霞[2对民间读书社的兴起、性质、运营模式、生存时间及其发展战略进行了系统研究，他们认为，民间读书社不属于民营图书馆的一种类型。 王素芳[18]则对国外慈善基金会、国内文化团体、村民自办三种形式的民营图书馆进行了详细介绍。",
+      "entities": [
+        {
+          "entity_id": "31_e1",
+          "mention": "王子舟",
+          "normalized_name": "王子舟",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "王子舟和马艳霞[2对民间读书社的兴起、性质、运营模式、生存时间及其发展战略进行了系统研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e2",
+          "mention": "马艳霞",
+          "normalized_name": "马艳霞",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "王子舟和马艳霞[2对民间读书社的兴起、性质、运营模式、生存时间及其发展战略进行了系统研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e3",
+          "mention": "民间读书社",
+          "normalized_name": "民间读书社",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对民间读书社的兴起、性质、运营模式、生存时间及其发展战略进行了系统研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "31_e4",
+          "mention": "民营图书馆",
+          "normalized_name": "民营图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "他们认为，民间读书社不属于民营图书馆的一种类型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e5",
+          "mention": "王素芳",
+          "normalized_name": "王素芳",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "王素芳[18]则对国外慈善基金会、国内文化团体、村民自办三种形式的民营图书馆进行了详细介绍",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e6",
+          "mention": "国外慈善基金会",
+          "normalized_name": "国外慈善基金会",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国外慈善基金会、国内文化团体、村民自办三种形式的民营图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但带有地域限定，视为具体类别"
+        },
+        {
+          "entity_id": "31_e7",
+          "mention": "国内文化团体",
+          "normalized_name": "国内文化团体",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国外慈善基金会、国内文化团体、村民自办三种形式的民营图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但带有地域限定，视为具体类别"
+        },
+        {
+          "entity_id": "31_e8",
+          "mention": "村民自办",
+          "normalized_name": "村民自办",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国外慈善基金会、国内文化团体、村民自办三种形式的民营图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "可兼为concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "32",
+      "sentence": "国外对民营图书馆的研究历史还是比较悠久的,主要是因为其公共图书馆发展的历史比较悠久，出现民营图书馆的时间自然早些(国外的许多公共图书馆直接起源于某私人图书馆)。一般来说，私人图书馆是国外对民营图书馆的称谓，对其的研究归入特殊图书馆的范畴。从民营图书馆的实践角度来看，国外的民营图书馆不仅仅是指由个人创办的面向大众服务的图书馆，还包括各类组织，如企业、公司、团体等创办的图书馆，也面向公众开放，但其投资并非来自政府，故也称其为民营图书馆。",
+      "entities": [
+        {
+          "entity_id": "32_e1",
+          "mention": "公共图书馆",
+          "normalized_name": "公共图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "主要是因为其公共图书馆发展的历史比较悠久",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处为泛称，但结合上下文指代国外具体类型的图书馆系统，按图情领域放宽规则抽取"
+        },
+        {
+          "entity_id": "32_e2",
+          "mention": "私人图书馆",
+          "normalized_name": "私人图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "私人图书馆是国外对民营图书馆的称谓",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为具体类型实体抽取"
+        },
+        {
+          "entity_id": "32_e3",
+          "mention": "特殊图书馆",
+          "normalized_name": "特殊图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对其的研究归入特殊图书馆的范畴",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为具体类型实体抽取"
+        },
+        {
+          "entity_id": "32_e4",
+          "mention": "民营图书馆",
+          "normalized_name": "民营图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国外对民营图书馆的研究历史还是比较悠久的",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "33",
+      "sentence": "由此可见,在我国乃至国际图书馆界对民营图书馆的系统性研究，基本上都还属于空白领域。因此，从对图书馆学以及图书馆事业发展研究的角度来看，对民营图书馆进行深入系统地探讨，还是非常必要性的。",
+      "entities": [
+        {
+          "entity_id": "33_e1",
+          "mention": "民营图书馆",
+          "normalized_name": "民营图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对民营图书馆进行深入系统地探讨",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

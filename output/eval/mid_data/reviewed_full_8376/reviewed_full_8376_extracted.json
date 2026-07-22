@@ -1,0 +1,3184 @@
+{
+  "base_name": "reviewed_full_8376",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "2",
+      "sentence": "社会交往是人们交流信息、传递知识的主要渠道，在传统的人际传播、实物载体媒介传播的基础上，社交网络逐渐成了人们获取信息、知识的重要渠道之一，而这种变化就来自于社交网络的不断发展和人们交流习惯的改变。 社交网络的出现，为图书馆的信息传播开辟了广阔的空间，从而为图书馆的社会化服务指明了发展方向。社交网络以其覆盖广泛、资金来源庞大、信息传播速度快的特点，使其成为一个良好的信息流通渠道。在这种条件下，图书馆能否有效融入社交网络，使图书馆信息服务、知识服务对用户产生实际效用，将会直接影响到图书馆的社会化服务能力与长远发展。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "社交网络",
+          "normalized_name": "社交网络",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社交网络逐渐成了人们获取信息、知识的重要渠道之一",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "为图书馆的信息传播开辟了广阔的空间",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处为泛称，但图情领域放宽规则：有名称的图书馆应抽取；此处无具体名称，但作为核心实体保留"
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "社交网络（Social Network Service，SNS）理论源于“六度空间理论”，出现于上世纪末期，其后渐渐成为人们信息交流、知识传递和融入更大社交群体的主要渠道。 社交网络的快速发展不仅为信息交流和知识服务提供了新的渠道，也改变了传统的信息服务模式； 在用户行为研究方面，基于社交网络的用户行为分析是大部分网络实体制定服务策略、改革服务方式的主要依据",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "社交网络（Social Network Service，SNS）理论",
+          "normalized_name": "社交网络（Social Network Service，SNS）理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社交网络（Social Network Service，SNS）理论源于“六度空间理论”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "六度空间理论",
+          "normalized_name": "六度空间理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "源于“六度空间理论”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "社交网络",
+          "normalized_name": "社交网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社交网络的快速发展不仅为信息交流和知识服务提供了新的渠道",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "用户行为分析",
+          "normalized_name": "用户行为分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于社交网络的用户行为分析是大部分网络实体制定服务策略、改革服务方式的主要依据",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "另外，前十位中除 Twitter、Google $^ +$ 、Linkedln、VK外，国内的人人网居第九位。 所以，无论是规模、使用方式还是用户数量，社交网络都表现得极为强势，基于社交网络的高校图书馆信息服务也有巨大的施展空间。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "Twitter",
+          "normalized_name": "Twitter",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "前十位中除 Twitter、Google $^ +$ 、Linkedln、VK外",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "Google $^ +$",
+          "normalized_name": "Google+",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "前十位中除 Twitter、Google $^ +$ 、Linkedln、VK外",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "Linkedln",
+          "normalized_name": "LinkedIn",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "前十位中除 Twitter、Google $^ +$ 、Linkedln、VK外",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "VK",
+          "normalized_name": "VK",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "前十位中除 Twitter、Google $^ +$ 、Linkedln、VK外",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "人人网",
+          "normalized_name": "人人网",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "国内的人人网居第九位",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e6",
+          "mention": "社交网络",
+          "normalized_name": "社交网络",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "无论是规模、使用方式还是用户数量，社交网络都表现得极为强势",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e7",
+          "mention": "高校图书馆信息服务",
+          "normalized_name": "高校图书馆信息服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于社交网络的高校图书馆信息服务也有巨大的施展空间",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "四是综合服务类网站，其用户基数庞大，且有各种适合不同用户群的内容，如QQ空间、新浪微博等； 五是基于某种特殊需求而建立的社交网站，如网络寻人（宝贝回家网、中华寻人网等）、在线寻宗（如各姓氏为编制族谱而建立的网站）等，由于比较小众化，所以运用并不普遍。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "QQ空间",
+          "normalized_name": "QQ空间",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如QQ空间、新浪微博等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "新浪微博",
+          "normalized_name": "新浪微博",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如QQ空间、新浪微博等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "宝贝回家网",
+          "normalized_name": "宝贝回家网",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "网络寻人（宝贝回家网、中华寻人网等）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "中华寻人网",
+          "normalized_name": "中华寻人网",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "网络寻人（宝贝回家网、中华寻人网等）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "在社会影响力方面，类似于Facebook和Twitter等社交网站越来越明显的确立了自身作为一种新沟通范式的地位，在此基础上，由于移动设备被广泛运用，移动社交网络服务是开展新信息服务的主要发展方向，推动图书馆和档案馆的发展，而这种推动的关键就在于利用移动社交网络的访问便捷性和极强扩张力来鼓励用户积极参与和合作，通过分析社交网络用户的行为特点，有针对性的整合本馆资源并利用社交网络将资源推送出去，就成了图书馆信息服务发展的新方向，但是，单一的资源推送服务在现阶段也逐渐不能满足用户的多样化需求，人们又有了基于社交网络的群体聚合需求。在社交网络用户的聚合方面，Ah-medin等人认为，移动互联技术出现后，基于某一事件的特殊聚合应用可以帮助小群体更好的规划组织活动和引导组织成员参与，如小范围交流、讨论会和展示会等等。部分研究者试图通过基于事件的社交网络用户关联，开发便于小群体用户联通、交流、共享的智能手机技术，具体以Meetup、Plancast所开发的相关应用为代表（见图1）。这种应用可以提升图书馆社交网络服务的易用性，利于图书馆基于社交网络的参考咨询服务、专项服务等，使得图书馆可以通过这项技术实现更多的特色服务和扩展服务。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "Facebook",
+          "normalized_name": "Facebook",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "类似于Facebook和Twitter等社交网站",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "Twitter",
+          "normalized_name": "Twitter",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "类似于Facebook和Twitter等社交网站",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "新沟通范式",
+          "normalized_name": "新沟通范式",
+          "candidate_l3": "paradigm",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "确立了一种新沟通范式的地位",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛化表述，但原文有具体命名"
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "移动社交网络服务",
+          "normalized_name": "移动社交网络服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "移动社交网络服务是开展新信息服务的主要发展方向",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "Ah-medin",
+          "normalized_name": "Ah-medin",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Ah-medin等人认为",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "原文拼写可能为Ahmedin或Ah-medin，保留原样"
+        },
+        {
+          "entity_id": "6_e6",
+          "mention": "Meetup",
+          "normalized_name": "Meetup",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "具体以Meetup、Plancast所开发的相关应用为代表",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e7",
+          "mention": "Plancast",
+          "normalized_name": "Plancast",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "具体以Meetup、Plancast所开发的相关应用为代表",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "本文旨在通过对现有社交网络相关文献资料的分析，指出相关领域的研究现状与存在的不足，以期为图书馆基于社交网络的信息服务提供可参考建议。 本次研究中主要包含的主题词有图书馆、社交网络（移动社交网络）、信息服务，以主题分析为线索，国内外研究文献的检索条件和获取渠道如下：",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "社交网络",
+          "normalized_name": "社交网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过对现有社交网络相关文献资料的分析",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "以期为图书馆基于社交网络的信息服务提供可参考建议",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处'图书馆'为泛称机构类别词，但根据图情领域放宽规则，作为核心研究对象且具有具体职能的机构类型可抽取"
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "移动社交网络",
+          "normalized_name": "移动社交网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社交网络（移动社交网络）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "信息服务",
+          "normalized_name": "信息服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以期为图书馆基于社交网络的信息服务提供可参考建议",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e5",
+          "mention": "主题分析",
+          "normalized_name": "主题分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以主题分析为线索",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "截至2015年7月，利用中国知网的专业检索渠道检索中文文献，输入检索式 $\\begin{array} { r } { \\ P \\operatorname { S U } = \\frac { \\mu } { \\nu } } \\end{array}$ 社交网络 $^ +$ 社交网站 $+ ^ { \\mathbf { \\alpha } \\prime }$ 社交网\\` $+ ~ ^ { \\prime }$ 微博\\` $^ +$ 'social network' $^ +$ ‘ social networking' $+ ^ { \\mathbf { \\alpha } \\prime }$ SNS\\` $^ +$ 'Microblog' $^ +$ 'Facebook）and（ $\\mathrm { S U } = { } ^ { \\prime }$ 图书馆）and（ $\\mathrm { S U } =$ 信息服务 $=$ ）”，采用跨库检索方式共得文献446篇，其中博、硕士论文共计35篇，期刊论文394 篇，其他17篇。 另外，中文图书方面，利用CALIS公共检索系统和国家图书馆网站检索题名或主题含有“（社交网络or社交网站or社交网or 微博orFacebook）and（图书馆）and（信息服务)”的图书现在还没有，如果仅以主题词“社交网络”进行检索共有43本相关书籍，但其中并没有包含“图书馆”和“社交网络”两个主题的图书。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "中国知网",
+          "normalized_name": "中国知网",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用中国知网的专业检索渠道检索中文文献",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "社交网络",
+          "normalized_name": "社交网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社交网络 + 社交网站 + 社交网 + 微博 + 'social network' + 'social networking' + SNS + 'Microblog' + 'Facebook'",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "社交网站",
+          "normalized_name": "社交网站",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社交网络 + 社交网站 + 社交网 + 微博 + 'social network' + 'social networking' + SNS + 'Microblog' + 'Facebook'",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "社交网",
+          "normalized_name": "社交网",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社交网络 + 社交网站 + 社交网 + 微博 + 'social network' + 'social networking' + SNS + 'Microblog' + 'Facebook'",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e5",
+          "mention": "微博",
+          "normalized_name": "微博",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社交网络 + 社交网站 + 社交网 + 微博 + 'social network' + 'social networking' + SNS + 'Microblog' + 'Facebook'",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e6",
+          "mention": "social network",
+          "normalized_name": "social network",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社交网络 + 社交网站 + 社交网 + 微博 + 'social network' + 'social networking' + SNS + 'Microblog' + 'Facebook'",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e7",
+          "mention": "social networking",
+          "normalized_name": "social networking",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社交网络 + 社交网站 + 社交网 + 微博 + 'social network' + 'social networking' + SNS + 'Microblog' + 'Facebook'",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e8",
+          "mention": "SNS",
+          "normalized_name": "SNS",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社交网络 + 社交网站 + 社交网 + 微博 + 'social network' + 'social networking' + SNS + 'Microblog' + 'Facebook'",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e9",
+          "mention": "Microblog",
+          "normalized_name": "Microblog",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社交网络 + 社交网站 + 社交网 + 微博 + 'social network' + 'social networking' + SNS + 'Microblog' + 'Facebook'",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e10",
+          "mention": "Facebook",
+          "normalized_name": "Facebook",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社交网络 + 社交网站 + 社交网 + 微博 + 'social network' + 'social networking' + SNS + 'Microblog' + 'Facebook'",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e11",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "SU = '图书馆'",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'图书馆'作为检索主题词，指代图书馆领域概念，非具体机构"
+        },
+        {
+          "entity_id": "8_e12",
+          "mention": "信息服务",
+          "normalized_name": "信息服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "SU = 信息服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e13",
+          "mention": "CALIS公共检索系统",
+          "normalized_name": "CALIS公共检索系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用CALIS公共检索系统和国家图书馆网站检索",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e14",
+          "mention": "国家图书馆网站",
+          "normalized_name": "国家图书馆网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用CALIS公共检索系统和国家图书馆网站检索",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "外文文献方面，课题组利用中国知网外文文献检索模块的专业检索中输入检索式为“( $\\mathrm { S U } =$ 'social network' $+ ^ { \\prime }$ social networking' $^ +$ 'SNS+Microl $\\mathrm  \\partial _ { \\bf { \\phi } } \\mathrm  \\partial _ { \\bf { \\phi } } ^ { \\mu } \\mathrm { \\partial _ { \\bf { \\phi } } ^ { \\mu } \\mathrm { \\partial _ { \\bf { \\phi } } ^ { \\mu } \\mathrm { \\partial _ { \\bf { \\phi } } ^ { \\mu } \\mathrm { \\partial _ { \\bf { \\phi } } ^ { \\mu } \\mathrm { \\partial _ { \\bf { \\phi } } ^ { \\mu } \\mathrm { \\partial _ { \\bf { \\phi } } ^ { \\mu } \\mathrm { \\partial _ { \\bf { \\phi } } ^ { \\mu } \\mathrm { \\partial _ { \\bf { \\phi } } ^ { \\mu } \\mathrm { \\partial _ { \\bf { \\phi } } ^ { \\mu } \\mathrm { \\partial _ { \\bf { \\phi } } ^ { \\mu } \\mathrm { \\partial _ { \\bf { \\phi } } ^ { \\mu } \\mathrm { \\partial _ { \\bf { \\phi } } ^ { \\mu } \\mathrm { \\partial _ { \\bf { \\phi } } ^ { \\mu } \\mathrm { \\partial _ { \\bf { \\phi } } ^ { \\mu } \\mathrm { \\partial _ { \\bf { \\phi } } ^ { \\mu } \\mathrm { \\partial _ { \\bf { \\phi } } } } } } } } } } } } } } } } } }$ 'Facebook' $^ +$ 'mobilesocial network service'）and ${ \\big ( } { \\mathrm { S U } } = { \\mathrm { ' l i b r a r y ' } }$ ）and( $\\mathrm { S U } = \\mathrm { ' i n - }$ formation service）”，检索结果共计有19篇文献，但通过仔细比对发现，若将最后一个主题修改为“service”能够获得190 篇相关外文文献（其中英文文献164篇，其他 26篇），并且所得文献也能符合本文“信息服务”的主题研究需要，所以将外文文献的检索式修正为“( $\\mathrm { S U } =$ socialnetwork' $^ +$ 'social networking' $^ +$ \\`SNS\\` $^ +$ Microblog' $+ ~ ^ { \\prime }$ Face-book' $^ +$ 'mobile social network service'）and( $\\mathrm { S U } =$ library')and （SU ='service'）”。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "中国知网外文文献检索模块",
+          "normalized_name": "中国知网外文文献检索模块",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "课题组利用中国知网外文文献检索模块的专业检索中输入检索式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "中国知网",
+          "normalized_name": "中国知网",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "课题组利用中国知网外文文献检索模块的专业检索中输入检索式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "Facebook",
+          "normalized_name": "Facebook",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检索式为“( SU = 'social network' + 'social networking' + 'SNS' + 'Microblog' + 'Facebook' + 'mobile social network service'）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "mobile social network service",
+          "normalized_name": "mobile social network service",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检索式为“( SU = 'social network' + 'social networking' + 'SNS' + 'Microblog' + 'Facebook' + 'mobile social network service'）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e5",
+          "mention": "library",
+          "normalized_name": "library",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "and ( SU = 'library' ）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处为检索词，非具体机构"
+        },
+        {
+          "entity_id": "9_e6",
+          "mention": "information service",
+          "normalized_name": "information service",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "符合本文“信息服务”的主题研究需要",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e7",
+          "mention": "service",
+          "normalized_name": "service",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "若将最后一个主题修改为“service”能够获得190 篇相关外文文献",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为检索词，语义较泛"
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "从研究成果的逐年数量分布上看，外文研究成果于2009年达到峰值43篇后回落，2013年后逐渐有研究回暖的趋势，中文研究成果则呈逐年升温的态势，2014年达到峰值141篇。 种种迹象都表明基于社交网络的图书馆信息服务相关研究是图书馆领域的热点问题之一。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "社交网络",
+          "normalized_name": "社交网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于社交网络的图书馆信息服务相关研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "图书馆信息服务",
+          "normalized_name": "图书馆信息服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于社交网络的图书馆信息服务相关研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "社交网络的发展和壮大为信息服务机构提供了又一接触用户的渠道。 在网络环境下，由于社会资源和网络资源的不断丰富，图书馆社会价值的体现不能再单一依靠传统信息服务模式，需要根据用户需求和社会信息服务环境的变化提供服务途径、创建综合服务平台以适应用户不断变化的信息需求与信息渠道变化，这种转变的关键在于提供基于用户偏好的个性化信息服务。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "社交网络",
+          "normalized_name": "社交网络",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社交网络的发展和壮大为信息服务机构提供了又一接触用户的渠道",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "信息服务机构",
+          "normalized_name": "信息服务机构",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "社交网络的发展和壮大为信息服务机构提供了又一接触用户的渠道",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但图情领域可视为具体机构类型，保留"
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书馆社会价值的体现不能再单一依靠传统信息服务模式",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但图情领域放宽规则，保留"
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "传统信息服务模式",
+          "normalized_name": "传统信息服务模式",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆社会价值的体现不能再单一依靠传统信息服务模式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "用户需求",
+          "normalized_name": "用户需求",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "需要根据用户需求和社会信息服务环境的变化提供服务途径",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e6",
+          "mention": "社会信息服务环境",
+          "normalized_name": "社会信息服务环境",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "需要根据用户需求和社会信息服务环境的变化提供服务途径",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e7",
+          "mention": "综合服务平台",
+          "normalized_name": "综合服务平台",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "创建综合服务平台以适应用户不断变化的信息需求与信息渠道变化",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但图情领域放宽规则，保留"
+        },
+        {
+          "entity_id": "11_e8",
+          "mention": "个性化信息服务",
+          "normalized_name": "个性化信息服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这种转变的关键在于提供基于用户偏好的个性化信息服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "作为信息传播机构，图书馆使用社交网络开展服务确保了信息服务得以跨时间、跨空间实现，从Facebook、Twitter 网站上的“咨询一下馆员”服务成为最受欢迎、也是访问排名最高的信息服务项目之一的现状来看，图书馆基于社交网络开展信息服务已然成为了一种满足社会信息需求的解决方式； 同时由于在线咨询的随时、随地可访问的特点，大多数用户表示这种方式比面对面咨询和利用电脑的桌面咨询模式更加实用",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "作为信息传播机构，图书馆使用社交网络开展服务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "Facebook",
+          "normalized_name": "Facebook",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "从Facebook、Twitter 网站上的“咨询一下馆员”服务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "Twitter",
+          "normalized_name": "Twitter",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "从Facebook、Twitter 网站上的“咨询一下馆员”服务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "咨询一下馆员",
+          "normalized_name": "咨询一下馆员",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从Facebook、Twitter 网站上的“咨询一下馆员”服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "12_e5",
+          "mention": "社交网络",
+          "normalized_name": "社交网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆使用社交网络开展服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e6",
+          "mention": "在线咨询",
+          "normalized_name": "在线咨询",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "由于在线咨询的随时、随地可访问的特点",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e7",
+          "mention": "面对面咨询",
+          "normalized_name": "面对面咨询",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "比面对面咨询和利用电脑的桌面咨询模式更加实用",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e8",
+          "mention": "桌面咨询模式",
+          "normalized_name": "桌面咨询模式",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "比面对面咨询和利用电脑的桌面咨询模式更加实用",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "Basilisa等人通过调查指出，社交网络用户的动机、风险意识和个性特征将是决定用户社交网络行为的关键因素，性别、照片、动机和风险意识对用户的社交网络行为具有较高影响力。另外，外在动机如朋友推荐、兴趣、感官等将会促使更多的用户使用Facebook等社交网站作为信息获取渠道，内在动机如知识需求、学习需求等则更倾向于使用户选择常用的图书馆、档案馆等信息获取渠道。Abdul等分析发现，大多数人认为，社交网络是一种非常有效的服务媒介，年轻人更倾向于使用社交网络获取信息服务，可用于提升图书馆的服务效率与服务广度，印度教育界也呼吁图书馆重视这种需求并委托专业图书馆人士来助推相应服务的发展[。Tella等人以尼日利亚部分高校图书馆开展的社交网络参考咨询服务为样本，通过调查用户意识水平、使用偏好、信息获取渠道等内容后指出，大多数用户清楚知道可以通过社交网络获取来自于图书馆的信息服务，也比较习惯使用基于社交网络的图书馆社交网络服务。Haynes等人在英国范围内抽取不同的社区进行基于图书馆社交网络服务的调查发现，具有类似风险防范意识的用户往往在社交网络中会聚合到一起，目的在于降低来自于社交网络交流的风险，这项研究可以用于划分不同的用户集群，且在所有的用户中，教育工作者、中介、资深媒体从业人员是利用图书馆信息咨询最多的职业[",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "Basilisa",
+          "normalized_name": "Basilisa",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Basilisa等人通过调查指出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "社交网络",
+          "normalized_name": "社交网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社交网络用户的动机、风险意识和个性特征将是决定用户社交网络行为的关键因素",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "Facebook",
+          "normalized_name": "Facebook",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "促使更多的用户使用Facebook等社交网站作为信息获取渠道",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "Abdul",
+          "normalized_name": "Abdul",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Abdul等分析发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e5",
+          "mention": "印度教育界",
+          "normalized_name": "印度教育界",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "印度教育界也呼吁图书馆重视这种需求",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为Agent中的Organization，但原文未指定具体组织名称"
+        },
+        {
+          "entity_id": "13_e6",
+          "mention": "Tella",
+          "normalized_name": "Tella",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Tella等人以尼日利亚部分高校图书馆开展的社交网络参考咨询服务为样本",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e7",
+          "mention": "尼日利亚部分高校图书馆",
+          "normalized_name": "尼日利亚部分高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Tella等人以尼日利亚部分高校图书馆开展的社交网络参考咨询服务为样本",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "有地域限定，可视为具体机构集合"
+        },
+        {
+          "entity_id": "13_e8",
+          "mention": "社交网络参考咨询服务",
+          "normalized_name": "社交网络参考咨询服务",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "以尼日利亚部分高校图书馆开展的社交网络参考咨询服务为样本",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为Abstract中的concept"
+        },
+        {
+          "entity_id": "13_e9",
+          "mention": "Haynes",
+          "normalized_name": "Haynes",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Haynes等人在英国范围内抽取不同的社区进行基于图书馆社交网络服务的调查",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e10",
+          "mention": "英国",
+          "normalized_name": "英国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Haynes等人在英国范围内抽取不同的社区",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e11",
+          "mention": "图书馆社交网络服务",
+          "normalized_name": "图书馆社交网络服务",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "基于图书馆社交网络服务的调查",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为Abstract中的concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "也可以通过主动、有针对性的服务解决信息过载对用户产生的困扰。 Yoonmo等人通过分析Cyworld、Twit-ter、Facebook、Me2day的用户特点证实，用户主要习惯:如选择不同的网站、不同的登录时间、使用的登录设备、利用目的不同都对用户的选择行为有影响，对于社交网络服务提供方而言，理解用户的选择模式和使用习惯对社会网络机构（包括图书馆等接入机构）是至关重要的。对作为服务主体的图书馆而言，可以利用不同的社交网站作为他们的与用户的沟通渠道，并实现服务主体、社交网络、用户之间的共赢，比如：要快速推广服务项目可以选择Twitter作为平台，要实现高质量个性化服务可以选择Face-book作为平台等等，这些方式都可以用在图书馆的服务中。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "Yoonmo",
+          "normalized_name": "Yoonmo",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Yoonmo等人通过分析Cyworld、Twit-ter、Facebook、Me2day的用户特点证实",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "Cyworld",
+          "normalized_name": "Cyworld",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Yoonmo等人通过分析Cyworld、Twit-ter、Facebook、Me2day的用户特点证实",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "Twit-ter",
+          "normalized_name": "Twitter",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Yoonmo等人通过分析Cyworld、Twit-ter、Facebook、Me2day的用户特点证实",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "原文拼写为Twit-ter，规范化后为Twitter"
+        },
+        {
+          "entity_id": "14_e4",
+          "mention": "Facebook",
+          "normalized_name": "Facebook",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Yoonmo等人通过分析Cyworld、Twit-ter、Facebook、Me2day的用户特点证实",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e5",
+          "mention": "Me2day",
+          "normalized_name": "Me2day",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Yoonmo等人通过分析Cyworld、Twit-ter、Facebook、Me2day的用户特点证实",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e6",
+          "mention": "社交网络服务",
+          "normalized_name": "社交网络服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对于社交网络服务提供方而言",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e7",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "包括图书馆等接入机构",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'图书馆'为泛称，但结合上下文指具体服务主体，且图情领域放宽规则，故抽取"
+        },
+        {
+          "entity_id": "14_e8",
+          "mention": "Twitter",
+          "normalized_name": "Twitter",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "要快速推广服务项目可以选择Twitter作为平台",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e9",
+          "mention": "Face-book",
+          "normalized_name": "Facebook",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "要实现高质量个性化服务可以选择Face-book作为平台",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "原文拼写为Face-book，规范化后为Facebook"
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "高校图书馆利用社交网络进行信息服务已逐渐成为热点问题。 利用社交网络促进图书馆业务工作效率提升、服务方式革新的研究是当前研究中的主流，姚小萍分析了社交网络对图书馆的采编、参考咨询、资源宣传推广业务的促进作用；杨建永等人则从信息系统的基本要素入手，从用户界面、用户体验的角度分析了社交网络的运作模式与特点；王鹏程则从具体的操作入手，将社交网络手段融入教学环节[4；黄浩波等对社交网络的区域信息服务方面来展开探讨，对于高校图书馆开展面向特定用户群的信息服务提供了参考；肖宇等则从传播学的角度入手，以人人网的信息传递方式为主线，分析了微观信息传播问题。在台湾，Tsai等通过调查148所大学图书馆网站发现，推广社交网络服务能提高图书馆服务效果和用户使用的有效性，通过构建社交服务平台，一方面使用户可以最直接和更积极的接触图书馆； 另一方面，可以增强用户与图书馆员之间的交流[]",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "姚小萍",
+          "normalized_name": "姚小萍",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "姚小萍分析了社交网络对图书馆的采编、参考咨询、资源宣传推广业务的促进作用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "杨建永",
+          "normalized_name": "杨建永",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "杨建永等人则从信息系统的基本要素入手",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "王鹏程",
+          "normalized_name": "王鹏程",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "王鹏程则从具体的操作入手",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "黄浩波",
+          "normalized_name": "黄浩波",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "黄浩波等对社交网络的区域信息服务方面来展开探讨",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e5",
+          "mention": "肖宇",
+          "normalized_name": "肖宇",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "肖宇等则从传播学的角度入手",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e6",
+          "mention": "人人网",
+          "normalized_name": "人人网",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以人人网的信息传递方式为主线",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e7",
+          "mention": "Tsai",
+          "normalized_name": "Tsai",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在台湾，Tsai等通过调查148所大学图书馆网站发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e8",
+          "mention": "148所大学图书馆",
+          "normalized_name": "148所大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Tsai等通过调查148所大学图书馆网站发现",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处为泛指大学图书馆的集合，但具体数量限定，视为具体机构集合"
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "在社交网络服务的具体开展方面，国内部分高校纷纷加入社交网站或开发相应应用程序，以适应用户不断增加的社交网络使用需求。 以清华大学图书馆为例，该馆除了把馆藏资源目录嵌入豆瓣、亚马逊、当当网等网站外，还开发了聊天机器人“小图”以扩大图书馆在社交网络中的服务能力，为国内其他高校树立了榜样。上海交大图书馆则通过不断改版Libguides，将用户的各种信息需求、交流需求纳入相应版块，打造了契合师生不同需求的信息服务平台[。此外，中科大图书馆的交互式教学科研网络平台（LISER)、电子科大图书馆的融合了教学资源推荐、在线交流、校外资源获取等功能的整合式教参资源服务平台等，都融入了社交网络的功能，充分体现了图书馆在服务内容上、服务空间上的延伸。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "清华大学图书馆",
+          "normalized_name": "清华大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "以清华大学图书馆为例，该馆除了把馆藏资源目录嵌入豆瓣、亚马逊、当当网等网站外",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "豆瓣",
+          "normalized_name": "豆瓣",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "把馆藏资源目录嵌入豆瓣、亚马逊、当当网等网站",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "亚马逊",
+          "normalized_name": "亚马逊",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "把馆藏资源目录嵌入豆瓣、亚马逊、当当网等网站",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e4",
+          "mention": "当当网",
+          "normalized_name": "当当网",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "把馆藏资源目录嵌入豆瓣、亚马逊、当当网等网站",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e5",
+          "mention": "小图",
+          "normalized_name": "小图",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "开发了聊天机器人“小图”以扩大图书馆在社交网络中的服务能力",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e6",
+          "mention": "上海交大图书馆",
+          "normalized_name": "上海交通大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "上海交大图书馆则通过不断改版Libguides",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e7",
+          "mention": "Libguides",
+          "normalized_name": "LibGuides",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "上海交大图书馆则通过不断改版Libguides",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e8",
+          "mention": "中科大图书馆",
+          "normalized_name": "中国科学技术大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中科大图书馆的交互式教学科研网络平台（LISER)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e9",
+          "mention": "交互式教学科研网络平台（LISER）",
+          "normalized_name": "交互式教学科研网络平台（LISER）",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "中科大图书馆的交互式教学科研网络平台（LISER)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e10",
+          "mention": "电子科大图书馆",
+          "normalized_name": "电子科技大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "电子科大图书馆的融合了教学资源推荐、在线交流、校外资源获取等功能的整合式教参资源服务平台",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e11",
+          "mention": "整合式教参资源服务平台",
+          "normalized_name": "整合式教参资源服务平台",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "电子科大图书馆的融合了教学资源推荐、在线交流、校外资源获取等功能的整合式教参资源服务平台",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "当前，国内关于社交网络的研究主要趋向于理论研究，通过借鉴国外的成功案例来实现基于社交网络的信息服务。然而在具体的实践过程中，由于语言、文化、使用习惯等多种因素的影响，使得现有研究成果存在着一定的不足：",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "社交网络",
+          "normalized_name": "社交网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国内关于社交网络的研究主要趋向于理论研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "理论研究",
+          "normalized_name": "理论研究",
+          "candidate_l3": "approach",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国内关于社交网络的研究主要趋向于理论研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为methodology"
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "基于社交网络的信息服务",
+          "normalized_name": "基于社交网络的信息服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过借鉴国外的成功案例来实现基于社交网络的信息服务",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为phenomenon或approach"
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "当前，国内关于社交网络的研究以理论研究为主，主体研究成果呈现以下特点：",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "社交网络",
+          "normalized_name": "社交网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国内关于社交网络的研究以理论研究为主",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "对于高校图书馆基于社交网络的信息服务主要基于图书馆的推送服务，且推送服务的研究对象主要以高校用户为主，研究成果的社会推广能力不足。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "高校图书馆",
+          "normalized_name": "高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对于高校图书馆基于社交网络的信息服务",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "有学科限定修饰，可视为具体机构类型"
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "社交网络",
+          "normalized_name": "社交网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于社交网络的信息服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "推送服务",
+          "normalized_name": "推送服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主要基于图书馆的推送服务",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可视为信息服务类型，但非唯一命名"
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "研究者多站在信息提供者的角度研究信息资源的推广，缺乏对于受众个性化信息需求和图书馆特色服务的研究。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "信息提供者",
+          "normalized_name": "信息提供者",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究者多站在信息提供者的角度研究信息资源的推广",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但图情领域有独立学术命名，故抽取"
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "受众个性化信息需求",
+          "normalized_name": "受众个性化信息需求",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "缺乏对于受众个性化信息需求和图书馆特色服务的研究",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "复合概念，但作为独立研究主题被讨论"
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "图书馆特色服务",
+          "normalized_name": "图书馆特色服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "缺乏对于受众个性化信息需求和图书馆特色服务的研究",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "图情领域常见术语，有独立学术命名"
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "基于社交网络的图书馆信息服务，其本质是利用社交网络在高校和社会用户之间建立信息需求表达和满足的桥梁，是信息资源、信源和受众之间的通过通信技术的组合2。 所以，在研究中不能单一注重图书馆和用户的研究，还应当结合实际的社交网络利用情况进行有针对性的渠道研究，结合馆员与用户、馆员与馆员、用户与用户之间信息交流的差异研究，提升社交网络相关研究的全面性与衍生能力。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "社交网络",
+          "normalized_name": "社交网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于社交网络的图书馆信息服务，其本质是利用社交网络在高校和社会用户之间建立信息需求表达和满足的桥梁",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "图书馆信息服务",
+          "normalized_name": "图书馆信息服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于社交网络的图书馆信息服务，其本质是利用社交网络在高校和社会用户之间建立信息需求表达和满足的桥梁",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e3",
+          "mention": "高校",
+          "normalized_name": "高校",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在高校和社会用户之间建立信息需求表达和满足的桥梁",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'高校'作为泛指机构类别词，但结合上下文'在高校和社会用户之间'，'高校'指代具体的高等教育机构群体，且与'社会用户'对举，具有实体性，故抽取"
+        },
+        {
+          "entity_id": "22_e4",
+          "mention": "社会用户",
+          "normalized_name": "社会用户",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在高校和社会用户之间建立信息需求表达和满足的桥梁",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e5",
+          "mention": "通信技术",
+          "normalized_name": "通信技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "是信息资源、信源和受众之间的通过通信技术的组合",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e6",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在研究中不能单一注重图书馆和用户的研究",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'图书馆'作为泛指机构类别词，但结合上下文'图书馆和用户'，'图书馆'指代具体的图书馆机构群体，且与'用户'对举，具有实体性，故抽取"
+        },
+        {
+          "entity_id": "22_e7",
+          "mention": "用户",
+          "normalized_name": "用户",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在研究中不能单一注重图书馆和用户的研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e8",
+          "mention": "馆员",
+          "normalized_name": "馆员",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "结合馆员与用户、馆员与馆员、用户与用户之间信息交流的差异研究",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'馆员'作为泛化身份类别词，但结合上下文'馆员与用户、馆员与馆员'，'馆员'指代具体的图书馆工作人员群体，且与'用户'对举，具有实体性，故抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "基于社交网络的信息服务的本质是图书馆资源的推广和社会化服务，不仅需要图书馆展示资源，也需要图书馆重新审视自身资源的社会价值与服务手段，提供适合于社会大众的有别于在校用户信息需求的服务。 当前关于社交服务的实践活动中：",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "不仅需要图书馆展示资源，也需要图书馆重新审视自身资源的社会价值与服务手段",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'图书馆'为泛称机构，但根据图情领域放宽规则，作为服务主体且上下文有具体职能描述，可视为具体实体"
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "社交网络",
+          "normalized_name": "社交网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于社交网络的信息服务的本质",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "社交服务",
+          "normalized_name": "社交服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当前关于社交服务的实践活动中",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为phenomenon，但缺乏独立学术命名证据"
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "大部分关于高校图书馆社交网络服务的研究都是基于国内少数开展了此项服务的图书馆来展开的，而更多的图书馆尚未涉足社交网络服务，社交网络服务的技术需求并不高，直接体现为大部分高校图书馆采用的直接加入社交网站的做法来实现服务； 然而，由于大多数高校图书馆长期固有的服务理念和人员上的欠缺，使得这项服务仍未得到广泛开展2",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "高校图书馆",
+          "normalized_name": "高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "大部分关于高校图书馆社交网络服务的研究",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称但带限定修饰'高校'，按规则需抽取"
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "社交网络服务",
+          "normalized_name": "社交网络服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大部分关于高校图书馆社交网络服务的研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e3",
+          "mention": "社交网站",
+          "normalized_name": "社交网站",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "直接加入社交网站的做法来实现服务",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称但作为具体做法提及"
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "大部分开展了社交网络服务的高校图书馆都处于一种等待用户的状态，其服务的宣传和推广也大多限制在固定的用户群体内，且把这项服务作为一个图书馆服务开展的亮点来运作，很难实现这项服务的社会化推广。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "社交网络服务",
+          "normalized_name": "社交网络服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "大部分开展了社交网络服务的高校图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e2",
+          "mention": "高校图书馆",
+          "normalized_name": "高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "大部分开展了社交网络服务的高校图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称机构，但根据图情领域放宽规则，高校图书馆作为具体类型机构可抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "与高校用户不同，社会用户的信息能力、知识背景，甚至是信息需求的表达都有可能存在一定的偏差，图书馆的社交网络服务实践往往忽略了用户之间的差异，导致提供的信息或服务无法被用户利用，所以图书馆应当对社交网络上的用户进行分类服务，必要时提供相应的信息素养教育。",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "高校用户",
+          "normalized_name": "高校用户",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与高校用户不同，社会用户的信息能力、知识背景，甚至是信息需求的表达都有可能存在一定的偏差",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为用户类型概念，非具体个人"
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "社会用户",
+          "normalized_name": "社会用户",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与高校用户不同，社会用户的信息能力、知识背景，甚至是信息需求的表达都有可能存在一定的偏差",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为用户类型概念，非具体个人"
+        },
+        {
+          "entity_id": "27_e3",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书馆的社交网络服务实践往往忽略了用户之间的差异",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处为泛称图书馆，但图情领域放宽规则，作为机构类型可抽取"
+        },
+        {
+          "entity_id": "27_e4",
+          "mention": "社交网络服务",
+          "normalized_name": "社交网络服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆的社交网络服务实践往往忽略了用户之间的差异",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e5",
+          "mention": "信息素养教育",
+          "normalized_name": "信息素养教育",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "必要时提供相应的信息素养教育",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "对于社会用户而言，高校图书馆是隐藏在社交网络背后的机构，用户需要提供个人有关信息来获取注册或服务的方式难以保证隐私不被泄露，所以，应当加大图书馆对于用户隐私的保护力度，杜绝人为泄露。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "高校图书馆",
+          "normalized_name": "高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "高校图书馆是隐藏在社交网络背后的机构",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "社交网络",
+          "normalized_name": "社交网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "隐藏在社交网络背后的机构",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e3",
+          "mention": "用户隐私",
+          "normalized_name": "用户隐私",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加大图书馆对于用户隐私的保护力度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "29",
+      "sentence": "移动互联技术的应用，使得社交网络的基础用户群越来越庞大，而这种激增的用户群固然为网站和运营商提供了良好发展基础，但由此引发的网络安全问题却难以忽视。 当前，网络安全威胁主要来自以下几个方面：",
+      "entities": [
+        {
+          "entity_id": "29_e1",
+          "mention": "移动互联技术",
+          "normalized_name": "移动互联技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "移动互联技术的应用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e2",
+          "mention": "社交网络",
+          "normalized_name": "社交网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使得社交网络的基础用户群越来越庞大",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e3",
+          "mention": "网络安全问题",
+          "normalized_name": "网络安全问题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "由此引发的网络安全问题却难以忽视",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e4",
+          "mention": "网络安全威胁",
+          "normalized_name": "网络安全威胁",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "网络安全威胁主要来自以下几个方面",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "互联网接入因其操作便捷、人机界面好、接入稳定等特性，是目前图书馆运用的较多的方式，然而由于图书馆是作为用户接入社交网络，或是自主开发社交网络平台，难免存在漏洞，加上外部链接可以访问图书馆部分资源，导致各类木马、病毒容易直接威胁到图书馆的网络安全。",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "互联网接入",
+          "normalized_name": "互联网接入",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "互联网接入因其操作便捷、人机界面好、接入稳定等特性",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "社交网络",
+          "normalized_name": "社交网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆是作为用户接入社交网络",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e3",
+          "mention": "社交网络平台",
+          "normalized_name": "社交网络平台",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "自主开发社交网络平台",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "若指具体平台则更明确，此处为泛称平台类型"
+        },
+        {
+          "entity_id": "30_e4",
+          "mention": "木马",
+          "normalized_name": "木马",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "各类木马、病毒容易直接威胁到图书馆的网络安全",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e5",
+          "mention": "病毒",
+          "normalized_name": "病毒",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "各类木马、病毒容易直接威胁到图书馆的网络安全",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e6",
+          "mention": "网络安全",
+          "normalized_name": "网络安全",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "威胁到图书馆的网络安全",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "31",
+      "sentence": "作为当前快速发展的一项服务技术，WiFi已经被越来越多的高校图书馆接受并投入运用，这种大范围的网络接入方式一方面为用户访问、利用图书馆资源提供了便捷渠道，也扩大了图书馆的隐性用户群； 另一方面，大量的开放访问也为网络监管增加了难度，被植入木马、病毒的设备在访问相应服务的同时也会导致图书馆相应资源受到安全威胁，而用户的个人信息、短信、私信、浏览记录、E-mail等也容易被截获。",
+      "entities": [
+        {
+          "entity_id": "31_e1",
+          "mention": "WiFi",
+          "normalized_name": "WiFi",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "作为当前快速发展的一项服务技术，WiFi已经被越来越多的高校图书馆接受并投入运用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e2",
+          "mention": "木马",
+          "normalized_name": "木马",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "被植入木马、病毒的设备在访问相应服务的同时也会导致图书馆相应资源受到安全威胁",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e3",
+          "mention": "病毒",
+          "normalized_name": "病毒",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "被植入木马、病毒的设备在访问相应服务的同时也会导致图书馆相应资源受到安全威胁",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "32",
+      "sentence": "据统计，在Android市场五分之一的应用程序（APPS)可用于恶意目的，路透社报道称，当前智能手机存在两大管理漏洞，可能让世界20亿用户中 $90 \\%$ 的人陷入危险中，包括密码、数据被盗，手机完全被黑客控制等。 Mathew Solnik认为，现有智能终端的漏洞主要体现在两个方面：一是如萃果、谷歌（微博）Android以及黑莓等智能手机制造商执行了模糊的行业标准； 二是制造商、网络运营商试图控制和管理一切，包括从网络连接到用户手机上等4",
+      "entities": [
+        {
+          "entity_id": "32_e1",
+          "mention": "Android",
+          "normalized_name": "Android",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在Android市场五分之一的应用程序（APPS)可用于恶意目的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e2",
+          "mention": "路透社",
+          "normalized_name": "路透社",
+          "candidate_l3": "publishing",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "路透社报道称",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e3",
+          "mention": "Mathew Solnik",
+          "normalized_name": "Mathew Solnik",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Mathew Solnik认为",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e4",
+          "mention": "苹果",
+          "normalized_name": "苹果",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如苹果、谷歌（微博）Android以及黑莓等智能手机制造商",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e5",
+          "mention": "谷歌（微博）",
+          "normalized_name": "谷歌",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如苹果、谷歌（微博）Android以及黑莓等智能手机制造商",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e6",
+          "mention": "黑莓",
+          "normalized_name": "黑莓",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如苹果、谷歌（微博）Android以及黑莓等智能手机制造商",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "33",
+      "sentence": "对于智能手机而言，能够通过手机的网络接入进行定位，从而获取用户的地理位置等信息，微信手机就可以通过“通讯录匹配’、‘推荐通讯录朋友”等来确认用户的个人信息，虽然可以关闭这一匹配功能，但大多数用户并不知情。",
+      "entities": [
+        {
+          "entity_id": "33_e1",
+          "mention": "微信",
+          "normalized_name": "微信",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "微信手机就可以通过“通讯录匹配’、‘推荐通讯录朋友”等来确认用户的个人信息",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e2",
+          "mention": "通讯录匹配",
+          "normalized_name": "通讯录匹配",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "微信手机就可以通过“通讯录匹配’、‘推荐通讯录朋友”等来确认用户的个人信息",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e3",
+          "mention": "推荐通讯录朋友",
+          "normalized_name": "推荐通讯录朋友",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "微信手机就可以通过“通讯录匹配’、‘推荐通讯录朋友”等来确认用户的个人信息",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "34",
+      "sentence": "通常，社交网站会利用用户的注册信息和使用数据进行数据挖掘，这其中除了用户的个人公开信息外，还包括用户的隐私信息，如上网地址、作息时间、使用习惯等，如果网站利用这些信息与其他网站或商家进行信息交换或交易，用户信息遭到泄露的几率大大增加。",
+      "entities": [
+        {
+          "entity_id": "34_e1",
+          "mention": "社交网站",
+          "normalized_name": "社交网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通常，社交网站会利用用户的注册信息和使用数据进行数据挖掘",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但图情领域放宽规则：有名称的社交网站平台（如Facebook、微博）应抽取；此处无具体名称，confidence较低"
+        },
+        {
+          "entity_id": "34_e2",
+          "mention": "用户的注册信息",
+          "normalized_name": "用户的注册信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社交网站会利用用户的注册信息和使用数据进行数据挖掘",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e3",
+          "mention": "使用数据",
+          "normalized_name": "使用数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社交网站会利用用户的注册信息和使用数据进行数据挖掘",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e4",
+          "mention": "数据挖掘",
+          "normalized_name": "数据挖掘",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社交网站会利用用户的注册信息和使用数据进行数据挖掘",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e5",
+          "mention": "用户的个人公开信息",
+          "normalized_name": "用户的个人公开信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这其中除了用户的个人公开信息外，还包括用户的隐私信息",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e6",
+          "mention": "用户的隐私信息",
+          "normalized_name": "用户的隐私信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "还包括用户的隐私信息，如上网地址、作息时间、使用习惯等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e7",
+          "mention": "上网地址",
+          "normalized_name": "上网地址",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如上网地址、作息时间、使用习惯等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e8",
+          "mention": "作息时间",
+          "normalized_name": "作息时间",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如上网地址、作息时间、使用习惯等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e9",
+          "mention": "使用习惯",
+          "normalized_name": "使用习惯",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如上网地址、作息时间、使用习惯等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e10",
+          "mention": "信息交换",
+          "normalized_name": "信息交换",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如果网站利用这些信息与其他网站或商家进行信息交换或交易",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e11",
+          "mention": "交易",
+          "normalized_name": "交易",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如果网站利用这些信息与其他网站或商家进行信息交换或交易",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处为商业交易，非学术概念，confidence较低"
+        },
+        {
+          "entity_id": "34_e12",
+          "mention": "用户信息",
+          "normalized_name": "用户信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户信息遭到泄露的几率大大增加",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "35",
+      "sentence": "FaceBook曾经指出，用户是变幻无穷的，社交网站的首要基础是用户忠诚度； RichardWaters在《FinancialTimes》发文指出，以Twitter和 Snapchat为例，评判一家社交网络成功的关键，不是营业收入、公司估值或是股票价格，而是用户的忠诚度。",
+      "entities": [
+        {
+          "entity_id": "35_e1",
+          "mention": "FaceBook",
+          "normalized_name": "Facebook",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "FaceBook曾经指出，用户是变幻无穷的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e2",
+          "mention": "RichardWaters",
+          "normalized_name": "Richard Waters",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "RichardWaters在《FinancialTimes》发文指出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e3",
+          "mention": "《FinancialTimes》",
+          "normalized_name": "《Financial Times》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "RichardWaters在《FinancialTimes》发文指出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e4",
+          "mention": "Twitter",
+          "normalized_name": "Twitter",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以Twitter和 Snapchat为例",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e5",
+          "mention": "Snapchat",
+          "normalized_name": "Snapchat",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以Twitter和 Snapchat为例",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "36",
+      "sentence": "RichardWaters在《FinancialTimes》发文指出，以Twitter和 Snapchat为例，评判一家社交网络成功的关键，不是营业收入、公司估值或是股票价格，而是用户的忠诚度。 社交网络有别于传统信息交流系统的重要特征就在于它实现了用户的“网络迁移”，这种社交网络用户从一个到另一个网站的“网络迁徙”的主要影响因素有4个：社会价值改变、娱乐性降低、持续的消费、受其他用户影响，基于上述原因开展策略研究能使社交网站更好吸引和留住用户 。",
+      "entities": [
+        {
+          "entity_id": "36_e1",
+          "mention": "RichardWaters",
+          "normalized_name": "RichardWaters",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "RichardWaters在《FinancialTimes》发文指出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e2",
+          "mention": "《FinancialTimes》",
+          "normalized_name": "《FinancialTimes》",
+          "candidate_l3": "newspaper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "RichardWaters在《FinancialTimes》发文指出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e3",
+          "mention": "Twitter",
+          "normalized_name": "Twitter",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以Twitter和 Snapchat为例",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e4",
+          "mention": "Snapchat",
+          "normalized_name": "Snapchat",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以Twitter和 Snapchat为例",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e5",
+          "mention": "网络迁移",
+          "normalized_name": "网络迁移",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现了用户的“网络迁移”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e6",
+          "mention": "网络迁徙",
+          "normalized_name": "网络迁徙",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这种社交网络用户从一个到另一个网站的“网络迁徙”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e7",
+          "mention": "社会价值改变",
+          "normalized_name": "社会价值改变",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社会价值改变、娱乐性降低、持续的消费、受其他用户影响",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e8",
+          "mention": "娱乐性降低",
+          "normalized_name": "娱乐性降低",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社会价值改变、娱乐性降低、持续的消费、受其他用户影响",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e9",
+          "mention": "持续的消费",
+          "normalized_name": "持续的消费",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社会价值改变、娱乐性降低、持续的消费、受其他用户影响",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e10",
+          "mention": "受其他用户影响",
+          "normalized_name": "受其他用户影响",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社会价值改变、娱乐性降低、持续的消费、受其他用户影响",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "38",
+      "sentence": "当前，对于社交网络忠诚度的研究主要借鉴了消费心理学领域关于顾客价值理论、消费预期理论等相关知识，但单纯借鉴消费心理学的知识存在着如下问题，一是社交网络用户的使用行为并不一定带有消费预期； 二是消费行为的基础是价值认同，而社交网络使用行为的基础是信息需求，两者存在不同的基础。",
+      "entities": [
+        {
+          "entity_id": "38_e1",
+          "mention": "社交网络忠诚度",
+          "normalized_name": "社交网络忠诚度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对于社交网络忠诚度的研究主要借鉴了消费心理学领域关于顾客价值理论、消费预期理论等相关知识",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e2",
+          "mention": "消费心理学",
+          "normalized_name": "消费心理学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "借鉴了消费心理学领域关于顾客价值理论、消费预期理论等相关知识",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e3",
+          "mention": "顾客价值理论",
+          "normalized_name": "顾客价值理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "关于顾客价值理论、消费预期理论等相关知识",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e4",
+          "mention": "消费预期理论",
+          "normalized_name": "消费预期理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "关于顾客价值理论、消费预期理论等相关知识",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e5",
+          "mention": "社交网络用户",
+          "normalized_name": "社交网络用户",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社交网络用户的使用行为并不一定带有消费预期",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可视为泛化用户群体，但此处作为学术概念出现"
+        },
+        {
+          "entity_id": "38_e6",
+          "mention": "消费预期",
+          "normalized_name": "消费预期",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社交网络用户的使用行为并不一定带有消费预期",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e7",
+          "mention": "价值认同",
+          "normalized_name": "价值认同",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "消费行为的基础是价值认同",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e8",
+          "mention": "信息需求",
+          "normalized_name": "信息需求",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社交网络使用行为的基础是信息需求",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "40",
+      "sentence": "当前大多数社交网络使用行为研究主要基于研究者对于用户的某一类信息行为的研究（学习行为、交友行为、交流行为等），对于用户使用社交网络的动机研究较少，一般都默认为用户基于某种信息行为而导致使用社交网络，且由于动机对于社交网络的利用意愿极为重要，所以需要加强这方面的研究。",
+      "entities": [
+        {
+          "entity_id": "40_e1",
+          "mention": "社交网络",
+          "normalized_name": "社交网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当前大多数社交网络使用行为研究主要基于研究者对于用户的某一类信息行为的研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e2",
+          "mention": "信息行为",
+          "normalized_name": "信息行为",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对于用户的某一类信息行为的研究（学习行为、交友行为、交流行为等）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e3",
+          "mention": "学习行为",
+          "normalized_name": "学习行为",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "（学习行为、交友行为、交流行为等）",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e4",
+          "mention": "交友行为",
+          "normalized_name": "交友行为",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "（学习行为、交友行为、交流行为等）",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e5",
+          "mention": "交流行为",
+          "normalized_name": "交流行为",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "（学习行为、交友行为、交流行为等）",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e6",
+          "mention": "动机",
+          "normalized_name": "动机",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对于用户使用社交网络的动机研究较少",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "41",
+      "sentence": "随着人们使用习惯的变化，移动社交网络越来越受到用户的青睐，利用手机、Pad 刷微博、上网、娱乐、交友已经逐渐被大多数人所接受，相较于传统社交网络的固定使用模式、使用地点，用户利用移动设备接入社交网络活动的方式正逐渐成为主流，而基于传统网络的用户忠诚度的研究是否适用于移动网络还有待验证。",
+      "entities": [
+        {
+          "entity_id": "41_e1",
+          "mention": "移动社交网络",
+          "normalized_name": "移动社交网络",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "移动社交网络越来越受到用户的青睐",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "41_e2",
+          "mention": "传统社交网络",
+          "normalized_name": "传统社交网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "相较于传统社交网络的固定使用模式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e3",
+          "mention": "用户忠诚度",
+          "normalized_name": "用户忠诚度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于传统网络的用户忠诚度的研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e4",
+          "mention": "移动网络",
+          "normalized_name": "移动网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "是否适用于移动网络",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        }
+      ]
+    },
+    {
+      "sentence_id": "42",
+      "sentence": "作为用户信息行为的重要组成部分，研究者在研究社交网络使用行为的过程中，更多的是关注了社交网络使用行为的特殊性以及用户的特殊性。 然而，社交网络使用行为并不仅仅是信息行为，它实际上是用户、服务提供者、服务环境、服务渠道共同作用下的信息传递、吸收与转化，然而当前大多数研究中主要注重了社交网络信息行为的过程性、用户信息行为的单一性以及用户与社交网络的相互作用（忠诚度、用户黏性）等问题，对于社交网络行为对用户信息获取方式、获取习惯、信息利用方式的改变还研究得较少",
+      "entities": [
+        {
+          "entity_id": "42_e1",
+          "mention": "社交网络使用行为",
+          "normalized_name": "社交网络使用行为",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究者在研究社交网络使用行为的过程中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e2",
+          "mention": "社交网络信息行为",
+          "normalized_name": "社交网络信息行为",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当前大多数研究中主要注重了社交网络信息行为的过程性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e3",
+          "mention": "忠诚度",
+          "normalized_name": "忠诚度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户与社交网络的相互作用（忠诚度、用户黏性）等问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e4",
+          "mention": "用户黏性",
+          "normalized_name": "用户黏性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户与社交网络的相互作用（忠诚度、用户黏性）等问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "43",
+      "sentence": "作为高校图书馆而言，现有研究主要注重于图书馆作为信源的资源服务推广机制与作用模式，而对于如何利用用户对图书馆的使用兴趣从而建立基于用户的随机信源还有待加强研究和实践。从根本上讲，研究用户的社交网络行为的根本目的是提升图书馆对于自身资源的认知和改善当前的服务模式，完成从被动服务到主动提供服务的转变，但如果仅仅将社交网络使用行为作为单一的信息行为来研究，忽略与网络信息服务相关的版权问题、语种问题、文化差异等问题的关联，就会在很大程度上降低现有社交网络服务的实际效用。",
+      "entities": [
+        {
+          "entity_id": "43_e1",
+          "mention": "高校图书馆",
+          "normalized_name": "高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "作为高校图书馆而言",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "43_e2",
+          "mention": "社交网络",
+          "normalized_name": "社交网络",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究用户的社交网络行为的根本目的",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "43_e3",
+          "mention": "版权问题",
+          "normalized_name": "版权问题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "忽略与网络信息服务相关的版权问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "43_e4",
+          "mention": "语种问题",
+          "normalized_name": "语种问题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "忽略与网络信息服务相关的版权问题、语种问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "43_e5",
+          "mention": "文化差异问题",
+          "normalized_name": "文化差异问题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "忽略与网络信息服务相关的版权问题、语种问题、文化差异等问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "44",
+      "sentence": "利用社交网络开展信息服务已经成为国内外高校图书馆社会化服务的主要方式之一，然而相比于国外图书馆而言，国内图书馆还存在着亟待加强的地方。首先，对于参与社交网络进行服务的模式、方法都还处于效仿的阶段，服务创新、资源创新能力还很有限； 其次，目前的研究中还缺乏对于社交网络服务评价方法、管理方法、服务效果、社会效益的研究；",
+      "entities": [
+        {
+          "entity_id": "44_e1",
+          "mention": "社交网络",
+          "normalized_name": "社交网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用社交网络开展信息服务已经成为国内外高校图书馆社会化服务的主要方式之一",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "44_e2",
+          "mention": "高校图书馆",
+          "normalized_name": "高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国内外高校图书馆社会化服务的主要方式之一",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'高校图书馆'为泛称，但根据图情领域放宽规则，作为具体机构类型可抽取"
+        },
+        {
+          "entity_id": "44_e3",
+          "mention": "国外图书馆",
+          "normalized_name": "国外图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "相比于国外图书馆而言",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称，但作为对比对象可视为具体类别"
+        },
+        {
+          "entity_id": "44_e4",
+          "mention": "国内图书馆",
+          "normalized_name": "国内图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国内图书馆还存在着亟待加强的地方",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称，但作为对比对象可视为具体类别"
+        },
+        {
+          "entity_id": "44_e5",
+          "mention": "社交网络服务评价方法",
+          "normalized_name": "社交网络服务评价方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前的研究中还缺乏对于社交网络服务评价方法、管理方法、服务效果、社会效益的研究",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "44_e6",
+          "mention": "管理方法",
+          "normalized_name": "管理方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前的研究中还缺乏对于社交网络服务评价方法、管理方法、服务效果、社会效益的研究",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称，但作为具体方法类别可抽取"
+        },
+        {
+          "entity_id": "44_e7",
+          "mention": "服务效果",
+          "normalized_name": "服务效果",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前的研究中还缺乏对于社交网络服务评价方法、管理方法、服务效果、社会效益的研究",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称，但作为具体研究主题可抽取"
+        },
+        {
+          "entity_id": "44_e8",
+          "mention": "社会效益",
+          "normalized_name": "社会效益",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前的研究中还缺乏对于社交网络服务评价方法、管理方法、服务效果、社会效益的研究",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称，但作为具体研究主题可抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "45",
+      "sentence": "第三，对于用户的研究也大多局限于在校用户，对于社会用户的研究较少。 总之，现有研究成果主题相对分散，研究的系统性和深入程度还略有不足，应当进一步加强上述几个方面的研究以促进国内图书馆社交网络服务的稳步、成熟发展。",
+      "entities": [
+        {
+          "entity_id": "45_e1",
+          "mention": "图书馆社交网络服务",
+          "normalized_name": "图书馆社交网络服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "促进国内图书馆社交网络服务的稳步、成熟发展",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

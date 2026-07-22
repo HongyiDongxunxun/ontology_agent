@@ -1,0 +1,5916 @@
+{
+  "base_name": "reviewed_full_6760",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "长久以来,搜索系统被认为是用户搜索相关页面、以发现相关答案、满足用户需求的工具。 当前的搜索系统能够较好地解决信息需求相对明确的事实发现型的任务，但是对于那些需求不明确的、过程复杂的任务的支持还很有限[2]。除了提供相关的搜索结果,搜索者更加期待搜索系统能够辅助搜索任务完成的全过程，支持信息获取、信息使用等各个环节。另一方面，人们利用搜索引擎获得信息后,经常会高估自己的知识水平，误认为网络上获取的知识就是自己头脑中已经存在的知识[3]。 实际上，人们并没有真正学习到这些知识，只是因为网络信息获取太过容易，让他们产生了这种错觉，达克效应在互联网用户上的体现越来越受到人们的重视。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "搜索系统",
+          "normalized_name": "搜索系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "搜索系统被认为是用户搜索相关页面、以发现相关答案、满足用户需求的工具",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "事实发现型的任务",
+          "normalized_name": "事实发现型的任务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对于那些需求不明确的、过程复杂的任务的支持还很有限[2]",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛化类型，但原文有具体限定"
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "达克效应",
+          "normalized_name": "达克效应",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "达克效应在互联网用户上的体现越来越受到人们的重视",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "实际上，人们并没有真正学习到这些知识，只是因为网络信息获取太过容易，让他们产生了这种错觉，达克效应在互联网用户上的体现越来越受到人们的重视。 因此，搜索引擎的核心价值不能局限于帮助人们便捷地获取信息，更应该发展其对于人们学习和思考的价值。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "达克效应",
+          "normalized_name": "达克效应",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "达克效应在互联网用户上的体现越来越受到人们的重视",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "搜索引擎",
+          "normalized_name": "搜索引擎",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "搜索引擎的核心价值不能局限于帮助人们便捷地获取信息",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处为泛称，但图情领域放宽规则中信息系统类可抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "信息搜索领域的研究人员认为，未来，搜索系统的设计和优化应该从当前的以答案为中心（answer-cen-tric)转向以学习为中心（learning-centric）,为搜索者创建优良的知识情境（knowledge-context）,以服务于搜索者的长期记忆[4]。“搜索即学习（searching as learning,SAL)”的提出正是基于这样的思考,结合学习科学领域的相关理论对信息搜索展开研究，关注搜索系统作为一种学习工具,而不是单纯的信息检索工具的影响和结果[5]。 学习科学（learming sciences）起源于19 世纪70 年代,关注的是在正式或非正式的环境中,跨学科的教与学的研究。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "搜索即学习（searching as learning,SAL）",
+          "normalized_name": "搜索即学习（searching as learning, SAL）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "“搜索即学习（searching as learning,SAL）”的提出正是基于这样的思考",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "学习科学（learming sciences）",
+          "normalized_name": "学习科学（learning sciences）",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学习科学（learming sciences）起源于19 世纪70 年代",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "学习科学汲取了来自不同领域的知识,包括认知科学、教育心理学、计算机科学、信息科学和设计研究等,其研究重点在于探讨学习环境的构建,包括人类环境和计算机环境,及其在该环境下学生学习效果的提升[。 事实上,无论在图书情报领域还是学习科学中，关于搜索和学习的交集的研究并不是一个新的话题,如在学习的环境中搜索信息的行为、学习搜索技能等早期的研究,都潜在地讨论了搜索和学习之间的联系。“搜索即学习”主题的研究,通过探索用户学习和信息行为的规律，启发我们重新考虑搜索系统在直接支持人类学习方面的价值，关注搜索系统对学习过程和学习产出的作用,以期优化、扩展、重新配置搜索系统的特性和功能，实现从信息检索工具到学习空间的转变,服务于人类学习[7]。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "学习科学",
+          "normalized_name": "学习科学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学习科学汲取了来自不同领域的知识",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "认知科学",
+          "normalized_name": "认知科学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括认知科学、教育心理学、计算机科学、信息科学和设计研究等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "教育心理学",
+          "normalized_name": "教育心理学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括认知科学、教育心理学、计算机科学、信息科学和设计研究等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "计算机科学",
+          "normalized_name": "计算机科学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括认知科学、教育心理学、计算机科学、信息科学和设计研究等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "信息科学",
+          "normalized_name": "信息科学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括认知科学、教育心理学、计算机科学、信息科学和设计研究等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e6",
+          "mention": "设计研究",
+          "normalized_name": "设计研究",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括认知科学、教育心理学、计算机科学、信息科学和设计研究等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e7",
+          "mention": "图书情报领域",
+          "normalized_name": "图书情报领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "无论在图书情报领域还是学习科学中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e8",
+          "mention": "搜索即学习",
+          "normalized_name": "搜索即学习",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "“搜索即学习”主题的研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e9",
+          "mention": "信息检索工具",
+          "normalized_name": "信息检索工具",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现从信息检索工具到学习空间的转变",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为Tool"
+        },
+        {
+          "entity_id": "4_e10",
+          "mention": "学习空间",
+          "normalized_name": "学习空间",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现从信息检索工具到学习空间的转变",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "而认知主义更侧重于关注学习中的心理过程和知识的本质,其中包括为人熟知的信息加工理论、建构主义等。 尽管如此，目前大多数心理学家支持，行为主义和认知主义不是相互排斥的，在涉及人类学习的各个方面时，同时从多个观点来进行理解更有助于把握人类思维和学习复杂的本质[8]。 在信息行为领域的相关研究中,P.Vakkari定义学习是通过研究、实践、被传授或经历来获得新的知识、修改和巩固现有的知识(技能、行为、价值观)的行为[9];",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "认知主义",
+          "normalized_name": "认知主义",
+          "candidate_l3": "approach",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "认知主义更侧重于关注学习中的心理过程和知识的本质",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "信息加工理论",
+          "normalized_name": "信息加工理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "其中包括为人熟知的信息加工理论、建构主义等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "建构主义",
+          "normalized_name": "建构主义",
+          "candidate_l3": "approach",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "其中包括为人熟知的信息加工理论、建构主义等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "行为主义",
+          "normalized_name": "行为主义",
+          "candidate_l3": "approach",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "行为主义和认知主义不是相互排斥的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e5",
+          "mention": "信息行为领域",
+          "normalized_name": "信息行为领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在信息行为领域的相关研究中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e6",
+          "mention": "P.Vakkari",
+          "normalized_name": "P. Vakkari",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "P.Vakkari定义学习是通过研究、实践、被传授或经历来获得新的知识",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "J.Gwizdka 和 X.Chen[]定义学习是发生在人类知识结构上的变化。 这些关于学习的定义都强调了学习的目的是知识的变化，承认知识是有组织的，这与学习理论中认知主义的主要特征是一致的。但是在这些学习定义中，对于学习是怎样发生的没有给出明确的阐述,不同的研究者对于学习的过程可能持有多种观点，例如信息加工理论,建构主义等。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "J.Gwizdka",
+          "normalized_name": "J.Gwizdka",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "J.Gwizdka 和 X.Chen[]定义学习是发生在人类知识结构上的变化",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "X.Chen",
+          "normalized_name": "X.Chen",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "J.Gwizdka 和 X.Chen[]定义学习是发生在人类知识结构上的变化",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "学习理论中认知主义",
+          "normalized_name": "认知主义",
+          "candidate_l3": "school_of_thought",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这与学习理论中认知主义的主要特征是一致的",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为paradigm"
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "信息加工理论",
+          "normalized_name": "信息加工理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "例如信息加工理论,建构主义等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "建构主义",
+          "normalized_name": "建构主义",
+          "candidate_l3": "school_of_thought",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "例如信息加工理论,建构主义等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "可兼为theory"
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "这种过程视角与搜索作为学习工具的区别在于，过程视角关注的是在搜索过程中发生的学习，而不仅仅是搜索输出（如搜索结果)和学习产出。 综合以上学者的讨论,本文将依据\"搜索”和“学习\"的关系，从两方面对已有文献展开回顾:一是学习作为搜索的产出; 二是搜索作为学习的过程。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "搜索作为学习工具",
+          "normalized_name": "搜索作为学习工具",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这种过程视角与搜索作为学习工具的区别在于",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "过程视角",
+          "normalized_name": "过程视角",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这种过程视角与搜索作为学习工具的区别在于，过程视角关注的是在搜索过程中发生的学习",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为框架(framework)或概念(concept)，此处优先标concept"
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "搜索",
+          "normalized_name": "搜索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从两方面对已有文献展开回顾:一是学习作为搜索的产出; 二是搜索作为学习的过程",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为学术概念被讨论，非泛化动词"
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "学习",
+          "normalized_name": "学习",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从两方面对已有文献展开回顾:一是学习作为搜索的产出; 二是搜索作为学习的过程",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为学术概念被讨论"
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "二是搜索作为学习的过程。 需要说明的是,这两种关系并非对立的关系，而应该是互为补充的。在“搜索即学习”主题的相关研究中,学习是最终的目的，学习过程与搜索过程相互交织。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "搜索即学习",
+          "normalized_name": "搜索即学习",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在“搜索即学习”主题的相关研究中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "为了解“搜索即学习”主题下相关研究的研究现状，深化理解搜索与学习之间的关系和作用机制，揭示当前研究所面临的挑战，本文对国内外相关文献展开调研和分析。 在外文文献方面,以“learn\\*”“search\\*” \"cogniti\\*”‘knowledge”作为关键词在Elsevier Sci-enceDirect、Emerald、ProQuest、Springer、Taylor&Francis、Webof Science、Wiley Online Library 等数据库及Google Scholar学术搜索引擎中进行主题检索。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "搜索即学习",
+          "normalized_name": "搜索即学习",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为了解“搜索即学习”主题下相关研究的研究现状",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "Elsevier ScienceDirect",
+          "normalized_name": "Elsevier ScienceDirect",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在Elsevier ScienceDirect、Emerald、ProQuest、Springer、Taylor&Francis、Web of Science、Wiley Online Library 等数据库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "Emerald",
+          "normalized_name": "Emerald",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在Elsevier ScienceDirect、Emerald、ProQuest、Springer、Taylor&Francis、Web of Science、Wiley Online Library 等数据库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "ProQuest",
+          "normalized_name": "ProQuest",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在Elsevier ScienceDirect、Emerald、ProQuest、Springer、Taylor&Francis、Web of Science、Wiley Online Library 等数据库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e5",
+          "mention": "Springer",
+          "normalized_name": "Springer",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在Elsevier ScienceDirect、Emerald、ProQuest、Springer、Taylor&Francis、Web of Science、Wiley Online Library 等数据库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e6",
+          "mention": "Taylor & Francis",
+          "normalized_name": "Taylor & Francis",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在Elsevier ScienceDirect、Emerald、ProQuest、Springer、Taylor&Francis、Web of Science、Wiley Online Library 等数据库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e7",
+          "mention": "Web of Science",
+          "normalized_name": "Web of Science",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在Elsevier ScienceDirect、Emerald、ProQuest、Springer、Taylor&Francis、Web of Science、Wiley Online Library 等数据库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e8",
+          "mention": "Wiley Online Library",
+          "normalized_name": "Wiley Online Library",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在Elsevier ScienceDirect、Emerald、ProQuest、Springer、Taylor&Francis、Web of Science、Wiley Online Library 等数据库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e9",
+          "mention": "Google Scholar",
+          "normalized_name": "Google Scholar",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "及Google Scholar学术搜索引擎中进行主题检索",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "并对检索结果中的参考文献进行回溯检索、扩展检索。 由于在教育学、心理学领域，对学习、认知等研究问题的探索已经有很长的历史,存在大量的相关文献，为了突出“搜索即学习\"近年来在图书情报学领域的发展状况，本文暂将检索结果限定在图书情报学领域，但对于文献回顾过程中涉及到的相关概念和问题,可能会引入教育学、心理学的相关理论进行补充。此外,对于机器学习、深度学习等系统算法方面的文献不在本文研究的范围之内，不加以考虑。 依据这个标准最终获得文献363篇，作为本综述的来源文献集。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "教育学",
+          "normalized_name": "教育学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在教育学、心理学领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "心理学",
+          "normalized_name": "心理学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在教育学、心理学领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "搜索即学习",
+          "normalized_name": "搜索即学习",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "突出“搜索即学习”近年来在图书情报学领域的发展状况",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e4",
+          "mention": "图书情报学",
+          "normalized_name": "图书情报学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "突出“搜索即学习”近年来在图书情报学领域的发展状况",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e5",
+          "mention": "机器学习",
+          "normalized_name": "机器学习",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对于机器学习、深度学习等系统算法方面的文献不在本文研究的范围之内",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e6",
+          "mention": "深度学习",
+          "normalized_name": "深度学习",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对于机器学习、深度学习等系统算法方面的文献不在本文研究的范围之内",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "早期的信息检索领域经典理论及模型中，不乏从认知或学习的角度来理解和刻画搜索者的信息需求、搜索情境、搜索交互行为。 1980 年,N.Belkin[12]提出信息检索是由用户的知识非常态（ASK：anomalousstateof knowledge)驱动的，即用户之所以有信息需求，是因为感知到头脑中既有的知识不足或难以解决当前的问题或状态。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "信息检索",
+          "normalized_name": "信息检索",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "早期的信息检索领域经典理论及模型中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "N.Belkin",
+          "normalized_name": "N.Belkin",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1980 年,N.Belkin[12]提出信息检索是由用户的知识非常态（ASK：anomalousstateof knowledge)驱动的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "知识非常态（ASK：anomalousstateof knowledge）",
+          "normalized_name": "知识非常态（ASK：anomalous state of knowledge）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户的知识非常态（ASK：anomalousstateof knowledge)驱动的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "搜索者与信息和信息对象的每次交互，加深了他们对于搜索主题的理解，为搜索提供了新的思路和方向。 尽管 M.J.Bates 没有明确指出这个进化过程是一个学习的过程,但对于搜索主题的新的理解,搜索思路和方向的调整，这本身就具备学习的特征。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "M.J.Bates",
+          "normalized_name": "M.J.Bates",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "尽管 M.J.Bates 没有明确指出这个进化过程是一个学习的过程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "也有研究者在学术搜索的情境下提出了描述信息搜索过程的模型,其中影响力最为广泛的即为C.C.Kuhlthau[15]提出的信息搜索过程模型（informationsearch process,ISP)。 该模型关注搜索者在完成课程论文过程中，开始、选择、探索、形成、搜集、结束(initia-tion，selection，exploration，formulation，collection，pres-entation)6个阶段中情感、认知、行为3个维度上的变化特征。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "C.C.Kuhlthau",
+          "normalized_name": "C.C.Kuhlthau",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "C.C.Kuhlthau[15]提出的信息搜索过程模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "信息搜索过程模型",
+          "normalized_name": "信息搜索过程模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "C.C.Kuhlthau[15]提出的信息搜索过程模型（informationsearch process,ISP)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "informationsearch process,ISP",
+          "normalized_name": "information search process (ISP)",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息搜索过程模型（informationsearch process,ISP)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "该模型关注搜索者在完成课程论文过程中，开始、选择、探索、形成、搜集、结束(initia-tion，selection，exploration，formulation，collection，pres-entation)6个阶段中情感、认知、行为3个维度上的变化特征。 P.Vakkari在之后的系列研究中，将ISP 模型的6个阶段精炼为3个问题阶段：前聚焦、形成、后聚焦（pre-focus，formulation，post-focus）,分析了学生为硕士学位论文选题报告而搜索的不同阶段中，搜索信息类型[16]、搜索策略[17]、相关性判断[18]等交互特征上存在的差异。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "课程论文",
+          "normalized_name": "课程论文",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "搜索者在完成课程论文过程中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "ISP 模型",
+          "normalized_name": "ISP模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将ISP 模型的6个阶段精炼为3个问题阶段",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "P.Vakkari",
+          "normalized_name": "P.Vakkari",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "P.Vakkari在之后的系列研究中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e4",
+          "mention": "硕士学位论文",
+          "normalized_name": "硕士学位论文",
+          "candidate_l3": "thesis",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "学生为硕士学位论文选题报告而搜索",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e5",
+          "mention": "选题报告",
+          "normalized_name": "选题报告",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "学生为硕士学位论文选题报告而搜索",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为论文的一部分，但原文明确提及"
+        },
+        {
+          "entity_id": "14_e6",
+          "mention": "搜索信息类型",
+          "normalized_name": "搜索信息类型",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "搜索信息类型[16]、搜索策略[17]、相关性判断[18]等交互特征",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e7",
+          "mention": "搜索策略",
+          "normalized_name": "搜索策略",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "搜索信息类型[16]、搜索策略[17]、相关性判断[18]等交互特征",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e8",
+          "mention": "相关性判断",
+          "normalized_name": "相关性判断",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "搜索信息类型[16]、搜索策略[17]、相关性判断[18]等交互特征",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "探索式搜索强调搜索者在搜索过程中可能经历一系列与知识获取、理解与诠释、比较、整合、分析等相关的搜索活动,而无法直接从搜索系统中获得答案。 探索式搜索重视搜索结果，即学习和研究的成果，视其为评价搜索成功的标准,而不强调具体的学习活动在搜索过程中是如何发生演化的。尽管如此,该理论为将学习的思想渗透到信息搜索过程中做出了重要的贡献。 K.Jarvelin等[20]提出了一个基于学习任务的信息交互模型（task-based information interaction,TBII)。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "探索式搜索",
+          "normalized_name": "探索式搜索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "探索式搜索强调搜索者在搜索过程中可能经历一系列与知识获取、理解与诠释、比较、整合、分析等相关的搜索活动",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "K.Jarvelin",
+          "normalized_name": "K.Jarvelin",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "K.Jarvelin等[20]提出了一个基于学习任务的信息交互模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "基于学习任务的信息交互模型（task-based information interaction,TBII)",
+          "normalized_name": "基于学习任务的信息交互模型（task-based information interaction, TBII）",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "K.Jarvelin等[20]提出了一个基于学习任务的信息交互模型（task-based information interaction,TBII)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "各个交互环节中涉及不同类型的行为和认知活动，需要根据不同的评估标准对该环节的活动产出进行评估。 相较于仅关注最终的任务产出结果,TBII 模型对搜索过程和学习过程进行了有限程度上的细化，但尚未完全揭示“搜索即学习\"的概念内涵，即搜索过程和学习过程在给定的时间和空间上是共存且相互交织的。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "TBII 模型",
+          "normalized_name": "TBII模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "TBII 模型对搜索过程和学习过程进行了有限程度上的细化",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "搜索即学习",
+          "normalized_name": "搜索即学习",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "尚未完全揭示“搜索即学习\"的概念内涵",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "在教育学和心理学领域,关于知识变化的相关理论影响力最为广泛的是J.Piaget[2] 的学习建构理论。 该学习建构理论认为学习过程是一个基于已有知识和经验的积极建构过程,学习过程可以分为同化（assimilation）和顺应（accommodation）。 同化是指当新信息与已有知识结构一致时，将新信息添加进已有知识结构中的行为，顺应是指当新信息与已有知识结构存在冲突时对已有知识结构进行调整的行为。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "J.Piaget[2] 的学习建构理论",
+          "normalized_name": "J.Piaget的学习建构理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "关于知识变化的相关理论影响力最为广泛的是J.Piaget[2] 的学习建构理论",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "同化",
+          "normalized_name": "同化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "同化是指当新信息与已有知识结构一致时，将新信息添加进已有知识结构中的行为",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "顺应",
+          "normalized_name": "顺应",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "顺应是指当新信息与已有知识结构存在冲突时对已有知识结构进行调整的行为",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "assimilation",
+          "normalized_name": "assimilation",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "同化（assimilation）和顺应（accommodation）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e5",
+          "mention": "accommodation",
+          "normalized_name": "accommodation",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "同化（assimilation）和顺应（accommodation）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "同化是指当新信息与已有知识结构一致时，将新信息添加进已有知识结构中的行为，顺应是指当新信息与已有知识结构存在冲突时对已有知识结构进行调整的行为。 之后，D.Rumelhart 和 D.Norman[22将顺应(accommodation)过程进一步细化为调整（tuning）和重构（restructu-ring)。 调整关注对信息的组织、解释或微弱的修改，会造成已有知识结构的微小变动;",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "D.Rumelhart",
+          "normalized_name": "D.Rumelhart",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "之后，D.Rumelhart 和 D.Norman[22将顺应(accommodation)过程进一步细化为调整（tuning）和重构（restructu-ring)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "D.Norman",
+          "normalized_name": "D.Norman",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "之后，D.Rumelhart 和 D.Norman[22将顺应(accommodation)过程进一步细化为调整（tuning）和重构（restructu-ring)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "顺应(accommodation)过程",
+          "normalized_name": "顺应(accommodation)过程",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将顺应(accommodation)过程进一步细化为调整（tuning）和重构（restructu-ring)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e4",
+          "mention": "调整（tuning）",
+          "normalized_name": "调整（tuning）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将顺应(accommodation)过程进一步细化为调整（tuning）和重构（restructu-ring)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e5",
+          "mention": "重构（restructu-ring)",
+          "normalized_name": "重构（restructu-ring)",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将顺应(accommodation)过程进一步细化为调整（tuning）和重构（restructu-ring)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "重构则是彻底改变已有的结构或创建新的结构[23]。 基于这个知识改变的三分类,P.Vakkari [24]考虑复杂的搜索任务的完成过程为搜索者知识结构逐渐稳定化的过程，具体而言，在搜索前期的探索和构造中，搜索者的知识改变更可能表现出重构的特征; 到中期信息收集阶段，大致的知识框架已构建完成，此时搜索者的知识改变可能以调整为主，收集更多的信息以拓展知识范围;",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "P.Vakkari",
+          "normalized_name": "P. Vakkari",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "P.Vakkari [24]考虑复杂的搜索任务的完成过程为搜索者知识结构逐渐稳定化的过程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "知识改变的三分类",
+          "normalized_name": "知识改变的三分类",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于这个知识改变的三分类",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "到任务后期的汇报和展示时，知识改变更多地表现为同化，如将已有的知识结构实例化。 这一理论假设为探索学习过程和搜索行为过程之间的关联关系提供了重要的切入点，有待之后的研究进一步细化和验证。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "同化",
+          "normalized_name": "同化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识改变更多地表现为同化，如将已有的知识结构实例化",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "已有的知识结构",
+          "normalized_name": "已有的知识结构",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将已有的知识结构实例化",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "这一理论假设",
+          "normalized_name": "这一理论假设",
+          "candidate_l3": "hypothesis",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这一理论假设为探索学习过程和搜索行为过程之间的关联关系提供了重要的切入点",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "指代前文提到的理论假设，但原文未给出具体命名，故保留原文短语"
+        },
+        {
+          "entity_id": "20_e4",
+          "mention": "学习过程",
+          "normalized_name": "学习过程",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "探索学习过程和搜索行为过程之间的关联关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e5",
+          "mention": "搜索行为过程",
+          "normalized_name": "搜索行为过程",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "探索学习过程和搜索行为过程之间的关联关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "而产出评估更侧重于系统为用户带来的好处，例如帮助用户更好地实现了搜索目标或者在任务完成的过程中获得了某种能力的提升[20]。 SAL 关注搜索系统对学习的支持，因此其绩效评估不应该停留在传统的搜索输出方面，应该更加关注搜索者学习能力的提升。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "SAL",
+          "normalized_name": "SAL",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "SAL 关注搜索系统对学习的支持",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "已有研究发现,搜索活动对于学习者的学习产出或者知识水平的提升有显著的正向作用。 J.Gwizdka团队借鉴心理学领域学习产出的认知、技能和情感理论（cognitive，skill-based，and affective theory of learningoutcomes，CSALO)模型[25],从语词知识（verbal knowl-edge）、知识组织（knowledgeorganization）和认知策略（cognitive strategies)三方面变化来评估信息搜索中的学习产出。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "J.Gwizdka团队",
+          "normalized_name": "J.Gwizdka团队",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "J.Gwizdka团队借鉴心理学领域学习产出的认知、技能和情感理论（cognitive，skill-based，and affective theory of learningoutcomes，CSALO)模型[25]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "认知、技能和情感理论（cognitive，skill-based，and affective theory of learningoutcomes，CSALO)模型",
+          "normalized_name": "认知、技能和情感理论（cognitive，skill-based，and affective theory of learningoutcomes，CSALO)模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "J.Gwizdka团队借鉴心理学领域学习产出的认知、技能和情感理论（cognitive，skill-based，and affective theory of learningoutcomes，CSALO)模型[25]",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e3",
+          "mention": "语词知识（verbal knowl-edge）",
+          "normalized_name": "语词知识（verbal knowledge）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从语词知识（verbal knowl-edge）、知识组织（knowledgeorganization）和认知策略（cognitive strategies)三方面变化来评估信息搜索中的学习产出",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e4",
+          "mention": "知识组织（knowledgeorganization）",
+          "normalized_name": "知识组织（knowledge organization）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从语词知识（verbal knowl-edge）、知识组织（knowledgeorganization）和认知策略（cognitive strategies)三方面变化来评估信息搜索中的学习产出",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e5",
+          "mention": "认知策略（cognitive strategies）",
+          "normalized_name": "认知策略（cognitive strategies）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从语词知识（verbal knowl-edge）、知识组织（knowledgeorganization）和认知策略（cognitive strategies)三方面变化来评估信息搜索中的学习产出",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "在初步的研究中[11],他们邀请被试在搜索前、后分别罗列出与搜索任务主题相关的语词,通过评价罗列词语的数量和专业程度来表示搜索者的学习产出。 在这个阶段性的研究中，他们发现如果被试在搜索过程中输入更多的检索式，则他们在搜索后能够罗列出更多的相关词语。此后[26,他们利用眼动的方法，发现学习产出较低的用户在阅读过程中付出了更多的努力，相较学习产出较高的用户，他们阅读时眼睛更经常反向移动,并且移动的距离更长。K.Collins-Thompson等[27]在研究搜索行为和学习产出之间的关系时发现,花费更长时间阅读文档的用户,搜索后撰写的任务短文的质量更高。谭金波[28在分析影响学生网络学习绩效的行为策略时发现,学生浏览搜索结果页面的时间越长,精读网页信息的时间越短,学习绩效往往越低。U.Gadiraju 和R.Yu 团队在研究中让被试在搜索前、后分别完成与任务相关的一系列是非判断题来测试被试的知识增长情况,结果同样发现，用户在内容页面停留的时长以及构造检索式的复杂程度与他们的知识增长显著正相关[29]。 接着他们开展了一项更大规模的研究[30,招募了468 名被试,截取了他们搜索过程中的大约70个交互变量(包括会话、检索式、搜索结果页、浏览和鼠标相关的变量)来预测用户搜索后的知识增长。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "K.Collins-Thompson等[27]",
+          "normalized_name": "K.Collins-Thompson",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "K.Collins-Thompson等[27]在研究搜索行为和学习产出之间的关系时发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "谭金波[28]",
+          "normalized_name": "谭金波",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "谭金波[28在分析影响学生网络学习绩效的行为策略时发现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "U.Gadiraju 和R.Yu 团队",
+          "normalized_name": "U.Gadiraju 和R.Yu 团队",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "U.Gadiraju 和R.Yu 团队在研究中让被试在搜索前、后分别完成与任务相关的一系列是非判断题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "接着他们开展了一项更大规模的研究[30,招募了468 名被试,截取了他们搜索过程中的大约70个交互变量(包括会话、检索式、搜索结果页、浏览和鼠标相关的变量)来预测用户搜索后的知识增长。 但结果显示,几乎所有的变量与用户的知识增长都只有微弱的相关。 这可能是由于搜索任务的复杂度较低,搜索会话的时间较短，导致很多变量对于模型的贡献不能很好地显现出来。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "研究[30",
+          "normalized_name": "研究[30]",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "开展了一项更大规模的研究[30",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "文献编号[30]可能指代具体论文，但原文未提供完整名称，按召回优先原则抽取"
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "知识增长",
+          "normalized_name": "知识增长",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "预测用户搜索后的知识增长",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e3",
+          "mention": "搜索任务的复杂度",
+          "normalized_name": "搜索任务的复杂度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "搜索任务的复杂度较低",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为独立学术概念被讨论"
+        },
+        {
+          "entity_id": "24_e4",
+          "mention": "搜索会话的时间",
+          "normalized_name": "搜索会话的时间",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "搜索会话的时间较短",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "可能为通用描述，但作为搜索行为研究中的变量概念"
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "这可能是由于搜索任务的复杂度较低,搜索会话的时间较短，导致很多变量对于模型的贡献不能很好地显现出来。 尽管如此，该研究仍强调内容页面的停留时间对知识增长有重要的贡献。 C.Liu 和X.Song 根据用户在搜索后撰写的任务短文中提取的7个指标:知识点数、知识面数、知识面广度、知识面深度、知识的相关性、分析程度以及用户观点，来综合评价搜索后的学习产出情况，并分别探索了搜索过程中的信息选择行为，记录行为对学习产出的影响。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "C.Liu",
+          "normalized_name": "C.Liu",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "C.Liu 和X.Song 根据用户在搜索后撰写的任务短文中提取的7个指标",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "X.Song",
+          "normalized_name": "X.Song",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "C.Liu 和X.Song 根据用户在搜索后撰写的任务短文中提取的7个指标",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e3",
+          "mention": "知识点数",
+          "normalized_name": "知识点数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识点数、知识面数、知识面广度、知识面深度、知识的相关性、分析程度以及用户观点",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为指标名称，但作为具体命名概念抽取"
+        },
+        {
+          "entity_id": "25_e4",
+          "mention": "知识面数",
+          "normalized_name": "知识面数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识点数、知识面数、知识面广度、知识面深度、知识的相关性、分析程度以及用户观点",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e5",
+          "mention": "知识面广度",
+          "normalized_name": "知识面广度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识点数、知识面数、知识面广度、知识面深度、知识的相关性、分析程度以及用户观点",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e6",
+          "mention": "知识面深度",
+          "normalized_name": "知识面深度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识点数、知识面数、知识面广度、知识面深度、知识的相关性、分析程度以及用户观点",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e7",
+          "mention": "知识的相关性",
+          "normalized_name": "知识的相关性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识点数、知识面数、知识面广度、知识面深度、知识的相关性、分析程度以及用户观点",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e8",
+          "mention": "分析程度",
+          "normalized_name": "分析程度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识点数、知识面数、知识面广度、知识面深度、知识的相关性、分析程度以及用户观点",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e9",
+          "mention": "用户观点",
+          "normalized_name": "用户观点",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "知识点数、知识面数、知识面广度、知识面深度、知识的相关性、分析程度以及用户观点",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e10",
+          "mention": "信息选择行为",
+          "normalized_name": "信息选择行为",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "搜索过程中的信息选择行为",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e11",
+          "mention": "记录行为",
+          "normalized_name": "记录行为",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "记录行为对学习产出的影响",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "C.Liu 和X.Song 根据用户在搜索后撰写的任务短文中提取的7个指标:知识点数、知识面数、知识面广度、知识面深度、知识的相关性、分析程度以及用户观点，来综合评价搜索后的学习产出情况，并分别探索了搜索过程中的信息选择行为，记录行为对学习产出的影响。 结果显示用户的信息源偏好显著影响搜索后的知识面广度、知识面深度以及知识的相关性[31]。信息的记录对于学习产出有显著的作用，搜索过程中越早开始记录信息,学习产出的效果越好[32]。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "C.Liu",
+          "normalized_name": "C.Liu",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "C.Liu 和X.Song 根据用户在搜索后撰写的任务短文中提取的7个指标",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e2",
+          "mention": "X.Song",
+          "normalized_name": "X.Song",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "C.Liu 和X.Song 根据用户在搜索后撰写的任务短文中提取的7个指标",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e3",
+          "mention": "知识点数",
+          "normalized_name": "知识点数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "7个指标:知识点数、知识面数、知识面广度、知识面深度、知识的相关性、分析程度以及用户观点",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e4",
+          "mention": "知识面数",
+          "normalized_name": "知识面数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "7个指标:知识点数、知识面数、知识面广度、知识面深度、知识的相关性、分析程度以及用户观点",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e5",
+          "mention": "知识面广度",
+          "normalized_name": "知识面广度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "7个指标:知识点数、知识面数、知识面广度、知识面深度、知识的相关性、分析程度以及用户观点",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e6",
+          "mention": "知识面深度",
+          "normalized_name": "知识面深度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "7个指标:知识点数、知识面数、知识面广度、知识面深度、知识的相关性、分析程度以及用户观点",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e7",
+          "mention": "知识的相关性",
+          "normalized_name": "知识的相关性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "7个指标:知识点数、知识面数、知识面广度、知识面深度、知识的相关性、分析程度以及用户观点",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e8",
+          "mention": "分析程度",
+          "normalized_name": "分析程度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "7个指标:知识点数、知识面数、知识面广度、知识面深度、知识的相关性、分析程度以及用户观点",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e9",
+          "mention": "用户观点",
+          "normalized_name": "用户观点",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "7个指标:知识点数、知识面数、知识面广度、知识面深度、知识的相关性、分析程度以及用户观点",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e10",
+          "mention": "信息源偏好",
+          "normalized_name": "信息源偏好",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户的信息源偏好显著影响搜索后的知识面广度、知识面深度以及知识的相关性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e11",
+          "mention": "信息选择行为",
+          "normalized_name": "信息选择行为",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分别探索了搜索过程中的信息选择行为",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e12",
+          "mention": "记录行为",
+          "normalized_name": "记录行为",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "记录行为对学习产出的影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e13",
+          "mention": "学习产出",
+          "normalized_name": "学习产出",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "记录行为对学习产出的影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e14",
+          "mention": "[31]",
+          "normalized_name": "[31]",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "知识的相关性[31]",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为参考文献编号，代表具体文献"
+        },
+        {
+          "entity_id": "26_e15",
+          "mention": "[32]",
+          "normalized_name": "[32]",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "效果越好[32]",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为参考文献编号，代表具体文献"
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "根据已有研究不难发现，从结果观的视角探索搜索和学习之间的关系的重要前提，即为如何定义和评估学习效果或产出。 不同的研究情境，对于学习产出有不同的理解和描述方式，自然也需要不同的评估方法，这是结果观视角研究的重难点，本文将在后面的小节中具体展开回顾。此外,探索搜索交互行为和学习产出之间的联系,有助于发现潜在的行为指标来预测学习的效果。目前的研究更多地关注在检索式构造和阅读相关的行为(例如在内容页面的停留时间、次数、阅读的策略等)对学习产出的贡献，因为阅读是学习者接收信息的直接渠道。然而，以学习为目的的搜索过程有可能很复杂，除了搜索和阅读活动，用户如何处理信息、使用信息在未来的研究中也期待被关注。",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "结果观",
+          "normalized_name": "结果观",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从结果观的视角探索搜索和学习之间的关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "搜索",
+          "normalized_name": "搜索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "探索搜索和学习之间的关系",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为method"
+        },
+        {
+          "entity_id": "27_e3",
+          "mention": "学习",
+          "normalized_name": "学习",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "探索搜索和学习之间的关系",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e4",
+          "mention": "学习效果",
+          "normalized_name": "学习效果",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如何定义和评估学习效果或产出",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e5",
+          "mention": "学习产出",
+          "normalized_name": "学习产出",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如何定义和评估学习效果或产出",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e6",
+          "mention": "评估方法",
+          "normalized_name": "评估方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "不同的研究情境，对于学习产出有不同的理解和描述方式，自然也需要不同的评估方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e7",
+          "mention": "搜索交互行为",
+          "normalized_name": "搜索交互行为",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "探索搜索交互行为和学习产出之间的联系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e8",
+          "mention": "行为指标",
+          "normalized_name": "行为指标",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有助于发现潜在的行为指标来预测学习的效果",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e9",
+          "mention": "检索式构造",
+          "normalized_name": "检索式构造",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "更多地关注在检索式构造和阅读相关的行为",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e10",
+          "mention": "阅读",
+          "normalized_name": "阅读",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检索式构造和阅读相关的行为",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e11",
+          "mention": "内容页面",
+          "normalized_name": "内容页面",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在内容页面的停留时间、次数、阅读的策略等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e12",
+          "mention": "停留时间",
+          "normalized_name": "停留时间",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在内容页面的停留时间、次数、阅读的策略等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e13",
+          "mention": "阅读的策略",
+          "normalized_name": "阅读策略",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在内容页面的停留时间、次数、阅读的策略等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "SAL 过程观强调将搜索视为一个学习过程进行研究,相较于结果观对于学习产出的关注，过程观更侧重于刻画搜索过程和学习过程的相互作用,探索搜索过程中，学习是何时以及如何发生的,行为指标是否能够暗示学习的发生。在过程视角的研究中,学习仍然是搜索的最终目的,但研究者希望通过对搜索过程中各类活动的具体监测和分析，深入理解学习在不同活动或不同阶段中的作用机制，以局部优化带动整体优化。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "SAL 过程观",
+          "normalized_name": "SAL 过程观",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "SAL 过程观强调将搜索视为一个学习过程进行研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "结果观",
+          "normalized_name": "结果观",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "相较于结果观对于学习产出的关注",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e3",
+          "mention": "搜索过程",
+          "normalized_name": "搜索过程",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "过程观更侧重于刻画搜索过程和学习过程的相互作用",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        },
+        {
+          "entity_id": "28_e4",
+          "mention": "学习过程",
+          "normalized_name": "学习过程",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "过程观更侧重于刻画搜索过程和学习过程的相互作用",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "29",
+      "sentence": "由于学习过程的刻画和描述是很复杂的，大多数的研究者倾向于通过行为活动过程来隐性地表示学习过程，前提是论证所研究的行为指标与学习概念之间存在的关联关系。如Y.Chi 等[33]将点击复杂度和检索式复杂度视为搜索过程中用户知识水平的隐性表示，结果发现随着搜索过程的推进，用户的点击复杂度和检索式复杂度都有上升的趋势。特别是在搜索会话的第一个1/6 时间内,检索式的复杂度显著低于后面的时间段。N.Roy等[34发现随着搜索进程的推进,用户在内容页面的平均停留时间逐渐降低。搜索前已有知识水平较高的用户在搜索前期输入更多的检索式，花更多的时间阅读内容文档; 而知识水平较低的用户则花费更多的时间在搜索结果页面上。",
+      "entities": [
+        {
+          "entity_id": "29_e1",
+          "mention": "Y.Chi",
+          "normalized_name": "Y.Chi",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如Y.Chi 等[33]将点击复杂度和检索式复杂度视为搜索过程中用户知识水平的隐性表示",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e2",
+          "mention": "点击复杂度",
+          "normalized_name": "点击复杂度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将点击复杂度和检索式复杂度视为搜索过程中用户知识水平的隐性表示",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e3",
+          "mention": "检索式复杂度",
+          "normalized_name": "检索式复杂度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将点击复杂度和检索式复杂度视为搜索过程中用户知识水平的隐性表示",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e4",
+          "mention": "N.Roy",
+          "normalized_name": "N.Roy",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "N.Roy等[34发现随着搜索进程的推进,用户在内容页面的平均停留时间逐渐降低",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e5",
+          "mention": "平均停留时间",
+          "normalized_name": "平均停留时间",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户在内容页面的平均停留时间逐渐降低",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "除了搜索行为，用户的书写或记录行为也被视为学习发生的另一种体现。 M.Potthast 和 M.Hagen等[35 -36]探索了文章撰写者如何利用Clueweb09 搜索以完成文章写作的过程,并根据撰写者每次编辑后已完成的文本的长度,识别出两类不同的文本记录策略：积累型（build up）和精炼型（boildown）。 其中采用积累型策略的撰写者在整个写作过程中不断增加文章的长度，而采用精炼型策略的撰写者在写作前期先大量积累素材，记录的文本长度呈现快速增长，接着才对文本进行重新组织,缩短文章的长度。",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "M.Potthast",
+          "normalized_name": "M.Potthast",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "M.Potthast 和 M.Hagen等[35 -36]探索了文章撰写者如何利用Clueweb09 搜索以完成文章写作的过程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "M.Hagen",
+          "normalized_name": "M.Hagen",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "M.Potthast 和 M.Hagen等[35 -36]探索了文章撰写者如何利用Clueweb09 搜索以完成文章写作的过程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e3",
+          "mention": "Clueweb09",
+          "normalized_name": "Clueweb09",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "文章撰写者如何利用Clueweb09 搜索以完成文章写作的过程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e4",
+          "mention": "积累型（build up）",
+          "normalized_name": "积累型（build up）",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "识别出两类不同的文本记录策略：积累型（build up）和精炼型（boildown）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e5",
+          "mention": "精炼型（boildown）",
+          "normalized_name": "精炼型（boildown）",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "识别出两类不同的文本记录策略：积累型（build up）和精炼型（boildown）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "31",
+      "sentence": "其中采用积累型策略的撰写者在整个写作过程中不断增加文章的长度，而采用精炼型策略的撰写者在写作前期先大量积累素材，记录的文本长度呈现快速增长，接着才对文本进行重新组织,缩短文章的长度。 他们还比较了写作过程不同阶段中文章撰写者搜索行为上的差异，发现用户在早期阶段构造了更多的检索式,并有更多的点击活动发生，而用户的记录活动更主要地集中在后期时间阶段。刘畅等[37将搜索过程中在记事本上的信息记录行为作为用户的学习行为，根据不同阶段用户记录完成度的推进情况,得到了3类记录策略：早期记录型、平均记录型、后期记录型,并且发现平均记录策略作为记录行为随搜索过程逐步推进的一般模式，学习产出的质量也相对更好。",
+      "entities": [
+        {
+          "entity_id": "31_e1",
+          "mention": "积累型策略",
+          "normalized_name": "积累型策略",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用积累型策略的撰写者在整个写作过程中不断增加文章的长度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e2",
+          "mention": "精炼型策略",
+          "normalized_name": "精炼型策略",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用精炼型策略的撰写者在写作前期先大量积累素材",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e3",
+          "mention": "刘畅",
+          "normalized_name": "刘畅",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "刘畅等[37将搜索过程中在记事本上的信息记录行为作为用户的学习行为",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e4",
+          "mention": "早期记录型",
+          "normalized_name": "早期记录型",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "得到了3类记录策略：早期记录型、平均记录型、后期记录型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e5",
+          "mention": "平均记录型",
+          "normalized_name": "平均记录型",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "得到了3类记录策略：早期记录型、平均记录型、后期记录型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e6",
+          "mention": "后期记录型",
+          "normalized_name": "后期记录型",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "得到了3类记录策略：早期记录型、平均记录型、后期记录型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e7",
+          "mention": "平均记录策略",
+          "normalized_name": "平均记录策略",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "平均记录策略作为记录行为随搜索过程逐步推进的一般模式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "32",
+      "sentence": "在探索搜索者知识改变风格的研究中[39],他们将用户在搜索过程中对思维导图的修改，编码为知识的改变类型(增加或优化)和知识结构改变(知识面变化或知识点变化)，并根据改变发生在搜索过程中的具体时间阶段，概括出学习情境下的4种知识改变风格:早期知识改变风格、中期知识改变风格、后期知识改变风格以及平均知识改变风格。 该研究是对搜索过程中学习何时发生这一问题的初步探索。 在建模搜索者知识改变过程及策略的研究中[40]，他们更细化地从知识点和知识间的关系的角度编码，根据知识结构的改变特征和改变位置，识别出了25 类知识改变行为。",
+      "entities": [
+        {
+          "entity_id": "32_e1",
+          "mention": "思维导图",
+          "normalized_name": "思维导图",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户在搜索过程中对思维导图的修改",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e2",
+          "mention": "知识的改变类型(增加或优化)",
+          "normalized_name": "知识的改变类型(增加或优化)",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "编码为知识的改变类型(增加或优化)和知识结构改变(知识面变化或知识点变化)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e3",
+          "mention": "知识结构改变(知识面变化或知识点变化)",
+          "normalized_name": "知识结构改变(知识面变化或知识点变化)",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "编码为知识的改变类型(增加或优化)和知识结构改变(知识面变化或知识点变化)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e4",
+          "mention": "早期知识改变风格",
+          "normalized_name": "早期知识改变风格",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "概括出学习情境下的4种知识改变风格:早期知识改变风格、中期知识改变风格、后期知识改变风格以及平均知识改变风格",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e5",
+          "mention": "中期知识改变风格",
+          "normalized_name": "中期知识改变风格",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "概括出学习情境下的4种知识改变风格:早期知识改变风格、中期知识改变风格、后期知识改变风格以及平均知识改变风格",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e6",
+          "mention": "后期知识改变风格",
+          "normalized_name": "后期知识改变风格",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "概括出学习情境下的4种知识改变风格:早期知识改变风格、中期知识改变风格、后期知识改变风格以及平均知识改变风格",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e7",
+          "mention": "平均知识改变风格",
+          "normalized_name": "平均知识改变风格",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "概括出学习情境下的4种知识改变风格:早期知识改变风格、中期知识改变风格、后期知识改变风格以及平均知识改变风格",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e8",
+          "mention": "25 类知识改变行为",
+          "normalized_name": "25类知识改变行为",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "识别出了25 类知识改变行为",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "33",
+      "sentence": "此外,在另一项知识利用特征的研究中，他们从词汇分析中发现,搜索过程中，搜索者很少完全颠覆思维导图的知识结构,他们更经常在已有的知识结构上添加更多细节的信息，而这些新增的信息中，超过三分之一的词汇都是直接从他们阅读的内容页面中复制的。 这些研究都在一定程度上揭示了搜索过程中学习是如何发生的这一重要的问题[41]。",
+      "entities": [
+        {
+          "entity_id": "33_e1",
+          "mention": "知识利用特征",
+          "normalized_name": "知识利用特征",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在另一项知识利用特征的研究中",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e2",
+          "mention": "词汇分析",
+          "normalized_name": "词汇分析",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "他们从词汇分析中发现",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e3",
+          "mention": "思维导图",
+          "normalized_name": "思维导图",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "搜索者很少完全颠覆思维导图的知识结构",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e4",
+          "mention": "知识结构",
+          "normalized_name": "知识结构",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "思维导图的知识结构",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "34",
+      "sentence": "综上可知,在当前 SAL过程观的探索中,研究者关注搜索过程中的各类活动，例如信息搜索(如检索式复杂度)、信息选择(如内容页面的停留时间)、信息使用（如记录行为)等，也逐渐开始关注学习过程中的知识改变特征。 未来的研究中，研究者需要强化搜索过程和学习过程在 SAL研究中的共存性,进一步探索各类搜索行为和知识改变特征之间的关联关系，例如搜索过程中的哪些行为特征可以作为用户知识结构改变的隐性或显性指标？ 从而为系统通过行为监测来支持用户学习提供参考依据。",
+      "entities": [
+        {
+          "entity_id": "34_e1",
+          "mention": "SAL过程观",
+          "normalized_name": "SAL过程观",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在当前 SAL过程观的探索中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e2",
+          "mention": "信息搜索",
+          "normalized_name": "信息搜索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "例如信息搜索(如检索式复杂度)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e3",
+          "mention": "检索式复杂度",
+          "normalized_name": "检索式复杂度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息搜索(如检索式复杂度)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e4",
+          "mention": "信息选择",
+          "normalized_name": "信息选择",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息选择(如内容页面的停留时间)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e5",
+          "mention": "内容页面的停留时间",
+          "normalized_name": "内容页面的停留时间",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息选择(如内容页面的停留时间)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e6",
+          "mention": "信息使用",
+          "normalized_name": "信息使用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息使用（如记录行为)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e7",
+          "mention": "记录行为",
+          "normalized_name": "记录行为",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息使用（如记录行为)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e8",
+          "mention": "知识改变特征",
+          "normalized_name": "知识改变特征",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "也逐渐开始关注学习过程中的知识改变特征",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e9",
+          "mention": "SAL研究",
+          "normalized_name": "SAL研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "进一步探索各类搜索行为和知识改变特征之间的关联关系，例如搜索过程中的哪些行为特征可以作为用户知识结构改变的隐性或显性指标",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "35",
+      "sentence": "如T.Willoughby等[43]研究用户领域知识水平以及是否使用网络作为获取信息来源两个因素对用户在论文写作活动中表现的影响。 研究发现,利用互联网搜索信息的用户组比不使用互联网的用户组在论文写作上表现得更好; 但是,这种差异仅在领域知识水平高的用户中表现显著,对于领域知识水平相对较低的用户群，是否利用互联网获取信息在最终的论文表现上没有显著差异。",
+      "entities": [
+        {
+          "entity_id": "35_e1",
+          "mention": "T.Willoughby等[43]",
+          "normalized_name": "T.Willoughby",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如T.Willoughby等[43]研究用户领域知识水平以及是否使用网络作为获取信息来源两个因素对用户在论文写作活动中表现的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e2",
+          "mention": "论文写作活动",
+          "normalized_name": "论文写作活动",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户在论文写作活动中表现的影响",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "35_e3",
+          "mention": "互联网",
+          "normalized_name": "互联网",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用互联网搜索信息的用户组比不使用互联网的用户组在论文写作上表现得更好",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "36",
+      "sentence": "但是,这种差异仅在领域知识水平高的用户中表现显著,对于领域知识水平相对较低的用户群，是否利用互联网获取信息在最终的论文表现上没有显著差异。 M.J.Wilson 和M.L.Wilson[44]发现领域知识水平较高的用户在搜索后完成的任务相关摘要中能够覆盖更多的知识主题。U.Ga-diraju等[29]发现搜索前话题熟悉度越低的用户，搜索过程中倾向于付出更多的搜索努力，搜索后获得的知识的增量越高。袁红和李秋[45]发现用户的搜索能力越强,探索式搜索过程就越深入和高效，具体表现在以下方面:构造的检索词更丰富、深入和准确，检索词间的相关性更强; 搜索动作更频繁，更多地点击内容页面，且频繁地在标签页面切换;",
+      "entities": [
+        {
+          "entity_id": "36_e1",
+          "mention": "M.J.Wilson 和M.L.Wilson[44]",
+          "normalized_name": "M.J.Wilson 和 M.L.Wilson",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "M.J.Wilson 和M.L.Wilson[44]发现领域知识水平较高的用户在搜索后完成的任务相关摘要中能够覆盖更多的知识主题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e2",
+          "mention": "U.Ga-diraju等[29]",
+          "normalized_name": "U. Ga-diraju 等",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "U.Ga-diraju等[29]发现搜索前话题熟悉度越低的用户，搜索过程中倾向于付出更多的搜索努力",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e3",
+          "mention": "袁红和李秋[45]",
+          "normalized_name": "袁红和李秋",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "袁红和李秋[45]发现用户的搜索能力越强,探索式搜索过程就越深入和高效",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "37",
+      "sentence": "在认知风格方面,K.Kinley 和D.Tjondronegoro [46]发现整体型认知风格的用户在搜索过程中倾向于采用自顶向下的搜索策略，先围绕搜索主题进行宽泛的搜索,了解该主题的大体情况,再逐渐转向具体的信息; 而分析型认知风格的用户则偏好自底向上的搜索策略,不断积累具体的信息,最后进行归纳整合。",
+      "entities": [
+        {
+          "entity_id": "37_e1",
+          "mention": "K.Kinley",
+          "normalized_name": "K.Kinley",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "K.Kinley 和D.Tjondronegoro [46]发现整体型认知风格的用户在搜索过程中倾向于采用自顶向下的搜索策略",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e2",
+          "mention": "D.Tjondronegoro",
+          "normalized_name": "D.Tjondronegoro",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "K.Kinley 和D.Tjondronegoro [46]发现整体型认知风格的用户在搜索过程中倾向于采用自顶向下的搜索策略",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e3",
+          "mention": "整体型认知风格",
+          "normalized_name": "整体型认知风格",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "整体型认知风格的用户在搜索过程中倾向于采用自顶向下的搜索策略",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e4",
+          "mention": "自顶向下的搜索策略",
+          "normalized_name": "自顶向下的搜索策略",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "整体型认知风格的用户在搜索过程中倾向于采用自顶向下的搜索策略",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e5",
+          "mention": "分析型认知风格",
+          "normalized_name": "分析型认知风格",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分析型认知风格的用户则偏好自底向上的搜索策略",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e6",
+          "mention": "自底向上的搜索策略",
+          "normalized_name": "自底向上的搜索策略",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分析型认知风格的用户则偏好自底向上的搜索策略",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "38",
+      "sentence": "而分析型认知风格的用户则偏好自底向上的搜索策略,不断积累具体的信息,最后进行归纳整合。 刘涵蕊和刘畅[47]发现,认知风格主要影响用户在学习型搜索任务下的搜索行为，而话题熟悉程度主要影响用户的阅读行为和记录行为。张路路和黄崑[48根据G.W.Allport 等[49]提出的场独立和场依存的认知风格类型,探索其对数字图书馆用户的信息检索行为的影响，结果发现两类认知风格类型的用户在基本检索特征方面（检索点的选择、检索功能的选择)以及单次检索会话方面(检索时长、检索式数量和检索式重构的模式)都表现出显著的差异。",
+      "entities": [
+        {
+          "entity_id": "38_e1",
+          "mention": "刘涵蕊和刘畅[47]",
+          "normalized_name": "刘涵蕊和刘畅",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "刘涵蕊和刘畅[47]发现,认知风格主要影响用户在学习型搜索任务下的搜索行为",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e2",
+          "mention": "张路路和黄崑[48",
+          "normalized_name": "张路路和黄崑",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "张路路和黄崑[48根据G.W.Allport 等[49]提出的场独立和场依存的认知风格类型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e3",
+          "mention": "G.W.Allport 等[49]",
+          "normalized_name": "G.W.Allport",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "G.W.Allport 等[49]提出的场独立和场依存的认知风格类型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e4",
+          "mention": "场独立和场依存的认知风格类型",
+          "normalized_name": "场独立和场依存的认知风格类型",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "G.W.Allport 等[49]提出的场独立和场依存的认知风格类型",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e5",
+          "mention": "数字图书馆",
+          "normalized_name": "数字图书馆",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "探索其对数字图书馆用户的信息检索行为的影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e6",
+          "mention": "认知风格",
+          "normalized_name": "认知风格",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "认知风格主要影响用户在学习型搜索任务下的搜索行为",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e7",
+          "mention": "学习型搜索任务",
+          "normalized_name": "学习型搜索任务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "认知风格主要影响用户在学习型搜索任务下的搜索行为",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e8",
+          "mention": "话题熟悉程度",
+          "normalized_name": "话题熟悉程度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "话题熟悉程度主要影响用户的阅读行为和记录行为",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e9",
+          "mention": "信息检索行为",
+          "normalized_name": "信息检索行为",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "探索其对数字图书馆用户的信息检索行为的影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e10",
+          "mention": "检索点",
+          "normalized_name": "检索点",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检索点的选择",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e11",
+          "mention": "检索功能",
+          "normalized_name": "检索功能",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检索功能的选择",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e12",
+          "mention": "检索时长",
+          "normalized_name": "检索时长",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检索时长",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e13",
+          "mention": "检索式数量",
+          "normalized_name": "检索式数量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检索式数量",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e14",
+          "mention": "检索式重构的模式",
+          "normalized_name": "检索式重构的模式",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检索式重构的模式",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "39",
+      "sentence": "以上研究从搜索者的知识水平、认知风格等角度对搜索交互过程进行探索，在SAL的相关研究中已经发展得较为成熟。“搜索即学习\"研究的最终期望是优化当前的搜索系统,使之成为支持人类长期学习的学习空间。近来,研究者开始关注从学习者的元认知特征入手,理解学习者从计划到监控到评估的自我调节学习过程,揭示该过程中的学习、评判性思考以及创造的作用机制,为优化学习支持系统提供切实有效的依据[4]。 元认知（metacognition)这一概念于1976 年由发展心理学家J.H.Flavell提出，将其定义为“反映或调节认知活动的任一方面的知识或者认知活动”[50]。",
+      "entities": [
+        {
+          "entity_id": "39_e1",
+          "mention": "SAL",
+          "normalized_name": "SAL",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在SAL的相关研究中已经发展得较为成熟",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e2",
+          "mention": "搜索即学习",
+          "normalized_name": "搜索即学习",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "“搜索即学习”研究的最终期望是优化当前的搜索系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e3",
+          "mention": "元认知",
+          "normalized_name": "元认知",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "元认知（metacognition)这一概念于1976 年由发展心理学家J.H.Flavell提出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e4",
+          "mention": "J.H.Flavell",
+          "normalized_name": "J.H.Flavell",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "元认知（metacognition)这一概念于1976 年由发展心理学家J.H.Flavell提出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e5",
+          "mention": "自我调节学习",
+          "normalized_name": "自我调节学习",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "理解学习者从计划到监控到评估的自我调节学习过程",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "40",
+      "sentence": "元认知（metacognition)这一概念于1976 年由发展心理学家J.H.Flavell提出，将其定义为“反映或调节认知活动的任一方面的知识或者认知活动”[50]。 在心理学、教育学领域,关于元认知活动如何促进学习者学习能力的提升方面已经取得了很多的成果。在信息检索领域,目前少量的研究发现,搜索者的元认知特征直接影响着他们搜索过程中的行为和策略。 如G.Z.Liu 和S.S.Chong[51]采用案例研究的方法,分析了5名被试在完成期末作业过程中的元认知以及概念漂移的特征。",
+      "entities": [
+        {
+          "entity_id": "40_e1",
+          "mention": "元认知",
+          "normalized_name": "元认知",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "元认知（metacognition)这一概念于1976 年由发展心理学家J.H.Flavell提出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e2",
+          "mention": "J.H.Flavell",
+          "normalized_name": "J.H.Flavell",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由发展心理学家J.H.Flavell提出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e3",
+          "mention": "心理学",
+          "normalized_name": "心理学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在心理学、教育学领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e4",
+          "mention": "教育学",
+          "normalized_name": "教育学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在心理学、教育学领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e5",
+          "mention": "信息检索",
+          "normalized_name": "信息检索",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在信息检索领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e6",
+          "mention": "G.Z.Liu",
+          "normalized_name": "G.Z.Liu",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如G.Z.Liu 和S.S.Chong[51]采用案例研究的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e7",
+          "mention": "S.S.Chong",
+          "normalized_name": "S.S.Chong",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如G.Z.Liu 和S.S.Chong[51]采用案例研究的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e8",
+          "mention": "案例研究",
+          "normalized_name": "案例研究",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用案例研究的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e9",
+          "mention": "概念漂移",
+          "normalized_name": "概念漂移",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分析了5名被试在完成期末作业过程中的元认知以及概念漂移的特征",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "41",
+      "sentence": "学生们的元认知通过出声思维方式记录，并采用扎根理论的方法识别出学习型搜索过程中学习者需要调动的13 类元认知知识,分别是:平衡、建立基础、改变线路、沟通、连接、知道自己不知道的信息、知道自己的优缺点、平行思考、反思、搭建“脚手架”、理解好奇心、理解记忆、理解时间和努力。 可以预见,深入分析学习的本质,监测其动态过程,而不限于提供粗粒度的学习能力、水平的评判，将成为未来SAL研究主题的主流发展方向。",
+      "entities": [
+        {
+          "entity_id": "41_e1",
+          "mention": "出声思维方式",
+          "normalized_name": "出声思维方式",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学生的元认知通过出声思维方式记录",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e2",
+          "mention": "扎根理论",
+          "normalized_name": "扎根理论",
+          "candidate_l3": "methodology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用扎根理论的方法识别出学习型搜索过程中学习者需要调动的13 类元认知知识",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e3",
+          "mention": "学习型搜索",
+          "normalized_name": "学习型搜索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学习型搜索过程中学习者需要调动的13 类元认知知识",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e4",
+          "mention": "元认知知识",
+          "normalized_name": "元认知知识",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学习者需要调动的13 类元认知知识",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e5",
+          "mention": "平衡",
+          "normalized_name": "平衡",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "13 类元认知知识,分别是:平衡、建立基础、改变线路、沟通、连接、知道自己不知道的信息、知道自己的优缺点、平行思考、反思、搭建“脚手架”、理解好奇心、理解记忆、理解时间和努力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为元认知知识的具体类别，具有独立学术命名"
+        },
+        {
+          "entity_id": "41_e6",
+          "mention": "建立基础",
+          "normalized_name": "建立基础",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "13 类元认知知识,分别是:平衡、建立基础、改变线路、沟通、连接、知道自己不知道的信息、知道自己的优缺点、平行思考、反思、搭建“脚手架”、理解好奇心、理解记忆、理解时间和努力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为元认知知识的具体类别，具有独立学术命名"
+        },
+        {
+          "entity_id": "41_e7",
+          "mention": "改变线路",
+          "normalized_name": "改变线路",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "13 类元认知知识,分别是:平衡、建立基础、改变线路、沟通、连接、知道自己不知道的信息、知道自己的优缺点、平行思考、反思、搭建“脚手架”、理解好奇心、理解记忆、理解时间和努力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为元认知知识的具体类别，具有独立学术命名"
+        },
+        {
+          "entity_id": "41_e8",
+          "mention": "沟通",
+          "normalized_name": "沟通",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "13 类元认知知识,分别是:平衡、建立基础、改变线路、沟通、连接、知道自己不知道的信息、知道自己的优缺点、平行思考、反思、搭建“脚手架”、理解好奇心、理解记忆、理解时间和努力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为元认知知识的具体类别，具有独立学术命名"
+        },
+        {
+          "entity_id": "41_e9",
+          "mention": "连接",
+          "normalized_name": "连接",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "13 类元认知知识,分别是:平衡、建立基础、改变线路、沟通、连接、知道自己不知道的信息、知道自己的优缺点、平行思考、反思、搭建“脚手架”、理解好奇心、理解记忆、理解时间和努力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为元认知知识的具体类别，具有独立学术命名"
+        },
+        {
+          "entity_id": "41_e10",
+          "mention": "知道自己不知道的信息",
+          "normalized_name": "知道自己不知道的信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "13 类元认知知识,分别是:平衡、建立基础、改变线路、沟通、连接、知道自己不知道的信息、知道自己的优缺点、平行思考、反思、搭建“脚手架”、理解好奇心、理解记忆、理解时间和努力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为元认知知识的具体类别，具有独立学术命名"
+        },
+        {
+          "entity_id": "41_e11",
+          "mention": "知道自己的优缺点",
+          "normalized_name": "知道自己的优缺点",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "13 类元认知知识,分别是:平衡、建立基础、改变线路、沟通、连接、知道自己不知道的信息、知道自己的优缺点、平行思考、反思、搭建“脚手架”、理解好奇心、理解记忆、理解时间和努力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为元认知知识的具体类别，具有独立学术命名"
+        },
+        {
+          "entity_id": "41_e12",
+          "mention": "平行思考",
+          "normalized_name": "平行思考",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "13 类元认知知识,分别是:平衡、建立基础、改变线路、沟通、连接、知道自己不知道的信息、知道自己的优缺点、平行思考、反思、搭建“脚手架”、理解好奇心、理解记忆、理解时间和努力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为元认知知识的具体类别，具有独立学术命名"
+        },
+        {
+          "entity_id": "41_e13",
+          "mention": "反思",
+          "normalized_name": "反思",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "13 类元认知知识,分别是:平衡、建立基础、改变线路、沟通、连接、知道自己不知道的信息、知道自己的优缺点、平行思考、反思、搭建“脚手架”、理解好奇心、理解记忆、理解时间和努力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为元认知知识的具体类别，具有独立学术命名"
+        },
+        {
+          "entity_id": "41_e14",
+          "mention": "搭建“脚手架”",
+          "normalized_name": "搭建“脚手架”",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "13 类元认知知识,分别是:平衡、建立基础、改变线路、沟通、连接、知道自己不知道的信息、知道自己的优缺点、平行思考、反思、搭建“脚手架”、理解好奇心、理解记忆、理解时间和努力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为元认知知识的具体类别，具有独立学术命名"
+        },
+        {
+          "entity_id": "41_e15",
+          "mention": "理解好奇心",
+          "normalized_name": "理解好奇心",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "13 类元认知知识,分别是:平衡、建立基础、改变线路、沟通、连接、知道自己不知道的信息、知道自己的优缺点、平行思考、反思、搭建“脚手架”、理解好奇心、理解记忆、理解时间和努力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为元认知知识的具体类别，具有独立学术命名"
+        },
+        {
+          "entity_id": "41_e16",
+          "mention": "理解记忆",
+          "normalized_name": "理解记忆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "13 类元认知知识,分别是:平衡、建立基础、改变线路、沟通、连接、知道自己不知道的信息、知道自己的优缺点、平行思考、反思、搭建“脚手架”、理解好奇心、理解记忆、理解时间和努力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为元认知知识的具体类别，具有独立学术命名"
+        },
+        {
+          "entity_id": "41_e17",
+          "mention": "理解时间和努力",
+          "normalized_name": "理解时间和努力",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "13 类元认知知识,分别是:平衡、建立基础、改变线路、沟通、连接、知道自己不知道的信息、知道自己的优缺点、平行思考、反思、搭建“脚手架”、理解好奇心、理解记忆、理解时间和努力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为元认知知识的具体类别，具有独立学术命名"
+        },
+        {
+          "entity_id": "41_e18",
+          "mention": "SAL",
+          "normalized_name": "SAL",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将成为未来SAL研究主题的主流发展方向",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "SAL为缩写，可能指代特定研究领域（如学习分析等）"
+        }
+      ]
+    },
+    {
+      "sentence_id": "42",
+      "sentence": "除个人特征外的其他情境要素较多，目前 SAL 的研究最集中关注搜索任务情境相关的要素，用来定义和分类用户在以学习为目的的搜索中有哪些不同的学习目标，以及这些学习目标对搜索学习过程的影响。 在信息搜索领域,搜索任务指的是包含任务描述以及在完成任务的过程中执行的一系列动作[53-54],通常对于搜索过程和搜索行为的观察分析是通过正在执行的某个搜索任务来实现的。",
+      "entities": [
+        {
+          "entity_id": "42_e1",
+          "mention": "SAL",
+          "normalized_name": "SAL",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前 SAL 的研究最集中关注搜索任务情境相关的要素",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e2",
+          "mention": "搜索任务",
+          "normalized_name": "搜索任务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在信息搜索领域,搜索任务指的是包含任务描述以及在完成任务的过程中执行的一系列动作[53-54]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "43",
+      "sentence": "刘畅等提出了“学习型搜索（learning-related search)）”的概念[37.5-56],将 SAL研究中的结果观和过程观统一融入学习的搜索情境中。 学习型搜索是一种强调学习的搜索情境，通过设计学习型搜索任务来构建这一情境。 学习型搜索任务是指用户在学习情境中，以学习为目的,利用搜索系统对信息进行收集、分析、评估和使用等，最终完成该学习任务而进行的搜索任务。",
+      "entities": [
+        {
+          "entity_id": "43_e1",
+          "mention": "刘畅",
+          "normalized_name": "刘畅",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "刘畅等提出了“学习型搜索（learning-related search)）”的概念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "43_e2",
+          "mention": "学习型搜索（learning-related search)）",
+          "normalized_name": "学习型搜索（learning-related search）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "刘畅等提出了“学习型搜索（learning-related search)）”的概念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "43_e3",
+          "mention": "SAL研究",
+          "normalized_name": "SAL研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将 SAL研究中的结果观和过程观统一融入学习的搜索情境中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "SAL可能为缩写，但原文未给出全称，按原文抽取"
+        },
+        {
+          "entity_id": "43_e4",
+          "mention": "学习型搜索任务",
+          "normalized_name": "学习型搜索任务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学习型搜索任务是指用户在学习情境中，以学习为目的,利用搜索系统对信息进行收集、分析、评估和使用等，最终完成该学习任务而进行的搜索任务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "44",
+      "sentence": "学习型搜索任务是指用户在学习情境中，以学习为目的,利用搜索系统对信息进行收集、分析、评估和使用等，最终完成该学习任务而进行的搜索任务。 对于学习型搜索任务的设计以及该任务情境下交互活动的分析，相对隐性的学习过程被最大程度地显性化，有助于深入理解搜索过程和学习过程和二者间的作用关系。",
+      "entities": [
+        {
+          "entity_id": "44_e1",
+          "mention": "学习型搜索任务",
+          "normalized_name": "学习型搜索任务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学习型搜索任务是指用户在学习情境中，以学习为目的,利用搜索系统对信息进行收集、分析、评估和使用等，最终完成该学习任务而进行的搜索任务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "44_e2",
+          "mention": "搜索系统",
+          "normalized_name": "搜索系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用搜索系统对信息进行收集、分析、评估和使用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "若为泛称系统则不抽，但此处作为具体功能系统被提及"
+        }
+      ]
+    },
+    {
+      "sentence_id": "45",
+      "sentence": "如C.C.Kuhlthau[15]提出的信息搜索过程模型(ISP)和P.Vakkari 的三个问题阶段[16-18]都是针对学生需要一段时间完成学习任务时的信息行为特征对搜寻行为的阶段划分。 在真实的学习任务中，经常要考虑到时间情境在信息搜寻和信息搜索过程中的作用,但是目前这类的研究仍不充分。在未来的研究中应尽可能在考虑真实的学习情境和时间情境的基础上对搜索学习过程展开调研。",
+      "entities": [
+        {
+          "entity_id": "45_e1",
+          "mention": "C.C.Kuhlthau",
+          "normalized_name": "C.C.Kuhlthau",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "C.C.Kuhlthau[15]提出的信息搜索过程模型(ISP)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "45_e2",
+          "mention": "信息搜索过程模型(ISP)",
+          "normalized_name": "信息搜索过程模型(ISP)",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "C.C.Kuhlthau[15]提出的信息搜索过程模型(ISP)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "45_e3",
+          "mention": "P.Vakkari",
+          "normalized_name": "P.Vakkari",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "P.Vakkari 的三个问题阶段[16-18]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "45_e4",
+          "mention": "三个问题阶段",
+          "normalized_name": "三个问题阶段",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "P.Vakkari 的三个问题阶段[16-18]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为 typology"
+        }
+      ]
+    },
+    {
+      "sentence_id": "46",
+      "sentence": "B.J.Jansen 等[58]、W.C.Wu 等[59]、D.Kely等[60]、S.Ghosh等[61]、韩正彪等[62]的研究都是依据该分类法来设计SAL搜索任务。 这些研究发现任务的认知复杂度影响用户的信息搜索行为，也影响搜索后的学习产出。随着任务认知复杂度的增加,用户花费的搜索时间更长，会构造更多的检索式，检索式的长度更长,点击更多的搜索结果页,访问更多的URL等; 但学习的产出效果更差，用户对于自我知识水平评估的自信程度也更低。",
+      "entities": [
+        {
+          "entity_id": "46_e1",
+          "mention": "B.J.Jansen",
+          "normalized_name": "B.J.Jansen",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "B.J.Jansen 等[58]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e2",
+          "mention": "W.C.Wu",
+          "normalized_name": "W.C.Wu",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "W.C.Wu 等[59]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e3",
+          "mention": "D.Kely",
+          "normalized_name": "D.Kely",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "D.Kely等[60]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e4",
+          "mention": "S.Ghosh",
+          "normalized_name": "S.Ghosh",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "S.Ghosh等[61]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e5",
+          "mention": "韩正彪",
+          "normalized_name": "韩正彪",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "韩正彪等[62]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e6",
+          "mention": "该分类法",
+          "normalized_name": "该分类法",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "依据该分类法来设计SAL搜索任务",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "指代前文具体分类法，但原文未给出名称"
+        },
+        {
+          "entity_id": "46_e7",
+          "mention": "SAL搜索任务",
+          "normalized_name": "SAL搜索任务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "设计SAL搜索任务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e8",
+          "mention": "认知复杂度",
+          "normalized_name": "认知复杂度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "任务的认知复杂度影响用户的信息搜索行为",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e9",
+          "mention": "信息搜索行为",
+          "normalized_name": "信息搜索行为",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "影响用户的信息搜索行为",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e10",
+          "mention": "学习产出",
+          "normalized_name": "学习产出",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "影响搜索后的学习产出",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e11",
+          "mention": "检索式",
+          "normalized_name": "检索式",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "会构造更多的检索式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e12",
+          "mention": "URL",
+          "normalized_name": "URL",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "访问更多的URL",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "47",
+      "sentence": "S.Y.Rieh 等[2]依据将搜索作为学习过程的视角，借鉴教育学领域的认知学习模式（cognitivelearningmode）,将学习过程分为3种类型:接受性学习（recep-tive learning)、评价性学习（criticallearning）、创造性学习（creativelearning)。 其中接受性学习指的是学生对所学习的知识的记忆、理解和表达，对应B.Bloom分类中的记忆和理解层面，是一种相对浅层的学习。评价性学习指的是通过对不同来源的知识进行反思、批判和评估，从而形成学生自身的思考的过程,对应B.Bloom分类中的应用、分析和评估层面，是一种比接受性学习更为深层的学习过程。创造性学习对应B.Bloom分类中的创造层面，是一种要求最高的学习模式,需要学生对所学习的知识生成新的想法或构建出新的结构。二者的区别在于L.W.Anderson 和D.R.Krathwohl[57]的认知学习分类法侧重于对学习目标和学习结果的评估，而认知学习模式则更适用于对认知过程和学习策略的探索。 在认知学习模式分类的基础上,S.Y.Rieh 等[2提出了一个综合性搜索(comprehen-sive search)的新概念。",
+      "entities": [
+        {
+          "entity_id": "47_e1",
+          "mention": "S.Y.Rieh",
+          "normalized_name": "S.Y.Rieh",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "S.Y.Rieh 等[2]依据将搜索作为学习过程的视角",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e2",
+          "mention": "认知学习模式",
+          "normalized_name": "认知学习模式",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "借鉴教育学领域的认知学习模式（cognitivelearningmode）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e3",
+          "mention": "接受性学习",
+          "normalized_name": "接受性学习",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将学习过程分为3种类型:接受性学习（recep-tive learning)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e4",
+          "mention": "评价性学习",
+          "normalized_name": "评价性学习",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "评价性学习（criticallearning）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e5",
+          "mention": "创造性学习",
+          "normalized_name": "创造性学习",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "创造性学习（creativelearning)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e6",
+          "mention": "B.Bloom分类",
+          "normalized_name": "B.Bloom分类",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对应B.Bloom分类中的记忆和理解层面",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e7",
+          "mention": "L.W.Anderson 和D.R.Krathwohl[57]的认知学习分类法",
+          "normalized_name": "L.W.Anderson 和D.R.Krathwohl的认知学习分类法",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "L.W.Anderson 和D.R.Krathwohl[57]的认知学习分类法侧重于对学习目标和学习结果的评估",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e8",
+          "mention": "综合性搜索",
+          "normalized_name": "综合性搜索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提出了一个综合性搜索(comprehen-sive search)的新概念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "48",
+      "sentence": "在认知学习模式分类的基础上,S.Y.Rieh 等[2提出了一个综合性搜索(comprehen-sive search)的新概念。 综合性搜索强调用户在搜索中迭代、反思和整合信息的过程，主要关注评价性学习和创造性学习层面。这个综合性搜索的概念和G.Mar-chionini[19]于 2006 年提出的探索式搜索有一定的相似之处,但探索式搜索的研究焦点在搜索的结果，是将“学习作为搜索的产出\"的体现; 而综合性搜索强调将搜索作为一种学习过程来理解。",
+      "entities": [
+        {
+          "entity_id": "48_e1",
+          "mention": "S.Y.Rieh",
+          "normalized_name": "S.Y.Rieh",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "S.Y.Rieh 等[2提出了一个综合性搜索(comprehen-sive search)的新概念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e2",
+          "mention": "综合性搜索",
+          "normalized_name": "综合性搜索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提出了一个综合性搜索(comprehen-sive search)的新概念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e3",
+          "mention": "G.Marchionini",
+          "normalized_name": "G.Marchionini",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "G.Marchionini[19]于 2006 年提出的探索式搜索",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e4",
+          "mention": "探索式搜索",
+          "normalized_name": "探索式搜索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "G.Marchionini[19]于 2006 年提出的探索式搜索",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "49",
+      "sentence": "而综合性搜索强调将搜索作为一种学习过程来理解。 此外,S.Y.Rieh 等[2]也指出，探索式搜索主要关注接受性学习和评价性学习层面,对于创造性学习层面很少涉及。",
+      "entities": [
+        {
+          "entity_id": "49_e1",
+          "mention": "S.Y.Rieh",
+          "normalized_name": "S.Y.Rieh",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "S.Y.Rieh 等[2]也指出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "49_e2",
+          "mention": "探索式搜索",
+          "normalized_name": "探索式搜索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "探索式搜索主要关注接受性学习和评价性学习层面",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "49_e3",
+          "mention": "接受性学习",
+          "normalized_name": "接受性学习",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "探索式搜索主要关注接受性学习和评价性学习层面",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "49_e4",
+          "mention": "评价性学习",
+          "normalized_name": "评价性学习",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "探索式搜索主要关注接受性学习和评价性学习层面",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "49_e5",
+          "mention": "创造性学习",
+          "normalized_name": "创造性学习",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对于创造性学习层面很少涉及",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "50",
+      "sentence": "在认知学习分类法中除了认知复杂度的维度，还涉及了一个知识维度，包括事实性知识、概念性知识、程序性知识和元认知知识。 他们主张结合考虑认知复杂度维度和知识维度来设计搜索任务。",
+      "entities": [
+        {
+          "entity_id": "50_e1",
+          "mention": "认知学习分类法",
+          "normalized_name": "认知学习分类法",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在认知学习分类法中除了认知复杂度的维度",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "50_e2",
+          "mention": "认知复杂度",
+          "normalized_name": "认知复杂度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在认知学习分类法中除了认知复杂度的维度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "50_e3",
+          "mention": "知识维度",
+          "normalized_name": "知识维度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "还涉及了一个知识维度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "50_e4",
+          "mention": "事实性知识",
+          "normalized_name": "事实性知识",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括事实性知识、概念性知识、程序性知识和元认知知识",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "50_e5",
+          "mention": "概念性知识",
+          "normalized_name": "概念性知识",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括事实性知识、概念性知识、程序性知识和元认知知识",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "50_e6",
+          "mention": "程序性知识",
+          "normalized_name": "程序性知识",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括事实性知识、概念性知识、程序性知识和元认知知识",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "50_e7",
+          "mention": "元认知知识",
+          "normalized_name": "元认知知识",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括事实性知识、概念性知识、程序性知识和元认知知识",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "51",
+      "sentence": "除了上述情境因素，用户协同搜索过程中的搜索学习过程,所使用的设备类型(如台式机、笔记本、平板电脑、智能手机等)和搜索系统的各种功能及信息的展示方式等都会对搜索学习过程产生影响。 但是目前对这些情境变量的研究都很有限,需要在未来研究中进一步验证。",
+      "entities": [
+        {
+          "entity_id": "51_e1",
+          "mention": "台式机",
+          "normalized_name": "台式机",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "所使用的设备类型(如台式机、笔记本、平板电脑、智能手机等)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "51_e2",
+          "mention": "笔记本",
+          "normalized_name": "笔记本",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "所使用的设备类型(如台式机、笔记本、平板电脑、智能手机等)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "51_e3",
+          "mention": "平板电脑",
+          "normalized_name": "平板电脑",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "所使用的设备类型(如台式机、笔记本、平板电脑、智能手机等)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "51_e4",
+          "mention": "智能手机",
+          "normalized_name": "智能手机",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "所使用的设备类型(如台式机、笔记本、平板电脑、智能手机等)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "52",
+      "sentence": "正如3.2所述,SAL研究中的学习评估不仅关注搜索输出（searchoutput），更重要的是以用户搜索后的学习产出（learning outcome）为评估对象,分析搜索给用户带来的知识特征的改变，以及这些变化能否帮助用户完成学习型搜索任务的目标。",
+      "entities": [
+        {
+          "entity_id": "52_e1",
+          "mention": "SAL研究",
+          "normalized_name": "SAL研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "SAL研究中的学习评估",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e2",
+          "mention": "搜索输出（searchoutput）",
+          "normalized_name": "搜索输出（searchoutput）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "搜索输出（searchoutput）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e3",
+          "mention": "学习产出（learning outcome）",
+          "normalized_name": "学习产出（learning outcome）",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以用户搜索后的学习产出（learning outcome）为评估对象",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "52_e4",
+          "mention": "学习型搜索任务",
+          "normalized_name": "学习型搜索任务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "帮助用户完成学习型搜索任务的目标",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "53",
+      "sentence": "如袁红和施晓玲[65]从学习时间有效、习得知识、分析综合、知识创新、搜索能力增加5个维度设计量表,让用户在搜索结束后对学习效果展开自我评估。 这种评估方式相对主观,在很大程度上依靠量表或问卷的有效性以及自我评估的准确性。且研究发现用户对于自身知识水平的评估未必准确,存在用户高估或低估个人水平的情况[,这与用户是否具有良好的自我认知、自我判断的元认知知识有关[28]。",
+      "entities": [
+        {
+          "entity_id": "53_e1",
+          "mention": "袁红",
+          "normalized_name": "袁红",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "袁红和施晓玲[65]从学习时间有效、习得知识、分析综合、知识创新、搜索能力增加5个维度设计量表",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "53_e2",
+          "mention": "施晓玲",
+          "normalized_name": "施晓玲",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "袁红和施晓玲[65]从学习时间有效、习得知识、分析综合、知识创新、搜索能力增加5个维度设计量表",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "53_e3",
+          "mention": "量表",
+          "normalized_name": "量表",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "从学习时间有效、习得知识、分析综合、知识创新、搜索能力增加5个维度设计量表",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "未给出量表具体名称，但作为测量工具实体抽取"
+        },
+        {
+          "entity_id": "53_e4",
+          "mention": "元认知知识",
+          "normalized_name": "元认知知识",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户是否具有良好的自我认知、自我判断的元认知知识有关",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "54",
+      "sentence": "如W.R.Hersh等[让医学院的学生在搜索前后分别对一些医学相关且答案明确的问题进行回答,并对他们回答的正误进行打分。 通过学生前后得分的差异，说明搜索对于学生知识提升的作用。 L.Nelson 等[8]、U.Gadiraju等[29都选择让被试在搜索前、后分别完成与任务相关的若干是非判断题来测评被试的学习产出。",
+      "entities": [
+        {
+          "entity_id": "54_e1",
+          "mention": "W.R.Hersh",
+          "normalized_name": "W.R.Hersh",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如W.R.Hersh等[让医学院的学生在搜索前后分别对一些医学相关且答案明确的问题进行回答",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "54_e2",
+          "mention": "L.Nelson",
+          "normalized_name": "L.Nelson",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "L.Nelson 等[8]、U.Gadiraju等[29都选择让被试在搜索前、后分别完成与任务相关的若干是非判断题来测评被试的学习产出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "54_e3",
+          "mention": "U.Gadiraju",
+          "normalized_name": "U.Gadiraju",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "U.Gadiraju等[29都选择让被试在搜索前、后分别完成与任务相关的若干是非判断题来测评被试的学习产出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "55",
+      "sentence": "M.J.Wilson 和 M.L.Wilson[44 提出了一套学习深度测量(depth of learning)的评估方法，对用户搜索前、后所写的任务短文的有用性、分析性、评价性3方面进行人工评判,以分析搜索是否为用户带来了知识增长。 宋筱璇和刘畅[5认为对于任务短文的评估不应局限于对事实或陈述数量的计算,应该综合多方面整体评估,并提出了一套覆盖知识数量和质量的综合评估方法，从任务短文所体现的知识点数、知识面数、知识面广度、知识面深度、知识的相关性、分析程度及用户观点7个方面，来评估搜索后的学习产出情况。",
+      "entities": [
+        {
+          "entity_id": "55_e1",
+          "mention": "M.J.Wilson",
+          "normalized_name": "M.J.Wilson",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "M.J.Wilson 和 M.L.Wilson[44 提出了一套学习深度测量(depth of learning)的评估方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "55_e2",
+          "mention": "M.L.Wilson",
+          "normalized_name": "M.L.Wilson",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "M.J.Wilson 和 M.L.Wilson[44 提出了一套学习深度测量(depth of learning)的评估方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "55_e3",
+          "mention": "学习深度测量(depth of learning)的评估方法",
+          "normalized_name": "学习深度测量(depth of learning)的评估方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提出了一套学习深度测量(depth of learning)的评估方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为technique"
+        },
+        {
+          "entity_id": "55_e4",
+          "mention": "宋筱璇",
+          "normalized_name": "宋筱璇",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "宋筱璇和刘畅[5认为对于任务短文的评估不应局限于对事实或陈述数量的计算",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "55_e5",
+          "mention": "刘畅",
+          "normalized_name": "刘畅",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "宋筱璇和刘畅[5认为对于任务短文的评估不应局限于对事实或陈述数量的计算",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "55_e6",
+          "mention": "综合评估方法",
+          "normalized_name": "综合评估方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提出了一套覆盖知识数量和质量的综合评估方法",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "名称较泛，但原文中作为具体提出的方法"
+        }
+      ]
+    },
+    {
+      "sentence_id": "56",
+      "sentence": "最近，研究者愈发关注搜索与用户知识结构间的关系。 夏立新等[70]、张云秋等[71]都通过可视化知识结构的方式,收集被试在搜索前、后绘制的概念图，通过比较图中知识结构的差异来评估搜索的学习产出。刘萍等[72]从语言符号学中“语法”“语义\"和“语用\"三个层次分别对用户搜索后概念图的概念节点(丰富性、专业性、有效性)和概念关系(联系性、层次性、探索性)进行量化评估，并结合专家的实际打分验证了该量化体系的有效性。C.Liu 等[39-40]不仅关注搜索前、后被试思维导图的结构变化，还详细地编码了搜索过程中思维导图的每一步修改,在更细的粒度上呈现了被试的学习过程和策略。J.Gwizdka 和X.Chen[]认为学习产出的评估即为对学习者知识结构变化的评估,但根据研究的特征不同，评估内容的重点也应有所不同：在从搜索到学习的相关研究中（searchingto learn），应关注搜索后学习者的陈述性知识(declarative knowledge)的变化情况; 但在从学习到搜索的相关研究中（learm-ing to search），应该更关注评估学习者的程序性知识（procedural knowledge）和认知策略（cognitive strate-gies）。",
+      "entities": [
+        {
+          "entity_id": "56_e1",
+          "mention": "夏立新",
+          "normalized_name": "夏立新",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "夏立新等[70]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e2",
+          "mention": "张云秋",
+          "normalized_name": "张云秋",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "张云秋等[71]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e3",
+          "mention": "概念图",
+          "normalized_name": "概念图",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "收集被试在搜索前、后绘制的概念图",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e4",
+          "mention": "刘萍",
+          "normalized_name": "刘萍",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "刘萍等[72]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e5",
+          "mention": "语言符号学",
+          "normalized_name": "语言符号学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从语言符号学中“语法”“语义”和“语用”三个层次",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e6",
+          "mention": "C.Liu",
+          "normalized_name": "C.Liu",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "C.Liu 等[39-40]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e7",
+          "mention": "思维导图",
+          "normalized_name": "思维导图",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "搜索前、后被试思维导图的结构变化",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e8",
+          "mention": "J.Gwizdka",
+          "normalized_name": "J.Gwizdka",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "J.Gwizdka 和X.Chen[]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e9",
+          "mention": "X.Chen",
+          "normalized_name": "X.Chen",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "J.Gwizdka 和X.Chen[]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e10",
+          "mention": "陈述性知识",
+          "normalized_name": "陈述性知识",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "应关注搜索后学习者的陈述性知识(declarative knowledge)的变化情况",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e11",
+          "mention": "程序性知识",
+          "normalized_name": "程序性知识",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "应该更关注评估学习者的程序性知识（procedural knowledge）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "56_e12",
+          "mention": "认知策略",
+          "normalized_name": "认知策略",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "认知策略（cognitive strategies）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "57",
+      "sentence": "总体而言，学习产出的评估方法没有对错之分，已有的评估方式都涉及了学习的某一或某些侧面的特征。但学习型搜索不是只有那些需要撰写论文的搜索情境或任务。当搜索任务特征发生变化时，学习的目标也随之改变,学习产出的评估方法自然也需要调整。体验学习专家D.A.Kolb 总结了4种类型的学习情境：情感复合型、感知复合型、形象复合型、行为复合型，并指出对于学习产出的评估应因情境而有所不同[73]。例如在感知型的学习中,学习者被要求从不同角度，以不同方式看待问题,强调怎样完成、完成的过程，而不仅仅是结果。这样的学习产出是没有固定的标准答案的，如果此时采用测试的方式评估其学习产出就是不合理的。然而在形象复合型的学习情境中，学习的成功与否将以正确或最佳解决方案、专家意见或者在该问题领域内普遍接受的严格标准来判断。因此学习产出的有效评估方法，首先要考量学习情境和搜索任务，保证学习目标与评估的一致性。",
+      "entities": [
+        {
+          "entity_id": "57_e1",
+          "mention": "学习型搜索",
+          "normalized_name": "学习型搜索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "但学习型搜索不是只有那些需要撰写论文的搜索情境或任务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "57_e2",
+          "mention": "D.A.Kolb",
+          "normalized_name": "D.A.Kolb",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "体验学习专家D.A.Kolb 总结了4种类型的学习情境",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "57_e3",
+          "mention": "情感复合型",
+          "normalized_name": "情感复合型",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "情感复合型、感知复合型、形象复合型、行为复合型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "属于学习情境分类中的一种类型"
+        },
+        {
+          "entity_id": "57_e4",
+          "mention": "感知复合型",
+          "normalized_name": "感知复合型",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "情感复合型、感知复合型、形象复合型、行为复合型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "属于学习情境分类中的一种类型"
+        },
+        {
+          "entity_id": "57_e5",
+          "mention": "形象复合型",
+          "normalized_name": "形象复合型",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "情感复合型、感知复合型、形象复合型、行为复合型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "属于学习情境分类中的一种类型"
+        },
+        {
+          "entity_id": "57_e6",
+          "mention": "行为复合型",
+          "normalized_name": "行为复合型",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "情感复合型、感知复合型、形象复合型、行为复合型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "属于学习情境分类中的一种类型"
+        }
+      ]
+    },
+    {
+      "sentence_id": "58",
+      "sentence": "在基于过程的视角中，研究者希望探索搜索过程中学习是何时以及如何发生的，有哪些行为活动或模式可以隐性地表示或监测到学习的发生。 挖掘搜索过程中学习的隐性指标，助益于搜索系统从搜索行为特征中理解和监测学习者的学习过程，从而提供及时有效的系统支持。",
+      "entities": [
+        {
+          "entity_id": "58_e1",
+          "mention": "搜索系统",
+          "normalized_name": "搜索系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "助益于搜索系统从搜索行为特征中理解和监测学习者的学习过程",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指代泛化系统，但图情领域放宽规则，有功能限定修饰，故抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "59",
+      "sentence": "已有研究发现检索式构造和重构的模式,检索式的长度,检索词的多样性，阅读、收藏、下载的文档数量，评估文档所花费的时间等交互变量，因其与学习特征、认知特征的发展演化存在一定的关联，这些交互变量的变化模式在一定的条件下可以视为搜索过程中学习发生的隐性指标[3,74-75]。如Y.Chi等[33]发现随着搜索过程的推进，用户的点击复杂度和检索式复杂度呈现上升的趋势，这在一定程度上意味着搜索者的知识增长。并且该研究发现在搜索会话的第一个1/6 时间内,检索式的复杂度显著低于后面的时间段,这一结果可能暗示着学习很有可能发生在第一个1/6 时间段之后。 袁红和施晓玲[5]将用户的搜索总时间三等分，将这3个阶段分别命名为基础知识学习、主题内容深入学习、基于兴趣的专项学习。",
+      "entities": [
+        {
+          "entity_id": "59_e1",
+          "mention": "Y.Chi",
+          "normalized_name": "Y.Chi",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如Y.Chi等[33]发现随着搜索过程的推进",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "59_e2",
+          "mention": "袁红",
+          "normalized_name": "袁红",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "袁红和施晓玲[5]将用户的搜索总时间三等分",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "59_e3",
+          "mention": "施晓玲",
+          "normalized_name": "施晓玲",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "袁红和施晓玲[5]将用户的搜索总时间三等分",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "59_e4",
+          "mention": "检索式构造",
+          "normalized_name": "检索式构造",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检索式构造和重构的模式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "59_e5",
+          "mention": "检索式重构",
+          "normalized_name": "检索式重构",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检索式构造和重构的模式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "59_e6",
+          "mention": "检索式的长度",
+          "normalized_name": "检索式的长度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检索式的长度,检索词的多样性",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为属性而非独立概念"
+        },
+        {
+          "entity_id": "59_e7",
+          "mention": "检索词的多样性",
+          "normalized_name": "检索词的多样性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检索词的多样性",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为属性而非独立概念"
+        },
+        {
+          "entity_id": "59_e8",
+          "mention": "点击复杂度",
+          "normalized_name": "点击复杂度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户的点击复杂度和检索式复杂度呈现上升的趋势",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "59_e9",
+          "mention": "检索式复杂度",
+          "normalized_name": "检索式复杂度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户的点击复杂度和检索式复杂度呈现上升的趋势",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "59_e10",
+          "mention": "基础知识学习",
+          "normalized_name": "基础知识学习",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "将这3个阶段分别命名为基础知识学习、主题内容深入学习、基于兴趣的专项学习",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "59_e11",
+          "mention": "主题内容深入学习",
+          "normalized_name": "主题内容深入学习",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "将这3个阶段分别命名为基础知识学习、主题内容深入学习、基于兴趣的专项学习",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "59_e12",
+          "mention": "基于兴趣的专项学习",
+          "normalized_name": "基于兴趣的专项学习",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "将这3个阶段分别命名为基础知识学习、主题内容深入学习、基于兴趣的专项学习",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "60",
+      "sentence": "在基于兴趣的专项学习阶段，用户表现为更加细致地浏览搜索结果页面。 然而该研究中对于学习过程的阶段划分需要更加严谨的论证，来佐证这些行为指标作为学习发生,或学习阶段转变的代表性。此外,在一些预测研究中,R.W.White 等[7发现通过搜索交互过程中用户的检索词(检索词长度、检索词词汇覆盖情况)、检索会话特征(浏览内容页数目、检索式数目、检索时间、重看页面数)、来源选择(内容页类型、URL特征)等指标，能够很好地预测当前用户的知识水平。X.Zhang 等[77]发现搜索过程中保存的文档数量、构造的检索式的平均长度以及阅读的文档在搜索结果页的平均位置三个变量对预测用户的领域知识效果最佳。 P.Vakkari认为学习即是知识结构发生了改变。",
+      "entities": [
+        {
+          "entity_id": "60_e1",
+          "mention": "R.W.White",
+          "normalized_name": "R.W.White",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "R.W.White 等[7发现通过搜索交互过程中用户的检索词",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e2",
+          "mention": "X.Zhang",
+          "normalized_name": "X.Zhang",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "X.Zhang 等[77]发现搜索过程中保存的文档数量",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e3",
+          "mention": "P.Vakkari",
+          "normalized_name": "P.Vakkari",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "P.Vakkari认为学习即是知识结构发生了改变",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e4",
+          "mention": "检索词长度",
+          "normalized_name": "检索词长度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检索词(检索词长度、检索词词汇覆盖情况)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e5",
+          "mention": "检索词词汇覆盖情况",
+          "normalized_name": "检索词词汇覆盖情况",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检索词(检索词长度、检索词词汇覆盖情况)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e6",
+          "mention": "浏览内容页数目",
+          "normalized_name": "浏览内容页数目",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检索会话特征(浏览内容页数目、检索式数目、检索时间、重看页面数)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e7",
+          "mention": "检索式数目",
+          "normalized_name": "检索式数目",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检索会话特征(浏览内容页数目、检索式数目、检索时间、重看页面数)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e8",
+          "mention": "检索时间",
+          "normalized_name": "检索时间",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检索会话特征(浏览内容页数目、检索式数目、检索时间、重看页面数)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e9",
+          "mention": "重看页面数",
+          "normalized_name": "重看页面数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检索会话特征(浏览内容页数目、检索式数目、检索时间、重看页面数)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e10",
+          "mention": "内容页类型",
+          "normalized_name": "内容页类型",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "来源选择(内容页类型、URL特征)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e11",
+          "mention": "URL特征",
+          "normalized_name": "URL特征",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "来源选择(内容页类型、URL特征)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "60_e12",
+          "mention": "知识结构",
+          "normalized_name": "知识结构",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "P.Vakkari认为学习即是知识结构发生了改变",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "61",
+      "sentence": "他根据子任务的不同,将搜索过程细化为不同的阶段，包括搜索构造阶段、信息源选择阶段、信息源使用阶段，从理论上提出了各阶段内揭示知识结构重组发生的隐性行为指标特征,如表1所示。 这一研究为搜索过程与学习过程的特征建立起了联系，有助于启发之后的研究从行为的角度对学习活动展开监测和帮助。",
+      "entities": [
+        {
+          "entity_id": "61_e1",
+          "mention": "搜索构造阶段",
+          "normalized_name": "搜索构造阶段",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "将搜索过程细化为不同的阶段，包括搜索构造阶段、信息源选择阶段、信息源使用阶段",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "61_e2",
+          "mention": "信息源选择阶段",
+          "normalized_name": "信息源选择阶段",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "将搜索过程细化为不同的阶段，包括搜索构造阶段、信息源选择阶段、信息源使用阶段",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "61_e3",
+          "mention": "信息源使用阶段",
+          "normalized_name": "信息源使用阶段",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "将搜索过程细化为不同的阶段，包括搜索构造阶段、信息源选择阶段、信息源使用阶段",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "61_e4",
+          "mention": "知识结构重组",
+          "normalized_name": "知识结构重组",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "各阶段内揭示知识结构重组发生的隐性行为指标特征",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为phenomenon，但原文未明确作为独立研究主题命名"
+        }
+      ]
+    },
+    {
+      "sentence_id": "62",
+      "sentence": "传统的搜索系统被设计和完善为通过检索相关信息来满足特定信息需求的工具。 而在SAL的研究主题下，研究人员希望重新思考、建模和设计当前的交互式搜索系统。在未来，这些系统不是单纯的搜索系统，而是作为能够支持学习者信息搜索、信息浏览、信息理解、信息分析、信息创造等功能的学习系统[78]。",
+      "entities": [
+        {
+          "entity_id": "62_e1",
+          "mention": "SAL",
+          "normalized_name": "SAL",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在SAL的研究主题下",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为缩写，需确认全称"
+        },
+        {
+          "entity_id": "62_e2",
+          "mention": "交互式搜索系统",
+          "normalized_name": "交互式搜索系统",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "重新思考、建模和设计当前的交互式搜索系统",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "若为通用系统类型则可能为泛称，但此处作为具体研究主题下的系统类型，予以抽取"
+        },
+        {
+          "entity_id": "62_e3",
+          "mention": "学习系统",
+          "normalized_name": "学习系统",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "作为能够支持学习者信息搜索、信息浏览、信息理解、信息分析、信息创造等功能的学习系统",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "若为通用系统类型则可能为泛称，但此处作为具体研究主题下的系统类型，予以抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "63",
+      "sentence": "H.C.Huurdeman 等[81基于Vakkari 学习任务的3个问题阶段:前聚焦、形成、后聚焦,设计了两个3阶段的搜索任务，研究搜索用户界面功能在不同阶段的效用。 该研究发现信息功能(如搜索结果)在所有3个阶段中都扮演着重要的角色，而输入功能(如搜索框)和控制功能(如分类过滤器、标签云、检索式推荐)的有用性在前聚焦阶段后呈下降趋势。 取而代之的是,在前聚焦阶段之后,用户更喜欢使用个性化的功能(如最近搜索、收藏结果)。",
+      "entities": [
+        {
+          "entity_id": "63_e1",
+          "mention": "H.C.Huurdeman",
+          "normalized_name": "H.C.Huurdeman",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "H.C.Huurdeman 等[81基于Vakkari 学习任务的3个问题阶段",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "63_e2",
+          "mention": "Vakkari 学习任务的3个问题阶段",
+          "normalized_name": "Vakkari学习任务的3个问题阶段",
+          "candidate_l3": "typology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于Vakkari 学习任务的3个问题阶段:前聚焦、形成、后聚焦",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "63_e3",
+          "mention": "前聚焦",
+          "normalized_name": "前聚焦",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "前聚焦、形成、后聚焦",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "63_e4",
+          "mention": "形成",
+          "normalized_name": "形成",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "前聚焦、形成、后聚焦",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "63_e5",
+          "mention": "后聚焦",
+          "normalized_name": "后聚焦",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "前聚焦、形成、后聚焦",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "63_e6",
+          "mention": "搜索用户界面功能",
+          "normalized_name": "搜索用户界面功能",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究搜索用户界面功能在不同阶段的效用",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为information_system的功能属性"
+        },
+        {
+          "entity_id": "63_e7",
+          "mention": "信息功能",
+          "normalized_name": "信息功能",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息功能(如搜索结果)在所有3个阶段中都扮演着重要的角色",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "63_e8",
+          "mention": "搜索结果",
+          "normalized_name": "搜索结果",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息功能(如搜索结果)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "63_e9",
+          "mention": "输入功能",
+          "normalized_name": "输入功能",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "输入功能(如搜索框)和控制功能(如分类过滤器、标签云、检索式推荐)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "63_e10",
+          "mention": "搜索框",
+          "normalized_name": "搜索框",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "输入功能(如搜索框)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "63_e11",
+          "mention": "控制功能",
+          "normalized_name": "控制功能",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "控制功能(如分类过滤器、标签云、检索式推荐)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "63_e12",
+          "mention": "分类过滤器",
+          "normalized_name": "分类过滤器",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "控制功能(如分类过滤器、标签云、检索式推荐)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "63_e13",
+          "mention": "标签云",
+          "normalized_name": "标签云",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "控制功能(如分类过滤器、标签云、检索式推荐)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "63_e14",
+          "mention": "检索式推荐",
+          "normalized_name": "检索式推荐",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "控制功能(如分类过滤器、标签云、检索式推荐)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "63_e15",
+          "mention": "个性化的功能",
+          "normalized_name": "个性化的功能",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户更喜欢使用个性化的功能(如最近搜索、收藏结果)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "63_e16",
+          "mention": "最近搜索",
+          "normalized_name": "最近搜索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "个性化的功能(如最近搜索、收藏结果)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "63_e17",
+          "mention": "收藏结果",
+          "normalized_name": "收藏结果",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "个性化的功能(如最近搜索、收藏结果)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "64",
+      "sentence": "取而代之的是,在前聚焦阶段之后,用户更喜欢使用个性化的功能(如最近搜索、收藏结果)。 这与X.Niu 和 D.Kelly[82]之前的研究结果略有不同。 在他们的研究中，用户在搜索的前期和中期更倾向于自己构造检索式进行搜索,而在搜索会话的后期,才更多地使用检索式推荐功能。",
+      "entities": [
+        {
+          "entity_id": "64_e1",
+          "mention": "X.Niu",
+          "normalized_name": "X.Niu",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "X.Niu 和 D.Kelly[82]之前的研究结果",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "64_e2",
+          "mention": "D.Kelly",
+          "normalized_name": "D.Kelly",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "X.Niu 和 D.Kelly[82]之前的研究结果",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "64_e3",
+          "mention": "检索式推荐功能",
+          "normalized_name": "检索式推荐功能",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "才更多地使用检索式推荐功能",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "65",
+      "sentence": "在他们的研究中，用户在搜索的前期和中期更倾向于自己构造检索式进行搜索,而在搜索会话的后期,才更多地使用检索式推荐功能。 这种不同很可能与用户的搜索专业知识以及搜索任务的特征有关。 H.C.Huurdeman[83]在进一步的研究中提出了一个支持复杂任务的“阶段感知”用户搜索界面框架。",
+      "entities": [
+        {
+          "entity_id": "65_e1",
+          "mention": "H.C.Huurdeman",
+          "normalized_name": "H.C.Huurdeman",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "H.C.Huurdeman[83]在进一步的研究中提出了一个支持复杂任务的“阶段感知”用户搜索界面框架",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "65_e2",
+          "mention": "“阶段感知”用户搜索界面框架",
+          "normalized_name": "阶段感知用户搜索界面框架",
+          "candidate_l3": "framework",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提出了一个支持复杂任务的“阶段感知”用户搜索界面框架",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "66",
+      "sentence": "除了关注学习情境中的系统设计与优化，一些研究者还关注系统为特定的人群服务。 如K.Collins-Thompson 等[84]认为当前的搜索系统在提供搜索结果时没有考虑到文档的阅读难度和用户的阅读能力，这不利于阅读能力较低的人群,如儿童的学习目标的实现。I.M.Azpiazu 等[85关注5-15 岁的儿童识字率和阅读理解能力不足的问题,开发了一个面向儿童的在线搜索工具YouUnderstood.Me（YUM）。 YUM能够通过儿童提交的检索式识别他们的搜索意图，提供相关检索式推荐，通过显性相关反馈推断儿童的阅读水平，从而按照文档的可读性过滤相关信息，以增强儿童的搜索体验,促进儿童的学习。",
+      "entities": [
+        {
+          "entity_id": "66_e1",
+          "mention": "K.Collins-Thompson",
+          "normalized_name": "K.Collins-Thompson",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如K.Collins-Thompson 等[84]认为当前的搜索系统在提供搜索结果时没有考虑到文档的阅读难度和用户的阅读能力",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "66_e2",
+          "mention": "I.M.Azpiazu",
+          "normalized_name": "I.M.Azpiazu",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "I.M.Azpiazu 等[85关注5-15 岁的儿童识字率和阅读理解能力不足的问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "66_e3",
+          "mention": "YouUnderstood.Me（YUM）",
+          "normalized_name": "YouUnderstood.Me（YUM）",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "开发了一个面向儿童的在线搜索工具YouUnderstood.Me（YUM）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "66_e4",
+          "mention": "YUM",
+          "normalized_name": "YUM",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "YUM能够通过儿童提交的检索式识别他们的搜索意图",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "67",
+      "sentence": "YUM能够通过儿童提交的检索式识别他们的搜索意图，提供相关检索式推荐，通过显性相关反馈推断儿童的阅读水平，从而按照文档的可读性过滤相关信息，以增强儿童的搜索体验,促进儿童的学习。 M.L.Wilson 等[86]以领域新手搜索技术相关的问题为例,如编写程序代码中遇到的问题,提出从3个角度优化当前的Google搜索引擎,以支持搜索者的技术学习过程,分别是支持细节说明; 支持多轮对话;",
+      "entities": [
+        {
+          "entity_id": "67_e1",
+          "mention": "YUM",
+          "normalized_name": "YUM",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "YUM能够通过儿童提交的检索式识别他们的搜索意图",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "67_e2",
+          "mention": "M.L.Wilson",
+          "normalized_name": "M.L.Wilson",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "M.L.Wilson 等[86]以领域新手搜索技术相关的问题为例",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "67_e3",
+          "mention": "Google搜索引擎",
+          "normalized_name": "Google搜索引擎",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "提出从3个角度优化当前的Google搜索引擎",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "68",
+      "sentence": "已有研究对于搜索系统的设计和优化仍主要关注对信息的获取过程(如检索式构造)和信息的选择过程(如 SERP的排序、结果的可视化)的支持。 对于学习层面的支持,如信息质量的评估,信息的对比、分析、综合、创造等还有待进一步思考。 A.Meyer 等[78] 提出了一个创造性虚拟学术空间的设想，称之为第三空间。",
+      "entities": [
+        {
+          "entity_id": "68_e1",
+          "mention": "A.Meyer",
+          "normalized_name": "A.Meyer",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "A.Meyer 等[78] 提出了一个创造性虚拟学术空间的设想",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "68_e2",
+          "mention": "第三空间",
+          "normalized_name": "第三空间",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提出了一个创造性虚拟学术空间的设想，称之为第三空间",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "69",
+      "sentence": "这个第三空间是学校学习与学生已有知识和认知方式之间的交汇区，是一个动态的学习空间。 可以预见,未来搜索系统的优化目标就是成为这个第三空间中的核心。因此,研究者对于系统的设计和优化,应该更多地结合学习者的信息素养、认知特征以及真实的教育教学环节中的相关理论和规律展开。",
+      "entities": [
+        {
+          "entity_id": "69_e1",
+          "mention": "第三空间",
+          "normalized_name": "第三空间",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这个第三空间是学校学习与学生已有知识和认知方式之间的交汇区",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "69_e2",
+          "mention": "搜索系统",
+          "normalized_name": "搜索系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "未来搜索系统的优化目标就是成为这个第三空间中的核心",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "69_e3",
+          "mention": "信息素养",
+          "normalized_name": "信息素养",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "结合学习者的信息素养、认知特征以及真实的教育教学环节中的相关理论和规律",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "70",
+      "sentence": "\"搜索即学习”主题关注的核心问题在于,在当前的知识密集时代，如何让信息更好地服务于人类的终生学习和发展。 因此，信息搜索系统不能止步于作为获取信息的工具,应该以其对学习的支持为核心,重新配置、优化当前的搜索系统,使之成为符合学习和信息行为规律的，能够支持学习者知识发现、知识思辨和知识创造的学习系统。 本文通过梳理“搜索即学习”主题下的相关文献，围绕当前研究中的4个主要问题展开综述:",
+      "entities": [
+        {
+          "entity_id": "70_e1",
+          "mention": "搜索即学习",
+          "normalized_name": "搜索即学习",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "“搜索即学习”主题关注的核心问题在于",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "70_e2",
+          "mention": "信息搜索系统",
+          "normalized_name": "信息搜索系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "信息搜索系统不能止步于作为获取信息的工具",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "泛称系统，但图情领域放宽规则，作为具体系统类型抽取"
+        },
+        {
+          "entity_id": "70_e3",
+          "mention": "学习系统",
+          "normalized_name": "学习系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "使之成为符合学习和信息行为规律的，能够支持学习者知识发现、知识思辨和知识创造的学习系统",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称系统，但图情领域放宽规则，作为具体系统类型抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "71",
+      "sentence": "过程观将搜索作为学习的过程展开研究。 结果观和过程观不是对立的，而应该互为补充,从而完整地展示搜索过程和学习过程间的关系及其作用的效果。已有的文献对于搜索过程中交互行为如何影响搜索后的学习产出这一问题有着较丰富的探索，但对于将搜索视为学习过程的研究还比较有限。搜索行为模式的演化和学习者知识结构变化之间的关系，有待研究者从更细的粒度上分析探索。",
+      "entities": [
+        {
+          "entity_id": "71_e1",
+          "mention": "搜索作为学习的过程",
+          "normalized_name": "搜索作为学习的过程",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "过程观将搜索作为学习的过程展开研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "71_e2",
+          "mention": "结果观",
+          "normalized_name": "结果观",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "结果观和过程观不是对立的",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "71_e3",
+          "mention": "过程观",
+          "normalized_name": "过程观",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "结果观和过程观不是对立的",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "71_e4",
+          "mention": "搜索过程",
+          "normalized_name": "搜索过程",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "完整地展示搜索过程和学习过程间的关系",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "71_e5",
+          "mention": "学习过程",
+          "normalized_name": "学习过程",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "完整地展示搜索过程和学习过程间的关系",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "71_e6",
+          "mention": "交互行为",
+          "normalized_name": "交互行为",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "搜索过程中交互行为如何影响搜索后的学习产出",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "71_e7",
+          "mention": "学习产出",
+          "normalized_name": "学习产出",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "搜索过程中交互行为如何影响搜索后的学习产出",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "71_e8",
+          "mention": "搜索行为模式",
+          "normalized_name": "搜索行为模式",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "搜索行为模式的演化和学习者知识结构变化之间的关系",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "71_e9",
+          "mention": "学习者知识结构",
+          "normalized_name": "学习者知识结构",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "搜索行为模式的演化和学习者知识结构变化之间的关系",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "72",
+      "sentence": "(2)探索情境因素和个人特征对搜索过程的影响。 已有研究已经发现任务特征显著影响搜索中的交互行为。 本文回顾了SAL主题下探索式搜索任务和综合性搜索任务的设计出发点、特征及其联系。",
+      "entities": [
+        {
+          "entity_id": "72_e1",
+          "mention": "SAL",
+          "normalized_name": "SAL",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本文回顾了SAL主题下探索式搜索任务和综合性搜索任务的设计出发点、特征及其联系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "SAL可能为缩写，需确认全称"
+        },
+        {
+          "entity_id": "72_e2",
+          "mention": "探索式搜索任务",
+          "normalized_name": "探索式搜索任务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "探索式搜索任务和综合性搜索任务的设计出发点、特征及其联系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "72_e3",
+          "mention": "综合性搜索任务",
+          "normalized_name": "综合性搜索任务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "探索式搜索任务和综合性搜索任务的设计出发点、特征及其联系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "73",
+      "sentence": "本文回顾了SAL主题下探索式搜索任务和综合性搜索任务的设计出发点、特征及其联系。 考虑到学习活动的内隐性和复杂性,研究者提出了学习型搜索的概念，将学习过程和搜索过程的相关特征放在学习的情境中考量。在未来的研究中，需要进一步理解和细化学习情境的特征，探索学习型搜索任务对搜索过程和学习过程的影响作用。 在个人特征方面，对搜索者的知识水平、认知风格、搜索技能等如何影响搜索中的交互行为已经有很多的探索。",
+      "entities": [
+        {
+          "entity_id": "73_e1",
+          "mention": "SAL",
+          "normalized_name": "SAL",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本文回顾了SAL主题下探索式搜索任务和综合性搜索任务的设计出发点、特征及其联系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "73_e2",
+          "mention": "探索式搜索任务",
+          "normalized_name": "探索式搜索任务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本文回顾了SAL主题下探索式搜索任务和综合性搜索任务的设计出发点、特征及其联系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "73_e3",
+          "mention": "综合性搜索任务",
+          "normalized_name": "综合性搜索任务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本文回顾了SAL主题下探索式搜索任务和综合性搜索任务的设计出发点、特征及其联系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "73_e4",
+          "mention": "学习型搜索",
+          "normalized_name": "学习型搜索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究者提出了学习型搜索的概念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "73_e5",
+          "mention": "学习型搜索任务",
+          "normalized_name": "学习型搜索任务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "探索学习型搜索任务对搜索过程和学习过程的影响作用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "73_e6",
+          "mention": "知识水平",
+          "normalized_name": "知识水平",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对搜索者的知识水平、认知风格、搜索技能等如何影响搜索中的交互行为已经有很多的探索",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "73_e7",
+          "mention": "认知风格",
+          "normalized_name": "认知风格",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对搜索者的知识水平、认知风格、搜索技能等如何影响搜索中的交互行为已经有很多的探索",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "73_e8",
+          "mention": "搜索技能",
+          "normalized_name": "搜索技能",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对搜索者的知识水平、认知风格、搜索技能等如何影响搜索中的交互行为已经有很多的探索",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "74",
+      "sentence": "在个人特征方面，对搜索者的知识水平、认知风格、搜索技能等如何影响搜索中的交互行为已经有很多的探索。 SAL主题希望更深入地理解搜索者的学习过程,如对信息的分析、对比、理解、综合、创造等,这些学习模式和策略与学习者的元认知知识和监控有着重要的联系，需要在之后的研究中进一步关注。",
+      "entities": [
+        {
+          "entity_id": "74_e1",
+          "mention": "SAL主题",
+          "normalized_name": "SAL主题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "SAL主题希望更深入地理解搜索者的学习过程",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为特定研究主题或项目名称，但原文未提供全称，按原文抽取"
+        },
+        {
+          "entity_id": "74_e2",
+          "mention": "元认知知识",
+          "normalized_name": "元认知知识",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这些学习模式和策略与学习者的元认知知识和监控有着重要的联系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "75",
+      "sentence": "(3)探索学习过程和学习产出的评估方法。 已有研究尝试依靠问卷、量表、测试、任务短文、概念图等多种方式从定性、定量等多角度评估搜索的学习产出，然而对于这些评估方式的适用性和科学性却缺乏论证。在学习产出评估方法的设计上，应分析理解当前的学习任务情境与学习目标，设计与任务情境相匹配的评",
+      "entities": [
+        {
+          "entity_id": "75_e1",
+          "mention": "问卷",
+          "normalized_name": "问卷",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "已有研究尝试依靠问卷、量表、测试、任务短文、概念图等多种方式从定性、定量等多角度评估搜索的学习产出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "75_e2",
+          "mention": "量表",
+          "normalized_name": "量表",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "已有研究尝试依靠问卷、量表、测试、任务短文、概念图等多种方式从定性、定量等多角度评估搜索的学习产出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "75_e3",
+          "mention": "测试",
+          "normalized_name": "测试",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "已有研究尝试依靠问卷、量表、测试、任务短文、概念图等多种方式从定性、定量等多角度评估搜索的学习产出",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为泛指，但作为具体评估工具提及"
+        },
+        {
+          "entity_id": "75_e4",
+          "mention": "任务短文",
+          "normalized_name": "任务短文",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "已有研究尝试依靠问卷、量表、测试、任务短文、概念图等多种方式从定性、定量等多角度评估搜索的学习产出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "75_e5",
+          "mention": "概念图",
+          "normalized_name": "概念图",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "已有研究尝试依靠问卷、量表、测试、任务短文、概念图等多种方式从定性、定量等多角度评估搜索的学习产出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,782 @@
+{
+  "base_name": "reviewed_full_9359",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "薰蒸法是将进馆的档案文件放入薰蒸罐，然后将杀虫除菌剂，如环氧乙烷、溴甲烷投入罐中。 环氧乙烷是剧毒药品，使用时必须十分小心。 正常使用比例是 $10 \\%$ 环氧乙烷和$90 \\%$ 二氧化碳；",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "薰蒸法",
+          "normalized_name": "薰蒸法",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "薰蒸法是将进馆的档案文件放入薰蒸罐",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "环氧乙烷",
+          "normalized_name": "环氧乙烷",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如环氧乙烷、溴甲烷投入罐中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "溴甲烷",
+          "normalized_name": "溴甲烷",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如环氧乙烷、溴甲烷投入罐中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "二氧化碳",
+          "normalized_name": "二氧化碳",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "正常使用比例是 $10 \\%$ 环氧乙烷和$90 \\%$ 二氧化碳",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "厚书、厚档案则需将书或档案翻开，潇蒸后要采用自然通风或真空抽气办法排放尾气。 目前，薰蒸罐已由过去老式密闭固定罐发展为配有温湿度器、时间自动显示器的新式流动薰蒸罐车，用于小批量档案杀虫去霉。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "薰蒸罐",
+          "normalized_name": "薰蒸罐",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "薰蒸罐已由过去老式密闭固定罐发展为配有温湿度器、时间自动显示器的新式流动薰蒸罐车",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "温湿度器",
+          "normalized_name": "温湿度器",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "配有温湿度器、时间自动显示器的新式流动薰蒸罐车",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为通用部件名称，但图情领域放宽规则下作为具体设备部件抽取"
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "时间自动显示器",
+          "normalized_name": "时间自动显示器",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "配有温湿度器、时间自动显示器的新式流动薰蒸罐车",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为通用部件名称，但图情领域放宽规则下作为具体设备部件抽取"
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "新式流动薰蒸罐车",
+          "normalized_name": "新式流动薰蒸罐车",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "新式流动薰蒸罐车，用于小批量档案杀虫去霉",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "采用真空杀虫的密闭空间通常为 $1 5 0 \\sim 2 0 0$ 米。消毒间应有外部控制系统，便于随时掌握温湿度。局部库房杀虫，可投放驱虫剂，用塑料薄膜隔离，这样既可避免上下倒架之苦，又可杜绝已杀虫档案与未杀虫档案之间的交叉感染。 在西班牙，真空杀虫常用以下几种药剂：",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "西班牙",
+          "normalized_name": "西班牙",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在西班牙，真空杀虫常用以下几种药剂",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处西班牙作为地域限定，可视为subfield或phenomenon的语境限定，但原文未明确学术命名，故低置信度"
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "冷冻杀出法主要用于受水灾、火灾档案的防治。温度控制在 $- 2 5 \\pm 5 \\textcircled { \\mathrm { C } }$ 时，杀虫去霉效果最佳。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "冷冻杀出法",
+          "normalized_name": "冷冻杀出法",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "冷冻杀出法主要用于受水灾、火灾档案的防治",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "光线对档案文件的危害很大，以红外线、紫外线最甚。红外线能引起温度增高，分子活化并分解，将吸收的能量传送给别的分子，促使档案文件表面温度上升，加速文件损害过程。紫外光能起光氧化和光还原作用，使纸张纤维素分解、断裂、发脆，并使文件色彩受损。 去迹方法如下：",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "红外线",
+          "normalized_name": "红外线",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以红外线、紫外线最甚",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "紫外线",
+          "normalized_name": "紫外线",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以红外线、紫外线最甚",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "火烧后由于档案文件载体已碳化，纸张发脆，只能采取机械的加膜法抢救。 字迹辨认则可采用紫外光仪或通过搁放铝板折射r、x射线来解决，更先进的办法是用激光扫描。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "加膜法",
+          "normalized_name": "加膜法",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "只能采取机械的加膜法抢救",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "紫外光仪",
+          "normalized_name": "紫外光仪",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "字迹辨认则可采用紫外光仪",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "激光扫描",
+          "normalized_name": "激光扫描",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "更先进的办法是用激光扫描",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "加膜技术在档案修复中非常重要。 纸张纤维在霉菌和酸的侵蚀及化学作用下，易受到损坏而成碎状，因此有必要采取加膜措施，从而抵消文件的脆性。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "加膜技术",
+          "normalized_name": "加膜技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加膜技术在档案修复中非常重要",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为method"
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "档案修复",
+          "normalized_name": "档案修复",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加膜技术在档案修复中非常重要",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "封套法是将文件在不采用任何粘合剂的情况下装进一个平滑、透明和密封的套袋中。这种方法适宜保护地图、版画、照片等文件。封套除了对通常的磨损具有抵抗力外，还能阻止或防止外部介质的有害作用。 在进行封套工序之前，修复人员必须消除文件上的有害物质（酸、霉等），以免它们进入封套后继续损害原件。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "封套法",
+          "normalized_name": "封套法",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "封套法是将文件在不采用任何粘合剂的情况下装进一个平滑、透明和密封的套袋中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "封套",
+          "normalized_name": "封套",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "封套除了对通常的磨损具有抵抗力外，还能阻止或防止外部介质的有害作用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "与封套法为同一实体，但原文中作为独立名词短语出现"
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "目前，这项技术巳广泛应用于欧美和世界各地的许多国家。 纸浆修复技术之所以能够获得迅速发展，是因为它具有以下两个显著优点：",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "纸浆修复技术",
+          "normalized_name": "纸浆修复技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "纸浆修复技术之所以能够获得迅速发展",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "纸张破损的情况也随着时间的推移而日益严重。 应用传统的手工方法修复破损档案文件固然质量很好，但速度太慢，不能应付各方面的需要，尤其是社会各界保护和利用档案的迫切需求。 在西班牙，国家保护修复研究院在全国设有 ${ \\pmb 2 0 } \\sim { \\bf 3 0 }$ 个纸浆修复服务点，配有$_ { 4 0 }$ 台纸浆修复机。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "西班牙",
+          "normalized_name": "西班牙",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在西班牙，国家保护修复研究院在全国设有 20~30 个纸浆修复服务点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "国家保护修复研究院",
+          "normalized_name": "国家保护修复研究院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在西班牙，国家保护修复研究院在全国设有 20~30 个纸浆修复服务点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "纸浆修复服务点",
+          "normalized_name": "纸浆修复服务点",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国家保护修复研究院在全国设有 20~30 个纸浆修复服务点",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为服务点类型，非独立组织名称"
+        },
+        {
+          "entity_id": "20_e4",
+          "mention": "纸浆修复机",
+          "normalized_name": "纸浆修复机",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "配有 40 台纸浆修复机",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "若为通用设备名称则可能不具唯一性，但图情领域放宽规则下可抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "在西班牙，国家保护修复研究院在全国设有 ${ \\pmb 2 0 } \\sim { \\bf 3 0 }$ 个纸浆修复服务点，配有$_ { 4 0 }$ 台纸浆修复机。 一台纸浆修复机每5分钟可修复4张16开文件，一台纸浆修复机一个月的工作量相当于50个人用手工修复破损档案一年工作量的总和，其速度之快、效率之高都是手工修复方法所无法比拟的。由于档案文件的增加与文件修复量是呈正比例增长，而应用传统手工方法修复文件的速度要赶上文件的增长量是不可能的，因此，使用纸浆修复技术就成为提高文件修复速度和工作效率的必要方法。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "国家保护修复研究院",
+          "normalized_name": "国家保护修复研究院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国家保护修复研究院在全国设有20~30个纸浆修复服务点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "纸浆修复机",
+          "normalized_name": "纸浆修复机",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "配有40台纸浆修复机",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "手工修复方法",
+          "normalized_name": "手工修复方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "手工修复方法所无法比拟的",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "纸浆修复技术",
+          "normalized_name": "纸浆修复技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用纸浆修复技术就成为提高文件修复速度和工作效率的必要方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "纸浆修复技木较好地解决了上述问题，其修复效果之好为保护和利用档案文件创造了良好条件。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "纸浆修复技木",
+          "normalized_name": "纸浆修复技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "纸浆修复技木较好地解决了上述问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "档案文件",
+          "normalized_name": "档案文件",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为保护和利用档案文件创造了良好条件",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "纸浆修复技术的整个机械原理是非常简单的，正是吸水的速度阻止了纸浆溢在纸张上。 纸浆溢在纸张上的状况仅发生在排泄慢或纸浆过量的情况下。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "纸浆修复技术",
+          "normalized_name": "纸浆修复技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "纸浆修复技术的整个机械原理是非常简单的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "纸浆溢在纸张上的状况仅发生在排泄慢或纸浆过量的情况下。 事实上，纸浆修复技术的原理和手工造纸的原理基本是一样的。 手工造纸是从水中把纤维捞出，而纸浆修复技术是把纤维留在需要修复的地方。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "纸浆修复技术",
+          "normalized_name": "纸浆修复技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "纸浆修复技术的原理和手工造纸的原理基本是一样的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "手工造纸",
+          "normalized_name": "手工造纸",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "手工造纸是从水中把纤维捞出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "手工造纸是从水中把纤维捞出，而纸浆修复技术是把纤维留在需要修复的地方。 因此，纸浆修复技术不仅可以修复破损文件，而且还可以根据实际需要制造出各种类型的纤维纸，以满足修复工作的特殊需要。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "纸浆修复技术",
+          "normalized_name": "纸浆修复技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "纸浆修复技术是把纤维留在需要修复的地方",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "纸浆修复技术中使用的纸浆料主要为亚麻、棉花和碱性木浆纸等。 亚麻纤维含量为$85 \\%$ ，强度非常好； 棉纤维含量为 $90 \\%$ ，强度虽不如亚麻，但绒度好。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "纸浆修复技术",
+          "normalized_name": "纸浆修复技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "纸浆修复技术中使用的纸浆料主要为亚麻、棉花和碱性木浆纸等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "亚麻",
+          "normalized_name": "亚麻",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "纸浆修复技术中使用的纸浆料主要为亚麻、棉花和碱性木浆纸等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为材料名称，可视为具体概念"
+        },
+        {
+          "entity_id": "28_e3",
+          "mention": "棉花",
+          "normalized_name": "棉花",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "纸浆修复技术中使用的纸浆料主要为亚麻、棉花和碱性木浆纸等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为材料名称，可视为具体概念"
+        },
+        {
+          "entity_id": "28_e4",
+          "mention": "碱性木浆纸",
+          "normalized_name": "碱性木浆纸",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "纸浆修复技术中使用的纸浆料主要为亚麻、棉花和碱性木浆纸等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为材料名称，可视为具体概念"
+        },
+        {
+          "entity_id": "28_e5",
+          "mention": "亚麻纤维",
+          "normalized_name": "亚麻纤维",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "亚麻纤维含量为$85 \\%$ ，强度非常好",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e6",
+          "mention": "棉纤维",
+          "normalized_name": "棉纤维",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "棉纤维含量为 $90 \\%$ ，强度虽不如亚麻，但绒度好",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "32",
+      "sentence": "此外，经过修复的文件在光线的照射下，应该让人能发现哪部分是修复过的。 压力机的压力也很重要，如果采用人工压力机，文件受力不均匀，且人也太累，最好使用自动水压机。一份修复件受力不均问题还不太大，但一本文件则必须在同样的压力下才能得到好的平整效果。",
+      "entities": [
+        {
+          "entity_id": "32_e1",
+          "mention": "自动水压机",
+          "normalized_name": "自动水压机",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "最好使用自动水压机",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "38",
+      "sentence": "纸浆修复机也可进行杀虫杀菌工作。 若修复后菌类仍存在，原件纸张很快就会受损，因此有必要在修复过程中进行杀虫杀菌工作。最简便的方法是在修复机的循环水中加对二氯苯、福尔吗啉。 此外，也可在修复前用环氧乙烷薰蒸。",
+      "entities": [
+        {
+          "entity_id": "38_e1",
+          "mention": "纸浆修复机",
+          "normalized_name": "纸浆修复机",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "纸浆修复机也可进行杀虫杀菌工作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e2",
+          "mention": "对二氯苯",
+          "normalized_name": "对二氯苯",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在修复机的循环水中加对二氯苯、福尔吗啉",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e3",
+          "mention": "福尔吗啉",
+          "normalized_name": "福尔吗啉",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在修复机的循环水中加对二氯苯、福尔吗啉",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e4",
+          "mention": "环氧乙烷",
+          "normalized_name": "环氧乙烷",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "也可在修复前用环氧乙烷薰蒸",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "39",
+      "sentence": "纸浆修复技术并非完美无缺，它是提高修复效率和速度的一种方法，在一般情况下效果不错。当文件破损处类似手撕的状况，且有一定的纤维外露，修复后的衔接较好，不易脱开。然而，当文件破损处类似刀伤，没有纤维外露，修复后的衔接就很差，非常容易脱落。 要解决破损处衔接不好的问题，第一是采取人工的办法把破损处的纤维挑拉出来，第二是在衔接处涂上粘合剂。",
+      "entities": [
+        {
+          "entity_id": "39_e1",
+          "mention": "纸浆修复技术",
+          "normalized_name": "纸浆修复技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "纸浆修复技术并非完美无缺，它是提高修复效率和速度的一种方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "41",
+      "sentence": "纸浆修复方法可以解决许多问题，但并不是所有的破损文件都适合于纸浆修复。有的纸浆经霉菌腐蚀后强度不够，修复后一经使用，仍会成为屑状。遇到这种情况，为保证修复文件的强度，修复后还必须进行加膜处理。",
+      "entities": [
+        {
+          "entity_id": "41_e1",
+          "mention": "纸浆修复方法",
+          "normalized_name": "纸浆修复方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "纸浆修复方法可以解决许多问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e2",
+          "mention": "加膜处理",
+          "normalized_name": "加膜处理",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "修复后还必须进行加膜处理",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "42",
+      "sentence": "总之，应用纸浆修复技术修补破损档案文件有着光明的前景，但这种技术是否符合中国情况，是否适合中国纸张的性质，还有待于中国档案工作者进一步探讨和开发。",
+      "entities": [
+        {
+          "entity_id": "42_e1",
+          "mention": "纸浆修复技术",
+          "normalized_name": "纸浆修复技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "应用纸浆修复技术修补破损档案文件",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e2",
+          "mention": "中国档案工作者",
+          "normalized_name": "中国档案工作者",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "还有待于中国档案工作者进一步探讨和开发",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "群体泛称，但带有地域限定，可视为具体群体"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1082 @@
+{
+  "base_name": "reviewed_full_1902",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "计算机辅助教学(Computer AssistedInstruction,简称CAI)是继学校创立、书面语言应用、印刷技术发明之后的\"第四次教育革命\"。 随着现代社会的发展，信息资源管理人才的培养急需采用现代化手段。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "计算机辅助教学(Computer AssistedInstruction,简称CAI)",
+          "normalized_name": "计算机辅助教学(Computer Assisted Instruction,简称CAI)",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "计算机辅助教学(Computer AssistedInstruction,简称CAI)是继学校创立、书面语言应用、印刷技术发明之后的\"第四次教育革命\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "学校创立",
+          "normalized_name": "学校创立",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "继学校创立、书面语言应用、印刷技术发明之后的\"第四次教育革命\"",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为历史发展阶段，但原文未明确命名，可能为泛称"
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "书面语言应用",
+          "normalized_name": "书面语言应用",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "继学校创立、书面语言应用、印刷技术发明之后的\"第四次教育革命\"",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为历史发展阶段，但原文未明确命名，可能为泛称"
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "印刷技术发明",
+          "normalized_name": "印刷技术发明",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "继学校创立、书面语言应用、印刷技术发明之后的\"第四次教育革命\"",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为历史发展阶段，但原文未明确命名，可能为泛称"
+        },
+        {
+          "entity_id": "1_e5",
+          "mention": "第四次教育革命",
+          "normalized_name": "第四次教育革命",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "计算机辅助教学(Computer AssistedInstruction,简称CAI)是继学校创立、书面语言应用、印刷技术发明之后的\"第四次教育革命\"",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e6",
+          "mention": "信息资源管理",
+          "normalized_name": "信息资源管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息资源管理人才的培养急需采用现代化手段",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "随着现代社会的发展，信息资源管理人才的培养急需采用现代化手段。 CAI形象生动地辅助教学，能扩展学生的视野，增加学生多维的思维方法; CAI教学模式改变了传统的\"黑板 $^ +$ 粉笔\"的模式，将能充分发挥学生学习的主观能动性。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "CAI",
+          "normalized_name": "CAI",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "CAI形象生动地辅助教学",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "CAI为计算机辅助教学软件的通用缩写，虽非唯一产品名，但在图情领域作为具体工具被讨论，按召回优先原则抽取"
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "CAI教学模式",
+          "normalized_name": "CAI教学模式",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "CAI教学模式改变了传统的'黑板 + 粉笔'的模式",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "CAI教学模式可视为一种教学方法，但原文未给出更具体的命名，按method抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "早在20年代中期，美国心理学家普莱西（S·L·Pressey）就开始研究程序教学和教学机器，并且设计了一台能同时完成测验和计分两种功能的自动教学机器，在1924年举行的美国心理学会上进行介绍和展览。 普莱西还因此而预见将出现\"教育上的产业革命\"。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "普莱西（S·L·Pressey）",
+          "normalized_name": "普莱西（S·L·Pressey）",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国心理学家普莱西（S·L·Pressey）就开始研究程序教学和教学机器",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "程序教学",
+          "normalized_name": "程序教学",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究程序教学和教学机器",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "教学机器",
+          "normalized_name": "教学机器",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究程序教学和教学机器",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "自动教学机器",
+          "normalized_name": "自动教学机器",
+          "candidate_l3": "instrument",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "设计了一台能同时完成测验和计分两种功能的自动教学机器",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "美国心理学会",
+          "normalized_name": "美国心理学会",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在1924年举行的美国心理学会上进行介绍和展览",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e6",
+          "mention": "教育上的产业革命",
+          "normalized_name": "教育上的产业革命",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "预见将出现\"教育上的产业革命\"",
+          "is_specific_entity": true,
+          "confidence": 0.88,
+          "uncertainty": "可能为历史性表述，非标准学术命名"
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "我国开展计算机辅助教学工作虽起步较晚，但在近几年发展很快，已经取得了一大批成果。 80年代初期，我国就有少数科研、教学人员着手开展这项工作。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "计算机辅助教学",
+          "normalized_name": "计算机辅助教学",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国开展计算机辅助教学工作虽起步较晚",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "80年代初期",
+          "normalized_name": "80年代初期",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "80年代初期，我国就有少数科研、教学人员着手开展这项工作",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "时间阶段，非严格学术事件"
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "1998年1月，原国家教委高教司颁布了《计算机辅助教学软件制作规范(试行)》，从而使CAI的研究走上了标准化的道路。 所有这些，为信息资源管理人才的培养打下了良好的基础。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "原国家教委高教司",
+          "normalized_name": "原国家教委高教司",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "原国家教委高教司颁布了《计算机辅助教学软件制作规范(试行)》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "《计算机辅助教学软件制作规范(试行)》",
+          "normalized_name": "《计算机辅助教学软件制作规范(试行)》",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "原国家教委高教司颁布了《计算机辅助教学软件制作规范(试行)》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "CAI",
+          "normalized_name": "CAI",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从而使CAI的研究走上了标准化的道路",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "我国医药类院校共128 所，其中8所学校有教学软件102件，其中管理类19件，课件83件，包括专家系统8项。 图书馆学、情报学、档案学和出版发行学的CAI教学刚刚起步。武汉大学图书情报学院在教学改革中，特别是在CAI建设上加大了力度，取得了可喜成果。 学院本科教学制作CAI软件的课程有\"西文文献编目\"、\"多媒体及其应用\"、\"情报学概论\"、\"数据结构\"及\"操作系统原理\"等;",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "武汉大学图书情报学院",
+          "normalized_name": "武汉大学图书情报学院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "武汉大学图书情报学院在教学改革中，特别是在CAI建设上加大了力度",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "西文文献编目",
+          "normalized_name": "西文文献编目",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学院本科教学制作CAI软件的课程有\"西文文献编目\"",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为课程名称"
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "多媒体及其应用",
+          "normalized_name": "多媒体及其应用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学院本科教学制作CAI软件的课程有\"多媒体及其应用\"",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为课程名称"
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "情报学概论",
+          "normalized_name": "情报学概论",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学院本科教学制作CAI软件的课程有\"情报学概论\"",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为课程名称"
+        },
+        {
+          "entity_id": "7_e5",
+          "mention": "数据结构",
+          "normalized_name": "数据结构",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学院本科教学制作CAI软件的课程有\"数据结构\"",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为课程名称"
+        },
+        {
+          "entity_id": "7_e6",
+          "mention": "操作系统原理",
+          "normalized_name": "操作系统原理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "学院本科教学制作CAI软件的课程有\"操作系统原理\"",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为课程名称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "建立试题库的课程有\"情报学概论\"、\"科技文献检索\"及\"图书发行学概论\"等。 有关专家预测，在 $3 \\sim 5$ 年内,CAI软件将会有较快的发展。计算机辅助教学进入信息资源管理人才培养领域，将会使教学方法与教学手段发生重大变革。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "情报学概论",
+          "normalized_name": "情报学概论",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建立试题库的课程有\"情报学概论\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "科技文献检索",
+          "normalized_name": "科技文献检索",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建立试题库的课程有\"情报学概论\"、\"科技文献检索\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "图书发行学概论",
+          "normalized_name": "图书发行学概论",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建立试题库的课程有\"情报学概论\"、\"科技文献检索\"及\"图书发行学概论\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "CAI软件",
+          "normalized_name": "CAI软件",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在 $3 \\sim 5$ 年内,CAI软件将会有较快的发展",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e5",
+          "mention": "计算机辅助教学",
+          "normalized_name": "计算机辅助教学",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "计算机辅助教学进入信息资源管理人才培养领域",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e6",
+          "mention": "信息资源管理",
+          "normalized_name": "信息资源管理",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "计算机辅助教学进入信息资源管理人才培养领域",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "从总体上看，我国计算机辅助教学系统的研究、开发及使用目前还存在许多不足，有待进一步完善。其不足之处表现为： $\\textcircled{1} \\mathrm { C A I }$ 课件设计缺乏相应的理论指导; $\\textcircled{2}$ 在CAI开发中，还缺乏必要的统一规划、组织与协调;",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "计算机辅助教学系统",
+          "normalized_name": "计算机辅助教学系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "我国计算机辅助教学系统的研究、开发及使用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "CAI课件",
+          "normalized_name": "CAI课件",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "CAI课件设计缺乏相应的理论指导",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "(1)培养和提高教师的现代教育意识。从事信息资源管理教学工作的教师，要改变陈旧的传统观念，树立新观念，形成现代教育观，充分认识信息技术对现代教育，特别是对培养信息资源管理人才的重大影响，自觉用现代科技成果来改变旧的教学模式，不断提高教学质量。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "信息资源管理",
+          "normalized_name": "信息资源管理",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从事信息资源管理教学工作的教师",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "信息技术",
+          "normalized_name": "信息技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "充分认识信息技术对现代教育",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "现代教育",
+          "normalized_name": "现代教育",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息技术对现代教育",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "(2)运用现代学习理论指导CAI课件设计。 认知学习理论认为，人类学习活动就是信息处理的过程，它包括三个层次：最高层次是思维策略，下层是初级信息加工过程，最下层是生理过程，即中枢神经系统活动，这与计算机的信息加工过程相类似。由此看来，认知学习理论比较适合于CAI课件设计，教学人员可采用这一理论，搞好教学工作。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "现代学习理论",
+          "normalized_name": "现代学习理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "运用现代学习理论指导CAI课件设计",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "CAI课件",
+          "normalized_name": "CAI课件",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "运用现代学习理论指导CAI课件设计",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "认知学习理论",
+          "normalized_name": "认知学习理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "认知学习理论认为，人类学习活动就是信息处理的过程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "信息处理",
+          "normalized_name": "信息处理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "人类学习活动就是信息处理的过程",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e5",
+          "mention": "思维策略",
+          "normalized_name": "思维策略",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "最高层次是思维策略",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e6",
+          "mention": "初级信息加工过程",
+          "normalized_name": "初级信息加工过程",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "下层是初级信息加工过程",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e7",
+          "mention": "中枢神经系统活动",
+          "normalized_name": "中枢神经系统活动",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "最下层是生理过程，即中枢神经系统活动",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e8",
+          "mention": "计算机的信息加工过程",
+          "normalized_name": "计算机的信息加工过程",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这与计算机的信息加工过程相类似",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "由于CAI系统涉及多学科领域，需要多方面的人才，因而在已有良好的CAI研究与开发环境的学校和地方，应建立CAI研究开发中心，这些中心应能够组织各学科的教师、计算机编程人员和一些教育学、心理学、电化教育及计算机方面的专家，在先进的理论、较高的技术标准以及统一规划的指导下，共同研究开发CAI课件。 这样，不仅CAI课件的质量可以得到保证，而且可以及时地将先进技术(如人工智能、多媒体等)应用于CAI开发工作中，同时还可避免重复低劣的CAI开发。 另外，建立开发中心，更便于加强国际交流与合作。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "CAI系统",
+          "normalized_name": "CAI系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "由于CAI系统涉及多学科领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "CAI研究开发中心",
+          "normalized_name": "CAI研究开发中心",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "应建立CAI研究开发中心",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为具体机构名称，但原文未给出唯一名称，故置信度略低"
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "人工智能",
+          "normalized_name": "人工智能",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将先进技术(如人工智能、多媒体等)应用于CAI开发工作中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "多媒体",
+          "normalized_name": "多媒体",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将先进技术(如人工智能、多媒体等)应用于CAI开发工作中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e5",
+          "mention": "CAI课件",
+          "normalized_name": "CAI课件",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "共同研究开发CAI课件",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "(4)建立健全软件和课件保护法规。 为了维护CAI软件和课件开发者的合法权益，应尽快建立健全软件和课件保护法规，以激发开发者的热情和积极性，从而提高开发软件和课件的质量，使其具有竞争性，尽快形成课件产品市场。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "CAI软件",
+          "normalized_name": "CAI软件",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "为了维护CAI软件和课件开发者的合法权益",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "课件",
+          "normalized_name": "课件",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "为了维护CAI软件和课件开发者的合法权益",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "课件作为具体教育制品，但名称较泛，若指具体课件产品则更明确"
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "软件和课件保护法规",
+          "normalized_name": "软件和课件保护法规",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "应尽快建立健全软件和课件保护法规",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "法规名称未具体化，但作为规范性制品实体抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "目前，我国软件开发基本上是各自选题，开发出来后，请国家教育部的有关部门进行评审，并以教育部的名义推广。 由于一般教学软件在计算机程序设计上都比较完善，评审时很容易通过; 但其具体内容如何，需要组织一批学生使用，并经专家考察后，作出公正的评价。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "国家教育部",
+          "normalized_name": "国家教育部",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "请国家教育部的有关部门进行评审",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "教育部",
+          "normalized_name": "教育部",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "以教育部的名义推广",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "在新的信息环境中，我国计算机辅助教学将出现以下趋势：",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "计算机辅助教学",
+          "normalized_name": "计算机辅助教学",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国计算机辅助教学将出现以下趋势",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "如果教学双方能进行对话，则效果最佳( $70 \\%$ ）。 让信息以多种形式同时作用于人的视觉和听觉器官，将会明显地提高记忆保持率和学习效果。 以计算机视听媒体为特征的现代多媒体技术，可以灵活方便地产生、集成、存贮和运用多媒体信息，具有多样性(文本、图形、声音、影像等)、集成性(多种媒体信息同步)和交互性(生动直观的人机对话)等特点。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "现代多媒体技术",
+          "normalized_name": "现代多媒体技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以计算机视听媒体为特征的现代多媒体技术，可以灵活方便地产生、集成、存贮和运用多媒体信息",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "多样性",
+          "normalized_name": "多样性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "具有多样性(文本、图形、声音、影像等)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为多媒体技术特征的具体命名概念"
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "集成性",
+          "normalized_name": "集成性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "集成性(多种媒体信息同步)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为多媒体技术特征的具体命名概念"
+        },
+        {
+          "entity_id": "18_e4",
+          "mention": "交互性",
+          "normalized_name": "交互性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "交互性(生动直观的人机对话)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为多媒体技术特征的具体命名概念"
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "以计算机视听媒体为特征的现代多媒体技术，可以灵活方便地产生、集成、存贮和运用多媒体信息，具有多样性(文本、图形、声音、影像等)、集成性(多种媒体信息同步)和交互性(生动直观的人机对话)等特点。 将多媒体技术应用于CAI领域，效果十分显著，对培养信息资源管理人才具",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "多媒体技术",
+          "normalized_name": "多媒体技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以计算机视听媒体为特征的现代多媒体技术",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "CAI",
+          "normalized_name": "CAI",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将多媒体技术应用于CAI领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "信息资源管理",
+          "normalized_name": "信息资源管理",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对培养信息资源管理人才具",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "所谓人工智能，就是用计算机模拟人的思维活动，代替人的部分智能活动。 将人工智能技术与CAI结合的I-CAI系统，能做到因材施教，进而掌握每个学生的不同认知特点，为不同认知特点的学生提供发现式和探索式的学习环境，培养学生的创造能力。对培养信息资源管理人才来说，智能化CAI同样具有重要作用。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "人工智能",
+          "normalized_name": "人工智能",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "所谓人工智能，就是用计算机模拟人的思维活动",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "计算机",
+          "normalized_name": "计算机",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用计算机模拟人的思维活动",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "CAI",
+          "normalized_name": "CAI",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将人工智能技术与CAI结合的I-CAI系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e4",
+          "mention": "I-CAI系统",
+          "normalized_name": "I-CAI系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "将人工智能技术与CAI结合的I-CAI系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e5",
+          "mention": "信息资源管理人才",
+          "normalized_name": "信息资源管理人才",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对培养信息资源管理人才来说",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "（3)网络CAI。 由于CAI的应用越来越广泛，网络技术正日益成熟，网络化的CAI将成为新的发展趋势。 借助信息高速公路，CAI将延伸到家庭，形成一个广阔的虚拟课堂。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "CAI",
+          "normalized_name": "CAI",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "网络CAI。 由于CAI的应用越来越广泛",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "信息高速公路",
+          "normalized_name": "信息高速公路",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "借助信息高速公路，CAI将延伸到家庭",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "虚拟课堂",
+          "normalized_name": "虚拟课堂",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "形成一个广阔的虚拟课堂",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "据测算，利用信息高速公路，通过教学双方交互式的教育，学生需要的学习时间将比不用信息高速公路减少 $40 \\%$ ,学到的东西则将增加 $30 \\%$ ,经费也将节约 $30 \\%$ 。 因此，CAI网络化将是CAI发展的一个重要方向，也将是信息资源管理人才培养的一个重要手段。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "信息高速公路",
+          "normalized_name": "信息高速公路",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用信息高速公路，通过教学双方交互式的教育",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "CAI网络化",
+          "normalized_name": "CAI网络化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "CAI网络化将是CAI发展的一个重要方向",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e3",
+          "mention": "CAI",
+          "normalized_name": "CAI",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "CAI网络化将是CAI发展的一个重要方向",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e4",
+          "mention": "信息资源管理",
+          "normalized_name": "信息资源管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息资源管理人才培养的一个重要手段",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

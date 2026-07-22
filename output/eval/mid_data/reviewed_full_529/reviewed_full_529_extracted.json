@@ -1,0 +1,167 @@
+{
+  "base_name": "reviewed_full_529",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "4",
+      "sentence": "该厂看到销势良好，使用附近几家村镇办的小酒厂搞联营，允许那些小酒厂使用自己的商标，由于那些酒厂生产的酒质量不过关，没多久就使“XX大曲”名声扫地。 因此，如何有效地行使商标许可权，已成为拥有商标权的企业面临的一个重大课题，运用得好，可以使名牌这一无形资产扩展投资范围，加大市场占有率，运用得不好，就可以使名牌毁于一旦。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "XX大曲",
+          "normalized_name": "XX大曲",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "没多久就使“XX大曲”名声扫地",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "商标许可权",
+          "normalized_name": "商标许可权",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如何有效地行使商标许可权",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "无形资产",
+          "normalized_name": "无形资产",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "可以使名牌这一无形资产扩展投资范围",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "商标保护即保护商标专用权，同商标侵权和假冒现象作斗争。捍卫商标专用权对企业来讲是一个长期艰巨的任务，尤其是拥有名牌商标的企业更是如此。 去年我国共查处各类商标违法案件32，298件，其中商标侵权假冒案达18，938件。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "商标专用权",
+          "normalized_name": "商标专用权",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "保护商标专用权，同商标侵权和假冒现象作斗争",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "商标侵权",
+          "normalized_name": "商标侵权",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "同商标侵权和假冒现象作斗争",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "假冒现象",
+          "normalized_name": "假冒现象",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "同商标侵权和假冒现象作斗争",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "商标侵权假冒案",
+          "normalized_name": "商标侵权假冒案",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "商标侵权假冒案达18，938件",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "把保护名牌商标作为工作重点。 今年商标管理将以办案为中心，保护名牌商标仍是重中之重，这一信息对于拥有名牌商标的企业来讲是值得庆贺的。也充分说明了国家捍卫名牌商标的决心。近年来我国虽然加大了打击商标侵权假冒的力度，但是商标侵权假冒问题仍十分严重和突出。 在商标保护中，企业要首先树立自我保护意识，如在商标上搞防伪标志，在全国各地建立商标保护网络，设置专门的商标管理机构、人员，随时监测与自己已商标有关的一切情况。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "名牌商标",
+          "normalized_name": "名牌商标",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "把保护名牌商标作为工作重点",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为法律/商业概念，但原文中作为独立学术命名讨论"
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "商标侵权假冒",
+          "normalized_name": "商标侵权假冒",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加大了打击商标侵权假冒的力度，但是商标侵权假冒问题仍十分严重和突出",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "防伪标志",
+          "normalized_name": "防伪标志",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如在商标上搞防伪标志",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为具体技术手段，但原文未指定具体名称"
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "商标保护网络",
+          "normalized_name": "商标保护网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在全国各地建立商标保护网络",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "可能为泛化概念，但原文有具体行动描述"
+        }
+      ]
+    }
+  ]
+}

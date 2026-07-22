@@ -1,0 +1,1679 @@
+{
+  "base_name": "reviewed_full_6115",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "报纸因其详实、丰富和新颖的内容，而成为人们最喜闻乐见的出版物，是当今社会主要的信息传播媒介之一。 在社会的信息化趋势日趋明显的今天，沿袭了几十年的《缩印本$+$ 分类索引》已无法适应时代的需求。 1987年，《经济日报》首先采用了激光照排技术，从此我国有了电脑存贮的报纸信息原始数据。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "《缩印本$+$ 分类索引》",
+          "normalized_name": "《缩印本+分类索引》",
+          "candidate_l3": "index",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "沿袭了几十年的《缩印本$+$ 分类索引》已无法适应时代的需求",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "《经济日报》",
+          "normalized_name": "《经济日报》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "1987年，《经济日报》首先采用了激光照排技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "可兼为publishing（出版机构），但此处作为报纸出版物被提及，优先标journal_article"
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "激光照排技术",
+          "normalized_name": "激光照排技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "《经济日报》首先采用了激光照排技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "1987年，《经济日报》首先采用了激光照排技术，从此我国有了电脑存贮的报纸信息原始数据。 这一质的飞跃，为报纸信息计算机检索打下了基础。 1990 年底，又是《经济日报》,建立了我国第1个报纸信息数据库。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "《经济日报》",
+          "normalized_name": "《经济日报》",
+          "candidate_l3": "publishing",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1987年，《经济日报》首先采用了激光照排技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "激光照排技术",
+          "normalized_name": "激光照排技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "《经济日报》首先采用了激光照排技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "报纸信息原始数据",
+          "normalized_name": "报纸信息原始数据",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "从此我国有了电脑存贮的报纸信息原始数据",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "报纸信息计算机检索",
+          "normalized_name": "报纸信息计算机检索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为报纸信息计算机检索打下了基础",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可视为一种检索方式或技术应用"
+        },
+        {
+          "entity_id": "2_e5",
+          "mention": "《经济日报》",
+          "normalized_name": "《经济日报》",
+          "candidate_l3": "publishing",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1990 年底，又是《经济日报》,建立了我国第1个报纸信息数据库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e6",
+          "mention": "报纸信息数据库",
+          "normalized_name": "报纸信息数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建立了我国第1个报纸信息数据库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "(一)从收录范围看，在建立本报社信息数据库的同时，根据各自特点，选择一些具有通用推广价值的热门专题，建立专题报纸信息数据库。从收录的时间跨度看，除《人民日报》的40年累积题录库和人物索引库、《经济日报)的国家领导机构及领导人库以外，其它都只收录建库以后的资料(见表1)。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "本报社信息数据库",
+          "normalized_name": "本报社信息数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在建立本报社信息数据库的同时",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "专题报纸信息数据库",
+          "normalized_name": "专题报纸信息数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建立专题报纸信息数据库",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "《人民日报》",
+          "normalized_name": "《人民日报》",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "除《人民日报》的40年累积题录库和人物索引库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "40年累积题录库",
+          "normalized_name": "40年累积题录库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "除《人民日报》的40年累积题录库和人物索引库",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "人物索引库",
+          "normalized_name": "人物索引库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "除《人民日报》的40年累积题录库和人物索引库",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e6",
+          "mention": "《经济日报》",
+          "normalized_name": "《经济日报》",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《经济日报)的国家领导机构及领导人库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e7",
+          "mention": "国家领导机构及领导人库",
+          "normalized_name": "国家领导机构及领导人库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《经济日报)的国家领导机构及领导人库",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e8",
+          "mention": "表1",
+          "normalized_name": "表1",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "其它都只收录建库以后的资料(见表1)",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "表1作为文中引用表格，可视为结构化数据制品"
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "但因各个报社的传统习惯和数据库内容范围的不同，而导致具体字段的设置也略为不同。 这种状况表明，各种报纸信息数据库将提供的是一种不同的检索入口（见表2)。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "报社",
+          "normalized_name": "报社",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "各个报社的传统习惯和数据库内容范围的不同",
+          "is_specific_entity": false,
+          "confidence": 0.3,
+          "uncertainty": "泛称，未指具体报社名称，不满足唯一识别条件"
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "数据库",
+          "normalized_name": "数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "各个报社的传统习惯和数据库内容范围的不同",
+          "is_specific_entity": false,
+          "confidence": 0.2,
+          "uncertainty": "泛称，未指具体数据库名称，不满足唯一识别条件"
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "报纸信息数据库",
+          "normalized_name": "报纸信息数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "各种报纸信息数据库将提供的是一种不同的检索入口",
+          "is_specific_entity": false,
+          "confidence": 0.4,
+          "uncertainty": "泛称，未指具体数据库名称，不满足唯一识别条件"
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "检索入口",
+          "normalized_name": "检索入口",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "各种报纸信息数据库将提供的是一种不同的检索入口",
+          "is_specific_entity": false,
+          "confidence": 0.3,
+          "uncertainty": "泛称，未指具体检索入口名称，不满足唯一识别条件"
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "表2",
+          "normalized_name": "表2",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "（见表2)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "其中的全文本检索使用率都最高，几乎成为唯一的内容特征查找途径。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "全文本检索",
+          "normalized_name": "全文本检索",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "全文本检索使用率都最高",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "(四)各系统都有专人负责每日报纸的标引工作，标引的内容一是分类，二是从文章中提出作者、标题、栏目、人名、地名和机构名等外表特征。 主题标引只有《文汇报》在做，但数量极为有限。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "《文汇报》",
+          "normalized_name": "《文汇报》",
+          "candidate_l3": "artifact",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "主题标引只有《文汇报》在做",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "《经济日报》和新华社采用的引进版 TRIP检索软件也存在同样问题。 一般用户往往只采用常见的几种，影响了数据的使用效果。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "《经济日报》",
+          "normalized_name": "《经济日报》",
+          "candidate_l3": "publishing",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "《经济日报》和新华社采用的引进版 TRIP检索软件",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "新华社",
+          "normalized_name": "新华社",
+          "candidate_l3": "publishing",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "《经济日报》和新华社采用的引进版 TRIP检索软件",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "TRIP检索软件",
+          "normalized_name": "TRIP检索软件",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《经济日报》和新华社采用的引进版 TRIP检索软件",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "(二)全文检索虽有加工简单、标引深度高、便于查找文章细节等优点，但在不进行控制的情况下，有4个因素制约着全文报纸检索效率，而使其不尽如人意：",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "全文检索",
+          "normalized_name": "全文检索",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "全文检索虽有加工简单、标引深度高、便于查找文章细节等优点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "全文报纸检索",
+          "normalized_name": "全文报纸检索",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有4个因素制约着全文报纸检索效率",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为特定系统或方法，但原文未明确命名"
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "1、由于对全文进行字面的扫描匹配，容易出现假义词，如“中华人民共和国\"中的\"华人”、“发展中国家\"中的“中国”。特别是以地名和关键词组成的名词，更易造成混淆，如“大理石\"并非报道大理地区的新闻。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "中华人民共和国",
+          "normalized_name": "中华人民共和国",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如“中华人民共和国\"中的\"华人\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "发展中国家",
+          "normalized_name": "发展中国家",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如“发展中国家\"中的\"中国\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "大理石",
+          "normalized_name": "大理石",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如“大理石\"并非报道大理地区的新闻",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "每一个字、词均可成为检索点，使每次检索命中的文献偏多，筛选量大。 因为在许多新闻中虽然出现了某检索提问词，但并没有真正叙述该主题。这样的新闻对该提问来说是很次要的，甚至无用的，造成了检索噪音[1]。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "检索噪音",
+          "normalized_name": "检索噪音",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "造成了检索噪音[1]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "3、北京信息工程学院在为《人民日报》设计TRS1.0版的基础上，最近推出了TRS2.0版新闻检索系统软件，其特定之一是试图一改过去按“字面词\"匹配为按“实义词\"匹配。 其主要思想是借助一个8000多词的分词词典，对库中文献进行分词处理。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "北京信息工程学院",
+          "normalized_name": "北京信息工程学院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "北京信息工程学院在为《人民日报》设计TRS1.0版的基础上",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "《人民日报》",
+          "normalized_name": "《人民日报》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "北京信息工程学院在为《人民日报》设计TRS1.0版的基础上",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "可兼为publishing组织，但此处作为设计对象，优先标为制品"
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "TRS1.0版",
+          "normalized_name": "TRS1.0版",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在为《人民日报》设计TRS1.0版的基础上",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e4",
+          "mention": "TRS2.0版新闻检索系统软件",
+          "normalized_name": "TRS2.0版新闻检索系统软件",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "最近推出了TRS2.0版新闻检索系统软件",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e5",
+          "mention": "分词词典",
+          "normalized_name": "分词词典",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "借助一个8000多词的分词词典",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "具体名称未给出，但作为有明确词量的具体工具，符合图情领域放宽规则"
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "即从新闻信息中分析提炼出若干主题词作为检索点，以减少噪音。 《文汇报》社是在运行一段时间后，发现检索噪音问题比较严重而采用“《新闻叙词表》规范词 $+$ 自由词\"的方式进行主题标引的，但其进展较为缓慢。 《人民日报》社、《经济日报》社和新华社虽未做这一工作，但都备设了主题词或关键词字段以及词表管理子系统，试图今后加以改进。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "《文汇报》社",
+          "normalized_name": "《文汇报》社",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "《文汇报》社是在运行一段时间后，发现检索噪音问题比较严重而采用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "《新闻叙词表》",
+          "normalized_name": "《新闻叙词表》",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "采用“《新闻叙词表》规范词 $+$ 自由词\"的方式进行主题标引",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "《人民日报》社",
+          "normalized_name": "《人民日报》社",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "《人民日报》社、《经济日报》社和新华社虽未做这一工作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "《经济日报》社",
+          "normalized_name": "《经济日报》社",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "《人民日报》社、《经济日报》社和新华社虽未做这一工作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e5",
+          "mention": "新华社",
+          "normalized_name": "新华社",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "《人民日报》社、《经济日报》社和新华社虽未做这一工作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "1、位置限定和相邻检索只是在某些特定情况下才有用的一种措施。 这是因为：首先，限定检索词在标题中出现，其前提是标题能反映文章的主题，而据笔者的抽样统计，只占$70 \\%$ 左右的报纸标题能够反映主题，大大低于期刊论文的同类比例。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "标题",
+          "normalized_name": "标题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "限定检索词在标题中出现，其前提是标题能反映文章的主题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为文献组成部分的通用概念，但在此处有具体指称功能"
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "报纸标题",
+          "normalized_name": "报纸标题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "只占$70 \\%$ 左右的报纸标题能够反映主题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为文献类型的具体概念"
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "期刊论文",
+          "normalized_name": "期刊论文",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "大大低于期刊论文的同类比例",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "此处为泛称，但作为文献类型实体可抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "2、这些办法都没有解决检索者负担过重这一根本问题，还是依赖人的“想象\"来选择提问词和构造检索策略。用逻辑表达式进行检索时，要求用户能把握哪些词要累加到一起而进行“逻辑与\"运算，哪些词要排除掉而进行“逻辑非\"运算，这实际也是很困难的事情。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "检索者负担过重",
+          "normalized_name": "检索者负担过重",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这些办法都没有解决检索者负担过重这一根本问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "逻辑与",
+          "normalized_name": "逻辑与",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "哪些词要累加到一起而进行“逻辑与”运算",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "逻辑非",
+          "normalized_name": "逻辑非",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "哪些词要排除掉而进行“逻辑非”运算",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "3、分类方法虽可按范畴聚集同类主题的文献，但报纸信息恰恰是学科系统性不强，绝大部分新闻都不可能象专业论文那样归入某一学科。 毫无疑问，报纸中大量有关某人、某地、某时、某事的特定信息，最好方法是按事物聚类的主题查找，而不是按学科聚类的分类查找。遗憾的是，这些系统由于过份依赖全文检索而使主题检索显得异常薄弱。 归结起来在报纸信息数据库中，主题检索功能未能很好实现的原因有：",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "报纸信息数据库",
+          "normalized_name": "报纸信息数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在报纸信息数据库中，主题检索功能未能很好实现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "主题检索",
+          "normalized_name": "主题检索",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主题检索功能未能很好实现",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "全文检索",
+          "normalized_name": "全文检索",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这些系统由于过份依赖全文检索",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "(1)总想依赖一部现成的高质量规范词表进行受控标引，但又无法如愿。原因有3：一是国内新闻行业仅有的《新闻叙词表》（新华社1988年编),不具备通用于各类报纸的性能； 二是报纸信息变化快，新概念、新术语不断涌现，词表中相对固定的词汇无法适应变化万千的需要；",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "《新闻叙词表》",
+          "normalized_name": "《新闻叙词表》",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "国内新闻行业仅有的《新闻叙词表》（新华社1988年编)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "新华社",
+          "normalized_name": "新华社",
+          "candidate_l3": "publishing",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "《新闻叙词表》（新华社1988年编)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "三是受控标引要求高，需进行查词、选词，工作量大，面对每天一期和几十年积累的报纸,令人望而生畏。 正因如此，新华社虽然编制了《新闻叙词表》,但也没有使用。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "新华社",
+          "normalized_name": "新华社",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "新华社虽然编制了《新闻叙词表》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "《新闻叙词表》",
+          "normalized_name": "《新闻叙词表》",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "新华社虽然编制了《新闻叙词表》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "(2)自动抽词标引虽省时省力，但受计算机语义分析能力的限制，加上汉语分词的复杂性，目前还达不到实用程度。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "自动抽词标引",
+          "normalized_name": "自动抽词标引",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "自动抽词标引虽省时省力",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为method"
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "汉语分词",
+          "normalized_name": "汉语分词",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加上汉语分词的复杂性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "(三)标准化程度不高。编程语言兼容性差，常用的实用程序难于互相移植。同时，用户界面、检索命令和数据格式也是十人十指，互不相同。",
+      "entities": []
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "随着电脑排版技术在报纸行业的普及，必将有越来越多的报社会建立自己的数据库。 因此，总结经验，吸取教训，扬长避短，找到切合实际的方案，乃当务之急。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "电脑排版技术",
+          "normalized_name": "电脑排版技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着电脑排版技术在报纸行业的普及",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "报纸行业",
+          "normalized_name": "报纸行业",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着电脑排版技术在报纸行业的普及",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "要解决影响全文检索效率的4个因素，传统方法采用的是编制词表，进行受控标引。 实践证明，它不完全适用于报纸信息数据库的建立。笔者以为，最好的方法是在标引阶段使用自然语言，而在检索阶段则通过后控词表来实现词汇控制，即采取“自由标引 $+$ 后控词表(由轮排索引和分类主题表两部分组成\"[2,3的方式，其根本出发点是减轻用户检索过程中的“想词”负担，增强系统易用性，提高查全率和查准率。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "词表",
+          "normalized_name": "词表",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "传统方法采用的是编制词表",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指代具体词表但未命名，根据图情领域放宽规则抽取"
+        },
+        {
+          "entity_id": "26_e2",
+          "mention": "报纸信息数据库",
+          "normalized_name": "报纸信息数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "它不完全适用于报纸信息数据库的建立",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e3",
+          "mention": "自然语言",
+          "normalized_name": "自然语言",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在标引阶段使用自然语言",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e4",
+          "mention": "后控词表",
+          "normalized_name": "后控词表",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过后控词表来实现词汇控制",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e5",
+          "mention": "轮排索引",
+          "normalized_name": "轮排索引",
+          "candidate_l3": "index",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "后控词表(由轮排索引和分类主题表两部分组成)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e6",
+          "mention": "分类主题表",
+          "normalized_name": "分类主题表",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "后控词表(由轮排索引和分类主题表两部分组成)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "1、在自由标引中，其主题词可直接从标题和正文中抽取，也可由标引员自己措词，允许用词不统一,对标引员要求不高，上马较为容易。 由于免去了词表翻查和词汇转换过程，处理速度虽比不上自动标引，但比受控标引要快得多，且质量优于自动标引,加上后控词表辅助，效果更佳[4]。",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "自由标引",
+          "normalized_name": "自由标引",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在自由标引中，其主题词可直接从标题和正文中抽取",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "自动标引",
+          "normalized_name": "自动标引",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "处理速度虽比不上自动标引，但比受控标引要快得多，且质量优于自动标引",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e3",
+          "mention": "受控标引",
+          "normalized_name": "受控标引",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "比受控标引要快得多",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e4",
+          "mention": "后控词表",
+          "normalized_name": "后控词表",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "加上后控词表辅助，效果更佳",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "2、后控词表可灵活应变，具有多种用途。它与全文检索配合使用，利用词表的词间关系显示，可自动找出提问词的所有同义词后进行全文查找； 这样，可以提高查全率。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "后控词表",
+          "normalized_name": "后控词表",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "后控词表可灵活应变，具有多种用途",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "全文检索",
+          "normalized_name": "全文检索",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "它与全文检索配合使用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "这样，可以提高查准率。 同时，后控词表也可适应未来的自动标引的需要。因为，只有人工抽词标引和措词标引经验积累到一定程度并总结出规律后，才能由计算机代替人工，找到适合于自己的自动标引方案，而作为标引积累的后控词表是可靠的第一手材料。同时若采用\"规范词典 $+$ 抽词词典\"的规范化自动标引方法，后控词表可作为编制这些词典的直接依据。",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "后控词表",
+          "normalized_name": "后控词表",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "后控词表也可适应未来的自动标引的需要",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "自动标引",
+          "normalized_name": "自动标引",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "后控词表也可适应未来的自动标引的需要",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e3",
+          "mention": "人工抽词标引",
+          "normalized_name": "人工抽词标引",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "只有人工抽词标引和措词标引经验积累到一定程度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e4",
+          "mention": "措词标引",
+          "normalized_name": "措词标引",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "只有人工抽词标引和措词标引经验积累到一定程度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e5",
+          "mention": "规范词典 $+$ 抽词词典",
+          "normalized_name": "规范词典 + 抽词词典",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "采用\"规范词典 $+$ 抽词词典\"的规范化自动标引方法",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e6",
+          "mention": "规范化自动标引方法",
+          "normalized_name": "规范化自动标引方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用\"规范词典 $+$ 抽词词典\"的规范化自动标引方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "33",
+      "sentence": "象《解放军报》,现有1956年创办以来的近50万篇文献，约4.4亿字。 如此庞大数量的资料，全文输入不太可能，受控标引更不现实，因此，最好的办法是象《人民日报》那样只做题录库。但自由标引弥补了新闻标题情报性差的不足，加上后控词表的辅助，准确、全面检出所需资料是可能的。",
+      "entities": [
+        {
+          "entity_id": "33_e1",
+          "mention": "《解放军报》",
+          "normalized_name": "《解放军报》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "象《解放军报》,现有1956年创办以来的近50万篇文献",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e2",
+          "mention": "《人民日报》",
+          "normalized_name": "《人民日报》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "象《人民日报》那样只做题录库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e3",
+          "mention": "自由标引",
+          "normalized_name": "自由标引",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "自由标引弥补了新闻标题情报性差的不足",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e4",
+          "mention": "后控词表",
+          "normalized_name": "后控词表",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "加上后控词表的辅助",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "34",
+      "sentence": "(二)加强协词，减少重复浪费。 从表1可以看出，几个系统在数据库选题方面有些雷同。 比如,新华社已有了专门的中文新闻库，宋明亮：我国报纸信息数据库开发的现状与对策",
+      "entities": [
+        {
+          "entity_id": "34_e1",
+          "mention": "新华社",
+          "normalized_name": "新华社",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "新华社已有了专门的中文新闻库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e2",
+          "mention": "中文新闻库",
+          "normalized_name": "中文新闻库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "新华社已有了专门的中文新闻库",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e3",
+          "mention": "宋明亮：我国报纸信息数据库开发的现状与对策",
+          "normalized_name": "宋明亮：我国报纸信息数据库开发的现状与对策",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "宋明亮：我国报纸信息数据库开发的现状与对策",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "35",
+      "sentence": "再如，《经济日报》的中国领导人库、新华社的副部级以上国内国际人物库和《人民日报》的人名索引库，也有些交叉重复。 其实，应进行一定的分工协调，如新华社可专建国际人物库、《经济日报》社专建经济人物库、《人民日报》社专建国内人物库、《解放军报》社专建军事人物库。这样，不仅可使各单位重点突出，而且通过交换，可拥有更多更全的信息资源。 要做到资源共享，应做好以下工作：",
+      "entities": [
+        {
+          "entity_id": "35_e1",
+          "mention": "《经济日报》",
+          "normalized_name": "《经济日报》",
+          "candidate_l3": "publishing",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "《经济日报》的中国领导人库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e2",
+          "mention": "中国领导人库",
+          "normalized_name": "中国领导人库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《经济日报》的中国领导人库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e3",
+          "mention": "新华社",
+          "normalized_name": "新华社",
+          "candidate_l3": "publishing",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "新华社的副部级以上国内国际人物库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e4",
+          "mention": "副部级以上国内国际人物库",
+          "normalized_name": "副部级以上国内国际人物库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "新华社的副部级以上国内国际人物库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e5",
+          "mention": "《人民日报》",
+          "normalized_name": "《人民日报》",
+          "candidate_l3": "publishing",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "《人民日报》的人名索引库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e6",
+          "mention": "人名索引库",
+          "normalized_name": "人名索引库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《人民日报》的人名索引库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e7",
+          "mention": "国际人物库",
+          "normalized_name": "国际人物库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "新华社可专建国际人物库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e8",
+          "mention": "《经济日报》社",
+          "normalized_name": "《经济日报》社",
+          "candidate_l3": "publishing",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "《经济日报》社专建经济人物库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e9",
+          "mention": "经济人物库",
+          "normalized_name": "经济人物库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《经济日报》社专建经济人物库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e10",
+          "mention": "《人民日报》社",
+          "normalized_name": "《人民日报》社",
+          "candidate_l3": "publishing",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "《人民日报》社专建国内人物库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e11",
+          "mention": "国内人物库",
+          "normalized_name": "国内人物库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《人民日报》社专建国内人物库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e12",
+          "mention": "《解放军报》社",
+          "normalized_name": "《解放军报》社",
+          "candidate_l3": "publishing",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "《解放军报》社专建军事人物库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e13",
+          "mention": "军事人物库",
+          "normalized_name": "军事人物库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《解放军报》社专建军事人物库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "36",
+      "sentence": "1、应有专门机构进行组织协调。 中国新闻资料学会在这方面可发挥应有作用。",
+      "entities": [
+        {
+          "entity_id": "36_e1",
+          "mention": "中国新闻资料学会",
+          "normalized_name": "中国新闻资料学会",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中国新闻资料学会在这方面可发挥应有作用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "37",
+      "sentence": "2、加强数据库结构的标准化。 要象机读目录那样，制订相应的数据库标准格式及著录规则。 只有在统一的基础上，才可能实现数据的交换。",
+      "entities": [
+        {
+          "entity_id": "37_e1",
+          "mention": "机读目录",
+          "normalized_name": "机读目录",
+          "candidate_l3": "metadata_schema",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "要象机读目录那样，制订相应的数据库标准格式及著录规则",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e2",
+          "mention": "数据库标准格式",
+          "normalized_name": "数据库标准格式",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "制订相应的数据库标准格式及著录规则",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为泛称，但结合上下文指具体标准格式"
+        },
+        {
+          "entity_id": "37_e3",
+          "mention": "著录规则",
+          "normalized_name": "著录规则",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "制订相应的数据库标准格式及著录规则",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为泛称，但结合上下文指具体著录规则"
+        }
+      ]
+    },
+    {
+      "sentence_id": "38",
+      "sentence": "3、应加强用户友友好界面建设，利用弹出型菜单、下拉式菜单、图形窗口和热键等新技术，使系统能被不同人员所掌握。同时，对实现相同功能的工作，应形成规律性的操作步骤。",
+      "entities": [
+        {
+          "entity_id": "38_e1",
+          "mention": "弹出型菜单",
+          "normalized_name": "弹出型菜单",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用弹出型菜单、下拉式菜单、图形窗口和热键等新技术",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e2",
+          "mention": "下拉式菜单",
+          "normalized_name": "下拉式菜单",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用弹出型菜单、下拉式菜单、图形窗口和热键等新技术",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e3",
+          "mention": "图形窗口",
+          "normalized_name": "图形窗口",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用弹出型菜单、下拉式菜单、图形窗口和热键等新技术",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e4",
+          "mention": "热键",
+          "normalized_name": "热键",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用弹出型菜单、下拉式菜单、图形窗口和热键等新技术",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "39",
+      "sentence": "从各个报社现在的情况来看，新闻资料工作长期以剪贴报纸为主，尚无独立的数据库建设能力，现有几个系统都是在和有关科研单位合作开发的情况下完成的。 图书情报部门应抓住良机，发挥自己在信息处理方面的特长，既可象美国MEAD数据中心那样，建立《纽约时报》、《新闻周报》、《商业周报》和《华盛顿邮报》等多种报纸的综合新闻数据库系统； 也可象中信所重庆分所那样，利用馆藏报纸建立专题新闻数据库。",
+      "entities": [
+        {
+          "entity_id": "39_e1",
+          "mention": "美国MEAD数据中心",
+          "normalized_name": "美国MEAD数据中心",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "既可象美国MEAD数据中心那样",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e2",
+          "mention": "《纽约时报》",
+          "normalized_name": "《纽约时报》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建立《纽约时报》、《新闻周报》、《商业周报》和《华盛顿邮报》等多种报纸的综合新闻数据库系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "报纸作为连续出版物，可视为期刊类制品"
+        },
+        {
+          "entity_id": "39_e3",
+          "mention": "《新闻周报》",
+          "normalized_name": "《新闻周报》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建立《纽约时报》、《新闻周报》、《商业周报》和《华盛顿邮报》等多种报纸的综合新闻数据库系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e4",
+          "mention": "《商业周报》",
+          "normalized_name": "《商业周报》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建立《纽约时报》、《新闻周报》、《商业周报》和《华盛顿邮报》等多种报纸的综合新闻数据库系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e5",
+          "mention": "《华盛顿邮报》",
+          "normalized_name": "《华盛顿邮报》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建立《纽约时报》、《新闻周报》、《商业周报》和《华盛顿邮报》等多种报纸的综合新闻数据库系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e6",
+          "mention": "中信所重庆分所",
+          "normalized_name": "中信所重庆分所",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "也可象中信所重庆分所那样",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "40",
+      "sentence": "当然还可象复旦大学图书馆编制《新民晚报索引》那样，主动和有关报社寻求合作。 只要我们努力去做，这的确是图书情报部门投身信息产业，提高经济效益和社会效益的一条好路子。",
+      "entities": [
+        {
+          "entity_id": "40_e1",
+          "mention": "复旦大学图书馆",
+          "normalized_name": "复旦大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "复旦大学图书馆编制《新民晚报索引》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e2",
+          "mention": "《新民晚报索引》",
+          "normalized_name": "《新民晚报索引》",
+          "candidate_l3": "index",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "复旦大学图书馆编制《新民晚报索引》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

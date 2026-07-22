@@ -1,0 +1,2167 @@
+{
+  "base_name": "reviewed_full_9920",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "2",
+      "sentence": "根据对八种高校图书情报专业期刊的调查，将有关图书馆管理的论文分类统计，制成表1。 从表1的统计数据可以粗略地看到近三年来，我国高校图书馆管理研究的基本状况和发展趋势(见表1)。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "八种高校图书情报专业期刊",
+          "normalized_name": "八种高校图书情报专业期刊",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "根据对八种高校图书情报专业期刊的调查",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未指明具体期刊名称，但作为有数量限定的具体期刊集合，可视为具体实体"
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "表1",
+          "normalized_name": "表1",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "制成表1。 从表1的统计数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "我国高校图书馆管理研究",
+          "normalized_name": "我国高校图书馆管理研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国高校图书馆管理研究的基本状况和发展趋势",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "再从总体性研究论文的结构上看，理论性研究论文有52篇，占总论性研究论文总数的 $45 . 2 \\%$ 。 这个数字表明，尽管纯理论性的研究已具有一定规模，但是高校图书馆专业期刊和图书馆管理，还是更加重视管理实践的总结和研究。 若从各专业期刊登载论文的数量上看，除《高校图书情报学刊》1990年停刊、《图书情报知识》中图书发行专业论文占有一定篇幅等特殊原因以外，各刊发表的有关管理方面的论文均在40一60篇之内。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "高校图书馆专业期刊",
+          "normalized_name": "高校图书馆专业期刊",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "高校图书馆专业期刊和图书馆管理",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指代一类期刊而非具体期刊名称，但图情领域放宽规则，有修饰限定可抽取"
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "《高校图书情报学刊》",
+          "normalized_name": "《高校图书情报学刊》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "除《高校图书情报学刊》1990年停刊",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "《图书情报知识》",
+          "normalized_name": "《图书情报知识》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《图书情报知识》中图书发行专业论文占有一定篇幅",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "若从各专业期刊登载论文的数量上看，除《高校图书情报学刊》1990年停刊、《图书情报知识》中图书发行专业论文占有一定篇幅等特殊原因以外，各刊发表的有关管理方面的论文均在40一60篇之内。 这也说明，高校图书馆对管理问题的研究，还是比较重视的。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "《高校图书情报学刊》",
+          "normalized_name": "《高校图书情报学刊》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "除《高校图书情报学刊》1990年停刊",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "《图书情报知识》",
+          "normalized_name": "《图书情报知识》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《图书情报知识》中图书发行专业论文占有一定篇幅",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "高校图书馆",
+          "normalized_name": "高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "高校图书馆对管理问题的研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处'高校图书馆'虽为机构类别词，但结合上下文指代具体类型机构，且图情领域放宽规则允许抽取有功能限定的机构"
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "在总体性研究以外，其它具体的管理领域，论文分布是不平衡的，前些年讨论较多的图书馆法规建设和诸如决策、计划和控制等管理职能的论文，这三年来数量很少，各占论文总量的$2 . 8 \\%$ 和 $2 . 0 \\%$ 。 而在法规建设中，对条例、规程的研讨又比对一般规章制度的研讨多一些，两者之比约为 $2 . 3 : 1$ ，,可见对一般规章制度的研究重视不够。有关管理职能的研究论文不仅数量少; 而且分布不均。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "图书馆法规建设",
+          "normalized_name": "图书馆法规建设",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "前些年讨论较多的图书馆法规建设和诸如决策、计划和控制等管理职能的论文",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "决策",
+          "normalized_name": "决策",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "诸如决策、计划和控制等管理职能",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "可能为管理职能泛称，但作为具体管理职能概念抽取"
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "计划",
+          "normalized_name": "计划",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "诸如决策、计划和控制等管理职能",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "可能为管理职能泛称，但作为具体管理职能概念抽取"
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "控制",
+          "normalized_name": "控制",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "诸如决策、计划和控制等管理职能",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "可能为管理职能泛称，但作为具体管理职能概念抽取"
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "条例",
+          "normalized_name": "条例",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对条例、规程的研讨又比对一般规章制度的研讨多一些",
+          "is_specific_entity": true,
+          "confidence": 0.75,
+          "uncertainty": "可能为泛称，但作为法规建设中的具体类型概念抽取"
+        },
+        {
+          "entity_id": "6_e6",
+          "mention": "规程",
+          "normalized_name": "规程",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对条例、规程的研讨又比对一般规章制度的研讨多一些",
+          "is_specific_entity": true,
+          "confidence": 0.75,
+          "uncertainty": "可能为泛称，但作为法规建设中的具体类型概念抽取"
+        },
+        {
+          "entity_id": "6_e7",
+          "mention": "一般规章制度",
+          "normalized_name": "一般规章制度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对条例、规程的研讨又比对一般规章制度的研讨多一些",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "可能为泛称，但作为与条例、规程对比的具体类型概念抽取"
+        },
+        {
+          "entity_id": "6_e8",
+          "mention": "管理职能",
+          "normalized_name": "管理职能",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有关管理职能的研究论文不仅数量少",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "在八种刊物中，有三个刊物没登一篇，四个刊物只登一篇，只有一个刊物发表了三篇论文。 在发表的7篇论文中，有份量的不多。在黄宗忠同志指导下的硕士论文—一“决策系统的协调控制\"(《图书情报知识》89：3),是质量较高的论文。 但只是论文的摘要。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "黄宗忠",
+          "normalized_name": "黄宗忠",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在黄宗忠同志指导下的硕士论文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "决策系统的协调控制",
+          "normalized_name": "决策系统的协调控制",
+          "candidate_l3": "thesis",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "硕士论文—一“决策系统的协调控制”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "《图书情报知识》",
+          "normalized_name": "《图书情报知识》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《图书情报知识》89：3",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "而在这三个主题中，高校图书馆评估为最热点，共有33篇论文，在全部论文中约占 $9 . 2 \\%$ ,接近1/10。 足见其研究的势头很强。其中《图书与情报工作》发表的这类文章最多，共有12篇，在全部33篇论文中，占去1/3之多，而且张汝文、石方、张厚涵、杨位平、周礼智、胡越等同志先后在该刊发表的有关论文质量较高，成为研究高校图书馆评估的园地之一。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "高校图书馆评估",
+          "normalized_name": "高校图书馆评估",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "高校图书馆评估为最热点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "《图书与情报工作》",
+          "normalized_name": "《图书与情报工作》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《图书与情报工作》发表的这类文章最多",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "张汝文",
+          "normalized_name": "张汝文",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "张汝文、石方、张厚涵、杨位平、周礼智、胡越等同志先后在该刊发表的有关论文质量较高",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "石方",
+          "normalized_name": "石方",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "张汝文、石方、张厚涵、杨位平、周礼智、胡越等同志先后在该刊发表的有关论文质量较高",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e5",
+          "mention": "张厚涵",
+          "normalized_name": "张厚涵",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "张汝文、石方、张厚涵、杨位平、周礼智、胡越等同志先后在该刊发表的有关论文质量较高",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e6",
+          "mention": "杨位平",
+          "normalized_name": "杨位平",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "张汝文、石方、张厚涵、杨位平、周礼智、胡越等同志先后在该刊发表的有关论文质量较高",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e7",
+          "mention": "周礼智",
+          "normalized_name": "周礼智",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "张汝文、石方、张厚涵、杨位平、周礼智、胡越等同志先后在该刊发表的有关论文质量较高",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e8",
+          "mention": "胡越",
+          "normalized_name": "胡越",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "张汝文、石方、张厚涵、杨位平、周礼智、胡越等同志先后在该刊发表的有关论文质量较高",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "由于近年来许多高校图书馆建了新馆，或者正在筹建新馆，因此，把建馆过程中以及新馆建成后的工作体会在图书馆管理者之间进行交流，是图书馆工作的客观需要。 山西农大图书馆新馆搬迁前后的体会(《晋图学刊》90:3)、山西矿业学院图书馆建筑设计与使用的反思(《晋图学刊》88：1)等文章，都是有实际借鉴意义的研究。 此外，还有些同志把出国考察的情况以及国外高校图书馆建筑的成功经验，介绍给国内的同行。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "山西农大图书馆",
+          "normalized_name": "山西农业大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "山西农大图书馆新馆搬迁前后的体会",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "《晋图学刊》",
+          "normalized_name": "《晋图学刊》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "山西农大图书馆新馆搬迁前后的体会(《晋图学刊》90:3)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "山西矿业学院图书馆",
+          "normalized_name": "山西矿业学院图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "山西矿业学院图书馆建筑设计与使用的反思",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e4",
+          "mention": "《晋图学刊》",
+          "normalized_name": "《晋图学刊》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "山西矿业学院图书馆建筑设计与使用的反思(《晋图学刊》88：1)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "此外，还有些同志把出国考察的情况以及国外高校图书馆建筑的成功经验，介绍给国内的同行。 其中南京工学院建筑设计研究院的周文祥同志结合自己随国家教委“大学校舍建筑考察团\"去日本参观考察的实际经历,对我国高校图书馆建筑发展的趋向等问题，谈了他的认识和观点(《大学图书馆通讯》88：6)，读来很有启发。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "南京工学院建筑设计研究院",
+          "normalized_name": "南京工学院建筑设计研究院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "南京工学院建筑设计研究院的周文祥同志",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "周文祥",
+          "normalized_name": "周文祥",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "南京工学院建筑设计研究院的周文祥同志",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "国家教委“大学校舍建筑考察团”",
+          "normalized_name": "国家教委大学校舍建筑考察团",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "随国家教委“大学校舍建筑考察团”去日本参观考察",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "《大学图书馆通讯》88：6",
+          "normalized_name": "《大学图书馆通讯》1988年第6期",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《大学图书馆通讯》88：6",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "在有关图书馆自动化和现代化建设的讨论中，全部25篇论文就有19篇是研究以计算机为基础的图书馆自动化问题的，约占该议题总数的 $76 \\%$ 。 在这类论文中，《大学图书馆学报》刊登论文最多，三年来共登7篇，约占这类论文的 $3 6 . 8 \\%$ ，不仅数量多，文章的质量也高，成为高校图书馆自动化研究的基地。其中董成泰同志的“我国高校图书馆自动化的回顾与展望\"《大学图书馆学报》89：1)、袁名敦同志的“高校图书馆自动化发展的新阶段\"(《大学图书馆学报》90:6)等文章,有较高的价值。 此外,诸如缩微、视听等新技术设备的管理,也有6篇论文。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "《大学图书馆学报》",
+          "normalized_name": "《大学图书馆学报》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《大学图书馆学报》刊登论文最多",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "董成泰",
+          "normalized_name": "董成泰",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "董成泰同志的“我国高校图书馆自动化的回顾与展望\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "我国高校图书馆自动化的回顾与展望",
+          "normalized_name": "我国高校图书馆自动化的回顾与展望",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "董成泰同志的“我国高校图书馆自动化的回顾与展望\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "袁名敦",
+          "normalized_name": "袁名敦",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "袁名敦同志的“高校图书馆自动化发展的新阶段\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e5",
+          "mention": "高校图书馆自动化发展的新阶段",
+          "normalized_name": "高校图书馆自动化发展的新阶段",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "袁名敦同志的“高校图书馆自动化发展的新阶段\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "此外,诸如缩微、视听等新技术设备的管理,也有6篇论文。 目前数量虽不多，但已经比前些年为多。我们相信,随着新技术设备的广泛应用,这方面的研究也将在数量和质量方面有所发展。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "缩微",
+          "normalized_name": "缩微",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "诸如缩微、视听等新技术设备的管理",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指缩微技术或缩微设备，此处作为技术手段抽取"
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "视听",
+          "normalized_name": "视听",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "诸如缩微、视听等新技术设备的管理",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指视听技术或视听设备，此处作为技术手段抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "当然我们也看到，有关经费管理、图书馆统计、以及时间信息管理等方面，仍然没有给以足够的重视。这些方面原本就研究不够、重视不够，现仍是薄弱环节。虽然对统计工作已有所重视，并做了一定的工作，但缺乏理论研究。尤其是象由朱强同志执笔的“对高校图书馆现状的一次调查\"(《大学图书馆学报》90：3.4连载)那样有份量的统计分析，还是为数不多的。无论从理论研究的深度，还是从实践活动的经常化和制度化方面而言，对图书馆统计仍需进一步加强。此外，有关经费管理和时间信息管理，也是今后高校图书馆管理研究应努力的重点领域，进而推动图书馆管理研究的均衡发展，促进高校图书馆事业科学管理的进程。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "朱强",
+          "normalized_name": "朱强",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "象由朱强同志执笔的“对高校图书馆现状的一次调查\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "对高校图书馆现状的一次调查",
+          "normalized_name": "对高校图书馆现状的一次调查",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "象由朱强同志执笔的“对高校图书馆现状的一次调查\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "《大学图书馆学报》",
+          "normalized_name": "《大学图书馆学报》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《大学图书馆学报》90：3.4连载",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "在有关人员管理的61篇论文中，除曹葆青同学的硕士研究生论文“图书馆人员管理研究”(《图书情报知识》90：1)是从总体上论述人员的选拔、使用、奖励、惩罚和培训等问题以外，其它论文都是从某个方面来讨论人员管理问题的。其中,这三年来讨论比较多的有两个方面：一是有关图书馆工作人员职业道德的研究； 二是有关图书馆工作人员心理学的研究。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "曹葆青",
+          "normalized_name": "曹葆青",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "除曹葆青同学的硕士研究生论文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "图书馆人员管理研究",
+          "normalized_name": "图书馆人员管理研究",
+          "candidate_l3": "thesis",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "曹葆青同学的硕士研究生论文“图书馆人员管理研究”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "《图书情报知识》",
+          "normalized_name": "《图书情报知识》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《图书情报知识》90：1",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e4",
+          "mention": "图书馆工作人员职业道德",
+          "normalized_name": "图书馆工作人员职业道德",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有关图书馆工作人员职业道德的研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e5",
+          "mention": "图书馆工作人员心理学",
+          "normalized_name": "图书馆工作人员心理学",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有关图书馆工作人员心理学的研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "关于职业道德的讨论共有10篇论文，占全部人员管理论题的 $1 6 . 4 \\%$ 。 可见对图书馆工作人员自身素质的研究，仍是研究的重点。 在这10篇论文中，有6篇是《高校图书馆工作》刊载的。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "《高校图书馆工作》",
+          "normalized_name": "《高校图书馆工作》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "有6篇是《高校图书馆工作》刊载的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "在这10篇论文中，有6篇是《高校图书馆工作》刊载的。 这也说明该刊近年来对此议题的重视。 关于图书馆工作人员心理活动的研究，也有9篇之多，在人员管理的讨论中居第二位。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "《高校图书馆工作》",
+          "normalized_name": "《高校图书馆工作》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "有6篇是《高校图书馆工作》刊载的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "还有的从管理心理学的角度,对馆员和读者的双边心理做了一番探讨。 其中宋其兰同志从“需要层次论\"分析图书馆专业队伍不稳定的原因(《晋图学刊》88：3)，为我们认识高校图书馆工作人员“离队”、“跳槽\"等现象提供了认识基础。此外，陈吉凤同志的双边心理研究(《高校图书馆工作》89：3)也有一定的价值。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "管理心理学",
+          "normalized_name": "管理心理学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从管理心理学的角度",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "宋其兰",
+          "normalized_name": "宋其兰",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "宋其兰同志从“需要层次论\"分析图书馆专业队伍不稳定的原因",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "需要层次论",
+          "normalized_name": "需要层次论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从“需要层次论\"分析图书馆专业队伍不稳定的原因",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e4",
+          "mention": "《晋图学刊》88：3",
+          "normalized_name": "《晋图学刊》88：3",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "(《晋图学刊》88：3)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e5",
+          "mention": "陈吉凤",
+          "normalized_name": "陈吉凤",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "陈吉凤同志的双边心理研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e6",
+          "mention": "《高校图书馆工作》89：3",
+          "normalized_name": "《高校图书馆工作》89：3",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "(《高校图书馆工作》89：3)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "三年来，有关职务评聘、优化劳动组合、岗位责任制以及人员培训等问题是继职业道德和馆员心理研究之后比较多的议题。 但从论文的数量和质量方面看，有份量的分析和研究不多。许多文章都是就事论事的工作体会和总结。若从改革的全局观点看，这方面的研究还是很不够。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "职务评聘",
+          "normalized_name": "职务评聘",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有关职务评聘、优化劳动组合、岗位责任制以及人员培训等问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "优化劳动组合",
+          "normalized_name": "优化劳动组合",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有关职务评聘、优化劳动组合、岗位责任制以及人员培训等问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "岗位责任制",
+          "normalized_name": "岗位责任制",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有关职务评聘、优化劳动组合、岗位责任制以及人员培训等问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e4",
+          "mention": "人员培训",
+          "normalized_name": "人员培训",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有关职务评聘、优化劳动组合、岗位责任制以及人员培训等问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e5",
+          "mention": "职业道德",
+          "normalized_name": "职业道德",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "继职业道德和馆员心理研究之后",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e6",
+          "mention": "馆员心理研究",
+          "normalized_name": "馆员心理研究",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "继职业道德和馆员心理研究之后",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "有关队伍建设方面的论文最多，约占 $34 . 4 \\%$ 。 这些论文有的从整体上分析目前高校图书馆干部队伍的状况，如天津市和江苏省高校图书馆干部队伍状况的调查报告(《大学图书馆学报》89：1和89：2),对于客观地认识和评价图书馆干部队伍的实际状况。 有很大的帮助。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "天津市和江苏省高校图书馆干部队伍状况的调查报告",
+          "normalized_name": "天津市和江苏省高校图书馆干部队伍状况的调查报告",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "天津市和江苏省高校图书馆干部队伍状况的调查报告(《大学图书馆学报》89：1和89：2)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "《大学图书馆学报》",
+          "normalized_name": "《大学图书馆学报》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《大学图书馆学报》89：1和89：2",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "另外，还有人从图书馆素质的角度，比较全面地分析了图书馆素质的概念范畴、标志以及完善图书馆素质的途径(《高校图书情报学刊》89：3)。 这些研究对于图书馆队伍建设有积极的意义。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "图书馆素质",
+          "normalized_name": "图书馆素质",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从图书馆素质的角度，比较全面地分析了图书馆素质的概念范畴",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "《高校图书情报学刊》",
+          "normalized_name": "《高校图书情报学刊》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "(《高校图书情报学刊》89：3)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "在组织建设的基本问题中，有关组织基本结构的讨论共有7篇，位居第二。 其中单行同志的“高校图书馆结构的比较研究——关于机构跨度和层次的探讨\"《大学图书馆通讯》88：4)一文,从日本、苏联与我国的比较中，阐发了对高校图书馆结构模式进行改革的设想，是质量较高的文章之一。 网络协调和管理体制等论题，虽然数量不及前二者，但其中也不乏优良之作。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "单行",
+          "normalized_name": "单行",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "单行同志的“高校图书馆结构的比较研究——关于机构跨度和层次的探讨\"《大学图书馆通讯》88：4)一文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "高校图书馆结构的比较研究——关于机构跨度和层次的探讨",
+          "normalized_name": "高校图书馆结构的比较研究——关于机构跨度和层次的探讨",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "单行同志的“高校图书馆结构的比较研究——关于机构跨度和层次的探讨\"《大学图书馆通讯》88：4)一文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "《大学图书馆通讯》",
+          "normalized_name": "《大学图书馆通讯》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《大学图书馆通讯》88：4",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e4",
+          "mention": "日本",
+          "normalized_name": "日本",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从日本、苏联与我国的比较中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "此处指国家，作为地理/政治实体，但按图情领域放宽规则，可视为具体可识别对象"
+        },
+        {
+          "entity_id": "23_e5",
+          "mention": "苏联",
+          "normalized_name": "苏联",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从日本、苏联与我国的比较中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "同上"
+        },
+        {
+          "entity_id": "23_e6",
+          "mention": "我国",
+          "normalized_name": "中国",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从日本、苏联与我国的比较中",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'我国'指代中国，虽为代词但可唯一识别"
+        },
+        {
+          "entity_id": "23_e7",
+          "mention": "高校图书馆结构模式",
+          "normalized_name": "高校图书馆结构模式",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "阐发了对高校图书馆结构模式进行改革的设想",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "网络协调和管理体制等论题，虽然数量不及前二者，但其中也不乏优良之作。 比如，夏青路同志关于实行馆长助理制的建议(《大学图书馆学报》89:5),就是一项有意义的探索。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "夏青路",
+          "normalized_name": "夏青路",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "夏青路同志关于实行馆长助理制的建议",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "《大学图书馆学报》",
+          "normalized_name": "《大学图书馆学报》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《大学图书馆学报》89:5",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "其中李玉文和赵存存同志对高校图书馆领导班子建设的研究(《晋图学刊》89：3)、杨华同志有关主管院(校)长如何抓好图书馆工作的讨论(《晋图学刊》88:3)等文章，对有关问题进行了较深入的讨论。 显而易见，主管院(校)长的管理行为对高校图书馆工作影响重大，有关这方面的研究和呼声还应加强。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "李玉文",
+          "normalized_name": "李玉文",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "李玉文和赵存存同志对高校图书馆领导班子建设的研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "赵存存",
+          "normalized_name": "赵存存",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "李玉文和赵存存同志对高校图书馆领导班子建设的研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e3",
+          "mention": "《晋图学刊》89：3",
+          "normalized_name": "《晋图学刊》89：3",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《晋图学刊》89：3",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e4",
+          "mention": "杨华",
+          "normalized_name": "杨华",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "杨华同志有关主管院(校)长如何抓好图书馆工作的讨论",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e5",
+          "mention": "《晋图学刊》88:3",
+          "normalized_name": "《晋图学刊》88:3",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《晋图学刊》88:3",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "其中《图书与情报工作》刊登的两篇关于师专是否设资料室的讨论(《图书与情报工作》90：2),对师专图书馆组织建设有一定的借鉴。 这两篇文章提出“不宜设系资料室\"的看法，以《普通高等学校图书馆规程》为依据，论证了自己的观点，有自己的见解。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "《图书与情报工作》",
+          "normalized_name": "《图书与情报工作》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《图书与情报工作》刊登的两篇关于师专是否设资料室的讨论",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e2",
+          "mention": "《普通高等学校图书馆规程》",
+          "normalized_name": "《普通高等学校图书馆规程》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以《普通高等学校图书馆规程》为依据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "高校图书馆管理领域的拓宽、丰富和发展，促进了图书馆管理理论与实践的进步。 三年来，一些新的领域、新的发展，通过我们的文献分布调查，得到以下几个方面的认识。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "高校图书馆",
+          "normalized_name": "高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "高校图书馆管理领域的拓宽、丰富和发展",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "有地名/学科限定修饰的具体机构需抽取，此处'高校图书馆'作为机构类型泛称，但根据图情领域放宽规则，有'高校'限定，可视为具体机构类型"
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "图书馆管理理论",
+          "normalized_name": "图书馆管理理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "促进了图书馆管理理论与实践的进步",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e3",
+          "mention": "图书馆管理实践",
+          "normalized_name": "图书馆管理实践",
+          "candidate_l3": "methodology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "促进了图书馆管理理论与实践的进步",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为method或phenomenon"
+        },
+        {
+          "entity_id": "28_e4",
+          "mention": "文献分布调查",
+          "normalized_name": "文献分布调查",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过我们的文献分布调查",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "29",
+      "sentence": "1．在图书馆管理理论的研究中，全部52篇论文就有7篇是专门研究高校图书馆目标管理的,约占这类论文总量的 $1 3 . 5 \\%$ ,成为近三年来图书馆管理理论和方法研究的新的领域。 虽然,有关目标管理的研究前些年就已有之，但是这三年的研究无论在数量上还是在质量上，无论在理论上还是在实践上都取得了以往所不可比拟的成就，成为理论研究的一个热点。",
+      "entities": [
+        {
+          "entity_id": "29_e1",
+          "mention": "图书馆管理理论",
+          "normalized_name": "图书馆管理理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在图书馆管理理论的研究中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e2",
+          "mention": "高校图书馆目标管理",
+          "normalized_name": "高校图书馆目标管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "专门研究高校图书馆目标管理的",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e3",
+          "mention": "目标管理",
+          "normalized_name": "目标管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有关目标管理的研究前些年就已有之",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "在高校图书馆有关目标管理的研究中，刘可静同学的硕士研究生论文“图书馆目标管理初探\"(《图书情报知识》89:1)、李树泓同志的“试论大学图书馆的目标管理\"(《图书与情报工作》90:2)等文章,都从理论上作了较为全面、深入的研究。此外，赵晓妹、张洪亮同志还分别在《图书与情报工作》(88：4)和《晋图学刊》(88:2)上,论证了目标管理的可行性。 在大量理论研究的同时，一些高校图书馆结合这些年来实行目标管理的经验，纷纷撰文予以总结。",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "刘可静",
+          "normalized_name": "刘可静",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "刘可静同学的硕士研究生论文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "图书馆目标管理初探",
+          "normalized_name": "图书馆目标管理初探",
+          "candidate_l3": "thesis",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "刘可静同学的硕士研究生论文“图书馆目标管理初探”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e3",
+          "mention": "《图书情报知识》",
+          "normalized_name": "《图书情报知识》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《图书情报知识》89:1",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e4",
+          "mention": "李树泓",
+          "normalized_name": "李树泓",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "李树泓同志的“试论大学图书馆的目标管理”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e5",
+          "mention": "试论大学图书馆的目标管理",
+          "normalized_name": "试论大学图书馆的目标管理",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "李树泓同志的“试论大学图书馆的目标管理”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e6",
+          "mention": "《图书与情报工作》",
+          "normalized_name": "《图书与情报工作》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《图书与情报工作》90:2",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e7",
+          "mention": "赵晓妹",
+          "normalized_name": "赵晓妹",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "赵晓妹、张洪亮同志还分别在《图书与情报工作》(88：4)和《晋图学刊》(88:2)上",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e8",
+          "mention": "张洪亮",
+          "normalized_name": "张洪亮",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "赵晓妹、张洪亮同志还分别在《图书与情报工作》(88：4)和《晋图学刊》(88:2)上",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e9",
+          "mention": "《晋图学刊》",
+          "normalized_name": "《晋图学刊》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《晋图学刊》(88:2)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e10",
+          "mention": "目标管理",
+          "normalized_name": "目标管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在高校图书馆有关目标管理的研究中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "31",
+      "sentence": "如：抚顺石油学院图书馆(《图书与情报工作》90：1)、天津商学院图书馆(《津图学刊》90:3)以及长春金融管理干部学院图书馆(《吉林高校图书馆》89：4)等单位就分别谈了他们实行目标管理的体会。 其中胡伟同志对本馆(抚顺石油学院)工作的全面总结,尤其是再结合该馆实施目标管理的办法(《图书与情报工作》88：2)就能对高校图书馆目标管理问题有全面的了解和认识。",
+      "entities": [
+        {
+          "entity_id": "31_e1",
+          "mention": "抚顺石油学院图书馆",
+          "normalized_name": "抚顺石油学院图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "抚顺石油学院图书馆(《图书与情报工作》90：1)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e2",
+          "mention": "《图书与情报工作》",
+          "normalized_name": "《图书与情报工作》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "抚顺石油学院图书馆(《图书与情报工作》90：1)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e3",
+          "mention": "天津商学院图书馆",
+          "normalized_name": "天津商学院图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "天津商学院图书馆(《津图学刊》90:3)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e4",
+          "mention": "《津图学刊》",
+          "normalized_name": "《津图学刊》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "天津商学院图书馆(《津图学刊》90:3)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e5",
+          "mention": "长春金融管理干部学院图书馆",
+          "normalized_name": "长春金融管理干部学院图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "长春金融管理干部学院图书馆(《吉林高校图书馆》89：4)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e6",
+          "mention": "《吉林高校图书馆》",
+          "normalized_name": "《吉林高校图书馆》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "长春金融管理干部学院图书馆(《吉林高校图书馆》89：4)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e7",
+          "mention": "胡伟",
+          "normalized_name": "胡伟",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "胡伟同志对本馆(抚顺石油学院)工作的全面总结",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e8",
+          "mention": "抚顺石油学院",
+          "normalized_name": "抚顺石油学院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "胡伟同志对本馆(抚顺石油学院)工作的全面总结",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e9",
+          "mention": "目标管理",
+          "normalized_name": "目标管理",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实行目标管理的体会",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e10",
+          "mention": "《图书与情报工作》88：2",
+          "normalized_name": "《图书与情报工作》88：2",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "该馆实施目标管理的办法(《图书与情报工作》88：2)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e11",
+          "mention": "高校图书馆",
+          "normalized_name": "高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "高校图书馆目标管理问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'高校图书馆'作为泛指机构类别词，但结合上下文'高校图书馆目标管理问题'，可视为对一类具体机构的指称，根据召回优先原则抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "32",
+      "sentence": "2.如果说目标管理在前些年已有所研究的话，那么在高校图书馆管理中较新的研究领域就是图书馆公共关系的研究了。在我们所调查的八种专业期刊中，仅有3篇关于公关问题的研究,数量虽然不多，但却展示了图书馆管理的新领域。在这三篇文章中，骆伟同志从图书馆公共关系的概念、目的、对象、程序和方法等基本问题出发，较为全面地讨论了图书馆的公关问题（《图书情报知识》90;3)。 芦建生同志的两篇文章则从图书馆公关宣传和图书馆形象等不同的角度，讨论了公关宣传的意义、特征和方式，以及知名度、美誉度和信任度与图书馆形象的关系等问题(《晋图学刊》88:3、89:2),具体地研究了图书馆开展公关业务应注意的一些问题。",
+      "entities": [
+        {
+          "entity_id": "32_e1",
+          "mention": "目标管理",
+          "normalized_name": "目标管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目标管理在前些年已有所研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e2",
+          "mention": "图书馆公共关系",
+          "normalized_name": "图书馆公共关系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在高校图书馆管理中较新的研究领域就是图书馆公共关系的研究了",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e3",
+          "mention": "八种专业期刊",
+          "normalized_name": "八种专业期刊",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在我们所调查的八种专业期刊中",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未指明具体期刊名称，但作为调查对象集合可视为具体实体"
+        },
+        {
+          "entity_id": "32_e4",
+          "mention": "骆伟",
+          "normalized_name": "骆伟",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "骆伟同志从图书馆公共关系的概念、目的、对象、程序和方法等基本问题出发",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e5",
+          "mention": "《图书情报知识》",
+          "normalized_name": "《图书情报知识》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "（《图书情报知识》90;3)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e6",
+          "mention": "芦建生",
+          "normalized_name": "芦建生",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "芦建生同志的两篇文章则从图书馆公关宣传和图书馆形象等不同的角度",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e7",
+          "mention": "图书馆公关宣传",
+          "normalized_name": "图书馆公关宣传",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "芦建生同志的两篇文章则从图书馆公关宣传和图书馆形象等不同的角度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e8",
+          "mention": "图书馆形象",
+          "normalized_name": "图书馆形象",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "芦建生同志的两篇文章则从图书馆公关宣传和图书馆形象等不同的角度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e9",
+          "mention": "《晋图学刊》",
+          "normalized_name": "《晋图学刊》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "（《晋图学刊》88:3、89:2）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e10",
+          "mention": "知名度",
+          "normalized_name": "知名度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "讨论了公关宣传的意义、特征和方式，以及知名度、美誉度和信任度与图书馆形象的关系等问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e11",
+          "mention": "美誉度",
+          "normalized_name": "美誉度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "讨论了公关宣传的意义、特征和方式，以及知名度、美誉度和信任度与图书馆形象的关系等问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e12",
+          "mention": "信任度",
+          "normalized_name": "信任度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "讨论了公关宣传的意义、特征和方式，以及知名度、美誉度和信任度与图书馆形象的关系等问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "33",
+      "sentence": "除公关问题的研究以外，王海明和刘炜同志的“图书馆经营论一事业发展的微观研究”（《大学图书馆通讯》88：6）、李宗春同志的\"图书馆系统内耗问题初探\"(《晋图学刊》89：4)等文章分别从经济学和耗散结构理论方面，研究了图书馆工作及其管理。 这些文章都有一定的新意，但是尚需作深入的研究和探讨。",
+      "entities": [
+        {
+          "entity_id": "33_e1",
+          "mention": "王海明",
+          "normalized_name": "王海明",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "王海明和刘炜同志的“图书馆经营论一事业发展的微观研究”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e2",
+          "mention": "刘炜",
+          "normalized_name": "刘炜",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "王海明和刘炜同志的“图书馆经营论一事业发展的微观研究”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e3",
+          "mention": "图书馆经营论一事业发展的微观研究",
+          "normalized_name": "图书馆经营论一事业发展的微观研究",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "王海明和刘炜同志的“图书馆经营论一事业发展的微观研究”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e4",
+          "mention": "《大学图书馆通讯》",
+          "normalized_name": "《大学图书馆通讯》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "（《大学图书馆通讯》88：6）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "期刊名称，作为文献载体可视为Artifact"
+        },
+        {
+          "entity_id": "33_e5",
+          "mention": "李宗春",
+          "normalized_name": "李宗春",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "李宗春同志的\"图书馆系统内耗问题初探\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e6",
+          "mention": "图书馆系统内耗问题初探",
+          "normalized_name": "图书馆系统内耗问题初探",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "李宗春同志的\"图书馆系统内耗问题初探\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e7",
+          "mention": "《晋图学刊》",
+          "normalized_name": "《晋图学刊》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "(《晋图学刊》89：4)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "期刊名称，作为文献载体可视为Artifact"
+        },
+        {
+          "entity_id": "33_e8",
+          "mention": "经济学",
+          "normalized_name": "经济学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从经济学和耗散结构理论方面",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e9",
+          "mention": "耗散结构理论",
+          "normalized_name": "耗散结构理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从经济学和耗散结构理论方面",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "34",
+      "sentence": "范畴。 多年来，我国高校图书馆管理始终与政治思想工作紧密相连,可以说，建国以来我国高校图书馆管理的发展历史也是一部政治思想工作的历史。但是，在新的历史条件下，如何加强图书馆的政治思想工作，成为高校图书馆管理的新课题。",
+      "entities": [
+        {
+          "entity_id": "34_e1",
+          "mention": "高校图书馆",
+          "normalized_name": "高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "我国高校图书馆管理始终与政治思想工作紧密相连",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "有地名限定'我国'，但'高校图书馆'仍为泛称机构类别词，按规则'有地名/学科/功能限定修饰的具体机构需抽取'，此处'我国'为限定，故抽取"
+        },
+        {
+          "entity_id": "34_e2",
+          "mention": "建国以来我国高校图书馆管理的发展历史",
+          "normalized_name": "建国以来我国高校图书馆管理的发展历史",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "建国以来我国高校图书馆管理的发展历史也是一部政治思想工作的历史",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为时段性划分，模糊起止时间，符合stage定义"
+        }
+      ]
+    },
+    {
+      "sentence_id": "35",
+      "sentence": "在全部52篇理论研究论文中，就有5篇是以图书馆政治思想工作为主题的文章,约占总数的 $9 . 6 \\%$ ,而且这些文章主要是1990年发表的。 其中黄宗忠同志的“思想政治工作是管理的一种重要方法\"(《晋图学刊》90:3)、王淑惠同志的“思想政治工作纵横谈\"(《津图学刊》90:3)是较为深入的、有份量的文章。他们对思想政治工作这一方法作出了客观的评价，并对这种方法的实用性及其应用中的问题作了比较全面、系统的分析和总结，对于高校图书馆管理有一定的指导意义。",
+      "entities": [
+        {
+          "entity_id": "35_e1",
+          "mention": "黄宗忠",
+          "normalized_name": "黄宗忠",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "黄宗忠同志的“思想政治工作是管理的一种重要方法”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e2",
+          "mention": "思想政治工作是管理的一种重要方法",
+          "normalized_name": "思想政治工作是管理的一种重要方法",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "黄宗忠同志的“思想政治工作是管理的一种重要方法”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e3",
+          "mention": "《晋图学刊》",
+          "normalized_name": "《晋图学刊》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《晋图学刊》90:3",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "此处作为期刊载体，但candidate_l3使用journal_article可能不精确，更准确应为期刊本身，但体系内无对应，暂用journal_article"
+        },
+        {
+          "entity_id": "35_e4",
+          "mention": "王淑惠",
+          "normalized_name": "王淑惠",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "王淑惠同志的“思想政治工作纵横谈”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e5",
+          "mention": "思想政治工作纵横谈",
+          "normalized_name": "思想政治工作纵横谈",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "王淑惠同志的“思想政治工作纵横谈”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e6",
+          "mention": "《津图学刊》",
+          "normalized_name": "《津图学刊》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《津图学刊》90:3",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": "同上，期刊载体"
+        },
+        {
+          "entity_id": "35_e7",
+          "mention": "高校图书馆",
+          "normalized_name": "高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对于高校图书馆管理有一定的指导意义",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'高校图书馆'为泛称，但根据图情领域放宽规则，有'高校'限定修饰，且作为管理对象，可视为具体机构类型，但非唯一识别，暂保留"
+        }
+      ]
+    },
+    {
+      "sentence_id": "36",
+      "sentence": "综上所述，近三年来我国高校图书馆管理的理论研究和实践活动都在不同程度上产生了一些变化。 从总体上看，进步和发展是明显的，方向也是正确的。 比如高校图书馆在自动化理论和技术方法的研究与应用方面所取得的成就，就是一个极好的例证。",
+      "entities": [
+        {
+          "entity_id": "36_e1",
+          "mention": "高校图书馆",
+          "normalized_name": "高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "近三年来我国高校图书馆管理的理论研究和实践活动",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'高校图书馆'作为泛指机构类别出现，但根据图情领域放宽规则，有'我国'限定修饰，可视为具体机构类别，故抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "38",
+      "sentence": "的大载文量与高学术水平，尽管它能显示某个学科的最新成就，但并不是所有的读者都有这种需求。 核心期刊往往只较多地适应于高级科研人员的需要，而在有些地方它甚至会无人问津，在某些情况下它的被利用程度可能不如一些重要期刊或常用期刊。因此，有针对性地选刊既要重视核心期刊，更要重视选择与所服务的读者需求相应的期刊。",
+      "entities": [
+        {
+          "entity_id": "38_e1",
+          "mention": "核心期刊",
+          "normalized_name": "核心期刊",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "核心期刊往往只较多地适应于高级科研人员的需要",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e2",
+          "mention": "高级科研人员",
+          "normalized_name": "高级科研人员",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "核心期刊往往只较多地适应于高级科研人员的需要",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "虽为身份类别词，但'高级科研人员'在语境中作为具体读者群体指称，且'高级'为限定修饰，故抽取"
+        },
+        {
+          "entity_id": "38_e3",
+          "mention": "重要期刊",
+          "normalized_name": "重要期刊",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "它的被利用程度可能不如一些重要期刊或常用期刊",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称，但'重要期刊'在语境中作为具体期刊类别指称，且与'常用期刊'并列，故抽取"
+        },
+        {
+          "entity_id": "38_e4",
+          "mention": "常用期刊",
+          "normalized_name": "常用期刊",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "它的被利用程度可能不如一些重要期刊或常用期刊",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称，但'常用期刊'在语境中作为具体期刊类别指称，故抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "39",
+      "sentence": "一种观点认为，所谓核心期刊，对于图书馆工作来讲，一种是学科核心期刊，一种是馆藏核心期刊。学科核心期刊，超越图书馆工作的范围，常依学术水平进行衡量； 馆藏核心期刊则不仅要考虑到学科性质、学术水平，而且应充分考虑到读者的实际需求。",
+      "entities": [
+        {
+          "entity_id": "39_e1",
+          "mention": "核心期刊",
+          "normalized_name": "核心期刊",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "所谓核心期刊，对于图书馆工作来讲，一种是学科核心期刊，一种是馆藏核心期刊",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e2",
+          "mention": "学科核心期刊",
+          "normalized_name": "学科核心期刊",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一种是学科核心期刊，一种是馆藏核心期刊。学科核心期刊，超越图书馆工作的范围",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e3",
+          "mention": "馆藏核心期刊",
+          "normalized_name": "馆藏核心期刊",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一种是学科核心期刊，一种是馆藏核心期刊。馆藏核心期刊则不仅要考虑到学科性质、学术水平",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

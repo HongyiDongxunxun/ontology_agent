@@ -1,0 +1,872 @@
+{
+  "base_name": "reviewed_full_10049",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "陕西高校图书馆联盟的建设在实践中以文献资源体系建设为基础，由陕西重点大学图书馆牵头，以各学科专业文献中心为骨干，各类型和各层次高校图书馆参与配合为保障，充分发挥重点大学图书馆的龙头作用和学科专业文献中心的骨干作用[2]。 既横向沟通，进行同一层面的沟通协作，又纵向联系，进行系统内的分工合作，共同构建全省文献资源保障体系[3]。 (其具体数据详见表1)",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "陕西高校图书馆联盟",
+          "normalized_name": "陕西高校图书馆联盟",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "陕西高校图书馆联盟的建设在实践中以文献资源体系建设为基础",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "陕西重点大学图书馆",
+          "normalized_name": "陕西重点大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由陕西重点大学图书馆牵头",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "学科专业文献中心",
+          "normalized_name": "学科专业文献中心",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "以各学科专业文献中心为骨干",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但结合上下文指具体机构"
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "文献资源保障体系",
+          "normalized_name": "文献资源保障体系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "共同构建全省文献资源保障体系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "陕西是个教育大省，拥有丰富的教育资源。 目前，陕西各高校图书馆均已建立了自己的网站，并以网络为依托联合开展服务，如何根据陕西省高校图书馆的实际进行联盟绩效评测，建立一套科学完善的测评指标体系，是图书馆联盟绩效评测的前提，也是其运作的基础，这对于提高图书馆联盟的服务质量，促进联盟的发展，更好地满足读者需求和教学科研发展的需要，推动本省高等教育事业快速、健康的发展具有非常重要的现实意义。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "陕西",
+          "normalized_name": "陕西",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "陕西是个教育大省",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可视为地域实体，但作为抽象实体中的discipline可能不准确，更合适的是作为地点修饰"
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "陕西各高校图书馆",
+          "normalized_name": "陕西各高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "陕西各高校图书馆均已建立了自己的网站",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "联盟绩效评测",
+          "normalized_name": "联盟绩效评测",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如何根据陕西省高校图书馆的实际进行联盟绩效评测",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "测评指标体系",
+          "normalized_name": "测评指标体系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "建立一套科学完善的测评指标体系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e5",
+          "mention": "图书馆联盟",
+          "normalized_name": "图书馆联盟",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract",
+            "Agent"
+          ],
+          "evidence": "图书馆联盟绩效评测的前提",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可视为组织或概念"
+        },
+        {
+          "entity_id": "2_e6",
+          "mention": "读者需求",
+          "normalized_name": "读者需求",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "满足读者需求和教学科研发展的需要",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e7",
+          "mention": "教学科研发展",
+          "normalized_name": "教学科研发展",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "满足读者需求和教学科研发展的需要",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e8",
+          "mention": "高等教育事业",
+          "normalized_name": "高等教育事业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "推动本省高等教育事业快速、健康的发展",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "对陕西省图书馆联盟绩效评测目的是对联盟机构和各成员馆管理与运行机制进行评测，提出改进或进一步完善的合理化建议。 本文构建的绩效评测绩效体系大纲包括资源共建共享、联盟效力、用户感知、共享绩效等4个相互关联的因素。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "陕西省图书馆联盟",
+          "normalized_name": "陕西省图书馆联盟",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对陕西省图书馆联盟绩效评测",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "资源共建共享",
+          "normalized_name": "资源共建共享",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "资源共建共享、联盟效力、用户感知、共享绩效等4个相互关联的因素",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "联盟效力",
+          "normalized_name": "联盟效力",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "资源共建共享、联盟效力、用户感知、共享绩效等4个相互关联的因素",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "用户感知",
+          "normalized_name": "用户感知",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "资源共建共享、联盟效力、用户感知、共享绩效等4个相互关联的因素",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "共享绩效",
+          "normalized_name": "共享绩效",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "资源共建共享、联盟效力、用户感知、共享绩效等4个相互关联的因素",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "本文构建的绩效评测绩效体系大纲包括资源共建共享、联盟效力、用户感知、共享绩效等4个相互关联的因素。 本着可持续性、科学性和实用性的原则，在对陕西高校图书馆联盟现状调研的基础上，从整体性和全面性角度确定评价因素，采用层次分析法和德尔菲法进行评测，解决权重系数的非客观性和主观随意性，以此来促进联盟及各盟员馆的服务，推动联盟的可持续发展，是此评价体系设计的重要思路。 最后，根据所构建的指标体系，提出一些实施策略，使得此指标体系在实施过程中得到检验和完善。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "资源共建共享",
+          "normalized_name": "资源共建共享",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "资源共建共享、联盟效力、用户感知、共享绩效等4个相互关联的因素",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "联盟效力",
+          "normalized_name": "联盟效力",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "资源共建共享、联盟效力、用户感知、共享绩效等4个相互关联的因素",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "用户感知",
+          "normalized_name": "用户感知",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "资源共建共享、联盟效力、用户感知、共享绩效等4个相互关联的因素",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "共享绩效",
+          "normalized_name": "共享绩效",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "资源共建共享、联盟效力、用户感知、共享绩效等4个相互关联的因素",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "陕西高校图书馆联盟",
+          "normalized_name": "陕西高校图书馆联盟",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在对陕西高校图书馆联盟现状调研的基础上",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e6",
+          "mention": "层次分析法",
+          "normalized_name": "层次分析法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用层次分析法和德尔菲法进行评测",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e7",
+          "mention": "德尔菲法",
+          "normalized_name": "德尔菲法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用层次分析法和德尔菲法进行评测",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "本调查将其按学术积累、人力优势、技术实力和经济基础为划分标准分为3组，第一组为综合实力较强的7所211重点院校，第二组在非211高校中抽样 10 所大学的图书馆，这类院校虽未进入211重点工程，但凭借自己的声誉和优秀的办学质量也拥有较强的学术及科研实力。 第三组对象在数量较大的高职高专院校中抽样10所院校，对其进行调查。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "211重点院校",
+          "normalized_name": "211重点院校",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "第一组为综合实力较强的7所211重点院校",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "非211高校",
+          "normalized_name": "非211高校",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "第二组在非211高校中抽样 10 所大学的图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "高职高专院校",
+          "normalized_name": "高职高专院校",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "第三组对象在数量较大的高职高专院校中抽样10所院校",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "图书馆联盟的服务控制能力是为用户提供服务的前提和基础，需要着眼于宏观条件、目标和措施，更离不开各成员馆的努力和合作。 通过调查发现，各图书馆提供给用户的信息资源种类、数量、质量都较为不足。虽然开展了一些联盟服务，但其实施运作缺乏一定的主动性、合作性。 （如表2所示）",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "图书馆联盟",
+          "normalized_name": "图书馆联盟",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆联盟的服务控制能力",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "各成员馆",
+          "normalized_name": "各成员馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "各成员馆的努力和合作",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛化机构类别词，但'各成员馆'在联盟语境下指具体成员，故抽取"
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "各图书馆",
+          "normalized_name": "各图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "各图书馆提供给用户的信息资源",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛化机构类别词，但'各图书馆'在调查语境下指具体图书馆，故抽取"
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "联盟服务",
+          "normalized_name": "联盟服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "开展了一些联盟服务",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "图书馆联盟是一个非赢利性的公益组织，因而人们习惯性的将目光聚焦于它所提供的服务而不去考虑所谓的效力问题。实际上，图书馆联盟通过丰富的信息资源、优质的信息服务，能够创造社会效益； 通过集团采购、文献传递等服务项目的开展，不但可以节约成员馆的成本，而且大大提高工作效率，获得一些经济收益。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "图书馆联盟",
+          "normalized_name": "图书馆联盟",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆联盟是一个非赢利性的公益组织",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "集团采购",
+          "normalized_name": "集团采购",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过集团采购、文献传递等服务项目的开展",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "文献传递",
+          "normalized_name": "文献传递",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过集团采购、文献传递等服务项目的开展",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "通过集团采购、文献传递等服务项目的开展，不但可以节约成员馆的成本，而且大大提高工作效率，获得一些经济收益。 另一方面，联盟是方向，效力是根本。图书馆联盟的可持续发展需要联盟具备完善的效力评估机制，由此获取稳定的政策资金以及人力资源的支持，吸引更多的图书馆的加入，逐步扩大自己的效力。因此，对联盟效力的调查是一个重要方面。 （如表3所示)",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "集团采购",
+          "normalized_name": "集团采购",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过集团采购、文献传递等服务项目的开展",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "文献传递",
+          "normalized_name": "文献传递",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过集团采购、文献传递等服务项目的开展",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "图书馆联盟",
+          "normalized_name": "图书馆联盟",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆联盟的可持续发展需要联盟具备完善的效力评估机制",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "效力评估机制",
+          "normalized_name": "效力评估机制",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "需要联盟具备完善的效力评估机制",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "用户满意度是图书馆联盟以用户为中心，运用科学的调查、测量方法，并综合分析用户对图书馆信息资源、信息服务的满意度，并据此改进信息服务质量，完善信息资源体系，以实现用户满意、提高图书馆效益为目的。评估图书馆联盟的绩效时，用户的感受和体验是不可或缺的一个重要部分。因为建立图书馆联盟的目的之一是为用户提供更好的信息服务，而这种服务是不是优质高效，用户评判是关键的一个环节。只有重视用户的感受和反馈，根据用户的意见改进信息服务质量、完善文献信息资源体系，才能使图书馆联盟真正满足用户的个性化需求。 本文将用户满意度粗略地划分为浏览网页、搜索引擎、馆际互借、文献传递、数据库服务等方面。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "图书馆联盟",
+          "normalized_name": "图书馆联盟",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户满意度是图书馆联盟以用户为中心",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "用户满意度",
+          "normalized_name": "用户满意度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户满意度是图书馆联盟以用户为中心",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "图书馆信息资源",
+          "normalized_name": "图书馆信息资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "综合分析用户对图书馆信息资源、信息服务的满意度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "信息服务",
+          "normalized_name": "信息服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "综合分析用户对图书馆信息资源、信息服务的满意度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e5",
+          "mention": "图书馆联盟的绩效",
+          "normalized_name": "图书馆联盟绩效",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "评估图书馆联盟的绩效时",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e6",
+          "mention": "浏览网页",
+          "normalized_name": "浏览网页",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本文将用户满意度粗略地划分为浏览网页、搜索引擎、馆际互借、文献传递、数据库服务等方面",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e7",
+          "mention": "搜索引擎",
+          "normalized_name": "搜索引擎",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本文将用户满意度粗略地划分为浏览网页、搜索引擎、馆际互借、文献传递、数据库服务等方面",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e8",
+          "mention": "馆际互借",
+          "normalized_name": "馆际互借",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本文将用户满意度粗略地划分为浏览网页、搜索引擎、馆际互借、文献传递、数据库服务等方面",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e9",
+          "mention": "文献传递",
+          "normalized_name": "文献传递",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本文将用户满意度粗略地划分为浏览网页、搜索引擎、馆际互借、文献传递、数据库服务等方面",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e10",
+          "mention": "数据库服务",
+          "normalized_name": "数据库服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本文将用户满意度粗略地划分为浏览网页、搜索引擎、馆际互借、文献传递、数据库服务等方面",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "构建一个科学、有效的评价指标体系，需要经过指标初选、完善至最终使用等过程。考核指标体系的设计应遵循目的性、科学性、可操作性、导向性等基本原则。影响高校图书馆联盟评测的因素很多，反映在指标上也很多。因此结合国内图书馆联盟的实践状况，根据陕西省高校图书馆联盟的实际和自己的思考，同时借鉴如常红[4]、徐晓琳[5]等专家现有的一些研究成果，本文在选取指标时尽可能的客观、全面，控制好指标范围，使其具有更强的可操作性，尝试性的构建以下指标体系。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "常红",
+          "normalized_name": "常红",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "借鉴如常红[4]、徐晓琳[5]等专家现有的一些研究成果",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "徐晓琳",
+          "normalized_name": "徐晓琳",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "借鉴如常红[4]、徐晓琳[5]等专家现有的一些研究成果",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "陕西省高校图书馆联盟",
+          "normalized_name": "陕西省高校图书馆联盟",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "根据陕西省高校图书馆联盟的实际和自己的思考",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e4",
+          "mention": "高校图书馆联盟",
+          "normalized_name": "高校图书馆联盟",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "影响高校图书馆联盟评测的因素很多",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "陕西高校图书馆联盟绩效评测的实施依托现代网络通信技术平台和优质高效的服务网络，从整体性出发，充分发扬各联盟成员馆的共享合作精神，推动和引导全省高校图书馆联盟的建设和发展，实现全省高校文献信息资源的共建、共知、共享，为陕西高校的教学科研提供高水平的文献信息资源保障。陕西高校图书馆联盟的绩效评测的实施要坚持整体规划、分步推进的原则，把全省高校图书馆作为一个整体来建设，强调共同建设资源，共同使用资源，实现优势互补，统一目标、统一规划、统一标准和统一管理的方式，全面推进全省高校图书馆文献资共建共享水平。 在具体实施过程中，可初步将其划分为3个阶段：启动阶段、优化建设阶段和升级发展阶段。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "陕西高校图书馆联盟",
+          "normalized_name": "陕西高校图书馆联盟",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "陕西高校图书馆联盟绩效评测的实施",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "现代网络通信技术平台",
+          "normalized_name": "现代网络通信技术平台",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "依托现代网络通信技术平台",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但具体平台名称未给出"
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "全省高校图书馆",
+          "normalized_name": "全省高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "推动和引导全省高校图书馆联盟的建设和发展",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "指代陕西高校图书馆，但未明确具体机构"
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "文献信息资源",
+          "normalized_name": "文献信息资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现全省高校文献信息资源的共建、共知、共享",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "陕西高校",
+          "normalized_name": "陕西高校",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "为陕西高校的教学科研提供高水平的文献信息资源保障",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛指陕西地区高校，非具体机构"
+        },
+        {
+          "entity_id": "11_e6",
+          "mention": "启动阶段",
+          "normalized_name": "启动阶段",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "可初步将其划分为3个阶段：启动阶段、优化建设阶段和升级发展阶段",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e7",
+          "mention": "优化建设阶段",
+          "normalized_name": "优化建设阶段",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "可初步将其划分为3个阶段：启动阶段、优化建设阶段和升级发展阶段",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e8",
+          "mention": "升级发展阶段",
+          "normalized_name": "升级发展阶段",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "可初步将其划分为3个阶段：启动阶段、优化建设阶段和升级发展阶段",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "陕西高校图书馆联盟绩效评测的实施是一项长期而艰巨的任务，本文构建的大纲中的有些指标还只是描述性的，可操作性不强，这还有赖于在评测实施过程中不断修正、",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "陕西高校图书馆联盟",
+          "normalized_name": "陕西高校图书馆联盟",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "陕西高校图书馆联盟绩效评测的实施",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

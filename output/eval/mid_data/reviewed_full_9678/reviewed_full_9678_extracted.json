@@ -1,0 +1,2991 @@
+{
+  "base_name": "reviewed_full_9678",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "攜要根据研究对象的变迁，国外关于跨语言信息检索的历程主要分为三个阶段。 跨语言信息检索目前的主要解决方法是在单语言信息检索系统上增加一个语言转换机制。解决查询条件与查询文档集间的语言障碍有五种不同的技术路线。跨语言信息检索主要研究热点有翻译歧义研究、翻译资源构建、专有名词识别与音译研究等五个领域。 图2。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "跨语言信息检索",
+          "normalized_name": "跨语言信息检索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国外关于跨语言信息检索的历程主要分为三个阶段",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "单语言信息检索系统",
+          "normalized_name": "单语言信息检索系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在单语言信息检索系统上增加一个语言转换机制",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "语言转换机制",
+          "normalized_name": "语言转换机制",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "增加一个语言转换机制",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为concept或technique，根据上下文偏向技术手段"
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "翻译歧义研究",
+          "normalized_name": "翻译歧义研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "跨语言信息检索主要研究热点有翻译歧义研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e5",
+          "mention": "翻译资源构建",
+          "normalized_name": "翻译资源构建",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "跨语言信息检索主要研究热点有翻译资源构建",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e6",
+          "mention": "专有名词识别与音译研究",
+          "normalized_name": "专有名词识别与音译研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "跨语言信息检索主要研究热点有专有名词识别与音译研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "传统的信息检索系统主要是针对单一语种的文档集实现，一般是使用用户最为熟悉的语种作为查询语言。 跨语言信息检索(croes language information retrieval，CLIR）就是以某种语言检索另外一种语言表达的文献资源的方法和技术。随着信息在全球的自由流动，跨语言信息检索已成为世界范围內一个亟待解决的问题。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "信息检索系统",
+          "normalized_name": "信息检索系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "传统的信息检索系统主要是针对单一语种的文档集实现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "跨语言信息检索(croes language information retrieval，CLIR）",
+          "normalized_name": "跨语言信息检索（CLIR）",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "跨语言信息检索(croes language information retrieval，CLIR）就是以某种语言检索另外一种语言表达的文献资源的方法和技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "在此项研究中，他采取包含52篇摘要的法英并行语料库并使用包含16个已翻译查询的集合。 1972年Pevzner对英俄跨语言信息检索进行了研究，表明受控叙词表对于查询翻译是非常有效的。 1978年国际标准组织颁布了关于多语言叙词表（multilingual thesauri）的国际标准ISO5964，该标准在1985年进行了修改。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "法英并行语料库",
+          "normalized_name": "法英并行语料库",
+          "candidate_l3": "corpus",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "采取包含52篇摘要的法英并行语料库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "52篇摘要",
+          "normalized_name": "52篇摘要",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "包含52篇摘要的法英并行语料库",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "摘要作为语料库组成部分，可视为论文集合"
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "16个已翻译查询",
+          "normalized_name": "16个已翻译查询",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "使用包含16个已翻译查询的集合",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "查询集合可能为实验数据集"
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "1972年Pevzner",
+          "normalized_name": "Pevzner",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1972年Pevzner对英俄跨语言信息检索进行了研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "英俄跨语言信息检索",
+          "normalized_name": "英俄跨语言信息检索",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Pevzner对英俄跨语言信息检索进行了研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e6",
+          "mention": "受控叙词表",
+          "normalized_name": "受控叙词表",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "受控叙词表对于查询翻译是非常有效的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e7",
+          "mention": "国际标准组织",
+          "normalized_name": "国际标准组织",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1978年国际标准组织颁布了关于多语言叙词表的国际标准ISO5964",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e8",
+          "mention": "多语言叙词表（multilingual thesauri）",
+          "normalized_name": "多语言叙词表",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "关于多语言叙词表（multilingual thesauri）的国际标准ISO5964",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e9",
+          "mention": "ISO5964",
+          "normalized_name": "ISO5964",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "国际标准ISO5964",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "跨语言信息检索研究真正活跃起来并取得成果，是在互联网迅猛发展的20世纪90年代后期，国际上先后有许多相关论文发表，一些实验性跨语言信息检索技术相继问世。 1997年由德国语言技术研究室人工智能研究中心研究开发的Mulinex系统是世界上第一个成功地运用跨语言自动翻译技术，使人们利用本国语言就能有效获取网上其他语言信息的跨语言网络信息检索系统。 根据 $\\mathbf { D o u g } \\ \\mathbf { O a r d }$ 的不完全统计，到2002年4月共有17个跨语言信息检索系统问世[2]",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "跨语言信息检索",
+          "normalized_name": "跨语言信息检索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "跨语言信息检索研究真正活跃起来并取得成果",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "互联网",
+          "normalized_name": "互联网",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "互联网迅猛发展的20世纪90年代后期",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "德国语言技术研究室人工智能研究中心",
+          "normalized_name": "德国语言技术研究室人工智能研究中心",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1997年由德国语言技术研究室人工智能研究中心研究开发的Mulinex系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "Mulinex系统",
+          "normalized_name": "Mulinex系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Mulinex系统是世界上第一个成功地运用跨语言自动翻译技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e5",
+          "mention": "跨语言自动翻译技术",
+          "normalized_name": "跨语言自动翻译技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "成功地运用跨语言自动翻译技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e6",
+          "mention": "Doug Oard",
+          "normalized_name": "Doug Oard",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "根据Doug Oard的不完全统计",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "在这一阶段，跨语言信息检索的理论和技术也得到飞速发展，学者们提出了多种语言转换策略和匹配机制。 1990年,潜语义索引（Latent Semantic Indexing，LSI)技术被应用于跨语言信息检索。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "跨语言信息检索",
+          "normalized_name": "跨语言信息检索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "跨语言信息检索的理论和技术也得到飞速发展",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "潜语义索引（Latent Semantic Indexing，LSI）",
+          "normalized_name": "潜语义索引（Latent Semantic Indexing，LSI）",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "潜语义索引（Latent Semantic Indexing，LSI)技术被应用于跨语言信息检索",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "随着各种试验系统的不断出现，各国学者希望通过评价各种不同的CLIR系统，从而进行比较和改进，在这一阶段出现了几个著名的测试平台和测评会议。 文本检索会议(TREC)在1997年开始将跨语言检索的测评作为中心议题之一。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "CLIR系统",
+          "normalized_name": "CLIR系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "评价各种不同的CLIR系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "文本检索会议(TREC)",
+          "normalized_name": "文本检索会议(TREC)",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "文本检索会议(TREC)在1997年开始将跨语言检索的测评作为中心议题之一",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "跨语言检索",
+          "normalized_name": "跨语言检索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将跨语言检索的测评作为中心议题之一",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "文本检索会议(TREC)在1997年开始将跨语言检索的测评作为中心议题之一。 NTCIR(NACSIS Test Collection for IR Systems）成立于1998年，NTCIR第一次工作组会议于1999年8月在日本的东京举行，该会议主要侧重于亚洲语（如中文、日语、朝鲜语)的跨语言信息检索问题的研究[5]。CLEF[6]（Cross Lan-guage EvaluationForum)的第一次会议于2000 年9月在葡萄牙首都里斯本举行，每年举办一次。 该论坛侧重于欧洲范围内跨语言检索问题的评价。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "文本检索会议(TREC)",
+          "normalized_name": "文本检索会议(TREC)",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "文本检索会议(TREC)在1997年开始将跨语言检索的测评作为中心议题之一",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "跨语言检索",
+          "normalized_name": "跨语言检索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "跨语言检索的测评作为中心议题之一",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "NTCIR(NACSIS Test Collection for IR Systems)",
+          "normalized_name": "NTCIR(NACSIS Test Collection for IR Systems)",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "NTCIR(NACSIS Test Collection for IR Systems）成立于1998年",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "NTCIR第一次工作组会议",
+          "normalized_name": "NTCIR第一次工作组会议",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "NTCIR第一次工作组会议于1999年8月在日本的东京举行",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e5",
+          "mention": "东京",
+          "normalized_name": "东京",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在日本的东京举行",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为地点实体，但按分类体系归入phenomenon可能不精确，可考虑不抽取"
+        },
+        {
+          "entity_id": "8_e6",
+          "mention": "CLEF（Cross Language Evaluation Forum）",
+          "normalized_name": "CLEF（Cross Language Evaluation Forum）",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "CLEF[6]（Cross Language Evaluation Forum)的第一次会议于2000 年9月在葡萄牙首都里斯本举行",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e7",
+          "mention": "里斯本",
+          "normalized_name": "里斯本",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在葡萄牙首都里斯本举行",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为地点实体，但按分类体系归入phenomenon可能不精确，可考虑不抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "2001年的文献[8]显示，当时的Google支持的语言有14种,Altavista支持的语言有25种，而雅虎则推出了数十种本地化的搜索引擎。 这些宣称支持多语搜索的搜索引擎其实只是多个单语模式搜索的融合，即用户只能以一种语言提问，返回同一种语言的信息。 用户如果需要在多种语言中查找信息，就必须同时使用多种语言提问。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "Google",
+          "normalized_name": "Google",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "当时的Google支持的语言有14种",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "Altavista",
+          "normalized_name": "Altavista",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Altavista支持的语言有25种",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "雅虎",
+          "normalized_name": "雅虎",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "雅虎则推出了数十种本地化的搜索引擎",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "多语搜索",
+          "normalized_name": "多语搜索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这些宣称支持多语搜索的搜索引擎",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e5",
+          "mention": "单语模式搜索",
+          "normalized_name": "单语模式搜索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "只是多个单语模式搜索的融合",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "最近两年，真正的跨语言搜索引擎得到飞速发展。 目前，通过Google的“使用偏好”选项可以进行跨语言信息检索，Google支持的查询语言有115种，可以检索用35种语言所写成的网页。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "Google",
+          "normalized_name": "Google",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过Google的“使用偏好”选项可以进行跨语言信息检索",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "跨语言搜索引擎",
+          "normalized_name": "跨语言搜索引擎",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "真正的跨语言搜索引擎得到飞速发展",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "跨语言信息检索",
+          "normalized_name": "跨语言信息检索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过Google的“使用偏好”选项可以进行跨语言信息检索",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "跨语言信息检索就是以单一语言描述的用户查询来检索多语种的信息资源，实质就是单语言的用户查询与多语言的信息(文档)表示之间的匹配。 目前主要的解决方法就是在单语言信息检索系统的基础上增加一个语言转换机制（查询翻译，文献翻译或不翻译)。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "跨语言信息检索",
+          "normalized_name": "跨语言信息检索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "跨语言信息检索就是以单一语言描述的用户查询来检索多语种的信息资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "单语言信息检索系统",
+          "normalized_name": "单语言信息检索系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在单语言信息检索系统的基础上增加一个语言转换机制",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "查询翻译",
+          "normalized_name": "查询翻译",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "语言转换机制（查询翻译，文献翻译或不翻译)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "文献翻译",
+          "normalized_name": "文献翻译",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "语言转换机制（查询翻译，文献翻译或不翻译)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "目前主要的解决方法就是在单语言信息检索系统的基础上增加一个语言转换机制（查询翻译，文献翻译或不翻译)。 作为传统信息检索的一种扩展，跨语言网络信息检索综合了多种信息处理成果，在进行语言转换之前还要进行一些前期的文本预处理，比如语言识别、信息抽取、分词、信息标引、文本分类等等。 跨语言信息检索的基本框架如图1所示。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "单语言信息检索系统",
+          "normalized_name": "单语言信息检索系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在单语言信息检索系统的基础上增加一个语言转换机制",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "查询翻译",
+          "normalized_name": "查询翻译",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "语言转换机制（查询翻译，文献翻译或不翻译）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "文献翻译",
+          "normalized_name": "文献翻译",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "语言转换机制（查询翻译，文献翻译或不翻译）",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "跨语言网络信息检索",
+          "normalized_name": "跨语言网络信息检索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "跨语言网络信息检索综合了多种信息处理成果",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e5",
+          "mention": "语言识别",
+          "normalized_name": "语言识别",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "语言识别、信息抽取、分词、信息标引、文本分类等等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e6",
+          "mention": "信息抽取",
+          "normalized_name": "信息抽取",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "语言识别、信息抽取、分词、信息标引、文本分类等等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e7",
+          "mention": "分词",
+          "normalized_name": "分词",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "语言识别、信息抽取、分词、信息标引、文本分类等等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e8",
+          "mention": "信息标引",
+          "normalized_name": "信息标引",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "语言识别、信息抽取、分词、信息标引、文本分类等等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e9",
+          "mention": "文本分类",
+          "normalized_name": "文本分类",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "语言识别、信息抽取、分词、信息标引、文本分类等等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e10",
+          "mention": "跨语言信息检索",
+          "normalized_name": "跨语言信息检索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "跨语言信息检索的基本框架如图1所示",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "例如，康奈尔大学的Buckley等人[10]开发了一个英语—法语匹配程序，它将英语单词视为可能拼错的法语单词，以此来实现英语提问式与法语文献的匹配。 这种简单方法的效果不错，检索效率可以达到单语检索的 $60 \\%$ ，而且几乎不需要任何词典知识。然而这种方法只遁用于具有相同词源的语言，比如英语和法语，但对于中英文来说则不适用。 同源匹配可以单独使用，而多数情况下是与其他策略结合使用，比如在中英文跨语言信息检索中可以用于外来语的音译或反向音译。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "康奈尔大学",
+          "normalized_name": "康奈尔大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "康奈尔大学的Buckley等人[10]开发了一个英语—法语匹配程序",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "Buckley",
+          "normalized_name": "Buckley",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "康奈尔大学的Buckley等人[10]开发了一个英语—法语匹配程序",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "英语—法语匹配程序",
+          "normalized_name": "英语—法语匹配程序",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "开发了一个英语—法语匹配程序",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "同源匹配",
+          "normalized_name": "同源匹配",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "同源匹配可以单独使用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e5",
+          "mention": "跨语言信息检索",
+          "normalized_name": "跨语言信息检索",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在中英文跨语言信息检索中可以用于外来语的音译或反向音译",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "查询翻译将用户输人的提问式(源语言)翻译为系统支持的语言(目标语言)，然后再将目标语言的提问式提交给匹配模块，进行单语言信息检索。 它是目前最为常用的策略,Kwok[11]认为这种方法简单而有效，所以本文主要围绕基于查询的跨语言信息检索开展研究。其优点是能够在线快速执行，主要缺点是提问式通常很短，语境信息很少，难以消除歧义。每个提问词被其所有可能的译法所替代，翻译模糊性问题严重，故控制翻译的模糊性是设计有效的提问式翻译技术的一个关键问题。一种办法是只翻译短语，因为短语翻译通常表现出较少的模糊性。研究表明，短语识别策略能够大幅度提高检索效率。 微软研究院的Jianfeng Gao等人[12]介绍了一种使用统计模型识别名词性短语以提高提问式翻译质量的方法。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "Kwok[11]",
+          "normalized_name": "Kwok",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Kwok[11]认为这种方法简单而有效",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "基于查询的跨语言信息检索",
+          "normalized_name": "基于查询的跨语言信息检索",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本文主要围绕基于查询的跨语言信息检索开展研究",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "提问式翻译技术",
+          "normalized_name": "提问式翻译技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "控制翻译的模糊性是设计有效的提问式翻译技术的一个关键问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e4",
+          "mention": "短语识别策略",
+          "normalized_name": "短语识别策略",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "短语识别策略能够大幅度提高检索效率",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e5",
+          "mention": "微软研究院",
+          "normalized_name": "微软研究院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "微软研究院的Jianfeng Gao等人[12]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e6",
+          "mention": "Jianfeng Gao",
+          "normalized_name": "Jianfeng Gao",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "微软研究院的Jianfeng Gao等人[12]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e7",
+          "mention": "统计模型",
+          "normalized_name": "统计模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "介绍了一种使用统计模型识别名词性短语以提高提问式翻译质量的方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "微软研究院的Jianfeng Gao等人[12]介绍了一种使用统计模型识别名词性短语以提高提问式翻译质量的方法。 另一种办法是通过用户的介人（利用交互式用户界面)也可以有效控制翻译的模糊性。 Davis和Ogden开发的QUILT系统能够将英语提问词的西班牙语翻译显示给用户，具有西班牙语知识的用户可以对翻译进行识别和判断。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "微软研究院",
+          "normalized_name": "微软研究院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "微软研究院的Jianfeng Gao等人[12]介绍了一种使用统计模型识别名词性短语以提高提问式翻译质量的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "Jianfeng Gao",
+          "normalized_name": "Jianfeng Gao",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "微软研究院的Jianfeng Gao等人[12]介绍了一种使用统计模型识别名词性短语以提高提问式翻译质量的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "统计模型",
+          "normalized_name": "统计模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用统计模型识别名词性短语以提高提问式翻译质量的方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "名词性短语",
+          "normalized_name": "名词性短语",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用统计模型识别名词性短语以提高提问式翻译质量的方法",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e5",
+          "mention": "提问式翻译",
+          "normalized_name": "提问式翻译",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用统计模型识别名词性短语以提高提问式翻译质量的方法",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e6",
+          "mention": "交互式用户界面",
+          "normalized_name": "交互式用户界面",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过用户的介人（利用交互式用户界面)也可以有效控制翻译的模糊性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e7",
+          "mention": "Davis",
+          "normalized_name": "Davis",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Davis和Ogden开发的QUILT系统能够将英语提问词的西班牙语翻译显示给用户",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e8",
+          "mention": "Ogden",
+          "normalized_name": "Ogden",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Davis和Ogden开发的QUILT系统能够将英语提问词的西班牙语翻译显示给用户",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e9",
+          "mention": "QUILT系统",
+          "normalized_name": "QUILT系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Davis和Ogden开发的QUILT系统能够将英语提问词的西班牙语翻译显示给用户",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e10",
+          "mention": "英语提问词",
+          "normalized_name": "英语提问词",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "QUILT系统能够将英语提问词的西班牙语翻译显示给用户",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e11",
+          "mention": "西班牙语翻译",
+          "normalized_name": "西班牙语翻译",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "QUILT系统能够将英语提问词的西班牙语翻译显示给用户",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "相对于查询翻译方法，采用文献翻译方法的CLIR系统要少得多。 “欧共体远程通信和信息处理技术”（EUTelem-atics）计划下的Twenty-One项目组开发的Twenty-One系统使用的主要跨语言方法就采用了文献翻译方法，并以查询翻译作为辅助。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "CLIR系统",
+          "normalized_name": "CLIR系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "采用文献翻译方法的CLIR系统要少得多",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "欧共体远程通信和信息处理技术",
+          "normalized_name": "欧共体远程通信和信息处理技术",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "“欧共体远程通信和信息处理技术”（EUTelem-atics）计划下的Twenty-One项目组",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "Twenty-One项目组",
+          "normalized_name": "Twenty-One项目组",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "“欧共体远程通信和信息处理技术”（EUTelem-atics）计划下的Twenty-One项目组",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "Twenty-One系统",
+          "normalized_name": "Twenty-One系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Twenty-One项目组开发的Twenty-One系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e5",
+          "mention": "文献翻译方法",
+          "normalized_name": "文献翻译方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用文献翻译方法的CLIR系统要少得多",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e6",
+          "mention": "查询翻译",
+          "normalized_name": "查询翻译",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以查询翻译作为辅助",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "Gaehot，Lange 和Yang（1996)使用 Systran 翻译系统来产生文件对应双语语料库，供区域性回馈使用。 对于文献翻译还有另外一种方案，即对每个文献所对应的向量进行翻译来代替文献翻译，目前还没有看到这方面的研究和成果[13]。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "Gaehot",
+          "normalized_name": "Gaehot",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Gaehot，Lange 和Yang（1996)使用 Systran 翻译系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "Lange",
+          "normalized_name": "Lange",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Gaehot，Lange 和Yang（1996)使用 Systran 翻译系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "Yang",
+          "normalized_name": "Yang",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Gaehot，Lange 和Yang（1996)使用 Systran 翻译系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e4",
+          "mention": "Systran 翻译系统",
+          "normalized_name": "Systran 翻译系统",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "使用 Systran 翻译系统来产生文件对应双语语料库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e5",
+          "mention": "双语语料库",
+          "normalized_name": "双语语料库",
+          "candidate_l3": "corpus",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "产生文件对应双语语料库",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "在跨语言信息检索中，解决语言障碍的基本方法是两种语言之间的翻译，然而所有的翻译方法都离不开机器翻译、双语词典、语料库等作为翻译的语言基础。但是，在跨语言信息检索中可能会碰到这样的情形：两种语言直接翻译的语言资源不存在，例如在TREC中很难找到德语和意大利语之间直接对等的语言资源。为此研究人员提出了一种利用中间语言或中枢语言进行翻译的方法：将源语言翻译成中间语言（可以是一种或多种)，然后再将中间语言翻译成目标语言（利用多种中间语言时需要合并）。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "跨语言信息检索",
+          "normalized_name": "跨语言信息检索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在跨语言信息检索中，解决语言障碍的基本方法是两种语言之间的翻译",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "机器翻译",
+          "normalized_name": "机器翻译",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "所有的翻译方法都离不开机器翻译、双语词典、语料库等作为翻译的语言基础",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "双语词典",
+          "normalized_name": "双语词典",
+          "candidate_l3": "reference_tool",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "所有的翻译方法都离不开机器翻译、双语词典、语料库等作为翻译的语言基础",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e4",
+          "mention": "语料库",
+          "normalized_name": "语料库",
+          "candidate_l3": "corpus",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "所有的翻译方法都离不开机器翻译、双语词典、语料库等作为翻译的语言基础",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e5",
+          "mention": "TREC",
+          "normalized_name": "TREC",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "例如在TREC中很难找到德语和意大利语之间直接对等的语言资源",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "TREC 通常指文本检索会议（Text REtrieval Conference），也可视为研究项目或数据集来源，此处按会议抽取"
+        },
+        {
+          "entity_id": "19_e6",
+          "mention": "中间语言",
+          "normalized_name": "中间语言",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用中间语言或中枢语言进行翻译的方法：将源语言翻译成中间语言",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e7",
+          "mention": "中枢语言",
+          "normalized_name": "中枢语言",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用中间语言或中枢语言进行翻译的方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "概念中间语言既可以用于表示文献也可以用于表示提问。 这种方法的缺点是新的概念或术语无法及时地补充到概念词表中。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "概念中间语言",
+          "normalized_name": "概念中间语言",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "概念中间语言既可以用于表示文献也可以用于表示提问",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "概念词表",
+          "normalized_name": "概念词表",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "新的概念或术语无法及时地补充到概念词表中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "沿用LSI的基本想法,尽管这些术语是不同语言描述的，但是可以进行语义上的匹配比较，不需要翻译转换。 过去有多人在不同的语言匹配上做过实验，比如 Berry&Young(1995）以希腊文一英文、Oard（1996)以西班牙文一英文等进行了试验，验证了这种方法比较有效。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "LSI",
+          "normalized_name": "LSI",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "沿用LSI的基本想法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "Berry&Young(1995）",
+          "normalized_name": "Berry&Young(1995)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Berry&Young(1995）以希腊文一英文",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "Oard（1996)",
+          "normalized_name": "Oard(1996)",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Oard（1996)以西班牙文一英文等进行了试验",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "卡内基梅隆大学语言技术研究所的Carbonell等人[16]曾对语料库导向的翻译方法（TMT）、伪相关反馈（PseudoRelevanceFeedback,PRF）,广义向量空间模型（GVSM）和LSI等四种方法，在相同的条件下，做了一系列的实验，结果显示GVSM比LSI稍微好一点，这两种方法又都比TMT和PRF好。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "卡内基梅隆大学语言技术研究所",
+          "normalized_name": "卡内基梅隆大学语言技术研究所",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "卡内基梅隆大学语言技术研究所的Carbonell等人[16]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "Carbonell",
+          "normalized_name": "Carbonell",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "卡内基梅隆大学语言技术研究所的Carbonell等人[16]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e3",
+          "mention": "语料库导向的翻译方法（TMT）",
+          "normalized_name": "语料库导向的翻译方法（TMT）",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "语料库导向的翻译方法（TMT）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e4",
+          "mention": "伪相关反馈（PseudoRelevanceFeedback,PRF）",
+          "normalized_name": "伪相关反馈（PseudoRelevanceFeedback,PRF）",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "伪相关反馈（PseudoRelevanceFeedback,PRF）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e5",
+          "mention": "广义向量空间模型（GVSM）",
+          "normalized_name": "广义向量空间模型（GVSM）",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "广义向量空间模型（GVSM）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e6",
+          "mention": "LSI",
+          "normalized_name": "LSI",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "LSI等四种方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "翻译的歧义性是跨语言信息检索的关键问题，对检索效率有重要影响，这也是国外学者广泛关注的研究领域，所依赖的语言资源主要有词典、主题词表、本体、语料库等。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "跨语言信息检索",
+          "normalized_name": "跨语言信息检索",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "翻译的歧义性是跨语言信息检索的关键问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "词典",
+          "normalized_name": "词典",
+          "candidate_l3": "reference_tool",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "所依赖的语言资源主要有词典、主题词表、本体、语料库等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "若指具体词典名称则更明确，此处为泛称但图情领域放宽规则允许抽取"
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "主题词表",
+          "normalized_name": "主题词表",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "所依赖的语言资源主要有词典、主题词表、本体、语料库等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "若指具体主题词表则更明确，此处为泛称但图情领域放宽规则允许抽取"
+        },
+        {
+          "entity_id": "23_e4",
+          "mention": "本体",
+          "normalized_name": "本体",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "所依赖的语言资源主要有词典、主题词表、本体、语料库等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "若指具体本体则更明确，此处为泛称但图情领域放宽规则允许抽取"
+        },
+        {
+          "entity_id": "23_e5",
+          "mention": "语料库",
+          "normalized_name": "语料库",
+          "candidate_l3": "corpus",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "所依赖的语言资源主要有词典、主题词表、本体、语料库等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "若指具体语料库则更明确，此处为泛称但图情领域放宽规则允许抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "Davis[17]尝试以词性进行消歧，效果不错，平均准确率提高了 $3 7 \\%$ ，达到了单语检索的67. $3 \\%$ 。$\\mathbf { C h e n }$ 等人[18]以共现模型（ $\\infty$ -occurrence）分析翻译歧义，以虚拟语境（pseudocontext)模型分析目标多义，在TREC-6的评测中，与仅处理翻译歧义性相比，使检索效率提高了 $1 0 . 1 1 \\%$ 。平行语料常用于翻译的词义消歧，但是平行语料加工困难，不易获取。Akira等人以Web文献为语料，利用词汇间的共现信息实现了同样的检索效率，在其试验中检索的平均准确率达到了手工翻译的 $9 7 \\%$ 。Myung-GilJang等人利用从目标文献中获得的互信息(mutualinformation）统计进行查询翻译的消歧，在这里，互信息不仅用于选择翻译词汇而且对翻译后的查询词赋以权重，通过TREC-6标准测试集实验证明，检索效率分别达到了单语检索的 $85 \\%$ 和手工消歧的 $9 6 \\%$ 。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "Davis",
+          "normalized_name": "Davis",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Davis[17]尝试以词性进行消歧",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "Chen",
+          "normalized_name": "Chen",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Chen等人[18]以共现模型（∞-occurrence）分析翻译歧义",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e3",
+          "mention": "共现模型",
+          "normalized_name": "共现模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以共现模型（∞-occurrence）分析翻译歧义",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e4",
+          "mention": "∞-occurrence",
+          "normalized_name": "∞-occurrence",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以共现模型（∞-occurrence）分析翻译歧义",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为共现模型的别名或具体技术"
+        },
+        {
+          "entity_id": "24_e5",
+          "mention": "虚拟语境",
+          "normalized_name": "虚拟语境",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以虚拟语境（pseudocontext)模型分析目标多义",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e6",
+          "mention": "pseudocontext",
+          "normalized_name": "pseudocontext",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以虚拟语境（pseudocontext)模型分析目标多义",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e7",
+          "mention": "TREC-6",
+          "normalized_name": "TREC-6",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "在TREC-6的评测中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e8",
+          "mention": "Akira",
+          "normalized_name": "Akira",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Akira等人以Web文献为语料",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e9",
+          "mention": "Myung-GilJang",
+          "normalized_name": "Myung-GilJang",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Myung-GilJang等人利用从目标文献中获得的互信息(mutualinformation）统计进行查询翻译的消歧",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e10",
+          "mention": "互信息",
+          "normalized_name": "互信息",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用从目标文献中获得的互信息(mutualinformation）统计进行查询翻译的消歧",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e11",
+          "mention": "mutualinformation",
+          "normalized_name": "mutualinformation",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用从目标文献中获得的互信息(mutualinformation）统计进行查询翻译的消歧",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e12",
+          "mention": "TREC-6标准测试集",
+          "normalized_name": "TREC-6标准测试集",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过TREC-6标准测试集实验证明",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "翻译资源的优劣对于跨语言信息检索的性能有着重要影响，所以在跨语言信息检索研究中，国外学者对于翻译资源的构建以及相互之间的比较进行了深入研究。 在CLIR中,常用的翻译资源有机器翻译系统、双语词典、本体和语料库等。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "跨语言信息检索",
+          "normalized_name": "跨语言信息检索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "翻译资源的优劣对于跨语言信息检索的性能有着重要影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "CLIR",
+          "normalized_name": "CLIR",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在CLIR中,常用的翻译资源有机器翻译系统、双语词典、本体和语料库等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e3",
+          "mention": "机器翻译系统",
+          "normalized_name": "机器翻译系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "常用的翻译资源有机器翻译系统、双语词典、本体和语料库等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "若指具体系统（如Google翻译）则更明确，此处为类别泛称，但图情领域放宽规则允许抽取有名称的系统类型"
+        },
+        {
+          "entity_id": "25_e4",
+          "mention": "双语词典",
+          "normalized_name": "双语词典",
+          "candidate_l3": "reference_tool",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "常用的翻译资源有机器翻译系统、双语词典、本体和语料库等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "若指具体词典（如《英汉词典》）则更明确，此处为类别泛称，但图情领域放宽规则允许抽取"
+        },
+        {
+          "entity_id": "25_e5",
+          "mention": "本体",
+          "normalized_name": "本体",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "常用的翻译资源有机器翻译系统、双语词典、本体和语料库等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "若指具体本体（如WordNet）则更明确，此处为类别泛称，但图情领域放宽规则允许抽取"
+        },
+        {
+          "entity_id": "25_e6",
+          "mention": "语料库",
+          "normalized_name": "语料库",
+          "candidate_l3": "corpus",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "常用的翻译资源有机器翻译系统、双语词典、本体和语料库等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "若指具体语料库（如Brown Corpus）则更明确，此处为类别泛称，但图情领域放宽规则允许抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "双语词典的获取和编撰一直依靠手工方式，更新的周期长而且代价高，这促使许多学者从事基于双语语料库的翻译词典自动获取研究，并取得了丰硕的成果。 JiangpingChen[19]采用汉语词典、英语词典、双语词典等语言学资源构建词典知识库(lexical knowledge bese,LKB),试验结果证明LKB方法非常有效，能够显著提高查诲翻译的正确率，减少未登录词的百分比。 Christopher等人进行了自动构建汉英双语主题词表的研究。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "双语词典",
+          "normalized_name": "双语词典",
+          "candidate_l3": "reference_tool",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "双语词典的获取和编撰一直依靠手工方式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e2",
+          "mention": "双语语料库",
+          "normalized_name": "双语语料库",
+          "candidate_l3": "corpus",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于双语语料库的翻译词典自动获取研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e3",
+          "mention": "翻译词典",
+          "normalized_name": "翻译词典",
+          "candidate_l3": "reference_tool",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于双语语料库的翻译词典自动获取研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e4",
+          "mention": "JiangpingChen[19]",
+          "normalized_name": "Jiangping Chen",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "JiangpingChen[19]采用汉语词典、英语词典、双语词典等语言学资源构建词典知识库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e5",
+          "mention": "汉语词典",
+          "normalized_name": "汉语词典",
+          "candidate_l3": "reference_tool",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "采用汉语词典、英语词典、双语词典等语言学资源",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e6",
+          "mention": "英语词典",
+          "normalized_name": "英语词典",
+          "candidate_l3": "reference_tool",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "采用汉语词典、英语词典、双语词典等语言学资源",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e7",
+          "mention": "词典知识库",
+          "normalized_name": "词典知识库",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "构建词典知识库(lexical knowledge bese,LKB)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e8",
+          "mention": "lexical knowledge bese,LKB",
+          "normalized_name": "lexical knowledge base, LKB",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "词典知识库(lexical knowledge bese,LKB)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e9",
+          "mention": "LKB方法",
+          "normalized_name": "LKB方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "试验结果证明LKB方法非常有效",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e10",
+          "mention": "未登录词",
+          "normalized_name": "未登录词",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "减少未登录词的百分比",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e11",
+          "mention": "Christopher",
+          "normalized_name": "Christopher",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Christopher等人进行了自动构建汉英双语主题词表的研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e12",
+          "mention": "汉英双语主题词表",
+          "normalized_name": "汉英双语主题词表",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "自动构建汉英双语主题词表的研究",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "Chen等人（1998，2000），Knight和Graehl （1998）, $\\pmb { \\nabla } \\mathbf { a } \\mathbf { n }$ 和Verspoor（1998）都相继提出机器音译的方法来处理这个问题。 $\\yen 00$ 等人[21提出了由英语到日语片假名的音译方法，利用英语语音词典和概率规则来获取候选音译，并通过日语单语语料库自动确认，最终将英语一日语音译词对添加到双语词典中，在CLEF测试集上进行日英跨语言信息检索实验，使检索的平均准确率提高了$2 . 5 \\% \\sim 6 4 . 8 \\%$ 。Nasreen提出一种统计模型(selected $\\mathbf { n }$ -grammodel)进行英语一阿拉伯语间的音译,在TREC2002的CLIR评测中，无论是对专有名词音译还是对所有未登录词音译都证明是有效的。S.Y.Jung等人采用隐马尔可夫模型（HMM)进行英语到韩语的音译，召回率达到了 $8 7 . 5 \\%$ 。Paola等人[22]将专有名词的音译用于跨语言声音文件的检索，效果也是显著的。",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "Chen等人（1998，2000）",
+          "normalized_name": "Chen等人（1998，2000）",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Chen等人（1998，2000）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "Knight和Graehl （1998）",
+          "normalized_name": "Knight和Graehl （1998）",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Knight和Graehl （1998）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e3",
+          "mention": "Verspoor（1998）",
+          "normalized_name": "Verspoor（1998）",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Verspoor（1998）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e4",
+          "mention": "机器音译",
+          "normalized_name": "机器音译",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "都相继提出机器音译的方法来处理这个问题",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e5",
+          "mention": "英语语音词典",
+          "normalized_name": "英语语音词典",
+          "candidate_l3": "reference_tool",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用英语语音词典和概率规则来获取候选音译",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e6",
+          "mention": "概率规则",
+          "normalized_name": "概率规则",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用英语语音词典和概率规则来获取候选音译",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e7",
+          "mention": "日语单语语料库",
+          "normalized_name": "日语单语语料库",
+          "candidate_l3": "corpus",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过日语单语语料库自动确认",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e8",
+          "mention": "双语词典",
+          "normalized_name": "双语词典",
+          "candidate_l3": "reference_tool",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "最终将英语一日语音译词对添加到双语词典中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e9",
+          "mention": "CLEF测试集",
+          "normalized_name": "CLEF测试集",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在CLEF测试集上进行日英跨语言信息检索实验",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e10",
+          "mention": "日英跨语言信息检索实验",
+          "normalized_name": "日英跨语言信息检索实验",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "在CLEF测试集上进行日英跨语言信息检索实验",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为method"
+        },
+        {
+          "entity_id": "27_e11",
+          "mention": "Nasreen",
+          "normalized_name": "Nasreen",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Nasreen提出一种统计模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e12",
+          "mention": "统计模型(selected n-gram model)",
+          "normalized_name": "统计模型(selected n-gram model)",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Nasreen提出一种统计模型(selected n-gram model)进行英语一阿拉伯语间的音译",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e13",
+          "mention": "TREC2002的CLIR评测",
+          "normalized_name": "TREC2002的CLIR评测",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "在TREC2002的CLIR评测中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e14",
+          "mention": "S.Y.Jung等人",
+          "normalized_name": "S.Y.Jung等人",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "S.Y.Jung等人采用隐马尔可夫模型（HMM)进行英语到韩语的音译",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e15",
+          "mention": "隐马尔可夫模型（HMM）",
+          "normalized_name": "隐马尔可夫模型（HMM）",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用隐马尔可夫模型（HMM)进行英语到韩语的音译",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e16",
+          "mention": "Paola等人[22]",
+          "normalized_name": "Paola等人[22]",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Paola等人[22]将专有名词的音译用于跨语言声音文件的检索",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e17",
+          "mention": "专有名词的音译",
+          "normalized_name": "专有名词的音译",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将专有名词的音译用于跨语言声音文件的检索",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e18",
+          "mention": "跨语言声音文件的检索",
+          "normalized_name": "跨语言声音文件的检索",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将专有名词的音译用于跨语言声音文件的检索",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "跨语言信息检索涉及查询语种和检索语种两个基本的概念。 查询语种是用户查询请求所属语种，检索语种是检索目标对象所属语种，如何能够在这两者之间建立起沟通的桥梁是目前跨语言信息检索技术研究最核心和关键的问题。 所有的这些工作分别从以下3个方面来展开：机器翻译系统、基于语料库的方法以及基于字典的方法。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "跨语言信息检索",
+          "normalized_name": "跨语言信息检索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "跨语言信息检索涉及查询语种和检索语种两个基本的概念",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "查询语种",
+          "normalized_name": "查询语种",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "查询语种是用户查询请求所属语种",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e3",
+          "mention": "检索语种",
+          "normalized_name": "检索语种",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检索语种是检索目标对象所属语种",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e4",
+          "mention": "跨语言信息检索技术",
+          "normalized_name": "跨语言信息检索技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "跨语言信息检索技术研究最核心和关键的问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e5",
+          "mention": "机器翻译系统",
+          "normalized_name": "机器翻译系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "机器翻译系统、基于语料库的方法以及基于字典的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e6",
+          "mention": "基于语料库的方法",
+          "normalized_name": "基于语料库的方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于语料库的方法以及基于字典的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e7",
+          "mention": "基于字典的方法",
+          "normalized_name": "基于字典的方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于字典的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "29",
+      "sentence": "除了理论和技术外，评估也是跨语言信息检索系统发展过程的重要一环。 跨语言信息检索主要有3个测试平台：TREC、NTCIR、CLEF。",
+      "entities": [
+        {
+          "entity_id": "29_e1",
+          "mention": "跨语言信息检索系统",
+          "normalized_name": "跨语言信息检索系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "跨语言信息检索系统发展过程的重要一环",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e2",
+          "mention": "TREC",
+          "normalized_name": "TREC",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "跨语言信息检索主要有3个测试平台：TREC、NTCIR、CLEF",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e3",
+          "mention": "NTCIR",
+          "normalized_name": "NTCIR",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "跨语言信息检索主要有3个测试平台：TREC、NTCIR、CLEF",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e4",
+          "mention": "CLEF",
+          "normalized_name": "CLEF",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "跨语言信息检索主要有3个测试平台：TREC、NTCIR、CLEF",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "CLEF则以欧洲语言为主，从2000至今已经举办了六届。 这些评测项目和会议对于推动跨语言信息检索的研究和应用起到了良好作用，每次会议都吸引了众多的研究机构和企业，参赛单位的论文和评比结果会在网站上公布。",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "CLEF",
+          "normalized_name": "CLEF",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "CLEF则以欧洲语言为主，从2000至今已经举办了六届",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "跨语言信息检索",
+          "normalized_name": "跨语言信息检索",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "推动跨语言信息检索的研究和应用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "31",
+      "sentence": "近年来CLEF、NTCIR等评测会议上，很多语言之间（特别是欧洲语言)的检索效率已经达到了单语检索的 $80 \\%$ \\~$90 \\%$ 。但是对其他语言而言跨语言信息检索仍然不是一个已经解决了的问题。闵金明等人[24]对跨语言信息检索的研究现状进行了概括性总结，明确指出该研究中需要解决的关键问题是：WSD(词义消歧)和OOV。根据我们所掌握的资料和对研究现状的观察，跨语言信息检索还存在许多具有挑战性的研究方向和领域。",
+      "entities": [
+        {
+          "entity_id": "31_e1",
+          "mention": "CLEF",
+          "normalized_name": "CLEF",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "近年来CLEF、NTCIR等评测会议上",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e2",
+          "mention": "NTCIR",
+          "normalized_name": "NTCIR",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "近年来CLEF、NTCIR等评测会议上",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e3",
+          "mention": "跨语言信息检索",
+          "normalized_name": "跨语言信息检索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "跨语言信息检索仍然不是一个已经解决了的问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e4",
+          "mention": "闵金明",
+          "normalized_name": "闵金明",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "闵金明等人[24]对跨语言信息检索的研究现状进行了概括性总结",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e5",
+          "mention": "WSD(词义消歧)",
+          "normalized_name": "WSD(词义消歧)",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "WSD(词义消歧)和OOV",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e6",
+          "mention": "OOV",
+          "normalized_name": "OOV",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "WSD(词义消歧)和OOV",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "32",
+      "sentence": "(1)利用网络资源进行OOV的翻译是一个研究热点。目前为止，这个问题并没有得到有效解决。现有的方法往往利用特定语言间的网络共现特征来寻找翻译，开发与特定语言无关的OOV翻译方法是值得关注的方向。从机器翻译的角度看，网络可以看成一个大型的可比语料库，通过一些相似特征收集两种语言的网络文本，借助已有的通用双语词典，然后运用机器翻译中的文本对齐技术来实现OOV的翻译应该是一个有效的方法。",
+      "entities": [
+        {
+          "entity_id": "32_e1",
+          "mention": "OOV",
+          "normalized_name": "OOV",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用网络资源进行OOV的翻译是一个研究热点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e2",
+          "mention": "网络共现特征",
+          "normalized_name": "网络共现特征",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现有的方法往往利用特定语言间的网络共现特征来寻找翻译",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e3",
+          "mention": "通用双语词典",
+          "normalized_name": "通用双语词典",
+          "candidate_l3": "reference_tool",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "借助已有的通用双语词典",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但图情领域放宽规则下作为有名称的工具类实体抽取"
+        },
+        {
+          "entity_id": "32_e4",
+          "mention": "文本对齐技术",
+          "normalized_name": "文本对齐技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "运用机器翻译中的文本对齐技术来实现OOV的翻译",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "33",
+      "sentence": "词义消歧是一个传统的AI难题，除了传统的WSD方法，越来越多的学者借助WordNet、FrameNet等本体资源来实现跨语言检索中的消歧。 多语言本体的构建及其在CLIR中的消歧应用是一个研究热点，也面临许多挑战。",
+      "entities": [
+        {
+          "entity_id": "33_e1",
+          "mention": "词义消歧",
+          "normalized_name": "词义消歧",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "词义消歧是一个传统的AI难题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e2",
+          "mention": "WSD方法",
+          "normalized_name": "WSD方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "除了传统的WSD方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e3",
+          "mention": "WordNet",
+          "normalized_name": "WordNet",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "借助WordNet、FrameNet等本体资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e4",
+          "mention": "FrameNet",
+          "normalized_name": "FrameNet",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "借助WordNet、FrameNet等本体资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e5",
+          "mention": "跨语言检索",
+          "normalized_name": "跨语言检索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现跨语言检索中的消歧",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e6",
+          "mention": "多语言本体",
+          "normalized_name": "多语言本体",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "多语言本体的构建及其在CLIR中的消歧应用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e7",
+          "mention": "CLIR",
+          "normalized_name": "CLIR",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "多语言本体的构建及其在CLIR中的消歧应用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "34",
+      "sentence": "(3)跨语言信息检索和分布式信息检索在很多方面存在着共性,分布式信息检索通常的研究领域包括资源表示、资源选择、结果合并，而跨语言信息检索在这些方面的研究不多，特别是前两者，基本处于空白状态，可以开展的工作还有很多。",
+      "entities": [
+        {
+          "entity_id": "34_e1",
+          "mention": "跨语言信息检索",
+          "normalized_name": "跨语言信息检索",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "跨语言信息检索和分布式信息检索在很多方面存在着共性",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e2",
+          "mention": "分布式信息检索",
+          "normalized_name": "分布式信息检索",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "跨语言信息检索和分布式信息检索在很多方面存在着共性",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e3",
+          "mention": "资源表示",
+          "normalized_name": "资源表示",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分布式信息检索通常的研究领域包括资源表示、资源选择、结果合并",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e4",
+          "mention": "资源选择",
+          "normalized_name": "资源选择",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分布式信息检索通常的研究领域包括资源表示、资源选择、结果合并",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e5",
+          "mention": "结果合并",
+          "normalized_name": "结果合并",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分布式信息检索通常的研究领域包括资源表示、资源选择、结果合并",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "35",
+      "sentence": "(4)未来的发展趋势是多种方法的融合。该领域一个很明显的趋势就是越来越多的研究人员开始考虑结合本文提到的跨语言信息检索实现方法中的几种来进一步改进查询翻译的精度。笔者在博士论文中的案例分析和实证研究也证明了这一点[25]。",
+      "entities": [
+        {
+          "entity_id": "35_e1",
+          "mention": "跨语言信息检索实现方法",
+          "normalized_name": "跨语言信息检索实现方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "结合本文提到的跨语言信息检索实现方法中的几种来进一步改进查询翻译的精度",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e2",
+          "mention": "博士论文",
+          "normalized_name": "博士论文",
+          "candidate_l3": "thesis",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "笔者在博士论文中的案例分析和实证研究也证明了这一点[25]",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未提供论文具体标题，但'博士论文'在学术语境中通常指代具体学位论文，且引用标记[25]暗示可唯一识别"
+        }
+      ]
+    },
+    {
+      "sentence_id": "36",
+      "sentence": "(5)跨语言信息检索的检索结果处理上仍然有大量的工作需要完成，即如何将结果文档以用户能够接受的形式表现出来。 交互式跨语言信息检索和跨语言摘要技术是有前景的研究方向。",
+      "entities": [
+        {
+          "entity_id": "36_e1",
+          "mention": "跨语言信息检索",
+          "normalized_name": "跨语言信息检索",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "跨语言信息检索的检索结果处理上仍然有大量的工作需要完成",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e2",
+          "mention": "交互式跨语言信息检索",
+          "normalized_name": "交互式跨语言信息检索",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "交互式跨语言信息检索和跨语言摘要技术是有前景的研究方向",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e3",
+          "mention": "跨语言摘要技术",
+          "normalized_name": "跨语言摘要技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "交互式跨语言信息检索和跨语言摘要技术是有前景的研究方向",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "37",
+      "sentence": "(6)跨语言检索系统的评价一直都是沿用传统检索系统的评价方法。在这种情况下，同样的方法如果因为翻译资源的不同往往会得到不同的结果,这对于有效地评价是不公平的，所以需要加人跨语言检索特有的评价参数，以区分不同的翻译资源带来的不同检索效率。",
+      "entities": [
+        {
+          "entity_id": "37_e1",
+          "mention": "跨语言检索系统",
+          "normalized_name": "跨语言检索系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "跨语言检索系统的评价一直都是沿用传统检索系统的评价方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e2",
+          "mention": "传统检索系统",
+          "normalized_name": "传统检索系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "跨语言检索系统的评价一直都是沿用传统检索系统的评价方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "若指代具体系统则更明确，此处为类别指称"
+        },
+        {
+          "entity_id": "37_e3",
+          "mention": "翻译资源",
+          "normalized_name": "翻译资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "同样的方法如果因为翻译资源的不同往往会得到不同的结果",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为学术术语被讨论，但可能偏泛化"
+        },
+        {
+          "entity_id": "37_e4",
+          "mention": "跨语言检索特有的评价参数",
+          "normalized_name": "跨语言检索特有的评价参数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "需要加人跨语言检索特有的评价参数",
+          "is_specific_entity": true,
+          "confidence": 0.88,
+          "uncertainty": "具体参数名称未给出，但作为独立概念被提出"
+        }
+      ]
+    },
+    {
+      "sentence_id": "38",
+      "sentence": "(7)跨语言信息检索内容不应当局限于文档检索，可以扩展到跨语言图像检索、跨语言语音检索、跨语言交互式检索、跨语言问答系统、跨语言新话题发现和跟踪等。目前CLEF已经在相关领域做了有益的探索。",
+      "entities": [
+        {
+          "entity_id": "38_e1",
+          "mention": "跨语言信息检索",
+          "normalized_name": "跨语言信息检索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "跨语言信息检索内容不应当局限于文档检索",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e2",
+          "mention": "跨语言图像检索",
+          "normalized_name": "跨语言图像检索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "可以扩展到跨语言图像检索、跨语言语音检索、跨语言交互式检索、跨语言问答系统、跨语言新话题发现和跟踪等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e3",
+          "mention": "跨语言语音检索",
+          "normalized_name": "跨语言语音检索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "可以扩展到跨语言图像检索、跨语言语音检索、跨语言交互式检索、跨语言问答系统、跨语言新话题发现和跟踪等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e4",
+          "mention": "跨语言交互式检索",
+          "normalized_name": "跨语言交互式检索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "可以扩展到跨语言图像检索、跨语言语音检索、跨语言交互式检索、跨语言问答系统、跨语言新话题发现和跟踪等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e5",
+          "mention": "跨语言问答系统",
+          "normalized_name": "跨语言问答系统",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "可以扩展到跨语言图像检索、跨语言语音检索、跨语言交互式检索、跨语言问答系统、跨语言新话题发现和跟踪等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e6",
+          "mention": "跨语言新话题发现和跟踪",
+          "normalized_name": "跨语言新话题发现和跟踪",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "可以扩展到跨语言图像检索、跨语言语音检索、跨语言交互式检索、跨语言问答系统、跨语言新话题发现和跟踪等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e7",
+          "mention": "CLEF",
+          "normalized_name": "CLEF",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "目前CLEF已经在相关领域做了有益的探索",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为Organization（会议组织）"
+        }
+      ]
+    }
+  ]
+}

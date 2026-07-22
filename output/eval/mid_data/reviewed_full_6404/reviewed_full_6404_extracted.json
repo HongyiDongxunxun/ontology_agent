@@ -1,0 +1,1391 @@
+{
+  "base_name": "reviewed_full_6404",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "摘要近年来,许多单位和部门都在探索科学、客观、公正、可量化的科技人员科研业绩综合评估的体系与方法,本文对该新兴领域的有关理论和方法进行概述，并简要回顾现行国内的评估状况，指出评估进程中存在的不足，最后对科技评估的发展提出了若干建议。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "科技人员科研业绩综合评估",
+          "normalized_name": "科技人员科研业绩综合评估",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "探索科学、客观、公正、可量化的科技人员科研业绩综合评估的体系与方法",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能兼为method或framework，但原文未明确具体方法名称"
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "科技评估",
+          "normalized_name": "科技评估",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对科技评估的发展提出了若干建议",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "若指具体评估活动可归为Event，但原文为泛化讨论"
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "评估是指按照明确的目标，采用非实验的方法，收集主观的资料和描述性统计分析，对人或事物进行价值判断的过程[1]。 科技人员科研业绩评估就是对科技人员所从事的科研活动和所取得的科研成绩进行定性与定量有机结合的综合评估，是现代人力资源管理中的一个重点和难点问题，它可以为奖惩、晋升、选拔等多种人力资源管理决策提供重要的信息依据,因此其导向作用、激励作用、监督作用、鉴定作用的意义十分明显。目前许多单位和部门都在探索科学、客观、可量化和高效准确、切实可行的评估体系与评估方法，以达到最大限度地调动广大科技人员积极性的目的。 现就有关理论、方法与现行国内评估状况进行简要回顾，以促进本领域的发展。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "科技人员科研业绩评估",
+          "normalized_name": "科技人员科研业绩评估",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "科技人员科研业绩评估就是对科技人员所从事的科研活动和所取得的科研成绩进行定性与定量有机结合的综合评估",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "现代人力资源管理",
+          "normalized_name": "现代人力资源管理",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "是现代人力资源管理中的一个重点和难点问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "正式的评估有着极为悠久的历史，但是具有科学的、客观的评估标准和制度的科学评估在我国现在还刚刚起步。尽管只是刚刚起步，但人们对其的研究开展得如火如荼，使之在科研管理学领域得到了非常广泛的应用。 除评估科技人员外,还包括对科研机构、科研课题、科研成果等科研活动相关因素的评估。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "科研管理学",
+          "normalized_name": "科研管理学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在科研管理学领域得到了非常广泛的应用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "各单位也相继建立自己的学术委员会，由他们对科技人员科研业绩发表意见。 但应用中人们发现，专家评估不可避免地受到人为因素的干扰，如主观色彩浓，权威限制，任人为亲等弊端，特别是在当代\"隔行如隔山”的条件下，常常出现名义上的“同行评议”，实际是“假内行\"评\"内行\"[3]。因此人们提出要改革同行评议，提高专家评分质量。 如把好遴选专家这一关，选择合适的专家参加评议[4]，或对不同专家的评分赋予适当的权重系数[5]等。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "学术委员会",
+          "normalized_name": "学术委员会",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "各单位也相继建立自己的学术委员会",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处指各单位内部的学术委员会，虽非唯一命名但为具体组织建制"
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "同行评议",
+          "normalized_name": "同行评议",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "常常出现名义上的“同行评议”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "专家评分质量",
+          "normalized_name": "专家评分质量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提高专家评分质量",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为评价对象的具体概念"
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "如同学生的考试卷，为了判别学生之间的优劣而给每道题一个得分标准一样。 在这一阶段，人们按定量评价与定性评价相结合，精确量化与模糊量化相结合，全面性与重点论相结合等量化原则，为科技人员科研业绩评估提供了有益的借鉴和参考。 如1988 年中华医学会福建分会和福建省卫生厅[],福建省医学科学研究所[7],1990 年四川医学院[8],1991年军事医学科学院[9]等先后从不同的角度对各自人员进行评估，调动了科研人员的积极卡创造性1992年四省中药研究所[10]，1994年天津市滨江医院[]，,广州军区武汉总院[12]等也相继应用模糊数学中模糊评判方法进行排序，考评临床科技人员，为人才梯队建设提供依据。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "中华医学会福建分会",
+          "normalized_name": "中华医学会福建分会",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1988 年中华医学会福建分会和福建省卫生厅",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "福建省卫生厅",
+          "normalized_name": "福建省卫生厅",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1988 年中华医学会福建分会和福建省卫生厅",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "福建省医学科学研究所",
+          "normalized_name": "福建省医学科学研究所",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "福建省医学科学研究所[7]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "四川医学院",
+          "normalized_name": "四川医学院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1990 年四川医学院[8]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e5",
+          "mention": "军事医学科学院",
+          "normalized_name": "军事医学科学院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1991年军事医学科学院[9]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e6",
+          "mention": "四省中药研究所",
+          "normalized_name": "四省中药研究所",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1992年四省中药研究所[10]",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为'四川省中药研究所'的笔误或简称"
+        },
+        {
+          "entity_id": "7_e7",
+          "mention": "天津市滨江医院",
+          "normalized_name": "天津市滨江医院",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1994年天津市滨江医院[]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e8",
+          "mention": "广州军区武汉总院",
+          "normalized_name": "广州军区武汉总院",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "广州军区武汉总院[12]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e9",
+          "mention": "模糊数学中模糊评判方法",
+          "normalized_name": "模糊评判方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "应用模糊数学中模糊评判方法进行排序",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "(3)第三个阶段是应用科学计量学、文献计量学及情报计量学的指标和方法评估科技人员科研业绩。 在科学活动中，科学文献是重要产出形式之一，与科技人员的成就有着一定的内在联系，这种客观联系正是从科学计量学和文献计量学角度来评估科技人员科研业绩的依据。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "科学计量学",
+          "normalized_name": "科学计量学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "应用科学计量学、文献计量学及情报计量学的指标和方法评估科技人员科研业绩",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "文献计量学",
+          "normalized_name": "文献计量学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "应用科学计量学、文献计量学及情报计量学的指标和方法评估科技人员科研业绩",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "情报计量学",
+          "normalized_name": "情报计量学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "应用科学计量学、文献计量学及情报计量学的指标和方法评估科技人员科研业绩",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "科学文献",
+          "normalized_name": "科学文献",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "科学文献是重要产出形式之一",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但图情领域作为具体产出形式可抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "论文数量反映科技人员的科研产出力，一般以《科学引文索引》(SCI)的收录数量来衡量。 但于由SCI收录中国期刊数量有限,不能满足科研业绩评估的要求，同时目前国内评价论文存在重外轻内，过于重视SCI的倾向[13],针对这种情况，中国科学院文献情报中心研制开发了与美国 SCI接轨的《中国科学引文数据库》[14](CSCD),弥补了不足。但在实际工作中人们逐渐发现仅仅以论文数量来评价科研业绩是很不够的，论文质量才是论文价值的核心所在[15]。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "《科学引文索引》(SCI)",
+          "normalized_name": "《科学引文索引》(SCI)",
+          "candidate_l3": "index",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "一般以《科学引文索引》(SCI)的收录数量来衡量",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "SCI",
+          "normalized_name": "SCI",
+          "candidate_l3": "index",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "但于由SCI收录中国期刊数量有限",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "中国科学院文献情报中心",
+          "normalized_name": "中国科学院文献情报中心",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中国科学院文献情报中心研制开发了与美国 SCI接轨的《中国科学引文数据库》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "《中国科学引文数据库》[14](CSCD)",
+          "normalized_name": "《中国科学引文数据库》(CSCD)",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "研制开发了与美国 SCI接轨的《中国科学引文数据库》[14](CSCD)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e5",
+          "mention": "CSCD",
+          "normalized_name": "CSCD",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《中国科学引文数据库》[14](CSCD)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "论文质量通过引文计量指标体现，如被引次数、影响因子等。 被引次数反映科技人员的科研水平和学术影响力，是衡量论文质量的最直接的指标，但影响引用的因素很多，不能把引用作为唯一指标。期刊影响因子从定义上看是评价期刊质量的重要指标，并不是直接评价论文水平的指标。但由于期刊的质量或水平是由其刊载的论文的质量或水平决定，因此反映期刊水平的影响因子在某种程度上可以间接反映出论文质量。但目前学术界对于影响因子用于科技人员评估是否合理争议最大，认为影响因子只是反映期刊所刊载论文的平均水平，并不能代表刊物上每一篇论文的水平[16]。其实,在目前还找不到一种更合适的指标之前，用影响因子来衡量论文质量不失为一种好方法[1]。 科研管理人员和文献工作者对论文评价做了大量的研究，与论文评价密切相关的期刊评价也取得了显著成果。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "被引次数",
+          "normalized_name": "被引次数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "论文质量通过引文计量指标体现，如被引次数、影响因子等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "影响因子",
+          "normalized_name": "影响因子",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "论文质量通过引文计量指标体现，如被引次数、影响因子等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "期刊影响因子",
+          "normalized_name": "期刊影响因子",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "期刊影响因子从定义上看是评价期刊质量的重要指标",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "1998年\"大学科研评价量化问题国际研讨会暨第五次全国科学计量学与情报计量学年会”在北京召开，大会提交的43 篇论文中，有15 篇涉及科技人员科研业绩评估，体现科学计量学与文献计量学在评估中的普遍应用。 1999 年军事医学科学院[18]再次研究科技人员考核的指标体系与方法，2000 年中日友好医院[19]应用Delphi 法对本院具有主治医师职称以上者进行试评，并将结果与专家主观评估比较[20]。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "大学科研评价量化问题国际研讨会暨第五次全国科学计量学与情报计量学年会",
+          "normalized_name": "大学科研评价量化问题国际研讨会暨第五次全国科学计量学与情报计量学年会",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "1998年\"大学科研评价量化问题国际研讨会暨第五次全国科学计量学与情报计量学年会”在北京召开",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "北京",
+          "normalized_name": "北京",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在北京召开",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "地名实体，作为地点现象"
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "科学计量学",
+          "normalized_name": "科学计量学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "第五次全国科学计量学与情报计量学年会",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "情报计量学",
+          "normalized_name": "情报计量学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "第五次全国科学计量学与情报计量学年会",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "军事医学科学院",
+          "normalized_name": "军事医学科学院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1999 年军事医学科学院[18]再次研究科技人员考核的指标体系与方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e6",
+          "mention": "中日友好医院",
+          "normalized_name": "中日友好医院",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "2000 年中日友好医院[19]应用Delphi 法对本院具有主治医师职称以上者进行试评",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e7",
+          "mention": "Delphi 法",
+          "normalized_name": "Delphi法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "应用Delphi 法对本院具有主治医师职称以上者进行试评",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "1999 年军事医学科学院[18]再次研究科技人员考核的指标体系与方法，2000 年中日友好医院[19]应用Delphi 法对本院具有主治医师职称以上者进行试评，并将结果与专家主观评估比较[20]。 中国地质大学[21]、广东工业大学[22]也设计出高校社科相对实用的科研业绩综合评价指标体系。 此外，还有一些针对特定人群所做的研究，如综合评估医院学科带头人[23]、临床科室主任[24]、军队卫生科研管理干部[25]等。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "军事医学科学院",
+          "normalized_name": "军事医学科学院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1999 年军事医学科学院[18]再次研究科技人员考核的指标体系与方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "中日友好医院",
+          "normalized_name": "中日友好医院",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "2000 年中日友好医院[19]应用Delphi 法对本院具有主治医师职称以上者进行试评",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "Delphi 法",
+          "normalized_name": "Delphi法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "应用Delphi 法对本院具有主治医师职称以上者进行试评",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "中国地质大学",
+          "normalized_name": "中国地质大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中国地质大学[21]、广东工业大学[22]也设计出高校社科相对实用的科研业绩综合评价指标体系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e5",
+          "mention": "广东工业大学",
+          "normalized_name": "广东工业大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中国地质大学[21]、广东工业大学[22]也设计出高校社科相对实用的科研业绩综合评价指标体系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "常用的[2有系统分析法，文献资料分析优选法，以及应用数理统计方法对指标进行筛选的最小均方差法、多元回归、主成分分析、因子分析、聚类分析等,若能将各方法综合运用效果更好。指标体系的建立是否科学、合理、严谨,是成功开展评估工作的根本，必须慎重研究。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "系统分析法",
+          "normalized_name": "系统分析法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "常用的[2有系统分析法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "文献资料分析优选法",
+          "normalized_name": "文献资料分析优选法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "文献资料分析优选法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "最小均方差法",
+          "normalized_name": "最小均方差法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "应用数理统计方法对指标进行筛选的最小均方差法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "多元回归",
+          "normalized_name": "多元回归",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "多元回归",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e5",
+          "mention": "主成分分析",
+          "normalized_name": "主成分分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主成分分析",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e6",
+          "mention": "因子分析",
+          "normalized_name": "因子分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "因子分析",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e7",
+          "mention": "聚类分析",
+          "normalized_name": "聚类分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "聚类分析",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "指标体系确定后，要考虑各指标对评估结果的贡献大小，确定各指标重要程度不同的系数，即权重系数。 合理分配权重是评估中量化的关键,通常确定权重系数的方法有三大类[30]：一类是主观赋权法，如专家咨询法、Delphi 法、层次分析法等; 一类是客观赋权法,如熵值法;",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "权重系数",
+          "normalized_name": "权重系数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "确定各指标重要程度不同的系数，即权重系数",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "主观赋权法",
+          "normalized_name": "主观赋权法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一类是主观赋权法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "专家咨询法",
+          "normalized_name": "专家咨询法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如专家咨询法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e4",
+          "mention": "Delphi 法",
+          "normalized_name": "Delphi法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Delphi 法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e5",
+          "mention": "层次分析法",
+          "normalized_name": "层次分析法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "层次分析法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e6",
+          "mention": "客观赋权法",
+          "normalized_name": "客观赋权法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一类是客观赋权法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e7",
+          "mention": "熵值法",
+          "normalized_name": "熵值法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如熵值法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "近年来评估的方法层出不穷，但各有其优缺点和适藻应当根据不同的情况具体分析，扬长避短,使得出的评价结果能较为客观、公正、全面地反映科技人员的实际水平。 常用的方法有[28]： $\\textcircled{1}$ 线性加权综合法;",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "线性加权综合法",
+          "normalized_name": "线性加权综合法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "常用的方法有[28]： ① 线性加权综合法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "(1)目前科技人员科研业绩评估研究，其范围基本上是单位性、地区性或在研究上未能够继续与推广。许多工作大都被评估的复杂性、不确定性所局限，尚未形成系统性的深入研究和完善统一的被学术界所公认的标准评估体系，理论探讨较多，实践应用较少。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "科技人员科研业绩评估研究",
+          "normalized_name": "科技人员科研业绩评估研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前科技人员科研业绩评估研究，其范围基本上是单位性、地区性或在研究上未能够继续与推广",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为研究主题而非正式子领域"
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "而成果获奖都是以在某一研究领域中多年发表的系列论文为基础申报的。 据北京大学郑英姿所著《北京大学科技论文及其相关因素分析》一文统计[3],北京大学获国家级奖励的等级与其发表在国内刊物上论文数量的相关系数为0.7647,省部级奖的相关系数为0.8785,因此，获奖和论文两项指标内涵重复，必然影响评价结果的科学性和公正性。 既往承担科研课题的理论成果往往也都是以发表学术论文或著作的形式产出。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "北京大学",
+          "normalized_name": "北京大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "据北京大学郑英姿所著《北京大学科技论文及其相关因素分析》一文统计",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "郑英姿",
+          "normalized_name": "郑英姿",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "据北京大学郑英姿所著《北京大学科技论文及其相关因素分析》一文统计",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "《北京大学科技论文及其相关因素分析》",
+          "normalized_name": "《北京大学科技论文及其相关因素分析》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "据北京大学郑英姿所著《北京大学科技论文及其相关因素分析》一文统计",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e4",
+          "mention": "北京大学获国家级奖励",
+          "normalized_name": "北京大学获国家级奖励",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "北京大学获国家级奖励的等级与其发表在国内刊物上论文数量的相关系数为0.7647",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为Event中的policy_initiative"
+        },
+        {
+          "entity_id": "19_e5",
+          "mention": "省部级奖",
+          "normalized_name": "省部级奖",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "省部级奖的相关系数为0.8785",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称，但此处有具体指称对象"
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "(3)指标体系过于复杂。 如前面所提军事医学科学院[18]于1999 年建立的业务考核指标体系(研究系列高级人员)包括承担课题、参与课题、论文、成果、培养人才、创造思维及综合分析判断能力、选题预见能力等共19项指标，后几项指标无法量化，必然会影响评价结果的客观性、科学性和公正性。且19 项指标均为一级指标,使彼此间权重系数相差很小,导致评价结果差别小,不利于判别。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "军事医学科学院",
+          "normalized_name": "军事医学科学院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "军事医学科学院[18]于1999 年建立的业务考核指标体系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "业务考核指标体系(研究系列高级人员)",
+          "normalized_name": "业务考核指标体系(研究系列高级人员)",
+          "candidate_l3": "guideline",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "军事医学科学院[18]于1999 年建立的业务考核指标体系(研究系列高级人员)包括承担课题、参与课题、论文、成果、培养人才、创造思维及综合分析判断能力、选题预见能力等共19项指标",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "(4)选择评估方法的不当。 通常使用的一维加权求和法，所得代数和难于直接窥视到各指标实测值的差异，往往还会掩盖有的指标偏高或偏低的情况。有人曾做过研究[33],发现运用多维空间结构模型,特别是以体积表示的模式在数据上的差异远较一维模型显示的差异大，有利于作出判别。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "一维加权求和法",
+          "normalized_name": "一维加权求和法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通常使用的一维加权求和法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "多维空间结构模型",
+          "normalized_name": "多维空间结构模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "运用多维空间结构模型",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e3",
+          "mention": "一维模型",
+          "normalized_name": "一维模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "远较一维模型显示的差异大",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "科技论文是科学研究活动，特别是基础性研究和基础应用性研究活动的主要产出形式。 在科研绩效评估中，管理者对科研论文的数量已有足够的认识，但对于论文的质量,特别是对衡量论文质量的引文数据的认识有待提高。如评价指标体系中无引文指标，或对引文指标赋予的分值偏小等。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "科技论文",
+          "normalized_name": "科技论文",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "科技论文是科学研究活动，特别是基础性研究和基础应用性研究活动的主要产出形式",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'科技论文'作为一类产出形式的泛指，但根据图情领域放宽规则，作为学术评价对象可抽取"
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "科学研究活动",
+          "normalized_name": "科学研究活动",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "科技论文是科学研究活动，特别是基础性研究和基础应用性研究活动的主要产出形式",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为学术领域可观察的命名活动，但较为泛化"
+        },
+        {
+          "entity_id": "24_e3",
+          "mention": "基础性研究",
+          "normalized_name": "基础性研究",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "特别是基础性研究和基础应用性研究活动的主要产出形式",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e4",
+          "mention": "基础应用性研究",
+          "normalized_name": "基础应用性研究",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "特别是基础性研究和基础应用性研究活动的主要产出形式",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e5",
+          "mention": "科研绩效评估",
+          "normalized_name": "科研绩效评估",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在科研绩效评估中，管理者对科研论文的数量已有足够的认识",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e6",
+          "mention": "引文数据",
+          "normalized_name": "引文数据",
+          "candidate_l3": "dataset",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "对于论文的质量,特别是对衡量论文质量的引文数据的认识有待提高",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e7",
+          "mention": "评价指标体系",
+          "normalized_name": "评价指标体系",
+          "candidate_l3": "framework",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如评价指标体系中无引文指标，或对引文指标赋予的分值偏小等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处为具体评价体系，非泛称"
+        },
+        {
+          "entity_id": "24_e8",
+          "mention": "引文指标",
+          "normalized_name": "引文指标",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如评价指标体系中无引文指标，或对引文指标赋予的分值偏小等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "马克思说过：“一种科学只有在她成功地运用数学时，才算达到了真正完善的地步。 ”科技人员科研业绩评估就是在引入了计量学科的理论与方法之后，才真正日趋成熟、蓬勃发展。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "马克思",
+          "normalized_name": "马克思",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "马克思说过：“一种科学只有在她成功地运用数学时，才算达到了真正完善的地步。”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e2",
+          "mention": "科技人员科研业绩评估",
+          "normalized_name": "科技人员科研业绩评估",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "科技人员科研业绩评估就是在引入了计量学科的理论与方法之后，才真正日趋成熟、蓬勃发展",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e3",
+          "mention": "计量学科",
+          "normalized_name": "计量学科",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引入了计量学科的理论与方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "”科技人员科研业绩评估就是在引入了计量学科的理论与方法之后，才真正日趋成熟、蓬勃发展。 但评估的目标并不是要将所有的东西全部加以量化才够客观，而是要避免评价时的主观臆断、怀疑与测量的偏差[34]。如何在评估中减少主观性，增加客观性，是问题的核心，现提出几点建议。",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "计量学科",
+          "normalized_name": "计量学科",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "引入了计量学科的理论与方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "(1)正确处理定量评价与定性评价的关系。 现行的科技人员科研业绩评估不可能以完全的客观量化方法进行，只是趋向于提高量化程度。一般是将定性指标按等级赋分值转化为定量指标，由于划分等级和赋分值是人为的，含定性成分，必须严格、科学、公正，才能保证结果的科学性、公正性。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "定量评价",
+          "normalized_name": "定量评价",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "正确处理定量评价与定性评价的关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "定性评价",
+          "normalized_name": "定性评价",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "正确处理定量评价与定性评价的关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e3",
+          "mention": "科技人员科研业绩评估",
+          "normalized_name": "科技人员科研业绩评估",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现行的科技人员科研业绩评估不可能以完全的客观量化方法进行",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "29",
+      "sentence": "现科技人员科研业绩评估的部分计量学指标来源于不同的数据库，如 SCI、EI、CSCD 和CSTPC 等。 各数据库在期刊源容量和学科结构上存在差异，用不同的数据库去衡量相同的对象会有不同的结果。因此，应坚持同源相比，才能得到客观公正的评估结果。",
+      "entities": [
+        {
+          "entity_id": "29_e1",
+          "mention": "SCI",
+          "normalized_name": "SCI",
+          "candidate_l3": "index",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如 SCI、EI、CSCD 和CSTPC 等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e2",
+          "mention": "EI",
+          "normalized_name": "EI",
+          "candidate_l3": "index",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如 SCI、EI、CSCD 和CSTPC 等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e3",
+          "mention": "CSCD",
+          "normalized_name": "CSCD",
+          "candidate_l3": "index",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如 SCI、EI、CSCD 和CSTPC 等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e4",
+          "mention": "CSTPC",
+          "normalized_name": "CSTPC",
+          "candidate_l3": "index",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如 SCI、EI、CSCD 和CSTPC 等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "(3)采取科学的评估方法，提高评估信度和效度。 由于评估单位定义模糊或评估人员经验缺乏等多种不确定原因，会造成结果缺乏可靠性(信度)和有效性(效度)。因此,必须采取科学的评估方法，以减少定性评估带来的偏差。",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "评估信度",
+          "normalized_name": "评估信度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提高评估信度和效度",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "信度作为学术概念，但此处未给出具体定义或命名者，confidence略低"
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "评估效度",
+          "normalized_name": "评估效度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提高评估信度和效度",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "效度作为学术概念，但此处未给出具体定义或命名者，confidence略低"
+        },
+        {
+          "entity_id": "30_e3",
+          "mention": "定性评估",
+          "normalized_name": "定性评估",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "减少定性评估带来的偏差",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "31",
+      "sentence": "(4)重视开发基于计算机运行的数据化、软件化的评佳桑统科技人员的管理与评估悬一项难度较大的工作，尤其是科技高速发展的今天,要求有先进的科研管理方法和评估手段与之相适应，而不是滞后于科学的发展。 目前在该方面已取得了一些进展,如同济医科大学[35]设计的“软科学学术论文质量评价系统”； 中日友好医院[3开发的“医学科研管理与评估系统”等。",
+      "entities": [
+        {
+          "entity_id": "31_e1",
+          "mention": "同济医科大学",
+          "normalized_name": "同济医科大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如同济医科大学[35]设计的“软科学学术论文质量评价系统”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e2",
+          "mention": "软科学学术论文质量评价系统",
+          "normalized_name": "软科学学术论文质量评价系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如同济医科大学[35]设计的“软科学学术论文质量评价系统”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e3",
+          "mention": "中日友好医院",
+          "normalized_name": "中日友好医院",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中日友好医院[3开发的“医学科研管理与评估系统”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e4",
+          "mention": "医学科研管理与评估系统",
+          "normalized_name": "医学科研管理与评估系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "中日友好医院[3开发的“医学科研管理与评估系统”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "32",
+      "sentence": "实行科技人员科研业绩评估机制，是为了营造一种\"公平合理\"的氛围，建立有效的激励机制，鼓励和促进广大科研人员多出成果。 但值得注意的是“满意”的概念是模糊的，完全确切、准确地评估是人的实际行为所不可能达到的极限[3],让更多评估者和被评估者满意的科技人员科研业绩评估仍需要进一步深入研究和探讨。",
+      "entities": [
+        {
+          "entity_id": "32_e1",
+          "mention": "科技人员科研业绩评估机制",
+          "normalized_name": "科技人员科研业绩评估机制",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "实行科技人员科研业绩评估机制，是为了营造一种'公平合理'的氛围",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e2",
+          "mention": "满意",
+          "normalized_name": "满意",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "但值得注意的是“满意”的概念是模糊的",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为学术概念被讨论"
+        }
+      ]
+    }
+  ]
+}

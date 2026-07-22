@@ -1,0 +1,3198 @@
+{
+  "base_name": "reviewed_full_4175",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "（摘要）随着Web2.0的逐步发展，海量用户生成的图像信息充斥于各大网络平台，图像自动标注技术逐步成为图像检索以及图像理解的关键问题之一。 该文主要通过对现有图像自动标注方法的文献进行收集和整理，在比较、分析各种方法相关理论和实现技术的基础上，对图像自动标注方法研究进展进行评述； 并归纳了各种方法的优势与不足。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "Web2.0",
+          "normalized_name": "Web2.0",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着Web2.0的逐步发展",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "图像自动标注技术",
+          "normalized_name": "图像自动标注技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图像自动标注技术逐步成为图像检索以及图像理解的关键问题之一",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "图像检索",
+          "normalized_name": "图像检索",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图像自动标注技术逐步成为图像检索以及图像理解的关键问题之一",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "图像理解",
+          "normalized_name": "图像理解",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图像自动标注技术逐步成为图像检索以及图像理解的关键问题之一",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e5",
+          "mention": "图像自动标注方法",
+          "normalized_name": "图像自动标注方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对现有图像自动标注方法的文献进行收集和整理",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "并归纳了各种方法的优势与不足。 得出结论：图像自动标注方法和图像处理技术仍然需要从机器学习方面进一步的研究与改进，且可以从图像信息的标注拓展到视频信息的标注。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "图像自动标注方法",
+          "normalized_name": "图像自动标注方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图像自动标注方法和图像处理技术仍然需要从机器学习方面进一步的研究与改进",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "图像处理技术",
+          "normalized_name": "图像处理技术",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图像自动标注方法和图像处理技术仍然需要从机器学习方面进一步的研究与改进",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "机器学习",
+          "normalized_name": "机器学习",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从机器学习方面进一步的研究与改进",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "图像信息",
+          "normalized_name": "图像信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从图像信息的标注拓展到视频信息的标注",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e5",
+          "mention": "视频信息",
+          "normalized_name": "视频信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从图像信息的标注拓展到视频信息的标注",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "据微信平台统计，仅微信朋友圈每日的图像信息都超过一个亿。 图像信息给日常生活带来方便的同时，也提出了巨大的挑战一一在浩瀚的图像海洋中，怎样检索到用户需要的信息； 怎样理解大量用户生成的图像内容的情感信息等问题吸引了很多研究者的思考。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "微信平台",
+          "normalized_name": "微信平台",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "据微信平台统计",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "微信朋友圈",
+          "normalized_name": "微信朋友圈",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "仅微信朋友圈每日的图像信息都超过一个亿",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "图像信息",
+          "normalized_name": "图像信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图像信息给日常生活带来方便的同时",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "浩瀚的图像海洋",
+          "normalized_name": "浩瀚的图像海洋",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在浩瀚的图像海洋中",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "比喻性表达，但作为独立学术命名被讨论"
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "用户生成的图像内容的情感信息",
+          "normalized_name": "用户生成的图像内容的情感信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "怎样理解大量用户生成的图像内容的情感信息等问题吸引了很多研究者的思考",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "怎样理解大量用户生成的图像内容的情感信息等问题吸引了很多研究者的思考。 为了解决这些问题，图像自动标注技术应运而生，并逐步发展成为图像检索以及图像理解的关键问题之一。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "图像自动标注技术",
+          "normalized_name": "图像自动标注技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图像自动标注技术应运而生",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "图像检索",
+          "normalized_name": "图像检索",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图像检索以及图像理解的关键问题之一",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "图像理解",
+          "normalized_name": "图像理解",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图像检索以及图像理解的关键问题之一",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "其基本思想是：利用已标注图像集或其他可获得的信息，自动学习语义概念空间与视觉特征空间的潜在关联或者映射关系，给未知图像添加文本关键词。 经过图像自动标注技术的处理，图像信息问题可以转化为技术已经相对较成熟的文本信息处理问题。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "图像自动标注技术",
+          "normalized_name": "图像自动标注技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "经过图像自动标注技术的处理",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "图像自动标注技术的运用使得用户可以更加容易地获得海量网络图像，有效地组织、查询和浏览大规模图像。这样，网络上数以万计的图像信息就可以被很好的利用和分析。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "图像自动标注技术",
+          "normalized_name": "图像自动标注技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图像自动标注技术的运用使得用户可以更加容易地获得海量网络图像",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "随着Twitter，Facebook，微博等社交平台上的图片信息呈指数增长，图像自动标注技术逐渐成为图像分析、应用领域的关键技术之一，受到越来越多的国内外研究人员的关注。 为了更好的了解图像自动标注方法的研究现状，本文对现有图像自动标注方法的文献进行收集和整理，在了解相关理论和分析的基础上，对图像自动标注问题研究现状进行评述； 在此基础上对各种图像标注的方法进行了比较。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "Twitter",
+          "normalized_name": "Twitter",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "随着Twitter，Facebook，微博等社交平台上的图片信息呈指数增长",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "Facebook",
+          "normalized_name": "Facebook",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "随着Twitter，Facebook，微博等社交平台上的图片信息呈指数增长",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "微博",
+          "normalized_name": "微博",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "随着Twitter，Facebook，微博等社交平台上的图片信息呈指数增长",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "图像自动标注技术",
+          "normalized_name": "图像自动标注技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图像自动标注技术逐渐成为图像分析、应用领域的关键技术之一",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e5",
+          "mention": "图像自动标注方法",
+          "normalized_name": "图像自动标注方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为了更好的了解图像自动标注方法的研究现状",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "为了更好的处理图像信息，图像标注技术受到了国内外研究者的关注，并逐渐发展成为图像、图形领域的热点问题。 传统的图像标注是人工完成的，对图像的理解与标注相对准确，但是在大数据环境下的图像标注中，人工标注工作量巨大，并且容易受到主观经验的影响，对同一幅图像的标注不一致。 于是，有学者利用计算机技术实现图像的自动标注。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "图像标注技术",
+          "normalized_name": "图像标注技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图像标注技术受到了国内外研究者的关注",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "图像",
+          "normalized_name": "图像",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "逐渐发展成为图像、图形领域的热点问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为领域术语，非泛称"
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "图形",
+          "normalized_name": "图形",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "逐渐发展成为图像、图形领域的热点问题",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为领域术语，非泛称"
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "人工标注",
+          "normalized_name": "人工标注",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "传统的图像标注是人工完成的",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e5",
+          "mention": "自动标注",
+          "normalized_name": "自动标注",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用计算机技术实现图像的自动标注",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "图像自动标注技术从一开始就得到很多研究者的关注，研究人员提出了各种图像自动标注模型。其中很多模型经过不断地修改与改进，都能达到相对较高的标注精度。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "图像自动标注技术",
+          "normalized_name": "图像自动标注技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图像自动标注技术从一开始就得到很多研究者的关注",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "图像自动标注模型",
+          "normalized_name": "图像自动标注模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究人员提出了各种图像自动标注模型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "未指明具体模型名称，但作为类别模型概念可抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "所以研究人员首先将图像进行分割，然后再统计文本与关键词之间的共生关系，实现图像标注。 Mori等人在1999年提出了共生模型（Co-occurrenceModel），从此越来越多的研究人员开始关注图像自动标注领域。 共生模型的基本思想是先将图像划分成规则的区域，对分割的图像区域进行分类，然后统计图像区域与关键词的共生概率，用共生概率大的关键词标注图像。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "Mori等人",
+          "normalized_name": "Mori等人",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Mori等人在1999年提出了共生模型（Co-occurrenceModel）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "共生模型（Co-occurrenceModel）",
+          "normalized_name": "共生模型（Co-occurrenceModel）",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Mori等人在1999年提出了共生模型（Co-occurrenceModel）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "图像自动标注",
+          "normalized_name": "图像自动标注",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "越来越多的研究人员开始关注图像自动标注领域",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "共生模型的基本思想是先将图像划分成规则的区域，对分割的图像区域进行分类，然后统计图像区域与关键词的共生概率，用共生概率大的关键词标注图像。 此后，Duygulu等人提出了翻译模型（Translation Modal，简称TM），利用传统的语言统计翻译模型将语义概念翻译为由图像区域聚类产生的blobs。 该模型也需要分割图像并对图像区域进行聚类。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "共生模型",
+          "normalized_name": "共生模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "共生模型的基本思想是先将图像划分成规则的区域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "Duygulu",
+          "normalized_name": "Duygulu",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Duygulu等人提出了翻译模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "翻译模型（Translation Modal，简称TM）",
+          "normalized_name": "翻译模型（Translation Modal，简称TM）",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Duygulu等人提出了翻译模型（Translation Modal，简称TM）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "TM",
+          "normalized_name": "TM",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "翻译模型（Translation Modal，简称TM）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "blobs",
+          "normalized_name": "blobs",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将语义概念翻译为由图像区域聚类产生的blobs",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "Jeon等人基于图像分割提出了跨媒体相关模型（Cross-MediaRelevanceModel，CMRM），主要是以底层特征（例如颜色，形状）对图像区域进行聚类。 图像区域本身与底层特征没有密切联系，所以图像标注的准确率不高。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "Jeon",
+          "normalized_name": "Jeon",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Jeon等人基于图像分割提出了跨媒体相关模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "跨媒体相关模型（Cross-MediaRelevanceModel，CMRM）",
+          "normalized_name": "跨媒体相关模型（Cross-MediaRelevanceModel，CMRM）",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提出了跨媒体相关模型（Cross-MediaRelevanceModel，CMRM）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "图像区域",
+          "normalized_name": "图像区域",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主要是以底层特征（例如颜色，形状）对图像区域进行聚类",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为通用术语，若在领域内无独立学术命名则可能为泛称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "早期的这些方法都是通过图像分割、区域分类和统计共生概率的方法进行图像自动标注。 这些方法比较简单，高层语义关键词与图像底层视觉特征之间没有一一对应。早期的方法虽然对于图像标注的正确率不高，但是建立图像和语义概念的统计概率模型，开后了图像自动标注的研究，吸引了许多学者的关注，为后续图像自动标注方法提供了参考。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "图像分割",
+          "normalized_name": "图像分割",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过图像分割、区域分类和统计共生概率的方法进行图像自动标注",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "区域分类",
+          "normalized_name": "区域分类",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过图像分割、区域分类和统计共生概率的方法进行图像自动标注",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "统计共生概率",
+          "normalized_name": "统计共生概率",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过图像分割、区域分类和统计共生概率的方法进行图像自动标注",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为method或technique，此处按具体技术手段处理"
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "图像自动标注",
+          "normalized_name": "图像自动标注",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过图像分割、区域分类和统计共生概率的方法进行图像自动标注",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e5",
+          "mention": "高层语义关键词",
+          "normalized_name": "高层语义关键词",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "高层语义关键词与图像底层视觉特征之间没有一一对应",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e6",
+          "mention": "图像底层视觉特征",
+          "normalized_name": "图像底层视觉特征",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "高层语义关键词与图像底层视觉特征之间没有一一对应",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e7",
+          "mention": "统计概率模型",
+          "normalized_name": "统计概率模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "建立图像和语义概念的统计概率模型",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "图像分类不同于传统的分类问题，每幅图像由多个分割区域组成、同时属于多个语义类别，所以必须用含有该幅图像语义的多个特征词标注。 比如，一幅图像中有飞机、老虎、草坪等信息，这幅图像就同时属于这几个语义类别，图像的标注关键词就为飞机、老虎、草坪。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "图像分类",
+          "normalized_name": "图像分类",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图像分类不同于传统的分类问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "飞机",
+          "normalized_name": "飞机",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一幅图像中有飞机、老虎、草坪等信息",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "老虎",
+          "normalized_name": "老虎",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一幅图像中有飞机、老虎、草坪等信息",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e4",
+          "mention": "草坪",
+          "normalized_name": "草坪",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "一幅图像中有飞机、老虎、草坪等信息",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "这种图像自动标注方法的重点在分类，分类器的好坏直接影响着图像标注的结果，其代表方法有SVM方法、贝叶斯方法、k-近邻方法、决策树方法等。 提高分类器的精度，图像标注的准确性就会提高。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "SVM方法",
+          "normalized_name": "SVM方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "其代表方法有SVM方法、贝叶斯方法、k-近邻方法、决策树方法等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "贝叶斯方法",
+          "normalized_name": "贝叶斯方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "其代表方法有SVM方法、贝叶斯方法、k-近邻方法、决策树方法等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "k-近邻方法",
+          "normalized_name": "k-近邻方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "其代表方法有SVM方法、贝叶斯方法、k-近邻方法、决策树方法等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "决策树方法",
+          "normalized_name": "决策树方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "其代表方法有SVM方法、贝叶斯方法、k-近邻方法、决策树方法等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "比如一幅图像中有蓝天、白云、草坪，马等语义，其中的任何一个语义只是存在于图像中的某个区域，并不是图的全局都包含这些语义。 所以全局特征不能很好的表示图像的高层语义。多示例学习问题被引入解决图像标注的有歧义问题。 Dietterich等人首先用多示例学习模型来研究药物活性问题，通过训练正包和反包生成模型，对未知图像包进行标注。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "多示例学习",
+          "normalized_name": "多示例学习",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "多示例学习问题被引入解决图像标注的有歧义问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "Dietterich",
+          "normalized_name": "Dietterich",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Dietterich等人首先用多示例学习模型来研究药物活性问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "多示例学习模型",
+          "normalized_name": "多示例学习模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Dietterich等人首先用多示例学习模型来研究药物活性问题",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": "可兼为method"
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "因此该点周围应当密集分布属于多个不同正包的示例，同时远离所有反包中的示例。 特征空间中如果某点附近出现来自于不同正包中的示例越多，反包中的示例离得越远，则该点表征了给定关键词语义的概率就越大。 用多样性密度来度量这种概率，具有最大概率的点即为要寻找的目标点。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "多样性密度",
+          "normalized_name": "多样性密度",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用多样性密度来度量这种概率",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "同时，一幅图像也属于多个语义关键词，这样图像标注问题就属于多标记问题。 TangJ，Cusino C等人-用多标记学习问题的思路解决图像标注问题，在多标记学习过程中，先将多标记学习问题转化为多个单标记学习问题，提出了基于支持向量机的自动图像标注算法。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "TangJ",
+          "normalized_name": "TangJ",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "TangJ，Cusino C等人-用多标记学习问题的思路解决图像标注问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "Cusino C",
+          "normalized_name": "Cusino C",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "TangJ，Cusino C等人-用多标记学习问题的思路解决图像标注问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e3",
+          "mention": "多标记学习",
+          "normalized_name": "多标记学习",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "多标记学习问题的思路解决图像标注问题，在多标记学习过程中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e4",
+          "mention": "支持向量机",
+          "normalized_name": "支持向量机",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "提出了基于支持向量机的自动图像标注算法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e5",
+          "mention": "自动图像标注算法",
+          "normalized_name": "自动图像标注算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "提出了基于支持向量机的自动图像标注算法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为method或technique，但原文明确称为算法"
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "多示例多标记的图像标注方法，只是提供了图像底层特征与高层语义之间的更好的对应的新思路，对于提取出来的特征向量仍然需要训练分类模型进行分类。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "多示例多标记的图像标注方法",
+          "normalized_name": "多示例多标记的图像标注方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "多示例多标记的图像标注方法，只是提供了图像底层特征与高层语义之间的更好的对应的新思路",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "图像底层特征",
+          "normalized_name": "图像底层特征",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图像底层特征与高层语义之间的更好的对应的新思路",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "高层语义",
+          "normalized_name": "高层语义",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图像底层特征与高层语义之间的更好的对应的新思路",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e4",
+          "mention": "特征向量",
+          "normalized_name": "特征向量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对于提取出来的特征向量仍然需要训练分类模型进行分类",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e5",
+          "mention": "分类模型",
+          "normalized_name": "分类模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "仍然需要训练分类模型进行分类",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "为了进一步提高图像标注的准确率，很多研究者提出了多分类模型。Carnerio提出了一种有监督的多分类标注方法（Supervised Multiclass Labeling，简称 SML），这种方法将每个关键词看作是一个类，通过机器学习中的多示例学习方法来为每个类生成对应的条件密度函数，并将训练图像看作是与它相关的标注关键词所对应的条件密度函数的一个高斯混合模型。路晶，金奕江等人提出了使用基于SVM的否定概率和法的图像标注的方法，此标注方法的基本思想是：先建立小规模图像库为训练集，库中每个图像标有单一的语义标签，再利用其底层特征，以SVM为子分类器，“否定概率和”法为合成方法构建基于成对藕合方式（PWC）的多类分类器，并对未标注的图像进行分类，结果以N维标注向量表示。臧淼[等人提出了 Bayes多分类模型，将图像标注看做多分类问题，然后选择条件概率密度高的作为图像标注词。吴伟等人[改进了支持向量机多分类模型，其中把直方图交叉距离作为核函数，传统支持向量机的输出值变换为样本到超平面的距离，选择图像特征中冗余较小的视觉特征，建立分类器，用距离大小来判断类别。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "Carnerio",
+          "normalized_name": "Carnerio",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Carnerio提出了一种有监督的多分类标注方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "有监督的多分类标注方法（Supervised Multiclass Labeling，简称 SML）",
+          "normalized_name": "有监督的多分类标注方法（Supervised Multiclass Labeling，简称 SML）",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Carnerio提出了一种有监督的多分类标注方法（Supervised Multiclass Labeling，简称 SML）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "SML",
+          "normalized_name": "SML",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有监督的多分类标注方法（Supervised Multiclass Labeling，简称 SML）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "多示例学习方法",
+          "normalized_name": "多示例学习方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过机器学习中的多示例学习方法来为每个类生成对应的条件密度函数",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e5",
+          "mention": "高斯混合模型",
+          "normalized_name": "高斯混合模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将训练图像看作是与它相关的标注关键词所对应的条件密度函数的一个高斯混合模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e6",
+          "mention": "路晶",
+          "normalized_name": "路晶",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "路晶，金奕江等人提出了使用基于SVM的否定概率和法的图像标注的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e7",
+          "mention": "金奕江",
+          "normalized_name": "金奕江",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "路晶，金奕江等人提出了使用基于SVM的否定概率和法的图像标注的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e8",
+          "mention": "SVM",
+          "normalized_name": "SVM",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于SVM的否定概率和法的图像标注的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e9",
+          "mention": "否定概率和法",
+          "normalized_name": "否定概率和法",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于SVM的否定概率和法的图像标注的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e10",
+          "mention": "成对藕合方式（PWC）",
+          "normalized_name": "成对藕合方式（PWC）",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于成对藕合方式（PWC）的多类分类器",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e11",
+          "mention": "PWC",
+          "normalized_name": "PWC",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "成对藕合方式（PWC）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e12",
+          "mention": "臧淼",
+          "normalized_name": "臧淼",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "臧淼[等人提出了 Bayes多分类模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e13",
+          "mention": "Bayes多分类模型",
+          "normalized_name": "Bayes多分类模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "臧淼[等人提出了 Bayes多分类模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e14",
+          "mention": "吴伟",
+          "normalized_name": "吴伟",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "吴伟等人[改进了支持向量机多分类模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e15",
+          "mention": "支持向量机多分类模型",
+          "normalized_name": "支持向量机多分类模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "吴伟等人[改进了支持向量机多分类模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e16",
+          "mention": "直方图交叉距离",
+          "normalized_name": "直方图交叉距离",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "把直方图交叉距离作为核函数",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "以上这几种聚类方法，通常都是基于视觉特征，将具有视觉特征的区域划分为同一类别，只要视觉特征相同就可以归为一类，不管其语义特征是否相同，都用相同的关键字，所以这种分类方法的图像标注的准确率不是特别高。很多研究者提出了基于语义的聚类来提高图像标注的准确性。 张元清，包骏杰等人从语义约束的聚类算法方面对图像区域进行聚类，然后进行图像标注。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "张元清",
+          "normalized_name": "张元清",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "张元清，包骏杰等人从语义约束的聚类算法方面对图像区域进行聚类",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "包骏杰",
+          "normalized_name": "包骏杰",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "张元清，包骏杰等人从语义约束的聚类算法方面对图像区域进行聚类",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e3",
+          "mention": "语义约束的聚类算法",
+          "normalized_name": "语义约束的聚类算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "张元清，包骏杰等人从语义约束的聚类算法方面对图像区域进行聚类",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "在这种方法中，对于给定的一幅图像，计算语义概念的后验概率。 由于聚类区域彼此之间存在着依赖关系，不相互独立，影响概率的计算方法，他们提出贪心选择连接（GSJ）算法计算出聚类区域的独立子集。 经过贪心选择连接算法后，使用贝叶斯理论进行语义标注。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "贪心选择连接（GSJ）算法",
+          "normalized_name": "贪心选择连接（GSJ）算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "他们提出贪心选择连接（GSJ）算法计算出聚类区域的独立子集",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "贝叶斯理论",
+          "normalized_name": "贝叶斯理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使用贝叶斯理论进行语义标注",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "Hinton提出了深度信念网，它由一组受限玻尔兹曼机（RBM）组成，可以实现自主地进行特征学习，这一发现促使了对深度学习[领域的研究，并将这项技术应用于图像分类标注领域中。 2011年，MarcAurelio Ranzato 等人[利用深度学习的思想，设计实现了深度生成模型完成特征学习，并将该模型应用于图像识别和分类工作中。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "Hinton",
+          "normalized_name": "Hinton",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Hinton提出了深度信念网",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "深度信念网",
+          "normalized_name": "深度信念网",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Hinton提出了深度信念网",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e3",
+          "mention": "受限玻尔兹曼机（RBM）",
+          "normalized_name": "受限玻尔兹曼机（RBM）",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "它由一组受限玻尔兹曼机（RBM）组成",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e4",
+          "mention": "深度学习",
+          "normalized_name": "深度学习",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "促使了对深度学习[领域的研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为method"
+        },
+        {
+          "entity_id": "24_e5",
+          "mention": "图像分类标注",
+          "normalized_name": "图像分类标注",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将这项技术应用于图像分类标注领域中",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为任务领域而非具体技术"
+        },
+        {
+          "entity_id": "24_e6",
+          "mention": "MarcAurelio Ranzato",
+          "normalized_name": "MarcAurelio Ranzato",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "2011年，MarcAurelio Ranzato 等人",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e7",
+          "mention": "深度生成模型",
+          "normalized_name": "深度生成模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "设计实现了深度生成模型完成特征学习",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e8",
+          "mention": "图像识别",
+          "normalized_name": "图像识别",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将该模型应用于图像识别和分类工作中",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为任务领域而非具体技术"
+        },
+        {
+          "entity_id": "24_e9",
+          "mention": "分类",
+          "normalized_name": "分类",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将该模型应用于图像识别和分类工作中",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "此处指图像分类任务，可能为泛化用法"
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "2011年，MarcAurelio Ranzato 等人[利用深度学习的思想，设计实现了深度生成模型完成特征学习，并将该模型应用于图像识别和分类工作中。 深度学习的兴起，促进了基于图像分类的图像标注领域的进一步完善。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "MarcAurelio Ranzato",
+          "normalized_name": "MarcAurelio Ranzato",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "MarcAurelio Ranzato 等人利用深度学习的思想",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "深度学习",
+          "normalized_name": "深度学习",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用深度学习的思想，设计实现了深度生成模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e3",
+          "mention": "深度生成模型",
+          "normalized_name": "深度生成模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "设计实现了深度生成模型完成特征学习",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e4",
+          "mention": "图像识别",
+          "normalized_name": "图像识别",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将该模型应用于图像识别和分类工作中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e5",
+          "mention": "图像分类",
+          "normalized_name": "图像分类",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将该模型应用于图像识别和分类工作中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e6",
+          "mention": "图像标注",
+          "normalized_name": "图像标注",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于图像分类的图像标注领域",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "相关模型图像自动标注方法是基于早期的概率关联模型而来，不同于概率关联模型的地方是它不仅仅简单地统计图像区域与关键词出现的共生概率，而是建立图像与语义关键词之间的概率相关模型。 通过关联模型，给待标注图像找到与其相关性概率最大的一组语义关键词来标注图像。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "概率关联模型",
+          "normalized_name": "概率关联模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于早期的概率关联模型而来",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e2",
+          "mention": "图像区域",
+          "normalized_name": "图像区域",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "统计图像区域与关键词出现的共生概率",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e3",
+          "mention": "语义关键词",
+          "normalized_name": "语义关键词",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "建立图像与语义关键词之间的概率相关模型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "早期Jeon等人的概率统计模型标注效率低，正确性低。很多研究者都通过改进相关模型来提高图像标注的准确性。 2003年Lavrenko在CMRM模型的基础上改进并提出了连续特征相关模型（Continuous-space Relevance Model,简写CRM）d。",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "Jeon等人",
+          "normalized_name": "Jeon等人",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "早期Jeon等人的概率统计模型标注效率低",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "Jeon为姓氏，未提供全名，但可唯一识别为具体研究者群体"
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "概率统计模型",
+          "normalized_name": "概率统计模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "早期Jeon等人的概率统计模型标注效率低",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未给出模型具体名称，但作为有命名的模型类型可识别"
+        },
+        {
+          "entity_id": "27_e3",
+          "mention": "Lavrenko",
+          "normalized_name": "Lavrenko",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "2003年Lavrenko在CMRM模型的基础上改进并提出了连续特征相关模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e4",
+          "mention": "CMRM模型",
+          "normalized_name": "CMRM模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "2003年Lavrenko在CMRM模型的基础上改进并提出了连续特征相关模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e5",
+          "mention": "连续特征相关模型（Continuous-space Relevance Model,简写CRM）",
+          "normalized_name": "连续特征相关模型（Continuous-space Relevance Model,简写CRM）",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提出了连续特征相关模型（Continuous-space Relevance Model,简写CRM）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "包翠竹在跨媒体相关模型的基础上改进了词汇平滑处理的方法，通过简洁的图像特征表示方法和相似度计算方法更准确地度量了图像与图像之间的相关性。 该方法可以快速的进行图像标注，不仅提高了图像标注的正确率，而且提高了速率。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "包翠竹",
+          "normalized_name": "包翠竹",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "包翠竹在跨媒体相关模型的基础上改进了词汇平滑处理的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "跨媒体相关模型",
+          "normalized_name": "跨媒体相关模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包翠竹在跨媒体相关模型的基础上改进了词汇平滑处理的方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e3",
+          "mention": "词汇平滑处理",
+          "normalized_name": "词汇平滑处理",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "改进了词汇平滑处理的方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e4",
+          "mention": "图像特征表示方法",
+          "normalized_name": "图像特征表示方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过简洁的图像特征表示方法和相似度计算方法更准确地度量了图像与图像之间的相关性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e5",
+          "mention": "相似度计算方法",
+          "normalized_name": "相似度计算方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过简洁的图像特征表示方法和相似度计算方法更准确地度量了图像与图像之间的相关性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e6",
+          "mention": "图像标注",
+          "normalized_name": "图像标注",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "该方法可以快速的进行图像标注",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "29",
+      "sentence": "2007年，芮晓光，袁平波等人结合相关模型，提出了一种比较新颖的自动图像标注框架。 其主要思想是对已经标注过的图像集进行分割，使其成为比较小的图像区域，再利用软约束的半监督图像聚类算法对已经分割好的图像区域进行语义聚类，实现图像集在视觉特征空间中的量化表示，每个子类称为blobs。",
+      "entities": [
+        {
+          "entity_id": "29_e1",
+          "mention": "芮晓光",
+          "normalized_name": "芮晓光",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "芮晓光，袁平波等人结合相关模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e2",
+          "mention": "袁平波",
+          "normalized_name": "袁平波",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "芮晓光，袁平波等人结合相关模型",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e3",
+          "mention": "自动图像标注框架",
+          "normalized_name": "自动图像标注框架",
+          "candidate_l3": "framework",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提出了一种比较新颖的自动图像标注框架",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e4",
+          "mention": "软约束的半监督图像聚类算法",
+          "normalized_name": "软约束的半监督图像聚类算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "再利用软约束的半监督图像聚类算法对已经分割好的图像区域进行语义聚类",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e5",
+          "mention": "blobs",
+          "normalized_name": "blobs",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "每个子类称为blobs",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "在这个过程中，图像标注的好坏受到图像分割技术的影响。 而目前图像分割问题尚没有得到很好的解决，因此相关模型的准确率和可信度都不是特别高。",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "图像标注",
+          "normalized_name": "图像标注",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图像标注的好坏受到图像分割技术的影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "图像分割技术",
+          "normalized_name": "图像分割技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图像标注的好坏受到图像分割技术的影响",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e3",
+          "mention": "图像分割问题",
+          "normalized_name": "图像分割问题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前图像分割问题尚没有得到很好的解决",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "31",
+      "sentence": "为了避免图像分割造成的图像信息丢失，提高图像标注的准确率。 郭玉堂，韩昌刚提出基于典型相关分析和高斯混合模型的自动图像标注方法。",
+      "entities": [
+        {
+          "entity_id": "31_e1",
+          "mention": "郭玉堂",
+          "normalized_name": "郭玉堂",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "郭玉堂，韩昌刚提出基于典型相关分析和高斯混合模型的自动图像标注方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e2",
+          "mention": "韩昌刚",
+          "normalized_name": "韩昌刚",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "郭玉堂，韩昌刚提出基于典型相关分析和高斯混合模型的自动图像标注方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e3",
+          "mention": "典型相关分析",
+          "normalized_name": "典型相关分析",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于典型相关分析和高斯混合模型的自动图像标注方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e4",
+          "mention": "高斯混合模型",
+          "normalized_name": "高斯混合模型",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于典型相关分析和高斯混合模型的自动图像标注方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e5",
+          "mention": "自动图像标注方法",
+          "normalized_name": "自动图像标注方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提出基于典型相关分析和高斯混合模型的自动图像标注方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为technique"
+        }
+      ]
+    },
+    {
+      "sentence_id": "32",
+      "sentence": "周全等人提出基于多尺度上下文的图像标注方法，先对每层分割后的图像进行识别，然后再利用贝叶斯定理，通过线性加权，然后对每层识别的结果进行融合，从而达到对整幅图像的自动标注。 改善了因为图像分割造成的图像信息丢失，提高图像标注的结果。 刘凯等人结合深度玻尔兹曼机与典型相关分析的特点，提出了DBM－CCA算法，利用玻尔兹曼机实现从低层图像特征向稀疏高层语义转换，然后通过典型相关分析建立子空间的映射关系，从而实现图像标注。",
+      "entities": [
+        {
+          "entity_id": "32_e1",
+          "mention": "周全",
+          "normalized_name": "周全",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "周全等人提出基于多尺度上下文的图像标注方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e2",
+          "mention": "基于多尺度上下文的图像标注方法",
+          "normalized_name": "基于多尺度上下文的图像标注方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "周全等人提出基于多尺度上下文的图像标注方法",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e3",
+          "mention": "贝叶斯定理",
+          "normalized_name": "贝叶斯定理",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用贝叶斯定理",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e4",
+          "mention": "刘凯",
+          "normalized_name": "刘凯",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "刘凯等人结合深度玻尔兹曼机与典型相关分析的特点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e5",
+          "mention": "深度玻尔兹曼机",
+          "normalized_name": "深度玻尔兹曼机",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "结合深度玻尔兹曼机与典型相关分析的特点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e6",
+          "mention": "典型相关分析",
+          "normalized_name": "典型相关分析",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "结合深度玻尔兹曼机与典型相关分析的特点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e7",
+          "mention": "DBM－CCA算法",
+          "normalized_name": "DBM-CCA算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "提出了DBM－CCA算法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "32_e8",
+          "mention": "玻尔兹曼机",
+          "normalized_name": "玻尔兹曼机",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用玻尔兹曼机实现从低层图像特征向稀疏高层语义转换",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "33",
+      "sentence": "刘凯等人结合深度玻尔兹曼机与典型相关分析的特点，提出了DBM－CCA算法，利用玻尔兹曼机实现从低层图像特征向稀疏高层语义转换，然后通过典型相关分析建立子空间的映射关系，从而实现图像标注。 与典型相关分析和高斯混合模型的图像标注方法相比，查全率和查准率都有明显提高。",
+      "entities": [
+        {
+          "entity_id": "33_e1",
+          "mention": "刘凯",
+          "normalized_name": "刘凯",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "刘凯等人结合深度玻尔兹曼机与典型相关分析的特点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e2",
+          "mention": "深度玻尔兹曼机",
+          "normalized_name": "深度玻尔兹曼机",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "结合深度玻尔兹曼机与典型相关分析的特点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e3",
+          "mention": "典型相关分析",
+          "normalized_name": "典型相关分析",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "结合深度玻尔兹曼机与典型相关分析的特点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e4",
+          "mention": "DBM－CCA算法",
+          "normalized_name": "DBM-CCA算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "提出了DBM－CCA算法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e5",
+          "mention": "玻尔兹曼机",
+          "normalized_name": "玻尔兹曼机",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "利用玻尔兹曼机实现从低层图像特征向稀疏高层语义转换",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "33_e6",
+          "mention": "典型相关分析和高斯混合模型的图像标注方法",
+          "normalized_name": "典型相关分析和高斯混合模型的图像标注方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与典型相关分析和高斯混合模型的图像标注方法相比",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "34",
+      "sentence": "半监督模型图像自动标注是一种重要的机器学习方法，已经标注的图像信息和未被标注的图像信息都要参与到机器的学习过程中，与前面提到的基于分类的有监督机器学习方法不同，在学习过程中可以利用的图像信息更多，对信息的了解更加清楚，它适用于图像信息总量大，而已被标注的图像信息很少的情形。 这种图像标注方法在大数据环境下可以得到很好地推广。",
+      "entities": [
+        {
+          "entity_id": "34_e1",
+          "mention": "半监督模型图像自动标注",
+          "normalized_name": "半监督模型图像自动标注",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "半监督模型图像自动标注是一种重要的机器学习方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e2",
+          "mention": "机器学习方法",
+          "normalized_name": "机器学习方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "半监督模型图像自动标注是一种重要的机器学习方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e3",
+          "mention": "基于分类的有监督机器学习方法",
+          "normalized_name": "基于分类的有监督机器学习方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与前面提到的基于分类的有监督机器学习方法不同",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e4",
+          "mention": "大数据环境",
+          "normalized_name": "大数据环境",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这种图像标注方法在大数据环境下可以得到很好地推广",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "35",
+      "sentence": "图学习模型是一种重要的半监督模型图像标注技术之_。 基于图学习算法的具体步骤是：图节点可以用每幅图像或者标注关键词表示，边可以用标注关键词之间或者图像之间的相似关系来表示，通过图学习算法来实现标注，即信息从训练图像上传递到待标注图像上，以此来完成标注任务。",
+      "entities": [
+        {
+          "entity_id": "35_e1",
+          "mention": "图学习模型",
+          "normalized_name": "图学习模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图学习模型是一种重要的半监督模型图像标注技术之_",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e2",
+          "mention": "图学习算法",
+          "normalized_name": "图学习算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "基于图学习算法的具体步骤是",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "36",
+      "sentence": "Pan首先将图学习模型应用于图像标注领域，提出了一种基于图模型的自动图像标注方法（Graph-based Auto-matic Caption，GCap），该方法的主要思想是：将图像、图像区域以及标注词分别作为3种不同类型的图的节点，并根据它们之间的相关性来连接构造图。 这种方法初步提出了图模型标注的基本思想，对于图像节点之间的权值问题以及标注词与标注词、图像与图像之间的相关性问题考虑的较少。图像标注结果不理想。",
+      "entities": [
+        {
+          "entity_id": "36_e1",
+          "mention": "Pan",
+          "normalized_name": "Pan",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Pan首先将图学习模型应用于图像标注领域",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e2",
+          "mention": "图学习模型",
+          "normalized_name": "图学习模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Pan首先将图学习模型应用于图像标注领域",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e3",
+          "mention": "自动图像标注方法（Graph-based Auto-matic Caption，GCap）",
+          "normalized_name": "Graph-based Auto-matic Caption (GCap)",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提出了一种基于图模型的自动图像标注方法（Graph-based Auto-matic Caption，GCap）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e4",
+          "mention": "图模型",
+          "normalized_name": "图模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于图模型的自动图像标注方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "与图学习模型可能为同一实体"
+        }
+      ]
+    },
+    {
+      "sentence_id": "37",
+      "sentence": "在该框架下，基于图的图像标注被分为两个阶段来完成，即基本图像标注与图像标注改善。 TongH等人提出的通过视觉相似度来标注关键词，但是只考虑了图像间的相似度，构建k-NN相似图，没有考虑关键词间的相关性。 Liu等人在2006年提出的自适应图模型标注方法的基础上提出了一个基于图模型的最近邻生成链（Nearest Span-ning Chain,NSC）方法来标注图像，在该模型中给出了图像相似性的统计估计。",
+      "entities": [
+        {
+          "entity_id": "37_e1",
+          "mention": "TongH",
+          "normalized_name": "TongH",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "TongH等人提出的通过视觉相似度来标注关键词",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e2",
+          "mention": "k-NN相似图",
+          "normalized_name": "k-NN相似图",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "构建k-NN相似图",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e3",
+          "mention": "Liu",
+          "normalized_name": "Liu",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Liu等人在2006年提出的自适应图模型标注方法的基础上提出了一个基于图模型的最近邻生成链",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e4",
+          "mention": "自适应图模型标注方法",
+          "normalized_name": "自适应图模型标注方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Liu等人在2006年提出的自适应图模型标注方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "37_e5",
+          "mention": "基于图模型的最近邻生成链（Nearest Span-ning Chain,NSC）方法",
+          "normalized_name": "基于图模型的最近邻生成链（Nearest Spanning Chain, NSC）方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提出了一个基于图模型的最近邻生成链（Nearest Span-ning Chain,NSC）方法来标注图像",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "38",
+      "sentence": "Liu等人在2006年提出的自适应图模型标注方法的基础上提出了一个基于图模型的最近邻生成链（Nearest Span-ning Chain,NSC）方法来标注图像，在该模型中给出了图像相似性的统计估计。 将基于图学习的图像标注技术向前推动了一步。",
+      "entities": [
+        {
+          "entity_id": "38_e1",
+          "mention": "Liu等人",
+          "normalized_name": "Liu等人",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Liu等人在2006年提出的自适应图模型标注方法的基础上",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "姓氏+等人，未给出全名，但可唯一指代该研究团队"
+        },
+        {
+          "entity_id": "38_e2",
+          "mention": "自适应图模型标注方法",
+          "normalized_name": "自适应图模型标注方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Liu等人在2006年提出的自适应图模型标注方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e3",
+          "mention": "基于图模型的最近邻生成链（Nearest Span-ning Chain,NSC）方法",
+          "normalized_name": "基于图模型的最近邻生成链（Nearest Spanning Chain, NSC）方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提出了一个基于图模型的最近邻生成链（Nearest Span-ning Chain,NSC）方法来标注图像",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "38_e4",
+          "mention": "基于图学习的图像标注技术",
+          "normalized_name": "基于图学习的图像标注技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将基于图学习的图像标注技术向前推动了一步",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "39",
+      "sentence": "除了基于图学习的半监督图像标注的方法，其他半监督学习的方法也得到关注， $\\mathrm { Z h u } ^ { \\mathrm { ~ B 3 } }$ 总结了半监督学习的一些方法，其中基于图拉普拉斯的半监督学习方法得到了很多关注，许多相关算法被用于网络图像标注。Ma等人4提出了一个基于稀疏结构化特征选择的网络图像标注方法，主要应用了图拉普拉斯半监督学习的方法，同时进行特征选择，考虑了不同特征之间的关联。",
+      "entities": [
+        {
+          "entity_id": "39_e1",
+          "mention": "Zhu",
+          "normalized_name": "Zhu",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Zhu总结了半监督学习的一些方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e2",
+          "mention": "Ma等人",
+          "normalized_name": "Ma等人",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Ma等人提出了一个基于稀疏结构化特征选择的网络图像标注方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e3",
+          "mention": "半监督学习",
+          "normalized_name": "半监督学习",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "其他半监督学习的方法也得到关注",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e4",
+          "mention": "基于图拉普拉斯的半监督学习方法",
+          "normalized_name": "基于图拉普拉斯的半监督学习方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于图拉普拉斯的半监督学习方法得到了很多关注",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e5",
+          "mention": "基于稀疏结构化特征选择的网络图像标注方法",
+          "normalized_name": "基于稀疏结构化特征选择的网络图像标注方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Ma等人提出了一个基于稀疏结构化特征选择的网络图像标注方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e6",
+          "mention": "图拉普拉斯半监督学习",
+          "normalized_name": "图拉普拉斯半监督学习",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主要应用了图拉普拉斯半监督学习的方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e7",
+          "mention": "特征选择",
+          "normalized_name": "特征选择",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "同时进行特征选择",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "40",
+      "sentence": "尽管图拉普拉斯有比较好的性能，获得了较广泛的应用， $\\operatorname { K i m }$ 等人指出图拉普拉斯的恒定零空间导致其解偏向一个常函数，对于动态的情况，具有较差的推断能力。 并提出了二阶Hessian能，它可以使函数值随着测地距离线性变化，而不是恒定为某一值，同时更好地保持局部流形结构。 该种方法提出后得到了广泛的应用。",
+      "entities": [
+        {
+          "entity_id": "40_e1",
+          "mention": "图拉普拉斯",
+          "normalized_name": "图拉普拉斯",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "尽管图拉普拉斯有比较好的性能",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e2",
+          "mention": "Kim",
+          "normalized_name": "Kim",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Kim等人指出图拉普拉斯的恒定零空间",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e3",
+          "mention": "恒定零空间",
+          "normalized_name": "恒定零空间",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图拉普拉斯的恒定零空间导致其解偏向一个常函数",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e4",
+          "mention": "二阶Hessian能",
+          "normalized_name": "二阶Hessian能",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "并提出了二阶Hessian能",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e5",
+          "mention": "局部流形结构",
+          "normalized_name": "局部流形结构",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "更好地保持局部流形结构",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "41",
+      "sentence": "大规模的图像信息是存在很多噪声的，与小范围的、明确的图像标注又有差别。 田璟等人提出一种基于概率距离尺度学习的图像标注方法。该方法利用距离尺度的方法得到语义上的距离尺度，将概率主题模型的方法用于挖掘网络中大量模糊的，潜在的但是不确定的相关信息，改进了图像标注的性能。",
+      "entities": [
+        {
+          "entity_id": "41_e1",
+          "mention": "田璟",
+          "normalized_name": "田璟",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "田璟等人提出一种基于概率距离尺度学习的图像标注方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e2",
+          "mention": "基于概率距离尺度学习的图像标注方法",
+          "normalized_name": "基于概率距离尺度学习的图像标注方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "田璟等人提出一种基于概率距离尺度学习的图像标注方法",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "41_e3",
+          "mention": "概率主题模型",
+          "normalized_name": "概率主题模型",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将概率主题模型的方法用于挖掘网络中大量模糊的，潜在的但是不确定的相关信息",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "42",
+      "sentence": "对图像自动标注方法进行研究、分析后发现图像自动标注方法研究是当前热点问题之一。 在图像标注方法研究方面，研究者们做出了很多努力，对图像自动标注领域做出了贡献。",
+      "entities": [
+        {
+          "entity_id": "42_e1",
+          "mention": "图像自动标注方法",
+          "normalized_name": "图像自动标注方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对图像自动标注方法进行研究、分析后发现图像自动标注方法研究是当前热点问题之一",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e2",
+          "mention": "图像自动标注领域",
+          "normalized_name": "图像自动标注领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对图像自动标注领域做出了贡献",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "44",
+      "sentence": "早期的图像标注方法，虽然标注的准确率不高，但是为图像标注领域的发展提供了很好的方法和思路，开后了图像信息处理崭新的一步。",
+      "entities": [
+        {
+          "entity_id": "44_e1",
+          "mention": "图像标注方法",
+          "normalized_name": "图像标注方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "早期的图像标注方法",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指代一类方法而非具体命名方法，但图情领域放宽规则下可抽取"
+        },
+        {
+          "entity_id": "44_e2",
+          "mention": "图像标注领域",
+          "normalized_name": "图像标注领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为图像标注领域的发展提供了很好的方法和思路",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "领域名称较泛，但具有独立学术命名"
+        },
+        {
+          "entity_id": "44_e3",
+          "mention": "图像信息处理",
+          "normalized_name": "图像信息处理",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "开启了图像信息处理崭新的一步",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "领域名称较泛，但具有独立学术命名"
+        }
+      ]
+    },
+    {
+      "sentence_id": "45",
+      "sentence": "早期的分类器只能实现图像与关键词之间的一对一标注，后来经过对分类器的改进，可以实现一对多的分类。 但是基于分类的图像标注，无论是一对一的分类方式还是一对多的分类方法，都在不同程度上受到分类器个数的约束和限制，对于大数据环境下的图像或者大量关键词的标注情况不适用。但是，基于分类模型的图像标注在图像识别和检索方面有很明显的优越性。",
+      "entities": [
+        {
+          "entity_id": "45_e1",
+          "mention": "分类器",
+          "normalized_name": "分类器",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "早期的分类器只能实现图像与关键词之间的一对一标注",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指代具体分类器软件或算法实现，但原文未给出名称，属于泛化指称，根据召回优先原则暂保留"
+        },
+        {
+          "entity_id": "45_e2",
+          "mention": "图像标注",
+          "normalized_name": "图像标注",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于分类的图像标注，无论是一对一的分类方式还是一对多的分类方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "45_e3",
+          "mention": "图像识别",
+          "normalized_name": "图像识别",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于分类模型的图像标注在图像识别和检索方面有很明显的优越性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "45_e4",
+          "mention": "检索",
+          "normalized_name": "检索",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于分类模型的图像标注在图像识别和检索方面有很明显的优越性",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'检索'为领域通用概念，但作为独立学术术语可抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "46",
+      "sentence": "相关模型的图像标注方法是通过构建一个概率统计模型来计算图像内容和标注关键词之间的联合概率。 图像底层特征与标注关键词之间不是一一对应的，联系不是太紧密。与分类模型相比少了图像底层特征的提取，标注过程相对简洁。但是要想准确得到图像内容与标注词之间的联合概率，就要分析语义关键词之间存在的共生概率关系，语义关键词之间的不独立性，会造成计算得到联合概率不准确，而影响标注结果。",
+      "entities": [
+        {
+          "entity_id": "46_e1",
+          "mention": "概率统计模型",
+          "normalized_name": "概率统计模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过构建一个概率统计模型来计算图像内容和标注关键词之间的联合概率",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e2",
+          "mention": "图像底层特征",
+          "normalized_name": "图像底层特征",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图像底层特征与标注关键词之间不是一一对应的",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e3",
+          "mention": "分类模型",
+          "normalized_name": "分类模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与分类模型相比少了图像底层特征的提取",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "46_e4",
+          "mention": "语义关键词",
+          "normalized_name": "语义关键词",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "分析语义关键词之间存在的共生概率关系",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "47",
+      "sentence": "基于半监督模型图像标注方法的优点是在学习阶段可以利用更多的数据，更加适合于已标注的训练数据量相对较小、总数据量较大的情况。这种图像标注方法在大数据环境下可以得到很好地推广。但是该种标注方法也有缺点，在标注的过程中必须考虑图像间的权值问题，以及图像与图像之间，词与词之间，图像与词语之间的相关性问题，而这些问题也是基于图像标注过程中的关键点与难点。",
+      "entities": [
+        {
+          "entity_id": "47_e1",
+          "mention": "半监督模型图像标注方法",
+          "normalized_name": "半监督模型图像标注方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于半监督模型图像标注方法的优点是在学习阶段可以利用更多的数据",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "47_e2",
+          "mention": "大数据环境",
+          "normalized_name": "大数据环境",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这种图像标注方法在大数据环境下可以得到很好地推广",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "48",
+      "sentence": "基于分类模型的图像标注方法是一种有监督的图像标注方法，需要根据反馈信息调整分类器，虽然正确率有一定的提高，但是要花大量的人力、物力，标注成本较高。相关模型的图像标注方法是一种无监督的图像标注方法，人力成本低，但是图像底层特征与高层语义之间的鸿沟以及语义之间的不独立性，会导致联合概率计算的不准确。半监督模型的图像标注方法利用有标注的图像信息和未标注的图像信息进行学习，增加参与学习的图像数量。但是高层语义与底层视觉特征之间存在“语义鸿沟”，单纯地用增加学习的图片数量，不能提高图像标注的准确率。",
+      "entities": [
+        {
+          "entity_id": "48_e1",
+          "mention": "基于分类模型的图像标注方法",
+          "normalized_name": "基于分类模型的图像标注方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "基于分类模型的图像标注方法是一种有监督的图像标注方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e2",
+          "mention": "相关模型的图像标注方法",
+          "normalized_name": "相关模型的图像标注方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "相关模型的图像标注方法是一种无监督的图像标注方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e3",
+          "mention": "语义鸿沟",
+          "normalized_name": "语义鸿沟",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图像底层特征与高层语义之间的鸿沟",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "48_e4",
+          "mention": "半监督模型的图像标注方法",
+          "normalized_name": "半监督模型的图像标注方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "半监督模型的图像标注方法利用有标注的图像信息和未标注的图像信息进行学习",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "49",
+      "sentence": "文中提到的图像标注方法，都在一定程度上解决了语义鸿沟的问题。但是图像处理技术方面的欠缺，也对图像自动标注技术的研究与发展有一定的影响。比如，为了对图像区域进行分类，提取图像的颜色、纹理、形状等底层特征，原来的图像特征会急剧下降； 图像分割技术尚不成熟，在很大程度上会影响语义关键词的提取；",
+      "entities": [
+        {
+          "entity_id": "49_e1",
+          "mention": "语义鸿沟",
+          "normalized_name": "语义鸿沟",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "都在一定程度上解决了语义鸿沟的问题",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "49_e2",
+          "mention": "图像自动标注技术",
+          "normalized_name": "图像自动标注技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对图像自动标注技术的研究与发展有一定的影响",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "49_e3",
+          "mention": "图像分割技术",
+          "normalized_name": "图像分割技术",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图像分割技术尚不成熟",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "51",
+      "sentence": "近年来，随着机器学习的出现，越来越多的机器学习方法被用于图像标注，无监督学习、有监督学习与半监督学习的图像标注技术都存在不足。 研究者们在图像标注领域仍然需要花费大量的时间进行研究。",
+      "entities": [
+        {
+          "entity_id": "51_e1",
+          "mention": "机器学习",
+          "normalized_name": "机器学习",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "随着机器学习的出现",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "51_e2",
+          "mention": "机器学习方法",
+          "normalized_name": "机器学习方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "越来越多的机器学习方法被用于图像标注",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "51_e3",
+          "mention": "无监督学习",
+          "normalized_name": "无监督学习",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "无监督学习、有监督学习与半监督学习的图像标注技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "51_e4",
+          "mention": "有监督学习",
+          "normalized_name": "有监督学习",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "无监督学习、有监督学习与半监督学习的图像标注技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "51_e5",
+          "mention": "半监督学习",
+          "normalized_name": "半监督学习",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "无监督学习、有监督学习与半监督学习的图像标注技术",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "51_e6",
+          "mention": "图像标注",
+          "normalized_name": "图像标注",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图像标注技术",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "52",
+      "sentence": "研究者们在图像标注领域仍然需要花费大量的时间进行研究。 在未来，随着信息技术的不断发展，机器学习是图像标注领域的重要研究方向。",
+      "entities": [
+        {
+          "entity_id": "52_e1",
+          "mention": "图像标注领域",
+          "normalized_name": "图像标注领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究者们在图像标注领域仍然需要花费大量的时间进行研究",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "领域名称，有独立学术命名"
+        },
+        {
+          "entity_id": "52_e2",
+          "mention": "机器学习",
+          "normalized_name": "机器学习",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "机器学习是图像标注领域的重要研究方向",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "53",
+      "sentence": "无监督学习直接通过模型统计，得到底层特征与高层语义之间的联合概率来标注图像。 语义与图像之间没有一一对应的关系，很多时候得到的结果说服力不强。有监督学习需要花费大量的人力、物力来训练分类器，并且还会受到分类器的限制；半监督学习模型，有标注的图像类别和未标注的图像类别都将被用来学习，但是高层语义与底层视觉特征之间存在“语义鸿沟”4；如果机器学习可以主动的选择一部分价值很高的无标签样本，进行人工标注，这无疑会增加图像标注的性能。主动学习的方法虽然已经在几年前提出，但是在图像自动标注的应用方面仍未得到推广。如何利用少量的已知标签样本来提高分类模型的泛化性能是目前主动学习算法中需要克服的技术难点[4，有待于进一步改进，以提高图像标注的准确率。",
+      "entities": [
+        {
+          "entity_id": "53_e1",
+          "mention": "语义鸿沟",
+          "normalized_name": "语义鸿沟",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "高层语义与底层视觉特征之间存在“语义鸿沟”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "53_e2",
+          "mention": "主动学习",
+          "normalized_name": "主动学习",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主动学习的方法虽然已经在几年前提出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "53_e3",
+          "mention": "无监督学习",
+          "normalized_name": "无监督学习",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "无监督学习直接通过模型统计",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "53_e4",
+          "mention": "有监督学习",
+          "normalized_name": "有监督学习",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有监督学习需要花费大量的人力、物力来训练分类器",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "53_e5",
+          "mention": "半监督学习",
+          "normalized_name": "半监督学习",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "半监督学习模型，有标注的图像类别和未标注的图像类别都将被用来学习",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "54",
+      "sentence": "随着微信等网络社交平台的推广、普及，社交网络用户量不断增加，图像、视频等多媒体信息已经逐渐出现在我们的日常交流中，图像标注将朝着动态画面标注的方向发展。 可以将图像自动标注的方法用于视频的标注，这也是我们团队下一步的主要研究方向。",
+      "entities": [
+        {
+          "entity_id": "54_e1",
+          "mention": "微信",
+          "normalized_name": "微信",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "随着微信等网络社交平台的推广、普及",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "54_e2",
+          "mention": "图像标注",
+          "normalized_name": "图像标注",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图像标注将朝着动态画面标注的方向发展",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "54_e3",
+          "mention": "动态画面标注",
+          "normalized_name": "动态画面标注",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图像标注将朝着动态画面标注的方向发展",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "54_e4",
+          "mention": "图像自动标注",
+          "normalized_name": "图像自动标注",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "可以将图像自动标注的方法用于视频的标注",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

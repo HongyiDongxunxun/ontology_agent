@@ -1,0 +1,378 @@
+{
+  "base_name": "reviewed_full_7726",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "【摘要】本文从印刷型、电子型、特色数据库和网站建设等几个方面介绍了沈阳市图书馆信息资源建设的现状以及存在的问题，并就此提出了相应的解决对策。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "沈阳市图书馆",
+          "normalized_name": "沈阳市图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "沈阳市图书馆信息资源建设的现状",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "因为阅读纸介质文献比较轻松、随便,不受限制。 因此，我们认为,在相当长的时期内，印刷型文献信息资源不会消失，仍然是图书馆大多数读者喜欢利用的信息形态。 所以，我们在当前的网络环境下，仍然以印刷型文献信息资源为主要收藏对象。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "印刷型文献信息资源",
+          "normalized_name": "印刷型文献信息资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "印刷型文献信息资源不会消失，仍然是图书馆大多数读者喜欢利用的信息形态",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "仍然是图书馆大多数读者喜欢利用的信息形态",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处'图书馆'为泛称机构，但根据图情领域放宽规则，作为服务型组织实体抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "我们利用这些资源开办了语音室、电子文献借阅室、多媒体阅览室、光盘借阅室等,在读者服务方面发挥了很大的作用。 而且，电子文献信息资源的成本相对于图书报刊来说还是比较便宜的，如学术期刊数据库覆盖了5000余种较有影响的学术期刊; 同时，信息较集中，检索速度快，查准率和查全率都较高，弥补了纸介质文献查阅笨重复杂的不足。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "语音室",
+          "normalized_name": "语音室",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "我们利用这些资源开办了语音室、电子文献借阅室、多媒体阅览室、光盘借阅室等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为具体机构内的服务设施，但名称具体可识别"
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "电子文献借阅室",
+          "normalized_name": "电子文献借阅室",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "我们利用这些资源开办了语音室、电子文献借阅室、多媒体阅览室、光盘借阅室等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "多媒体阅览室",
+          "normalized_name": "多媒体阅览室",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "我们利用这些资源开办了语音室、电子文献借阅室、多媒体阅览室、光盘借阅室等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "光盘借阅室",
+          "normalized_name": "光盘借阅室",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "我们利用这些资源开办了语音室、电子文献借阅室、多媒体阅览室、光盘借阅室等",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e5",
+          "mention": "学术期刊数据库",
+          "normalized_name": "学术期刊数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "学术期刊数据库覆盖了5000余种较有影响的学术期刊",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "未给出具体数据库名称，但作为有名称的数据库类型实体，按图情领域放宽规则抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "此外还根据社会需求自建了“领导决策参考”、“家庭装修\"等实用型数据库。 这些数据库的建立，极大地丰富了馆藏内容，受到了读者的欢迎。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "领导决策参考",
+          "normalized_name": "领导决策参考",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "自建了“领导决策参考”、“家庭装修”等实用型数据库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "家庭装修",
+          "normalized_name": "家庭装修",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "自建了“领导决策参考”、“家庭装修”等实用型数据库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "为使沈阳市图书馆网站在互联网上真正拥有一定的位置，扩大图书馆的知名度，增加网站的点击率，首先，对整个网站进行了规划，确定了网站内容风格及定位，力求网站有自己的风格又不失一般图书馆的传统特点，充分体现沈阳市图书馆的\"读者至上，服务第一，以人为本，开拓创新\"的服务理念; 其次进行网页的设计，设计新颖的网页页面、字号合理、图片真实清晰、新闻性的栏目及时更新，建设各种数字资源，并有机的融合成网站风格的整体；",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "沈阳市图书馆",
+          "normalized_name": "沈阳市图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "为使沈阳市图书馆网站在互联网上真正拥有一定的位置",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "沈阳市图书馆网站",
+          "normalized_name": "沈阳市图书馆网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "为使沈阳市图书馆网站在互联网上真正拥有一定的位置",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "读者至上，服务第一，以人为本，开拓创新",
+          "normalized_name": "读者至上，服务第一，以人为本，开拓创新",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "充分体现沈阳市图书馆的\"读者至上，服务第一，以人为本，开拓创新\"的服务理念",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "如在线帮助、读者天地、电子商务等功能尚不完善。 一是我们没有足够的资金购置相应的软件设备，只能下载一些免费的软件，这些软件是节省了资金，但其功能有限、限时使用的特点是无法弥补的，给我们的工作带来了一定的困难；二是我们现用的全文检索系统平台TRS已是四年前的产品了，由于经费有限，现今无法更新，自建数据库无法实现跨库检索； 除自建特色数据库外，网上读书栏目也很不完善。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "全文检索系统平台TRS",
+          "normalized_name": "全文检索系统平台TRS",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "我们现用的全文检索系统平台TRS已是四年前的产品了",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "除自建特色数据库外，网上读书栏目也很不完善。 目前我们使用的是电子图书提供商提供给我们的免费电子图书,仅千余册,无法满足读者的大量需求，也无法与同行业的其它图书馆网站网上读书栏目相比。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "电子图书提供商",
+          "normalized_name": "电子图书提供商",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "电子图书提供商提供给我们的免费电子图书",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "未提供具体名称，但根据图情领域放宽规则，作为有功能限定的服务组织应抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "网络环境下，我馆信息资源建设的策略是：正确处理好馆藏价值与读者需求、收藏与利用、印刷型文献与电子文献、现实馆藏与虚拟馆藏等各方面的关系。运用有限的资金，配合老工业基地的振兴打造沈阳市图书馆网上信息的品牌栏目，并探索走出一条信息资源建设的市场化的路子。同时做好运营工作，充分发挥我馆网站及信息资源建设的作用，构建多层次的、具有",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "我馆",
+          "normalized_name": "沈阳市图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "我馆信息资源建设的策略",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "根据上下文推断为沈阳市图书馆，但原文仅用'我馆'，需确认具体机构"
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "沈阳市图书馆",
+          "normalized_name": "沈阳市图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "打造沈阳市图书馆网上信息的品牌栏目",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "老工业基地",
+          "normalized_name": "老工业基地",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "配合老工业基地的振兴",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "指代特定区域振兴现象，但未明确具体基地名称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "电子文献具有信息存储量大、实效性强、形式多样、检索方便、易于复制，以及可被众多读者同时使用等特点。 因此，我们将加大对电子文献的收藏比重，侧重网络数据库、网络版光盘数据库和全文电子期刊及检索性二次文献的引进。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "网络数据库",
+          "normalized_name": "网络数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "侧重网络数据库、网络版光盘数据库和全文电子期刊及检索性二次文献的引进",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "图情领域放宽规则：有名称的数据库应抽取，但此处为泛称，confidence较低"
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "网络版光盘数据库",
+          "normalized_name": "网络版光盘数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "侧重网络数据库、网络版光盘数据库和全文电子期刊及检索性二次文献的引进",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "图情领域放宽规则：有名称的数据库应抽取，但此处为泛称，confidence较低"
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "全文电子期刊",
+          "normalized_name": "全文电子期刊",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "侧重网络数据库、网络版光盘数据库和全文电子期刊及检索性二次文献的引进",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "图情领域放宽规则：有名称的电子期刊应抽取，但此处为泛称，confidence较低"
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "检索性二次文献",
+          "normalized_name": "检索性二次文献",
+          "candidate_l3": "index",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "侧重网络数据库、网络版光盘数据库和全文电子期刊及检索性二次文献的引进",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "图情领域放宽规则：有名称的二次文献应抽取，但此处为泛称，confidence较低"
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "网络环境下，图书馆的信息资源不仅仅是本馆拥有的文献载体的集合“物理馆藏”，更大部分是馆外网络上的虚拟信息资源。 为此，我们将有针对性地收集网上免费资源,注重对网上资源进行选择、加工、组织，使之成为方便读者利用的本馆资源。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "物理馆藏",
+          "normalized_name": "物理馆藏",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆的信息资源不仅仅是本馆拥有的文献载体的集合“物理馆藏”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "虚拟信息资源",
+          "normalized_name": "虚拟信息资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "更大部分是馆外网络上的虚拟信息资源",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

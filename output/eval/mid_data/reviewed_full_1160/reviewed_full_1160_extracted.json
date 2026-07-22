@@ -1,0 +1,2803 @@
+{
+  "base_name": "reviewed_full_1160",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "1966 年发生的延续十年的\"文化大革命”,造成我国社会发展的全面破坏和倒退。我国档案工作、档案教育、档案学自然也逃脱不了十年动乱带来的厄运，受到极严重的挫折。此间，正当的档案文献编纂和公布活动被无端禁止，而为了不可告人的目的编纂的 $\\langle x \\rangle ^ { }$ 反党言论集》， $\\langle \\langle { \\mathcal { X } } \\rangle { } ~ $ 黑话集》等等，则在社会上横行无阻广泛传播，造谣诬陷，颠倒历史到了无以复加的程度，作为反面教材的典型，从中倒是有许多深刻的教训可以吸取的。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "文化大革命",
+          "normalized_name": "文化大革命",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "1966 年发生的延续十年的\"文化大革命\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "档案工作",
+          "normalized_name": "档案工作",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国档案工作、档案教育、档案学自然也逃脱不了十年动乱带来的厄运",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "档案教育",
+          "normalized_name": "档案教育",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国档案工作、档案教育、档案学自然也逃脱不了十年动乱带来的厄运",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "档案学",
+          "normalized_name": "档案学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国档案工作、档案教育、档案学自然也逃脱不了十年动乱带来的厄运",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e5",
+          "mention": "档案文献编纂",
+          "normalized_name": "档案文献编纂",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "正当的档案文献编纂和公布活动被无端禁止",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e6",
+          "mention": "反党言论集",
+          "normalized_name": "反党言论集",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "编纂的《反党言论集》",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "原文有OCR乱码，但可识别"
+        },
+        {
+          "entity_id": "1_e7",
+          "mention": "黑话集",
+          "normalized_name": "黑话集",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "编纂的《黑话集》",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "原文有OCR乱码，但可识别"
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "1978 年召开的党的十一届三中全会,是我党历史发展的重要转折点，它重新确立了解放思想，实事求是的思想路线,确立了以经济建设为中心，坚持四项基本原则，坚持改革开放的基本路线，为拨乱反正，在危急关头挽救党和国家的命运，使之重新走上正确的发展道路建立了不朽功绩。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "党的十一届三中全会",
+          "normalized_name": "党的十一届三中全会",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "1978 年召开的党的十一届三中全会",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "解放思想",
+          "normalized_name": "解放思想",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "重新确立了解放思想，实事求是的思想路线",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "实事求是",
+          "normalized_name": "实事求是",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "重新确立了解放思想，实事求是的思想路线",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "以经济建设为中心",
+          "normalized_name": "以经济建设为中心",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "确立了以经济建设为中心，坚持四项基本原则，坚持改革开放的基本路线",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e5",
+          "mention": "四项基本原则",
+          "normalized_name": "四项基本原则",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "坚持四项基本原则",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e6",
+          "mention": "改革开放",
+          "normalized_name": "改革开放",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "坚持改革开放的基本路线",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "确定开放历史档案的方针，是党的十一届三中全会以后，我国档案事业发展的最大的具有战略意义的转变，从根本上改变我国历史上长期存在的档案封闭状态，使档案向全社会开放，为开发档案信息资源，广泛开展利用奠定了正确的政策基础。 为了贯彻这一方针，国家档案局于1980年5月23日—6月6日在北京召开了全国省以上档案馆工作会议，及时传达了中共中央书记处关于开放历史档案的决定。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "开放历史档案",
+          "normalized_name": "开放历史档案",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "确定开放历史档案的方针",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "党的十一届三中全会",
+          "normalized_name": "党的十一届三中全会",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "党的十一届三中全会以后",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "国家档案局",
+          "normalized_name": "国家档案局",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国家档案局于1980年5月23日—6月6日在北京召开了全国省以上档案馆工作会议",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "全国省以上档案馆工作会议",
+          "normalized_name": "全国省以上档案馆工作会议",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "国家档案局于1980年5月23日—6月6日在北京召开了全国省以上档案馆工作会议",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "中共中央书记处",
+          "normalized_name": "中共中央书记处",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中共中央书记处关于开放历史档案的决定",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "曾三同志在会上做了《加速档案馆工作的恢复和整顿，积极开放历史档案，为社会主义现代化建设服务》的重要讲话。 他明确指出：“开放历史档案是中央确定的方针，这是一个新方针，也是档案利用工作的新发展，以前没有这样做过，也没有这样提过。 我们要敢于做前人没有做过的事业，把革命精神和科学态度结合起来，贯彻执行这一方针。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "曾三",
+          "normalized_name": "曾三",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "曾三同志在会上做了《加速档案馆工作的恢复和整顿，积极开放历史档案，为社会主义现代化建设服务》的重要讲话",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "《加速档案馆工作的恢复和整顿，积极开放历史档案，为社会主义现代化建设服务》",
+          "normalized_name": "《加速档案馆工作的恢复和整顿，积极开放历史档案，为社会主义现代化建设服务》",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "曾三同志在会上做了《加速档案馆工作的恢复和整顿，积极开放历史档案，为社会主义现代化建设服务》的重要讲话",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e3",
+          "mention": "开放历史档案",
+          "normalized_name": "开放历史档案",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "开放历史档案是中央确定的方针",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为concept"
+        },
+        {
+          "entity_id": "4_e4",
+          "mention": "中央",
+          "normalized_name": "中央",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "开放历史档案是中央确定的方针",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "指代中共中央，但原文未明确全称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "我们要敢于做前人没有做过的事业，把革命精神和科学态度结合起来，贯彻执行这一方针。 ”①加强档案编研是开放历史档案的重要方式和手段。 关于档案编研的内容，曾三在这次会议的讲话中,再一次重申周恩来总理生前多次对档案工作者的指示，“档案馆要进行历史研究，即要研究、汇编档案史料;",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "档案编研",
+          "normalized_name": "档案编研",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加强档案编研是开放历史档案的重要方式和手段",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "开放历史档案",
+          "normalized_name": "开放历史档案",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "开放历史档案的重要方式和手段",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "曾三",
+          "normalized_name": "曾三",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "曾三在这次会议的讲话中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "周恩来总理",
+          "normalized_name": "周恩来",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "周恩来总理生前多次对档案工作者的指示",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e5",
+          "mention": "档案馆",
+          "normalized_name": "档案馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "档案馆要进行历史研究",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称但此处指具体机构类型，结合语境可视为具体实体"
+        },
+        {
+          "entity_id": "5_e6",
+          "mention": "档案史料",
+          "normalized_name": "档案史料",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究、汇编档案史料",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "我国现代档案馆(室)编研工作的大发展，正是从贯彻党的开放历史档案的方针之后开始的。 曾三同志作为新中国档案事业的主要组织者和领导者，忠实执行周恩来总理关于档案馆要开展编研工作，档案工作者要学习司马迁等一系列重要指示，把编研工作摆在档案馆(室)工作的重要地位，在继承我国档案编研的优良传统,推动我国档案编研工作的发展方面做出了卓越的贡献，在档案文献编纂学学科建设上起着不可替代的巨大作用。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "曾三",
+          "normalized_name": "曾三",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "曾三同志作为新中国档案事业的主要组织者和领导者",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "周恩来",
+          "normalized_name": "周恩来",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "忠实执行周恩来总理关于档案馆要开展编研工作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "档案文献编纂学",
+          "normalized_name": "档案文献编纂学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在档案文献编纂学学科建设上起着不可替代的巨大作用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "随着我国以法治国战略的实施，档案事业的法制建设逐步加强。 在20世纪80年代陆续颁布了《机关档案工作条例》、《档案馆工作通则》和《开发利用科学技术档案信息资源暂行办法》等,在此基础上颁布了《中华人民共和国档案法》,在上述法律、法规中都规定了有关档案公布、利用和编研工作的条款，使档案编研工作获得了法律的保障，在推动档案编研工作的发展从而促进档案文献编纂学学科建设中起了重要的作用。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "以法治国战略",
+          "normalized_name": "以法治国战略",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "随着我国以法治国战略的实施",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "《机关档案工作条例》",
+          "normalized_name": "《机关档案工作条例》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在20世纪80年代陆续颁布了《机关档案工作条例》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "《档案馆工作通则》",
+          "normalized_name": "《档案馆工作通则》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在20世纪80年代陆续颁布了《机关档案工作条例》、《档案馆工作通则》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "《开发利用科学技术档案信息资源暂行办法》",
+          "normalized_name": "《开发利用科学技术档案信息资源暂行办法》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在20世纪80年代陆续颁布了《机关档案工作条例》、《档案馆工作通则》和《开发利用科学技术档案信息资源暂行办法》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e5",
+          "mention": "《中华人民共和国档案法》",
+          "normalized_name": "《中华人民共和国档案法》",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在此基础上颁布了《中华人民共和国档案法》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e6",
+          "mention": "档案编研工作",
+          "normalized_name": "档案编研工作",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使档案编研工作获得了法律的保障",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e7",
+          "mention": "档案文献编纂学",
+          "normalized_name": "档案文献编纂学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "促进档案文献编纂学学科建设",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "在党的十一届三中全会路线和党的开放历史档案方针的指引下，我国档案编研工作获得了史无前例的大发展。 省、市档案部门开始普遍设立编研机构，基层档案馆(室)开始配备了专职或兼职档案编研人员。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "党的十一届三中全会",
+          "normalized_name": "党的十一届三中全会",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "在党的十一届三中全会路线和党的开放历史档案方针的指引下",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "开放历史档案方针",
+          "normalized_name": "开放历史档案方针",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在党的十一届三中全会路线和党的开放历史档案方针的指引下",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "档案编研工作",
+          "normalized_name": "档案编研工作",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国档案编研工作获得了史无前例的大发展",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "省、市档案部门",
+          "normalized_name": "省、市档案部门",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "省、市档案部门开始普遍设立编研机构",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称但带地域修饰，视为具体机构"
+        },
+        {
+          "entity_id": "8_e5",
+          "mention": "编研机构",
+          "normalized_name": "编研机构",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "省、市档案部门开始普遍设立编研机构",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "可能为泛称，但作为具体机构类型抽取"
+        },
+        {
+          "entity_id": "8_e6",
+          "mention": "基层档案馆(室)",
+          "normalized_name": "基层档案馆(室)",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "基层档案馆(室)开始配备了专职或兼职档案编研人员",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称但带层级修饰，视为具体机构"
+        },
+        {
+          "entity_id": "8_e7",
+          "mention": "档案编研人员",
+          "normalized_name": "档案编研人员",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "基层档案馆(室)开始配备了专职或兼职档案编研人员",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称但指具体角色，抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "从中央到地方各级档案馆和各部门的档案室掀起了开展编研的热潮，这就是新中国成立以后档案编研的第二次高潮。 与第一次高潮不同，档案部门成了推动这次高潮的主力军。 据统计，从1980一1990年10年间，各级各类档案馆公开编辑出版的文献出版物达1871种，约计 98685万字?",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "新中国成立以后档案编研的第二次高潮",
+          "normalized_name": "新中国成立以后档案编研的第二次高潮",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "这就是新中国成立以后档案编研的第二次高潮",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "第一次高潮",
+          "normalized_name": "第一次高潮",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "与第一次高潮不同",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "在企业、科研机构等单位，科技档案编研普遍开展。 更值得重视的是,在这 20 年间,档案工作者还在结合馆藏进行历史研究方面，撰写了一批高质量的撰著型作品，向档案编研的高层次上迈进一大步。 仅举几例：1979年一1989年中央档案馆的同志在省以上刊物发表有关史料和史学方面的文章100 余篇,1988年——1999 年仅在《党的文献》上发表的有关党史研究、档案文献编纂理论研究及档案史料考证的文章就有100 余篇，如《关于中央党史理论研究的几个问题》《党的六届七中全会与若干历史问题决议》》、《介绍毛泽东同志有关理论学习问题的几件手稿》、《遵义会议决议最早版本时间是考》等，在有关方面引起较大的反响。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "中央档案馆",
+          "normalized_name": "中央档案馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中央档案馆的同志在省以上刊物发表有关史料和史学方面的文章100 余篇",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "《党的文献》",
+          "normalized_name": "《党的文献》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "仅在《党的文献》上发表的有关党史研究、档案文献编纂理论研究及档案史料考证的文章就有100 余篇",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "《关于中央党史理论研究的几个问题》",
+          "normalized_name": "《关于中央党史理论研究的几个问题》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如《关于中央党史理论研究的几个问题》《党的六届七中全会与若干历史问题决议》》、《介绍毛泽东同志有关理论学习问题的几件手稿》、《遵义会议决议最早版本时间是考》等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e4",
+          "mention": "《党的六届七中全会与若干历史问题决议》",
+          "normalized_name": "《党的六届七中全会与若干历史问题决议》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如《关于中央党史理论研究的几个问题》《党的六届七中全会与若干历史问题决议》》、《介绍毛泽东同志有关理论学习问题的几件手稿》、《遵义会议决议最早版本时间是考》等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e5",
+          "mention": "《介绍毛泽东同志有关理论学习问题的几件手稿》",
+          "normalized_name": "《介绍毛泽东同志有关理论学习问题的几件手稿》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如《关于中央党史理论研究的几个问题》《党的六届七中全会与若干历史问题决议》》、《介绍毛泽东同志有关理论学习问题的几件手稿》、《遵义会议决议最早版本时间是考》等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e6",
+          "mention": "《遵义会议决议最早版本时间是考》",
+          "normalized_name": "《遵义会议决议最早版本时间是考》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如《关于中央党史理论研究的几个问题》《党的六届七中全会与若干历史问题决议》》、《介绍毛泽东同志有关理论学习问题的几件手稿》、《遵义会议决议最早版本时间是考》等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "中国第一历史档案馆李鹏年、刘子杨、陈锵仪等编著《六部成语词典》、秦国经著的《中华明清档案指南》以及该馆出版的《明清档案与历史研究论文集》等，中国第二历史档案馆编撰的《民国大事典》，及该馆陈兴唐著《冯玉祥将军传》、孔庆泰著《中华民国政治制度史》等，黑龙江省档案馆的《黑龙江部分市、县建制时间考》、黑龙江省宁安县的《宁古塔考》，以及全国许多档案馆撰著的一大批有关明清史、近代史、现代史和党史，特别是地方史领域的\"档史\"结合论著，受到社会和史学界的重视，至于编史、修志等方面的成果更是大量的普遍的。 这一类档案编研成果的问世，证明了档案工作者素质和档案馆学术水平的不断提高，是档案工作者贯彻执行周恩来总理\"向司马迁学习\"的指示结出的硕果。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "中国第一历史档案馆",
+          "normalized_name": "中国第一历史档案馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中国第一历史档案馆李鹏年、刘子杨、陈锵仪等编著《六部成语词典》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "李鹏年",
+          "normalized_name": "李鹏年",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中国第一历史档案馆李鹏年、刘子杨、陈锵仪等编著《六部成语词典》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "刘子杨",
+          "normalized_name": "刘子杨",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中国第一历史档案馆李鹏年、刘子杨、陈锵仪等编著《六部成语词典》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "陈锵仪",
+          "normalized_name": "陈锵仪",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中国第一历史档案馆李鹏年、刘子杨、陈锵仪等编著《六部成语词典》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "《六部成语词典》",
+          "normalized_name": "《六部成语词典》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "中国第一历史档案馆李鹏年、刘子杨、陈锵仪等编著《六部成语词典》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e6",
+          "mention": "秦国经",
+          "normalized_name": "秦国经",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "秦国经著的《中华明清档案指南》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e7",
+          "mention": "《中华明清档案指南》",
+          "normalized_name": "《中华明清档案指南》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "秦国经著的《中华明清档案指南》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e8",
+          "mention": "《明清档案与历史研究论文集》",
+          "normalized_name": "《明清档案与历史研究论文集》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "该馆出版的《明清档案与历史研究论文集》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e9",
+          "mention": "中国第二历史档案馆",
+          "normalized_name": "中国第二历史档案馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中国第二历史档案馆编撰的《民国大事典》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e10",
+          "mention": "《民国大事典》",
+          "normalized_name": "《民国大事典》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "中国第二历史档案馆编撰的《民国大事典》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e11",
+          "mention": "陈兴唐",
+          "normalized_name": "陈兴唐",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "该馆陈兴唐著《冯玉祥将军传》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e12",
+          "mention": "《冯玉祥将军传》",
+          "normalized_name": "《冯玉祥将军传》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "该馆陈兴唐著《冯玉祥将军传》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e13",
+          "mention": "孔庆泰",
+          "normalized_name": "孔庆泰",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "孔庆泰著《中华民国政治制度史》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e14",
+          "mention": "《中华民国政治制度史》",
+          "normalized_name": "《中华民国政治制度史》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "孔庆泰著《中华民国政治制度史》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e15",
+          "mention": "黑龙江省档案馆",
+          "normalized_name": "黑龙江省档案馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "黑龙江省档案馆的《黑龙江部分市、县建制时间考》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e16",
+          "mention": "《黑龙江部分市、县建制时间考》",
+          "normalized_name": "《黑龙江部分市、县建制时间考》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "黑龙江省档案馆的《黑龙江部分市、县建制时间考》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e17",
+          "mention": "黑龙江省宁安县",
+          "normalized_name": "黑龙江省宁安县",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "黑龙江省宁安县的《宁古塔考》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e18",
+          "mention": "《宁古塔考》",
+          "normalized_name": "《宁古塔考》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "黑龙江省宁安县的《宁古塔考》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e19",
+          "mention": "周恩来",
+          "normalized_name": "周恩来",
+          "candidate_l3": "policy_advocate",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "周恩来总理\"向司马迁学习\"的指示",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e20",
+          "mention": "司马迁",
+          "normalized_name": "司马迁",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "周恩来总理\"向司马迁学习\"的指示",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "实践是理论发展的动力和源泉。大量丰富的档案文献编纂活动及其成果，为档案文献编纂学的繁荣奠定了坚实的基础。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "档案文献编纂活动",
+          "normalized_name": "档案文献编纂活动",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract",
+            "Event"
+          ],
+          "evidence": "大量丰富的档案文献编纂活动及其成果",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为Event"
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "档案文献编纂学",
+          "normalized_name": "档案文献编纂学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为档案文献编纂学的繁荣奠定了坚实的基础",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "档案馆(室)重视档案编研直接经验的积累，积极开展学术研究，在推动档案文献编纂学科建设方向起了重要的作用。“术先学后\"是应用学科形成和发展的一般规律。实践经验不一定就成为理论，但理论的形成和发展一定要有直接经验的积累。建国以来，特别是党的十一届三中全会以来，我国档案文献编纂工作者，在大量实践的基础上,以马克思主义的辩证唯物主义和历史唯物主义的世界观和方法论为指导，对档案文献编纂的理论、原则和方法进行了认真的探讨和研究，从档案文献编纂的性质、基本原则、社会功能等理论问题到编纂工作的历史和各个环节的原则、方法和要求等，研究、探索内容之深、领域之广、成果之繁富，超过历史上的任何时期。 其中朱金甫的《建国以来明清档案史料编纂工作概论》、《明清档案编辑实践丛谈》、陈鸣钟的《关于民国档案文献的编纂》、裴桐的《党中央的档案文献出版工作》、曹雁行的《中共党史文献编纂的原则与方法》、江乃文的《论我军军事档案编研中的几个问题》、何风云的《科技档案编研工作的理论与实践》、孙诚的《关于市、县档案馆编纂工作的几个问题》、俞玉储的《档案史料期刊编辑概论》、朱荣基的《应当重视开发近代中国海关档案史料资源》等等，都属于研究某一时期，某一领域档案文献编纂理论与方法的代表作品；",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "档案文献编纂学科",
+          "normalized_name": "档案文献编纂学科",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在推动档案文献编纂学科建设方向起了重要的作用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "马克思主义的辩证唯物主义和历史唯物主义的世界观和方法论",
+          "normalized_name": "马克思主义的辩证唯物主义和历史唯物主义的世界观和方法论",
+          "candidate_l3": "methodology",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以马克思主义的辩证唯物主义和历史唯物主义的世界观和方法论为指导",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "朱金甫",
+          "normalized_name": "朱金甫",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "其中朱金甫的《建国以来明清档案史料编纂工作概论》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "《建国以来明清档案史料编纂工作概论》",
+          "normalized_name": "《建国以来明清档案史料编纂工作概论》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "朱金甫的《建国以来明清档案史料编纂工作概论》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e5",
+          "mention": "《明清档案编辑实践丛谈》",
+          "normalized_name": "《明清档案编辑实践丛谈》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "朱金甫的《建国以来明清档案史料编纂工作概论》、《明清档案编辑实践丛谈》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e6",
+          "mention": "陈鸣钟",
+          "normalized_name": "陈鸣钟",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "陈鸣钟的《关于民国档案文献的编纂》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e7",
+          "mention": "《关于民国档案文献的编纂》",
+          "normalized_name": "《关于民国档案文献的编纂》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "陈鸣钟的《关于民国档案文献的编纂》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e8",
+          "mention": "裴桐",
+          "normalized_name": "裴桐",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "裴桐的《党中央的档案文献出版工作》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e9",
+          "mention": "《党中央的档案文献出版工作》",
+          "normalized_name": "《党中央的档案文献出版工作》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "裴桐的《党中央的档案文献出版工作》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e10",
+          "mention": "曹雁行",
+          "normalized_name": "曹雁行",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "曹雁行的《中共党史文献编纂的原则与方法》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e11",
+          "mention": "《中共党史文献编纂的原则与方法》",
+          "normalized_name": "《中共党史文献编纂的原则与方法》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "曹雁行的《中共党史文献编纂的原则与方法》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e12",
+          "mention": "江乃文",
+          "normalized_name": "江乃文",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "江乃文的《论我军军事档案编研中的几个问题》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e13",
+          "mention": "《论我军军事档案编研中的几个问题》",
+          "normalized_name": "《论我军军事档案编研中的几个问题》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "江乃文的《论我军军事档案编研中的几个问题》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e14",
+          "mention": "何风云",
+          "normalized_name": "何风云",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "何风云的《科技档案编研工作的理论与实践》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e15",
+          "mention": "《科技档案编研工作的理论与实践》",
+          "normalized_name": "《科技档案编研工作的理论与实践》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "何风云的《科技档案编研工作的理论与实践》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e16",
+          "mention": "孙诚",
+          "normalized_name": "孙诚",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "孙诚的《关于市、县档案馆编纂工作的几个问题》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e17",
+          "mention": "《关于市、县档案馆编纂工作的几个问题》",
+          "normalized_name": "《关于市、县档案馆编纂工作的几个问题》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "孙诚的《关于市、县档案馆编纂工作的几个问题》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e18",
+          "mention": "俞玉储",
+          "normalized_name": "俞玉储",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "俞玉储的《档案史料期刊编辑概论》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e19",
+          "mention": "《档案史料期刊编辑概论》",
+          "normalized_name": "《档案史料期刊编辑概论》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "俞玉储的《档案史料期刊编辑概论》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e20",
+          "mention": "朱荣基",
+          "normalized_name": "朱荣基",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "朱荣基的《应当重视开发近代中国海关档案史料资源》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e21",
+          "mention": "《应当重视开发近代中国海关档案史料资源》",
+          "normalized_name": "《应当重视开发近代中国海关档案史料资源》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "朱荣基的《应当重视开发近代中国海关档案史料资源》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "有关对典型史料汇编的编纂工作研讨和评议的主要有：李国荣的《略评康熙朝汉文朱批奏折汇编》、叶万忠的《编辑出版苏州市人民公社档案资料选编的自我评议》、冯绍霆的《上海工人三次武装起义的编纂工作》,张素慧的《谈陕甘宁边区政府档案文件选编的编纂》、时连泉的《 山东革命历史档案资料选编 编辑出版工作》,陈集忍、邵斌的《忠于史料,高于史料一—关于档案史料编纂工作的随想》等等。 这一些论文,通过对某些典型汇编的剖析，探讨了有关档案文献编纂从选题、选材、考订、加工、版本、编排、注释、加按、作序等一系列原则、方法问题，大多甘苦之言，颇具真知灼见。特别值得一提的是，中国档案学会档案文献编纂学术委员会在组织、交流我国档案馆(室)档案文献编纂经验方面起到了历史性的作用。它在1986、1991年分别於西安、扬州召开了全国档案文献编纂研讨会，在推动档案文献编纂学的发展和学科建设方面起了重要作用。这些学术成果集中地反映在档案出版社出版的《建国以来档案文献编纂工作得失研讨论文集》和《档案编研新论》之中，它们和《中国大百科全书档案卷》、《档案学词典》的有关档案文献编纂学部分，《中国档案文献辞典》等的问世,都成为档案文献编纂学学科建设具有里程碑意义的重要成果。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "李国荣",
+          "normalized_name": "李国荣",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "李国荣的《略评康熙朝汉文朱批奏折汇编》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "《略评康熙朝汉文朱批奏折汇编》",
+          "normalized_name": "《略评康熙朝汉文朱批奏折汇编》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "李国荣的《略评康熙朝汉文朱批奏折汇编》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "叶万忠",
+          "normalized_name": "叶万忠",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "叶万忠的《编辑出版苏州市人民公社档案资料选编的自我评议》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e4",
+          "mention": "《编辑出版苏州市人民公社档案资料选编的自我评议》",
+          "normalized_name": "《编辑出版苏州市人民公社档案资料选编的自我评议》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "叶万忠的《编辑出版苏州市人民公社档案资料选编的自我评议》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e5",
+          "mention": "冯绍霆",
+          "normalized_name": "冯绍霆",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "冯绍霆的《上海工人三次武装起义的编纂工作》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e6",
+          "mention": "《上海工人三次武装起义的编纂工作》",
+          "normalized_name": "《上海工人三次武装起义的编纂工作》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "冯绍霆的《上海工人三次武装起义的编纂工作》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e7",
+          "mention": "张素慧",
+          "normalized_name": "张素慧",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "张素慧的《谈陕甘宁边区政府档案文件选编的编纂》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e8",
+          "mention": "《谈陕甘宁边区政府档案文件选编的编纂》",
+          "normalized_name": "《谈陕甘宁边区政府档案文件选编的编纂》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "张素慧的《谈陕甘宁边区政府档案文件选编的编纂》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e9",
+          "mention": "时连泉",
+          "normalized_name": "时连泉",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "时连泉的《 山东革命历史档案资料选编 编辑出版工作》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e10",
+          "mention": "《山东革命历史档案资料选编 编辑出版工作》",
+          "normalized_name": "《山东革命历史档案资料选编 编辑出版工作》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "时连泉的《 山东革命历史档案资料选编 编辑出版工作》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e11",
+          "mention": "陈集忍",
+          "normalized_name": "陈集忍",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "陈集忍、邵斌的《忠于史料,高于史料一—关于档案史料编纂工作的随想》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e12",
+          "mention": "邵斌",
+          "normalized_name": "邵斌",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "陈集忍、邵斌的《忠于史料,高于史料一—关于档案史料编纂工作的随想》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e13",
+          "mention": "《忠于史料,高于史料一—关于档案史料编纂工作的随想》",
+          "normalized_name": "《忠于史料,高于史料一—关于档案史料编纂工作的随想》",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "陈集忍、邵斌的《忠于史料,高于史料一—关于档案史料编纂工作的随想》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e14",
+          "mention": "中国档案学会档案文献编纂学术委员会",
+          "normalized_name": "中国档案学会档案文献编纂学术委员会",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中国档案学会档案文献编纂学术委员会在组织、交流我国档案馆(室)档案文献编纂经验方面起到了历史性的作用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e15",
+          "mention": "全国档案文献编纂研讨会",
+          "normalized_name": "全国档案文献编纂研讨会",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "在1986、1991年分别於西安、扬州召开了全国档案文献编纂研讨会",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e16",
+          "mention": "《建国以来档案文献编纂工作得失研讨论文集》",
+          "normalized_name": "《建国以来档案文献编纂工作得失研讨论文集》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "档案出版社出版的《建国以来档案文献编纂工作得失研讨论文集》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e17",
+          "mention": "《档案编研新论》",
+          "normalized_name": "《档案编研新论》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "档案出版社出版的《建国以来档案文献编纂工作得失研讨论文集》和《档案编研新论》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e18",
+          "mention": "《中国大百科全书档案卷》",
+          "normalized_name": "《中国大百科全书档案卷》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《中国大百科全书档案卷》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e19",
+          "mention": "《档案学词典》",
+          "normalized_name": "《档案学词典》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《档案学词典》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e20",
+          "mention": "《中国档案文献辞典》",
+          "normalized_name": "《中国档案文献辞典》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《中国档案文献辞典》等的问世",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e21",
+          "mention": "档案文献编纂学",
+          "normalized_name": "档案文献编纂学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "档案文献编纂学的发展和学科建设",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "如同档案文献编纂学创建一样,党的十一届三中全会以来档案文献编纂学的繁荣，也是与我国档案高等专业教育的恢复和发展以及档案专业课程建设的加强分不开的。从作为一门独立学科的建设的角度来讲，档案专业学术研究工作者和档案教育工作者承担着重要责任。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "档案文献编纂学",
+          "normalized_name": "档案文献编纂学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如同档案文献编纂学创建一样",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "党的十一届三中全会",
+          "normalized_name": "党的十一届三中全会",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "党的十一届三中全会以来档案文献编纂学的繁荣",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "档案高等专业教育",
+          "normalized_name": "档案高等专业教育",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与我国档案高等专业教育的恢复和发展",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "档案专业课程建设",
+          "normalized_name": "档案专业课程建设",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "档案专业课程建设的加强",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "，对档案文献编纂学的学科对象、性质、学科体系和研究领域等一系列重大问题做了概括的精辟的论述。 他认为，“档案文献编纂学是一门专门研究提供档案，为经济建设、科学研究服务的具有独特作用的主要利用形式的科学科目。 因此，它不仅是一门需要恢复和重建的科目，而且是一门很有发展前途的科学科目。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "档案文献编纂学",
+          "normalized_name": "档案文献编纂学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对档案文献编纂学的学科对象、性质、学科体系和研究领域等一系列重大问题做了概括的精辟的论述",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "特别是在开放历史档案之后，《档案文献编纂学》就更具重要的意义和作用。 ”他指出：“我们要从我国古今的档案文献编纂工作的实际出发，研究我国文献编纂工作的历史发展及其传统，研究古今各种类型的文献出版物的编辑原则与方法，以便总结经验、充实和丰富档案文献编纂学理论、历史原则和方法。 ”他要求档案文献编纂学研究者除参加一部分档案文献编纂工作，以取得直接经验外，其主要精力和重点应放在对如下几类文献编纂工作的研究上。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "开放历史档案",
+          "normalized_name": "开放历史档案",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "特别是在开放历史档案之后",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "《档案文献编纂学》",
+          "normalized_name": "《档案文献编纂学》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《档案文献编纂学》就更具重要的意义和作用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "档案文献编纂学理论",
+          "normalized_name": "档案文献编纂学理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "充实和丰富档案文献编纂学理论、历史原则和方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "同时，他还对从事档案文献编纂研究的同志的专业素养提高提出了具体的要求等等。 实践证明他的上述观点的正确性，这些论述对档案文献编纂学的学科发展和学术队伍的健康成长起了重要的指导作用。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "档案文献编纂学",
+          "normalized_name": "档案文献编纂学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这些论述对档案文献编纂学的学科发展和学术队伍的健康成长起了重要的指导作用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "档案文献编纂学学科繁荣的重要标志是大量专著和教材的问世。 据笔者所见，近20年来公开出版的作品达30种之多。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "档案文献编纂学",
+          "normalized_name": "档案文献编纂学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "档案文献编纂学学科繁荣的重要标志",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "本门学科的开拓者，时任教研室主任赵践同志，在恢复和发展档案文献编纂学和领导、组织教研室同志进行课程建设方面作出了重要贡献。 他主编的《档案文献编纂学讲义》,是一部具有较高学术价值的力作。1982 年丁永奎、曹喜琛编著的《档案史料编纂学概要》，是在继承20世纪60年代创建时期积累的学术成果，初步总结我国学术界和档案界档案文献编纂的现实经验的基础上形成的，它适应改革开放以来档案部门档案文献编纂工作急剧发展的需要，对于传播档案文献编纂学基本知识和技能，从而促进档案文献编纂实践的发展起到了应有的历史作用。 此后陆续公开出版的著述大致可分为如下几类：",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "赵践",
+          "normalized_name": "赵践",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "时任教研室主任赵践同志",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "档案文献编纂学",
+          "normalized_name": "档案文献编纂学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "恢复和发展档案文献编纂学",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "《档案文献编纂学讲义》",
+          "normalized_name": "《档案文献编纂学讲义》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "他主编的《档案文献编纂学讲义》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e4",
+          "mention": "丁永奎",
+          "normalized_name": "丁永奎",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1982 年丁永奎、曹喜琛编著的《档案史料编纂学概要》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e5",
+          "mention": "曹喜琛",
+          "normalized_name": "曹喜琛",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1982 年丁永奎、曹喜琛编著的《档案史料编纂学概要》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e6",
+          "mention": "《档案史料编纂学概要》",
+          "normalized_name": "《档案史料编纂学概要》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "1982 年丁永奎、曹喜琛编著的《档案史料编纂学概要》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e7",
+          "mention": "档案文献编纂学基本知识",
+          "normalized_name": "档案文献编纂学基本知识",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对于传播档案文献编纂学基本知识和技能",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为知识体系而非单一概念"
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "公开出版的主要成果，除1987年和1988年先后问世的中央电大和逻辑语言函授教材以外，还有1990 年梁毓阶主编的《档案史料编纂学》、1990 年曹喜琛主编的《档案文献编纂学》(高校文科教材)、1991年黄子琳编著的《档案文献编纂学》等。 其中高校文科教材，是国家教委的推荐教材，它的出版表明档案文献编纂学学科建设已经向正规化阶段迈出了一步，是这门学科正式确立的重要标志之一。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "中央电大和逻辑语言函授教材",
+          "normalized_name": "中央电大和逻辑语言函授教材",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "1987年和1988年先后问世的中央电大和逻辑语言函授教材",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "梁毓阶",
+          "normalized_name": "梁毓阶",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1990 年梁毓阶主编的《档案史料编纂学》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "《档案史料编纂学》",
+          "normalized_name": "《档案史料编纂学》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "1990 年梁毓阶主编的《档案史料编纂学》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "曹喜琛",
+          "normalized_name": "曹喜琛",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1990 年曹喜琛主编的《档案文献编纂学》(高校文科教材)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e5",
+          "mention": "《档案文献编纂学》",
+          "normalized_name": "《档案文献编纂学》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "1990 年曹喜琛主编的《档案文献编纂学》(高校文科教材)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e6",
+          "mention": "黄子琳",
+          "normalized_name": "黄子琳",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1991年黄子琳编著的《档案文献编纂学》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e7",
+          "mention": "《档案文献编纂学》",
+          "normalized_name": "《档案文献编纂学》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "1991年黄子琳编著的《档案文献编纂学》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e8",
+          "mention": "国家教委",
+          "normalized_name": "国家教育委员会",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "是国家教委的推荐教材",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e9",
+          "mention": "档案文献编纂学",
+          "normalized_name": "档案文献编纂学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "档案文献编纂学学科建设已经向正规化阶段迈出了一步",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "它们把档案馆(室)全部编研工作作为一个整体来探讨其原则与方法，并揭示其规律性。 与以往分割在有关学科的分散状态相比，其发展优势不可同日而语，对于开发档案信息资源，更好地为社会服务必将起着积极的作用。其中韩作在体例、内容、观点等方面多有新意，是本学科领域中最新出版的力作。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "档案馆(室)",
+          "normalized_name": "档案馆(室)",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "它们把档案馆(室)全部编研工作作为一个整体来探讨其原则与方法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e2",
+          "mention": "韩作",
+          "normalized_name": "韩作",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "其中韩作在体例、内容、观点等方面多有新意",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "据笔者所见公开出版的著述有：温学志、潘齐靖的《科技档案编研学基础》、徐绍敏的《科技档案编研工作》、贺真主编的《科技档案编研的理论与方法》（此书的修订版于2000 年已经问世)。 科技档案编研在原则与方法上有许多特殊性，在档案编研学中开辟这一新的专门领域进行研究使档案编研学具有开拓性的进展。其中贺作(修订本)属于此类著述的佳作。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "温学志",
+          "normalized_name": "温学志",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "温学志、潘齐靖的《科技档案编研学基础》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "潘齐靖",
+          "normalized_name": "潘齐靖",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "温学志、潘齐靖的《科技档案编研学基础》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "《科技档案编研学基础》",
+          "normalized_name": "《科技档案编研学基础》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "温学志、潘齐靖的《科技档案编研学基础》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e4",
+          "mention": "徐绍敏",
+          "normalized_name": "徐绍敏",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "徐绍敏的《科技档案编研工作》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e5",
+          "mention": "《科技档案编研工作》",
+          "normalized_name": "《科技档案编研工作》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "徐绍敏的《科技档案编研工作》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e6",
+          "mention": "贺真",
+          "normalized_name": "贺真",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "贺真主编的《科技档案编研的理论与方法》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e7",
+          "mention": "《科技档案编研的理论与方法》",
+          "normalized_name": "《科技档案编研的理论与方法》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "贺真主编的《科技档案编研的理论与方法》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e8",
+          "mention": "科技档案编研",
+          "normalized_name": "科技档案编研",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "科技档案编研在原则与方法上有许多特殊性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e9",
+          "mention": "档案编研学",
+          "normalized_name": "档案编研学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在档案编研学中开辟这一新的专门领域",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e10",
+          "mention": "贺作(修订本)",
+          "normalized_name": "贺作(修订本)",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "其中贺作(修订本)属于此类著述的佳作",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "指代贺真主编的《科技档案编研的理论与方法》修订本"
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "近年来有些作者作了这种尝试。 笔者所见有：徐绍敏主编的《档案文献编纂学》、潘玉民主编的《档案文献编纂学》、葛荷英的《档案编研的理论与方法》、韩宝华著的《档案文献编纂学》,其中徐作中，科技档案编研的内容集中地写了两章，是涉及科档编研分量较重的一部,潘作把科档编纂专列一章，葛作专辟一节,韩作的基本内容是属于文书档案的编研,但也包含着对部分科技档案题材的阐释。对科档和文档编研两者进行系统深入地比较研究是档案编研学应该探讨的课题之一。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "徐绍敏主编的《档案文献编纂学》",
+          "normalized_name": "《档案文献编纂学》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "徐绍敏主编的《档案文献编纂学》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "潘玉民主编的《档案文献编纂学》",
+          "normalized_name": "《档案文献编纂学》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "潘玉民主编的《档案文献编纂学》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e3",
+          "mention": "葛荷英的《档案编研的理论与方法》",
+          "normalized_name": "《档案编研的理论与方法》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "葛荷英的《档案编研的理论与方法》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e4",
+          "mention": "韩宝华著的《档案文献编纂学》",
+          "normalized_name": "《档案文献编纂学》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "韩宝华著的《档案文献编纂学》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e5",
+          "mention": "徐绍敏",
+          "normalized_name": "徐绍敏",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "徐绍敏主编的《档案文献编纂学》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e6",
+          "mention": "潘玉民",
+          "normalized_name": "潘玉民",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "潘玉民主编的《档案文献编纂学》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e7",
+          "mention": "葛荷英",
+          "normalized_name": "葛荷英",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "葛荷英的《档案编研的理论与方法》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e8",
+          "mention": "韩宝华",
+          "normalized_name": "韩宝华",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "韩宝华著的《档案文献编纂学》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e9",
+          "mention": "科技档案编研",
+          "normalized_name": "科技档案编研",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "科技档案编研的内容集中地写了两章",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e10",
+          "mention": "文书档案的编研",
+          "normalized_name": "文书档案编研",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "韩作的基本内容是属于文书档案的编研",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e11",
+          "mention": "档案编研学",
+          "normalized_name": "档案编研学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "档案编研学应该探讨的课题之一",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "笔者所见已出版的著述有：赵巨华等编的《档案信息论纲要》、罗辉著的《档案信息开发和利用》、吴建华著《科技档案信息资源开发策略研究》。 把编研作为档案信息开发的重要内容，从信息开发的高度探讨包括档案编研在内的各种开发信息的手段、方式和途径,将是一个具有理论与实践意义和发展前途的研究领域。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "赵巨华等编的《档案信息论纲要》",
+          "normalized_name": "《档案信息论纲要》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "赵巨华等编的《档案信息论纲要》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "罗辉著的《档案信息开发和利用》",
+          "normalized_name": "《档案信息开发和利用》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "罗辉著的《档案信息开发和利用》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e3",
+          "mention": "吴建华著《科技档案信息资源开发策略研究》",
+          "normalized_name": "《科技档案信息资源开发策略研究》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "吴建华著《科技档案信息资源开发策略研究》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e4",
+          "mention": "档案信息开发",
+          "normalized_name": "档案信息开发",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "把编研作为档案信息开发的重要内容，从信息开发的高度探讨包括档案编研在内的各种开发信息的手段、方式和途径",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "25_e5",
+          "mention": "档案编研",
+          "normalized_name": "档案编研",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括档案编研在内的各种开发信息的手段、方式和途径",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "对这一领域的探讨开始于档案文献编纂学的初创时期,但在后来的学科建设中很长时期没有作为重点，只是一些著述中或列一章或散于各节谈到某些内容，也有一些论文见诸报刊。 比较全面系统地阐述中国档案文献编纂的发展历史的作品是最近出版的由曹喜琛、韩宝华编著的《中国档案文献编纂史略》,它作为国家教育部面向21世纪课程教材，在档案学术领域当属初创。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "档案文献编纂学",
+          "normalized_name": "档案文献编纂学",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对这一领域的探讨开始于档案文献编纂学的初创时期",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e2",
+          "mention": "曹喜琛",
+          "normalized_name": "曹喜琛",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由曹喜琛、韩宝华编著的《中国档案文献编纂史略》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e3",
+          "mention": "韩宝华",
+          "normalized_name": "韩宝华",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由曹喜琛、韩宝华编著的《中国档案文献编纂史略》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e4",
+          "mention": "《中国档案文献编纂史略》",
+          "normalized_name": "《中国档案文献编纂史略》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "由曹喜琛、韩宝华编著的《中国档案文献编纂史略》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e5",
+          "mention": "国家教育部",
+          "normalized_name": "国家教育部",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "它作为国家教育部面向21世纪课程教材",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e6",
+          "mention": "面向21世纪课程教材",
+          "normalized_name": "面向21世纪课程教材",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "它作为国家教育部面向21世纪课程教材",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e7",
+          "mention": "档案学术领域",
+          "normalized_name": "档案学术领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在档案学术领域当属初创",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "综上所述，我国档案文献编纂学的学科建设，在初创以后,经过改革开放以来近20年的努力，在挖掘历史遗产和总结现实经验的基础上，从理论到历史，从原理、原则到技术、方法都获得了显著的成绩，在学科研究的深、广度上也取得了长足的进展，堪称我国档案文献学学科发展的黄金时期。",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "我国档案文献编纂学",
+          "normalized_name": "档案文献编纂学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国档案文献编纂学的学科建设",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "改革开放",
+          "normalized_name": "改革开放",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "经过改革开放以来近20年的努力",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e3",
+          "mention": "黄金时期",
+          "normalized_name": "黄金时期",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "堪称我国档案文献学学科发展的黄金时期",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为评价用语，但此处作为具体阶段名称"
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "展望未来，21世纪是知识经济时代，知识经济是建立在知识和信息的生产、分配和使用基础上的经济，它的代表是信息产业。 信息资源的开发利用程度，已是衡量一个国家经济发展水平和综合国力的重要标志之一。以开发信息资源服务于现代化建设为最高目的的档案事业必将成为信息产业大家族的重要成员，档案编研工作做为信息服务和传播的重要方式和手段，将因其发挥日益重要的作用而受到重视得到加强是可以预料的。 机遇与挑战并存。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "知识经济",
+          "normalized_name": "知识经济",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "21世纪是知识经济时代，知识经济是建立在知识和信息的生产、分配和使用基础上的经济",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "信息产业",
+          "normalized_name": "信息产业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "它的代表是信息产业",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e3",
+          "mention": "信息资源",
+          "normalized_name": "信息资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息资源的开发利用程度",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e4",
+          "mention": "档案事业",
+          "normalized_name": "档案事业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以开发信息资源服务于现代化建设为最高目的的档案事业必将成为信息产业大家族的重要成员",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e5",
+          "mention": "档案编研工作",
+          "normalized_name": "档案编研工作",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "档案编研工作做为信息服务和传播的重要方式和手段",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "29",
+      "sentence": "运用以计算机和网络技术为代表的现代信息处理和传输技术是档案编研及其成果传播现代化的重要手段。 电子出版物、光盘库、多媒体数据库、网上出版等现代化传播形式，将以传统形式无可比拟的高速、优质、高效地进行信息资源的开发，以达到最大限度地实现档案信息资源共享。档案编研方法与技术的现代化必将与传统档案编研理论方法同时成为档案编研学探讨的重要内容甚至将成为面临的主要课题。随着新的编研技术方法的应用，档案文献编纂工作者的知识结构和素养也必将发生相应的变化，如何适应这种变化也自然成为需要迫切解决的问题。",
+      "entities": [
+        {
+          "entity_id": "29_e1",
+          "mention": "计算机和网络技术",
+          "normalized_name": "计算机和网络技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "运用以计算机和网络技术为代表的现代信息处理和传输技术",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e2",
+          "mention": "电子出版物",
+          "normalized_name": "电子出版物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract",
+            "Artifact"
+          ],
+          "evidence": "电子出版物、光盘库、多媒体数据库、网上出版等现代化传播形式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e3",
+          "mention": "光盘库",
+          "normalized_name": "光盘库",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract",
+            "Artifact"
+          ],
+          "evidence": "电子出版物、光盘库、多媒体数据库、网上出版等现代化传播形式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e4",
+          "mention": "多媒体数据库",
+          "normalized_name": "多媒体数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "电子出版物、光盘库、多媒体数据库、网上出版等现代化传播形式",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e5",
+          "mention": "网上出版",
+          "normalized_name": "网上出版",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract",
+            "Event"
+          ],
+          "evidence": "电子出版物、光盘库、多媒体数据库、网上出版等现代化传播形式",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e6",
+          "mention": "档案信息资源共享",
+          "normalized_name": "档案信息资源共享",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以达到最大限度地实现档案信息资源共享",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e7",
+          "mention": "档案编研方法与技术",
+          "normalized_name": "档案编研方法与技术",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "档案编研方法与技术的现代化必将与传统档案编研理论方法同时成为档案编研学探讨的重要内容",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e8",
+          "mention": "传统档案编研理论方法",
+          "normalized_name": "传统档案编研理论方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与传统档案编研理论方法同时成为档案编研学探讨的重要内容",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e9",
+          "mention": "档案编研学",
+          "normalized_name": "档案编研学",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "成为档案编研学探讨的重要内容",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "30",
+      "sentence": "文献信息资源开发学可能成为新的学科生长点。在信息资源数字化和网络化的环境下，档案与图书、情报一体化的进程必然加快。由于档案与图书、情报，作为数字化信息，在信息资源开发和传播的技术方法上，将趋于标准化和统一化。因此，档案信息开发将发展为包括图书、情报在内的文献信息开发，学科的区别也将逐渐模糊，研究图书、情报、档案信息资源的整体开",
+      "entities": [
+        {
+          "entity_id": "30_e1",
+          "mention": "文献信息资源开发学",
+          "normalized_name": "文献信息资源开发学",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "文献信息资源开发学可能成为新的学科生长点",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "信息资源数字化",
+          "normalized_name": "信息资源数字化",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在信息资源数字化和网络化的环境下",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e3",
+          "mention": "网络化",
+          "normalized_name": "网络化",
+          "candidate_l3": "trend",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在信息资源数字化和网络化的环境下",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e4",
+          "mention": "档案与图书、情报一体化",
+          "normalized_name": "档案与图书、情报一体化",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "档案与图书、情报一体化的进程必然加快",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e5",
+          "mention": "档案信息开发",
+          "normalized_name": "档案信息开发",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "档案信息开发将发展为包括图书、情报在内的文献信息开发",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "30_e6",
+          "mention": "文献信息开发",
+          "normalized_name": "文献信息开发",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "档案信息开发将发展为包括图书、情报在内的文献信息开发",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "base_name": "reviewed_full_879",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "为教学生，教师自己也应学习利用情报信息，为今后在中小学实施素质教育，培养知识信息利用技能打下基础。 从这个意义上讲，开展信息用户教育不仅具有紧迫的现实意义，更有深远的发展意义。 这就要求在师资培训机构中特别要开设“情报信息知识利用\"课。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "情报信息",
+          "normalized_name": "情报信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "教师自己也应学习利用情报信息",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "素质教育",
+          "normalized_name": "素质教育",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为今后在中小学实施素质教育",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "信息用户教育",
+          "normalized_name": "信息用户教育",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "开展信息用户教育不仅具有紧迫的现实意义",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "情报信息知识利用",
+          "normalized_name": "情报信息知识利用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在师资培训机构中特别要开设“情报信息知识利用”课",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "这就要求在师资培训机构中特别要开设“情报信息知识利用\"课。 这既对实施全民信息知识普及化具有推动作用，也是可持续信息用户教育必不可少的一环。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "师资培训机构",
+          "normalized_name": "师资培训机构",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在师资培训机构中特别要开设",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛化机构类别词，但带有'师资'限定修饰，可视为具体机构类型"
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "情报信息知识利用",
+          "normalized_name": "情报信息知识利用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "开设'情报信息知识利用'课",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "全民信息知识普及化",
+          "normalized_name": "全民信息知识普及化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实施全民信息知识普及化",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为phenomenon或trend，但更接近概念"
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "可持续信息用户教育",
+          "normalized_name": "可持续信息用户教育",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "可持续信息用户教育必不可少的一环",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "很多成人以前并未受过普通学校信息教育，所以成人信息教育对\"信息盲\"是一种基础教育，对大量的各行业在职人员是其继续教育的补充、延长和完善。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "信息盲",
+          "normalized_name": "信息盲",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "成人信息教育对'信息盲'是一种基础教育",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "掌握最基本的书刊文献的手工及机检方法; 了解最常用的专业信息源、专门工具书等，以采用媒介教育法与当面辅导法较为合适，而以后者更优。当面辅导法可使初级用户在得到服务和信息的同时，得到信息知识和技能的教育。图书情报信息利用是一门实践技能，只有通过连续使用才能获得这种技能并达到熟练程度。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "媒介教育法",
+          "normalized_name": "媒介教育法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以采用媒介教育法与当面辅导法较为合适",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "当面辅导法",
+          "normalized_name": "当面辅导法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以采用媒介教育法与当面辅导法较为合适",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "图书情报信息利用",
+          "normalized_name": "图书情报信息利用",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书情报信息利用是一门实践技能",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "主要目的是进一步提高他们的信息能力，向他们提供最新的信息知识及信息利用能力，为他们深人继续教育、进行科研打好基础。 可采用办班集中教育法、用户交流教育法和书面辅导教育法，尤以后者为主。 书面辅导教育法是指把事先准备好的书面材料(如用户指南、手册、服务简介等)分发给这些已有相当自学能力，且有一定信息活动体验的中级用户，让他们通过自学求得对信息的认识和技能的提高。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "办班集中教育法",
+          "normalized_name": "办班集中教育法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "可采用办班集中教育法、用户交流教育法和书面辅导教育法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "用户交流教育法",
+          "normalized_name": "用户交流教育法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "可采用办班集中教育法、用户交流教育法和书面辅导教育法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "书面辅导教育法",
+          "normalized_name": "书面辅导教育法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "可采用办班集中教育法、用户交流教育法和书面辅导教育法",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "用户指南",
+          "normalized_name": "用户指南",
+          "candidate_l3": "guideline",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如用户指南、手册、服务简介等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "手册",
+          "normalized_name": "手册",
+          "candidate_l3": "guideline",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如用户指南、手册、服务简介等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e6",
+          "mention": "服务简介",
+          "normalized_name": "服务简介",
+          "candidate_l3": "guideline",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如用户指南、手册、服务简介等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "在成人信息用户教育中，仍要特别强调对教师的情报信息教育。 绝大多数教师关于情报信息源的知识往往不足，也缺少这方面的实际经验，尤其是对把寻找情报源的方法和使用方法教给他人的问题，来引起足够的重视。要改变大中小学校的信息教育，先改变教师的观念意识是很有必要的。所以在成人信息教育中绝不可忽视教师这一环节，这是可持续发展信息用户教育中的重要一环，应引起特别重视。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "成人信息用户教育",
+          "normalized_name": "成人信息用户教育",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在成人信息用户教育中，仍要特别强调对教师的情报信息教育",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为subfield或methodology，但原文未明确界定，优先标concept"
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "情报信息教育",
+          "normalized_name": "情报信息教育",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "仍要特别强调对教师的情报信息教育",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为subfield，但原文未明确界定，优先标concept"
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "情报信息源",
+          "normalized_name": "情报信息源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "绝大多数教师关于情报信息源的知识往往不足",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "可持续发展信息用户教育",
+          "normalized_name": "可持续发展信息用户教育",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这是可持续发展信息用户教育中的重要一环",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为methodology或approach，但原文未明确界定，优先标concept"
+        }
+      ]
+    }
+  ]
+}

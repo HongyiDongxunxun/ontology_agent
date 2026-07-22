@@ -1,0 +1,431 @@
+{
+  "base_name": "reviewed_full_1802",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "伴随着信息高速公路而来的多媒体时代，将对我国政治、经济和人们的工作及生活产生巨大冲击。 信息服务业作为我国一个新兴的第三产业，其发达与否在很大程度上决定和反映着中国市场经济的进程。因此，研究和探讨市场经济下信息服务发展的趋势，无疑将为信息服务业的发展带来强有力的支持。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "信息高速公路",
+          "normalized_name": "信息高速公路",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "伴随着信息高速公路而来的多媒体时代",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "多媒体时代",
+          "normalized_name": "多媒体时代",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "伴随着信息高速公路而来的多媒体时代",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为stage"
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "信息服务业",
+          "normalized_name": "信息服务业",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息服务业作为我国一个新兴的第三产业",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "市场经济",
+          "normalized_name": "市场经济",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "决定和反映着中国市场经济的进程",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e5",
+          "mention": "信息服务发展的趋势",
+          "normalized_name": "信息服务发展的趋势",
+          "candidate_l3": "trend",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究和探讨市场经济下信息服务发展的趋势",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "世纪之交的时代特点，社会信息化的大趋势，以及改革、开放和以经济建设为中心的国内环境，迫使信息服务须改变过去狭窄的服务范围，转变视角，拓宽领域，加大市场经济信息服务的力度和广度。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "社会信息化",
+          "normalized_name": "社会信息化",
+          "candidate_l3": "trend",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "社会信息化的大趋势",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "市场经济信息服务",
+          "normalized_name": "市场经济信息服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加大市场经济信息服务的力度和广度",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为phenomenon或service类型，但原文未明确具体机构或系统，暂标为concept"
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "信息服务部门将成为信息高速公路中文献信息集散的中心结点的现实，迫使文献的收藏须改变主要收藏图书期刊的单一格局，而重视和加强对具有高情报价值的缩微型、机读型多媒体文献的收藏。 并根据各部门间议定的资源协议，达到网络资源全面共享。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "信息高速公路",
+          "normalized_name": "信息高速公路",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息服务部门将成为信息高速公路中文献信息集散的中心结点",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "缩微型",
+          "normalized_name": "缩微型文献",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "重视和加强对具有高情报价值的缩微型、机读型多媒体文献的收藏",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "缩微型为文献类型简称，可视为具体概念"
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "机读型多媒体文献",
+          "normalized_name": "机读型多媒体文献",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "重视和加强对具有高情报价值的缩微型、机读型多媒体文献的收藏",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "我国是发展中国家，通信不够发达，计算机应用亦不够广泛、深入，基础信息的积累又很薄弱。因此，信息服务必须尽早利用当代通信与计算机技术进步的成果，带动工业、农业、国防和科学技术的现代化，并为这些产业的发展寻找机会、提供途径，推进整个国民经济信息化，加速全社会的科技进步，以实现与国际先进水平接轨，加速实现我国社会主义现代化。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "国民经济信息化",
+          "normalized_name": "国民经济信息化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "推进整个国民经济信息化",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "社会主义现代化",
+          "normalized_name": "社会主义现代化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加速实现我国社会主义现代化",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "我国目前推出的社会发展科技计划的六大行动，提高了社会发展科技的总体水平\"。 为此，信息服务要努力提高自身的业务素质和开发素质，围绕转变经济增长方式，集中力量攻克一批对国民经济和社会发展有重大影响的科技课题。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "社会发展科技计划",
+          "normalized_name": "社会发展科技计划",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "我国目前推出的社会发展科技计划的六大行动",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "六大行动",
+          "normalized_name": "六大行动",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "我国目前推出的社会发展科技计划的六大行动",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为具体行动名称的泛称，需结合上下文确认"
+        }
+      ]
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "当前信息高速公路革命及其成果的运用，支持和促进了信息服务的产业化和跳跃发展。 我国的信息服务业又遇到市场经济的挑战，因此须尽快转换机制，调整结构，尽早形成产业规模。逐步建立起与社会主义市场经济相适应的社会化、产业化、网络化的综合国家科技信息网络和多层次的信息服务和咨询系统。更好地为国家宏观经济决策、企业生产经营和市场体系服务，且在服务广度、深度、档次上赶上国外信息服务业的发展水平。使我国的信息服务尽早走向世界，在国际市场上参与信息竞争。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "信息高速公路革命",
+          "normalized_name": "信息高速公路革命",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当前信息高速公路革命及其成果的运用",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "国家科技信息网络",
+          "normalized_name": "国家科技信息网络",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "逐步建立起与社会主义市场经济相适应的社会化、产业化、网络化的综合国家科技信息网络",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "市场经济",
+          "normalized_name": "市场经济",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国的信息服务业又遇到市场经济的挑战",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon"
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "随着市场经济的发展，对信息服务提出了越来越高的要求，从而需要先进的技术作为质量升级的基础保障。 技术基础设施有：庞大的信息库：包括联机数据库和CD一ROM数据库；",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "联机数据库",
+          "normalized_name": "联机数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "包括联机数据库和CD一ROM数据库",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "名称较泛，但图情领域放宽规则，有名称的数据库应抽取"
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "CD一ROM数据库",
+          "normalized_name": "CD-ROM数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "包括联机数据库和CD一ROM数据库",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "名称较泛，但图情领域放宽规则，有名称的数据库应抽取"
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "在当今经济竞争中，谁掌握信息并使之转化为经济优势，谁就将取得胜利。因此，我国的信息服务应以信息技术应用为战略重点，加快文献信息的数字化和多媒体化，使任何中心或个人通过个人计算机就可查阅。并不断改善信息服务环境，冲破封闭式的自我服务体系，推进信息服务的社会化。同时要大力发展信息市场，改变过去总结式信息服务方式，形成进行式信息服务的新格局，动态地分析市场经济中出现的新信息，并对其发展趋势和结果作出预测。另外，还要对社会上和改革中出现的“热点”、“难点”、“疑点”问题，或分析，或评述，向用户提供深层次、高质量的信息服务。只有这样，才能将信息服务融于市场经济的活动中，迅速把我国的信息服务业引上大发展之路。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "信息技术",
+          "normalized_name": "信息技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国的信息服务应以信息技术应用为战略重点",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为通用技术概念，但原文中作为具体战略重点提及，具有一定指称性"
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "文献信息的数字化",
+          "normalized_name": "文献信息的数字化",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加快文献信息的数字化和多媒体化",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为图情领域可观察的独立学术现象"
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "多媒体化",
+          "normalized_name": "多媒体化",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加快文献信息的数字化和多媒体化",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为图情领域可观察的独立学术现象"
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "个人计算机",
+          "normalized_name": "个人计算机",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使任何中心或个人通过个人计算机就可查阅",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为通用技术设备概念，但原文中作为具体实现手段提及"
+        },
+        {
+          "entity_id": "9_e5",
+          "mention": "信息服务的社会化",
+          "normalized_name": "信息服务的社会化",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "推进信息服务的社会化",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为图情领域可观察的独立学术现象"
+        },
+        {
+          "entity_id": "9_e6",
+          "mention": "信息市场",
+          "normalized_name": "信息市场",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "同时要大力发展信息市场",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为图情领域独立学术概念"
+        },
+        {
+          "entity_id": "9_e7",
+          "mention": "总结式信息服务方式",
+          "normalized_name": "总结式信息服务方式",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "改变过去总结式信息服务方式",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为具体信息服务方法类型"
+        },
+        {
+          "entity_id": "9_e8",
+          "mention": "进行式信息服务",
+          "normalized_name": "进行式信息服务",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "形成进行式信息服务的新格局",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为具体信息服务方法类型"
+        },
+        {
+          "entity_id": "9_e9",
+          "mention": "市场经济",
+          "normalized_name": "市场经济",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "动态地分析市场经济中出现的新信息",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为通用经济概念，但原文中作为具体分析对象提及"
+        },
+        {
+          "entity_id": "9_e10",
+          "mention": "信息服务业",
+          "normalized_name": "信息服务业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "迅速把我国的信息服务业引上大发展之路",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为图情领域独立学术概念"
+        }
+      ]
+    }
+  ]
+}

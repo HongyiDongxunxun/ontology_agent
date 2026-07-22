@@ -1,0 +1,528 @@
+{
+  "base_name": "reviewed_full_3950",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "面对大量无序的信息流，人们手足无措。 如何去伪存真、去粗取精，就是信息服务的本质所在。 而图书馆利用馆藏文献向读者提供的服务只是信息服务的一个有机组成部分。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书馆利用馆藏文献向读者提供的服务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "信息服务",
+          "normalized_name": "信息服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "就是信息服务的本质所在",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "而图书馆利用馆藏文献向读者提供的服务只是信息服务的一个有机组成部分。 任何一种服务都是以市场为依托的，图书馆的信息服务也不例外。市场经济在一定意义上讲，就是信息经济。 一方面大量的消费者需要信息；",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书馆利用馆藏文献向读者提供的服务",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "信息服务",
+          "normalized_name": "信息服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息服务的一个有机组成部分",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "市场经济",
+          "normalized_name": "市场经济",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "市场经济在一定意义上讲，就是信息经济",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "信息经济",
+          "normalized_name": "信息经济",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "市场经济在一定意义上讲，就是信息经济",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "同时，又根据新时期情报用户的需求，在实践中创新了服务方式。 从提供文献的深度来看，信息服务呈现出由提供文献单元的浅层次服务转向提供信息单元、事实和数据以及各种动态信息、综述信息等高层次服务的特征。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "情报用户",
+          "normalized_name": "情报用户",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "根据新时期情报用户的需求",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指代泛化用户群体，但'情报用户'在领域内为具体概念"
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "文献单元",
+          "normalized_name": "文献单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "由提供文献单元的浅层次服务转向提供信息单元",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "信息单元",
+          "normalized_name": "信息单元",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "转向提供信息单元、事实和数据以及各种动态信息、综述信息等高层次服务",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "事实",
+          "normalized_name": "事实",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提供信息单元、事实和数据以及各种动态信息、综述信息",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为信息类型概念，非具体事实"
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "数据",
+          "normalized_name": "数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提供信息单元、事实和数据以及各种动态信息、综述信息",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛化概念，但作为信息层次术语可接受"
+        },
+        {
+          "entity_id": "6_e6",
+          "mention": "动态信息",
+          "normalized_name": "动态信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "各种动态信息、综述信息等高层次服务",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e7",
+          "mention": "综述信息",
+          "normalized_name": "综述信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "各种动态信息、综述信息等高层次服务",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "一般的馆对编目子系统、流通子系统都已建成，有条件的馆对期刊子系统正在着手组建。 规模化数据库的建立和服务网络的发展，将为实现真正的资源共享创造极为有利的条件。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "编目子系统",
+          "normalized_name": "编目子系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "一般的馆对编目子系统、流通子系统都已建成",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "流通子系统",
+          "normalized_name": "流通子系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "一般的馆对编目子系统、流通子系统都已建成",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "期刊子系统",
+          "normalized_name": "期刊子系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "有条件的馆对期刊子系统正在着手组建",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e4",
+          "mention": "规模化数据库",
+          "normalized_name": "规模化数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "规模化数据库的建立和服务网络的发展",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但图情领域放宽规则，有名称的数据库应抽取，此处无具体名称，暂保留"
+        },
+        {
+          "entity_id": "10_e5",
+          "mention": "服务网络",
+          "normalized_name": "服务网络",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "规模化数据库的建立和服务网络的发展",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但图情领域放宽规则，有名称的服务网络应抽取，此处无具体名称，暂保留"
+        },
+        {
+          "entity_id": "10_e6",
+          "mention": "资源共享",
+          "normalized_name": "资源共享",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将为实现真正的资源共享创造极为有利的条件",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "应该看到，虽然图书馆以其独特的信息服务方式在信息市场中占据了一席之地，但是在瞬息万变的信息市场中，图书馆的信息服务也面临许多困难与挑战。这里既有来自社会大环境的冲击，如广泛的信息需求与落后的信息服务方式形成的尖锐矛盾； 各种信息机构的大量涌现，形成了信息服务的竞争环境;",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "虽然图书馆以其独特的信息服务方式在信息市场中占据了一席之地",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "信息市场",
+          "normalized_name": "信息市场",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在信息市场中占据了一席之地",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "信息服务",
+          "normalized_name": "信息服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆以其独特的信息服务方式",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "信息需求",
+          "normalized_name": "信息需求",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "广泛的信息需求与落后的信息服务方式形成的尖锐矛盾",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "信息服务方式",
+          "normalized_name": "信息服务方式",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "落后的信息服务方式",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为method"
+        },
+        {
+          "entity_id": "11_e6",
+          "mention": "信息机构",
+          "normalized_name": "信息机构",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "各种信息机构的大量涌现",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称但可指具体类型机构"
+        },
+        {
+          "entity_id": "11_e7",
+          "mention": "竞争环境",
+          "normalized_name": "竞争环境",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "形成了信息服务的竞争环境",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "中共中央制定并通过的国民经济和社会发展“九五\"计划和2010年远景目标，这一跨世纪的宏伟规划，是我国信息服务业发展的大背景、大环境。 国民经济的快速发展将给图书馆提出许多新的服务课题，图书馆也将在为经济建设服务中促进自身的繁荣与发展。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "国民经济和社会发展“九五”计划和2010年远景目标",
+          "normalized_name": "国民经济和社会发展“九五”计划和2010年远景目标",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "中共中央制定并通过的国民经济和社会发展“九五”计划和2010年远景目标",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "信息服务业",
+          "normalized_name": "信息服务业",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国信息服务业发展的大背景、大环境",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "实现图书馆服务信息化的战略转变，首先必须更新观念。 新时期图书馆的一个重要特征就是信息传递的职能将得到强化。 树立大图书馆的思维观念，以图书馆整体的信息服务力量和集团化优势，共同面对信息市场的需要，走全球资源共享之路。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "大图书馆",
+          "normalized_name": "大图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "树立大图书馆的思维观念",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为特定术语或泛称，但图情领域有独立命名，故抽取"
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "全球资源共享",
+          "normalized_name": "全球资源共享",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "走全球资源共享之路",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "图书馆要搞好信息服务，藏书体系必须适应市场经济的要求，所收藏的文献信息针对性要准、实用性要强、时效性要快。必须恪守“藏以致用\"的原则，在文献收集与配置上，除了收集正式出版的文献资料外，还应注重访求非正式渠道发行、交流的文献，更应注意收藏非印刷型文献资料，诸如缩微型资料、机读磁带、CD-ROM光盘数据库等等。所有这些，都有利于图书馆自身职能的发挥，有利于实现资源共享。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "CD-ROM光盘数据库",
+          "normalized_name": "CD-ROM光盘数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "更应注意收藏非印刷型文献资料，诸如缩微型资料、机读磁带、CD-ROM光盘数据库等等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "信息服务是一个知识密集的产业，需要懂经济、懂企业管理、懂计算机应用、懂信息分析研究的人才，尤其是现代信息服务业这样一个多学科技术汇集而成的知识性行业，更需要培养一批训练有素的信息专门人才。 因此，人才是图书馆开展信息服务的关键。 一方面要加强有关高等院校信息管理专业的人才培训；",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "信息服务",
+          "normalized_name": "信息服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息服务是一个知识密集的产业",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为subfield"
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "现代信息服务业",
+          "normalized_name": "现代信息服务业",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "现代信息服务业这样一个多学科技术汇集而成的知识性行业",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "人才是图书馆开展信息服务的关键",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "此处为泛称机构，但图情领域放宽规则：有名称的图书馆应抽取；此处无具体名称，但作为关键实体保留"
+        },
+        {
+          "entity_id": "20_e4",
+          "mention": "高等院校",
+          "normalized_name": "高等院校",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "加强有关高等院校信息管理专业的人才培训",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称机构，但图情领域放宽规则：有学科限定的具体机构需抽取"
+        },
+        {
+          "entity_id": "20_e5",
+          "mention": "信息管理专业",
+          "normalized_name": "信息管理专业",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有关高等院校信息管理专业的人才培训",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}

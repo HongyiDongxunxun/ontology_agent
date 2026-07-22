@@ -1,0 +1,1203 @@
+{
+  "base_name": "reviewed_full_6195",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "摘要文章论述了数字鸿沟的含义，指出了我国数字鸿沟的现状，深刻分析了数字鸿沟产生的原因，并提出跨越数字鸿沟的几点建议。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "数字鸿沟",
+          "normalized_name": "数字鸿沟",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "摘要文章论述了数字鸿沟的含义，指出了我国数字鸿沟的现状，深刻分析了数字鸿沟产生的原因，并提出跨越数字鸿沟的几点建议",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "随着新经济的迅猛发展和信息科学技术的广泛运用，人类社会进入到信息化、网络化和数字化的时代。 信息在推动科技、经济和社会发展过程中发挥的作用越来越大。然而，由于世界各国或一国之内信息化发展的不平衡性，信息富有者和信息贫困者不断分化，从而产生了“数字鸿沟（DigitalDivide)\"或称“信息鸿沟（Information Gap)\"。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "数字鸿沟（DigitalDivide）",
+          "normalized_name": "数字鸿沟（Digital Divide）",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从而产生了“数字鸿沟（DigitalDivide)\"或称“信息鸿沟（Information Gap)\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "信息鸿沟（Information Gap）",
+          "normalized_name": "信息鸿沟（Information Gap）",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从而产生了“数字鸿沟（DigitalDivide)\"或称“信息鸿沟（Information Gap)\"",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "英国广播公司（BBC）的在线新闻中，把数字鸿沟解释为“信息富有者和信息贫困者之间的鸿沟\"，也就是指在全球信息化进程中，不同国家以及国家内部群体在对包括计算机和互联网在内的信息技术的掌握和应用上存在着差异，并因此造成发展机遇和环境的巨大落差。 从世界范围看，就是指发达国家经济水平及信息化程度与发展中国家之间所形成的信息不对称；",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "英国广播公司（BBC）",
+          "normalized_name": "英国广播公司（BBC）",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "英国广播公司（BBC）的在线新闻中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "数字鸿沟",
+          "normalized_name": "数字鸿沟",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "把数字鸿沟解释为“信息富有者和信息贫困者之间的鸿沟”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "信息富有者和信息贫困者之间的鸿沟",
+          "normalized_name": "信息富有者和信息贫困者之间的鸿沟",
+          "candidate_l3": "definition",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "把数字鸿沟解释为“信息富有者和信息贫困者之间的鸿沟”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "计算机",
+          "normalized_name": "计算机",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括计算机和互联网在内的信息技术",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为通用技术概念，但在此语境中为具体技术名词"
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "互联网",
+          "normalized_name": "互联网",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括计算机和互联网在内的信息技术",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为通用技术概念，但在此语境中为具体技术名词"
+        },
+        {
+          "entity_id": "3_e6",
+          "mention": "信息技术",
+          "normalized_name": "信息技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括计算机和互联网在内的信息技术",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为通用技术概念，但在此语境中为具体技术名词"
+        },
+        {
+          "entity_id": "3_e7",
+          "mention": "发达国家",
+          "normalized_name": "发达国家",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "发达国家经济水平及信息化程度与发展中国家之间所形成的信息不对称",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为经济分类概念，非具体组织"
+        },
+        {
+          "entity_id": "3_e8",
+          "mention": "发展中国家",
+          "normalized_name": "发展中国家",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "发达国家经济水平及信息化程度与发展中国家之间所形成的信息不对称",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为经济分类概念，非具体组织"
+        },
+        {
+          "entity_id": "3_e9",
+          "mention": "信息不对称",
+          "normalized_name": "信息不对称",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "发达国家经济水平及信息化程度与发展中国家之间所形成的信息不对称",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "从一国范围来看，就是指地区、行业、所有制、企业规模以及不同信息主体等差异所造成的信息不对称。 因此，数字鸿沟实质上就是存在于那些拥有信息时代的工具的人以及那些未曾拥有者之间的鸿沟，是一种因信息落差所引起的知识分隔和贫富分化。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "数字鸿沟",
+          "normalized_name": "数字鸿沟",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "数字鸿沟实质上就是存在于那些拥有信息时代的工具的人以及那些未曾拥有者之间的鸿沟",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "信息不对称",
+          "normalized_name": "信息不对称",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "地区、行业、所有制、企业规模以及不同信息主体等差异所造成的信息不对称",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "从全球的发展来看，根据因特网普及水平可以把世界各国分为信息与通讯技术的领先者、积极采用者、追赶着、落伍者、边缘化者，这反映了全球信息资源和知识资源分布的不均衡性以及信息技术促进发展在世界各国的不均衡性，造成信息时代新的贫富差距。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "因特网普及水平",
+          "normalized_name": "因特网普及水平",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "根据因特网普及水平可以把世界各国分为信息与通讯技术的领先者、积极采用者、追赶着、落伍者、边缘化者",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为指标名称"
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "信息与通讯技术的领先者",
+          "normalized_name": "信息与通讯技术的领先者",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "根据因特网普及水平可以把世界各国分为信息与通讯技术的领先者、积极采用者、追赶着、落伍者、边缘化者",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "分类标签，非专有命名"
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "积极采用者",
+          "normalized_name": "积极采用者",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "根据因特网普及水平可以把世界各国分为信息与通讯技术的领先者、积极采用者、追赶着、落伍者、边缘化者",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "分类标签，非专有命名"
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "追赶着",
+          "normalized_name": "追赶者",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "根据因特网普及水平可以把世界各国分为信息与通讯技术的领先者、积极采用者、追赶着、落伍者、边缘化者",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "分类标签，非专有命名；原文为'追赶着'，疑为'追赶者'之误"
+        },
+        {
+          "entity_id": "5_e5",
+          "mention": "落伍者",
+          "normalized_name": "落伍者",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "根据因特网普及水平可以把世界各国分为信息与通讯技术的领先者、积极采用者、追赶着、落伍者、边缘化者",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "分类标签，非专有命名"
+        },
+        {
+          "entity_id": "5_e6",
+          "mention": "边缘化者",
+          "normalized_name": "边缘化者",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "根据因特网普及水平可以把世界各国分为信息与通讯技术的领先者、积极采用者、追赶着、落伍者、边缘化者",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "分类标签，非专有命名"
+        },
+        {
+          "entity_id": "5_e7",
+          "mention": "全球信息资源和知识资源分布的不均衡性",
+          "normalized_name": "全球信息资源和知识资源分布的不均衡性",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这反映了全球信息资源和知识资源分布的不均衡性以及信息技术促进发展在世界各国的不均衡性",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e8",
+          "mention": "信息技术促进发展在世界各国的不均衡性",
+          "normalized_name": "信息技术促进发展在世界各国的不均衡性",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这反映了全球信息资源和知识资源分布的不均衡性以及信息技术促进发展在世界各国的不均衡性",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e9",
+          "mention": "信息时代新的贫富差距",
+          "normalized_name": "信息时代新的贫富差距",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "造成信息时代新的贫富差距",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼指数字鸿沟"
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "根据这种分类，我国已经处在“落伍者”的行列中，成为世界网络革命的“数字贫困”国家，我国数字鸿沟主要存在于3个方面，即我国与世界发达国家之间、我国各地区之间及城乡之间。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "数字贫困",
+          "normalized_name": "数字贫困",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "成为世界网络革命的“数字贫困”国家",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "数字鸿沟",
+          "normalized_name": "数字鸿沟",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国数字鸿沟主要存在于3个方面",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "第四，在社会信息化指数方面，根据相关计算，目前中国信息化指数仅为美国的 $7 \\%$ ，其中信息资源水平指数、信息装备水平指数、信息技术发展水平指数、信息主体水平指数分别为美国的 $5 . 5 \\%$ 、$4 . 3 \\%$ 、 $5 . 7 \\%$ 和 $2 4 ~ . 8 \\%$ 。 中国的社会信息化程度仅仅处在美国60年代初的水平，两者差距在40年左右。最后，从发展的态势来看，根据世界银行的统计，中国与世界的数字鸿沟还有进一步拉大的可能。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "社会信息化指数",
+          "normalized_name": "社会信息化指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在社会信息化指数方面",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "中国信息化指数",
+          "normalized_name": "中国信息化指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前中国信息化指数仅为美国的7%",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "信息资源水平指数",
+          "normalized_name": "信息资源水平指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息资源水平指数、信息装备水平指数、信息技术发展水平指数、信息主体水平指数分别为美国的5.5%、4.3%、5.7%和24.8%",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "信息装备水平指数",
+          "normalized_name": "信息装备水平指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息资源水平指数、信息装备水平指数、信息技术发展水平指数、信息主体水平指数分别为美国的5.5%、4.3%、5.7%和24.8%",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e5",
+          "mention": "信息技术发展水平指数",
+          "normalized_name": "信息技术发展水平指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息资源水平指数、信息装备水平指数、信息技术发展水平指数、信息主体水平指数分别为美国的5.5%、4.3%、5.7%和24.8%",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e6",
+          "mention": "信息主体水平指数",
+          "normalized_name": "信息主体水平指数",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息资源水平指数、信息装备水平指数、信息技术发展水平指数、信息主体水平指数分别为美国的5.5%、4.3%、5.7%和24.8%",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e7",
+          "mention": "美国",
+          "normalized_name": "美国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "目前中国信息化指数仅为美国的7%",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e8",
+          "mention": "世界银行",
+          "normalized_name": "世界银行",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "根据世界银行的统计",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e9",
+          "mention": "数字鸿沟",
+          "normalized_name": "数字鸿沟",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "中国与世界的数字鸿沟还有进一步拉大的可能",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "根据CNNIC历年调查统计，随着经济的发展、文化的进步，我国各地区的网民人数均增长很快，但东北、西南、西北地区用户所占比例的总数一直在$30 \\%$ 以下。 从CN 下注册域名的地域分布也可以看出，华北、华东、华南的CN 下注册域名比例一直占$8 5 \\%$ 以上，东北、西南、西北的CN 下注册域名比例近年虽略有增长，但所占比例仍非常小，这在一定程度上也反映了我国地区之间的信息化水平的差距。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "CNNIC",
+          "normalized_name": "CNNIC",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "根据CNNIC历年调查统计",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "CN 下注册域名",
+          "normalized_name": "CN下注册域名",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从CN 下注册域名的地域分布也可以看出",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "信息化水平",
+          "normalized_name": "信息化水平",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "反映了我国地区之间的信息化水平的差距",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "从信息基础设施的比较来看，尽管20世纪90年代以来，中国的电信业发展速度较快，但是这种发展是不均衡的，城乡之间的信息差距十分悬殊，且呈现逐步扩大趋势。 1990 年城市电话渗透率为$1 . 7 8 \\%$ ，而农村仅为 $0 . 1 7 \\%$ ，相差1.61个百分点；",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "中国",
+          "normalized_name": "中国",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "中国的电信业发展速度较快",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "电信业",
+          "normalized_name": "电信业",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "中国的电信业发展速度较快",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "城乡之间的信息差距",
+          "normalized_name": "城乡信息差距",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "城乡之间的信息差距十分悬殊",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "1990 年",
+          "normalized_name": "1990年",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "1990 年城市电话渗透率为1.78%",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e5",
+          "mention": "城市电话渗透率",
+          "normalized_name": "城市电话渗透率",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "1990 年城市电话渗透率为1.78%",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "农林牧渔水利业生产人员和军人所占比例最少，分别只有 $1 \\%$ 和 $0 . 9 \\%$ 。 农民在网络用户中只占$0 . 3 \\%$ ，完全处于数字鸿沟的另一端，成为网络革命中的“数字贫困”人口。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "数字鸿沟",
+          "normalized_name": "数字鸿沟",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "完全处于数字鸿沟的另一端",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "数字贫困",
+          "normalized_name": "数字贫困",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "成为网络革命中的“数字贫困”人口",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "以上分析表明：从中国与世界的比较来看，中国已经成为“数字贫困”国家； 从国内各地区的比较来看，中西部地区基本上成为了“数字赤贫”地区；",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "数字贫困",
+          "normalized_name": "数字贫困",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "中国已经成为“数字贫困”国家",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "数字赤贫",
+          "normalized_name": "数字赤贫",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "中西部地区基本上成为了“数字赤贫”地区",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "数字鸿沟在世界范围内表现为发达国家与发展中国家之间经济水平及信息化程度的差距； 在一国范围内表现为地区、行业、所有制、企业规模以及不同信息主体等差异所造成的信息不对称。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "数字鸿沟",
+          "normalized_name": "数字鸿沟",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "数字鸿沟在世界范围内表现为发达国家与发展中国家之间经济水平及信息化程度的差距",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "15_e2",
+          "mention": "发达国家",
+          "normalized_name": "发达国家",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "发达国家与发展中国家之间经济水平及信息化程度的差距",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为经济分类概念，非具体组织"
+        },
+        {
+          "entity_id": "15_e3",
+          "mention": "发展中国家",
+          "normalized_name": "发展中国家",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "发达国家与发展中国家之间经济水平及信息化程度的差距",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为经济分类概念，非具体组织"
+        },
+        {
+          "entity_id": "15_e4",
+          "mention": "信息不对称",
+          "normalized_name": "信息不对称",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "不同信息主体等差异所造成的信息不对称",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "在一国范围内表现为地区、行业、所有制、企业规模以及不同信息主体等差异所造成的信息不对称。 透过现象深究数字鸿沟形成的原因，笔者认为可以归纳为以下两点。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "数字鸿沟",
+          "normalized_name": "数字鸿沟",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "透过现象深究数字鸿沟形成的原因",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "（1）国家、社会之间的整体实力的差距是国家间数字鸿沟形成的根本原因。 发达国家在不合理的国际政治经济秩序中，凭借其强大的经济、科技实力，在“知识权力\"集中过程中，通过技术创新、产业重组和全球垄断获取\"先行优势\"，牢牢占据了信息革命和知识经济的制高点；",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "数字鸿沟",
+          "normalized_name": "数字鸿沟",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国家间数字鸿沟形成的根本原因",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "知识权力",
+          "normalized_name": "知识权力",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在“知识权力\"集中过程中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "先行优势",
+          "normalized_name": "先行优势",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "获取\"先行优势\"",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "信息革命",
+          "normalized_name": "信息革命",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "牢牢占据了信息革命和知识经济的制高点",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e5",
+          "mention": "知识经济",
+          "normalized_name": "知识经济",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "牢牢占据了信息革命和知识经济的制高点",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "由于外汇拮据，知识和人才的匮乏，发展中国家没有能力推进信息技术的普及工作，提高因特网应用水平以及建立和利用因特网上的电子商务和电子社会而被“边缘化”了。 在这种境况下，南北数字鸿沟只会越拉越大，通过信息技术和知识来创造价值的新经济只能是一种“富国现象\"。此外，在发达国家之间，经济、科技发展的不均衡性也是造成发达国家之间信息资源占有和使用的不对称，从而形成信息落差的根本原因。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "数字鸿沟",
+          "normalized_name": "数字鸿沟",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "南北数字鸿沟只会越拉越大",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "新经济",
+          "normalized_name": "新经济",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "通过信息技术和知识来创造价值的新经济只能是一种“富国现象”",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为泛称，但此处有具体学术命名含义"
+        },
+        {
+          "entity_id": "18_e3",
+          "mention": "信息落差",
+          "normalized_name": "信息落差",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "形成信息落差的根本原因",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "（2）一个国家内的不同地区、不同阶层间经济发展的不平衡性是造成一个国家内部数字鸿沟的重要原因。我国地区间数字鸿沟是主要由地理因素和政策因素产生的。 东部地区多为平原，并靠近海洋，容易发展交通；",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "数字鸿沟",
+          "normalized_name": "数字鸿沟",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "不同阶层间经济发展的不平衡性是造成一个国家内部数字鸿沟的重要原因",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "我国地区间数字鸿沟",
+          "normalized_name": "我国地区间数字鸿沟",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国地区间数字鸿沟是主要由地理因素和政策因素产生的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "农村经济发展相对落后，农民的收入较低，仅为城市居民可支配收入的三分之一，造成农民信息意识薄弱、信息消费能力较低。 农村信息基础设施落后已经成为农村地区从传统农业社会向现代社会转变的根本障碍。",
+      "entities": [
+        {
+          "entity_id": "20_e1",
+          "mention": "农村信息基础设施",
+          "normalized_name": "农村信息基础设施",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "农村信息基础设施落后已经成为农村地区从传统农业社会向现代社会转变的根本障碍",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为phenomenon，但原文中作为独立概念被讨论"
+        },
+        {
+          "entity_id": "20_e2",
+          "mention": "传统农业社会",
+          "normalized_name": "传统农业社会",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从传统农业社会向现代社会转变",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为社会形态概念，具有独立学术命名"
+        },
+        {
+          "entity_id": "20_e3",
+          "mention": "现代社会",
+          "normalized_name": "现代社会",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从传统农业社会向现代社会转变",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为社会形态概念，具有独立学术命名"
+        }
+      ]
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "（1）在观念上要重视数字鸿沟，消除盲目乐观的误区，建立危机意识。 有些人曾乐观的认为：随着我国经济实力的增强、科技水平的提高，网民数量的增长，数字鸿沟正在缩小。 对此观点，笔者不敢苟同。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "数字鸿沟",
+          "normalized_name": "数字鸿沟",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在观念上要重视数字鸿沟",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "这就要培植本土化的创业公司，只有产生大量的创业公司，才能使技术创新和制度创新成为可能。 我国已经提出了信息化带动工业化的战略决策，在未来10 年内把信息产业变成一个最大的产业，成为国民经济增长的火车头。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "信息化带动工业化的战略决策",
+          "normalized_name": "信息化带动工业化的战略决策",
+          "candidate_l3": "policy",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "我国已经提出了信息化带动工业化的战略决策",
+          "is_specific_entity": true,
+          "confidence": 0.92,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "信息产业",
+          "normalized_name": "信息产业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在未来10 年内把信息产业变成一个最大的产业",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "美国这架巨大的经济战车正是由这些执世界高科技之牛耳的大公司所拉动的。 没有我们自己内在生长力，我们只能永远跟在发达国家后面爬行。因此，应将有限的资金投入到自有知识产权的数字产品的开发中去，走上内源型发展之路。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "美国",
+          "normalized_name": "美国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国这架巨大的经济战车正是由这些执世界高科技之牛耳的大公司所拉动的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "发达国家",
+          "normalized_name": "发达国家",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "我们只能永远跟在发达国家后面爬行",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但作为具体可识别的国家群体类别，在特定语境下可视为实体"
+        },
+        {
+          "entity_id": "24_e3",
+          "mention": "数字产品",
+          "normalized_name": "数字产品",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "应将有限的资金投入到自有知识产权的数字产品的开发中去",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e4",
+          "mention": "内源型发展之路",
+          "normalized_name": "内源型发展之路",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "走上内源型发展之路",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为特定政策或发展模式概念"
+        }
+      ]
+    },
+    {
+      "sentence_id": "25",
+      "sentence": "（4）加快西部信息基础设施建设。 西部开发应该网络先行，这是弥补数字鸿沟的基础。 “要想富，先修路\"，基础设施建设即为信息化之路。",
+      "entities": [
+        {
+          "entity_id": "25_e1",
+          "mention": "西部信息基础设施建设",
+          "normalized_name": "西部信息基础设施建设",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加快西部信息基础设施建设",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可兼为policy_initiative"
+        },
+        {
+          "entity_id": "25_e2",
+          "mention": "数字鸿沟",
+          "normalized_name": "数字鸿沟",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "弥补数字鸿沟的基础",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "26",
+      "sentence": "“要想富，先修路\"，基础设施建设即为信息化之路。 要缩小东西部数字鸿沟，就必须加大计算机网络、视听传媒网络等信息设施建设。要把信息网络的基础设施建设作为公共设施来对待，并降低收费标准，让更多的人有能力上网，让网络进入企业和家庭，使网络\"平民化\"。",
+      "entities": [
+        {
+          "entity_id": "26_e1",
+          "mention": "数字鸿沟",
+          "normalized_name": "数字鸿沟",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "要缩小东西部数字鸿沟",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e2",
+          "mention": "计算机网络",
+          "normalized_name": "计算机网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加大计算机网络、视听传媒网络等信息设施建设",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "26_e3",
+          "mention": "视听传媒网络",
+          "normalized_name": "视听传媒网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加大计算机网络、视听传媒网络等信息设施建设",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "27",
+      "sentence": "（5）树立人才资源观，为跨越数字鸿沟提供人力支持。 西部大开发的根本宗旨是“富民为本，投资于人民\"，西部开发的战略也应当从以“物”为中心的资源开发转向以“人\"为中心的人力资源开发，这是实现西部地区可持续发展的重要条件。",
+      "entities": [
+        {
+          "entity_id": "27_e1",
+          "mention": "数字鸿沟",
+          "normalized_name": "数字鸿沟",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "树立人才资源观，为跨越数字鸿沟提供人力支持",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e2",
+          "mention": "西部大开发",
+          "normalized_name": "西部大开发",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "西部大开发的根本宗旨是“富民为本，投资于人民”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "27_e3",
+          "mention": "西部地区",
+          "normalized_name": "西部地区",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这是实现西部地区可持续发展的重要条件",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可兼为subfield（区域研究）"
+        }
+      ]
+    },
+    {
+      "sentence_id": "28",
+      "sentence": "网络教育可以使知识传播成本不断下降，而且这一下降是与人的基本素质的提高同时进行的，即人的现代化。 利用多元化的途径和手段，不断提高人们的素质应该是缩小数字鸿沟的重要手段。只有让更多的人接受教育，让他们有更多的机会接触新技术、掌握新技术，并把这些新技术能够加以应用，才能使“信息穷人”越来越少，从而逐渐填补数字鸿沟。",
+      "entities": [
+        {
+          "entity_id": "28_e1",
+          "mention": "数字鸿沟",
+          "normalized_name": "数字鸿沟",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "缩小数字鸿沟的重要手段",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "28_e2",
+          "mention": "信息穷人",
+          "normalized_name": "信息穷人",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "才能使“信息穷人”越来越少",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    }
+  ]
+}
