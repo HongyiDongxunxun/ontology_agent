@@ -102,7 +102,8 @@ ENTITY_EXTRACTION_PROMPT = (
     "- `concept`: 学术术语/命名单元(Persona/信息素养/知识鸿沟)\n"
     "- `definition`: 对概念边界的特定界定方式(通常含提出者)\n"
     "- `typology`: 分类方案(JCR分类/学科分类体系)\n"
-    "> vs: concept = 命名，definition = 界定，typology = 系统分类方案。\n\n"
+    "> vs: concept = 命名，definition = 界定，typology = 系统分类方案。\n"
+    "> `concept` 不是 Abstract 的默认兜底项。只有原句把对象作为术语/概念名本身讨论，且不能归入方法、理论、模型、框架、现象、学科、事件或制品时，才标 concept。\n\n"
     "**KnowledgeClaim (知识主张层)**\n"
     "- `theory`: 有因果主张的系统命题(学习迁移理论/弱连接理论) — 解释「为什么」\n"
     "- `model`: 组件/变量关系描述(研究对象套件模型/TAM) — 描述「如何运作」\n"
@@ -127,6 +128,15 @@ ENTITY_EXTRACTION_PROMPT = (
     "- `trend`: 带时间方向性的演变(数字化趋势/Web2.0广泛应用)\n"
     "> vs: trend 有时间方向性，phenomenon 是静态现象。\n"
     "> 泛化趋势如「发展趋势」「增长趋势」不抽取。\n\n"
+    "### Abstract 内部优先级 — 防止 concept 兜底\n"
+    "当一个抽象实体可能被标为 concept 时，必须先排除以下更具体类别:\n"
+    "1. 研究操作/程序/分析/测量/检索/聚类/回归 → method 或 technique\n"
+    "2. 理论/模型/框架/假设/机制/因果解释/变量关系 → theory/model/framework/hypothesis\n"
+    "3. 学科/领域/方向/研究传统/学派 → discipline/subfield/school_of_thought/approach/paradigm\n"
+    "4. 可观察社会事实/现实问题/困境/鸿沟/孤岛/茧房 → phenomenon 或 trend\n"
+    "5. 运动/倡议/计划/项目/改革/争论/发展阶段 → Event\n"
+    "6. 具体系统、数据库、工具、标准、文献、知识组织系统 → Artifact\n"
+    "仅当以上均不适用，且原句讨论的是命名单元本身，才使用 concept。\n\n"
     "### 四、Event (事件/过程) — 在时间中展开\n"
     "- `intellectual_turn`: 学术转向(可明确时间节点的范式转变)\n"
     "- `debate`: 学术争论(有明确争论双方和议题)\n"
@@ -157,9 +167,9 @@ ENTITY_EXTRACTION_PROMPT = (
     "### 正例1 (scholar — 知识生产者)\n"
     "输入: 建国以前在谱学研究领域颇有建树的学者有潘光旦、罗香林等人。他们的研究对谱学理论的普及与发展具有不可磨灭的贡献。\n"
     '输出: {{\"entities\":[{{\"mention\":\"潘光旦\",\"normalized_name\":\"潘光旦\",\"candidate_l3\":\"scholar\",\"candidate_l1\":[\"Agent\"],\"evidence\":\"在谱学研究领域颇有建树的学者有潘光旦\",\"is_specific_entity\":true,\"confidence\":0.95,\"uncertainty\":\"\"}},{{\"mention\":\"罗香林\",\"normalized_name\":\"罗香林\",\"candidate_l3\":\"scholar\",\"candidate_l1\":[\"Agent\"],\"evidence\":\"在谱学研究领域颇有建树的学者有潘光旦、罗香林等人\",\"is_specific_entity\":true,\"confidence\":0.95,\"uncertainty\":\"\"}}]}}\n\n'
-    "### 正例2 (research — 知识生产组织 + concept)\n"
+    "### 正例2 (research — 知识生产组织 + phenomenon)\n"
     "输入: 加拿大不列颠哥伦比亚大学的卫生保健管理中心门户就是一个努力帮助用户克服信息过载的网络信息中介的示例。\n"
-    '输出: {{\"entities\":[{{\"mention\":\"加拿大不列颠哥伦比亚大学\",\"normalized_name\":\"不列颠哥伦比亚大学\",\"candidate_l3\":\"research\",\"candidate_l1\":[\"Agent\"],\"evidence\":\"加拿大不列颠哥伦比亚大学的卫生保健管理中心门户\",\"is_specific_entity\":true,\"confidence\":0.95,\"uncertainty\":\"\"}},{{\"mention\":\"信息过载\",\"normalized_name\":\"信息过载\",\"candidate_l3\":\"concept\",\"candidate_l1\":[\"Abstract\"],\"evidence\":\"帮助用户克服信息过载\",\"is_specific_entity\":true,\"confidence\":0.9,\"uncertainty\":\"\"}}]}}\n\n'
+    '输出: {{\"entities\":[{{\"mention\":\"加拿大不列颠哥伦比亚大学\",\"normalized_name\":\"不列颠哥伦比亚大学\",\"candidate_l3\":\"research\",\"candidate_l1\":[\"Agent\"],\"evidence\":\"加拿大不列颠哥伦比亚大学的卫生保健管理中心门户\",\"is_specific_entity\":true,\"confidence\":0.95,\"uncertainty\":\"\"}},{{\"mention\":\"信息过载\",\"normalized_name\":\"信息过载\",\"candidate_l3\":\"phenomenon\",\"candidate_l1\":[\"Abstract\"],\"evidence\":\"帮助用户克服信息过载\",\"is_specific_entity\":true,\"confidence\":0.9,\"uncertainty\":\"现实信息问题,非术语本身\"}}]}}\n\n'
     "### 正例3 (book — 专著)\n"
     "输入: 新版《图书馆学概论》反映了网络时代国内外图书馆学研究的最新成果。与旧版相比,其观点更新颖,内容更充实,结构更合理。\n"
     '输出: {{\"entities\":[{{\"mention\":\"新版《图书馆学概论》\",\"normalized_name\":\"《图书馆学概论》\",\"candidate_l3\":\"book\",\"candidate_l1\":[\"Artifact\"],\"evidence\":\"新版《图书馆学概论》反映了网络时代国内外图书馆学研究的最新成果\",\"is_specific_entity\":true,\"confidence\":0.95,\"uncertainty\":\"\"}}]}}\n\n'
@@ -179,6 +189,12 @@ ENTITY_EXTRACTION_PROMPT = (
     "输入: 长期以来各文化机构独自推进的智改数转造就了一座座数据孤岛,底层关联不足进而会引发上层文化服务割裂。\n"
     '输出: {{\"entities\":[{{\"mention\":\"数据孤岛\",\"normalized_name\":\"数据孤岛\",\"candidate_l3\":\"phenomenon\",\"candidate_l1\":[\"Abstract\"],\"evidence\":\"造就了一座座数据孤岛\",\"is_specific_entity\":true,\"confidence\":0.95,\"uncertainty\":\"\"}}]}}\n'
     "> 「文化服务割裂」若无独立学术命名则不抽取。\n\n"
+    "### 正例7b (subfield vs concept)\n"
+    "输入: 信息检索在图书情报学研究中形成了稳定的问题域和方法传统。\n"
+    '输出: {{\"entities\":[{{\"mention\":\"信息检索\",\"normalized_name\":\"信息检索\",\"candidate_l3\":\"subfield\",\"candidate_l1\":[\"Abstract\"],\"evidence\":\"信息检索在图书情报学研究中形成了稳定的问题域和方法传统\",\"is_specific_entity\":true,\"confidence\":0.9,\"uncertainty\":\"作为研究子领域,非concept兜底\"}}]}}\n\n'
+    "### 正例7c (concept 的正向用法)\n"
+    "输入: 「信息素养」这一概念强调个体识别、获取和评价信息的能力。\n"
+    '输出: {{\"entities\":[{{\"mention\":\"信息素养\",\"normalized_name\":\"信息素养\",\"candidate_l3\":\"concept\",\"candidate_l1\":[\"Abstract\"],\"evidence\":\"「信息素养」这一概念\",\"is_specific_entity\":true,\"confidence\":0.9,\"uncertainty\":\"原句讨论术语/概念名本身\"}}]}}\n\n'
     "### 正例8 (debate + movement)\n"
     "输入: 情报学中对于Information与Intelligence的争论应该是有益的。开放获取意味着文章一旦被创造出来,将通过网络让读者免费获取和利用。\n"
     '输出: {{\"entities\":[{{\"mention\":\"Information与Intelligence的争论\",\"normalized_name\":\"Information与Intelligence的争论\",\"candidate_l3\":\"debate\",\"candidate_l1\":[\"Event\"],\"evidence\":\"情报学中对于Information与Intelligence的争论应该是有益的\",\"is_specific_entity\":true,\"confidence\":0.92,\"uncertainty\":\"\"}},{{\"mention\":\"开放获取\",\"normalized_name\":\"开放获取\",\"candidate_l3\":\"movement\",\"candidate_l1\":[\"Event\"],\"evidence\":\"开放获取意味着文章一旦被创造出来\",\"is_specific_entity\":true,\"confidence\":0.9,\"uncertainty\":\"可兼为concept\"}}]}}\n'

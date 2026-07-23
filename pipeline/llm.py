@@ -7,9 +7,10 @@ from __future__ import annotations
 import json
 import os
 import re
+import time
 from typing import Optional
 
-from openai import OpenAI
+from openai import APIConnectionError, APITimeoutError, OpenAI, RateLimitError
 
 
 class LLMClient:
@@ -34,15 +35,36 @@ class LLMClient:
         self.base_url = base_url or os.environ.get("DEEPSEEK_BASE_URL", "https://api.deepseek.com")
 
     def _call(self, prompt: str) -> str:
-        client = OpenAI(api_key=self.api_key, base_url=self.base_url, timeout=self.timeout)
-        response = client.chat.completions.create(
-            model=self.model,
-            messages=[{"role": "user", "content": prompt}],
-            temperature=self.temperature,
-            max_tokens=self.max_tokens,
+        client = OpenAI(
+            api_key=self.api_key,
+            base_url=self.base_url,
             timeout=self.timeout,
+            max_retries=0,
         )
-        return response.choices[0].message.content or ""
+        retryable_errors = (APIConnectionError, APITimeoutError, RateLimitError)
+        last_error: Exception | None = None
+
+        for attempt in range(1, 5):
+            try:
+                response = client.chat.completions.create(
+                    model=self.model,
+                    messages=[{"role": "user", "content": prompt}],
+                    temperature=self.temperature,
+                    max_tokens=self.max_tokens,
+                    timeout=self.timeout,
+                )
+                return response.choices[0].message.content or ""
+            except retryable_errors as exc:
+                last_error = exc
+                if attempt == 4:
+                    break
+                time.sleep(min(2 ** attempt, 20))
+
+        error_name = type(last_error).__name__ if last_error else "UnknownError"
+        raise RuntimeError(
+            f"LLM request failed after retries: {error_name}; "
+            f"model={self.model}; base_url={self.base_url}"
+        ) from last_error
 
     def call_json(self, prompt: str, default: object = None) -> object:
         raw = self._call(prompt)
