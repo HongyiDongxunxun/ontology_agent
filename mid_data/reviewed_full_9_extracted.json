@@ -10,14 +10,14 @@
           "entity_id": "1_e1",
           "mention": "农村图书馆",
           "normalized_name": "农村图书馆",
-          "candidate_l3": "phenomenon",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "我国农村图书馆研究取得了一定的成绩",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为研究主题/现象，非具体机构"
+          "uncertainty": "作为研究主题概念，非具体机构"
         },
         {
           "entity_id": "1_e2",
@@ -27,23 +27,49 @@
           "candidate_l1": [
             "Agent"
           ],
-          "evidence": "随着中央政府对包括农村图书馆在内的农村文化建设的高度重视",
+          "evidence": "中央政府对包括农村图书馆在内的农村文化建设的高度重视",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "具体治理组织"
+          "uncertainty": ""
         },
         {
           "entity_id": "1_e3",
+          "mention": "图书馆学界",
+          "normalized_name": "图书馆学界",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆学界对该问题的持续关注",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为学术共同体，非具体组织"
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "农村文化建设",
+          "normalized_name": "农村文化建设",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "中央政府对包括农村图书馆在内的农村文化建设的高度重视",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为政策概念，非具体事件"
+        },
+        {
+          "entity_id": "1_e5",
           "mention": "中西部地区",
           "normalized_name": "中西部地区",
-          "candidate_l3": "phenomenon",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "研究的区域不平衡、中西部地区研究不足",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "地理区域，非严格学术命名"
+          "uncertainty": "作为地理区域概念，非具体组织"
         }
       ]
     },
@@ -62,72 +88,20 @@
           "evidence": "农村图书馆是最基层的公共图书馆",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为研究主题的术语概念，非具体机构"
+          "uncertainty": "作为研究主题概念，非具体机构"
         },
         {
           "entity_id": "2_e2",
-          "mention": "公共图书馆",
-          "normalized_name": "公共图书馆",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "农村图书馆是最基层的公共图书馆",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为机构类型概念，非具体可识别组织"
-        },
-        {
-          "entity_id": "2_e3",
-          "mention": "农村图书馆事业",
-          "normalized_name": "农村图书馆事业",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "发展农村图书馆事业",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为事业/领域概念"
-        },
-        {
-          "entity_id": "2_e4",
-          "mention": "国家图书馆体系",
-          "normalized_name": "国家图书馆体系",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "完善国家图书馆体系",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为体系概念，非具体组织"
-        },
-        {
-          "entity_id": "2_e5",
-          "mention": "改革开放以来",
-          "normalized_name": "改革开放以来",
-          "candidate_l3": "stage",
-          "candidate_l1": [
-            "Event"
-          ],
-          "evidence": "改革开放以来,我国学者就农村图书馆问题进行了颇为有益的探索和研究",
-          "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "2_e6",
           "mention": "1978-2007年间",
           "normalized_name": "1978-2007年",
           "candidate_l3": "stage",
           "candidate_l1": [
             "Event"
           ],
-          "evidence": "1978-2007年间我国农村图书馆的研究状况",
+          "evidence": "就1978-2007年间我国农村图书馆的研究状况进行评析",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": ""
+          "uncertainty": "原文明确作为研究时段"
         }
       ]
     },
@@ -146,7 +120,7 @@
           "evidence": "在我国对农村图书馆有不同的称谓",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为术语概念被讨论"
+          "uncertainty": "作为术语/概念名本身讨论"
         },
         {
           "entity_id": "3_e2",
@@ -158,8 +132,8 @@
           ],
           "evidence": "如农村图书馆（室）乡镇图书馆(室）乡村图书馆(室）村级图书馆(室)和乡村社区图书馆(室)等",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为具体称谓列举"
+          "confidence": 0.85,
+          "uncertainty": "作为具体称谓概念"
         },
         {
           "entity_id": "3_e3",
@@ -171,8 +145,8 @@
           ],
           "evidence": "如农村图书馆（室）乡镇图书馆(室）乡村图书馆(室）村级图书馆(室)和乡村社区图书馆(室)等",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为具体称谓列举"
+          "confidence": 0.85,
+          "uncertainty": "作为具体称谓概念"
         },
         {
           "entity_id": "3_e4",
@@ -184,8 +158,8 @@
           ],
           "evidence": "如农村图书馆（室）乡镇图书馆(室）乡村图书馆(室）村级图书馆(室)和乡村社区图书馆(室)等",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为具体称谓列举"
+          "confidence": 0.85,
+          "uncertainty": "作为具体称谓概念"
         },
         {
           "entity_id": "3_e5",
@@ -197,8 +171,8 @@
           ],
           "evidence": "如农村图书馆（室）乡镇图书馆(室）乡村图书馆(室）村级图书馆(室)和乡村社区图书馆(室)等",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为具体称谓列举"
+          "confidence": 0.85,
+          "uncertainty": "作为具体称谓概念"
         },
         {
           "entity_id": "3_e6",
@@ -210,8 +184,8 @@
           ],
           "evidence": "如农村图书馆（室）乡镇图书馆(室）乡村图书馆(室）村级图书馆(室)和乡村社区图书馆(室)等",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为具体称谓列举"
+          "confidence": 0.85,
+          "uncertainty": "作为具体称谓概念"
         }
       ]
     },
@@ -221,16 +195,16 @@
       "entities": [
         {
           "entity_id": "4_e1",
-          "mention": "农村图书馆",
-          "normalized_name": "农村图书馆",
-          "candidate_l3": "concept",
+          "mention": "冷选英",
+          "normalized_name": "冷选英",
+          "candidate_l3": "scholar",
           "candidate_l1": [
-            "Abstract"
+            "Agent"
           ],
-          "evidence": "在我国对农村图书馆有不同的称谓",
+          "evidence": "冷选英认为：“乡镇图书馆是乡镇人民政府设立的为社会公众服务的乡镇一级的公共图书馆",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为术语概念被讨论"
+          "confidence": 0.95,
+          "uncertainty": ""
         },
         {
           "entity_id": "4_e2",
@@ -240,88 +214,36 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "如农村图书馆（室）乡镇图书馆(室）乡村图书馆(室）村级图书馆(室)和乡村社区图书馆(室)等",
+          "evidence": "冷选英认为：“乡镇图书馆是乡镇人民政府设立的为社会公众服务的乡镇一级的公共图书馆",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为术语概念被讨论"
+          "uncertainty": "作为概念被定义，非具体机构"
         },
         {
           "entity_id": "4_e3",
-          "mention": "乡村图书馆",
-          "normalized_name": "乡村图书馆",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "如农村图书馆（室）乡镇图书馆(室）乡村图书馆(室）村级图书馆(室)和乡村社区图书馆(室)等",
-          "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为术语概念被讨论"
-        },
-        {
-          "entity_id": "4_e4",
-          "mention": "村级图书馆",
-          "normalized_name": "村级图书馆",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "如农村图书馆（室）乡镇图书馆(室）乡村图书馆(室）村级图书馆(室)和乡村社区图书馆(室)等",
-          "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为术语概念被讨论"
-        },
-        {
-          "entity_id": "4_e5",
-          "mention": "乡村社区图书馆",
-          "normalized_name": "乡村社区图书馆",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "如农村图书馆（室）乡镇图书馆(室）乡村图书馆(室）村级图书馆(室)和乡村社区图书馆(室)等",
-          "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为术语概念被讨论"
-        },
-        {
-          "entity_id": "4_e6",
-          "mention": "冷选英",
-          "normalized_name": "冷选英",
-          "candidate_l3": "scholar",
+          "mention": "乡镇人民政府",
+          "normalized_name": "乡镇人民政府",
+          "candidate_l3": "governance",
           "candidate_l1": [
             "Agent"
           ],
-          "evidence": "冷选英认为",
+          "evidence": "乡镇图书馆是乡镇人民政府设立的为社会公众服务的乡镇一级的公共图书馆",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
         },
         {
-          "entity_id": "4_e7",
-          "mention": "乡镇图书馆",
-          "normalized_name": "乡镇图书馆",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "冷选英认为：“乡镇图书馆是乡镇人民政府设立的为社会公众服务的乡镇一级的公共图书馆",
-          "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为定义中的术语概念"
-        },
-        {
-          "entity_id": "4_e8",
+          "entity_id": "4_e4",
           "mention": "公共图书馆",
           "normalized_name": "公共图书馆",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "乡镇一级的公共图书馆",
+          "evidence": "乡镇图书馆是乡镇人民政府设立的为社会公众服务的乡镇一级的公共图书馆",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为类型概念，非具体机构"
+          "uncertainty": "作为机构类型概念，非具体机构"
         }
       ]
     },
@@ -397,7 +319,7 @@
           ],
           "evidence": "农村图书馆不仅包括县级公共图书馆,还应该包括县乡镇各类机关与企事业单位的图书馆(室）街道图书馆（室）村落图书馆(室）以及农村的中小学图书馆(室)等",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.85,
           "uncertainty": "作为学术概念被讨论和界定"
         },
         {
@@ -415,16 +337,16 @@
         },
         {
           "entity_id": "6_e3",
-          "mention": "县级公共图书馆",
-          "normalized_name": "县级公共图书馆",
-          "candidate_l3": "service",
+          "mention": "农村图书馆(室)",
+          "normalized_name": "农村图书馆(室)",
+          "candidate_l3": "concept",
           "candidate_l1": [
-            "Agent"
+            "Abstract"
           ],
-          "evidence": "农村图书馆不仅包括县级公共图书馆",
+          "evidence": "农村图书馆(室)应该是为农村人口服务的公益机构",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "具体机构类型，但未指称特定图书馆"
+          "uncertainty": "作为被界定的概念"
         }
       ]
     },
@@ -479,7 +401,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "以“主题词\"为检索途径,以“农村图书馆 $^ +$ 乡镇图书馆 $^ +$ 乡镇图书室 $^ +$ 乡村图书馆 $^ +$ 村级图书室\"为检索词",
+          "evidence": "以“农村图书馆+乡镇图书馆+乡镇图书室+乡村图书馆+村级图书室”为检索词",
           "is_specific_entity": true,
           "confidence": 0.85,
           "uncertainty": "作为检索词概念，非具体机构"
@@ -492,7 +414,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "以“农村图书馆 $^ +$ 乡镇图书馆 $^ +$ 乡镇图书室 $^ +$ 乡村图书馆 $^ +$ 村级图书室\"为检索词",
+          "evidence": "以“农村图书馆+乡镇图书馆+乡镇图书室+乡村图书馆+村级图书室”为检索词",
           "is_specific_entity": true,
           "confidence": 0.85,
           "uncertainty": "作为检索词概念，非具体机构"
@@ -505,7 +427,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "以“农村图书馆 $^ +$ 乡镇图书馆 $^ +$ 乡镇图书室 $^ +$ 乡村图书馆 $^ +$ 村级图书室\"为检索词",
+          "evidence": "以“农村图书馆+乡镇图书馆+乡镇图书室+乡村图书馆+村级图书室”为检索词",
           "is_specific_entity": true,
           "confidence": 0.85,
           "uncertainty": "作为检索词概念，非具体机构"
@@ -518,7 +440,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "以“农村图书馆 $^ +$ 乡镇图书馆 $^ +$ 乡镇图书室 $^ +$ 乡村图书馆 $^ +$ 村级图书室\"为检索词",
+          "evidence": "以“农村图书馆+乡镇图书馆+乡镇图书室+乡村图书馆+村级图书室”为检索词",
           "is_specific_entity": true,
           "confidence": 0.85,
           "uncertainty": "作为检索词概念，非具体机构"
@@ -540,7 +462,7 @@
           "evidence": "再利用“家庭图书馆(室）”“街道图书馆\"和“乡村社区图书馆(室）\"等检索词检索",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为检索词出现，可能指代概念或实体类型，但无具体唯一指称"
+          "uncertainty": "作为检索词/概念名出现，非具体机构"
         },
         {
           "entity_id": "8_e2",
@@ -553,7 +475,7 @@
           "evidence": "再利用“家庭图书馆(室）”“街道图书馆\"和“乡村社区图书馆(室）\"等检索词检索",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为检索词出现，可能指代概念或实体类型，但无具体唯一指称"
+          "uncertainty": "作为检索词/概念名出现，非具体机构"
         },
         {
           "entity_id": "8_e3",
@@ -566,20 +488,20 @@
           "evidence": "再利用“家庭图书馆(室）”“街道图书馆\"和“乡村社区图书馆(室）\"等检索词检索",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为检索词出现，可能指代概念或实体类型，但无具体唯一指称"
+          "uncertainty": "作为检索词/概念名出现，非具体机构"
         },
         {
           "entity_id": "8_e4",
           "mention": "主题词",
           "normalized_name": "主题词",
-          "candidate_l3": "concept",
+          "candidate_l3": "technique",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "检索过程中以“主题词”为检索途径",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为检索途径的术语，非具体受控词表"
+          "uncertainty": "作为检索技术/途径"
         },
         {
           "entity_id": "8_e5",
@@ -592,7 +514,7 @@
           "evidence": "运用“模糊\"匹配",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为检索匹配技术，非具体算法名称"
+          "uncertainty": "作为检索匹配技术"
         }
       ]
     },
@@ -602,6 +524,19 @@
       "entities": [
         {
           "entity_id": "9_e1",
+          "mention": "1978-2007年",
+          "normalized_name": "1978-2007年",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "检索到1978-2007年我国研究农村图书馆问题的论文",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为发展阶段的时间范围"
+        },
+        {
+          "entity_id": "9_e2",
           "mention": "农村图书馆",
           "normalized_name": "农村图书馆",
           "candidate_l3": "concept",
@@ -611,7 +546,7 @@
           "evidence": "我国研究农村图书馆问题的论文",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为研究主题概念，非具体机构"
+          "uncertainty": "作为研究主题概念"
         }
       ]
     },
@@ -621,16 +556,29 @@
       "entities": [
         {
           "entity_id": "10_e1",
-          "mention": "文革",
-          "normalized_name": "文革",
-          "candidate_l3": "phenomenon",
+          "mention": "1978-1981年",
+          "normalized_name": "1978-1981年",
+          "candidate_l3": "stage",
           "candidate_l1": [
-            "Abstract"
+            "Event"
           ],
-          "evidence": "1978-1981年是“文革”后的调整时期",
+          "evidence": "1978-1981年是“文革\"后的调整时期",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为历史现象，非学术术语"
+          "uncertainty": "原文明确表示一个发展阶段"
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "文革",
+          "normalized_name": "文革",
+          "candidate_l3": "movement",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "1978-1981年是“文革\"后的调整时期",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
         }
       ]
     },
@@ -640,16 +588,29 @@
       "entities": [
         {
           "entity_id": "11_e1",
+          "mention": "1982-1996年",
+          "normalized_name": "1982-1996年",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "1982-1996年是改革开放后的初步发展时期",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e2",
           "mention": "农村图书馆",
           "normalized_name": "农村图书馆",
-          "candidate_l3": "phenomenon",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "农村图书馆问题逐步纳入研究者视野",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为研究主题/现象被讨论"
+          "uncertainty": "作为研究问题/概念讨论，非具体机构"
         }
       ]
     },
@@ -706,7 +667,7 @@
           "entity_id": "13_e1",
           "mention": "全国文化信息资源共享工程",
           "normalized_name": "全国文化信息资源共享工程",
-          "candidate_l3": "policy_initiative",
+          "candidate_l3": "research_program",
           "candidate_l1": [
             "Event"
           ],
@@ -723,10 +684,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "使图书馆学界对农村图书馆问题的关注也逐步深入",
+          "evidence": "图书馆学界对农村图书馆问题的关注也逐步深入",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为研究主题/现象,非具体机构"
+          "uncertainty": "作为研究主题/现象，非具体机构"
         }
       ]
     },
@@ -742,10 +703,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "涉足农村图书馆领域",
+          "evidence": "绝大多数作者都只是偶尔涉足农村图书馆领域",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为研究子领域"
+          "uncertainty": "作为研究子领域，非具体机构"
         }
       ]
     },
@@ -762,9 +723,9 @@
             "Agent"
           ],
           "evidence": "来自政府、教学、科研和各类型图书馆",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "泛称，但作为具体机构类别在上下文中可识别"
+          "is_specific_entity": false,
+          "confidence": 0.6,
+          "uncertainty": "泛称，未指向具体政府机构"
         },
         {
           "entity_id": "15_e2",
@@ -775,9 +736,9 @@
             "Agent"
           ],
           "evidence": "来自政府、教学、科研和各类型图书馆",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "可能指教学机构，但未具体命名"
+          "is_specific_entity": false,
+          "confidence": 0.5,
+          "uncertainty": "泛称，未指向具体教学机构"
         },
         {
           "entity_id": "15_e3",
@@ -788,9 +749,9 @@
             "Agent"
           ],
           "evidence": "来自政府、教学、科研和各类型图书馆",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "可能指科研机构，但未具体命名"
+          "is_specific_entity": false,
+          "confidence": 0.5,
+          "uncertainty": "泛称，未指向具体科研机构"
         },
         {
           "entity_id": "15_e4",
@@ -801,9 +762,9 @@
             "Agent"
           ],
           "evidence": "来自政府、教学、科研和各类型图书馆",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "泛称，但作为具体机构类别在上下文中可识别"
+          "is_specific_entity": false,
+          "confidence": 0.5,
+          "uncertainty": "泛称，未指向具体图书馆"
         }
       ]
     },
@@ -815,40 +776,14 @@
           "entity_id": "16_e1",
           "mention": "农村图书馆",
           "normalized_name": "农村图书馆",
-          "candidate_l3": "phenomenon",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "研究农村图书馆问题的主体",
-          "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为研究主题/现象，非具体机构"
-        },
-        {
-          "entity_id": "16_e2",
-          "mention": "市、县文化局(馆）",
-          "normalized_name": "市、县文化局(馆）",
-          "candidate_l3": "governance",
-          "candidate_l1": [
-            "Agent"
-          ],
-          "evidence": "市、县文化局(馆）政府，党校，机关，乡、镇文化站等部门",
+          "evidence": "研究农村图书馆问题的主体,对农村图书馆研究与发展",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "机构名称较泛，但可识别为具体行政机构类型"
-        },
-        {
-          "entity_id": "16_e3",
-          "mention": "乡、镇文化站",
-          "normalized_name": "乡、镇文化站",
-          "candidate_l3": "governance",
-          "candidate_l1": [
-            "Agent"
-          ],
-          "evidence": "乡、镇文化站等部门",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "机构名称较泛，但可识别为具体行政机构类型"
+          "uncertainty": "作为研究主题/概念，非具体机构"
         }
       ]
     },
@@ -867,7 +802,7 @@
           "evidence": "高校图书馆学专业教学单位和图书馆学相关研究机构是我国图书馆学研究的核心",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "泛称机构类别词，但原文中作为具体指称的机构类型出现，且与后文'图书馆学相关研究机构'并列，具有一定具体性"
+          "uncertainty": "机构名称较泛，但原文指具体教学单位群体"
         },
         {
           "entity_id": "17_e2",
@@ -880,20 +815,20 @@
           "evidence": "高校图书馆学专业教学单位和图书馆学相关研究机构是我国图书馆学研究的核心",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "泛称机构类别词，但原文中作为具体指称的机构类型出现"
+          "uncertainty": "机构名称较泛，但原文指具体研究机构群体"
         },
         {
           "entity_id": "17_e3",
           "mention": "农村图书馆",
           "normalized_name": "农村图书馆",
-          "candidate_l3": "phenomenon",
+          "candidate_l3": "service",
           "candidate_l1": [
-            "Abstract"
+            "Agent"
           ],
-          "evidence": "农村图书馆问题的研究",
+          "evidence": "高校教学研究机构对农村图书馆的研究文献年均不足1篇",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为研究主题/现象被讨论"
+          "confidence": 0.8,
+          "uncertainty": "作为机构类型，但原文多次提及，视为具体研究对象"
         },
         {
           "entity_id": "17_e4",
@@ -906,7 +841,7 @@
           "evidence": "农村图书馆工作人员的研究文献数量偏少",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "泛称身份类别词，但原文中作为具体群体指称"
+          "uncertainty": "群体指称，但原文作为具体研究对象"
         },
         {
           "entity_id": "17_e5",
@@ -916,10 +851,10 @@
           "candidate_l1": [
             "Agent"
           ],
-          "evidence": "乡、镇文化站占1.26%",
+          "evidence": "“乡、镇文化站”占1.26%",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "泛称机构类别词，但原文中作为具体统计对象"
+          "uncertainty": "作为机构类型，但原文有具体统计"
         },
         {
           "entity_id": "17_e6",
@@ -931,8 +866,8 @@
           ],
           "evidence": "核心作者集中于公共图书馆",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "泛称机构类别词，但原文中作为具体指称的机构类型出现"
+          "confidence": 0.8,
+          "uncertainty": "作为机构类型，但原文指具体群体"
         },
         {
           "entity_id": "17_e7",
@@ -944,8 +879,8 @@
           ],
           "evidence": "以市、县图书馆为主体",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "泛称机构类别词，但原文中作为具体指称的机构类型出现"
+          "confidence": 0.8,
+          "uncertainty": "作为机构类型，但原文指具体群体"
         }
       ]
     },
@@ -962,92 +897,118 @@
           "entity_id": "19_e1",
           "mention": "农村图书馆",
           "normalized_name": "农村图书馆",
-          "candidate_l3": "phenomenon",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "农村图书馆研究较发达的是江苏、辽宁、浙江、山东等东部地区",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为研究主题/现象被讨论，非具体机构"
+          "uncertainty": "作为研究主题/概念被讨论"
         },
         {
           "entity_id": "19_e2",
           "mention": "江苏",
           "normalized_name": "江苏",
-          "candidate_l3": "discipline",
+          "candidate_l3": "governance",
           "candidate_l1": [
-            "Abstract"
+            "Agent"
           ],
           "evidence": "农村图书馆研究较发达的是江苏、辽宁、浙江、山东等东部地区",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "作为地区/地域概念，非学科，但原句以地域为研究分布单位，暂标discipline兜底"
+          "uncertainty": "地名作为行政区划，可指向省级政府主体"
         },
         {
           "entity_id": "19_e3",
           "mention": "辽宁",
           "normalized_name": "辽宁",
-          "candidate_l3": "discipline",
+          "candidate_l3": "governance",
           "candidate_l1": [
-            "Abstract"
+            "Agent"
           ],
           "evidence": "农村图书馆研究较发达的是江苏、辽宁、浙江、山东等东部地区",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "同上"
+          "uncertainty": "地名作为行政区划，可指向省级政府主体"
         },
         {
           "entity_id": "19_e4",
           "mention": "浙江",
           "normalized_name": "浙江",
-          "candidate_l3": "discipline",
+          "candidate_l3": "governance",
           "candidate_l1": [
-            "Abstract"
+            "Agent"
           ],
           "evidence": "农村图书馆研究较发达的是江苏、辽宁、浙江、山东等东部地区",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "同上"
+          "uncertainty": "地名作为行政区划，可指向省级政府主体"
         },
         {
           "entity_id": "19_e5",
           "mention": "山东",
           "normalized_name": "山东",
-          "candidate_l3": "discipline",
+          "candidate_l3": "governance",
           "candidate_l1": [
-            "Abstract"
+            "Agent"
           ],
           "evidence": "农村图书馆研究较发达的是江苏、辽宁、浙江、山东等东部地区",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "同上"
+          "uncertainty": "地名作为行政区划，可指向省级政府主体"
         },
         {
           "entity_id": "19_e6",
+          "mention": "东部地区",
+          "normalized_name": "东部地区",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "农村图书馆研究较发达的是江苏、辽宁、浙江、山东等东部地区",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "作为中国区域划分，可指向区域治理主体"
+        },
+        {
+          "entity_id": "19_e7",
+          "mention": "中、西部地区",
+          "normalized_name": "中西部地区",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "大部分中、西部地区研究较为落后",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "作为中国区域划分，可指向区域治理主体"
+        },
+        {
+          "entity_id": "19_e8",
           "mention": "海南省",
           "normalized_name": "海南省",
-          "candidate_l3": "discipline",
+          "candidate_l3": "governance",
           "candidate_l1": [
-            "Abstract"
+            "Agent"
           ],
           "evidence": "海南省虽属东部地区,但未检索到相关文献",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "同上"
+          "uncertainty": "地名作为行政区划，可指向省级政府主体"
         },
         {
-          "entity_id": "19_e7",
+          "entity_id": "19_e9",
           "mention": "四个直辖市",
           "normalized_name": "四个直辖市",
-          "candidate_l3": "discipline",
+          "candidate_l3": "governance",
           "candidate_l1": [
-            "Abstract"
+            "Agent"
           ],
           "evidence": "四个直辖市研究农村图书馆问题的论文也不多",
           "is_specific_entity": true,
           "confidence": 0.6,
-          "uncertainty": "泛称集合，非具体唯一识别对象，但原句作为具体行政单位集合提及"
+          "uncertainty": "作为中国行政区划类别，可指向具体直辖市治理主体"
         }
       ]
     },
@@ -1157,7 +1118,7 @@
           "evidence": "发表农村图书馆相关论文的期刊以普通期刊和内刊居多",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为研究主题/现象被讨论"
+          "uncertainty": "作为研究主题/现象讨论，非具体机构"
         }
       ]
     },
@@ -1169,14 +1130,14 @@
           "entity_id": "21_e1",
           "mention": "农村图书馆",
           "normalized_name": "农村图书馆",
-          "candidate_l3": "phenomenon",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "我国学者就农村图书馆问题进行了有益的探索和研究",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为研究问题/现象，非具体机构"
+          "uncertainty": "作为研究问题/主题概念，非具体机构"
         }
       ]
     },
@@ -1227,14 +1188,14 @@
           "entity_id": "22_e4",
           "mention": "华东地区省级图书馆协作会",
           "normalized_name": "华东地区省级图书馆协作会",
-          "candidate_l3": "service",
+          "candidate_l3": "professional",
           "candidate_l1": [
             "Agent"
           ],
           "evidence": "华东地区省级图书馆协作会编写的《乡镇图书馆工作》",
           "is_specific_entity": true,
-          "confidence": 0.95,
-          "uncertainty": ""
+          "confidence": 0.9,
+          "uncertainty": "协作会为临时性组织，但名称具体可识别"
         },
         {
           "entity_id": "22_e5",
@@ -1248,6 +1209,71 @@
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
+        },
+        {
+          "entity_id": "22_e6",
+          "mention": "藏书建设",
+          "normalized_name": "藏书建设",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主要围绕农村图书馆业务工作问题(藏书建设、图书分类、编目工作、读者工作和图书馆网等）",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为业务概念讨论，非具体方法或现象"
+        },
+        {
+          "entity_id": "22_e7",
+          "mention": "图书分类",
+          "normalized_name": "图书分类",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主要围绕农村图书馆业务工作问题(藏书建设、图书分类、编目工作、读者工作和图书馆网等）",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为业务概念讨论，非具体方法或现象"
+        },
+        {
+          "entity_id": "22_e8",
+          "mention": "编目工作",
+          "normalized_name": "编目工作",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主要围绕农村图书馆业务工作问题(藏书建设、图书分类、编目工作、读者工作和图书馆网等）",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为业务概念讨论，非具体方法或现象"
+        },
+        {
+          "entity_id": "22_e9",
+          "mention": "读者工作",
+          "normalized_name": "读者工作",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主要围绕农村图书馆业务工作问题(藏书建设、图书分类、编目工作、读者工作和图书馆网等）",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为业务概念讨论，非具体方法或现象"
+        },
+        {
+          "entity_id": "22_e10",
+          "mention": "图书馆网",
+          "normalized_name": "图书馆网",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "主要围绕农村图书馆业务工作问题(藏书建设、图书分类、编目工作、读者工作和图书馆网等）",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为业务概念讨论，非具体方法或现象"
         }
       ]
     },
@@ -1400,7 +1426,7 @@
         {
           "entity_id": "25_e1",
           "mention": "廖腾芳《中国乡村社区图书馆的现状及发展模式研究》(2006）",
-          "normalized_name": "廖腾芳《中国乡村社区图书馆的现状及发展模式研究》(2006)",
+          "normalized_name": "廖腾芳《中国乡村社区图书馆的现状及发展模式研究》",
           "candidate_l3": "book",
           "candidate_l1": [
             "Artifact"
@@ -1413,7 +1439,7 @@
         {
           "entity_id": "25_e2",
           "mention": "白兴礼和杨桂莲《甘肃贫困农村图书馆信息知识援助》(2007）",
-          "normalized_name": "白兴礼和杨桂莲《甘肃贫困农村图书馆信息知识援助》(2007)",
+          "normalized_name": "白兴礼和杨桂莲《甘肃贫困农村图书馆信息知识援助》",
           "candidate_l3": "book",
           "candidate_l1": [
             "Artifact"
@@ -1444,13 +1470,13 @@
         },
         {
           "entity_id": "26_e2",
-          "mention": "我国农村图书馆研究",
-          "normalized_name": "我国农村图书馆研究",
+          "mention": "农村图书馆研究",
+          "normalized_name": "农村图书馆研究",
           "candidate_l3": "subfield",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "1978年以来我国农村图书馆研究",
+          "evidence": "我国农村图书馆研究从最基本的业务工作研究",
           "is_specific_entity": true,
           "confidence": 0.9,
           "uncertainty": "作为研究子领域"
@@ -1502,21 +1528,8 @@
         },
         {
           "entity_id": "27_e4",
-          "mention": "江苏省江阴市",
-          "normalized_name": "江苏省江阴市",
-          "candidate_l3": "governance",
-          "candidate_l1": [
-            "Agent"
-          ],
-          "evidence": "在江苏省江阴市召开",
-          "is_specific_entity": true,
-          "confidence": 0.95,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "27_e5",
-          "mention": "1978年以来农村图书馆全国性学术研讨会",
-          "normalized_name": "1978年以来农村图书馆全国性学术研讨会",
+          "mention": "农村图书馆全国性学术研讨会",
+          "normalized_name": "农村图书馆全国性学术研讨会",
           "candidate_l3": "conference_meeting",
           "candidate_l1": [
             "Event"
@@ -1524,7 +1537,7 @@
           "evidence": "开创了1978年以来农村图书馆全国性学术研讨会的先河",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "指代一类会议而非单次具体会议"
+          "uncertainty": "指代一类会议，但原文有具体指称"
         }
       ]
     },
@@ -1540,7 +1553,7 @@
           "candidate_l1": [
             "Event"
           ],
-          "evidence": "“21世纪中国沿海地区乡镇图书馆发展战略研讨会\"的召开[15]",
+          "evidence": "特别是“21世纪中国沿海地区乡镇图书馆发展战略研讨会\"的召开[15]",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -1553,7 +1566,7 @@
           "candidate_l1": [
             "Agent"
           ],
-          "evidence": "“中国图书馆学会社区乡镇图书馆专业委员会”的成立",
+          "evidence": "和“中国图书馆学会社区乡镇图书馆专业委员会”的成立",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -1582,7 +1595,7 @@
           "evidence": "并结集出版了研讨会论文集(表5)",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "具体名称未给出，但作为具体出版物可识别"
+          "uncertainty": "未给出具体书名，但指代特定会议论文集"
         }
       ]
     },
@@ -1618,13 +1631,13 @@
         },
         {
           "entity_id": "29_e3",
-          "mention": "肖卓的《村级图书馆发展研究：广东省佛山市南海区村级图书馆个案调查》",
-          "normalized_name": "《村级图书馆发展研究：广东省佛山市南海区村级图书馆个案调查》",
-          "candidate_l3": "thesis",
+          "mention": "王煜",
+          "normalized_name": "王煜",
+          "candidate_l3": "scholar",
           "candidate_l1": [
-            "Artifact"
+            "Agent"
           ],
-          "evidence": "肖卓的《村级图书馆发展研究：广东省佛山市南海区村级图书馆个案调查》(中山大学)",
+          "evidence": "王煜的《南海区镇(街道)图书馆研究》(中山大学)",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -1637,20 +1650,20 @@
           "candidate_l1": [
             "Agent"
           ],
-          "evidence": "王煜的《南海区镇(街道)图书馆研究》(中山大学)和肖卓的《村级图书馆发展研究：广东省佛山市南海区村级图书馆个案调查》(中山大学)",
+          "evidence": "王煜的《南海区镇(街道)图书馆研究》(中山大学)",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
         },
         {
           "entity_id": "29_e5",
-          "mention": "王煜",
-          "normalized_name": "王煜",
-          "candidate_l3": "scholar",
+          "mention": "肖卓的《村级图书馆发展研究：广东省佛山市南海区村级图书馆个案调查》",
+          "normalized_name": "《村级图书馆发展研究：广东省佛山市南海区村级图书馆个案调查》",
+          "candidate_l3": "thesis",
           "candidate_l1": [
-            "Agent"
+            "Artifact"
           ],
-          "evidence": "王煜的《南海区镇(街道)图书馆研究》",
+          "evidence": "肖卓的《村级图书馆发展研究：广东省佛山市南海区村级图书馆个案调查》(中山大学)",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -1663,10 +1676,23 @@
           "candidate_l1": [
             "Agent"
           ],
-          "evidence": "肖卓的《村级图书馆发展研究：广东省佛山市南海区村级图书馆个案调查》",
+          "evidence": "肖卓的《村级图书馆发展研究：广东省佛山市南海区村级图书馆个案调查》(中山大学)",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
+        },
+        {
+          "entity_id": "29_e7",
+          "mention": "广东省佛山市南海区",
+          "normalized_name": "广东省佛山市南海区",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "广东省佛山市南海区村级图书馆个案调查",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为行政区划，指向具体政府治理主体"
         }
       ]
     },
@@ -1676,29 +1702,29 @@
       "entities": [
         {
           "entity_id": "30_e1",
-          "mention": "农村图书馆",
-          "normalized_name": "农村图书馆",
-          "candidate_l3": "phenomenon",
+          "mention": "1978年以来",
+          "normalized_name": "1978年以来",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "1978年以来,我国农村图书馆研究在发文量和研究深度上都呈持续发展状态",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为发展阶段的时间起点"
+        },
+        {
+          "entity_id": "30_e2",
+          "mention": "农村图书馆研究",
+          "normalized_name": "农村图书馆研究",
+          "candidate_l3": "subfield",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "我国农村图书馆研究在发文量和研究深度上都呈持续发展状态",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为研究主题对象，非具体机构"
-        },
-        {
-          "entity_id": "30_e2",
-          "mention": "图书馆学",
-          "normalized_name": "图书馆学",
-          "candidate_l3": "discipline",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "但与图书馆学其他领域的研究情况相比",
-          "is_specific_entity": true,
-          "confidence": 0.95,
-          "uncertainty": ""
+          "confidence": 0.9,
+          "uncertainty": "作为研究子领域"
         }
       ]
     },
@@ -1708,29 +1734,29 @@
       "entities": [
         {
           "entity_id": "31_e1",
-          "mention": "1978-2007年研究我国农村图书馆问题的论文",
-          "normalized_name": "1978-2007年研究我国农村图书馆问题的论文",
-          "candidate_l3": "paper",
+          "mention": "1978-2007年",
+          "normalized_name": "1978-2007年",
+          "candidate_l3": "stage",
           "candidate_l1": [
-            "Artifact"
+            "Event"
           ],
           "evidence": "1978-2007年研究我国农村图书馆问题的论文共953 篇",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "论文集合，非单篇具体文献，但作为可统计的文献集合实体"
+          "uncertainty": "时间范围作为发展阶段，但原文未明确为阶段划分"
         },
         {
           "entity_id": "31_e2",
-          "mention": "农村图书馆",
-          "normalized_name": "农村图书馆",
-          "candidate_l3": "phenomenon",
+          "mention": "我国农村图书馆",
+          "normalized_name": "中国农村图书馆",
+          "candidate_l3": "service",
           "candidate_l1": [
-            "Abstract"
+            "Agent"
           ],
           "evidence": "研究我国农村图书馆问题的论文",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为研究主题/现象，非具体机构"
+          "confidence": 0.7,
+          "uncertainty": "农村图书馆为泛称机构类型，但原文指代具体研究对象群体，可视为具体服务组织集合"
         }
       ]
     },
@@ -1748,8 +1774,8 @@
           ],
           "evidence": "在1993-2007年间批准的“社科基金项目(图书馆、情报与文献学）\"中",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "具体项目类别，但非单一项目名称"
+          "confidence": 0.95,
+          "uncertainty": ""
         },
         {
           "entity_id": "32_e2",
@@ -1785,7 +1811,7 @@
           "candidate_l1": [
             "Event"
           ],
-          "evidence": "南开大学于良芝教授主持的“面向学习型社会主义新农村建设的县级图书馆功能设计研究”(2006）",
+          "evidence": "南开大学于良芝教授主持的“面向学习型社会主义新农村建设的县级图书馆功能设计研究\"(2006）",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -1800,8 +1826,8 @@
           ],
           "evidence": "均无研究农村图书馆的项目",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为研究子领域，非具体机构"
+          "confidence": 0.9,
+          "uncertainty": "作为研究子领域"
         }
       ]
     },
@@ -1826,14 +1852,14 @@
           "entity_id": "33_e2",
           "mention": "农村图书馆",
           "normalized_name": "农村图书馆",
-          "candidate_l3": "phenomenon",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "农村图书馆如何发展,农村图书馆建设的必要性、重要性,农村图书馆在农村文化建设中的功能和作用，农村图书馆建设中存在的问题及措施建议，农村图书馆的发展模式等一直是研究和讨论的重点",
+          "evidence": "农村图书馆如何发展，农村图书馆建设的必要性、重要性，农村图书馆在农村文化建设中的功能和作用，农村图书馆建设中存在的问题及措施建议，农村图书馆的发展模式等一直是研究和讨论的重点",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为研究主题/现象，非具体机构"
+          "uncertainty": "作为研究主题/概念被讨论，非具体机构"
         }
       ]
     },
@@ -1845,14 +1871,14 @@
           "entity_id": "34_e1",
           "mention": "农村图书馆",
           "normalized_name": "农村图书馆",
-          "candidate_l3": "subfield",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "农村图书馆的基础理论研究相对滞后",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为图书馆学下的子领域，非泛称"
+          "confidence": 0.85,
+          "uncertainty": "作为研究领域概念，非具体机构"
         },
         {
           "entity_id": "34_e2",
@@ -1865,7 +1891,7 @@
           "evidence": "图书馆自动化、数字图书馆、网络图书馆和Lib2.0等成为图书馆学的研究热点",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为研究热点术语，非具体系统"
+          "uncertainty": "作为技术概念/业务理念"
         },
         {
           "entity_id": "34_e3",
@@ -1878,7 +1904,7 @@
           "evidence": "图书馆自动化、数字图书馆、网络图书馆和Lib2.0等成为图书馆学的研究热点",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为研究热点术语，非具体系统"
+          "uncertainty": "作为技术概念/系统类型"
         },
         {
           "entity_id": "34_e4",
@@ -1891,7 +1917,7 @@
           "evidence": "图书馆自动化、数字图书馆、网络图书馆和Lib2.0等成为图书馆学的研究热点",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为研究热点术语"
+          "uncertainty": "作为技术概念"
         },
         {
           "entity_id": "34_e5",
@@ -1904,19 +1930,6 @@
           "evidence": "图书馆自动化、数字图书馆、网络图书馆和Lib2.0等成为图书馆学的研究热点",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "34_e6",
-          "mention": "图书馆学",
-          "normalized_name": "图书馆学",
-          "candidate_l3": "discipline",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "成为图书馆学的研究热点",
-          "is_specific_entity": true,
-          "confidence": 0.95,
           "uncertainty": ""
         }
       ]
@@ -1946,10 +1959,10 @@
           "candidate_l1": [
             "Agent"
           ],
-          "evidence": "也没有明确的政策保障农村图书馆事业的健康发展",
+          "evidence": "农村图书馆事业的健康发展",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为具体机构类型，但未给出具体名称，可能为泛称"
+          "uncertainty": "作为具体服务组织类型，但未给出具体馆名"
         }
       ]
     },
@@ -1961,14 +1974,14 @@
           "entity_id": "36_e1",
           "mention": "农村图书馆",
           "normalized_name": "农村图书馆",
-          "candidate_l3": "phenomenon",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "农村图书馆研究者主要是市、县公共图书馆工作人员",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为研究主题/现象被讨论"
+          "uncertainty": "作为研究主题/概念讨论，非具体机构"
         },
         {
           "entity_id": "36_e2",
@@ -1980,8 +1993,8 @@
           ],
           "evidence": "农村图书馆研究者主要是市、县公共图书馆工作人员",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "泛称机构类别词，但原文指具体层级类型的公共图书馆，可视为具体组织类型"
+          "confidence": 0.7,
+          "uncertainty": "泛称机构类别，非具体唯一可识别组织"
         },
         {
           "entity_id": "36_e3",
@@ -1994,7 +2007,7 @@
           "evidence": "本应承担农村图书馆问题研究的公共图书馆及高校教学研究科研单位",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "泛称机构类别词，但原文指具体类型的机构"
+          "uncertainty": "泛称机构类别，非具体唯一可识别组织"
         },
         {
           "entity_id": "36_e4",
@@ -2007,20 +2020,20 @@
           "evidence": "本应承担农村图书馆问题研究的公共图书馆及高校教学研究科研单位",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "泛称机构类别词，但原文指具体类型的机构"
+          "uncertainty": "泛称机构类别，非具体唯一可识别组织"
         },
         {
           "entity_id": "36_e5",
           "mention": "核心期刊",
           "normalized_name": "核心期刊",
-          "candidate_l3": "journal_article",
+          "candidate_l3": "concept",
           "candidate_l1": [
-            "Artifact"
+            "Abstract"
           ],
-          "evidence": "刊载于普通期刊和内部刊物者居多，核心期刊偏少",
+          "evidence": "核心期刊偏少",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为期刊类型概念，非具体期刊名"
+          "confidence": 0.85,
+          "uncertainty": "作为期刊评价概念讨论，非具体期刊名称"
         }
       ]
     },
@@ -2051,8 +2064,8 @@
           ],
           "evidence": "农村图书馆研究者集中于东部沿海地区和个别中部地区",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "地理区域，非严格学术命名"
+          "confidence": 0.7,
+          "uncertainty": "地理区域，非具体组织或事件"
         },
         {
           "entity_id": "37_e3",
@@ -2096,14 +2109,14 @@
           "entity_id": "39_e1",
           "mention": "农村图书馆",
           "normalized_name": "农村图书馆",
-          "candidate_l3": "phenomenon",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "我国农村图书馆研究取得了一定的成绩",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为研究主题/现象，非具体机构"
+          "uncertainty": "作为研究主题概念，非具体机构"
         },
         {
           "entity_id": "39_e2",
@@ -2113,26 +2126,13 @@
           "candidate_l1": [
             "Agent"
           ],
-          "evidence": "中央政府对包括农村图书馆在内的农村文化建设的高度重视",
+          "evidence": "随着中央政府对包括农村图书馆在内的农村文化建设的高度重视",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "具体治理组织"
+          "uncertainty": ""
         },
         {
           "entity_id": "39_e3",
-          "mention": "农村文化建设",
-          "normalized_name": "农村文化建设",
-          "candidate_l3": "phenomenon",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "中央政府对包括农村图书馆在内的农村文化建设的高度重视",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为社会现象/政策领域"
-        },
-        {
-          "entity_id": "39_e4",
           "mention": "图书馆学界",
           "normalized_name": "图书馆学界",
           "candidate_l3": "discipline",
@@ -2142,20 +2142,20 @@
           "evidence": "图书馆学界对该问题的持续关注",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "抽象学术共同体，非具体组织"
+          "uncertainty": "作为学术共同体，非具体组织"
         },
         {
-          "entity_id": "39_e5",
+          "entity_id": "39_e4",
           "mention": "农村图书馆事业",
           "normalized_name": "农村图书馆事业",
-          "candidate_l3": "phenomenon",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "我国农村图书馆事业会走上健康发展的道路",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "作为事业/领域，非具体实体"
+          "uncertainty": "作为事业/领域概念"
         }
       ]
     }
