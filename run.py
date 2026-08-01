@@ -194,7 +194,7 @@ def main() -> int:
         print(f"[测试模式] 随机抽取 {sample_size} 个文件进行处理")
 
     total_files = len(files)
-    output_dir = str(g.output_dir)
+    output_dir = str(g.output_dir / "entities")
     mid_data_dir = str(g.mid_data_dir)
     Path(output_dir).mkdir(parents=True, exist_ok=True)
     Path(mid_data_dir).mkdir(parents=True, exist_ok=True)
@@ -307,7 +307,7 @@ def main() -> int:
     print(f"  新增: {db_stats['added']}  去重跳过: {db_stats['skipped_duplicates']}")
 
     # 导出动态术语库
-    dynamic_out = args.dynamic_out or os.path.join(output_dir, "dynamic_terms.json")
+    dynamic_out = args.dynamic_out or os.path.join(str(g.output_dir), "dynamic_terms.json")
     dynamic_db.export(dynamic_out)
     print(f"  已导出: {Path(dynamic_out).resolve()}")
 

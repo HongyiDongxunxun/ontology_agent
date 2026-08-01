@@ -22,6 +22,11 @@ from .reviewer_agent import (
     ReviewerAgent,
     ReviewResult,
 )
+from .evaluative_relation_agent import (
+    EvaluativeRelationAgent,
+    EvaluativeRelation,
+    SentenceRelationOutput,
+)
 from .dynamic_term_db import DynamicTermDB
 from .dual_agent_pipeline import (
     DualAgentPipeline,
@@ -38,6 +43,7 @@ __all__ = [
     "EntityExtractionAgent", "ExtractedEntity", "SentenceExtractionOutput",
     "ClassificationAgent", "FinalEntityResult",
     "ReviewerAgent", "ReviewResult",
+    "EvaluativeRelationAgent", "EvaluativeRelation", "SentenceRelationOutput",
     "DynamicTermDB",
     "DualAgentPipeline", "export_jsonl", "export_summary_json",
 ]
