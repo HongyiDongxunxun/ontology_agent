@@ -1,0 +1,1419 @@
+{
+  "base_name": "eval_50",
+  "stage": "agent1_extraction",
+  "extractions": [
+    {
+      "sentence_id": "reviewed_full_10009::1",
+      "sentence": "【摘要】在湖南省创建两型社会的背景下，通过调查长株潭地区高校图书馆电子文献资源的分布情况，描述了长株潭地区高校图书馆电子文献资源建设中存在资源分布不平衡、资源浪费较为严重、电子文献资源共建进展缓慢等问题，以此为基础对这些问题进行了分析，并且从电子文献资源的共建、整合、共享三个方面给出了相应的建议与对策。",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10009::1_e1",
+          "mention": "两型社会",
+          "normalized_name": "两型社会",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在湖南省创建两型社会的背景下",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "政策概念，非具体事件"
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10009::10",
+      "sentence": "从上面的数据可以看出，长株潭三地区高校图书馆电子文献资源的重复订购是比较严重的。比如54所学校中有36所高校都订购了CNKI。而对于一些有价值的数据库在三个地区却没有一个高校订购。",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10009::10_e1",
+          "mention": "CNKI",
+          "normalized_name": "CNKI",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "比如54所学校中有36所高校都订购了CNKI",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10009::11",
+      "sentence": "长株潭高校之间电子文献资源共享水平较低，目前在三地区的高校之间，馆与馆之间的合作不多，缺乏相互交流与沟通，更没有形成面向社会的数据共享，造成科技信息资源的巨大浪费，严重制约科技研究与发展。资源共享的理念还仅仅停留在口头上，实践的不多。由于共建共享进展缓慢，导致各高校图书馆虽然都订购，或自建了电子文献信息数据库，每个馆所拥有的数字资源越来越多，但这些电子文献由于分布于不同的平台，处于异构的数据库之中，而不能得到有效的使用。资源开发利用率不高，服务方式和能力还无法满足科技发展需求。",
+      "entities": []
+    },
+    {
+      "sentence_id": "reviewed_full_10009::13",
+      "sentence": "长株潭地区高校图书馆已实现了自动化与网络化建设，多数高校图书馆都已建立了比较丰富的电子文献体系，订购了许多商业数据库，部分高校图书馆正在酝酿和实施特色馆藏资源数字化工作。 可以看出，长株潭高校图书馆的建设取得了较大的成绩。但在取得成绩的同时，我们还要看到长株潭地区高校图书馆建设中存在的不足。第一，资源分布不平衡。 长株潭三地区高校图书馆电子文献资源分布不平衡，本科与专科院校之间资源分布很不平衡，一些重点院校如中南大学、湖南大学数据库数目达100多个，而一些院校根本就没有电子文献资源。",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10009::13_e1",
+          "mention": "中南大学",
+          "normalized_name": "中南大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "一些重点院校如中南大学、湖南大学数据库数目达100多个",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::13_e2",
+          "mention": "湖南大学",
+          "normalized_name": "湖南大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "一些重点院校如中南大学、湖南大学数据库数目达100多个",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10009::14",
+      "sentence": "长株潭地区公办和民办院校数据库分布不平衡。 第二，外文数据库分布不平衡。 在外文数据库建设方面，只有中南大学、湖南大学、湖南师范大学、湘潭大学、国防科技大学拥有较多的外文资源，其他高校资源较少，大多数大专院校甚至没有外文电子文献资源。",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10009::14_e1",
+          "mention": "中南大学",
+          "normalized_name": "中南大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "只有中南大学、湖南大学、湖南师范大学、湘潭大学、国防科技大学拥有较多的外文资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::14_e2",
+          "mention": "湖南大学",
+          "normalized_name": "湖南大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "只有中南大学、湖南大学、湖南师范大学、湘潭大学、国防科技大学拥有较多的外文资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::14_e3",
+          "mention": "湖南师范大学",
+          "normalized_name": "湖南师范大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "只有中南大学、湖南大学、湖南师范大学、湘潭大学、国防科技大学拥有较多的外文资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::14_e4",
+          "mention": "湘潭大学",
+          "normalized_name": "湘潭大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "只有中南大学、湖南大学、湖南师范大学、湘潭大学、国防科技大学拥有较多的外文资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::14_e5",
+          "mention": "国防科技大学",
+          "normalized_name": "国防科技大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "只有中南大学、湖南大学、湖南师范大学、湘潭大学、国防科技大学拥有较多的外文资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10009::15",
+      "sentence": "在外文数据库建设方面，只有中南大学、湖南大学、湖南师范大学、湘潭大学、国防科技大学拥有较多的外文资源，其他高校资源较少，大多数大专院校甚至没有外文电子文献资源。 第三，软硬件平台建设不平衡。 由于经费紧张，只有一些重点院校的图书馆才有大量资金，像中南大学、湖南大学、湖南师范大学每年用于购买电子文献资源的经费上千万元，而一般的大专院校经费紧张，没有多余的资金投入到图书馆的建设中去。",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10009::15_e1",
+          "mention": "中南大学",
+          "normalized_name": "中南大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "只有中南大学、湖南大学、湖南师范大学、湘潭大学、国防科技大学拥有较多的外文资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::15_e2",
+          "mention": "湖南大学",
+          "normalized_name": "湖南大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "只有中南大学、湖南大学、湖南师范大学、湘潭大学、国防科技大学拥有较多的外文资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::15_e3",
+          "mention": "湖南师范大学",
+          "normalized_name": "湖南师范大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "只有中南大学、湖南大学、湖南师范大学、湘潭大学、国防科技大学拥有较多的外文资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::15_e4",
+          "mention": "湘潭大学",
+          "normalized_name": "湘潭大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "只有中南大学、湖南大学、湖南师范大学、湘潭大学、国防科技大学拥有较多的外文资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::15_e5",
+          "mention": "国防科技大学",
+          "normalized_name": "国防科技大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "只有中南大学、湖南大学、湖南师范大学、湘潭大学、国防科技大学拥有较多的外文资源",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10009::16",
+      "sentence": "比如，很多大专院校虽然订购电子文献资源，但并没有能力建立本地镜像，这在很大程度上影响了用户对资源的使用。 第四，重复建设与资源短缺。 在长株潭三地区中，有22所高校参加了湖南省高校数字化图书馆数字资源的联合采购，但仍有一些资源存在重复采购的情况。",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10009::16_e1",
+          "mention": "湖南省高校数字化图书馆",
+          "normalized_name": "湖南省高校数字化图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "有22所高校参加了湖南省高校数字化图书馆数字资源的联合采购",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10009::17",
+      "sentence": "长株潭高校图书馆电子文献资源整合及共享的前提是共建，没有共建，资源整合与共享将成为空谈。长株潭地区高校图书馆电子文献资源的整合与共享的前提是逐步建立起一个结构科学、内容全面、层次分明、布局合理、可持续支持数字图书馆信息服务的初具规模的数字资源保障体系。只有本地区内拥有种类丰富、内容全面、层次分明、布局合理的电子文献资源，资源的整合才具有更加重要的意义。",
+      "entities": []
+    },
+    {
+      "sentence_id": "reviewed_full_10009::19",
+      "sentence": "在长株潭地区电子文献资源调查中发现，该区域在电子文献资源的联合采购上已有了一些进步，本区域有22所高校联合参与了湖南省高校数字化图书馆的17个数据库的联合采购。并且通过高校图工委的协调、组织和谈判，相继联合购买了一些外文数据库，如WSN电子期刊、Springer电子期刊，大幅度地降低了单馆采购数据库的价格。但是我们仍然发现，有大量的数据库重复采购严重，并没有参与到联合采购中，如中国学术期刊网CNKI)、超星数字图书馆等见表4)。所以该地区应进一步加强资源的联合建设，高校图工委应制定一套管理制度和技术规范，并建立一种良性协作运行机制，对重复率较高的数据库实施联合采购，共同建设该地区高校图书馆的馆藏资源。",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10009::19_e1",
+          "mention": "湖南省高校数字化图书馆",
+          "normalized_name": "湖南省高校数字化图书馆",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "参与了湖南省高校数字化图书馆的17个数据库的联合采购",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::19_e2",
+          "mention": "高校图工委",
+          "normalized_name": "高校图工委",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "通过高校图工委的协调",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::19_e3",
+          "mention": "WSN电子期刊",
+          "normalized_name": "WSN电子期刊",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如WSN电子期刊",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::19_e4",
+          "mention": "Springer电子期刊",
+          "normalized_name": "Springer电子期刊",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如WSN电子期刊、Springer电子期刊",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::19_e5",
+          "mention": "中国学术期刊网CNKI",
+          "normalized_name": "中国学术期刊网CNKI",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如中国学术期刊网CNKI",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::19_e6",
+          "mention": "超星数字图书馆",
+          "normalized_name": "超星数字图书馆",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "超星数字图书馆等见表4",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10009::2",
+      "sentence": "长沙、株洲、湘潭经济一体化，创建资源节约型，环境友好型”的两型社会是湖南省委省政府发展湖南经济的宏观战略决策。 我们可以利用这一契机，建立长株潭高校图书馆电子文献资源共建共享体系，有效促进电子资源的有序化，改善长沙、株洲、湘潭三地区之间资源分布不平衡，学科资源建设不平衡，缩小文献资源分布上的贫富不均的差距，广泛开展长株潭地区电子文献信息资源共建共享活动，满足三地区的教育科研活动的需要。",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10009::2_e1",
+          "mention": "湖南省委省政府",
+          "normalized_name": "湖南省委省政府",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "湖南省委省政府发展湖南经济的宏观战略决策",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::2_e2",
+          "mention": "两型社会",
+          "normalized_name": "两型社会",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "创建资源节约型，环境友好型”的两型社会",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10009::20",
+      "sentence": "在加强联合采购的同时，各个馆应根据本校专业设置订购相对应的数字资源，如中南大学湘雅医学院，其订购了较多的关于医学的数据库，满足本校科研教学需要，从而形成具有本馆特色的数字化资源。 从区域的角度上考虑，当每一个馆都建设成具有本馆特色的数字资源，那么本区域内的数据库种类将较为丰富、多样，增强了本区域内电子文献信息的保障能力。",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10009::20_e1",
+          "mention": "中南大学湘雅医学院",
+          "normalized_name": "中南大学湘雅医学院",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如中南大学湘雅医学院",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10009::21",
+      "sentence": "在信息高速增长的社会中，任何图书馆都无法收集完整的信息资源，长株潭地区高校图书馆电子文献资源建设必须依托权威的管理机构暂时可由省高校图工委承担）制定重大方针政策和发展规划，协调长株潭各高校图书馆之间的分工与协作，解决数字资源建设的共性问题，进行资源的协调采购、共建共享、联合保障，构建开放式的资源建设模式。",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10009::21_e1",
+          "mention": "省高校图工委",
+          "normalized_name": "省高校图工委",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "暂时可由省高校图工委承担）制定重大方针政策和发展规划",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10009::23",
+      "sentence": "网络资源是一个巨大的信息宝藏，各馆可以根据各校专业设置，分工协调，有目的地大量收集 Internet上有关本校重点学科的信息资源，构筑虚拟馆藏，使之成为馆藏的补充资源和重要组成部分，同时还能节省经费和馆藏空间。 目前，湖南高校图书馆学科导航库的建设只在极少数图书馆开展，且存在内容重复交叉的现象，因此，加强分工合作，联合深度开发网络信息资源十分必要。",
+      "entities": []
+    },
+    {
+      "sentence_id": "reviewed_full_10009::24",
+      "sentence": "在图书馆数字资源的建设过程中，一定要坚持数字信息资源的自主权，通过对网络资源的加工，使网络上无序的电子文献资源有序化，同时图书馆拥有该类资源的知识主权，使得区域电子文献资源整合与共享过程中，不用担心知识主权问题，本馆的资源可以被区域内各馆访问。",
+      "entities": []
+    },
+    {
+      "sentence_id": "reviewed_full_10009::26",
+      "sentence": "基于元数据的电子文献资源整合是指对所有电子资源实现统一元数据仓储管理，元数据集成在本地，通过统一检索入口，对元数据仓储进行检索并依据元数据中的全文路径元素对对象数据进行定位。 但原有分散的资源系统仍然可独立地提供检索服务，是一种实现异构数据源的集中式管理、集中式存储的方法。此种整合方案的关键是获取元数据，对于中文商业电子期刊、图书数据库资源的元数据，可以通过与数据厂商谈判，相对来说较晚获取，通过对各馆元数据的标准化建设，实现各馆元数据的汇聚，通过对元数据的查询，即可查询资源的馆藏信息，为信息的获取提供帮助。",
+      "entities": []
+    },
+    {
+      "sentence_id": "reviewed_full_10009::27",
+      "sentence": "本区域内建设了一些特色数据库，这些数据库包括学位论文数据库、以个人信息为基础的人物数据库如毛泽东数字图书馆》、湖南人物库》)，以本校专业特色的数据库（有色金属特色文献数据库》、国防科技文献数据库》)，以区域内特色文化为基础的数据库如红色旅游资源数据库》）等。 特色数据库的建设要充分体现统一规划、统一标准、共建共享的原则。 各地区、各单位在统一规划的前提下因地制宜，充分利用现有的网络和软、硬件环境，整合现有的各类信息资源，不搞重复建设，发挥各自的优势与特色。",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10009::27_e1",
+          "mention": "学位论文数据库",
+          "normalized_name": "学位论文数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "本区域内建设了一些特色数据库，这些数据库包括学位论文数据库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::27_e2",
+          "mention": "毛泽东数字图书馆》",
+          "normalized_name": "毛泽东数字图书馆",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以个人信息为基础的人物数据库如毛泽东数字图书馆》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::27_e3",
+          "mention": "湖南人物库》",
+          "normalized_name": "湖南人物库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以个人信息为基础的人物数据库如毛泽东数字图书馆》、湖南人物库》）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::27_e4",
+          "mention": "有色金属特色文献数据库》",
+          "normalized_name": "有色金属特色文献数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以本校专业特色的数据库（有色金属特色文献数据库》、国防科技文献数据库》）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::27_e5",
+          "mention": "国防科技文献数据库》",
+          "normalized_name": "国防科技文献数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以本校专业特色的数据库（有色金属特色文献数据库》、国防科技文献数据库》）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::27_e6",
+          "mention": "红色旅游资源数据库》）",
+          "normalized_name": "红色旅游资源数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以区域内特色文化为基础的数据库如红色旅游资源数据库》）等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10009::28",
+      "sentence": "各地区、各单位在统一规划的前提下因地制宜，充分利用现有的网络和软、硬件环境，整合现有的各类信息资源，不搞重复建设，发挥各自的优势与特色。 对于本馆自建特色数据库，本馆拥有该资源的元数据和对象数据，不存在电子文献资源的版权问题，对于这类资源，可以创建基于元数据的资源整合方案。",
+      "entities": []
+    },
+    {
+      "sentence_id": "reviewed_full_10009::29",
+      "sentence": "应用层的整合是基于中间件，屏蔽不同数据库的检索界面和检索方式、检索式构造规则、检索算符、检索字段等，使用户能在同一个检索平台下，实现多数据库同时检索，构成统一的检索界面，从而实现数字资源系统间的分布式异构整合检索。 在大量的数据库中，有一些数据库是无法获取元数据的，特别是外文数据库，针对这些数据库可以建立基于应用层的数据资源整合。 我们可以依托中国高等教育文献保障体系，各馆加入该体系，把外文电子期刊文献协作服务与CALIS建设结合起来，配合CALIS各级文献信息中心建立相应的外文电子期刊中心，协调外文电子期刊共建，建立电子期刊传递系统，为高校图书馆外文电子期刊的共享提供现实的保障。",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10009::29_e1",
+          "mention": "中国高等教育文献保障体系",
+          "normalized_name": "中国高等教育文献保障体系（CALIS）",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "我们可以依托中国高等教育文献保障体系",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::29_e2",
+          "mention": "元数据",
+          "normalized_name": "元数据",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有一些数据库是无法获取元数据的",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10009::3",
+      "sentence": "通过表1的数据分析可以得出，长株潭三地区高校图书馆电子文献资源分布极不平衡，虽然长沙、株洲、湘潭三地区数据库平均数目相差不多，但长沙地区的高校数目及电子文献数据库总数都远远大于株洲与湘潭，长沙地区高校图书馆数据库总数目为1044个，而株洲为101个，湘潭地区为192个，从数据库的拥有量上说，长沙比株洲、湘潭资源更丰富。",
+      "entities": []
+    },
+    {
+      "sentence_id": "reviewed_full_10009::31",
+      "sentence": "我们知道，任何图书馆的馆藏资源都不可能完全满足读者的需要，外文文献更是如此。 在长株潭电子文献资源整合与共享建设中，原文传递是图书馆联盟的一项重要的服务项目，对于提高文献的可获取性具有极大的作用，应是建设本区域电子文献保障系统的重要手段。",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10009::31_e1",
+          "mention": "长株潭电子文献资源整合与共享建设",
+          "normalized_name": "长株潭电子文献资源整合与共享建设",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "在长株潭电子文献资源整合与共享建设中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10009::32",
+      "sentence": "对于本馆没有收藏的电子文献，可以向其他成员馆提出申请，其他馆有义务保障各成员馆原文获取权。对于联盟中各高校订购较多的数据库，比如中国期刊网，可采取联盟订购的方式实现。对于订购较少的电子文献可采取原文传递的方式实现。联盟建立相应的奖励与惩罚机制，建立相应的原文传递机制和联合咨询服务机制。",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10009::32_e1",
+          "mention": "中国期刊网",
+          "normalized_name": "中国期刊网",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "比如中国期刊网",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10009::33",
+      "sentence": "长株潭高校图书馆电子文献资源整合及共享系统应为，将电子文献资源作最完整、最大限度的整合，集信息重组、信息集成、信息中介、信息定制服务模式于一体，利用计算机及网络为读者提供文献信息服务的系统。使读者能够在一个入口、一个检索界面、经过一次检索就可以获得全方位的电子资源和全面的相关信息的一体化集成式服务。",
+      "entities": []
+    },
+    {
+      "sentence_id": "reviewed_full_10009::34",
+      "sentence": "总之，整合后的三地高校图书馆联盟，拥有丰富馆藏体系、全方位、多层次的电子文献资源的保障系统，提高区域内电子文献资源的保障率的同时，可提高电子文献资源的可获得性，提高信息资源的拥有率。",
+      "entities": []
+    },
+    {
+      "sentence_id": "reviewed_full_10009::4",
+      "sentence": "从调查结果可以看出，虽然长株潭三地高校都同属于一个系统，但各高校之间资源分布不平衡，如中南大学、湖南大学、湖南师范大学等本科院校电子文献资源较多，17所高校拥有991个数据库，平均每个高校拥有58.3个数据库。 而其他大专院校的电子文献信息资源得不到保障，39所大专院校拥有361个数据库，平均每个大专院校拥有9.2个数据库。",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10009::4_e1",
+          "mention": "中南大学",
+          "normalized_name": "中南大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如中南大学、湖南大学、湖南师范大学等本科院校电子文献资源较多",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::4_e2",
+          "mention": "湖南大学",
+          "normalized_name": "湖南大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如中南大学、湖南大学、湖南师范大学等本科院校电子文献资源较多",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::4_e3",
+          "mention": "湖南师范大学",
+          "normalized_name": "湖南师范大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如中南大学、湖南大学、湖南师范大学等本科院校电子文献资源较多",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10009::7",
+      "sentence": "长株潭高校各自为政，对电子文献信息资源的建设缺乏整体观念，各个单位追求大而全、小而全的思想比较突出，文献收藏重复与残缺不齐的现象较为严重见表4）。",
+      "entities": []
+    },
+    {
+      "sentence_id": "reviewed_full_10009::8",
+      "sentence": "在长株潭地区中，有22所院校参加了湖南省高校数字化图书馆的团购，团购的数字资源已在表中注释出来。 除了这些团购的资源，我们发现仍有大量的数据库被重复订购。",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10009::8_e1",
+          "mention": "湖南省高校数字化图书馆",
+          "normalized_name": "湖南省高校数字化图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "参加了湖南省高校数字化图书馆的团购",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10009::9",
+      "sentence": "其中CNKI和万方的子数据库重复订购的数目是不一样的。 如CNKI的中国学术期刊网CNKI）订购数目为36，中国优秀硕博士学位论文全文数据库CNKI）为25，中国重要会议论文全文数据库CNKI）为18。",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10009::9_e1",
+          "mention": "CNKI",
+          "normalized_name": "CNKI",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "其中CNKI和万方的子数据库重复订购的数目是不一样的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::9_e2",
+          "mention": "万方",
+          "normalized_name": "万方",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "其中CNKI和万方的子数据库重复订购的数目是不一样的",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::9_e3",
+          "mention": "中国学术期刊网CNKI",
+          "normalized_name": "中国学术期刊网CNKI",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "如CNKI的中国学术期刊网CNKI）订购数目为36",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::9_e4",
+          "mention": "中国优秀硕博士学位论文全文数据库CNKI",
+          "normalized_name": "中国优秀硕博士学位论文全文数据库CNKI",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "中国优秀硕博士学位论文全文数据库CNKI）为25",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10009::9_e5",
+          "mention": "中国重要会议论文全文数据库CNKI",
+          "normalized_name": "中国重要会议论文全文数据库CNKI",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "中国重要会议论文全文数据库CNKI）为18",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10049::1",
+      "sentence": "陕西高校图书馆联盟的建设在实践中以文献资源体系建设为基础，由陕西重点大学图书馆牵头，以各学科专业文献中心为骨干，各类型和各层次高校图书馆参与配合为保障，充分发挥重点大学图书馆的龙头作用和学科专业文献中心的骨干作用[2]。 既横向沟通，进行同一层面的沟通协作，又纵向联系，进行系统内的分工合作，共同构建全省文献资源保障体系[3]。 (其具体数据详见表1)",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10049::1_e1",
+          "mention": "陕西高校图书馆联盟",
+          "normalized_name": "陕西高校图书馆联盟",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "陕西高校图书馆联盟的建设在实践中以文献资源体系建设为基础",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10049::10",
+      "sentence": "构建一个科学、有效的评价指标体系，需要经过指标初选、完善至最终使用等过程。考核指标体系的设计应遵循目的性、科学性、可操作性、导向性等基本原则。影响高校图书馆联盟评测的因素很多，反映在指标上也很多。因此结合国内图书馆联盟的实践状况，根据陕西省高校图书馆联盟的实际和自己的思考，同时借鉴如常红[4]、徐晓琳[5]等专家现有的一些研究成果，本文在选取指标时尽可能的客观、全面，控制好指标范围，使其具有更强的可操作性，尝试性的构建以下指标体系。",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10049::10_e1",
+          "mention": "常红",
+          "normalized_name": "常红",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "借鉴如常红[4]、徐晓琳[5]等专家现有的一些研究成果",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10049::10_e2",
+          "mention": "徐晓琳",
+          "normalized_name": "徐晓琳",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "借鉴如常红[4]、徐晓琳[5]等专家现有的一些研究成果",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10049::10_e3",
+          "mention": "陕西省高校图书馆联盟",
+          "normalized_name": "陕西省高校图书馆联盟",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "根据陕西省高校图书馆联盟的实际和自己的思考",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10049::11",
+      "sentence": "陕西高校图书馆联盟绩效评测的实施依托现代网络通信技术平台和优质高效的服务网络，从整体性出发，充分发扬各联盟成员馆的共享合作精神，推动和引导全省高校图书馆联盟的建设和发展，实现全省高校文献信息资源的共建、共知、共享，为陕西高校的教学科研提供高水平的文献信息资源保障。陕西高校图书馆联盟的绩效评测的实施要坚持整体规划、分步推进的原则，把全省高校图书馆作为一个整体来建设，强调共同建设资源，共同使用资源，实现优势互补，统一目标、统一规划、统一标准和统一管理的方式，全面推进全省高校图书馆文献资共建共享水平。 在具体实施过程中，可初步将其划分为3个阶段：启动阶段、优化建设阶段和升级发展阶段。",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10049::11_e1",
+          "mention": "陕西高校图书馆联盟",
+          "normalized_name": "陕西高校图书馆联盟",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "陕西高校图书馆联盟绩效评测的实施依托现代网络通信技术平台",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10049::11_e2",
+          "mention": "启动阶段",
+          "normalized_name": "启动阶段",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "可初步将其划分为3个阶段：启动阶段、优化建设阶段和升级发展阶段",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10049::11_e3",
+          "mention": "优化建设阶段",
+          "normalized_name": "优化建设阶段",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "可初步将其划分为3个阶段：启动阶段、优化建设阶段和升级发展阶段",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10049::11_e4",
+          "mention": "升级发展阶段",
+          "normalized_name": "升级发展阶段",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "可初步将其划分为3个阶段：启动阶段、优化建设阶段和升级发展阶段",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10049::13",
+      "sentence": "陕西高校图书馆联盟绩效评测的实施是一项长期而艰巨的任务，本文构建的大纲中的有些指标还只是描述性的，可操作性不强，这还有赖于在评测实施过程中不断修正、",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10049::13_e1",
+          "mention": "陕西高校图书馆联盟",
+          "normalized_name": "陕西高校图书馆联盟",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "陕西高校图书馆联盟绩效评测的实施",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10049::2",
+      "sentence": "陕西是个教育大省，拥有丰富的教育资源。 目前，陕西各高校图书馆均已建立了自己的网站，并以网络为依托联合开展服务，如何根据陕西省高校图书馆的实际进行联盟绩效评测，建立一套科学完善的测评指标体系，是图书馆联盟绩效评测的前提，也是其运作的基础，这对于提高图书馆联盟的服务质量，促进联盟的发展，更好地满足读者需求和教学科研发展的需要，推动本省高等教育事业快速、健康的发展具有非常重要的现实意义。",
+      "entities": []
+    },
+    {
+      "sentence_id": "reviewed_full_10049::3",
+      "sentence": "对陕西省图书馆联盟绩效评测目的是对联盟机构和各成员馆管理与运行机制进行评测，提出改进或进一步完善的合理化建议。 本文构建的绩效评测绩效体系大纲包括资源共建共享、联盟效力、用户感知、共享绩效等4个相互关联的因素。",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10049::3_e1",
+          "mention": "陕西省图书馆联盟",
+          "normalized_name": "陕西省图书馆联盟",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对陕西省图书馆联盟绩效评测目的是对联盟机构和各成员馆管理与运行机制进行评测",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10049::3_e2",
+          "mention": "资源共建共享",
+          "normalized_name": "资源共建共享",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本文构建的绩效评测绩效体系大纲包括资源共建共享、联盟效力、用户感知、共享绩效等4个相互关联的因素",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为绩效评测因素的概念"
+        },
+        {
+          "entity_id": "reviewed_full_10049::3_e3",
+          "mention": "联盟效力",
+          "normalized_name": "联盟效力",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本文构建的绩效评测绩效体系大纲包括资源共建共享、联盟效力、用户感知、共享绩效等4个相互关联的因素",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10049::3_e4",
+          "mention": "用户感知",
+          "normalized_name": "用户感知",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本文构建的绩效评测绩效体系大纲包括资源共建共享、联盟效力、用户感知、共享绩效等4个相互关联的因素",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10049::3_e5",
+          "mention": "共享绩效",
+          "normalized_name": "共享绩效",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "本文构建的绩效评测绩效体系大纲包括资源共建共享、联盟效力、用户感知、共享绩效等4个相互关联的因素",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10049::4",
+      "sentence": "本文构建的绩效评测绩效体系大纲包括资源共建共享、联盟效力、用户感知、共享绩效等4个相互关联的因素。 本着可持续性、科学性和实用性的原则，在对陕西高校图书馆联盟现状调研的基础上，从整体性和全面性角度确定评价因素，采用层次分析法和德尔菲法进行评测，解决权重系数的非客观性和主观随意性，以此来促进联盟及各盟员馆的服务，推动联盟的可持续发展，是此评价体系设计的重要思路。 最后，根据所构建的指标体系，提出一些实施策略，使得此指标体系在实施过程中得到检验和完善。",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10049::4_e1",
+          "mention": "资源共建共享",
+          "normalized_name": "资源共建共享",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括资源共建共享、联盟效力、用户感知、共享绩效等4个相互关联的因素",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10049::4_e2",
+          "mention": "联盟效力",
+          "normalized_name": "联盟效力",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括资源共建共享、联盟效力、用户感知、共享绩效等4个相互关联的因素",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10049::4_e3",
+          "mention": "用户感知",
+          "normalized_name": "用户感知",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括资源共建共享、联盟效力、用户感知、共享绩效等4个相互关联的因素",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10049::4_e4",
+          "mention": "共享绩效",
+          "normalized_name": "共享绩效",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "包括资源共建共享、联盟效力、用户感知、共享绩效等4个相互关联的因素",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10049::4_e5",
+          "mention": "陕西高校图书馆联盟",
+          "normalized_name": "陕西高校图书馆联盟",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在对陕西高校图书馆联盟现状调研的基础上",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10049::4_e6",
+          "mention": "层次分析法",
+          "normalized_name": "层次分析法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用层次分析法和德尔菲法进行评测",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10049::4_e7",
+          "mention": "德尔菲法",
+          "normalized_name": "德尔菲法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "采用层次分析法和德尔菲法进行评测",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10049::5",
+      "sentence": "本调查将其按学术积累、人力优势、技术实力和经济基础为划分标准分为3组，第一组为综合实力较强的7所211重点院校，第二组在非211高校中抽样 10 所大学的图书馆，这类院校虽未进入211重点工程，但凭借自己的声誉和优秀的办学质量也拥有较强的学术及科研实力。 第三组对象在数量较大的高职高专院校中抽样10所院校，对其进行调查。",
+      "entities": []
+    },
+    {
+      "sentence_id": "reviewed_full_10049::6",
+      "sentence": "图书馆联盟的服务控制能力是为用户提供服务的前提和基础，需要着眼于宏观条件、目标和措施，更离不开各成员馆的努力和合作。 通过调查发现，各图书馆提供给用户的信息资源种类、数量、质量都较为不足。虽然开展了一些联盟服务，但其实施运作缺乏一定的主动性、合作性。 （如表2所示）",
+      "entities": []
+    },
+    {
+      "sentence_id": "reviewed_full_10049::7",
+      "sentence": "图书馆联盟是一个非赢利性的公益组织，因而人们习惯性的将目光聚焦于它所提供的服务而不去考虑所谓的效力问题。实际上，图书馆联盟通过丰富的信息资源、优质的信息服务，能够创造社会效益； 通过集团采购、文献传递等服务项目的开展，不但可以节约成员馆的成本，而且大大提高工作效率，获得一些经济收益。",
+      "entities": []
+    },
+    {
+      "sentence_id": "reviewed_full_10049::8",
+      "sentence": "通过集团采购、文献传递等服务项目的开展，不但可以节约成员馆的成本，而且大大提高工作效率，获得一些经济收益。 另一方面，联盟是方向，效力是根本。图书馆联盟的可持续发展需要联盟具备完善的效力评估机制，由此获取稳定的政策资金以及人力资源的支持，吸引更多的图书馆的加入，逐步扩大自己的效力。因此，对联盟效力的调查是一个重要方面。 （如表3所示)",
+      "entities": []
+    },
+    {
+      "sentence_id": "reviewed_full_10049::9",
+      "sentence": "用户满意度是图书馆联盟以用户为中心，运用科学的调查、测量方法，并综合分析用户对图书馆信息资源、信息服务的满意度，并据此改进信息服务质量，完善信息资源体系，以实现用户满意、提高图书馆效益为目的。评估图书馆联盟的绩效时，用户的感受和体验是不可或缺的一个重要部分。因为建立图书馆联盟的目的之一是为用户提供更好的信息服务，而这种服务是不是优质高效，用户评判是关键的一个环节。只有重视用户的感受和反馈，根据用户的意见改进信息服务质量、完善文献信息资源体系，才能使图书馆联盟真正满足用户的个性化需求。 本文将用户满意度粗略地划分为浏览网页、搜索引擎、馆际互借、文献传递、数据库服务等方面。",
+      "entities": []
+    },
+    {
+      "sentence_id": "reviewed_full_10097::1",
+      "sentence": "〔Abstract）Product design support system is built onthe basis of knowledgereuse.Knowledgereasoning，as akey technology，can help maintainand expand the knowledgerepositorysoas torealize knowledgereuse．This paperreviewsonthe develop ment of product design oriented knowledge reasoning from 3 aspects：case $-$ based reasoning，uncertain reasoning and hybrid reasoning·It alsoanalyzes theadvantagesanddisadvantagesofeach methodand technologyas wellasunresolvedquestions，and explores further development of reasoning technology.",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10097::1_e1",
+          "mention": "knowledgereuse",
+          "normalized_name": "knowledge reuse",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "Product design support system is built onthe basis of knowledgereuse",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "原文连写，可能为概念"
+        },
+        {
+          "entity_id": "reviewed_full_10097::1_e2",
+          "mention": "case $-$ based reasoning",
+          "normalized_name": "case-based reasoning",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "case $-$ based reasoning，uncertain reasoning and hybrid reasoning",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10097::1_e3",
+          "mention": "uncertain reasoning",
+          "normalized_name": "uncertain reasoning",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "case $-$ based reasoning，uncertain reasoning and hybrid reasoning",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10097::1_e4",
+          "mention": "hybrid reasoning",
+          "normalized_name": "hybrid reasoning",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "case $-$ based reasoning，uncertain reasoning and hybrid reasoning",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10097::10",
+      "sentence": "复杂产品的知识类型多样、结构复杂，单一表示方法表示产品案例存在一定的局限性，一些案例还包含许多非结构化的设计信息，因此，要确定合理的案例表示方法来解决问题。",
+      "entities": []
+    },
+    {
+      "sentence_id": "reviewed_full_10097::11",
+      "sentence": "最相邻近方法适用于案例由特征向量表示的系统。该方法通过计算新旧案例各特征的加权平均和来度量案例的相似性，其优点是方便实用，在案例数量较小的情况检索效率较高，但是案例库中案例数量增加时其检索效率下降。一些研究针对最近相邻法的不足提出了改进：自动武器设计系统[9]结合聚类算法对其进行改进，首先进行案例的聚类，推理时新案例直接根据聚类的均值在聚类中搜索相近案例。产品设计[10]研究结合模糊推理对其进行改进，解决相似度计算中属性的非线性影响和权重的不精确性问题。",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10097::11_e1",
+          "mention": "最相邻近方法",
+          "normalized_name": "最相邻近方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "最相邻近方法适用于案例由特征向量表示的系统",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10097::11_e2",
+          "mention": "自动武器设计系统[9]",
+          "normalized_name": "自动武器设计系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "自动武器设计系统[9]结合聚类算法对其进行改进",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10097::11_e3",
+          "mention": "产品设计[10]",
+          "normalized_name": "产品设计",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "产品设计[10]研究结合模糊推理对其进行改进",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指代文献，但根据内容优先标subfield"
+        },
+        {
+          "entity_id": "reviewed_full_10097::11_e4",
+          "mention": "模糊推理",
+          "normalized_name": "模糊推理",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "产品设计[10]研究结合模糊推理对其进行改进",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10097::12",
+      "sentence": "归纳索引法不断的从案例的各组织成分中归纳出最能将该案例与其它案例区分开来的成分，并对案例库建立索引，将案例组织成一个层次结构。 归纳法适用于案例比较多的情况； 但是归纳索引必须有足够的典型案例，才能进行有效的归纳；",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10097::12_e1",
+          "mention": "归纳索引法",
+          "normalized_name": "归纳索引法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "归纳索引法不断的从案例的各组织成分中归纳出",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10097::13",
+      "sentence": "如产品包装设计研究[1]中，按产品特性对产品包装的影响程度依次检索，直至得到与该产品各个特性最接近的产品包装设计方案。 该策略常和其它策略一起使用，特别在大型案例库及领域理解还不一致的情况。需要人工确定产品案例中重要影响的特征。",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10097::13_e1",
+          "mention": "产品包装设计研究",
+          "normalized_name": "产品包装设计研究",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "产品包装设计研究[1]中",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "引用标记指示具体文献，但名称可能不唯一"
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10097::14",
+      "sentence": "一些研究结合多种检索策略，智能方案设计支持系统[12]中，检索策略结合最近相邻策略和知识引导策略。 首先根据关键指标对案例库进行初步检索，然后将初步检索后得到的各案例指标集轮流与设计方案要求指标集输入神经网络推理机进行相似度计算。",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10097::14_e1",
+          "mention": "智能方案设计支持系统",
+          "normalized_name": "智能方案设计支持系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "智能方案设计支持系统[12]中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10097::14_e2",
+          "mention": "最近相邻策略",
+          "normalized_name": "最近相邻策略",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检索策略结合最近相邻策略和知识引导策略",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10097::14_e3",
+          "mention": "知识引导策略",
+          "normalized_name": "知识引导策略",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "检索策略结合最近相邻策略和知识引导策略",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10097::16",
+      "sentence": "案例修正就是对案例进行调整、修改，使其更能准确地反映问题的本质特征，并向实际情况逐渐逼近。 案例修正[13-14]的方法主要有4类：替换修正，将旧的案例中的相关值进行替换；",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10097::16_e1",
+          "mention": "案例修正",
+          "normalized_name": "案例修正",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "案例修正就是对案例进行调整、修改",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能兼为technique，但原句强调方法"
+        },
+        {
+          "entity_id": "reviewed_full_10097::16_e2",
+          "mention": "替换修正",
+          "normalized_name": "替换修正",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "替换修正，将旧的案例中的相关值进行替换",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10097::17",
+      "sentence": "目前实现上述修正方法主要是运用一些人工智能和机器学习的技术，如数据挖掘、约束满意问题解决、基于规则推理等。 其中规则推理是比较常用的方法，在混合推理部分进行介绍。",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10097::17_e1",
+          "mention": "数据挖掘",
+          "normalized_name": "数据挖掘",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如数据挖掘、约束满意问题解决、基于规则推理等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10097::17_e2",
+          "mention": "约束满意问题解决",
+          "normalized_name": "约束满意问题解决",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如数据挖掘、约束满意问题解决、基于规则推理等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10097::17_e3",
+          "mention": "基于规则推理",
+          "normalized_name": "基于规则推理",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如数据挖掘、约束满意问题解决、基于规则推理等",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10097::18",
+      "sentence": "现有的复杂产品设计研究理论大多是针对单级案例的检索方法进行讨论的，而实际工程设计中，一个复杂产品案例包含有多个且具有多层次结构的功能，由此很多研究提出多级案例推理算法模型，对案例进行深入检索。",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10097::18_e1",
+          "mention": "多级案例推理算法模型",
+          "normalized_name": "多级案例推理算法模型",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "由此很多研究提出多级案例推理算法模型，对案例进行深入检索",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10097::19",
+      "sentence": "类似研究有：大型水轮机结构投标方案设计[17]、大型复杂产品方案设计[18]。 多级案例推理与重用方法的实施，使得只需修改或者替换历史相似设计实例的部分模块就可以得到目标方案，并且有可能在实例不充分的情况下获得有效的设计方案，丰富了复杂产品方案设计与知识重用技术的研究内容。 还有一些学者将案例分为两个层次[19]：原型案例概括设计过程的基本特征并对应一组功能案例；",
+      "entities": [
+        {
+          "entity_id": "reviewed_full_10097::19_e1",
+          "mention": "大型水轮机结构投标方案设计[17]",
+          "normalized_name": "大型水轮机结构投标方案设计",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "类似研究有：大型水轮机结构投标方案设计[17]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10097::19_e2",
+          "mention": "大型复杂产品方案设计[18]",
+          "normalized_name": "大型复杂产品方案设计",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "类似研究有：大型水轮机结构投标方案设计[17]、大型复杂产品方案设计[18]",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "reviewed_full_10097::19_e3",
+          "mention": "多级案例推理与重用方法",
+          "normalized_name": "多级案例推理与重用方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "多级案例推理与重用方法的实施",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ]
+    },
+    {
+      "sentence_id": "reviewed_full_10097::2",
+      "sentence": "在产品设计过程中，设计人员大多在过去相似设计案例的基础上进行修改调整而生成新的设计方案。 由此可见，绝大多数的产品设计都是对己有设计知识的重用。重用已有的知识可以节省资源，并提高产品可靠质量。 面向产品设计的知识推理就是针对用户提出的问题，对产品设计知识库中的知识进行推理，得到问题的答案，最终实现知识的重用。",
+      "entities": []
+    }
+  ]
+}
