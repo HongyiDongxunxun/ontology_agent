@@ -51,7 +51,7 @@ for i, (sid, entry) in enumerate(test_items):
         print(f"    [{e.entity_id}] {e.mention} → L1={e.candidate_l1} L3={e.candidate_l3}")
     for r in result.relations:
         xtra = f" obj_text={r.object_text}" if r.object == "_missing_entity" else ""
-        print(f"    REL: {r.subject} --[{r.polarity}]--> {r.object} | evid=\"{r.evidence[:50]}\"{xtra}")
+        print(f"    REL: {r.subject} --> {r.object} | aspect={r.aspect} | opinion={r.opinion} | evid=\"{r.evidence[:50]}\"{xtra}")
     if not result.relations:
         print(f"    (无评价关系)")
     print()

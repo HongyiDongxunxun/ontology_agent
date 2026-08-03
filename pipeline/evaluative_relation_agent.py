@@ -182,29 +182,32 @@ object_text
 
 应返回三条评价关系。
 
-五、评价极性
+五、评价方面与评价内容
 
-请判断评价极性。
+请识别评价方面（aspect）和评价内容（opinion）。
 
-仅允许：
+aspect 是评价对象的具体维度，例如作者分布、研究水平、研究质量、理论基础、应用效果、区域分布。
+aspect 不是实体，不要把 aspect 当作 object。
+如果没有明确评价方面，aspect 返回 null。
 
-positive
-negative
-neutral
+opinion 是原文中的评价表达，例如不合理、偏低、不足、步伐越走越快、取得了一定成绩。
 
 例如：
 
-效果显著
+作者分布不合理
 
-positive
+aspect = 作者分布
+opinion = 不合理
 
-存在不足
+研究水平偏低
 
-negative
+aspect = 研究水平
+opinion = 偏低
 
-基本一致
+中西部地区研究不足
 
-neutral
+aspect = null
+opinion = 不足
 
 六、评价依据
 
@@ -234,8 +237,9 @@ neutral
     {
       "subject": "_paper_author",
       "object": "1_e6",
-      "evidence": "档案信息化建设的步伐越走越快",
-      "polarity": "positive"
+      "aspect": null,
+      "opinion": "步伐越走越快",
+      "evidence": "档案信息化建设的步伐越走越快"
     }
   ]
 }
@@ -268,21 +272,74 @@ neutral
 {entities_text}
 """.strip()
 
+EVALUATIVE_RELATION_PROMPT = (
+    EVALUATIVE_RELATION_PROMPT
+    + """
+
+十、学术评价对象与评价方面增强规则
+
+请明确区分：
+Entity: 具有独立语义、可作为知识图谱节点的对象。
+Evaluation Object: 评价关系中被评价的核心对象，必须优先使用实体列表中的 entity_id。
+Evaluation Aspect: 评价对象的评价维度，不是实体。
+Opinion: 评价表达或评价内容。
+
+不要直接寻找“实体 + 评价词”，而要寻找：
+评价主体 subject、评价对象 object、评价方面 aspect（可选）、评价内容 opinion。
+
+以下通常是 aspect，不应作为 object：
+作者分布、研究水平、研究质量、理论基础、应用效果、区域分布。
+
+若句子评价的是研究对象的某个维度，应把核心研究对象放入 object，把维度放入 aspect。
+例如“农村图书馆研究存在作者分布不合理、研究水平偏低的问题”：
+object = 农村图书馆研究对应的 entity_id
+aspect = 作者分布
+opinion = 不合理
+aspect = 研究水平
+opinion = 偏低
+
+若没有明确评价方面，则 aspect = null。
+例如“档案信息化建设的步伐越走越快”：
+object = 档案信息化建设对应的 entity_id
+aspect = null
+opinion = 步伐越走越快
+
+输出格式以本节为准，必须使用：
+{
+  "has_evaluation": true,
+  "relations": [
+    {
+      "subject": "_paper_author",
+      "object": "entity_id|_missing_entity",
+      "aspect": "评价方面或null",
+      "opinion": "评价表达",
+      "evidence": "最小评价证据",
+      "object_text": "仅当 object 为 _missing_entity 时填写"
+    }
+  ]
+}
+
+不要输出 polarity。
+"""
+).strip()
+
 
 @dataclass
 class EvaluativeRelation:
     subject: str
     object: str
+    aspect: Optional[str]
+    opinion: str
     evidence: str
-    polarity: str
     object_text: str = ""
 
     def to_dict(self) -> dict:
         data = {
             "subject": self.subject,
             "object": self.object,
+            "aspect": self.aspect,
+            "opinion": self.opinion,
             "evidence": self.evidence,
-            "polarity": self.polarity,
         }
         if self.object == "_missing_entity" and self.object_text:
             data["object_text"] = self.object_text
@@ -375,14 +432,14 @@ class EvaluativeRelationAgent:
 
             subject = str(item.get("subject", "")).strip()
             obj = str(item.get("object", "")).strip()
+            aspect_value = item.get("aspect")
+            aspect = None if aspect_value is None else str(aspect_value).strip()
+            opinion = str(item.get("opinion", "")).strip()
             evidence = str(item.get("evidence", "")).strip()
-            polarity = str(item.get("polarity", "")).strip()
             object_text = str(item.get("object_text", "")).strip()
 
-            if not subject or not obj or not evidence:
+            if not subject or not obj or not opinion or not evidence:
                 continue
-            if polarity not in {"positive", "negative", "neutral"}:
-                polarity = "neutral"
             if obj != "_missing_entity" and obj not in entity_ids:
                 obj = "_missing_entity"
                 if not object_text:
@@ -392,8 +449,9 @@ class EvaluativeRelationAgent:
                 EvaluativeRelation(
                     subject=subject,
                     object=obj,
+                    aspect=aspect,
+                    opinion=opinion,
                     evidence=evidence,
-                    polarity=polarity,
                     object_text=object_text,
                 )
             )

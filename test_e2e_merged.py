@@ -63,7 +63,7 @@ for r in results[:15]:
 print(f"\n--- 评价关系 (来自 Agent 1) ---")
 for r in relations:
     xtra = f" obj_text={r.get('object_text','')}" if r.get('object') == '_missing_entity' else ''
-    print(f"  [{r['sentence_id']}] {r['subject']} --[{r['polarity']}]--> {r['object']} | \"{r['evidence'][:60]}\"{xtra}")
+    print(f"  [{r['sentence_id']}] {r['subject']} --> {r['object']} | aspect={r.get('aspect')} | opinion={r.get('opinion')} | \"{r['evidence'][:60]}\"{xtra}")
 
 # 验证关系引用
 print(f"\n🔍 验证:")

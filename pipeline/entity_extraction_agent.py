@@ -173,8 +173,9 @@ ENTITY_EXTRACTION_PROMPT = (
     "评价客体必须是被评价的对象，优先使用已抽取实体的 entity_id。\n"
     "若评价对象不存在于实体列表中 → 使用 \"_missing_entity\"，同时增加 object_text 字段填写原始文本。\n"
     "不要自行创造新的 entity_id。\n\n"
-    "### 评价极性 (polarity):\n"
-    "仅允许: positive (正向) / negative (负向) / neutral (中性)\n\n"
+    "### 评价方面 (aspect) 与评价内容 (opinion):\n"
+    "aspect 填写评价对象的具体评价维度；若不存在明确维度则为 null。\n"
+    "opinion 填写原文中的评价表达或评价内容。\n\n"
     "### 评价依据 (evidence):\n"
     "输出支持该评价的最小文本片段，尽可能短但能完整表达评价。\n\n"
     "### 多评价关系:\n"
@@ -199,8 +200,9 @@ ENTITY_EXTRACTION_PROMPT = (
     '    {{\n'
     '      "subject": "_paper_author|entity_id|_cite[N]|_unknown",\n'
     '      "object": "entity_id|_missing_entity",\n'
+    '      "aspect": "<评价方面或 null>",\n'
+    '      "opinion": "<评价表达>",\n'
     '      "evidence": "<评价依据文本片段>",\n'
-    '      "polarity": "positive|negative|neutral",\n'
     '      "object_text": "<仅当 object 为 _missing_entity 时填写原始文本>"\n'
     '    }}\n'
     '  ]\n'
@@ -251,6 +253,62 @@ ENTITY_EXTRACTION_PROMPT = (
     "> 「比较」通用动词、「优劣」评价用语、「本文」自指、「重要意义」评价用语 → 均不抽取。\n\n"
     "## Input\n"
     "{statement}"
+)
+
+ENTITY_EXTRACTION_PROMPT = ENTITY_EXTRACTION_PROMPT.replace(
+    "## Input\n{statement}",
+    """## Academic Evaluation Object Rules (增强规则)
+请明确区分四类成分：
+1. Entity: 文本中具有独立语义、可作为知识图谱节点的对象。
+2. Evaluation Object: 评价关系中被评价的核心对象，通常来自 Entity，并在 relation.object 中填写对应 entity_id。
+3. Evaluation Aspect: 评价对象的某个评价维度，不是 Entity。
+4. Opinion: 评价表达或评价内容。
+
+实体抽取不要只按传统 NER。学术评价文本中的研究对象、领域主题和复合研究对象也应抽取为 Entity，例如：
+- 农村图书馆研究
+- 农村图书馆问题
+- 档案信息化建设
+- 数字图书馆建设
+- 中西部地区研究
+- 数字化建设
+- 基础理论研究
+
+最小评价对象原则：
+若一个名词短语能够整体接受评价词修饰，优先抽取完整短语，而不是拆出内部成分。
+- “中西部地区研究不足” -> Entity: 中西部地区研究；不要抽取“中西部地区”。
+- “农村图书馆事业发展良好” -> Entity: 农村图书馆事业发展；不要只抽“农村图书馆”。
+- “数字信息资源建设存在不足” -> Entity: 数字信息资源建设；不要只抽“数字信息资源”。
+
+当名词短语后接“研究、建设、发展、问题、实践、应用、水平、能力、体系”，且整体构成被评价的研究对象或主题对象时，优先整体抽取。
+
+以下通常不是 Entity，除非原文把它们作为独立研究对象或术语本身讨论：
+作者分布、研究水平、研究质量、理论基础、应用效果、区域分布。
+它们在评价关系中通常应放入 aspect 字段。
+
+评价关系不要按“实体 + 评价词”机械抽取，而应识别：
+subject = 评价主体
+object = 被评价的核心对象 entity_id
+aspect = 评价方面；没有则为 null
+opinion = 评价表达
+evidence = 支持该评价的最小原文片段
+
+例如：
+句子：“我国农村图书馆研究取得了一定成绩，但作者分布不合理、研究水平偏低。”
+Entity 只抽取“农村图书馆研究”，不要抽取“作者分布”或“研究水平”。
+Relations:
+[
+  {{"subject":"_paper_author","object":"<农村图书馆研究的entity_id>","aspect":"作者分布","opinion":"不合理","evidence":"作者分布不合理"}},
+  {{"subject":"_paper_author","object":"<农村图书馆研究的entity_id>","aspect":"研究水平","opinion":"偏低","evidence":"研究水平偏低"}}
+]
+
+句子：“中西部地区研究不足。”
+Entity: 中西部地区研究
+Relation: object=<中西部地区研究的entity_id>, aspect=null, opinion=不足。
+
+关系输出字段必须使用 subject、object、aspect、opinion、evidence。不要输出 polarity。
+
+## Input
+{statement}""",
 )
 
 # ===========================================================================
@@ -318,22 +376,25 @@ class ExtractedRelation:
         self,
         subject: str = "",
         object: str = "",
+        aspect: Optional[str] = None,
+        opinion: str = "",
         evidence: str = "",
-        polarity: str = "neutral",
         object_text: str = "",
     ):
         self.subject = subject
         self.object = object
+        self.aspect = aspect if aspect not in ("", "null") else None
+        self.opinion = opinion
         self.evidence = evidence
-        self.polarity = polarity if polarity in {"positive", "negative", "neutral"} else "neutral"
         self.object_text = object_text
 
     def to_dict(self) -> dict:
         data = {
             "subject": self.subject,
             "object": self.object,
+            "aspect": self.aspect,
+            "opinion": self.opinion,
             "evidence": self.evidence,
-            "polarity": self.polarity,
         }
         if self.object == "_missing_entity" and self.object_text:
             data["object_text"] = self.object_text
@@ -344,8 +405,9 @@ class ExtractedRelation:
         return ExtractedRelation(
             subject=data.get("subject", ""),
             object=data.get("object", ""),
+            aspect=data.get("aspect"),
+            opinion=data.get("opinion", ""),
             evidence=data.get("evidence", ""),
-            polarity=data.get("polarity", "neutral"),
             object_text=data.get("object_text", ""),
         )
 
@@ -450,14 +512,14 @@ class EntityExtractionAgent:
                 continue
             subject = str(item.get("subject", "")).strip()
             obj = str(item.get("object", "")).strip()
+            aspect_value = item.get("aspect")
+            aspect = None if aspect_value is None else str(aspect_value).strip()
+            opinion = str(item.get("opinion", "")).strip()
             evidence = str(item.get("evidence", "")).strip()
-            polarity = str(item.get("polarity", "neutral")).strip()
             object_text = str(item.get("object_text", "")).strip()
 
-            if not subject or not obj or not evidence:
+            if not subject or not obj or not opinion or not evidence:
                 continue
-            if polarity not in {"positive", "negative", "neutral"}:
-                polarity = "neutral"
             # 验证 object 是否为已识别的实体ID
             if obj != "_missing_entity" and obj not in entity_ids:
                 object_text = object_text or str(item.get("object", "")).strip()
@@ -467,8 +529,9 @@ class EntityExtractionAgent:
                 ExtractedRelation(
                     subject=subject,
                     object=obj,
+                    aspect=aspect,
+                    opinion=opinion,
                     evidence=evidence,
-                    polarity=polarity,
                     object_text=object_text,
                 )
             )
