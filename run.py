@@ -21,10 +21,19 @@ except ImportError:
 _print_lock = Lock(); _summary_lock = Lock()
 RUN_MODE = "full"
 
+def reviewed_key_sort(key: str) -> tuple[int, int, str]:
+    if key.isdigit():
+        return (0, int(key), key)
+    import re
+    match = re.search(r"(\d+)$", key)
+    if match:
+        return (1, int(match.group(1)), key)
+    return (2, 0, key)
+
 def load_reviewed_json(filepath: str) -> list[tuple[str, str]]:
     with open(filepath, "r", encoding="utf-8") as f: raw = json.load(f)
     sentences: list[tuple[str, str]] = []
-    for key in sorted(raw.keys(), key=lambda k: int(k)):
+    for key in sorted(raw.keys(), key=reviewed_key_sort):
         entry = raw[key]
         stmt = entry.get("evaluative_sentence", "")
         prev = entry.get("previous_sentence", ""); nxt = entry.get("next_sentence", "")
@@ -253,7 +262,7 @@ def main() -> int:
 
     print(f"{'='*70}")
 
-    return 0 if not failures else 1
+    return 0 if not fail else 1
 
 if __name__ == "__main__":
     sys.exit(main())
