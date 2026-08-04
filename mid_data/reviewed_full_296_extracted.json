@@ -53,40 +53,40 @@
           "entity_id": "2_e1",
           "mention": "咨询公司",
           "normalized_name": "咨询公司",
-          "candidate_l3": "organization",
+          "candidate_l3": "service",
           "candidate_l1": [
             "Agent"
           ],
           "evidence": "在全国工商管理部门登记的咨询公司有3.4万家",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "泛称，但此处指具体登记的公司群体，可视为具体实体"
+          "confidence": 0.9,
+          "uncertainty": "泛称机构类别，但此处指具体登记的公司群体，可视为具体实体"
         },
         {
           "entity_id": "2_e2",
           "mention": "咨询产业",
           "normalized_name": "咨询产业",
-          "candidate_l3": "concept",
+          "candidate_l3": "subfield",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "这两组统计数字是对咨询产业的反映",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为产业概念，非具体组织"
+          "uncertainty": "作为产业领域，可视为子领域"
         },
         {
           "entity_id": "2_e3",
           "mention": "信息产业",
           "normalized_name": "信息产业",
-          "candidate_l3": "concept",
+          "candidate_l3": "subfield",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "可从一个侧面反映我国信息产业的发展速度",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为产业概念"
+          "uncertainty": "作为产业领域，可视为子领域"
         },
         {
           "entity_id": "2_e4",
@@ -134,22 +134,22 @@
           "subject": "_paper_author",
           "object": "_missing_entity",
           "aspect": "发展速度",
-          "opinion": "快速发展",
-          "evidence": "咨询产业在一年多时间内，增长了数千家，其增长率已远远超过10%",
+          "opinion": "反映我国信息产业的发展速度",
+          "evidence": "可从一个侧面反映我国信息产业的发展速度",
           "object_text": "None"
         },
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "发展速度",
-          "opinion": "快速发展",
-          "evidence": "信息产业的发展速度",
+          "aspect": "增长率",
+          "opinion": "增长率已远远超过10%",
+          "evidence": "其增长率已远远超过10%",
           "object_text": "None"
         },
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "发展速度",
+          "aspect": "发展",
           "opinion": "快速发展",
           "evidence": "计算机、数据库、通讯等产业也在快速发展",
           "object_text": "None"
@@ -265,9 +265,9 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "只是目前我们的商用数据库还较少",
+          "evidence": "目前我们的商用数据库还较少",
           "is_specific_entity": true,
-          "confidence": 0.95,
+          "confidence": 0.9,
           "uncertainty": ""
         }
       ],
@@ -279,7 +279,7 @@
           "aspect": "数量",
           "opinion": "较少",
           "evidence": "商用数据库还较少",
-          "object_text": "None"
+          "object_text": "1_e1"
         },
         {
           "subject": "_paper_author",
@@ -287,7 +287,7 @@
           "aspect": "数量和产值",
           "opinion": "较大幅度的增长",
           "evidence": "数量和产值都将会出现较大幅度的增长",
-          "object_text": "None"
+          "object_text": "1_e1"
         }
       ]
     },
@@ -297,68 +297,94 @@
       "entities": [
         {
           "entity_id": "6_e1",
-          "mention": "1992年北京、上海、广州三城市的信息化指数",
-          "normalized_name": "1992年北京、上海、广州三城市的信息化指数",
-          "candidate_l3": "dataset",
+          "mention": "北京",
+          "normalized_name": "北京",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1992年北京、上海、广州三城市的信息化指数分别是117.12、134.30、118.12",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "作为城市，可能指代政府或区域，但此处作为比较对象，可视为具体区域实体"
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "上海",
+          "normalized_name": "上海",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1992年北京、上海、广州三城市的信息化指数分别是117.12、134.30、118.12",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "同上"
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "广州",
+          "normalized_name": "广州",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1992年北京、上海、广州三城市的信息化指数分别是117.12、134.30、118.12",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "同上"
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "香港",
+          "normalized_name": "香港",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "而香港、新加坡在1989 年分别达到939.87 和 $2 1 2 1 . 9 2",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "作为城市/地区，可能指代政府或区域"
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "新加坡",
+          "normalized_name": "新加坡",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "而香港、新加坡在1989 年分别达到939.87 和 $2 1 2 1 . 9 2",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "同上"
+        },
+        {
+          "entity_id": "6_e6",
+          "mention": "信息化指数",
+          "normalized_name": "信息化指数",
+          "candidate_l3": "instrument",
           "candidate_l1": [
             "Artifact"
           ],
           "evidence": "1992年北京、上海、广州三城市的信息化指数分别是117.12、134.30、118.12",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "具体数据指标，可能作为数据集"
+          "uncertainty": "作为测量工具/指标"
         },
         {
-          "entity_id": "6_e2",
-          "mention": "香港、新加坡在1989年分别达到939.87和2121.92",
-          "normalized_name": "香港、新加坡在1989年分别达到939.87和2121.92",
-          "candidate_l3": "dataset",
-          "candidate_l1": [
-            "Artifact"
-          ],
-          "evidence": "香港、新加坡在1989 年分别达到939.87 和 $2 1 2 1 . 9 2",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "具体数据指标，可能作为数据集"
-        },
-        {
-          "entity_id": "6_e3",
-          "mention": "国内的信息化程度",
-          "normalized_name": "国内的信息化程度",
-          "candidate_l3": "phenomenon",
+          "entity_id": "6_e7",
+          "mention": "信息化程度",
+          "normalized_name": "信息化程度",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "国内的信息化程度还很低",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "可能作为现象或概念"
-        },
-        {
-          "entity_id": "6_e4",
-          "mention": "北京、上海、广州",
-          "normalized_name": "北京、上海、广州",
-          "candidate_l3": "governance",
-          "candidate_l1": [
-            "Agent"
-          ],
-          "evidence": "北京、上海、广州是国内信息化程度较高的区域",
-          "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "作为区域，可能指代政府或行政区域"
-        },
-        {
-          "entity_id": "6_e5",
-          "mention": "香港和新加坡",
-          "normalized_name": "香港和新加坡",
-          "candidate_l3": "governance",
-          "candidate_l1": [
-            "Agent"
-          ],
-          "evidence": "他们与香港和新加坡等地的差别",
-          "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "作为区域，可能指代政府或行政区域"
+          "uncertainty": "作为抽象概念"
         }
       ],
       "has_evaluation": true,
@@ -366,7 +392,15 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "信息化程度",
+          "aspect": "数值",
+          "opinion": "分别是117.12、134.30、118.12",
+          "evidence": "1992年北京、上海、广州三城市的信息化指数分别是117.12、134.30、118.12",
+          "object_text": "None"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "程度",
           "opinion": "很低",
           "evidence": "国内的信息化程度还很低",
           "object_text": "None"
@@ -401,7 +435,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "讨论的焦点在于信息商品的属性、信息商品的可交换性",
+          "evidence": "讨论的焦点在于信息商品的属性、信息商品的可交换性等方面",
           "is_specific_entity": true,
           "confidence": 0.9,
           "uncertainty": ""
@@ -500,15 +534,7 @@
           "object": "_missing_entity",
           "aspect": "可交换性",
           "opinion": "讨论的焦点",
-          "evidence": "信息商品的可交换性",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": null,
-          "opinion": "难以摆脱",
-          "evidence": "难以摆脱传统的图书情报学",
+          "evidence": "信息商品的可交换性等方面",
           "object_text": "None"
         },
         {
@@ -522,8 +548,8 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": null,
-          "opinion": "实践指导作用",
+          "aspect": "实践指导",
+          "opinion": "起到了实践指导作用",
           "evidence": "对信息商品流通起到了实践指导作用",
           "object_text": "None"
         }
@@ -630,6 +656,19 @@
           "is_specific_entity": true,
           "confidence": 0.85,
           "uncertainty": "作为研究领域"
+        },
+        {
+          "entity_id": "9_e8",
+          "mention": "供求关系",
+          "normalized_name": "供求关系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "供求关系只反映供求菌系邮个有面面不能反映商品件产的劳动量、资源消耗量等",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
         }
       ],
       "has_evaluation": true,
@@ -637,18 +676,18 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "深化",
-          "opinion": "深化",
+          "aspect": "引入",
+          "opinion": "反映信息商品价格研究的深化",
           "evidence": "该理论的引入反映信息商品价格研究的深化",
-          "object_text": "1_e6"
+          "object_text": "None"
         },
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "偏颇",
-          "opinion": "有其偏颇之处",
-          "evidence": "如果仅以供求关系的均衡作为标准，是有其偏颇之处的",
-          "object_text": "以供求关系的均衡作为标准"
+          "aspect": "反映内容",
+          "opinion": "只反映供求菌系邮个有面面不能反映商品件产的劳动量、资源消耗量等",
+          "evidence": "供求关系只反映供求菌系邮个有面面不能反映商品件产的劳动量、资源消耗量等",
+          "object_text": "None"
         }
       ]
     },
@@ -693,7 +732,7 @@
           "evidence": "信息市场的供求价格弹性小于物质商品市场的供求价格弹性，社会科学信息商品的价格弹性小于科技信息商品的价格弹性",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为概念讨论"
+          "uncertainty": "作为经济学概念，可能属于concept"
         },
         {
           "entity_id": "10_e4",
@@ -706,7 +745,7 @@
           "evidence": "信息市场的供求价格弹性小于物质商品市场的供求价格弹性",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为概念讨论"
+          "uncertainty": ""
         },
         {
           "entity_id": "10_e5",
@@ -719,7 +758,7 @@
           "evidence": "信息市场的供求价格弹性小于物质商品市场的供求价格弹性",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为概念讨论"
+          "uncertainty": ""
         },
         {
           "entity_id": "10_e6",
@@ -732,7 +771,7 @@
           "evidence": "社会科学信息商品的价格弹性小于科技信息商品的价格弹性",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为概念讨论"
+          "uncertainty": ""
         },
         {
           "entity_id": "10_e7",
@@ -745,36 +784,10 @@
           "evidence": "社会科学信息商品的价格弹性小于科技信息商品的价格弹性",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为概念讨论"
+          "uncertainty": ""
         },
         {
           "entity_id": "10_e8",
-          "mention": "一次信息",
-          "normalized_name": "一次信息",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "一次信息小于二、三次信息的价格弹性",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为信息类型概念"
-        },
-        {
-          "entity_id": "10_e9",
-          "mention": "二、三次信息",
-          "normalized_name": "二、三次信息",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "一次信息小于二、三次信息的价格弹性",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为信息类型概念"
-        },
-        {
-          "entity_id": "10_e10",
           "mention": "信息市场的供给价格弹性",
           "normalized_name": "信息市场的供给价格弹性",
           "candidate_l3": "concept",
@@ -784,10 +797,10 @@
           "evidence": "信息市场的供给价格弹性小于信息市场需求的价格弹性",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为概念讨论"
+          "uncertainty": ""
         },
         {
-          "entity_id": "10_e11",
+          "entity_id": "10_e9",
           "mention": "信息市场需求的价格弹性",
           "normalized_name": "信息市场需求的价格弹性",
           "candidate_l3": "concept",
@@ -797,10 +810,10 @@
           "evidence": "信息市场的供给价格弹性小于信息市场需求的价格弹性",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为概念讨论"
+          "uncertainty": ""
         },
         {
-          "entity_id": "10_e12",
+          "entity_id": "10_e10",
           "mention": "信息商品均衡理论",
           "normalized_name": "信息商品均衡理论",
           "candidate_l3": "theory",
@@ -819,7 +832,7 @@
           "subject": "_cite[8]",
           "object": "_missing_entity",
           "aspect": "科学性",
-          "opinion": "较为科学的结论",
+          "opinion": "较为科学",
           "evidence": "并得出较为科学的结论",
           "object_text": "None"
         },
@@ -827,7 +840,7 @@
           "subject": "_paper_author",
           "object": "_missing_entity",
           "aspect": "理论依据",
-          "opinion": "提供了较为充分的理论依据",
+          "opinion": "较为充分",
           "evidence": "这一研究成果为信息商品价格的形成提供了较为充分的理论依据",
           "object_text": "None"
         },
@@ -835,8 +848,8 @@
           "subject": "_cite[19]",
           "object": "_missing_entity",
           "aspect": "动态性",
-          "opinion": "动态性极强的均衡",
-          "evidence": "指出\"这是一种动态性极强的均衡\"",
+          "opinion": "动态性极强",
+          "evidence": "指出'这是一种动态性极强的均衡'",
           "object_text": "None"
         }
       ]
@@ -853,15 +866,15 @@
           "candidate_l1": [
             "Agent"
           ],
-          "evidence": "胡先生的观点说明了信息商品定价机理要素的多元性",
+          "evidence": "胡先生的观点",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "具体人名，但未给出全名"
+          "uncertainty": "具体人名，但未提供全名"
         },
         {
           "entity_id": "11_e2",
-          "mention": "信息商品定价机理",
-          "normalized_name": "信息商品定价机理",
+          "mention": "信息商品定价机理要素",
+          "normalized_name": "信息商品定价机理要素",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
@@ -869,7 +882,7 @@
           "evidence": "信息商品定价机理要素的多元性",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为研究对象，可能属于concept或subfield"
+          "uncertainty": "作为复合概念，可能涉及多个要素"
         }
       ],
       "has_evaluation": true,
@@ -877,10 +890,10 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "要素多元性",
-          "opinion": "多元性",
+          "aspect": "多元性",
+          "opinion": "说明了信息商品定价机理要素的多元性",
           "evidence": "说明了信息商品定价机理要素的多元性",
-          "object_text": "None"
+          "object_text": "2_e2"
         }
       ]
     },
@@ -899,7 +912,7 @@
           "evidence": "目前关于信息商品价格的研究已向纵深化发展",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为研究主题，可能为subfield或concept"
+          "uncertainty": "作为研究主题，非具体概念定义"
         },
         {
           "entity_id": "12_e2",
@@ -912,7 +925,7 @@
           "evidence": "信息商品的交易性",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为术语本身讨论"
+          "uncertainty": "作为研究对象"
         }
       ],
       "has_evaluation": true,
@@ -920,17 +933,17 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "发展态势",
-          "opinion": "已向纵深化发展，其势头不错",
-          "evidence": "目前关于信息商品价格的研究已向纵深化发展，其势头不错",
+          "aspect": "发展势头",
+          "opinion": "不错",
+          "evidence": "其势头不错",
           "object_text": "None"
         },
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "研究注意点",
-          "opinion": "仍需注意",
-          "evidence": "今后在信息商品的价格研究中仍需注意",
+          "aspect": "研究深度",
+          "opinion": "纵深化发展",
+          "evidence": "已向纵深化发展",
           "object_text": "None"
         }
       ]
@@ -967,13 +980,13 @@
         },
         {
           "entity_id": "13_e3",
-          "mention": "《中国信息产业发展研究》",
-          "normalized_name": "《中国信息产业发展研究》",
+          "mention": "华勋基的《中国信息产业发展研究》",
+          "normalized_name": "华勋基《中国信息产业发展研究》",
           "candidate_l3": "journal_article",
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "《中国信息产业发展研究》",
+          "evidence": "华勋基的《中国信息产业的理论构架和发展道路》与《中国信息产业发展研究》",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -986,20 +999,20 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "金建的《论'美国信息高速公路'战略与中国信息产业发展对策》",
+          "evidence": "金建的《论'美国信息高速公路'战略与中国信息产业发展对策》一)(二)",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
         },
         {
           "entity_id": "13_e5",
-          "mention": "《中国信息产业现状分析》",
-          "normalized_name": "《中国信息产业现状分析》",
+          "mention": "金建的《中国信息产业现状分析》",
+          "normalized_name": "金建《中国信息产业现状分析》",
           "candidate_l3": "journal_article",
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "《中国信息产业现状分析》",
+          "evidence": "及《中国信息产业现状分析》",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -1129,7 +1142,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "周智佑的《中国信息产业问题》",
+          "evidence": "周智佑的《中国信息产业问题》(三)",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -1149,16 +1162,16 @@
         },
         {
           "entity_id": "13_e17",
-          "mention": "我国信息产业存在问题及发展趋势的研究",
-          "normalized_name": "我国信息产业存在问题及发展趋势的研究",
-          "candidate_l3": "subfield",
+          "mention": "我国信息产业",
+          "normalized_name": "我国信息产业",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "对我国信息产业存在问题及发展趋势的研究",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为研究主题"
+          "uncertainty": "作为研究对象，可能为subfield或concept"
         }
       ],
       "has_evaluation": true,
@@ -1166,9 +1179,9 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "研究成果数量",
-          "opinion": "多达250余篇",
-          "evidence": "研究成果多达250余篇",
+          "aspect": "存在问题及发展趋势",
+          "opinion": "百花齐放，百家争鸣",
+          "evidence": "真可谓'百花齐放，百家争鸣'",
           "object_text": "None"
         }
       ]
@@ -1188,7 +1201,7 @@
           "evidence": "信息产业政策和法规的不健全",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能指具体政策文件或泛指政策法规，但作为整体被评价"
+          "uncertainty": "可能指具体政策文件或泛指政策法规，但原文未指明具体名称"
         },
         {
           "entity_id": "14_e2",
@@ -1201,7 +1214,7 @@
           "evidence": "导致了信息企业中'瓶颈'的产生",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "泛称企业类别，但作为被评价对象，可视为具体实体"
+          "uncertainty": "泛称，未指明具体企业，但作为被评价对象可识别"
         },
         {
           "entity_id": "14_e3",
@@ -1227,7 +1240,7 @@
           "evidence": "即市场运作不正常",
           "is_specific_entity": true,
           "confidence": 0.6,
-          "uncertainty": "可能为泛化概念，但作为被评价对象"
+          "uncertainty": "可能为泛称，但作为被评价对象"
         },
         {
           "entity_id": "14_e5",
@@ -1240,7 +1253,7 @@
           "evidence": "保障体系不完备",
           "is_specific_entity": true,
           "confidence": 0.6,
-          "uncertainty": "泛化概念，但作为被评价对象"
+          "uncertainty": "泛称，但作为被评价对象"
         },
         {
           "entity_id": "14_e6",
@@ -1253,7 +1266,7 @@
           "evidence": "价格机制不完善",
           "is_specific_entity": true,
           "confidence": 0.6,
-          "uncertainty": "泛化概念，但作为被评价对象"
+          "uncertainty": "泛称，但作为被评价对象"
         },
         {
           "entity_id": "14_e7",
@@ -1266,7 +1279,7 @@
           "evidence": "这使得国内信息产业缺乏竞争力度",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "作为产业领域，非具体组织"
+          "uncertainty": "可能指产业领域，非具体组织"
         },
         {
           "entity_id": "14_e8",
@@ -1278,8 +1291,8 @@
           ],
           "evidence": "制约了信息商品的市场占有率",
           "is_specific_entity": true,
-          "confidence": 0.6,
-          "uncertainty": "泛化概念，但作为被评价对象"
+          "confidence": 0.7,
+          "uncertainty": "作为商品类别"
         },
         {
           "entity_id": "14_e9",
@@ -1291,8 +1304,8 @@
           ],
           "evidence": "向国际市场的拓展",
           "is_specific_entity": true,
-          "confidence": 0.5,
-          "uncertainty": "泛化概念，但作为被评价对象"
+          "confidence": 0.6,
+          "uncertainty": "泛称，但作为被评价对象"
         }
       ],
       "has_evaluation": true,
@@ -1308,7 +1321,15 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "市场运作",
+          "aspect": "存在性",
+          "opinion": "产生瓶颈",
+          "evidence": "导致了信息企业中'瓶颈'的产生",
+          "object_text": "None"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "正常性",
           "opinion": "不正常",
           "evidence": "市场运作不正常",
           "object_text": "None"
@@ -1316,7 +1337,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "保障体系",
+          "aspect": "完备性",
           "opinion": "不完备",
           "evidence": "保障体系不完备",
           "object_text": "None"
@@ -1324,7 +1345,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "价格机制",
+          "aspect": "完善性",
           "opinion": "不完善",
           "evidence": "价格机制不完善",
           "object_text": "None"
@@ -1334,7 +1355,7 @@
           "object": "_missing_entity",
           "aspect": "竞争力度",
           "opinion": "缺乏",
-          "evidence": "缺乏竞争力度",
+          "evidence": "国内信息产业缺乏竞争力度",
           "object_text": "None"
         },
         {
@@ -1348,7 +1369,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "国际市场拓展",
+          "aspect": "拓展",
           "opinion": "制约",
           "evidence": "制约了...向国际市场的拓展",
           "object_text": "None"
@@ -1486,32 +1507,9 @@
     {
       "sentence_id": "17",
       "sentence": "$\\textcircled{10}$ 引进的多，出口的少\"20]。 仅从这\"十多\"、\"十少\"中，便不难看出其短期行为。",
-      "entities": [
-        {
-          "entity_id": "17_e1",
-          "mention": "引进的多，出口的少",
-          "normalized_name": "引进的多，出口的少",
-          "candidate_l3": "phenomenon",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "引进的多，出口的少",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "可能为现象描述"
-        }
-      ],
-      "has_evaluation": true,
-      "relations": [
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": null,
-          "opinion": "短期行为",
-          "evidence": "仅从这\"十多\"、\"十少\"中，便不难看出其短期行为",
-          "object_text": "None"
-        }
-      ]
+      "entities": [],
+      "has_evaluation": false,
+      "relations": []
     },
     {
       "sentence_id": "18",
@@ -1519,8 +1517,8 @@
       "entities": [
         {
           "entity_id": "18_e1",
-          "mention": "西北、西南等区域",
-          "normalized_name": "西北、西南等区域",
+          "mention": "西北",
+          "normalized_name": "西北",
           "candidate_l3": "phenomenon",
           "candidate_l1": [
             "Abstract"
@@ -1528,23 +1526,36 @@
           "evidence": "西北、西南等区域的信息产业发展较为缓慢",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "区域作为地理概念，但此处作为发展不平衡的实例，可能不满足实体性门槛"
+          "uncertainty": "区域名称，可能指代具体区域，但非具体组织"
         },
         {
           "entity_id": "18_e2",
+          "mention": "西南",
+          "normalized_name": "西南",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "西北、西南等区域的信息产业发展较为缓慢",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "区域名称，可能指代具体区域，但非具体组织"
+        },
+        {
+          "entity_id": "18_e3",
           "mention": "信息产业",
           "normalized_name": "信息产业",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "西北、西南等区域的信息产业发展较为缓慢",
+          "evidence": "信息产业发展较为缓慢",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": ""
+          "uncertainty": "作为产业概念，非具体实体"
         },
         {
-          "entity_id": "18_e3",
+          "entity_id": "18_e4",
           "mention": "计算机",
           "normalized_name": "计算机",
           "candidate_l3": "concept",
@@ -1554,10 +1565,10 @@
           "evidence": "计算机、通讯、数据库等产业发展较快",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "作为产业门类，非具体设备"
+          "uncertainty": "作为技术领域，非具体设备"
         },
         {
-          "entity_id": "18_e4",
+          "entity_id": "18_e5",
           "mention": "通讯",
           "normalized_name": "通讯",
           "candidate_l3": "concept",
@@ -1567,10 +1578,10 @@
           "evidence": "计算机、通讯、数据库等产业发展较快",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": ""
+          "uncertainty": "作为技术领域，非具体设备"
         },
         {
-          "entity_id": "18_e5",
+          "entity_id": "18_e6",
           "mention": "数据库",
           "normalized_name": "数据库",
           "candidate_l3": "concept",
@@ -1580,20 +1591,20 @@
           "evidence": "计算机、通讯、数据库等产业发展较快",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "作为产业门类，非具体数据库系统"
+          "uncertainty": "作为技术领域，非具体数据库系统"
         },
         {
-          "entity_id": "18_e6",
+          "entity_id": "18_e7",
           "mention": "信息服务业",
           "normalized_name": "信息服务业",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "而信息服务业则较缓慢",
+          "evidence": "信息服务业则较缓慢",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": ""
+          "uncertainty": "作为产业概念，非具体实体"
         }
       ],
       "has_evaluation": true,
@@ -1601,7 +1612,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "区域发展",
+          "aspect": "发展速度",
           "opinion": "较为缓慢",
           "evidence": "西北、西南等区域的信息产业发展较为缓慢",
           "object_text": "None"
@@ -1609,7 +1620,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "产业发展",
+          "aspect": "发展速度",
           "opinion": "较快",
           "evidence": "计算机、通讯、数据库等产业发展较快",
           "object_text": "None"
@@ -1617,9 +1628,25 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "产业发展",
+          "aspect": "发展速度",
+          "opinion": "较快",
+          "evidence": "计算机、通讯、数据库等产业发展较快",
+          "object_text": "None"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "发展速度",
+          "opinion": "较快",
+          "evidence": "计算机、通讯、数据库等产业发展较快",
+          "object_text": "None"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "发展速度",
           "opinion": "较缓慢",
-          "evidence": "而信息服务业则较缓慢",
+          "evidence": "信息服务业则较缓慢",
           "object_text": "None"
         }
       ]
@@ -1636,10 +1663,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "如信息设备制造业，尽管所生产的是信息设备",
+          "evidence": "如信息设备制造业",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为产业子领域"
+          "uncertainty": ""
         },
         {
           "entity_id": "19_e2",
@@ -1649,10 +1676,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "再如咨询和服务业，多数仍停留在传统的参考咨询和文献服务上",
+          "evidence": "再如咨询和服务业",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为产业子领域"
+          "uncertainty": ""
         },
         {
           "entity_id": "19_e3",
@@ -1695,15 +1722,47 @@
           "subject": "_paper_author",
           "object": "_missing_entity",
           "aspect": "资源配置",
-          "opinion": "人才不足、员工素质低、技术力量缺乏、产品的技术含量过低",
-          "evidence": "这一点在资源配置上尤为明显，如人才不足、员工素质低、技术力量缺乏、产品的技术含量过低等",
+          "opinion": "明显",
+          "evidence": "这一点在资源配置上尤为明显",
+          "object_text": "None"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "人才",
+          "opinion": "不足",
+          "evidence": "人才不足",
+          "object_text": "None"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "员工素质",
+          "opinion": "低",
+          "evidence": "员工素质低",
+          "object_text": "None"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "技术力量",
+          "opinion": "缺乏",
+          "evidence": "技术力量缺乏",
+          "object_text": "None"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "产品的技术含量",
+          "opinion": "过低",
+          "evidence": "产品的技术含量过低",
           "object_text": "None"
         },
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
           "aspect": "服务内容",
-          "opinion": "仍停留在传统的参考咨询和文献服务上",
+          "opinion": "停留在传统的参考咨询和文献服务上",
           "evidence": "多数仍停留在传统的参考咨询和文献服务上",
           "object_text": "None"
         },
@@ -1719,7 +1778,7 @@
           "subject": "_paper_author",
           "object": "_missing_entity",
           "aspect": "变革性质",
-          "opinion": "一种质的变革",
+          "opinion": "质的变革",
           "evidence": "这不只是改换名称，而是一种质的变革",
           "object_text": "None"
         }
@@ -1768,8 +1827,8 @@
         {
           "subject": "1_e1",
           "object": "_missing_entity",
-          "aspect": "建设主题",
-          "opinion": "突出高起点、高水平这一主题",
+          "aspect": "主题",
+          "opinion": "突出高起点、高水平",
           "evidence": "突出高起点、高水平这一主题",
           "object_text": "None"
         },
@@ -1777,7 +1836,7 @@
           "subject": "1_e1",
           "object": "_missing_entity",
           "aspect": "发展方向",
-          "opinion": "向着服务'形式多样化，功能集成化，渠道网络化，范围国际化'的方向持续前进",
+          "opinion": "持续前进",
           "evidence": "向着服务'形式多样化，功能集成化，渠道网络化，范围国际化'的方向持续前进",
           "object_text": "None"
         }
@@ -1894,10 +1953,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "形成所谓的'三C'（content.computercommuni-cation)产业或大信息产业",
+          "evidence": "形成所谓的‘三C'（content.computercommuni-cation)产业或大信息产业",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": ""
+          "uncertainty": "产业概念"
         },
         {
           "entity_id": "23_e7",
@@ -1910,7 +1969,7 @@
           "evidence": "或大信息产业",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": ""
+          "uncertainty": "产业概念"
         },
         {
           "entity_id": "23_e8",
@@ -1923,7 +1982,7 @@
           "evidence": "从综合集成的高度来认识和把握信息产业的发展",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": ""
+          "uncertainty": "产业概念"
         }
       ],
       "has_evaluation": true,
@@ -1940,7 +1999,7 @@
           "subject": "1_e1",
           "object": "_missing_entity",
           "aspect": "发展",
-          "opinion": "从综合集成的高度来认识和把握",
+          "opinion": "从综合集成的高度来认识和把握信息产业的发展",
           "evidence": "从综合集成的高度来认识和把握信息产业的发展",
           "object_text": "None"
         }
@@ -1952,11 +2011,11 @@
       "entities": [
         {
           "entity_id": "non_3_e1",
-          "mention": "郭诚忠的《计算机产业的回顾与展望》",
-          "normalized_name": "郭诚忠的《计算机产业的回顾与展望》",
-          "candidate_l3": "book",
+          "mention": "郭诚忠",
+          "normalized_name": "郭诚忠",
+          "candidate_l3": "scholar",
           "candidate_l1": [
-            "Artifact"
+            "Agent"
           ],
           "evidence": "据郭诚忠的《计算机产业的回顾与展望》",
           "is_specific_entity": true,
@@ -1965,48 +2024,61 @@
         },
         {
           "entity_id": "non_3_e2",
+          "mention": "《计算机产业的回顾与展望》",
+          "normalized_name": "《计算机产业的回顾与展望》",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "据郭诚忠的《计算机产业的回顾与展望》",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能是报告或文章"
+        },
+        {
+          "entity_id": "non_3_e3",
           "mention": "计算机产业",
           "normalized_name": "计算机产业",
-          "candidate_l3": "concept",
+          "candidate_l3": "subfield",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "就计算机产业而言，其产值增长也特别快",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为产业领域概念"
+          "confidence": 0.85,
+          "uncertainty": "作为产业领域"
         },
         {
-          "entity_id": "non_3_e3",
+          "entity_id": "non_3_e4",
           "mention": "信息产业",
           "normalized_name": "信息产业",
-          "candidate_l3": "concept",
+          "candidate_l3": "subfield",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "计算机是信息产业门类中增长最快的一个部分",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为产业领域概念"
+          "confidence": 0.85,
+          "uncertainty": "作为产业领域"
         },
         {
-          "entity_id": "non_3_e4",
+          "entity_id": "non_3_e5",
           "mention": "数据库产业",
           "normalized_name": "数据库产业",
-          "candidate_l3": "concept",
+          "candidate_l3": "subfield",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "与计算机产业关系密切的我国数据库产业的发展势头也不错",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为产业领域概念"
+          "confidence": 0.85,
+          "uncertainty": "作为产业领域"
         },
         {
-          "entity_id": "non_3_e5",
+          "entity_id": "non_3_e6",
           "mention": "《中国数据库大全》",
           "normalized_name": "《中国数据库大全》",
-          "candidate_l3": "book",
+          "candidate_l3": "reference_tool",
           "candidate_l1": [
             "Artifact"
           ],
@@ -2016,17 +2088,17 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "non_3_e6",
+          "entity_id": "non_3_e7",
           "mention": "商用数据库",
           "normalized_name": "商用数据库",
-          "candidate_l3": "concept",
+          "candidate_l3": "database",
           "candidate_l1": [
-            "Abstract"
+            "Artifact"
           ],
           "evidence": "只是目前我们的商用数据库还较少",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为数据库类型概念"
+          "uncertainty": "作为数据库类型"
         }
       ],
       "has_evaluation": true,
@@ -2077,7 +2149,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "郭泸玲的《上海信息经济的初步测算》6]",
+          "evidence": "郭泸玲的《上海信息经济的初步测算》",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -2090,7 +2162,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "叶明的《社会经济信息化研究一一江苏信息经济的测度》[]",
+          "evidence": "叶明的《社会经济信息化研究一一江苏信息经济的测度》",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -2103,7 +2175,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "林汉川等的《湖北社会信息化程度的首次测算与预测》8]",
+          "evidence": "林汉川等的《湖北社会信息化程度的首次测算与预测》",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -2116,7 +2188,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "贾林等的《阜新市信息化指数的测算、预测与分析》[9]",
+          "evidence": "贾林等的《阜新市信息化指数的测算、预测与分析》",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -2129,7 +2201,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "卢太宏等的《珠江三角洲地区信息环境的初步评估》[10]",
+          "evidence": "卢太宏等的《珠江三角洲地区信息环境的初步评估》",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -2142,7 +2214,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "靖继鹏等的《吉林省信息产业测度分析》[11]",
+          "evidence": "靖继鹏等的《吉林省信息产业测度分析》",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -2155,7 +2227,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "钟晓霞的《广州市信息环境初析》[2]",
+          "evidence": "钟晓霞的《广州市信息环境初析》",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -2168,7 +2240,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "黄苏宁的《深圳市信息化建设概述》[13]",
+          "evidence": "黄苏宁的《深圳市信息化建设概述》",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -2181,7 +2253,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "刘建等的《北京科技信息咨询业发展的问题与对策研究》[14]",
+          "evidence": "刘建等的《北京科技信息咨询业发展的问题与对策研究》",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -2194,7 +2266,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "华勋基的《中国信息产业发展研究》等",
+          "evidence": "华勋基的《中国信息产业发展研究》",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -2236,7 +2308,7 @@
           "evidence": "目前已涉及到的区域主要有东北、华北、华东、华南和华中等",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "作为区域概念，非具体机构"
+          "uncertainty": "作为区域概念，非具体行政单位"
         },
         {
           "entity_id": "non_4_e14",
@@ -2249,7 +2321,7 @@
           "evidence": "目前已涉及到的区域主要有东北、华北、华东、华南和华中等",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "作为区域概念，非具体机构"
+          "uncertainty": "作为区域概念，非具体行政单位"
         },
         {
           "entity_id": "non_4_e15",
@@ -2262,7 +2334,7 @@
           "evidence": "目前已涉及到的区域主要有东北、华北、华东、华南和华中等",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "作为区域概念，非具体机构"
+          "uncertainty": "作为区域概念，非具体行政单位"
         },
         {
           "entity_id": "non_4_e16",
@@ -2275,7 +2347,7 @@
           "evidence": "目前已涉及到的区域主要有东北、华北、华东、华南和华中等",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "作为区域概念，非具体机构"
+          "uncertainty": "作为区域概念，非具体行政单位"
         },
         {
           "entity_id": "non_4_e17",
@@ -2288,7 +2360,7 @@
           "evidence": "目前已涉及到的区域主要有东北、华北、华东、华南和华中等",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "作为区域概念，非具体机构"
+          "uncertainty": "作为区域概念，非具体行政单位"
         },
         {
           "entity_id": "non_4_e18",
@@ -2300,7 +2372,7 @@
           ],
           "evidence": "1992年北京、上海、广州三城市的信息化指数分别是117.12、134.30、118.12",
           "is_specific_entity": true,
-          "confidence": 0.7,
+          "confidence": 0.6,
           "uncertainty": "作为城市概念，非具体机构"
         },
         {
@@ -2313,7 +2385,7 @@
           ],
           "evidence": "1992年北京、上海、广州三城市的信息化指数分别是117.12、134.30、118.12",
           "is_specific_entity": true,
-          "confidence": 0.7,
+          "confidence": 0.6,
           "uncertainty": "作为城市概念，非具体机构"
         },
         {
@@ -2326,7 +2398,7 @@
           ],
           "evidence": "1992年北京、上海、广州三城市的信息化指数分别是117.12、134.30、118.12",
           "is_specific_entity": true,
-          "confidence": 0.7,
+          "confidence": 0.6,
           "uncertainty": "作为城市概念，非具体机构"
         },
         {
@@ -2339,7 +2411,7 @@
           ],
           "evidence": "而香港、新加坡在1989 年分别达到939.87 和 $2 1 2 1 . 9 2",
           "is_specific_entity": true,
-          "confidence": 0.7,
+          "confidence": 0.6,
           "uncertainty": "作为城市概念，非具体机构"
         },
         {
@@ -2352,7 +2424,7 @@
           ],
           "evidence": "而香港、新加坡在1989 年分别达到939.87 和 $2 1 2 1 . 9 2",
           "is_specific_entity": true,
-          "confidence": 0.7,
+          "confidence": 0.6,
           "uncertainty": "作为城市概念，非具体机构"
         }
       ],
@@ -2372,6 +2444,14 @@
           "aspect": "信息化程度",
           "opinion": "较高",
           "evidence": "北京、上海、广州是国内信息化程度较高的区域",
+          "object_text": "None"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "信息化程度",
+          "opinion": "差别不仅仅是几个百分点，而是几个级数",
+          "evidence": "他们与香港和新加坡等地的差别不仅仅是几个百分点，而是几个级数",
           "object_text": "None"
         }
       ]
@@ -2404,7 +2484,7 @@
           "evidence": "影响信息商品产销、信息产业兴衰、信息市场运作",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "可能为concept或phenomenon"
+          "uncertainty": "可能为概念或现象"
         },
         {
           "entity_id": "non_5_e3",
@@ -2417,7 +2497,7 @@
           "evidence": "影响信息商品产销、信息产业兴衰、信息市场运作",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "可能为concept或phenomenon"
+          "uncertainty": "可能为概念或现象"
         },
         {
           "entity_id": "non_5_e4",
@@ -2430,10 +2510,23 @@
           "evidence": "影响信息商品产销、信息产业兴衰、信息市场运作",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "可能为concept或phenomenon"
+          "uncertainty": "可能为概念或现象"
         },
         {
           "entity_id": "non_5_e5",
+          "mention": "90年代以来",
+          "normalized_name": "90年代以来",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "90 年代以来，人们开始注重对信息商品价格的探讨",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "时间阶段，可能为stage"
+        },
+        {
+          "entity_id": "non_5_e6",
           "mention": "信息商品价格",
           "normalized_name": "信息商品价格",
           "candidate_l3": "concept",
@@ -2443,59 +2536,46 @@
           "evidence": "人们开始注重对信息商品价格的探讨",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "non_5_e6",
-          "mention": "价格",
-          "normalized_name": "价格",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "价格不能真正反映市场需求",
-          "is_specific_entity": true,
-          "confidence": 0.8,
           "uncertainty": "作为研究对象"
         },
         {
           "entity_id": "non_5_e7",
-          "mention": "市场需求",
-          "normalized_name": "市场需求",
-          "candidate_l3": "concept",
+          "mention": "价格不能真正反映市场需求",
+          "normalized_name": "价格不能真正反映市场需求",
+          "candidate_l3": "phenomenon",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "价格不能真正反映市场需求",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": ""
+          "confidence": 0.6,
+          "uncertainty": "可能为现象或问题"
         },
         {
           "entity_id": "non_5_e8",
-          "mention": "经济规律",
-          "normalized_name": "经济规律",
-          "candidate_l3": "concept",
+          "mention": "不能体现市场的经济规律",
+          "normalized_name": "不能体现市场的经济规律",
+          "candidate_l3": "phenomenon",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "不能体现市场的经济规律",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": ""
+          "confidence": 0.6,
+          "uncertainty": "可能为现象或问题"
         },
         {
           "entity_id": "non_5_e9",
-          "mention": "行政干预",
-          "normalized_name": "行政干预",
-          "candidate_l3": "concept",
+          "mention": "价格受行政干预",
+          "normalized_name": "价格受行政干预",
+          "candidate_l3": "phenomenon",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "价格受行政干预",
+          "evidence": "价格受行政干预，没能体现价值规律",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": ""
+          "confidence": 0.6,
+          "uncertainty": "可能为现象或问题"
         },
         {
           "entity_id": "non_5_e10",
@@ -2507,7 +2587,7 @@
           ],
           "evidence": "没能体现价值规律",
           "is_specific_entity": true,
-          "confidence": 0.8,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
@@ -2521,7 +2601,7 @@
           "evidence": "理论界进行了广泛而深入的讨论",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "泛称，但作为讨论主体，可能不抽取"
+          "uncertainty": "泛称，可能不抽取"
         },
         {
           "entity_id": "non_5_e12",
@@ -2534,7 +2614,7 @@
           "evidence": "将信息商品的价格研究深入到市场学领域",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": ""
+          "uncertainty": "作为研究领域"
         },
         {
           "entity_id": "non_5_e13",
@@ -2546,7 +2626,7 @@
           ],
           "evidence": "深入到市场学领域",
           "is_specific_entity": true,
-          "confidence": 0.8,
+          "confidence": 0.85,
           "uncertainty": ""
         },
         {
@@ -2572,7 +2652,7 @@
           ],
           "evidence": "运用了经济价值规律",
           "is_specific_entity": true,
-          "confidence": 0.8,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
@@ -2585,7 +2665,7 @@
           ],
           "evidence": "将价格弹性作为重点考虑",
           "is_specific_entity": true,
-          "confidence": 0.85,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
@@ -2611,7 +2691,7 @@
           ],
           "evidence": "将利润率作为主要因素之一",
           "is_specific_entity": true,
-          "confidence": 0.85,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
@@ -2644,33 +2724,33 @@
       "has_evaluation": true,
       "relations": [
         {
-          "subject": "_cite[4]",
+          "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "反映市场需求",
+          "aspect": "价格反映市场需求",
           "opinion": "不能真正反映",
           "evidence": "价格不能真正反映市场需求",
           "object_text": "None"
         },
         {
-          "subject": "_cite[4]",
+          "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "体现经济规律",
+          "aspect": "体现市场经济规律",
           "opinion": "不能体现",
           "evidence": "不能体现市场的经济规律",
           "object_text": "None"
         },
         {
-          "subject": "_cite[4]",
+          "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "体现价值规律",
-          "opinion": "没能体现",
+          "aspect": "价格受行政干预",
+          "opinion": "没能体现价值规律",
           "evidence": "价格受行政干预，没能体现价值规律",
           "object_text": "None"
         },
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "讨论的广泛性和深入性",
+          "aspect": "讨论",
           "opinion": "广泛而深入",
           "evidence": "理论界进行了广泛而深入的讨论",
           "object_text": "None"
@@ -2700,7 +2780,7 @@
           "evidence": "讨论的焦点在于信息商品的属性、信息商品的可交换性等方面",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为术语本身讨论"
+          "uncertainty": ""
         },
         {
           "entity_id": "non_6_e2",
@@ -2752,7 +2832,7 @@
           "evidence": "深入到信息学、市场学、价格理论等领域",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为理论领域"
+          "uncertainty": ""
         },
         {
           "entity_id": "non_6_e6",
@@ -2765,7 +2845,7 @@
           "evidence": "对信息商品价格进行交叉、比较研究",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为研究对象"
+          "uncertainty": ""
         }
       ],
       "has_evaluation": true,
@@ -2789,7 +2869,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "传统",
+          "aspect": null,
           "opinion": "难以摆脱",
           "evidence": "难以摆脱传统的图书情报学",
           "object_text": "None"
@@ -2797,8 +2877,16 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "交叉、比较研究",
-          "opinion": "确实对信息商品流通起到了实践指导作用",
+          "aspect": null,
+          "opinion": "交叉、比较研究",
+          "evidence": "对信息商品价格进行交叉、比较研究",
+          "object_text": "None"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "实践指导作用",
+          "opinion": "确实起到了实践指导作用",
           "evidence": "这确实对信息商品流通起到了实践指导作用",
           "object_text": "None"
         }
@@ -2991,9 +3079,9 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "理论揭示",
-          "opinion": "从理论上揭示信息商品价格制定须着重考虑的两个方面",
-          "evidence": "从理论上揭示信息商品价格制定须着重考虑的两个方面",
+          "aspect": "理论模式",
+          "opinion": "建立了...理论模式",
+          "evidence": "从而建立了\"信息商品体尺度\"和\"信息商品效用尺度\"的理论模式",
           "object_text": "None"
         },
         {
@@ -3045,7 +3133,7 @@
           "evidence": "目前关于信息商品价格的研究已向纵深化发展",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为研究主题，可能为subfield，但原句未明确为子领域"
+          "uncertainty": "作为研究主题，非具体制品"
         },
         {
           "entity_id": "non_8_e2",
@@ -3058,7 +3146,7 @@
           "evidence": "信息商品的交易性",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": ""
+          "uncertainty": "作为学术概念"
         },
         {
           "entity_id": "non_8_e3",
@@ -3071,7 +3159,7 @@
           "evidence": "市场变化对信息商品价格的影响",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能为泛化现象，但作为独立研究对象"
+          "uncertainty": "可观察现象"
         },
         {
           "entity_id": "non_8_e4",
@@ -3084,7 +3172,7 @@
           "evidence": "信息商品与一般商品",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": ""
+          "uncertainty": "作为对比概念"
         },
         {
           "entity_id": "non_8_e5",
@@ -3097,7 +3185,7 @@
           "evidence": "信息商品与物价总水平等之间的关系",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": ""
+          "uncertainty": "作为经济概念"
         }
       ],
       "has_evaluation": true,
@@ -3105,9 +3193,17 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "发展深度",
-          "opinion": "已向纵深化发展，其势头不错",
-          "evidence": "目前关于信息商品价格的研究已向纵深化发展，其势头不错",
+          "aspect": "发展势头",
+          "opinion": "不错",
+          "evidence": "其势头不错",
+          "object_text": "None"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "研究深度",
+          "opinion": "纵深化发展",
+          "evidence": "已向纵深化发展",
           "object_text": "None"
         }
       ]
@@ -3156,7 +3252,7 @@
           ],
           "evidence": "这一点明显表现在电子技术产业和数据库产业中",
           "is_specific_entity": true,
-          "confidence": 0.85,
+          "confidence": 0.9,
           "uncertainty": "作为产业领域，非具体组织"
         },
         {
@@ -3169,7 +3265,7 @@
           ],
           "evidence": "这一点明显表现在电子技术产业和数据库产业中",
           "is_specific_entity": true,
-          "confidence": 0.85,
+          "confidence": 0.9,
           "uncertainty": "作为产业领域，非具体组织"
         },
         {
@@ -3182,7 +3278,7 @@
           ],
           "evidence": "其结果会影响信息产业的整体发展",
           "is_specific_entity": true,
-          "confidence": 0.85,
+          "confidence": 0.9,
           "uncertainty": "作为产业领域，非具体组织"
         },
         {
@@ -3195,8 +3291,8 @@
           ],
           "evidence": "极其缺乏系统建设",
           "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "可能为概念或活动"
+          "confidence": 0.8,
+          "uncertainty": "作为建设概念，非具体系统"
         },
         {
           "entity_id": "non_11_e5",
@@ -3208,7 +3304,7 @@
           ],
           "evidence": "存在\"十多\"与\"十少\"的问题",
           "is_specific_entity": true,
-          "confidence": 0.8,
+          "confidence": 0.85,
           "uncertainty": "作为现象描述"
         },
         {
@@ -3221,7 +3317,7 @@
           ],
           "evidence": "存在\"十多\"与\"十少\"的问题",
           "is_specific_entity": true,
-          "confidence": 0.8,
+          "confidence": 0.85,
           "uncertainty": "作为现象描述"
         },
         {
@@ -3234,7 +3330,7 @@
           ],
           "evidence": "便不难看出其短期行为",
           "is_specific_entity": true,
-          "confidence": 0.8,
+          "confidence": 0.85,
           "uncertainty": "作为现象描述"
         }
       ],

@@ -17,7 +17,7 @@
           "evidence": "5G网络",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为技术概念，非具体系统"
+          "uncertainty": "作为技术体系或应用概念"
         },
         {
           "entity_id": "1_e2",
@@ -30,7 +30,7 @@
           "evidence": "数字信息资源",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为概念，非具体资源"
+          "uncertainty": "作为研究对象"
         },
         {
           "entity_id": "1_e3",
@@ -42,8 +42,8 @@
           ],
           "evidence": "智能化",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为概念，非具体技术"
+          "confidence": 0.85,
+          "uncertainty": "作为技术趋势或概念"
         }
       ],
       "has_evaluation": false,
@@ -63,8 +63,8 @@
           ],
           "evidence": "第五代移动通信系统技术（简称5G技术或5G）时代的到来",
           "is_specific_entity": true,
-          "confidence": 0.95,
-          "uncertainty": ""
+          "confidence": 0.9,
+          "uncertainty": "强调技术标准"
         },
         {
           "entity_id": "2_e2",
@@ -74,9 +74,9 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "5G技术可以让人们不再因数字资源网速不力",
+          "evidence": "简称5G技术或5G",
           "is_specific_entity": true,
-          "confidence": 0.95,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
@@ -87,9 +87,9 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "5G高速度、高并发、高兼容、高安全和低时延等特征",
+          "evidence": "简称5G技术或5G",
           "is_specific_entity": true,
-          "confidence": 0.95,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
@@ -102,8 +102,8 @@
           ],
           "evidence": "人工智能、物联网、虚拟/增强现实（VR/AR）等新兴技术",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为技术领域概念"
+          "confidence": 0.85,
+          "uncertainty": "技术领域概念"
         },
         {
           "entity_id": "2_e5",
@@ -115,8 +115,8 @@
           ],
           "evidence": "人工智能、物联网、虚拟/增强现实（VR/AR）等新兴技术",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为技术领域概念"
+          "confidence": 0.85,
+          "uncertainty": "技术领域概念"
         },
         {
           "entity_id": "2_e6",
@@ -128,8 +128,8 @@
           ],
           "evidence": "虚拟/增强现实（VR/AR）等新兴技术",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为技术领域概念"
+          "confidence": 0.85,
+          "uncertainty": "技术领域概念"
         },
         {
           "entity_id": "2_e7",
@@ -139,7 +139,7 @@
           "candidate_l1": [
             "Agent"
           ],
-          "evidence": "情报科学界专家马费成、夏立新等积极推进",
+          "evidence": "情报科学界专家马费成、夏立新等",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -152,52 +152,13 @@
           "candidate_l1": [
             "Agent"
           ],
-          "evidence": "情报科学界专家马费成、夏立新等积极推进",
+          "evidence": "情报科学界专家马费成、夏立新等",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
         },
         {
           "entity_id": "2_e9",
-          "mention": "大数据",
-          "normalized_name": "大数据",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "积极推进大数据、智能化信息处理与服务技术与人文社会科学研究深度融合",
-          "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为技术领域概念"
-        },
-        {
-          "entity_id": "2_e10",
-          "mention": "智能化信息处理与服务技术",
-          "normalized_name": "智能化信息处理与服务技术",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "积极推进大数据、智能化信息处理与服务技术与人文社会科学研究深度融合",
-          "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为技术领域概念"
-        },
-        {
-          "entity_id": "2_e11",
-          "mention": "人文社会科学研究",
-          "normalized_name": "人文社会科学研究",
-          "candidate_l3": "discipline",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "与人文社会科学研究深度融合",
-          "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "2_e12",
           "mention": "数字信息资源智能服务",
           "normalized_name": "数字信息资源智能服务",
           "candidate_l3": "concept",
@@ -206,11 +167,11 @@
           ],
           "evidence": "5G时代数字信息资源智能服务颇受学者们的关注",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.85,
           "uncertainty": "作为研究主题"
         },
         {
-          "entity_id": "2_e13",
+          "entity_id": "2_e10",
           "mention": "数字信息资源智能化服务研究",
           "normalized_name": "数字信息资源智能化服务研究",
           "candidate_l3": "subfield",
@@ -219,8 +180,8 @@
           ],
           "evidence": "本文主要探讨5G时代数字信息资源智能化服务研究内容",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为研究子领域"
+          "confidence": 0.85,
+          "uncertainty": "作为研究领域"
         }
       ],
       "has_evaluation": true,
@@ -228,57 +189,9 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "服务环境",
-          "opinion": "产生重大变化",
-          "evidence": "使数字信息资源的服务环境产生了重大变化",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "特征",
-          "opinion": "高速度、高并发、高兼容、高安全和低时延",
-          "evidence": "5G高速度、高并发、高兼容、高安全和低时延等特征",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "能力",
-          "opinion": "增强",
-          "evidence": "5G的高可靠性可以极大地增强这些资源在传输过程中的抗干扰能力",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "效率",
-          "opinion": "更加高效",
-          "evidence": "可以使其组织与融合更加高效",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "流程优化和配置",
-          "opinion": "更加合理",
-          "evidence": "流程优化和配置更加合理",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "分析和进度控制",
-          "opinion": "更加智能",
-          "evidence": "分析和进度控制更加智能",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "信息服务能力",
-          "opinion": "提高",
-          "evidence": "推进信息服务能力提高",
+          "aspect": "关注度",
+          "opinion": "颇受学者们的关注",
+          "evidence": "颇受学者们的关注",
           "object_text": "None"
         }
       ]
@@ -298,7 +211,7 @@
           "evidence": "情报分析和大数据分析都是以信息和数据作为基础研究对象",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为研究领域"
+          "uncertainty": ""
         },
         {
           "entity_id": "3_e2",
@@ -311,20 +224,20 @@
           "evidence": "情报分析和大数据分析都是以信息和数据作为基础研究对象",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为研究领域"
+          "uncertainty": ""
         },
         {
           "entity_id": "3_e3",
           "mention": "5G技术",
           "normalized_name": "5G技术",
-          "candidate_l3": "standard",
+          "candidate_l3": "concept",
           "candidate_l1": [
-            "Artifact"
+            "Abstract"
           ],
-          "evidence": "5G技术环境下的人工智能、大数据、云计算等新兴技术",
+          "evidence": "如何借助5G技术环境下的人工智能、大数据、云计算等新兴技术",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能作为技术标准或概念"
+          "uncertainty": "技术体系，非具体标准"
         },
         {
           "entity_id": "3_e4",
@@ -336,8 +249,8 @@
           ],
           "evidence": "人工智能、大数据、云计算等新兴技术",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为技术领域概念"
+          "confidence": 0.85,
+          "uncertainty": "技术领域"
         },
         {
           "entity_id": "3_e5",
@@ -349,8 +262,8 @@
           ],
           "evidence": "人工智能、大数据、云计算等新兴技术",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为技术领域概念"
+          "confidence": 0.85,
+          "uncertainty": "技术领域"
         },
         {
           "entity_id": "3_e6",
@@ -362,8 +275,8 @@
           ],
           "evidence": "人工智能、大数据、云计算等新兴技术",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为技术领域概念"
+          "confidence": 0.85,
+          "uncertainty": "技术领域"
         },
         {
           "entity_id": "3_e7",
@@ -375,8 +288,8 @@
           ],
           "evidence": "海量多源异构的数据洪流",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为现象描述"
+          "confidence": 0.8,
+          "uncertainty": "比喻性表达，可能非学术术语"
         }
       ],
       "has_evaluation": true,
@@ -386,7 +299,7 @@
           "object": "_missing_entity",
           "aspect": "科学性",
           "opinion": "提升",
-          "evidence": "提升情报分析科学性",
+          "evidence": "提升情报分析科学性和服务准确性",
           "object_text": "None"
         },
         {
@@ -567,10 +480,10 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "并提出相应的评价指标对不同融合方法进行评估",
+          "evidence": "提出相应的评价指标对不同融合方法进行评估",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "具体指标未给出"
+          "uncertainty": "可能为指标体系"
         }
       ],
       "has_evaluation": true,
@@ -592,27 +505,11 @@
           "object_text": "None"
         },
         {
-          "subject": "_cite[5]",
-          "object": "_missing_entity",
-          "aspect": "目的",
-          "opinion": "提高知识的利用效率",
-          "evidence": "为提高知识的利用效率，研究人员提出了一种云环境下的混合知识融合与推理系统设计方法",
-          "object_text": "None"
-        },
-        {
           "subject": "_cite[8]",
           "object": "_missing_entity",
           "aspect": "分类",
           "opinion": "进一步分为信号级、特征级和决策级融合",
           "evidence": "将基于机器学习的融合方法进一步分为信号级、特征级和决策级融合",
-          "object_text": "None"
-        },
-        {
-          "subject": "_cite[8]",
-          "object": "_missing_entity",
-          "aspect": "评估",
-          "opinion": "提出相应的评价指标对不同融合方法进行评估",
-          "evidence": "并提出相应的评价指标对不同融合方法进行评估",
           "object_text": "None"
         }
       ]
@@ -631,8 +528,8 @@
           ],
           "evidence": "信息资源智慧管理针对用户移动学习需求",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为研究主题或概念"
+          "confidence": 0.9,
+          "uncertainty": ""
         },
         {
           "entity_id": "5_e2",
@@ -740,7 +637,7 @@
           "subject": "_cite[10]",
           "object": "_missing_entity",
           "aspect": null,
-          "opinion": "提出了",
+          "opinion": "提出了BDA-KM 模型",
           "evidence": "提出了BDA-KM 模型",
           "object_text": "None"
         },
@@ -748,7 +645,7 @@
           "subject": "_cite[11]",
           "object": "_missing_entity",
           "aspect": null,
-          "opinion": "提出了",
+          "opinion": "提出了基于数据驱动的知识管理系统",
           "evidence": "提出了基于数据驱动的知识管理系统",
           "object_text": "None"
         }
@@ -769,7 +666,7 @@
           "evidence": "数字信息资源的安全管理所面临的首要问题",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为研究主题，非具体实体"
+          "uncertainty": "作为研究主题，可能为subfield或concept"
         },
         {
           "entity_id": "6_e2",
@@ -782,7 +679,7 @@
           "evidence": "首要问题是数字信息资源的可用性和可持续性",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "作为问题表述，非独立实体"
+          "uncertainty": "作为问题概念"
         },
         {
           "entity_id": "6_e3",
@@ -795,7 +692,7 @@
           "evidence": "早期研究包括云计算和云存储的安全风险等问题",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": ""
+          "uncertainty": "技术概念"
         },
         {
           "entity_id": "6_e4",
@@ -808,7 +705,7 @@
           "evidence": "早期研究包括云计算和云存储的安全风险等问题",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": ""
+          "uncertainty": "技术概念"
         },
         {
           "entity_id": "6_e5",
@@ -821,7 +718,7 @@
           "evidence": "人工智能等技术在数字信息资源中的深入应用",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": ""
+          "uncertainty": "技术领域"
         },
         {
           "entity_id": "6_e6",
@@ -833,7 +730,7 @@
           ],
           "evidence": "利用机器学习和深度学习等人工智能方法",
           "is_specific_entity": true,
-          "confidence": 0.95,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
@@ -846,7 +743,7 @@
           ],
           "evidence": "利用机器学习和深度学习等人工智能方法",
           "is_specific_entity": true,
-          "confidence": 0.95,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
@@ -860,7 +757,7 @@
           "evidence": "分析知识产权数据[15]",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能为数据集"
+          "uncertainty": "可能为corpus或dataset"
         },
         {
           "entity_id": "6_e9",
@@ -870,10 +767,10 @@
           "candidate_l1": [
             "Event"
           ],
-          "evidence": "近年来，对大数据时代背景下黑客攻击、网络病毒等具体安全问题进行分析",
+          "evidence": "近年来，对大数据时代背景下黑客攻击",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "作为发展阶段"
+          "uncertainty": "时间阶段"
         },
         {
           "entity_id": "6_e10",
@@ -885,8 +782,8 @@
           ],
           "evidence": "对大数据时代背景下黑客攻击、网络病毒等具体安全问题进行分析",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
+          "confidence": 0.85,
+          "uncertainty": "安全现象"
         },
         {
           "entity_id": "6_e11",
@@ -898,8 +795,8 @@
           ],
           "evidence": "对大数据时代背景下黑客攻击、网络病毒等具体安全问题进行分析",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
+          "confidence": 0.85,
+          "uncertainty": "安全现象"
         },
         {
           "entity_id": "6_e12",
@@ -909,10 +806,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "提出应用人工智能技术实现网络监管的构想[16]",
+          "evidence": "提出应用人工智能技术实现网络监管的构想",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": ""
+          "uncertainty": "技术概念"
         },
         {
           "entity_id": "6_e13",
@@ -922,39 +819,13 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "提出应用人工智能技术实现网络监管的构想[16]",
+          "evidence": "实现网络监管的构想",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": ""
+          "uncertainty": "应用概念"
         },
         {
           "entity_id": "6_e14",
-          "mention": "人工智能时代",
-          "normalized_name": "人工智能时代",
-          "candidate_l3": "stage",
-          "candidate_l1": [
-            "Event"
-          ],
-          "evidence": "研究人工智能时代信息安全影响因素及对策",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为发展阶段"
-        },
-        {
-          "entity_id": "6_e15",
-          "mention": "信息安全",
-          "normalized_name": "信息安全",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "研究人工智能时代信息安全影响因素及对策",
-          "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "6_e16",
           "mention": "智能加密",
           "normalized_name": "智能加密",
           "candidate_l3": "technique",
@@ -964,10 +835,10 @@
           "evidence": "从智能加密、权限识别、身份识别、侵权预警技术几个方面",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": ""
+          "uncertainty": "具体技术手段"
         },
         {
-          "entity_id": "6_e17",
+          "entity_id": "6_e15",
           "mention": "权限识别",
           "normalized_name": "权限识别",
           "candidate_l3": "technique",
@@ -977,10 +848,10 @@
           "evidence": "从智能加密、权限识别、身份识别、侵权预警技术几个方面",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": ""
+          "uncertainty": "具体技术手段"
         },
         {
-          "entity_id": "6_e18",
+          "entity_id": "6_e16",
           "mention": "身份识别",
           "normalized_name": "身份识别",
           "candidate_l3": "technique",
@@ -990,10 +861,10 @@
           "evidence": "从智能加密、权限识别、身份识别、侵权预警技术几个方面",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": ""
+          "uncertainty": "具体技术手段"
         },
         {
-          "entity_id": "6_e19",
+          "entity_id": "6_e17",
           "mention": "侵权预警技术",
           "normalized_name": "侵权预警技术",
           "candidate_l3": "technique",
@@ -1003,33 +874,33 @@
           "evidence": "从智能加密、权限识别、身份识别、侵权预警技术几个方面",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": ""
+          "uncertainty": "具体技术手段"
         },
         {
-          "entity_id": "6_e20",
+          "entity_id": "6_e18",
           "mention": "新兴技术",
           "normalized_name": "新兴技术",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "对于新兴技术在知识产权管理方面的应用场景的描述和深入分析[17]",
+          "evidence": "对于新兴技术在知识产权管理方面的应用场景的描述",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "泛称，但作为技术类别"
+          "uncertainty": "泛称技术概念"
         },
         {
-          "entity_id": "6_e21",
+          "entity_id": "6_e19",
           "mention": "知识产权管理",
           "normalized_name": "知识产权管理",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "对于新兴技术在知识产权管理方面的应用场景的描述和深入分析[17]",
+          "evidence": "新兴技术在知识产权管理方面的应用场景",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
+          "confidence": 0.85,
+          "uncertainty": "管理概念"
         }
       ],
       "has_evaluation": true,
@@ -1039,24 +910,40 @@
           "object": "_missing_entity",
           "aspect": "首要问题",
           "opinion": "首要问题是数字信息资源的可用性和可持续性",
-          "evidence": "首要问题是数字信息资源的可用性和可持续性",
-          "object_text": "None"
+          "evidence": "所面临的首要问题是数字信息资源的可用性和可持续性",
+          "object_text": "1_e1"
         },
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "深入应用",
-          "opinion": "深入应用",
-          "evidence": "人工智能等技术在数字信息资源中的深入应用",
-          "object_text": "None"
+          "aspect": "研究发展",
+          "opinion": "从一般信息安全管理技术的研究与实现，发展到利用机器学习和深度学习等人工智能方法",
+          "evidence": "从一般信息安全管理技术的研究与实现，发展到利用机器学习和深度学习等人工智能方法来分析知识产权数据",
+          "object_text": "1_e1"
         },
         {
-          "subject": "_paper_author",
+          "subject": "_cite[15]",
+          "object": "_missing_entity",
+          "aspect": "分析方法",
+          "opinion": "利用机器学习和深度学习等人工智能方法来分析知识产权数据",
+          "evidence": "利用机器学习和深度学习等人工智能方法来分析知识产权数据[15]",
+          "object_text": "1_e8"
+        },
+        {
+          "subject": "_cite[16]",
+          "object": "_missing_entity",
+          "aspect": "应用构想",
+          "opinion": "提出应用人工智能技术实现网络监管的构想",
+          "evidence": "提出应用人工智能技术实现网络监管的构想[16]",
+          "object_text": "1_e12"
+        },
+        {
+          "subject": "_cite[17]",
           "object": "_missing_entity",
           "aspect": "应用场景",
-          "opinion": "深入分析",
+          "opinion": "对于新兴技术在知识产权管理方面的应用场景的描述和深入分析",
           "evidence": "对于新兴技术在知识产权管理方面的应用场景的描述和深入分析[17]",
-          "object_text": "None"
+          "object_text": "1_e19"
         }
       ]
     },
@@ -1072,7 +959,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "采用贝叶斯理论",
+          "evidence": "采用贝叶斯理论、聚类分析、支持向量机、神经网络等机器学习算法",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -1085,7 +972,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "采用贝叶斯理论、聚类分析",
+          "evidence": "采用贝叶斯理论、聚类分析、支持向量机、神经网络等机器学习算法",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -1098,7 +985,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "采用贝叶斯理论、聚类分析、支持向量机",
+          "evidence": "采用贝叶斯理论、聚类分析、支持向量机、神经网络等机器学习算法",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -1111,7 +998,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "采用贝叶斯理论、聚类分析、支持向量机、神经网络",
+          "evidence": "采用贝叶斯理论、聚类分析、支持向量机、神经网络等机器学习算法",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -1140,7 +1027,7 @@
           "evidence": "进行信息资源智能管理研究",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为研究领域"
+          "uncertainty": "可能为研究领域"
         },
         {
           "entity_id": "7_e7",
@@ -1166,7 +1053,7 @@
           "evidence": "数字资源的融合组织管理方面的理论和实践",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为研究主题"
+          "uncertainty": "复合概念"
         }
       ],
       "has_evaluation": true,
@@ -1174,18 +1061,10 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "理论",
+          "aspect": "理论和实践",
           "opinion": "缺乏研究",
-          "evidence": "理论和实践仍缺乏研究",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "实践",
-          "opinion": "缺乏研究",
-          "evidence": "理论和实践仍缺乏研究",
-          "object_text": "None"
+          "evidence": "仍缺乏研究",
+          "object_text": "8"
         }
       ]
     },
@@ -1294,37 +1173,11 @@
           ],
           "evidence": "提供用户更多沉浸感体验服务",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "服务概念"
-        },
-        {
-          "entity_id": "8_e9",
-          "mention": "展览",
-          "normalized_name": "展览",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "从展览和藏品中学习到更多知识",
-          "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "作为展示形式"
-        },
-        {
-          "entity_id": "8_e10",
-          "mention": "藏品",
-          "normalized_name": "藏品",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "从展览和藏品中学习到更多知识",
-          "is_specific_entity": true,
-          "confidence": 0.7,
+          "confidence": 0.85,
           "uncertainty": ""
         },
         {
-          "entity_id": "8_e11",
+          "entity_id": "8_e9",
           "mention": "城市记忆",
           "normalized_name": "城市记忆",
           "candidate_l3": "concept",
@@ -1337,7 +1190,7 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "8_e12",
+          "entity_id": "8_e10",
           "mention": "国家记忆",
           "normalized_name": "国家记忆",
           "candidate_l3": "concept",
@@ -1350,7 +1203,7 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "8_e13",
+          "entity_id": "8_e11",
           "mention": "电子档案",
           "normalized_name": "电子档案",
           "candidate_l3": "concept",
@@ -1360,10 +1213,10 @@
           "evidence": "等电子档案的应用中",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为档案类型"
+          "uncertainty": ""
         },
         {
-          "entity_id": "8_e14",
+          "entity_id": "8_e12",
           "mention": "增强感官交互",
           "normalized_name": "增强感官交互",
           "candidate_l3": "concept",
@@ -1372,11 +1225,11 @@
           ],
           "evidence": "期望通过增强感官交互",
           "is_specific_entity": true,
-          "confidence": 0.8,
+          "confidence": 0.85,
           "uncertainty": ""
         },
         {
-          "entity_id": "8_e15",
+          "entity_id": "8_e13",
           "mention": "数字记忆",
           "normalized_name": "数字记忆",
           "candidate_l3": "concept",
@@ -1407,19 +1260,6 @@
       "entities": [
         {
           "entity_id": "9_e1",
-          "mention": "图书馆领域智慧服务",
-          "normalized_name": "图书馆领域智慧服务",
-          "candidate_l3": "subfield",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "在图书馆领域智慧服务研究比较多",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为研究子领域"
-        },
-        {
-          "entity_id": "9_e2",
           "mention": "网络信息资源智能导航服务功能",
           "normalized_name": "网络信息资源智能导航服务功能",
           "candidate_l3": "concept",
@@ -1428,11 +1268,11 @@
           ],
           "evidence": "实现网络信息资源智能导航服务功能的关键技术",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为功能概念"
+          "confidence": 0.85,
+          "uncertainty": "作为服务功能概念"
         },
         {
-          "entity_id": "9_e3",
+          "entity_id": "9_e2",
           "mention": "网络信息资源个性化智能导航的模型",
           "normalized_name": "网络信息资源个性化智能导航的模型",
           "candidate_l3": "model",
@@ -1445,7 +1285,7 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "9_e4",
+          "entity_id": "9_e3",
           "mention": "智慧服务馆建设",
           "normalized_name": "智慧服务馆建设",
           "candidate_l3": "concept",
@@ -1458,7 +1298,7 @@
           "uncertainty": "作为建设概念"
         },
         {
-          "entity_id": "9_e5",
+          "entity_id": "9_e4",
           "mention": "开放互联的在线知识获取与交流环境",
           "normalized_name": "开放互联的在线知识获取与交流环境",
           "candidate_l3": "concept",
@@ -1471,7 +1311,7 @@
           "uncertainty": "作为环境概念"
         },
         {
-          "entity_id": "9_e6",
+          "entity_id": "9_e5",
           "mention": "人工智能技术",
           "normalized_name": "人工智能技术",
           "candidate_l3": "concept",
@@ -1484,7 +1324,7 @@
           "uncertainty": "作为技术领域概念"
         },
         {
-          "entity_id": "9_e7",
+          "entity_id": "9_e6",
           "mention": "情报服务模式",
           "normalized_name": "情报服务模式",
           "candidate_l3": "concept",
@@ -1497,20 +1337,20 @@
           "uncertainty": "作为服务模式概念"
         },
         {
-          "entity_id": "9_e8",
+          "entity_id": "9_e7",
           "mention": "刘炜",
           "normalized_name": "刘炜",
           "candidate_l3": "scholar",
           "candidate_l1": [
             "Agent"
           ],
-          "evidence": "刘炜等认为",
+          "evidence": "刘炜等认为VR/AR、超高清视频、智慧阅读、智能场馆等将是图书馆应用5G技术的六大智慧服务场景",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
         },
         {
-          "entity_id": "9_e9",
+          "entity_id": "9_e8",
           "mention": "VR/AR",
           "normalized_name": "VR/AR",
           "candidate_l3": "concept",
@@ -1519,11 +1359,11 @@
           ],
           "evidence": "VR/AR、超高清视频、智慧阅读、智能场馆等将是图书馆应用5G技术的六大智慧服务场景",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.85,
           "uncertainty": "作为技术概念"
         },
         {
-          "entity_id": "9_e10",
+          "entity_id": "9_e9",
           "mention": "超高清视频",
           "normalized_name": "超高清视频",
           "candidate_l3": "concept",
@@ -1532,11 +1372,11 @@
           ],
           "evidence": "VR/AR、超高清视频、智慧阅读、智能场馆等将是图书馆应用5G技术的六大智慧服务场景",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.85,
           "uncertainty": "作为技术概念"
         },
         {
-          "entity_id": "9_e11",
+          "entity_id": "9_e10",
           "mention": "智慧阅读",
           "normalized_name": "智慧阅读",
           "candidate_l3": "concept",
@@ -1545,11 +1385,11 @@
           ],
           "evidence": "VR/AR、超高清视频、智慧阅读、智能场馆等将是图书馆应用5G技术的六大智慧服务场景",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.85,
           "uncertainty": "作为服务概念"
         },
         {
-          "entity_id": "9_e12",
+          "entity_id": "9_e11",
           "mention": "智能场馆",
           "normalized_name": "智能场馆",
           "candidate_l3": "concept",
@@ -1558,11 +1398,11 @@
           ],
           "evidence": "VR/AR、超高清视频、智慧阅读、智能场馆等将是图书馆应用5G技术的六大智慧服务场景",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.85,
           "uncertainty": "作为场馆概念"
         },
         {
-          "entity_id": "9_e13",
+          "entity_id": "9_e12",
           "mention": "5G技术",
           "normalized_name": "5G技术",
           "candidate_l3": "standard",
@@ -1571,8 +1411,8 @@
           ],
           "evidence": "图书馆应用5G技术的六大智慧服务场景",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为通信技术标准"
+          "confidence": 0.8,
+          "uncertainty": "作为技术标准"
         }
       ],
       "has_evaluation": true,
@@ -1588,8 +1428,8 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "研究重点",
-          "opinion": "早期侧重于",
+          "aspect": "研究深度",
+          "opinion": "早期侧重于关键技术分析",
           "evidence": "早期侧重于实现网络信息资源智能导航服务功能的关键技术进行分析",
           "object_text": "None"
         },
@@ -1618,62 +1458,10 @@
           "evidence": "在智慧服务馆建设上涌现出一些理论研究",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为建设概念，非具体实体"
+          "uncertainty": "可能为概念或具体设施，但原文未明确具体名称"
         },
         {
           "entity_id": "10_e2",
-          "mention": "开放互联的在线知识获取与交流环境",
-          "normalized_name": "开放互联的在线知识获取与交流环境",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "指出应构建开放互联的在线知识获取与交流环境",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为环境概念，非具体系统"
-        },
-        {
-          "entity_id": "10_e3",
-          "mention": "人工智能技术",
-          "normalized_name": "人工智能技术",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "从人工智能与情报工作的核心层次上分析基于人工智能技术的情报服务模式",
-          "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为技术领域概念"
-        },
-        {
-          "entity_id": "10_e4",
-          "mention": "情报服务模式",
-          "normalized_name": "情报服务模式",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "分析基于人工智能技术的情报服务模式",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为模式概念"
-        },
-        {
-          "entity_id": "10_e5",
-          "mention": "智能技术应用",
-          "normalized_name": "智能技术应用",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "探讨从信息采集到情报服务的全链条的智能技术应用",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为应用概念"
-        },
-        {
-          "entity_id": "10_e6",
           "mention": "刘炜",
           "normalized_name": "刘炜",
           "candidate_l3": "scholar",
@@ -1686,7 +1474,7 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "10_e7",
+          "entity_id": "10_e3",
           "mention": "VR/AR",
           "normalized_name": "VR/AR",
           "candidate_l3": "concept",
@@ -1695,11 +1483,11 @@
           ],
           "evidence": "刘炜等认为VR/AR、超高清视频、智慧阅读、智能场馆等将是图书馆应用5G技术的六大智慧服务场景",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为技术概念"
+          "confidence": 0.8,
+          "uncertainty": "作为技术领域概念，非具体系统"
         },
         {
-          "entity_id": "10_e8",
+          "entity_id": "10_e4",
           "mention": "超高清视频",
           "normalized_name": "超高清视频",
           "candidate_l3": "concept",
@@ -1708,11 +1496,11 @@
           ],
           "evidence": "刘炜等认为VR/AR、超高清视频、智慧阅读、智能场馆等将是图书馆应用5G技术的六大智慧服务场景",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为技术概念"
+          "confidence": 0.8,
+          "uncertainty": "作为技术应用概念"
         },
         {
-          "entity_id": "10_e9",
+          "entity_id": "10_e5",
           "mention": "智慧阅读",
           "normalized_name": "智慧阅读",
           "candidate_l3": "concept",
@@ -1721,11 +1509,11 @@
           ],
           "evidence": "刘炜等认为VR/AR、超高清视频、智慧阅读、智能场馆等将是图书馆应用5G技术的六大智慧服务场景",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为服务概念"
+          "confidence": 0.8,
+          "uncertainty": "作为服务模式概念"
         },
         {
-          "entity_id": "10_e10",
+          "entity_id": "10_e6",
           "mention": "智能场馆",
           "normalized_name": "智能场馆",
           "candidate_l3": "concept",
@@ -1734,11 +1522,11 @@
           ],
           "evidence": "刘炜等认为VR/AR、超高清视频、智慧阅读、智能场馆等将是图书馆应用5G技术的六大智慧服务场景",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为场馆概念"
+          "confidence": 0.8,
+          "uncertainty": "作为应用场景概念"
         },
         {
-          "entity_id": "10_e11",
+          "entity_id": "10_e7",
           "mention": "5G技术",
           "normalized_name": "5G技术",
           "candidate_l3": "concept",
@@ -1747,11 +1535,11 @@
           ],
           "evidence": "图书馆应用5G技术的六大智慧服务场景",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为技术概念"
+          "confidence": 0.85,
+          "uncertainty": "作为技术体系概念，非具体标准"
         },
         {
-          "entity_id": "10_e12",
+          "entity_id": "10_e8",
           "mention": "智能图书管理实验机器人",
           "normalized_name": "智能图书管理实验机器人",
           "candidate_l3": "instrument",
@@ -1761,10 +1549,10 @@
           "evidence": "实践研究方面有智能图书管理实验机器人",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为实验设备，用于管理"
+          "uncertainty": "作为实验设备，用于图书管理"
         },
         {
-          "entity_id": "10_e13",
+          "entity_id": "10_e9",
           "mention": "博物馆讲解服务的实验机器人",
           "normalized_name": "博物馆讲解服务的实验机器人",
           "candidate_l3": "instrument",
@@ -1774,7 +1562,7 @@
           "evidence": "还有用于博物馆讲解服务的实验机器人等",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为实验设备，用于讲解"
+          "uncertainty": "作为实验设备，用于讲解服务"
         }
       ],
       "has_evaluation": true,
@@ -1784,38 +1572,30 @@
           "object": "_missing_entity",
           "aspect": "成果数量",
           "opinion": "较多",
-          "evidence": "成果较多",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "理论研究",
-          "opinion": "涌现出一些",
-          "evidence": "涌现出一些理论研究",
+          "evidence": "在基本理念、服务方式、服务体系研究方面的成果较多",
           "object_text": "None"
         },
         {
           "subject": "_cite[18]",
           "object": "_missing_entity",
-          "aspect": "构建",
-          "opinion": "应构建",
-          "evidence": "指出应构建开放互联的在线知识获取与交流环境",
+          "aspect": "理论研究",
+          "opinion": "涌现出一些理论研究",
+          "evidence": "在智慧服务馆建设上涌现出一些理论研究",
           "object_text": "None"
         },
         {
           "subject": "_cite[19]",
           "object": "_missing_entity",
-          "aspect": "分析",
-          "opinion": "分析",
+          "aspect": "情报服务模式",
+          "opinion": "分析基于人工智能技术的情报服务模式",
           "evidence": "从人工智能与情报工作的核心层次上分析基于人工智能技术的情报服务模式",
           "object_text": "None"
         },
         {
           "subject": "_cite[20]",
           "object": "_missing_entity",
-          "aspect": "认为",
-          "opinion": "认为",
+          "aspect": "智慧服务场景",
+          "opinion": "将是图书馆应用5G技术的六大智慧服务场景",
           "evidence": "刘炜等认为VR/AR、超高清视频、智慧阅读、智能场馆等将是图书馆应用5G技术的六大智慧服务场景",
           "object_text": "None"
         },
@@ -1823,8 +1603,8 @@
           "subject": "_cite[21]",
           "object": "_missing_entity",
           "aspect": "功能",
-          "opinion": "提高效率",
-          "evidence": "提高现有图书馆书籍管理工作的效率",
+          "opinion": "可完成自动扫描书籍入库，一键借还书，自主返回无线充电，实时检测书籍摆位等功能，提高现有图书馆书籍管理工作的效率",
+          "evidence": "可完成自动扫描书籍入库，一键借还书，自主返回无线充电，实时检测书籍摆位等功能，提高现有图书馆书籍管理工作的效率",
           "object_text": "None"
         }
       ]
@@ -1844,7 +1624,7 @@
           "evidence": "智慧图书馆移动视觉搜索服务在图书馆领域有关应用问题的探索研究",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能为服务模式或技术应用概念"
+          "uncertainty": "可能为概念或服务模式"
         },
         {
           "entity_id": "11_e2",
@@ -1857,7 +1637,7 @@
           "evidence": "5G 时代网络数字资源的服务构想",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为技术体系或应用概念"
+          "uncertainty": "作为技术概念"
         },
         {
           "entity_id": "11_e3",
@@ -1870,7 +1650,7 @@
           "evidence": "5G与机器学习、虚拟现实、知识可视化、体感交互等持术手段的结合",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为技术领域或方法"
+          "uncertainty": "作为技术概念"
         },
         {
           "entity_id": "11_e4",
@@ -1883,7 +1663,7 @@
           "evidence": "5G与机器学习、虚拟现实、知识可视化、体感交互等持术手段的结合",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为技术领域"
+          "uncertainty": "作为技术概念"
         },
         {
           "entity_id": "11_e5",
@@ -1896,7 +1676,7 @@
           "evidence": "5G与机器学习、虚拟现实、知识可视化、体感交互等持术手段的结合",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为技术领域"
+          "uncertainty": "作为技术概念"
         },
         {
           "entity_id": "11_e6",
@@ -1909,7 +1689,7 @@
           "evidence": "5G与机器学习、虚拟现实、知识可视化、体感交互等持术手段的结合",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为技术领域"
+          "uncertainty": "作为技术概念"
         },
         {
           "entity_id": "11_e7",
@@ -1922,7 +1702,7 @@
           "evidence": "可以助推智能搜索、精细配置、流媒体、智慧定位等服务的创新",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为服务类型或功能"
+          "uncertainty": "作为服务概念"
         },
         {
           "entity_id": "11_e8",
@@ -1935,7 +1715,7 @@
           "evidence": "可以助推智能搜索、精细配置、流媒体、智慧定位等服务的创新",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为服务类型或功能"
+          "uncertainty": "作为服务概念"
         },
         {
           "entity_id": "11_e9",
@@ -1948,7 +1728,7 @@
           "evidence": "可以助推智能搜索、精细配置、流媒体、智慧定位等服务的创新",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为技术或服务"
+          "uncertainty": "作为技术概念"
         },
         {
           "entity_id": "11_e10",
@@ -1961,7 +1741,7 @@
           "evidence": "可以助推智能搜索、精细配置、流媒体、智慧定位等服务的创新",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为服务类型或功能"
+          "uncertainty": "作为服务概念"
         },
         {
           "entity_id": "11_e11",
@@ -1974,7 +1754,7 @@
           "evidence": "基于云移动学习的视频流媒体对视觉学习风格的学习影响",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为学习模式"
+          "uncertainty": "作为学习模式概念"
         },
         {
           "entity_id": "11_e12",
@@ -1987,7 +1767,7 @@
           "evidence": "基于云移动学习的视频流媒体对视觉学习风格的学习影响",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为技术或内容形式"
+          "uncertainty": "作为技术概念"
         },
         {
           "entity_id": "11_e13",
@@ -2000,7 +1780,7 @@
           "evidence": "对视觉学习风格的学习影响",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为学习风格类型"
+          "uncertainty": "作为学习风格概念"
         },
         {
           "entity_id": "11_e14",
@@ -2013,7 +1793,7 @@
           "evidence": "利用流媒体进行网络教学及其他知识传播服务的应用价值研究",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为教学形式"
+          "uncertainty": "作为教学形式概念"
         },
         {
           "entity_id": "11_e15",
@@ -2026,45 +1806,45 @@
           "evidence": "利用流媒体进行网络教学及其他知识传播服务的应用价值研究",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为服务类型"
+          "uncertainty": "作为服务概念"
         }
       ],
       "has_evaluation": true,
       "relations": [
         {
-          "subject": "_cite[22]",
+          "subject": "_paper_author",
           "object": "_missing_entity",
           "aspect": "应用问题",
           "opinion": "探索研究",
-          "evidence": "智慧图书馆移动视觉搜索服务在图书馆领域有关应用问题的探索研究[22]",
+          "evidence": "有关应用问题的探索研究",
           "object_text": "None"
         },
         {
-          "subject": "_cite[23]",
+          "subject": "_paper_author",
           "object": "_missing_entity",
           "aspect": "服务构想",
-          "opinion": "探讨",
-          "evidence": "5G 时代网络数字资源的服务构想和可能的智慧服务场景探讨[23]",
+          "opinion": "可能的智慧服务场景",
+          "evidence": "5G 时代网络数字资源的服务构想和可能的智慧服务场景探讨",
           "object_text": "None"
         },
         {
-          "subject": "_cite[24]",
+          "subject": "_paper_author",
           "object": "_missing_entity",
           "aspect": "服务创新",
           "opinion": "助推",
-          "evidence": "可以助推智能搜索、精细配置、流媒体、智慧定位等服务的创新[24]",
+          "evidence": "可以助推智能搜索、精细配置、流媒体、智慧定位等服务的创新",
           "object_text": "None"
         },
         {
-          "subject": "_cite[25]",
+          "subject": "_paper_author",
           "object": "_missing_entity",
           "aspect": "学习影响",
           "opinion": "关心",
-          "evidence": "教育研究人员关心基于云移动学习的视频流媒体对视觉学习风格的学习影响[25]",
+          "evidence": "关心基于云移动学习的视频流媒体对视觉学习风格的学习影响",
           "object_text": "None"
         },
         {
-          "subject": "_cite[25]",
+          "subject": "_paper_author",
           "object": "_missing_entity",
           "aspect": "应用价值",
           "opinion": "研究",
@@ -2100,8 +1880,8 @@
           ],
           "evidence": "在WiFi环境下开展流媒体直播式知识共享服务",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "技术环境，可能为concept"
+          "confidence": 0.7,
+          "uncertainty": "技术环境，可能不抽取"
         },
         {
           "entity_id": "12_e3",
@@ -2114,7 +1894,7 @@
           "evidence": "开展流媒体直播式知识共享服务的问题",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "服务模式，可能为concept"
+          "uncertainty": ""
         },
         {
           "entity_id": "12_e4",
@@ -2126,8 +1906,8 @@
           ],
           "evidence": "图书馆员如何将流媒体资源集成到主流的图书馆服务中",
           "is_specific_entity": false,
-          "confidence": 0.6,
-          "uncertainty": "泛称，不指具体个人"
+          "confidence": 0.9,
+          "uncertainty": "泛称，不抽取"
         },
         {
           "entity_id": "12_e5",
@@ -2140,7 +1920,7 @@
           "evidence": "将流媒体资源集成到主流的图书馆服务中",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "资源类型，可能为concept"
+          "uncertainty": ""
         },
         {
           "entity_id": "12_e6",
@@ -2153,7 +1933,7 @@
           "evidence": "集成到主流的图书馆服务中",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "服务概念"
+          "uncertainty": ""
         },
         {
           "entity_id": "12_e7",
@@ -2179,49 +1959,10 @@
           "evidence": "图书馆流媒体服务模式可以有效促进教学、学习、职业发展等",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "服务模式，可能为concept"
+          "uncertainty": ""
         },
         {
           "entity_id": "12_e9",
-          "mention": "教学",
-          "normalized_name": "教学",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "促进教学、学习、职业发展等",
-          "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "活动领域，可能为concept"
-        },
-        {
-          "entity_id": "12_e10",
-          "mention": "学习",
-          "normalized_name": "学习",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "促进教学、学习、职业发展等",
-          "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "活动领域，可能为concept"
-        },
-        {
-          "entity_id": "12_e11",
-          "mention": "职业发展",
-          "normalized_name": "职业发展",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "促进教学、学习、职业发展等",
-          "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "活动领域，可能为concept"
-        },
-        {
-          "entity_id": "12_e12",
           "mention": "流媒体技术",
           "normalized_name": "流媒体技术",
           "candidate_l3": "concept",
@@ -2230,11 +1971,11 @@
           ],
           "evidence": "随着流媒体技术应用日益广泛",
           "is_specific_entity": true,
-          "confidence": 0.85,
+          "confidence": 0.8,
           "uncertainty": "技术领域，可能为concept"
         },
         {
-          "entity_id": "12_e13",
+          "entity_id": "12_e10",
           "mention": "流媒体服务器",
           "normalized_name": "流媒体服务器",
           "candidate_l3": "software",
@@ -2243,11 +1984,11 @@
           ],
           "evidence": "利用流媒体服务器应用于博物馆智能讲解服务",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "具体服务器软件或系统，可能为information_system"
+          "confidence": 0.85,
+          "uncertainty": "可能为系统或工具"
         },
         {
-          "entity_id": "12_e14",
+          "entity_id": "12_e11",
           "mention": "博物馆智能讲解服务",
           "normalized_name": "博物馆智能讲解服务",
           "candidate_l3": "concept",
@@ -2256,11 +1997,11 @@
           ],
           "evidence": "应用于博物馆智能讲解服务",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "服务模式，可能为concept"
+          "confidence": 0.8,
+          "uncertainty": ""
         },
         {
-          "entity_id": "12_e15",
+          "entity_id": "12_e12",
           "mention": "图书馆移动学习系统",
           "normalized_name": "图书馆移动学习系统",
           "candidate_l3": "information_system",
@@ -2287,7 +2028,7 @@
           "subject": "_cite[27]",
           "object": "_missing_entity",
           "aspect": "有效性",
-          "opinion": "可以有效促进",
+          "opinion": "可以有效促进教学、学习、职业发展等",
           "evidence": "图书馆流媒体服务模式可以有效促进教学、学习、职业发展等",
           "object_text": "None"
         }
@@ -2314,14 +2055,14 @@
           "entity_id": "13_e2",
           "mention": "流媒体服务器",
           "normalized_name": "流媒体服务器",
-          "candidate_l3": "concept",
+          "candidate_l3": "software",
           "candidate_l1": [
-            "Abstract"
+            "Artifact"
           ],
           "evidence": "利用流媒体服务器应用于博物馆智能讲解服务",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为技术设备概念，非具体系统"
+          "uncertainty": "可能指具体软件或系统"
         },
         {
           "entity_id": "13_e3",
@@ -2333,21 +2074,21 @@
           ],
           "evidence": "应用于博物馆智能讲解服务",
           "is_specific_entity": true,
-          "confidence": 0.85,
+          "confidence": 0.8,
           "uncertainty": "作为应用概念"
         },
         {
           "entity_id": "13_e4",
           "mention": "图书馆移动学习系统",
           "normalized_name": "图书馆移动学习系统",
-          "candidate_l3": "concept",
+          "candidate_l3": "information_system",
           "candidate_l1": [
-            "Abstract"
+            "Artifact"
           ],
           "evidence": "基于流媒体的图书馆移动学习系统设计",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为系统设计概念，非具体系统"
+          "confidence": 0.9,
+          "uncertainty": ""
         },
         {
           "entity_id": "13_e5",
@@ -2360,7 +2101,7 @@
           "evidence": "关于流媒体服务在图书情报博物领域的研究论文较少",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": ""
+          "uncertainty": "作为服务概念"
         },
         {
           "entity_id": "13_e6",
@@ -2370,10 +2111,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "流媒体服务在图书情报博物领域的研究论文",
+          "evidence": "流媒体服务在图书情报博物领域的研究论文较少",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为研究领域"
+          "uncertainty": "可能为跨学科领域"
         },
         {
           "entity_id": "13_e7",
@@ -2405,7 +2146,7 @@
           "aspect": "观点启发性",
           "opinion": "颇有启发性",
           "evidence": "有些观点颇有启发性",
-          "object_text": "网上关于5G流媒体的介绍、论述、报告、行业分析等"
+          "object_text": "有些观点"
         }
       ]
     },
@@ -2436,7 +2177,7 @@
           ],
           "evidence": "在图书馆领域智慧服务研究成果较多",
           "is_specific_entity": true,
-          "confidence": 0.8,
+          "confidence": 0.85,
           "uncertainty": "作为研究主题"
         },
         {
@@ -2462,7 +2203,7 @@
           ],
           "evidence": "图博档文化资源的智能化、可感知、沉浸式和可互动",
           "is_specific_entity": true,
-          "confidence": 0.85,
+          "confidence": 0.8,
           "uncertainty": "作为资源类型概念"
         }
       ],
@@ -2471,9 +2212,9 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "研究成果数量",
+          "aspect": "研究成果",
           "opinion": "较多",
-          "evidence": "研究成果较多",
+          "evidence": "数字信息资源智能化服务在图书馆领域智慧服务研究成果较多",
           "object_text": "None"
         },
         {
@@ -2599,14 +2340,6 @@
           "opinion": "主要驱动因素",
           "evidence": "是媒体生态变革的主要驱动因素",
           "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": null,
-          "opinion": "探索与实践",
-          "evidence": "中国第一个媒体人工智能平台就是媒体大脑的探索与实践",
-          "object_text": "None"
         }
       ]
     },
@@ -2625,7 +2358,7 @@
           "evidence": "5G环境下触觉互联网技术[34]",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为技术体系/应用概念"
+          "uncertainty": "作为技术体系或应用概念"
         },
         {
           "entity_id": "16_e2",
@@ -2651,7 +2384,7 @@
           "evidence": "相对于传统的社交媒体",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为技术/应用概念"
+          "uncertainty": "作为技术概念"
         },
         {
           "entity_id": "16_e4",
@@ -2720,10 +2453,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "5G技术与现有媒体数字服务实践的结合",
+          "evidence": "5G技术与现有媒体数字服务实践的结合尚处在探索阶段",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为实践领域"
+          "uncertainty": "作为实践概念"
         },
         {
           "entity_id": "17_e3",
@@ -2733,7 +2466,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "如何运用工程化思想",
+          "evidence": "如何运用工程化思想从典型场景中找到相似要素",
           "is_specific_entity": true,
           "confidence": 0.85,
           "uncertainty": "作为方法论概念"
@@ -2749,7 +2482,7 @@
           "evidence": "构建媒体服务新生态的关键",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为目标概念"
+          "uncertainty": "作为概念化目标"
         }
       ],
       "has_evaluation": false,
@@ -2770,7 +2503,7 @@
           "evidence": "如VR/AR技术借助近眼显示、感知交互、渲染处理、网络传输和内容制作",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为技术领域/应用概念"
+          "uncertainty": "作为技术领域概念，非具体系统或工具"
         },
         {
           "entity_id": "18_e2",
@@ -2783,7 +2516,7 @@
           "evidence": "5G时代可视化交互知识服务研究主要体现在5G对VK促进作用",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为技术体系/应用概念"
+          "uncertainty": "作为技术体系概念，非具体标准或系统"
         },
         {
           "entity_id": "18_e3",
@@ -2796,7 +2529,7 @@
           "evidence": "5G对VK促进作用、VK对5G辅助作用",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "缩写，可能指可视化知识"
+          "uncertainty": "缩写，可能指可视化知识服务"
         },
         {
           "entity_id": "18_e4",
@@ -2823,19 +2556,6 @@
           "is_specific_entity": true,
           "confidence": 0.9,
           "uncertainty": "作为技术应用概念"
-        },
-        {
-          "entity_id": "18_e6",
-          "mention": "5G时代",
-          "normalized_name": "5G时代",
-          "candidate_l3": "stage",
-          "candidate_l1": [
-            "Event"
-          ],
-          "evidence": "5G时代可视化交互知识服务研究",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为发展阶段"
         }
       ],
       "has_evaluation": true,
@@ -2912,7 +2632,7 @@
           "evidence": "5G与VK结合研究的主要进展",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "可能为虚拟现实缩写，但原文未展开"
+          "uncertainty": "技术概念"
         },
         {
           "entity_id": "19_e5",
@@ -2938,7 +2658,7 @@
           "evidence": "在技术开发领域也重视智能管理平台的打造",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "未给出具体名称，但作为具体平台类型"
+          "uncertainty": "具体平台名称未给出"
         },
         {
           "entity_id": "19_e7",
@@ -2965,19 +2685,6 @@
           "is_specific_entity": true,
           "confidence": 0.9,
           "uncertainty": "研究目标概念"
-        },
-        {
-          "entity_id": "19_e9",
-          "mention": "多通道信息",
-          "normalized_name": "多通道信息",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "对多通道信息进行视觉、触觉信息集成和处理",
-          "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "技术概念"
         }
       ],
       "has_evaluation": true,
@@ -3059,7 +2766,7 @@
           "object": "_missing_entity",
           "aspect": "行为",
           "opinion": "分析和预测",
-          "evidence": "通过对用户行为数据的采集和用户调研对用户的目的和需求进行分析和预测[39]",
+          "evidence": "通过对用户行为数据的采集和用户调研对用户的目的和需求进行分析和预测",
           "object_text": "None"
         }
       ]
@@ -3092,46 +2799,46 @@
           "evidence": "用户画像在个性化和精准化信息推送方面被广泛利用",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为概念讨论"
+          "uncertainty": "作为概念被讨论"
         },
         {
           "entity_id": "21_e3",
           "mention": "智能分析",
           "normalized_name": "智能分析",
-          "candidate_l3": "concept",
+          "candidate_l3": "technique",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "智能分析、机器翻译和自动简报在信息处理和服务方面的作用等[40]",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "技术领域概念"
+          "uncertainty": "可能为技术领域，但此处作为具体分析手段"
         },
         {
           "entity_id": "21_e4",
           "mention": "机器翻译",
           "normalized_name": "机器翻译",
-          "candidate_l3": "concept",
+          "candidate_l3": "technique",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "智能分析、机器翻译和自动简报在信息处理和服务方面的作用等[40]",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "技术领域概念"
+          "uncertainty": ""
         },
         {
           "entity_id": "21_e5",
           "mention": "自动简报",
           "normalized_name": "自动简报",
-          "candidate_l3": "concept",
+          "candidate_l3": "technique",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "智能分析、机器翻译和自动简报在信息处理和服务方面的作用等[40]",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "技术领域概念"
+          "uncertainty": ""
         },
         {
           "entity_id": "21_e6",
@@ -3148,16 +2855,16 @@
         },
         {
           "entity_id": "21_e7",
-          "mention": "5G 智能终端",
-          "normalized_name": "5G智能终端",
+          "mention": "5G",
+          "normalized_name": "5G",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "5G 智能终端还可以及时反馈移动用户行为动态并准确上传",
+          "evidence": "5G 智能终端还可以及时反馈移动用户行为动态",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "技术设备概念"
+          "confidence": 0.9,
+          "uncertainty": "作为技术体系概念"
         },
         {
           "entity_id": "21_e8",
@@ -3175,7 +2882,7 @@
         {
           "entity_id": "21_e9",
           "mention": "MapReduce 计算框架",
-          "normalized_name": "MapReduce计算框架",
+          "normalized_name": "MapReduce 计算框架",
           "candidate_l3": "software",
           "candidate_l1": [
             "Artifact"
@@ -3191,9 +2898,9 @@
         {
           "subject": "_cite[39]",
           "object": "_missing_entity",
-          "aspect": "用户目的和需求分析",
-          "opinion": "进行分析和预测",
-          "evidence": "对用户的目的和需求进行分析和预测[39]",
+          "aspect": "分析预测能力",
+          "opinion": "分析和预测",
+          "evidence": "通过对用户行为数据的采集和用户调研对用户的目的和需求进行分析和预测[39]",
           "object_text": "None"
         },
         {
@@ -3208,40 +2915,24 @@
           "subject": "_cite[40]",
           "object": "_missing_entity",
           "aspect": "作用",
-          "opinion": "探讨作用",
-          "evidence": "探讨的范围包括智能分析、机器翻译和自动简报在信息处理和服务方面的作用等[40]",
+          "opinion": "作用",
+          "evidence": "智能分析、机器翻译和自动简报在信息处理和服务方面的作用等[40]",
           "object_text": "None"
         },
         {
           "subject": "_cite[41]",
           "object": "_missing_entity",
-          "aspect": "数据结构化和语义化处理",
-          "opinion": "给出新方法",
-          "evidence": "针对文本型和非文本型原始数据通过一些范例给出数据结构化和语义化处理的新方法[41]",
-          "object_text": "数据结构化和语义化处理"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "能力",
-          "opinion": "生成多样化决策策略",
-          "evidence": "通过分布式深度探索方法，生成多样化决策策略",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "功能",
-          "opinion": "及时反馈并准确上传",
-          "evidence": "5G 智能终端还可以及时反馈移动用户行为动态并准确上传",
+          "aspect": "新颖性",
+          "opinion": "新方法",
+          "evidence": "给出数据结构化和语义化处理的新方法[41]",
           "object_text": "None"
         },
         {
           "subject": "_cite[42]",
           "object": "_missing_entity",
-          "aspect": "应用",
+          "aspect": "功能",
           "opinion": "实现实时的精细化服务",
-          "evidence": "利用Hadoop大数据分析平台和MapReduce 计算框架，在用户行为日志中提取相应的显性偏好和隐性需求，实现实时的精细化服务[42]",
+          "evidence": "实现实时的精细化服务[42]",
           "object_text": "None"
         }
       ]
@@ -3293,7 +2984,7 @@
           "entity_id": "22_e4",
           "mention": "基于个性化标签的搜索问题",
           "normalized_name": "基于个性化标签的搜索问题",
-          "candidate_l3": "concept",
+          "candidate_l3": "phenomenon",
           "candidate_l1": [
             "Abstract"
           ],
@@ -3382,15 +3073,15 @@
         },
         {
           "entity_id": "22_e11",
-          "mention": "个性化信息检索",
-          "normalized_name": "个性化信息检索",
-          "candidate_l3": "subfield",
+          "mention": "特定领域个性化信息检索问题",
+          "normalized_name": "特定领域个性化信息检索问题",
+          "candidate_l3": "phenomenon",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "解决特定领域个性化信息检索问题",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.85,
           "uncertainty": ""
         },
         {
@@ -3462,7 +3153,7 @@
           "entity_id": "22_e17",
           "mention": "多 Agent 技术",
           "normalized_name": "多 Agent 技术",
-          "candidate_l3": "technique",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
@@ -3503,7 +3194,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "定义知识鸿沟",
+          "aspect": "知识鸿沟定义",
           "opinion": "利用概念图定义",
           "evidence": "利用概念图定义知识鸿沟",
           "object_text": "None"
@@ -3519,9 +3210,9 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "减少搜索主题数量",
-          "opinion": "新的智能主题选择方法",
-          "evidence": "一种新的智能主题选择方法，以减少可靠的IR 评估所需的搜索主题数量",
+          "aspect": "智能主题选择方法",
+          "opinion": "新的",
+          "evidence": "一种新的智能主题选择方法",
           "object_text": "None"
         }
       ]
@@ -3644,8 +3335,8 @@
           ],
           "evidence": "多种不同情境下检索模型及算法的提出及试验",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "泛称算法，但作为研究对象"
+          "confidence": 0.9,
+          "uncertainty": "作为具体算法，但未给出名称"
         },
         {
           "entity_id": "23_e10",
@@ -3657,8 +3348,8 @@
           ],
           "evidence": "主要涉及图书馆、档案馆等领域学术检索",
           "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "泛称机构类别，但作为领域提及"
+          "confidence": 0.85,
+          "uncertainty": "作为机构类型，但未具体指称某馆"
         },
         {
           "entity_id": "23_e11",
@@ -3670,8 +3361,8 @@
           ],
           "evidence": "主要涉及图书馆、档案馆等领域学术检索",
           "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "泛称机构类别，但作为领域提及"
+          "confidence": 0.85,
+          "uncertainty": "作为机构类型，但未具体指称某馆"
         }
       ],
       "has_evaluation": true,
@@ -3687,73 +3378,25 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "挑战",
-          "opinion": "面临...挑战",
-          "evidence": "面临着情景感知不足、信息过载等问题的挑战",
+          "aspect": null,
+          "opinion": "不足",
+          "evidence": "情景感知不足",
           "object_text": "None"
         },
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "挑战",
-          "opinion": "面临...挑战",
-          "evidence": "面临着情景感知不足、信息过载等问题的挑战",
+          "aspect": null,
+          "opinion": "过载",
+          "evidence": "信息过载",
           "object_text": "None"
         },
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
           "aspect": "研究",
-          "opinion": "主要是技术视角下...提出及试验",
-          "evidence": "近几年在智能搜索领域的研究主要是技术视角下多种不同情境下检索模型及算法的提出及试验",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "提出及试验",
-          "opinion": "提出及试验",
-          "evidence": "多种不同情境下检索模型及算法的提出及试验",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "提出及试验",
-          "opinion": "提出及试验",
-          "evidence": "多种不同情境下检索模型及算法的提出及试验",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "领域",
-          "opinion": "涉及",
-          "evidence": "主要涉及图书馆、档案馆等领域学术检索",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "领域",
-          "opinion": "涉及",
-          "evidence": "主要涉及图书馆、档案馆等领域学术检索",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "理论成果",
-          "opinion": "较多",
-          "evidence": "理论成果较多",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "应用同步性",
-          "opinion": "不足",
-          "evidence": "应用同步性不足",
+          "opinion": "理论成果较多，应用同步性不足",
+          "evidence": "理论成果较多，应用同步性不足",
           "object_text": "None"
         }
       ]
@@ -3809,7 +3452,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "在数字资源的生产、传输、存储、管理内容、管理方式特别是其服务方式方面",
+          "evidence": "在数字资源的生产、传输、存储、管理内容、管理方式",
           "is_specific_entity": true,
           "confidence": 0.8,
           "uncertainty": "作为信息资源概念"
@@ -3822,7 +3465,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "5G和人工智能技术加快拓展数字信息服务的广度和深度",
+          "evidence": "加快拓展数字信息服务的广度和深度",
           "is_specific_entity": true,
           "confidence": 0.85,
           "uncertainty": "作为服务概念"
@@ -4051,7 +3694,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "超高清视频、智慧阅读、智能场馆等",
+          "evidence": "更多的视觉识别、语言处理和自然交互等人工智能技术嵌入以及超高清视频",
           "is_specific_entity": true,
           "confidence": 0.8,
           "uncertainty": "应用场景概念"
@@ -4084,16 +3727,16 @@
         },
         {
           "entity_id": "25_e11",
-          "mention": "图书馆",
-          "normalized_name": "图书馆",
+          "mention": "图书馆等信息服务部门",
+          "normalized_name": "图书馆等信息服务部门",
           "candidate_l3": "service",
           "candidate_l1": [
             "Agent"
           ],
-          "evidence": "图书馆等信息服务部门",
+          "evidence": "将是图书馆等信息服务部门应用5G技术进行数字信息资源智慧服务的主要场景",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "泛称机构，但此处指具体部门类型，不指具体机构"
+          "uncertainty": "泛称机构类别，但作为整体应用主体"
         },
         {
           "entity_id": "25_e12",
@@ -4140,7 +3783,7 @@
           "evidence": "利用5G来满足用户端多样化需求",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为技术体系/应用概念"
+          "uncertainty": "作为技术概念，非具体系统"
         },
         {
           "entity_id": "26_e2",
@@ -4165,8 +3808,8 @@
           ],
           "evidence": "趋于向跨屏多模态交互的智慧媒体中心发展",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为技术概念"
+          "confidence": 0.85,
+          "uncertainty": "作为概念，非具体系统"
         },
         {
           "entity_id": "26_e4",
@@ -4179,7 +3822,7 @@
           "evidence": "车载终端将作为全新的媒体形式登场",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为技术概念"
+          "uncertainty": "作为技术概念，非具体设备"
         }
       ],
       "has_evaluation": false,
@@ -4199,8 +3842,8 @@
           ],
           "evidence": "研究以数据高密度融合为目的的数字信息资源融合",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为研究主题，可能属于concept或phenomenon"
+          "confidence": 0.9,
+          "uncertainty": ""
         },
         {
           "entity_id": "27_e2",
@@ -4212,8 +3855,8 @@
           ],
           "evidence": "数字信息资源融合、组织、协同过程",
           "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "此处为动词性名词，可能不构成独立实体"
+          "confidence": 0.8,
+          "uncertainty": "作为过程概念"
         },
         {
           "entity_id": "27_e3",
@@ -4225,8 +3868,8 @@
           ],
           "evidence": "数字信息资源融合、组织、协同过程",
           "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "可能为过程性概念"
+          "confidence": 0.8,
+          "uncertainty": ""
         },
         {
           "entity_id": "27_e4",
@@ -4238,8 +3881,8 @@
           ],
           "evidence": "提高共享和服务效率的智能化管理",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为管理理念或模式"
+          "confidence": 0.85,
+          "uncertainty": ""
         },
         {
           "entity_id": "27_e5",
@@ -4251,7 +3894,7 @@
           ],
           "evidence": "用户和环境等隐私数据",
           "is_specific_entity": true,
-          "confidence": 0.85,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
@@ -4264,7 +3907,7 @@
           ],
           "evidence": "数字资源知识产权的智能管理模式",
           "is_specific_entity": true,
-          "confidence": 0.85,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
@@ -4277,8 +3920,8 @@
           ],
           "evidence": "数字资源知识产权的智能管理模式",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "可能为model或concept"
+          "confidence": 0.85,
+          "uncertainty": ""
         }
       ],
       "has_evaluation": false,
@@ -4292,14 +3935,14 @@
           "entity_id": "28_e1",
           "mention": "5G时代",
           "normalized_name": "5G时代",
-          "candidate_l3": "stage",
+          "candidate_l3": "concept",
           "candidate_l1": [
-            "Event"
+            "Abstract"
           ],
           "evidence": "研究5G时代高速度、高并发、高兼容、高安全和低时延环境下的图书、情报、博物等领域数字信息资源智能服务",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为发展阶段"
+          "uncertainty": "作为技术时代概念，非具体技术标准"
         },
         {
           "entity_id": "28_e2",
@@ -4425,10 +4068,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "如智能搜索与推荐、可视化、深度挖掘、大数据、机器学习等智能化服务技术手段",
+          "evidence": "如智能搜索与推荐",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能作为技术手段，但具体性不足"
+          "uncertainty": "可能为技术手段，但具体性不足"
         },
         {
           "entity_id": "29_e2",
@@ -4438,10 +4081,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "如智能搜索与推荐、可视化、深度挖掘、大数据、机器学习等智能化服务技术手段",
+          "evidence": "如智能搜索与推荐、可视化",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能作为技术手段，但具体性不足"
+          "uncertainty": "可能为技术手段，但具体性不足"
         },
         {
           "entity_id": "29_e3",
@@ -4451,10 +4094,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "如智能搜索与推荐、可视化、深度挖掘、大数据、机器学习等智能化服务技术手段",
+          "evidence": "深度挖掘",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能作为技术手段，但具体性不足"
+          "uncertainty": "可能为技术手段，但具体性不足"
         },
         {
           "entity_id": "29_e4",
@@ -4464,9 +4107,9 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "如智能搜索与推荐、可视化、深度挖掘、大数据、机器学习等智能化服务技术手段",
+          "evidence": "大数据",
           "is_specific_entity": true,
-          "confidence": 0.8,
+          "confidence": 0.9,
           "uncertainty": "作为技术领域概念"
         },
         {
@@ -4477,9 +4120,9 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "如智能搜索与推荐、可视化、深度挖掘、大数据、机器学习等智能化服务技术手段",
+          "evidence": "机器学习",
           "is_specific_entity": true,
-          "confidence": 0.8,
+          "confidence": 0.9,
           "uncertainty": "作为技术领域概念"
         },
         {
@@ -4490,36 +4133,36 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "今后对5G网络环境下的超可靠、低延迟的自然人机交互",
+          "evidence": "5G网络环境下的",
           "is_specific_entity": true,
-          "confidence": 0.8,
+          "confidence": 0.9,
           "uncertainty": "作为技术环境概念"
         },
         {
           "entity_id": "29_e7",
-          "mention": "自然人机交互",
-          "normalized_name": "自然人机交互",
+          "mention": "VR/AR及MR（混合现实）",
+          "normalized_name": "VR/AR及MR（混合现实）",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "超可靠、低延迟的自然人机交互",
+          "evidence": "基于VR/AR及MR（混合现实）等技术的",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为技术概念"
+          "confidence": 0.9,
+          "uncertainty": "作为技术领域概念"
         },
         {
           "entity_id": "29_e8",
-          "mention": "VR/AR及MR（混合现实）等技术的知识可视化实现方法",
-          "normalized_name": "VR/AR及MR（混合现实）等技术的知识可视化实现方法",
-          "candidate_l3": "method",
+          "mention": "知识可视化",
+          "normalized_name": "知识可视化",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "基于VR/AR及MR（混合现实）等技术的知识可视化实现方法",
+          "evidence": "知识可视化实现方法",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为方法整体"
+          "confidence": 0.9,
+          "uncertainty": "作为技术概念"
         }
       ],
       "has_evaluation": true,
@@ -4528,14 +4171,14 @@
           "subject": "_paper_author",
           "object": "_missing_entity",
           "aspect": "可用性",
-          "opinion": "可用",
-          "evidence": "在服务手段可用性上",
+          "opinion": "在服务手段可用性上，研究以用户为中心、智能知识可视化和互动情境式服务方式",
+          "evidence": "在服务手段可用性上，研究以用户为中心、智能知识可视化和互动情境式服务方式",
           "object_text": "None"
         },
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "研究需求",
+          "aspect": "实现方法",
           "opinion": "仍需加强研究",
           "evidence": "仍需加强研究",
           "object_text": "None"
@@ -4557,7 +4200,7 @@
           "evidence": "5G环境下用户行为的模式特征",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "技术环境概念"
+          "uncertainty": "作为技术环境概念"
         },
         {
           "entity_id": "30_e2",
@@ -4656,62 +4299,75 @@
           "evidence": "在智能化服务融合建设上",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "可能为概念或领域主题"
+          "uncertainty": "作为建设主题，可能为concept"
         },
         {
           "entity_id": "31_e2",
+          "mention": "智能化方法",
+          "normalized_name": "智能化方法",
+          "candidate_l3": "method",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "不同智能化方法在融合平台上的应用融合",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称，可能不抽取"
+        },
+        {
+          "entity_id": "31_e3",
           "mention": "融合平台",
           "normalized_name": "融合平台",
           "candidate_l3": "information_system",
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "不同智能化方法在融合平台上的应用融合",
+          "evidence": "在融合平台上的应用融合",
           "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "可能为泛指平台，但作为具体系统类型"
+          "confidence": 0.6,
+          "uncertainty": "可能为泛称"
         },
         {
-          "entity_id": "31_e3",
-          "mention": "综合评价体系",
-          "normalized_name": "综合评价体系",
+          "entity_id": "31_e4",
+          "mention": "跨学科、应用领域的综合评价体系",
+          "normalized_name": "跨学科、应用领域的综合评价体系",
           "candidate_l3": "instrument",
           "candidate_l1": [
             "Artifact"
           ],
           "evidence": "建立合适的跨学科、应用领域的综合评价体系",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "可能为指标体系"
+          "confidence": 0.7,
+          "uncertainty": "可能为泛称"
         },
         {
-          "entity_id": "31_e4",
+          "entity_id": "31_e5",
           "mention": "5G时代",
           "normalized_name": "5G时代",
           "candidate_l3": "stage",
           "candidate_l1": [
             "Event"
           ],
-          "evidence": "有效地评测5G时代数字信息资源智能服务系统可用性及应用效果",
+          "evidence": "5G时代数字信息资源智能服务系统",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为发展阶段"
+          "confidence": 0.8,
+          "uncertainty": "时间阶段"
         },
         {
-          "entity_id": "31_e5",
+          "entity_id": "31_e6",
           "mention": "数字信息资源智能服务系统",
           "normalized_name": "数字信息资源智能服务系统",
           "candidate_l3": "information_system",
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "有效地评测5G时代数字信息资源智能服务系统可用性及应用效果",
+          "evidence": "5G时代数字信息资源智能服务系统可用性及应用效果",
           "is_specific_entity": true,
           "confidence": 0.9,
           "uncertainty": ""
         },
         {
-          "entity_id": "31_e6",
+          "entity_id": "31_e7",
           "mention": "数字信息服务系统",
           "normalized_name": "数字信息服务系统",
           "candidate_l3": "information_system",
@@ -4729,15 +4385,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "可用性",
-          "opinion": "有效地评测",
-          "evidence": "有效地评测5G时代数字信息资源智能服务系统可用性及应用效果",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "应用效果",
+          "aspect": "可用性及应用效果",
           "opinion": "有效地评测",
           "evidence": "有效地评测5G时代数字信息资源智能服务系统可用性及应用效果",
           "object_text": "None"

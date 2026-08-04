@@ -91,7 +91,7 @@
           ],
           "evidence": "CALIS“十五”重点学科网络资源导航系统子项目在调研论证后正式启动",
           "is_specific_entity": true,
-          "confidence": 0.95,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
@@ -105,31 +105,50 @@
           "evidence": "中心系统平台向用户开放",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "可能指代具体平台，但名称不明确"
+          "uncertainty": "具体名称未给出，但指代明确"
         }
       ],
       "has_evaluation": true,
       "relations": [
         {
           "subject": "_paper_author",
-          "object": "2_e2",
-          "aspect": "资源建设规范",
-          "opinion": "无统一资源建设规范和标准",
-          "evidence": "无统一资源建设规范和标准"
+          "object": "_missing_entity",
+          "aspect": "覆盖范围",
+          "opinion": "基本覆盖了我国高校主要重点学科",
+          "evidence": "基本覆盖了我国高校主要重点学科",
+          "object_text": "None"
         },
         {
           "subject": "_paper_author",
-          "object": "2_e2",
-          "aspect": "服务平台",
-          "opinion": "无统一服务平台",
-          "evidence": "无统一服务平台"
+          "object": "_missing_entity",
+          "aspect": "规模",
+          "opinion": "初具规模",
+          "evidence": "数据库初具规模",
+          "object_text": "None"
         },
         {
           "subject": "_paper_author",
-          "object": "2_e2",
+          "object": "_missing_entity",
+          "aspect": "服务",
+          "opinion": "存在不足",
+          "evidence": "但也存在一些不足",
+          "object_text": "None"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "服务方式",
+          "opinion": "各参建馆分别提供服务，无统一资源建设规范和标准，无统一服务平台",
+          "evidence": "各参建馆分别提供服务，无统一资源建设规范和标准，无统一服务平台",
+          "object_text": "None"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
           "aspect": "服务效果",
           "opinion": "不明显",
-          "evidence": "服务效果不明显"
+          "evidence": "服务效果不明显",
+          "object_text": "None"
         }
       ]
     },
@@ -161,7 +180,7 @@
           "evidence": "以教育部正式颁布的学科分类系统",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": ""
+          "uncertainty": "可能指具体分类体系，但未给出名称"
         },
         {
           "entity_id": "3_e3",
@@ -174,7 +193,7 @@
           "evidence": "构建国航庚的学科仓类基础建设n价集中服务的全球网络资源导航数据库",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "原文表述混乱，提取核心名词"
+          "uncertainty": "原文有乱码，但可识别为数据库"
         },
         {
           "entity_id": "3_e4",
@@ -204,29 +223,16 @@
         },
         {
           "entity_id": "3_e6",
-          "mention": "高校图书馆",
-          "normalized_name": "高校图书馆",
+          "mention": "54个具有国家重点学科的高校的图书馆",
+          "normalized_name": "54个具有国家重点学科的高校的图书馆",
           "candidate_l3": "service",
           "candidate_l1": [
             "Agent"
           ],
-          "evidence": "联合多家高校图书馆共同完成",
+          "evidence": "共有54个具有国家重点学科的高校的图书馆参与资源建设",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "泛称，但此处指具体参与的高校图书馆"
-        },
-        {
-          "entity_id": "3_e7",
-          "mention": "高校教学科研人员",
-          "normalized_name": "高校教学科研人员",
-          "candidate_l3": "practitioner",
-          "candidate_l1": [
-            "Agent"
-          ],
-          "evidence": "以期为高校教学科研人员提供更有效的网络资源导航服务",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "泛称，但作为服务对象"
+          "uncertainty": "具体机构未列出，但作为整体可识别"
         }
       ],
       "has_evaluation": true,
@@ -234,9 +240,9 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "有效性",
+          "aspect": "服务",
           "opinion": "更有效",
-          "evidence": "提供更有效的网络资源导航服务",
+          "evidence": "以期为高校教学科研人员提供更有效的网络资源导航服务",
           "object_text": "None"
         }
       ]
@@ -247,8 +253,8 @@
       "entities": [
         {
           "entity_id": "4_e1",
-          "mention": "中以黄页资源",
-          "normalized_name": "中以黄页资源",
+          "mention": "中以黄页",
+          "normalized_name": "中以黄页",
           "candidate_l3": "database",
           "candidate_l1": [
             "Artifact"
@@ -268,7 +274,7 @@
           ],
           "evidence": "从导航库收录资源的情况看",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.85,
           "uncertainty": ""
         },
         {
@@ -281,8 +287,8 @@
           ],
           "evidence": "黄页资源亦以大学院系、研究",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "可能指具体院系，但原文未明确具体名称"
+          "confidence": 0.7,
+          "uncertainty": "泛称，可能不指具体机构"
         }
       ],
       "has_evaluation": true,
@@ -293,7 +299,7 @@
           "aspect": "资源比重",
           "opinion": "最大",
           "evidence": "中以黄页资源所占比重为最大",
-          "object_text": "None"
+          "object_text": "1_e1"
         },
         {
           "subject": "_paper_author",
@@ -301,7 +307,7 @@
           "aspect": "学术性",
           "opinion": "体现了学术性的要求",
           "evidence": "无论从资源类型还是学科门类角度都体现了学术性的要求",
-          "object_text": "None"
+          "object_text": "1_e2"
         }
       ]
     },
@@ -368,7 +374,7 @@
           "subject": "_paper_author",
           "object": "_missing_entity",
           "aspect": "外文文献收录比例",
-          "opinion": "超过资源总量的一半以上",
+          "opinion": "已超过资源总量的一半以上",
           "evidence": "其所占比例已超过资源总量的一半以上",
           "object_text": "None"
         }
@@ -388,7 +394,7 @@
           ],
           "evidence": "用户服务平台的检索功能较为完善",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.95,
           "uncertainty": ""
         }
       ],
@@ -419,7 +425,7 @@
           "evidence": "该平台提供了按推荐级别查找资源的功能",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "平台名称未明确，可能指代前文提到的某个具体平台"
+          "uncertainty": "指代不明，可能指前文提到的某个平台"
         }
       ],
       "has_evaluation": true,
@@ -428,7 +434,7 @@
           "subject": "_paper_author",
           "object": "_missing_entity",
           "aspect": "推荐功能",
-          "opinion": "为用户使用资源提供了一定的选择参考",
+          "opinion": "提供了一定的选择参考",
           "evidence": "此推荐功能无疑为用户使用资源提供了一定的选择参考",
           "object_text": "None"
         }
@@ -442,7 +448,7 @@
           "entity_id": "8_e1",
           "mention": "CALIS",
           "normalized_name": "CALIS",
-          "candidate_l3": "research",
+          "candidate_l3": "service",
           "candidate_l1": [
             "Agent"
           ],
@@ -453,32 +459,19 @@
         },
         {
           "entity_id": "8_e2",
-          "mention": "导航库建设实施原则",
-          "normalized_name": "导航库建设实施原则",
-          "candidate_l3": "guideline",
+          "mention": "导航库建设",
+          "normalized_name": "导航库建设",
+          "candidate_l3": "concept",
           "candidate_l1": [
-            "Artifact"
+            "Abstract"
           ],
-          "evidence": "CALIS在导航库建设实施原则中提到",
+          "evidence": "导航库建设实施原则",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
+          "confidence": 0.85,
+          "uncertainty": "作为建设活动或概念"
         },
         {
           "entity_id": "8_e3",
-          "mention": "导航库",
-          "normalized_name": "导航库",
-          "candidate_l3": "information_system",
-          "candidate_l1": [
-            "Artifact"
-          ],
-          "evidence": "导航库建设以信息质量为本",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "可能指具体系统或泛指，但原文多次提及，视为具体系统"
-        },
-        {
-          "entity_id": "8_e4",
           "mention": "重点学科导航库",
           "normalized_name": "重点学科导航库",
           "candidate_l3": "information_system",
@@ -487,21 +480,21 @@
           ],
           "evidence": "使重点学科导航库能够真正地为广大读者使用",
           "is_specific_entity": true,
-          "confidence": 0.85,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
-          "entity_id": "8_e5",
+          "entity_id": "8_e4",
           "mention": "导航库中的资源",
           "normalized_name": "导航库中的资源",
-          "candidate_l3": "dataset",
+          "candidate_l3": "database",
           "candidate_l1": [
             "Artifact"
           ],
           "evidence": "对导航库中的资源进行了统计",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "资源集合，可能为数据集"
+          "confidence": 0.85,
+          "uncertainty": "资源集合，可能指数据库或数据集"
         }
       ],
       "has_evaluation": true,
@@ -509,17 +502,17 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "信息质量",
-          "opinion": "以信息质量为本",
-          "evidence": "导航库建设以信息质量为本",
+          "aspect": "可用性",
+          "opinion": "可用的、有用的",
+          "evidence": "所提供的导航信息是可用的、有用的",
           "object_text": "None"
         },
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "可用性",
-          "opinion": "可用的、有用的",
-          "evidence": "切实做到所提供的导航信息是可用的、有用的",
+          "aspect": "服务功能",
+          "opinion": "真正地为广大读者使用，为教学和科研服务",
+          "evidence": "使重点学科导航库能够真正地为广大读者使用，为教学和科研服务",
           "object_text": "None"
         }
       ]
@@ -533,7 +526,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "利用情况",
+          "aspect": "利用效果",
           "opinion": "不够理想",
           "evidence": "效果不够理想",
           "object_text": "每个独立资源的利用情况"
@@ -646,27 +639,27 @@
           "entity_id": "11_e3",
           "mention": "黄页资源的大学院系",
           "normalized_name": "黄页资源的大学院系",
-          "candidate_l3": "concept",
+          "candidate_l3": "subfield",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "黄页资源的大学院系（50次）",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "作为资源类型概念"
+          "uncertainty": "可能指代具体院系，但原文未给出具体名称"
         },
         {
           "entity_id": "11_e4",
           "mention": "研究机构、中心",
           "normalized_name": "研究机构、中心",
-          "candidate_l3": "concept",
+          "candidate_l3": "research",
           "candidate_l1": [
-            "Abstract"
+            "Agent"
           ],
           "evidence": "研究机构、中心（38次）",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "作为资源类型概念"
+          "uncertainty": "泛称，但原文作为资源类型提及"
         },
         {
           "entity_id": "11_e5",
@@ -702,7 +695,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "对数学、心理学得到世界公认",
+          "evidence": "如数学、心理学得到世界公认",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -715,10 +708,23 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "对数学、心理学得到世界公认",
+          "evidence": "如数学、心理学得到世界公认",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e9",
+          "mention": "Ai",
+          "normalized_name": "Ai",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如Ai",
+          "is_specific_entity": true,
+          "confidence": 0.5,
+          "uncertainty": "原文不完整，可能指代具体资源或概念"
         }
       ],
       "has_evaluation": true,
@@ -726,16 +732,24 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "学术参考价值",
+          "aspect": "访问量",
           "opinion": "较高",
-          "evidence": "都具有较高的学术参考价值",
+          "evidence": "访问次数较高的全文资源",
+          "object_text": "None"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "访问量",
+          "opinion": "较高",
+          "evidence": "访问次数较高的参考资源",
           "object_text": "None"
         },
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
           "aspect": "学术水平",
-          "opinion": "世界公认，属于领先水平",
+          "opinion": "世界公认，领先水平",
           "evidence": "这些知名院校对一些学科的研究，如数学、心理学得到世界公认，属于领先水平",
           "object_text": "None"
         },
@@ -743,16 +757,8 @@
           "subject": "_paper_author",
           "object": "_missing_entity",
           "aspect": "学术水平",
-          "opinion": "世界公认，属于领先水平",
+          "opinion": "世界公认，领先水平",
           "evidence": "这些知名院校对一些学科的研究，如数学、心理学得到世界公认，属于领先水平",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "学术价值",
-          "opinion": "较高",
-          "evidence": "访问次数较高的全文资源和参考资源都属于拥有较高学术价值的网站或网页",
           "object_text": "None"
         }
       ]
@@ -824,7 +830,7 @@
           "evidence": "用户对国际会议信息也比较关注",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "可能作为信息类型，但原文作为关注对象"
+          "uncertainty": "可能作为信息类型，但原文未明确为具体会议事件"
         }
       ],
       "has_evaluation": true,
@@ -835,7 +841,7 @@
           "aspect": "关注度",
           "opinion": "比较关注",
           "evidence": "用户对国际会议信息也比较关注",
-          "object_text": "None"
+          "object_text": "1_e5"
         }
       ]
     },
@@ -854,10 +860,23 @@
           "evidence": "高校用户进行教学科研注重吸收学科发展的前沿信息",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "泛称用户群体，但此处指具体用户类型，可视为具体实体"
+          "uncertainty": "泛称用户，但此处指具体群体，可视为具体实体"
         },
         {
           "entity_id": "13_e2",
+          "mention": "导航库",
+          "normalized_name": "导航库",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "导航库今后的建设和完善",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
           "mention": "外文文献",
           "normalized_name": "外文文献",
           "candidate_l3": "paper",
@@ -866,11 +885,11 @@
           ],
           "evidence": "对外文文献以及学科前沿动态表现出了更大的兴趣",
           "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "泛指外文文献，非具体文献，但作为资源类型可视为实体"
+          "confidence": 0.85,
+          "uncertainty": "泛指外文文献，但作为资源类型可视为具体实体"
         },
         {
-          "entity_id": "13_e3",
+          "entity_id": "13_e4",
           "mention": "学科前沿动态",
           "normalized_name": "学科前沿动态",
           "candidate_l3": "phenomenon",
@@ -879,37 +898,11 @@
           ],
           "evidence": "对外文文献以及学科前沿动态表现出了更大的兴趣",
           "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "作为研究主题，可视为现象"
-        },
-        {
-          "entity_id": "13_e4",
-          "mention": "导航库",
-          "normalized_name": "导航库",
-          "candidate_l3": "information_system",
-          "candidate_l1": [
-            "Artifact"
-          ],
-          "evidence": "在导航库今后的建设和完善中",
-          "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
+          "confidence": 0.8,
+          "uncertainty": "作为动态信息，可视为现象"
         },
         {
           "entity_id": "13_e5",
-          "mention": "资源质量",
-          "normalized_name": "资源质量",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "更重要的是对资源质量的评估",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为评价对象，但非具体实体，可能应放入aspect"
-        },
-        {
-          "entity_id": "13_e6",
           "mention": "世界知名学府",
           "normalized_name": "世界知名学府",
           "candidate_l3": "research",
@@ -918,11 +911,11 @@
           ],
           "evidence": "应注重对世界知名学府和权威网站地址的链接",
           "is_specific_entity": true,
-          "confidence": 0.6,
-          "uncertainty": "泛称，不指具体机构，可能不应抽取"
+          "confidence": 0.7,
+          "uncertainty": "泛称，但作为链接对象可视为具体实体"
         },
         {
-          "entity_id": "13_e7",
+          "entity_id": "13_e6",
           "mention": "权威网站",
           "normalized_name": "权威网站",
           "candidate_l3": "information_system",
@@ -931,8 +924,8 @@
           ],
           "evidence": "应注重对世界知名学府和权威网站地址的链接",
           "is_specific_entity": true,
-          "confidence": 0.6,
-          "uncertainty": "泛称，不指具体网站，可能不应抽取"
+          "confidence": 0.7,
+          "uncertainty": "泛称，但作为链接对象可视为具体实体"
         }
       ],
       "has_evaluation": true,
@@ -940,17 +933,17 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "资源利用",
-          "opinion": "重在对质量的要求上",
-          "evidence": "用户对资源的利用重在对质量的要求上",
+          "aspect": "资源质量",
+          "opinion": "应注重对资源质量的评估",
+          "evidence": "更重要的是对资源质量的评估",
           "object_text": "None"
         },
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "建设",
-          "opinion": "更重要的是对资源质量的评估",
-          "evidence": "在导航库今后的建设和完善中，除进行一定量的积累，更重要的是对资源质量的评估",
+          "aspect": "建设完善",
+          "opinion": "应注重对世界知名学府和权威网站地址的链接",
+          "evidence": "应注重对世界知名学府和权威网站地址的链接",
           "object_text": "None"
         }
       ]
@@ -1008,7 +1001,7 @@
           "evidence": "资源选取问题",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为研究问题，可能属于phenomenon或concept"
+          "uncertainty": "可能作为研究主题，但更偏向问题现象"
         },
         {
           "entity_id": "15_e2",
@@ -1034,7 +1027,7 @@
           "evidence": "如招生简章",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "可能属于report或guideline"
+          "uncertainty": "可能为具体文档类型"
         },
         {
           "entity_id": "15_e4",
@@ -1044,10 +1037,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "课程设置",
+          "evidence": "如课程设置",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "可能为concept或artifact"
+          "uncertainty": "可能为具体文档或概念"
         },
         {
           "entity_id": "15_e5",
@@ -1057,7 +1050,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "个人简历",
+          "evidence": "如个人简历",
           "is_specific_entity": true,
           "confidence": 0.8,
           "uncertainty": ""
@@ -1066,11 +1059,11 @@
           "entity_id": "15_e6",
           "mention": "大纲",
           "normalized_name": "大纲",
-          "candidate_l3": "guideline",
+          "candidate_l3": "report",
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "大纲",
+          "evidence": "如大纲",
           "is_specific_entity": true,
           "confidence": 0.8,
           "uncertainty": ""
@@ -1079,11 +1072,11 @@
           "entity_id": "15_e7",
           "mention": "试卷",
           "normalized_name": "试卷",
-          "candidate_l3": "instrument",
+          "candidate_l3": "report",
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "试卷",
+          "evidence": "如试卷",
           "is_specific_entity": true,
           "confidence": 0.8,
           "uncertainty": ""
@@ -1096,7 +1089,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "招聘公告",
+          "evidence": "如招聘公告",
           "is_specific_entity": true,
           "confidence": 0.8,
           "uncertainty": ""
@@ -1123,17 +1116,9 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "生存基础",
-          "opinion": "赖以生存的基础",
-          "evidence": "也是其赖以生存的基础",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "收录内容",
+          "aspect": "收录资源",
           "opinion": "非学术资源",
-          "evidence": "收录了一些非学术资源",
+          "evidence": "有些学科收录了一些非学术资源",
           "object_text": "None"
         }
       ]
@@ -1152,8 +1137,8 @@
           ],
           "evidence": "CALIS项目组在中期检查时发现这一问题并督促整改",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "可能为组织或项目，但此处作为研究计划"
+          "confidence": 0.95,
+          "uncertainty": ""
         },
         {
           "entity_id": "16_e2",
@@ -1165,7 +1150,7 @@
           ],
           "evidence": "影响了导航库的资源质量",
           "is_specific_entity": true,
-          "confidence": 0.95,
+          "confidence": 0.9,
           "uncertainty": ""
         }
       ],
@@ -1177,7 +1162,7 @@
           "aspect": "资源质量",
           "opinion": "影响了导航库的资源质量",
           "evidence": "影响了导航库的资源质量",
-          "object_text": "None"
+          "object_text": "2_e2"
         },
         {
           "subject": "_paper_author",
@@ -1185,7 +1170,7 @@
           "aspect": "用户信任度",
           "opinion": "影响用户对导航库的信任度",
           "evidence": "影响用户对导航库的信任度",
-          "object_text": "None"
+          "object_text": "2_e2"
         },
         {
           "subject": "_paper_author",
@@ -1193,7 +1178,7 @@
           "aspect": "使用效果",
           "opinion": "影响使用效果",
           "evidence": "从而影响使用效果",
-          "object_text": "None"
+          "object_text": "2_e2"
         }
       ]
     },
@@ -1212,7 +1197,7 @@
           "evidence": "资源标引问题",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为研究问题，可能属于concept或phenomenon"
+          "uncertainty": "作为问题主题，可能为phenomenon"
         },
         {
           "entity_id": "17_e2",
@@ -1231,7 +1216,7 @@
           "entity_id": "17_e3",
           "mention": "资源标引",
           "normalized_name": "资源标引",
-          "candidate_l3": "technique",
+          "candidate_l3": "method",
           "candidate_l1": [
             "Abstract"
           ],
@@ -1246,7 +1231,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "存在性",
+          "aspect": null,
           "opinion": "问题",
           "evidence": "资源标引问题",
           "object_text": "None"
@@ -1263,7 +1248,7 @@
           "subject": "_paper_author",
           "object": "_missing_entity",
           "aspect": "质量与深度",
-          "opinion": "取决于资源标引的质量与深度",
+          "opinion": "取决于",
           "evidence": "资源标引的质量与深度",
           "object_text": "None"
         }
@@ -1281,7 +1266,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "化学学科的资源量为6187条",
+          "evidence": "如化学学科的资源量为6187条",
           "is_specific_entity": true,
           "confidence": 0.9,
           "uncertainty": ""
@@ -1292,7 +1277,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "标引准确性",
+          "aspect": "标引",
           "opinion": "有误",
           "evidence": "标引有误",
           "object_text": "None"
@@ -1305,58 +1290,32 @@
       "entities": [
         {
           "entity_id": "19_e1",
-          "mention": "事件一研究项目",
-          "normalized_name": "事件一研究项目",
-          "candidate_l3": "research_program",
-          "candidate_l1": [
-            "Event"
-          ],
-          "evidence": "事件一研究项目",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "可能为具体项目名称"
-        },
-        {
-          "entity_id": "19_e2",
-          "mention": "一级学科一艺术学",
-          "normalized_name": "一级学科一艺术学",
-          "candidate_l3": "discipline",
+          "mention": "标引深度",
+          "normalized_name": "标引深度",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "一级学科一艺术学",
-          "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "19_e3",
-          "mention": "标引人员",
-          "normalized_name": "标引人员",
-          "candidate_l3": "practitioner",
-          "candidate_l1": [
-            "Agent"
-          ],
-          "evidence": "标引人员对资源的不同理解",
+          "evidence": "标引深度不够",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "泛称但指具体职业群体"
+          "uncertainty": "作为评价对象，可能属于概念"
         },
         {
-          "entity_id": "19_e4",
+          "entity_id": "19_e2",
           "mention": "导航库",
           "normalized_name": "导航库",
           "candidate_l3": "information_system",
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "导航库对每个资源都提供了",
+          "evidence": "导航库对每个资源都提供了“详细信息”的链接",
           "is_specific_entity": true,
           "confidence": 0.9,
           "uncertainty": ""
         },
         {
-          "entity_id": "19_e5",
+          "entity_id": "19_e3",
           "mention": "详细信息",
           "normalized_name": "详细信息",
           "candidate_l3": "concept",
@@ -1366,10 +1325,10 @@
           "evidence": "提供了“详细信息”的链接",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "可能为界面元素"
+          "uncertainty": "可能为界面元素，非独立实体"
         },
         {
-          "entity_id": "19_e6",
+          "entity_id": "19_e4",
           "mention": "资源描述",
           "normalized_name": "资源描述",
           "candidate_l3": "concept",
@@ -1382,20 +1341,20 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "19_e7",
-          "mention": "信息含量不高",
-          "normalized_name": "信息含量不高",
-          "candidate_l3": "phenomenon",
+          "entity_id": "19_e5",
+          "mention": "信息含量",
+          "normalized_name": "信息含量",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "信息含量不高的现象",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "可能为评价用语"
+          "uncertainty": "可能为评价方面"
         },
         {
-          "entity_id": "19_e8",
+          "entity_id": "19_e6",
           "mention": "独立资源",
           "normalized_name": "独立资源",
           "candidate_l3": "concept",
@@ -1405,36 +1364,10 @@
           "evidence": "很多独立资源仅限于对网站或网页栏目名称的简单罗列",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": ""
+          "uncertainty": "可能为资源类型"
         },
         {
-          "entity_id": "19_e9",
-          "mention": "网站",
-          "normalized_name": "网站",
-          "candidate_l3": "information_system",
-          "candidate_l1": [
-            "Artifact"
-          ],
-          "evidence": "对网站或网页栏目名称的简单罗列",
-          "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "泛称但指具体资源"
-        },
-        {
-          "entity_id": "19_e10",
-          "mention": "网页栏目名称",
-          "normalized_name": "网页栏目名称",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "对网站或网页栏目名称的简单罗列",
-          "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "19_e11",
+          "entity_id": "19_e7",
           "mention": "收藏特色",
           "normalized_name": "收藏特色",
           "candidate_l3": "concept",
@@ -1444,10 +1377,10 @@
           "evidence": "没有对独立资源的收藏特色、收藏范围、重点内容给予系统描述",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": ""
+          "uncertainty": "可能为评价方面"
         },
         {
-          "entity_id": "19_e12",
+          "entity_id": "19_e8",
           "mention": "收藏范围",
           "normalized_name": "收藏范围",
           "candidate_l3": "concept",
@@ -1457,10 +1390,10 @@
           "evidence": "没有对独立资源的收藏特色、收藏范围、重点内容给予系统描述",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": ""
+          "uncertainty": "可能为评价方面"
         },
         {
-          "entity_id": "19_e13",
+          "entity_id": "19_e9",
           "mention": "重点内容",
           "normalized_name": "重点内容",
           "candidate_l3": "concept",
@@ -1470,23 +1403,23 @@
           "evidence": "没有对独立资源的收藏特色、收藏范围、重点内容给予系统描述",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": ""
+          "uncertainty": "可能为评价方面"
         },
         {
-          "entity_id": "19_e14",
+          "entity_id": "19_e10",
           "mention": "外文网站",
           "normalized_name": "外文网站",
-          "candidate_l3": "information_system",
+          "candidate_l3": "concept",
           "candidate_l1": [
-            "Artifact"
+            "Abstract"
           ],
           "evidence": "大部分外文网站没有配以中文描述",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": ""
+          "uncertainty": "可能为资源类型"
         },
         {
-          "entity_id": "19_e15",
+          "entity_id": "19_e11",
           "mention": "中文描述",
           "normalized_name": "中文描述",
           "candidate_l3": "concept",
@@ -1496,36 +1429,10 @@
           "evidence": "没有配以中文描述",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": ""
+          "uncertainty": "可能为描述类型"
         },
         {
-          "entity_id": "19_e16",
-          "mention": "文字介绍",
-          "normalized_name": "文字介绍",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "有些网站甚至没有给予任何文字介绍和说明",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "19_e17",
-          "mention": "说明",
-          "normalized_name": "说明",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "有些网站甚至没有给予任何文字介绍和说明",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "19_e18",
+          "entity_id": "19_e12",
           "mention": "资源利用率",
           "normalized_name": "资源利用率",
           "candidate_l3": "concept",
@@ -1534,8 +1441,8 @@
           ],
           "evidence": "影响了资源的利用率",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": ""
+          "confidence": 0.85,
+          "uncertainty": "可能为评价方面"
         }
       ],
       "has_evaluation": true,
@@ -1543,7 +1450,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "标引深度",
+          "aspect": "深度",
           "opinion": "不够",
           "evidence": "标引深度不够",
           "object_text": "None"
@@ -1575,8 +1482,8 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "系统描述和揭示",
-          "opinion": "没有给予",
+          "aspect": "收藏特色、收藏范围、重点内容",
+          "opinion": "没有给予系统描述和揭示",
           "evidence": "没有对独立资源的收藏特色、收藏范围、重点内容给予系统描述和揭示",
           "object_text": "None"
         },
@@ -1591,15 +1498,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "文字介绍和说明",
-          "opinion": "没有给予",
-          "evidence": "有些网站甚至没有给予任何文字介绍和说明",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "资源利用率",
+          "aspect": "利用率",
           "opinion": "影响",
           "evidence": "影响了资源的利用率",
           "object_text": "None"
@@ -1707,7 +1606,7 @@
         {
           "entity_id": "22_e1",
           "mention": "CALIS\"十五\"\"重点学科网络资源导航库\"",
-          "normalized_name": "CALIS\"十五\"\"重点学科网络资源导航库\"",
+          "normalized_name": "CALIS重点学科网络资源导航库",
           "candidate_l3": "information_system",
           "candidate_l1": [
             "Artifact"
@@ -1725,7 +1624,7 @@
           "candidate_l1": [
             "Agent"
           ],
-          "evidence": "由 54个参建馆分别进行资源的收集、标引建设",
+          "evidence": "由54个参建馆分别进行资源的收集、标引建设",
           "is_specific_entity": true,
           "confidence": 0.9,
           "uncertainty": "具体数量但未列出馆名，作为整体组织"
@@ -1808,7 +1707,7 @@
           "evidence": "建立项目管理组和资源承建馆两级评估机制",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "具体名称未给出，但作为具体组织角色"
+          "uncertainty": "具体组织但未给出全称"
         },
         {
           "entity_id": "23_e4",
@@ -1821,33 +1720,7 @@
           "evidence": "建立项目管理组和资源承建馆两级评估机制",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "具体馆名未给出，但作为具体组织角色"
-        },
-        {
-          "entity_id": "23_e5",
-          "mention": "标准控制体系",
-          "normalized_name": "标准控制体系",
-          "candidate_l3": "framework",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "应在参建馆建立严格的标准控制体系",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "可能为概念或框架"
-        },
-        {
-          "entity_id": "23_e6",
-          "mention": "资源建设分级评估机制",
-          "normalized_name": "资源建设分级评估机制",
-          "candidate_l3": "framework",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "通过建立资源建设分级评估机制",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": ""
+          "uncertainty": "具体组织但未给出全称"
         }
       ],
       "has_evaluation": true,
@@ -1856,14 +1729,14 @@
           "subject": "_paper_author",
           "object": "_missing_entity",
           "aspect": "模式",
-          "opinion": "采用的是分布式数据收集、集中服务的模式",
+          "opinion": "分布式数据收集、集中服务的模式",
           "evidence": "采用的是分布式数据收集、集中服务的模式",
           "object_text": "None"
         },
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "标准控制",
+          "aspect": "标准控制体系",
           "opinion": "应建立严格的标准控制体系",
           "evidence": "应在参建馆建立严格的标准控制体系",
           "object_text": "None"
@@ -1871,9 +1744,9 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "质量评估",
-          "opinion": "调动每个馆对其所承建学科资源质量的控制和评估",
-          "evidence": "调动每个馆对其所承建学科资源质量的控制和评估",
+          "aspect": "评估机制",
+          "opinion": "建立资源建设分级评估机制",
+          "evidence": "通过建立资源建设分级评估机制",
           "object_text": "None"
         }
       ]
@@ -2000,17 +1873,25 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "资源建设规范",
-          "opinion": "无统一资源建设规范和标准",
-          "evidence": "无统一资源建设规范和标准",
+          "aspect": "覆盖范围",
+          "opinion": "基本覆盖了我国高校主要重点学科",
+          "evidence": "基本覆盖了我国高校主要重点学科",
           "object_text": "None"
         },
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "服务平台",
-          "opinion": "无统一服务平台",
-          "evidence": "无统一服务平台",
+          "aspect": "规模",
+          "opinion": "初具规模",
+          "evidence": "数据库初具规模",
+          "object_text": "None"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "服务方式",
+          "opinion": "各参建馆分别提供服务，无统一资源建设规范和标准，无统一服务平台",
+          "evidence": "各参建馆分别提供服务，无统一资源建设规范和标准，无统一服务平台",
           "object_text": "None"
         },
         {
@@ -2064,7 +1945,7 @@
           "evidence": "构建国航庚的学科仓类基础建设",
           "is_specific_entity": true,
           "confidence": 0.6,
-          "uncertainty": "疑似OCR错误，可能为'国防'或'国航'相关，但原文如此"
+          "uncertainty": "疑似OCR错误，可能为'国防'或'国航'相关"
         },
         {
           "entity_id": "non_2_e4",
@@ -2113,10 +1994,36 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "共同完成重点学科网络资源导航库的开发工作",
+          "evidence": "联合多家高校图书馆共同完成重点学科网络资源导航库的开发工作",
           "is_specific_entity": true,
           "confidence": 0.9,
           "uncertainty": ""
+        },
+        {
+          "entity_id": "non_2_e8",
+          "mention": "高校图书馆",
+          "normalized_name": "高校图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "联合多家高校图书馆共同完成",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称，但此处指具体参与的高校图书馆，可视为具体组织"
+        },
+        {
+          "entity_id": "non_2_e9",
+          "mention": "54个具有国家重点学科的高校的图书馆",
+          "normalized_name": "54个具有国家重点学科的高校的图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "共有54个具有国家重点学科的高校的图书馆参与资源建设",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "具体数量，但未列出具体名称"
         }
       ],
       "has_evaluation": true,
@@ -2124,7 +2031,15 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "服务",
+          "aspect": "改进",
+          "opinion": "做了改进",
+          "evidence": "在很多方面做了改进",
+          "object_text": "None"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "有效性",
           "opinion": "更有效",
           "evidence": "以期为高校教学科研人员提供更有效的网络资源导航服务",
           "object_text": "None"
@@ -2171,8 +2086,8 @@
           ],
           "evidence": "黄页资源亦以大学院系、研究",
           "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "可能为泛称，但此处指具体机构类型"
+          "confidence": 0.8,
+          "uncertainty": "可能指具体院系，但原文未明确具体名称"
         }
       ],
       "has_evaluation": true,
@@ -2180,18 +2095,18 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "比重",
+          "aspect": "所占比重",
           "opinion": "最大",
           "evidence": "中以黄页资源所占比重为最大",
-          "object_text": "None"
+          "object_text": "1_e1"
         },
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "学术性",
+          "aspect": "收录资源",
           "opinion": "体现了学术性的要求",
-          "evidence": "无论从资源类型还是学科门类角度都体现了学术性的要求",
-          "object_text": "None"
+          "evidence": "从导航库收录资源的情况看，无论从资源类型还是学科门类角度都体现了学术性的要求",
+          "object_text": "1_e2"
         }
       ]
     },
@@ -2249,7 +2164,7 @@
           "evidence": "注重对外文文献的收录",
           "is_specific_entity": false,
           "confidence": 0.4,
-          "uncertainty": "泛称文献类型，非具体文献"
+          "uncertainty": "泛称文献类型"
         }
       ],
       "has_evaluation": true,
@@ -2257,7 +2172,15 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "外文文献收录比例",
+          "aspect": "资源收录",
+          "opinion": "注重",
+          "evidence": "导航库注重对外文文献的收录",
+          "object_text": "None"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "外文文献比例",
           "opinion": "超过资源总量的一半以上",
           "evidence": "其所占比例已超过资源总量的一半以上",
           "object_text": "None"
@@ -2289,7 +2212,7 @@
           "candidate_l1": [
             "Agent"
           ],
-          "evidence": "用户可按教育部正式颁布的 11大学科门类",
+          "evidence": "教育部正式颁布的 11大学科门类",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -2423,7 +2346,7 @@
           "evidence": "分布于参考资源、全文资源、黄页资源的大学院系或研究机构",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "资源类型，可能为概念"
+          "uncertainty": "资源类型分类，非具体实体"
         },
         {
           "entity_id": "non_14_e3",
@@ -2436,7 +2359,7 @@
           "evidence": "分布于参考资源、全文资源、黄页资源的大学院系或研究机构",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "资源类型，可能为概念"
+          "uncertainty": "资源类型分类，非具体实体"
         },
         {
           "entity_id": "non_14_e4",
@@ -2449,7 +2372,7 @@
           "evidence": "分布于参考资源、全文资源、黄页资源的大学院系或研究机构",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "资源类型，可能为概念"
+          "uncertainty": "资源类型分类，非具体实体"
         },
         {
           "entity_id": "non_14_e5",
@@ -2461,8 +2384,8 @@
           ],
           "evidence": "全文资源的研究报告（45次）",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "具体报告未指明"
+          "confidence": 0.9,
+          "uncertainty": ""
         },
         {
           "entity_id": "non_14_e6",
@@ -2474,34 +2397,34 @@
           ],
           "evidence": "参考资源的文摘与索引（42次）",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "可能指具体索引工具"
+          "confidence": 0.9,
+          "uncertainty": ""
         },
         {
           "entity_id": "non_14_e7",
           "mention": "大学院系",
           "normalized_name": "大学院系",
-          "candidate_l3": "research",
+          "candidate_l3": "concept",
           "candidate_l1": [
-            "Agent"
+            "Abstract"
           ],
           "evidence": "黄页资源的大学院系（50次）",
           "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "泛称，但此处指具体院系"
+          "confidence": 0.8,
+          "uncertainty": "泛称，但作为资源类型出现"
         },
         {
           "entity_id": "non_14_e8",
           "mention": "研究机构",
           "normalized_name": "研究机构",
-          "candidate_l3": "research",
+          "candidate_l3": "concept",
           "candidate_l1": [
-            "Agent"
+            "Abstract"
           ],
           "evidence": "研究机构、中心（38次）",
           "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "泛称，但此处指具体机构"
+          "confidence": 0.8,
+          "uncertainty": "泛称，但作为资源类型出现"
         },
         {
           "entity_id": "non_14_e9",
@@ -2562,8 +2485,8 @@
           "subject": "_paper_author",
           "object": "_missing_entity",
           "aspect": "访问量",
-          "opinion": "达到25次以上",
-          "evidence": "访问量达到25次以上的独立资源有14个",
+          "opinion": "较高",
+          "evidence": "访问次数较高的全文资源和参考资源",
           "object_text": "None"
         },
         {
@@ -2577,7 +2500,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "学术水平",
+          "aspect": "学科研究水平",
           "opinion": "世界公认，领先水平",
           "evidence": "这些知名院校对一些学科的研究，如数学、心理学得到世界公认，属于领先水平",
           "object_text": "None"
@@ -2585,17 +2508,9 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "学术水平",
+          "aspect": "学科研究水平",
           "opinion": "世界公认，领先水平",
           "evidence": "这些知名院校对一些学科的研究，如数学、心理学得到世界公认，属于领先水平",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "资源质量",
-          "opinion": "较高学术价值",
-          "evidence": "访问次数较高的全文资源和参考资源都属于拥有较高学术价值的网站或网页",
           "object_text": "None"
         }
       ]
@@ -2625,7 +2540,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "资源的学术性是导航库的特色",
+          "evidence": "影响了导航库的资源质量",
           "is_specific_entity": true,
           "confidence": 0.9,
           "uncertainty": "可能指具体系统，但未给出名称"
@@ -2674,7 +2589,7 @@
           "evidence": "资源标引问题",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为问题现象，可能属于concept或phenomenon"
+          "uncertainty": "作为研究问题，可能属于phenomenon或concept"
         },
         {
           "entity_id": "non_16_e2",
@@ -2688,6 +2603,19 @@
           "is_specific_entity": true,
           "confidence": 0.9,
           "uncertainty": ""
+        },
+        {
+          "entity_id": "non_16_e3",
+          "mention": "资源标引",
+          "normalized_name": "资源标引",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "资源标引的质量与深度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
         }
       ],
       "has_evaluation": true,
@@ -2695,9 +2623,17 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "存在性",
-          "opinion": "存在",
+          "aspect": "存在",
+          "opinion": "问题",
           "evidence": "导航库存在的标引问题体现在两点",
+          "object_text": "None"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "作用发挥",
+          "opinion": "取决于资源标引的质量与深度",
+          "evidence": "导航库作用的发挥很大程度上取决于资源标引的质量与深度",
           "object_text": "None"
         }
       ]
@@ -2708,6 +2644,19 @@
       "entities": [
         {
           "entity_id": "non_17_e1",
+          "mention": "化学学科",
+          "normalized_name": "化学学科",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "化学学科的资源量为6187条",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "non_17_e2",
           "mention": "ABZU网站",
           "normalized_name": "ABZU网站",
           "candidate_l3": "information_system",
@@ -2720,7 +2669,7 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "non_17_e2",
+          "entity_id": "non_17_e3",
           "mention": "东方学",
           "normalized_name": "东方学",
           "candidate_l3": "discipline",
@@ -2733,120 +2682,224 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "non_17_e3",
-          "mention": "参考资源",
-          "normalized_name": "参考资源",
-          "candidate_l3": "concept",
+          "entity_id": "non_17_e4",
+          "mention": "参考资源一资源导航",
+          "normalized_name": "参考资源-资源导航",
+          "candidate_l3": "knowledge_organization_system",
           "candidate_l1": [
-            "Abstract"
+            "Artifact"
           ],
           "evidence": "被分别标引为：参考资源一资源导航",
           "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "可能为资源类型泛称"
-        },
-        {
-          "entity_id": "non_17_e4",
-          "mention": "资源导航",
-          "normalized_name": "资源导航",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "参考资源一资源导航",
-          "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "可能为资源类型泛称"
+          "confidence": 0.85,
+          "uncertainty": "可能为分类体系中的类目"
         },
         {
           "entity_id": "non_17_e5",
-          "mention": "外国语言文学",
-          "normalized_name": "外国语言文学",
+          "mention": "一级学科一外国语言文学",
+          "normalized_name": "一级学科-外国语言文学",
           "candidate_l3": "discipline",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "一级学科一外国语言文学",
           "is_specific_entity": true,
-          "confidence": 0.95,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
           "entity_id": "non_17_e6",
-          "mention": "全文资源",
-          "normalized_name": "全文资源",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "全文资源-数据库",
-          "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "可能为资源类型泛称"
-        },
-        {
-          "entity_id": "non_17_e7",
-          "mention": "数据库",
-          "normalized_name": "数据库",
+          "mention": "全文资源-数据库",
+          "normalized_name": "全文资源-数据库",
           "candidate_l3": "database",
           "candidate_l1": [
             "Artifact"
           ],
           "evidence": "全文资源-数据库",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "泛称，但此处作为资源类型"
+          "confidence": 0.85,
+          "uncertainty": "可能为资源类型"
         },
         {
-          "entity_id": "non_17_e8",
-          "mention": "历史学",
-          "normalized_name": "历史学",
+          "entity_id": "non_17_e7",
+          "mention": "一级学科一历史学",
+          "normalized_name": "一级学科-历史学",
           "candidate_l3": "discipline",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "一级学科一历史学",
           "is_specific_entity": true,
-          "confidence": 0.95,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
+          "entity_id": "non_17_e8",
+          "mention": "事件一研究项目",
+          "normalized_name": "事件-研究项目",
+          "candidate_l3": "research_program",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "事件一研究项目",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "可能为分类体系中的类目"
+        },
+        {
           "entity_id": "non_17_e9",
-          "mention": "事件",
-          "normalized_name": "事件",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "事件一研究项目",
-          "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "可能为资源类型泛称"
-        },
-        {
-          "entity_id": "non_17_e10",
-          "mention": "研究项目",
-          "normalized_name": "研究项目",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "事件一研究项目",
-          "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "可能为资源类型泛称"
-        },
-        {
-          "entity_id": "non_17_e11",
-          "mention": "艺术学",
-          "normalized_name": "艺术学",
+          "mention": "一级学科一艺术学",
+          "normalized_name": "一级学科-艺术学",
           "candidate_l3": "discipline",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "一级学科一艺术学",
           "is_specific_entity": true,
-          "confidence": 0.95,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "non_17_e10",
+          "mention": "导航库",
+          "normalized_name": "导航库",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "尽管导航库对每个资源都提供了“详细信息\"的链接",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "non_17_e11",
+          "mention": "详细信息",
+          "normalized_name": "详细信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "提供了“详细信息\"的链接",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "可能为通用概念"
+        },
+        {
+          "entity_id": "non_17_e12",
+          "mention": "资源描述",
+          "normalized_name": "资源描述",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "在资源描述方面还存在着信息含量不高的现象",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "non_17_e13",
+          "mention": "信息含量",
+          "normalized_name": "信息含量",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息含量不高的现象",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "可能为通用概念"
+        },
+        {
+          "entity_id": "non_17_e14",
+          "mention": "独立资源",
+          "normalized_name": "独立资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "很多独立资源仅限于对网站或网页栏目名称的简单罗列",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "可能为通用概念"
+        },
+        {
+          "entity_id": "non_17_e15",
+          "mention": "收藏特色",
+          "normalized_name": "收藏特色",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "没有对独立资源的收藏特色、收藏范围、重点内容给予系统描述和揭示",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "可能为通用概念"
+        },
+        {
+          "entity_id": "non_17_e16",
+          "mention": "收藏范围",
+          "normalized_name": "收藏范围",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "没有对独立资源的收藏特色、收藏范围、重点内容给予系统描述和揭示",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "可能为通用概念"
+        },
+        {
+          "entity_id": "non_17_e17",
+          "mention": "重点内容",
+          "normalized_name": "重点内容",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "没有对独立资源的收藏特色、收藏范围、重点内容给予系统描述和揭示",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "可能为通用概念"
+        },
+        {
+          "entity_id": "non_17_e18",
+          "mention": "外文网站",
+          "normalized_name": "外文网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "大部分外文网站没有配以中文描述",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "可能为泛称"
+        },
+        {
+          "entity_id": "non_17_e19",
+          "mention": "中文描述",
+          "normalized_name": "中文描述",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "没有配以中文描述",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "可能为通用概念"
+        },
+        {
+          "entity_id": "non_17_e20",
+          "mention": "资源利用率",
+          "normalized_name": "资源利用率",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "影响了资源的利用率",
+          "is_specific_entity": true,
+          "confidence": 0.8,
           "uncertainty": ""
         }
       ],
@@ -2879,9 +2932,17 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "资源描述信息含量",
-          "opinion": "不高",
-          "evidence": "信息含量不高的现象",
+          "aspect": "资源描述",
+          "opinion": "信息含量不高",
+          "evidence": "在资源描述方面还存在着信息含量不高的现象",
+          "object_text": "None"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "资源利用率",
+          "opinion": "影响",
+          "evidence": "影响了资源的利用率",
           "object_text": "None"
         }
       ]
@@ -2931,7 +2992,7 @@
           "evidence": "导航库的完善是长期建设的过程",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "可能指具体导航库，但未给出名称"
+          "uncertainty": ""
         },
         {
           "entity_id": "non_19_e2",
@@ -2957,7 +3018,7 @@
           "evidence": "由 54个参建馆分别进行资源的收集、标引建设",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "具体馆名未列出"
+          "uncertainty": "具体数量但未列出馆名"
         },
         {
           "entity_id": "non_19_e4",
@@ -2970,7 +3031,7 @@
           "evidence": "再上传到管理中心统一验收发布",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "具体机构名称未给出"
+          "uncertainty": "未指明具体机构名称"
         },
         {
           "entity_id": "non_19_e5",
@@ -2983,7 +3044,7 @@
           "evidence": "建立项目管理组和资源承建馆两级评估机制",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "具体机构名称未给出"
+          "uncertainty": "未指明具体机构名称"
         },
         {
           "entity_id": "non_19_e6",
@@ -2996,7 +3057,7 @@
           "evidence": "建立项目管理组和资源承建馆两级评估机制",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "具体机构名称未给出"
+          "uncertainty": "未指明具体机构名称"
         },
         {
           "entity_id": "non_19_e7",
@@ -3008,8 +3069,8 @@
           ],
           "evidence": "应在参建馆建立严格的标准控制体系",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "可能为具体体系，但未命名"
+          "confidence": 0.8,
+          "uncertainty": "可能为概念或框架"
         },
         {
           "entity_id": "non_19_e8",
@@ -3022,7 +3083,7 @@
           "evidence": "通过建立资源建设分级评估机制",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能为具体机制，但未命名"
+          "uncertainty": ""
         }
       ],
       "has_evaluation": true,
@@ -3046,32 +3107,16 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "意义",
-          "opinion": "更好地体现导航库建设的意义",
-          "evidence": "更好地体现导航库建设的意义",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
           "aspect": "模式",
-          "opinion": "采用的是分布式数据收集、集中服务的模式",
+          "opinion": "分布式数据收集、集中服务",
           "evidence": "采用的是分布式数据收集、集中服务的模式",
           "object_text": "None"
         },
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "标准",
-          "opinion": "遵照统一的标准",
-          "evidence": "虽然在资源的收集、描述方面遵照统一的标准",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
           "aspect": "理解偏差",
-          "opinion": "不排除由于每个馆、甚至每个人对同一问题理解角度的不同而存在的理解偏差",
+          "opinion": "存在",
           "evidence": "不排除由于每个馆、甚至每个人对同一问题理解角度的不同而存在的理解偏差",
           "object_text": "None"
         }

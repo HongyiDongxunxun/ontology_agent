@@ -27,7 +27,7 @@
           "candidate_l1": [
             "Event"
           ],
-          "evidence": "21世纪被学术界定位信息时代已经成为不刊之论",
+          "evidence": "21世纪被学术界定位信息时代",
           "is_specific_entity": true,
           "confidence": 0.9,
           "uncertainty": ""
@@ -76,19 +76,6 @@
       "entities": [
         {
           "entity_id": "3_e1",
-          "mention": "英国",
-          "normalized_name": "英国",
-          "candidate_l3": "governance",
-          "candidate_l1": [
-            "Agent"
-          ],
-          "evidence": "英国就提出地区协调",
-          "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "可能指英国政府或相关机构，但原文未明确具体组织"
-        },
-        {
-          "entity_id": "3_e2",
           "mention": "法明顿计划",
           "normalized_name": "法明顿计划",
           "candidate_l3": "policy_initiative",
@@ -99,58 +86,6 @@
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
-        },
-        {
-          "entity_id": "3_e3",
-          "mention": "美国",
-          "normalized_name": "美国",
-          "candidate_l3": "governance",
-          "candidate_l1": [
-            "Agent"
-          ],
-          "evidence": "美国的\"法明顿计划\"",
-          "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "可能指美国政府或相关机构，但原文未明确具体组织"
-        },
-        {
-          "entity_id": "3_e4",
-          "mention": "日本",
-          "normalized_name": "日本",
-          "candidate_l3": "governance",
-          "candidate_l1": [
-            "Agent"
-          ],
-          "evidence": "日本、西德、前苏联在这方面都作了许多努力",
-          "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "可能指日本政府或相关机构，但原文未明确具体组织"
-        },
-        {
-          "entity_id": "3_e5",
-          "mention": "西德",
-          "normalized_name": "西德",
-          "candidate_l3": "governance",
-          "candidate_l1": [
-            "Agent"
-          ],
-          "evidence": "日本、西德、前苏联在这方面都作了许多努力",
-          "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "可能指西德政府或相关机构，但原文未明确具体组织"
-        },
-        {
-          "entity_id": "3_e6",
-          "mention": "前苏联",
-          "normalized_name": "前苏联",
-          "candidate_l3": "governance",
-          "candidate_l1": [
-            "Agent"
-          ],
-          "evidence": "日本、西德、前苏联在这方面都作了许多努力",
-          "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "可能指前苏联政府或相关机构，但原文未明确具体组织"
         }
       ],
       "has_evaluation": true,
@@ -161,7 +96,7 @@
           "aspect": "协调布局",
           "opinion": "最典型的楷模",
           "evidence": "算是协调布局最典型的楷模",
-          "object_text": "None"
+          "object_text": "1_e1"
         }
       ]
     },
@@ -201,7 +136,7 @@
           "evidence": "图书馆的高度自动化、数字化、网络化是实现文献信息资源共享的基础",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为技术发展概念，非具体系统或事件"
+          "uncertainty": "作为技术发展概念，非具体系统"
         },
         {
           "entity_id": "5_e2",
@@ -222,7 +157,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "基础性",
+          "aspect": "基础作用",
           "opinion": "是实现文献信息资源共享的基础",
           "evidence": "图书馆的高度自动化、数字化、网络化是实现文献信息资源共享的基础",
           "object_text": "None"
@@ -243,63 +178,11 @@
           ],
           "evidence": "信息社会图书馆所面临的是它的社会读者",
           "is_specific_entity": true,
-          "confidence": 0.8,
+          "confidence": 0.85,
           "uncertainty": "作为社会形态概念，非具体实体"
         },
         {
           "entity_id": "6_e2",
-          "mention": "图书馆",
-          "normalized_name": "图书馆",
-          "candidate_l3": "service",
-          "candidate_l1": [
-            "Agent"
-          ],
-          "evidence": "信息社会图书馆所面临的是它的社会读者",
-          "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "泛称机构，但此处指具体类型，可考虑不抽取"
-        },
-        {
-          "entity_id": "6_e3",
-          "mention": "社会读者",
-          "normalized_name": "社会读者",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "信息社会图书馆所面临的是它的社会读者",
-          "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "作为概念，非具体个人"
-        },
-        {
-          "entity_id": "6_e4",
-          "mention": "全方位服务",
-          "normalized_name": "全方位服务",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "所提供的又是全方位的服务",
-          "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "作为服务理念，非具体实体"
-        },
-        {
-          "entity_id": "6_e5",
-          "mention": "新型关系",
-          "normalized_name": "新型关系",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "建立起相互依赖，相互补充的新型关系",
-          "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "作为抽象概念"
-        },
-        {
-          "entity_id": "6_e6",
           "mention": "高度自动化",
           "normalized_name": "高度自动化",
           "candidate_l3": "concept",
@@ -308,11 +191,11 @@
           ],
           "evidence": "只有高度自动化、数字化、网络化",
           "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "作为技术概念"
+          "confidence": 0.8,
+          "uncertainty": "技术概念，非具体系统"
         },
         {
-          "entity_id": "6_e7",
+          "entity_id": "6_e3",
           "mention": "数字化",
           "normalized_name": "数字化",
           "candidate_l3": "concept",
@@ -321,11 +204,11 @@
           ],
           "evidence": "只有高度自动化、数字化、网络化",
           "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "作为技术概念"
+          "confidence": 0.8,
+          "uncertainty": "技术概念，非具体系统"
         },
         {
-          "entity_id": "6_e8",
+          "entity_id": "6_e4",
           "mention": "网络化",
           "normalized_name": "网络化",
           "candidate_l3": "concept",
@@ -334,11 +217,11 @@
           ],
           "evidence": "只有高度自动化、数字化、网络化",
           "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "作为技术概念"
+          "confidence": 0.8,
+          "uncertainty": "技术概念，非具体系统"
         },
         {
-          "entity_id": "6_e9",
+          "entity_id": "6_e5",
           "mention": "电子计算机",
           "normalized_name": "电子计算机",
           "candidate_l3": "concept",
@@ -348,10 +231,10 @@
           "evidence": "只有在电子计算机和现代通信网络的基础上才能实现",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "作为技术设备概念，非具体设备"
+          "uncertainty": "设备种类，非具体名称"
         },
         {
-          "entity_id": "6_e10",
+          "entity_id": "6_e6",
           "mention": "现代通信网络",
           "normalized_name": "现代通信网络",
           "candidate_l3": "concept",
@@ -361,7 +244,7 @@
           "evidence": "只有在电子计算机和现代通信网络的基础上才能实现",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "作为技术概念"
+          "uncertainty": "技术体系，非具体系统"
         }
       ],
       "has_evaluation": false,
@@ -403,7 +286,7 @@
           "evidence": "它和公共教育系统联网",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "可能指代具体系统，但原文未明确名称"
+          "uncertainty": "可能指具体系统，但未给出名称"
         },
         {
           "entity_id": "8_e2",
@@ -416,7 +299,7 @@
           "evidence": "它和图书文化系统联网",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "可能指代具体系统，但原文未明确名称"
+          "uncertainty": "可能指具体系统，但未给出名称"
         },
         {
           "entity_id": "8_e3",
@@ -432,8 +315,17 @@
           "uncertainty": "作为技术概念讨论"
         }
       ],
-      "has_evaluation": false,
-      "relations": []
+      "has_evaluation": true,
+      "relations": [
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "工作方式变革",
+          "opinion": "巨大变革",
+          "evidence": "使人们的工作方式发生巨大变革",
+          "object_text": "None"
+        }
+      ]
     },
     {
       "sentence_id": "9",
@@ -463,7 +355,7 @@
           "evidence": "图书馆管理模式也将发生根本的改变",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "作为管理概念，非具体系统"
+          "uncertainty": "作为管理理念或模式，非具体系统"
         },
         {
           "entity_id": "9_e3",
@@ -474,9 +366,9 @@
             "Agent"
           ],
           "evidence": "大多数图书馆的发展战略",
-          "is_specific_entity": false,
+          "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "泛称机构类别，不指具体图书馆"
+          "uncertainty": "泛称机构，但此处指具体图书馆群体，可视为组织"
         },
         {
           "entity_id": "9_e4",
@@ -515,12 +407,12 @@
           "evidence": "而不是馆藏本身",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "作为馆藏概念"
+          "uncertainty": "作为图书馆资源概念"
         },
         {
           "entity_id": "9_e7",
-          "mention": "图书馆的采购经费",
-          "normalized_name": "图书馆的采购经费",
+          "mention": "采购经费",
+          "normalized_name": "采购经费",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
@@ -528,7 +420,7 @@
           "evidence": "图书馆的采购经费将从采购图书转向采购信息",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "作为经费概念"
+          "uncertainty": "作为财务概念"
         },
         {
           "entity_id": "9_e8",
@@ -541,7 +433,7 @@
           "evidence": "将从采购图书转向采购信息",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "作为采购行为概念"
+          "uncertainty": "作为业务活动"
         },
         {
           "entity_id": "9_e9",
@@ -554,7 +446,7 @@
           "evidence": "转向采购信息",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "作为采购行为概念"
+          "uncertainty": "作为业务活动"
         }
       ],
       "has_evaluation": true,
@@ -600,7 +492,7 @@
           "evidence": "大型图书馆将结成“超级联盟”",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能为概念或组织，但原文未明确具体组织"
+          "uncertainty": "可能为特定概念或模式"
         },
         {
           "entity_id": "10_e2",
@@ -613,7 +505,7 @@
           "evidence": "发展成可供其他图书馆共同利用的馆藏基地",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "可能为概念或设施，但原文未明确具体实体"
+          "uncertainty": "可能为特定概念"
         },
         {
           "entity_id": "10_e3",
@@ -626,7 +518,7 @@
           "evidence": "地方图书馆将成为转接中心",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "泛称机构，但原文作为具体角色讨论"
+          "uncertainty": "泛称机构，但此处指具体类型"
         },
         {
           "entity_id": "10_e4",
@@ -639,7 +531,7 @@
           "evidence": "地方图书馆将成为转接中心",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "可能为概念或设施"
+          "uncertainty": "可能为特定概念"
         },
         {
           "entity_id": "10_e5",
@@ -652,7 +544,7 @@
           "evidence": "而不是藏书中心",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "可能为概念或设施"
+          "uncertainty": "可能为特定概念"
         },
         {
           "entity_id": "10_e6",
@@ -665,7 +557,7 @@
           "evidence": "图书馆的质量不仅是馆藏的质量",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为评价对象，可能为概念"
+          "uncertainty": "可能为评价对象"
         },
         {
           "entity_id": "10_e7",
@@ -678,23 +570,36 @@
           "evidence": "不仅是馆藏的质量",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为评价对象，可能为概念"
+          "uncertainty": "可能为评价对象"
         },
         {
           "entity_id": "10_e8",
-          "mention": "电子信息服务的能力",
-          "normalized_name": "电子信息服务的能力",
+          "mention": "电子信息服务",
+          "normalized_name": "电子信息服务",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "而且要看其利用全世界信息资源的电子信息服务的能力",
+          "evidence": "利用全世界信息资源的电子信息服务的能力",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为评价对象，可能为概念"
+          "uncertainty": "可能为特定服务类型"
         },
         {
           "entity_id": "10_e9",
+          "mention": "全世界信息资源",
+          "normalized_name": "全世界信息资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用全世界信息资源的电子信息服务的能力",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "可能为特定资源集合"
+        },
+        {
+          "entity_id": "10_e10",
           "mention": "用户",
           "normalized_name": "用户",
           "candidate_l3": "practitioner",
@@ -704,10 +609,10 @@
           "evidence": "用户期待的是提供更准确、更及时、更多的信息服务",
           "is_specific_entity": true,
           "confidence": 0.6,
-          "uncertainty": "泛称用户，但作为行为主体"
+          "uncertainty": "泛称用户，但此处指具体群体"
         },
         {
-          "entity_id": "10_e10",
+          "entity_id": "10_e11",
           "mention": "信息服务",
           "normalized_name": "信息服务",
           "candidate_l3": "concept",
@@ -716,11 +621,11 @@
           ],
           "evidence": "提供更准确、更及时、更多的信息服务",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "可能为概念或服务类型"
+          "confidence": 0.85,
+          "uncertainty": "可能为特定服务类型"
         },
         {
-          "entity_id": "10_e11",
+          "entity_id": "10_e12",
           "mention": "电子信息化",
           "normalized_name": "电子信息化",
           "candidate_l3": "concept",
@@ -730,23 +635,23 @@
           "evidence": "随着电子信息化的发展",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能为概念或趋势"
+          "uncertainty": "可能为技术趋势"
         },
         {
-          "entity_id": "10_e12",
-          "mention": "纸张出版物存放这一模式",
-          "normalized_name": "纸张出版物存放模式",
+          "entity_id": "10_e13",
+          "mention": "纸张出版物",
+          "normalized_name": "纸张出版物",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "图书馆将打破纸张出版物存放这一模式",
+          "evidence": "打破纸张出版物存放这一模式",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能为概念或模式"
+          "uncertainty": "可能为特定载体"
         },
         {
-          "entity_id": "10_e13",
+          "entity_id": "10_e14",
           "mention": "网络传输",
           "normalized_name": "网络传输",
           "candidate_l3": "concept",
@@ -755,8 +660,8 @@
           ],
           "evidence": "通过网络传输,获取各种有用的信息",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "可能为技术概念"
+          "confidence": 0.85,
+          "uncertainty": "可能为技术方式"
         }
       ],
       "has_evaluation": true,
@@ -764,9 +669,17 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
+          "aspect": "模式",
+          "opinion": "结成超级联盟",
+          "evidence": "大型图书馆将结成“超级联盟”",
+          "object_text": "None"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
           "aspect": "功能",
-          "opinion": "结成超级联盟，发展成馆藏基地",
-          "evidence": "大型图书馆将结成“超级联盟”,发展成可供其他图书馆共同利用的馆藏基地",
+          "opinion": "发展成可供其他图书馆共同利用的馆藏基地",
+          "evidence": "发展成可供其他图书馆共同利用的馆藏基地",
           "object_text": "None"
         },
         {
@@ -796,9 +709,25 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
+          "aspect": "发展",
+          "opinion": "随着电子信息化的发展",
+          "evidence": "随着电子信息化的发展",
+          "object_text": "None"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
           "aspect": "模式",
-          "opinion": "将打破纸张出版物存放这一模式",
-          "evidence": "图书馆将打破纸张出版物存放这一模式",
+          "opinion": "打破纸张出版物存放这一模式",
+          "evidence": "打破纸张出版物存放这一模式",
+          "object_text": "None"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "方式",
+          "opinion": "通过网络传输,获取各种有用的信息",
+          "evidence": "通过网络传输,获取各种有用的信息",
           "object_text": "None"
         }
       ]
@@ -857,7 +786,7 @@
           "evidence": "主题\"图书馆与社会发展\"",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为会议主题，可视为概念"
+          "uncertainty": "作为会议主题，可能为概念"
         },
         {
           "entity_id": "11_e5",
@@ -870,7 +799,7 @@
           "evidence": "主题：“变革的挑战,图书馆与经济发展”",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为会议主题，可视为概念"
+          "uncertainty": "作为会议主题，可能为概念"
         },
         {
           "entity_id": "11_e6",
@@ -883,7 +812,7 @@
           "evidence": "研究图书馆事业的发展与社会经济发展的关系",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "复合研究对象，整体抽取"
+          "uncertainty": "可能为研究主题"
         },
         {
           "entity_id": "11_e7",
@@ -893,10 +822,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "研究图书馆事业与经济建设的关系",
+          "evidence": "提出研究图书馆事业与经济建设的关系",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "复合研究对象，整体抽取"
+          "uncertainty": "可能为研究主题"
         },
         {
           "entity_id": "11_e8",
@@ -909,7 +838,7 @@
           "evidence": "正确反映了世界图书馆事业研究及发展趋向",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "复合研究对象，整体抽取"
+          "uncertainty": "可能为研究主题"
         }
       ],
       "has_evaluation": true,
@@ -918,15 +847,7 @@
           "subject": "_paper_author",
           "object": "_missing_entity",
           "aspect": "主题",
-          "opinion": "都是研究图书馆事业的发展与社会经济发展的关系",
-          "evidence": "都是研究图书馆事业的发展与社会经济发展的关系",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "主题",
-          "opinion": "都是研究图书馆事业的发展与社会经济发展的关系",
+          "opinion": "研究图书馆事业的发展与社会经济发展的关系",
           "evidence": "都是研究图书馆事业的发展与社会经济发展的关系",
           "object_text": "None"
         },
@@ -955,7 +876,7 @@
           "evidence": "图书馆之所以能够存在与发展",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "泛称机构，但此处作为整体讨论其职能，可视为具体组织类型"
+          "uncertainty": "泛称机构，但作为主体讨论其职能，可视为具体组织类型"
         },
         {
           "entity_id": "12_e2",
@@ -969,6 +890,19 @@
           "is_specific_entity": true,
           "confidence": 0.85,
           "uncertainty": "作为职能概念，非具体实体"
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "开发文献信息职能",
+          "normalized_name": "开发文献信息职能",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆的职能从保存、传播职能向开发文献信息职能延伸",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为职能概念"
         }
       ],
       "has_evaluation": false,
@@ -1002,7 +936,7 @@
           "evidence": "图书馆又是信息产业的一部分",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "泛称，但作为机构类型，可能不满足具体性"
+          "uncertainty": "泛称机构，但此处作为整体概念讨论"
         },
         {
           "entity_id": "13_e3",
@@ -1015,7 +949,7 @@
           "evidence": "如美国图书馆是全美五大信息系统之一",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "可能指美国图书馆系统，具体性存疑"
+          "uncertainty": "指美国图书馆系统，非具体机构"
         },
         {
           "entity_id": "13_e4",
@@ -1027,8 +961,8 @@
           ],
           "evidence": "美国图书馆是全美五大信息系统之一",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "可能为特定系统集合，但未具体命名"
+          "confidence": 0.85,
+          "uncertainty": "作为系统分类概念"
         },
         {
           "entity_id": "13_e5",
@@ -1040,21 +974,21 @@
           ],
           "evidence": "英国的图书馆事业与英国经济发展紧密结合",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为事业概念，非具体实体"
+          "confidence": 0.9,
+          "uncertainty": "作为事业概念"
         },
         {
           "entity_id": "13_e6",
           "mention": "英国经济发展",
           "normalized_name": "英国经济发展",
-          "candidate_l3": "concept",
+          "candidate_l3": "phenomenon",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "与英国经济发展紧密结合",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为经济领域概念"
+          "confidence": 0.85,
+          "uncertainty": "作为经济现象"
         }
       ],
       "has_evaluation": true,
@@ -1100,10 +1034,23 @@
           "evidence": "日本主要大学图书馆成为日本全国信息网络中心",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "泛称机构，但可指代具体大学图书馆群体"
+          "uncertainty": "泛称，但可指具体大学图书馆群体"
         },
         {
           "entity_id": "14_e2",
+          "mention": "日本全国信息网络中心",
+          "normalized_name": "日本全国信息网络中心",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "成为日本全国信息网络中心",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "可能为机构或系统"
+        },
+        {
+          "entity_id": "14_e3",
           "mention": "《中华人民共和国国民经济和社会发展“九五”计划和2010年远景标纲要》",
           "normalized_name": "《中华人民共和国国民经济和社会发展“九五”计划和2010年远景目标纲要》",
           "candidate_l3": "policy",
@@ -1116,7 +1063,7 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "14_e3",
+          "entity_id": "14_e4",
           "mention": "邹家华",
           "normalized_name": "邹家华",
           "candidate_l3": "policy_advocate",
@@ -1129,7 +1076,7 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "14_e4",
+          "entity_id": "14_e5",
           "mention": "经济信息化领导小组",
           "normalized_name": "经济信息化领导小组",
           "candidate_l3": "governance",
@@ -1138,11 +1085,11 @@
           ],
           "evidence": "国务院决定成立经济信息化领导小组",
           "is_specific_entity": true,
-          "confidence": 0.95,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
-          "entity_id": "14_e5",
+          "entity_id": "14_e6",
           "mention": "信息革命",
           "normalized_name": "信息革命",
           "candidate_l3": "phenomenon",
@@ -1155,7 +1102,7 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "14_e6",
+          "entity_id": "14_e7",
           "mention": "信息经济世纪",
           "normalized_name": "信息经济世纪",
           "candidate_l3": "concept",
@@ -1165,7 +1112,7 @@
           "evidence": "预言家们把21世纪定义为信息经济世纪",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为概念命名"
+          "uncertainty": "可能为概念或趋势"
         }
       ],
       "has_evaluation": false,
@@ -1183,10 +1130,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "如Digital Librarians,Cybrarians,InformationCiar,Archirists等",
+          "evidence": "如 Digital Librarians,Cybrarians,InformationCiar,Archirists等",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为新称呼术语"
+          "uncertainty": "作为新称呼，属于概念"
         },
         {
           "entity_id": "15_e2",
@@ -1196,10 +1143,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "如Digital Librarians,Cybrarians,InformationCiar,Archirists等",
+          "evidence": "如 Digital Librarians,Cybrarians,InformationCiar,Archirists等",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为新称呼术语"
+          "uncertainty": ""
         },
         {
           "entity_id": "15_e3",
@@ -1209,10 +1156,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "如Digital Librarians,Cybrarians,InformationCiar,Archirists等",
+          "evidence": "如 Digital Librarians,Cybrarians,InformationCiar,Archirists等",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为新称呼术语"
+          "uncertainty": ""
         },
         {
           "entity_id": "15_e4",
@@ -1222,10 +1169,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "如Digital Librarians,Cybrarians,InformationCiar,Archirists等",
+          "evidence": "如 Digital Librarians,Cybrarians,InformationCiar,Archirists等",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为新称呼术语"
+          "uncertainty": ""
         },
         {
           "entity_id": "15_e5",
@@ -1264,7 +1211,7 @@
           "evidence": "应该是信息专家和信息工程师",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为角色概念"
+          "uncertainty": "作为角色概念，非具体个人"
         },
         {
           "entity_id": "15_e8",
@@ -1277,7 +1224,7 @@
           "evidence": "应该是信息专家和信息工程师",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为角色概念"
+          "uncertainty": "作为角色概念，非具体个人"
         },
         {
           "entity_id": "15_e9",
@@ -1317,11 +1264,11 @@
           "object_text": "None"
         },
         {
-          "subject": "1_e6",
+          "subject": "_cite[1]",
           "object": "_missing_entity",
           "aspect": "角色定位",
           "opinion": "应该是信息专家和信息工程师，是信息系统的建设者，也是使用的向导和顾问",
-          "evidence": "现在的图书馆、档案馆,情报单位的人员,应该是信息专家和信息工程师，是信息系统的建设者，也是使用的向导和顾问。",
+          "evidence": "应该是信息专家和信息工程师，是信息系统的建设者，也是使用的向导和顾问",
           "object_text": "None"
         }
       ]

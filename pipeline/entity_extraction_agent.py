@@ -47,13 +47,14 @@ ENTITY_EXTRACTION_PROMPT = (
     "1. candidate_l1 允许多个，模糊实体可标多个候选 L1\n"
     "2. evidence 是从原句中截取能证明该实体存在的文本片段\n\n"
     "## Workflow\n"
-    "1. 读取待分析评价句\n"
-    "2. 扫描句中所有名词短语/专有名词\n"
-    "3. 逐一过实体性门槛 → 剔除泛称、通用词、评价用语\n"
-    "4. 对通过过滤的短语 → 判定 candidate_l3 (从 Background 分类体系中选)\n"
-    "5. 对每个实体判定 candidate_l1 (可多选，召回优先)\n"
-    "6. 提取 evidence (原句中的证据片段)\n"
-    "7. 按 OutputFormat 输出严格 JSON\n\n"
+    "1. 读取待分析评价句，先判断是否存在评价表达或评价判断。\n"
+    "2. 若存在评价，先抽取评价关系草图: subject、aspect、opinion、evidence，并标出原文中可能的评价对象文本。\n"
+    "3. 对每条评价关系执行 Object Resolution: 根据 aspect/opinion 回溯真正被评价的对象。\n"
+    "4. 将每个已解析出的评价对象反推为必须抽取的 Entity，优先保留完整研究对象/主题对象边界。\n"
+    "5. 再补充句中与评价关系无直接绑定、但仍符合 Agent/Artifact/Abstract/Event 分类体系的有效实体。\n"
+    "6. 对所有 Entity 判定 candidate_l3、candidate_l1，并提取 evidence。\n"
+    "7. 用已生成的 entity_id 回填 relation.object；不要在 relation.object 中使用未进入 entities 的新 ID。\n"
+    "8. 按 OutputFormat 输出严格 JSON。\n\n"
     "## Background\n"
     "### 一、Agent (行为主体) — 能产生学术行为的主体\n"
     "**Person (个人)** — 刚性类型，身份不随评价语境改变\n"
@@ -158,7 +159,7 @@ ENTITY_EXTRACTION_PROMPT = (
     "- `conference_meeting`: 学术会议(具体召开的会议/年会/论坛)\n"
     "  > vs conference_paper(Artifact): paper 是会议论文制品，meeting 是会议召开本身\n\n"
     "## Evaluation Relation Recognition (评价关系识别)\n"
-    "在完成实体抽取后，请继续识别句子中的评价关系。\n\n"
+    "请先识别句子中的评价关系，再根据评价关系所需的 object 反推并抽取实体。\n\n"
     "### 评价判定:\n"
     "评价是指作者、引用文献作者或其他评价主体，对某一对象作出的正向、负向或中性的判断、概括、评价、比较或总结。\n"
     "典型评价用语: 重要、有效、丰富、较高、较低、明显、成熟、完善、不足、较好、优于、落后、提高、降低、具有……价值、存在……问题、有待……\n"
@@ -257,7 +258,14 @@ ENTITY_EXTRACTION_PROMPT = (
 
 ENTITY_EXTRACTION_PROMPT = ENTITY_EXTRACTION_PROMPT.replace(
     "## Input\n{statement}",
-    """## Academic Evaluation Object Rules (增强规则)
+"""## Academic Evaluation Object Rules (增强规则)
+本任务采用“先找评价关系，后抽取实体”的关系优先策略：
+1. 先识别句中的评价触发、opinion、aspect 和 evidence。
+2. 再通过 Object Resolution 确定每条评价真正指向的 object 文本。
+3. 最后把这些 object 文本作为必须进入 entities 的候选实体，生成实体列表并用 entity_id 回填 relation.object。
+4. 若某个短语只是 aspect，不要放入 entities；若某个短语是被评价 object，即使它不是传统命名实体，也应作为 Entity 抽取。
+5. entities 必须覆盖所有可解析的 relation.object。不要先因为实体列表缺失而把关系 object 写成 _missing_entity。
+
 请明确区分四类成分：
 1. Entity: 文本中具有独立语义、可作为知识图谱节点的对象。
 2. Evaluation Object: 评价关系中被评价的核心对象，通常来自 Entity，并在 relation.object 中填写对应 entity_id。
@@ -291,6 +299,18 @@ object = 被评价的核心对象 entity_id
 aspect = 评价方面；没有则为 null
 opinion = 评价表达
 evidence = 支持该评价的最小原文片段
+
+评价对象回溯（Object Resolution）：
+先识别 aspect 与 opinion，再判断“这个评价是在评价哪个实体”。不要因为 aspect 不是实体，就直接输出 _missing_entity。
+1. 优先绑定已有实体：若 aspect 属于某个已抽取实体的属性、组成部分、发展情况、研究维度或评价维度，object 必须绑定该实体。
+2. Aspect 不是 Object：aspect 表示评价维度，object 表示真正被评价的对象。例如“作者分布不合理”若句子讨论“农村图书馆研究”，object=农村图书馆研究，aspect=作者分布。
+3. 寻找 aspect 所属对象：当 aspect 出现时，优先向左寻找其所属对象。
+   - “数字图書館建設的發展速度較快” -> object=数字图書館建設, aspect=發展速度, opinion=較快。
+   - “法明頓計畫在協調布局方面堪稱典範” -> object=法明頓計畫, aspect=協調布局, opinion=堪稱典範。
+4. 允许跨短语回溯：object 不一定紧邻 aspect。例如“近年来，档案信息化建设取得快速发展，其理论研究仍存在不足”中，“理论研究/不足”应回溯到“档案信息化建设”。
+5. 仅当当前句不存在任何可作为评价对象的实体、aspect 无法归属于任何实体、且上下文无法确定评价对象时，才使用 _missing_entity。
+6. Entity 优先原则：多个候选实体时，选择最直接被评价、语义距离最近、且能够完整支撑 aspect 的实体。不要选择地名、时间、修饰语。
+7. Aspect 属于 object，不是独立 object。例如“研究水平偏低”：object=农村图书馆研究，aspect=研究水平，opinion=偏低；不要 object=研究水平。
 
 例如：
 句子：“我国农村图书馆研究取得了一定成绩，但作者分布不合理、研究水平偏低。”

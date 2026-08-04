@@ -60,7 +60,7 @@
         },
         {
           "entity_id": "1_e5",
-          "mention": "《全国档案信息化建设实施纲要》（档发[2002]8号)",
+          "mention": "《全国档案信息化建设实施纲要》（档发[2002]8号）",
           "normalized_name": "《全国档案信息化建设实施纲要》",
           "candidate_l3": "policy",
           "candidate_l1": [
@@ -81,8 +81,8 @@
           ],
           "evidence": "档案信息化建设的步伐越走越快",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为建设主题，非具体实体"
+          "confidence": 0.9,
+          "uncertainty": "作为研究主题"
         },
         {
           "entity_id": "1_e7",
@@ -94,8 +94,8 @@
           ],
           "evidence": "对国内档案信息化建设方面的文章进行统计分析",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为研究主题"
+          "confidence": 0.9,
+          "uncertainty": "作为研究对象"
         }
       ],
       "has_evaluation": true,
@@ -103,7 +103,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "步伐",
+          "aspect": "发展速度",
           "opinion": "越走越快",
           "evidence": "档案信息化建设的步伐越走越快",
           "object_text": "None"
@@ -130,10 +130,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "档案信息化建设的文章最早出现在1997年",
+          "evidence": "档案信息化建设",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为研究主题，非具体技术"
+          "uncertainty": ""
         },
         {
           "entity_id": "2_e2",
@@ -143,10 +143,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "以“档案信息化建设”“档案信息资源建设\"分别为入口词",
+          "evidence": "档案信息资源建设",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为研究主题"
+          "uncertainty": ""
         },
         {
           "entity_id": "2_e3",
@@ -169,7 +169,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "发表在中国博士学位论文全文数据库",
+          "evidence": "中国博士学位论文全文数据库",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -182,7 +182,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "发表在中国优秀硕士学位论文全文数据库",
+          "evidence": "中国优秀硕士学位论文全文数据库",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -206,7 +206,7 @@
           "evidence": "我国对档案信息化建设进行研究的文章",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为研究主题，非具体制品"
+          "uncertainty": ""
         }
       ],
       "has_evaluation": true,
@@ -215,8 +215,16 @@
           "subject": "_paper_author",
           "object": "_missing_entity",
           "aspect": "研究趋势",
-          "opinion": "快速增长、急剧增长",
-          "evidence": "2003年开始有快速的上升趋势，2007年增长较为急剧但略低于2003年",
+          "opinion": "快速增长",
+          "evidence": "2003年开始有快速的上升趋势",
+          "object_text": "None"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "研究趋势",
+          "opinion": "增长较为急剧但略低于2003年",
+          "evidence": "2007年增长较为急剧但略低于2003年",
           "object_text": "None"
         }
       ]
@@ -236,7 +244,7 @@
           "evidence": "主要对档案信息化建设的基本认识、现状、趋势等方面进行了阐述",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": ""
+          "uncertainty": "作为研究主题，非具体系统或标准"
         },
         {
           "entity_id": "4_e2",
@@ -249,7 +257,7 @@
           "evidence": "针对具体的数字化和电子政务以及档案信息化建设对人的组织管理的研究",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能指代数字化建设"
+          "uncertainty": "作为技术概念，非具体系统"
         },
         {
           "entity_id": "4_e3",
@@ -261,8 +269,8 @@
           ],
           "evidence": "针对具体的数字化和电子政务以及档案信息化建设对人的组织管理的研究",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
+          "confidence": 0.85,
+          "uncertainty": "作为应用领域概念"
         }
       ],
       "has_evaluation": true,
@@ -318,36 +326,11 @@
           "evidence": "对信息化建设中人的组织管理方面的研究",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能为复合概念"
+          "uncertainty": "复合研究对象"
         }
       ],
-      "has_evaluation": true,
-      "relations": [
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "研究必要性",
-          "opinion": "应进一步加强",
-          "evidence": "应进一步加强",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "研究必要性",
-          "opinion": "应进一步加强",
-          "evidence": "应进一步加强",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "研究必要性",
-          "opinion": "应进一步加强",
-          "evidence": "应进一步加强",
-          "object_text": "None"
-        }
-      ]
+      "has_evaluation": false,
+      "relations": []
     },
     {
       "sentence_id": "6",
@@ -363,8 +346,8 @@
           ],
           "evidence": "档案管理现代化建设取得显著成绩",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为业务理念，非具体实体"
+          "confidence": 0.9,
+          "uncertainty": "作为建设概念，非具体事件"
         },
         {
           "entity_id": "6_e2",
@@ -376,8 +359,8 @@
           ],
           "evidence": "档案信息资源正处于大力开发利用之中",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为抽象资源概念"
+          "confidence": 0.9,
+          "uncertainty": "作为资源概念，非具体数据集"
         }
       ],
       "has_evaluation": true,
@@ -388,6 +371,14 @@
           "aspect": "成绩",
           "opinion": "显著",
           "evidence": "取得显著成绩",
+          "object_text": "None"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "信息化程度",
+          "opinion": "逐步提高",
+          "evidence": "信息化程度逐步提高",
           "object_text": "None"
         },
         {
@@ -419,19 +410,6 @@
         },
         {
           "entity_id": "7_e2",
-          "mention": "基础设施建设",
-          "normalized_name": "基础设施建设",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "在基础设施建设方面还存在着诸如项目易立，资金难求的困难",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "7_e3",
           "mention": "东部和中西部",
           "normalized_name": "东部和中西部",
           "candidate_l3": "concept",
@@ -440,11 +418,11 @@
           ],
           "evidence": "东部和中西部存在着信息技术、网络通信、数据仓库、经费支持等方面的巨大“鸿沟”",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "区域概念，非具体机构"
+          "confidence": 0.85,
+          "uncertainty": "作为区域概念，非具体机构"
         },
         {
-          "entity_id": "7_e4",
+          "entity_id": "7_e3",
           "mention": "信息技术",
           "normalized_name": "信息技术",
           "candidate_l3": "concept",
@@ -453,11 +431,11 @@
           ],
           "evidence": "信息技术、网络通信、数据仓库、经费支持等方面的巨大“鸿沟”",
           "is_specific_entity": true,
-          "confidence": 0.85,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
-          "entity_id": "7_e5",
+          "entity_id": "7_e4",
           "mention": "网络通信",
           "normalized_name": "网络通信",
           "candidate_l3": "concept",
@@ -466,11 +444,11 @@
           ],
           "evidence": "信息技术、网络通信、数据仓库、经费支持等方面的巨大“鸿沟”",
           "is_specific_entity": true,
-          "confidence": 0.85,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
-          "entity_id": "7_e6",
+          "entity_id": "7_e5",
           "mention": "数据仓库",
           "normalized_name": "数据仓库",
           "candidate_l3": "concept",
@@ -479,11 +457,11 @@
           ],
           "evidence": "信息技术、网络通信、数据仓库、经费支持等方面的巨大“鸿沟”",
           "is_specific_entity": true,
-          "confidence": 0.85,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
-          "entity_id": "7_e7",
+          "entity_id": "7_e6",
           "mention": "经费支持",
           "normalized_name": "经费支持",
           "candidate_l3": "concept",
@@ -492,11 +470,11 @@
           ],
           "evidence": "信息技术、网络通信、数据仓库、经费支持等方面的巨大“鸿沟”",
           "is_specific_entity": true,
-          "confidence": 0.85,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
-          "entity_id": "7_e8",
+          "entity_id": "7_e7",
           "mention": "鸿沟",
           "normalized_name": "鸿沟",
           "candidate_l3": "phenomenon",
@@ -509,33 +487,7 @@
           "uncertainty": "数字鸿沟的隐喻"
         },
         {
-          "entity_id": "7_e9",
-          "mention": "信息设施配置",
-          "normalized_name": "信息设施配置",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "信息设施配置不合理",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "7_e10",
-          "mention": "盲目投资",
-          "normalized_name": "盲目投资",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "盲目投资也影响了基础设施建设的发展",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "7_e11",
+          "entity_id": "7_e8",
           "mention": "张照余",
           "normalized_name": "张照余",
           "candidate_l3": "scholar",
@@ -548,9 +500,9 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "7_e12",
+          "entity_id": "7_e9",
           "mention": "《档案信息化建设现状、问题与对策》",
-          "normalized_name": "档案信息化建设现状、问题与对策",
+          "normalized_name": "《档案信息化建设现状、问题与对策》",
           "candidate_l3": "journal_article",
           "candidate_l1": [
             "Artifact"
@@ -561,7 +513,7 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "7_e13",
+          "entity_id": "7_e10",
           "mention": "档案信息化发展",
           "normalized_name": "档案信息化发展",
           "candidate_l3": "concept",
@@ -574,46 +526,46 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "7_e14",
+          "entity_id": "7_e11",
           "mention": "瓶颈",
           "normalized_name": "瓶颈",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "档案信息化发展的“瓶颈”是经费投入不足",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e12",
+          "mention": "经费投入不足",
+          "normalized_name": "经费投入不足",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "档案信息化发展的“瓶颈”是经费投入不足",
           "is_specific_entity": true,
-          "confidence": 0.85,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
-          "entity_id": "7_e15",
-          "mention": "经费投入",
-          "normalized_name": "经费投入",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "经费投入不足",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "7_e16",
+          "entity_id": "7_e13",
           "mention": "开源节流",
           "normalized_name": "开源节流",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "开源节流不够",
+          "evidence": "而在于“开源节流\"不够",
           "is_specific_entity": true,
-          "confidence": 0.85,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
-          "entity_id": "7_e17",
+          "entity_id": "7_e14",
           "mention": "投入效益",
           "normalized_name": "投入效益",
           "candidate_l3": "concept",
@@ -622,7 +574,7 @@
           ],
           "evidence": "投入效益有待提高",
           "is_specific_entity": true,
-          "confidence": 0.85,
+          "confidence": 0.9,
           "uncertainty": ""
         }
       ],
@@ -639,15 +591,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "区域差异",
-          "opinion": "巨大鸿沟",
-          "evidence": "东部和中西部存在着信息技术、网络通信、数据仓库、经费支持等方面的巨大“鸿沟”",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "合理性",
+          "aspect": "信息设施配置",
           "opinion": "不合理",
           "evidence": "信息设施配置不合理",
           "object_text": "None"
@@ -655,13 +599,13 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "影响",
-          "opinion": "影响基础设施建设发展",
+          "aspect": "盲目投资",
+          "opinion": "影响了基础设施建设的发展",
           "evidence": "盲目投资也影响了基础设施建设的发展",
           "object_text": "None"
         },
         {
-          "subject": "1_e11",
+          "subject": "1_e8",
           "object": "_missing_entity",
           "aspect": "瓶颈",
           "opinion": "不以为然",
@@ -669,27 +613,11 @@
           "object_text": "None"
         },
         {
-          "subject": "1_e11",
+          "subject": "1_e8",
           "object": "_missing_entity",
-          "aspect": "经费投入",
-          "opinion": "不是问题所在",
-          "evidence": "他认为问题不在于政府投入太少",
-          "object_text": "None"
-        },
-        {
-          "subject": "1_e11",
-          "object": "_missing_entity",
-          "aspect": "开源节流",
-          "opinion": "不够",
-          "evidence": "而在于“开源节流”不够",
-          "object_text": "None"
-        },
-        {
-          "subject": "1_e11",
-          "object": "_missing_entity",
-          "aspect": "投入效益",
-          "opinion": "有待提高",
-          "evidence": "投入效益有待提高",
+          "aspect": "问题",
+          "opinion": "不在于政府投入太少，而在于“开源节流”不够，投入效益有待提高",
+          "evidence": "他认为问题不在于政府投入太少，而在于“开源节流\"不够，投入效益有待提高",
           "object_text": "None"
         }
       ]
@@ -722,7 +650,7 @@
           "evidence": "各级档案馆藏超过了2.1亿卷",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "泛称机构，但此处指具体层级机构，可识别"
+          "uncertainty": "泛称机构，但此处指具体层级，可视为具体组织"
         },
         {
           "entity_id": "8_e3",
@@ -739,29 +667,29 @@
         },
         {
           "entity_id": "8_e4",
-          "mention": "档案信息资源开发理念的缺失",
-          "normalized_name": "档案信息资源开发理念的缺失",
-          "candidate_l3": "phenomenon",
+          "mention": "档案信息资源开发理念",
+          "normalized_name": "档案信息资源开发理念",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "档案信息资源开发理念的缺失与档案信息需求主体的改变",
+          "evidence": "档案信息资源开发理念的缺失",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为现象描述"
+          "confidence": 0.9,
+          "uncertainty": ""
         },
         {
           "entity_id": "8_e5",
-          "mention": "档案信息需求主体的改变",
-          "normalized_name": "档案信息需求主体的改变",
-          "candidate_l3": "phenomenon",
+          "mention": "档案信息需求主体",
+          "normalized_name": "档案信息需求主体",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "档案信息需求主体的改变导致社会档案信息需求的丰富化、全面化和差异化",
+          "evidence": "档案信息需求主体的改变",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为现象描述"
+          "confidence": 0.9,
+          "uncertainty": ""
         },
         {
           "entity_id": "8_e6",
@@ -771,10 +699,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "社会档案信息需求的丰富化、全面化和差异化",
+          "evidence": "导致社会档案信息需求的丰富化、全面化和差异化",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为研究对象"
+          "uncertainty": ""
         }
       ],
       "has_evaluation": true,
@@ -784,14 +712,14 @@
           "object": "_missing_entity",
           "aspect": "数量和质量",
           "opinion": "有了很大改观",
-          "evidence": "数量和质量都有了很大改观",
+          "evidence": "档案信息资源的数量和质量都有了很大改观",
           "object_text": "None"
         },
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
           "aspect": "特点",
-          "opinion": "呈现出多途径、多样化的特点",
+          "opinion": "多途径、多样化",
           "evidence": "呈现出多途径、多样化的特点",
           "object_text": "None"
         },
@@ -807,15 +735,7 @@
           "subject": "_paper_author",
           "object": "_missing_entity",
           "aspect": null,
-          "opinion": "改变",
-          "evidence": "档案信息需求主体的改变",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "丰富化、全面化和差异化",
-          "opinion": "导致社会档案信息需求的丰富化、全面化和差异化",
+          "opinion": "丰富化、全面化和差异化",
           "evidence": "导致社会档案信息需求的丰富化、全面化和差异化",
           "object_text": "None"
         }
@@ -835,8 +755,8 @@
           ],
           "evidence": "档案信息资源开发理念的缺失",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为概念讨论"
+          "confidence": 0.9,
+          "uncertainty": ""
         },
         {
           "entity_id": "9_e2",
@@ -848,8 +768,8 @@
           ],
           "evidence": "档案信息需求主体的改变",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为概念讨论"
+          "confidence": 0.9,
+          "uncertainty": ""
         },
         {
           "entity_id": "9_e3",
@@ -861,8 +781,8 @@
           ],
           "evidence": "社会档案信息需求的丰富化、全面化和差异化",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为概念讨论"
+          "confidence": 0.9,
+          "uncertainty": ""
         },
         {
           "entity_id": "9_e4",
@@ -874,8 +794,8 @@
           ],
           "evidence": "档案馆的档案信息资源管理的主体地位",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "具体机构类型，但未指明具体档案馆，可能为泛称"
+          "confidence": 0.95,
+          "uncertainty": ""
         },
         {
           "entity_id": "9_e5",
@@ -885,10 +805,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "档案信息资源管理的主体地位",
+          "evidence": "档案馆的档案信息资源管理的主体地位",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为概念讨论"
+          "confidence": 0.9,
+          "uncertainty": ""
         },
         {
           "entity_id": "9_e6",
@@ -900,8 +820,8 @@
           ],
           "evidence": "条块结合的体制",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为概念讨论"
+          "confidence": 0.9,
+          "uncertainty": ""
         },
         {
           "entity_id": "9_e7",
@@ -913,8 +833,8 @@
           ],
           "evidence": "对档案信息资源结构等问题的研究不够深入",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为概念讨论"
+          "confidence": 0.9,
+          "uncertainty": ""
         },
         {
           "entity_id": "9_e8",
@@ -926,8 +846,8 @@
           ],
           "evidence": "档案立法在非国有档案监管、电子文件归档、越位立法等方面存在的问题",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为概念讨论"
+          "confidence": 0.9,
+          "uncertainty": ""
         },
         {
           "entity_id": "9_e9",
@@ -939,8 +859,8 @@
           ],
           "evidence": "非国有档案监管",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为概念讨论"
+          "confidence": 0.9,
+          "uncertainty": ""
         },
         {
           "entity_id": "9_e10",
@@ -952,8 +872,8 @@
           ],
           "evidence": "电子文件归档",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为概念讨论"
+          "confidence": 0.9,
+          "uncertainty": ""
         },
         {
           "entity_id": "9_e11",
@@ -965,8 +885,8 @@
           ],
           "evidence": "越位立法",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为概念讨论"
+          "confidence": 0.9,
+          "uncertainty": ""
         },
         {
           "entity_id": "9_e12",
@@ -978,8 +898,8 @@
           ],
           "evidence": "阻碍了档案信息资源建设",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为概念讨论"
+          "confidence": 0.9,
+          "uncertainty": ""
         },
         {
           "entity_id": "9_e13",
@@ -991,8 +911,8 @@
           ],
           "evidence": "政府信息化建设事倍功半",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为概念讨论"
+          "confidence": 0.9,
+          "uncertainty": ""
         },
         {
           "entity_id": "9_e14",
@@ -1139,19 +1059,6 @@
         },
         {
           "entity_id": "9_e25",
-          "mention": "档案信息资源开发理念的现代化",
-          "normalized_name": "档案信息资源开发理念的现代化",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "档案信息资源开发理念的现代化",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为概念讨论"
-        },
-        {
-          "entity_id": "9_e26",
           "mention": "档案信息资源开发制度",
           "normalized_name": "档案信息资源开发制度",
           "candidate_l3": "concept",
@@ -1160,8 +1067,8 @@
           ],
           "evidence": "构建有效的档案信息资源开发制度",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为概念讨论"
+          "confidence": 0.9,
+          "uncertainty": ""
         }
       ],
       "has_evaluation": true,
@@ -1231,27 +1138,35 @@
           "object_text": "None"
         },
         {
-          "subject": "_cite[1]",
+          "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "模式",
-          "opinion": "提出",
+          "aspect": "观点",
+          "opinion": "认为应建立新的适应转型期的档案信息资源管理模式",
+          "evidence": "多数学者认为应建立新的适应转型期的档案信息资源管理模式",
+          "object_text": "None"
+        },
+        {
+          "subject": "1_e15",
+          "object": "_missing_entity",
+          "aspect": "提出模式",
+          "opinion": "提出了社会化开放模式、档案信息资源管理中心模式、档案信息资源管理的市场运作模式以及档案信息资源管理的网络化模式",
           "evidence": "叶晗在《论转型期的档案信息资源管理模式》一文中提出了社会化开放模式、档案信息资源管理中心模式、档案信息资源管理的市场运作模式以及档案信息资源管理的网络化模式",
           "object_text": "None"
         },
         {
-          "subject": "_cite[2]",
+          "subject": "1_e21",
           "object": "_missing_entity",
-          "aspect": "模式",
-          "opinion": "提出",
+          "aspect": "提出模式",
+          "opinion": "提出应在传统模式的基础上尝试档案信息资源复合动态服务模式",
           "evidence": "吕元智在《论现阶段我国档案信息资源复合动态服务模式构建》一文中提出应在传统模式的基础上尝试档案信息资源复合动态服务模式",
           "object_text": "None"
         },
         {
-          "subject": "_cite[3]",
+          "subject": "1_e24",
           "object": "_missing_entity",
           "aspect": "基础",
-          "opinion": "指出",
-          "evidence": "倪丽娟则在其文章中指出要构建新的管理模式必须基于两个基础",
+          "opinion": "必须基于两个基础",
+          "evidence": "倪丽娟则在其文章中指出要构建新的管理模式必须基于两个基础：一是档案信息资源开发理念的现代化；二是构建有效的档案信息资源开发制度",
           "object_text": "None"
         }
       ]
@@ -1270,8 +1185,8 @@
           ],
           "evidence": "构建有效的档案信息资源开发制度",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
+          "confidence": 0.85,
+          "uncertainty": "作为制度概念，非具体政策文件"
         },
         {
           "entity_id": "10_e2",
@@ -1281,10 +1196,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "信息管理的体制问题",
+          "evidence": "（1）信息管理的体制问题",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": ""
+          "confidence": 0.8,
+          "uncertainty": "作为问题概念，非具体实体"
         },
         {
           "entity_id": "10_e3",
@@ -1294,10 +1209,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "各类体制的配套问题",
+          "evidence": "（2）各类体制的配套问题",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": ""
+          "confidence": 0.8,
+          "uncertainty": "作为问题概念，非具体实体"
         }
       ],
       "has_evaluation": true,
@@ -1385,11 +1300,11 @@
       "has_evaluation": true,
       "relations": [
         {
-          "subject": "_paper_author",
+          "subject": "_cite[1]",
           "object": "_missing_entity",
           "aspect": "现状",
           "opinion": "进行了一番调查",
-          "evidence": "对湖南省档案信息化建设的现状进行了一番调查",
+          "evidence": "曾有学者在2005年对湖南省档案信息化建设的现状进行了一番调查",
           "object_text": "1_e1"
         },
         {
@@ -1397,7 +1312,7 @@
           "object": "_missing_entity",
           "aspect": "普及率",
           "opinion": "比较高",
-          "evidence": "普及率比较高",
+          "evidence": "档案管理应用系统在全省各级档案馆的普及率比较高",
           "object_text": "1_e2"
         },
         {
@@ -1415,6 +1330,14 @@
           "opinion": "没有构建起",
           "evidence": "也没有构建起大规模的国家档案数据库",
           "object_text": "1_e4"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "概念、服务模式、可能影响",
+          "opinion": "探讨较多",
+          "evidence": "在数字档案馆方面探讨较多的是数字档案馆概念，服务模式，可能影响等",
+          "object_text": "1_e5"
         }
       ]
     },
@@ -1472,7 +1395,7 @@
           "evidence": "数字档案馆建设的基础已经存在",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": ""
+          "uncertainty": "作为建设概念"
         },
         {
           "entity_id": "12_e5",
@@ -1485,7 +1408,7 @@
           "evidence": "只在深圳、青岛等几个地方进行了试点性质的尝试",
           "is_specific_entity": true,
           "confidence": 0.6,
-          "uncertainty": "地名，非具体机构，但作为试点地点提及"
+          "uncertainty": "地名，但作为试点地点，非实体"
         },
         {
           "entity_id": "12_e6",
@@ -1498,7 +1421,7 @@
           "evidence": "只在深圳、青岛等几个地方进行了试点性质的尝试",
           "is_specific_entity": true,
           "confidence": 0.6,
-          "uncertainty": "地名，非具体机构，但作为试点地点提及"
+          "uncertainty": "地名，但作为试点地点，非实体"
         },
         {
           "entity_id": "12_e7",
@@ -1511,7 +1434,7 @@
           "evidence": "由于基础理论研究的薄弱",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为研究对象"
+          "uncertainty": "作为研究领域"
         },
         {
           "entity_id": "12_e8",
@@ -1524,7 +1447,7 @@
           "evidence": "馆藏档案数字化的不足",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": ""
+          "uncertainty": "作为建设内容"
         },
         {
           "entity_id": "12_e9",
@@ -1537,7 +1460,7 @@
           "evidence": "人才资源的匮乏",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "泛称，但作为制约因素"
+          "uncertainty": "作为资源概念"
         },
         {
           "entity_id": "12_e10",
@@ -1550,12 +1473,12 @@
           "evidence": "配套法律法规的不完善",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "泛称，但作为制约因素"
+          "uncertainty": "作为制度概念"
         },
         {
           "entity_id": "12_e11",
-          "mention": "档案信息资源整合",
-          "normalized_name": "档案信息资源整合",
+          "mention": "档案信息资源",
+          "normalized_name": "档案信息资源",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
@@ -1641,7 +1564,7 @@
           "evidence": "依托电子政务建设",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": ""
+          "uncertainty": "作为建设概念"
         },
         {
           "entity_id": "12_e18",
@@ -1666,8 +1589,8 @@
           ],
           "evidence": "依托电子政务平台",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "泛指平台，无具体名称"
+          "confidence": 0.9,
+          "uncertainty": ""
         }
       ],
       "has_evaluation": true,
@@ -1691,7 +1614,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "研究水平",
+          "aspect": "薄弱",
           "opinion": "薄弱",
           "evidence": "基础理论研究的薄弱",
           "object_text": "None"
@@ -1699,7 +1622,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "数字化程度",
+          "aspect": "不足",
           "opinion": "不足",
           "evidence": "馆藏档案数字化的不足",
           "object_text": "None"
@@ -1707,7 +1630,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "人才资源",
+          "aspect": "匮乏",
           "opinion": "匮乏",
           "evidence": "人才资源的匮乏",
           "object_text": "None"
@@ -1715,7 +1638,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "法律法规完善度",
+          "aspect": "不完善",
           "opinion": "不完善",
           "evidence": "配套法律法规的不完善",
           "object_text": "None"
@@ -1783,24 +1706,11 @@
           ],
           "evidence": "这与“十五”《纲要》中的规划相差甚远",
           "is_specific_entity": true,
-          "confidence": 0.95,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
           "entity_id": "13_e5",
-          "mention": "标准制定工作",
-          "normalized_name": "标准制定工作",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "标准制定工作落后",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为研究对象"
-        },
-        {
-          "entity_id": "13_e6",
           "mention": "档案信息化标准的建设",
           "normalized_name": "档案信息化标准建设",
           "candidate_l3": "concept",
@@ -1810,10 +1720,10 @@
           "evidence": "制约了档案信息化标准的建设",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": ""
+          "uncertainty": "作为研究对象"
         },
         {
-          "entity_id": "13_e7",
+          "entity_id": "13_e6",
           "mention": "规范性原则",
           "normalized_name": "规范性原则",
           "candidate_l3": "concept",
@@ -1822,11 +1732,11 @@
           ],
           "evidence": "首先应坚持规范性原则",
           "is_specific_entity": true,
-          "confidence": 0.85,
+          "confidence": 0.8,
           "uncertainty": ""
         },
         {
-          "entity_id": "13_e8",
+          "entity_id": "13_e7",
           "mention": "标准体系",
           "normalized_name": "标准体系",
           "candidate_l3": "concept",
@@ -1835,11 +1745,11 @@
           ],
           "evidence": "完善档案信息化方面的标准体系",
           "is_specific_entity": true,
-          "confidence": 0.85,
+          "confidence": 0.8,
           "uncertainty": ""
         },
         {
-          "entity_id": "13_e9",
+          "entity_id": "13_e8",
           "mention": "元数据描述",
           "normalized_name": "元数据描述",
           "candidate_l3": "concept",
@@ -1848,11 +1758,11 @@
           ],
           "evidence": "在元数据描述上有学者提出标准分层的设想",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.85,
           "uncertainty": ""
         },
         {
-          "entity_id": "13_e10",
+          "entity_id": "13_e9",
           "mention": "标准分层的设想",
           "normalized_name": "标准分层设想",
           "candidate_l3": "concept",
@@ -1861,11 +1771,11 @@
           ],
           "evidence": "有学者提出标准分层的设想",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.85,
           "uncertainty": ""
         },
         {
-          "entity_id": "13_e11",
+          "entity_id": "13_e10",
           "mention": "数据内容标准",
           "normalized_name": "数据内容标准",
           "candidate_l3": "standard",
@@ -1874,11 +1784,11 @@
           ],
           "evidence": "一是数据内容标准",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.85,
           "uncertainty": ""
         },
         {
-          "entity_id": "13_e12",
+          "entity_id": "13_e11",
           "mention": "数据价值标准",
           "normalized_name": "数据价值标准",
           "candidate_l3": "standard",
@@ -1887,7 +1797,7 @@
           ],
           "evidence": "二是数据价值标准",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.85,
           "uncertainty": ""
         }
       ],
@@ -1920,7 +1830,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "水平",
+          "aspect": "制定工作",
           "opinion": "落后",
           "evidence": "标准制定工作落后",
           "object_text": "None"
@@ -2020,7 +1930,7 @@
           "candidate_l1": [
             "Agent"
           ],
-          "evidence": "张照余指出产生这一不平衡的因素",
+          "evidence": "张照余指出产生这一不平衡的因素主要有",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -2047,7 +1957,7 @@
           "aspect": "信息化素养",
           "opinion": "总体偏低",
           "evidence": "档案从业者的信息化素养总体偏低",
-          "object_text": "None"
+          "object_text": "5"
         }
       ]
     },
@@ -2070,8 +1980,21 @@
         },
         {
           "entity_id": "16_e2",
-          "mention": "档案从业者的信息化素养",
-          "normalized_name": "档案从业者的信息化素养",
+          "mention": "档案从业者",
+          "normalized_name": "档案从业者",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "档案从业者的信息化素养总体偏低",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "泛称但作为群体被评价，可视为具体群体"
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "信息化素养",
+          "normalized_name": "信息化素养",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
@@ -2079,33 +2002,33 @@
           "evidence": "档案从业者的信息化素养总体偏低",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能作为评价方面，但此处作为研究对象"
-        },
-        {
-          "entity_id": "16_e3",
-          "mention": "技术型人才",
-          "normalized_name": "技术型人才",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "技术型人才严重缺乏",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "泛称人才，但作为具体类型"
+          "uncertainty": "作为概念被评价"
         },
         {
           "entity_id": "16_e4",
+          "mention": "技术型人才",
+          "normalized_name": "技术型人才",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "技术型人才严重缺乏",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称但作为群体被评价"
+        },
+        {
+          "entity_id": "16_e5",
           "mention": "中间性人才",
           "normalized_name": "中间性人才",
-          "candidate_l3": "concept",
+          "candidate_l3": "practitioner",
           "candidate_l1": [
-            "Abstract"
+            "Agent"
           ],
           "evidence": "“中间性\"人(所谓中间性人才是指既懂管理又懂技术的人)缺失",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
+          "confidence": 0.85,
+          "uncertainty": "泛称但作为群体被评价"
         }
       ],
       "has_evaluation": true,
@@ -2124,7 +2047,7 @@
           "aspect": null,
           "opinion": "严重缺乏",
           "evidence": "技术型人才严重缺乏",
-          "object_text": "1_e3"
+          "object_text": "1_e4"
         },
         {
           "subject": "1_e1",
@@ -2132,7 +2055,7 @@
           "aspect": null,
           "opinion": "缺失",
           "evidence": "“中间性\"人(所谓中间性人才是指既懂管理又懂技术的人)缺失",
-          "object_text": "1_e4"
+          "object_text": "1_e5"
         }
       ]
     },
@@ -2177,7 +2100,7 @@
           "evidence": "《关于档案信息化人才队伍建议的反思》",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "作为文章主题，可能为concept"
+          "uncertainty": "可能为文章主题，但作为概念讨论"
         },
         {
           "entity_id": "17_e4",
@@ -2190,7 +2113,7 @@
           "evidence": "单纯的IT人不等于信息化人",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为术语讨论"
+          "uncertainty": "作为概念讨论"
         },
         {
           "entity_id": "17_e5",
@@ -2203,7 +2126,7 @@
           "evidence": "单纯的IT人不等于信息化人",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为术语讨论"
+          "uncertainty": "作为概念讨论"
         },
         {
           "entity_id": "17_e6",
@@ -2215,7 +2138,7 @@
           ],
           "evidence": "战略性预测人才最重要",
           "is_specific_entity": true,
-          "confidence": 0.8,
+          "confidence": 0.85,
           "uncertainty": "作为人才类型概念"
         },
         {
@@ -2255,7 +2178,7 @@
           "evidence": "目前的信息人才需求主要有四种类型",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为研究对象"
+          "uncertainty": "作为概念讨论"
         }
       ],
       "has_evaluation": true,
@@ -2271,7 +2194,7 @@
         {
           "subject": "1_e1",
           "object": "_missing_entity",
-          "aspect": "重要性",
+          "aspect": "人才类型",
           "opinion": "最重要",
           "evidence": "战略性预测人才最重要",
           "object_text": "None"
@@ -2279,7 +2202,7 @@
         {
           "subject": "1_e1",
           "object": "_missing_entity",
-          "aspect": "必要性",
+          "aspect": "人才类型",
           "opinion": "必不可少",
           "evidence": "“通才”必不可少",
           "object_text": "None"
@@ -2287,7 +2210,7 @@
         {
           "subject": "1_e1",
           "object": "_missing_entity",
-          "aspect": "缺失",
+          "aspect": "决策者",
           "opinion": "缺少",
           "evidence": "缺少真正懂行的决策者",
           "object_text": "None"
@@ -2309,106 +2232,11 @@
           "evidence": "档案信息化建设的研究型人、管理人、实用操作型人以及法律人",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为研究主题或概念"
-        },
-        {
-          "entity_id": "18_e2",
-          "mention": "研究型人",
-          "normalized_name": "研究型人",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "档案信息化建设的研究型人、管理人、实用操作型人以及法律人",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "人才类型，可能为概念"
-        },
-        {
-          "entity_id": "18_e3",
-          "mention": "管理人",
-          "normalized_name": "管理人",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "档案信息化建设的研究型人、管理人、实用操作型人以及法律人",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "人才类型，可能为概念"
-        },
-        {
-          "entity_id": "18_e4",
-          "mention": "实用操作型人",
-          "normalized_name": "实用操作型人",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "档案信息化建设的研究型人、管理人、实用操作型人以及法律人",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "人才类型，可能为概念"
-        },
-        {
-          "entity_id": "18_e5",
-          "mention": "法律人",
-          "normalized_name": "法律人",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "档案信息化建设的研究型人、管理人、实用操作型人以及法律人",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "人才类型，可能为概念"
-        },
-        {
-          "entity_id": "18_e6",
-          "mention": "高新技术手段",
-          "normalized_name": "高新技术手段",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "要正确处理运用高新技术手段与培养高素质人才的关系",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "技术手段，可能为概念"
-        },
-        {
-          "entity_id": "18_e7",
-          "mention": "高素质人才",
-          "normalized_name": "高素质人才",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "清醒认识档案信息化建设对高素质人才的迫切需求",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "人才类型，可能为概念"
+          "uncertainty": "作为研究主题，非具体系统"
         }
       ],
-      "has_evaluation": true,
-      "relations": [
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "人才需求",
-          "opinion": "迫切",
-          "evidence": "清醒认识档案信息化建设对高素质人才的迫切需求",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "关系处理",
-          "opinion": "正确",
-          "evidence": "要正确处理运用高新技术手段与培养高素质人才的关系",
-          "object_text": "None"
-        }
-      ]
+      "has_evaluation": false,
+      "relations": []
     },
     {
       "sentence_id": "19",
@@ -2425,7 +2253,7 @@
           "evidence": "通过高等院校培养高层次档案信息管理人才",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "泛称机构，但此处指具体类型，可识别为组织"
+          "uncertainty": "泛称机构，但此处指具体类型，可视为组织"
         },
         {
           "entity_id": "19_e2",
@@ -2450,7 +2278,7 @@
           ],
           "evidence": "通过继续教育",
           "is_specific_entity": true,
-          "confidence": 0.8,
+          "confidence": 0.85,
           "uncertainty": "作为教育形式，可视为概念"
         },
         {
@@ -2464,7 +2292,7 @@
           "evidence": "开展学术研讨",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "泛指学术研讨活动，非具体会议"
+          "uncertainty": "泛指学术活动，非具体会议"
         },
         {
           "entity_id": "19_e5",
@@ -2476,7 +2304,7 @@
           ],
           "evidence": "实施合理的人才政策",
           "is_specific_entity": true,
-          "confidence": 0.8,
+          "confidence": 0.85,
           "uncertainty": "泛指政策，非具体文件"
         }
       ],
@@ -2486,8 +2314,8 @@
           "subject": "_paper_author",
           "object": "_missing_entity",
           "aspect": "培养方式",
-          "opinion": "可以通过高等院校培养高层次档案信息管理人才或者通过继续教育，开展学术研讨，实施合理的人才政策等方式进行提高",
-          "evidence": "可以通过高等院校培养高层次档案信息管理人才或者通过继续教育，开展学术研讨，实施合理的人才政策等方式进行提高",
+          "opinion": "合理",
+          "evidence": "实施合理的人才政策",
           "object_text": "None"
         }
       ]
@@ -2520,7 +2348,7 @@
           "evidence": "缺乏统一、有效的管理机构和档案信息安全管理机制",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为概念讨论"
+          "uncertainty": ""
         },
         {
           "entity_id": "20_e3",
@@ -2532,8 +2360,8 @@
           ],
           "evidence": "档案信息数据系统自身安全的隐忧",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
+          "confidence": 0.8,
+          "uncertainty": "可能为系统类别"
         },
         {
           "entity_id": "20_e4",
@@ -2572,7 +2400,7 @@
           "evidence": "档案行政执法薄弱",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为概念讨论"
+          "uncertainty": "作为概念"
         },
         {
           "entity_id": "20_e7",
@@ -2585,7 +2413,7 @@
           "evidence": "复合型档案信息安全法制人才欠缺",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为概念讨论"
+          "uncertainty": "作为概念"
         },
         {
           "entity_id": "20_e8",
@@ -2629,7 +2457,7 @@
         {
           "entity_id": "20_e11",
           "mention": "《档案信息化系统的网络安全技术研究》",
-          "normalized_name": "档案信息化系统的网络安全技术研究",
+          "normalized_name": "《档案信息化系统的网络安全技术研究》",
           "candidate_l3": "journal_article",
           "candidate_l1": [
             "Artifact"
@@ -2647,49 +2475,36 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "病毒感染，操作系统和应用软件的漏洞，来自档案馆局域网外部的攻击等问题",
+          "evidence": "病毒感染，操作系统和应用软件的漏洞",
           "is_specific_entity": true,
           "confidence": 0.8,
           "uncertainty": "作为安全问题现象"
         },
         {
           "entity_id": "20_e13",
-          "mention": "操作系统",
-          "normalized_name": "操作系统",
-          "candidate_l3": "concept",
+          "mention": "操作系统和应用软件的漏洞",
+          "normalized_name": "操作系统和应用软件的漏洞",
+          "candidate_l3": "phenomenon",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "操作系统和应用软件的漏洞",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "作为技术概念"
+          "uncertainty": "作为安全问题现象"
         },
         {
           "entity_id": "20_e14",
-          "mention": "应用软件",
-          "normalized_name": "应用软件",
-          "candidate_l3": "concept",
+          "mention": "档案馆局域网外部的攻击",
+          "normalized_name": "档案馆局域网外部的攻击",
+          "candidate_l3": "phenomenon",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "操作系统和应用软件的漏洞",
+          "evidence": "来自档案馆局域网外部的攻击等问题",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "作为技术概念"
-        },
-        {
-          "entity_id": "20_e15",
-          "mention": "档案馆局域网",
-          "normalized_name": "档案馆局域网",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "来自档案馆局域网外部的攻击",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为网络环境概念"
+          "uncertainty": "作为安全问题现象"
         }
       ],
       "has_evaluation": true,
@@ -2730,14 +2545,14 @@
           "subject": "_paper_author",
           "object": "_missing_entity",
           "aspect": "体系",
-          "opinion": "尚未形成体系",
+          "opinion": "尚未形成",
           "evidence": "目前的档案信息安全保障法规尚未形成体系",
           "object_text": "None"
         },
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "执法",
+          "aspect": null,
           "opinion": "薄弱",
           "evidence": "档案行政执法薄弱",
           "object_text": "None"
@@ -2745,7 +2560,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "人才",
+          "aspect": null,
           "opinion": "欠缺",
           "evidence": "复合型档案信息安全法制人才欠缺",
           "object_text": "None"
@@ -2753,7 +2568,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "建设",
+          "aspect": null,
           "opinion": "制约",
           "evidence": "制约了档案信息化建设",
           "object_text": "None"
@@ -2761,7 +2576,7 @@
         {
           "subject": "_cite[1]",
           "object": "_missing_entity",
-          "aspect": "网络安全",
+          "aspect": "网络安全技术",
           "opinion": "提出了问题",
           "evidence": "提出了病毒感染，操作系统和应用软件的漏洞，来自档案馆局域网外部的攻击等问题",
           "object_text": "None"
@@ -2813,11 +2628,11 @@
         },
         {
           "entity_id": "21_e4",
-          "mention": "信息安全管理标准BS7799",
-          "normalized_name": "BS7799",
-          "candidate_l3": "standard",
+          "mention": "信息安全管理标准BS7799定义的管理模型",
+          "normalized_name": "BS7799管理模型",
+          "candidate_l3": "model",
           "candidate_l1": [
-            "Artifact"
+            "Abstract"
           ],
           "evidence": "信息安全管理标准BS7799定义的管理模型",
           "is_specific_entity": true,
@@ -2827,12 +2642,12 @@
         {
           "entity_id": "21_e5",
           "mention": "信息技术安全性评估通过准则CC",
-          "normalized_name": "CC",
+          "normalized_name": "CC准则",
           "candidate_l3": "standard",
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "信息技术安全性评估通过准则CC等",
+          "evidence": "信息技术安全性评估通过准则CC",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -2848,7 +2663,7 @@
           "evidence": "为构建档案信息安全保障体系提供了依据",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为体系概念，非具体系统"
+          "uncertainty": "作为体系概念"
         }
       ],
       "has_evaluation": true,
@@ -2856,26 +2671,10 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "特点",
-          "opinion": "具有各自的特点",
-          "evidence": "这些模型和标准具有各自的特点",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "适用性",
-          "opinion": "适用于不同的情况和领域",
-          "evidence": "适用于不同的情况和领域",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "价值",
+          "aspect": "构建依据",
           "opinion": "提供了依据、参考和借鉴",
           "evidence": "为构建档案信息安全保障体系提供了依据、参考和借鉴",
-          "object_text": "None"
+          "object_text": "6"
         }
       ]
     },
@@ -2907,23 +2706,10 @@
           "evidence": "采用的DRM(数据版权管理)技术",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "技术手段，非具体软件或算法"
+          "uncertainty": "技术手段，具体技术"
         },
         {
           "entity_id": "22_e3",
-          "mention": "电子文档",
-          "normalized_name": "电子文档",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "电子文档在其生命周期中的合理使用",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为技术处理的对象，非具体制品"
-        },
-        {
-          "entity_id": "22_e4",
           "mention": "档案信息内容安全保障的法规体系",
           "normalized_name": "档案信息内容安全保障的法规体系",
           "candidate_l3": "policy",
@@ -2933,7 +2719,7 @@
           "evidence": "完善档案信息内容安全保障的法规体系",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "法规体系可视为规范性制品"
+          "uncertainty": "法规体系作为规范性制品"
         }
       ],
       "has_evaluation": true,
@@ -2941,9 +2727,17 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "完善程度",
-          "opinion": "完善",
-          "evidence": "完善档案信息内容安全保障的法规体系",
+          "aspect": "安全性",
+          "opinion": "能保证数字内容在其生命周期中的合理使用",
+          "evidence": "从技术上能保证数字内容在其生命周期中的合理使用",
+          "object_text": "None"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "可控制性",
+          "opinion": "实现了电子文档在分发和使用中的安全性和可控制性",
+          "evidence": "实现了电子文档在分发和使用中的安全性和可控制性",
           "object_text": "None"
         }
       ]
@@ -2963,7 +2757,7 @@
           "evidence": "面对档案信息化建设进程的不断加速",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为概念或领域主题"
+          "uncertainty": ""
         },
         {
           "entity_id": "23_e2",
@@ -2976,7 +2770,7 @@
           "evidence": "档案馆藏模式会呈现出实物馆藏与数字馆藏的混合并存",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为现象描述"
+          "uncertainty": "作为档案馆藏模式的一种趋势"
         },
         {
           "entity_id": "23_e3",
@@ -2989,7 +2783,7 @@
           "evidence": "文本传递服务与网络服务并举",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为现象描述"
+          "uncertainty": "作为档案馆藏模式的一种趋势"
         },
         {
           "entity_id": "23_e4",
@@ -3002,7 +2796,7 @@
           "evidence": "卷宗管理与知识管理有机融合",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为现象描述"
+          "uncertainty": "作为档案馆藏模式的一种趋势"
         },
         {
           "entity_id": "23_e5",
@@ -3015,7 +2809,7 @@
           "evidence": "档案工作人员由档案管理员向导航员转变等趋势",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为现象描述"
+          "uncertainty": "作为档案馆藏模式的一种趋势"
         },
         {
           "entity_id": "23_e6",
@@ -3028,7 +2822,7 @@
           "evidence": "数字档案馆的建设作为档案信息化建设的长期发展目标之一",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为概念或建设目标"
+          "uncertainty": ""
         }
       ],
       "has_evaluation": true,
@@ -3044,9 +2838,9 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "发展趋势",
-          "opinion": "进行了分析",
-          "evidence": "有些学者也对它的发展趋势进行了分析",
+          "aspect": null,
+          "opinion": "趋势",
+          "evidence": "会呈现出实物馆藏与数字馆藏的混合并存，文本传递服务与网络服务并举，卷宗管理与知识管理有机融合，档案工作人员由档案管理员向导航员转变等趋势",
           "object_text": "None"
         }
       ]
@@ -3076,7 +2870,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "档案信息化建设的长期发展目标",
+          "evidence": "档案信息化建设的长期发展目标之一",
           "is_specific_entity": true,
           "confidence": 0.9,
           "uncertainty": ""
@@ -3089,7 +2883,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "计算机网络技术的不断发展",
+          "evidence": "伴随着计算机网络技术的不断发展",
           "is_specific_entity": true,
           "confidence": 0.85,
           "uncertainty": "技术领域概念"
@@ -3104,24 +2898,37 @@
           ],
           "evidence": "档案部门将会逐步明确数字档案馆的建设方向",
           "is_specific_entity": true,
-          "confidence": 0.7,
+          "confidence": 0.8,
           "uncertainty": "泛称机构，但此处指具体部门？"
         },
         {
           "entity_id": "24_e5",
+          "mention": "全球档案馆",
+          "normalized_name": "全球档案馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "全球档案馆将会联结成一个巨大的档案信息网络",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称机构集合"
+        },
+        {
+          "entity_id": "24_e6",
           "mention": "档案信息网络",
           "normalized_name": "档案信息网络",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "全球档案馆将会联结成一个巨大的档案信息网络",
+          "evidence": "联结成一个巨大的档案信息网络",
           "is_specific_entity": true,
           "confidence": 0.85,
           "uncertainty": ""
         },
         {
-          "entity_id": "24_e6",
+          "entity_id": "24_e7",
           "mention": "信息空间",
           "normalized_name": "信息空间",
           "candidate_l3": "concept",
@@ -3134,7 +2941,7 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "24_e7",
+          "entity_id": "24_e8",
           "mention": "档案信息",
           "normalized_name": "档案信息",
           "candidate_l3": "concept",
@@ -3147,7 +2954,7 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "24_e8",
+          "entity_id": "24_e9",
           "mention": "档案馆",
           "normalized_name": "档案馆",
           "candidate_l3": "service",
@@ -3156,11 +2963,11 @@
           ],
           "evidence": "档案馆不再是单一保存档案实体的机构",
           "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "泛称机构，但此处指具体机构？"
+          "confidence": 0.8,
+          "uncertainty": "泛称机构"
         },
         {
-          "entity_id": "24_e9",
+          "entity_id": "24_e10",
           "mention": "档案实体",
           "normalized_name": "档案实体",
           "candidate_l3": "concept",
@@ -3173,7 +2980,7 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "24_e10",
+          "entity_id": "24_e11",
           "mention": "档案信息中心",
           "normalized_name": "档案信息中心",
           "candidate_l3": "service",
@@ -3182,11 +2989,11 @@
           ],
           "evidence": "开放的档案信息中心或信息系统",
           "is_specific_entity": true,
-          "confidence": 0.7,
+          "confidence": 0.8,
           "uncertainty": "泛称机构"
         },
         {
-          "entity_id": "24_e11",
+          "entity_id": "24_e12",
           "mention": "信息系统",
           "normalized_name": "信息系统",
           "candidate_l3": "information_system",
@@ -3195,11 +3002,11 @@
           ],
           "evidence": "开放的档案信息中心或信息系统",
           "is_specific_entity": true,
-          "confidence": 0.7,
+          "confidence": 0.8,
           "uncertainty": "泛称系统"
         },
         {
-          "entity_id": "24_e12",
+          "entity_id": "24_e13",
           "mention": "电子文件",
           "normalized_name": "电子文件",
           "candidate_l3": "concept",
@@ -3208,21 +3015,21 @@
           ],
           "evidence": "电子文件很难体现档案“原件”的概念",
           "is_specific_entity": true,
-          "confidence": 0.85,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
-          "entity_id": "24_e13",
+          "entity_id": "24_e14",
           "mention": "传统档案馆",
           "normalized_name": "传统档案馆",
-          "candidate_l3": "concept",
+          "candidate_l3": "service",
           "candidate_l1": [
-            "Abstract"
+            "Agent"
           ],
           "evidence": "数字档案馆不能完全替代传统档案馆",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": ""
+          "confidence": 0.8,
+          "uncertainty": "泛称机构"
         }
       ],
       "has_evaluation": true,
@@ -3276,7 +3083,7 @@
           "evidence": "国内档案信息化建设的研究",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为研究主题，非具体系统或技术"
+          "uncertainty": "作为研究主题，非具体系统或项目"
         }
       ],
       "has_evaluation": true,
@@ -3284,7 +3091,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "特点",
+          "aspect": "研究特点",
           "opinion": "具有自身的特点",
           "evidence": "具有自身的特点",
           "object_text": "None"
@@ -3292,7 +3099,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "不足",
+          "aspect": "研究不足",
           "opinion": "存在不足之处",
           "evidence": "存在不足之处",
           "object_text": "None"
@@ -3325,7 +3132,7 @@
           "aspect": "研究态势",
           "opinion": "多样化",
           "evidence": "对档案信息化的研究呈现出多样化态势",
-          "object_text": "1_e1"
+          "object_text": "None"
         },
         {
           "subject": "_paper_author",
@@ -3333,7 +3140,7 @@
           "aspect": "研究热点",
           "opinion": "热点问题",
           "evidence": "仍会是研究的热点问题",
-          "object_text": "1_e1"
+          "object_text": "None"
         }
       ]
     },
@@ -3349,7 +3156,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "档案信息化建设理论研究的文献数量都排在第一位",
+          "evidence": "档案信息化建设理论研究的文献数量",
           "is_specific_entity": true,
           "confidence": 0.9,
           "uncertainty": "作为研究主题，可视为concept"
@@ -3362,7 +3169,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "可能产生的伦理问题给予了积极关注",
+          "evidence": "可能产生的伦理问题",
           "is_specific_entity": true,
           "confidence": 0.85,
           "uncertainty": "作为可观察的社会现象"
@@ -3441,8 +3248,8 @@
           ],
           "evidence": "尤以企业、高校为研究重点",
           "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "泛称，但作为研究重点对象"
+          "confidence": 0.85,
+          "uncertainty": "泛称企业，但此处作为具体研究对象"
         },
         {
           "entity_id": "28_e3",
@@ -3454,8 +3261,8 @@
           ],
           "evidence": "尤以企业、高校为研究重点",
           "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "泛称，但作为研究重点对象"
+          "confidence": 0.85,
+          "uncertainty": "泛称高校，但此处作为具体研究对象"
         },
         {
           "entity_id": "28_e4",
@@ -3467,12 +3274,20 @@
           ],
           "evidence": "对档案信息化管理研究的需求也随之增长",
           "is_specific_entity": true,
-          "confidence": 0.85,
+          "confidence": 0.9,
           "uncertainty": ""
         }
       ],
       "has_evaluation": true,
       "relations": [
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "发展程度",
+          "opinion": "逐步提高",
+          "evidence": "档案信息化程度正逐步提高",
+          "object_text": "None"
+        },
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
@@ -3498,7 +3313,7 @@
           "evidence": "以理论研究为重点",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "作为研究主题，但可能过于泛化"
+          "uncertainty": "作为研究主题，非具体理论"
         },
         {
           "entity_id": "29_e2",
@@ -3511,7 +3326,7 @@
           "evidence": "对具体策略，技术手段等的研究",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "泛化概念，但作为研究对象"
+          "uncertainty": "泛称，但作为研究对象"
         },
         {
           "entity_id": "29_e3",
@@ -3524,7 +3339,7 @@
           "evidence": "对具体策略，技术手段等的研究",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "泛化概念，但作为研究对象"
+          "uncertainty": "泛称，但作为研究对象"
         }
       ],
       "has_evaluation": true,
@@ -3532,15 +3347,15 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "研究重点",
-          "opinion": "为重点",
+          "aspect": "研究主题",
+          "opinion": "以理论研究为重点",
           "evidence": "以理论研究为重点",
           "object_text": "None"
         },
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "研究增多",
+          "aspect": "研究主题",
           "opinion": "逐步增多",
           "evidence": "对具体策略，技术手段等的研究也逐步增多",
           "object_text": "None"
@@ -3548,7 +3363,7 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "研究增多",
+          "aspect": "研究主题",
           "opinion": "逐步增多",
           "evidence": "对具体策略，技术手段等的研究也逐步增多",
           "object_text": "None"
@@ -3561,16 +3376,16 @@
       "entities": [
         {
           "entity_id": "30_e1",
-          "mention": "档案信息化建设研究",
-          "normalized_name": "档案信息化建设研究",
-          "candidate_l3": "subfield",
+          "mention": "档案信息化建设",
+          "normalized_name": "档案信息化建设",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "对档案信息化建设研究的文章",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为研究主题，可视为子领域"
+          "uncertainty": ""
         },
         {
           "entity_id": "30_e2",
@@ -3580,7 +3395,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "与档案学有所交叉",
+          "evidence": "又与档案学有所交叉",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -3596,7 +3411,7 @@
           "evidence": "促进着档案工作实践和档案学的发展",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为实践领域，可视为概念"
+          "uncertainty": "可能为phenomenon或concept"
         }
       ],
       "has_evaluation": true,
@@ -3604,26 +3419,10 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "研究现状",
-          "opinion": "已出现",
-          "evidence": "已出现对档案信息化建设研究的文章",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "特点",
-          "opinion": "立足于专业特色又与档案学有所交叉，注重结合新的时代背景提出新的想法与见解",
-          "evidence": "立足于专业特色又与档案学有所交叉，注重结合新的时代背景提出新的想法与见解",
-          "object_text": "None"
-        },
-        {
-          "subject": "_paper_author",
-          "object": "_missing_entity",
-          "aspect": "发展",
+          "aspect": null,
           "opinion": "促进着档案工作实践和档案学的发展",
           "evidence": "促进着档案工作实践和档案学的发展",
-          "object_text": "None"
+          "object_text": "1_e1"
         }
       ]
     },
@@ -3642,24 +3441,32 @@
           "evidence": "该领域的发展现状进行研究的文章较少",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "可能为泛称，但作为研究对象整体抽取"
+          "uncertainty": "可能为泛指，但作为研究对象整体抽取"
         },
         {
           "entity_id": "31_e2",
-          "mention": "研究人员分布",
-          "normalized_name": "研究人员分布",
+          "mention": "研究人员分布不均",
+          "normalized_name": "研究人员分布不均",
           "candidate_l3": "phenomenon",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "研究人员分布不均",
           "is_specific_entity": true,
-          "confidence": 0.6,
-          "uncertainty": "可能为评价方面，但作为独立研究对象抽取"
+          "confidence": 0.7,
+          "uncertainty": "可能为评价方面，但作为现象整体抽取"
         }
       ],
       "has_evaluation": true,
       "relations": [
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "研究现状",
+          "opinion": "较少",
+          "evidence": "进行研究的文章较少",
+          "object_text": "None"
+        },
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
@@ -3684,16 +3491,16 @@
       "entities": [
         {
           "entity_id": "32_e1",
-          "mention": "高校的理论研究者",
-          "normalized_name": "高校的理论研究者",
-          "candidate_l3": "scholar",
+          "mention": "高校",
+          "normalized_name": "高校",
+          "candidate_l3": "research",
           "candidate_l1": [
             "Agent"
           ],
-          "evidence": "目前研究的主体主要集中在高校的理论研究者",
+          "evidence": "主要集中在高校的理论研究者",
           "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "泛称，未指具体个人"
+          "confidence": 0.8,
+          "uncertainty": "泛称机构，但此处指具体高校群体，可视为组织"
         },
         {
           "entity_id": "32_e2",
@@ -3703,9 +3510,9 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "经济欠发达地区更应加强档案信息化建设的研究",
+          "evidence": "加强档案信息化建设的研究",
           "is_specific_entity": true,
-          "confidence": 0.85,
+          "confidence": 0.9,
           "uncertainty": ""
         }
       ],
@@ -3714,17 +3521,25 @@
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "研究投入",
-          "opinion": "投入资金太少",
-          "evidence": "由于欠发达地区投入资金太少",
+          "aspect": "研究主体分布",
+          "opinion": "不均",
+          "evidence": "研究人员分布不均",
           "object_text": "None"
         },
         {
           "subject": "_paper_author",
           "object": "_missing_entity",
-          "aspect": "研究必要性",
-          "opinion": "更应加强",
-          "evidence": "更应加强档案信息化建设的研究",
+          "aspect": "研究投入",
+          "opinion": "资金太少",
+          "evidence": "欠发达地区投入资金太少",
+          "object_text": "None"
+        },
+        {
+          "subject": "_paper_author",
+          "object": "_missing_entity",
+          "aspect": "发展途径",
+          "opinion": "低成本、高效益",
+          "evidence": "探索出一条低成本、高效益的发展途径",
           "object_text": "None"
         }
       ]

@@ -290,6 +290,40 @@ Opinion: 评价表达或评价内容。
 以下通常是 aspect，不应作为 object：
 作者分布、研究水平、研究质量、理论基础、应用效果、区域分布。
 
+评价对象回溯（Object Resolution）：
+请先识别 aspect 和 opinion，再执行 Object Resolution，确定“这个评价是在评价哪个实体”。不要因为 aspect 不是实体，就直接输出 _missing_entity。
+
+规则1：优先绑定已有实体。
+若 aspect 属于某个已抽取实体的属性、组成部分、发展情况、研究维度或评价维度，则 object 应绑定到该实体。
+例如“档案信息化建设的步伐越走越快”：object=档案信息化建设对应的 entity_id，aspect=步伐，opinion=越走越快。
+
+规则2：Aspect 不是 Object。
+aspect 表示评价维度，object 表示真正被评价的对象。
+例如“作者分布不合理”若句子讨论“农村图书馆研究”，则 object=农村图书馆研究对应的 entity_id，aspect=作者分布，opinion=不合理；不要 object=作者分布。
+
+规则3：寻找 aspect 所属对象。
+当 aspect 出现时，应优先向左寻找其所属对象。
+例如“数字图書館建設的發展速度較快”：object=数字图書館建設，aspect=發展速度，opinion=較快。
+例如“法明頓計畫在協調布局方面堪稱典範”：object=法明頓計畫，aspect=協調布局，opinion=堪稱典範。
+
+规则4：允许跨短语回溯。
+object 不一定紧邻 aspect。
+例如“近年来，档案信息化建设取得快速发展，其理论研究仍存在不足”：第二个评价 object=档案信息化建设，aspect=理论研究，opinion=存在不足。
+
+规则5：仅在真正不存在对象时使用 _missing_entity。
+只有同时满足以下条件才能输出 object=_missing_entity：
+① 当前句不存在任何可以作为评价对象的实体；
+② aspect 无法归属于任何实体；
+③ 无法根据上下文确定评价对象。
+否则必须绑定已有 Entity。
+
+规则6：Entity 优先原则。
+若评价对象对应多个候选 Entity，优先选择最直接被评价、语义距离最近、能够完整支撑 aspect 的实体。不要选择地名、时间、修饰语。
+例如“中西部地区研究不足”若已有 entity=中西部地区研究，则 object=中西部地区研究，不要 object=中西部地区。
+
+规则7：Aspect 属于 Object，而不是独立 Object。
+例如“研究水平偏低”：object=农村图书馆研究，aspect=研究水平，opinion=偏低；不要 object=研究水平。
+
 若句子评价的是研究对象的某个维度，应把核心研究对象放入 object，把维度放入 aspect。
 例如“农村图书馆研究存在作者分布不合理、研究水平偏低的问题”：
 object = 农村图书馆研究对应的 entity_id
