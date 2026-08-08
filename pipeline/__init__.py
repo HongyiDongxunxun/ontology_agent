@@ -1,5 +1,6 @@
 """
-pipeline — 三Agent端到端文献知识挖掘系统核心包 (V4.4: Agent 1 合并评价关系识别)
+pipeline — 四Agent端到端文献知识挖掘系统核心包
+Agent 1: 评价关系抽取 → Agent 2: 实体抽取补充 → Agent 3: 分类 → Agent 4: 审查
 """
 
 from .llm import LLMClient, build_llm_client
@@ -12,7 +13,6 @@ from .taxonomy import (
 from .entity_extraction_agent import (
     EntityExtractionAgent,
     ExtractedEntity,
-    ExtractedRelation,
     SentenceExtractionOutput,
 )
 from .classification_agent import (
@@ -42,7 +42,7 @@ __all__ = [
     "get_l1_from_l3", "get_l2_from_l3", "get_l1l2_from_l3",
     "get_l1_options", "get_l2_options", "get_l3_options",
     "get_l2_label", "get_l3_label",
-    "EntityExtractionAgent", "ExtractedEntity", "ExtractedRelation", "SentenceExtractionOutput",
+    "EntityExtractionAgent", "ExtractedEntity", "SentenceExtractionOutput",
     "ClassificationAgent", "FinalEntityResult",
     "ReviewerAgent", "ReviewResult",
     "EvaluativeRelationAgent", "EvaluativeRelation", "SentenceRelationOutput",
@@ -50,4 +50,4 @@ __all__ = [
     "DualAgentPipeline", "export_jsonl", "export_summary_json", "export_relation_jsonl",
 ]
 
-__version__ = "4.4.0"
+__version__ = "5.0.0"

@@ -1,8 +1,9 @@
 """
-pipeline.evaluative_relation_agent -- evaluation relation extraction.
+pipeline.evaluative_relation_agent -- evaluation relation extraction (Agent 1).
 
-Reads one sentence plus its extracted entity list and returns evaluation
-subject/object relations.
+Reads one sentence and returns evaluation subject/object relations
+plus entities extracted from those relations. Entities are passed to the
+next agent for supplementary entity extraction.
 """
 
 from __future__ import annotations
@@ -15,347 +16,191 @@ from .llm import LLMClient
 
 
 EVALUATIVE_RELATION_PROMPT = """
-你是一名学术评价信息抽取专家。
+## Academic Evaluation Object Rules (增强规则)
+本任务采用"先找评价关系，后抽取实体"的关系优先策略：
+1. 先识别句中的评价触发、opinion、aspect 和 evidence。
+2. 再通过 Object Resolution 确定每条评价真正指向的 object 文本。
+3. 最后把这些 object 文本作为必须进入 entities 的候选实体，生成实体列表并用 entity_id 回填 relation.object。
+4. 若某个短语只是 aspect，不要放入 entities；若某个短语是被评价 object，即使它不是传统命名实体，也应作为 Entity 抽取。
+5. entities 必须覆盖所有可解析的 relation.object。不要先因为实体列表缺失而把关系 object 写成 _missing_entity。
 
-你的任务是根据一个句子及其已抽取出的实体列表，识别句子中的所有评价关系（Evaluation Relation）。
+请明确区分四类成分：
+1. Entity: 文本中具有独立语义、可作为知识图谱节点的对象。
+2. Evaluation Object: 评价关系中被评价的核心对象，通常来自 Entity，并在 relation.object 中填写对应 entity_id。
+3. Evaluation Aspect: 评价对象的某个评价维度，不是 Entity。
+4. Opinion: 评价表达或评价内容。
 
-一、任务说明
+实体抽取不要只按传统 NER。学术评价文本中的研究对象、领域主题和复合研究对象也应抽取为 Entity，例如：
+- 农村图书馆研究
+- 农村图书馆问题
+- 档案信息化建设
+- 数字图书馆建设
+- 中西部地区研究
+- 数字化建设
+- 基础理论研究
 
-请判断该句是否包含评价（Evaluation）。
+最小评价对象原则：
+若一个名词短语能够整体接受评价词修饰，优先抽取完整短语，而不是拆出内部成分。
+- "中西部地区研究不足" -> Entity: 中西部地区研究；不要抽取"中西部地区"。
+- "农村图书馆事业发展良好" -> Entity: 农村图书馆事业发展；不要只抽"农村图书馆"。
+- "数字信息资源建设存在不足" -> Entity: 数字信息资源建设；不要只抽"数字信息资源"。
 
-评价是指作者、引用文献作者或其他评价主体，对某一对象作出的正向、负向或中性的判断、概括、评价、比较或总结。
+当名词短语后接"研究、建设、发展、问题、实践、应用、水平、能力、体系"，且整体构成被评价的研究对象或主题对象时，优先整体抽取。
 
-评价通常包含但不限于以下表达：
+以下通常不是 Entity，除非原文把它们作为独立研究对象或术语本身讨论：
+作者分布、研究水平、研究质量、理论基础、应用效果、区域分布。
+它们在评价关系中通常应放入 aspect 字段。
 
-重要
-有效
-丰富
-较高
-较低
-明显
-成熟
-完善
-不足
-较好
-优于
-落后
-快
-慢
-提高
-降低
-具有……价值
-存在……问题
-有待……
-……能力较强
-……效果较好
+评价关系不要按"实体 + 评价词"机械抽取，而应识别：
+subject = 评价主体
+object = 被评价的核心对象 entity_id
+aspect = 评价方面；没有则为 null
+opinion = 评价表达
+evidence = 支持该评价的最小原文片段
 
-如果整个句子只是客观事实描述，没有评价，则返回空结果。
+## 评价对象回溯（Object Resolution）：
+先识别 aspect 与 opinion，再判断"这个评价是在评价哪个实体"。不要因为 aspect 不是实体，就直接输出 _missing_entity。
+1. 优先绑定已有实体：若 aspect 属于某个已抽取实体的属性、组成部分、发展情况、研究维度或评价维度，object 必须绑定该实体。
+2. Aspect 不是 Object：aspect 表示评价维度，object 表示真正被评价的对象。例如"作者分布不合理"若句子讨论"农村图书馆研究"，object=农村图书馆研究，aspect=作者分布。
+3. 寻找 aspect 所属对象：当 aspect 出现时，优先向左寻找其所属对象。
+   - "数字图書館建設的發展速度較快" -> object=数字图書館建設, aspect=發展速度, opinion=較快。
+   - "法明頓計畫在協調布局方面堪稱典範" -> object=法明頓計畫, aspect=協調布局, opinion=堪稱典範。
+4. 允许跨短语回溯：object 不一定紧邻 aspect。例如"近年来，档案信息化建设取得快速发展，其理论研究仍存在不足"中，"理论研究/不足"应回溯到"档案信息化建设"。
+5. 仅当当前句不存在任何可作为评价对象的实体、aspect 无法归属于任何实体、且上下文无法确定评价对象时，才使用 _missing_entity。
+6. Entity 优先原则：多个候选实体时，选择最直接被评价、语义距离最近、且能够完整支撑 aspect 的实体。不要选择地名、时间、修饰语。
+7. Aspect 属于 object，不是独立 object。例如"研究水平偏低"：object=农村图书馆研究，aspect=研究水平，opinion=偏低；不要 object=研究水平。
 
-二、评价主体判定规则
+## Positive Examples（正确例子）：
+句子1："我国农村图书馆研究取得了一定成绩，但作者分布不合理、研究水平偏低。"
+Entity 只抽取"农村图书馆研究"，不要抽取"作者分布"或"研究水平"。
+Relations:
+[
+  {{"subject":"_paper_author","object":"<农村图书馆研究的entity_id>","aspect":"作者分布","opinion":"不合理","evidence":"作者分布不合理"}},
+  {{"subject":"_paper_author","object":"<农村图书馆研究的entity_id>","aspect":"研究水平","opinion":"偏低","evidence":"研究水平偏低"}}
+]
 
-评价主体（Evaluation Subject）是作出评价的人或来源，不是执行动作的主体（Action Agent）。
+句子2："中西部地区研究不足。"
+Entity: 中西部地区研究
+Relation: object=<中西部地区研究的entity_id>, aspect=null, opinion=不足。
 
-例如：
+关系输出字段必须使用 subject、object、aspect、opinion、evidence。不要输出 polarity。
+
+## Negative Examples（非评价关系）：
+以下情况不要抽取评价关系，has_evaluation=false，relations=[]。
+
+例1：事实描述（无评价）
+句子：
+“用户服务平台提供了按资源类型、标题、作者、关键词等多种检索途径查找资源的功能。”
+
+不要抽取：
+object=用户服务平台
+opinion=提供多种检索途径
+
+原因：
+“提供、支持、包含、具有”等描述功能或事实，不代表评价。
+
+
+例2：定义说明（无评价）
+句子：
+“结构化是指将获取的知识内容加以归纳和整理，使之条理化、纲领化。”
+
+不要抽取评价关系。
+
+原因：
+“是指”属于概念定义。
+
+
+例3：方法流程描述（无评价）
+句子：
+“本文采用文献计量法对相关研究进行分析。”
+
+不要抽取评价关系。
+
+原因：
+“采用、使用、利用”表示研究方法，不表示评价。
+
+
+例4：分类枚举（无评价）
+句子：
+“研究内容主要包括理论研究、应用研究和实践研究。”
+
+不要抽取评价关系。
+
+原因：
+“包括、分为、涉及”属于分类描述。
+
+
+例5：功能/能力陈述（无评价）
+句子：
+“该系统能够实现文献检索、数据分析和结果展示。”
+
+不要抽取评价关系。
+
+原因：
+“能够实现”描述功能，不等于“功能好”或“效果显著”。
+
+
+例6：避免将Aspect误认为Object
+句子：
+“农村图书馆研究水平偏低。”
 
 错误：
-
-国家档案局出台了政策。
-
-国家档案局属于行为主体，不属于评价主体。
+object=研究水平
 
 正确：
+object=农村图书馆研究
+aspect=研究水平
+opinion=偏低
 
-档案信息化建设的步伐越走越快。
+原因：
+研究水平是评价方面，不是被评价对象。
 
-评价主体为：
+注意还有以下几类也是Negative Examples：
 
-_paper_author
-
-评价主体仅允许以下四种类型：
-（1）显性实体
-
-如果句中明确指出某人、某机构进行了评价，则评价主体填写对应实体ID。
-
-例如：
-
-张三认为……
-
-主体：
-
-1_e3
-
-（2）本文作者
-
-如果句中没有显式评价主体，评价实际来自当前论文作者，则填写：
-
-_paper_author
-
-例如：
-
-现有研究仍存在不足。
-
-档案信息化建设的步伐越走越快。
-
-均属于：
-
-_paper_author
-
-（3）引用文献作者
-
-如果评价属于引用文献，而不是当前论文作者，则填写：
-
-_cite[12]
-
-其中数字对应句中的引用编号。
-
-例如：
-
-[12]指出……
-
-返回：
-
-_cite[12]
-
-如果同时引用多个文献：
-
-[3,5]
-
-返回：
-
-_cite[3][5]
-
-（4）无法确定
-
-若依据当前句无法确定评价主体，则填写：
-
-_unknown
-
-三、评价客体判定规则
-
-评价客体（Evaluation Object）必须是被评价的对象。
-
-评价客体必须优先对应提供的实体列表中的实体。
-
-请输出对应实体ID。
-
-例如：
-
-entity_id:
-1_e6
-entity:
-档案信息化建设
-
-则返回：
-
-1_e6
-
-不要重新创建实体。
-
-若评价对象不存在于实体列表中
-
-请返回：
-
-"_missing_entity"
-
-同时增加字段：
-
-object_text
-
-填写原始文本。
-
-例如：
-
-{
-    "object":"_missing_entity",
-    "object_text":"相关研究成果"
-}
-
-不要自行创造新的entity_id。
-
-四、多评价关系
-
-一个句子可能包含多个评价关系。
-
-例如：
-
-方法A计算效率较高，鲁棒性较好，但泛化能力不足。
-
-应返回三条评价关系。
-
-五、评价方面与评价内容
-
-请识别评价方面（aspect）和评价内容（opinion）。
-
-aspect 是评价对象的具体维度，例如作者分布、研究水平、研究质量、理论基础、应用效果、区域分布。
-aspect 不是实体，不要把 aspect 当作 object。
-如果没有明确评价方面，aspect 返回 null。
-
-opinion 是原文中的评价表达，例如不合理、偏低、不足、步伐越走越快、取得了一定成绩。
-
-例如：
-
-作者分布不合理
-
-aspect = 作者分布
-opinion = 不合理
-
-研究水平偏低
-
-aspect = 研究水平
-opinion = 偏低
-
-中西部地区研究不足
-
-aspect = null
-opinion = 不足
-
-六、评价依据
-
-请输出支持该评价的最小文本片段（Evidence）。
-
-要求：
-
-尽可能短
-能完整表达评价
-不要输出整句话
-
-例如：
-
-档案信息化建设的步伐越走越快
-
-而不是整段。
-
-七、输出格式
-
-输出JSON，不允许输出任何解释。
-
-格式如下：
-
-{
-  "has_evaluation": true,
-  "relations": [
-    {
-      "subject": "_paper_author",
-      "object": "1_e6",
-      "aspect": null,
-      "opinion": "步伐越走越快",
-      "evidence": "档案信息化建设的步伐越走越快"
-    }
-  ]
-}
-
-若没有评价：
-
-{
-  "has_evaluation": false,
-  "relations": []
-}
-
-八、特别注意
-评价主体不是行为主体。
-评价客体不是动作对象，而是被评价对象。
-一个句子可能没有评价。
-一个句子可能有多个评价关系。
-不允许虚构实体ID。
-优先使用提供的实体ID作为评价客体。
-当评价对象不存在于实体列表时，使用"_missing_entity"。
-当评价主体属于本文作者时，统一使用"_paper_author"。
-当评价主体属于引用文献时，统一使用"_cite[引用编号]"。
-除JSON外，不输出任何额外内容。
-
-九、输入
-
+例7：“发展起来、出现、形成、产生”描述变化过程，不代表评价
 句子：
-{sentence}
+自动文摘研究逐渐发展起来。
 
-实体列表：
-{entities_text}
-""".strip()
+不要抽取评价关系。
 
-EVALUATIVE_RELATION_PROMPT = (
-    EVALUATIVE_RELATION_PROMPT
-    + """
+例8：“主要集中于”描述研究分布，不表示好坏评价。
+句子：
+目前的研究主要集中于文摘生成方法。
 
-十、学术评价对象与评价方面增强规则
+不要抽取评价关系。
 
-请明确区分：
-Entity: 具有独立语义、可作为知识图谱节点的对象。
-Evaluation Object: 评价关系中被评价的核心对象，必须优先使用实体列表中的 entity_id。
-Evaluation Aspect: 评价对象的评价维度，不是实体。
-Opinion: 评价表达或评价内容。
+例9：“实现、完成、构建、提出”描述研究工作，不表示效果评价。
+句子：
+该模型实现了自动摘要生成。
 
-不要直接寻找“实体 + 评价词”，而要寻找：
-评价主体 subject、评价对象 object、评价方面 aspect（可选）、评价内容 opinion。
+不要抽取评价关系。
 
-以下通常是 aspect，不应作为 object：
-作者分布、研究水平、研究质量、理论基础、应用效果、区域分布。
-
-评价对象回溯（Object Resolution）：
-请先识别 aspect 和 opinion，再执行 Object Resolution，确定“这个评价是在评价哪个实体”。不要因为 aspect 不是实体，就直接输出 _missing_entity。
-
-规则1：优先绑定已有实体。
-若 aspect 属于某个已抽取实体的属性、组成部分、发展情况、研究维度或评价维度，则 object 应绑定到该实体。
-例如“档案信息化建设的步伐越走越快”：object=档案信息化建设对应的 entity_id，aspect=步伐，opinion=越走越快。
-
-规则2：Aspect 不是 Object。
-aspect 表示评价维度，object 表示真正被评价的对象。
-例如“作者分布不合理”若句子讨论“农村图书馆研究”，则 object=农村图书馆研究对应的 entity_id，aspect=作者分布，opinion=不合理；不要 object=作者分布。
-
-规则3：寻找 aspect 所属对象。
-当 aspect 出现时，应优先向左寻找其所属对象。
-例如“数字图書館建設的發展速度較快”：object=数字图書館建設，aspect=發展速度，opinion=較快。
-例如“法明頓計畫在協調布局方面堪稱典範”：object=法明頓計畫，aspect=協調布局，opinion=堪稱典範。
-
-规则4：允许跨短语回溯。
-object 不一定紧邻 aspect。
-例如“近年来，档案信息化建设取得快速发展，其理论研究仍存在不足”：第二个评价 object=档案信息化建设，aspect=理论研究，opinion=存在不足。
-
-规则5：仅在真正不存在对象时使用 _missing_entity。
-只有同时满足以下条件才能输出 object=_missing_entity：
-① 当前句不存在任何可以作为评价对象的实体；
-② aspect 无法归属于任何实体；
-③ 无法根据上下文确定评价对象。
-否则必须绑定已有 Entity。
-
-规则6：Entity 优先原则。
-若评价对象对应多个候选 Entity，优先选择最直接被评价、语义距离最近、能够完整支撑 aspect 的实体。不要选择地名、时间、修饰语。
-例如“中西部地区研究不足”若已有 entity=中西部地区研究，则 object=中西部地区研究，不要 object=中西部地区。
-
-规则7：Aspect 属于 Object，而不是独立 Object。
-例如“研究水平偏低”：object=农村图书馆研究，aspect=研究水平，opinion=偏低；不要 object=研究水平。
-
-若句子评价的是研究对象的某个维度，应把核心研究对象放入 object，把维度放入 aspect。
-例如“农村图书馆研究存在作者分布不合理、研究水平偏低的问题”：
-object = 农村图书馆研究对应的 entity_id
-aspect = 作者分布
-opinion = 不合理
-aspect = 研究水平
-opinion = 偏低
-
-若没有明确评价方面，则 aspect = null。
-例如“档案信息化建设的步伐越走越快”：
-object = 档案信息化建设对应的 entity_id
-aspect = null
-opinion = 步伐越走越快
-
-输出格式以本节为准，必须使用：
-{
+## OutputFormat
+严格 JSON，不含 markdown 代码块。entities 和 relations 数组无内容则为空数组 []。
+{{
   "has_evaluation": true,
+  "entities": [
+    {{
+      "entity_id": "e1",
+      "entity": "<原文精确短语>",
+      "normalized_name": "<规范化实体名>",
+      "evidence": "<原文证据片段>"
+    }}
+  ],
   "relations": [
-    {
-      "subject": "_paper_author",
-      "object": "entity_id|_missing_entity",
-      "aspect": "评价方面或null",
-      "opinion": "评价表达",
-      "evidence": "最小评价证据",
-      "object_text": "仅当 object 为 _missing_entity 时填写"
-    }
+    {{
+      "subject": "_paper_author|_cite[N]|_unknown",
+      "object": "<entity_id>",
+      "aspect": "<评价方面或 null>",
+      "opinion": "<评价表达>",
+      "evidence": "<评价依据文本片段>"
+    }}
   ]
-}
+}}
 
-不要输出 polarity。
-"""
-).strip()
+## Input
+{statement}
+""".strip()
 
 
 @dataclass
@@ -386,6 +231,7 @@ class SentenceRelationOutput:
     sentence: str
     has_evaluation: bool
     relations: list[EvaluativeRelation] = field(default_factory=list)
+    entities: list[dict] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         return {
@@ -393,68 +239,59 @@ class SentenceRelationOutput:
             "sentence": self.sentence,
             "has_evaluation": self.has_evaluation,
             "relations": [r.to_dict() for r in self.relations],
+            "entities": self.entities,
         }
 
 
 class EvaluativeRelationAgent:
-    """Agent for evaluation relation extraction."""
+    """Agent 1: evaluation relation extraction + entity extraction."""
 
     def __init__(self, llm: Optional[LLMClient] = None):
         self.llm = llm or LLMClient()
 
-    def extract(
-        self,
-        sentence_id: str,
-        sentence: str,
-        entities: list[dict],
-    ) -> SentenceRelationOutput:
+    def extract(self, sentence_id: str, sentence: str) -> SentenceRelationOutput:
         if not sentence:
-            return SentenceRelationOutput(sentence_id, sentence, False, [])
+            return SentenceRelationOutput(sentence_id, sentence, False, [], [])
 
-        entity_ids = {
-            str(item.get("entity_id", "")).strip()
-            for item in entities
-            if str(item.get("entity_id", "")).strip()
-        }
-        prompt = (
-            EVALUATIVE_RELATION_PROMPT
-            .replace("{sentence}", sentence)
-            .replace("{entities_text}", self._format_entities(entities))
-        )
+        prompt = EVALUATIVE_RELATION_PROMPT.replace("{statement}", sentence)
         data = self.llm.call_json(
             prompt,
-            {"has_evaluation": False, "relations": []},
+            {"has_evaluation": False, "relations": [], "entities": []},
         )
-        return self._parse_output(sentence_id, sentence, data, entity_ids)
-
-    @staticmethod
-    def _format_entities(entities: list[dict]) -> str:
-        compact_entities = []
-        for item in entities:
-            compact_entities.append(
-                {
-                    "entity_id": item.get("entity_id", ""),
-                    "entity": item.get("entity", ""),
-                    "normalized_name": item.get("normalized_name", ""),
-                    "valid_entity": item.get("valid_entity", True),
-                    "l1": item.get("l1", ""),
-                    "l2": item.get("l2", ""),
-                    "l3_type_code": item.get("l3_type_code", ""),
-                    "evidence": item.get("evidence", ""),
-                }
-            )
-        return json.dumps(compact_entities, ensure_ascii=False, indent=2)
+        return self._parse_output(sentence_id, sentence, data)
 
     @staticmethod
     def _parse_output(
         sentence_id: str,
         sentence: str,
         data: object,
-        entity_ids: set[str],
     ) -> SentenceRelationOutput:
         if not isinstance(data, dict):
-            return SentenceRelationOutput(sentence_id, sentence, False, [])
+            return SentenceRelationOutput(sentence_id, sentence, False, [], [])
 
+        # ── 解析实体 ──
+        raw_entities = data.get("entities", [])
+        if not isinstance(raw_entities, list):
+            raw_entities = []
+
+        parsed_entities: list[dict] = []
+        entity_ids: set[str] = set()
+        for i, item in enumerate(raw_entities):
+            if not isinstance(item, dict):
+                continue
+            eid = str(item.get("entity_id", f"e{i + 1}")).strip()
+            entity_name = str(item.get("entity", "")).strip()
+            if not entity_name:
+                continue
+            entity_ids.add(eid)
+            parsed_entities.append({
+                "entity_id": eid,
+                "entity": entity_name,
+                "normalized_name": str(item.get("normalized_name", entity_name)).strip(),
+                "evidence": str(item.get("evidence", "")).strip(),
+            })
+
+        # ── 解析评价关系 ──
         raw_relations = data.get("relations", [])
         if not isinstance(raw_relations, list):
             raw_relations = []
@@ -495,4 +332,5 @@ class EvaluativeRelationAgent:
             sentence=sentence,
             has_evaluation=bool(relations),
             relations=relations,
+            entities=parsed_entities,
         )

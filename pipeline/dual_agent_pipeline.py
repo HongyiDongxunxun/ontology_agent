@@ -24,17 +24,21 @@ from .reviewer_agent import (
     ReviewerAgent,
     ReviewResult,
 )
+from .evaluative_relation_agent import (
+    EvaluativeRelationAgent,
+)
 from .dynamic_term_db import DynamicTermDB
 
 
 class DualAgentPipeline:
-    """三Agent管道: Agent 1 抽取 → Agent 2 分类 → Agent 3 审查(Likert)"""
+    """四Agent管道: Agent 1 评价关系 → Agent 2 实体抽取 → Agent 3 分类 → Agent 4 审查(Likert)"""
 
     def __init__(
         self,
         llm_extraction: Optional[LLMClient] = None,
         llm_classification: Optional[LLMClient] = None,
         llm_reviewer: Optional[LLMClient] = None,
+        llm_relation: Optional[LLMClient] = None,
         dynamic_term_db: Optional[DynamicTermDB] = None,
         batch_size: int = 12,
         mid_data_dir: str = "",
@@ -48,6 +52,9 @@ class DualAgentPipeline:
         self.batch_size = batch_size
         self.mid_data_dir = mid_data_dir
 
+        self.evaluative_relation_agent = EvaluativeRelationAgent(
+            llm_relation or self.llm_extraction
+        )
         self.extraction_agent = EntityExtractionAgent(self.llm_extraction)
         self.classification_agent = ClassificationAgent(
             llm=self.llm_classification,
@@ -63,36 +70,48 @@ class DualAgentPipeline:
         self, sentences: list[tuple[str, str]], base_name: str
     ) -> tuple[list[FinalEntityResult], list[dict]]:
         """
-        执行三Agent管道 (V4.4: Agent 1 合并评价关系识别):
+        执行四Agent管道:
+        - Agent 1: 评价关系抽取 (EvaluativeRelationAgent)
+        - Agent 2: 实体抽取补充 (EntityExtractionAgent, 接收上游已知实体)
+        - Agent 3: 分类 (ClassificationAgent)
+        - Agent 4: 审查 Likert (ReviewerAgent)
         - sentences: list of (sentence_id, sentence_text)
         - base_name: 文件基础名 (如 "reviewed_full_1")
         - 返回: (所有 FinalEntityResult, 评价关系列表)
         """
-        self._log(f"[DualAgent] 开始处理 {base_name}, 共 {len(sentences)} 句")
+        self._log(f"[Pipeline] 开始处理 {base_name}, 共 {len(sentences)} 句")
 
         all_extractions: list[SentenceExtractionOutput] = []
-        all_relations: list[dict] = []  # V4.4: 从 Agent 1 收集评价关系
+        all_relations: list[dict] = []
 
-        # ── Agent 1: Entity Extraction + Relation Recognition (V4.4 合并) ──
         total_s = len(sentences)
         total_entities = 0
-        total_relations = 0
+        total_relations_count = 0
+
+        # ── Agent 1: 评价关系抽取 + Agent 2: 实体抽取补充 ──
         for idx, (sid, stmt) in enumerate(sentences, 1):
-            extraction = self.extraction_agent.extract(stmt, sentence_id=sid)
-            all_extractions.append(extraction)
-            total_entities += len(extraction.entities)
-            # V4.4: 收集评价关系
-            if extraction.has_evaluation and extraction.relations:
-                for rel in extraction.relations:
+            # Agent 1: 评价关系抽取
+            rel_output = self.evaluative_relation_agent.extract(sid, stmt)
+            if rel_output.has_evaluation and rel_output.relations:
+                for rel in rel_output.relations:
                     all_relations.append({
                         "sentence_id": sid,
                         "sentence": stmt,
                         **rel.to_dict(),
                     })
-                total_relations += len(extraction.relations)
+                total_relations_count += len(rel_output.relations)
+
+            # Agent 2: 实体抽取（补充，接收上游已知实体）
+            known_entities = rel_output.entities
+            extraction = self.extraction_agent.extract(
+                stmt, sentence_id=sid, known_entities=known_entities
+            )
+            all_extractions.append(extraction)
+            total_entities += len(extraction.entities)
+
             if idx % 5 == 0 or idx == total_s:
                 print(f"  [{base_name}] 抽取 [{idx}/{total_s}] 句, "
-                      f"累计 {total_entities} 实体, {total_relations} 评价关系")
+                      f"累计 {total_entities} 实体, {total_relations_count} 评价关系")
 
         # ── 写中间结果到 mid_data/ ──
         if self.mid_data_dir:
@@ -101,15 +120,15 @@ class DualAgentPipeline:
             mid_file = mid_path / f"{base_name}_extracted.json"
             mid_data = {
                 "base_name": base_name,
-                "stage": "agent1_extraction_with_relations",
+                "stage": "agent1_relation_agent2_entity_extraction",
                 "extractions": [e.to_dict() for e in all_extractions],
             }
             with open(mid_file, "w", encoding="utf-8") as f:
                 json.dump(mid_data, f, ensure_ascii=False, indent=2)
             print(f"  [{base_name}] 中间结果已写入: mid_data/{base_name}_extracted.json")
 
-        # ── Agent 2: Classification ──
-        print(f"  [{base_name}] Agent 2 分类中...")
+        # ── Agent 3: Classification ──
+        print(f"  [{base_name}] Agent 3 分类中...")
         all_results: list[FinalEntityResult] = []
         total_ex = len(all_extractions)
         for i, extraction in enumerate(all_extractions, 1):
@@ -120,10 +139,10 @@ class DualAgentPipeline:
 
         valid_count = sum(1 for r in all_results if r.valid_entity)
         invalid_count = sum(1 for r in all_results if not r.valid_entity)
-        print(f"\n[Agent 2] 完成: {valid_count} 有效, {invalid_count} 无效")
+        print(f"\n[Agent 3] 完成: {valid_count} 有效, {invalid_count} 无效")
 
-        # ── Agent 3: Library Science Review + Likert ──
-        print(f"  [{base_name}] Agent 3 审查中...")
+        # ── Agent 4: Library Science Review + Likert ──
+        print(f"  [{base_name}] Agent 4 审查中...")
         for i, extraction in enumerate(all_extractions, 1):
             sentence_results = [
                 r for r in all_results if r.sentence_id == extraction.sentence_id
@@ -146,7 +165,7 @@ class DualAgentPipeline:
             sum(r.likert_confidence for r in all_results if r.likert_confidence > 0) / scored
             if scored > 0 else 0
         )
-        print(f"  [{base_name}] Agent 3 完成: {scored}/{len(all_results)} 条已评分, 平均 Likert: {avg_score:.2f}")
+        print(f"  [{base_name}] Agent 4 完成: {scored}/{len(all_results)} 条已评分, 平均 Likert: {avg_score:.2f}")
 
         # ── 动态术语底库: 收集 Likert 5 高置信实体 ──
         if self.dynamic_term_db:

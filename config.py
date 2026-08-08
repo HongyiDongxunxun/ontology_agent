@@ -22,6 +22,7 @@ class LLMConfig:
     temperature: float = 0.0
     max_tokens: int = 4096
     timeout: int = 60
+    enable_thinking_relation: bool = False
     enable_thinking_extraction: bool = False
     enable_thinking_classification: bool = False
     enable_thinking_reviewer: bool = False
@@ -32,6 +33,8 @@ class LLMConfig:
         os.environ.get("DEEPSEEK_API_KEY_L2", os.environ.get("B2_LLM_API_KEY", "")))
     api_key_reviewer: str = os.environ.get("DEEPSEEK_API_KEY_REVIEWER",
         os.environ.get("DEEPSEEK_API_KEY_L3", os.environ.get("B2_LLM_API_KEY", "")))
+    api_key_relation: str = os.environ.get("DEEPSEEK_API_KEY_RELATION",
+        os.environ.get("DEEPSEEK_API_KEY_EXTRACTION", os.environ.get("B2_LLM_API_KEY", "")))
     api_key: str = os.environ.get("DEEPSEEK_API_KEY", os.environ.get("B2_LLM_API_KEY", ""))
 
 @dataclass

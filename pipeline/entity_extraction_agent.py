@@ -1,8 +1,8 @@
 """
-pipeline.entity_extraction_agent — Agent 1: 实体抽取 + 评价关系识别 (V4.4 合并版)
+pipeline.entity_extraction_agent — 实体抽取（补充抽取）
 对齐: 实体类型分类体系_opencode版.md — LangGPT 风格提示词
 从评价句中高召回抽取全部实体类型: Agent / Artifact / Abstract / Event
-同时识别评价关系 (主体-客体-极性)，替代原独立 Agent 4
+作为评价关系抽取后的补充，接收上游已知实体，避免遗漏
 输出中间结果到 mid_data/ 目录
 """
 
@@ -13,7 +13,8 @@ from typing import Optional
 from .llm import LLMClient
 
 # ===========================================================================
-# Agent 1 抽取 Prompt — LangGPT 风格 (Role/Profile/Rules/Workflow/Background/OutputFormat/Examples/Input)
+# 实体抽取 Prompt — LangGPT 风格 (Role/Profile/Rules/Workflow/Background/OutputFormat/Examples/Input)
+# 不包含评价关系识别，仅做实体抽取
 # ===========================================================================
 
 ENTITY_EXTRACTION_PROMPT = (
@@ -47,14 +48,10 @@ ENTITY_EXTRACTION_PROMPT = (
     "1. candidate_l1 允许多个，模糊实体可标多个候选 L1\n"
     "2. evidence 是从原句中截取能证明该实体存在的文本片段\n\n"
     "## Workflow\n"
-    "1. 读取待分析评价句，先判断是否存在评价表达或评价判断。\n"
-    "2. 若存在评价，先抽取评价关系草图: subject、aspect、opinion、evidence，并标出原文中可能的评价对象文本。\n"
-    "3. 对每条评价关系执行 Object Resolution: 根据 aspect/opinion 回溯真正被评价的对象。\n"
-    "4. 将每个已解析出的评价对象反推为必须抽取的 Entity，优先保留完整研究对象/主题对象边界。\n"
-    "5. 再补充句中与评价关系无直接绑定、但仍符合 Agent/Artifact/Abstract/Event 分类体系的有效实体。\n"
-    "6. 对所有 Entity 判定 candidate_l3、candidate_l1，并提取 evidence。\n"
-    "7. 用已生成的 entity_id 回填 relation.object；不要在 relation.object 中使用未进入 entities 的新 ID。\n"
-    "8. 按 OutputFormat 输出严格 JSON。\n\n"
+    "1. 读取待分析句子，结合已知实体列表，识别句中所有符合 Agent/Artifact/Abstract/Event 分类体系的有效实体。\n"
+    "2. 已知实体已在上游评价关系抽取中识别，请勿遗漏；同时补充抽取句中其他有效实体。\n"
+    "3. 对每个实体判定 candidate_l3、candidate_l1，并提取 evidence。\n"
+    "4. 按 OutputFormat 输出严格 JSON。\n\n"
     "## Background\n"
     "### 一、Agent (行为主体) — 能产生学术行为的主体\n"
     "**Person (个人)** — 刚性类型，身份不随评价语境改变\n"
@@ -100,7 +97,7 @@ ENTITY_EXTRACTION_PROMPT = (
     "- `algorithm`: 算法/计算逻辑(PageRank/TF-IDF/KNN/SOM/聚类算法)\n"
     "- `instrument`: 测量工具/量表/问卷/指标体系(调查问卷/心理量表/元素依赖性指数)\n"
     "> vs: algorithm = 明确计算步骤/排序/分类逻辑；software = 算法或功能的软件实现；instrument = 测量、评价、采集数据的工具。\n"
-    "> 电子计算机、机器人、VR/AR设备、5G、大数据、人工智能技术、云计算等不得因“技术/设备”泛化标为 algorithm 或 instrument。\n"
+    "> 电子计算机、机器人、VR/AR设备、5G、大数据、人工智能技术、云计算等不得因「技术/设备」泛化标为 algorithm 或 instrument。\n"
     "> 仅抽取具体可识别的软件名。泛称如「统计软件」「分析工具」不抽取。\n\n"
     "### 三、Abstract (抽象实体) — 无物质载体的智识构造物\n"
     "**Conceptual (概念层)**\n"
@@ -158,31 +155,8 @@ ENTITY_EXTRACTION_PROMPT = (
     "- `stage`: 发展阶段(时段性划分，模糊起止时间)\n"
     "- `conference_meeting`: 学术会议(具体召开的会议/年会/论坛)\n"
     "  > vs conference_paper(Artifact): paper 是会议论文制品，meeting 是会议召开本身\n\n"
-    "## Evaluation Relation Recognition (评价关系识别)\n"
-    "请先识别句子中的评价关系，再根据评价关系所需的 object 反推并抽取实体。\n\n"
-    "### 评价判定:\n"
-    "评价是指作者、引用文献作者或其他评价主体，对某一对象作出的正向、负向或中性的判断、概括、评价、比较或总结。\n"
-    "典型评价用语: 重要、有效、丰富、较高、较低、明显、成熟、完善、不足、较好、优于、落后、提高、降低、具有……价值、存在……问题、有待……\n"
-    "如果整个句子只是客观事实描述，没有评价，则 has_evaluation=false, relations=[]。\n\n"
-    "### 评价主体 (subject) 判定规则:\n"
-    "评价主体是作出评价的人或来源，不是执行动作的行为主体。仅允许以下四种类型:\n"
-    "1. **显性实体ID**: 句中明确指出某人/机构进行了评价 → 使用已抽取实体的 entity_id (如 \"1_e3\")\n"
-    "2. **_paper_author**: 评价来自当前论文作者，句中无显式评价主体\n"
-    "3. **_cite[N]**: 评价来自引用文献 → _cite[12] (单个引用) 或 _cite[3][5] (多个引用)\n"
-    "4. **_unknown**: 依据当前句无法确定评价主体\n\n"
-    "### 评价客体 (object) 判定规则:\n"
-    "评价客体必须是被评价的对象，优先使用已抽取实体的 entity_id。\n"
-    "若评价对象不存在于实体列表中 → 使用 \"_missing_entity\"，同时增加 object_text 字段填写原始文本。\n"
-    "不要自行创造新的 entity_id。\n\n"
-    "### 评价方面 (aspect) 与评价内容 (opinion):\n"
-    "aspect 填写评价对象的具体评价维度；若不存在明确维度则为 null。\n"
-    "opinion 填写原文中的评价表达或评价内容。\n\n"
-    "### 评价依据 (evidence):\n"
-    "输出支持该评价的最小文本片段，尽可能短但能完整表达评价。\n\n"
-    "### 多评价关系:\n"
-    "一个句子可能包含多个评价关系，也可能没有评价关系。\n\n"
     "## OutputFormat\n"
-    "严格 JSON，不含 markdown 代码块。entities 数组无实体则为空数组 []，relations 数组无评价则为空数组 []。\n"
+    "严格 JSON，不含 markdown 代码块。entities 数组无实体则为空数组 []。\n"
     '{{\n'
     '  "entities": [\n'
     '    {{\n'
@@ -195,140 +169,56 @@ ENTITY_EXTRACTION_PROMPT = (
     '      "confidence": 0.95,\n'
     '      "uncertainty": ""\n'
     '    }}\n'
-    '  ],\n'
-    '  "has_evaluation": true,\n'
-    '  "relations": [\n'
-    '    {{\n'
-    '      "subject": "_paper_author|entity_id|_cite[N]|_unknown",\n'
-    '      "object": "entity_id|_missing_entity",\n'
-    '      "aspect": "<评价方面或 null>",\n'
-    '      "opinion": "<评价表达>",\n'
-    '      "evidence": "<评价依据文本片段>",\n'
-    '      "object_text": "<仅当 object 为 _missing_entity 时填写原始文本>"\n'
-    '    }}\n'
     '  ]\n'
     '}}\n\n'
     "## Examples\n"
     "### 正例1 (scholar — 知识生产者)\n"
     "输入: 建国以前在谱学研究领域颇有建树的学者有潘光旦、罗香林等人。他们的研究对谱学理论的普及与发展具有不可磨灭的贡献。\n"
-    '输出: {{\"entities\":[{{\"mention\":\"潘光旦\",\"normalized_name\":\"潘光旦\",\"candidate_l3\":\"scholar\",\"candidate_l1\":[\"Agent\"],\"evidence\":\"在谱学研究领域颇有建树的学者有潘光旦\",\"is_specific_entity\":true,\"confidence\":0.95,\"uncertainty\":\"\"}},{{\"mention\":\"罗香林\",\"normalized_name\":\"罗香林\",\"candidate_l3\":\"scholar\",\"candidate_l1\":[\"Agent\"],\"evidence\":\"在谱学研究领域颇有建树的学者有潘光旦、罗香林等人\",\"is_specific_entity\":true,\"confidence\":0.95,\"uncertainty\":\"\"}}]}}\n\n'
+    '输出: {{"entities":[{{"mention":"潘光旦","normalized_name":"潘光旦","candidate_l3":"scholar","candidate_l1":["Agent"],"evidence":"在谱学研究领域颇有建树的学者有潘光旦","is_specific_entity":true,"confidence":0.95,"uncertainty":""}},{{"mention":"罗香林","normalized_name":"罗香林","candidate_l3":"scholar","candidate_l1":["Agent"],"evidence":"在谱学研究领域颇有建树的学者有潘光旦、罗香林等人","is_specific_entity":true,"confidence":0.95,"uncertainty":""}}]}}\n\n'
     "### 正例2 (research — 知识生产组织 + phenomenon)\n"
     "输入: 加拿大不列颠哥伦比亚大学的卫生保健管理中心门户就是一个努力帮助用户克服信息过载的网络信息中介的示例。\n"
-    '输出: {{\"entities\":[{{\"mention\":\"加拿大不列颠哥伦比亚大学\",\"normalized_name\":\"不列颠哥伦比亚大学\",\"candidate_l3\":\"research\",\"candidate_l1\":[\"Agent\"],\"evidence\":\"加拿大不列颠哥伦比亚大学的卫生保健管理中心门户\",\"is_specific_entity\":true,\"confidence\":0.95,\"uncertainty\":\"\"}},{{\"mention\":\"信息过载\",\"normalized_name\":\"信息过载\",\"candidate_l3\":\"phenomenon\",\"candidate_l1\":[\"Abstract\"],\"evidence\":\"帮助用户克服信息过载\",\"is_specific_entity\":true,\"confidence\":0.9,\"uncertainty\":\"现实信息问题,非术语本身\"}}]}}\n\n'
+    '输出: {{"entities":[{{"mention":"加拿大不列颠哥伦比亚大学","normalized_name":"不列颠哥伦比亚大学","candidate_l3":"research","candidate_l1":["Agent"],"evidence":"加拿大不列颠哥伦比亚大学的卫生保健管理中心门户","is_specific_entity":true,"confidence":0.95,"uncertainty":""}},{{"mention":"信息过载","normalized_name":"信息过载","candidate_l3":"phenomenon","candidate_l1":["Abstract"],"evidence":"帮助用户克服信息过载","is_specific_entity":true,"confidence":0.9,"uncertainty":"现实信息问题,非术语本身"}}]}}\n\n'
     "### 正例3 (book — 专著)\n"
     "输入: 新版《图书馆学概论》反映了网络时代国内外图书馆学研究的最新成果。与旧版相比,其观点更新颖,内容更充实,结构更合理。\n"
-    '输出: {{\"entities\":[{{\"mention\":\"新版《图书馆学概论》\",\"normalized_name\":\"《图书馆学概论》\",\"candidate_l3\":\"book\",\"candidate_l1\":[\"Artifact\"],\"evidence\":\"新版《图书馆学概论》反映了网络时代国内外图书馆学研究的最新成果\",\"is_specific_entity\":true,\"confidence\":0.95,\"uncertainty\":\"\"}}]}}\n\n'
+    '输出: {{"entities":[{{"mention":"新版《图书馆学概论》","normalized_name":"《图书馆学概论》","candidate_l3":"book","candidate_l1":["Artifact"],"evidence":"新版《图书馆学概论》反映了网络时代国内外图书馆学研究的最新成果","is_specific_entity":true,"confidence":0.95,"uncertainty":""}}]}}\n\n'
     "### 正例4 (knowledge_organization_system)\n"
     "输入: 关于类目虚设问题。这点《中图法》比较突出,尤以自然科学类为最,不但加重了分类法的篇幅,也给分类员制造了麻烦。\n"
-    '输出: {{\"entities\":[{{\"mention\":\"《中图法》\",\"normalized_name\":\"《中图法》\",\"candidate_l3\":\"knowledge_organization_system\",\"candidate_l1\":[\"Artifact\"],\"evidence\":\"这点《中图法》比较突出\",\"is_specific_entity\":true,\"confidence\":0.95,\"uncertainty\":\"\"}}]}}\n'
+    '输出: {{"entities":[{{"mention":"《中图法》","normalized_name":"《中图法》","candidate_l3":"knowledge_organization_system","candidate_l1":["Artifact"],"evidence":"这点《中图法》比较突出","is_specific_entity":true,"confidence":0.95,"uncertainty":""}}]}}\n'
     "> 「比较突出」中的「比较」为虚义动词，不抽取。\n\n"
     "### 正例5 (theory — 理论)\n"
     "输入: Ausubel基于学习者认知结构的学习迁移理论与这些研究问题非常契合。已有研究并没有深入探讨学习迁移的基础理论。\n"
-    '输出: {{\"entities\":[{{\"mention\":\"学习迁移理论\",\"normalized_name\":\"学习迁移理论\",\"candidate_l3\":\"theory\",\"candidate_l1\":[\"Abstract\"],\"evidence\":\"Ausubel基于学习者认知结构的学习迁移理论\",\"is_specific_entity\":true,\"confidence\":0.92,\"uncertainty\":\"\"}}]}}\n'
+    '输出: {{"entities":[{{"mention":"学习迁移理论","normalized_name":"学习迁移理论","candidate_l3":"theory","candidate_l1":["Abstract"],"evidence":"Ausubel基于学习者认知结构的学习迁移理论","is_specific_entity":true,"confidence":0.92,"uncertainty":""}}]}}\n'
     "> 「基础理论」为泛称，不抽取。只抽取有具体命名的理论。\n\n"
     "### 正例6 (method — 研究方法)\n"
     "输入: 传统的统计回归方法常采用线性或多项式函数;而机器学习方法更倾向于复杂的非线性模型,能得到较高准确率。\n"
-    '输出: {{\"entities\":[{{\"mention\":\"统计回归方法\",\"normalized_name\":\"统计回归方法\",\"candidate_l3\":\"method\",\"candidate_l1\":[\"Abstract\"],\"evidence\":\"传统的统计回归方法常采用线性或多项式函数\",\"is_specific_entity\":true,\"confidence\":0.95,\"uncertainty\":\"\"}},{{\"mention\":\"机器学习方法\",\"normalized_name\":\"机器学习方法\",\"candidate_l3\":\"method\",\"candidate_l1\":[\"Abstract\"],\"evidence\":\"机器学习方法更倾向于复杂的非线性模型\",\"is_specific_entity\":true,\"confidence\":0.95,\"uncertainty\":\"\"}}]}}\n'
+    '输出: {{"entities":[{{"mention":"统计回归方法","normalized_name":"统计回归方法","candidate_l3":"method","candidate_l1":["Abstract"],"evidence":"传统的统计回归方法常采用线性或多项式函数","is_specific_entity":true,"confidence":0.95,"uncertainty":""}},{{"mention":"机器学习方法","normalized_name":"机器学习方法","candidate_l3":"method","candidate_l1":["Abstract"],"evidence":"机器学习方法更倾向于复杂的非线性模型","is_specific_entity":true,"confidence":0.95,"uncertainty":""}}]}}\n'
     "> 「预测结果」「高准确率」为评价用语，不抽取。\n\n"
     "### 正例7 (phenomenon)\n"
     "输入: 长期以来各文化机构独自推进的智改数转造就了一座座数据孤岛,底层关联不足进而会引发上层文化服务割裂。\n"
-    '输出: {{\"entities\":[{{\"mention\":\"数据孤岛\",\"normalized_name\":\"数据孤岛\",\"candidate_l3\":\"phenomenon\",\"candidate_l1\":[\"Abstract\"],\"evidence\":\"造就了一座座数据孤岛\",\"is_specific_entity\":true,\"confidence\":0.95,\"uncertainty\":\"\"}}]}}\n'
+    '输出: {{"entities":[{{"mention":"数据孤岛","normalized_name":"数据孤岛","candidate_l3":"phenomenon","candidate_l1":["Abstract"],"evidence":"造就了一座座数据孤岛","is_specific_entity":true,"confidence":0.95,"uncertainty":""}}]}}\n'
     "> 「文化服务割裂」若无独立学术命名则不抽取。\n\n"
     "### 正例7b (subfield vs concept)\n"
     "输入: 信息检索在图书情报学研究中形成了稳定的问题域和方法传统。\n"
-    '输出: {{\"entities\":[{{\"mention\":\"信息检索\",\"normalized_name\":\"信息检索\",\"candidate_l3\":\"subfield\",\"candidate_l1\":[\"Abstract\"],\"evidence\":\"信息检索在图书情报学研究中形成了稳定的问题域和方法传统\",\"is_specific_entity\":true,\"confidence\":0.9,\"uncertainty\":\"作为研究子领域,非concept兜底\"}}]}}\n\n'
+    '输出: {{"entities":[{{"mention":"信息检索","normalized_name":"信息检索","candidate_l3":"subfield","candidate_l1":["Abstract"],"evidence":"信息检索在图书情报学研究中形成了稳定的问题域和方法传统","is_specific_entity":true,"confidence":0.9,"uncertainty":"作为研究子领域,非concept兜底"}}]}}\n\n'
     "### 正例7c (concept 的正向用法)\n"
     "输入: 「信息素养」这一概念强调个体识别、获取和评价信息的能力。\n"
-    '输出: {{\"entities\":[{{\"mention\":\"信息素养\",\"normalized_name\":\"信息素养\",\"candidate_l3\":\"concept\",\"candidate_l1\":[\"Abstract\"],\"evidence\":\"「信息素养」这一概念\",\"is_specific_entity\":true,\"confidence\":0.9,\"uncertainty\":\"原句讨论术语/概念名本身\"}}]}}\n\n'
+    '输出: {{"entities":[{{"mention":"信息素养","normalized_name":"信息素养","candidate_l3":"concept","candidate_l1":["Abstract"],"evidence":"「信息素养」这一概念","is_specific_entity":true,"confidence":0.9,"uncertainty":"原句讨论术语/概念名本身"}}]}}\n\n'
     "### 正例8 (debate + movement)\n"
     "输入: 情报学中对于Information与Intelligence的争论应该是有益的。开放获取意味着文章一旦被创造出来,将通过网络让读者免费获取和利用。\n"
-    '输出: {{\"entities\":[{{\"mention\":\"Information与Intelligence的争论\",\"normalized_name\":\"Information与Intelligence的争论\",\"candidate_l3\":\"debate\",\"candidate_l1\":[\"Event\"],\"evidence\":\"情报学中对于Information与Intelligence的争论应该是有益的\",\"is_specific_entity\":true,\"confidence\":0.92,\"uncertainty\":\"\"}},{{\"mention\":\"开放获取\",\"normalized_name\":\"开放获取\",\"candidate_l3\":\"movement\",\"candidate_l1\":[\"Event\"],\"evidence\":\"开放获取意味着文章一旦被创造出来\",\"is_specific_entity\":true,\"confidence\":0.9,\"uncertainty\":\"可兼为concept\"}}]}}\n'
+    '输出: {{"entities":[{{"mention":"Information与Intelligence的争论","normalized_name":"Information与Intelligence的争论","candidate_l3":"debate","candidate_l1":["Event"],"evidence":"情报学中对于Information与Intelligence的争论应该是有益的","is_specific_entity":true,"confidence":0.92,"uncertainty":""}},{{"mention":"开放获取","normalized_name":"开放获取","candidate_l3":"movement","candidate_l1":["Event"],"evidence":"开放获取意味着文章一旦被创造出来","is_specific_entity":true,"confidence":0.9,"uncertainty":"可兼为concept"}}]}}\n'
     "> 「开放获取」既可作 concept 也可作 movement。此处描述其作为运动的方式，优先标 movement。\n\n"
     "### 负例1 (泛称身份不抽取)\n"
     "输入: 许多科学家认为开放获取能推动学术交流与合作。\n"
-    '输出: {{\"entities\":[]}}\n'
+    '输出: {{"entities":[]}}\n'
     "> 「科学家」是泛化身份类别词，不指称具体个人 → 不抽取。\n\n"
     "### 负例2 (通用词/评价用语不抽取)\n"
     "输入: 通过比较两种方法的优劣，本文认为该理论具有重要意义。\n"
-    '输出: {{\"entities\":[]}}\n'
+    '输出: {{"entities":[]}}\n'
     "> 「比较」通用动词、「优劣」评价用语、「本文」自指、「重要意义」评价用语 → 均不抽取。\n\n"
+    "## 已知实体（来自上游评价关系抽取，请勿遗漏）\n"
+    "{known_entities_text}\n\n"
     "## Input\n"
     "{statement}"
-)
-
-ENTITY_EXTRACTION_PROMPT = ENTITY_EXTRACTION_PROMPT.replace(
-    "## Input\n{statement}",
-"""## Academic Evaluation Object Rules (增强规则)
-本任务采用“先找评价关系，后抽取实体”的关系优先策略：
-1. 先识别句中的评价触发、opinion、aspect 和 evidence。
-2. 再通过 Object Resolution 确定每条评价真正指向的 object 文本。
-3. 最后把这些 object 文本作为必须进入 entities 的候选实体，生成实体列表并用 entity_id 回填 relation.object。
-4. 若某个短语只是 aspect，不要放入 entities；若某个短语是被评价 object，即使它不是传统命名实体，也应作为 Entity 抽取。
-5. entities 必须覆盖所有可解析的 relation.object。不要先因为实体列表缺失而把关系 object 写成 _missing_entity。
-
-请明确区分四类成分：
-1. Entity: 文本中具有独立语义、可作为知识图谱节点的对象。
-2. Evaluation Object: 评价关系中被评价的核心对象，通常来自 Entity，并在 relation.object 中填写对应 entity_id。
-3. Evaluation Aspect: 评价对象的某个评价维度，不是 Entity。
-4. Opinion: 评价表达或评价内容。
-
-实体抽取不要只按传统 NER。学术评价文本中的研究对象、领域主题和复合研究对象也应抽取为 Entity，例如：
-- 农村图书馆研究
-- 农村图书馆问题
-- 档案信息化建设
-- 数字图书馆建设
-- 中西部地区研究
-- 数字化建设
-- 基础理论研究
-
-最小评价对象原则：
-若一个名词短语能够整体接受评价词修饰，优先抽取完整短语，而不是拆出内部成分。
-- “中西部地区研究不足” -> Entity: 中西部地区研究；不要抽取“中西部地区”。
-- “农村图书馆事业发展良好” -> Entity: 农村图书馆事业发展；不要只抽“农村图书馆”。
-- “数字信息资源建设存在不足” -> Entity: 数字信息资源建设；不要只抽“数字信息资源”。
-
-当名词短语后接“研究、建设、发展、问题、实践、应用、水平、能力、体系”，且整体构成被评价的研究对象或主题对象时，优先整体抽取。
-
-以下通常不是 Entity，除非原文把它们作为独立研究对象或术语本身讨论：
-作者分布、研究水平、研究质量、理论基础、应用效果、区域分布。
-它们在评价关系中通常应放入 aspect 字段。
-
-评价关系不要按“实体 + 评价词”机械抽取，而应识别：
-subject = 评价主体
-object = 被评价的核心对象 entity_id
-aspect = 评价方面；没有则为 null
-opinion = 评价表达
-evidence = 支持该评价的最小原文片段
-
-评价对象回溯（Object Resolution）：
-先识别 aspect 与 opinion，再判断“这个评价是在评价哪个实体”。不要因为 aspect 不是实体，就直接输出 _missing_entity。
-1. 优先绑定已有实体：若 aspect 属于某个已抽取实体的属性、组成部分、发展情况、研究维度或评价维度，object 必须绑定该实体。
-2. Aspect 不是 Object：aspect 表示评价维度，object 表示真正被评价的对象。例如“作者分布不合理”若句子讨论“农村图书馆研究”，object=农村图书馆研究，aspect=作者分布。
-3. 寻找 aspect 所属对象：当 aspect 出现时，优先向左寻找其所属对象。
-   - “数字图書館建設的發展速度較快” -> object=数字图書館建設, aspect=發展速度, opinion=較快。
-   - “法明頓計畫在協調布局方面堪稱典範” -> object=法明頓計畫, aspect=協調布局, opinion=堪稱典範。
-4. 允许跨短语回溯：object 不一定紧邻 aspect。例如“近年来，档案信息化建设取得快速发展，其理论研究仍存在不足”中，“理论研究/不足”应回溯到“档案信息化建设”。
-5. 仅当当前句不存在任何可作为评价对象的实体、aspect 无法归属于任何实体、且上下文无法确定评价对象时，才使用 _missing_entity。
-6. Entity 优先原则：多个候选实体时，选择最直接被评价、语义距离最近、且能够完整支撑 aspect 的实体。不要选择地名、时间、修饰语。
-7. Aspect 属于 object，不是独立 object。例如“研究水平偏低”：object=农村图书馆研究，aspect=研究水平，opinion=偏低；不要 object=研究水平。
-
-例如：
-句子：“我国农村图书馆研究取得了一定成绩，但作者分布不合理、研究水平偏低。”
-Entity 只抽取“农村图书馆研究”，不要抽取“作者分布”或“研究水平”。
-Relations:
-[
-  {{"subject":"_paper_author","object":"<农村图书馆研究的entity_id>","aspect":"作者分布","opinion":"不合理","evidence":"作者分布不合理"}},
-  {{"subject":"_paper_author","object":"<农村图书馆研究的entity_id>","aspect":"研究水平","opinion":"偏低","evidence":"研究水平偏低"}}
-]
-
-句子：“中西部地区研究不足。”
-Entity: 中西部地区研究
-Relation: object=<中西部地区研究的entity_id>, aspect=null, opinion=不足。
-
-关系输出字段必须使用 subject、object、aspect、opinion、evidence。不要输出 polarity。
-
-## Input
-{statement}""",
 )
 
 # ===========================================================================
@@ -337,7 +227,7 @@ Relation: object=<中西部地区研究的entity_id>, aspect=null, opinion=不�
 
 
 class ExtractedEntity:
-    """Agent 1 抽取的单条实体中间结果"""
+    """抽取的单条实体中间结果"""
 
     def __init__(
         self,
@@ -389,73 +279,24 @@ class ExtractedEntity:
         )
 
 
-class ExtractedRelation:
-    """Agent 1 识别的一条评价关系 (V4.4 新增)"""
-
-    def __init__(
-        self,
-        subject: str = "",
-        object: str = "",
-        aspect: Optional[str] = None,
-        opinion: str = "",
-        evidence: str = "",
-        object_text: str = "",
-    ):
-        self.subject = subject
-        self.object = object
-        self.aspect = aspect if aspect not in ("", "null") else None
-        self.opinion = opinion
-        self.evidence = evidence
-        self.object_text = object_text
-
-    def to_dict(self) -> dict:
-        data = {
-            "subject": self.subject,
-            "object": self.object,
-            "aspect": self.aspect,
-            "opinion": self.opinion,
-            "evidence": self.evidence,
-        }
-        if self.object == "_missing_entity" and self.object_text:
-            data["object_text"] = self.object_text
-        return data
-
-    @staticmethod
-    def from_dict(data: dict) -> "ExtractedRelation":
-        return ExtractedRelation(
-            subject=data.get("subject", ""),
-            object=data.get("object", ""),
-            aspect=data.get("aspect"),
-            opinion=data.get("opinion", ""),
-            evidence=data.get("evidence", ""),
-            object_text=data.get("object_text", ""),
-        )
-
-
 class SentenceExtractionOutput:
-    """单句的抽取输出 (V4.4: 增加评价关系)"""
+    """单句的抽取输出（仅实体，不含评价关系）"""
 
     def __init__(
         self,
         sentence_id: str = "",
         sentence: str = "",
         entities: Optional[list[ExtractedEntity]] = None,
-        has_evaluation: bool = False,
-        relations: Optional[list[ExtractedRelation]] = None,
     ):
         self.sentence_id = sentence_id
         self.sentence = sentence
         self.entities = entities or []
-        self.has_evaluation = has_evaluation
-        self.relations = relations or []
 
     def to_dict(self) -> dict:
         return {
             "sentence_id": self.sentence_id,
             "sentence": self.sentence,
             "entities": [e.to_dict() for e in self.entities],
-            "has_evaluation": self.has_evaluation,
-            "relations": [r.to_dict() for r in self.relations],
         }
 
     @staticmethod
@@ -464,39 +305,42 @@ class SentenceExtractionOutput:
             sentence_id=data.get("sentence_id", ""),
             sentence=data.get("sentence", ""),
             entities=[ExtractedEntity.from_dict(e) for e in data.get("entities", [])],
-            has_evaluation=data.get("has_evaluation", False),
-            relations=[ExtractedRelation.from_dict(r) for r in data.get("relations", [])],
         )
 
 
 # ===========================================================================
-# Agent 1: Entity Extraction Agent
+# 实体抽取 Agent
 # ===========================================================================
 
 
 class EntityExtractionAgent:
     """
-    Agent 1 — 实体抽取 + 评价关系识别 (V4.4 合并版)
-    单次 LLM 调用完成:
-      1. 全部 Agent/Artifact/Abstract/Event 实体抽取
-      2. 评价关系识别 (主体-客体-极性)
+    实体抽取 Agent（补充抽取）
+    从评价句中高召回抽取全部 Agent/Artifact/Abstract/Event 实体。
+    接收上游评价关系抽取的已知实体作为上下文，避免遗漏。
     输出中间结果 (SentenceExtractionOutput) 写入 mid_data/。
     """
 
     def __init__(self, llm: Optional[LLMClient] = None):
         self.llm = llm or LLMClient()
 
-    def extract(self, statement: str, sentence_id: str = "") -> SentenceExtractionOutput:
-        prompt = ENTITY_EXTRACTION_PROMPT.format(statement=statement)
+    def extract(
+        self,
+        statement: str,
+        sentence_id: str = "",
+        known_entities: Optional[list[dict]] = None,
+    ) -> SentenceExtractionOutput:
+        known_text = self._format_known_entities(known_entities or [])
+        prompt = ENTITY_EXTRACTION_PROMPT.format(
+            statement=statement, known_entities_text=known_text
+        )
         data = self.llm.call_json(prompt, {})
         if not isinstance(data, dict):
             return SentenceExtractionOutput(
-                sentence_id=sentence_id, sentence=statement, entities=[], relations=[]
+                sentence_id=sentence_id, sentence=statement, entities=[]
             )
 
-        # ── 实体抽取 (原逻辑) ──
         entities: list[ExtractedEntity] = []
-        entity_ids: set[str] = set()
         raw_entities = data.get("entities", []) or []
         for i, item in enumerate(raw_entities):
             if not isinstance(item, dict):
@@ -505,7 +349,6 @@ class EntityExtractionAgent:
             if not mention:
                 continue
             eid = f"{sentence_id}_e{i + 1}"
-            entity_ids.add(eid)
             entities.append(
                 ExtractedEntity(
                     entity_id=eid,
@@ -520,46 +363,23 @@ class EntityExtractionAgent:
                 )
             )
 
-        # ── 评价关系识别 (V4.4 新增) ──
-        has_evaluation = bool(data.get("has_evaluation", False))
-        raw_relations = data.get("relations", [])
-        if not isinstance(raw_relations, list):
-            raw_relations = []
-
-        relations: list[ExtractedRelation] = []
-        for item in raw_relations:
-            if not isinstance(item, dict):
-                continue
-            subject = str(item.get("subject", "")).strip()
-            obj = str(item.get("object", "")).strip()
-            aspect_value = item.get("aspect")
-            aspect = None if aspect_value is None else str(aspect_value).strip()
-            opinion = str(item.get("opinion", "")).strip()
-            evidence = str(item.get("evidence", "")).strip()
-            object_text = str(item.get("object_text", "")).strip()
-
-            if not subject or not obj or not opinion or not evidence:
-                continue
-            # 验证 object 是否为已识别的实体ID
-            if obj != "_missing_entity" and obj not in entity_ids:
-                object_text = object_text or str(item.get("object", "")).strip()
-                obj = "_missing_entity"
-
-            relations.append(
-                ExtractedRelation(
-                    subject=subject,
-                    object=obj,
-                    aspect=aspect,
-                    opinion=opinion,
-                    evidence=evidence,
-                    object_text=object_text,
-                )
-            )
-
         return SentenceExtractionOutput(
             sentence_id=sentence_id,
             sentence=statement,
             entities=entities,
-            has_evaluation=has_evaluation or bool(relations),
-            relations=relations,
         )
+
+    @staticmethod
+    def _format_known_entities(entities: list[dict]) -> str:
+        """将上游已知实体格式化为提示词文本"""
+        if not entities:
+            return "无"
+        lines = []
+        for e in entities:
+            name = e.get("entity", e.get("normalized_name", ""))
+            norm = e.get("normalized_name", "")
+            if norm and norm != name:
+                lines.append(f"- {name}（规范化：{norm}）")
+            elif name:
+                lines.append(f"- {name}")
+        return "\n".join(lines) if lines else "无"
