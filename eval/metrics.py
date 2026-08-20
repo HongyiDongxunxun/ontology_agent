@@ -1,10 +1,11 @@
 """
 eval.metrics — F1/Precision/Recall 计算 + 混淆矩阵
 
-支持三个评估维度:
+支持四个评估维度:
 1. 实体抽取级: 基于 mention 匹配的 P/R/F1
 2. 分类级: L1/L2/L3 逐层 Accuracy (仅对正确抽取的实体)
 3. 端到端严格匹配: mention+L1+L2+L3 全对的 P/R/F1
+4. 评价关系抽取级 (V5.0): subject/object/opinion 匹配的 P/R/F1 + 句级 has_evaluation 准确性
 
 以及 per-type 细分和混淆矩阵。
 """
@@ -15,6 +16,14 @@ from dataclasses import dataclass, field
 from typing import Optional
 
 from .gold_standard import GoldStandard, GoldEntity
+
+
+def _normalize_relation_name(name: str) -> str:
+    """规范化实体名用于关系匹配 (与 pipeline 侧保持一致)"""
+    name = (name or "").strip()
+    for a, b in (("（", "("), ("）", ")"), ("《", ""), ("》", "")):
+        name = name.replace(a, b)
+    return name
 
 
 # ===========================================================================
@@ -67,6 +76,20 @@ class EvalResult:
     validity_accuracy: float = 0.0
     validity_correct: int = 0
     validity_total: int = 0
+
+    # ── 评价关系抽取级 (V5.0) ──
+    relation_precision: float = 0.0
+    relation_recall: float = 0.0
+    relation_f1: float = 0.0
+    relation_tp: int = 0
+    relation_fp: int = 0
+    relation_fn: int = 0
+    relation_total_gold: int = 0
+
+    # ── 句级 has_evaluation 准确性 (V5.0) ──
+    has_eval_accuracy: float = 0.0
+    has_eval_correct: int = 0
+    has_eval_total: int = 0
 
     # ── 总体统计 ──
     total_predicted: int = 0    # 管道输出的实体总数
@@ -318,6 +341,151 @@ def compute_strict_metrics(
     return precision, recall, f1, tp, fp, fn
 
 
+def normalize_relation_output(
+    relations: list[dict],
+) -> dict[str, dict]:
+    """
+    将管道的评价关系输出按 sentence_id 分组 (V5.0)。
+
+    输入: [{"sentence_id": ..., "subject": ..., "object": ..., ...}, ...]
+    输出: {"1": {"has_evaluation": true, "relations": [rel_dict, ...]}, ...}
+
+    has_evaluation 由该句是否存在关系推断 (管道层面关系为空的句子不进入输出,
+    因此这里只能覆盖有关系的句子; 无关系句子的 has_evaluation 由调用方补充)。
+    """
+    grouped: dict[str, dict] = {}
+    for rel in relations:
+        sid = str(rel.get("sentence_id", ""))
+        if not sid:
+            continue
+        entry = grouped.setdefault(sid, {"has_evaluation": False, "relations": []})
+        entry["relations"].append(rel)
+        entry["has_evaluation"] = True
+    return grouped
+
+
+def compute_relation_metrics(
+    relation_predictions: dict[str, dict],
+    gold_standard: GoldStandard,
+    entity_predictions: dict[str, list[dict]],
+) -> tuple[float, float, float, int, int, int]:
+    """
+    评价关系抽取级 P/R/F1 (V5.0)。
+
+    匹配条件 (1:1 贪心匹配, 每句内):
+    - subject 完全一致 (_paper_author/_cite[N]/人名/_unknown)
+    - object 一致: 预测的 entity_id 先解析回实体名 (或 _missing_entity 的 object_text),
+      再与标注的 object mention 做规范化匹配
+    - opinion 规范化后完全一致
+
+    参数:
+    - relation_predictions: normalize_relation_output() 的分组结果
+    - gold_standard: 含 gold_relations 的标注数据集
+    - entity_predictions: normalize_pipeline_output() 的实体分组 (用于 ID→名字解析)
+
+    返回: (precision, recall, f1, tp, fp, fn)
+    """
+    tp, fp, fn = 0, 0, 0
+
+    # 预构建每句的 entity_id → 名字映射
+    id_to_name: dict[str, dict[str, str]] = {}
+    for sid, entities in entity_predictions.items():
+        mapping: dict[str, str] = {}
+        for e in entities:
+            eid = str(e.get("entity_id", ""))
+            if not eid:
+                continue
+            name = e.get("entity") or e.get("mention") or ""
+            if name:
+                mapping[eid] = name
+            norm = e.get("normalized_name", "")
+            if norm:
+                mapping.setdefault(f"{eid}::norm", norm)
+        id_to_name[sid] = mapping
+
+    gold_relation_total = 0
+    for sid, pred_entry in relation_predictions.items():
+        gold_sentence = gold_standard.get_sentence(sid)
+        if gold_sentence is None:
+            continue
+
+        gold_relations = gold_sentence.gold_relations
+        gold_relation_total += len(gold_relations)
+        matched_gold: set[int] = set()
+
+        for pred_rel in pred_entry.get("relations", []):
+            pred_subject = str(pred_rel.get("subject", "")).strip()
+            pred_obj_id = str(pred_rel.get("object", "")).strip()
+            pred_opinion = _normalize_relation_name(str(pred_rel.get("opinion", "")))
+
+            # 解析预测 object → 名字
+            pred_obj_name = ""
+            mapping = id_to_name.get(sid, {})
+            if pred_obj_id == "_missing_entity":
+                pred_obj_name = pred_rel.get("object_text", "")
+            else:
+                pred_obj_name = (
+                    mapping.get(pred_obj_id, "")
+                    or mapping.get(f"{pred_obj_id}::norm", "")
+                )
+            pred_obj_name = _normalize_relation_name(pred_obj_name)
+
+            if not pred_subject or not pred_obj_name or not pred_opinion:
+                fp += 1
+                continue
+
+            # 1:1 贪心匹配
+            found = False
+            for gi, gold_rel in enumerate(gold_relations):
+                if gi in matched_gold:
+                    continue
+                if (
+                    gold_rel.subject == pred_subject
+                    and _normalize_relation_name(gold_rel.object) == pred_obj_name
+                    and _normalize_relation_name(gold_rel.opinion) == pred_opinion
+                ):
+                    matched_gold.add(gi)
+                    found = True
+                    break
+
+            if found:
+                tp += 1
+            else:
+                fp += 1
+
+        fn += len(gold_relations) - len(matched_gold)
+
+    precision = tp / max(tp + fp, 1)
+    recall = tp / max(tp + fn, 1)
+    f1 = 2 * precision * recall / max(precision + recall, 1e-9)
+
+    return precision, recall, f1, tp, fp, fn
+
+
+def compute_has_eval_accuracy(
+    has_evaluation_predictions: dict[str, bool],
+    gold_standard: GoldStandard,
+) -> tuple[float, int, int]:
+    """
+    句级 has_evaluation 二元准确性 (V5.0)。
+
+    - has_evaluation_predictions: {sentence_id: bool}
+    - 标注侧: GoldSentence.get_has_evaluation()
+
+    返回: (accuracy, correct, total)
+    """
+    correct = total = 0
+    for sid, pred_has_eval in has_evaluation_predictions.items():
+        gold_sentence = gold_standard.get_sentence(sid)
+        if gold_sentence is None:
+            continue
+        total += 1
+        if pred_has_eval == gold_sentence.get_has_evaluation():
+            correct += 1
+    accuracy = correct / max(total, 1)
+    return accuracy, correct, total
+
+
 def compute_per_type_metrics(
     predictions: dict[str, list[dict]],
     gold_standard: GoldStandard,
@@ -460,6 +628,8 @@ def compute_metrics(
     gold_standard: GoldStandard,
     match_mode: str = "exact",
     detailed: bool = True,
+    relation_predictions: Optional[dict[str, dict]] = None,
+    has_evaluation_predictions: Optional[dict[str, bool]] = None,
 ) -> EvalResult:
     """
     一站式评估: 计算所有指标并返回 EvalResult。
@@ -469,6 +639,10 @@ def compute_metrics(
     - gold_standard: 标注数据集
     - match_mode: "exact" | "fuzzy" | "normalized"
     - detailed: 是否计算 per-type 和混淆矩阵 (耗时稍多)
+    - relation_predictions (V5.0): normalize_relation_output() 的分组关系结果;
+      传入时额外计算评价关系抽取级 P/R/F1
+    - has_evaluation_predictions (V5.0): {sentence_id: bool}; 传入时额外计算
+      句级 has_evaluation 准确性
 
     返回: EvalResult
     """
@@ -547,5 +721,27 @@ def compute_metrics(
         result.l3_confusion = build_confusion_matrix(
             predictions, gold_standard, "l3"
         )
+
+    # 7. 评价关系抽取级 (V5.0, 可选)
+    if relation_predictions is not None:
+        rp, rr, rf1, rtp, rfp, rfn = compute_relation_metrics(
+            relation_predictions, gold_standard, predictions
+        )
+        result.relation_precision = rp
+        result.relation_recall = rr
+        result.relation_f1 = rf1
+        result.relation_tp = rtp
+        result.relation_fp = rfp
+        result.relation_fn = rfn
+        result.relation_total_gold = gold_standard.relation_count()
+
+    # 8. 句级 has_evaluation 准确性 (V5.0, 可选)
+    if has_evaluation_predictions is not None:
+        acc, correct, total = compute_has_eval_accuracy(
+            has_evaluation_predictions, gold_standard
+        )
+        result.has_eval_accuracy = acc
+        result.has_eval_correct = correct
+        result.has_eval_total = total
 
     return result

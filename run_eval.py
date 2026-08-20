@@ -19,17 +19,12 @@ if "--eval" not in sys.argv: sys.argv.append("--eval")
 if "--live" not in sys.argv: sys.argv.append("--live")
 
 gold_path = Path(__file__).parent / "output" / "eval" / "gold_standard.jsonl"
-terms_path = Path(__file__).parent / "dynamic_terms.json"
+terms_path = Path(__file__).parent / "output" / "dynamic_terms.json"
 
 if "--gold" not in " ".join(sys.argv) and gold_path.exists():
     sys.argv.extend(["--gold", str(gold_path)])
 if "--dynamic-terms" not in " ".join(sys.argv) and terms_path.exists():
     sys.argv.extend(["--dynamic-terms", str(terms_path)])
-else:
-    # Try ontology_agent_2's dynamic_terms.json
-    alt_terms = Path("D:/code/AcademicEvaluation/ontology_agent_2/dynamic_terms.json")
-    if alt_terms.exists():
-        sys.argv.extend(["--dynamic-terms", str(alt_terms)])
 
 if "--eval-output" not in " ".join(sys.argv):
     sys.argv.extend(["--eval-output", str(Path(__file__).parent / "eval" / "report_latest.md")])

@@ -65,7 +65,26 @@ def generate_report(
         f"**{_pct(eval_result.strict_f1)}** | "
         f"{eval_result.strict_tp} | {eval_result.strict_fp} | {eval_result.strict_fn} |"
     )
+    if eval_result.relation_total_gold > 0:
+        lines.append(
+            f"| **评价关系抽取** | {_pct(eval_result.relation_precision)} | "
+            f"{_pct(eval_result.relation_recall)} | "
+            f"**{_pct(eval_result.relation_f1)}** | "
+            f"{eval_result.relation_tp} | {eval_result.relation_fp} | {eval_result.relation_fn} |"
+        )
     lines.append(f"")
+
+    # ── 1.5 句级 has_evaluation 准确性 (V5.0) ──
+    if eval_result.has_eval_total > 0:
+        lines.append(f"## 1.5 句级 has_evaluation 准确性 (评价句判定)")
+        lines.append(f"")
+        lines.append(f"| Accuracy | 正确数 | 总数 |")
+        lines.append(f"|----------|--------|------|")
+        lines.append(
+            f"| **{_pct(eval_result.has_eval_accuracy)}** | "
+            f"{eval_result.has_eval_correct} | {eval_result.has_eval_total} |"
+        )
+        lines.append(f"")
 
     # ── 2. 分类准确率 ──
     lines.append(f"## 2. 分类准确率 (已匹配实体)")
@@ -228,11 +247,18 @@ def _print_summary_impl(eval_result: EvalResult, safe: bool = False) -> None:
     print(f"  Strict (end-to-end)  {_pct(eval_result.strict_precision):>9}  "
           f"{_pct(eval_result.strict_recall):>9}  "
           f"{_pct(eval_result.strict_f1):>9}")
+    if eval_result.relation_total_gold > 0:
+        print(f"  Relation (V5.0)      {_pct(eval_result.relation_precision):>9}  "
+              f"{_pct(eval_result.relation_recall):>9}  "
+              f"{_pct(eval_result.relation_f1):>9}")
     print(f"  {sep}")
     print(f"  L1 Accuracy: {_pct(eval_result.l1_accuracy):>9}")
     print(f"  L2 Accuracy: {_pct(eval_result.l2_accuracy):>9}")
     print(f"  L3 Accuracy: {_pct(eval_result.l3_accuracy):>9}")
     print(f"  Validity:    {_pct(eval_result.validity_accuracy):>9}")
+    if eval_result.has_eval_total > 0:
+        print(f"  has_eval:    {_pct(eval_result.has_eval_accuracy):>9}  "
+              f"({eval_result.has_eval_correct}/{eval_result.has_eval_total})")
 
     if eval_result.per_type:
         low_f1 = [

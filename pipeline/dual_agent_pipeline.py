@@ -14,6 +14,7 @@ from typing import Optional
 from .llm import LLMClient
 from .entity_extraction_agent import (
     EntityExtractionAgent,
+    ExtractedEntity,
     SentenceExtractionOutput,
 )
 from .classification_agent import (
@@ -26,6 +27,7 @@ from .reviewer_agent import (
 )
 from .evaluative_relation_agent import (
     EvaluativeRelationAgent,
+    _normalize_name,
 )
 from .dynamic_term_db import DynamicTermDB
 
@@ -83,35 +85,78 @@ class DualAgentPipeline:
 
         all_extractions: list[SentenceExtractionOutput] = []
         all_relations: list[dict] = []
+        relations_by_sid: dict[str, list[dict]] = {}
+        # 每句的 has_evaluation 判定 (含情形B: 有评价但无合法关系), 供评估使用
+        self.last_has_evaluation: dict[str, bool] = {}
 
         total_s = len(sentences)
         total_entities = 0
         total_relations_count = 0
+        unresolved_count = 0
 
         # ── Agent 1: 评价关系抽取 + Agent 2: 实体抽取补充 ──
         for idx, (sid, stmt) in enumerate(sentences, 1):
             # Agent 1: 评价关系抽取
             rel_output = self.evaluative_relation_agent.extract(sid, stmt)
-            if rel_output.has_evaluation and rel_output.relations:
-                for rel in rel_output.relations:
-                    all_relations.append({
-                        "sentence_id": sid,
-                        "sentence": stmt,
-                        **rel.to_dict(),
-                    })
-                total_relations_count += len(rel_output.relations)
+            self.last_has_evaluation[sid] = rel_output.has_evaluation
 
             # Agent 2: 实体抽取（补充，接收上游已知实体）
             known_entities = rel_output.entities
             extraction = self.extraction_agent.extract(
                 stmt, sentence_id=sid, known_entities=known_entities
             )
+
+            # ── 关系 object ID 重映射: Agent 1 短ID → Agent 2 完整ID ──
+            # Agent 1 的 entities 用短ID (e1/e2), relations 引用短ID;
+            # Agent 2 的 entities 用完整ID ({sid}_eN)。此处按实体名匹配回填。
+            rel_entities_by_id = {
+                str(e.get("entity_id", "")): e for e in rel_output.entities
+            }
+            for rel in rel_output.relations:
+                rel_dict = {"sentence_id": sid, "sentence": stmt, **rel.to_dict()}
+                obj = rel.object
+                if obj != "_missing_entity" and obj in rel_entities_by_id:
+                    rel_ent = rel_entities_by_id[obj]
+                    name = rel_ent.get("entity") or rel_ent.get("normalized_name") or ""
+                    matched_eid = self._find_entity_id(
+                        extraction.entities, name, rel_ent.get("normalized_name", "")
+                    )
+                    if matched_eid:
+                        rel_dict["object"] = matched_eid
+                    else:
+                        # 回抽保障: Agent 2 漏抽了关系引用的实体 → 程序化补入
+                        new_eid = f"{sid}_e{len(extraction.entities) + 1}"
+                        extraction.entities.append(ExtractedEntity(
+                            entity_id=new_eid,
+                            mention=name,
+                            normalized_name=rel_ent.get("normalized_name") or name,
+                            evidence=rel_ent.get("evidence", ""),
+                            candidate_l3="",
+                            candidate_l1=[],
+                            is_specific_entity=True,
+                            confidence=0.0,
+                            uncertainty="来自评价关系抽取的补抽实体",
+                        ))
+                        rel_dict["object"] = new_eid
+                elif obj != "_missing_entity":
+                    # LLM 引用了不存在的实体ID → 降级为 _missing_entity
+                    rel_dict["object"] = "_missing_entity"
+                    rel_dict["object_text"] = rel_dict.get("object_text") or obj
+                    unresolved_count += 1
+                # obj == "_missing_entity" 时保留 LLM 提供的 object_text, 原样透传
+                all_relations.append(rel_dict)
+                relations_by_sid.setdefault(sid, []).append(rel_dict)
+            total_relations_count += len(rel_output.relations)
+
             all_extractions.append(extraction)
             total_entities += len(extraction.entities)
 
             if idx % 5 == 0 or idx == total_s:
                 print(f"  [{base_name}] 抽取 [{idx}/{total_s}] 句, "
                       f"累计 {total_entities} 实体, {total_relations_count} 评价关系")
+
+        if unresolved_count:
+            print(f"  [{base_name}] 警告: {unresolved_count} 条关系无法解析 object, 已降级为 _missing_entity")
 
         # ── 写中间结果到 mid_data/ ──
         if self.mid_data_dir:
@@ -121,7 +166,14 @@ class DualAgentPipeline:
             mid_data = {
                 "base_name": base_name,
                 "stage": "agent1_relation_agent2_entity_extraction",
-                "extractions": [e.to_dict() for e in all_extractions],
+                "extractions": [
+                    {
+                        **e.to_dict(),
+                        "has_evaluation": bool(relations_by_sid.get(e.sentence_id)),
+                        "relations": relations_by_sid.get(e.sentence_id, []),
+                    }
+                    for e in all_extractions
+                ],
             }
             with open(mid_file, "w", encoding="utf-8") as f:
                 json.dump(mid_data, f, ensure_ascii=False, indent=2)
@@ -179,6 +231,27 @@ class DualAgentPipeline:
                 print(f"  [{base_name}] TermDB +{new_terms} 新术语 (总计 {self.dynamic_term_db.size()})")
 
         return all_results, all_relations
+
+    @staticmethod
+    def _find_entity_id(
+        entities: list[ExtractedEntity],
+        name: str,
+        normalized_name: str = "",
+    ) -> str:
+        """在 Agent 2 实体列表中按名字查找实体ID (精确 → 包含匹配)"""
+        target = _normalize_name(name)
+        alt = _normalize_name(normalized_name)
+        for e in entities:
+            if _normalize_name(e.mention) in (target, alt) and target:
+                return e.entity_id
+            if _normalize_name(e.normalized_name) in (target, alt) and target:
+                return e.entity_id
+        # 包含匹配: 任一方向互为子串
+        for e in entities:
+            en = _normalize_name(e.mention)
+            if target and (target in en or en in target):
+                return e.entity_id
+        return ""
 
     def _log(self, msg: str) -> None:
         if self.verbose:

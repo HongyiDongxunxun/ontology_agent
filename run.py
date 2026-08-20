@@ -13,6 +13,7 @@ from pipeline import (LLMClient, DualAgentPipeline, DynamicTermDB,
                        export_jsonl, export_summary_json, export_relation_jsonl, FinalEntityResult)
 try:
     from eval import (GoldStandard, compute_metrics, normalize_pipeline_output,
+                       normalize_relation_output,
                        generate_report, print_summary)
     EVAL_AVAILABLE = True
 except ImportError:
@@ -83,7 +84,7 @@ def process_one_file(fpath: Path, g, output_dir: str, mid_data_dir: str,
         results, relations = pipeline.run(sentences, base_name)
         export_jsonl(results, str(Path(output_dir) / f"{base_name}_result.jsonl"))
         export_summary_json(results, base_name, str(Path(output_dir) / f"{base_name}_summary.json"))
-        # V4.4: 导出评价关系 (来自 Agent 1)
+        # 导出评价关系 (Agent 1 抽取, object 已重映射为最终实体ID)
         if relations:
             rel_dir = str(Path(output_dir).parent / "evaluative_relation")
             rel_file = str(Path(rel_dir) / f"relation_{base_name.replace('reviewed_', '')}.jsonl")
@@ -169,11 +170,23 @@ def run_eval_mode(args) -> int:
     export_jsonl(results, str(eval_jsonl))
     print(f"[Eval] predictions saved: {eval_jsonl}")
 
+    # V5.0: 导出评价关系预测 + 构建关系评估输入
+    rel_jsonl = eval_jsonl.with_name(eval_jsonl.stem + "_relations.jsonl")
+    if relations:
+        export_relation_jsonl(relations, str(rel_jsonl))
+
+    relation_predictions = normalize_relation_output(relations)
+    has_eval_predictions = dict(getattr(pipeline, "last_has_evaluation", {}))
+
     predictions = normalize_pipeline_output([r.to_dict() for r in results])
-    eval_result = compute_metrics(predictions, gold_standard, match_mode="exact", detailed=True)
+    eval_result = compute_metrics(
+        predictions, gold_standard, match_mode="exact", detailed=True,
+        relation_predictions=relation_predictions,
+        has_evaluation_predictions=has_eval_predictions,
+    )
     print_summary(eval_result)
     generate_report(eval_result, gold_standard=gold_standard,
-                    title="Ontology_Agent V4.3 Eval Report", output_path=args.eval_output)
+                    title="Ontology_Agent V5.0 Eval Report", output_path=args.eval_output)
     print(f"\n[Eval] done! Report: {args.eval_output}")
     print(f"[Eval] Predictions: {eval_jsonl}")
     return 0

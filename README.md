@@ -13,7 +13,7 @@
 │  Agent 1: Evaluative Relation Extraction (评价关系抽取 — 关系优先) │
 │  评价句 → 评价关系(subject/object/aspect/opinion/evidence)         │
 │         + 评价对象实体 (作为下游已知实体)                          │
-│  输出: output/evaluative_relation/relation_{num}.jsonl            │
+│  输出: output/evaluative_relation/relation_full_{num}.jsonl            │
 ├──────────────────────────────────────────────────────────────────┤
 │  Agent 2: Entity Extraction (实体抽取补充 — 高召回)               │
 │  接收 Agent 1 的评价对象实体作为"已知实体"，补抽关系之外的实体     │
@@ -32,17 +32,23 @@
 
 **关系优先策略**：Agent 1 先识别评价关系并解析出被评价的对象（object）实体，这些实体作为「已知实体」传给 Agent 2；Agent 2 在此基础上补抽评价关系之外的其余实体，避免遗漏，同时保证被评价对象一定进入实体列表。
 
+**ID 重映射**：Agent 1 输出使用句内短 ID（e1/e2），Agent 2 输出使用全局 ID（`{句号}_eN`）。管道编排器按实体名将关系引用的短 ID 重映射为最终实体 ID；若 Agent 2 漏抽了关系引用的实体，编排器会将该实体补入实体列表，保证每条关系都能解析到实体。无法解析时降级为 `_missing_entity` 并保留原文。
+
+**评价有效性过滤（Evaluation Validity）**：Agent 1 在输出任何关系之前必须回答一个问题——这句话在"评价"一个对象，还是在"描述"这个对象发生了什么？研究行为（进行研究、进行分析、进行对比）、方法使用、功能实现、定义、分类、统计罗列均属于描述，一律不生成关系；中性比较判断（基本一致、水平相当、表现相近）属于评价。该机制把九类高频误判模式以完整示例写入了提示词。
+
 ### 特性一览
 
 | 特性 | 说明 |
 |------|------|
 | **关系优先抽取** | Agent 1 先抽评价关系与评价对象，实体列表覆盖所有可解析的 relation.object |
 | **实体补充** | Agent 2 接收上游已知实体，补抽关系外实体，提升召回 |
+| **ID 重映射** | 关系短 ID 自动重映射为最终实体 ID，漏抽实体自动补入 |
+| **评价有效性过滤** | 输出前强制区分"评价"与"描述"，过滤九类典型误判 |
 | **Thinking Mode** | 支持 DeepSeek 推理模式，每个 Agent 可独立开关 |
 | **Voting** | Agent 3 分类多轮投票机制，减少分类不确定性 |
 | **RAG Few-Shot** | 基于动态术语库的相似度检索，为分类提供示例 |
 | **动态术语库** | Likert 5 分高置信实体自动积累，跨文件复用 |
-| **评估体系** | 完整的 eval 模块：标注工具、指标计算、报告生成 |
+| **评估体系** | 实体评估 + 评价关系评估：标注工具、指标计算、报告生成 |
 
 ---
 
@@ -71,10 +77,14 @@ ontology_agent/
 ├── run.py                              # 【主入口】批量并行处理 四Agent管道
 ├── run_eval.py                         # 【评估入口】一键评估脚本 (自动加载api.txt)
 ├── run_relation.py                     # 【关系补抽】从 mid_data/实体结果补充抽取评价关系 (兼容/辅助)
+├── run_sample_review.py                # 【抽样审阅】随机采样N句运行管道并输出人工审阅报告
 ├── config.py                           # 统一配置系统 (LLM / Pipeline / 路径)
 ├── api.txt                             # API Key 存储文件 (可选)
 ├── requirements.txt                    # Python 依赖
 ├── dynamic_terms.json                  # 预加载的动态术语库 (可选)
+│
+├── test_academic_evaluation_prompt_schema.py   # 单元测试: 关系schema/ID重映射/评价有效性规则
+├── test_eval_relations.py              # 单元测试: 评价关系评估指标
 │
 ├── pipeline/                           # 核心管道包 (v5.0.0)
 │   ├── __init__.py                     # 包定义 + 公开API导出
@@ -85,12 +95,12 @@ ontology_agent/
 │   ├── classification_agent.py         # Agent 3: 精分类 + Voting + RAG + L4匹配
 │   ├── reviewer_agent.py               # Agent 4: Likert 5点量表审查 Prompt
 │   ├── dynamic_term_db.py              # 线程安全动态术语底库 (trigram检索)
-│   └── dual_agent_pipeline.py          # 四Agent管道编排 + JSONL/Summary/Relation导出
+│   └── dual_agent_pipeline.py          # 四Agent管道编排 + ID重映射 + JSONL/Summary/Relation导出
 │
 ├── eval/                               # 评估模块
 │   ├── __init__.py                     # 评估包定义
-│   ├── gold_standard.py                # 标注数据模型 (GoldStandard/GoldEntity/GoldSentence)
-│   ├── metrics.py                      # F1/Precision/Recall + 混淆矩阵 + 逐类型指标
+│   ├── gold_standard.py                # 标注数据模型 (实体 + 评价关系标注)
+│   ├── metrics.py                      # 实体指标 + 关系指标 + has_evaluation准确性
 │   ├── reporter.py                     # Markdown 评测报告生成
 │   └── annotation_tool.py             # 命令行交互式标注工具
 │
@@ -107,7 +117,7 @@ ontology_agent/
 │   ├── entities/                       # 最终实体结果 (JSONL + Summary)
 │   ├── evaluative_relation/            # Agent 1 评价关系结果
 │   └── eval/                           # 评估报告输出
-└── mid_data/                           # 中间数据: Agent 2 实体抽取结果
+└── mid_data/                           # 中间数据: Agent 2 实体抽取结果 + 关系
 ```
 
 ### 核心文件详解
@@ -137,10 +147,40 @@ ontology_agent/
 
 | 文件 | 职责 |
 |------|------|
-| [gold_standard.py](eval/gold_standard.py) | 标注数据加载与验证：从 JSONL 读取人工标注的 Gold Standard，支持句子级和实体级标注 |
-| [metrics.py](eval/metrics.py) | 指标计算：精确匹配 / 宽松匹配的 F1/Precision/Recall、逐类型指标、混淆矩阵 |
-| [reporter.py](eval/reporter.py) | 报告生成：输出 Markdown 格式的量化评估报告 |
+| [gold_standard.py](eval/gold_standard.py) | 标注数据加载与验证：从 JSONL 读取人工标注，支持实体标注（mention/L1/L2/L3/valid_entity）和评价关系标注（subject/object/opinion/aspect/evidence） |
+| [metrics.py](eval/metrics.py) | 指标计算：实体抽取/分类/严格匹配的 F1/Precision/Recall、逐类型指标、混淆矩阵；评价关系级 P/R/F1；句级 has_evaluation 准确性 |
+| [reporter.py](eval/reporter.py) | 报告生成：输出 Markdown 格式的量化评估报告（含关系抽取与评价句判定章节） |
 | [annotation_tool.py](eval/annotation_tool.py) | 交互式命令行标注工具，用于人工标注 Gold Standard 数据 |
+
+#### 评估体系说明
+
+评估覆盖两个层面：
+
+1. **实体层面**（原有）：抽取级 P/R/F1、L1/L2/L3 逐层准确率、端到端严格匹配、有效/无效判定准确性、逐类型 F1、L3 混淆矩阵。
+2. **评价关系层面**（V5.0 新增）：关系级 P/R/F1（subject + object + opinion 三元一致才算匹配，预测的 entity_id 自动解析回实体名参与匹配）；句级 has_evaluation 二元准确性（覆盖"有评价但无合法关系"的情形）。
+
+运行方式：
+
+```bash
+python run_eval.py              # 一键评估: 加载api.txt + 术语库 + 标注数据
+python run.py --eval --gold output/eval/gold_standard.jsonl
+```
+
+标注数据格式（JSONL，每行一句）：
+
+```json
+{
+  "sentence_id": "reviewed_full_9::20",
+  "sentence": "……完整上下文……",
+  "gold_entities": [{"mention": "农村图书馆研究", "normalized_name": "农村图书馆研究",
+                     "l1": "Abstract", "l2": "Epistemic", "l3_type_code": "subfield",
+                     "valid_entity": true}],
+  "gold_relations": [{"subject": "_paper_author", "object": "农村图书馆研究",
+                      "aspect": "研究水平", "opinion": "有待提高", "evidence": "研究水平有待提高"}]
+}
+```
+
+旧版标注文件（仅含 `gold_entities`）可直接加载，关系指标自动跳过。
 
 ---
 
@@ -238,9 +278,12 @@ python run_eval.py
 
 # 关系补抽 (兼容/辅助)
 python run_relation.py --live
+
+# 随机采样50句运行, 输出人工审阅报告 (默认seed=42, 修改脚本内SAMPLE_SIZE调整数量)
+python run_sample_review.py
 ```
 
-> 运行 `run.py` 时，评价关系由 Agent 1 在主管道内直接产出，并自动导出到 `output/evaluative_relation/`，**无需**再单独运行关系抽取脚本。`run_relation.py` 仅用于对已有中间/实体结果做补抽或兼容旧流程。
+> 运行 `run.py` 时，评价关系由 Agent 1 在主管道内直接产出，并自动导出到 `output/evaluative_relation/`，无需再单独运行关系抽取脚本。`run_relation.py` 用于对已有中间/实体结果做补抽或兼容旧流程。`run_sample_review.py` 生成的审阅报告（`output/sample_review_50_report.md`）逐句展示原文、实体表与评价关系，适合人工检查效果。
 
 ---
 
@@ -314,12 +357,14 @@ python run_relation.py --live
 
 L1 分布、L3 类型分布、Likert 五点分布、平均分等聚合指标。
 
-### 评价关系 (`output/evaluative_relation/relation_{num}.jsonl`)
+### 评价关系 (`output/evaluative_relation/relation_full_{num}.jsonl`)
 
-由 **Agent 1** 产出，每行一个句子的评价关系结果，包含 `has_evaluation` 标记和 `relations` 列表。每条关系字段为：
+由 **Agent 1** 产出，每行一个句子的评价关系结果。每条关系字段为：
 
 ```json
 {
+    "sentence_id": "1",
+    "sentence": "完整上下文句",
     "subject": "_paper_author",
     "object": "1_e1",
     "aspect": "研究水平",
@@ -330,11 +375,13 @@ L1 分布、L3 类型分布、Likert 五点分布、平均分等聚合指标。
 
 | 字段 | 含义 |
 |------|------|
-| `subject` | 评价主体（如 `_paper_author`） |
-| `object` | 被评价对象的 entity_id；无法解析时为 `_missing_entity`（附 `object_text`） |
+| `subject` | 评价主体：`_paper_author`（本文作者）、`_cite[N]`（第N篇被引文献）、具体人名、`_unknown` |
+| `object` | 被评价对象的最终实体 ID（已由管道重映射，可直接关联 `output/entities/` 中的 `entity_id`）；无法解析时为 `_missing_entity`（附 `object_text` 原文） |
 | `aspect` | 评价方面；没有则为 `null` |
-| `opinion` | 评价表达 |
+| `opinion` | 评价表达（完整片段） |
 | `evidence` | 支持该评价的最小原文片段 |
+
+`mid_data/{name}_extracted.json` 中同样保存了按句分组的关系与 `has_evaluation` 标记，供断点续传与 `run_relation.py --from-agent1` 读取。
 
 ### 中间数据 (`mid_data/{name}_extracted.json`)
 
@@ -386,7 +433,7 @@ input/reviewed_full_*.json           # 输入: 评价句 + 上下文
         ├──────────────────────────────┐    │
         ▼                              ▼    ▼
 output/evaluative_relation/      [Agent 2: 实体抽取补充]
-  relation_{num}.jsonl                 │
+  relation_full_{num}.jsonl                 │
                                        ▼
                           mid_data/{name}_extracted.json   # 中间: 合并实体列表
                                        │

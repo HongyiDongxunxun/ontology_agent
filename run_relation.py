@@ -2,9 +2,10 @@
 """
 Run evaluation relation extraction over entity JSONL results.
 
-V4.4: 支持两种模式:
+V5.0: 支持两种模式:
   1. (默认) 从 Agent 1 mid_data 直接读取已抽取的评价关系 (推荐, 无需额外LLM调用)
-  2. (--use-agent4) 使用独立 Agent 4 从实体结果中抽取关系 (兼容旧流程)
+     mid_data 中 relations 的 object 已重映射为最终实体完整ID ({sid}_eN)
+  2. (--use-agent4) 独立运行关系Agent (关系优先策略, 自行抽取实体) 从实体结果文件补抽关系
 
 Input:
   --from-agent1: mid_data/reviewed_full_{num}_extracted.json
@@ -120,8 +121,9 @@ def process_one_file(
         sentences = load_entity_jsonl(str(fpath))
         results: list[SentenceRelationOutput] = []
         total_sentences = len(sentences)
-        for i, (sentence_id, sentence, entities) in enumerate(sentences, 1):
-            results.append(agent.extract(sentence_id, sentence, entities))
+        for i, (sentence_id, sentence, _entities) in enumerate(sentences, 1):
+            # V5.0: Agent 1 关系优先策略下自行抽取实体, 不再接收外部实体列表
+            results.append(agent.extract(sentence_id, sentence))
             if i % 10 == 0 or i == total_sentences:
                 with _print_lock:
                     print(f"  [{fpath.stem}] {i}/{total_sentences} sentences")

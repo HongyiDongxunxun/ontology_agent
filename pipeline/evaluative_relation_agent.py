@@ -15,6 +15,14 @@ from typing import Optional
 from .llm import LLMClient
 
 
+def _normalize_name(name: str) -> str:
+    """规范化实体名用于匹配 (去空格/全角括号/书名号)"""
+    name = (name or "").strip()
+    for a, b in (("（", "("), ("）", ")"), ("《", ""), ("》", "")):
+        name = name.replace(a, b)
+    return name
+
+
 EVALUATIVE_RELATION_PROMPT = """
 ## Academic Evaluation Object Rules (增强规则)
 
@@ -173,19 +181,37 @@ Step 5 — 如果只是因为对象尚未被识别为 Entity，但从语义上�
 - "广东省在数字化建设方面较为领先。" → "广东省"具有明确独立指称，可以作为 Object。
 - "该期刊的影响力较高。" → 若"该期刊"能通过上下文确定具体期刊，则 Object 回溯到该具体期刊实体；若无法确定，则不作为 Object。
 
-## Evaluation Validity Filtering（评价有效性过滤）
+## Evaluation Validity Filtering（评价有效性过滤 — 输出前强制判断）
 
-Evaluation Validity Filtering 负责回答："这句话是真正的评价，还是仅仅在陈述事实/定义/方法/过程/功能/属性？"
-不要仅因为存在评价词，就认为存在评价关系；也不要仅因为出现某个谓词就机械判定为非评价。
+### 强制判断门（Mandatory Gate）
 
-输出关系前，必须先强制回答一个问题：
+每生成一条关系之前，必须先强制回答以下问题。**不完成此判断，不得输出任何 relation。**
+
 这句话是在"评价"一个对象，还是在"描述"这个对象发生了什么？
 
-核心原则（强约束）：
+- 回答"评价" → 继续执行 Evaluation Object Eligibility Filtering（客体资格检查），合法才生成 relation。
+- 回答"描述" → 一律不生成 relation：has_evaluation=false，relations=[]。即使句中出现了"取得""具有""实现""提出"等谓词，即使涉及合法客体，也绝不生成关系。
+
+判断方法：把句子的谓词核心（动词）与后面的内容分开看——
+1. 谓词是"做/发生/是/包含/分布"类（进行、采用、实现、提出、定义、包括、分为、集中、取得、发展、对比……），且其后内容只是客观事实、过程或属性 → 描述。
+2. 谓词或其后内容明确带出价值、优劣、重要性、效果、问题、程度、可行性、认可度或建议性的判断（如"较好""不足""显著""优于""有价值"）→ 评价。
+
+特别说明 — 中性比较判断也是评价：
+"一致、相当、相近、持平、类似、相符"等中性比较表达，当它们构成对两个对象之间关系或程度的定性判断时（而非单纯罗列统计数据），属于中性评价 → 回答"评价"，has_evaluation=true。
+- "两种方法的结果基本一致。" → 评价（中性比较），opinion="基本一致"。
+- "本文方法与文献[3]的方法水平相当。" → 评价（中性比较），opinion="水平相当"。
+- "各年度发文量分别为10、12、11篇。" → 统计罗列，不是评价。
+区分标准：比较表达是否构成对"对象之间关系/程度"的定性判断；若只是罗列数值、分布或客观测量结果，仍属描述。
+注意：判定为评价后仍需执行客体资格检查——若被比较对象属于禁止类型（如"方法""模型"），按情形B处理：has_evaluation=true，relations=[]。
+
+### 核心原则（强约束，优先级最高，凌驾于一切其他规则）
+
 动作、过程、研究行为、方法使用、功能实现、定义、分类、统计结果本身，都不是评价；只有当文本明确表达对合法评价客体的价值、优劣、重要性、效果、问题、程度、可行性、认可度或建议性判断时，才生成评价关系。
+
 若句子只是描述"做了什么/发生了什么/是什么/包含什么/分布如何"，即使涉及合法客体，也不生成评价关系。
 
-完整语义判断原则：
+### 完整语义判断原则
+
 Evaluation Validity Filtering 必须判断完整语义，而不是根据固定谓词机械判断。"具有、存在、表现为、体现出、取得、实现"等词本身既可能是事实/属性描述，也可能引出真正评价。应根据其后内容判断是否存在评价性判断。
 - "某机构具有创新能力。" → "创新能力"是客观属性陈述，无评价级差，可视为事实/属性描述，不必生成评价。
 - "某机构具有较强的创新能力。" → "较强的"引出评价级差，有明确评价，应正常抽取。
@@ -210,6 +236,9 @@ Evaluation Validity Filtering 必须判断完整语义，而不是根据固定�
 
 每发现一个候选评价关系，必须依次执行以下检查，任一步不通过即删除该关系：
 
+Step 0 — 强制判断门（前置，不可跳过）：这句话是在"评价"一个对象，还是在"描述"这个对象发生了什么？
+   回答"描述" → 直接删除关系，输出 has_evaluation=false, relations=[]。
+   典型"描述"模式参见 Negative Examples 例9a~例9i（进行了研究/分析/对比、提出了方法、采用了某方法、实现了某功能、定义为、逐渐发展起来、主要集中于）。
 Step 1 — 句子是否存在评价性判断？
    不要把评价检测理解为固定评价词匹配。评价可以由显式评价词、评价短语或完整评价性判断表达；即使没有典型形容词，也可能存在评价。
    以下都可以是评价表达：优秀、突出、不足、问题、较高、较低、值得探讨、效果显著、受到广泛认可、值得进一步推广、堪称典范、难以满足实际需求、为……提供了重要支撑、具有较高价值等。
@@ -342,6 +371,21 @@ Relations:
   {{"subject":"_paper_author","object":"<农村图书馆研究的entity_id>","aspect":null,"opinion":"取得了一定成绩","evidence":"农村图书馆研究取得了一定成绩"}}
 ]
 
+句子10（中性比较评价 — 比较判断也是评价，合法客体正常生成 relation）：
+"我国农村图书馆研究与国外研究水平相当。"
+Entity: 农村图书馆研究（研究主题/复合研究对象，属于合法评价客体）
+说明："水平相当"是中性比较判断，属于评价；opinion 保留完整比较表达。
+Relations:
+[
+  {{"subject":"_paper_author","object":"<农村图书馆研究的entity_id>","aspect":"水平","opinion":"相当","evidence":"我国农村图书馆研究与国外研究水平相当"}}
+]
+
+句子11（中性比较评价 — 被比较对象属禁止类型 → 情形B）：
+"两种方法的结果基本一致。"
+Entity: 无合法客体（"方法"属禁止类型）
+说明："基本一致"是中性比较判断，句中确有评价，但被比较对象（方法）不属于允许的 Evaluation Object。
+结果：has_evaluation=true, relations=[]（情形B，不要把情形B误标为 has_evaluation=false）。
+
 关系输出字段必须使用 subject、object、aspect、opinion、evidence。不要输出 polarity。
 
 ## Negative Examples（非评价关系 / 禁止类型）
@@ -398,17 +442,68 @@ opinion=提供多种检索途径
 "该模型实现了自动摘要生成。"
 不要抽取评价关系。
 
-例9：动作 / 研究行为 / 方法使用 / 功能实现 / 定义 / 分类 / 统计（一律不抽，has_evaluation=false，relations=[]）
-以下句式只是描述"做了什么/发生了什么/是什么"，没有价值、优劣、效果、程度等评价性判断，一律不生成评价关系：
-- "……进行了研究。" → 不抽（研究行为）。
-- "……进行了分析。" → 不抽（研究行为）。
-- "……提出了方法。" → 不抽（研究工作）。
-- "……采用了某方法。" → 不抽（方法使用）。
-- "……实现了某功能。" → 不抽（功能实现）。
-- "……定义为……。" → 不抽（定义）。
-- "……逐渐发展起来。" → 不抽（过程描述）。
-- "……主要集中于……。" → 不抽（研究分布/统计）。
-- "……进行了对比。" → 不抽（研究行为）。
+例9：动作 / 研究行为 / 方法使用 / 功能实现 / 定义 / 分类 / 统计（典型错误模式，强制记忆）
+
+以下九类句式是"描述"而非"评价"的最典型代表。只要句子的谓词核心属于下列模式之一，且其后内容没有引出评价级差，一律不生成关系（has_evaluation=false，relations=[]）：
+
+例9a："进行了研究" → 不抽（研究行为）。
+句子：
+"我国学者对农村图书馆问题进行了研究。"
+结果：has_evaluation=false, relations=[]
+原因："进行了研究"是研究行为描述，不是评价。
+
+例9b："进行了分析" → 不抽（研究行为）。
+句子：
+"本文对相关文献进行了分析。"
+结果：has_evaluation=false, relations=[]
+原因："进行了分析"是研究行为描述，不是评价。
+
+例9c："提出了方法" → 不抽（研究工作）。
+句子：
+"该研究提出了一种新的分类方法。"
+结果：has_evaluation=false, relations=[]
+原因："提出了方法"是研究工作描述，不是评价。
+
+例9d："采用了某方法" → 不抽（方法使用）。
+句子：
+"本文采用了文献计量法对相关研究进行分析。"
+结果：has_evaluation=false, relations=[]
+原因："采用了某方法"是方法使用描述，不是评价。
+
+例9e："实现了某功能" → 不抽（功能实现）。
+句子：
+"该系统实现了文献检索、数据分析和结果展示。"
+结果：has_evaluation=false, relations=[]
+原因："实现了某功能"是功能实现描述，不代表"功能好"或"效果显著"。
+
+例9f："定义为……" → 不抽（定义）。
+句子：
+"结构化是指将获取的知识内容加以归纳和整理。"
+结果：has_evaluation=false, relations=[]
+原因："定义为……"是概念定义，不是评价。
+
+例9g："逐渐发展起来" → 不抽（过程描述）。
+句子：
+"自动文摘研究逐渐发展起来。"
+结果：has_evaluation=false, relations=[]
+原因："逐渐发展起来"描述发展过程，不代表好坏评价。
+
+例9h："主要集中于……" → 不抽（研究分布/统计）。
+句子：
+"目前的研究主要集中于文摘生成方法。"
+结果：has_evaluation=false, relations=[]
+原因："主要集中于……"描述研究分布/统计，不是评价。
+
+例9i："进行了对比" → 不抽（研究行为）。
+句子：
+"该文对两种方法的优劣进行了对比。"
+结果：has_evaluation=false, relations=[]
+原因："进行了对比"是研究行为描述，不是评价。
+
+边界提醒（避免机械误杀）：上述句式后若接带评价级差的内容，仍可能属于评价，按完整语义判断。
+- "该方法取得了较好的效果。" → "较好的"引出评价，但 object=方法属禁止类型 → 情形B：has_evaluation=true, relations=[]。
+- "本文采用文献计量法取得了显著效果。" → "显著"引出评价；object 候选（本文/文献计量法）均属禁止或无效类型 → 情形B：has_evaluation=true, relations=[]。
+- 特别区分："对两种方法进行了对比" → 不抽（对比是研究行为）；但"两种方法的结果基本一致" → "基本一致"是中性比较判断 → 属于评价（客体非法则情形B：has_evaluation=true, relations=[]）。
 
 ### 二、概念/方法/技术/模型等禁止类型（有评价但客体非法）
 
@@ -587,20 +682,31 @@ class EvaluativeRelationAgent:
 
         parsed_entities: list[dict] = []
         entity_ids: set[str] = set()
+        name_to_id: dict[str, str] = {}  # 规范化名字 → entity_id (用于名字匹配回退)
         for i, item in enumerate(raw_entities):
             if not isinstance(item, dict):
                 continue
-            eid = str(item.get("entity_id", f"e{i + 1}")).strip()
+            eid = str(item.get("entity_id", "")).strip() or f"e{i + 1}"
+            # 去重: LLM 提供的 ID 与 fallback ID 可能冲突
+            if eid in entity_ids:
+                k = i + 1
+                while f"e{k}" in entity_ids:
+                    k += 1
+                eid = f"e{k}"
             entity_name = str(item.get("entity", "")).strip()
             if not entity_name:
                 continue
             entity_ids.add(eid)
+            normalized = str(item.get("normalized_name", entity_name)).strip()
             parsed_entities.append({
                 "entity_id": eid,
                 "entity": entity_name,
-                "normalized_name": str(item.get("normalized_name", entity_name)).strip(),
+                "normalized_name": normalized,
                 "evidence": str(item.get("evidence", "")).strip(),
             })
+            for n in (_normalize_name(entity_name), _normalize_name(normalized)):
+                if n:
+                    name_to_id.setdefault(n, eid)
 
         # ── 解析评价关系 ──
         raw_relations = data.get("relations", [])
@@ -623,9 +729,14 @@ class EvaluativeRelationAgent:
             if not subject or not obj or not opinion or not evidence:
                 continue
             if obj != "_missing_entity" and obj not in entity_ids:
-                obj = "_missing_entity"
-                if not object_text:
-                    object_text = str(item.get("object", "")).strip()
+                # 1) 名字匹配回退: LLM 可能把实体名写在 object 字段而非 entity_id
+                matched_id = name_to_id.get(_normalize_name(obj), "")
+                if matched_id:
+                    obj = matched_id
+                else:
+                    # 2) 无法解析 → _missing_entity, 保留原始 object 文本
+                    object_text = object_text or str(item.get("object", "")).strip()
+                    obj = "_missing_entity"
 
             relations.append(
                 EvaluativeRelation(

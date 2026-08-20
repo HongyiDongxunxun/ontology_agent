@@ -56,28 +56,80 @@ class GoldEntity:
 
 
 @dataclass
+class GoldRelation:
+    """单条标注评价关系 — 预期正确的评价关系抽取结果 (V5.0)
+
+    object 字段存被评价对象的实体 mention (标注时用名字而非ID,
+    评估时由 metrics 解析预测 entity_id 到名字后匹配)。
+    """
+
+    subject: str                              # _paper_author | _cite[N] | <人名> | _unknown
+    object: str                               # 被评价对象的实体 mention (原文精确短语)
+    opinion: str                              # 评价表达 (完整片段)
+    aspect: Optional[str] = None              # 评价方面; 无则 None
+    evidence: str = ""                        # 评价依据文本片段
+
+    def to_dict(self) -> dict:
+        data = {
+            "subject": self.subject,
+            "object": self.object,
+            "aspect": self.aspect,
+            "opinion": self.opinion,
+            "evidence": self.evidence,
+        }
+        return data
+
+    @classmethod
+    def from_dict(cls, data: dict) -> "GoldRelation":
+        aspect = data.get("aspect")
+        return cls(
+            subject=data.get("subject", ""),
+            object=data.get("object", ""),
+            opinion=data.get("opinion", ""),
+            aspect=None if aspect is None else str(aspect),
+            evidence=data.get("evidence", ""),
+        )
+
+
+@dataclass
 class GoldSentence:
-    """单句标注 — 一句原始评价句 + 其中所有正确实体"""
+    """单句标注 — 一句原始评价句 + 其中所有正确实体 + 评价关系 (V5.0)"""
 
     sentence_id: str                              # 句编号 (如 "reviewed_full_1::3")
     sentence: str                                 # 完整原文 (含上下文拼接)
     gold_entities: list[GoldEntity] = field(default_factory=list)
+    gold_relations: list[GoldRelation] = field(default_factory=list)
+    has_evaluation: Optional[bool] = None         # None = 由 gold_relations 是否为空推断
 
     def to_dict(self) -> dict:
-        return {
+        data = {
             "sentence_id": self.sentence_id,
             "sentence": self.sentence,
             "gold_entities": [e.to_dict() for e in self.gold_entities],
+            "gold_relations": [r.to_dict() for r in self.gold_relations],
         }
+        if self.has_evaluation is not None:
+            data["has_evaluation"] = self.has_evaluation
+        return data
 
     @classmethod
     def from_dict(cls, data: dict) -> "GoldSentence":
         entities = [GoldEntity.from_dict(e) for e in data.get("gold_entities", [])]
+        relations = [GoldRelation.from_dict(r) for r in data.get("gold_relations", [])]
+        has_eval = data.get("has_evaluation")
         return cls(
             sentence_id=data.get("sentence_id", ""),
             sentence=data.get("sentence", ""),
             gold_entities=entities,
+            gold_relations=relations,
+            has_evaluation=None if has_eval is None else bool(has_eval),
         )
+
+    def get_has_evaluation(self) -> bool:
+        """句中是否存在评价: 显式标注优先, 否则由关系是否为空推断"""
+        if self.has_evaluation is not None:
+            return self.has_evaluation
+        return bool(self.gold_relations)
 
 
 # ===========================================================================
@@ -200,6 +252,13 @@ class GoldStandard:
                 dist[e.l3_type_code] = dist.get(e.l3_type_code, 0) + 1
         return dict(sorted(dist.items(), key=lambda x: -x[1]))
 
+    def relation_count(self) -> int:
+        return sum(len(s.gold_relations) for s in self._sentences.values())
+
+    def evaluated_sentence_count(self) -> int:
+        """标注为含评价的句子数 (含情形B: 有评价但无合法关系)"""
+        return sum(1 for s in self._sentences.values() if s.get_has_evaluation())
+
     def get_stats(self) -> dict:
         return {
             "name": self.name,
@@ -209,6 +268,8 @@ class GoldStandard:
             "invalid_entities": self.entity_count() - self.valid_entity_count(),
             "l1_distribution": self.l1_distribution(),
             "l3_distribution": self.l3_distribution(),
+            "relations": self.relation_count(),
+            "evaluated_sentences": self.evaluated_sentence_count(),
         }
 
     # ── 内部方法 ───────────────────────────────────────────────
