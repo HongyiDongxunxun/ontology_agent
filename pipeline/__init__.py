@@ -1,6 +1,7 @@
 """
-pipeline — 四Agent端到端文献知识挖掘系统核心包
-Agent 1: 评价关系抽取 → Agent 2: 实体抽取补充 → Agent 3: 分类 → Agent 4: 审查
+pipeline — 五Agent端到端文献知识挖掘系统核心包
+Agent 1: 评价关系抽取 → Agent 2: 实体抽取补充 → Agent 3: 分类
+→ Agent 4: 审查 → Agent 5: 关系校验(过滤事实类)
 """
 
 from .llm import LLMClient, build_llm_client
@@ -39,6 +40,7 @@ from .dual_agent_pipeline import (
     export_jsonl,
     export_summary_json,
     export_relation_jsonl,
+    export_verification_jsonl,
 )
 
 __all__ = [
@@ -53,7 +55,8 @@ __all__ = [
     "EvaluativeRelationAgent", "EvaluativeRelation", "SentenceRelationOutput",
     "RelationVerificationAgent", "RelationVerification", "SentenceVerificationOutput",
     "DynamicTermDB",
-    "DualAgentPipeline", "export_jsonl", "export_summary_json", "export_relation_jsonl",
+    "DualAgentPipeline", "export_jsonl", "export_summary_json",
+    "export_relation_jsonl", "export_verification_jsonl",
 ]
 
-__version__ = "5.1.0"
+__version__ = "5.2.0"

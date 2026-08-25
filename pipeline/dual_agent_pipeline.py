@@ -29,11 +29,13 @@ from .evaluative_relation_agent import (
     EvaluativeRelationAgent,
     _normalize_name,
 )
+from .relation_verification_agent import RelationVerificationAgent
 from .dynamic_term_db import DynamicTermDB
 
 
 class DualAgentPipeline:
-    """四Agent管道: Agent 1 评价关系 → Agent 2 实体抽取 → Agent 3 分类 → Agent 4 审查(Likert)"""
+    """五Agent管道: Agent 1 评价关系 → Agent 2 实体抽取 → Agent 3 分类
+    → Agent 4 审查(Likert) → Agent 5 关系校验(过滤事实类)"""
 
     def __init__(
         self,
@@ -41,9 +43,11 @@ class DualAgentPipeline:
         llm_classification: Optional[LLMClient] = None,
         llm_reviewer: Optional[LLMClient] = None,
         llm_relation: Optional[LLMClient] = None,
+        llm_verification: Optional[LLMClient] = None,
         dynamic_term_db: Optional[DynamicTermDB] = None,
         batch_size: int = 12,
         mid_data_dir: str = "",
+        enable_verification: bool = True,
         verbose: bool = True,
     ):
         self.verbose = verbose
@@ -53,6 +57,9 @@ class DualAgentPipeline:
         self.dynamic_term_db = dynamic_term_db
         self.batch_size = batch_size
         self.mid_data_dir = mid_data_dir
+        self.enable_verification = enable_verification
+        # 校验输出快照 (供 run.py 导出 verification JSONL)
+        self.last_verification_outputs: list[dict] = []
 
         self.evaluative_relation_agent = EvaluativeRelationAgent(
             llm_relation or self.llm_extraction
@@ -67,19 +74,23 @@ class DualAgentPipeline:
             llm=self.llm_reviewer,
             batch_size=self.batch_size,
         )
+        self.verification_agent = RelationVerificationAgent(
+            llm_verification or self.llm_extraction
+        )
 
     def run(
         self, sentences: list[tuple[str, str]], base_name: str
     ) -> tuple[list[FinalEntityResult], list[dict]]:
         """
-        执行四Agent管道:
+        执行五Agent管道:
         - Agent 1: 评价关系抽取 (EvaluativeRelationAgent)
         - Agent 2: 实体抽取补充 (EntityExtractionAgent, 接收上游已知实体)
         - Agent 3: 分类 (ClassificationAgent)
         - Agent 4: 审查 Likert (ReviewerAgent)
+        - Agent 5: 关系校验 (RelationVerificationAgent, 标记并过滤事实类)
         - sentences: list of (sentence_id, sentence_text)
         - base_name: 文件基础名 (如 "reviewed_full_1")
-        - 返回: (所有 FinalEntityResult, 评价关系列表)
+        - 返回: (所有 FinalEntityResult, 过滤后的评价关系列表)
         """
         self._log(f"[Pipeline] 开始处理 {base_name}, 共 {len(sentences)} 句")
 
@@ -230,6 +241,47 @@ class DualAgentPipeline:
             if new_terms > 0:
                 print(f"  [{base_name}] TermDB +{new_terms} 新术语 (总计 {self.dynamic_term_db.size()})")
 
+        # ── Agent 5: Relation Verification (校验评价关系, 默认开启) ──
+        # 逐句复核 Agent 1 抽取的评价关系: 事实类标记 is_evaluation=false 并过滤
+        # 校验详情保存在 self.last_verification_outputs 供 run.py 导出审计
+        self.last_verification_outputs = []
+        if self.enable_verification and all_relations:
+            print(f"  [{base_name}] Agent 5 关系校验中...")
+            relations_by_sid_v: dict[str, list[dict]] = {}
+            for rel in all_relations:
+                relations_by_sid_v.setdefault(rel["sentence_id"], []).append(rel)
+
+            total_eval = 0
+            total_fact = 0
+            filtered_relations: list[dict] = []
+            for sid, sid_rels in relations_by_sid_v.items():
+                sentence_text = sid_rels[0].get("sentence", "") if sid_rels else ""
+                result = self.verification_agent.verify(sid, sentence_text, sid_rels)
+                self.last_verification_outputs.append(result.to_dict())
+                total_eval += result.evaluation_count
+                total_fact += result.fact_count
+                # 按 relation_id 建立校验映射, 回填字段到原关系
+                verdict_map = {v.relation_id: v for v in result.verifications}
+                for i, rel in enumerate(sid_rels):
+                    rid = f"r{i + 1}"
+                    v = verdict_map.get(rid)
+                    if v:
+                        rel["is_evaluation"] = v.is_evaluation
+                        rel["verdict_reason"] = v.verdict_reason
+                        if not v.is_evaluation:
+                            rel["fact_type"] = v.fact_type
+                        if v.is_evaluation:
+                            filtered_relations.append(rel)
+                    else:
+                        # 校验未匹配 → 默认放行
+                        rel["is_evaluation"] = True
+                        rel["verdict_reason"] = "校验未匹配, 默认放行"
+                        filtered_relations.append(rel)
+            total_orig = len(all_relations)
+            all_relations = filtered_relations
+            print(f"  [{base_name}] Agent 5 完成: 评价 {total_eval} / 事实 {total_fact} "
+                  f"(原 {total_orig} → 过滤后 {len(all_relations)})")
+
         return all_results, all_relations
 
     @staticmethod
@@ -327,7 +379,7 @@ def export_relation_jsonl(
     relations: list[dict],
     filepath: str,
 ) -> None:
-    """导出评价关系 JSONL (V4.4: 来自 Agent 1)"""
+    """导出评价关系 JSONL (V4.4: 来自 Agent 1, V5.1: 已过滤事实类)"""
     if not relations:
         return
     path = Path(filepath)
@@ -336,3 +388,18 @@ def export_relation_jsonl(
         for rel in relations:
             f.write(json.dumps(rel, ensure_ascii=False) + "\n")
     print(f"[导出] 评价关系 JSONL -> {path.resolve()}  ({len(relations)} 条关系)")
+
+
+def export_verification_jsonl(
+    verification_outputs: list[dict],
+    filepath: str,
+) -> None:
+    """导出关系校验详情 JSONL (含 is_evaluation=false 的事实类, 供审计)"""
+    if not verification_outputs:
+        return
+    path = Path(filepath)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        for out in verification_outputs:
+            f.write(json.dumps(out, ensure_ascii=False) + "\n")
+    print(f"[导出] 关系校验 -> {path.resolve()}  ({len(verification_outputs)} 句)")

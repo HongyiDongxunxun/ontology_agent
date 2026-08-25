@@ -10,7 +10,8 @@ from pathlib import Path
 from threading import Lock
 from config import config as cfg, build_config
 from pipeline import (LLMClient, DualAgentPipeline, DynamicTermDB,
-                       export_jsonl, export_summary_json, export_relation_jsonl, FinalEntityResult)
+                       export_jsonl, export_summary_json, export_relation_jsonl,
+                       export_verification_jsonl, FinalEntityResult)
 try:
     from eval import (GoldStandard, compute_metrics, normalize_pipeline_output,
                        normalize_relation_output,
@@ -55,7 +56,8 @@ def output_exists(fpath: Path, output_dir: str) -> bool:
     return Path(output_dir, f"{fpath.stem}_result.jsonl").exists()
 
 def process_one_file(fpath: Path, g, output_dir: str, mid_data_dir: str,
-                     idx: int, total: int, dynamic_db: DynamicTermDB) -> dict:
+                     idx: int, total: int, dynamic_db: DynamicTermDB,
+                     enable_verify: bool = True) -> dict:
     fname = fpath.name; base_name = fpath.stem
     with _print_lock: print(f"[{idx}/{total}] {fname}  开始处理...")
     try:
@@ -68,10 +70,16 @@ def process_one_file(fpath: Path, g, output_dir: str, mid_data_dir: str,
         llm_reviewer = LLMClient(model=cfg.llm.model, api_key=cfg.llm.api_key_reviewer,
             base_url=cfg.llm.base_url, temperature=cfg.llm.temperature,
             max_tokens=cfg.llm.max_tokens, enable_thinking=cfg.llm.enable_thinking_reviewer)
+        # Agent 5 关系校验: 复用 relation key, 回退到 extraction / 通用
+        verify_key = cfg.llm.api_key_relation or cfg.llm.api_key_extraction or cfg.llm.api_key
+        llm_verification = LLMClient(model=cfg.llm.model, api_key=verify_key,
+            base_url=cfg.llm.base_url, temperature=cfg.llm.temperature,
+            max_tokens=cfg.llm.max_tokens, enable_thinking=cfg.llm.enable_thinking_relation)
         pipeline = DualAgentPipeline(llm_extraction=llm_extraction,
             llm_classification=llm_classification, llm_reviewer=llm_reviewer,
+            llm_verification=llm_verification,
             dynamic_term_db=dynamic_db, batch_size=cfg.pipeline.batch_size,
-            mid_data_dir=mid_data_dir, verbose=False)
+            mid_data_dir=mid_data_dir, enable_verification=enable_verify, verbose=False)
         # Inject voting/rag config
         pipeline.classification_agent.enable_voting = cfg.pipeline.enable_voting
         pipeline.classification_agent.voting_rounds = cfg.pipeline.voting_rounds
@@ -84,21 +92,32 @@ def process_one_file(fpath: Path, g, output_dir: str, mid_data_dir: str,
         results, relations = pipeline.run(sentences, base_name)
         export_jsonl(results, str(Path(output_dir) / f"{base_name}_result.jsonl"))
         export_summary_json(results, base_name, str(Path(output_dir) / f"{base_name}_summary.json"))
-        # 导出评价关系 (Agent 1 抽取, object 已重映射为最终实体ID)
+        # 导出评价关系 (Agent 1 抽取, 经 Agent 5 过滤事实类, object 已重映射为最终实体ID)
         if relations:
             rel_dir = str(Path(output_dir).parent / "evaluative_relation")
             rel_file = str(Path(rel_dir) / f"relation_{base_name.replace('reviewed_', '')}.jsonl")
             Path(rel_dir).mkdir(parents=True, exist_ok=True)
             export_relation_jsonl(relations, rel_file)
+        # 导出关系校验详情 (含事实类 is_evaluation=false, 供审计)
+        if pipeline.last_verification_outputs:
+            verify_dir = str(Path(output_dir).parent / "relation_verification")
+            verify_file = str(Path(verify_dir) / f"{base_name}_verification.jsonl")
+            export_verification_jsonl(pipeline.last_verification_outputs, verify_file)
         valid = sum(1 for r in results if r.valid_entity)
         invalid = sum(1 for r in results if not r.valid_entity)
         type_dist = dict(Counter(r.l3_type_code for r in results if r.valid_entity))
         scored = sum(1 for r in results if r.likert_confidence > 0)
         avg_likert = (sum(r.likert_confidence for r in results if r.likert_confidence > 0) / scored) if scored > 0 else 0
+        # Agent 5 关系校验统计
+        verify_total = sum(o.get("total_relations", 0) for o in pipeline.last_verification_outputs)
+        verify_facts = sum(o.get("fact_count", 0) for o in pipeline.last_verification_outputs)
+        verify_evals = sum(o.get("evaluation_count", 0) for o in pipeline.last_verification_outputs)
         summary = {"file": fname, "success": True, "statements": len(sentences),
             "entities": len(results), "valid_entities": valid, "invalid_entities": invalid,
             "type_distribution": type_dist, "likert_scored": scored, "likert_average": round(avg_likert, 2),
-            "likert_distribution": {f"{i}_": sum(1 for r in results if r.likert_confidence == i) for i in range(1,6)}}
+            "likert_distribution": {f"{i}_": sum(1 for r in results if r.likert_confidence == i) for i in range(1,6)},
+            "relations_eval": len(relations), "verification_total": verify_total,
+            "verification_facts": verify_facts, "verification_evals": verify_evals}
         with _print_lock:
             print(f"[{idx}/{total}] {fname}  OK  {len(sentences)}句 {len(results)}实体 "
                   f"({valid}有效 {invalid}无效) Likert均分:{avg_likert:.1f} TermDB:{dynamic_db.size()}")
@@ -207,12 +226,15 @@ def main() -> int:
     parser.add_argument("--voting", action="store_true", default=False)
     parser.add_argument("--no-voting", action="store_true")
     parser.add_argument("--rag", action="store_true", default=False)
+    parser.add_argument("--no-verify", action="store_true",
+                        help="禁用 Agent 5 关系校验 (默认开启)")
     parser.add_argument("--dynamic-terms", type=str, default="")
     parser.add_argument("--max-terms", type=int, default=0)
     args = parser.parse_args()
 
     if args.no_thinking: args.thinking = False
     if args.no_voting: args.voting = False
+    enable_verify = not args.no_verify
     if not args.dynamic_terms:
         p = Path("dynamic_terms.json")
         if p.exists(): args.dynamic_terms = str(p)
@@ -248,7 +270,7 @@ def main() -> int:
     print(f"\n{'='*70}\n  Pipeline [{label}] — {total} files (x{concurrency})\n{'='*70}\n")
     aggregated, completed, start = [], 0, time.time(); dynamic_db = DynamicTermDB()
     with ThreadPoolExecutor(max_workers=concurrency) as ex:
-        futures = {ex.submit(process_one_file, fp, g, output_dir, mid_data_dir, i, total, dynamic_db): i for i, fp in enumerate(files, 1)}
+        futures = {ex.submit(process_one_file, fp, g, output_dir, mid_data_dir, i, total, dynamic_db, enable_verify): i for i, fp in enumerate(files, 1)}
         for fut in as_completed(futures):
             s = fut.result()
             with _summary_lock: aggregated.append(s); completed += 1
@@ -261,6 +283,14 @@ def main() -> int:
     print(f"\n{'='*70}\n  Done — {len(succ)}/{len(fail)} success/fail\n{'='*70}")
     print(f"  Files: {total} | Time: {elapsed:.0f}s | Sentences: {sum(r.get('statements',0) for r in succ)}")
     print(f"  Entities: {sum(r.get('entities',0) for r in succ)}")
+    # Agent 5 关系校验汇总
+    if enable_verify:
+        v_total = sum(r.get('verification_total', 0) for r in succ)
+        v_facts = sum(r.get('verification_facts', 0) for r in succ)
+        v_evals = sum(r.get('verification_evals', 0) for r in succ)
+        r_eval = sum(r.get('relations_eval', 0) for r in succ)
+        print(f"  Relations: 原始 {v_total} → 评价 {v_evals} / 事实 {v_facts} | 最终导出 {r_eval}")
+        if v_total: print(f"  事实占比: {v_facts / v_total:.1%}")
     db_stats = dynamic_db.get_stats()
     print(f"\n{'='*70}")
     print(f"  动态术语底库 (DynamicTermDB) 统计")
