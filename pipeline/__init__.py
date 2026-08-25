@@ -28,6 +28,11 @@ from .evaluative_relation_agent import (
     EvaluativeRelation,
     SentenceRelationOutput,
 )
+from .relation_verification_agent import (
+    RelationVerificationAgent,
+    RelationVerification,
+    SentenceVerificationOutput,
+)
 from .dynamic_term_db import DynamicTermDB
 from .dual_agent_pipeline import (
     DualAgentPipeline,
@@ -46,8 +51,9 @@ __all__ = [
     "ClassificationAgent", "FinalEntityResult",
     "ReviewerAgent", "ReviewResult",
     "EvaluativeRelationAgent", "EvaluativeRelation", "SentenceRelationOutput",
+    "RelationVerificationAgent", "RelationVerification", "SentenceVerificationOutput",
     "DynamicTermDB",
     "DualAgentPipeline", "export_jsonl", "export_summary_json", "export_relation_jsonl",
 ]
 
-__version__ = "5.0.0"
+__version__ = "5.1.0"

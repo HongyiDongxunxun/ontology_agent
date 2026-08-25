@@ -77,6 +77,8 @@ ontology_agent/
 ├── run.py                              # 【主入口】批量并行处理 四Agent管道
 ├── run_eval.py                         # 【评估入口】一键评估脚本 (自动加载api.txt)
 ├── run_relation.py                     # 【关系补抽】从 mid_data/实体结果补充抽取评价关系 (兼容/辅助)
+├── run_relation_agent.py               # 【独立关系抽取】单独运行 Agent 1 抽取评价关系
+├── run_relation_verify.py              # 【关系校验】复核抽取结果, 标记事实/描述类关系
 ├── run_sample_review.py                # 【抽样审阅】随机采样N句运行管道并输出人工审阅报告
 ├── config.py                           # 统一配置系统 (LLM / Pipeline / 路径)
 ├── api.txt                             # API Key 存储文件 (可选)
@@ -85,12 +87,14 @@ ontology_agent/
 │
 ├── test_academic_evaluation_prompt_schema.py   # 单元测试: 关系schema/ID重映射/评价有效性规则
 ├── test_eval_relations.py              # 单元测试: 评价关系评估指标
+├── test_relation_verification.py       # 单元测试: 评价关系校验 Agent
 │
 ├── pipeline/                           # 核心管道包 (v5.0.0)
 │   ├── __init__.py                     # 包定义 + 公开API导出
 │   ├── llm.py                          # LLM客户端: OpenAI兼容, Thinking/Voting/JSON重试
 │   ├── taxonomy.py                     # L1/L2/L3 分类体系层级映射 + 中文标签
 │   ├── evaluative_relation_agent.py    # Agent 1: 评价关系抽取 + 评价对象实体
+│   ├── relation_verification_agent.py  # 校验Agent: 复核关系是"评价"还是"事实/描述"
 │   ├── entity_extraction_agent.py      # Agent 2: 实体抽取补充 (接收上游已知实体)
 │   ├── classification_agent.py         # Agent 3: 精分类 + Voting + RAG + L4匹配
 │   ├── reviewer_agent.py               # Agent 4: Likert 5点量表审查 Prompt
@@ -129,6 +133,8 @@ ontology_agent/
 | [run.py](run.py) | 四Agent管道主入口，批量并行处理所有输入文件（评价关系由 Agent 1 在管道内直接产出并导出，无需独立步骤） | `python run.py --live` |
 | [run_eval.py](run_eval.py) | 一键评估：自动加载 `api.txt`，运行 Pipeline 并计算指标 | `python run_eval.py` |
 | [run_relation.py](run_relation.py) | 关系补抽/兼容脚本：从 `mid_data/` 或实体结果中单独抽取/读取评价关系 | `python run_relation.py --live` |
+| [run_relation_agent.py](run_relation_agent.py) | 独立运行 Agent 1：单独抽取评价关系（快速试跑/批量生产关系数据） | `python run_relation_agent.py --live --sample 12` |
+| [run_relation_verify.py](run_relation_verify.py) | 关系校验：对抽取结果逐条复核，事实/描述类关系标记 `is_evaluation=false`，评价类放行 | `python run_relation_verify.py --live --input-relations <jsonl>` |
 
 #### 管道模块 (`pipeline/`)
 
@@ -137,6 +143,7 @@ ontology_agent/
 | [llm.py](pipeline/llm.py) | **LLM 抽象层**：封装 DeepSeek/OpenAI API，支持 Thinking 推理模式、JSON 输出自动重试与修复、多轮 Voting 投票机制、指数退避重连 |
 | [taxonomy.py](pipeline/taxonomy.py) | **分类体系**：定义 L1→L2→L3 完整层级映射表，提供 `get_l1_options()`、`get_l2_label()` 等查询工具函数 |
 | [evaluative_relation_agent.py](pipeline/evaluative_relation_agent.py) | **Agent 1**：关系优先策略，先识别评价关系（subject/object/aspect/opinion/evidence），解析被评价对象并输出评价对象实体，作为下游已知实体 |
+| [relation_verification_agent.py](pipeline/relation_verification_agent.py) | **校验 Agent**：对已抽取关系逐条复核，强制判断该关系是「评价」还是「事实/描述」。事实类标记 `is_evaluation=false` 并附 `fact_type`（研究行为/方法使用/定义/过程描述等九类），评价类放行。与 Agent 1 的内置过滤形成双保险，用于质量检测与数据清洗 |
 | [entity_extraction_agent.py](pipeline/entity_extraction_agent.py) | **Agent 2**：接收 Agent 1 的已知实体，从评价句中补充抽取评价关系之外的其余实体，输出 mention、normalized_name、候选 L1/L3、evidence、confidence，严格过滤泛称/类别词 |
 | [classification_agent.py](pipeline/classification_agent.py) | **Agent 3**：验证实体有效性 → 标注 L1/L2/L3 → L4 规则匹配。支持 Voting（多轮投票）、RAG（从 TermDB 检索相似示例）、schema 约束输出 |
 | [reviewer_agent.py](pipeline/reviewer_agent.py) | **Agent 4**：以"图书馆学专业学长"视角审查 Agent 3 的分类结果，输出 Likert 1-5 置信度 + 修正建议 |
