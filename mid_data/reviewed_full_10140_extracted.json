@@ -17,7 +17,7 @@
           "evidence": "在大数据和数字化时代背景下",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为技术领域概念，非具体技术"
+          "uncertainty": "作为技术领域概念，非具体系统"
         },
         {
           "entity_id": "1_e2",
@@ -42,8 +42,8 @@
           ],
           "evidence": "数字资源爆炸式增长",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为资源类型概念"
+          "confidence": 0.8,
+          "uncertainty": "泛称资源类型，非具体数据集"
         },
         {
           "entity_id": "1_e4",
@@ -55,8 +55,8 @@
           ],
           "evidence": "检索系统返回的结果集也越来越多",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "泛称系统，但作为具体类型可识别"
+          "confidence": 0.85,
+          "uncertainty": "泛称系统类型，但作为具体系统类别"
         },
         {
           "entity_id": "1_e5",
@@ -68,8 +68,8 @@
           ],
           "evidence": "学术检索系统面临的问题尤为突出",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "泛称系统，但作为具体类型可识别"
+          "confidence": 0.85,
+          "uncertainty": "泛称系统类型，但作为具体系统类别"
         }
       ],
       "has_evaluation": false,
@@ -87,10 +87,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "对Google用户检索行为进行统计",
+          "evidence": "曾有研究对Google用户检索行为进行统计",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能作为行为现象，但更偏向具体行为统计，可考虑不抽取"
+          "uncertainty": "可能指具体研究主题，但无具体文献名"
         },
         {
           "entity_id": "2_e2",
@@ -107,29 +107,68 @@
         },
         {
           "entity_id": "2_e3",
-          "mention": "学术论文检索与阅读",
-          "normalized_name": "学术论文检索与阅读",
-          "candidate_l3": "subfield",
+          "mention": "学术论文检索与阅读这一实际场景",
+          "normalized_name": "学术论文检索与阅读场景",
+          "candidate_l3": "phenomenon",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "在学术论文检索与阅读这一实际场景中",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为研究子领域，已知实体"
+          "confidence": 0.8,
+          "uncertainty": "可能为场景描述，非独立学术命名"
         },
         {
           "entity_id": "2_e4",
-          "mention": "认知负担",
-          "normalized_name": "认知负担",
+          "mention": "当前学术信息量",
+          "normalized_name": "当前学术信息量",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当前学术信息量已远超用户信息处理能力",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "可能为泛化描述，非独立术语"
+        },
+        {
+          "entity_id": "2_e5",
+          "mention": "用户群体阅读效率",
+          "normalized_name": "用户群体阅读效率",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "减轻用户的认知负担",
+          "evidence": "用户群体阅读效率偏低",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为术语概念"
+          "confidence": 0.6,
+          "uncertainty": "可能为评价性短语，非独立概念"
+        },
+        {
+          "entity_id": "2_e6",
+          "mention": "吸收能力",
+          "normalized_name": "吸收能力",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "吸收能力也相应弱化",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "可能为通用概念，但此处有具体所指"
+        },
+        {
+          "entity_id": "2_e7",
+          "mention": "如何帮助用户对论文检索结果集进行高效阅读、筛选和吸收，减轻用户的认知负担，把用户从过载的信息中解放出来",
+          "normalized_name": "帮助用户高效阅读筛选吸收论文检索结果集的研究问题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "如何帮助用户对论文检索结果集进行高效阅读、筛选和吸收，减轻用户的认知负担，把用户从过载的信息中解放出来",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "可能为研究问题描述，非独立命名实体"
         }
       ],
       "has_evaluation": true,
@@ -137,9 +176,45 @@
         {
           "sentence_id": "2",
           "sentence": "曾有研究对Google用户检索行为进行统计，发现超过 $70 \\%$ 的用户只查看检索结果首页，平均每次查看1.7个结果页面[1]，相似的情况也出现在 Excite搜索引擎中[2]。 由此可见，在学术论文检索与阅读这一实际场景中，当前学术信息量已远超用户信息处理能力，用户群体阅读效率偏低，吸收能力也相应弱化。如何帮助用户对论文检索结果集进行高效阅读、筛选和吸收，减轻用户的认知负担，把用户从过载的信息中解放出来，这是一个具有迫切性和现实意义的研究问题。",
+          "subject": "_cite[1]",
+          "object": "2_e1",
+          "aspect": "检索行为",
+          "opinion": "超过70%的用户只查看检索结果首页，平均每次查看1.7个结果页面",
+          "evidence": "超过70%的用户只查看检索结果首页，平均每次查看1.7个结果页面"
+        },
+        {
+          "sentence_id": "2",
+          "sentence": "曾有研究对Google用户检索行为进行统计，发现超过 $70 \\%$ 的用户只查看检索结果首页，平均每次查看1.7个结果页面[1]，相似的情况也出现在 Excite搜索引擎中[2]。 由此可见，在学术论文检索与阅读这一实际场景中，当前学术信息量已远超用户信息处理能力，用户群体阅读效率偏低，吸收能力也相应弱化。如何帮助用户对论文检索结果集进行高效阅读、筛选和吸收，减轻用户的认知负担，把用户从过载的信息中解放出来，这是一个具有迫切性和现实意义的研究问题。",
+          "subject": "_cite[2]",
+          "object": "2_e2",
+          "aspect": "检索行为",
+          "opinion": "相似的情况也出现",
+          "evidence": "相似的情况也出现在 Excite搜索引擎中"
+        },
+        {
+          "sentence_id": "2",
+          "sentence": "曾有研究对Google用户检索行为进行统计，发现超过 $70 \\%$ 的用户只查看检索结果首页，平均每次查看1.7个结果页面[1]，相似的情况也出现在 Excite搜索引擎中[2]。 由此可见，在学术论文检索与阅读这一实际场景中，当前学术信息量已远超用户信息处理能力，用户群体阅读效率偏低，吸收能力也相应弱化。如何帮助用户对论文检索结果集进行高效阅读、筛选和吸收，减轻用户的认知负担，把用户从过载的信息中解放出来，这是一个具有迫切性和现实意义的研究问题。",
           "subject": "_paper_author",
           "object": "2_e3",
-          "aspect": "用户阅读效率",
+          "aspect": "学术信息量",
+          "opinion": "已远超用户信息处理能力",
+          "evidence": "当前学术信息量已远超用户信息处理能力"
+        },
+        {
+          "sentence_id": "2",
+          "sentence": "曾有研究对Google用户检索行为进行统计，发现超过 $70 \\%$ 的用户只查看检索结果首页，平均每次查看1.7个结果页面[1]，相似的情况也出现在 Excite搜索引擎中[2]。 由此可见，在学术论文检索与阅读这一实际场景中，当前学术信息量已远超用户信息处理能力，用户群体阅读效率偏低，吸收能力也相应弱化。如何帮助用户对论文检索结果集进行高效阅读、筛选和吸收，减轻用户的认知负担，把用户从过载的信息中解放出来，这是一个具有迫切性和现实意义的研究问题。",
+          "subject": "_paper_author",
+          "object": "2_e4",
+          "aspect": null,
+          "opinion": "已远超用户信息处理能力",
+          "evidence": "当前学术信息量已远超用户信息处理能力"
+        },
+        {
+          "sentence_id": "2",
+          "sentence": "曾有研究对Google用户检索行为进行统计，发现超过 $70 \\%$ 的用户只查看检索结果首页，平均每次查看1.7个结果页面[1]，相似的情况也出现在 Excite搜索引擎中[2]。 由此可见，在学术论文检索与阅读这一实际场景中，当前学术信息量已远超用户信息处理能力，用户群体阅读效率偏低，吸收能力也相应弱化。如何帮助用户对论文检索结果集进行高效阅读、筛选和吸收，减轻用户的认知负担，把用户从过载的信息中解放出来，这是一个具有迫切性和现实意义的研究问题。",
+          "subject": "_paper_author",
+          "object": "2_e5",
+          "aspect": null,
           "opinion": "偏低",
           "evidence": "用户群体阅读效率偏低"
         },
@@ -147,10 +222,19 @@
           "sentence_id": "2",
           "sentence": "曾有研究对Google用户检索行为进行统计，发现超过 $70 \\%$ 的用户只查看检索结果首页，平均每次查看1.7个结果页面[1]，相似的情况也出现在 Excite搜索引擎中[2]。 由此可见，在学术论文检索与阅读这一实际场景中，当前学术信息量已远超用户信息处理能力，用户群体阅读效率偏低，吸收能力也相应弱化。如何帮助用户对论文检索结果集进行高效阅读、筛选和吸收，减轻用户的认知负担，把用户从过载的信息中解放出来，这是一个具有迫切性和现实意义的研究问题。",
           "subject": "_paper_author",
-          "object": "2_e3",
-          "aspect": "吸收能力",
-          "opinion": "弱化",
+          "object": "2_e6",
+          "aspect": null,
+          "opinion": "相应弱化",
           "evidence": "吸收能力也相应弱化"
+        },
+        {
+          "sentence_id": "2",
+          "sentence": "曾有研究对Google用户检索行为进行统计，发现超过 $70 \\%$ 的用户只查看检索结果首页，平均每次查看1.7个结果页面[1]，相似的情况也出现在 Excite搜索引擎中[2]。 由此可见，在学术论文检索与阅读这一实际场景中，当前学术信息量已远超用户信息处理能力，用户群体阅读效率偏低，吸收能力也相应弱化。如何帮助用户对论文检索结果集进行高效阅读、筛选和吸收，减轻用户的认知负担，把用户从过载的信息中解放出来，这是一个具有迫切性和现实意义的研究问题。",
+          "subject": "_paper_author",
+          "object": "2_e7",
+          "aspect": "迫切性和现实意义",
+          "opinion": "具有迫切性和现实意义",
+          "evidence": "这是一个具有迫切性和现实意义的研究问题"
         }
       ]
     },
@@ -179,7 +263,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "检索结果集的自动综述指针对系统返回的多篇科技文献，自动分析、归纳与总结",
+          "evidence": "自动综述指针对系统返回的多篇科技文献，自动分析、归纳与总结",
           "is_specific_entity": true,
           "confidence": 0.85,
           "uncertainty": "作为术语概念讨论"
@@ -222,8 +306,8 @@
           ],
           "evidence": "面向学术检索系统",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "泛指系统类型，但作为具体系统类别可识别"
+          "confidence": 0.85,
+          "uncertainty": "可能指系统类型而非具体系统"
         },
         {
           "entity_id": "5_e2",
@@ -235,8 +319,8 @@
           ],
           "evidence": "开展面向检索结果集的结构化综述研究",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "可能为研究类型，非具体方法"
+          "confidence": 0.8,
+          "uncertainty": "可能为研究类型而非具体方法"
         },
         {
           "entity_id": "5_e3",
@@ -248,7 +332,7 @@
           ],
           "evidence": "综述文本生成方法研究",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.85,
           "uncertainty": ""
         },
         {
@@ -259,10 +343,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "综述表达形式",
+          "evidence": "综述表达形式）设计带来的阅读体验上的提升",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "可能为概念，非具体实体"
+          "confidence": 0.7,
+          "uncertainty": "可能为概念而非具体实体"
         }
       ],
       "has_evaluation": false,
@@ -276,27 +360,27 @@
           "entity_id": "6_e1",
           "mention": "单文档自动摘要",
           "normalized_name": "单文档自动摘要",
-          "candidate_l3": "technique",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "按照对象文档数量进行划分，可分为单文档自动摘要和多文档自动摘要",
-          "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "6_e2",
-          "mention": "多文档自动摘要",
-          "normalized_name": "多文档自动摘要",
-          "candidate_l3": "technique",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "可分为单文档自动摘要和多文档自动摘要",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": ""
+          "uncertainty": "作为技术概念讨论"
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "多文档自动摘要",
+          "normalized_name": "多文档自动摘要",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "可分为单文档自动摘要和多文档自动摘要",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为技术概念讨论"
         }
       ],
       "has_evaluation": false,
@@ -330,7 +414,7 @@
           "evidence": "对人工创作新闻专题综述的写作方法进行分析",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能为方法或技术，但原文未明确具体操作步骤"
+          "uncertainty": "可能为具体方法，但原文未给出命名，故置信度略低"
         },
         {
           "entity_id": "7_e3",
@@ -343,11 +427,21 @@
           "evidence": "总结归纳出综述报告的行文规则",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "可能为规则或指南，但原文未明确具体内容"
+          "uncertainty": "可能为规则性概念，但未明确命名"
         }
       ],
-      "has_evaluation": false,
-      "relations": []
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "7",
+          "sentence": "$\\textcircled{2}$ 基于固定模板的结构化文本。 对于不同的文本对象、不同的主题信息都没有一个清晰的描述标准，多数学者均基于人工综述／文摘的观察、总结归纳定义应用场景下合适的模板表达方式。 薛竹君[对人工创作新闻专题综述的写作方法进行分析，总结归纳出综述报告的行文规则，通过挖掘出来的相关语义信息，按照报告行文规则组装成综述报告。",
+          "subject": "_cite[1]",
+          "object": "7_e1",
+          "aspect": "写作方法",
+          "opinion": "总结归纳出综述报告的行文规则",
+          "evidence": "总结归纳出综述报告的行文规则"
+        }
+      ]
     },
     {
       "sentence_id": "8",
@@ -381,19 +475,6 @@
         },
         {
           "entity_id": "8_e3",
-          "mention": "自然语言生成技术",
-          "normalized_name": "自然语言生成技术",
-          "candidate_l3": "technique",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "再通过自然语言生成技术对其进行解码",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "技术领域，非具体技术手段"
-        },
-        {
-          "entity_id": "8_e4",
           "mention": "徐晓丹",
           "normalized_name": "徐晓丹",
           "candidate_l3": "scholar",
@@ -406,7 +487,7 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "8_e5",
+          "entity_id": "8_e4",
           "mention": "面向查询的多文档自动摘要",
           "normalized_name": "面向查询的多文档自动摘要",
           "candidate_l3": "subfield",
@@ -416,10 +497,10 @@
           "evidence": "在研究面向查询的多文档自动摘要时",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "研究子领域"
+          "uncertainty": "可能作为研究任务或子领域"
         },
         {
-          "entity_id": "8_e6",
+          "entity_id": "8_e5",
           "mention": "聚类",
           "normalized_name": "聚类",
           "candidate_l3": "technique",
@@ -476,7 +557,7 @@
           "evidence": "将自动文摘任务转化为二分类问题",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为任务概念"
+          "uncertainty": "作为任务概念，非具体方法"
         },
         {
           "entity_id": "9_e4",
@@ -489,7 +570,7 @@
           "evidence": "转化为二分类问题",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": ""
+          "uncertainty": "作为问题类型概念"
         },
         {
           "entity_id": "9_e5",
@@ -593,7 +674,7 @@
           "evidence": "将抽取式摘要看作序列标注问题",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": ""
+          "uncertainty": "作为任务类型概念"
         },
         {
           "entity_id": "9_e13",
@@ -603,10 +684,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "看作序列标注问题",
+          "evidence": "将抽取式摘要看作序列标注问题",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": ""
+          "uncertainty": "作为问题类型概念"
         },
         {
           "entity_id": "9_e14",
@@ -623,6 +704,19 @@
         },
         {
           "entity_id": "9_e15",
+          "mention": "生成式文本摘要",
+          "normalized_name": "生成式文本摘要",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用神经网络、深度学习在生成式文本摘要上的相关探索",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为任务类型概念"
+        },
+        {
+          "entity_id": "9_e16",
           "mention": "深度学习",
           "normalized_name": "深度学习",
           "candidate_l3": "technique",
@@ -630,19 +724,6 @@
             "Abstract"
           ],
           "evidence": "利用神经网络、深度学习在生成式文本摘要上的相关探索",
-          "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "9_e16",
-          "mention": "生成式文本摘要",
-          "normalized_name": "生成式文本摘要",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "在生成式文本摘要上的相关探索",
           "is_specific_entity": true,
           "confidence": 0.9,
           "uncertainty": ""
@@ -673,7 +754,7 @@
           "sentence": "C.Shen 等[13]基于有监督的机器学习方法，将自动文摘任务转化为二分类问题，通过提取句子位置、长度、与查询句子的相似度等特征，使用SVM机器学习模型进行有监督的训练； 王红斌[14]等提出一种结合层级注意力的抽取式新闻文本自动摘要方法，首先对新闻文本进行层级注意力的文本编码表示，然后通过神经网络构建动态打分函数选择分值高的句子作为摘要句，具有较好的泛化性与有效性；J.Chen 等[15]将抽取式摘要看作序列标注问题，并采用神经网络的处理方式解决，取得了较好的效果。 与此同时，利用神经网络、深度学习在生成式文本摘要上的相关探索也逐渐发展起来。",
           "subject": "_cite[15]",
           "object": "9_e11",
-          "aspect": "效果",
+          "aspect": null,
           "opinion": "取得了较好的效果",
           "evidence": "取得了较好的效果"
         }
@@ -704,7 +785,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "基于 Seq-to-Seq 框架",
+          "evidence": "基于 Seq-to-Seq 框架构建基于层次神经网络的序列生成模型",
           "is_specific_entity": true,
           "confidence": 0.9,
           "uncertainty": ""
@@ -717,10 +798,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "基于层次神经网络的序列生成模型",
+          "evidence": "构建基于层次神经网络的序列生成模型",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
+          "confidence": 0.85,
+          "uncertainty": "可能为模型组件"
         },
         {
           "entity_id": "10_e4",
@@ -737,7 +818,7 @@
         },
         {
           "entity_id": "10_e5",
-          "mention": "王茂发等",
+          "mention": "王茂发等[]",
           "normalized_name": "王茂发等",
           "candidate_l3": "scholar",
           "candidate_l1": [
@@ -763,15 +844,15 @@
         },
         {
           "entity_id": "10_e7",
-          "mention": "堆叠BiLSTM",
-          "normalized_name": "堆叠BiLSTM",
-          "candidate_l3": "technique",
+          "mention": "BiLSTM",
+          "normalized_name": "BiLSTM",
+          "candidate_l3": "algorithm",
           "candidate_l1": [
-            "Abstract"
+            "Artifact"
           ],
           "evidence": "使用堆叠BiLSTM和多头注意力机制相结合的方法",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.95,
           "uncertainty": ""
         },
         {
@@ -784,11 +865,24 @@
           ],
           "evidence": "使用堆叠BiLSTM和多头注意力机制（multi-headattention）相结合的方法",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.95,
           "uncertainty": ""
         },
         {
           "entity_id": "10_e9",
+          "mention": "multi-headattention",
+          "normalized_name": "multi-headattention",
+          "candidate_l3": "technique",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "多头注意力机制（multi-headattention）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "10_e10",
           "mention": "OpenAI公司",
           "normalized_name": "OpenAI公司",
           "candidate_l3": "research",
@@ -801,8 +895,8 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "10_e10",
-          "mention": "ChatGPT",
+          "entity_id": "10_e11",
+          "mention": "ChatGPT[19]",
           "normalized_name": "ChatGPT",
           "candidate_l3": "information_system",
           "candidate_l1": [
@@ -814,7 +908,7 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "10_e11",
+          "entity_id": "10_e12",
           "mention": "人工智能技术",
           "normalized_name": "人工智能技术",
           "candidate_l3": "concept",
@@ -825,19 +919,6 @@
           "is_specific_entity": true,
           "confidence": 0.85,
           "uncertainty": "技术领域概念"
-        },
-        {
-          "entity_id": "10_e12",
-          "mention": "新技术方法",
-          "normalized_name": "新技术方法",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "新技术方法的突破为支持和实现更高质量的文献服务提供了新的方法和技术支撑",
-          "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "泛称，但作为已知实体保留"
         }
       ],
       "has_evaluation": true,
@@ -847,63 +928,27 @@
           "sentence": "王勇臻等[16]面向学术文献，将文献综述生成定义为序列文本生成问题，基于 Seq-to-Seq 框架构建基于层次神经网络的序列生成模型，实现文摘的生成； 王茂发等[]提出一种生成式自动文摘网络模型，使用堆叠BiLSTM和多头注意力机制（multi-headattention）相结合的方法提升生成摘要的质量。此外，也有一些学者将抽取式和生成式方法结合起来进行摘要的生成[18]，有较好的应用。2022年11月30日，OpenAI公司研发的对话系统ChatGPT[19]发布，随着以ChatGPT为代表的人工智能技术的快速发展和不断更新迭代，展现出更高的文本生成及综述能力[20]。新技术方法的突破为支持和实现更高质量的文献服务提供了新的方法和技术支撑。",
           "subject": "_cite[16]",
           "object": "10_e1",
-          "aspect": "文献综述生成",
-          "opinion": "定义为序列文本生成问题",
-          "evidence": "将文献综述生成定义为序列文本生成问题"
-        },
-        {
-          "sentence_id": "10",
-          "sentence": "王勇臻等[16]面向学术文献，将文献综述生成定义为序列文本生成问题，基于 Seq-to-Seq 框架构建基于层次神经网络的序列生成模型，实现文摘的生成； 王茂发等[]提出一种生成式自动文摘网络模型，使用堆叠BiLSTM和多头注意力机制（multi-headattention）相结合的方法提升生成摘要的质量。此外，也有一些学者将抽取式和生成式方法结合起来进行摘要的生成[18]，有较好的应用。2022年11月30日，OpenAI公司研发的对话系统ChatGPT[19]发布，随着以ChatGPT为代表的人工智能技术的快速发展和不断更新迭代，展现出更高的文本生成及综述能力[20]。新技术方法的突破为支持和实现更高质量的文献服务提供了新的方法和技术支撑。",
-          "subject": "_cite[16]",
-          "object": "10_e1",
-          "aspect": "基于Seq-to-Seq框架构建基于层次神经网络的序列生成模型",
+          "aspect": null,
           "opinion": "实现文摘的生成",
-          "evidence": "基于Seq-to-Seq框架构建基于层次神经网络的序列生成模型，实现文摘的生成"
+          "evidence": "实现文摘的生成"
         },
         {
           "sentence_id": "10",
           "sentence": "王勇臻等[16]面向学术文献，将文献综述生成定义为序列文本生成问题，基于 Seq-to-Seq 框架构建基于层次神经网络的序列生成模型，实现文摘的生成； 王茂发等[]提出一种生成式自动文摘网络模型，使用堆叠BiLSTM和多头注意力机制（multi-headattention）相结合的方法提升生成摘要的质量。此外，也有一些学者将抽取式和生成式方法结合起来进行摘要的生成[18]，有较好的应用。2022年11月30日，OpenAI公司研发的对话系统ChatGPT[19]发布，随着以ChatGPT为代表的人工智能技术的快速发展和不断更新迭代，展现出更高的文本生成及综述能力[20]。新技术方法的突破为支持和实现更高质量的文献服务提供了新的方法和技术支撑。",
-          "subject": "_cite[17]",
+          "subject": "_cite[]",
           "object": "10_e5",
-          "aspect": "生成式自动文摘网络模型",
-          "opinion": "提出",
-          "evidence": "提出一种生成式自动文摘网络模型"
-        },
-        {
-          "sentence_id": "10",
-          "sentence": "王勇臻等[16]面向学术文献，将文献综述生成定义为序列文本生成问题，基于 Seq-to-Seq 框架构建基于层次神经网络的序列生成模型，实现文摘的生成； 王茂发等[]提出一种生成式自动文摘网络模型，使用堆叠BiLSTM和多头注意力机制（multi-headattention）相结合的方法提升生成摘要的质量。此外，也有一些学者将抽取式和生成式方法结合起来进行摘要的生成[18]，有较好的应用。2022年11月30日，OpenAI公司研发的对话系统ChatGPT[19]发布，随着以ChatGPT为代表的人工智能技术的快速发展和不断更新迭代，展现出更高的文本生成及综述能力[20]。新技术方法的突破为支持和实现更高质量的文献服务提供了新的方法和技术支撑。",
-          "subject": "_cite[17]",
-          "object": "10_e5",
-          "aspect": "使用堆叠BiLSTM和多头注意力机制相结合的方法",
+          "aspect": "生成摘要的质量",
           "opinion": "提升生成摘要的质量",
-          "evidence": "使用堆叠BiLSTM和多头注意力机制（multi-headattention）相结合的方法提升生成摘要的质量"
+          "evidence": "提升生成摘要的质量"
         },
         {
           "sentence_id": "10",
           "sentence": "王勇臻等[16]面向学术文献，将文献综述生成定义为序列文本生成问题，基于 Seq-to-Seq 框架构建基于层次神经网络的序列生成模型，实现文摘的生成； 王茂发等[]提出一种生成式自动文摘网络模型，使用堆叠BiLSTM和多头注意力机制（multi-headattention）相结合的方法提升生成摘要的质量。此外，也有一些学者将抽取式和生成式方法结合起来进行摘要的生成[18]，有较好的应用。2022年11月30日，OpenAI公司研发的对话系统ChatGPT[19]发布，随着以ChatGPT为代表的人工智能技术的快速发展和不断更新迭代，展现出更高的文本生成及综述能力[20]。新技术方法的突破为支持和实现更高质量的文献服务提供了新的方法和技术支撑。",
-          "subject": "_cite[18]",
-          "object": "10_e1",
-          "aspect": "将抽取式和生成式方法结合起来进行摘要的生成",
-          "opinion": "有较好的应用",
-          "evidence": "有较好的应用"
-        },
-        {
-          "sentence_id": "10",
-          "sentence": "王勇臻等[16]面向学术文献，将文献综述生成定义为序列文本生成问题，基于 Seq-to-Seq 框架构建基于层次神经网络的序列生成模型，实现文摘的生成； 王茂发等[]提出一种生成式自动文摘网络模型，使用堆叠BiLSTM和多头注意力机制（multi-headattention）相结合的方法提升生成摘要的质量。此外，也有一些学者将抽取式和生成式方法结合起来进行摘要的生成[18]，有较好的应用。2022年11月30日，OpenAI公司研发的对话系统ChatGPT[19]发布，随着以ChatGPT为代表的人工智能技术的快速发展和不断更新迭代，展现出更高的文本生成及综述能力[20]。新技术方法的突破为支持和实现更高质量的文献服务提供了新的方法和技术支撑。",
-          "subject": "_cite[20]",
-          "object": "10_e10",
+          "subject": "_cite[19]",
+          "object": "10_e11",
           "aspect": "文本生成及综述能力",
-          "opinion": "展现出更高的",
+          "opinion": "展现出更高的文本生成及综述能力",
           "evidence": "展现出更高的文本生成及综述能力"
-        },
-        {
-          "sentence_id": "10",
-          "sentence": "王勇臻等[16]面向学术文献，将文献综述生成定义为序列文本生成问题，基于 Seq-to-Seq 框架构建基于层次神经网络的序列生成模型，实现文摘的生成； 王茂发等[]提出一种生成式自动文摘网络模型，使用堆叠BiLSTM和多头注意力机制（multi-headattention）相结合的方法提升生成摘要的质量。此外，也有一些学者将抽取式和生成式方法结合起来进行摘要的生成[18]，有较好的应用。2022年11月30日，OpenAI公司研发的对话系统ChatGPT[19]发布，随着以ChatGPT为代表的人工智能技术的快速发展和不断更新迭代，展现出更高的文本生成及综述能力[20]。新技术方法的突破为支持和实现更高质量的文献服务提供了新的方法和技术支撑。",
-          "subject": "_paper_author",
-          "object": "10_e12",
-          "aspect": "为支持和实现更高质量的文献服务",
-          "opinion": "提供了新的方法和技术支撑",
-          "evidence": "新技术方法的突破为支持和实现更高质量的文献服务提供了新的方法和技术支撑"
         }
       ]
     },
@@ -922,7 +967,7 @@
           "evidence": "生成式文摘的多数研究都聚焦在深度学习算法的优化上",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "深度学习算法作为具体算法类别，但未指明具体算法名称，可能为泛称"
+          "uncertainty": ""
         },
         {
           "entity_id": "11_e2",
@@ -935,7 +980,7 @@
           "evidence": "抽取式文摘适用性较广",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为文摘类型概念，非具体制品"
+          "uncertainty": "作为文摘类型概念"
         },
         {
           "entity_id": "11_e3",
@@ -948,7 +993,7 @@
           "evidence": "生成式文摘更接近人工撰写摘要的方式",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为文摘类型概念，非具体制品"
+          "uncertainty": "作为文摘类型概念"
         },
         {
           "entity_id": "11_e4",
@@ -961,7 +1006,7 @@
           "evidence": "深度学习作为前沿技术",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为技术领域概念，非具体算法"
+          "uncertainty": "作为技术领域概念"
         },
         {
           "entity_id": "11_e5",
@@ -971,9 +1016,9 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "在多文档自动摘要领域的热度不断攀升",
+          "evidence": "深度学习作为前沿技术在多文档自动摘要领域的热度不断攀升",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.85,
           "uncertainty": "作为研究子领域"
         },
         {
@@ -1000,7 +1045,7 @@
           "evidence": "以ChatGPT为代表的生成式大语言模型",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为技术概念，非具体模型名称"
+          "uncertainty": "作为技术概念"
         },
         {
           "entity_id": "11_e8",
@@ -1013,7 +1058,7 @@
           "evidence": "生成式预训练模型等深度神经网络方法",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为模型类别，非具体模型"
+          "uncertainty": ""
         },
         {
           "entity_id": "11_e9",
@@ -1023,10 +1068,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "深度神经网络方法在自动摘要、综述生成任务中取得了比传统方法更为优异的表现",
+          "evidence": "生成式预训练模型等深度神经网络方法",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为方法类别，非具体方法"
+          "uncertainty": ""
         },
         {
           "entity_id": "11_e10",
@@ -1038,8 +1083,8 @@
           ],
           "evidence": "在自动摘要、综述生成任务中",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为研究任务/子领域"
+          "confidence": 0.85,
+          "uncertainty": "作为研究子领域"
         },
         {
           "entity_id": "11_e11",
@@ -1051,8 +1096,8 @@
           ],
           "evidence": "在自动摘要、综述生成任务中",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为研究任务/子领域"
+          "confidence": 0.85,
+          "uncertainty": "作为研究子领域"
         }
       ],
       "has_evaluation": true,
@@ -1063,17 +1108,8 @@
           "subject": "_paper_author",
           "object": "11_e2",
           "aspect": "适用性",
-          "opinion": "较广",
-          "evidence": "抽取式文摘适用性较广"
-        },
-        {
-          "sentence_id": "11",
-          "sentence": "生成式文摘的多数研究都聚焦在深度学习算法的优化上。 总体来看，抽取式文摘适用性较广，不受文本内容和题材限制、泛化性好，但是容易局限文本表层结构分析，难以深入理解文本内容，存在内容覆盖不全、词汇冗余等问题。生成式文摘更接近人工撰写摘要的方式,能对文本内容进行深层次的语义理解，生成的摘要更具有简约性、概括性。并且，近年来深度学习作为前沿技术在多文档自动摘要领域的热度不断攀升[21],以及以ChatGPT为代表的生成式大语言模型，因其强大的生成能力使生成式预训练模型等深度神经网络方法在自动摘要、综述生成任务中取得了比传统方法更为优异的表现，给该任务的研究带来了更大的潜力。",
-          "subject": "_paper_author",
-          "object": "11_e2",
-          "aspect": "泛化性",
-          "opinion": "好",
-          "evidence": "泛化性好"
+          "opinion": "适用性较广，不受文本内容和题材限制、泛化性好",
+          "evidence": "抽取式文摘适用性较广，不受文本内容和题材限制、泛化性好"
         },
         {
           "sentence_id": "11",
@@ -1081,17 +1117,8 @@
           "subject": "_paper_author",
           "object": "11_e2",
           "aspect": "文本内容理解",
-          "opinion": "难以深入理解",
-          "evidence": "难以深入理解文本内容"
-        },
-        {
-          "sentence_id": "11",
-          "sentence": "生成式文摘的多数研究都聚焦在深度学习算法的优化上。 总体来看，抽取式文摘适用性较广，不受文本内容和题材限制、泛化性好，但是容易局限文本表层结构分析，难以深入理解文本内容，存在内容覆盖不全、词汇冗余等问题。生成式文摘更接近人工撰写摘要的方式,能对文本内容进行深层次的语义理解，生成的摘要更具有简约性、概括性。并且，近年来深度学习作为前沿技术在多文档自动摘要领域的热度不断攀升[21],以及以ChatGPT为代表的生成式大语言模型，因其强大的生成能力使生成式预训练模型等深度神经网络方法在自动摘要、综述生成任务中取得了比传统方法更为优异的表现，给该任务的研究带来了更大的潜力。",
-          "subject": "_paper_author",
-          "object": "11_e2",
-          "aspect": "内容覆盖",
-          "opinion": "存在不足",
-          "evidence": "存在内容覆盖不全、词汇冗余等问题"
+          "opinion": "容易局限文本表层结构分析，难以深入理解文本内容，存在内容覆盖不全、词汇冗余等问题",
+          "evidence": "容易局限文本表层结构分析，难以深入理解文本内容，存在内容覆盖不全、词汇冗余等问题"
         },
         {
           "sentence_id": "11",
@@ -1099,26 +1126,17 @@
           "subject": "_paper_author",
           "object": "11_e3",
           "aspect": "摘要质量",
-          "opinion": "更接近人工撰写摘要的方式",
-          "evidence": "生成式文摘更接近人工撰写摘要的方式"
+          "opinion": "更接近人工撰写摘要的方式,能对文本内容进行深层次的语义理解，生成的摘要更具有简约性、概括性",
+          "evidence": "生成式文摘更接近人工撰写摘要的方式,能对文本内容进行深层次的语义理解，生成的摘要更具有简约性、概括性"
         },
         {
           "sentence_id": "11",
           "sentence": "生成式文摘的多数研究都聚焦在深度学习算法的优化上。 总体来看，抽取式文摘适用性较广，不受文本内容和题材限制、泛化性好，但是容易局限文本表层结构分析，难以深入理解文本内容，存在内容覆盖不全、词汇冗余等问题。生成式文摘更接近人工撰写摘要的方式,能对文本内容进行深层次的语义理解，生成的摘要更具有简约性、概括性。并且，近年来深度学习作为前沿技术在多文档自动摘要领域的热度不断攀升[21],以及以ChatGPT为代表的生成式大语言模型，因其强大的生成能力使生成式预训练模型等深度神经网络方法在自动摘要、综述生成任务中取得了比传统方法更为优异的表现，给该任务的研究带来了更大的潜力。",
           "subject": "_paper_author",
-          "object": "11_e3",
-          "aspect": "语义理解",
-          "opinion": "能进行深层次的语义理解",
-          "evidence": "能对文本内容进行深层次的语义理解"
-        },
-        {
-          "sentence_id": "11",
-          "sentence": "生成式文摘的多数研究都聚焦在深度学习算法的优化上。 总体来看，抽取式文摘适用性较广，不受文本内容和题材限制、泛化性好，但是容易局限文本表层结构分析，难以深入理解文本内容，存在内容覆盖不全、词汇冗余等问题。生成式文摘更接近人工撰写摘要的方式,能对文本内容进行深层次的语义理解，生成的摘要更具有简约性、概括性。并且，近年来深度学习作为前沿技术在多文档自动摘要领域的热度不断攀升[21],以及以ChatGPT为代表的生成式大语言模型，因其强大的生成能力使生成式预训练模型等深度神经网络方法在自动摘要、综述生成任务中取得了比传统方法更为优异的表现，给该任务的研究带来了更大的潜力。",
-          "subject": "_paper_author",
-          "object": "11_e3",
-          "aspect": "摘要特性",
-          "opinion": "更具有简约性、概括性",
-          "evidence": "生成的摘要更具有简约性、概括性"
+          "object": "11_e8",
+          "aspect": "表现",
+          "opinion": "取得了比传统方法更为优异的表现",
+          "evidence": "生成式预训练模型等深度神经网络方法在自动摘要、综述生成任务中取得了比传统方法更为优异的表现"
         }
       ]
     },
@@ -1150,7 +1168,7 @@
           "evidence": "面向学术搜索引擎下的文献检索结果",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能指具体系统，但原文未明确名称"
+          "uncertainty": "可能指代具体系统，但原文未明确名称"
         },
         {
           "entity_id": "12_e3",
@@ -1188,6 +1206,19 @@
       "entities": [
         {
           "entity_id": "13_e1",
+          "mention": "综述服务",
+          "normalized_name": "综述服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "用户期望的综述服务主要包括以下3个方面",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为服务类型概念，非具体服务实例"
+        },
+        {
+          "entity_id": "13_e2",
           "mention": "主题或学科领域",
           "normalized_name": "主题或学科领域",
           "candidate_l3": "concept",
@@ -1197,20 +1228,7 @@
           "evidence": "基于主题或学科领域的归纳整理和加工",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "可能为泛称，但作为具体概念提及"
-        },
-        {
-          "entity_id": "13_e2",
-          "mention": "综述服务",
-          "normalized_name": "综述服务",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "用户期望的综述服务主要包括以下3个方面",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为服务概念，非具体系统"
+          "uncertainty": "泛化概念，可能不满足具体性"
         }
       ],
       "has_evaluation": false,
@@ -1231,23 +1249,10 @@
           "evidence": "面向检索结果集的综述内容生成",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能为方法或概念，但原句作为任务描述，暂标concept"
+          "uncertainty": "可能为任务或概念，但无更具体类别"
         },
         {
           "entity_id": "14_e2",
-          "mention": "检索结果集",
-          "normalized_name": "检索结果集",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "面向检索结果集的综述内容生成",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "可能为数据对象，但无具体名称，暂标concept"
-        },
-        {
-          "entity_id": "14_e3",
           "mention": "结构化的综述表达形式",
           "normalized_name": "结构化的综述表达形式",
           "candidate_l3": "concept",
@@ -1257,7 +1262,7 @@
           "evidence": "设计结构化的综述表达形式",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "可能为方法或框架，但原句未明确，暂标concept"
+          "uncertainty": "可能为设计产物，但无具体名称"
         }
       ],
       "has_evaluation": false,
@@ -1266,21 +1271,7 @@
     {
       "sentence_id": "15",
       "sentence": "所谓结构化，是指将获取的知识内容加以归纳和整理，使之条理化、纲领化。 表现形式的结构化可以避免知识内容的杂乱无章，达到条理清晰、层次分明、一目了然的效果，可增强阅读和吸收效率。",
-      "entities": [
-        {
-          "entity_id": "15_e1",
-          "mention": "结构化",
-          "normalized_name": "结构化",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "所谓结构化，是指将获取的知识内容加以归纳和整理",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为概念讨论，但可能更偏向方法或过程，此处按概念处理"
-        }
-      ],
+      "entities": [],
       "has_evaluation": false,
       "relations": []
     },
@@ -1317,10 +1308,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "系统会返回检索结果集",
+          "evidence": "检索结果集说明：在用户输入检索词后，系统会返回检索结果集",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为检索领域术语，但可能更具体为数据集或制品，此处按概念处理"
+          "uncertainty": "作为检索领域的概念，但可能更具体为信息对象集合，暂定concept"
         },
         {
           "entity_id": "17_e2",
@@ -1332,8 +1323,8 @@
           ],
           "evidence": "多数学术搜索引擎在返回检索结果集时已按照某种排序方式进行排序",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
+          "confidence": 0.8,
+          "uncertainty": "泛指学术搜索引擎，未指明具体系统，但作为系统类型可识别"
         },
         {
           "entity_id": "17_e3",
@@ -1345,8 +1336,8 @@
           ],
           "evidence": "多数默认按相关度排序",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "可能为排序方法，但未具体命名，暂标为technique"
+          "confidence": 0.9,
+          "uncertainty": ""
         }
       ],
       "has_evaluation": false,
@@ -1358,16 +1349,16 @@
       "entities": [
         {
           "entity_id": "18_e1",
-          "mention": "综述生成方案",
-          "normalized_name": "综述生成方案",
+          "mention": "该综述生成方案",
+          "normalized_name": "该综述生成方案",
           "candidate_l3": "method",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "该综述生成方案能够使得综述结果在整体上呈现结构化",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
+          "confidence": 0.85,
+          "uncertainty": "可能为具体方法或框架，但原文未给出名称，暂标method"
         }
       ],
       "has_evaluation": true,
@@ -1377,7 +1368,7 @@
           "sentence": "局部层面，对每个类别下的文献集进行综述文本内容的自动生成。 该综述生成方案能够使得综述结果在整体上呈现结构化，局部上满足综述文本内容的针对性，更有实际应用意义。",
           "subject": "_paper_author",
           "object": "18_e1",
-          "aspect": "实际应用意义",
+          "aspect": null,
           "opinion": "更有实际应用意义",
           "evidence": "更有实际应用意义"
         }
@@ -1410,8 +1401,8 @@
           ],
           "evidence": "构建结构化综述生成模型",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
+          "confidence": 0.85,
+          "uncertainty": "可能为方法或框架，但模型更贴切"
         },
         {
           "entity_id": "19_e3",
@@ -1423,8 +1414,8 @@
           ],
           "evidence": "通过设置优质的prompt模板",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为工具，但非具体名称"
+          "confidence": 0.8,
+          "uncertainty": "作为工具，但可能属于技术细节"
         }
       ],
       "has_evaluation": false,
@@ -1442,7 +1433,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "基于抽取式的多文本自动文摘研究",
+          "evidence": "在基于抽取式的多文本自动文摘研究中",
           "is_specific_entity": true,
           "confidence": 0.9,
           "uncertainty": "作为研究子领域"
@@ -1455,9 +1446,9 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "先将多文档进行主题聚类",
+          "evidence": "多数学者会先将多文档进行主题聚类",
           "is_specific_entity": true,
-          "confidence": 0.95,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
@@ -1470,7 +1461,7 @@
           ],
           "evidence": "聚类是一种有效的也是目前用的比较多的一种内容组织策略",
           "is_specific_entity": true,
-          "confidence": 0.95,
+          "confidence": 0.9,
           "uncertainty": ""
         }
       ],
@@ -1491,14 +1482,14 @@
           ],
           "evidence": "在学术检索系统场景下",
           "is_specific_entity": true,
-          "confidence": 0.95,
-          "uncertainty": ""
+          "confidence": 0.85,
+          "uncertainty": "可能指一类系统，但具体可识别"
         },
         {
           "entity_id": "21_e2",
           "mention": "聚类方法",
           "normalized_name": "聚类方法",
-          "candidate_l3": "technique",
+          "candidate_l3": "method",
           "candidate_l1": [
             "Abstract"
           ],
@@ -1506,29 +1497,23 @@
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
-        }
-      ],
-      "has_evaluation": true,
-      "relations": [
-        {
-          "sentence_id": "21",
-          "sentence": "然而，在学术检索系统场景下，检索是实时的，检索结果集的数量是成千上万的，采用聚类方法对检索结果集进行内容组织，必然会极大影响下一步综述生成的效率，显然不能满足实际场景的要求。",
-          "subject": "_paper_author",
-          "object": "21_e1",
-          "aspect": "综述生成效率",
-          "opinion": "极大影响",
-          "evidence": "必然会极大影响下一步综述生成的效率"
         },
         {
-          "sentence_id": "21",
-          "sentence": "然而，在学术检索系统场景下，检索是实时的，检索结果集的数量是成千上万的，采用聚类方法对检索结果集进行内容组织，必然会极大影响下一步综述生成的效率，显然不能满足实际场景的要求。",
-          "subject": "_paper_author",
-          "object": "21_e1",
-          "aspect": "实际场景要求",
-          "opinion": "不能满足",
-          "evidence": "显然不能满足实际场景的要求"
+          "entity_id": "21_e3",
+          "mention": "综述生成",
+          "normalized_name": "综述生成",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "影响下一步综述生成的效率",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "可能指任务或过程，但无具体命名"
         }
-      ]
+      ],
+      "has_evaluation": false,
+      "relations": []
     },
     {
       "sentence_id": "22",
@@ -1555,23 +1540,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "具备天然的知识组织能力优势",
+          "evidence": "知识组织是图书馆等信息服务机构或系统的一项基础性工作",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为概念讨论"
-        },
-        {
-          "entity_id": "22_e3",
-          "mention": "图书馆等信息服务机构或系统",
-          "normalized_name": "图书馆等信息服务机构或系统",
-          "candidate_l3": "service",
-          "candidate_l1": [
-            "Agent"
-          ],
-          "evidence": "图书馆等信息服务机构或系统的一项基础性工作",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "泛称机构，但原文作为整体提及"
+          "uncertainty": "作为概念讨论，非具体方法或系统"
         }
       ],
       "has_evaluation": false,
@@ -1596,16 +1568,16 @@
         },
         {
           "entity_id": "23_e2",
-          "mention": "《中国图书馆分类法》",
-          "normalized_name": "《中国图书馆分类法》",
-          "candidate_l3": "knowledge_organization_system",
+          "mention": "知识组织",
+          "normalized_name": "知识组织",
+          "candidate_l3": "concept",
           "candidate_l1": [
-            "Artifact"
+            "Abstract"
           ],
-          "evidence": "学科分类（采用《中国图书馆分类法》）",
+          "evidence": "知识组织是图书馆等信息服务机构或系统的一项基础性工作",
           "is_specific_entity": true,
-          "confidence": 0.95,
-          "uncertainty": ""
+          "confidence": 0.9,
+          "uncertainty": "作为概念讨论"
         },
         {
           "entity_id": "23_e3",
@@ -1615,10 +1587,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "学科分类（采用《中国图书馆分类法》）",
+          "evidence": "从单一的学科分类到科技术语、概念、范畴、本体的多层级知识组织能力",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为知识组织方法之一，可能为method或concept，但原句未展开操作程序，故标concept"
+          "uncertainty": "可能指分类体系，但此处作为概念"
         },
         {
           "entity_id": "23_e4",
@@ -1630,8 +1602,8 @@
           ],
           "evidence": "从单一的学科分类到科技术语、概念、范畴、本体的多层级知识组织能力",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为知识组织层级之一，可能为concept或KOS，但未具体指称某术语表，故标concept"
+          "confidence": 0.85,
+          "uncertainty": ""
         },
         {
           "entity_id": "23_e5",
@@ -1641,10 +1613,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "科技术语、概念、范畴、本体的多层级知识组织能力",
+          "evidence": "从单一的学科分类到科技术语、概念、范畴、本体的多层级知识组织能力",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为知识组织层级之一，可能为concept或KOS，但未具体指称某概念体系，故标concept"
+          "confidence": 0.85,
+          "uncertainty": ""
         },
         {
           "entity_id": "23_e6",
@@ -1654,10 +1626,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "科技术语、概念、范畴、本体的多层级知识组织能力",
+          "evidence": "从单一的学科分类到科技术语、概念、范畴、本体的多层级知识组织能力",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为知识组织层级之一，可能为concept或KOS，但未具体指称某范畴体系，故标concept"
+          "confidence": 0.85,
+          "uncertainty": ""
         },
         {
           "entity_id": "23_e7",
@@ -1667,14 +1639,37 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "科技术语、概念、范畴、本体的多层级知识组织能力",
+          "evidence": "从单一的学科分类到科技术语、概念、范畴、本体的多层级知识组织能力",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为知识组织层级之一，可能为concept或KOS，但未具体指称某本体，故标concept"
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e8",
+          "mention": "《中国图书馆分类法》",
+          "normalized_name": "《中国图书馆分类法》",
+          "candidate_l3": "knowledge_organization_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "学科分类（采用《中国图书馆分类法》）",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
         }
       ],
-      "has_evaluation": false,
-      "relations": []
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "23",
+          "sentence": "知识组织是图书馆等信息服务机构或系统的一项基础性工作。 NSTL 在知识组织方法和使用工具上，实现了从单一的学科分类到科技术语、概念、范畴、本体的多层级知识组织能力[22]。 其中，学科分类（采用《中国图书馆分类法》）主要提供期刊或书目为单元的浏览导航和检索服务。",
+          "subject": "_paper_author",
+          "object": "23_e1",
+          "aspect": "知识组织能力",
+          "opinion": "实现了从单一的学科分类到科技术语、概念、范畴、本体的多层级知识组织能力",
+          "evidence": "实现了从单一的学科分类到科技术语、概念、范畴、本体的多层级知识组织能力"
+        }
+      ]
     },
     {
       "sentence_id": "24",
@@ -1684,14 +1679,14 @@
           "entity_id": "24_e1",
           "mention": "学科分类",
           "normalized_name": "学科分类",
-          "candidate_l3": "typology",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "同样为检索结果集提供学科分类的分面功能",
+          "evidence": "提供学科分类的分面功能",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能指分类体系，但未明确具体体系名称"
+          "uncertainty": "可能指分类体系或概念，但此处作为功能描述，倾向concept"
         },
         {
           "entity_id": "24_e2",
@@ -1703,8 +1698,8 @@
           ],
           "evidence": "提供学科分类的分面功能",
           "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "可能为通用功能概念，但具体指检索系统的分面功能"
+          "confidence": 0.8,
+          "uncertainty": "可能指具体系统功能，但无具体系统名，倾向concept"
         }
       ],
       "has_evaluation": false,
@@ -1751,7 +1746,20 @@
           "evidence": "设计以学科为主线的结构化综述表达形式",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "可能为方法或概念，但原句作为表达形式讨论"
+          "uncertainty": "可能为特定概念，但未明确命名"
+        },
+        {
+          "entity_id": "25_e4",
+          "mention": "学科",
+          "normalized_name": "学科",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以学科为主线进行内容组织，呈现由学科组成的结构化框架",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称学科，未具体指某学科"
         }
       ],
       "has_evaluation": false,
@@ -1772,7 +1780,7 @@
           "evidence": "该方案在整体层面上，呈现以学科为主线的结构化",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能指代具体方案，但原文未明确名称，暂按框架处理"
+          "uncertainty": "可能指代具体方案，但原文未给出名称，作为框架处理"
         }
       ],
       "has_evaluation": true,
@@ -1876,42 +1884,16 @@
       "entities": [
         {
           "entity_id": "28_e1",
-          "mention": "结构化综述智能生成",
-          "normalized_name": "结构化综述智能生成",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "本文在结构化综述智能生成的技术路线上",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为技术路线概念，非具体方法"
-        },
-        {
-          "entity_id": "28_e2",
-          "mention": "简短摘要的生成",
-          "normalized_name": "简短摘要的生成",
-          "candidate_l3": "technique",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "首先进行简短摘要的生成",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为生成技术步骤"
-        },
-        {
-          "entity_id": "28_e3",
           "mention": "大语言模型",
           "normalized_name": "大语言模型",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "再将其作为大语言模型的输入进行综述的生成",
+          "evidence": "将其作为大语言模型的输入进行综述的生成",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为技术概念，非具体模型名称"
+          "uncertainty": "作为技术概念，非具体系统"
         }
       ],
       "has_evaluation": false,
@@ -1957,8 +1939,8 @@
           ],
           "evidence": "基于文献原始文摘进行压缩归纳",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "指文摘集合，可视为语料"
+          "confidence": 0.7,
+          "uncertainty": "可能指数据集合"
         }
       ],
       "has_evaluation": false,
@@ -1996,19 +1978,6 @@
         },
         {
           "entity_id": "30_e3",
-          "mention": "基于ChatGPT等生成式大语言模型的方法",
-          "normalized_name": "基于ChatGPT等生成式大语言模型的方法",
-          "candidate_l3": "method",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "基于ChatGPT等生成式大语言模型的方法",
-          "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "30_e4",
           "mention": "基于预训练语言模型微调方法",
           "normalized_name": "基于预训练语言模型微调方法",
           "candidate_l3": "method",
@@ -2017,7 +1986,7 @@
           ],
           "evidence": "基于预训练语言模型微调方法开展相关工作",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.95,
           "uncertainty": ""
         }
       ],
@@ -2027,8 +1996,8 @@
           "sentence_id": "30",
           "sentence": "$\\textcircled{2}$ 基于ChatGPT等生成式大语言模型的方法。 因ChatGPT等大语言模型在开源情况、硬件环境要求等方面的限制，在实际应用的部署中具有一定的安全风险和复杂性。再者，因为该简短摘要生成任务在整个综述框架下属于一个子模块，任务内容单一明确，方法一完全能够在实际应用服务中发挥显著作用。因此，笔者在摘要模型中更倾向于基于预训练语言模型微调方法开展相关工作。",
           "subject": "_paper_author",
-          "object": "30_e3",
-          "aspect": "安全风险和复杂性",
+          "object": "30_e1",
+          "aspect": "实际应用的部署",
           "opinion": "具有一定的安全风险和复杂性",
           "evidence": "在实际应用的部署中具有一定的安全风险和复杂性"
         },
@@ -2036,7 +2005,7 @@
           "sentence_id": "30",
           "sentence": "$\\textcircled{2}$ 基于ChatGPT等生成式大语言模型的方法。 因ChatGPT等大语言模型在开源情况、硬件环境要求等方面的限制，在实际应用的部署中具有一定的安全风险和复杂性。再者，因为该简短摘要生成任务在整个综述框架下属于一个子模块，任务内容单一明确，方法一完全能够在实际应用服务中发挥显著作用。因此，笔者在摘要模型中更倾向于基于预训练语言模型微调方法开展相关工作。",
           "subject": "_paper_author",
-          "object": "30_e4",
+          "object": "30_e3",
           "aspect": null,
           "opinion": "更倾向于",
           "evidence": "笔者在摘要模型中更倾向于基于预训练语言模型微调方法开展相关工作"
@@ -2057,8 +2026,8 @@
           ],
           "evidence": "Google团队于2020年推出",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "团队可能指组织，但未给出具体机构名，可能为泛称"
+          "confidence": 0.95,
+          "uncertainty": ""
         },
         {
           "entity_id": "31_e2",
@@ -2109,8 +2078,8 @@
         },
         {
           "entity_id": "32_e3",
-          "mention": "间隔句生成（gapsentencesgeneration，GSG）预训练目标",
-          "normalized_name": "间隔句生成（GSG）预训练目标",
+          "mention": "间隔句生成（gapsentencesgeneration，GSG）",
+          "normalized_name": "间隔句生成（GSG）",
           "candidate_l3": "technique",
           "candidate_l1": [
             "Abstract"
@@ -2118,7 +2087,7 @@
           "evidence": "通过设置间隔句生成（gapsentencesgeneration，GSG）预训练目标",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "预训练目标可视为技术手段"
+          "uncertainty": ""
         }
       ],
       "has_evaluation": false,
@@ -2158,14 +2127,14 @@
           "entity_id": "33_e3",
           "mention": "简短摘要自动生成任务",
           "normalized_name": "简短摘要自动生成任务",
-          "candidate_l3": "research_program",
+          "candidate_l3": "task",
           "candidate_l1": [
-            "Event"
+            "Abstract"
           ],
           "evidence": "简短摘要自动生成任务的技术路线",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "可能为任务类型，非具体事件"
+          "confidence": 0.9,
+          "uncertainty": "任务类型，可能属于concept或subfield，但作为具体任务名称，暂归为concept"
         }
       ],
       "has_evaluation": false,
@@ -2199,7 +2168,7 @@
           "evidence": "共采集有效英文文献41 440篇",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "文献集合，非单一文献"
+          "uncertainty": "文献集合，非单一文献，但具体可识别"
         }
       ],
       "has_evaluation": false,
@@ -2217,7 +2186,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "借助ChatGPT大语言模型生成的简短摘要",
+          "evidence": "借助ChatGPT大语言模型生成的简短摘要作为参考摘要",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -2233,7 +2202,7 @@
           "evidence": "最终形成的文献语料数据集字段及描述如表1所示",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "具体数据集名称未给出，但作为数据集实体"
+          "uncertainty": "可能为corpus，但此处强调结构化数据集"
         }
       ],
       "has_evaluation": false,
@@ -2258,20 +2227,83 @@
         },
         {
           "entity_id": "36_e2",
-          "mention": "表2",
-          "normalized_name": "表2",
-          "candidate_l3": "instrument",
+          "mention": "文本阅读性",
+          "normalized_name": "文本阅读性",
+          "candidate_l3": "concept",
           "candidate_l1": [
-            "Artifact"
+            "Abstract"
           ],
-          "evidence": "具体评价指标及评价问题设计详见表2",
+          "evidence": "对生成简短摘要的文本阅读性、语法规范性以及语义性3个维度进行综合打分评价",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "表格作为评价工具"
+          "uncertainty": "作为评价维度，可能属于概念"
+        },
+        {
+          "entity_id": "36_e3",
+          "mention": "语法规范性",
+          "normalized_name": "语法规范性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对生成简短摘要的文本阅读性、语法规范性以及语义性3个维度进行综合打分评价",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为评价维度，可能属于概念"
+        },
+        {
+          "entity_id": "36_e4",
+          "mention": "语义性",
+          "normalized_name": "语义性",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对生成简短摘要的文本阅读性、语法规范性以及语义性3个维度进行综合打分评价",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为评价维度，可能属于概念"
         }
       ],
-      "has_evaluation": false,
-      "relations": []
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "36",
+          "sentence": "为保证语料的质量，笔者对ChatGPT生成的简短摘要效果进行人工评估。为提升评价的客观性并确保评价过程的可信性，对生成简短摘要的文本阅读性、语法规范性以及语义性3个维度进行综合打分评价，具体评价指标及评价问题设计详见表2，共定义7个人工评价指标，设置13个评价问题供评价人员打分（满分10分制）。",
+          "subject": "_paper_author",
+          "object": "36_e1",
+          "aspect": null,
+          "opinion": "为保证语料的质量，笔者对ChatGPT生成的简短摘要效果进行人工评估",
+          "evidence": "为保证语料的质量，笔者对ChatGPT生成的简短摘要效果进行人工评估"
+        },
+        {
+          "sentence_id": "36",
+          "sentence": "为保证语料的质量，笔者对ChatGPT生成的简短摘要效果进行人工评估。为提升评价的客观性并确保评价过程的可信性，对生成简短摘要的文本阅读性、语法规范性以及语义性3个维度进行综合打分评价，具体评价指标及评价问题设计详见表2，共定义7个人工评价指标，设置13个评价问题供评价人员打分（满分10分制）。",
+          "subject": "_paper_author",
+          "object": "36_e2",
+          "aspect": null,
+          "opinion": "对生成简短摘要的文本阅读性、语法规范性以及语义性3个维度进行综合打分评价",
+          "evidence": "对生成简短摘要的文本阅读性、语法规范性以及语义性3个维度进行综合打分评价"
+        },
+        {
+          "sentence_id": "36",
+          "sentence": "为保证语料的质量，笔者对ChatGPT生成的简短摘要效果进行人工评估。为提升评价的客观性并确保评价过程的可信性，对生成简短摘要的文本阅读性、语法规范性以及语义性3个维度进行综合打分评价，具体评价指标及评价问题设计详见表2，共定义7个人工评价指标，设置13个评价问题供评价人员打分（满分10分制）。",
+          "subject": "_paper_author",
+          "object": "36_e3",
+          "aspect": null,
+          "opinion": "对生成简短摘要的文本阅读性、语法规范性以及语义性3个维度进行综合打分评价",
+          "evidence": "对生成简短摘要的文本阅读性、语法规范性以及语义性3个维度进行综合打分评价"
+        },
+        {
+          "sentence_id": "36",
+          "sentence": "为保证语料的质量，笔者对ChatGPT生成的简短摘要效果进行人工评估。为提升评价的客观性并确保评价过程的可信性，对生成简短摘要的文本阅读性、语法规范性以及语义性3个维度进行综合打分评价，具体评价指标及评价问题设计详见表2，共定义7个人工评价指标，设置13个评价问题供评价人员打分（满分10分制）。",
+          "subject": "_paper_author",
+          "object": "36_e4",
+          "aspect": null,
+          "opinion": "对生成简短摘要的文本阅读性、语法规范性以及语义性3个维度进行综合打分评价",
+          "evidence": "对生成简短摘要的文本阅读性、语法规范性以及语义性3个维度进行综合打分评价"
+        }
+      ]
     },
     {
       "sentence_id": "37",
@@ -2279,42 +2311,14 @@
       "entities": [
         {
           "entity_id": "37_e1",
-          "mention": "4个学科领域",
-          "normalized_name": "4个学科领域",
-          "candidate_l3": "subfield",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "4个学科领域生成的简短摘要",
+          "mention": "4个学科领域生成的简短摘要",
+          "normalized_name": "4个学科领域生成的简短摘要",
+          "candidate_l3": "",
+          "candidate_l1": [],
+          "evidence": "4个学科领域生成的简短摘要综合得分均值较高",
           "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "未指明具体学科，可能为泛称"
-        },
-        {
-          "entity_id": "37_e2",
-          "mention": "简短摘要",
-          "normalized_name": "简短摘要",
-          "candidate_l3": "artifact",
-          "candidate_l1": [
-            "Artifact"
-          ],
-          "evidence": "4个学科领域生成的简短摘要",
-          "is_specific_entity": true,
-          "confidence": 0.6,
-          "uncertainty": "未指明具体摘要，可能为泛称"
-        },
-        {
-          "entity_id": "37_e3",
-          "mention": "摘要模型",
-          "normalized_name": "摘要模型",
-          "candidate_l3": "model",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "可以作为参考摘要进行摘要模型的训练",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "未指明具体模型，可能为泛称"
+          "confidence": 0.0,
+          "uncertainty": "来自评价关系抽取的补抽实体"
         }
       ],
       "has_evaluation": true,
@@ -2326,7 +2330,7 @@
           "object": "37_e1",
           "aspect": "综合得分",
           "opinion": "较高",
-          "evidence": "4个学科领域生成的简短摘要综合得分均值较高"
+          "evidence": "综合得分均值较高"
         },
         {
           "sentence_id": "37",
@@ -2335,25 +2339,7 @@
           "object": "37_e1",
           "aspect": "文本阅读性、语法规范性以及语义性",
           "opinion": "表现良好",
-          "evidence": "生成的简短摘要在文本阅读性、语法规范性以及语义性等方面表现良好"
-        },
-        {
-          "sentence_id": "37",
-          "sentence": "如表3所示，通过人工判读，4个学科领域生成的简短摘要综合得分均值较高，这反映出生成的简短摘要在文本阅读性、语法规范性以及语义性等方面表现良好，能够较为准确地传达文本的意义和信息，可以作为参考摘要进行摘要模型的训练。",
-          "subject": "_paper_author",
-          "object": "37_e1",
-          "aspect": "传达文本的意义和信息",
-          "opinion": "能够较为准确地传达",
-          "evidence": "能够较为准确地传达文本的意义和信息"
-        },
-        {
-          "sentence_id": "37",
-          "sentence": "如表3所示，通过人工判读，4个学科领域生成的简短摘要综合得分均值较高，这反映出生成的简短摘要在文本阅读性、语法规范性以及语义性等方面表现良好，能够较为准确地传达文本的意义和信息，可以作为参考摘要进行摘要模型的训练。",
-          "subject": "_paper_author",
-          "object": "37_e1",
-          "aspect": null,
-          "opinion": "可以作为参考摘要进行摘要模型的训练",
-          "evidence": "可以作为参考摘要进行摘要模型的训练"
+          "evidence": "在文本阅读性、语法规范性以及语义性等方面表现良好"
         }
       ]
     },
@@ -2395,7 +2381,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "对综述生成的任务来说具有非常强的适用性",
+          "evidence": "这对综述生成的任务来说具有非常强的适用性",
           "is_specific_entity": true,
           "confidence": 0.85,
           "uncertainty": "作为任务概念"
@@ -2408,24 +2394,14 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "面向辅助阅读场景的科技文献检索结果集的结构化综述",
+          "evidence": "面向辅助阅读场景的科技文献检索结果集的结构化综述实际应用实践",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "作为研究对象概念"
+          "uncertainty": "可能为数据集或概念，但无具体名称"
         }
       ],
-      "has_evaluation": true,
-      "relations": [
-        {
-          "sentence_id": "38",
-          "sentence": "随着ChatGPT的火热，针对大语言模型的相关研究越来越多。 由于大语言模型目前在文本内容理解、信息提取、归纳总结等能力上具有出色的表现,这对综述生成的任务来说具有非常强的适用性。 因此，笔者利用大语言模型技术，探索面向辅助阅读场景的科技文献检索结果集的结构化综述实际应用实践。",
-          "subject": "_paper_author",
-          "object": "38_e2",
-          "aspect": "文本内容理解、信息提取、归纳总结等能力",
-          "opinion": "具有出色的表现",
-          "evidence": "大语言模型目前在文本内容理解、信息提取、归纳总结等能力上具有出色的表现"
-        }
-      ]
+      "has_evaluation": false,
+      "relations": []
     },
     {
       "sentence_id": "39",
@@ -2455,7 +2431,7 @@
           "evidence": "在英文科技文献集的综述生成中的实践探索",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能为泛指，但作为语料库实体"
+          "uncertainty": "可能指语料库，但未明确具体名称"
         },
         {
           "entity_id": "39_e3",
@@ -2468,7 +2444,7 @@
           "evidence": "在英文科技文献集的综述生成中的实践探索",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "可能为任务，非具体技术"
+          "uncertainty": "可能为任务或方法，但无具体名称"
         }
       ],
       "has_evaluation": false,
@@ -2480,32 +2456,19 @@
       "entities": [
         {
           "entity_id": "40_e1",
-          "mention": "LLaMA",
-          "normalized_name": "LLaMA",
+          "mention": "LLaMA-13B",
+          "normalized_name": "LLaMA-13B",
           "candidate_l3": "model",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "LLaMA[24]",
+          "evidence": "LLaMA-13B在大多数基准测试中优于GPT-3",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
         },
         {
           "entity_id": "40_e2",
-          "mention": "Meta AI",
-          "normalized_name": "Meta AI",
-          "candidate_l3": "research",
-          "candidate_l1": [
-            "Agent"
-          ],
-          "evidence": "Meta AI",
-          "is_specific_entity": true,
-          "confidence": 0.95,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "40_e3",
           "mention": "Alpaca",
           "normalized_name": "Alpaca",
           "candidate_l3": "model",
@@ -2518,20 +2481,7 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "40_e4",
-          "mention": "斯坦福大学",
-          "normalized_name": "斯坦福大学",
-          "candidate_l3": "research",
-          "candidate_l1": [
-            "Agent"
-          ],
-          "evidence": "斯坦福大学",
-          "is_specific_entity": true,
-          "confidence": 0.95,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "40_e5",
+          "entity_id": "40_e3",
           "mention": "Vicuna",
           "normalized_name": "Vicuna",
           "candidate_l3": "model",
@@ -2544,33 +2494,7 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "40_e6",
-          "mention": "加州大学伯克利分校",
-          "normalized_name": "加州大学伯克利分校",
-          "candidate_l3": "research",
-          "candidate_l1": [
-            "Agent"
-          ],
-          "evidence": "加州大学伯克利分校",
-          "is_specific_entity": true,
-          "confidence": 0.95,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "40_e7",
-          "mention": "卡内基梅隆大学",
-          "normalized_name": "卡内基梅隆大学",
-          "candidate_l3": "research",
-          "candidate_l1": [
-            "Agent"
-          ],
-          "evidence": "卡内基梅隆大学",
-          "is_specific_entity": true,
-          "confidence": 0.95,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "40_e8",
+          "entity_id": "40_e4",
           "mention": "Koala",
           "normalized_name": "Koala",
           "candidate_l3": "model",
@@ -2583,6 +2507,58 @@
           "uncertainty": ""
         },
         {
+          "entity_id": "40_e5",
+          "mention": "Meta AI",
+          "normalized_name": "Meta AI",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Meta AI",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e6",
+          "mention": "斯坦福大学",
+          "normalized_name": "斯坦福大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "斯坦福大学",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e7",
+          "mention": "加州大学伯克利分校",
+          "normalized_name": "加州大学伯克利分校",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "加州大学伯克利分校",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "40_e8",
+          "mention": "卡内基梅隆大学",
+          "normalized_name": "卡内基梅隆大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "卡内基梅隆大学",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
           "entity_id": "40_e9",
           "mention": "GPT-3",
           "normalized_name": "GPT-3",
@@ -2590,7 +2566,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "优于GPT-3",
+          "evidence": "LLaMA-13B在大多数基准测试中优于GPT-3",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -2637,7 +2613,7 @@
           "sentence_id": "40",
           "sentence": "<table><tr><td>模型名称</td><td>研究单位</td><td>参数规模</td><td>训练数据量</td><td>性能表现</td></tr><tr><td>LLaMA[24]</td><td>Meta AI</td><td>7B、13B、30B和65B4种参1.4万亿 token 数规模</td><td></td><td>LLaMA-13B在大多数基准测试中优于GPT-3</td></tr><tr><td>Alpaca[25]</td><td>斯坦福大学</td><td>13 B、65B两种参数规模</td><td>52K条问答指令数据</td><td>性能约等于GPT-3.5</td></tr><tr><td>Vicuna[26]</td><td>加州大学伯克利分校、卡内基7B、13B两种参数规模 梅隆大学、斯坦福大学等机构</td><td></td><td>70k 条问答指令数据</td><td>在LLaMA的子孙模型中表现最佳，能达到 ChatGPT90% 的效果</td></tr><tr><td>Koala[27]</td><td>加州大学伯克利分校</td><td>13B</td><td>500k 条问答功能数据表现与Vicuna 类似</td><td></td></tr></table>",
           "subject": "_paper_author",
-          "object": "40_e3",
+          "object": "40_e2",
           "aspect": "性能表现",
           "opinion": "约等于GPT-3.5",
           "evidence": "性能约等于GPT-3.5"
@@ -2646,7 +2622,7 @@
           "sentence_id": "40",
           "sentence": "<table><tr><td>模型名称</td><td>研究单位</td><td>参数规模</td><td>训练数据量</td><td>性能表现</td></tr><tr><td>LLaMA[24]</td><td>Meta AI</td><td>7B、13B、30B和65B4种参1.4万亿 token 数规模</td><td></td><td>LLaMA-13B在大多数基准测试中优于GPT-3</td></tr><tr><td>Alpaca[25]</td><td>斯坦福大学</td><td>13 B、65B两种参数规模</td><td>52K条问答指令数据</td><td>性能约等于GPT-3.5</td></tr><tr><td>Vicuna[26]</td><td>加州大学伯克利分校、卡内基7B、13B两种参数规模 梅隆大学、斯坦福大学等机构</td><td></td><td>70k 条问答指令数据</td><td>在LLaMA的子孙模型中表现最佳，能达到 ChatGPT90% 的效果</td></tr><tr><td>Koala[27]</td><td>加州大学伯克利分校</td><td>13B</td><td>500k 条问答功能数据表现与Vicuna 类似</td><td></td></tr></table>",
           "subject": "_paper_author",
-          "object": "40_e5",
+          "object": "40_e3",
           "aspect": "性能表现",
           "opinion": "表现最佳，能达到ChatGPT90%的效果",
           "evidence": "在LLaMA的子孙模型中表现最佳，能达到ChatGPT90%的效果"
@@ -2655,9 +2631,9 @@
           "sentence_id": "40",
           "sentence": "<table><tr><td>模型名称</td><td>研究单位</td><td>参数规模</td><td>训练数据量</td><td>性能表现</td></tr><tr><td>LLaMA[24]</td><td>Meta AI</td><td>7B、13B、30B和65B4种参1.4万亿 token 数规模</td><td></td><td>LLaMA-13B在大多数基准测试中优于GPT-3</td></tr><tr><td>Alpaca[25]</td><td>斯坦福大学</td><td>13 B、65B两种参数规模</td><td>52K条问答指令数据</td><td>性能约等于GPT-3.5</td></tr><tr><td>Vicuna[26]</td><td>加州大学伯克利分校、卡内基7B、13B两种参数规模 梅隆大学、斯坦福大学等机构</td><td></td><td>70k 条问答指令数据</td><td>在LLaMA的子孙模型中表现最佳，能达到 ChatGPT90% 的效果</td></tr><tr><td>Koala[27]</td><td>加州大学伯克利分校</td><td>13B</td><td>500k 条问答功能数据表现与Vicuna 类似</td><td></td></tr></table>",
           "subject": "_paper_author",
-          "object": "40_e8",
+          "object": "40_e4",
           "aspect": "性能表现",
-          "opinion": "与Vicuna类似",
+          "opinion": "表现与Vicuna类似",
           "evidence": "表现与Vicuna类似"
         }
       ]
@@ -2752,9 +2728,36 @@
           "sentence": "如表4所示，LLaMA是MetaAI公司发布的开放且高效的大型基础语言模型，Alpaca、Vicuna 和Koala都是在LLaMA的基础上进行微调构建的。 这4 种模型主要使用英文语料进行训练，且都开源，在参数规模上都有较小的版本，能够基本满足本文面向实际应用的实践探索需要。结合实际的硬件资源情况及网络上对模型相关性能表现的评价，笔者选择Vicuna-7B作为实践对象。",
           "subject": "_paper_author",
           "object": "41_e1",
-          "aspect": "性能表现",
-          "opinion": "高效",
+          "aspect": null,
+          "opinion": "开放且高效",
           "evidence": "LLaMA是MetaAI公司发布的开放且高效的大型基础语言模型"
+        },
+        {
+          "sentence_id": "41",
+          "sentence": "如表4所示，LLaMA是MetaAI公司发布的开放且高效的大型基础语言模型，Alpaca、Vicuna 和Koala都是在LLaMA的基础上进行微调构建的。 这4 种模型主要使用英文语料进行训练，且都开源，在参数规模上都有较小的版本，能够基本满足本文面向实际应用的实践探索需要。结合实际的硬件资源情况及网络上对模型相关性能表现的评价，笔者选择Vicuna-7B作为实践对象。",
+          "subject": "_paper_author",
+          "object": "41_e3",
+          "aspect": null,
+          "opinion": "能够基本满足本文面向实际应用的实践探索需要",
+          "evidence": "这4种模型主要使用英文语料进行训练，且都开源，在参数规模上都有较小的版本，能够基本满足本文面向实际应用的实践探索需要"
+        },
+        {
+          "sentence_id": "41",
+          "sentence": "如表4所示，LLaMA是MetaAI公司发布的开放且高效的大型基础语言模型，Alpaca、Vicuna 和Koala都是在LLaMA的基础上进行微调构建的。 这4 种模型主要使用英文语料进行训练，且都开源，在参数规模上都有较小的版本，能够基本满足本文面向实际应用的实践探索需要。结合实际的硬件资源情况及网络上对模型相关性能表现的评价，笔者选择Vicuna-7B作为实践对象。",
+          "subject": "_paper_author",
+          "object": "41_e4",
+          "aspect": null,
+          "opinion": "能够基本满足本文面向实际应用的实践探索需要",
+          "evidence": "这4种模型主要使用英文语料进行训练，且都开源，在参数规模上都有较小的版本，能够基本满足本文面向实际应用的实践探索需要"
+        },
+        {
+          "sentence_id": "41",
+          "sentence": "如表4所示，LLaMA是MetaAI公司发布的开放且高效的大型基础语言模型，Alpaca、Vicuna 和Koala都是在LLaMA的基础上进行微调构建的。 这4 种模型主要使用英文语料进行训练，且都开源，在参数规模上都有较小的版本，能够基本满足本文面向实际应用的实践探索需要。结合实际的硬件资源情况及网络上对模型相关性能表现的评价，笔者选择Vicuna-7B作为实践对象。",
+          "subject": "_paper_author",
+          "object": "41_e5",
+          "aspect": null,
+          "opinion": "能够基本满足本文面向实际应用的实践探索需要",
+          "evidence": "这4种模型主要使用英文语料进行训练，且都开源，在参数规模上都有较小的版本，能够基本满足本文面向实际应用的实践探索需要"
         },
         {
           "sentence_id": "41",
@@ -2762,8 +2765,8 @@
           "subject": "_paper_author",
           "object": "41_e6",
           "aspect": "性能表现",
-          "opinion": "能够基本满足本文面向实际应用的实践探索需要",
-          "evidence": "能够基本满足本文面向实际应用的实践探索需要"
+          "opinion": "网络上对模型相关性能表现的评价",
+          "evidence": "网络上对模型相关性能表现的评价"
         }
       ]
     },
@@ -2779,7 +2782,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "Vicuna[2开源大模型是来自加州大学伯克利分校、卡内基梅隆大学和斯坦福大学等机构的学者",
+          "evidence": "Vicuna[2开源大模型是来自加州大学伯克利分校、卡内基梅隆大学和斯坦福大学等机构的学者，受MetaLLaMA和StanfordAlpaca项目的启发共同推出",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -2877,6 +2880,19 @@
         },
         {
           "entity_id": "42_e9",
+          "mention": "Vicuna模型",
+          "normalized_name": "Vicuna模型",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Vicuna模型在不同的任务上都表现出优异的水平",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "42_e10",
           "mention": "ChatGPT",
           "normalized_name": "ChatGPT",
           "candidate_l3": "software",
@@ -2889,7 +2905,7 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "42_e10",
+          "entity_id": "42_e11",
           "mention": "Bard",
           "normalized_name": "Bard",
           "candidate_l3": "software",
@@ -2902,8 +2918,27 @@
           "uncertainty": ""
         }
       ],
-      "has_evaluation": false,
-      "relations": []
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "42",
+          "sentence": "Vicuna[2开源大模型是来自加州大学伯克利分校、卡内基梅隆大学和斯坦福大学等机构的学者，受MetaLLaMA和StanfordAlpaca项目的启发共同推出，目前已经发布两个版本：包含Vicuna-7B和Vi-cuna-13B，即参数规模分别为70亿、130亿。 Vicuna模型在不同的任务上都表现出优异的水平，在质量、多样性、一致性等指标上都达到接近ChatGPT/Bard的质量，而且明显优于其他基准模型。 Vicuna 模型的整体架构如图5所示：",
+          "subject": "_paper_author",
+          "object": "42_e9",
+          "aspect": "不同的任务",
+          "opinion": "表现出优异的水平",
+          "evidence": "Vicuna模型在不同的任务上都表现出优异的水平"
+        },
+        {
+          "sentence_id": "42",
+          "sentence": "Vicuna[2开源大模型是来自加州大学伯克利分校、卡内基梅隆大学和斯坦福大学等机构的学者，受MetaLLaMA和StanfordAlpaca项目的启发共同推出，目前已经发布两个版本：包含Vicuna-7B和Vi-cuna-13B，即参数规模分别为70亿、130亿。 Vicuna模型在不同的任务上都表现出优异的水平，在质量、多样性、一致性等指标上都达到接近ChatGPT/Bard的质量，而且明显优于其他基准模型。 Vicuna 模型的整体架构如图5所示：",
+          "subject": "_paper_author",
+          "object": "42_e9",
+          "aspect": "质量、多样性、一致性等指标",
+          "opinion": "达到接近ChatGPT/Bard的质量，而且明显优于其他基准模型",
+          "evidence": "在质量、多样性、一致性等指标上都达到接近ChatGPT/Bard的质量，而且明显优于其他基准模型"
+        }
+      ]
     },
     {
       "sentence_id": "43",
@@ -3067,17 +3102,8 @@
           "sentence_id": "44",
           "sentence": "GPT-4的评估框架以自动评估聊天机器人的性能，初步评估表明Vicuna达到ChatGPT/Bard的 $90 \\%$ 的能力。Vicuna 实现了与ChatGPT/Bard相比具有竞争力的性能，且7B的版本对硬件配置要求较低，综合考虑性能表现以及硬件配置要求，笔者采用Vicuna-7B作为实验模型，进行本地化部署并开展结构化自动综述的实践探索。",
           "subject": "_paper_author",
-          "object": "44_e2",
-          "aspect": "性能",
-          "opinion": "达到ChatGPT/Bard的 $90 \\%$ 的能力",
-          "evidence": "Vicuna达到ChatGPT/Bard的 $90 \\%$ 的能力"
-        },
-        {
-          "sentence_id": "44",
-          "sentence": "GPT-4的评估框架以自动评估聊天机器人的性能，初步评估表明Vicuna达到ChatGPT/Bard的 $90 \\%$ 的能力。Vicuna 实现了与ChatGPT/Bard相比具有竞争力的性能，且7B的版本对硬件配置要求较低，综合考虑性能表现以及硬件配置要求，笔者采用Vicuna-7B作为实验模型，进行本地化部署并开展结构化自动综述的实践探索。",
-          "subject": "_paper_author",
-          "object": "44_e2",
-          "aspect": "性能",
+          "object": "44_e5",
+          "aspect": "性能表现",
           "opinion": "具有竞争力的性能",
           "evidence": "Vicuna 实现了与ChatGPT/Bard相比具有竞争力的性能"
         },
@@ -3098,13 +3124,13 @@
       "entities": [
         {
           "entity_id": "45_e1",
-          "mention": "Vicuna开源大模型",
-          "normalized_name": "Vicuna开源大模型",
+          "mention": "Vicuna",
+          "normalized_name": "Vicuna",
           "candidate_l3": "software",
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "基于Vicuna开源大模型的结构化综述生成框架",
+          "evidence": "基于Vicuna开源大模型",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -3117,10 +3143,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "基于Vicuna开源大模型的结构化综述生成框架",
+          "evidence": "提出基于Vicuna开源大模型的结构化综述生成框架",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "可能为模型或框架，但原句明确为框架"
+          "uncertainty": "可能为模型或方法，但框架更贴切"
         }
       ],
       "has_evaluation": false,
@@ -3133,7 +3159,7 @@
         {
           "entity_id": "46_e1",
           "mention": "Vicuna开源大模型",
-          "normalized_name": "Vicuna开源大模型",
+          "normalized_name": "Vicuna",
           "candidate_l3": "software",
           "candidate_l1": [
             "Artifact"
@@ -3153,7 +3179,7 @@
           ],
           "evidence": "对科技文献领域数据进行模型的微调",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.85,
           "uncertainty": "可能为数据集，但未明确具体名称"
         },
         {
@@ -3166,8 +3192,8 @@
           ],
           "evidence": "通过设计结构化综述prompt，以激发大模型最大的生成能力",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "prompt可视为测量或引导工具"
+          "confidence": 0.8,
+          "uncertainty": "prompt为提示词，可能属于工具或方法"
         }
       ],
       "has_evaluation": false,
@@ -3179,20 +3205,30 @@
       "entities": [
         {
           "entity_id": "47_e1",
-          "mention": "摘要模型",
-          "normalized_name": "摘要模型",
-          "candidate_l3": "model",
+          "mention": "摘要模型生成效果",
+          "normalized_name": "摘要模型生成效果",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "摘要模型生成效果的评价",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
+          "confidence": 0.7,
+          "uncertainty": "可能指评价对象，但非具体实体"
         }
       ],
-      "has_evaluation": false,
-      "relations": []
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "47",
+          "sentence": "实现综述文本生成后，对于生成效果的评价必不可少。 本文包括两方面的评价： $\\textcircled{1}$ 摘要模型生成效果的评价。",
+          "subject": "_paper_author",
+          "object": "47_e1",
+          "aspect": null,
+          "opinion": "评价必不可少",
+          "evidence": "对于生成效果的评价必不可少"
+        }
+      ]
     },
     {
       "sentence_id": "48",
@@ -3200,16 +3236,16 @@
       "entities": [
         {
           "entity_id": "48_e1",
-          "mention": "摘要模型",
-          "normalized_name": "摘要模型",
-          "candidate_l3": "model",
+          "mention": "摘要模型生成效果",
+          "normalized_name": "摘要模型生成效果",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "摘要模型生成效果的评价",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "可能指具体模型，但原文未给出名称，作为模型类抽象实体"
+          "confidence": 0.8,
+          "uncertainty": "可能为评价对象，非独立术语"
         },
         {
           "entity_id": "48_e2",
@@ -3222,37 +3258,43 @@
           "evidence": "采用自动化评价方法",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "具体方法未指明，但作为方法类抽象实体"
+          "uncertainty": ""
         },
         {
           "entity_id": "48_e3",
-          "mention": "量化形式",
-          "normalized_name": "量化形式",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "以量化形式直观反映模型的生成效果",
-          "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "可能为泛化概念，但作为评价方式的具体表述"
-        },
-        {
-          "entity_id": "48_e4",
-          "mention": "实际检索实例",
-          "normalized_name": "实际检索实例",
+          "mention": "实际检索实例下综述生成效果",
+          "normalized_name": "实际检索实例下综述生成效果",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "实际检索实例下综述生成效果的评价",
           "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "可能为具体实例，但未指明，作为概念"
+          "confidence": 0.8,
+          "uncertainty": "可能为评价对象，非独立术语"
         }
       ],
-      "has_evaluation": false,
-      "relations": []
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "48",
+          "sentence": "本文包括两方面的评价： $\\textcircled{1}$ 摘要模型生成效果的评价。 采用自动化评价方法，以量化形式直观反映模型的生成效果，同时为后续模型效果的不断改进提供衡量标准。 $\\textcircled{2}$ 实际检索实例下综述生成效果的评价。",
+          "subject": "_paper_author",
+          "object": "48_e1",
+          "aspect": null,
+          "opinion": "采用自动化评价方法，以量化形式直观反映模型的生成效果，同时为后续模型效果的不断改进提供衡量标准",
+          "evidence": "采用自动化评价方法，以量化形式直观反映模型的生成效果，同时为后续模型效果的不断改进提供衡量标准"
+        },
+        {
+          "sentence_id": "48",
+          "sentence": "本文包括两方面的评价： $\\textcircled{1}$ 摘要模型生成效果的评价。 采用自动化评价方法，以量化形式直观反映模型的生成效果，同时为后续模型效果的不断改进提供衡量标准。 $\\textcircled{2}$ 实际检索实例下综述生成效果的评价。",
+          "subject": "_paper_author",
+          "object": "48_e3",
+          "aspect": null,
+          "opinion": "实际检索实例下综述生成效果的评价",
+          "evidence": "实际检索实例下综述生成效果的评价"
+        }
+      ]
     },
     {
       "sentence_id": "49",
@@ -3272,8 +3314,18 @@
           "uncertainty": ""
         }
       ],
-      "has_evaluation": false,
-      "relations": []
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "49",
+          "sentence": "$\\textcircled{2}$ 实际检索实例下综述生成效果的评价。 采用人工评价的方法，主要包括表现形式效果以及实例生成文本的全方位评价，相较于自动评价，人工评价方法能以人类思维角度和阅读习惯出发，深入语义内容对文本进行感知和解读，从而更切实地判",
+          "subject": "_paper_author",
+          "object": "49_e1",
+          "aspect": null,
+          "opinion": "能以人类思维角度和阅读习惯出发，深入语义内容对文本进行感知和解读，从而更切实地判",
+          "evidence": "人工评价方法能以人类思维角度和阅读习惯出发，深入语义内容对文本进行感知和解读，从而更切实地判"
+        }
+      ]
     },
     {
       "sentence_id": "50",
@@ -3316,7 +3368,7 @@
           "evidence": "对标准参考文本中被生成文本覆盖的n元词组数量进行统计",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能指代具体语料，但此处为泛称"
+          "uncertainty": "可能指参考摘要集合"
         },
         {
           "entity_id": "50_e4",
@@ -3329,10 +3381,23 @@
           "evidence": "被生成文本覆盖的n元词组",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能指代具体文本，但此处为泛称"
+          "uncertainty": "可能指系统输出文本"
         },
         {
           "entity_id": "50_e5",
+          "mention": "n元词组",
+          "normalized_name": "n元词组",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "n元词组数量",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "50_e6",
           "mention": "ROUGE指标",
           "normalized_name": "ROUGE指标",
           "candidate_l3": "method",
@@ -3345,7 +3410,7 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "50_e6",
+          "entity_id": "50_e7",
           "mention": "ROUGE-1",
           "normalized_name": "ROUGE-1",
           "candidate_l3": "technique",
@@ -3358,7 +3423,7 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "50_e7",
+          "entity_id": "50_e8",
           "mention": "ROUGE-2",
           "normalized_name": "ROUGE-2",
           "candidate_l3": "technique",
@@ -3371,14 +3436,14 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "50_e8",
-          "mention": "ROUGE-L",
-          "normalized_name": "ROUGE-L",
+          "entity_id": "50_e9",
+          "mention": "ROUGE-L3",
+          "normalized_name": "ROUGE-L3",
           "candidate_l3": "technique",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "ROUGE-L",
+          "evidence": "ROUGE-L3类指标",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -3395,26 +3460,26 @@
           "entity_id": "51_e1",
           "mention": "ROUGE-L",
           "normalized_name": "ROUGE-L",
-          "candidate_l3": "technique",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "一般被认为代表ROUGE-L值",
           "is_specific_entity": true,
-          "confidence": 0.95,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
           "entity_id": "51_e2",
-          "mention": "LCS（X，Y）",
+          "mention": "LCS",
           "normalized_name": "LCS",
-          "candidate_l3": "technique",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "LCS（X，Y）是指参考摘要和自动摘要中最长公共子序列的长度",
           "is_specific_entity": true,
-          "confidence": 0.95,
+          "confidence": 0.9,
           "uncertainty": ""
         }
       ],
@@ -3446,7 +3511,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "选择效果更优的PEGA ${ \\mathrm { S U S } } _ { \\mathrm { L A R G E } }$ 为基础实验模型",
+          "evidence": "本次PEGASUS模型实验选择效果更优的PEGA ${ \\mathrm { S U S } } _ { \\mathrm { L A R G E } }$ 为基础实验模型",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -3467,7 +3532,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "从实践层面对 $\\mathrm { P E G A S U S _ { L A R G E } }$ 模型的基础性能进行验证",
+          "evidence": "PEGASUS_LARGE 模型的基础性能",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -3480,7 +3545,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "实验采用构建的科技文献数据集的测试集",
+          "evidence": "构建的科技文献数据集",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -3493,20 +3558,20 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "以ROUGE为自动评价方法对测试结果进行评估打分",
+          "evidence": "以ROUGE为自动评价方法",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
         },
         {
           "entity_id": "53_e4",
-          "mention": "BiLSTM模型",
-          "normalized_name": "BiLSTM模型",
+          "mention": "BiLSTM",
+          "normalized_name": "BiLSTM",
           "candidate_l3": "model",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "并将其与在BiLSTM模型上的测试结果进行对比",
+          "evidence": "与在BiLSTM模型上的测试结果进行对比",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -3549,7 +3614,7 @@
           "entity_id": "54_e3",
           "mention": "ROUGE-1",
           "normalized_name": "ROUGE-1",
-          "candidate_l3": "instrument",
+          "candidate_l3": "index",
           "candidate_l1": [
             "Artifact"
           ],
@@ -3562,7 +3627,7 @@
           "entity_id": "54_e4",
           "mention": "ROUGE-L",
           "normalized_name": "ROUGE-L",
-          "candidate_l3": "instrument",
+          "candidate_l3": "index",
           "candidate_l1": [
             "Artifact"
           ],
@@ -3575,7 +3640,7 @@
           "entity_id": "54_e5",
           "mention": "ROUGE-2",
           "normalized_name": "ROUGE-2",
-          "candidate_l3": "instrument",
+          "candidate_l3": "index",
           "candidate_l1": [
             "Artifact"
           ],
@@ -3593,7 +3658,7 @@
           "subject": "_paper_author",
           "object": "54_e1",
           "aspect": "ROUGE-1和ROUGE-L中的R召回率和F值",
-          "opinion": "有明显提升",
+          "opinion": "表现有明显提升",
           "evidence": "PEG-$\\mathrm { A S U S } _ { \\mathrm { L A R G E } }$ 模型在ROUGE-1和ROUGE-L中的R召回率和F值上的表现有明显提升"
         },
         {
@@ -3644,7 +3709,7 @@
           "evidence": "ROUGE-2分值的总体偏低",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为评价指标，属于测量工具"
+          "uncertainty": "作为评价指标，可能属于instrument"
         }
       ],
       "has_evaluation": true,
@@ -3690,7 +3755,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "在训练后的模型PEGASUSLARGE_PT上开展测试比例分别为0.1和1.0的生成效果测试",
+          "evidence": "在训练后的模型PEGASUSLARGE_PT上开展测试",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -3703,7 +3768,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "未经过自建科技文献数据集训练的 $\\mathrm { P E G A S U S _ { L A R G E } }$ 模型",
+          "evidence": "与未经过自建科技文献数据集训练的 $\\mathrm { P E G A S U S _ { L A R G E } }$ 模型的生成效果进行对比",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -3716,7 +3781,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "自建科技文献数据集对模型进行补充训练",
+          "evidence": "未经过自建科技文献数据集训练的",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -3731,7 +3796,7 @@
       "entities": [
         {
           "entity_id": "57_e1",
-          "mention": "模型PEGASUSLARGE_PT",
+          "mention": "PEGASUSLARGE_PT",
           "normalized_name": "PEGASUSLARGE_PT",
           "candidate_l3": "model",
           "candidate_l1": [
@@ -3744,16 +3809,16 @@
         },
         {
           "entity_id": "57_e2",
-          "mention": "科技文献数据集",
-          "normalized_name": "科技文献数据集",
-          "candidate_l3": "dataset",
+          "mention": "原模型",
+          "normalized_name": "原模型",
+          "candidate_l3": "model",
           "candidate_l1": [
-            "Artifact"
+            "Abstract"
           ],
-          "evidence": "经过自建的科技文献数据集训练后的模型PEGASUSLARGE_PT",
+          "evidence": "相较于原模型",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "具体数据集名称未给出，但作为自建数据集可识别"
+          "uncertainty": "指代不明确，但作为对比对象，可能指代具体模型"
         }
       ],
       "has_evaluation": true,
@@ -3764,7 +3829,7 @@
           "subject": "_paper_author",
           "object": "57_e1",
           "aspect": "各个指标",
-          "opinion": "偏低",
+          "opinion": "均偏低",
           "evidence": "经过自建的科技文献数据集训练后的模型PEGASUSLARGE_PT相较于原模型在各个指标上均偏低"
         },
         {
@@ -3772,30 +3837,16 @@
           "sentence": "通过对比发现，经过自建的科技文献数据集训练后的模型PEGASUSLARGE_PT相较于原模型在各个指标上均偏低，经过分析生成内容发现重复生成内容明显，整体生成效果不好，初步分析原因，主要是参数设置导致模型学习不到位。",
           "subject": "_paper_author",
           "object": "57_e1",
-          "aspect": "整体生成效果",
-          "opinion": "不好",
-          "evidence": "整体生成效果不好"
+          "aspect": "生成内容",
+          "opinion": "重复生成内容明显，整体生成效果不好",
+          "evidence": "经过分析生成内容发现重复生成内容明显，整体生成效果不好"
         }
       ]
     },
     {
       "sentence_id": "58",
       "sentence": "在调参优化后的模型上，开展测试比例分别为0.1和1.0的效果测试，并与上一轮训练的",
-      "entities": [
-        {
-          "entity_id": "58_e1",
-          "mention": "模型",
-          "normalized_name": "模型",
-          "candidate_l3": "model",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "在调参优化后的模型上",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "未指明具体模型名称，但作为抽象实体可识别"
-        }
-      ],
+      "entities": [],
       "has_evaluation": false,
       "relations": []
     },
@@ -3835,7 +3886,7 @@
           "evidence": "在对参数进行调整优化后模型生成内容较好",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "具体模型名称未给出，但作为模型类实体"
+          "uncertainty": ""
         },
         {
           "entity_id": "60_e2",
@@ -3861,6 +3912,24 @@
           "aspect": "生成内容",
           "opinion": "较好",
           "evidence": "模型生成内容较好"
+        },
+        {
+          "sentence_id": "60",
+          "sentence": "由表10可看出，在对参数进行调整优化后模型生成内容较好，在各指标上都有明显的提升。初步微调时模型效果欠佳的原因可能是学习率引起的模型不稳定，因此在优化时调整了Warmup_steps，使模型微调时进行学习率预热，在模型开始训练时使用一个较小的学习率，待模型稳定时再进行正常训练，以此得到更佳效果。但经过测试Warmup_steps 并不是越高越好，其设置为1200 和2000 时效果差别已经不大，之后又进行设置为3500时的测试，测试结果已经开始下降，因此该参数在设置为1200—2000",
+          "subject": "_paper_author",
+          "object": "60_e1",
+          "aspect": "各指标",
+          "opinion": "有明显的提升",
+          "evidence": "在各指标上都有明显的提升"
+        },
+        {
+          "sentence_id": "60",
+          "sentence": "由表10可看出，在对参数进行调整优化后模型生成内容较好，在各指标上都有明显的提升。初步微调时模型效果欠佳的原因可能是学习率引起的模型不稳定，因此在优化时调整了Warmup_steps，使模型微调时进行学习率预热，在模型开始训练时使用一个较小的学习率，待模型稳定时再进行正常训练，以此得到更佳效果。但经过测试Warmup_steps 并不是越高越好，其设置为1200 和2000 时效果差别已经不大，之后又进行设置为3500时的测试，测试结果已经开始下降，因此该参数在设置为1200—2000",
+          "subject": "_paper_author",
+          "object": "60_e2",
+          "aspect": null,
+          "opinion": "并不是越高越好",
+          "evidence": "Warmup_steps 并不是越高越好"
         }
       ]
     },
@@ -3870,21 +3939,21 @@
       "entities": [
         {
           "entity_id": "61_e1",
-          "mention": "PEGASUSLARGE $_ { \\mathrm { p T 3 } }$",
+          "mention": "PEGASUSLARGE $\\_ { \\mathrm { p T 3 } }$",
           "normalized_name": "PEGASUSLARGE_pT3",
           "candidate_l3": "model",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "微调优化后的PEGASUSLARGE $_ { \\mathrm { p T 3 } }$",
+          "evidence": "微调优化后的PEGASUSLARGE $\\_ { \\mathrm { p T 3 } }$",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "模型名称含特殊字符，规范化处理"
+          "uncertainty": ""
         },
         {
           "entity_id": "61_e2",
-          "mention": "$\\mathrm { P E G A S U S _ { L A R G E } }$",
-          "normalized_name": "PEGASUS_LARGE",
+          "mention": "$\\mathrm { P E G A S U S _ { L A R G E } }$ 原模型",
+          "normalized_name": "PEGASUSLARGE原模型",
           "candidate_l3": "model",
           "candidate_l1": [
             "Abstract"
@@ -3892,7 +3961,7 @@
           "evidence": "$\\mathrm { P E G A S U S _ { L A R G E } }$ 原模型",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "模型名称含特殊字符，规范化处理"
+          "uncertainty": ""
         }
       ],
       "has_evaluation": false,
@@ -3917,7 +3986,7 @@
         },
         {
           "entity_id": "62_e2",
-          "mention": "原始Pegasus 模型",
+          "mention": "原始Pegasus模型",
           "normalized_name": "原始Pegasus模型",
           "candidate_l3": "model",
           "candidate_l1": [
@@ -3949,45 +4018,27 @@
           "sentence": "由图8分析可知，经过自建科技文献数据集的训练、调参优化后，模型生成文本内容的全面性和综合表现得到提升。PEGASUSLARGE_PT3在各指标中的召回率和F1值上都得到了明显提升，ROUGE1、ROUGE2和ROUGEL的平均增长比例分别为 $2 . 0 7 \\%$ ，但准确率低于原模型生成内容，经过对生成文本内容的分析发现，采用原始Pegasus 模型生成的摘要，更为倾向于从原文中直接抽取内容并非进行总结，所以在各准确率上的指标相对较高。然而，微调后的模型生成内容的长度明显略长于原模型，生成摘要内容更为全面，因此在各指标中的召回率、F1值上都得到",
           "subject": "_paper_author",
           "object": "62_e1",
-          "aspect": "召回率",
-          "opinion": "得到明显提升",
+          "aspect": "召回率和F1值",
+          "opinion": "得到了明显提升",
           "evidence": "PEGASUSLARGE_PT3在各指标中的召回率和F1值上都得到了明显提升"
         },
         {
           "sentence_id": "62",
           "sentence": "由图8分析可知，经过自建科技文献数据集的训练、调参优化后，模型生成文本内容的全面性和综合表现得到提升。PEGASUSLARGE_PT3在各指标中的召回率和F1值上都得到了明显提升，ROUGE1、ROUGE2和ROUGEL的平均增长比例分别为 $2 . 0 7 \\%$ ，但准确率低于原模型生成内容，经过对生成文本内容的分析发现，采用原始Pegasus 模型生成的摘要，更为倾向于从原文中直接抽取内容并非进行总结，所以在各准确率上的指标相对较高。然而，微调后的模型生成内容的长度明显略长于原模型，生成摘要内容更为全面，因此在各指标中的召回率、F1值上都得到",
           "subject": "_paper_author",
-          "object": "62_e1",
-          "aspect": "F1值",
-          "opinion": "得到明显提升",
-          "evidence": "PEGASUSLARGE_PT3在各指标中的召回率和F1值上都得到了明显提升"
-        },
-        {
-          "sentence_id": "62",
-          "sentence": "由图8分析可知，经过自建科技文献数据集的训练、调参优化后，模型生成文本内容的全面性和综合表现得到提升。PEGASUSLARGE_PT3在各指标中的召回率和F1值上都得到了明显提升，ROUGE1、ROUGE2和ROUGEL的平均增长比例分别为 $2 . 0 7 \\%$ ，但准确率低于原模型生成内容，经过对生成文本内容的分析发现，采用原始Pegasus 模型生成的摘要，更为倾向于从原文中直接抽取内容并非进行总结，所以在各准确率上的指标相对较高。然而，微调后的模型生成内容的长度明显略长于原模型，生成摘要内容更为全面，因此在各指标中的召回率、F1值上都得到",
-          "subject": "_paper_author",
-          "object": "62_e1",
+          "object": "62_e2",
           "aspect": "准确率",
-          "opinion": "低于原模型生成内容",
-          "evidence": "但准确率低于原模型生成内容"
+          "opinion": "相对较高",
+          "evidence": "所以在各准确率上的指标相对较高"
         },
         {
           "sentence_id": "62",
           "sentence": "由图8分析可知，经过自建科技文献数据集的训练、调参优化后，模型生成文本内容的全面性和综合表现得到提升。PEGASUSLARGE_PT3在各指标中的召回率和F1值上都得到了明显提升，ROUGE1、ROUGE2和ROUGEL的平均增长比例分别为 $2 . 0 7 \\%$ ，但准确率低于原模型生成内容，经过对生成文本内容的分析发现，采用原始Pegasus 模型生成的摘要，更为倾向于从原文中直接抽取内容并非进行总结，所以在各准确率上的指标相对较高。然而，微调后的模型生成内容的长度明显略长于原模型，生成摘要内容更为全面，因此在各指标中的召回率、F1值上都得到",
           "subject": "_paper_author",
           "object": "62_e3",
-          "aspect": "生成内容长度",
-          "opinion": "明显略长于原模型",
-          "evidence": "微调后的模型生成内容的长度明显略长于原模型"
-        },
-        {
-          "sentence_id": "62",
-          "sentence": "由图8分析可知，经过自建科技文献数据集的训练、调参优化后，模型生成文本内容的全面性和综合表现得到提升。PEGASUSLARGE_PT3在各指标中的召回率和F1值上都得到了明显提升，ROUGE1、ROUGE2和ROUGEL的平均增长比例分别为 $2 . 0 7 \\%$ ，但准确率低于原模型生成内容，经过对生成文本内容的分析发现，采用原始Pegasus 模型生成的摘要，更为倾向于从原文中直接抽取内容并非进行总结，所以在各准确率上的指标相对较高。然而，微调后的模型生成内容的长度明显略长于原模型，生成摘要内容更为全面，因此在各指标中的召回率、F1值上都得到",
-          "subject": "_paper_author",
-          "object": "62_e3",
-          "aspect": "生成摘要内容全面性",
-          "opinion": "更为全面",
-          "evidence": "生成摘要内容更为全面"
+          "aspect": "生成内容长度和全面性",
+          "opinion": "明显略长于原模型，生成摘要内容更为全面",
+          "evidence": "微调后的模型生成内容的长度明显略长于原模型，生成摘要内容更为全面"
         }
       ]
     },
@@ -4010,7 +4061,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "模型 PEGASUSLARGE_PF3生成文本的实际内容中语法结构相对完整",
+          "evidence": "模型 PEGASUSLARGE_PF3生成文本的实际内容",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -4023,7 +4074,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "自建科技文献数据集对模型进行补充训练的学习成效显著",
+          "evidence": "自建科技文献数据集对模型进行补充训练",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -4074,7 +4125,7 @@
           "object": "64_e2",
           "aspect": "学习成效",
           "opinion": "显著",
-          "evidence": "自建科技文献数据集对模型进行补充训练的学习成效显著"
+          "evidence": "学习成效显著"
         }
       ]
     },
@@ -4093,7 +4144,7 @@
           "evidence": "经过多次的prompt设计、实际示例的效果测评分析、调优等",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为术语讨论，但可能更具体为method或technique"
+          "uncertainty": "作为术语讨论，但可能更具体为method或technique，此处按concept处理"
         }
       ],
       "has_evaluation": true,
@@ -4105,7 +4156,7 @@
           "object": "65_e1",
           "aspect": "效果",
           "opinion": "较佳",
-          "evidence": "最终得到效果较佳的prompt设计"
+          "evidence": "效果较佳的prompt设计"
         }
       ]
     },
@@ -4115,138 +4166,21 @@
       "entities": [
         {
           "entity_id": "non_2_e1",
-          "mention": "学术文献检索与阅读场景",
-          "normalized_name": "学术文献检索与阅读场景",
+          "mention": "学术文献检索",
+          "normalized_name": "学术文献检索",
           "candidate_l3": "subfield",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "在学术文献检索与阅读场景下",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为应用场景，可能属于subfield或concept"
-        },
-        {
-          "entity_id": "non_2_e2",
-          "mention": "学术信息量",
-          "normalized_name": "学术信息量",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "当前学术信息量已远超用户信息处理能力",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为概念讨论"
-        },
-        {
-          "entity_id": "non_2_e3",
-          "mention": "用户信息处理能力",
-          "normalized_name": "用户信息处理能力",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "已远超用户信息处理能力",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为概念讨论"
-        },
-        {
-          "entity_id": "non_2_e4",
-          "mention": "信息堆积",
-          "normalized_name": "信息堆积",
-          "candidate_l3": "phenomenon",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "造成信息堆积",
-          "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "non_2_e5",
-          "mention": "用户阅读效率",
-          "normalized_name": "用户阅读效率",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "为应对用户阅读效率与知识吸收难题",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为概念讨论"
-        },
-        {
-          "entity_id": "non_2_e6",
-          "mention": "知识吸收",
-          "normalized_name": "知识吸收",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "为应对用户阅读效率与知识吸收难题",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为概念讨论"
-        },
-        {
-          "entity_id": "non_2_e7",
-          "mention": "学术文献检索结果集",
-          "normalized_name": "学术文献检索结果集",
-          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "面向学术文献检索结果集开展内容的综合挖掘揭示",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为概念讨论"
-        },
-        {
-          "entity_id": "non_2_e8",
-          "mention": "内容的综合挖掘揭示",
-          "normalized_name": "内容的综合挖掘揭示",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "开展内容的综合挖掘揭示",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为概念讨论"
-        },
-        {
-          "entity_id": "non_2_e9",
-          "mention": "阅读体验",
-          "normalized_name": "阅读体验",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "从阅读体验出发",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为概念讨论"
-        },
-        {
-          "entity_id": "non_2_e10",
-          "mention": "文献检索场景",
-          "normalized_name": "文献检索场景",
-          "candidate_l3": "subfield",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "针对文献检索场景的特点",
-          "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为应用场景"
+          "uncertainty": "作为研究子领域"
         },
         {
-          "entity_id": "non_2_e11",
-          "mention": "结构化综述表达设计",
-          "normalized_name": "结构化综述表达设计",
+          "entity_id": "non_2_e2",
+          "mention": "结构化综述",
+          "normalized_name": "结构化综述",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
@@ -4254,38 +4188,25 @@
           "evidence": "进行结构化综述表达设计",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "作为概念讨论"
+          "uncertainty": "可能为方法或概念"
         },
         {
-          "entity_id": "non_2_e12",
-          "mention": "技术方法",
-          "normalized_name": "技术方法",
-          "candidate_l3": "method",
+          "entity_id": "non_2_e3",
+          "mention": "深度学习",
+          "normalized_name": "深度学习",
+          "candidate_l3": "technique",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "从技术方法与内容质量提升出发",
+          "evidence": "利用基于深度学习的文本自动生成技术",
           "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "泛称，但作为方法类概念"
+          "confidence": 0.9,
+          "uncertainty": ""
         },
         {
-          "entity_id": "non_2_e13",
-          "mention": "内容质量提升",
-          "normalized_name": "内容质量提升",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "从技术方法与内容质量提升出发",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为概念讨论"
-        },
-        {
-          "entity_id": "non_2_e14",
-          "mention": "基于深度学习的文本自动生成技术",
-          "normalized_name": "基于深度学习的文本自动生成技术",
+          "entity_id": "non_2_e4",
+          "mention": "文本自动生成技术",
+          "normalized_name": "文本自动生成技术",
           "candidate_l3": "technique",
           "candidate_l1": [
             "Abstract"
@@ -4293,10 +4214,10 @@
           "evidence": "利用基于深度学习的文本自动生成技术",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为具体技术手段"
+          "uncertainty": "可能为技术领域"
         },
         {
-          "entity_id": "non_2_e15",
+          "entity_id": "non_2_e5",
           "mention": "科技文献数据集",
           "normalized_name": "科技文献数据集",
           "candidate_l3": "dataset",
@@ -4309,7 +4230,7 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "non_2_e16",
+          "entity_id": "non_2_e6",
           "mention": "文本摘要模型",
           "normalized_name": "文本摘要模型",
           "candidate_l3": "model",
@@ -4322,7 +4243,7 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "non_2_e17",
+          "entity_id": "non_2_e7",
           "mention": "大语言模型技术",
           "normalized_name": "大语言模型技术",
           "candidate_l3": "technique",
@@ -4332,163 +4253,33 @@
           "evidence": "利用大语言模型技术实现结构化的综述文本生成",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为具体技术手段"
+          "uncertainty": "可能为技术领域"
         },
         {
-          "entity_id": "non_2_e18",
-          "mention": "结构化的综述文本生成",
-          "normalized_name": "结构化的综述文本生成",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "实现结构化的综述文本生成",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为概念讨论"
-        },
-        {
-          "entity_id": "non_2_e19",
-          "mention": "摘要模型",
-          "normalized_name": "摘要模型",
+          "entity_id": "non_2_e8",
+          "mention": "训练优化后的摘要模型",
+          "normalized_name": "训练优化后的摘要模型",
           "candidate_l3": "model",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "训练优化后的摘要模型",
+          "evidence": "训练优化后的摘要模型在各指标的召回率和F1值上平均增长",
           "is_specific_entity": true,
           "confidence": 0.9,
           "uncertainty": ""
         },
         {
-          "entity_id": "non_2_e20",
-          "mention": "各指标的召回率和F1值",
-          "normalized_name": "各指标的召回率和F1值",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "在各指标的召回率和F1值上平均增长",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为评价指标概念"
-        },
-        {
-          "entity_id": "non_2_e21",
+          "entity_id": "non_2_e9",
           "mention": "基于大模型的结构化综述生成",
           "normalized_name": "基于大模型的结构化综述生成",
-          "candidate_l3": "concept",
+          "candidate_l3": "method",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "基于大模型的结构化综述生成",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为概念讨论"
-        },
-        {
-          "entity_id": "non_2_e22",
-          "mention": "实际测评",
-          "normalized_name": "实际测评",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "在实际测评中能够有效地提炼",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为概念讨论"
-        },
-        {
-          "entity_id": "non_2_e23",
-          "mention": "内容要点",
-          "normalized_name": "内容要点",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "总结和归纳内容要点",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为概念讨论"
-        },
-        {
-          "entity_id": "non_2_e24",
-          "mention": "本文技术路线",
-          "normalized_name": "本文技术路线",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "验证本文技术路线和应用实践的可行性",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为概念讨论"
-        },
-        {
-          "entity_id": "non_2_e25",
-          "mention": "应用实践",
-          "normalized_name": "应用实践",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "验证本文技术路线和应用实践的可行性",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为概念讨论"
-        },
-        {
-          "entity_id": "non_2_e26",
-          "mention": "学术文献的知识化服务水平",
-          "normalized_name": "学术文献的知识化服务水平",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "提升学术文献的知识化服务水平",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为概念讨论"
-        },
-        {
-          "entity_id": "non_2_e27",
-          "mention": "智能辅助阅读",
-          "normalized_name": "智能辅助阅读",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "智能辅助阅读与语义内容综合挖掘揭示",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为概念讨论"
-        },
-        {
-          "entity_id": "non_2_e28",
-          "mention": "语义内容综合挖掘揭示",
-          "normalized_name": "语义内容综合挖掘揭示",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "语义内容综合挖掘揭示",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为概念讨论"
-        },
-        {
-          "entity_id": "non_2_e29",
-          "mention": "应用实践指南",
-          "normalized_name": "应用实践指南",
-          "candidate_l3": "guideline",
-          "candidate_l1": [
-            "Artifact"
-          ],
-          "evidence": "提供应用实践指南",
+          "evidence": "基于大模型的结构化综述生成，在实际测评中能够有效地提炼、总结和归纳内容要点",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为指南类制品"
+          "uncertainty": "可能为方法或技术"
         }
       ],
       "has_evaluation": true,
@@ -4497,8 +4288,8 @@
           "sentence_id": "non_2",
           "sentence": "摘要：[目的/意义]在学术文献检索与阅读场景下，当前学术信息量已远超用户信息处理能力，造成信息堆积。为应对用户阅读效率与知识吸收难题，面向学术文献检索结果集开展内容的综合挖掘揭示。［方法／过程]一方面从阅读体验出发，针对文献检索场景的特点，进行结构化综述表达设计；另一方面从技术方法与内容质量提升出发，利用基于深度学习的文本自动生成技术，构建科技文献数据集，训练并优化文本摘要模型，在此基础上利用大语言模型技术实现结构化的综述文本生成。[结果/结论]训练优化后的摘要模型在各指标的召回率和F1值上平均增长 $2 . 0 7 \\%$ 。基于大模型的结构化综述生成，在实际测评中能够有效地提炼、总结和归纳内容要点，验证本文技术路线和应用实践的可行性，为进一步提升学术文献的知识化服务水平、智能辅助阅读与语义内容综合挖掘揭示等方面提供应用实践指南。",
           "subject": "_paper_author",
-          "object": "non_2_e19",
-          "aspect": "各指标的召回率和F1值",
+          "object": "non_2_e8",
+          "aspect": "召回率和F1值",
           "opinion": "平均增长2.07%",
           "evidence": "训练优化后的摘要模型在各指标的召回率和F1值上平均增长2.07%"
         },
@@ -4506,19 +4297,10 @@
           "sentence_id": "non_2",
           "sentence": "摘要：[目的/意义]在学术文献检索与阅读场景下，当前学术信息量已远超用户信息处理能力，造成信息堆积。为应对用户阅读效率与知识吸收难题，面向学术文献检索结果集开展内容的综合挖掘揭示。［方法／过程]一方面从阅读体验出发，针对文献检索场景的特点，进行结构化综述表达设计；另一方面从技术方法与内容质量提升出发，利用基于深度学习的文本自动生成技术，构建科技文献数据集，训练并优化文本摘要模型，在此基础上利用大语言模型技术实现结构化的综述文本生成。[结果/结论]训练优化后的摘要模型在各指标的召回率和F1值上平均增长 $2 . 0 7 \\%$ 。基于大模型的结构化综述生成，在实际测评中能够有效地提炼、总结和归纳内容要点，验证本文技术路线和应用实践的可行性，为进一步提升学术文献的知识化服务水平、智能辅助阅读与语义内容综合挖掘揭示等方面提供应用实践指南。",
           "subject": "_paper_author",
-          "object": "non_2_e21",
-          "aspect": "实际测评",
+          "object": "non_2_e9",
+          "aspect": null,
           "opinion": "能够有效地提炼、总结和归纳内容要点",
           "evidence": "基于大模型的结构化综述生成，在实际测评中能够有效地提炼、总结和归纳内容要点"
-        },
-        {
-          "sentence_id": "non_2",
-          "sentence": "摘要：[目的/意义]在学术文献检索与阅读场景下，当前学术信息量已远超用户信息处理能力，造成信息堆积。为应对用户阅读效率与知识吸收难题，面向学术文献检索结果集开展内容的综合挖掘揭示。［方法／过程]一方面从阅读体验出发，针对文献检索场景的特点，进行结构化综述表达设计；另一方面从技术方法与内容质量提升出发，利用基于深度学习的文本自动生成技术，构建科技文献数据集，训练并优化文本摘要模型，在此基础上利用大语言模型技术实现结构化的综述文本生成。[结果/结论]训练优化后的摘要模型在各指标的召回率和F1值上平均增长 $2 . 0 7 \\%$ 。基于大模型的结构化综述生成，在实际测评中能够有效地提炼、总结和归纳内容要点，验证本文技术路线和应用实践的可行性，为进一步提升学术文献的知识化服务水平、智能辅助阅读与语义内容综合挖掘揭示等方面提供应用实践指南。",
-          "subject": "_paper_author",
-          "object": "non_2_e21",
-          "aspect": "可行性",
-          "opinion": "验证本文技术路线和应用实践的可行性",
-          "evidence": "验证本文技术路线和应用实践的可行性"
         }
       ]
     },
@@ -4528,7 +4310,7 @@
       "entities": [
         {
           "entity_id": "non_6_e1",
-          "mention": "国家科技文献图书中心",
+          "mention": "国家科技文献图书中心（简称NSTL）",
           "normalized_name": "国家科技文献图书中心",
           "candidate_l3": "service",
           "candidate_l1": [
@@ -4541,19 +4323,6 @@
         },
         {
           "entity_id": "non_6_e2",
-          "mention": "NSTL",
-          "normalized_name": "NSTL",
-          "candidate_l3": "service",
-          "candidate_l1": [
-            "Agent"
-          ],
-          "evidence": "（简称NSTL）",
-          "is_specific_entity": true,
-          "confidence": 0.95,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "non_6_e3",
           "mention": "Google用户",
           "normalized_name": "Google用户",
           "candidate_l3": "practitioner",
@@ -4563,10 +4332,10 @@
           "evidence": "曾有研究对Google用户检索行为进行统计",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "用户群体，非具体个人，但作为检索行为主体"
+          "uncertainty": "用户群体，非具体个人，但作为检索行为主体，可视为Agent"
         },
         {
-          "entity_id": "non_6_e4",
+          "entity_id": "non_6_e3",
           "mention": "Excite搜索引擎",
           "normalized_name": "Excite搜索引擎",
           "candidate_l3": "information_system",
@@ -4579,56 +4348,56 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "non_6_e5",
-          "mention": "学术论文检索与阅读",
-          "normalized_name": "学术论文检索与阅读",
-          "candidate_l3": "concept",
+          "entity_id": "non_6_e4",
+          "mention": "学术论文检索与阅读这一实际场景",
+          "normalized_name": "学术论文检索与阅读场景",
+          "candidate_l3": "phenomenon",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "在学术论文检索与阅读这一实际场景中",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为活动场景，非具体实体"
+          "uncertainty": "场景描述，可能为phenomenon或concept"
+        },
+        {
+          "entity_id": "non_6_e5",
+          "mention": "当前学术信息量",
+          "normalized_name": "当前学术信息量",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "当前学术信息量已远超用户信息处理能力",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "可能为concept或phenomenon"
         },
         {
           "entity_id": "non_6_e6",
-          "mention": "用户群体阅读效率",
-          "normalized_name": "用户群体阅读效率",
-          "candidate_l3": "concept",
+          "mention": "用户群体",
+          "normalized_name": "用户群体",
+          "candidate_l3": "practitioner",
           "candidate_l1": [
-            "Abstract"
+            "Agent"
           ],
           "evidence": "用户群体阅读效率偏低",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "抽象概念，非具体实体"
+          "confidence": 0.7,
+          "uncertainty": "泛称，但作为行为主体，可视为Agent"
         },
         {
           "entity_id": "non_6_e7",
-          "mention": "吸收能力",
-          "normalized_name": "吸收能力",
+          "mention": "如何帮助用户对论文检索结果集进行高效阅读、筛选和吸收，减轻用户的认知负担，把用户从过载的信息中解放出来",
+          "normalized_name": "帮助用户高效阅读筛选吸收论文检索结果集的研究问题",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "吸收能力也相应弱化",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "抽象概念"
-        },
-        {
-          "entity_id": "non_6_e8",
-          "mention": "论文检索结果集",
-          "normalized_name": "论文检索结果集",
-          "candidate_l3": "dataset",
-          "candidate_l1": [
-            "Artifact"
-          ],
-          "evidence": "对论文检索结果集进行高效阅读、筛选和吸收",
+          "evidence": "如何帮助用户对论文检索结果集进行高效阅读、筛选和吸收，减轻用户的认知负担，把用户从过载的信息中解放出来，这是一个具有迫切性和现实意义的研究问题",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "数据集，但非具体命名"
+          "uncertainty": "研究问题，可能为concept或phenomenon"
         }
       ],
       "has_evaluation": true,
@@ -4638,8 +4407,35 @@
           "sentence": "对国家科技文献图书中心（简称NSTL）用户的部分检索日志进行统计（2023.04.10—2023.05.09），发现选择快速检索功能的用户占全体用户的 $9 5 \\%$ 以上，检索返回结果数大多为千条甚至万条级别；在选择专业或高级检索功能的用户中，即便是领域较小的学科，返回结果数也集中在几百条左右。那么，面对成百上千甚至成千上万篇的文献，用户的实际吸收情况如何呢？曾有研究对Google用户检索行为进行统计，发现超过 $70 \\%$ 的用户只查看检索结果首页，平均每次查看1.7个结果页面[1]，相似的情况也出现在 Excite搜索引擎中[2]。由此可见，在学术论文检索与阅读这一实际场景中，当前学术信息量已远超用户信息处理能力，用户群体阅读效率偏低，吸收能力也相应弱化。如何帮助用户对论文检索结果集进行高效阅读、筛选和吸收，减轻用户的认知负担，把用户从过载的信息中解放出来，这是一个具有迫切性和现实意义的研究问题。",
           "subject": "_paper_author",
           "object": "non_6_e1",
-          "aspect": "用户信息处理能力",
-          "opinion": "已远超",
+          "aspect": "快速检索功能使用情况",
+          "opinion": "选择快速检索功能的用户占全体用户的95%以上",
+          "evidence": "选择快速检索功能的用户占全体用户的95%以上"
+        },
+        {
+          "sentence_id": "non_6",
+          "sentence": "对国家科技文献图书中心（简称NSTL）用户的部分检索日志进行统计（2023.04.10—2023.05.09），发现选择快速检索功能的用户占全体用户的 $9 5 \\%$ 以上，检索返回结果数大多为千条甚至万条级别；在选择专业或高级检索功能的用户中，即便是领域较小的学科，返回结果数也集中在几百条左右。那么，面对成百上千甚至成千上万篇的文献，用户的实际吸收情况如何呢？曾有研究对Google用户检索行为进行统计，发现超过 $70 \\%$ 的用户只查看检索结果首页，平均每次查看1.7个结果页面[1]，相似的情况也出现在 Excite搜索引擎中[2]。由此可见，在学术论文检索与阅读这一实际场景中，当前学术信息量已远超用户信息处理能力，用户群体阅读效率偏低，吸收能力也相应弱化。如何帮助用户对论文检索结果集进行高效阅读、筛选和吸收，减轻用户的认知负担，把用户从过载的信息中解放出来，这是一个具有迫切性和现实意义的研究问题。",
+          "subject": "_cite[1]",
+          "object": "non_6_e2",
+          "aspect": "检索行为",
+          "opinion": "超过70%的用户只查看检索结果首页，平均每次查看1.7个结果页面",
+          "evidence": "超过70%的用户只查看检索结果首页，平均每次查看1.7个结果页面"
+        },
+        {
+          "sentence_id": "non_6",
+          "sentence": "对国家科技文献图书中心（简称NSTL）用户的部分检索日志进行统计（2023.04.10—2023.05.09），发现选择快速检索功能的用户占全体用户的 $9 5 \\%$ 以上，检索返回结果数大多为千条甚至万条级别；在选择专业或高级检索功能的用户中，即便是领域较小的学科，返回结果数也集中在几百条左右。那么，面对成百上千甚至成千上万篇的文献，用户的实际吸收情况如何呢？曾有研究对Google用户检索行为进行统计，发现超过 $70 \\%$ 的用户只查看检索结果首页，平均每次查看1.7个结果页面[1]，相似的情况也出现在 Excite搜索引擎中[2]。由此可见，在学术论文检索与阅读这一实际场景中，当前学术信息量已远超用户信息处理能力，用户群体阅读效率偏低，吸收能力也相应弱化。如何帮助用户对论文检索结果集进行高效阅读、筛选和吸收，减轻用户的认知负担，把用户从过载的信息中解放出来，这是一个具有迫切性和现实意义的研究问题。",
+          "subject": "_cite[2]",
+          "object": "non_6_e3",
+          "aspect": "检索行为",
+          "opinion": "相似的情况也出现",
+          "evidence": "相似的情况也出现在Excite搜索引擎中"
+        },
+        {
+          "sentence_id": "non_6",
+          "sentence": "对国家科技文献图书中心（简称NSTL）用户的部分检索日志进行统计（2023.04.10—2023.05.09），发现选择快速检索功能的用户占全体用户的 $9 5 \\%$ 以上，检索返回结果数大多为千条甚至万条级别；在选择专业或高级检索功能的用户中，即便是领域较小的学科，返回结果数也集中在几百条左右。那么，面对成百上千甚至成千上万篇的文献，用户的实际吸收情况如何呢？曾有研究对Google用户检索行为进行统计，发现超过 $70 \\%$ 的用户只查看检索结果首页，平均每次查看1.7个结果页面[1]，相似的情况也出现在 Excite搜索引擎中[2]。由此可见，在学术论文检索与阅读这一实际场景中，当前学术信息量已远超用户信息处理能力，用户群体阅读效率偏低，吸收能力也相应弱化。如何帮助用户对论文检索结果集进行高效阅读、筛选和吸收，减轻用户的认知负担，把用户从过载的信息中解放出来，这是一个具有迫切性和现实意义的研究问题。",
+          "subject": "_paper_author",
+          "object": "non_6_e4",
+          "aspect": "信息处理能力",
+          "opinion": "当前学术信息量已远超用户信息处理能力",
           "evidence": "当前学术信息量已远超用户信息处理能力"
         },
         {
@@ -4647,25 +4443,25 @@
           "sentence": "对国家科技文献图书中心（简称NSTL）用户的部分检索日志进行统计（2023.04.10—2023.05.09），发现选择快速检索功能的用户占全体用户的 $9 5 \\%$ 以上，检索返回结果数大多为千条甚至万条级别；在选择专业或高级检索功能的用户中，即便是领域较小的学科，返回结果数也集中在几百条左右。那么，面对成百上千甚至成千上万篇的文献，用户的实际吸收情况如何呢？曾有研究对Google用户检索行为进行统计，发现超过 $70 \\%$ 的用户只查看检索结果首页，平均每次查看1.7个结果页面[1]，相似的情况也出现在 Excite搜索引擎中[2]。由此可见，在学术论文检索与阅读这一实际场景中，当前学术信息量已远超用户信息处理能力，用户群体阅读效率偏低，吸收能力也相应弱化。如何帮助用户对论文检索结果集进行高效阅读、筛选和吸收，减轻用户的认知负担，把用户从过载的信息中解放出来，这是一个具有迫切性和现实意义的研究问题。",
           "subject": "_paper_author",
           "object": "non_6_e5",
-          "aspect": "用户群体阅读效率",
-          "opinion": "偏低",
-          "evidence": "用户群体阅读效率偏低"
+          "aspect": "信息量",
+          "opinion": "已远超用户信息处理能力",
+          "evidence": "当前学术信息量已远超用户信息处理能力"
         },
         {
           "sentence_id": "non_6",
           "sentence": "对国家科技文献图书中心（简称NSTL）用户的部分检索日志进行统计（2023.04.10—2023.05.09），发现选择快速检索功能的用户占全体用户的 $9 5 \\%$ 以上，检索返回结果数大多为千条甚至万条级别；在选择专业或高级检索功能的用户中，即便是领域较小的学科，返回结果数也集中在几百条左右。那么，面对成百上千甚至成千上万篇的文献，用户的实际吸收情况如何呢？曾有研究对Google用户检索行为进行统计，发现超过 $70 \\%$ 的用户只查看检索结果首页，平均每次查看1.7个结果页面[1]，相似的情况也出现在 Excite搜索引擎中[2]。由此可见，在学术论文检索与阅读这一实际场景中，当前学术信息量已远超用户信息处理能力，用户群体阅读效率偏低，吸收能力也相应弱化。如何帮助用户对论文检索结果集进行高效阅读、筛选和吸收，减轻用户的认知负担，把用户从过载的信息中解放出来，这是一个具有迫切性和现实意义的研究问题。",
           "subject": "_paper_author",
-          "object": "non_6_e5",
-          "aspect": "吸收能力",
-          "opinion": "弱化",
-          "evidence": "吸收能力也相应弱化"
+          "object": "non_6_e6",
+          "aspect": "阅读效率",
+          "opinion": "阅读效率偏低，吸收能力也相应弱化",
+          "evidence": "用户群体阅读效率偏低，吸收能力也相应弱化"
         },
         {
           "sentence_id": "non_6",
           "sentence": "对国家科技文献图书中心（简称NSTL）用户的部分检索日志进行统计（2023.04.10—2023.05.09），发现选择快速检索功能的用户占全体用户的 $9 5 \\%$ 以上，检索返回结果数大多为千条甚至万条级别；在选择专业或高级检索功能的用户中，即便是领域较小的学科，返回结果数也集中在几百条左右。那么，面对成百上千甚至成千上万篇的文献，用户的实际吸收情况如何呢？曾有研究对Google用户检索行为进行统计，发现超过 $70 \\%$ 的用户只查看检索结果首页，平均每次查看1.7个结果页面[1]，相似的情况也出现在 Excite搜索引擎中[2]。由此可见，在学术论文检索与阅读这一实际场景中，当前学术信息量已远超用户信息处理能力，用户群体阅读效率偏低，吸收能力也相应弱化。如何帮助用户对论文检索结果集进行高效阅读、筛选和吸收，减轻用户的认知负担，把用户从过载的信息中解放出来，这是一个具有迫切性和现实意义的研究问题。",
           "subject": "_paper_author",
-          "object": "non_6_e8",
-          "aspect": "高效阅读、筛选和吸收",
+          "object": "non_6_e7",
+          "aspect": "迫切性和现实意义",
           "opinion": "具有迫切性和现实意义",
           "evidence": "这是一个具有迫切性和现实意义的研究问题"
         }
@@ -4685,8 +4481,8 @@
           ],
           "evidence": "面向检索结果集的自动综述是多文档自动摘要的一种应用形式",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
+          "confidence": 0.85,
+          "uncertainty": "作为应用形式，可能更接近concept"
         },
         {
           "entity_id": "non_9_e2",
@@ -4698,8 +4494,8 @@
           ],
           "evidence": "多文档自动摘要是一种应用形式",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
+          "confidence": 0.85,
+          "uncertainty": "作为研究主题，可能更接近concept"
         },
         {
           "entity_id": "non_9_e3",
@@ -4724,8 +4520,8 @@
           ],
           "evidence": "自动文本摘要从H.P.Luhn[4首次提出",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
+          "confidence": 0.85,
+          "uncertainty": "作为研究领域，可能更接近concept"
         },
         {
           "entity_id": "non_9_e5",
@@ -4737,8 +4533,8 @@
           ],
           "evidence": "可分为单文档自动摘要和多文档自动摘要",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
+          "confidence": 0.85,
+          "uncertainty": "作为类型，可能更接近concept"
         }
       ],
       "has_evaluation": false,
@@ -4752,31 +4548,31 @@
           "entity_id": "non_12_e1",
           "mention": "抽取式文摘",
           "normalized_name": "抽取式文摘",
-          "candidate_l3": "method",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "主要分为抽取式文摘[10] 和生成式文摘[11]",
           "is_specific_entity": true,
-          "confidence": 0.95,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
           "entity_id": "non_12_e2",
           "mention": "生成式文摘",
           "normalized_name": "生成式文摘",
-          "candidate_l3": "method",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "主要分为抽取式文摘[10] 和生成式文摘[11]",
           "is_specific_entity": true,
-          "confidence": 0.95,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
           "entity_id": "non_12_e3",
-          "mention": "徐晓丹等",
+          "mention": "徐晓丹等[12]",
           "normalized_name": "徐晓丹等",
           "candidate_l3": "scholar",
           "candidate_l1": [
@@ -4789,7 +4585,7 @@
         },
         {
           "entity_id": "non_12_e4",
-          "mention": "C.Shen 等",
+          "mention": "C.Shen 等[13]",
           "normalized_name": "C.Shen 等",
           "candidate_l3": "scholar",
           "candidate_l1": [
@@ -4802,7 +4598,7 @@
         },
         {
           "entity_id": "non_12_e5",
-          "mention": "王红斌等",
+          "mention": "王红斌[14]等",
           "normalized_name": "王红斌等",
           "candidate_l3": "scholar",
           "candidate_l1": [
@@ -4815,7 +4611,7 @@
         },
         {
           "entity_id": "non_12_e6",
-          "mention": "J.Chen 等",
+          "mention": "J.Chen 等[15]",
           "normalized_name": "J.Chen 等",
           "candidate_l3": "scholar",
           "candidate_l1": [
@@ -4828,7 +4624,7 @@
         },
         {
           "entity_id": "non_12_e7",
-          "mention": "王勇臻等",
+          "mention": "王勇臻等[16]",
           "normalized_name": "王勇臻等",
           "candidate_l3": "scholar",
           "candidate_l1": [
@@ -4841,7 +4637,7 @@
         },
         {
           "entity_id": "non_12_e8",
-          "mention": "王茂发等",
+          "mention": "王茂发等[]",
           "normalized_name": "王茂发等",
           "candidate_l3": "scholar",
           "candidate_l1": [
@@ -4854,13 +4650,13 @@
         },
         {
           "entity_id": "non_12_e9",
-          "mention": "ChatGPT",
+          "mention": "ChatGPT[19]",
           "normalized_name": "ChatGPT",
           "candidate_l3": "information_system",
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "OpenAI公司研发的对话系统ChatGPT[19]发布",
+          "evidence": "对话系统ChatGPT[19]发布",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -4888,7 +4684,7 @@
           ],
           "evidence": "使用SVM机器学习模型进行有监督的训练",
           "is_specific_entity": true,
-          "confidence": 0.95,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
@@ -4901,24 +4697,37 @@
           ],
           "evidence": "基于 Seq-to-Seq 框架构建基于层次神经网络的序列生成模型",
           "is_specific_entity": true,
-          "confidence": 0.95,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
           "entity_id": "non_12_e13",
-          "mention": "BiLSTM",
-          "normalized_name": "BiLSTM",
+          "mention": "层次神经网络",
+          "normalized_name": "层次神经网络",
+          "candidate_l3": "model",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "构建基于层次神经网络的序列生成模型",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "non_12_e14",
+          "mention": "堆叠BiLSTM",
+          "normalized_name": "堆叠BiLSTM",
           "candidate_l3": "technique",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "使用堆叠BiLSTM和多头注意力机制（multi-headattention）相结合的方法",
           "is_specific_entity": true,
-          "confidence": 0.95,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
-          "entity_id": "non_12_e14",
+          "entity_id": "non_12_e15",
           "mention": "多头注意力机制",
           "normalized_name": "多头注意力机制",
           "candidate_l3": "technique",
@@ -4927,21 +4736,21 @@
           ],
           "evidence": "使用堆叠BiLSTM和多头注意力机制（multi-headattention）相结合的方法",
           "is_specific_entity": true,
-          "confidence": 0.95,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
-          "entity_id": "non_12_e15",
+          "entity_id": "non_12_e16",
           "mention": "人工智能技术",
           "normalized_name": "人工智能技术",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "随着以ChatGPT为代表的人工智能技术的快速发展和不断更新迭代",
+          "evidence": "以ChatGPT为代表的人工智能技术的快速发展和不断更新迭代",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为技术领域概念，非具体技术"
+          "confidence": 0.85,
+          "uncertainty": "技术领域概念"
         }
       ],
       "has_evaluation": true,
@@ -4950,6 +4759,33 @@
           "sentence_id": "non_12",
           "sentence": "从摘要生成的方法上来看，主要分为抽取式文摘[10] 和生成式文摘[11]。抽取式文摘指利用统计学等原理对原文本中语句的重要度进行计算，挑选出得分较高者形成重要句子集合，并在其中对句子进行排序与重组形成摘要。生成式文摘指将原文本内容抽象表示为中间形式的语义表达，再通过自然语言生成技术对其进行解码，形成概括性摘要，与人工总结凝练过程更加接近。徐晓丹等[12]在研究面向查询的多文档自动摘要时，通过聚类得到子主题，根据查询语句与子主题的相似度进行排序，从每个聚类中选择一个得分最高的句子组成摘要；C.Shen 等[13]基于有监督的机器学习方法，将自动文摘任务转化为二分类问题，通过提取句子位置、长度、与查询句子的相似度等特征，使用SVM机器学习模型进行有监督的训练；王红斌[14]等提出一种结合层级注意力的抽取式新闻文本自动摘要方法，首先对新闻文本进行层级注意力的文本编码表示，然后通过神经网络构建动态打分函数选择分值高的句子作为摘要句，具有较好的泛化性与有效性；J.Chen 等[15]将抽取式摘要看作序列标注问题，并采用神经网络的处理方式解决，取得了较好的效果。与此同时，利用神经网络、深度学习在生成式文本摘要上的相关探索也逐渐发展起来。王勇臻等[16]面向学术文献，将文献综述生成定义为序列文本生成问题，基于 Seq-to-Seq 框架构建基于层次神经网络的序列生成模型，实现文摘的生成；王茂发等[]提出一种生成式自动文摘网络模型，使用堆叠BiLSTM和多头注意力机制（multi-headattention）相结合的方法提升生成摘要的质量。此外，也有一些学者将抽取式和生成式方法结合起来进行摘要的生成[18]，有较好的应用。2022年11月30日，OpenAI公司研发的对话系统ChatGPT[19]发布，随着以ChatGPT为代表的人工智能技术的快速发展和不断更新迭代，展现出更高的文本生成及综述能力[20]。新技术方法的突破为支持和实现更高质量的文献服务提供了新的方法和技术支撑。",
           "subject": "_paper_author",
+          "object": "non_12_e1",
+          "aspect": null,
+          "opinion": "得分较高",
+          "evidence": "挑选出得分较高者形成重要句子集合"
+        },
+        {
+          "sentence_id": "non_12",
+          "sentence": "从摘要生成的方法上来看，主要分为抽取式文摘[10] 和生成式文摘[11]。抽取式文摘指利用统计学等原理对原文本中语句的重要度进行计算，挑选出得分较高者形成重要句子集合，并在其中对句子进行排序与重组形成摘要。生成式文摘指将原文本内容抽象表示为中间形式的语义表达，再通过自然语言生成技术对其进行解码，形成概括性摘要，与人工总结凝练过程更加接近。徐晓丹等[12]在研究面向查询的多文档自动摘要时，通过聚类得到子主题，根据查询语句与子主题的相似度进行排序，从每个聚类中选择一个得分最高的句子组成摘要；C.Shen 等[13]基于有监督的机器学习方法，将自动文摘任务转化为二分类问题，通过提取句子位置、长度、与查询句子的相似度等特征，使用SVM机器学习模型进行有监督的训练；王红斌[14]等提出一种结合层级注意力的抽取式新闻文本自动摘要方法，首先对新闻文本进行层级注意力的文本编码表示，然后通过神经网络构建动态打分函数选择分值高的句子作为摘要句，具有较好的泛化性与有效性；J.Chen 等[15]将抽取式摘要看作序列标注问题，并采用神经网络的处理方式解决，取得了较好的效果。与此同时，利用神经网络、深度学习在生成式文本摘要上的相关探索也逐渐发展起来。王勇臻等[16]面向学术文献，将文献综述生成定义为序列文本生成问题，基于 Seq-to-Seq 框架构建基于层次神经网络的序列生成模型，实现文摘的生成；王茂发等[]提出一种生成式自动文摘网络模型，使用堆叠BiLSTM和多头注意力机制（multi-headattention）相结合的方法提升生成摘要的质量。此外，也有一些学者将抽取式和生成式方法结合起来进行摘要的生成[18]，有较好的应用。2022年11月30日，OpenAI公司研发的对话系统ChatGPT[19]发布，随着以ChatGPT为代表的人工智能技术的快速发展和不断更新迭代，展现出更高的文本生成及综述能力[20]。新技术方法的突破为支持和实现更高质量的文献服务提供了新的方法和技术支撑。",
+          "subject": "_paper_author",
+          "object": "non_12_e2",
+          "aspect": null,
+          "opinion": "与人工总结凝练过程更加接近",
+          "evidence": "与人工总结凝练过程更加接近"
+        },
+        {
+          "sentence_id": "non_12",
+          "sentence": "从摘要生成的方法上来看，主要分为抽取式文摘[10] 和生成式文摘[11]。抽取式文摘指利用统计学等原理对原文本中语句的重要度进行计算，挑选出得分较高者形成重要句子集合，并在其中对句子进行排序与重组形成摘要。生成式文摘指将原文本内容抽象表示为中间形式的语义表达，再通过自然语言生成技术对其进行解码，形成概括性摘要，与人工总结凝练过程更加接近。徐晓丹等[12]在研究面向查询的多文档自动摘要时，通过聚类得到子主题，根据查询语句与子主题的相似度进行排序，从每个聚类中选择一个得分最高的句子组成摘要；C.Shen 等[13]基于有监督的机器学习方法，将自动文摘任务转化为二分类问题，通过提取句子位置、长度、与查询句子的相似度等特征，使用SVM机器学习模型进行有监督的训练；王红斌[14]等提出一种结合层级注意力的抽取式新闻文本自动摘要方法，首先对新闻文本进行层级注意力的文本编码表示，然后通过神经网络构建动态打分函数选择分值高的句子作为摘要句，具有较好的泛化性与有效性；J.Chen 等[15]将抽取式摘要看作序列标注问题，并采用神经网络的处理方式解决，取得了较好的效果。与此同时，利用神经网络、深度学习在生成式文本摘要上的相关探索也逐渐发展起来。王勇臻等[16]面向学术文献，将文献综述生成定义为序列文本生成问题，基于 Seq-to-Seq 框架构建基于层次神经网络的序列生成模型，实现文摘的生成；王茂发等[]提出一种生成式自动文摘网络模型，使用堆叠BiLSTM和多头注意力机制（multi-headattention）相结合的方法提升生成摘要的质量。此外，也有一些学者将抽取式和生成式方法结合起来进行摘要的生成[18]，有较好的应用。2022年11月30日，OpenAI公司研发的对话系统ChatGPT[19]发布，随着以ChatGPT为代表的人工智能技术的快速发展和不断更新迭代，展现出更高的文本生成及综述能力[20]。新技术方法的突破为支持和实现更高质量的文献服务提供了新的方法和技术支撑。",
+          "subject": "_cite[12]",
+          "object": "non_12_e3",
+          "aspect": null,
+          "opinion": "得分最高",
+          "evidence": "选择得分最高的句子组成摘要"
+        },
+        {
+          "sentence_id": "non_12",
+          "sentence": "从摘要生成的方法上来看，主要分为抽取式文摘[10] 和生成式文摘[11]。抽取式文摘指利用统计学等原理对原文本中语句的重要度进行计算，挑选出得分较高者形成重要句子集合，并在其中对句子进行排序与重组形成摘要。生成式文摘指将原文本内容抽象表示为中间形式的语义表达，再通过自然语言生成技术对其进行解码，形成概括性摘要，与人工总结凝练过程更加接近。徐晓丹等[12]在研究面向查询的多文档自动摘要时，通过聚类得到子主题，根据查询语句与子主题的相似度进行排序，从每个聚类中选择一个得分最高的句子组成摘要；C.Shen 等[13]基于有监督的机器学习方法，将自动文摘任务转化为二分类问题，通过提取句子位置、长度、与查询句子的相似度等特征，使用SVM机器学习模型进行有监督的训练；王红斌[14]等提出一种结合层级注意力的抽取式新闻文本自动摘要方法，首先对新闻文本进行层级注意力的文本编码表示，然后通过神经网络构建动态打分函数选择分值高的句子作为摘要句，具有较好的泛化性与有效性；J.Chen 等[15]将抽取式摘要看作序列标注问题，并采用神经网络的处理方式解决，取得了较好的效果。与此同时，利用神经网络、深度学习在生成式文本摘要上的相关探索也逐渐发展起来。王勇臻等[16]面向学术文献，将文献综述生成定义为序列文本生成问题，基于 Seq-to-Seq 框架构建基于层次神经网络的序列生成模型，实现文摘的生成；王茂发等[]提出一种生成式自动文摘网络模型，使用堆叠BiLSTM和多头注意力机制（multi-headattention）相结合的方法提升生成摘要的质量。此外，也有一些学者将抽取式和生成式方法结合起来进行摘要的生成[18]，有较好的应用。2022年11月30日，OpenAI公司研发的对话系统ChatGPT[19]发布，随着以ChatGPT为代表的人工智能技术的快速发展和不断更新迭代，展现出更高的文本生成及综述能力[20]。新技术方法的突破为支持和实现更高质量的文献服务提供了新的方法和技术支撑。",
+          "subject": "_cite[14]",
           "object": "non_12_e5",
           "aspect": "泛化性与有效性",
           "opinion": "具有较好的泛化性与有效性",
@@ -4958,25 +4794,25 @@
         {
           "sentence_id": "non_12",
           "sentence": "从摘要生成的方法上来看，主要分为抽取式文摘[10] 和生成式文摘[11]。抽取式文摘指利用统计学等原理对原文本中语句的重要度进行计算，挑选出得分较高者形成重要句子集合，并在其中对句子进行排序与重组形成摘要。生成式文摘指将原文本内容抽象表示为中间形式的语义表达，再通过自然语言生成技术对其进行解码，形成概括性摘要，与人工总结凝练过程更加接近。徐晓丹等[12]在研究面向查询的多文档自动摘要时，通过聚类得到子主题，根据查询语句与子主题的相似度进行排序，从每个聚类中选择一个得分最高的句子组成摘要；C.Shen 等[13]基于有监督的机器学习方法，将自动文摘任务转化为二分类问题，通过提取句子位置、长度、与查询句子的相似度等特征，使用SVM机器学习模型进行有监督的训练；王红斌[14]等提出一种结合层级注意力的抽取式新闻文本自动摘要方法，首先对新闻文本进行层级注意力的文本编码表示，然后通过神经网络构建动态打分函数选择分值高的句子作为摘要句，具有较好的泛化性与有效性；J.Chen 等[15]将抽取式摘要看作序列标注问题，并采用神经网络的处理方式解决，取得了较好的效果。与此同时，利用神经网络、深度学习在生成式文本摘要上的相关探索也逐渐发展起来。王勇臻等[16]面向学术文献，将文献综述生成定义为序列文本生成问题，基于 Seq-to-Seq 框架构建基于层次神经网络的序列生成模型，实现文摘的生成；王茂发等[]提出一种生成式自动文摘网络模型，使用堆叠BiLSTM和多头注意力机制（multi-headattention）相结合的方法提升生成摘要的质量。此外，也有一些学者将抽取式和生成式方法结合起来进行摘要的生成[18]，有较好的应用。2022年11月30日，OpenAI公司研发的对话系统ChatGPT[19]发布，随着以ChatGPT为代表的人工智能技术的快速发展和不断更新迭代，展现出更高的文本生成及综述能力[20]。新技术方法的突破为支持和实现更高质量的文献服务提供了新的方法和技术支撑。",
-          "subject": "_paper_author",
+          "subject": "_cite[15]",
           "object": "non_12_e6",
-          "aspect": "效果",
+          "aspect": null,
           "opinion": "取得了较好的效果",
           "evidence": "取得了较好的效果"
         },
         {
           "sentence_id": "non_12",
           "sentence": "从摘要生成的方法上来看，主要分为抽取式文摘[10] 和生成式文摘[11]。抽取式文摘指利用统计学等原理对原文本中语句的重要度进行计算，挑选出得分较高者形成重要句子集合，并在其中对句子进行排序与重组形成摘要。生成式文摘指将原文本内容抽象表示为中间形式的语义表达，再通过自然语言生成技术对其进行解码，形成概括性摘要，与人工总结凝练过程更加接近。徐晓丹等[12]在研究面向查询的多文档自动摘要时，通过聚类得到子主题，根据查询语句与子主题的相似度进行排序，从每个聚类中选择一个得分最高的句子组成摘要；C.Shen 等[13]基于有监督的机器学习方法，将自动文摘任务转化为二分类问题，通过提取句子位置、长度、与查询句子的相似度等特征，使用SVM机器学习模型进行有监督的训练；王红斌[14]等提出一种结合层级注意力的抽取式新闻文本自动摘要方法，首先对新闻文本进行层级注意力的文本编码表示，然后通过神经网络构建动态打分函数选择分值高的句子作为摘要句，具有较好的泛化性与有效性；J.Chen 等[15]将抽取式摘要看作序列标注问题，并采用神经网络的处理方式解决，取得了较好的效果。与此同时，利用神经网络、深度学习在生成式文本摘要上的相关探索也逐渐发展起来。王勇臻等[16]面向学术文献，将文献综述生成定义为序列文本生成问题，基于 Seq-to-Seq 框架构建基于层次神经网络的序列生成模型，实现文摘的生成；王茂发等[]提出一种生成式自动文摘网络模型，使用堆叠BiLSTM和多头注意力机制（multi-headattention）相结合的方法提升生成摘要的质量。此外，也有一些学者将抽取式和生成式方法结合起来进行摘要的生成[18]，有较好的应用。2022年11月30日，OpenAI公司研发的对话系统ChatGPT[19]发布，随着以ChatGPT为代表的人工智能技术的快速发展和不断更新迭代，展现出更高的文本生成及综述能力[20]。新技术方法的突破为支持和实现更高质量的文献服务提供了新的方法和技术支撑。",
-          "subject": "_paper_author",
-          "object": "non_12_e8",
-          "aspect": "生成摘要的质量",
-          "opinion": "提升生成摘要的质量",
-          "evidence": "使用堆叠BiLSTM和多头注意力机制（multi-headattention）相结合的方法提升生成摘要的质量"
+          "subject": "_cite[18]",
+          "object": "non_12_e1",
+          "aspect": null,
+          "opinion": "有较好的应用",
+          "evidence": "有较好的应用"
         },
         {
           "sentence_id": "non_12",
           "sentence": "从摘要生成的方法上来看，主要分为抽取式文摘[10] 和生成式文摘[11]。抽取式文摘指利用统计学等原理对原文本中语句的重要度进行计算，挑选出得分较高者形成重要句子集合，并在其中对句子进行排序与重组形成摘要。生成式文摘指将原文本内容抽象表示为中间形式的语义表达，再通过自然语言生成技术对其进行解码，形成概括性摘要，与人工总结凝练过程更加接近。徐晓丹等[12]在研究面向查询的多文档自动摘要时，通过聚类得到子主题，根据查询语句与子主题的相似度进行排序，从每个聚类中选择一个得分最高的句子组成摘要；C.Shen 等[13]基于有监督的机器学习方法，将自动文摘任务转化为二分类问题，通过提取句子位置、长度、与查询句子的相似度等特征，使用SVM机器学习模型进行有监督的训练；王红斌[14]等提出一种结合层级注意力的抽取式新闻文本自动摘要方法，首先对新闻文本进行层级注意力的文本编码表示，然后通过神经网络构建动态打分函数选择分值高的句子作为摘要句，具有较好的泛化性与有效性；J.Chen 等[15]将抽取式摘要看作序列标注问题，并采用神经网络的处理方式解决，取得了较好的效果。与此同时，利用神经网络、深度学习在生成式文本摘要上的相关探索也逐渐发展起来。王勇臻等[16]面向学术文献，将文献综述生成定义为序列文本生成问题，基于 Seq-to-Seq 框架构建基于层次神经网络的序列生成模型，实现文摘的生成；王茂发等[]提出一种生成式自动文摘网络模型，使用堆叠BiLSTM和多头注意力机制（multi-headattention）相结合的方法提升生成摘要的质量。此外，也有一些学者将抽取式和生成式方法结合起来进行摘要的生成[18]，有较好的应用。2022年11月30日，OpenAI公司研发的对话系统ChatGPT[19]发布，随着以ChatGPT为代表的人工智能技术的快速发展和不断更新迭代，展现出更高的文本生成及综述能力[20]。新技术方法的突破为支持和实现更高质量的文献服务提供了新的方法和技术支撑。",
-          "subject": "_paper_author",
+          "subject": "_cite[20]",
           "object": "non_12_e9",
           "aspect": "文本生成及综述能力",
           "opinion": "展现出更高的文本生成及综述能力",
@@ -5022,13 +4858,26 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "深度学习作为前沿技术",
+          "evidence": "生成式文摘的多数研究都聚焦在深度学习算法的优化上",
           "is_specific_entity": true,
           "confidence": 0.9,
           "uncertainty": "作为技术领域概念"
         },
         {
           "entity_id": "non_13_e4",
+          "mention": "深度学习算法",
+          "normalized_name": "深度学习算法",
+          "candidate_l3": "algorithm",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "生成式文摘的多数研究都聚焦在深度学习算法的优化上",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "深度学习算法是具体算法类别，但未指明具体算法名称"
+        },
+        {
+          "entity_id": "non_13_e5",
           "mention": "ChatGPT",
           "normalized_name": "ChatGPT",
           "candidate_l3": "software",
@@ -5041,7 +4890,7 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "non_13_e5",
+          "entity_id": "non_13_e6",
           "mention": "生成式大语言模型",
           "normalized_name": "生成式大语言模型",
           "candidate_l3": "concept",
@@ -5050,33 +4899,20 @@
           ],
           "evidence": "以ChatGPT为代表的生成式大语言模型",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.85,
           "uncertainty": "作为技术概念"
         },
         {
-          "entity_id": "non_13_e6",
-          "mention": "生成式预训练模型",
-          "normalized_name": "生成式预训练模型",
-          "candidate_l3": "model",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "生成式预训练模型等深度神经网络方法",
-          "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为模型类别"
-        },
-        {
           "entity_id": "non_13_e7",
-          "mention": "深度神经网络方法",
-          "normalized_name": "深度神经网络方法",
+          "mention": "生成式预训练模型等深度神经网络方法",
+          "normalized_name": "生成式预训练模型等深度神经网络方法",
           "candidate_l3": "method",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "生成式预训练模型等深度神经网络方法",
+          "evidence": "生成式预训练模型等深度神经网络方法在自动摘要、综述生成任务中取得了更为优异的表现",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.85,
           "uncertainty": "作为方法类别"
         },
         {
@@ -5087,7 +4923,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "多文档自动摘要领域",
+          "evidence": "深度学习作为前沿技术在多文档自动摘要领域的热度不断攀升",
           "is_specific_entity": true,
           "confidence": 0.9,
           "uncertainty": "作为研究子领域"
@@ -5100,9 +4936,9 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "综述生成任务",
+          "evidence": "在自动摘要、综述生成任务中取得了更为优异的表现",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.85,
           "uncertainty": "作为研究子领域"
         }
       ],
@@ -5114,17 +4950,8 @@
           "subject": "_paper_author",
           "object": "non_13_e1",
           "aspect": "适用性",
-          "opinion": "较广",
-          "evidence": "抽取式文摘适用性较广"
-        },
-        {
-          "sentence_id": "non_13",
-          "sentence": "抽取式文摘的多数研究聚焦在句子的相似度和权重计算、句子的选择／筛选以及句子排序方法上，还有的研究关注特征的选择和改进上。生成式文摘的多数研究都聚焦在深度学习算法的优化上。总体来看，抽取式文摘适用性较广，不受文本内容和题材限制、泛化性好，但是容易局限文本表层结构分析，难以深入理解文本内容，存在内容覆盖不全、词汇冗余等问题。生成式文摘更接近人工撰写摘要的方式,能对文本内容进行深层次的语义理解，生成的摘要更具有简约性、概括性。并且，近年来深度学习作为前沿技术在多文档自动摘要领域的热度不断攀升[21],以及以ChatGPT为代表的生成式大语言模型，因其强大的生成能力使生成式预训练模型等深度神经网络方法在自动摘要、综述生成任务中取得了比传统方法更为优异的表现，给该任务的研究带来了更大的潜力。",
-          "subject": "_paper_author",
-          "object": "non_13_e1",
-          "aspect": "泛化性",
-          "opinion": "好",
-          "evidence": "泛化性好"
+          "opinion": "适用性较广，不受文本内容和题材限制、泛化性好",
+          "evidence": "抽取式文摘适用性较广，不受文本内容和题材限制、泛化性好"
         },
         {
           "sentence_id": "non_13",
@@ -5132,53 +4959,35 @@
           "subject": "_paper_author",
           "object": "non_13_e1",
           "aspect": "文本表层结构分析",
-          "opinion": "容易局限",
-          "evidence": "容易局限文本表层结构分析"
-        },
-        {
-          "sentence_id": "non_13",
-          "sentence": "抽取式文摘的多数研究聚焦在句子的相似度和权重计算、句子的选择／筛选以及句子排序方法上，还有的研究关注特征的选择和改进上。生成式文摘的多数研究都聚焦在深度学习算法的优化上。总体来看，抽取式文摘适用性较广，不受文本内容和题材限制、泛化性好，但是容易局限文本表层结构分析，难以深入理解文本内容，存在内容覆盖不全、词汇冗余等问题。生成式文摘更接近人工撰写摘要的方式,能对文本内容进行深层次的语义理解，生成的摘要更具有简约性、概括性。并且，近年来深度学习作为前沿技术在多文档自动摘要领域的热度不断攀升[21],以及以ChatGPT为代表的生成式大语言模型，因其强大的生成能力使生成式预训练模型等深度神经网络方法在自动摘要、综述生成任务中取得了比传统方法更为优异的表现，给该任务的研究带来了更大的潜力。",
-          "subject": "_paper_author",
-          "object": "non_13_e1",
-          "aspect": "内容覆盖",
-          "opinion": "不全",
-          "evidence": "存在内容覆盖不全"
-        },
-        {
-          "sentence_id": "non_13",
-          "sentence": "抽取式文摘的多数研究聚焦在句子的相似度和权重计算、句子的选择／筛选以及句子排序方法上，还有的研究关注特征的选择和改进上。生成式文摘的多数研究都聚焦在深度学习算法的优化上。总体来看，抽取式文摘适用性较广，不受文本内容和题材限制、泛化性好，但是容易局限文本表层结构分析，难以深入理解文本内容，存在内容覆盖不全、词汇冗余等问题。生成式文摘更接近人工撰写摘要的方式,能对文本内容进行深层次的语义理解，生成的摘要更具有简约性、概括性。并且，近年来深度学习作为前沿技术在多文档自动摘要领域的热度不断攀升[21],以及以ChatGPT为代表的生成式大语言模型，因其强大的生成能力使生成式预训练模型等深度神经网络方法在自动摘要、综述生成任务中取得了比传统方法更为优异的表现，给该任务的研究带来了更大的潜力。",
-          "subject": "_paper_author",
-          "object": "non_13_e1",
-          "aspect": "词汇冗余",
-          "opinion": "存在",
-          "evidence": "词汇冗余等问题"
+          "opinion": "容易局限文本表层结构分析，难以深入理解文本内容，存在内容覆盖不全、词汇冗余等问题",
+          "evidence": "容易局限文本表层结构分析，难以深入理解文本内容，存在内容覆盖不全、词汇冗余等问题"
         },
         {
           "sentence_id": "non_13",
           "sentence": "抽取式文摘的多数研究聚焦在句子的相似度和权重计算、句子的选择／筛选以及句子排序方法上，还有的研究关注特征的选择和改进上。生成式文摘的多数研究都聚焦在深度学习算法的优化上。总体来看，抽取式文摘适用性较广，不受文本内容和题材限制、泛化性好，但是容易局限文本表层结构分析，难以深入理解文本内容，存在内容覆盖不全、词汇冗余等问题。生成式文摘更接近人工撰写摘要的方式,能对文本内容进行深层次的语义理解，生成的摘要更具有简约性、概括性。并且，近年来深度学习作为前沿技术在多文档自动摘要领域的热度不断攀升[21],以及以ChatGPT为代表的生成式大语言模型，因其强大的生成能力使生成式预训练模型等深度神经网络方法在自动摘要、综述生成任务中取得了比传统方法更为优异的表现，给该任务的研究带来了更大的潜力。",
           "subject": "_paper_author",
           "object": "non_13_e2",
-          "aspect": "语义理解",
-          "opinion": "深层次",
-          "evidence": "能对文本内容进行深层次的语义理解"
+          "aspect": "摘要方式",
+          "opinion": "更接近人工撰写摘要的方式,能对文本内容进行深层次的语义理解，生成的摘要更具有简约性、概括性",
+          "evidence": "生成式文摘更接近人工撰写摘要的方式,能对文本内容进行深层次的语义理解，生成的摘要更具有简约性、概括性"
         },
         {
           "sentence_id": "non_13",
           "sentence": "抽取式文摘的多数研究聚焦在句子的相似度和权重计算、句子的选择／筛选以及句子排序方法上，还有的研究关注特征的选择和改进上。生成式文摘的多数研究都聚焦在深度学习算法的优化上。总体来看，抽取式文摘适用性较广，不受文本内容和题材限制、泛化性好，但是容易局限文本表层结构分析，难以深入理解文本内容，存在内容覆盖不全、词汇冗余等问题。生成式文摘更接近人工撰写摘要的方式,能对文本内容进行深层次的语义理解，生成的摘要更具有简约性、概括性。并且，近年来深度学习作为前沿技术在多文档自动摘要领域的热度不断攀升[21],以及以ChatGPT为代表的生成式大语言模型，因其强大的生成能力使生成式预训练模型等深度神经网络方法在自动摘要、综述生成任务中取得了比传统方法更为优异的表现，给该任务的研究带来了更大的潜力。",
           "subject": "_paper_author",
-          "object": "non_13_e2",
-          "aspect": "简约性",
-          "opinion": "具有",
-          "evidence": "生成的摘要更具有简约性"
+          "object": "non_13_e3",
+          "aspect": "热度",
+          "opinion": "热度不断攀升",
+          "evidence": "近年来深度学习作为前沿技术在多文档自动摘要领域的热度不断攀升"
         },
         {
           "sentence_id": "non_13",
           "sentence": "抽取式文摘的多数研究聚焦在句子的相似度和权重计算、句子的选择／筛选以及句子排序方法上，还有的研究关注特征的选择和改进上。生成式文摘的多数研究都聚焦在深度学习算法的优化上。总体来看，抽取式文摘适用性较广，不受文本内容和题材限制、泛化性好，但是容易局限文本表层结构分析，难以深入理解文本内容，存在内容覆盖不全、词汇冗余等问题。生成式文摘更接近人工撰写摘要的方式,能对文本内容进行深层次的语义理解，生成的摘要更具有简约性、概括性。并且，近年来深度学习作为前沿技术在多文档自动摘要领域的热度不断攀升[21],以及以ChatGPT为代表的生成式大语言模型，因其强大的生成能力使生成式预训练模型等深度神经网络方法在自动摘要、综述生成任务中取得了比传统方法更为优异的表现，给该任务的研究带来了更大的潜力。",
           "subject": "_paper_author",
-          "object": "non_13_e2",
-          "aspect": "概括性",
-          "opinion": "具有",
-          "evidence": "概括性"
+          "object": "non_13_e7",
+          "aspect": "表现",
+          "opinion": "取得了比传统方法更为优异的表现",
+          "evidence": "生成式预训练模型等深度神经网络方法在自动摘要、综述生成任务中取得了比传统方法更为优异的表现"
         }
       ]
     },
@@ -5188,33 +4997,52 @@
       "entities": [
         {
           "entity_id": "non_15_e1",
-          "mention": "综述内容生成",
-          "normalized_name": "综述内容生成",
+          "mention": "面向检索结果集的综述内容生成",
+          "normalized_name": "面向检索结果集的综述内容生成",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "面向检索结果集的综述内容生成",
+          "evidence": "面向检索结果集的综述内容生成，必须满足以上3个方面的用户需求",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能为任务或概念，但原句作为术语讨论"
+          "uncertainty": "可能为研究主题或概念"
         },
         {
           "entity_id": "non_15_e2",
-          "mention": "结构化",
-          "normalized_name": "结构化",
+          "mention": "结构化的综述表达形式",
+          "normalized_name": "结构化的综述表达形式",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "所谓结构化，是指将获取的知识内容加以归纳和整理",
+          "evidence": "设计结构化的综述表达形式，显性揭示检索结果集",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "可能为方法或概念，但原句作为术语讨论"
+          "confidence": 0.85,
+          "uncertainty": "可能为方法或概念"
         }
       ],
-      "has_evaluation": false,
-      "relations": []
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "non_15",
+          "sentence": "笔者认为，面向检索结果集的综述内容生成，必须满足以上3个方面的用户需求。为此，设计结构化的综述表达形式，显性揭示检索结果集。所谓结构化，是指将获取的知识内容加以归纳和整理，使之条理化、纲领化。表现形式的结构化可以避免知识内容的杂乱无章，达到条理清晰、层次分明、一目了然的效果，可增强阅读和吸收效率。",
+          "subject": "_paper_author",
+          "object": "non_15_e1",
+          "aspect": null,
+          "opinion": "必须满足以上3个方面的用户需求",
+          "evidence": "面向检索结果集的综述内容生成，必须满足以上3个方面的用户需求"
+        },
+        {
+          "sentence_id": "non_15",
+          "sentence": "笔者认为，面向检索结果集的综述内容生成，必须满足以上3个方面的用户需求。为此，设计结构化的综述表达形式，显性揭示检索结果集。所谓结构化，是指将获取的知识内容加以归纳和整理，使之条理化、纲领化。表现形式的结构化可以避免知识内容的杂乱无章，达到条理清晰、层次分明、一目了然的效果，可增强阅读和吸收效率。",
+          "subject": "_paper_author",
+          "object": "non_15_e2",
+          "aspect": "表现形式",
+          "opinion": "可以避免知识内容的杂乱无章，达到条理清晰、层次分明、一目了然的效果，可增强阅读和吸收效率",
+          "evidence": "表现形式的结构化可以避免知识内容的杂乱无章，达到条理清晰、层次分明、一目了然的效果，可增强阅读和吸收效率"
+        }
+      ]
     },
     {
       "sentence_id": "non_19",
@@ -5222,8 +5050,8 @@
       "entities": [
         {
           "entity_id": "non_19_e1",
-          "mention": "综述生成方案",
-          "normalized_name": "综述生成方案",
+          "mention": "该综述生成方案",
+          "normalized_name": "该综述生成方案",
           "candidate_l3": "method",
           "candidate_l1": [
             "Abstract"
@@ -5231,11 +5059,21 @@
           "evidence": "该综述生成方案能够使得综述结果在整体上呈现结构化",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能为方法或框架，但原句描述其操作流程，标method"
+          "uncertainty": "可能指具体方案，但未给出名称，置信度较低"
         }
       ],
-      "has_evaluation": false,
-      "relations": []
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "non_19",
+          "sentence": "内容组织及结构化表达形式。该部分内容面向检索结果集进行合理的内容组织，依据组织方式设计合适的结构化表达形式，实现综述内容文本在整体层面的结构化表达。局部层面，对每个类别下的文献集进行综述文本内容的自动生成。该综述生成方案能够使得综述结果在整体上呈现结构化，局部上满足综述文本内容的针对性，更有实际应用意义。",
+          "subject": "_paper_author",
+          "object": "non_19_e1",
+          "aspect": "实际应用意义",
+          "opinion": "更有实际应用意义",
+          "evidence": "更有实际应用意义"
+        }
+      ]
     },
     {
       "sentence_id": "non_20",
@@ -5251,7 +5089,7 @@
           ],
           "evidence": "首先构建摘要模型",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.85,
           "uncertainty": "可能指具体模型，但未给出名称"
         },
         {
@@ -5264,7 +5102,7 @@
           ],
           "evidence": "选择合适的预训练模型",
           "is_specific_entity": true,
-          "confidence": 0.85,
+          "confidence": 0.8,
           "uncertainty": "泛称，未指定具体模型"
         },
         {
@@ -5275,7 +5113,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "构建学术文献数据集",
+          "evidence": "通过构建学术文献数据集对模型进行重新训练",
           "is_specific_entity": true,
           "confidence": 0.9,
           "uncertainty": ""
@@ -5303,8 +5141,8 @@
           ],
           "evidence": "构建结构化综述生成模型",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
+          "confidence": 0.85,
+          "uncertainty": "可能指具体模型，但未给出名称"
         },
         {
           "entity_id": "non_20_e6",
@@ -5316,8 +5154,8 @@
           ],
           "evidence": "通过设置优质的prompt模板",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "可能属于工具或模板"
+          "confidence": 0.8,
+          "uncertainty": "可能属于工具或模板，但未具体命名"
         }
       ],
       "has_evaluation": false,
@@ -5329,13 +5167,13 @@
       "entities": [
         {
           "entity_id": "non_22_e1",
-          "mention": "数字图书馆服务系统",
-          "normalized_name": "数字图书馆服务系统",
-          "candidate_l3": "information_system",
+          "mention": "NSTL",
+          "normalized_name": "NSTL",
+          "candidate_l3": "service",
           "candidate_l1": [
-            "Artifact"
+            "Agent"
           ],
-          "evidence": "在数字图书馆服务系统中，具备天然的知识组织能力优势",
+          "evidence": "NSTL 在知识组织方法和使用工具上",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -5355,32 +5193,71 @@
         },
         {
           "entity_id": "non_22_e3",
-          "mention": "NSTL",
-          "normalized_name": "NSTL",
-          "candidate_l3": "service",
-          "candidate_l1": [
-            "Agent"
-          ],
-          "evidence": "NSTL 在知识组织方法和使用工具上",
-          "is_specific_entity": true,
-          "confidence": 0.95,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "non_22_e4",
           "mention": "学科分类",
           "normalized_name": "学科分类",
-          "candidate_l3": "typology",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "学科分类（采用《中国图书馆分类法》）主要提供期刊或书目为单元的浏览导航和检索服务",
+          "evidence": "从单一的学科分类到科技术语、概念、范畴、本体的多层级知识组织能力",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为分类方案"
+          "confidence": 0.85,
+          "uncertainty": "可能指分类体系或方法，但此处作为概念"
+        },
+        {
+          "entity_id": "non_22_e4",
+          "mention": "科技术语",
+          "normalized_name": "科技术语",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从单一的学科分类到科技术语、概念、范畴、本体的多层级知识组织能力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
         },
         {
           "entity_id": "non_22_e5",
+          "mention": "概念",
+          "normalized_name": "概念",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从单一的学科分类到科技术语、概念、范畴、本体的多层级知识组织能力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛化概念，但此处作为知识组织层级之一"
+        },
+        {
+          "entity_id": "non_22_e6",
+          "mention": "范畴",
+          "normalized_name": "范畴",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从单一的学科分类到科技术语、概念、范畴、本体的多层级知识组织能力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "non_22_e7",
+          "mention": "本体",
+          "normalized_name": "本体",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从单一的学科分类到科技术语、概念、范畴、本体的多层级知识组织能力",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "non_22_e8",
           "mention": "《中国图书馆分类法》",
           "normalized_name": "《中国图书馆分类法》",
           "candidate_l3": "knowledge_organization_system",
@@ -5391,62 +5268,20 @@
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
-        },
-        {
-          "entity_id": "non_22_e6",
-          "mention": "科技术语",
-          "normalized_name": "科技术语",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "从单一的学科分类到科技术语、概念、范畴、本体的多层级知识组织能力",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为知识组织层级中的概念"
-        },
-        {
-          "entity_id": "non_22_e7",
-          "mention": "概念",
-          "normalized_name": "概念",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "从单一的学科分类到科技术语、概念、范畴、本体的多层级知识组织能力",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为知识组织层级中的概念"
-        },
-        {
-          "entity_id": "non_22_e8",
-          "mention": "范畴",
-          "normalized_name": "范畴",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "从单一的学科分类到科技术语、概念、范畴、本体的多层级知识组织能力",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为知识组织层级中的概念"
-        },
-        {
-          "entity_id": "non_22_e9",
-          "mention": "本体",
-          "normalized_name": "本体",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "从单一的学科分类到科技术语、概念、范畴、本体的多层级知识组织能力",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为知识组织层级中的概念"
         }
       ],
-      "has_evaluation": false,
-      "relations": []
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "non_22",
+          "sentence": "可喜的是，在数字图书馆服务系统中，具备天然的知识组织能力优势。知识组织是图书馆等信息服务机构或系统的一项基础性工作。NSTL 在知识组织方法和使用工具上，实现了从单一的学科分类到科技术语、概念、范畴、本体的多层级知识组织能力[22]。其中，学科分类（采用《中国图书馆分类法》）主要提供期刊或书目为单元的浏览导航和检索服务。在用户检索场景下，同样为检索结果集提供学科分类的分面功能，辅助用户进行学科层面的快速筛选。该服务功能可以看作是从学科或领域层面，对检索结果集的初步组织和整理。",
+          "subject": "_paper_author",
+          "object": "non_22_e1",
+          "aspect": "知识组织能力",
+          "opinion": "实现了从单一的学科分类到科技术语、概念、范畴、本体的多层级知识组织能力",
+          "evidence": "NSTL 在知识组织方法和使用工具上，实现了从单一的学科分类到科技术语、概念、范畴、本体的多层级知识组织能力[22]。"
+        }
+      ]
     },
     {
       "sentence_id": "non_25",
@@ -5463,7 +5298,7 @@
           "evidence": "该方案在整体层面上，呈现以学科为主线的结构化",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能指代具体方案，但原文未给出名称，作为框架处理"
+          "uncertainty": "可能指代具体方案，但原文未明确名称，作为框架处理"
         }
       ],
       "has_evaluation": true,
@@ -5473,45 +5308,18 @@
           "sentence": "如图2所示，该方案在整体层面上，呈现以学科为主线的结构化，保证了综述的全面性；局部层面上，呈现以语步功能的结构化，知识粒度细，层次分明，重点突出，能够在一定程度上帮助用户实现高效阅读、筛选和吸收。",
           "subject": "_paper_author",
           "object": "non_25_e1",
-          "aspect": "全面性",
-          "opinion": "保证了综述的全面性",
-          "evidence": "保证了综述的全面性"
+          "aspect": "整体层面",
+          "opinion": "呈现以学科为主线的结构化，保证了综述的全面性",
+          "evidence": "该方案在整体层面上，呈现以学科为主线的结构化，保证了综述的全面性"
         },
         {
           "sentence_id": "non_25",
           "sentence": "如图2所示，该方案在整体层面上，呈现以学科为主线的结构化，保证了综述的全面性；局部层面上，呈现以语步功能的结构化，知识粒度细，层次分明，重点突出，能够在一定程度上帮助用户实现高效阅读、筛选和吸收。",
           "subject": "_paper_author",
           "object": "non_25_e1",
-          "aspect": "知识粒度",
-          "opinion": "细",
-          "evidence": "知识粒度细"
-        },
-        {
-          "sentence_id": "non_25",
-          "sentence": "如图2所示，该方案在整体层面上，呈现以学科为主线的结构化，保证了综述的全面性；局部层面上，呈现以语步功能的结构化，知识粒度细，层次分明，重点突出，能够在一定程度上帮助用户实现高效阅读、筛选和吸收。",
-          "subject": "_paper_author",
-          "object": "non_25_e1",
-          "aspect": "层次",
-          "opinion": "分明",
-          "evidence": "层次分明"
-        },
-        {
-          "sentence_id": "non_25",
-          "sentence": "如图2所示，该方案在整体层面上，呈现以学科为主线的结构化，保证了综述的全面性；局部层面上，呈现以语步功能的结构化，知识粒度细，层次分明，重点突出，能够在一定程度上帮助用户实现高效阅读、筛选和吸收。",
-          "subject": "_paper_author",
-          "object": "non_25_e1",
-          "aspect": "重点",
-          "opinion": "突出",
-          "evidence": "重点突出"
-        },
-        {
-          "sentence_id": "non_25",
-          "sentence": "如图2所示，该方案在整体层面上，呈现以学科为主线的结构化，保证了综述的全面性；局部层面上，呈现以语步功能的结构化，知识粒度细，层次分明，重点突出，能够在一定程度上帮助用户实现高效阅读、筛选和吸收。",
-          "subject": "_paper_author",
-          "object": "non_25_e1",
-          "aspect": "帮助用户实现高效阅读、筛选和吸收",
-          "opinion": "能够在一定程度上帮助用户实现高效阅读、筛选和吸收",
-          "evidence": "能够在一定程度上帮助用户实现高效阅读、筛选和吸收"
+          "aspect": "局部层面",
+          "opinion": "呈现以语步功能的结构化，知识粒度细，层次分明，重点突出，能够在一定程度上帮助用户实现高效阅读、筛选和吸收",
+          "evidence": "局部层面上，呈现以语步功能的结构化，知识粒度细，层次分明，重点突出，能够在一定程度上帮助用户实现高效阅读、筛选和吸收"
         }
       ]
     },
@@ -5549,14 +5357,14 @@
           "entity_id": "non_26_e3",
           "mention": "文献原始文摘",
           "normalized_name": "文献原始文摘",
-          "candidate_l3": "concept",
+          "candidate_l3": "corpus",
           "candidate_l1": [
-            "Abstract"
+            "Artifact"
           ],
           "evidence": "基于文献原始文摘进行压缩归纳",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为数据来源概念"
+          "confidence": 0.7,
+          "uncertainty": "可能指数据资源，但非具体语料库名称"
         }
       ],
       "has_evaluation": false,
@@ -5574,15 +5382,15 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "基于预训练语言模型微调方法",
+          "evidence": "基于预训练语言模型微调方法，首先在大数据集上训练得到...",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
         },
         {
           "entity_id": "non_27_e2",
-          "mention": "基于ChatGPT等生成式大语言模型的方法",
-          "normalized_name": "基于ChatGPT等生成式大语言模型的方法",
+          "mention": "ChatGPT等生成式大语言模型的方法",
+          "normalized_name": "ChatGPT等生成式大语言模型的方法",
           "candidate_l3": "method",
           "candidate_l1": [
             "Abstract"
@@ -5600,36 +5408,36 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "基于ChatGPT等生成式大语言模型的方法",
+          "evidence": "因ChatGPT等大语言模型在开源情况、硬件环境要求等方面的限制",
           "is_specific_entity": true,
-          "confidence": 0.95,
-          "uncertainty": ""
+          "confidence": 0.9,
+          "uncertainty": "作为具体软件产品"
         },
         {
           "entity_id": "non_27_e4",
           "mention": "生成式自动文摘",
           "normalized_name": "生成式自动文摘",
-          "candidate_l3": "subfield",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "目前主流的生成式自动文摘主要有两类方法",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为研究子领域"
+          "confidence": 0.85,
+          "uncertainty": "作为技术概念"
         },
         {
           "entity_id": "non_27_e5",
-          "mention": "预训练语言模型",
-          "normalized_name": "预训练语言模型",
-          "candidate_l3": "concept",
+          "mention": "预训练模型",
+          "normalized_name": "预训练模型",
+          "candidate_l3": "model",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "基于预训练语言模型微调方法",
+          "evidence": "在大数据集上训练得到一个具有强泛化能力预训练模型",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为技术概念"
+          "uncertainty": ""
         },
         {
           "entity_id": "non_27_e6",
@@ -5639,14 +5447,46 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "基于ChatGPT等生成式大语言模型的方法",
+          "evidence": "因ChatGPT等大语言模型在开源情况、硬件环境要求等方面的限制",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.85,
           "uncertainty": "作为技术概念"
+        },
+        {
+          "entity_id": "non_27_e7",
+          "mention": "简短摘要生成任务",
+          "normalized_name": "简短摘要生成任务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "因为该简短摘要生成任务在整个综述框架下属于一个子模块",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为任务概念"
         }
       ],
-      "has_evaluation": false,
-      "relations": []
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "non_27",
+          "sentence": "基于相关研究现状的分析，目前主流的生成式自动文摘主要有两类方法： $\\textcircled{1}$ 基于预训练语言模型微调方法，首先在大数据集上训练得到一个具有强泛化能力预训练模型，然后在下游任务上通过领域数据集进行微调； $\\textcircled{2}$ 基于ChatGPT等生成式大语言模型的方法。因ChatGPT等大语言模型在开源情况、硬件环境要求等方面的限制，在实际应用的部署中具有一定的安全风险和复杂性。再者，因为该简短摘要生成任务在整个综述框架下属于一个子模块，任务内容单一明确，方法一完全能够在实际应用服务中发挥显著作用。因此，笔者在摘要模型中更倾向于基于预训练语言模型微调方法开展相关工作。",
+          "subject": "_paper_author",
+          "object": "non_27_e1",
+          "aspect": "实际应用服务中的作用",
+          "opinion": "完全能够在实际应用服务中发挥显著作用",
+          "evidence": "方法一完全能够在实际应用服务中发挥显著作用"
+        },
+        {
+          "sentence_id": "non_27",
+          "sentence": "基于相关研究现状的分析，目前主流的生成式自动文摘主要有两类方法： $\\textcircled{1}$ 基于预训练语言模型微调方法，首先在大数据集上训练得到一个具有强泛化能力预训练模型，然后在下游任务上通过领域数据集进行微调； $\\textcircled{2}$ 基于ChatGPT等生成式大语言模型的方法。因ChatGPT等大语言模型在开源情况、硬件环境要求等方面的限制，在实际应用的部署中具有一定的安全风险和复杂性。再者，因为该简短摘要生成任务在整个综述框架下属于一个子模块，任务内容单一明确，方法一完全能够在实际应用服务中发挥显著作用。因此，笔者在摘要模型中更倾向于基于预训练语言模型微调方法开展相关工作。",
+          "subject": "_paper_author",
+          "object": "non_27_e2",
+          "aspect": "安全风险和复杂性",
+          "opinion": "具有一定的安全风险和复杂性",
+          "evidence": "在实际应用的部署中具有一定的安全风险和复杂性"
+        }
+      ]
     },
     {
       "sentence_id": "non_42",
@@ -5676,46 +5516,33 @@
           "evidence": "针对大语言模型的相关研究越来越多",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为技术概念，非具体模型"
+          "uncertainty": "作为技术概念，非具体系统"
         },
         {
           "entity_id": "non_42_e3",
-          "mention": "大语言模型技术",
-          "normalized_name": "大语言模型技术",
+          "mention": "综述生成",
+          "normalized_name": "综述生成",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "利用大语言模型技术",
+          "evidence": "对综述生成的任务来说具有非常强的适用性",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "技术领域，非具体技术手段"
+          "confidence": 0.85,
+          "uncertainty": "可能为任务类型，但无具体命名"
         },
         {
           "entity_id": "non_42_e4",
-          "mention": "综述生成",
-          "normalized_name": "综述生成",
-          "candidate_l3": "task",
+          "mention": "科技文献检索结果集",
+          "normalized_name": "科技文献检索结果集",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "对综述生成的任务来说",
+          "evidence": "面向辅助阅读场景的科技文献检索结果集的结构化综述实际应用实践",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为研究任务，非具体方法"
-        },
-        {
-          "entity_id": "non_42_e5",
-          "mention": "科技文献检索结果集",
-          "normalized_name": "科技文献检索结果集",
-          "candidate_l3": "dataset",
-          "candidate_l1": [
-            "Artifact"
-          ],
-          "evidence": "科技文献检索结果集的结构化综述",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为数据集合，非具体数据集名称"
+          "confidence": 0.8,
+          "uncertainty": "可能为数据集或概念，但无具体名称"
         }
       ],
       "has_evaluation": false,
@@ -5736,7 +5563,7 @@
           "evidence": "各大公司相继推出了自己的大语言模型",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为技术概念讨论"
+          "uncertainty": "作为技术概念，非具体模型"
         },
         {
           "entity_id": "non_43_e2",
@@ -5749,20 +5576,7 @@
           "evidence": "大语言模型在英文科技文献集的综述生成中的实践探索",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能指具体语料库，但未给出名称"
-        },
-        {
-          "entity_id": "non_43_e3",
-          "mention": "综述生成",
-          "normalized_name": "综述生成",
-          "candidate_l3": "technique",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "大语言模型在英文科技文献集的综述生成中的实践探索",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "可能为任务或方法，但未明确具体技术"
+          "uncertainty": "可能指特定语料库，但原文未明确名称"
         }
       ],
       "has_evaluation": false,
@@ -5857,10 +5671,46 @@
           "sentence_id": "non_45",
           "sentence": "如表4所示，LLaMA是MetaAI公司发布的开放且高效的大型基础语言模型，Alpaca、Vicuna 和Koala都是在LLaMA的基础上进行微调构建的。这4 种模型主要使用英文语料进行训练，且都开源，在参数规模上都有较小的版本，能够基本满足本文面向实际应用的实践探索需要。结合实际的硬件资源情况及网络上对模型相关性能表现的评价，笔者选择Vicuna-7B作为实践对象。",
           "subject": "_paper_author",
-          "object": "non_45_e6",
-          "aspect": "性能表现",
+          "object": "non_45_e1",
+          "aspect": null,
+          "opinion": "开放且高效",
+          "evidence": "LLaMA是MetaAI公司发布的开放且高效的大型基础语言模型"
+        },
+        {
+          "sentence_id": "non_45",
+          "sentence": "如表4所示，LLaMA是MetaAI公司发布的开放且高效的大型基础语言模型，Alpaca、Vicuna 和Koala都是在LLaMA的基础上进行微调构建的。这4 种模型主要使用英文语料进行训练，且都开源，在参数规模上都有较小的版本，能够基本满足本文面向实际应用的实践探索需要。结合实际的硬件资源情况及网络上对模型相关性能表现的评价，笔者选择Vicuna-7B作为实践对象。",
+          "subject": "_paper_author",
+          "object": "non_45_e3",
+          "aspect": null,
           "opinion": "能够基本满足本文面向实际应用的实践探索需要",
-          "evidence": "能够基本满足本文面向实际应用的实践探索需要"
+          "evidence": "这4 种模型主要使用英文语料进行训练，且都开源，在参数规模上都有较小的版本，能够基本满足本文面向实际应用的实践探索需要"
+        },
+        {
+          "sentence_id": "non_45",
+          "sentence": "如表4所示，LLaMA是MetaAI公司发布的开放且高效的大型基础语言模型，Alpaca、Vicuna 和Koala都是在LLaMA的基础上进行微调构建的。这4 种模型主要使用英文语料进行训练，且都开源，在参数规模上都有较小的版本，能够基本满足本文面向实际应用的实践探索需要。结合实际的硬件资源情况及网络上对模型相关性能表现的评价，笔者选择Vicuna-7B作为实践对象。",
+          "subject": "_paper_author",
+          "object": "non_45_e4",
+          "aspect": null,
+          "opinion": "能够基本满足本文面向实际应用的实践探索需要",
+          "evidence": "这4 种模型主要使用英文语料进行训练，且都开源，在参数规模上都有较小的版本，能够基本满足本文面向实际应用的实践探索需要"
+        },
+        {
+          "sentence_id": "non_45",
+          "sentence": "如表4所示，LLaMA是MetaAI公司发布的开放且高效的大型基础语言模型，Alpaca、Vicuna 和Koala都是在LLaMA的基础上进行微调构建的。这4 种模型主要使用英文语料进行训练，且都开源，在参数规模上都有较小的版本，能够基本满足本文面向实际应用的实践探索需要。结合实际的硬件资源情况及网络上对模型相关性能表现的评价，笔者选择Vicuna-7B作为实践对象。",
+          "subject": "_paper_author",
+          "object": "non_45_e5",
+          "aspect": null,
+          "opinion": "能够基本满足本文面向实际应用的实践探索需要",
+          "evidence": "这4 种模型主要使用英文语料进行训练，且都开源，在参数规模上都有较小的版本，能够基本满足本文面向实际应用的实践探索需要"
+        },
+        {
+          "sentence_id": "non_45",
+          "sentence": "如表4所示，LLaMA是MetaAI公司发布的开放且高效的大型基础语言模型，Alpaca、Vicuna 和Koala都是在LLaMA的基础上进行微调构建的。这4 种模型主要使用英文语料进行训练，且都开源，在参数规模上都有较小的版本，能够基本满足本文面向实际应用的实践探索需要。结合实际的硬件资源情况及网络上对模型相关性能表现的评价，笔者选择Vicuna-7B作为实践对象。",
+          "subject": "_paper_author",
+          "object": "non_45_e6",
+          "aspect": "相关性能表现",
+          "opinion": "网络上对模型相关性能表现的评价",
+          "evidence": "网络上对模型相关性能表现的评价"
         }
       ]
     },
@@ -5870,13 +5720,13 @@
       "entities": [
         {
           "entity_id": "non_46_e1",
-          "mention": "Vicuna",
-          "normalized_name": "Vicuna",
+          "mention": "Vicuna开源大模型",
+          "normalized_name": "Vicuna开源大模型",
           "candidate_l3": "software",
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "Vicuna[2开源大模型",
+          "evidence": "Vicuna[2开源大模型是来自加州大学伯克利分校、卡内基梅隆大学和斯坦福大学等机构的学者",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -5931,7 +5781,7 @@
           "evidence": "受MetaLLaMA和StanfordAlpaca项目的启发",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "可能为模型名称"
+          "uncertainty": ""
         },
         {
           "entity_id": "non_46_e6",
@@ -5944,7 +5794,7 @@
           "evidence": "受MetaLLaMA和StanfordAlpaca项目的启发",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "可能为模型名称"
+          "uncertainty": ""
         },
         {
           "entity_id": "non_46_e7",
@@ -5970,7 +5820,7 @@
           "evidence": "包含Vicuna-7B和Vi-cuna-13B",
           "is_specific_entity": true,
           "confidence": 0.95,
-          "uncertainty": "原文拼写有误，规范化"
+          "uncertainty": ""
         },
         {
           "entity_id": "non_46_e9",
@@ -5999,8 +5849,27 @@
           "uncertainty": ""
         }
       ],
-      "has_evaluation": false,
-      "relations": []
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "non_46",
+          "sentence": "Vicuna[2开源大模型是来自加州大学伯克利分校、卡内基梅隆大学和斯坦福大学等机构的学者，受MetaLLaMA和StanfordAlpaca项目的启发共同推出，目前已经发布两个版本：包含Vicuna-7B和Vi-cuna-13B，即参数规模分别为70亿、130亿。Vicuna模型在不同的任务上都表现出优异的水平，在质量、多样性、一致性等指标上都达到接近ChatGPT/Bard的质量，而且明显优于其他基准模型。Vicuna 模型的整体架构如图5所示：",
+          "subject": "_paper_author",
+          "object": "non_46_e1",
+          "aspect": "不同任务上的表现",
+          "opinion": "表现出优异的水平",
+          "evidence": "Vicuna模型在不同的任务上都表现出优异的水平"
+        },
+        {
+          "sentence_id": "non_46",
+          "sentence": "Vicuna[2开源大模型是来自加州大学伯克利分校、卡内基梅隆大学和斯坦福大学等机构的学者，受MetaLLaMA和StanfordAlpaca项目的启发共同推出，目前已经发布两个版本：包含Vicuna-7B和Vi-cuna-13B，即参数规模分别为70亿、130亿。Vicuna模型在不同的任务上都表现出优异的水平，在质量、多样性、一致性等指标上都达到接近ChatGPT/Bard的质量，而且明显优于其他基准模型。Vicuna 模型的整体架构如图5所示：",
+          "subject": "_paper_author",
+          "object": "non_46_e1",
+          "aspect": "质量、多样性、一致性等指标",
+          "opinion": "达到接近ChatGPT/Bard的质量，而且明显优于其他基准模型",
+          "evidence": "在质量、多样性、一致性等指标上都达到接近ChatGPT/Bard的质量，而且明显优于其他基准模型"
+        }
+      ]
     },
     {
       "sentence_id": "non_50",
@@ -6017,7 +5886,7 @@
           "evidence": "摘要模型生成效果的评价",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能指具体模型，但未给出名称"
+          "uncertainty": "可能指具体模型，但未给出名称，暂按抽象模型处理"
         },
         {
           "entity_id": "non_50_e2",
@@ -6077,7 +5946,7 @@
           "evidence": "选择效果更优的PEGA ${ \\mathrm { S U S } } _ { \\mathrm { L A R G E } }$ 为基础实验模型",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "mention为原文公式形式，normalized_name为规范化名称"
+          "uncertainty": "mention包含LaTeX格式，normalized_name为规范形式"
         }
       ],
       "has_evaluation": false,
@@ -6123,8 +5992,8 @@
           ],
           "evidence": "PEG-$\\mathrm { A S U S } _ { \\mathrm { L A R G E } }$ 模型在ROUGE-1和ROUGE-L中的R召回率和F值上的表现有明显提升",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为评估指标，属于测量工具"
+          "confidence": 0.95,
+          "uncertainty": ""
         },
         {
           "entity_id": "non_67_e4",
@@ -6136,8 +6005,8 @@
           ],
           "evidence": "PEG-$\\mathrm { A S U S } _ { \\mathrm { L A R G E } }$ 模型在ROUGE-1和ROUGE-L中的R召回率和F值上的表现有明显提升",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为评估指标，属于测量工具"
+          "confidence": 0.95,
+          "uncertainty": ""
         },
         {
           "entity_id": "non_67_e5",
@@ -6149,8 +6018,8 @@
           ],
           "evidence": "$\\mathrm { P E G A S U S _ { L A R G E } }$ 模型的 ROUGE-2评分则整体处于下风",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为评估指标，属于测量工具"
+          "confidence": 0.95,
+          "uncertainty": ""
         },
         {
           "entity_id": "non_67_e6",
@@ -6162,8 +6031,8 @@
           ],
           "evidence": "召回率（R）计算的是机器生成摘要与标准参考摘要中基本单元的重叠度",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为评估指标概念，但可能属于instrument，此处按概念处理"
+          "confidence": 0.9,
+          "uncertainty": "作为评估指标概念"
         },
         {
           "entity_id": "non_67_e7",
@@ -6175,8 +6044,8 @@
           ],
           "evidence": "精确率（P）用于识别机器生成摘要中有多少内容是实际上相关或被需要的",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为评估指标概念，但可能属于instrument，此处按概念处理"
+          "confidence": 0.9,
+          "uncertainty": "作为评估指标概念"
         },
         {
           "entity_id": "non_67_e8",
@@ -6188,8 +6057,8 @@
           ],
           "evidence": "F值是综合两者的评估指标",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为评估指标概念，但可能属于instrument，此处按概念处理"
+          "confidence": 0.9,
+          "uncertainty": "作为评估指标概念"
         }
       ],
       "has_evaluation": true,
@@ -6199,7 +6068,16 @@
           "sentence": "如表6所示，评估指标共涉及3类，其中召回率（R）计算的是机器生成摘要与标准参考摘要中基本单元的重叠度，可用于衡量机器生成文本内容的全面性。精确率（P）用于识别机器生成摘要中有多少内容是实际上相关或被需要的，可用于判别机器生成文本的冗余度。F值是综合两者的评估指标，可用于反映机器生成文本的整体表现。从测试结果来看，PEG-$\\mathrm { A S U S } _ { \\mathrm { L A R G E } }$ 模型在ROUGE-1和ROUGE-L中的R召回率和F值上的表现有明显提升，代表其相对更能捕捉到原始语段中的重要内容，生成文本更全面，但在精确率上则稍弱，反映生成文段的冗余度偏高，文本内容不够简洁。而 $\\mathrm { P E G A S U S _ { L A R G E } }$ 模型的 ROUGE-2评分则整体处于下风。考虑到 $\\mathrm { P E G A S U S _ { L A R G E } }$ 模型的抽象能力更好，ROUGE-2分值的总体偏低可能在于原文复制比例低，因而二元词组的平均出现比例也相应降低。从F值来看， $\\mathrm { P E G A S U S _ { L A R G E } }$ 模型的综合表现则有优势，模型本身具有更优的性能。",
           "subject": "_paper_author",
           "object": "non_67_e1",
-          "aspect": "ROUGE-1和ROUGE-L中的R召回率和F值",
+          "aspect": "召回率",
+          "opinion": "有明显提升",
+          "evidence": "PEG-$\\mathrm { A S U S } _ { \\mathrm { L A R G E } }$ 模型在ROUGE-1和ROUGE-L中的R召回率和F值上的表现有明显提升"
+        },
+        {
+          "sentence_id": "non_67",
+          "sentence": "如表6所示，评估指标共涉及3类，其中召回率（R）计算的是机器生成摘要与标准参考摘要中基本单元的重叠度，可用于衡量机器生成文本内容的全面性。精确率（P）用于识别机器生成摘要中有多少内容是实际上相关或被需要的，可用于判别机器生成文本的冗余度。F值是综合两者的评估指标，可用于反映机器生成文本的整体表现。从测试结果来看，PEG-$\\mathrm { A S U S } _ { \\mathrm { L A R G E } }$ 模型在ROUGE-1和ROUGE-L中的R召回率和F值上的表现有明显提升，代表其相对更能捕捉到原始语段中的重要内容，生成文本更全面，但在精确率上则稍弱，反映生成文段的冗余度偏高，文本内容不够简洁。而 $\\mathrm { P E G A S U S _ { L A R G E } }$ 模型的 ROUGE-2评分则整体处于下风。考虑到 $\\mathrm { P E G A S U S _ { L A R G E } }$ 模型的抽象能力更好，ROUGE-2分值的总体偏低可能在于原文复制比例低，因而二元词组的平均出现比例也相应降低。从F值来看， $\\mathrm { P E G A S U S _ { L A R G E } }$ 模型的综合表现则有优势，模型本身具有更优的性能。",
+          "subject": "_paper_author",
+          "object": "non_67_e1",
+          "aspect": "F值",
           "opinion": "有明显提升",
           "evidence": "PEG-$\\mathrm { A S U S } _ { \\mathrm { L A R G E } }$ 模型在ROUGE-1和ROUGE-L中的R召回率和F值上的表现有明显提升"
         },
@@ -6244,7 +6122,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "在训练后的模型PEGASUSLARGE_PT上开展测试比例分别为0.1和1.0的生成效果测试",
+          "evidence": "在训练后的模型PEGASUSLARGE_PT上开展测试",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -6257,7 +6135,7 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "与未经过自建科技文献数据集训练的 $\\mathrm { P E G A S U S _ { L A R G E } }$ 模型的生成效果进行对比",
+          "evidence": "未经过自建科技文献数据集训练的 $\\mathrm { P E G A S U S _ { L A R G E } }$ 模型",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -6270,7 +6148,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "未经过自建科技文献数据集训练的 $\\mathrm { P E G A S U S _ { L A R G E } }$ 模型",
+          "evidence": "自建科技文献数据集对模型进行补充训练",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""

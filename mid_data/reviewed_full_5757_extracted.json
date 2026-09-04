@@ -1,0 +1,1283 @@
+{
+  "base_name": "reviewed_full_5757",
+  "stage": "agent1_relation_agent2_entity_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "摘要分析了我国农业信息产业的发展状况及其存在的弊端，提出5点改进措施，旨在推动我国农业信息产业的发展。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "我国农业信息产业",
+          "normalized_name": "我国农业信息产业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "摘要分析了我国农业信息产业的发展状况及其存在的弊端",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为产业概念，非具体组织"
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "1",
+          "sentence": "摘要分析了我国农业信息产业的发展状况及其存在的弊端，提出5点改进措施，旨在推动我国农业信息产业的发展。",
+          "subject": "_paper_author",
+          "object": "1_e1",
+          "aspect": "发展状况",
+          "opinion": "分析了我国农业信息产业的发展状况及其存在的弊端",
+          "evidence": "分析了我国农业信息产业的发展状况及其存在的弊端"
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "1990年有部级农牧渔科技信息机构4个，省农业科学院情报研究所及院属专业研究所情报室和农业大专院校图书馆情报室及系属图书馆情报室以上农业科技信息单位303个，职工4522人，其中高级职称448人，中级职称丨219人，初级职称1336人。 经过四十年的努力奋斗，我国信息工作有了长足的进步，各类信息机构日益增多，据1993年中国信息协会的材料统计，全国已有百余个重要信息网络，上千种信息刊物，4万多家咨询机构，2万多家信息服务机构，从业人员100万人，营业额30亿元左右。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "部级农牧渔科技信息机构",
+          "normalized_name": "部级农牧渔科技信息机构",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1990年有部级农牧渔科技信息机构4个",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称机构类别，但具体数量，可能指具体机构，但未具名"
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "省农业科学院情报研究所",
+          "normalized_name": "省农业科学院情报研究所",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "省农业科学院情报研究所及院属专业研究所情报室和农业大专院校图书馆情报室及系属图书馆情报室以上农业科技信息单位303个",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称机构类型，但可能指具体机构，未具名"
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "农业大专院校图书馆情报室",
+          "normalized_name": "农业大专院校图书馆情报室",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "农业大专院校图书馆情报室及系属图书馆情报室以上农业科技信息单位303个",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称机构类型，但可能指具体机构，未具名"
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "中国信息协会",
+          "normalized_name": "中国信息协会",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "据1993年中国信息协会的材料统计",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e5",
+          "mention": "信息网络",
+          "normalized_name": "信息网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "全国已有百余个重要信息网络",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "泛称，可能指具体网络，但未具名"
+        },
+        {
+          "entity_id": "2_e6",
+          "mention": "信息刊物",
+          "normalized_name": "信息刊物",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "上千种信息刊物",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "泛称，可能指具体刊物，但未具名"
+        },
+        {
+          "entity_id": "2_e7",
+          "mention": "咨询机构",
+          "normalized_name": "咨询机构",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "4万多家咨询机构",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "泛称机构类别，但未具名"
+        },
+        {
+          "entity_id": "2_e8",
+          "mention": "信息服务机构",
+          "normalized_name": "信息服务机构",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "2万多家信息服务机构",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "泛称机构类别，但未具名"
+        }
+      ],
+      "has_evaluation": false,
+      "relations": []
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "各产业、行业信息系统的信息互不交流，一些信息机构只从事-些简单的信息收集，缺少专业化的分工，致使出现虚假信息，严重损害了用户利益和信息行业的信誉。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "各产业、行业信息系统",
+          "normalized_name": "各产业、行业信息系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "各产业、行业信息系统的信息互不交流",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称，未指明具体系统"
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "一些信息机构",
+          "normalized_name": "一些信息机构",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "一些信息机构只从事-些简单的信息收集",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "泛称，未指明具体机构"
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "虚假信息",
+          "normalized_name": "虚假信息",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "致使出现虚假信息",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e4",
+          "mention": "用户利益",
+          "normalized_name": "用户利益",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "严重损害了用户利益",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "抽象概念，非具体实体"
+        },
+        {
+          "entity_id": "3_e5",
+          "mention": "信息行业的信誉",
+          "normalized_name": "信息行业的信誉",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "损害了用户利益和信息行业的信誉",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "抽象概念，非具体实体"
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "3",
+          "sentence": "各产业、行业信息系统的信息互不交流，一些信息机构只从事-些简单的信息收集，缺少专业化的分工，致使出现虚假信息，严重损害了用户利益和信息行业的信誉。",
+          "subject": "_paper_author",
+          "object": "3_e1",
+          "aspect": "信息交流",
+          "opinion": "互不交流",
+          "evidence": "各产业、行业信息系统的信息互不交流"
+        },
+        {
+          "sentence_id": "3",
+          "sentence": "各产业、行业信息系统的信息互不交流，一些信息机构只从事-些简单的信息收集，缺少专业化的分工，致使出现虚假信息，严重损害了用户利益和信息行业的信誉。",
+          "subject": "_paper_author",
+          "object": "3_e2",
+          "aspect": "工作内容",
+          "opinion": "只从事一些简单的信息收集，缺少专业化的分工",
+          "evidence": "一些信息机构只从事一些简单的信息收集，缺少专业化的分工"
+        },
+        {
+          "sentence_id": "3",
+          "sentence": "各产业、行业信息系统的信息互不交流，一些信息机构只从事-些简单的信息收集，缺少专业化的分工，致使出现虚假信息，严重损害了用户利益和信息行业的信誉。",
+          "subject": "_paper_author",
+          "object": "3_e3",
+          "aspect": null,
+          "opinion": "虚假",
+          "evidence": "致使出现虚假信息"
+        },
+        {
+          "sentence_id": "3",
+          "sentence": "各产业、行业信息系统的信息互不交流，一些信息机构只从事-些简单的信息收集，缺少专业化的分工，致使出现虚假信息，严重损害了用户利益和信息行业的信誉。",
+          "subject": "_paper_author",
+          "object": "3_e4",
+          "aspect": null,
+          "opinion": "严重损害",
+          "evidence": "严重损害了用户利益"
+        },
+        {
+          "sentence_id": "3",
+          "sentence": "各产业、行业信息系统的信息互不交流，一些信息机构只从事-些简单的信息收集，缺少专业化的分工，致使出现虚假信息，严重损害了用户利益和信息行业的信誉。",
+          "subject": "_paper_author",
+          "object": "3_e5",
+          "aspect": null,
+          "opinion": "严重损害",
+          "evidence": "严重损害了用户利益和信息行业的信誉"
+        }
+      ]
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "我国农村许多农民不知道信息的作用，更不知如何获取信息； 乡镇企业忽视信息在企业中的作用，缺乏对信息的需求，只看到资本的有形价值，却看不到资本的无形价值，舍得花钱买设备却舍不得买信息。",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "农民",
+          "normalized_name": "农民",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "我国农村许多农民不知道信息的作用",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称，但已知实体要求保留"
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "乡镇企业",
+          "normalized_name": "乡镇企业",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "乡镇企业忽视信息在企业中的作用",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称，但已知实体要求保留"
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "4",
+          "sentence": "我国农村许多农民不知道信息的作用，更不知如何获取信息； 乡镇企业忽视信息在企业中的作用，缺乏对信息的需求，只看到资本的有形价值，却看不到资本的无形价值，舍得花钱买设备却舍不得买信息。",
+          "subject": "_paper_author",
+          "object": "4_e1",
+          "aspect": "信息意识",
+          "opinion": "不知道信息的作用，更不知如何获取信息",
+          "evidence": "我国农村许多农民不知道信息的作用，更不知如何获取信息"
+        },
+        {
+          "sentence_id": "4",
+          "sentence": "我国农村许多农民不知道信息的作用，更不知如何获取信息； 乡镇企业忽视信息在企业中的作用，缺乏对信息的需求，只看到资本的有形价值，却看不到资本的无形价值，舍得花钱买设备却舍不得买信息。",
+          "subject": "_paper_author",
+          "object": "4_e2",
+          "aspect": "信息意识",
+          "opinion": "忽视信息在企业中的作用，缺乏对信息的需求",
+          "evidence": "乡镇企业忽视信息在企业中的作用，缺乏对信息的需求"
+        }
+      ]
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "我国信息产业有了较大的发展，但大多数县、乡镇信息机构不健全，甚至没有。信息人才缺乏，具有专业特长的人员较少，改行人员较多，业务素质较低，不适应信息产业的发展。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "我国信息产业",
+          "normalized_name": "我国信息产业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国信息产业有了较大的发展",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为产业领域概念，非具体组织"
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "县、乡镇信息机构",
+          "normalized_name": "县乡镇信息机构",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "大多数县、乡镇信息机构不健全",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称机构类别，但已知实体要求保留"
+        },
+        {
+          "entity_id": "5_e3",
+          "mention": "信息人才",
+          "normalized_name": "信息人才",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息人才缺乏",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称人才类别，但已知实体要求保留"
+        },
+        {
+          "entity_id": "5_e4",
+          "mention": "具有专业特长的人员",
+          "normalized_name": "专业特长人员",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "具有专业特长的人员较少",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称人员类别，但已知实体要求保留"
+        },
+        {
+          "entity_id": "5_e5",
+          "mention": "改行人员",
+          "normalized_name": "改行人员",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "改行人员较多",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称人员类别，但已知实体要求保留"
+        },
+        {
+          "entity_id": "5_e6",
+          "mention": "业务素质",
+          "normalized_name": "业务素质",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "业务素质较低",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "抽象概念，但已知实体要求保留"
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "5",
+          "sentence": "我国信息产业有了较大的发展，但大多数县、乡镇信息机构不健全，甚至没有。信息人才缺乏，具有专业特长的人员较少，改行人员较多，业务素质较低，不适应信息产业的发展。",
+          "subject": "_paper_author",
+          "object": "5_e1",
+          "aspect": null,
+          "opinion": "有了较大的发展",
+          "evidence": "我国信息产业有了较大的发展"
+        },
+        {
+          "sentence_id": "5",
+          "sentence": "我国信息产业有了较大的发展，但大多数县、乡镇信息机构不健全，甚至没有。信息人才缺乏，具有专业特长的人员较少，改行人员较多，业务素质较低，不适应信息产业的发展。",
+          "subject": "_paper_author",
+          "object": "5_e2",
+          "aspect": null,
+          "opinion": "不健全",
+          "evidence": "大多数县、乡镇信息机构不健全"
+        },
+        {
+          "sentence_id": "5",
+          "sentence": "我国信息产业有了较大的发展，但大多数县、乡镇信息机构不健全，甚至没有。信息人才缺乏，具有专业特长的人员较少，改行人员较多，业务素质较低，不适应信息产业的发展。",
+          "subject": "_paper_author",
+          "object": "5_e3",
+          "aspect": null,
+          "opinion": "缺乏",
+          "evidence": "信息人才缺乏"
+        },
+        {
+          "sentence_id": "5",
+          "sentence": "我国信息产业有了较大的发展，但大多数县、乡镇信息机构不健全，甚至没有。信息人才缺乏，具有专业特长的人员较少，改行人员较多，业务素质较低，不适应信息产业的发展。",
+          "subject": "_paper_author",
+          "object": "5_e4",
+          "aspect": null,
+          "opinion": "较少",
+          "evidence": "具有专业特长的人员较少"
+        },
+        {
+          "sentence_id": "5",
+          "sentence": "我国信息产业有了较大的发展，但大多数县、乡镇信息机构不健全，甚至没有。信息人才缺乏，具有专业特长的人员较少，改行人员较多，业务素质较低，不适应信息产业的发展。",
+          "subject": "_paper_author",
+          "object": "5_e5",
+          "aspect": null,
+          "opinion": "较多",
+          "evidence": "改行人员较多"
+        },
+        {
+          "sentence_id": "5",
+          "sentence": "我国信息产业有了较大的发展，但大多数县、乡镇信息机构不健全，甚至没有。信息人才缺乏，具有专业特长的人员较少，改行人员较多，业务素质较低，不适应信息产业的发展。",
+          "subject": "_paper_author",
+          "object": "5_e6",
+          "aspect": null,
+          "opinion": "较低",
+          "evidence": "业务素质较低"
+        }
+      ]
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "是以电子、通讯两大产业为“硬件\"，以计算机、软件和数据库技术为支柱的产业。 我国缺乏生产大型计算机系统的能力，软件、数据库多使用进口，且人员不足，力量分散，使用时兼容与接口标准不一致。发达国家把发展计算机，推广数据库应用作为信息产业的主要目标。1993年全世界共拥有各类计算机1.48亿台，全世界平均每百人拥有27台计算机，在美国每千人拥有计算机265台，而中国每千人拥有一台计算机，而且利用率低； 数据库总量不足世界 $1 \\%$ ，产值只有$1 \\%$ ，信息服务业产值只占全国GNP的 $2 \\%$ ，占世界信息服务业的 $3 \\%$ ：",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "计算机",
+          "normalized_name": "计算机",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以计算机、软件和数据库技术为支柱的产业",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛指计算机技术，非具体系统"
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "软件",
+          "normalized_name": "软件",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "软件、数据库多使用进口",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛指软件产品，非具体软件"
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "数据库",
+          "normalized_name": "数据库",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "软件、数据库多使用进口",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛指数据库技术，非具体数据库"
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "数据库技术",
+          "normalized_name": "数据库技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以计算机、软件和数据库技术为支柱的产业",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "技术领域概念"
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "大型计算机系统",
+          "normalized_name": "大型计算机系统",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "缺乏生产大型计算机系统的能力",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛指系统类型，非具体系统"
+        },
+        {
+          "entity_id": "6_e6",
+          "mention": "信息产业",
+          "normalized_name": "信息产业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "作为信息产业的主要目标",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "产业领域概念"
+        },
+        {
+          "entity_id": "6_e7",
+          "mention": "信息服务业",
+          "normalized_name": "信息服务业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息服务业产值只占全国GNP的2%",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "产业领域概念"
+        },
+        {
+          "entity_id": "6_e8",
+          "mention": "美国",
+          "normalized_name": "美国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "在美国每千人拥有计算机265台",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "作为国家主体，可能指政府或整体"
+        },
+        {
+          "entity_id": "6_e9",
+          "mention": "中国",
+          "normalized_name": "中国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "而中国每千人拥有一台计算机",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "作为国家主体，可能指政府或整体"
+        }
+      ],
+      "has_evaluation": false,
+      "relations": []
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "本身素质不高，缺乏实践经验，对实用信息抓得不准，而农业科学转化周期长，受外界环境影响较大，使我国农业科技成果转化率较低，只在 $40 \\%$ 左右.主要原因是科研与中间渠道不畅，信息不灵所造成的。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "我国农业科技成果转化",
+          "normalized_name": "我国农业科技成果转化",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使我国农业科技成果转化率较低",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指转化过程或现象，但作为已知实体保留"
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "7",
+          "sentence": "本身素质不高，缺乏实践经验，对实用信息抓得不准，而农业科学转化周期长，受外界环境影响较大，使我国农业科技成果转化率较低，只在 $40 \\%$ 左右.主要原因是科研与中间渠道不畅，信息不灵所造成的。",
+          "subject": "_paper_author",
+          "object": "7_e1",
+          "aspect": "转化率",
+          "opinion": "较低",
+          "evidence": "使我国农业科技成果转化率较低"
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "1980年邓小平同志提出：开发信息资源，服务四化建设。党的十四届三中全会作出决定指出：信息市场要重点培养，信息要实现商品化和产业化，信息咨询机构要着重发展，要面向市场，逐步实现企业化经营，增强自我发展和市场竞争能力。笔者认为要发展我国农业信息产业必须做到以下几点：",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "邓小平",
+          "normalized_name": "邓小平",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "1980年邓小平同志提出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "党的十四届三中全会",
+          "normalized_name": "中国共产党第十四届中央委员会第三次全体会议",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "党的十四届三中全会作出决定指出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "信息资源",
+          "normalized_name": "信息资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "开发信息资源",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为术语讨论"
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "信息市场",
+          "normalized_name": "信息市场",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息市场要重点培养",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为经济概念"
+        },
+        {
+          "entity_id": "8_e5",
+          "mention": "信息商品化",
+          "normalized_name": "信息商品化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息要实现商品化和产业化",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e6",
+          "mention": "产业化",
+          "normalized_name": "产业化",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息要实现商品化和产业化",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e7",
+          "mention": "信息咨询机构",
+          "normalized_name": "信息咨询机构",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息咨询机构要着重发展",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为机构类别，非具体机构"
+        },
+        {
+          "entity_id": "8_e8",
+          "mention": "农业信息产业",
+          "normalized_name": "农业信息产业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "发展我国农业信息产业",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ],
+      "has_evaluation": false,
+      "relations": []
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "改革开放以来，我国农村面貌虽然发生了深刻的变化，乡镇企业有了前所未有的发展，对人才信息、技术信息、市场信息有了求之若渴的要求。 但绝大多数地区的乡镇企业和农民市场竞争观念依然淡薄，农业劳动者素质普遍低下，农村中文盲半文盲人口仍占有相当比例，自给自足的小农经济思想一直顽固盘踞在人们的头脑中。所以当务之急是要提高农民对信息的认识，举办诸如信息发布会、信息培训班，办农村扫盲和农技信息班等，对农民进行信息致富、科技致富的教育，讲清利用科技信息致富的重要性，增强农民对信息的吸引力。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "我国农村",
+          "normalized_name": "我国农村",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国农村面貌虽然发生了深刻的变化",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "农村作为地理区域，但此处指代农村发展现象，可能不具体"
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "乡镇企业",
+          "normalized_name": "乡镇企业",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "乡镇企业有了前所未有的发展",
+          "is_specific_entity": false,
+          "confidence": 0.6,
+          "uncertainty": "泛称，不指具体企业"
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "绝大多数地区的乡镇企业和农民",
+          "normalized_name": "绝大多数地区的乡镇企业和农民",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "绝大多数地区的乡镇企业和农民市场竞争观念依然淡薄",
+          "is_specific_entity": false,
+          "confidence": 0.5,
+          "uncertainty": "泛称群体"
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "农业劳动者素质",
+          "normalized_name": "农业劳动者素质",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "农业劳动者素质普遍低下",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为概念讨论"
+        },
+        {
+          "entity_id": "9_e5",
+          "mention": "农村中文盲半文盲人口",
+          "normalized_name": "农村中文盲半文盲人口",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "农村中文盲半文盲人口仍占有相当比例",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "社会现象"
+        },
+        {
+          "entity_id": "9_e6",
+          "mention": "自给自足的小农经济思想",
+          "normalized_name": "自给自足的小农经济思想",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "自给自足的小农经济思想一直顽固盘踞在人们的头脑中",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e7",
+          "mention": "信息发布会",
+          "normalized_name": "信息发布会",
+          "candidate_l3": "event",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "举办诸如信息发布会、信息培训班",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "具体活动类型"
+        },
+        {
+          "entity_id": "9_e8",
+          "mention": "信息培训班",
+          "normalized_name": "信息培训班",
+          "candidate_l3": "event",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "举办诸如信息发布会、信息培训班",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "具体活动类型"
+        },
+        {
+          "entity_id": "9_e9",
+          "mention": "农村扫盲和农技信息班",
+          "normalized_name": "农村扫盲和农技信息班",
+          "candidate_l3": "event",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "办农村扫盲和农技信息班等",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "具体活动类型"
+        },
+        {
+          "entity_id": "9_e10",
+          "mention": "信息致富",
+          "normalized_name": "信息致富",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对农民进行信息致富、科技致富的教育",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "概念"
+        },
+        {
+          "entity_id": "9_e11",
+          "mention": "科技致富",
+          "normalized_name": "科技致富",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对农民进行信息致富、科技致富的教育",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "概念"
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "9",
+          "sentence": "改革开放以来，我国农村面貌虽然发生了深刻的变化，乡镇企业有了前所未有的发展，对人才信息、技术信息、市场信息有了求之若渴的要求。 但绝大多数地区的乡镇企业和农民市场竞争观念依然淡薄，农业劳动者素质普遍低下，农村中文盲半文盲人口仍占有相当比例，自给自足的小农经济思想一直顽固盘踞在人们的头脑中。所以当务之急是要提高农民对信息的认识，举办诸如信息发布会、信息培训班，办农村扫盲和农技信息班等，对农民进行信息致富、科技致富的教育，讲清利用科技信息致富的重要性，增强农民对信息的吸引力。",
+          "subject": "_paper_author",
+          "object": "9_e1",
+          "aspect": "面貌",
+          "opinion": "发生了深刻的变化",
+          "evidence": "我国农村面貌虽然发生了深刻的变化"
+        },
+        {
+          "sentence_id": "9",
+          "sentence": "改革开放以来，我国农村面貌虽然发生了深刻的变化，乡镇企业有了前所未有的发展，对人才信息、技术信息、市场信息有了求之若渴的要求。 但绝大多数地区的乡镇企业和农民市场竞争观念依然淡薄，农业劳动者素质普遍低下，农村中文盲半文盲人口仍占有相当比例，自给自足的小农经济思想一直顽固盘踞在人们的头脑中。所以当务之急是要提高农民对信息的认识，举办诸如信息发布会、信息培训班，办农村扫盲和农技信息班等，对农民进行信息致富、科技致富的教育，讲清利用科技信息致富的重要性，增强农民对信息的吸引力。",
+          "subject": "_paper_author",
+          "object": "9_e2",
+          "aspect": "发展",
+          "opinion": "有了前所未有的发展",
+          "evidence": "乡镇企业有了前所未有的发展"
+        },
+        {
+          "sentence_id": "9",
+          "sentence": "改革开放以来，我国农村面貌虽然发生了深刻的变化，乡镇企业有了前所未有的发展，对人才信息、技术信息、市场信息有了求之若渴的要求。 但绝大多数地区的乡镇企业和农民市场竞争观念依然淡薄，农业劳动者素质普遍低下，农村中文盲半文盲人口仍占有相当比例，自给自足的小农经济思想一直顽固盘踞在人们的头脑中。所以当务之急是要提高农民对信息的认识，举办诸如信息发布会、信息培训班，办农村扫盲和农技信息班等，对农民进行信息致富、科技致富的教育，讲清利用科技信息致富的重要性，增强农民对信息的吸引力。",
+          "subject": "_paper_author",
+          "object": "9_e3",
+          "aspect": "市场竞争观念",
+          "opinion": "依然淡薄",
+          "evidence": "绝大多数地区的乡镇企业和农民市场竞争观念依然淡薄"
+        },
+        {
+          "sentence_id": "9",
+          "sentence": "改革开放以来，我国农村面貌虽然发生了深刻的变化，乡镇企业有了前所未有的发展，对人才信息、技术信息、市场信息有了求之若渴的要求。 但绝大多数地区的乡镇企业和农民市场竞争观念依然淡薄，农业劳动者素质普遍低下，农村中文盲半文盲人口仍占有相当比例，自给自足的小农经济思想一直顽固盘踞在人们的头脑中。所以当务之急是要提高农民对信息的认识，举办诸如信息发布会、信息培训班，办农村扫盲和农技信息班等，对农民进行信息致富、科技致富的教育，讲清利用科技信息致富的重要性，增强农民对信息的吸引力。",
+          "subject": "_paper_author",
+          "object": "9_e4",
+          "aspect": null,
+          "opinion": "普遍低下",
+          "evidence": "农业劳动者素质普遍低下"
+        },
+        {
+          "sentence_id": "9",
+          "sentence": "改革开放以来，我国农村面貌虽然发生了深刻的变化，乡镇企业有了前所未有的发展，对人才信息、技术信息、市场信息有了求之若渴的要求。 但绝大多数地区的乡镇企业和农民市场竞争观念依然淡薄，农业劳动者素质普遍低下，农村中文盲半文盲人口仍占有相当比例，自给自足的小农经济思想一直顽固盘踞在人们的头脑中。所以当务之急是要提高农民对信息的认识，举办诸如信息发布会、信息培训班，办农村扫盲和农技信息班等，对农民进行信息致富、科技致富的教育，讲清利用科技信息致富的重要性，增强农民对信息的吸引力。",
+          "subject": "_paper_author",
+          "object": "9_e5",
+          "aspect": null,
+          "opinion": "仍占有相当比例",
+          "evidence": "农村中文盲半文盲人口仍占有相当比例"
+        },
+        {
+          "sentence_id": "9",
+          "sentence": "改革开放以来，我国农村面貌虽然发生了深刻的变化，乡镇企业有了前所未有的发展，对人才信息、技术信息、市场信息有了求之若渴的要求。 但绝大多数地区的乡镇企业和农民市场竞争观念依然淡薄，农业劳动者素质普遍低下，农村中文盲半文盲人口仍占有相当比例，自给自足的小农经济思想一直顽固盘踞在人们的头脑中。所以当务之急是要提高农民对信息的认识，举办诸如信息发布会、信息培训班，办农村扫盲和农技信息班等，对农民进行信息致富、科技致富的教育，讲清利用科技信息致富的重要性，增强农民对信息的吸引力。",
+          "subject": "_paper_author",
+          "object": "9_e6",
+          "aspect": null,
+          "opinion": "一直顽固盘踞在人们的头脑中",
+          "evidence": "自给自足的小农经济思想一直顽固盘踞在人们的头脑中"
+        }
+      ]
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "我国的信息技术虽然已有一定的基础，但计算机和通信产业尚处于落后阶段。从生产方面看，全世界信息业1991年产值达2030亿美元，而中国只有30多亿人民币。 为此，必须积极发展计算机，加快电子、通讯技术设施的建设，建立数据库和自动化信息管理系统。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "我国的信息技术",
+          "normalized_name": "我国信息技术",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国的信息技术虽然已有一定的基础",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为技术领域概念"
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "计算机和通信产业",
+          "normalized_name": "计算机和通信产业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "计算机和通信产业尚处于落后阶段",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为产业领域概念"
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "全世界信息业",
+          "normalized_name": "全世界信息业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "全世界信息业1991年产值达2030亿美元",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为行业概念"
+        },
+        {
+          "entity_id": "10_e4",
+          "mention": "中国",
+          "normalized_name": "中国",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "而中国只有30多亿人民币",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "此处指国家主体，可视为治理主体"
+        },
+        {
+          "entity_id": "10_e5",
+          "mention": "电子",
+          "normalized_name": "电子",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加快电子、通讯技术设施的建设",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "作为技术领域概念"
+        },
+        {
+          "entity_id": "10_e6",
+          "mention": "通讯技术设施",
+          "normalized_name": "通讯技术设施",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "加快电子、通讯技术设施的建设",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "作为基础设施概念"
+        },
+        {
+          "entity_id": "10_e7",
+          "mention": "数据库",
+          "normalized_name": "数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建立数据库和自动化信息管理系统",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛指数据库类型，但作为具体制品类别"
+        },
+        {
+          "entity_id": "10_e8",
+          "mention": "自动化信息管理系统",
+          "normalized_name": "自动化信息管理系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "建立数据库和自动化信息管理系统",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛指系统类型，但作为具体制品类别"
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "10",
+          "sentence": "我国的信息技术虽然已有一定的基础，但计算机和通信产业尚处于落后阶段。从生产方面看，全世界信息业1991年产值达2030亿美元，而中国只有30多亿人民币。 为此，必须积极发展计算机，加快电子、通讯技术设施的建设，建立数据库和自动化信息管理系统。",
+          "subject": "_paper_author",
+          "object": "10_e1",
+          "aspect": null,
+          "opinion": "已有一定的基础",
+          "evidence": "我国的信息技术虽然已有一定的基础"
+        },
+        {
+          "sentence_id": "10",
+          "sentence": "我国的信息技术虽然已有一定的基础，但计算机和通信产业尚处于落后阶段。从生产方面看，全世界信息业1991年产值达2030亿美元，而中国只有30多亿人民币。 为此，必须积极发展计算机，加快电子、通讯技术设施的建设，建立数据库和自动化信息管理系统。",
+          "subject": "_paper_author",
+          "object": "10_e2",
+          "aspect": null,
+          "opinion": "尚处于落后阶段",
+          "evidence": "计算机和通信产业尚处于落后阶段"
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "从农业信息结构来讲，没有必要延伸到乡一级、村一级，但是从农业信息工作和信息网络来讲，必须延伸到乡一级、村一级，实现这种延伸就要借助现有的农业社会化服务体系，充分发挥乡农业、农经、农机等组织和村农民技术员的作用，采取签订合同，定任务，发聘书，付报酬等措施，让他们承担起直接为农民服务的信息收集、传播、引导的任务，起到用信息联系群众、服务群众的纽带和桥梁作用。 只有通过部门之间信息的横向交流，实现信息资源共享，农业部门领导才能了解各方面的情况，通观全局，做出正确判断，减少政策上的偏差和失误·才能掌握工作中的主动权。如果现有的信息机构无论同一地区的或不同地区的，同行业的或跨行业的能组成协作网，加强横向联系，同时积极发展以信息机构为中心的信息咨询服务网络，那么利用这种双重的信息服务网络开展信息业务，不但能提高信息服务的效果，而且可以提高社会的信息意识，有利于发展我国的信息产业。 例如我们农业院校的图书馆信息部门，位置处于农村，可以和附近的县、乡镇等信息部门联网，利用我们高校文献信息资源的优势为科技兴农服务，把科技、信息资源更大限度地开发出来，为农业服务。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "农业社会化服务体系",
+          "normalized_name": "农业社会化服务体系",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现这种延伸就要借助现有的农业社会化服务体系",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为概念讨论，非具体组织"
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "乡农业、农经、农机等组织",
+          "normalized_name": "乡农业、农经、农机等组织",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "充分发挥乡农业、农经、农机等组织和村农民技术员的作用",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称组织，但具体到乡级类型，可能不唯一"
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "村农民技术员",
+          "normalized_name": "村农民技术员",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "充分发挥乡农业、农经、农机等组织和村农民技术员的作用",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "泛称职业，非具体个人"
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "信息资源共享",
+          "normalized_name": "信息资源共享",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "实现信息资源共享",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "信息机构",
+          "normalized_name": "信息机构",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "如果现有的信息机构无论同一地区的或不同地区的",
+          "is_specific_entity": true,
+          "confidence": 0.5,
+          "uncertainty": "泛称机构，非具体组织"
+        },
+        {
+          "entity_id": "11_e6",
+          "mention": "协作网",
+          "normalized_name": "协作网",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "能组成协作网",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称网络，非具体系统"
+        },
+        {
+          "entity_id": "11_e7",
+          "mention": "信息咨询服务网络",
+          "normalized_name": "信息咨询服务网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "积极发展以信息机构为中心的信息咨询服务网络",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称网络，非具体系统"
+        },
+        {
+          "entity_id": "11_e8",
+          "mention": "信息服务网络",
+          "normalized_name": "信息服务网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用这种双重的信息服务网络开展信息业务",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称网络，非具体系统"
+        },
+        {
+          "entity_id": "11_e9",
+          "mention": "信息产业",
+          "normalized_name": "信息产业",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "有利于发展我国的信息产业",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e10",
+          "mention": "农业院校的图书馆信息部门",
+          "normalized_name": "农业院校的图书馆信息部门",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "例如我们农业院校的图书馆信息部门",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "泛称部门，非具体机构"
+        },
+        {
+          "entity_id": "11_e11",
+          "mention": "高校文献信息资源",
+          "normalized_name": "高校文献信息资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "利用我们高校文献信息资源的优势",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称资源，非具体数据库"
+        },
+        {
+          "entity_id": "11_e12",
+          "mention": "科技兴农",
+          "normalized_name": "科技兴农",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "为科技兴农服务",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ],
+      "has_evaluation": false,
+      "relations": []
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "是企业的“灵魂”、农村和乡镇企业必须注重人才的引进和培养。信息业人才不同于其他产业人才，信息业人才要有信息收集、处理、研究、评估方面的知识和能力，熟练掌握现代数据、信息处理技术，具有丰富的科技知识和较高的外语水平，还要有经济、管理、市场、法律等方面的知识。当务之急就是抓好信息人才的培养与教育。 a.建立信息产业培训中心，对现有信息业的从业人员进行信息理论和实践方面的教育，补充其现有知识的不足，提高其素质和信息服务水平。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "信息产业培训中心",
+          "normalized_name": "信息产业培训中心",
+          "candidate_l3": "organization",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "建立信息产业培训中心",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "可能为具体机构，但未给出名称，暂按具体机构处理"
+        }
+      ],
+      "has_evaluation": false,
+      "relations": []
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "d.提高信息人员的待遇。 市场经济的发展，对物质生产、技术开发、新产品的研究、对外贸易方面的信息需求迅速扩大，同时对信息业的发展也提出了更高的要求，因此必须建立具有高科技专业知识、素质较高的过硬队伍，这就要舍得搞智力投资，要制定稳定的激励信息专业人才的有效措施，在职称、工资、住房、福利待遇等方面给予倾斜。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "信息人员",
+          "normalized_name": "信息人员",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "提高信息人员的待遇",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "泛称，但作为已知实体保留"
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "13",
+          "sentence": "d.提高信息人员的待遇。 市场经济的发展，对物质生产、技术开发、新产品的研究、对外贸易方面的信息需求迅速扩大，同时对信息业的发展也提出了更高的要求，因此必须建立具有高科技专业知识、素质较高的过硬队伍，这就要舍得搞智力投资，要制定稳定的激励信息专业人才的有效措施，在职称、工资、住房、福利待遇等方面给予倾斜。",
+          "subject": "_paper_author",
+          "object": "13_e1",
+          "aspect": "待遇",
+          "opinion": "提高",
+          "evidence": "提高信息人员的待遇"
+        }
+      ]
+    }
+  ]
+}

@@ -8,8 +8,8 @@
       "entities": [
         {
           "entity_id": "1_e1",
-          "mention": "农村图书馆研究",
-          "normalized_name": "农村图书馆研究",
+          "mention": "我国农村图书馆研究",
+          "normalized_name": "我国农村图书馆研究",
           "candidate_l3": "subfield",
           "candidate_l1": [
             "Abstract"
@@ -21,81 +21,120 @@
         },
         {
           "entity_id": "1_e2",
-          "mention": "中央政府",
-          "normalized_name": "中央政府",
-          "candidate_l3": "governance",
+          "mention": "中央政府对包括农村图书馆在内的农村文化建设的高度重视",
+          "normalized_name": "中央政府对农村文化建设的重视",
+          "candidate_l3": "policy_initiative",
           "candidate_l1": [
-            "Agent"
+            "Event"
           ],
           "evidence": "中央政府对包括农村图书馆在内的农村文化建设的高度重视",
           "is_specific_entity": true,
-          "confidence": 0.95,
-          "uncertainty": ""
+          "confidence": 0.85,
+          "uncertainty": "可能为政策举措"
         },
         {
           "entity_id": "1_e3",
-          "mention": "农村文化建设",
-          "normalized_name": "农村文化建设",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "包括农村图书馆在内的农村文化建设",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为概念讨论"
-        },
-        {
-          "entity_id": "1_e4",
-          "mention": "图书馆学界",
-          "normalized_name": "图书馆学界",
-          "candidate_l3": "discipline",
+          "mention": "图书馆学界对该问题的持续关注",
+          "normalized_name": "图书馆学界的持续关注",
+          "candidate_l3": "phenomenon",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "图书馆学界对该问题的持续关注",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.7,
+          "uncertainty": "泛称学界，但作为整体关注现象"
+        },
+        {
+          "entity_id": "1_e4",
+          "mention": "农村图书馆的理论研究",
+          "normalized_name": "农村图书馆理论研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "农村图书馆的理论研究和实践发展都迎来了极好的发展时期",
+          "is_specific_entity": true,
+          "confidence": 0.85,
           "uncertainty": ""
         },
         {
           "entity_id": "1_e5",
-          "mention": "农村图书馆",
-          "normalized_name": "农村图书馆",
-          "candidate_l3": "concept",
+          "mention": "实践发展",
+          "normalized_name": "实践发展",
+          "candidate_l3": "phenomenon",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "包括农村图书馆在内的农村文化建设",
+          "evidence": "农村图书馆的理论研究和实践发展都迎来了极好的发展时期",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为概念讨论"
+          "confidence": 0.6,
+          "uncertainty": "泛称，但作为研究对象"
         },
         {
           "entity_id": "1_e6",
-          "mention": "2006年以来",
-          "normalized_name": "2006年以来",
-          "candidate_l3": "stage",
-          "candidate_l1": [
-            "Event"
-          ],
-          "evidence": "2006年以来，研究出现了迅速发展的态势",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "时间阶段"
-        },
-        {
-          "entity_id": "1_e7",
-          "mention": "中西部地区",
-          "normalized_name": "中西部地区",
+          "mention": "研究",
+          "normalized_name": "研究",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "研究的区域不平衡、中西部地区研究不足",
+          "evidence": "研究出现了迅速发展的态势",
+          "is_specific_entity": true,
+          "confidence": 0.5,
+          "uncertainty": "泛称，但作为主题"
+        },
+        {
+          "entity_id": "1_e7",
+          "mention": "作者分布",
+          "normalized_name": "作者分布",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "作者分布不合理",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "作为研究主题"
+        },
+        {
+          "entity_id": "1_e8",
+          "mention": "研究水平",
+          "normalized_name": "研究水平",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究水平偏低",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "作为研究主题"
+        },
+        {
+          "entity_id": "1_e9",
+          "mention": "研究的区域",
+          "normalized_name": "研究的区域",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究的区域不平衡",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "作为研究主题"
+        },
+        {
+          "entity_id": "1_e10",
+          "mention": "中西部地区研究",
+          "normalized_name": "中西部地区研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "中西部地区研究不足",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "地理区域概念"
+          "uncertainty": "区域研究子领域"
         }
       ],
       "has_evaluation": true,
@@ -114,8 +153,26 @@
           "sentence": "摘要1978-2007年，我国农村图书馆研究取得了一定的成绩,特别是随着中央政府对包括农村图书馆在内的农村文化建设的高度重视以及图书馆学界对该问题的持续关注，农村图书馆的理论研究和实践发展都迎来了极好的发展时期。2006年以来，研究出现了迅速发展的态势，但是，还存在着对研究的重视程度不够,基础理论及具体问题研究不足，作者分布不合理、研究水平偏低,以及研究的区域不平衡、中西部地区研究不足等问题。 图1。",
           "subject": "_paper_author",
           "object": "1_e1",
+          "aspect": "发展时期",
+          "opinion": "迎来了极好的发展时期",
+          "evidence": "农村图书馆的理论研究和实践发展都迎来了极好的发展时期"
+        },
+        {
+          "sentence_id": "1",
+          "sentence": "摘要1978-2007年，我国农村图书馆研究取得了一定的成绩,特别是随着中央政府对包括农村图书馆在内的农村文化建设的高度重视以及图书馆学界对该问题的持续关注，农村图书馆的理论研究和实践发展都迎来了极好的发展时期。2006年以来，研究出现了迅速发展的态势，但是，还存在着对研究的重视程度不够,基础理论及具体问题研究不足，作者分布不合理、研究水平偏低,以及研究的区域不平衡、中西部地区研究不足等问题。 图1。",
+          "subject": "_paper_author",
+          "object": "1_e6",
+          "aspect": null,
+          "opinion": "出现了迅速发展的态势",
+          "evidence": "研究出现了迅速发展的态势"
+        },
+        {
+          "sentence_id": "1",
+          "sentence": "摘要1978-2007年，我国农村图书馆研究取得了一定的成绩,特别是随着中央政府对包括农村图书馆在内的农村文化建设的高度重视以及图书馆学界对该问题的持续关注，农村图书馆的理论研究和实践发展都迎来了极好的发展时期。2006年以来，研究出现了迅速发展的态势，但是，还存在着对研究的重视程度不够,基础理论及具体问题研究不足，作者分布不合理、研究水平偏低,以及研究的区域不平衡、中西部地区研究不足等问题。 图1。",
+          "subject": "_paper_author",
+          "object": "1_e1",
           "aspect": "重视程度",
-          "opinion": "不够",
+          "opinion": "重视程度不够",
           "evidence": "对研究的重视程度不够"
         },
         {
@@ -124,15 +181,15 @@
           "subject": "_paper_author",
           "object": "1_e1",
           "aspect": "基础理论及具体问题研究",
-          "opinion": "不足",
+          "opinion": "研究不足",
           "evidence": "基础理论及具体问题研究不足"
         },
         {
           "sentence_id": "1",
           "sentence": "摘要1978-2007年，我国农村图书馆研究取得了一定的成绩,特别是随着中央政府对包括农村图书馆在内的农村文化建设的高度重视以及图书馆学界对该问题的持续关注，农村图书馆的理论研究和实践发展都迎来了极好的发展时期。2006年以来，研究出现了迅速发展的态势，但是，还存在着对研究的重视程度不够,基础理论及具体问题研究不足，作者分布不合理、研究水平偏低,以及研究的区域不平衡、中西部地区研究不足等问题。 图1。",
           "subject": "_paper_author",
-          "object": "1_e1",
-          "aspect": "作者分布",
+          "object": "1_e7",
+          "aspect": null,
           "opinion": "不合理",
           "evidence": "作者分布不合理"
         },
@@ -140,8 +197,8 @@
           "sentence_id": "1",
           "sentence": "摘要1978-2007年，我国农村图书馆研究取得了一定的成绩,特别是随着中央政府对包括农村图书馆在内的农村文化建设的高度重视以及图书馆学界对该问题的持续关注，农村图书馆的理论研究和实践发展都迎来了极好的发展时期。2006年以来，研究出现了迅速发展的态势，但是，还存在着对研究的重视程度不够,基础理论及具体问题研究不足，作者分布不合理、研究水平偏低,以及研究的区域不平衡、中西部地区研究不足等问题。 图1。",
           "subject": "_paper_author",
-          "object": "1_e1",
-          "aspect": "研究水平",
+          "object": "1_e8",
+          "aspect": null,
           "opinion": "偏低",
           "evidence": "研究水平偏低"
         },
@@ -149,8 +206,8 @@
           "sentence_id": "1",
           "sentence": "摘要1978-2007年，我国农村图书馆研究取得了一定的成绩,特别是随着中央政府对包括农村图书馆在内的农村文化建设的高度重视以及图书馆学界对该问题的持续关注，农村图书馆的理论研究和实践发展都迎来了极好的发展时期。2006年以来，研究出现了迅速发展的态势，但是，还存在着对研究的重视程度不够,基础理论及具体问题研究不足，作者分布不合理、研究水平偏低,以及研究的区域不平衡、中西部地区研究不足等问题。 图1。",
           "subject": "_paper_author",
-          "object": "1_e1",
-          "aspect": "区域平衡",
+          "object": "1_e9",
+          "aspect": null,
           "opinion": "不平衡",
           "evidence": "研究的区域不平衡"
         },
@@ -158,8 +215,8 @@
           "sentence_id": "1",
           "sentence": "摘要1978-2007年，我国农村图书馆研究取得了一定的成绩,特别是随着中央政府对包括农村图书馆在内的农村文化建设的高度重视以及图书馆学界对该问题的持续关注，农村图书馆的理论研究和实践发展都迎来了极好的发展时期。2006年以来，研究出现了迅速发展的态势，但是，还存在着对研究的重视程度不够,基础理论及具体问题研究不足，作者分布不合理、研究水平偏低,以及研究的区域不平衡、中西部地区研究不足等问题。 图1。",
           "subject": "_paper_author",
-          "object": "1_e1",
-          "aspect": "中西部地区研究",
+          "object": "1_e10",
+          "aspect": null,
           "opinion": "不足",
           "evidence": "中西部地区研究不足"
         }
@@ -193,23 +250,10 @@
           "evidence": "农村图书馆是最基层的公共图书馆",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "泛称，但作为概念讨论"
+          "uncertainty": "泛称，但此处作为类型概念"
         },
         {
           "entity_id": "2_e3",
-          "mention": "农村图书馆问题",
-          "normalized_name": "农村图书馆问题",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "研究农村图书馆问题",
-          "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "2_e4",
           "mention": "农村图书馆事业",
           "normalized_name": "农村图书馆事业",
           "candidate_l3": "concept",
@@ -218,11 +262,11 @@
           ],
           "evidence": "发展农村图书馆事业",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
+          "confidence": 0.85,
+          "uncertainty": "事业概念"
         },
         {
-          "entity_id": "2_e5",
+          "entity_id": "2_e4",
           "mention": "国家图书馆体系",
           "normalized_name": "国家图书馆体系",
           "candidate_l3": "concept",
@@ -231,11 +275,11 @@
           ],
           "evidence": "完善国家图书馆体系",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
+          "confidence": 0.85,
+          "uncertainty": "体系概念"
         },
         {
-          "entity_id": "2_e6",
+          "entity_id": "2_e5",
           "mention": "我国学者",
           "normalized_name": "我国学者",
           "candidate_l3": "scholar",
@@ -243,38 +287,38 @@
             "Agent"
           ],
           "evidence": "我国学者就农村图书馆问题进行了颇为有益的探索和研究",
+          "is_specific_entity": false,
+          "confidence": 0.3,
+          "uncertainty": "泛称，不指具体个人"
+        },
+        {
+          "entity_id": "2_e6",
+          "mention": "农村图书馆问题",
+          "normalized_name": "农村图书馆问题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究农村图书馆问题",
           "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "泛称，但作为群体可视为Agent"
+          "confidence": 0.8,
+          "uncertainty": "问题领域"
         },
         {
           "entity_id": "2_e7",
-          "mention": "改革开放以来",
-          "normalized_name": "改革开放以来",
-          "candidate_l3": "stage",
-          "candidate_l1": [
-            "Event"
-          ],
-          "evidence": "改革开放以来,我国学者就农村图书馆问题进行了颇为有益的探索和研究",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "时间阶段，可视为发展阶段"
-        },
-        {
-          "entity_id": "2_e8",
           "mention": "1978-2007年间",
           "normalized_name": "1978-2007年间",
           "candidate_l3": "stage",
           "candidate_l1": [
             "Event"
           ],
-          "evidence": "就1978-2007年间我国农村图书馆的研究状况进行评析",
+          "evidence": "1978-2007年间我国农村图书馆的研究状况",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "时间范围，可视为发展阶段"
+          "confidence": 0.9,
+          "uncertainty": "明确时间段"
         },
         {
-          "entity_id": "2_e9",
+          "entity_id": "2_e8",
           "mention": "文献调查",
           "normalized_name": "文献调查",
           "candidate_l3": "method",
@@ -285,6 +329,19 @@
           "is_specific_entity": true,
           "confidence": 0.9,
           "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e9",
+          "mention": "农村图书馆研究",
+          "normalized_name": "农村图书馆研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国农村图书馆的研究状况",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "研究领域"
         }
       ],
       "has_evaluation": true,
@@ -294,6 +351,33 @@
           "sentence": "农村图书馆是最基层的公共图书馆，担负着建设农村文化和提高农村人口素质的重任，研究农村图书馆问题，是发展农村图书馆事业，完善国家图书馆体系必不可少的工作。 改革开放以来,我国学者就农村图书馆问题进行了颇为有益的探索和研究，取得了一定成绩，但也存在诸如研究重视程度不够、水平偏低、区域不平衡等问题。 本文通过较为全面的文献调查,就1978-2007年间我国农村图书馆的研究状况进行评析，以期对我国农村图书馆的理论研究和实践发展有所裨益。",
           "subject": "_paper_author",
           "object": "2_e1",
+          "aspect": "地位",
+          "opinion": "最基层的公共图书馆，担负着建设农村文化和提高农村人口素质的重任",
+          "evidence": "农村图书馆是最基层的公共图书馆，担负着建设农村文化和提高农村人口素质的重任"
+        },
+        {
+          "sentence_id": "2",
+          "sentence": "农村图书馆是最基层的公共图书馆，担负着建设农村文化和提高农村人口素质的重任，研究农村图书馆问题，是发展农村图书馆事业，完善国家图书馆体系必不可少的工作。 改革开放以来,我国学者就农村图书馆问题进行了颇为有益的探索和研究，取得了一定成绩，但也存在诸如研究重视程度不够、水平偏低、区域不平衡等问题。 本文通过较为全面的文献调查,就1978-2007年间我国农村图书馆的研究状况进行评析，以期对我国农村图书馆的理论研究和实践发展有所裨益。",
+          "subject": "_paper_author",
+          "object": "2_e5",
+          "aspect": "探索和研究",
+          "opinion": "进行了颇为有益的探索和研究",
+          "evidence": "我国学者就农村图书馆问题进行了颇为有益的探索和研究"
+        },
+        {
+          "sentence_id": "2",
+          "sentence": "农村图书馆是最基层的公共图书馆，担负着建设农村文化和提高农村人口素质的重任，研究农村图书馆问题，是发展农村图书馆事业，完善国家图书馆体系必不可少的工作。 改革开放以来,我国学者就农村图书馆问题进行了颇为有益的探索和研究，取得了一定成绩，但也存在诸如研究重视程度不够、水平偏低、区域不平衡等问题。 本文通过较为全面的文献调查,就1978-2007年间我国农村图书馆的研究状况进行评析，以期对我国农村图书馆的理论研究和实践发展有所裨益。",
+          "subject": "_paper_author",
+          "object": "2_e9",
+          "aspect": null,
+          "opinion": "取得了一定成绩",
+          "evidence": "取得了一定成绩"
+        },
+        {
+          "sentence_id": "2",
+          "sentence": "农村图书馆是最基层的公共图书馆，担负着建设农村文化和提高农村人口素质的重任，研究农村图书馆问题，是发展农村图书馆事业，完善国家图书馆体系必不可少的工作。 改革开放以来,我国学者就农村图书馆问题进行了颇为有益的探索和研究，取得了一定成绩，但也存在诸如研究重视程度不够、水平偏低、区域不平衡等问题。 本文通过较为全面的文献调查,就1978-2007年间我国农村图书馆的研究状况进行评析，以期对我国农村图书馆的理论研究和实践发展有所裨益。",
+          "subject": "_paper_author",
+          "object": "2_e9",
           "aspect": "研究重视程度",
           "opinion": "不够",
           "evidence": "研究重视程度不够"
@@ -302,7 +386,7 @@
           "sentence_id": "2",
           "sentence": "农村图书馆是最基层的公共图书馆，担负着建设农村文化和提高农村人口素质的重任，研究农村图书馆问题，是发展农村图书馆事业，完善国家图书馆体系必不可少的工作。 改革开放以来,我国学者就农村图书馆问题进行了颇为有益的探索和研究，取得了一定成绩，但也存在诸如研究重视程度不够、水平偏低、区域不平衡等问题。 本文通过较为全面的文献调查,就1978-2007年间我国农村图书馆的研究状况进行评析，以期对我国农村图书馆的理论研究和实践发展有所裨益。",
           "subject": "_paper_author",
-          "object": "2_e1",
+          "object": "2_e9",
           "aspect": "水平",
           "opinion": "偏低",
           "evidence": "水平偏低"
@@ -311,8 +395,8 @@
           "sentence_id": "2",
           "sentence": "农村图书馆是最基层的公共图书馆，担负着建设农村文化和提高农村人口素质的重任，研究农村图书馆问题，是发展农村图书馆事业，完善国家图书馆体系必不可少的工作。 改革开放以来,我国学者就农村图书馆问题进行了颇为有益的探索和研究，取得了一定成绩，但也存在诸如研究重视程度不够、水平偏低、区域不平衡等问题。 本文通过较为全面的文献调查,就1978-2007年间我国农村图书馆的研究状况进行评析，以期对我国农村图书馆的理论研究和实践发展有所裨益。",
           "subject": "_paper_author",
-          "object": "2_e1",
-          "aspect": "区域",
+          "object": "2_e9",
+          "aspect": "区域平衡",
           "opinion": "不平衡",
           "evidence": "区域不平衡"
         }
@@ -333,7 +417,7 @@
           "evidence": "在我国对农村图书馆有不同的称谓",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为概念讨论"
+          "uncertainty": "作为概念讨论，非具体机构"
         },
         {
           "entity_id": "3_e2",
@@ -346,7 +430,7 @@
           "evidence": "如农村图书馆（室）乡镇图书馆(室）乡村图书馆(室）村级图书馆(室)和乡村社区图书馆(室)等",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为概念讨论"
+          "uncertainty": "作为概念讨论，非具体机构"
         },
         {
           "entity_id": "3_e3",
@@ -359,7 +443,7 @@
           "evidence": "如农村图书馆（室）乡镇图书馆(室）乡村图书馆(室）村级图书馆(室)和乡村社区图书馆(室)等",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为概念讨论"
+          "uncertainty": "作为概念讨论，非具体机构"
         },
         {
           "entity_id": "3_e4",
@@ -372,7 +456,7 @@
           "evidence": "如农村图书馆（室）乡镇图书馆(室）乡村图书馆(室）村级图书馆(室)和乡村社区图书馆(室)等",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为概念讨论"
+          "uncertainty": "作为概念讨论，非具体机构"
         },
         {
           "entity_id": "3_e5",
@@ -385,7 +469,7 @@
           "evidence": "如农村图书馆（室）乡镇图书馆(室）乡村图书馆(室）村级图书馆(室)和乡村社区图书馆(室)等",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为概念讨论"
+          "uncertainty": "作为概念讨论，非具体机构"
         }
       ],
       "has_evaluation": false,
@@ -458,7 +542,7 @@
           "evidence": "为社会公众服务的乡镇一级的公共图书馆",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "泛称但此处指具体类型，可识别"
+          "uncertainty": "泛称但此处指具体类型，且作为机构类型，但无具体名称，可能不抽？但规则说泛称不抽，但此处是概念定义，可能作为concept？"
         }
       ],
       "has_evaluation": false,
@@ -479,7 +563,7 @@
           "evidence": "是公共图书馆在农村的延伸和发展",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "泛称机构类别，但此处指具体类型的图书馆，可识别为服务组织"
+          "uncertainty": "泛称机构，但此处指具体类型，不指具体机构，故不抽取"
         },
         {
           "entity_id": "5_e2",
@@ -531,7 +615,7 @@
           "evidence": "乡村图书馆(室)是为乡村农民服务的民办图书馆",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "具体类型图书馆，可识别为服务组织"
+          "uncertainty": "泛称机构类型，不指具体机构，故不抽取"
         },
         {
           "entity_id": "5_e6",
@@ -557,7 +641,7 @@
           "evidence": "所谓农村图书馆应当是指所有建立在农村地理区域内的",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "具体类型图书馆，可识别为服务组织"
+          "uncertainty": "泛称机构类型，不指具体机构，故不抽取"
         },
         {
           "entity_id": "5_e8",
@@ -570,7 +654,7 @@
           "evidence": "农村图书馆不仅包括县级公共图书馆",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "具体类型图书馆，可识别为服务组织"
+          "uncertainty": "泛称机构类型，不指具体机构，故不抽取"
         },
         {
           "entity_id": "5_e9",
@@ -582,8 +666,8 @@
           ],
           "evidence": "还应该包括县乡镇各类机关与企事业单位的图书馆(室）",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "具体类型图书馆，可识别为服务组织"
+          "confidence": 0.9,
+          "uncertainty": "泛称机构类型，不指具体机构，故不抽取"
         },
         {
           "entity_id": "5_e10",
@@ -596,7 +680,7 @@
           "evidence": "街道图书馆（室）村落图书馆（室）",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "具体类型图书馆，可识别为服务组织"
+          "uncertainty": "泛称机构类型，不指具体机构，故不抽取"
         },
         {
           "entity_id": "5_e11",
@@ -609,7 +693,7 @@
           "evidence": "街道图书馆（室）村落图书馆（室）",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "具体类型图书馆，可识别为服务组织"
+          "uncertainty": "泛称机构类型，不指具体机构，故不抽取"
         },
         {
           "entity_id": "5_e12",
@@ -622,7 +706,7 @@
           "evidence": "以及农村的中小学图书馆(室)等",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "具体类型图书馆，可识别为服务组织"
+          "uncertainty": "泛称机构类型，不指具体机构，故不抽取"
         }
       ],
       "has_evaluation": false,
@@ -640,10 +724,10 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "农村图书馆不仅包括县级公共图书馆",
+          "evidence": "农村图书馆不仅包括县级公共图书馆,还应该包括县乡镇各类机关与企事业单位的图书馆(室）街道图书馆（室）村落图书馆(室）以及农村的中小学图书馆(室)等",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为概念讨论"
+          "uncertainty": "作为概念被定义和讨论"
         },
         {
           "entity_id": "6_e2",
@@ -660,6 +744,58 @@
         },
         {
           "entity_id": "6_e3",
+          "mention": "县乡镇各类机关与企事业单位的图书馆(室）",
+          "normalized_name": "县乡镇各类机关与企事业单位的图书馆(室）",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "还应该包括县乡镇各类机关与企事业单位的图书馆(室）",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛指类型，非具体机构"
+        },
+        {
+          "entity_id": "6_e4",
+          "mention": "街道图书馆（室）",
+          "normalized_name": "街道图书馆（室）",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "街道图书馆（室）",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛指类型"
+        },
+        {
+          "entity_id": "6_e5",
+          "mention": "村落图书馆(室）",
+          "normalized_name": "村落图书馆(室）",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "村落图书馆(室）",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛指类型"
+        },
+        {
+          "entity_id": "6_e6",
+          "mention": "农村的中小学图书馆(室）",
+          "normalized_name": "农村的中小学图书馆(室）",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "以及农村的中小学图书馆(室）等",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛指类型"
+        },
+        {
+          "entity_id": "6_e7",
           "mention": "黄体杨",
           "normalized_name": "黄体杨",
           "candidate_l3": "scholar",
@@ -672,9 +808,9 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "6_e4",
-          "mention": "农村图书馆(室)",
-          "normalized_name": "农村图书馆(室)",
+          "entity_id": "6_e8",
+          "mention": "农村图书馆(室）",
+          "normalized_name": "农村图书馆(室）",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
@@ -682,20 +818,46 @@
           "evidence": "农村图书馆(室)应该是为农村人口服务的公益机构",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为概念讨论"
+          "uncertainty": "作为概念被定义"
         },
         {
-          "entity_id": "6_e5",
-          "mention": "基层公共图书馆(室)",
-          "normalized_name": "基层公共图书馆(室)",
+          "entity_id": "6_e9",
+          "mention": "政府",
+          "normalized_name": "政府",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由政府或社会团体(社会团体或个人资助)举办的",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛指政府，未指明具体机构"
+        },
+        {
+          "entity_id": "6_e10",
+          "mention": "社会团体",
+          "normalized_name": "社会团体",
+          "candidate_l3": "professional",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "由政府或社会团体(社会团体或个人资助)举办的",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛指社会团体，未指明具体组织"
+        },
+        {
+          "entity_id": "6_e11",
+          "mention": "基层公共图书馆(室）",
+          "normalized_name": "基层公共图书馆(室）",
           "candidate_l3": "service",
           "candidate_l1": [
             "Agent"
           ],
           "evidence": "为广大农村人口的生产、生活、学习和娱乐等服务的基层公共图书馆(室)",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "具体类型，但未指明具体馆名"
+          "confidence": 0.8,
+          "uncertainty": "泛指类型"
         }
       ],
       "has_evaluation": false,
@@ -704,7 +866,99 @@
     {
       "sentence_id": "7",
       "sentence": "《中国期刊全文数据库(1911-2007）》（网络版)和《中文科技期刊全文数据库（1989－2007）》(网络版)是目前国内最大的两个中文期刊全文数据库，收录期刊均达 8000 种以上，本文选取其为主要检索工具进行检索,能基本反映1978-2007年间我国农村图书馆的研究状况。 根据本文对农村图书馆的界定，确定本文的检索策略为：以“主题词\"为检索途径,以“农村图书馆 $^ +$ 乡镇图书馆 $^ +$ 乡镇图书室 $^ +$ 乡村图书馆 $^ +$ 村级图书室\"为检索词，匹配方法为“模糊”，得到第一批检索结果;",
-      "entities": [],
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "《中国期刊全文数据库(1911-2007）》（网络版)",
+          "normalized_name": "中国期刊全文数据库(1911-2007）网络版",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《中国期刊全文数据库(1911-2007）》（网络版)和《中文科技期刊全文数据库（1989－2007）》(网络版)是目前国内最大的两个中文期刊全文数据库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e2",
+          "mention": "《中文科技期刊全文数据库（1989－2007）》(网络版)",
+          "normalized_name": "中文科技期刊全文数据库（1989－2007）网络版",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "《中国期刊全文数据库(1911-2007）》（网络版)和《中文科技期刊全文数据库（1989－2007）》(网络版)是目前国内最大的两个中文期刊全文数据库",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "7_e3",
+          "mention": "农村图书馆",
+          "normalized_name": "农村图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "能基本反映1978-2007年间我国农村图书馆的研究状况。 根据本文对农村图书馆的界定",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为研究对象概念，非具体机构"
+        },
+        {
+          "entity_id": "7_e4",
+          "mention": "乡镇图书馆",
+          "normalized_name": "乡镇图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以“农村图书馆 $^ +$ 乡镇图书馆 $^ +$ 乡镇图书室 $^ +$ 乡村图书馆 $^ +$ 村级图书室\"为检索词",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为检索词概念"
+        },
+        {
+          "entity_id": "7_e5",
+          "mention": "乡镇图书室",
+          "normalized_name": "乡镇图书室",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以“农村图书馆 $^ +$ 乡镇图书馆 $^ +$ 乡镇图书室 $^ +$ 乡村图书馆 $^ +$ 村级图书室\"为检索词",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为检索词概念"
+        },
+        {
+          "entity_id": "7_e6",
+          "mention": "乡村图书馆",
+          "normalized_name": "乡村图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以“农村图书馆 $^ +$ 乡镇图书馆 $^ +$ 乡镇图书室 $^ +$ 乡村图书馆 $^ +$ 村级图书室\"为检索词",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为检索词概念"
+        },
+        {
+          "entity_id": "7_e7",
+          "mention": "村级图书室",
+          "normalized_name": "村级图书室",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以“农村图书馆 $^ +$ 乡镇图书馆 $^ +$ 乡镇图书室 $^ +$ 乡村图书馆 $^ +$ 村级图书室\"为检索词",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为检索词概念"
+        }
+      ],
       "has_evaluation": false,
       "relations": []
     },
@@ -722,8 +976,8 @@
           ],
           "evidence": "再利用“家庭图书馆(室）”“街道图书馆\"和“乡村社区图书馆(室）\"等检索词检索",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为检索词，可能指代具体类型，但无具体实例，故标concept"
+          "confidence": 0.85,
+          "uncertainty": "作为检索词，可能指代概念或具体图书馆，但此处作为检索词使用，倾向概念"
         },
         {
           "entity_id": "8_e2",
@@ -735,8 +989,8 @@
           ],
           "evidence": "再利用“家庭图书馆(室）”“街道图书馆\"和“乡村社区图书馆(室）\"等检索词检索",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为检索词，可能指代具体类型，但无具体实例，故标concept"
+          "confidence": 0.85,
+          "uncertainty": "同上"
         },
         {
           "entity_id": "8_e3",
@@ -748,8 +1002,8 @@
           ],
           "evidence": "再利用“家庭图书馆(室）”“街道图书馆\"和“乡村社区图书馆(室）\"等检索词检索",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为检索词，可能指代具体类型，但无具体实例，故标concept"
+          "confidence": 0.85,
+          "uncertainty": "同上"
         },
         {
           "entity_id": "8_e4",
@@ -761,8 +1015,8 @@
           ],
           "evidence": "检索过程中以“主题词”为检索途径",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为检索术语，可能属于concept"
+          "confidence": 0.9,
+          "uncertainty": "作为检索途径的术语"
         },
         {
           "entity_id": "8_e5",
@@ -775,20 +1029,20 @@
           "evidence": "运用“模糊\"匹配",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "模糊匹配是一种检索技术，但可能过于泛化"
+          "uncertainty": "模糊匹配是一种检索技术"
         },
         {
           "entity_id": "8_e6",
-          "mention": "手工方法",
-          "normalized_name": "手工方法",
-          "candidate_l3": "method",
+          "mention": "检索过程",
+          "normalized_name": "检索过程",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "本文通过手工方法,在检索结果中进行筛选",
+          "evidence": "检索过程中以“主题词”为检索途径",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "手工方法是一种方法，但可能不够具体"
+          "confidence": 0.7,
+          "uncertainty": "已知实体，但可能为泛称，此处作为过程概念"
         }
       ],
       "has_evaluation": true,
@@ -797,27 +1051,27 @@
           "sentence_id": "8",
           "sentence": "再利用“家庭图书馆(室）”“街道图书馆\"和“乡村社区图书馆(室）\"等检索词检索,得到第二批检索结果,将二者去重后得出最终检索结果。 检索过程中以“主题词”为检索途径和运用“模糊\"匹配，实现较高的检全率但导致冗余度较高,检准率较低。 本文通过手工方法,在检索结果中进行筛选，去除会议动态等非学术论文及与主题不相关论文确保选定的论文均属本文研究领域。",
           "subject": "_paper_author",
-          "object": "8_e1",
+          "object": "8_e6",
           "aspect": "检全率",
-          "opinion": "较高",
+          "opinion": "实现较高的检全率",
           "evidence": "实现较高的检全率"
         },
         {
           "sentence_id": "8",
           "sentence": "再利用“家庭图书馆(室）”“街道图书馆\"和“乡村社区图书馆(室）\"等检索词检索,得到第二批检索结果,将二者去重后得出最终检索结果。 检索过程中以“主题词”为检索途径和运用“模糊\"匹配，实现较高的检全率但导致冗余度较高,检准率较低。 本文通过手工方法,在检索结果中进行筛选，去除会议动态等非学术论文及与主题不相关论文确保选定的论文均属本文研究领域。",
           "subject": "_paper_author",
-          "object": "8_e1",
+          "object": "8_e6",
           "aspect": "冗余度",
-          "opinion": "较高",
+          "opinion": "冗余度较高",
           "evidence": "冗余度较高"
         },
         {
           "sentence_id": "8",
           "sentence": "再利用“家庭图书馆(室）”“街道图书馆\"和“乡村社区图书馆(室）\"等检索词检索,得到第二批检索结果,将二者去重后得出最终检索结果。 检索过程中以“主题词”为检索途径和运用“模糊\"匹配，实现较高的检全率但导致冗余度较高,检准率较低。 本文通过手工方法,在检索结果中进行筛选，去除会议动态等非学术论文及与主题不相关论文确保选定的论文均属本文研究领域。",
           "subject": "_paper_author",
-          "object": "8_e1",
+          "object": "8_e6",
           "aspect": "检准率",
-          "opinion": "较低",
+          "opinion": "检准率较低",
           "evidence": "检准率较低"
         }
       ]
@@ -828,33 +1082,39 @@
       "entities": [
         {
           "entity_id": "9_e1",
-          "mention": "1978-2007年",
-          "normalized_name": "1978-2007年",
-          "candidate_l3": "stage",
+          "mention": "我国研究农村图书馆问题的论文",
+          "normalized_name": "我国农村图书馆研究论文",
+          "candidate_l3": "paper",
           "candidate_l1": [
-            "Event"
+            "Artifact"
           ],
-          "evidence": "1978-2007年我国研究农村图书馆问题的论文共953篇",
+          "evidence": "我国研究农村图书馆问题的论文共953篇",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "时间范围，但作为研究阶段"
-        },
-        {
-          "entity_id": "9_e2",
-          "mention": "农村图书馆问题",
-          "normalized_name": "农村图书馆问题",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "研究农村图书馆问题的论文",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为研究主题"
+          "confidence": 0.95,
+          "uncertainty": ""
         }
       ],
-      "has_evaluation": false,
-      "relations": []
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "9",
+          "sentence": "根据1.2.1中的检索策略,检索到1978-2007年我国研究农村图书馆问题的论文共953篇,年均发文约32篇。 从论文的年度分布情况看(图1)，自1978年的2篇到2007年的近百篇,年度间发文量有一定波动，但总体呈增长趋势。就论文数量看，呈现出一定的阶段性特征：",
+          "subject": "_paper_author",
+          "object": "9_e1",
+          "aspect": "论文数量",
+          "opinion": "总体呈增长趋势",
+          "evidence": "总体呈增长趋势"
+        },
+        {
+          "sentence_id": "9",
+          "sentence": "根据1.2.1中的检索策略,检索到1978-2007年我国研究农村图书馆问题的论文共953篇,年均发文约32篇。 从论文的年度分布情况看(图1)，自1978年的2篇到2007年的近百篇,年度间发文量有一定波动，但总体呈增长趋势。就论文数量看，呈现出一定的阶段性特征：",
+          "subject": "_paper_author",
+          "object": "9_e1",
+          "aspect": "论文数量",
+          "opinion": "呈现出一定的阶段性特征",
+          "evidence": "呈现出一定的阶段性特征"
+        }
+      ]
     },
     {
       "sentence_id": "10",
@@ -866,34 +1126,7 @@
     {
       "sentence_id": "11",
       "sentence": "$\\textcircled { 2 } 1 9 8 2 - 1 9 9 6$ 年是改革开放后的初步发展时期,农村图书馆问题逐步纳入研究者视野，年均发文量在10-40 篇之间，年度间发文量有一定起伏,总体呈上升趋势;",
-      "entities": [
-        {
-          "entity_id": "11_e1",
-          "mention": "1982-1996年",
-          "normalized_name": "1982-1996年",
-          "candidate_l3": "stage",
-          "candidate_l1": [
-            "Event"
-          ],
-          "evidence": "1982-1996年是改革开放后的初步发展时期",
-          "is_specific_entity": true,
-          "confidence": 0.95,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "11_e2",
-          "mention": "农村图书馆问题",
-          "normalized_name": "农村图书馆问题",
-          "candidate_l3": "phenomenon",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "农村图书馆问题逐步纳入研究者视野",
-          "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为研究主题，可视为现象"
-        }
-      ],
+      "entities": [],
       "has_evaluation": false,
       "relations": []
     },
@@ -963,9 +1196,48 @@
       "entities": [
         {
           "entity_id": "13_e1",
+          "mention": "政府",
+          "normalized_name": "政府",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "政府对“三农”问题持续重视",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "泛称政府，但此处指具体行政主体，可识别"
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "“三农”问题",
+          "normalized_name": "“三农”问题",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "政府对“三农”问题持续重视",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "社会主义新农村建设",
+          "normalized_name": "社会主义新农村建设",
+          "candidate_l3": "policy_initiative",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "加快社会主义新农村建设步伐",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e4",
           "mention": "全国文化信息资源共享工程",
           "normalized_name": "全国文化信息资源共享工程",
-          "candidate_l3": "policy_initiative",
+          "candidate_l3": "research_program",
           "candidate_l1": [
             "Event"
           ],
@@ -975,30 +1247,43 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "13_e2",
+          "entity_id": "13_e5",
+          "mention": "图书馆学界",
+          "normalized_name": "图书馆学界",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆学界对农村图书馆问题的关注也逐步深入",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为学科共同体，非具体组织"
+        },
+        {
+          "entity_id": "13_e6",
           "mention": "农村图书馆问题",
           "normalized_name": "农村图书馆问题",
           "candidate_l3": "phenomenon",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "使图书馆学界对农村图书馆问题的关注也逐步深入",
+          "evidence": "图书馆学界对农村图书馆问题的关注也逐步深入",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为研究主题，可视为现象"
+          "confidence": 0.85,
+          "uncertainty": "作为研究主题，可观察现象"
         },
         {
-          "entity_id": "13_e3",
+          "entity_id": "13_e7",
           "mention": "农村图书馆研究",
           "normalized_name": "农村图书馆研究",
           "candidate_l3": "subfield",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "说明我国农村图书馆研究繁荣时期已经到来",
+          "evidence": "我国农村图书馆研究繁荣时期已经到来",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为研究领域"
+          "uncertainty": ""
         }
       ],
       "has_evaluation": true,
@@ -1007,19 +1292,28 @@
           "sentence_id": "13",
           "sentence": "此时政府对“三农”问题持续重视，加快社会主义新农村建设步伐,加大农村文化建设力度,继续推进“全国文化信息资源共享工程”建设,使图书馆学界对农村图书馆问题的关注也逐步深入。 文献数量的增长体现了政府和图书馆学界对农村图书馆问题的重视和关注，说明我国农村图书馆研究繁荣时期已经到来。",
           "subject": "_paper_author",
-          "object": "13_e2",
-          "aspect": "关注",
-          "opinion": "逐步深入",
-          "evidence": "使图书馆学界对农村图书馆问题的关注也逐步深入"
+          "object": "13_e1",
+          "aspect": "三农问题",
+          "opinion": "持续重视",
+          "evidence": "政府对“三农”问题持续重视"
         },
         {
           "sentence_id": "13",
           "sentence": "此时政府对“三农”问题持续重视，加快社会主义新农村建设步伐,加大农村文化建设力度,继续推进“全国文化信息资源共享工程”建设,使图书馆学界对农村图书馆问题的关注也逐步深入。 文献数量的增长体现了政府和图书馆学界对农村图书馆问题的重视和关注，说明我国农村图书馆研究繁荣时期已经到来。",
           "subject": "_paper_author",
-          "object": "13_e3",
-          "aspect": "繁荣时期",
-          "opinion": "已经到来",
-          "evidence": "说明我国农村图书馆研究繁荣时期已经到来"
+          "object": "13_e5",
+          "aspect": "农村图书馆问题",
+          "opinion": "关注也逐步深入",
+          "evidence": "图书馆学界对农村图书馆问题的关注也逐步深入"
+        },
+        {
+          "sentence_id": "13",
+          "sentence": "此时政府对“三农”问题持续重视，加快社会主义新农村建设步伐,加大农村文化建设力度,继续推进“全国文化信息资源共享工程”建设,使图书馆学界对农村图书馆问题的关注也逐步深入。 文献数量的增长体现了政府和图书馆学界对农村图书馆问题的重视和关注，说明我国农村图书馆研究繁荣时期已经到来。",
+          "subject": "_paper_author",
+          "object": "13_e7",
+          "aspect": null,
+          "opinion": "繁荣时期已经到来",
+          "evidence": "我国农村图书馆研究繁荣时期已经到来"
         }
       ]
     },
@@ -1029,16 +1323,14 @@
       "entities": [
         {
           "entity_id": "14_e1",
-          "mention": "农村图书馆领域",
-          "normalized_name": "农村图书馆领域",
-          "candidate_l3": "subfield",
-          "candidate_l1": [
-            "Abstract"
-          ],
+          "mention": "绝大多数作者",
+          "normalized_name": "绝大多数作者",
+          "candidate_l3": "",
+          "candidate_l1": [],
           "evidence": "绝大多数作者都只是偶尔涉足农村图书馆领域",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
+          "confidence": 0.0,
+          "uncertainty": "来自评价关系抽取的补抽实体"
         }
       ],
       "has_evaluation": true,
@@ -1048,8 +1340,8 @@
           "sentence": "953篇文章中，除佚名者26篇、团体作者2篇外,763位作者（占作者总数的 $9 6 . 4 6 \\%$ )共发文925篇，每位作者平均发文1.21篇，单个作者最高发文量8篇(见表2)。 统计数据表明：绝大多数作者都只是偶尔涉足农村图书馆领域,并没有形成固定的研究群体。",
           "subject": "_paper_author",
           "object": "14_e1",
-          "aspect": "作者群体",
-          "opinion": "并没有形成固定的研究群体",
+          "aspect": "研究持续性",
+          "opinion": "只是偶尔涉足农村图书馆领域,并没有形成固定的研究群体",
           "evidence": "绝大多数作者都只是偶尔涉足农村图书馆领域,并没有形成固定的研究群体"
         }
       ]
@@ -1081,7 +1373,7 @@
           ],
           "evidence": "来自政府、教学、科研和各类型图书馆",
           "is_specific_entity": false,
-          "confidence": 0.3,
+          "confidence": 0.2,
           "uncertainty": "泛称，未指具体机构"
         },
         {
@@ -1094,7 +1386,7 @@
           ],
           "evidence": "来自政府、教学、科研和各类型图书馆",
           "is_specific_entity": false,
-          "confidence": 0.3,
+          "confidence": 0.2,
           "uncertainty": "泛称，未指具体机构"
         },
         {
@@ -1107,16 +1399,16 @@
           ],
           "evidence": "来自政府、教学、科研和各类型图书馆",
           "is_specific_entity": false,
-          "confidence": 0.3,
+          "confidence": 0.2,
           "uncertainty": "泛称，未指具体机构"
         },
         {
           "entity_id": "15_e5",
-          "mention": "作者",
-          "normalized_name": "作者",
+          "mention": "其余795篇文章作者",
+          "normalized_name": "其余795篇文章作者",
           "candidate_l3": "",
           "candidate_l1": [],
-          "evidence": "作者（占论文总数的83.42%，见表3）来自政府、教学、科研和各类型图书馆",
+          "evidence": "其余795篇文章作者（占论文总数的83.42%，见表3)来自政府、教学、科研和各类型图书馆",
           "is_specific_entity": true,
           "confidence": 0.0,
           "uncertainty": "来自评价关系抽取的补抽实体"
@@ -1130,7 +1422,7 @@
           "subject": "_paper_author",
           "object": "15_e5",
           "aspect": "分布",
-          "opinion": "极不平衡",
+          "opinion": "分布极不平衡",
           "evidence": "分布极不平衡"
         }
       ]
@@ -1149,50 +1441,76 @@
           ],
           "evidence": "市、县图书馆工作者的文章占发文量的64.41%",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "群体泛称，但原文作为主体讨论，且已知实体要求保留"
+          "confidence": 0.85,
+          "uncertainty": "群体泛称，但作为研究主体，可能不满足具体唯一识别，但已知实体要求保留"
         },
         {
           "entity_id": "16_e2",
-          "mention": "农村图书馆问题",
-          "normalized_name": "农村图书馆问题",
-          "candidate_l3": "phenomenon",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "研究农村图书馆问题的主体",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为研究主题，可能为concept或phenomenon"
-        },
-        {
-          "entity_id": "16_e3",
-          "mention": "农村图书馆研究与发展",
-          "normalized_name": "农村图书馆研究与发展",
-          "candidate_l3": "subfield",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "对农村图书馆研究与发展起了很大的作用",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "可能为研究领域或活动"
-        },
-        {
-          "entity_id": "16_e4",
-          "mention": "市、县文化局(馆）政府、党校，机关，乡、镇文化站",
-          "normalized_name": "市、县文化局(馆）政府、党校，机关，乡、镇文化站",
+          "mention": "市、县文化局(馆）",
+          "normalized_name": "市、县文化局(馆）",
           "candidate_l3": "governance",
           "candidate_l1": [
             "Agent"
           ],
-          "evidence": "市、县文化局(馆）政府、党校，机关，乡、镇文化站等部门都有与农村图书馆相关的文章发表",
+          "evidence": "市、县文化局(馆）政府、党校、机关，乡、镇文化站等部门",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "列举多个机构，可能需拆分"
+          "confidence": 0.7,
+          "uncertainty": "泛称机构类别，可能不具体"
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "政府",
+          "normalized_name": "政府",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "市、县文化局(馆）政府、党校、机关，乡、镇文化站等部门",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "泛称，不具体"
+        },
+        {
+          "entity_id": "16_e4",
+          "mention": "党校",
+          "normalized_name": "党校",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "市、县文化局(馆）政府、党校、机关，乡、镇文化站等部门",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "泛称机构类别"
         },
         {
           "entity_id": "16_e5",
+          "mention": "机关",
+          "normalized_name": "机关",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "市、县文化局(馆）政府、党校、机关，乡、镇文化站等部门",
+          "is_specific_entity": true,
+          "confidence": 0.5,
+          "uncertainty": "泛称"
+        },
+        {
+          "entity_id": "16_e6",
+          "mention": "乡、镇文化站",
+          "normalized_name": "乡、镇文化站",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "市、县文化局(馆）政府、党校、机关，乡、镇文化站等部门",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "泛称机构类别"
+        },
+        {
+          "entity_id": "16_e7",
           "mention": "行政机构人员",
           "normalized_name": "行政机构人员",
           "candidate_l3": "practitioner",
@@ -1202,23 +1520,10 @@
           "evidence": "说明行政机构人员对农村图书馆发展起到了一定的促进作用",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "群体泛称，但已知实体要求保留"
+          "uncertainty": "已知实体，但泛称"
         },
         {
-          "entity_id": "16_e6",
-          "mention": "农村图书馆发展",
-          "normalized_name": "农村图书馆发展",
-          "candidate_l3": "phenomenon",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "对农村图书馆发展起到了一定的促进作用",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "可能为concept或phenomenon"
-        },
-        {
-          "entity_id": "16_e7",
+          "entity_id": "16_e8",
           "mention": "高校教学研究机构",
           "normalized_name": "高校教学研究机构",
           "candidate_l3": "research",
@@ -1227,8 +1532,47 @@
           ],
           "evidence": "高校教学研究机构的论文量仅占3.02%",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "泛称机构，但作为主体讨论"
+          "confidence": 0.6,
+          "uncertainty": "泛称机构类别"
+        },
+        {
+          "entity_id": "16_e9",
+          "mention": "农村图书馆问题",
+          "normalized_name": "农村图书馆问题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究农村图书馆问题的主体",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "可能作为研究主题，但非具体命名概念"
+        },
+        {
+          "entity_id": "16_e10",
+          "mention": "农村图书馆研究与发展",
+          "normalized_name": "农村图书馆研究与发展",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对农村图书馆研究与发展起了很大的作用",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "泛称活动"
+        },
+        {
+          "entity_id": "16_e11",
+          "mention": "农村图书馆发展",
+          "normalized_name": "农村图书馆发展",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对农村图书馆发展起到了一定的促进作用",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "泛称活动"
         }
       ],
       "has_evaluation": true,
@@ -1238,18 +1582,18 @@
           "sentence": "$\\textcircled{1}$ 市、县图书馆工作者的文章占发文量的$6 4 . 4 1 \\%$ ，说明我国市、县图书馆工作者是研究农村图书馆问题的主体,对农村图书馆研究与发展起了很大的作用;$\\textcircled{2}$ 市、县文化局(馆）政府、党校、机关，乡、镇文化站等部门都有与农村图书馆相关的文章发表,共计占 $1 1 . 0 8 \\%$ ，说明行政机构人员对农村图书馆发展起到了一定的促进作用; $\\textcircled{3}$ 高校教学研究机构的论文量仅占$3 . 0 2 \\%$ 。",
           "subject": "_paper_author",
           "object": "16_e1",
-          "aspect": "作用",
-          "opinion": "起了很大的作用",
-          "evidence": "对农村图书馆研究与发展起了很大的作用"
+          "aspect": "研究农村图书馆问题",
+          "opinion": "是研究农村图书馆问题的主体，对农村图书馆研究与发展起了很大的作用",
+          "evidence": "市、县图书馆工作者是研究农村图书馆问题的主体,对农村图书馆研究与发展起了很大的作用"
         },
         {
           "sentence_id": "16",
           "sentence": "$\\textcircled{1}$ 市、县图书馆工作者的文章占发文量的$6 4 . 4 1 \\%$ ，说明我国市、县图书馆工作者是研究农村图书馆问题的主体,对农村图书馆研究与发展起了很大的作用;$\\textcircled{2}$ 市、县文化局(馆）政府、党校、机关，乡、镇文化站等部门都有与农村图书馆相关的文章发表,共计占 $1 1 . 0 8 \\%$ ，说明行政机构人员对农村图书馆发展起到了一定的促进作用; $\\textcircled{3}$ 高校教学研究机构的论文量仅占$3 . 0 2 \\%$ 。",
           "subject": "_paper_author",
-          "object": "16_e5",
-          "aspect": "作用",
+          "object": "16_e7",
+          "aspect": "农村图书馆发展",
           "opinion": "起到了一定的促进作用",
-          "evidence": "对农村图书馆发展起到了一定的促进作用"
+          "evidence": "行政机构人员对农村图书馆发展起到了一定的促进作用"
         }
       ]
     },
@@ -1267,37 +1611,50 @@
           ],
           "evidence": "高校教学研究机构的论文量仅占3.02%",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
+          "confidence": 0.85,
+          "uncertainty": "机构类别，但原文未给出具体名称，可能为泛称"
         },
         {
           "entity_id": "17_e2",
-          "mention": "我国图书馆学研究机构",
-          "normalized_name": "我国图书馆学研究机构",
+          "mention": "高校图书馆学专业教学单位",
+          "normalized_name": "高校图书馆学专业教学单位",
           "candidate_l3": "research",
           "candidate_l1": [
             "Agent"
           ],
-          "evidence": "我国图书馆学研究机构对农村图书馆问题的研究相对薄弱",
+          "evidence": "高校图书馆学专业教学单位和图书馆学相关研究机构是我国图书馆学研究的核心",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
+          "confidence": 0.85,
+          "uncertainty": "机构类别，但原文未给出具体名称，可能为泛称"
         },
         {
           "entity_id": "17_e3",
-          "mention": "农村图书馆问题",
-          "normalized_name": "农村图书馆问题",
-          "candidate_l3": "phenomenon",
+          "mention": "图书馆学相关研究机构",
+          "normalized_name": "图书馆学相关研究机构",
+          "candidate_l3": "research",
           "candidate_l1": [
-            "Abstract"
+            "Agent"
           ],
-          "evidence": "对农村图书馆问题的研究相对薄弱",
+          "evidence": "高校图书馆学专业教学单位和图书馆学相关研究机构是我国图书馆学研究的核心",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为研究主题，可能为concept或phenomenon"
+          "uncertainty": "机构类别，但原文未给出具体名称，可能为泛称"
         },
         {
           "entity_id": "17_e4",
+          "mention": "农村图书馆",
+          "normalized_name": "农村图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "对农村图书馆的研究文献年均不足1篇",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "机构类别，但原文未给出具体名称，可能为泛称"
+        },
+        {
+          "entity_id": "17_e5",
           "mention": "农村图书馆工作人员",
           "normalized_name": "农村图书馆工作人员",
           "candidate_l3": "practitioner",
@@ -1307,10 +1664,10 @@
           "evidence": "农村图书馆工作人员的研究文献数量偏少",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "群体泛称，但作为研究对象，可视为具体类别"
+          "uncertainty": "群体类别，但原文未给出具体个人，可能为泛称"
         },
         {
-          "entity_id": "17_e5",
+          "entity_id": "17_e6",
           "mention": "核心作者",
           "normalized_name": "核心作者",
           "candidate_l3": "scholar",
@@ -1319,11 +1676,11 @@
           ],
           "evidence": "核心作者集中于公共图书馆",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "泛称群体，但作为研究分析对象"
+          "confidence": 0.85,
+          "uncertainty": "群体类别，但原文未给出具体个人，可能为泛称"
         },
         {
-          "entity_id": "17_e6",
+          "entity_id": "17_e7",
           "mention": "公共图书馆",
           "normalized_name": "公共图书馆",
           "candidate_l3": "service",
@@ -1333,7 +1690,20 @@
           "evidence": "核心作者集中于公共图书馆",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "机构类型，但作为具体主体"
+          "uncertainty": "机构类别，但原文未给出具体名称，可能为泛称"
+        },
+        {
+          "entity_id": "17_e8",
+          "mention": "市、县图书馆",
+          "normalized_name": "市、县图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "以市、县图书馆为主体",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "机构类别，但原文未给出具体名称，可能为泛称"
         }
       ],
       "has_evaluation": true,
@@ -1342,46 +1712,28 @@
           "sentence_id": "17",
           "sentence": "$\\textcircled{3}$ 高校教学研究机构的论文量仅占$3 . 0 2 \\%$ 。 在我国，高校图书馆学专业教学单位和图书馆学相关研究机构是我国图书馆学研究的核心,但在1978-2007 年的30 年间,高校教学研究机构对农村图书馆的研究文献年均不足1篇,说明我国图书馆学研究机构对农村图书馆问题的研究相对薄弱，重视程度不够;$\\textcircled{4}$ 农村图书馆工作人员的研究文献数量偏少（“农村图书馆”占 $1 . 1 4 \\%$ ，“乡、镇文化站”占 $1 . 2 6 \\%$ ），说明我国农村图书馆工作人员缺乏一定的研究和交流意识; $\\textcircled{5}$ 核心作者集中于公共图书馆,以市、县图书馆为主体。",
           "subject": "_paper_author",
-          "object": "17_e2",
-          "aspect": "研究",
-          "opinion": "相对薄弱",
-          "evidence": "我国图书馆学研究机构对农村图书馆问题的研究相对薄弱"
+          "object": "17_e1",
+          "aspect": "对农村图书馆问题的研究",
+          "opinion": "相对薄弱，重视程度不够",
+          "evidence": "高校教学研究机构对农村图书馆的研究文献年均不足1篇,说明我国图书馆学研究机构对农村图书馆问题的研究相对薄弱，重视程度不够"
         },
         {
           "sentence_id": "17",
           "sentence": "$\\textcircled{3}$ 高校教学研究机构的论文量仅占$3 . 0 2 \\%$ 。 在我国，高校图书馆学专业教学单位和图书馆学相关研究机构是我国图书馆学研究的核心,但在1978-2007 年的30 年间,高校教学研究机构对农村图书馆的研究文献年均不足1篇,说明我国图书馆学研究机构对农村图书馆问题的研究相对薄弱，重视程度不够;$\\textcircled{4}$ 农村图书馆工作人员的研究文献数量偏少（“农村图书馆”占 $1 . 1 4 \\%$ ，“乡、镇文化站”占 $1 . 2 6 \\%$ ），说明我国农村图书馆工作人员缺乏一定的研究和交流意识; $\\textcircled{5}$ 核心作者集中于公共图书馆,以市、县图书馆为主体。",
           "subject": "_paper_author",
-          "object": "17_e2",
-          "aspect": "重视程度",
-          "opinion": "不够",
-          "evidence": "重视程度不够"
-        },
-        {
-          "sentence_id": "17",
-          "sentence": "$\\textcircled{3}$ 高校教学研究机构的论文量仅占$3 . 0 2 \\%$ 。 在我国，高校图书馆学专业教学单位和图书馆学相关研究机构是我国图书馆学研究的核心,但在1978-2007 年的30 年间,高校教学研究机构对农村图书馆的研究文献年均不足1篇,说明我国图书馆学研究机构对农村图书馆问题的研究相对薄弱，重视程度不够;$\\textcircled{4}$ 农村图书馆工作人员的研究文献数量偏少（“农村图书馆”占 $1 . 1 4 \\%$ ，“乡、镇文化站”占 $1 . 2 6 \\%$ ），说明我国农村图书馆工作人员缺乏一定的研究和交流意识; $\\textcircled{5}$ 核心作者集中于公共图书馆,以市、县图书馆为主体。",
-          "subject": "_paper_author",
-          "object": "17_e4",
-          "aspect": "研究文献数量",
-          "opinion": "偏少",
-          "evidence": "农村图书馆工作人员的研究文献数量偏少"
-        },
-        {
-          "sentence_id": "17",
-          "sentence": "$\\textcircled{3}$ 高校教学研究机构的论文量仅占$3 . 0 2 \\%$ 。 在我国，高校图书馆学专业教学单位和图书馆学相关研究机构是我国图书馆学研究的核心,但在1978-2007 年的30 年间,高校教学研究机构对农村图书馆的研究文献年均不足1篇,说明我国图书馆学研究机构对农村图书馆问题的研究相对薄弱，重视程度不够;$\\textcircled{4}$ 农村图书馆工作人员的研究文献数量偏少（“农村图书馆”占 $1 . 1 4 \\%$ ，“乡、镇文化站”占 $1 . 2 6 \\%$ ），说明我国农村图书馆工作人员缺乏一定的研究和交流意识; $\\textcircled{5}$ 核心作者集中于公共图书馆,以市、县图书馆为主体。",
-          "subject": "_paper_author",
-          "object": "17_e4",
+          "object": "17_e5",
           "aspect": "研究和交流意识",
-          "opinion": "缺乏",
-          "evidence": "缺乏一定的研究和交流意识"
+          "opinion": "缺乏一定的研究和交流意识",
+          "evidence": "农村图书馆工作人员的研究文献数量偏少（“农村图书馆”占1.14%，“乡、镇文化站”占1.26%），说明我国农村图书馆工作人员缺乏一定的研究和交流意识"
         },
         {
           "sentence_id": "17",
           "sentence": "$\\textcircled{3}$ 高校教学研究机构的论文量仅占$3 . 0 2 \\%$ 。 在我国，高校图书馆学专业教学单位和图书馆学相关研究机构是我国图书馆学研究的核心,但在1978-2007 年的30 年间,高校教学研究机构对农村图书馆的研究文献年均不足1篇,说明我国图书馆学研究机构对农村图书馆问题的研究相对薄弱，重视程度不够;$\\textcircled{4}$ 农村图书馆工作人员的研究文献数量偏少（“农村图书馆”占 $1 . 1 4 \\%$ ，“乡、镇文化站”占 $1 . 2 6 \\%$ ），说明我国农村图书馆工作人员缺乏一定的研究和交流意识; $\\textcircled{5}$ 核心作者集中于公共图书馆,以市、县图书馆为主体。",
           "subject": "_paper_author",
           "object": "17_e6",
-          "aspect": "核心作者分布",
-          "opinion": "集中于",
-          "evidence": "核心作者集中于公共图书馆"
+          "aspect": null,
+          "opinion": "集中于公共图书馆,以市、县图书馆为主体",
+          "evidence": "核心作者集中于公共图书馆,以市、县图书馆为主体"
         }
       ]
     },
@@ -1398,16 +1750,16 @@
       "entities": [
         {
           "entity_id": "19_e1",
-          "mention": "农村图书馆研究",
-          "normalized_name": "农村图书馆研究",
-          "candidate_l3": "subfield",
+          "mention": "农村图书馆",
+          "normalized_name": "农村图书馆",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "农村图书馆研究较发达的是江苏、辽宁、浙江、山东等东部地区",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为研究子领域"
+          "uncertainty": "作为研究对象，可能为概念或领域"
         },
         {
           "entity_id": "19_e2",
@@ -1420,7 +1772,7 @@
           "evidence": "农村图书馆研究较发达的是江苏、辽宁、浙江、山东等东部地区",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "地名，可能指代省级行政区，但未明确机构"
+          "uncertainty": "地名，可能指代行政区划，但未明确机构，故低置信"
         },
         {
           "entity_id": "19_e3",
@@ -1433,7 +1785,7 @@
           "evidence": "农村图书馆研究较发达的是江苏、辽宁、浙江、山东等东部地区",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "地名，可能指代省级行政区，但未明确机构"
+          "uncertainty": "地名，可能指代行政区划，但未明确机构，故低置信"
         },
         {
           "entity_id": "19_e4",
@@ -1446,7 +1798,7 @@
           "evidence": "农村图书馆研究较发达的是江苏、辽宁、浙江、山东等东部地区",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "地名，可能指代省级行政区，但未明确机构"
+          "uncertainty": "地名，可能指代行政区划，但未明确机构，故低置信"
         },
         {
           "entity_id": "19_e5",
@@ -1459,7 +1811,7 @@
           "evidence": "农村图书馆研究较发达的是江苏、辽宁、浙江、山东等东部地区",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "地名，可能指代省级行政区，但未明确机构"
+          "uncertainty": "地名，可能指代行政区划，但未明确机构，故低置信"
         },
         {
           "entity_id": "19_e6",
@@ -1472,7 +1824,7 @@
           "evidence": "农村图书馆研究较发达的是江苏、辽宁、浙江、山东等东部地区",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "地理区域概念"
+          "uncertainty": "地理区域，非具体组织，但作为研究范围概念"
         },
         {
           "entity_id": "19_e7",
@@ -1485,7 +1837,7 @@
           "evidence": "大部分中、西部地区研究较为落后",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "地理区域概念"
+          "uncertainty": "地理区域，非具体组织，但作为研究范围概念"
         },
         {
           "entity_id": "19_e8",
@@ -1498,7 +1850,7 @@
           "evidence": "海南省虽属东部地区",
           "is_specific_entity": true,
           "confidence": 0.7,
-          "uncertainty": "地名，可能指代省级行政区，但未明确机构"
+          "uncertainty": "地名，可能指代行政区划，但未明确机构，故低置信"
         },
         {
           "entity_id": "19_e9",
@@ -1511,7 +1863,7 @@
           "evidence": "四个直辖市研究农村图书馆问题的论文也不多",
           "is_specific_entity": true,
           "confidence": 0.8,
-          "uncertainty": "泛指概念，非具体机构"
+          "uncertainty": "指代北京、上海、天津、重庆，但未具体列出，作为概念"
         }
       ],
       "has_evaluation": true,
@@ -1520,8 +1872,8 @@
           "sentence_id": "19",
           "sentence": "从表4看出，农村图书馆研究较发达的是江苏、辽宁、浙江、山东等东部地区，大部分中、西部地区研究较为落后，这与农村图书馆在我国东部地区发展较好，中、西部地区发展较为迟缓有关。此外,海南省虽属东部地区,但未检索到相关文献,四个直辖市研究农村图书馆问题的论文也不多。",
           "subject": "_paper_author",
-          "object": "19_e1",
-          "aspect": "发展程度",
+          "object": "19_e6",
+          "aspect": "农村图书馆研究",
           "opinion": "较发达",
           "evidence": "农村图书馆研究较发达的是江苏、辽宁、浙江、山东等东部地区"
         },
@@ -1530,7 +1882,7 @@
           "sentence": "从表4看出，农村图书馆研究较发达的是江苏、辽宁、浙江、山东等东部地区，大部分中、西部地区研究较为落后，这与农村图书馆在我国东部地区发展较好，中、西部地区发展较为迟缓有关。此外,海南省虽属东部地区,但未检索到相关文献,四个直辖市研究农村图书馆问题的论文也不多。",
           "subject": "_paper_author",
           "object": "19_e7",
-          "aspect": "研究水平",
+          "aspect": "农村图书馆研究",
           "opinion": "较为落后",
           "evidence": "大部分中、西部地区研究较为落后"
         },
@@ -1538,8 +1890,8 @@
           "sentence_id": "19",
           "sentence": "从表4看出，农村图书馆研究较发达的是江苏、辽宁、浙江、山东等东部地区，大部分中、西部地区研究较为落后，这与农村图书馆在我国东部地区发展较好，中、西部地区发展较为迟缓有关。此外,海南省虽属东部地区,但未检索到相关文献,四个直辖市研究农村图书馆问题的论文也不多。",
           "subject": "_paper_author",
-          "object": "19_e6",
-          "aspect": "发展情况",
+          "object": "19_e1",
+          "aspect": "发展",
           "opinion": "发展较好",
           "evidence": "农村图书馆在我国东部地区发展较好"
         },
@@ -1547,8 +1899,8 @@
           "sentence_id": "19",
           "sentence": "从表4看出，农村图书馆研究较发达的是江苏、辽宁、浙江、山东等东部地区，大部分中、西部地区研究较为落后，这与农村图书馆在我国东部地区发展较好，中、西部地区发展较为迟缓有关。此外,海南省虽属东部地区,但未检索到相关文献,四个直辖市研究农村图书馆问题的论文也不多。",
           "subject": "_paper_author",
-          "object": "19_e7",
-          "aspect": "发展情况",
+          "object": "19_e1",
+          "aspect": "发展",
           "opinion": "发展较为迟缓",
           "evidence": "中、西部地区发展较为迟缓"
         },
@@ -1557,7 +1909,7 @@
           "sentence": "从表4看出，农村图书馆研究较发达的是江苏、辽宁、浙江、山东等东部地区，大部分中、西部地区研究较为落后，这与农村图书馆在我国东部地区发展较好，中、西部地区发展较为迟缓有关。此外,海南省虽属东部地区,但未检索到相关文献,四个直辖市研究农村图书馆问题的论文也不多。",
           "subject": "_paper_author",
           "object": "19_e8",
-          "aspect": "研究情况",
+          "aspect": "农村图书馆研究",
           "opinion": "未检索到相关文献",
           "evidence": "海南省虽属东部地区,但未检索到相关文献"
         },
@@ -1566,7 +1918,7 @@
           "sentence": "从表4看出，农村图书馆研究较发达的是江苏、辽宁、浙江、山东等东部地区，大部分中、西部地区研究较为落后，这与农村图书馆在我国东部地区发展较好，中、西部地区发展较为迟缓有关。此外,海南省虽属东部地区,但未检索到相关文献,四个直辖市研究农村图书馆问题的论文也不多。",
           "subject": "_paper_author",
           "object": "19_e9",
-          "aspect": "研究情况",
+          "aspect": "农村图书馆问题研究",
           "opinion": "论文也不多",
           "evidence": "四个直辖市研究农村图书馆问题的论文也不多"
         }
@@ -1584,7 +1936,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "通过查阅《中文核心期刊要目总览（2004版）》",
+          "evidence": "查阅《中文核心期刊要目总览（2004版）》",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -1599,8 +1951,8 @@
           ],
           "evidence": "17种中仅《图书馆》《图书馆杂志》、《图书馆建设》《图书馆理论与实践》《图书馆论坛》和《图书馆工作与研究》为核心期刊",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "期刊名称，可能为期刊实体，但此处作为文献载体提及"
+          "confidence": 0.95,
+          "uncertainty": ""
         },
         {
           "entity_id": "20_e3",
@@ -1612,7 +1964,7 @@
           ],
           "evidence": "17种中仅《图书馆》《图书馆杂志》、《图书馆建设》《图书馆理论与实践》《图书馆论坛》和《图书馆工作与研究》为核心期刊",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.95,
           "uncertainty": ""
         },
         {
@@ -1625,7 +1977,7 @@
           ],
           "evidence": "17种中仅《图书馆》《图书馆杂志》、《图书馆建设》《图书馆理论与实践》《图书馆论坛》和《图书馆工作与研究》为核心期刊",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.95,
           "uncertainty": ""
         },
         {
@@ -1638,7 +1990,7 @@
           ],
           "evidence": "17种中仅《图书馆》《图书馆杂志》、《图书馆建设》《图书馆理论与实践》《图书馆论坛》和《图书馆工作与研究》为核心期刊",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.95,
           "uncertainty": ""
         },
         {
@@ -1651,7 +2003,7 @@
           ],
           "evidence": "17种中仅《图书馆》《图书馆杂志》、《图书馆建设》《图书馆理论与实践》《图书馆论坛》和《图书馆工作与研究》为核心期刊",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.95,
           "uncertainty": ""
         },
         {
@@ -1664,13 +2016,13 @@
           ],
           "evidence": "17种中仅《图书馆》《图书馆杂志》、《图书馆建设》《图书馆理论与实践》《图书馆论坛》和《图书馆工作与研究》为核心期刊",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.95,
           "uncertainty": ""
         },
         {
           "entity_id": "20_e8",
-          "mention": "农村图书馆研究",
-          "normalized_name": "农村图书馆研究",
+          "mention": "我国农村图书馆研究",
+          "normalized_name": "我国农村图书馆研究",
           "candidate_l3": "subfield",
           "candidate_l1": [
             "Abstract"
@@ -1679,6 +2031,19 @@
           "is_specific_entity": true,
           "confidence": 0.9,
           "uncertainty": "作为研究领域"
+        },
+        {
+          "entity_id": "20_e9",
+          "mention": "研究群体",
+          "normalized_name": "研究群体",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "研究群体的研究水平、研究质量有待提高",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称，但作为已知实体保留"
         }
       ],
       "has_evaluation": true,
@@ -1688,16 +2053,16 @@
           "sentence": "648篇，通过查阅《中文核心期刊要目总览（2004版）》发现17种中仅《图书馆》《图书馆杂志》、《图书馆建设》《图书馆理论与实践》《图书馆论坛》和《图书馆工作与研究》为核心期刊，共发文 230篇，占 $3 5 . 5 \\%$ 。 可见，发表农村图书馆相关论文的期刊以普通期刊和内刊居多，这说明我国农村图书馆研究还没有进入图书馆学研究的主流,也说明研究群体的研究水平、研究质量有待提高。",
           "subject": "_paper_author",
           "object": "20_e8",
-          "aspect": "研究水平",
-          "opinion": "有待提高",
-          "evidence": "研究群体的研究水平、研究质量有待提高"
+          "aspect": null,
+          "opinion": "还没有进入图书馆学研究的主流",
+          "evidence": "我国农村图书馆研究还没有进入图书馆学研究的主流"
         },
         {
           "sentence_id": "20",
           "sentence": "648篇，通过查阅《中文核心期刊要目总览（2004版）》发现17种中仅《图书馆》《图书馆杂志》、《图书馆建设》《图书馆理论与实践》《图书馆论坛》和《图书馆工作与研究》为核心期刊，共发文 230篇，占 $3 5 . 5 \\%$ 。 可见，发表农村图书馆相关论文的期刊以普通期刊和内刊居多，这说明我国农村图书馆研究还没有进入图书馆学研究的主流,也说明研究群体的研究水平、研究质量有待提高。",
           "subject": "_paper_author",
-          "object": "20_e8",
-          "aspect": "研究质量",
+          "object": "20_e9",
+          "aspect": "研究水平、研究质量",
           "opinion": "有待提高",
           "evidence": "研究群体的研究水平、研究质量有待提高"
         }
@@ -1764,7 +2129,7 @@
           "evidence": "华东地区省级图书馆协作会编写的《乡镇图书馆工作》",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "协作会为具体组织，但可能为临时性协作组织"
+          "uncertainty": "协作会可能为临时性组织，但具体可识别"
         },
         {
           "entity_id": "22_e5",
@@ -1781,81 +2146,94 @@
         },
         {
           "entity_id": "22_e6",
-          "mention": "农村图书馆业务工作问题",
-          "normalized_name": "农村图书馆业务工作问题",
-          "candidate_l3": "phenomenon",
+          "mention": "这些著作",
+          "normalized_name": "这些著作",
+          "candidate_l3": "book",
           "candidate_l1": [
-            "Abstract"
+            "Artifact"
           ],
-          "evidence": "这些著作主要围绕农村图书馆业务工作问题(藏书建设、图书分类、编目工作、读者工作和图书馆网等）展开分析和研究",
+          "evidence": "这些著作主要围绕农村图书馆业务工作问题",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为研究主题，可能更接近concept，但phenomenon更合适"
+          "confidence": 0.8,
+          "uncertainty": "指代前文具体著作，但mention为泛指，可能不满足具体性"
         },
         {
           "entity_id": "22_e7",
+          "mention": "农村图书馆业务工作问题",
+          "normalized_name": "农村图书馆业务工作问题",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这些著作主要围绕农村图书馆业务工作问题",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "可能为研究主题，非独立命名概念"
+        },
+        {
+          "entity_id": "22_e8",
           "mention": "藏书建设",
           "normalized_name": "藏书建设",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "农村图书馆业务工作问题(藏书建设、图书分类、编目工作、读者工作和图书馆网等）",
+          "evidence": "藏书建设、图书分类、编目工作、读者工作和图书馆网等",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为业务工作术语，可能为concept"
+          "confidence": 0.85,
+          "uncertainty": ""
         },
         {
-          "entity_id": "22_e8",
+          "entity_id": "22_e9",
           "mention": "图书分类",
           "normalized_name": "图书分类",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "农村图书馆业务工作问题(藏书建设、图书分类、编目工作、读者工作和图书馆网等）",
+          "evidence": "藏书建设、图书分类、编目工作、读者工作和图书馆网等",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为业务工作术语，可能为concept"
+          "confidence": 0.85,
+          "uncertainty": ""
         },
         {
-          "entity_id": "22_e9",
+          "entity_id": "22_e10",
           "mention": "编目工作",
           "normalized_name": "编目工作",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "农村图书馆业务工作问题(藏书建设、图书分类、编目工作、读者工作和图书馆网等）",
+          "evidence": "藏书建设、图书分类、编目工作、读者工作和图书馆网等",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为业务工作术语，可能为concept"
+          "confidence": 0.85,
+          "uncertainty": ""
         },
         {
-          "entity_id": "22_e10",
+          "entity_id": "22_e11",
           "mention": "读者工作",
           "normalized_name": "读者工作",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "农村图书馆业务工作问题(藏书建设、图书分类、编目工作、读者工作和图书馆网等）",
+          "evidence": "藏书建设、图书分类、编目工作、读者工作和图书馆网等",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为业务工作术语，可能为concept"
+          "confidence": 0.85,
+          "uncertainty": ""
         },
         {
-          "entity_id": "22_e11",
+          "entity_id": "22_e12",
           "mention": "图书馆网",
           "normalized_name": "图书馆网",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "农村图书馆业务工作问题(藏书建设、图书分类、编目工作、读者工作和图书馆网等）",
+          "evidence": "藏书建设、图书分类、编目工作、读者工作和图书馆网等",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为业务工作术语，可能为concept"
+          "confidence": 0.85,
+          "uncertainty": ""
         }
       ],
       "has_evaluation": true,
@@ -1963,21 +2341,21 @@
       "entities": [
         {
           "entity_id": "24_e1",
-          "mention": "农村图书馆的理论和实践问题",
-          "normalized_name": "农村图书馆理论与实践问题",
-          "candidate_l3": "concept",
+          "mention": "唐士志",
+          "normalized_name": "唐士志",
+          "candidate_l3": "scholar",
           "candidate_l1": [
-            "Abstract"
+            "Agent"
           ],
-          "evidence": "对农村图书馆的理论和实践问题进行研究",
+          "evidence": "唐士志的《乡镇图书馆建设的实践与理论》(1995)",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为研究主题，非具体概念名"
+          "confidence": 0.95,
+          "uncertainty": ""
         },
         {
           "entity_id": "24_e2",
-          "mention": "唐士志的《乡镇图书馆建设的实践与理论》(1995)",
-          "normalized_name": "乡镇图书馆建设的实践与理论(1995)",
+          "mention": "《乡镇图书馆建设的实践与理论》(1995)",
+          "normalized_name": "乡镇图书馆建设的实践与理论",
           "candidate_l3": "book",
           "candidate_l1": [
             "Artifact"
@@ -1989,8 +2367,21 @@
         },
         {
           "entity_id": "24_e3",
-          "mention": "季根章主编的《乡镇图书馆建设的实践与理论》(1999)",
-          "normalized_name": "乡镇图书馆建设的实践与理论(1999)",
+          "mention": "季根章",
+          "normalized_name": "季根章",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "季根章主编的《乡镇图书馆建设的实践与理论》(1999)",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e4",
+          "mention": "《乡镇图书馆建设的实践与理论》(1999)",
+          "normalized_name": "乡镇图书馆建设的实践与理论",
           "candidate_l3": "book",
           "candidate_l1": [
             "Artifact"
@@ -2001,7 +2392,7 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "24_e4",
+          "entity_id": "24_e5",
           "mention": "这些著作",
           "normalized_name": "这些著作",
           "candidate_l3": "book",
@@ -2010,21 +2401,8 @@
           ],
           "evidence": "这些著作从初级层次的讨论业务工作发展到了理论研究和实践研究并重",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "指代前文具体著作，但mention为泛指"
-        },
-        {
-          "entity_id": "24_e5",
-          "mention": "农村图书馆理论问题的探讨",
-          "normalized_name": "农村图书馆理论问题探讨",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "开始关注农村图书馆理论问题的探讨",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为研究主题，非具体概念名"
+          "confidence": 0.9,
+          "uncertainty": "指代前文具体著作，但未明确名称，保留指代"
         }
       ],
       "has_evaluation": true,
@@ -2033,19 +2411,10 @@
           "sentence_id": "24",
           "sentence": "但这一阶段主要是对农村图书馆的理论和实践问题进行研究,出版的著作主要有唐士志的《乡镇图书馆建设的实践与理论》(1995)和季根章主编的《乡镇图书馆建设的实践与理论》(1999)等。 这些著作从初级层次的讨论业务工作发展到了理论研究和实践研究并重,开始关注农村图书馆理论问题的探讨，属研究的中级层次。",
           "subject": "_paper_author",
-          "object": "24_e1",
+          "object": "24_e5",
           "aspect": "研究层次",
-          "opinion": "属研究的中级层次",
-          "evidence": "属研究的中级层次"
-        },
-        {
-          "sentence_id": "24",
-          "sentence": "但这一阶段主要是对农村图书馆的理论和实践问题进行研究,出版的著作主要有唐士志的《乡镇图书馆建设的实践与理论》(1995)和季根章主编的《乡镇图书馆建设的实践与理论》(1999)等。 这些著作从初级层次的讨论业务工作发展到了理论研究和实践研究并重,开始关注农村图书馆理论问题的探讨，属研究的中级层次。",
-          "subject": "_paper_author",
-          "object": "24_e4",
-          "aspect": "研究层次",
-          "opinion": "属研究的中级层次",
-          "evidence": "属研究的中级层次"
+          "opinion": "从初级层次的讨论业务工作发展到了理论研究和实践研究并重，属研究的中级层次",
+          "evidence": "这些著作从初级层次的讨论业务工作发展到了理论研究和实践研究并重，属研究的中级层次"
         }
       ]
     },
@@ -2081,81 +2450,16 @@
         },
         {
           "entity_id": "25_e3",
-          "mention": "农村图书馆的基本理论问题和业务工作问题",
-          "normalized_name": "农村图书馆的基本理论问题和业务工作问题",
-          "candidate_l3": "concept",
+          "mention": "农村图书馆研究",
+          "normalized_name": "农村图书馆研究",
+          "candidate_l3": "subfield",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "研究内容不仅涉及农村图书馆的基本理论问题和业务工作问题",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为研究主题，可能为concept或subfield，但原句未明确为学科子领域"
-        },
-        {
-          "entity_id": "25_e4",
-          "mention": "经费问题",
-          "normalized_name": "经费问题",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "还对其经费问题、构建模式问题、管理模式问题、教育问题等展开分析和研究",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为研究主题，可能为concept或phenomenon，但原句未明确为现象"
-        },
-        {
-          "entity_id": "25_e5",
-          "mention": "构建模式问题",
-          "normalized_name": "构建模式问题",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "还对其经费问题、构建模式问题、管理模式问题、教育问题等展开分析和研究",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为研究主题，可能为concept或phenomenon，但原句未明确为现象"
-        },
-        {
-          "entity_id": "25_e6",
-          "mention": "管理模式问题",
-          "normalized_name": "管理模式问题",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "还对其经费问题、构建模式问题、管理模式问题、教育问题等展开分析和研究",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为研究主题，可能为concept或phenomenon，但原句未明确为现象"
-        },
-        {
-          "entity_id": "25_e7",
-          "mention": "教育问题",
-          "normalized_name": "教育问题",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "还对其经费问题、构建模式问题、管理模式问题、教育问题等展开分析和研究",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "作为研究主题，可能为concept或phenomenon，但原句未明确为现象"
-        },
-        {
-          "entity_id": "25_e8",
-          "mention": "某些问题",
-          "normalized_name": "某些问题",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "同时对某些问题进行了深层次研讨",
-          "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "指代不明确，但作为已知实体保留"
+          "confidence": 0.85,
+          "uncertainty": "作为研究领域，非具体实体"
         }
       ],
       "has_evaluation": true,
@@ -2165,54 +2469,9 @@
           "sentence": "这一时期出版的著作主要有廖腾芳《中国乡村社区图书馆的现状及发展模式研究》(2006），白兴礼和杨桂莲《甘肃贫困农村图书馆信息知识援助》(2007）等。 研究内容不仅涉及农村图书馆的基本理论问题和业务工作问题,还对其经费问题、构建模式问题、管理模式问题、教育问题等展开分析和研究,同时对某些问题进行了深层次研讨，属于研究较为高级的层次。",
           "subject": "_paper_author",
           "object": "25_e3",
-          "aspect": null,
-          "opinion": "涉及",
-          "evidence": "研究内容不仅涉及农村图书馆的基本理论问题和业务工作问题"
-        },
-        {
-          "sentence_id": "25",
-          "sentence": "这一时期出版的著作主要有廖腾芳《中国乡村社区图书馆的现状及发展模式研究》(2006），白兴礼和杨桂莲《甘肃贫困农村图书馆信息知识援助》(2007）等。 研究内容不仅涉及农村图书馆的基本理论问题和业务工作问题,还对其经费问题、构建模式问题、管理模式问题、教育问题等展开分析和研究,同时对某些问题进行了深层次研讨，属于研究较为高级的层次。",
-          "subject": "_paper_author",
-          "object": "25_e4",
-          "aspect": null,
-          "opinion": "展开分析和研究",
-          "evidence": "还对其经费问题、构建模式问题、管理模式问题、教育问题等展开分析和研究"
-        },
-        {
-          "sentence_id": "25",
-          "sentence": "这一时期出版的著作主要有廖腾芳《中国乡村社区图书馆的现状及发展模式研究》(2006），白兴礼和杨桂莲《甘肃贫困农村图书馆信息知识援助》(2007）等。 研究内容不仅涉及农村图书馆的基本理论问题和业务工作问题,还对其经费问题、构建模式问题、管理模式问题、教育问题等展开分析和研究,同时对某些问题进行了深层次研讨，属于研究较为高级的层次。",
-          "subject": "_paper_author",
-          "object": "25_e5",
-          "aspect": null,
-          "opinion": "展开分析和研究",
-          "evidence": "还对其经费问题、构建模式问题、管理模式问题、教育问题等展开分析和研究"
-        },
-        {
-          "sentence_id": "25",
-          "sentence": "这一时期出版的著作主要有廖腾芳《中国乡村社区图书馆的现状及发展模式研究》(2006），白兴礼和杨桂莲《甘肃贫困农村图书馆信息知识援助》(2007）等。 研究内容不仅涉及农村图书馆的基本理论问题和业务工作问题,还对其经费问题、构建模式问题、管理模式问题、教育问题等展开分析和研究,同时对某些问题进行了深层次研讨，属于研究较为高级的层次。",
-          "subject": "_paper_author",
-          "object": "25_e6",
-          "aspect": null,
-          "opinion": "展开分析和研究",
-          "evidence": "还对其经费问题、构建模式问题、管理模式问题、教育问题等展开分析和研究"
-        },
-        {
-          "sentence_id": "25",
-          "sentence": "这一时期出版的著作主要有廖腾芳《中国乡村社区图书馆的现状及发展模式研究》(2006），白兴礼和杨桂莲《甘肃贫困农村图书馆信息知识援助》(2007）等。 研究内容不仅涉及农村图书馆的基本理论问题和业务工作问题,还对其经费问题、构建模式问题、管理模式问题、教育问题等展开分析和研究,同时对某些问题进行了深层次研讨，属于研究较为高级的层次。",
-          "subject": "_paper_author",
-          "object": "25_e7",
-          "aspect": null,
-          "opinion": "展开分析和研究",
-          "evidence": "还对其经费问题、构建模式问题、管理模式问题、教育问题等展开分析和研究"
-        },
-        {
-          "sentence_id": "25",
-          "sentence": "这一时期出版的著作主要有廖腾芳《中国乡村社区图书馆的现状及发展模式研究》(2006），白兴礼和杨桂莲《甘肃贫困农村图书馆信息知识援助》(2007）等。 研究内容不仅涉及农村图书馆的基本理论问题和业务工作问题,还对其经费问题、构建模式问题、管理模式问题、教育问题等展开分析和研究,同时对某些问题进行了深层次研讨，属于研究较为高级的层次。",
-          "subject": "_paper_author",
-          "object": "25_e8",
-          "aspect": null,
-          "opinion": "进行了深层次研讨",
-          "evidence": "同时对某些问题进行了深层次研讨"
+          "aspect": "研究层次",
+          "opinion": "属于研究较为高级的层次",
+          "evidence": "属于研究较为高级的层次"
         }
       ]
     },
@@ -2223,7 +2482,7 @@
         {
           "entity_id": "26_e1",
           "mention": "我国农村图书馆研究",
-          "normalized_name": "农村图书馆研究",
+          "normalized_name": "我国农村图书馆研究",
           "candidate_l3": "subfield",
           "candidate_l1": [
             "Abstract"
@@ -2231,7 +2490,7 @@
           "evidence": "1978年以来我国农村图书馆研究从最基本的业务工作研究",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为研究领域，非concept兜底"
+          "uncertainty": "作为研究领域，非具体机构"
         }
       ],
       "has_evaluation": true,
@@ -2241,27 +2500,9 @@
           "sentence": "总体来说,1978年以来我国农村图书馆研究从最基本的业务工作研究,逐步发展到对理论问题、发展问题、服务问题、管理问题等进行全面的研究； 从最初对基本业务工作的介绍性论述,发展到目前就某一问题开展深层次的研究,呈现出逐步深化的趋势,研究工作不断深化和发展,研究体系不断完善。",
           "subject": "_paper_author",
           "object": "26_e1",
-          "aspect": "研究趋势",
-          "opinion": "呈现出逐步深化的趋势",
-          "evidence": "呈现出逐步深化的趋势"
-        },
-        {
-          "sentence_id": "26",
-          "sentence": "总体来说,1978年以来我国农村图书馆研究从最基本的业务工作研究,逐步发展到对理论问题、发展问题、服务问题、管理问题等进行全面的研究； 从最初对基本业务工作的介绍性论述,发展到目前就某一问题开展深层次的研究,呈现出逐步深化的趋势,研究工作不断深化和发展,研究体系不断完善。",
-          "subject": "_paper_author",
-          "object": "26_e1",
-          "aspect": "研究工作",
-          "opinion": "不断深化和发展",
-          "evidence": "研究工作不断深化和发展"
-        },
-        {
-          "sentence_id": "26",
-          "sentence": "总体来说,1978年以来我国农村图书馆研究从最基本的业务工作研究,逐步发展到对理论问题、发展问题、服务问题、管理问题等进行全面的研究； 从最初对基本业务工作的介绍性论述,发展到目前就某一问题开展深层次的研究,呈现出逐步深化的趋势,研究工作不断深化和发展,研究体系不断完善。",
-          "subject": "_paper_author",
-          "object": "26_e1",
-          "aspect": "研究体系",
-          "opinion": "不断完善",
-          "evidence": "研究体系不断完善"
+          "aspect": null,
+          "opinion": "呈现出逐步深化的趋势,研究工作不断深化和发展,研究体系不断完善",
+          "evidence": "呈现出逐步深化的趋势,研究工作不断深化和发展,研究体系不断完善"
         }
       ]
     },
@@ -2298,7 +2539,7 @@
         {
           "entity_id": "27_e3",
           "mention": "我国首届农村图书馆建设理论研讨会",
-          "normalized_name": "我国首届农村图书馆建设理论研讨会",
+          "normalized_name": "首届农村图书馆建设理论研讨会",
           "candidate_l3": "conference_meeting",
           "candidate_l1": [
             "Event"
@@ -2319,7 +2560,7 @@
           "evidence": "开创了1978年以来农村图书馆全国性学术研讨会的先河",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "指代一系列会议，但作为整体事件"
+          "uncertainty": "指代一系列会议，非具体一次会议"
         }
       ],
       "has_evaluation": false,
@@ -2378,8 +2619,8 @@
           ],
           "evidence": "并结集出版了研讨会论文集(表5)",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "具体名称未给出，但作为具体文献类型"
+          "confidence": 0.8,
+          "uncertainty": "未给出具体名称，但指代具体出版物"
         }
       ],
       "has_evaluation": false,
@@ -2410,7 +2651,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "王煜的《南海区镇(街道)图书馆研究》(中山大学)",
+          "evidence": "王煜的《南海区镇(街道)图书馆研究》",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -2436,7 +2677,7 @@
           "candidate_l1": [
             "Agent"
           ],
-          "evidence": "王煜的《南海区镇(街道)图书馆研究》(中山大学)",
+          "evidence": "(中山大学)",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -2449,7 +2690,7 @@
           "candidate_l1": [
             "Artifact"
           ],
-          "evidence": "肖卓的《村级图书馆发展研究：广东省佛山市南海区村级图书馆个案调查》(中山大学)",
+          "evidence": "肖卓的《村级图书馆发展研究：广东省佛山市南海区村级图书馆个案调查》",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
@@ -2469,42 +2710,16 @@
         },
         {
           "entity_id": "29_e7",
-          "mention": "农村图书馆",
-          "normalized_name": "农村图书馆",
-          "candidate_l3": "concept",
+          "mention": "两篇文章",
+          "normalized_name": "两篇文章",
+          "candidate_l3": "paper",
           "candidate_l1": [
-            "Abstract"
+            "Artifact"
           ],
-          "evidence": "两篇有关农村图书馆的硕士学位论文",
+          "evidence": "两篇文章都是在实地调研的基础上",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为研究对象，可能为概念或实体，此处按概念处理"
-        },
-        {
-          "entity_id": "29_e8",
-          "mention": "农村图书馆建设",
-          "normalized_name": "农村图书馆建设",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "针对个别地区农村图书馆建设过程中取得的成功经验",
-          "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为建设过程，可能为事件或概念，此处按概念处理"
-        },
-        {
-          "entity_id": "29_e9",
-          "mention": "我国农村图书馆的可持续发展",
-          "normalized_name": "我国农村图书馆的可持续发展",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "探索我国农村图书馆的可持续发展之路",
-          "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为发展目标，可能为概念或现象，此处按概念处理"
+          "confidence": 0.8,
+          "uncertainty": "指代前文两篇论文，但未给出具体名称，可能不满足具体性要求"
         }
       ],
       "has_evaluation": true,
@@ -2513,19 +2728,10 @@
           "sentence_id": "29",
           "sentence": "利用清华同方《中国优秀博硕士学位论文全文数据库》进行检索,得到两篇有关农村图书馆的硕士学位论文：王煜的《南海区镇(街道)图书馆研究》(中山大学)和肖卓的《村级图书馆发展研究：广东省佛山市南海区村级图书馆个案调查》(中山大学)。 两篇文章都是在实地调研的基础上，针对个别地区农村图书馆建设过程中取得的成功经验以及尚且存在的问题,提出相应的解决方法,探索我国农村图书馆的可持续发展之路。",
           "subject": "_paper_author",
-          "object": "29_e8",
-          "aspect": "成功经验",
-          "opinion": "取得",
-          "evidence": "针对个别地区农村图书馆建设过程中取得的成功经验"
-        },
-        {
-          "sentence_id": "29",
-          "sentence": "利用清华同方《中国优秀博硕士学位论文全文数据库》进行检索,得到两篇有关农村图书馆的硕士学位论文：王煜的《南海区镇(街道)图书馆研究》(中山大学)和肖卓的《村级图书馆发展研究：广东省佛山市南海区村级图书馆个案调查》(中山大学)。 两篇文章都是在实地调研的基础上，针对个别地区农村图书馆建设过程中取得的成功经验以及尚且存在的问题,提出相应的解决方法,探索我国农村图书馆的可持续发展之路。",
-          "subject": "_paper_author",
-          "object": "29_e8",
-          "aspect": "问题",
-          "opinion": "存在",
-          "evidence": "尚且存在的问题"
+          "object": "29_e7",
+          "aspect": null,
+          "opinion": "都是在实地调研的基础上，针对个别地区农村图书馆建设过程中取得的成功经验以及尚且存在的问题,提出相应的解决方法,探索我国农村图书馆的可持续发展之路",
+          "evidence": "两篇文章都是在实地调研的基础上，针对个别地区农村图书馆建设过程中取得的成功经验以及尚且存在的问题,提出相应的解决方法,探索我国农村图书馆的可持续发展之路。"
         }
       ]
     },
@@ -2536,7 +2742,7 @@
         {
           "entity_id": "30_e1",
           "mention": "我国农村图书馆研究",
-          "normalized_name": "农村图书馆研究",
+          "normalized_name": "我国农村图书馆研究",
           "candidate_l3": "subfield",
           "candidate_l1": [
             "Abstract"
@@ -2544,19 +2750,19 @@
           "evidence": "我国农村图书馆研究在发文量和研究深度上都呈持续发展状态",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为研究子领域"
+          "uncertainty": ""
         },
         {
           "entity_id": "30_e2",
-          "mention": "图书馆学",
-          "normalized_name": "图书馆学",
-          "candidate_l3": "discipline",
+          "mention": "图书馆学其他领域的研究",
+          "normalized_name": "图书馆学其他领域的研究",
+          "candidate_l3": "subfield",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "与图书馆学其他领域的研究情况相比",
           "is_specific_entity": true,
-          "confidence": 0.95,
+          "confidence": 0.9,
           "uncertainty": ""
         }
       ],
@@ -2567,43 +2773,16 @@
           "sentence": "1978年以来,我国农村图书馆研究在发文量和研究深度上都呈持续发展状态，但与图书馆学其他领域的研究情况相比，无论从发文量、研究水平，还是从著作出版情况等方面来看，都远非理想状态，原因之一是图书馆学界对此重视程度不够。",
           "subject": "_paper_author",
           "object": "30_e1",
-          "aspect": "发文量",
-          "opinion": "持续发展状态",
-          "evidence": "在发文量和研究深度上都呈持续发展状态"
+          "aspect": "发文量和研究深度",
+          "opinion": "呈持续发展状态",
+          "evidence": "我国农村图书馆研究在发文量和研究深度上都呈持续发展状态"
         },
         {
           "sentence_id": "30",
           "sentence": "1978年以来,我国农村图书馆研究在发文量和研究深度上都呈持续发展状态，但与图书馆学其他领域的研究情况相比，无论从发文量、研究水平，还是从著作出版情况等方面来看，都远非理想状态，原因之一是图书馆学界对此重视程度不够。",
           "subject": "_paper_author",
           "object": "30_e1",
-          "aspect": "研究深度",
-          "opinion": "持续发展状态",
-          "evidence": "在发文量和研究深度上都呈持续发展状态"
-        },
-        {
-          "sentence_id": "30",
-          "sentence": "1978年以来,我国农村图书馆研究在发文量和研究深度上都呈持续发展状态，但与图书馆学其他领域的研究情况相比，无论从发文量、研究水平，还是从著作出版情况等方面来看，都远非理想状态，原因之一是图书馆学界对此重视程度不够。",
-          "subject": "_paper_author",
-          "object": "30_e1",
-          "aspect": "发文量",
-          "opinion": "远非理想状态",
-          "evidence": "无论从发文量、研究水平，还是从著作出版情况等方面来看，都远非理想状态"
-        },
-        {
-          "sentence_id": "30",
-          "sentence": "1978年以来,我国农村图书馆研究在发文量和研究深度上都呈持续发展状态，但与图书馆学其他领域的研究情况相比，无论从发文量、研究水平，还是从著作出版情况等方面来看，都远非理想状态，原因之一是图书馆学界对此重视程度不够。",
-          "subject": "_paper_author",
-          "object": "30_e1",
-          "aspect": "研究水平",
-          "opinion": "远非理想状态",
-          "evidence": "无论从发文量、研究水平，还是从著作出版情况等方面来看，都远非理想状态"
-        },
-        {
-          "sentence_id": "30",
-          "sentence": "1978年以来,我国农村图书馆研究在发文量和研究深度上都呈持续发展状态，但与图书馆学其他领域的研究情况相比，无论从发文量、研究水平，还是从著作出版情况等方面来看，都远非理想状态，原因之一是图书馆学界对此重视程度不够。",
-          "subject": "_paper_author",
-          "object": "30_e1",
-          "aspect": "著作出版情况",
+          "aspect": "发文量、研究水平、著作出版情况",
           "opinion": "远非理想状态",
           "evidence": "无论从发文量、研究水平，还是从著作出版情况等方面来看，都远非理想状态"
         }
@@ -2616,7 +2795,7 @@
         {
           "entity_id": "31_e1",
           "mention": "我国农村图书馆问题",
-          "normalized_name": "农村图书馆问题",
+          "normalized_name": "我国农村图书馆问题",
           "candidate_l3": "phenomenon",
           "candidate_l1": [
             "Abstract"
@@ -2625,6 +2804,32 @@
           "is_specific_entity": true,
           "confidence": 0.9,
           "uncertainty": ""
+        },
+        {
+          "entity_id": "31_e2",
+          "mention": "1978-2007年",
+          "normalized_name": "1978-2007年",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "1978-2007年研究我国农村图书馆问题的论文共953篇",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "时间范围，可能作为发展阶段"
+        },
+        {
+          "entity_id": "31_e3",
+          "mention": "农村图书馆",
+          "normalized_name": "农村图书馆",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我国对农村图书馆的研究相对不足",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为研究对象，可能为概念"
         }
       ],
       "has_evaluation": true,
@@ -2652,52 +2857,39 @@
           "candidate_l1": [
             "Event"
           ],
-          "evidence": "批准的“社科基金项目(图书馆、情报与文献学）\"中",
+          "evidence": "在1993-2007年间批准的“社科基金项目(图书馆、情报与文献学）\"中",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": ""
+          "uncertainty": "可能指资助项目集合，但具体指称该学科领域的社科基金项目"
         },
         {
           "entity_id": "32_e2",
-          "mention": "农村图书馆",
-          "normalized_name": "农村图书馆",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "均无研究农村图书馆的项目",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为研究对象，可能为subfield或concept，但原句未明确为学科或子领域，故标concept"
-        },
-        {
-          "entity_id": "32_e3",
           "mention": "南开大学",
           "normalized_name": "南开大学",
           "candidate_l3": "research",
           "candidate_l1": [
             "Agent"
           ],
-          "evidence": "南开大学于良芝教授主持",
+          "evidence": "南开大学于良芝教授主持的",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
         },
         {
-          "entity_id": "32_e4",
+          "entity_id": "32_e3",
           "mention": "于良芝",
           "normalized_name": "于良芝",
           "candidate_l3": "scholar",
           "candidate_l1": [
             "Agent"
           ],
-          "evidence": "南开大学于良芝教授主持",
+          "evidence": "南开大学于良芝教授主持的",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
         },
         {
-          "entity_id": "32_e5",
+          "entity_id": "32_e4",
           "mention": "面向学习型社会主义新农村建设的县级图书馆功能设计研究",
           "normalized_name": "面向学习型社会主义新农村建设的县级图书馆功能设计研究",
           "candidate_l3": "research_program",
@@ -2706,21 +2898,21 @@
           ],
           "evidence": "主持的“面向学习型社会主义新农村建设的县级图书馆功能设计研究”(2006）",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "项目名称，可能为research_program或report，但作为项目更合适"
+          "confidence": 0.95,
+          "uncertainty": ""
         },
         {
-          "entity_id": "32_e6",
-          "mention": "农村图书馆的研究",
-          "normalized_name": "农村图书馆研究",
+          "entity_id": "32_e5",
+          "mention": "我国农村图书馆的研究",
+          "normalized_name": "我国农村图书馆研究",
           "candidate_l3": "subfield",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "我国农村图书馆的研究显得相对薄弱",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为研究领域，可能为subfield或concept，但原句强调研究领域，故标subfield"
+          "confidence": 0.9,
+          "uncertainty": "作为研究领域，非具体文献"
         }
       ],
       "has_evaluation": true,
@@ -2729,7 +2921,7 @@
           "sentence_id": "32",
           "sentence": "又如在1993-2007年间批准的“社科基金项目(图书馆、情报与文献学）\"中,均无研究农村图书馆的项目，最相近的项目是南开大学于良芝教授主持的“面向学习型社会主义新农村建设的县级图书馆功能设计研究”(2006）25],也未能深入到农村图书馆领域。 与其他类型图书馆的研究相比,我国农村图书馆的研究显得相对薄弱。",
           "subject": "_paper_author",
-          "object": "32_e6",
+          "object": "32_e5",
           "aspect": null,
           "opinion": "显得相对薄弱",
           "evidence": "我国农村图书馆的研究显得相对薄弱"
@@ -2757,40 +2949,27 @@
           "entity_id": "33_e2",
           "mention": "农村图书馆",
           "normalized_name": "农村图书馆",
-          "candidate_l3": "service",
-          "candidate_l1": [
-            "Agent"
-          ],
-          "evidence": "农村图书馆如何发展",
-          "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为具体机构类型，但未指具体图书馆，可能为泛称"
-        },
-        {
-          "entity_id": "33_e3",
-          "mention": "农村图书馆建设",
-          "normalized_name": "农村图书馆建设",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "农村图书馆建设的必要性",
+          "evidence": "农村图书馆如何发展,农村图书馆建设的必要性、重要性,农村图书馆在农村文化建设中的功能和作用，农村图书馆建设中存在的问题及措施建议，农村图书馆的发展模式等一直是研究和讨论的重点",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "可能为活动或概念，但无具体事件"
+          "uncertainty": "作为研究对象，可能指具体图书馆或概念，但此处泛指，故标concept"
         },
         {
-          "entity_id": "33_e4",
+          "entity_id": "33_e3",
           "mention": "农村图书馆发展问题",
           "normalized_name": "农村图书馆发展问题",
-          "candidate_l3": "concept",
+          "candidate_l3": "phenomenon",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "农村图书馆发展问题仍将是研究重点",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为研究主题，非具体现象"
+          "confidence": 0.9,
+          "uncertainty": "已知实体，作为研究主题"
         }
       ],
       "has_evaluation": true,
@@ -2799,25 +2978,7 @@
           "sentence_id": "33",
           "sentence": "从已经出版的著作以及前几届“中国社区乡镇图书馆发展战略研讨会\"的议题中也看出,农村图书馆如何发展,农村图书馆建设的必要性、重要性,农村图书馆在农村文化建设中的功能和作用，农村图书馆建设中存在的问题及措施建议，农村图书馆的发展模式等一直是研究和讨论的重点。 从研究成果看，目前尚未有突破性进展。可以预见，在将来的研究中农村图书馆发展问题仍将是研究重点。",
           "subject": "_paper_author",
-          "object": "33_e2",
-          "aspect": "发展",
-          "opinion": "一直是研究和讨论的重点",
-          "evidence": "农村图书馆如何发展...一直是研究和讨论的重点"
-        },
-        {
-          "sentence_id": "33",
-          "sentence": "从已经出版的著作以及前几届“中国社区乡镇图书馆发展战略研讨会\"的议题中也看出,农村图书馆如何发展,农村图书馆建设的必要性、重要性,农村图书馆在农村文化建设中的功能和作用，农村图书馆建设中存在的问题及措施建议，农村图书馆的发展模式等一直是研究和讨论的重点。 从研究成果看，目前尚未有突破性进展。可以预见，在将来的研究中农村图书馆发展问题仍将是研究重点。",
-          "subject": "_paper_author",
           "object": "33_e3",
-          "aspect": "必要性",
-          "opinion": "一直是研究和讨论的重点",
-          "evidence": "农村图书馆建设的必要性...一直是研究和讨论的重点"
-        },
-        {
-          "sentence_id": "33",
-          "sentence": "从已经出版的著作以及前几届“中国社区乡镇图书馆发展战略研讨会\"的议题中也看出,农村图书馆如何发展,农村图书馆建设的必要性、重要性,农村图书馆在农村文化建设中的功能和作用，农村图书馆建设中存在的问题及措施建议，农村图书馆的发展模式等一直是研究和讨论的重点。 从研究成果看，目前尚未有突破性进展。可以预见，在将来的研究中农村图书馆发展问题仍将是研究重点。",
-          "subject": "_paper_author",
-          "object": "33_e4",
           "aspect": null,
           "opinion": "仍将是研究重点",
           "evidence": "农村图书馆发展问题仍将是研究重点"
@@ -2845,82 +3006,43 @@
           "entity_id": "34_e2",
           "mention": "农村图书馆基础理论文献",
           "normalized_name": "农村图书馆基础理论文献",
-          "candidate_l3": "corpus",
+          "candidate_l3": "paper",
           "candidate_l1": [
             "Artifact"
           ],
           "evidence": "农村图书馆基础理论文献很少",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "文献集合，非单一文献"
+          "uncertainty": "可能指文献集合，非单一文献"
         },
         {
           "entity_id": "34_e3",
-          "mention": "农村图书馆研究",
-          "normalized_name": "农村图书馆研究",
-          "candidate_l3": "subfield",
+          "mention": "研究内容",
+          "normalized_name": "研究内容",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "但在农村图书馆研究领域关于信息技术方面的研究也极少",
+          "evidence": "研究内容空泛",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": ""
+          "confidence": 0.7,
+          "uncertainty": "泛称，可能不抽取"
         },
         {
           "entity_id": "34_e4",
-          "mention": "图书馆的资源建设",
-          "normalized_name": "图书馆资源建设",
-          "candidate_l3": "concept",
+          "mention": "图书馆的资源建设和服务问题",
+          "normalized_name": "图书馆资源建设和服务问题",
+          "candidate_l3": "phenomenon",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "图书馆的资源建设和服务问题是图书馆工作和研究的核心内容",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "业务概念"
+          "confidence": 0.85,
+          "uncertainty": ""
         },
         {
           "entity_id": "34_e5",
-          "mention": "图书馆服务",
-          "normalized_name": "图书馆服务",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "图书馆的资源建设和服务问题是图书馆工作和研究的核心内容",
-          "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "业务概念"
-        },
-        {
-          "entity_id": "34_e6",
-          "mention": "计算机技术",
-          "normalized_name": "计算机技术",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "随着计算机技术和网络技术的发展",
-          "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "技术领域，非具体技术"
-        },
-        {
-          "entity_id": "34_e7",
-          "mention": "网络技术",
-          "normalized_name": "网络技术",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "随着计算机技术和网络技术的发展",
-          "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "技术领域，非具体技术"
-        },
-        {
-          "entity_id": "34_e8",
           "mention": "图书馆自动化",
           "normalized_name": "图书馆自动化",
           "candidate_l3": "concept",
@@ -2929,39 +3051,13 @@
           ],
           "evidence": "图书馆自动化、数字图书馆、网络图书馆和Lib2.0等成为图书馆学的研究热点",
           "is_specific_entity": true,
-          "confidence": 0.85,
+          "confidence": 0.9,
           "uncertainty": ""
         },
         {
-          "entity_id": "34_e9",
+          "entity_id": "34_e6",
           "mention": "数字图书馆",
           "normalized_name": "数字图书馆",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "图书馆自动化、数字图书馆、网络图书馆和Lib2.0等成为图书馆学的研究热点",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "34_e10",
-          "mention": "网络图书馆",
-          "normalized_name": "网络图书馆",
-          "candidate_l3": "concept",
-          "candidate_l1": [
-            "Abstract"
-          ],
-          "evidence": "图书馆自动化、数字图书馆、网络图书馆和Lib2.0等成为图书馆学的研究热点",
-          "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": ""
-        },
-        {
-          "entity_id": "34_e11",
-          "mention": "Lib2.0",
-          "normalized_name": "Lib2.0",
           "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
@@ -2972,30 +3068,43 @@
           "uncertainty": ""
         },
         {
-          "entity_id": "34_e12",
-          "mention": "图书馆学",
-          "normalized_name": "图书馆学",
-          "candidate_l3": "discipline",
+          "entity_id": "34_e7",
+          "mention": "网络图书馆",
+          "normalized_name": "网络图书馆",
+          "candidate_l3": "concept",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "成为图书馆学的研究热点",
+          "evidence": "图书馆自动化、数字图书馆、网络图书馆和Lib2.0等成为图书馆学的研究热点",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "34_e8",
+          "mention": "Lib2.0",
+          "normalized_name": "Lib2.0",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆自动化、数字图书馆、网络图书馆和Lib2.0等成为图书馆学的研究热点",
           "is_specific_entity": true,
           "confidence": 0.95,
           "uncertainty": ""
         },
         {
-          "entity_id": "34_e13",
-          "mention": "信息技术",
-          "normalized_name": "信息技术",
-          "candidate_l3": "concept",
+          "entity_id": "34_e9",
+          "mention": "农村图书馆研究领域关于信息技术方面的研究",
+          "normalized_name": "农村图书馆信息技术研究",
+          "candidate_l3": "subfield",
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "关于信息技术方面的研究也极少",
+          "evidence": "农村图书馆研究领域关于信息技术方面的研究也极少",
           "is_specific_entity": true,
-          "confidence": 0.7,
-          "uncertainty": "技术领域，非具体技术"
+          "confidence": 0.9,
+          "uncertainty": ""
         }
       ],
       "has_evaluation": true,
@@ -3014,7 +3123,7 @@
           "sentence": "基础理论研究是研究工作的基础,但农村图书馆的基础理论研究相对滞后。农村图书馆基础理论文献很少（占 $12 . 3 8 \\%$ ），实践总结和理论分析也有限,研究内容空泛,深度不够，并且在研究中流于一般概念的诠释,缺少创新思维和理论上的突破。另外，图书馆的资源建设和服务问题是图书馆工作和研究的核心内容，在研究中却得不到重视，研究文献量有限（图书馆资源建设仅占1. $05 \\%$ 、图书馆服务仅占$8 . 6 0 \\%$ )。自20 世纪90 年代以来,随着计算机技术和网络技术的发展,图书馆自动化、数字图书馆、网络图书馆和Lib2.0等成为图书馆学的研究热点,但在农村图书馆研究领域关于信息技术方面的研究也极少(新技术仅占 $0 . 9 4 \\%$ ）。",
           "subject": "_paper_author",
           "object": "34_e2",
-          "aspect": "文献数量",
+          "aspect": null,
           "opinion": "很少",
           "evidence": "农村图书馆基础理论文献很少"
         },
@@ -3022,8 +3131,8 @@
           "sentence_id": "34",
           "sentence": "基础理论研究是研究工作的基础,但农村图书馆的基础理论研究相对滞后。农村图书馆基础理论文献很少（占 $12 . 3 8 \\%$ ），实践总结和理论分析也有限,研究内容空泛,深度不够，并且在研究中流于一般概念的诠释,缺少创新思维和理论上的突破。另外，图书馆的资源建设和服务问题是图书馆工作和研究的核心内容，在研究中却得不到重视，研究文献量有限（图书馆资源建设仅占1. $05 \\%$ 、图书馆服务仅占$8 . 6 0 \\%$ )。自20 世纪90 年代以来,随着计算机技术和网络技术的发展,图书馆自动化、数字图书馆、网络图书馆和Lib2.0等成为图书馆学的研究热点,但在农村图书馆研究领域关于信息技术方面的研究也极少(新技术仅占 $0 . 9 4 \\%$ ）。",
           "subject": "_paper_author",
-          "object": "34_e1",
-          "aspect": "研究内容",
+          "object": "34_e3",
+          "aspect": null,
           "opinion": "空泛",
           "evidence": "研究内容空泛"
         },
@@ -3031,37 +3140,19 @@
           "sentence_id": "34",
           "sentence": "基础理论研究是研究工作的基础,但农村图书馆的基础理论研究相对滞后。农村图书馆基础理论文献很少（占 $12 . 3 8 \\%$ ），实践总结和理论分析也有限,研究内容空泛,深度不够，并且在研究中流于一般概念的诠释,缺少创新思维和理论上的突破。另外，图书馆的资源建设和服务问题是图书馆工作和研究的核心内容，在研究中却得不到重视，研究文献量有限（图书馆资源建设仅占1. $05 \\%$ 、图书馆服务仅占$8 . 6 0 \\%$ )。自20 世纪90 年代以来,随着计算机技术和网络技术的发展,图书馆自动化、数字图书馆、网络图书馆和Lib2.0等成为图书馆学的研究热点,但在农村图书馆研究领域关于信息技术方面的研究也极少(新技术仅占 $0 . 9 4 \\%$ ）。",
           "subject": "_paper_author",
-          "object": "34_e1",
-          "aspect": "深度",
-          "opinion": "不够",
-          "evidence": "深度不够"
+          "object": "34_e4",
+          "aspect": null,
+          "opinion": "得不到重视",
+          "evidence": "图书馆的资源建设和服务问题...得不到重视"
         },
         {
           "sentence_id": "34",
           "sentence": "基础理论研究是研究工作的基础,但农村图书馆的基础理论研究相对滞后。农村图书馆基础理论文献很少（占 $12 . 3 8 \\%$ ），实践总结和理论分析也有限,研究内容空泛,深度不够，并且在研究中流于一般概念的诠释,缺少创新思维和理论上的突破。另外，图书馆的资源建设和服务问题是图书馆工作和研究的核心内容，在研究中却得不到重视，研究文献量有限（图书馆资源建设仅占1. $05 \\%$ 、图书馆服务仅占$8 . 6 0 \\%$ )。自20 世纪90 年代以来,随着计算机技术和网络技术的发展,图书馆自动化、数字图书馆、网络图书馆和Lib2.0等成为图书馆学的研究热点,但在农村图书馆研究领域关于信息技术方面的研究也极少(新技术仅占 $0 . 9 4 \\%$ ）。",
           "subject": "_paper_author",
-          "object": "34_e1",
-          "aspect": "创新思维",
-          "opinion": "缺少",
-          "evidence": "缺少创新思维"
-        },
-        {
-          "sentence_id": "34",
-          "sentence": "基础理论研究是研究工作的基础,但农村图书馆的基础理论研究相对滞后。农村图书馆基础理论文献很少（占 $12 . 3 8 \\%$ ），实践总结和理论分析也有限,研究内容空泛,深度不够，并且在研究中流于一般概念的诠释,缺少创新思维和理论上的突破。另外，图书馆的资源建设和服务问题是图书馆工作和研究的核心内容，在研究中却得不到重视，研究文献量有限（图书馆资源建设仅占1. $05 \\%$ 、图书馆服务仅占$8 . 6 0 \\%$ )。自20 世纪90 年代以来,随着计算机技术和网络技术的发展,图书馆自动化、数字图书馆、网络图书馆和Lib2.0等成为图书馆学的研究热点,但在农村图书馆研究领域关于信息技术方面的研究也极少(新技术仅占 $0 . 9 4 \\%$ ）。",
-          "subject": "_paper_author",
-          "object": "34_e1",
-          "aspect": "理论突破",
-          "opinion": "缺少",
-          "evidence": "缺少理论上的突破"
-        },
-        {
-          "sentence_id": "34",
-          "sentence": "基础理论研究是研究工作的基础,但农村图书馆的基础理论研究相对滞后。农村图书馆基础理论文献很少（占 $12 . 3 8 \\%$ ），实践总结和理论分析也有限,研究内容空泛,深度不够，并且在研究中流于一般概念的诠释,缺少创新思维和理论上的突破。另外，图书馆的资源建设和服务问题是图书馆工作和研究的核心内容，在研究中却得不到重视，研究文献量有限（图书馆资源建设仅占1. $05 \\%$ 、图书馆服务仅占$8 . 6 0 \\%$ )。自20 世纪90 年代以来,随着计算机技术和网络技术的发展,图书馆自动化、数字图书馆、网络图书馆和Lib2.0等成为图书馆学的研究热点,但在农村图书馆研究领域关于信息技术方面的研究也极少(新技术仅占 $0 . 9 4 \\%$ ）。",
-          "subject": "_paper_author",
-          "object": "34_e3",
-          "aspect": "信息技术研究",
+          "object": "34_e9",
+          "aspect": null,
           "opinion": "极少",
-          "evidence": "关于信息技术方面的研究也极少"
+          "evidence": "在农村图书馆研究领域关于信息技术方面的研究也极少"
         }
       ]
     },
@@ -3090,13 +3181,39 @@
           "candidate_l1": [
             "Abstract"
           ],
-          "evidence": "保障农村图书馆事业的健康发展",
+          "evidence": "没有明确的政策保障农村图书馆事业的健康发展",
           "is_specific_entity": true,
           "confidence": 0.9,
           "uncertainty": "作为事业概念，非具体组织"
         },
         {
           "entity_id": "35_e3",
+          "mention": "政府",
+          "normalized_name": "政府",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "寻求政府、社会的支持和赞助",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称政府，但此处指具体行政主体，可识别"
+        },
+        {
+          "entity_id": "35_e4",
+          "mention": "社会",
+          "normalized_name": "社会",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "寻求政府、社会的支持和赞助",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "泛称社会，不具体，但作为支持主体"
+        },
+        {
+          "entity_id": "35_e5",
           "mention": "基础理论",
           "normalized_name": "基础理论",
           "candidate_l3": "concept",
@@ -3105,11 +3222,11 @@
           ],
           "evidence": "对基础理论、信息资源建设、服务工作、馆员素质以及新技术等问题的研究相对不足",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "泛称，但作为研究主题被讨论"
+          "confidence": 0.8,
+          "uncertainty": "作为研究领域概念"
         },
         {
-          "entity_id": "35_e4",
+          "entity_id": "35_e6",
           "mention": "信息资源建设",
           "normalized_name": "信息资源建设",
           "candidate_l3": "concept",
@@ -3119,10 +3236,10 @@
           "evidence": "对基础理论、信息资源建设、服务工作、馆员素质以及新技术等问题的研究相对不足",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为研究主题"
+          "uncertainty": ""
         },
         {
-          "entity_id": "35_e5",
+          "entity_id": "35_e7",
           "mention": "服务工作",
           "normalized_name": "服务工作",
           "candidate_l3": "concept",
@@ -3131,11 +3248,11 @@
           ],
           "evidence": "对基础理论、信息资源建设、服务工作、馆员素质以及新技术等问题的研究相对不足",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为研究主题"
+          "confidence": 0.8,
+          "uncertainty": ""
         },
         {
-          "entity_id": "35_e6",
+          "entity_id": "35_e8",
           "mention": "馆员素质",
           "normalized_name": "馆员素质",
           "candidate_l3": "concept",
@@ -3145,10 +3262,10 @@
           "evidence": "对基础理论、信息资源建设、服务工作、馆员素质以及新技术等问题的研究相对不足",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "作为研究主题"
+          "uncertainty": ""
         },
         {
-          "entity_id": "35_e7",
+          "entity_id": "35_e9",
           "mention": "新技术",
           "normalized_name": "新技术",
           "candidate_l3": "concept",
@@ -3157,11 +3274,11 @@
           ],
           "evidence": "对基础理论、信息资源建设、服务工作、馆员素质以及新技术等问题的研究相对不足",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为研究主题"
+          "confidence": 0.7,
+          "uncertainty": "泛称技术，但作为研究问题"
         },
         {
-          "entity_id": "35_e8",
+          "entity_id": "35_e10",
           "mention": "农村图书馆发展",
           "normalized_name": "农村图书馆发展",
           "candidate_l3": "concept",
@@ -3171,15 +3288,52 @@
           "evidence": "难以形成对农村图书馆发展的实质性指导",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为发展概念"
+          "uncertainty": ""
         },
         {
-          "entity_id": "35_e9",
-          "mention": "农村图书馆研究",
-          "normalized_name": "农村图书馆研究",
+          "entity_id": "35_e11",
+          "mention": "服务水平",
+          "normalized_name": "服务水平",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这种不足又使得其服务水平很难提高",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e12",
+          "mention": "服务效果",
+          "normalized_name": "服务效果",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "致使服务效果不理想",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "35_e13",
+          "mention": "当前研究",
+          "normalized_name": "当前研究",
           "candidate_l3": "",
           "candidate_l1": [],
-          "evidence": "当前研究主要集中在如何寻求政府、社会的支持和赞助,建设并维持其发展的问题上",
+          "evidence": "当前研究主要集中在如何寻求政府、社会的支持和赞助",
+          "is_specific_entity": true,
+          "confidence": 0.0,
+          "uncertainty": "来自评价关系抽取的补抽实体"
+        },
+        {
+          "entity_id": "35_e14",
+          "mention": "研究成果",
+          "normalized_name": "研究成果",
+          "candidate_l3": "",
+          "candidate_l1": [],
+          "evidence": "研究成果与农村实际情况存在较大差距",
           "is_specific_entity": true,
           "confidence": 0.0,
           "uncertainty": "来自评价关系抽取的补抽实体"
@@ -3193,134 +3347,53 @@
           "subject": "_paper_author",
           "object": "35_e2",
           "aspect": "健康发展",
-          "opinion": "没有明确的政策保障",
-          "evidence": "也没有明确的政策保障农村图书馆事业的健康发展"
+          "opinion": "没有明确的政策保障农村图书馆事业的健康发展",
+          "evidence": "没有明确的政策保障农村图书馆事业的健康发展"
         },
         {
           "sentence_id": "35",
           "sentence": "我国一直没有“图书馆法”，也没有明确的政策保障农村图书馆事业的健康发展。当前研究主要集中在如何寻求政府、社会的支持和赞助,建设并维持其发展的问题上，研究多关注普遍性和宏观问题，研究成果与农村实际情况存在较大差距,缺少可资借鉴的实际操作性建议，难以形成对农村图书馆发展的实质性指导。这导致了对基础理论、信息资源建设、服务工作、馆员素质以及新技术等问题的研究相对不足。这种不足又使得其服务水平很难提高，致使服务效果不理想,得不到政府和社会的认同。图书馆建设的最终目的是服务,农村图书馆事业要健康发展，就必须加强对这些问题的研究并尽快付诸实践。",
           "subject": "_paper_author",
-          "object": "35_e9",
+          "object": "35_e13",
           "aspect": "研究内容",
-          "opinion": "主要集中在如何寻求政府、社会的支持和赞助,建设并维持其发展的问题上",
-          "evidence": "当前研究主要集中在如何寻求政府、社会的支持和赞助,建设并维持其发展的问题上"
-        },
-        {
-          "sentence_id": "35",
-          "sentence": "我国一直没有“图书馆法”，也没有明确的政策保障农村图书馆事业的健康发展。当前研究主要集中在如何寻求政府、社会的支持和赞助,建设并维持其发展的问题上，研究多关注普遍性和宏观问题，研究成果与农村实际情况存在较大差距,缺少可资借鉴的实际操作性建议，难以形成对农村图书馆发展的实质性指导。这导致了对基础理论、信息资源建设、服务工作、馆员素质以及新技术等问题的研究相对不足。这种不足又使得其服务水平很难提高，致使服务效果不理想,得不到政府和社会的认同。图书馆建设的最终目的是服务,农村图书馆事业要健康发展，就必须加强对这些问题的研究并尽快付诸实践。",
-          "subject": "_paper_author",
-          "object": "35_e9",
-          "aspect": "研究视角",
-          "opinion": "多关注普遍性和宏观问题",
+          "opinion": "研究多关注普遍性和宏观问题",
           "evidence": "研究多关注普遍性和宏观问题"
         },
         {
           "sentence_id": "35",
           "sentence": "我国一直没有“图书馆法”，也没有明确的政策保障农村图书馆事业的健康发展。当前研究主要集中在如何寻求政府、社会的支持和赞助,建设并维持其发展的问题上，研究多关注普遍性和宏观问题，研究成果与农村实际情况存在较大差距,缺少可资借鉴的实际操作性建议，难以形成对农村图书馆发展的实质性指导。这导致了对基础理论、信息资源建设、服务工作、馆员素质以及新技术等问题的研究相对不足。这种不足又使得其服务水平很难提高，致使服务效果不理想,得不到政府和社会的认同。图书馆建设的最终目的是服务,农村图书馆事业要健康发展，就必须加强对这些问题的研究并尽快付诸实践。",
           "subject": "_paper_author",
-          "object": "35_e9",
-          "aspect": "研究成果",
-          "opinion": "与农村实际情况存在较大差距",
+          "object": "35_e14",
+          "aspect": "与实际情况的差距",
+          "opinion": "研究成果与农村实际情况存在较大差距",
           "evidence": "研究成果与农村实际情况存在较大差距"
         },
         {
           "sentence_id": "35",
           "sentence": "我国一直没有“图书馆法”，也没有明确的政策保障农村图书馆事业的健康发展。当前研究主要集中在如何寻求政府、社会的支持和赞助,建设并维持其发展的问题上，研究多关注普遍性和宏观问题，研究成果与农村实际情况存在较大差距,缺少可资借鉴的实际操作性建议，难以形成对农村图书馆发展的实质性指导。这导致了对基础理论、信息资源建设、服务工作、馆员素质以及新技术等问题的研究相对不足。这种不足又使得其服务水平很难提高，致使服务效果不理想,得不到政府和社会的认同。图书馆建设的最终目的是服务,农村图书馆事业要健康发展，就必须加强对这些问题的研究并尽快付诸实践。",
           "subject": "_paper_author",
-          "object": "35_e9",
-          "aspect": "建议",
-          "opinion": "缺少可资借鉴的实际操作性建议",
-          "evidence": "缺少可资借鉴的实际操作性建议"
+          "object": "35_e10",
+          "aspect": "指导性",
+          "opinion": "缺少可资借鉴的实际操作性建议，难以形成对农村图书馆发展的实质性指导",
+          "evidence": "缺少可资借鉴的实际操作性建议，难以形成对农村图书馆发展的实质性指导"
         },
         {
           "sentence_id": "35",
           "sentence": "我国一直没有“图书馆法”，也没有明确的政策保障农村图书馆事业的健康发展。当前研究主要集中在如何寻求政府、社会的支持和赞助,建设并维持其发展的问题上，研究多关注普遍性和宏观问题，研究成果与农村实际情况存在较大差距,缺少可资借鉴的实际操作性建议，难以形成对农村图书馆发展的实质性指导。这导致了对基础理论、信息资源建设、服务工作、馆员素质以及新技术等问题的研究相对不足。这种不足又使得其服务水平很难提高，致使服务效果不理想,得不到政府和社会的认同。图书馆建设的最终目的是服务,农村图书馆事业要健康发展，就必须加强对这些问题的研究并尽快付诸实践。",
           "subject": "_paper_author",
-          "object": "35_e8",
-          "aspect": "指导",
-          "opinion": "难以形成实质性指导",
-          "evidence": "难以形成对农村图书馆发展的实质性指导"
+          "object": "35_e11",
+          "aspect": "提高",
+          "opinion": "其服务水平很难提高",
+          "evidence": "其服务水平很难提高"
         },
         {
           "sentence_id": "35",
           "sentence": "我国一直没有“图书馆法”，也没有明确的政策保障农村图书馆事业的健康发展。当前研究主要集中在如何寻求政府、社会的支持和赞助,建设并维持其发展的问题上，研究多关注普遍性和宏观问题，研究成果与农村实际情况存在较大差距,缺少可资借鉴的实际操作性建议，难以形成对农村图书馆发展的实质性指导。这导致了对基础理论、信息资源建设、服务工作、馆员素质以及新技术等问题的研究相对不足。这种不足又使得其服务水平很难提高，致使服务效果不理想,得不到政府和社会的认同。图书馆建设的最终目的是服务,农村图书馆事业要健康发展，就必须加强对这些问题的研究并尽快付诸实践。",
           "subject": "_paper_author",
-          "object": "35_e3",
-          "aspect": "研究",
-          "opinion": "相对不足",
-          "evidence": "对基础理论、信息资源建设、服务工作、馆员素质以及新技术等问题的研究相对不足"
-        },
-        {
-          "sentence_id": "35",
-          "sentence": "我国一直没有“图书馆法”，也没有明确的政策保障农村图书馆事业的健康发展。当前研究主要集中在如何寻求政府、社会的支持和赞助,建设并维持其发展的问题上，研究多关注普遍性和宏观问题，研究成果与农村实际情况存在较大差距,缺少可资借鉴的实际操作性建议，难以形成对农村图书馆发展的实质性指导。这导致了对基础理论、信息资源建设、服务工作、馆员素质以及新技术等问题的研究相对不足。这种不足又使得其服务水平很难提高，致使服务效果不理想,得不到政府和社会的认同。图书馆建设的最终目的是服务,农村图书馆事业要健康发展，就必须加强对这些问题的研究并尽快付诸实践。",
-          "subject": "_paper_author",
-          "object": "35_e4",
-          "aspect": "研究",
-          "opinion": "相对不足",
-          "evidence": "对基础理论、信息资源建设、服务工作、馆员素质以及新技术等问题的研究相对不足"
-        },
-        {
-          "sentence_id": "35",
-          "sentence": "我国一直没有“图书馆法”，也没有明确的政策保障农村图书馆事业的健康发展。当前研究主要集中在如何寻求政府、社会的支持和赞助,建设并维持其发展的问题上，研究多关注普遍性和宏观问题，研究成果与农村实际情况存在较大差距,缺少可资借鉴的实际操作性建议，难以形成对农村图书馆发展的实质性指导。这导致了对基础理论、信息资源建设、服务工作、馆员素质以及新技术等问题的研究相对不足。这种不足又使得其服务水平很难提高，致使服务效果不理想,得不到政府和社会的认同。图书馆建设的最终目的是服务,农村图书馆事业要健康发展，就必须加强对这些问题的研究并尽快付诸实践。",
-          "subject": "_paper_author",
-          "object": "35_e5",
-          "aspect": "研究",
-          "opinion": "相对不足",
-          "evidence": "对基础理论、信息资源建设、服务工作、馆员素质以及新技术等问题的研究相对不足"
-        },
-        {
-          "sentence_id": "35",
-          "sentence": "我国一直没有“图书馆法”，也没有明确的政策保障农村图书馆事业的健康发展。当前研究主要集中在如何寻求政府、社会的支持和赞助,建设并维持其发展的问题上，研究多关注普遍性和宏观问题，研究成果与农村实际情况存在较大差距,缺少可资借鉴的实际操作性建议，难以形成对农村图书馆发展的实质性指导。这导致了对基础理论、信息资源建设、服务工作、馆员素质以及新技术等问题的研究相对不足。这种不足又使得其服务水平很难提高，致使服务效果不理想,得不到政府和社会的认同。图书馆建设的最终目的是服务,农村图书馆事业要健康发展，就必须加强对这些问题的研究并尽快付诸实践。",
-          "subject": "_paper_author",
-          "object": "35_e6",
-          "aspect": "研究",
-          "opinion": "相对不足",
-          "evidence": "对基础理论、信息资源建设、服务工作、馆员素质以及新技术等问题的研究相对不足"
-        },
-        {
-          "sentence_id": "35",
-          "sentence": "我国一直没有“图书馆法”，也没有明确的政策保障农村图书馆事业的健康发展。当前研究主要集中在如何寻求政府、社会的支持和赞助,建设并维持其发展的问题上，研究多关注普遍性和宏观问题，研究成果与农村实际情况存在较大差距,缺少可资借鉴的实际操作性建议，难以形成对农村图书馆发展的实质性指导。这导致了对基础理论、信息资源建设、服务工作、馆员素质以及新技术等问题的研究相对不足。这种不足又使得其服务水平很难提高，致使服务效果不理想,得不到政府和社会的认同。图书馆建设的最终目的是服务,农村图书馆事业要健康发展，就必须加强对这些问题的研究并尽快付诸实践。",
-          "subject": "_paper_author",
-          "object": "35_e7",
-          "aspect": "研究",
-          "opinion": "相对不足",
-          "evidence": "对基础理论、信息资源建设、服务工作、馆员素质以及新技术等问题的研究相对不足"
-        },
-        {
-          "sentence_id": "35",
-          "sentence": "我国一直没有“图书馆法”，也没有明确的政策保障农村图书馆事业的健康发展。当前研究主要集中在如何寻求政府、社会的支持和赞助,建设并维持其发展的问题上，研究多关注普遍性和宏观问题，研究成果与农村实际情况存在较大差距,缺少可资借鉴的实际操作性建议，难以形成对农村图书馆发展的实质性指导。这导致了对基础理论、信息资源建设、服务工作、馆员素质以及新技术等问题的研究相对不足。这种不足又使得其服务水平很难提高，致使服务效果不理想,得不到政府和社会的认同。图书馆建设的最终目的是服务,农村图书馆事业要健康发展，就必须加强对这些问题的研究并尽快付诸实践。",
-          "subject": "_paper_author",
-          "object": "35_e2",
-          "aspect": "服务水平",
-          "opinion": "很难提高",
-          "evidence": "这种不足又使得其服务水平很难提高"
-        },
-        {
-          "sentence_id": "35",
-          "sentence": "我国一直没有“图书馆法”，也没有明确的政策保障农村图书馆事业的健康发展。当前研究主要集中在如何寻求政府、社会的支持和赞助,建设并维持其发展的问题上，研究多关注普遍性和宏观问题，研究成果与农村实际情况存在较大差距,缺少可资借鉴的实际操作性建议，难以形成对农村图书馆发展的实质性指导。这导致了对基础理论、信息资源建设、服务工作、馆员素质以及新技术等问题的研究相对不足。这种不足又使得其服务水平很难提高，致使服务效果不理想,得不到政府和社会的认同。图书馆建设的最终目的是服务,农村图书馆事业要健康发展，就必须加强对这些问题的研究并尽快付诸实践。",
-          "subject": "_paper_author",
-          "object": "35_e2",
-          "aspect": "服务效果",
-          "opinion": "不理想",
+          "object": "35_e12",
+          "aspect": "理想程度",
+          "opinion": "服务效果不理想",
           "evidence": "致使服务效果不理想"
-        },
-        {
-          "sentence_id": "35",
-          "sentence": "我国一直没有“图书馆法”，也没有明确的政策保障农村图书馆事业的健康发展。当前研究主要集中在如何寻求政府、社会的支持和赞助,建设并维持其发展的问题上，研究多关注普遍性和宏观问题，研究成果与农村实际情况存在较大差距,缺少可资借鉴的实际操作性建议，难以形成对农村图书馆发展的实质性指导。这导致了对基础理论、信息资源建设、服务工作、馆员素质以及新技术等问题的研究相对不足。这种不足又使得其服务水平很难提高，致使服务效果不理想,得不到政府和社会的认同。图书馆建设的最终目的是服务,农村图书馆事业要健康发展，就必须加强对这些问题的研究并尽快付诸实践。",
-          "subject": "_paper_author",
-          "object": "35_e2",
-          "aspect": "社会认同",
-          "opinion": "得不到政府和社会的认同",
-          "evidence": "得不到政府和社会的认同"
-        },
-        {
-          "sentence_id": "35",
-          "sentence": "我国一直没有“图书馆法”，也没有明确的政策保障农村图书馆事业的健康发展。当前研究主要集中在如何寻求政府、社会的支持和赞助,建设并维持其发展的问题上，研究多关注普遍性和宏观问题，研究成果与农村实际情况存在较大差距,缺少可资借鉴的实际操作性建议，难以形成对农村图书馆发展的实质性指导。这导致了对基础理论、信息资源建设、服务工作、馆员素质以及新技术等问题的研究相对不足。这种不足又使得其服务水平很难提高，致使服务效果不理想,得不到政府和社会的认同。图书馆建设的最终目的是服务,农村图书馆事业要健康发展，就必须加强对这些问题的研究并尽快付诸实践。",
-          "subject": "_paper_author",
-          "object": "35_e2",
-          "aspect": "健康发展",
-          "opinion": "必须加强对这些问题的研究并尽快付诸实践",
-          "evidence": "农村图书馆事业要健康发展，就必须加强对这些问题的研究并尽快付诸实践"
         }
       ]
     },
@@ -3338,47 +3411,47 @@
           ],
           "evidence": "农村图书馆研究者主要是市、县公共图书馆工作人员",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "群体泛称，但作为研究主体，可视为具体群体"
+          "confidence": 0.9,
+          "uncertainty": "泛称研究者，但结合上下文指具体群体，且已知实体要求保留"
         },
         {
           "entity_id": "36_e2",
-          "mention": "市、县公共图书馆",
-          "normalized_name": "市、县公共图书馆",
-          "candidate_l3": "service",
+          "mention": "市、县公共图书馆工作人员",
+          "normalized_name": "市县公共图书馆工作人员",
+          "candidate_l3": "practitioner",
           "candidate_l1": [
             "Agent"
           ],
           "evidence": "农村图书馆研究者主要是市、县公共图书馆工作人员",
           "is_specific_entity": true,
-          "confidence": 0.8,
-          "uncertainty": "泛称机构类型，但具体到市县级，可视为具体组织"
+          "confidence": 0.85,
+          "uncertainty": "泛称工作人员，但具体指市县公共图书馆，可识别"
         },
         {
           "entity_id": "36_e3",
-          "mention": "农村图书馆",
-          "normalized_name": "农村图书馆",
-          "candidate_l3": "service",
+          "mention": "工作在农村图书馆第一线的工作人员",
+          "normalized_name": "农村图书馆一线工作人员",
+          "candidate_l3": "practitioner",
           "candidate_l1": [
             "Agent"
           ],
-          "evidence": "工作在农村图书馆第一线的工作人员",
+          "evidence": "工作在农村图书馆第一线的工作人员，几乎没有论文发表",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为机构类型，但具体指农村图书馆实体"
+          "uncertainty": ""
         },
         {
           "entity_id": "36_e4",
           "mention": "公共图书馆及高校教学研究科研单位",
           "normalized_name": "公共图书馆及高校教学研究科研单位",
-          "candidate_l3": "service",
+          "candidate_l3": "research",
           "candidate_l1": [
             "Agent"
           ],
           "evidence": "本应承担农村图书馆问题研究的公共图书馆及高校教学研究科研单位",
           "is_specific_entity": true,
           "confidence": 0.85,
-          "uncertainty": "泛称机构类型，但作为具体承担单位"
+          "uncertainty": "泛称机构，但具体指公共图书馆和高校科研单位，可识别"
         },
         {
           "entity_id": "36_e5",
@@ -3391,7 +3464,72 @@
           "evidence": "虽然有农村图书馆研究未被充分重视的因素",
           "is_specific_entity": true,
           "confidence": 0.9,
-          "uncertainty": "作为研究领域"
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e6",
+          "mention": "我国农村图书馆的研究",
+          "normalized_name": "我国农村图书馆研究",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "这些因素致使我国农村图书馆的研究一方面得不到社会、政府和科研单位的认同",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "36_e7",
+          "mention": "论文",
+          "normalized_name": "论文",
+          "candidate_l3": "paper",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "论文质量和产生的影响也大打折扣",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称论文，但已知实体要求保留"
+        },
+        {
+          "entity_id": "36_e8",
+          "mention": "普通期刊",
+          "normalized_name": "普通期刊",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "刊载于普通期刊和内部刊物者居多",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称期刊类型，非具体期刊，但作为载体可识别"
+        },
+        {
+          "entity_id": "36_e9",
+          "mention": "内部刊物",
+          "normalized_name": "内部刊物",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "刊载于普通期刊和内部刊物者居多",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称刊物类型，非具体刊物"
+        },
+        {
+          "entity_id": "36_e10",
+          "mention": "核心期刊",
+          "normalized_name": "核心期刊",
+          "candidate_l3": "journal_article",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "核心期刊偏少",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称期刊等级，非具体期刊"
         }
       ],
       "has_evaluation": true,
@@ -3401,27 +3539,36 @@
           "sentence": "据以上分析，农村图书馆研究者主要是市、县公共图书馆工作人员，受其环境和工作性质的制约，主观研究较多，缺乏对客观实践的把握,因而论文质量和产生的影响也大打折扣； 工作在农村图书馆第一线的工作人员，几乎没有论文发表。这既不利于工作经验交流,更不利于农村图书馆健康发展。本应承担农村图书馆问题研究的公共图书馆及高校教学研究科研单位,对此研究也不足，未形成固定的研究群体。而已发表的研究农村图书馆的论文中,刊载于普通期刊和内部刊物者居多，核心期刊偏少，虽然有农村图书馆研究未被充分重视的因素，也说明了研究水平偏低的事实。这些因素致使我国农村图书馆的研究一方面得不到社会、政府和科研单位的认同； 另一方面，研究的落后直接导致建设的落后。",
           "subject": "_paper_author",
           "object": "36_e1",
-          "aspect": "论文质量",
-          "opinion": "大打折扣",
-          "evidence": "因而论文质量和产生的影响也大打折扣"
+          "aspect": "研究主体构成",
+          "opinion": "主观研究较多，缺乏对客观实践的把握",
+          "evidence": "主观研究较多，缺乏对客观实践的把握"
+        },
+        {
+          "sentence_id": "36",
+          "sentence": "据以上分析，农村图书馆研究者主要是市、县公共图书馆工作人员，受其环境和工作性质的制约，主观研究较多，缺乏对客观实践的把握,因而论文质量和产生的影响也大打折扣； 工作在农村图书馆第一线的工作人员，几乎没有论文发表。这既不利于工作经验交流,更不利于农村图书馆健康发展。本应承担农村图书馆问题研究的公共图书馆及高校教学研究科研单位,对此研究也不足，未形成固定的研究群体。而已发表的研究农村图书馆的论文中,刊载于普通期刊和内部刊物者居多，核心期刊偏少，虽然有农村图书馆研究未被充分重视的因素，也说明了研究水平偏低的事实。这些因素致使我国农村图书馆的研究一方面得不到社会、政府和科研单位的认同； 另一方面，研究的落后直接导致建设的落后。",
+          "subject": "_paper_author",
+          "object": "36_e7",
+          "aspect": "质量与影响",
+          "opinion": "质量和产生的影响也大打折扣",
+          "evidence": "论文质量和产生的影响也大打折扣"
         },
         {
           "sentence_id": "36",
           "sentence": "据以上分析，农村图书馆研究者主要是市、县公共图书馆工作人员，受其环境和工作性质的制约，主观研究较多，缺乏对客观实践的把握,因而论文质量和产生的影响也大打折扣； 工作在农村图书馆第一线的工作人员，几乎没有论文发表。这既不利于工作经验交流,更不利于农村图书馆健康发展。本应承担农村图书馆问题研究的公共图书馆及高校教学研究科研单位,对此研究也不足，未形成固定的研究群体。而已发表的研究农村图书馆的论文中,刊载于普通期刊和内部刊物者居多，核心期刊偏少，虽然有农村图书馆研究未被充分重视的因素，也说明了研究水平偏低的事实。这些因素致使我国农村图书馆的研究一方面得不到社会、政府和科研单位的认同； 另一方面，研究的落后直接导致建设的落后。",
           "subject": "_paper_author",
           "object": "36_e3",
-          "aspect": "健康发展",
-          "opinion": "不利",
-          "evidence": "更不利于农村图书馆健康发展"
+          "aspect": "论文发表",
+          "opinion": "几乎没有论文发表",
+          "evidence": "几乎没有论文发表"
         },
         {
           "sentence_id": "36",
           "sentence": "据以上分析，农村图书馆研究者主要是市、县公共图书馆工作人员，受其环境和工作性质的制约，主观研究较多，缺乏对客观实践的把握,因而论文质量和产生的影响也大打折扣； 工作在农村图书馆第一线的工作人员，几乎没有论文发表。这既不利于工作经验交流,更不利于农村图书馆健康发展。本应承担农村图书馆问题研究的公共图书馆及高校教学研究科研单位,对此研究也不足，未形成固定的研究群体。而已发表的研究农村图书馆的论文中,刊载于普通期刊和内部刊物者居多，核心期刊偏少，虽然有农村图书馆研究未被充分重视的因素，也说明了研究水平偏低的事实。这些因素致使我国农村图书馆的研究一方面得不到社会、政府和科研单位的认同； 另一方面，研究的落后直接导致建设的落后。",
           "subject": "_paper_author",
           "object": "36_e4",
-          "aspect": "研究",
-          "opinion": "不足",
-          "evidence": "对此研究也不足"
+          "aspect": "研究投入",
+          "opinion": "研究也不足，未形成固定的研究群体",
+          "evidence": "对此研究也不足，未形成固定的研究群体"
         },
         {
           "sentence_id": "36",
@@ -3429,25 +3576,25 @@
           "subject": "_paper_author",
           "object": "36_e5",
           "aspect": "研究水平",
-          "opinion": "偏低",
-          "evidence": "也说明了研究水平偏低的事实"
+          "opinion": "研究水平偏低",
+          "evidence": "说明了研究水平偏低的事实"
         },
         {
           "sentence_id": "36",
           "sentence": "据以上分析，农村图书馆研究者主要是市、县公共图书馆工作人员，受其环境和工作性质的制约，主观研究较多，缺乏对客观实践的把握,因而论文质量和产生的影响也大打折扣； 工作在农村图书馆第一线的工作人员，几乎没有论文发表。这既不利于工作经验交流,更不利于农村图书馆健康发展。本应承担农村图书馆问题研究的公共图书馆及高校教学研究科研单位,对此研究也不足，未形成固定的研究群体。而已发表的研究农村图书馆的论文中,刊载于普通期刊和内部刊物者居多，核心期刊偏少，虽然有农村图书馆研究未被充分重视的因素，也说明了研究水平偏低的事实。这些因素致使我国农村图书馆的研究一方面得不到社会、政府和科研单位的认同； 另一方面，研究的落后直接导致建设的落后。",
           "subject": "_paper_author",
-          "object": "36_e5",
+          "object": "36_e6",
           "aspect": "社会认同",
-          "opinion": "得不到认同",
+          "opinion": "得不到社会、政府和科研单位的认同",
           "evidence": "得不到社会、政府和科研单位的认同"
         },
         {
           "sentence_id": "36",
           "sentence": "据以上分析，农村图书馆研究者主要是市、县公共图书馆工作人员，受其环境和工作性质的制约，主观研究较多，缺乏对客观实践的把握,因而论文质量和产生的影响也大打折扣； 工作在农村图书馆第一线的工作人员，几乎没有论文发表。这既不利于工作经验交流,更不利于农村图书馆健康发展。本应承担农村图书馆问题研究的公共图书馆及高校教学研究科研单位,对此研究也不足，未形成固定的研究群体。而已发表的研究农村图书馆的论文中,刊载于普通期刊和内部刊物者居多，核心期刊偏少，虽然有农村图书馆研究未被充分重视的因素，也说明了研究水平偏低的事实。这些因素致使我国农村图书馆的研究一方面得不到社会、政府和科研单位的认同； 另一方面，研究的落后直接导致建设的落后。",
           "subject": "_paper_author",
-          "object": "36_e5",
-          "aspect": "建设",
-          "opinion": "落后",
+          "object": "36_e6",
+          "aspect": "建设发展",
+          "opinion": "研究的落后直接导致建设的落后",
           "evidence": "研究的落后直接导致建设的落后"
         }
       ]
@@ -3460,27 +3607,23 @@
           "entity_id": "37_e1",
           "mention": "农村图书馆研究者",
           "normalized_name": "农村图书馆研究者",
-          "candidate_l3": "scholar",
-          "candidate_l1": [
-            "Agent"
-          ],
+          "candidate_l3": "",
+          "candidate_l1": [],
           "evidence": "农村图书馆研究者集中于东部沿海地区和个别中部地区",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "泛称研究者，但已知实体要求保留"
+          "confidence": 0.0,
+          "uncertainty": "来自评价关系抽取的补抽实体"
         },
         {
           "entity_id": "37_e2",
-          "mention": "中西部地区研究",
-          "normalized_name": "中西部地区研究",
-          "candidate_l3": "subfield",
-          "candidate_l1": [
-            "Abstract"
-          ],
+          "mention": "中西部地区",
+          "normalized_name": "中西部地区",
+          "candidate_l3": "",
+          "candidate_l1": [],
           "evidence": "中西部地区研究较为落后",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为研究领域，非具体机构"
+          "confidence": 0.0,
+          "uncertainty": "来自评价关系抽取的补抽实体"
         }
       ],
       "has_evaluation": true,
@@ -3489,8 +3632,17 @@
           "sentence_id": "37",
           "sentence": "据上述分析，农村图书馆研究者集中于东部沿海地区和个别中部地区，中西部地区研究较为落后,发文极少。 在主题为“个案分析\"的164 篇文章中,论述东部地区的有105 篇文章,占 $6 4 . 0 2 \\%$ ；",
           "subject": "_paper_author",
+          "object": "37_e1",
+          "aspect": "分布",
+          "opinion": "集中于东部沿海地区和个别中部地区",
+          "evidence": "农村图书馆研究者集中于东部沿海地区和个别中部地区"
+        },
+        {
+          "sentence_id": "37",
+          "sentence": "据上述分析，农村图书馆研究者集中于东部沿海地区和个别中部地区，中西部地区研究较为落后,发文极少。 在主题为“个案分析\"的164 篇文章中,论述东部地区的有105 篇文章,占 $6 4 . 0 2 \\%$ ；",
+          "subject": "_paper_author",
           "object": "37_e2",
-          "aspect": null,
+          "aspect": "研究",
           "opinion": "较为落后",
           "evidence": "中西部地区研究较为落后"
         }
@@ -3515,40 +3667,43 @@
         },
         {
           "entity_id": "38_e2",
-          "mention": "我国农村图书馆理论研究",
-          "normalized_name": "农村图书馆理论研究",
-          "candidate_l3": "subfield",
+          "mention": "我国农村图书馆理论研究和实践",
+          "normalized_name": "我国农村图书馆理论研究和实践",
+          "candidate_l3": "research_program",
           "candidate_l1": [
+            "Event",
             "Abstract"
           ],
           "evidence": "我国农村图书馆理论研究和实践主要分布在东部",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为研究领域"
+          "confidence": 0.85,
+          "uncertainty": "可能为研究领域或活动"
         },
         {
           "entity_id": "38_e3",
+          "mention": "广大中西部地区",
+          "normalized_name": "广大中西部地区",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "广大中西部地区相对不足",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "地理区域，非具体实体"
+        },
+        {
+          "entity_id": "38_e4",
           "mention": "我国农村图书馆研究",
-          "normalized_name": "农村图书馆研究",
+          "normalized_name": "我国农村图书馆研究",
           "candidate_l3": "subfield",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "加剧了我国农村图书馆研究区域间的不平衡",
           "is_specific_entity": true,
-          "confidence": 0.9,
-          "uncertainty": "作为研究领域"
-        },
-        {
-          "entity_id": "38_e4",
-          "mention": "广大中西部地区",
-          "normalized_name": "中西部地区",
-          "candidate_l3": "",
-          "candidate_l1": [],
-          "evidence": "广大中西部地区相对不足",
-          "is_specific_entity": true,
-          "confidence": 0.0,
-          "uncertainty": "来自评价关系抽取的补抽实体"
+          "confidence": 0.8,
+          "uncertainty": "可能为研究领域"
         }
       ],
       "has_evaluation": true,
@@ -3566,7 +3721,7 @@
           "sentence_id": "38",
           "sentence": "西部地区12篇，仅占 $7 . 2 3 \\%$ 。 可以看出，我国农村图书馆理论研究和实践主要分布在东部,广大中西部地区相对不足。2001年以来的诸届“中国社区乡镇图书馆发展战略研讨会”也都是在研究较为活跃的东、中部地区召开,这在一定程度上加剧了我国农村图书馆研究区域间的不平衡。",
           "subject": "_paper_author",
-          "object": "38_e4",
+          "object": "38_e3",
           "aspect": null,
           "opinion": "相对不足",
           "evidence": "广大中西部地区相对不足"
@@ -3575,10 +3730,10 @@
           "sentence_id": "38",
           "sentence": "西部地区12篇，仅占 $7 . 2 3 \\%$ 。 可以看出，我国农村图书馆理论研究和实践主要分布在东部,广大中西部地区相对不足。2001年以来的诸届“中国社区乡镇图书馆发展战略研讨会”也都是在研究较为活跃的东、中部地区召开,这在一定程度上加剧了我国农村图书馆研究区域间的不平衡。",
           "subject": "_paper_author",
-          "object": "38_e3",
+          "object": "38_e4",
           "aspect": "区域间的不平衡",
-          "opinion": "加剧了",
-          "evidence": "加剧了我国农村图书馆研究区域间的不平衡"
+          "opinion": "加剧了区域间的不平衡",
+          "evidence": "这在一定程度上加剧了我国农村图书馆研究区域间的不平衡"
         }
       ]
     },
@@ -3588,29 +3743,107 @@
       "entities": [
         {
           "entity_id": "39_e1",
-          "mention": "农村图书馆研究",
-          "normalized_name": "农村图书馆研究",
+          "mention": "1978－2007年",
+          "normalized_name": "1978－2007年",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "1978－2007年，我国农村图书馆研究取得了一定的成绩",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "时间范围作为发展阶段"
+        },
+        {
+          "entity_id": "39_e2",
+          "mention": "我国农村图书馆研究",
+          "normalized_name": "我国农村图书馆研究",
           "candidate_l3": "subfield",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "我国农村图书馆研究取得了一定的成绩",
           "is_specific_entity": true,
-          "confidence": 0.9,
+          "confidence": 0.85,
           "uncertainty": "作为研究领域"
         },
         {
-          "entity_id": "39_e2",
-          "mention": "农村图书馆事业",
-          "normalized_name": "农村图书馆事业",
-          "candidate_l3": "concept",
+          "entity_id": "39_e3",
+          "mention": "中央政府",
+          "normalized_name": "中央政府",
+          "candidate_l3": "governance",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中央政府对包括农村图书馆在内的农村文化建设的高度重视",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "39_e4",
+          "mention": "图书馆学界",
+          "normalized_name": "图书馆学界",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆学界对该问题的持续关注",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为学术共同体"
+        },
+        {
+          "entity_id": "39_e5",
+          "mention": "农村图书馆的理论研究和实践发展",
+          "normalized_name": "农村图书馆的理论研究和实践发展",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "农村图书馆的理论研究和实践发展都迎来了极好的发展时期",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为研究与实践领域"
+        },
+        {
+          "entity_id": "39_e6",
+          "mention": "2006年以来",
+          "normalized_name": "2006年以来",
+          "candidate_l3": "stage",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "2006年以来，研究也出现了迅速发展的态势",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "时间阶段"
+        },
+        {
+          "entity_id": "39_e7",
+          "mention": "该研究领域",
+          "normalized_name": "该研究领域",
+          "candidate_l3": "subfield",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "我们也必须看到该研究领域目前所存在的问题",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "指代农村图书馆研究领域"
+        },
+        {
+          "entity_id": "39_e8",
+          "mention": "我国农村图书馆事业",
+          "normalized_name": "我国农村图书馆事业",
+          "candidate_l3": "subfield",
           "candidate_l1": [
             "Abstract"
           ],
           "evidence": "我国农村图书馆事业会走上健康发展的道路",
           "is_specific_entity": true,
-          "confidence": 0.85,
-          "uncertainty": "作为事业概念"
+          "confidence": 0.8,
+          "uncertainty": "作为事业领域"
         }
       ],
       "has_evaluation": true,
@@ -3619,7 +3852,7 @@
           "sentence_id": "39",
           "sentence": "1978－2007年，我国农村图书馆研究取得了一定的成绩，特别是随着中央政府对包括农村图书馆在内的农村文化建设的高度重视以及图书馆学界对该问题的持续关注,农村图书馆的理论研究和实践发展都迎来了极好的发展时期,2006年以来，研究也出现了迅速发展的态势。 但是,我们也必须看到该研究领域目前所存在的问题。我们相信，随着这些不足的逐步改善,我国农村图书馆事业会走上健康发展的道路。",
           "subject": "_paper_author",
-          "object": "39_e1",
+          "object": "39_e2",
           "aspect": null,
           "opinion": "取得了一定的成绩",
           "evidence": "我国农村图书馆研究取得了一定的成绩"
@@ -3628,18 +3861,27 @@
           "sentence_id": "39",
           "sentence": "1978－2007年，我国农村图书馆研究取得了一定的成绩，特别是随着中央政府对包括农村图书馆在内的农村文化建设的高度重视以及图书馆学界对该问题的持续关注,农村图书馆的理论研究和实践发展都迎来了极好的发展时期,2006年以来，研究也出现了迅速发展的态势。 但是,我们也必须看到该研究领域目前所存在的问题。我们相信，随着这些不足的逐步改善,我国农村图书馆事业会走上健康发展的道路。",
           "subject": "_paper_author",
-          "object": "39_e1",
-          "aspect": "问题",
-          "opinion": "存在",
+          "object": "39_e5",
+          "aspect": null,
+          "opinion": "迎来了极好的发展时期",
+          "evidence": "农村图书馆的理论研究和实践发展都迎来了极好的发展时期"
+        },
+        {
+          "sentence_id": "39",
+          "sentence": "1978－2007年，我国农村图书馆研究取得了一定的成绩，特别是随着中央政府对包括农村图书馆在内的农村文化建设的高度重视以及图书馆学界对该问题的持续关注,农村图书馆的理论研究和实践发展都迎来了极好的发展时期,2006年以来，研究也出现了迅速发展的态势。 但是,我们也必须看到该研究领域目前所存在的问题。我们相信，随着这些不足的逐步改善,我国农村图书馆事业会走上健康发展的道路。",
+          "subject": "_paper_author",
+          "object": "39_e7",
+          "aspect": null,
+          "opinion": "目前所存在的问题",
           "evidence": "该研究领域目前所存在的问题"
         },
         {
           "sentence_id": "39",
           "sentence": "1978－2007年，我国农村图书馆研究取得了一定的成绩，特别是随着中央政府对包括农村图书馆在内的农村文化建设的高度重视以及图书馆学界对该问题的持续关注,农村图书馆的理论研究和实践发展都迎来了极好的发展时期,2006年以来，研究也出现了迅速发展的态势。 但是,我们也必须看到该研究领域目前所存在的问题。我们相信，随着这些不足的逐步改善,我国农村图书馆事业会走上健康发展的道路。",
           "subject": "_paper_author",
-          "object": "39_e2",
+          "object": "39_e8",
           "aspect": null,
-          "opinion": "走上健康发展的道路",
+          "opinion": "会走上健康发展的道路",
           "evidence": "我国农村图书馆事业会走上健康发展的道路"
         }
       ]

@@ -1,8 +1,8 @@
-# Ontology Agent V5 — 四Agent端到端文献知识挖掘系统
+# Ontology Agent V5.1 — 五Agent端到端文献知识挖掘系统
 
-> **多智能体协同 · DeepSeek API · 并行批处理 · 关系优先抽取 · L1/L2/L3 精分类 + L4 规则匹配 · Likert 审查 · 评估体系**
+> **多智能体协同 · DeepSeek API · 并行批处理 · 关系优先抽取 · L1/L2/L3 精分类 + L4 规则匹配 · Likert 审查 · 关系校验 · 评估体系**
 
-面向情报学/图书馆学领域学术文献，从评价句到结构化知识实体的全自动端到端挖掘管道。采用**关系优先策略**：先抽取评价关系及其评价对象，再补充抽取其余实体，然后分类、审查打分，完整链路为 **评价关系抽取 → 实体抽取补充 → 精分类 → Likert 审查**。
+面向情报学/图书馆学领域学术文献，从评价句到结构化知识实体的全自动端到端挖掘管道。采用**关系优先策略**：先抽取评价关系及其评价对象，再补充抽取其余实体，然后分类、审查打分、校验关系，完整链路为 **评价关系抽取 → 实体抽取补充 → 精分类 → Likert 审查 → 关系校验**。
 
 ---
 
@@ -13,7 +13,6 @@
 │  Agent 1: Evaluative Relation Extraction (评价关系抽取 — 关系优先) │
 │  评价句 → 评价关系(subject/object/aspect/opinion/evidence)         │
 │         + 评价对象实体 (作为下游已知实体)                          │
-│  输出: output/evaluative_relation/relation_full_{num}.jsonl            │
 ├──────────────────────────────────────────────────────────────────┤
 │  Agent 2: Entity Extraction (实体抽取补充 — 高召回)               │
 │  接收 Agent 1 的评价对象实体作为"已知实体"，补抽关系之外的实体     │
@@ -27,6 +26,12 @@
 │  Agent 4: Review (审查 — Likert 5点量表)                          │
 │  从图书馆学专业视角审查分类结果，输出 1-5 分置信度                 │
 │  输出: output/entities/{name}_result.jsonl + {name}_summary.json  │
+├──────────────────────────────────────────────────────────────────┤
+│  Agent 5: Relation Verification (关系校验 — 评价/事实二分)         │
+│  逐句复核 Agent 1 的关系: 事实/描述类标记 is_evaluation=false      │
+│  并从关系导出中过滤; 校验详情落盘供审计                            │
+│  输出: output/relation_verification/{name}_verification.jsonl     │
+│        output/evaluative_relation/relation_{name}.jsonl (过滤后)  │
 └──────────────────────────────────────────────────────────────────┘
 ```
 
@@ -34,7 +39,7 @@
 
 **ID 重映射**：Agent 1 输出使用句内短 ID（e1/e2），Agent 2 输出使用全局 ID（`{句号}_eN`）。管道编排器按实体名将关系引用的短 ID 重映射为最终实体 ID；若 Agent 2 漏抽了关系引用的实体，编排器会将该实体补入实体列表，保证每条关系都能解析到实体。无法解析时降级为 `_missing_entity` 并保留原文。
 
-**评价有效性过滤（Evaluation Validity）**：Agent 1 在输出任何关系之前必须回答一个问题——这句话在"评价"一个对象，还是在"描述"这个对象发生了什么？研究行为（进行研究、进行分析、进行对比）、方法使用、功能实现、定义、分类、统计罗列均属于描述，一律不生成关系；中性比较判断（基本一致、水平相当、表现相近）属于评价。该机制把九类高频误判模式以完整示例写入了提示词。
+**评价有效性过滤（Evaluation Validity）**：Agent 1 在输出任何关系之前必须回答一个问题——这句话在"评价"一个对象，还是在"描述"这个对象发生了什么？研究行为（进行研究、进行分析、进行对比）、方法使用、功能实现、定义、分类、统计罗列均属于描述，一律不生成关系；中性比较判断（基本一致、水平相当、表现相近）属于评价。该机制把九类高频误判模式以完整示例写入了提示词。Agent 5 在管道末端对全部关系再做一次逐句复核，与 Agent 1 的内置过滤形成**双保险**。
 
 ### 特性一览
 
@@ -44,6 +49,7 @@
 | **实体补充** | Agent 2 接收上游已知实体，补抽关系外实体，提升召回 |
 | **ID 重映射** | 关系短 ID 自动重映射为最终实体 ID，漏抽实体自动补入 |
 | **评价有效性过滤** | 输出前强制区分"评价"与"描述"，过滤九类典型误判 |
+| **关系校验 (Agent 5)** | 管道末端逐句复核评价关系，事实/描述类标记 `is_evaluation=false` 并过滤，校验详情落盘供审计 |
 | **Thinking Mode** | 支持 DeepSeek 推理模式，每个 Agent 可独立开关 |
 | **Voting** | Agent 3 分类多轮投票机制，减少分类不确定性 |
 | **RAG Few-Shot** | 基于动态术语库的相似度检索，为分类提供示例 |
@@ -74,7 +80,7 @@ L4 层采用**规则匹配**：运行过程中 Likert 5 分的高置信实体自
 ```
 ontology_agent/
 │
-├── run.py                              # 【主入口】批量并行处理 四Agent管道
+├── run.py                              # 【主入口】批量并行处理 五Agent管道
 ├── run_eval.py                         # 【评估入口】一键评估脚本 (自动加载api.txt)
 ├── run_relation.py                     # 【关系补抽】从 mid_data/实体结果补充抽取评价关系 (兼容/辅助)
 ├── run_relation_agent.py               # 【独立关系抽取】单独运行 Agent 1 抽取评价关系
@@ -89,17 +95,17 @@ ontology_agent/
 ├── test_eval_relations.py              # 单元测试: 评价关系评估指标
 ├── test_relation_verification.py       # 单元测试: 评价关系校验 Agent
 │
-├── pipeline/                           # 核心管道包 (v5.0.0)
+├── pipeline/                           # 核心管道包 (v5.1.0)
 │   ├── __init__.py                     # 包定义 + 公开API导出
 │   ├── llm.py                          # LLM客户端: OpenAI兼容, Thinking/Voting/JSON重试
 │   ├── taxonomy.py                     # L1/L2/L3 分类体系层级映射 + 中文标签
 │   ├── evaluative_relation_agent.py    # Agent 1: 评价关系抽取 + 评价对象实体
-│   ├── relation_verification_agent.py  # 校验Agent: 复核关系是"评价"还是"事实/描述"
+│   ├── relation_verification_agent.py  # Agent 5: 复核关系是"评价"还是"事实/描述"
 │   ├── entity_extraction_agent.py      # Agent 2: 实体抽取补充 (接收上游已知实体)
 │   ├── classification_agent.py         # Agent 3: 精分类 + Voting + RAG + L4匹配
 │   ├── reviewer_agent.py               # Agent 4: Likert 5点量表审查 Prompt
 │   ├── dynamic_term_db.py              # 线程安全动态术语底库 (trigram检索)
-│   └── dual_agent_pipeline.py          # 四Agent管道编排 + ID重映射 + JSONL/Summary/Relation导出
+│   └── dual_agent_pipeline.py          # 五Agent管道编排 + ID重映射 + JSONL/Summary/Relation/Verification导出
 │
 ├── eval/                               # 评估模块
 │   ├── __init__.py                     # 评估包定义
@@ -114,12 +120,13 @@ ontology_agent/
 ├── doc/                                # 文档
 │   ├── ARCHITECTURE.md                 # 架构详细文档
 │   ├── RFREADME.md                     # 评价关系抽取工具文档
-│   └── 实体类型分类体系_opencode版.md    # 完整分类体系规格 (L1×4 L2×14 L3×59)
+│   └── 实体类型分类体系_opencode版.md    # 完整分类体系规格 (L1×4 L2×14 L3×55)
 │
 ├── input/                              # 输入: reviewed_full_*.json
 ├── output/                             # 输出目录
 │   ├── entities/                       # 最终实体结果 (JSONL + Summary)
-│   ├── evaluative_relation/            # Agent 1 评价关系结果
+│   ├── evaluative_relation/            # Agent 5 过滤后的评价关系结果
+│   ├── relation_verification/          # Agent 5 关系校验详情 (含被过滤的事实类)
 │   └── eval/                           # 评估报告输出
 └── mid_data/                           # 中间数据: Agent 2 实体抽取结果 + 关系
 ```
@@ -130,7 +137,7 @@ ontology_agent/
 
 | 文件 | 作用 | 启动方式 |
 |------|------|----------|
-| [run.py](run.py) | 四Agent管道主入口，批量并行处理所有输入文件（评价关系由 Agent 1 在管道内直接产出并导出，无需独立步骤） | `python run.py --live` |
+| [run.py](run.py) | 五Agent管道主入口，批量并行处理所有输入文件（评价关系由 Agent 1 在管道内产出、经 Agent 5 校验过滤后导出） | `python run.py --live` |
 | [run_eval.py](run_eval.py) | 一键评估：自动加载 `api.txt`，运行 Pipeline 并计算指标 | `python run_eval.py` |
 | [run_relation.py](run_relation.py) | 关系补抽/兼容脚本：从 `mid_data/` 或实体结果中单独抽取/读取评价关系 | `python run_relation.py --live` |
 | [run_relation_agent.py](run_relation_agent.py) | 独立运行 Agent 1：单独抽取评价关系（快速试跑/批量生产关系数据） | `python run_relation_agent.py --live --sample 12` |
@@ -143,12 +150,12 @@ ontology_agent/
 | [llm.py](pipeline/llm.py) | **LLM 抽象层**：封装 DeepSeek/OpenAI API，支持 Thinking 推理模式、JSON 输出自动重试与修复、多轮 Voting 投票机制、指数退避重连 |
 | [taxonomy.py](pipeline/taxonomy.py) | **分类体系**：定义 L1→L2→L3 完整层级映射表，提供 `get_l1_options()`、`get_l2_label()` 等查询工具函数 |
 | [evaluative_relation_agent.py](pipeline/evaluative_relation_agent.py) | **Agent 1**：关系优先策略，先识别评价关系（subject/object/aspect/opinion/evidence），解析被评价对象并输出评价对象实体，作为下游已知实体 |
-| [relation_verification_agent.py](pipeline/relation_verification_agent.py) | **校验 Agent**：对已抽取关系逐条复核，强制判断该关系是「评价」还是「事实/描述」。事实类标记 `is_evaluation=false` 并附 `fact_type`（研究行为/方法使用/定义/过程描述等九类），评价类放行。与 Agent 1 的内置过滤形成双保险，用于质量检测与数据清洗 |
+| [relation_verification_agent.py](pipeline/relation_verification_agent.py) | **Agent 5**：管道末端对 Agent 1 抽取的关系逐句复核，强制判断该关系是「评价」还是「事实/描述」。事实类标记 `is_evaluation=false` 并附 `fact_type`（研究行为/方法使用/定义/过程描述等九类），评价类放行。与 Agent 1 的内置过滤形成双保险，校验详情可落盘审计 |
 | [entity_extraction_agent.py](pipeline/entity_extraction_agent.py) | **Agent 2**：接收 Agent 1 的已知实体，从评价句中补充抽取评价关系之外的其余实体，输出 mention、normalized_name、候选 L1/L3、evidence、confidence，严格过滤泛称/类别词 |
 | [classification_agent.py](pipeline/classification_agent.py) | **Agent 3**：验证实体有效性 → 标注 L1/L2/L3 → L4 规则匹配。支持 Voting（多轮投票）、RAG（从 TermDB 检索相似示例）、schema 约束输出 |
 | [reviewer_agent.py](pipeline/reviewer_agent.py) | **Agent 4**：以"图书馆学专业学长"视角审查 Agent 3 的分类结果，输出 Likert 1-5 置信度 + 修正建议 |
 | [dynamic_term_db.py](pipeline/dynamic_term_db.py) | **动态术语底库**：线程安全的术语积累和检索系统，支持 trigram 相似度搜索（用于 RAG）、JSON 导入导出、自动去重 |
-| [dual_agent_pipeline.py](pipeline/dual_agent_pipeline.py) | **管道编排器**：串联 Agent 1→2→3→4 的执行流程，管理中间数据写入、Likert 5 分实体入 TermDB、调用 JSONL/Summary/Relation 导出工具 |
+| [dual_agent_pipeline.py](pipeline/dual_agent_pipeline.py) | **管道编排器**：串联 Agent 1→2→3→4→5 的执行流程，管理中间数据写入、Likert 5 分实体入 TermDB、Agent 5 校验过滤与审计快照、调用 JSONL/Summary/Relation/Verification 导出工具 |
 
 #### 评估模块 (`eval/`)
 
@@ -201,7 +208,7 @@ pip install -r requirements.txt
 
 ### 2. 配置 API Key
 
-系统为 4 个 Agent 使用独立的 API Key（也可全部回退到同一把 Key），完全通过环境变量读取，配置在进程启动时即固定，**请先设置环境变量再运行 `run.py`**。
+系统为各 Agent 使用独立的 API Key（Agent 5 复用 Agent 1 的 Key；各 Key 均可回退到同一把），完全通过环境变量读取，配置在进程启动时即固定，**请先设置环境变量再运行 `run.py`**。
 
 **方式 A — 环境变量 (推荐)：**
 
@@ -228,7 +235,7 @@ $env:LLM_MODEL="deepseek-chat"
 ```
 
 > **单把 Key 全共用**：只设 `B2_LLM_API_KEY` 即可（它是所有 Agent 的最终兜底 Key）。
-> 各 Agent 的 Key 回退链：`DEEPSEEK_API_KEY_*` → 各自次选 → `B2_LLM_API_KEY`。
+> 各 Agent 的 Key 回退链：`DEEPSEEK_API_KEY_*` → 各自次选 → `B2_LLM_API_KEY`；Agent 5 无独立环境变量，按 `DEEPSEEK_API_KEY_RELATION` → `DEEPSEEK_API_KEY_EXTRACTION` → `B2_LLM_API_KEY` 复用。
 
 **方式 B — api.txt 文件（供 `run_eval.py` 使用）：**
 
@@ -290,7 +297,7 @@ python run_relation.py --live
 python run_sample_review.py
 ```
 
-> 运行 `run.py` 时，评价关系由 Agent 1 在主管道内直接产出，并自动导出到 `output/evaluative_relation/`，无需再单独运行关系抽取脚本。`run_relation.py` 用于对已有中间/实体结果做补抽或兼容旧流程。`run_sample_review.py` 生成的审阅报告（`output/sample_review_50_report.md`）逐句展示原文、实体表与评价关系，适合人工检查效果。
+> 运行 `run.py` 时，评价关系由 Agent 1 在主管道内产出，经 Agent 5 校验过滤后自动导出到 `output/evaluative_relation/`（校验详情在 `output/relation_verification/`），无需再单独运行关系抽取脚本。`run_relation.py` 用于对已有中间/实体结果做补抽或兼容旧流程。`run_sample_review.py` 生成的审阅报告（`output/sample_review_50_report.md`）逐句展示原文、实体表与评价关系，适合人工检查效果。
 
 ---
 
@@ -300,7 +307,7 @@ python run_sample_review.py
 
 | 参数 | 说明 | 默认值 |
 |------|------|--------|
-| `--live` | 启用真实 LLM API (需设置 4 把 API Key) | `False` |
+| `--live` | 启用真实 LLM API (需设置 3 把 API Key: extraction/classification/reviewer) | `False` |
 | `--mode` | 运行模式: `test` / `full` | `full` |
 | `--limit N` | 限制处理文件数, 0=不限制 | `0` |
 | `--concurrency N` | 并行处理文件数 | `40` |
@@ -309,6 +316,7 @@ python run_sample_review.py
 | `--eval` | 启用评估模式 | `False` |
 | `--gold` | 标注数据路径 | `eval/gold_data.jsonl` |
 | `--eval-output` | 评估报告输出路径 | `eval/report.md` |
+| `--no-verify` | 禁用 Agent 5 关系校验 (默认开启) | `False` |
 | `--thinking` | 启用 DeepSeek 推理模式 | `False` |
 | `--no-thinking` | 禁用推理模式 | — |
 | `--voting` | 启用 Agent 3 分类多轮投票 | `False` |
@@ -366,7 +374,7 @@ L1 分布、L3 类型分布、Likert 五点分布、平均分等聚合指标。
 
 ### 评价关系 (`output/evaluative_relation/relation_full_{num}.jsonl`)
 
-由 **Agent 1** 产出，每行一个句子的评价关系结果。每条关系字段为：
+由 **Agent 1** 产出、经 **Agent 5** 校验过滤后导出（事实/描述类不在此文件中）。每行一个句子的评价关系结果。每条关系字段为：
 
 ```json
 {
@@ -376,7 +384,9 @@ L1 分布、L3 类型分布、Likert 五点分布、平均分等聚合指标。
     "object": "1_e1",
     "aspect": "研究水平",
     "opinion": "偏低",
-    "evidence": "研究水平偏低"
+    "evidence": "研究水平偏低",
+    "is_evaluation": true,
+    "verdict_reason": "含明确评价表达"
 }
 ```
 
@@ -387,6 +397,13 @@ L1 分布、L3 类型分布、Likert 五点分布、平均分等聚合指标。
 | `aspect` | 评价方面；没有则为 `null` |
 | `opinion` | 评价表达（完整片段） |
 | `evidence` | 支持该评价的最小原文片段 |
+| `is_evaluation` | Agent 5 校验结论：`true`=评价类（放行导出）；`false`=事实/描述类（已过滤，仅存在于校验详情中） |
+| `verdict_reason` | Agent 5 的判定理由 |
+| `fact_type` | 仅当 `is_evaluation=false` 时存在：事实/描述类别（研究行为/方法使用/定义/过程描述等九类） |
+
+### 关系校验详情 (`output/relation_verification/{name}_verification.jsonl`)
+
+由 **Agent 5** 产出，每行一句的校验快照，**包含被过滤的事实类关系**（`is_evaluation=false`），供审计与回溯。
 
 `mid_data/{name}_extracted.json` 中同样保存了按句分组的关系与 `has_evaluation` 标记，供断点续传与 `run_relation.py --from-agent1` 读取。
 
@@ -436,23 +453,30 @@ input/reviewed_full_*.json           # 输入: 评价句 + 上下文
         │
         ▼
   [Agent 1: 评价关系抽取]  ── 评价对象实体 ──┐
-        │                                   │ (作为已知实体)
-        ├──────────────────────────────┐    │
-        ▼                              ▼    ▼
-output/evaluative_relation/      [Agent 2: 实体抽取补充]
-  relation_full_{num}.jsonl                 │
-                                       ▼
-                          mid_data/{name}_extracted.json   # 中间: 合并实体列表
-                                       │
-                                       ▼
-                             [Agent 3: 精分类 + L4匹配]
-                                       │
-                                       ▼
-                             [Agent 4: Likert 审查]
-                                       │
-                                       ├──────────────────────────┐
-                                       ▼                          ▼
-                             output/entities/               dynamic_terms.json
-                               {name}_result.jsonl          (Likert=5 实体自动入库)
-                               {name}_summary.json
+        │  (评价关系暂存)                    │ (作为已知实体)
+        │                                   ▼
+        │                        [Agent 2: 实体抽取补充]
+        │                                   │
+        │                                   ▼
+        │                     mid_data/{name}_extracted.json  # 中间: 实体+关系
+        │                                   │
+        │                                   ▼
+        │                        [Agent 3: 精分类 + L4匹配]
+        │                                   │
+        │                                   ▼
+        │                        [Agent 4: Likert 审查]
+        │                                   │
+        │                                   ├──────────────────────────┐
+        │                                   ▼                          ▼
+        │                         output/entities/               dynamic_terms.json
+        │                           {name}_result.jsonl          (Likert=5 实体自动入库)
+        │                           {name}_summary.json
+        ▼
+  [Agent 5: 关系校验 — 评价/事实二分, ID重映射后逐句复核]
+        │
+        ├────────────────────────────────────┐
+        ▼                                    ▼
+output/evaluative_relation/        output/relation_verification/
+  relation_full_{num}.jsonl          {name}_verification.jsonl
+  (仅评价类, is_evaluation=true)      (含被过滤的事实类, 供审计)
 ```

@@ -1,0 +1,2730 @@
+{
+  "base_name": "reviewed_full_10052",
+  "stage": "agent1_relation_agent2_entity_extraction",
+  "extractions": [
+    {
+      "sentence_id": "1",
+      "sentence": "（7）其他难以搜索的内容等七种[2。 据 Bright Planet公司的调查显示，与可见网络相比，隐形网络的资源内容更丰富，专业性更强，因而更具价值。",
+      "entities": [
+        {
+          "entity_id": "1_e1",
+          "mention": "Bright Planet公司",
+          "normalized_name": "Bright Planet公司",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "据 Bright Planet公司的调查显示",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "1_e2",
+          "mention": "可见网络",
+          "normalized_name": "可见网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "与可见网络相比",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为网络类型概念"
+        },
+        {
+          "entity_id": "1_e3",
+          "mention": "隐形网络",
+          "normalized_name": "隐形网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "隐形网络的资源内容更丰富",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "1",
+          "sentence": "（7）其他难以搜索的内容等七种[2。 据 Bright Planet公司的调查显示，与可见网络相比，隐形网络的资源内容更丰富，专业性更强，因而更具价值。",
+          "subject": "_cite[2]",
+          "object": "1_e3",
+          "aspect": "资源内容",
+          "opinion": "更丰富",
+          "evidence": "隐形网络的资源内容更丰富"
+        },
+        {
+          "sentence_id": "1",
+          "sentence": "（7）其他难以搜索的内容等七种[2。 据 Bright Planet公司的调查显示，与可见网络相比，隐形网络的资源内容更丰富，专业性更强，因而更具价值。",
+          "subject": "_cite[2]",
+          "object": "1_e3",
+          "aspect": "专业性",
+          "opinion": "更强",
+          "evidence": "专业性更强"
+        },
+        {
+          "sentence_id": "1",
+          "sentence": "（7）其他难以搜索的内容等七种[2。 据 Bright Planet公司的调查显示，与可见网络相比，隐形网络的资源内容更丰富，专业性更强，因而更具价值。",
+          "subject": "_cite[2]",
+          "object": "1_e3",
+          "aspect": null,
+          "opinion": "更具价值",
+          "evidence": "因而更具价值"
+        }
+      ]
+    },
+    {
+      "sentence_id": "2",
+      "sentence": "由于隐形网络在学术研究上的独特价值，1999 年以来，国内外对此课题作了热烈探讨。 目前国外较有影响的著作包括：Christ Sherman、Gary Price 所著《The Invisible Web：Uncovering Information Sources Search Engines Can’t See 》(2001)，Paul Pedley 所著的《The Invisible Web：Searching theHidden Parts of the Internet》（2OOl)，Michael K．Bergman 所著的《White Paper：The Deep Web：Surfacing Hidden Value 》（2000）等，而相关学术论文达数百余篇。",
+      "entities": [
+        {
+          "entity_id": "2_e1",
+          "mention": "Christ Sherman",
+          "normalized_name": "Christ Sherman",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Christ Sherman、Gary Price 所著《The Invisible Web：Uncovering Information Sources Search Engines Can’t See 》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e2",
+          "mention": "Gary Price",
+          "normalized_name": "Gary Price",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Christ Sherman、Gary Price 所著《The Invisible Web：Uncovering Information Sources Search Engines Can’t See 》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e3",
+          "mention": "《The Invisible Web：Uncovering Information Sources Search Engines Can’t See 》",
+          "normalized_name": "The Invisible Web: Uncovering Information Sources Search Engines Can't See",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Christ Sherman、Gary Price 所著《The Invisible Web：Uncovering Information Sources Search Engines Can’t See 》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e4",
+          "mention": "Paul Pedley",
+          "normalized_name": "Paul Pedley",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Paul Pedley 所著的《The Invisible Web：Searching theHidden Parts of the Internet》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e5",
+          "mention": "《The Invisible Web：Searching theHidden Parts of the Internet》",
+          "normalized_name": "The Invisible Web: Searching the Hidden Parts of the Internet",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Paul Pedley 所著的《The Invisible Web：Searching theHidden Parts of the Internet》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e6",
+          "mention": "Michael K．Bergman",
+          "normalized_name": "Michael K. Bergman",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Michael K．Bergman 所著的《White Paper：The Deep Web：Surfacing Hidden Value 》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "2_e7",
+          "mention": "《White Paper：The Deep Web：Surfacing Hidden Value 》",
+          "normalized_name": "White Paper: The Deep Web: Surfacing Hidden Value",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Michael K．Bergman 所著的《White Paper：The Deep Web：Surfacing Hidden Value 》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ],
+      "has_evaluation": false,
+      "relations": []
+    },
+    {
+      "sentence_id": "3",
+      "sentence": "相对来说，国内对此方面的理论研究起步较晚，但近两年已引起了一些学者的关注。 Chris Sherman 和Gary Price的著作中译本已经出版，名为《看不见的网站一一Intermet专业信息检索指南》。",
+      "entities": [
+        {
+          "entity_id": "3_e1",
+          "mention": "Chris Sherman",
+          "normalized_name": "Chris Sherman",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Chris Sherman 和Gary Price的著作中译本已经出版",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e2",
+          "mention": "Gary Price",
+          "normalized_name": "Gary Price",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Chris Sherman 和Gary Price的著作中译本已经出版",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "3_e3",
+          "mention": "《看不见的网站一一Intermet专业信息检索指南》",
+          "normalized_name": "《看不见的网站一一Intermet专业信息检索指南》",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "名为《看不见的网站一一Intermet专业信息检索指南》",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ],
+      "has_evaluation": false,
+      "relations": []
+    },
+    {
+      "sentence_id": "4",
+      "sentence": "从文献调研来看，目前国内外对隐形网络的形成原因、类型、查找途径和工具都有了较深入的研究，隐形网络正被一步步揭开神秘的面纱，被更广泛、更深入地发掘利用。 那么，作为信息时代网络资源的组织与导航者一一图书馆，是否已经意识到隐形网络的巨大潜力和价值?",
+      "entities": [
+        {
+          "entity_id": "4_e1",
+          "mention": "隐形网络",
+          "normalized_name": "隐形网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "目前国内外对隐形网络的形成原因、类型、查找途径和工具都有了较深入的研究",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "4_e2",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "作为信息时代网络资源的组织与导航者一一图书馆",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称机构，但此处作为组织与导航者角色，可能指具体图书馆，但未具名，故置信度较低"
+        }
+      ],
+      "has_evaluation": false,
+      "relations": []
+    },
+    {
+      "sentence_id": "5",
+      "sentence": "面对瞬息万变的隐形网络，图书馆应采取何种对策？ 本文拟在文献调研和网站调查的基础上，评介目前国内外图书馆应对隐形网络所采取的方法和策略，并提出一些可行性的建议。",
+      "entities": [
+        {
+          "entity_id": "5_e1",
+          "mention": "隐形网络",
+          "normalized_name": "隐形网络",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "面对瞬息万变的隐形网络",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "5_e2",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书馆应采取何种对策",
+          "is_specific_entity": false,
+          "confidence": 0.3,
+          "uncertainty": "泛称机构，不指具体图书馆"
+        }
+      ],
+      "has_evaluation": false,
+      "relations": []
+    },
+    {
+      "sentence_id": "6",
+      "sentence": "网络信息在图书馆信息服务中占有举足轻重的地位。 图书馆信息资源的组织、提供、检索、培训，无一不涉及因特网信息。",
+      "entities": [
+        {
+          "entity_id": "6_e1",
+          "mention": "图书馆信息服务",
+          "normalized_name": "图书馆信息服务",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "网络信息在图书馆信息服务中占有举足轻重的地位",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "可能指服务活动而非具体组织"
+        },
+        {
+          "entity_id": "6_e2",
+          "mention": "图书馆信息资源",
+          "normalized_name": "图书馆信息资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "图书馆信息资源的组织、提供、检索、培训",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "可能指资源集合，非具体实体"
+        },
+        {
+          "entity_id": "6_e3",
+          "mention": "因特网信息",
+          "normalized_name": "因特网信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "无一不涉及因特网信息",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "可能指网络信息资源，非具体实体"
+        }
+      ],
+      "has_evaluation": false,
+      "relations": []
+    },
+    {
+      "sentence_id": "7",
+      "sentence": "图书馆信息资源的组织、提供、检索、培训，无一不涉及因特网信息。 隐形网络理论的提出，改变了人们对因特网信息的认识，拓宽了人们的信息视野，改变了人们的信息查询策略，对图书馆信息服务工作产生了深远影响。",
+      "entities": [
+        {
+          "entity_id": "7_e1",
+          "mention": "隐形网络理论",
+          "normalized_name": "隐形网络理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "隐形网络理论的提出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "7",
+          "sentence": "图书馆信息资源的组织、提供、检索、培训，无一不涉及因特网信息。 隐形网络理论的提出，改变了人们对因特网信息的认识，拓宽了人们的信息视野，改变了人们的信息查询策略，对图书馆信息服务工作产生了深远影响。",
+          "subject": "_paper_author",
+          "object": "7_e1",
+          "aspect": null,
+          "opinion": "改变了人们对因特网信息的认识，拓宽了人们的信息视野，改变了人们的信息查询策略，对图书馆信息服务工作产生了深远影响",
+          "evidence": "隐形网络理论的提出，改变了人们对因特网信息的认识，拓宽了人们的信息视野，改变了人们的信息查询策略，对图书馆信息服务工作产生了深远影响"
+        }
+      ]
+    },
+    {
+      "sentence_id": "8",
+      "sentence": "而其中很大一部分信息就隐藏在隐形网络中，需要信息工作人员通过各种方法和途径予以发掘利用。 据Bergman报道，隐形网络的信息量大约是传统搜索工具所标引信息的 50多倍，其容量和深度都以难以置信的速度在扩大。即使是最先进的搜索工具，也只能轻掠过网络深海的表面。想全面获得某专题的高质量、专业性的资料，必须在使用普通搜索引擎后，再通过隐形网络专门查找途径方能获取[3。 因此，理解并掌握隐形网络的形成原因、类型、内容和查找途径，是图书馆信息检索人员所必备的业务技能。",
+      "entities": [
+        {
+          "entity_id": "8_e1",
+          "mention": "Bergman",
+          "normalized_name": "Bergman",
+          "candidate_l3": "scholar",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "据Bergman报道",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "8_e2",
+          "mention": "隐形网络",
+          "normalized_name": "隐形网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "很大一部分信息就隐藏在隐形网络中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为概念讨论"
+        },
+        {
+          "entity_id": "8_e3",
+          "mention": "传统搜索工具",
+          "normalized_name": "传统搜索工具",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "传统搜索工具所标引信息的 50多倍",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛指一类工具，但作为具体类别"
+        },
+        {
+          "entity_id": "8_e4",
+          "mention": "最先进的搜索工具",
+          "normalized_name": "最先进的搜索工具",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "即使是最先进的搜索工具",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛指，但作为具体类别"
+        },
+        {
+          "entity_id": "8_e5",
+          "mention": "图书馆信息检索人员",
+          "normalized_name": "图书馆信息检索人员",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书馆信息检索人员所必备的业务技能",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但作为职业类别"
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "8",
+          "sentence": "而其中很大一部分信息就隐藏在隐形网络中，需要信息工作人员通过各种方法和途径予以发掘利用。 据Bergman报道，隐形网络的信息量大约是传统搜索工具所标引信息的 50多倍，其容量和深度都以难以置信的速度在扩大。即使是最先进的搜索工具，也只能轻掠过网络深海的表面。想全面获得某专题的高质量、专业性的资料，必须在使用普通搜索引擎后，再通过隐形网络专门查找途径方能获取[3。 因此，理解并掌握隐形网络的形成原因、类型、内容和查找途径，是图书馆信息检索人员所必备的业务技能。",
+          "subject": "_cite[3]",
+          "object": "8_e2",
+          "aspect": "信息量",
+          "opinion": "大约是传统搜索工具所标引信息的50多倍",
+          "evidence": "隐形网络的信息量大约是传统搜索工具所标引信息的 50多倍"
+        },
+        {
+          "sentence_id": "8",
+          "sentence": "而其中很大一部分信息就隐藏在隐形网络中，需要信息工作人员通过各种方法和途径予以发掘利用。 据Bergman报道，隐形网络的信息量大约是传统搜索工具所标引信息的 50多倍，其容量和深度都以难以置信的速度在扩大。即使是最先进的搜索工具，也只能轻掠过网络深海的表面。想全面获得某专题的高质量、专业性的资料，必须在使用普通搜索引擎后，再通过隐形网络专门查找途径方能获取[3。 因此，理解并掌握隐形网络的形成原因、类型、内容和查找途径，是图书馆信息检索人员所必备的业务技能。",
+          "subject": "_paper_author",
+          "object": "8_e4",
+          "aspect": "搜索能力",
+          "opinion": "只能轻掠过网络深海的表面",
+          "evidence": "即使是最先进的搜索工具，也只能轻掠过网络深海的表面"
+        },
+        {
+          "sentence_id": "8",
+          "sentence": "而其中很大一部分信息就隐藏在隐形网络中，需要信息工作人员通过各种方法和途径予以发掘利用。 据Bergman报道，隐形网络的信息量大约是传统搜索工具所标引信息的 50多倍，其容量和深度都以难以置信的速度在扩大。即使是最先进的搜索工具，也只能轻掠过网络深海的表面。想全面获得某专题的高质量、专业性的资料，必须在使用普通搜索引擎后，再通过隐形网络专门查找途径方能获取[3。 因此，理解并掌握隐形网络的形成原因、类型、内容和查找途径，是图书馆信息检索人员所必备的业务技能。",
+          "subject": "_paper_author",
+          "object": "8_e5",
+          "aspect": "业务技能",
+          "opinion": "必备",
+          "evidence": "是图书馆信息检索人员所必备的业务技能"
+        }
+      ]
+    },
+    {
+      "sentence_id": "9",
+      "sentence": "因此，理解并掌握隐形网络的形成原因、类型、内容和查找途径，是图书馆信息检索人员所必备的业务技能。 只有充分了解隐形网络，熟悉相关检索工具，调整搜索策略，掌握相应的搜索技巧，才能充分发掘隐形网络资源，将其充分应用到信息服务中去，提升信息服务质量。 美国华盛顿凯塞奥利克大学图书馆的参考馆员Diane Borluk 就曾利用隐形网络帮助读者解决了Google等普通搜索引擎查找不到的问题答案[4]。",
+      "entities": [
+        {
+          "entity_id": "9_e1",
+          "mention": "隐形网络",
+          "normalized_name": "隐形网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "理解并掌握隐形网络的形成原因、类型、内容和查找途径",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e2",
+          "mention": "图书馆信息检索人员",
+          "normalized_name": "图书馆信息检索人员",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "是图书馆信息检索人员所必备的业务技能",
+          "is_specific_entity": false,
+          "confidence": 0.3,
+          "uncertainty": "泛称职业类别，不指称具体个人"
+        },
+        {
+          "entity_id": "9_e3",
+          "mention": "Google",
+          "normalized_name": "Google",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Google等普通搜索引擎",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e4",
+          "mention": "美国华盛顿凯塞奥利克大学图书馆",
+          "normalized_name": "美国华盛顿凯塞奥利克大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国华盛顿凯塞奥利克大学图书馆的参考馆员Diane Borluk",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "9_e5",
+          "mention": "Diane Borluk",
+          "normalized_name": "Diane Borluk",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "参考馆员Diane Borluk",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ],
+      "has_evaluation": false,
+      "relations": []
+    },
+    {
+      "sentence_id": "10",
+      "sentence": "因特网在信息资源的丰富性、快捷性、共享的广泛性和低成本方面具有独特的优势，已成为学术界获取专业信息的重要渠道，越来越多的高校师生依赖于从因特网进行信息查找和利用。 尤其是处于教学科研前沿的用户，对因特网资源利用率最高，依赖性最强[5。",
+      "entities": [
+        {
+          "entity_id": "10_e1",
+          "mention": "因特网",
+          "normalized_name": "因特网",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "因特网在信息资源的丰富性、快捷性、共享的广泛性和低成本方面具有独特的优势",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为技术体系或应用概念，非具体系统"
+        },
+        {
+          "entity_id": "10_e2",
+          "mention": "学术界",
+          "normalized_name": "学术界",
+          "candidate_l3": "discipline",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "已成为学术界获取专业信息的重要渠道",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称学术共同体，但作为学科领域抽象实体"
+        },
+        {
+          "entity_id": "10_e3",
+          "mention": "高校师生",
+          "normalized_name": "高校师生",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "越来越多的高校师生依赖于从因特网进行信息查找和利用",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称群体，但作为用户类别可识别"
+        },
+        {
+          "entity_id": "10_e4",
+          "mention": "处于教学科研前沿的用户",
+          "normalized_name": "教学科研前沿用户",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "尤其是处于教学科研前沿的用户，对因特网资源利用率最高",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称用户群体，但作为特定用户类别"
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "10",
+          "sentence": "因特网在信息资源的丰富性、快捷性、共享的广泛性和低成本方面具有独特的优势，已成为学术界获取专业信息的重要渠道，越来越多的高校师生依赖于从因特网进行信息查找和利用。 尤其是处于教学科研前沿的用户，对因特网资源利用率最高，依赖性最强[5。",
+          "subject": "_paper_author",
+          "object": "10_e1",
+          "aspect": "信息资源的丰富性、快捷性、共享的广泛性和低成本",
+          "opinion": "具有独特的优势",
+          "evidence": "因特网在信息资源的丰富性、快捷性、共享的广泛性和低成本方面具有独特的优势"
+        },
+        {
+          "sentence_id": "10",
+          "sentence": "因特网在信息资源的丰富性、快捷性、共享的广泛性和低成本方面具有独特的优势，已成为学术界获取专业信息的重要渠道，越来越多的高校师生依赖于从因特网进行信息查找和利用。 尤其是处于教学科研前沿的用户，对因特网资源利用率最高，依赖性最强[5。",
+          "subject": "_paper_author",
+          "object": "10_e1",
+          "aspect": "获取专业信息的重要渠道",
+          "opinion": "已成为学术界获取专业信息的重要渠道",
+          "evidence": "已成为学术界获取专业信息的重要渠道"
+        },
+        {
+          "sentence_id": "10",
+          "sentence": "因特网在信息资源的丰富性、快捷性、共享的广泛性和低成本方面具有独特的优势，已成为学术界获取专业信息的重要渠道，越来越多的高校师生依赖于从因特网进行信息查找和利用。 尤其是处于教学科研前沿的用户，对因特网资源利用率最高，依赖性最强[5。",
+          "subject": "_paper_author",
+          "object": "10_e4",
+          "aspect": "因特网资源利用率",
+          "opinion": "最高",
+          "evidence": "对因特网资源利用率最高"
+        },
+        {
+          "sentence_id": "10",
+          "sentence": "因特网在信息资源的丰富性、快捷性、共享的广泛性和低成本方面具有独特的优势，已成为学术界获取专业信息的重要渠道，越来越多的高校师生依赖于从因特网进行信息查找和利用。 尤其是处于教学科研前沿的用户，对因特网资源利用率最高，依赖性最强[5。",
+          "subject": "_paper_author",
+          "object": "10_e4",
+          "aspect": "依赖性",
+          "opinion": "最强",
+          "evidence": "依赖性最强"
+        }
+      ]
+    },
+    {
+      "sentence_id": "11",
+      "sentence": "尤其是处于教学科研前沿的用户，对因特网资源利用率最高，依赖性最强[5。 但是目前信息用户的信息素养能力不容乐观。据调查表明，绝大多数高校信息用户习惯于长期使用某一两个最初接触到的搜索引擎或数据库[5。在这一情况下，信息用户常用的搜索引擎往往搜索到的只是“表层网站”，其中只有不到 $7 \\%$ 的网站内容与教育或学术的主题有关。对于不善区分的低年级学生来说，很难找到内容与教育相关的“深层网站”。显然，缺乏方便、可靠的工具，会危及学生的学习质量。图书馆作为学校的知识管理中心、信息素质教育中心，应发挥其在信息化教育方面的独特优势，将隐形网络内容作为信息素质课程的一个重要组成部分予以充分重视，多途径提高信息用户的信息能力。",
+      "entities": [
+        {
+          "entity_id": "11_e1",
+          "mention": "因特网",
+          "normalized_name": "因特网",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "对因特网资源利用率最高",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为技术概念，非具体系统"
+        },
+        {
+          "entity_id": "11_e2",
+          "mention": "信息用户",
+          "normalized_name": "信息用户",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息用户的信息素养能力不容乐观",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称用户群体，非具体个人"
+        },
+        {
+          "entity_id": "11_e3",
+          "mention": "信息素养",
+          "normalized_name": "信息素养",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "信息用户的信息素养能力不容乐观",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e4",
+          "mention": "搜索引擎",
+          "normalized_name": "搜索引擎",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "习惯于长期使用某一两个最初接触到的搜索引擎或数据库",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称，非具体系统"
+        },
+        {
+          "entity_id": "11_e5",
+          "mention": "数据库",
+          "normalized_name": "数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "习惯于长期使用某一两个最初接触到的搜索引擎或数据库",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称，非具体数据库"
+        },
+        {
+          "entity_id": "11_e6",
+          "mention": "表层网站",
+          "normalized_name": "表层网站",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "搜索到的只是“表层网站”",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e7",
+          "mention": "深层网站",
+          "normalized_name": "深层网站",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "很难找到内容与教育相关的“深层网站”",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "11_e8",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书馆作为学校的知识管理中心、信息素质教育中心",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "已知实体，泛称机构，但作为主体"
+        },
+        {
+          "entity_id": "11_e9",
+          "mention": "信息素质课程",
+          "normalized_name": "信息素质课程",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将隐形网络内容作为信息素质课程的一个重要组成部分",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "课程概念"
+        },
+        {
+          "entity_id": "11_e10",
+          "mention": "隐形网络",
+          "normalized_name": "隐形网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将隐形网络内容作为信息素质课程的一个重要组成部分",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "11",
+          "sentence": "尤其是处于教学科研前沿的用户，对因特网资源利用率最高，依赖性最强[5。 但是目前信息用户的信息素养能力不容乐观。据调查表明，绝大多数高校信息用户习惯于长期使用某一两个最初接触到的搜索引擎或数据库[5。在这一情况下，信息用户常用的搜索引擎往往搜索到的只是“表层网站”，其中只有不到 $7 \\%$ 的网站内容与教育或学术的主题有关。对于不善区分的低年级学生来说，很难找到内容与教育相关的“深层网站”。显然，缺乏方便、可靠的工具，会危及学生的学习质量。图书馆作为学校的知识管理中心、信息素质教育中心，应发挥其在信息化教育方面的独特优势，将隐形网络内容作为信息素质课程的一个重要组成部分予以充分重视，多途径提高信息用户的信息能力。",
+          "subject": "_paper_author",
+          "object": "11_e8",
+          "aspect": "信息化教育方面的独特优势",
+          "opinion": "应发挥其在信息化教育方面的独特优势",
+          "evidence": "应发挥其在信息化教育方面的独特优势"
+        }
+      ]
+    },
+    {
+      "sentence_id": "12",
+      "sentence": "读者无法通过普通搜索引擎查找信息，而需多次认证，反复登陆，下载特定的浏览器方能检到所需文献。 读者要求方便快捷地查询这部分“隐形网络”的呼声越来越高。对数字资源进行跨库整合并通过特定的元搜索引擎进行统一查询和统一结果提交，提高图书馆“隐形网络”中资源的可见度，是目前图书馆信息服务的努力方向。为了促进图书馆收藏的隐形信息“显性化”，让更多的读者能挖掘到隐藏网络中的信息，美国卡内基一—梅隆大学、密歇根州立大学、西北大学、OCLC 等正与Google、Yahoo 等搜寻引擎合作，提高其电子资源，馆藏目录或联合目录等在因特网上的能见度，使搜寻引擎也能深入其资料库，找到他们所需的馆藏数字资源或书目信息。",
+      "entities": [
+        {
+          "entity_id": "12_e1",
+          "mention": "美国卡内基—梅隆大学",
+          "normalized_name": "卡内基—梅隆大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国卡内基—梅隆大学、密歇根州立大学、西北大学、OCLC 等正与Google、Yahoo 等搜寻引擎合作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e2",
+          "mention": "密歇根州立大学",
+          "normalized_name": "密歇根州立大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国卡内基—梅隆大学、密歇根州立大学、西北大学、OCLC 等正与Google、Yahoo 等搜寻引擎合作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e3",
+          "mention": "西北大学",
+          "normalized_name": "西北大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国卡内基—梅隆大学、密歇根州立大学、西北大学、OCLC 等正与Google、Yahoo 等搜寻引擎合作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e4",
+          "mention": "OCLC",
+          "normalized_name": "OCLC",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国卡内基—梅隆大学、密歇根州立大学、西北大学、OCLC 等正与Google、Yahoo 等搜寻引擎合作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e5",
+          "mention": "Google",
+          "normalized_name": "Google",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "正与Google、Yahoo 等搜寻引擎合作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e6",
+          "mention": "Yahoo",
+          "normalized_name": "Yahoo",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "正与Google、Yahoo 等搜寻引擎合作",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e7",
+          "mention": "隐形网络",
+          "normalized_name": "隐形网络",
+          "candidate_l3": "phenomenon",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "读者要求方便快捷地查询这部分“隐形网络”的呼声越来越高",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "12_e8",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "提高图书馆“隐形网络”中资源的可见度",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "泛称机构，但已知实体列表中包含，故保留"
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "12",
+          "sentence": "读者无法通过普通搜索引擎查找信息，而需多次认证，反复登陆，下载特定的浏览器方能检到所需文献。 读者要求方便快捷地查询这部分“隐形网络”的呼声越来越高。对数字资源进行跨库整合并通过特定的元搜索引擎进行统一查询和统一结果提交，提高图书馆“隐形网络”中资源的可见度，是目前图书馆信息服务的努力方向。为了促进图书馆收藏的隐形信息“显性化”，让更多的读者能挖掘到隐藏网络中的信息，美国卡内基一—梅隆大学、密歇根州立大学、西北大学、OCLC 等正与Google、Yahoo 等搜寻引擎合作，提高其电子资源，馆藏目录或联合目录等在因特网上的能见度，使搜寻引擎也能深入其资料库，找到他们所需的馆藏数字资源或书目信息。",
+          "subject": "_paper_author",
+          "object": "12_e8",
+          "aspect": "图书馆“隐形网络”中资源的可见度",
+          "opinion": "提高",
+          "evidence": "提高图书馆“隐形网络”中资源的可见度"
+        },
+        {
+          "sentence_id": "12",
+          "sentence": "读者无法通过普通搜索引擎查找信息，而需多次认证，反复登陆，下载特定的浏览器方能检到所需文献。 读者要求方便快捷地查询这部分“隐形网络”的呼声越来越高。对数字资源进行跨库整合并通过特定的元搜索引擎进行统一查询和统一结果提交，提高图书馆“隐形网络”中资源的可见度，是目前图书馆信息服务的努力方向。为了促进图书馆收藏的隐形信息“显性化”，让更多的读者能挖掘到隐藏网络中的信息，美国卡内基一—梅隆大学、密歇根州立大学、西北大学、OCLC 等正与Google、Yahoo 等搜寻引擎合作，提高其电子资源，馆藏目录或联合目录等在因特网上的能见度，使搜寻引擎也能深入其资料库，找到他们所需的馆藏数字资源或书目信息。",
+          "subject": "_paper_author",
+          "object": "12_e1",
+          "aspect": null,
+          "opinion": "正与Google、Yahoo 等搜寻引擎合作",
+          "evidence": "美国卡内基—梅隆大学、密歇根州立大学、西北大学、OCLC 等正与Google、Yahoo 等搜寻引擎合作"
+        }
+      ]
+    },
+    {
+      "sentence_id": "13",
+      "sentence": "二为中国药科大学图书馆的一则培训通知内容。 由此可见，国外一些图书馆已开始重视隐形网络的宣传和推广，在其主页上出现了相关的内容。而国内图书馆普遍未对此引起重视。",
+      "entities": [
+        {
+          "entity_id": "13_e1",
+          "mention": "中国药科大学图书馆",
+          "normalized_name": "中国药科大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "中国药科大学图书馆的一则培训通知内容",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "13_e2",
+          "mention": "国外一些图书馆",
+          "normalized_name": "国外一些图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国外一些图书馆已开始重视隐形网络的宣传和推广",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "泛称但已知实体，保留"
+        },
+        {
+          "entity_id": "13_e3",
+          "mention": "国内图书馆",
+          "normalized_name": "国内图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国内图书馆普遍未对此引起重视",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "泛称但已知实体，保留"
+        },
+        {
+          "entity_id": "13_e4",
+          "mention": "隐形网络",
+          "normalized_name": "隐形网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "国外一些图书馆已开始重视隐形网络的宣传和推广",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指深网概念，但作为术语讨论"
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "13",
+          "sentence": "二为中国药科大学图书馆的一则培训通知内容。 由此可见，国外一些图书馆已开始重视隐形网络的宣传和推广，在其主页上出现了相关的内容。而国内图书馆普遍未对此引起重视。",
+          "subject": "_paper_author",
+          "object": "13_e2",
+          "aspect": "隐形网络的宣传和推广",
+          "opinion": "已开始重视",
+          "evidence": "国外一些图书馆已开始重视隐形网络的宣传和推广"
+        },
+        {
+          "sentence_id": "13",
+          "sentence": "二为中国药科大学图书馆的一则培训通知内容。 由此可见，国外一些图书馆已开始重视隐形网络的宣传和推广，在其主页上出现了相关的内容。而国内图书馆普遍未对此引起重视。",
+          "subject": "_paper_author",
+          "object": "13_e3",
+          "aspect": "隐形网络的宣传和推广",
+          "opinion": "普遍未对此引起重视",
+          "evidence": "国内图书馆普遍未对此引起重视"
+        }
+      ]
+    },
+    {
+      "sentence_id": "14",
+      "sentence": "另有美国 Albany 大学图书馆的“Deepweb”教程[，该教程指出了一些查询隐形网络时的小技巧，同样也提供了丰富的链接。 调查中发现，以上两个教程因其制作规范，内容丰富，被很多网站予以了链接。 从Google中输入“LINK：网站名”进行搜索，发现前者被链接了99次，后者则被链接了179次。",
+      "entities": [
+        {
+          "entity_id": "14_e1",
+          "mention": "美国 Albany 大学图书馆的“Deepweb”教程",
+          "normalized_name": "Albany大学图书馆Deepweb教程",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "美国 Albany 大学图书馆的“Deepweb”教程",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "14_e2",
+          "mention": "以上两个教程",
+          "normalized_name": "以上两个教程",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "以上两个教程因其制作规范，内容丰富",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "指代前文两个教程，具体实体已识别"
+        },
+        {
+          "entity_id": "14_e3",
+          "mention": "Google",
+          "normalized_name": "Google",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "从Google中输入“LINK：网站名”进行搜索",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "14",
+          "sentence": "另有美国 Albany 大学图书馆的“Deepweb”教程[，该教程指出了一些查询隐形网络时的小技巧，同样也提供了丰富的链接。 调查中发现，以上两个教程因其制作规范，内容丰富，被很多网站予以了链接。 从Google中输入“LINK：网站名”进行搜索，发现前者被链接了99次，后者则被链接了179次。",
+          "subject": "_paper_author",
+          "object": "14_e1",
+          "aspect": null,
+          "opinion": "制作规范，内容丰富",
+          "evidence": "因其制作规范，内容丰富"
+        },
+        {
+          "sentence_id": "14",
+          "sentence": "另有美国 Albany 大学图书馆的“Deepweb”教程[，该教程指出了一些查询隐形网络时的小技巧，同样也提供了丰富的链接。 调查中发现，以上两个教程因其制作规范，内容丰富，被很多网站予以了链接。 从Google中输入“LINK：网站名”进行搜索，发现前者被链接了99次，后者则被链接了179次。",
+          "subject": "_paper_author",
+          "object": "14_e2",
+          "aspect": null,
+          "opinion": "被很多网站予以了链接",
+          "evidence": "被很多网站予以了链接"
+        }
+      ]
+    },
+    {
+      "sentence_id": "15",
+      "sentence": "调查中发现，有6所（占 $30 \\%$ ）图书馆将隐形网络内容放在其在线素质教育课程中，作为因特网信息导航课程的一部分。 将隐形网络内容作为教学课程的一部分，充分反映了这些图书馆在跟踪网络信息发展趋势，消化吸收现有研究成果，及时更新教学内容方面的敏感性。",
+      "entities": [
+        {
+          "entity_id": "15_e1",
+          "mention": "这些图书馆",
+          "normalized_name": "这些图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "这些图书馆在跟踪网络信息发展趋势",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "指代前文提到的6所图书馆，但未给出具体名称，实体性较弱"
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "15",
+          "sentence": "调查中发现，有6所（占 $30 \\%$ ）图书馆将隐形网络内容放在其在线素质教育课程中，作为因特网信息导航课程的一部分。 将隐形网络内容作为教学课程的一部分，充分反映了这些图书馆在跟踪网络信息发展趋势，消化吸收现有研究成果，及时更新教学内容方面的敏感性。",
+          "subject": "_paper_author",
+          "object": "15_e1",
+          "aspect": "跟踪网络信息发展趋势，消化吸收现有研究成果，及时更新教学内容方面的敏感性",
+          "opinion": "充分反映了...敏感性",
+          "evidence": "充分反映了这些图书馆在跟踪网络信息发展趋势，消化吸收现有研究成果，及时更新教学内容方面的敏感性"
+        }
+      ]
+    },
+    {
+      "sentence_id": "16",
+      "sentence": "除上述两个图书馆外，一些中小型高校和研究型图书馆也在其网站中介绍了隐形网络。有15所（占 $7 5 \\%$ ）图书馆对隐形网络作了简明扼要的介绍，推荐了一些搜索工具和搜索方法。 对一些想详细了解该项内容的用户，则提供了一些有较高参考价值的网站链接。",
+      "entities": [
+        {
+          "entity_id": "16_e1",
+          "mention": "一些中小型高校和研究型图书馆",
+          "normalized_name": "一些中小型高校和研究型图书馆",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "一些中小型高校和研究型图书馆也在其网站中介绍了隐形网络",
+          "is_specific_entity": false,
+          "confidence": 0.3,
+          "uncertainty": "泛称机构，不指称具体组织"
+        },
+        {
+          "entity_id": "16_e2",
+          "mention": "15所图书馆",
+          "normalized_name": "15所图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "有15所（占 $7 5 \\%$ ）图书馆对隐形网络作了简明扼要的介绍",
+          "is_specific_entity": false,
+          "confidence": 0.3,
+          "uncertainty": "泛称机构，不指称具体组织"
+        },
+        {
+          "entity_id": "16_e3",
+          "mention": "一些网站链接",
+          "normalized_name": "一些网站链接",
+          "candidate_l3": "reference_tool",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "提供了一些有较高参考价值的网站链接",
+          "is_specific_entity": false,
+          "confidence": 0.3,
+          "uncertainty": "泛称，不指称具体链接"
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "16",
+          "sentence": "除上述两个图书馆外，一些中小型高校和研究型图书馆也在其网站中介绍了隐形网络。有15所（占 $7 5 \\%$ ）图书馆对隐形网络作了简明扼要的介绍，推荐了一些搜索工具和搜索方法。 对一些想详细了解该项内容的用户，则提供了一些有较高参考价值的网站链接。",
+          "subject": "_paper_author",
+          "object": "16_e1",
+          "aspect": "网站介绍",
+          "opinion": "介绍了隐形网络",
+          "evidence": "一些中小型高校和研究型图书馆也在其网站中介绍了隐形网络"
+        },
+        {
+          "sentence_id": "16",
+          "sentence": "除上述两个图书馆外，一些中小型高校和研究型图书馆也在其网站中介绍了隐形网络。有15所（占 $7 5 \\%$ ）图书馆对隐形网络作了简明扼要的介绍，推荐了一些搜索工具和搜索方法。 对一些想详细了解该项内容的用户，则提供了一些有较高参考价值的网站链接。",
+          "subject": "_paper_author",
+          "object": "16_e2",
+          "aspect": "介绍内容",
+          "opinion": "作了简明扼要的介绍",
+          "evidence": "有15所（占75%）图书馆对隐形网络作了简明扼要的介绍"
+        },
+        {
+          "sentence_id": "16",
+          "sentence": "除上述两个图书馆外，一些中小型高校和研究型图书馆也在其网站中介绍了隐形网络。有15所（占 $7 5 \\%$ ）图书馆对隐形网络作了简明扼要的介绍，推荐了一些搜索工具和搜索方法。 对一些想详细了解该项内容的用户，则提供了一些有较高参考价值的网站链接。",
+          "subject": "_paper_author",
+          "object": "16_e3",
+          "aspect": "参考价值",
+          "opinion": "有较高参考价值",
+          "evidence": "则提供了一些有较高参考价值的网站链接"
+        }
+      ]
+    },
+    {
+      "sentence_id": "17",
+      "sentence": "对一些想详细了解该项内容的用户，则提供了一些有较高参考价值的网站链接。 除上面提到的两个图书馆网站有较高人气外，兰德大学图书馆馆员RobertJ·Lackie 创建的 Those Dark Hiding Places：The Invisible Web Re-vealed也是链接率很高的网站。其它如Brightplanet公司关于隐形网络的FAQ（htp：//www：brightplanet：com/deepcon-tent/deep-webfaq·asp）也是链接率较高的网站。不过，总的来说，内容还是过于简单，缺乏完整的说明和指南，各项内容相对独立，缺乏融合，对一些链接也未提供链接注释。",
+      "entities": [
+        {
+          "entity_id": "17_e1",
+          "mention": "兰德大学图书馆",
+          "normalized_name": "兰德大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "兰德大学图书馆馆员RobertJ·Lackie",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e2",
+          "mention": "RobertJ·Lackie",
+          "normalized_name": "RobertJ·Lackie",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "兰德大学图书馆馆员RobertJ·Lackie",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e3",
+          "mention": "Those Dark Hiding Places：The Invisible Web Re-vealed",
+          "normalized_name": "Those Dark Hiding Places：The Invisible Web Re-vealed",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "创建的 Those Dark Hiding Places：The Invisible Web Re-vealed",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e4",
+          "mention": "Brightplanet公司",
+          "normalized_name": "Brightplanet公司",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "Brightplanet公司关于隐形网络的FAQ",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "17_e5",
+          "mention": "隐形网络的FAQ",
+          "normalized_name": "隐形网络的FAQ",
+          "candidate_l3": "report",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "Brightplanet公司关于隐形网络的FAQ",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "FAQ可视为报告类"
+        },
+        {
+          "entity_id": "17_e6",
+          "mention": "网站链接",
+          "normalized_name": "网站链接",
+          "candidate_l3": "",
+          "candidate_l1": [],
+          "evidence": "提供了一些有较高参考价值的网站链接",
+          "is_specific_entity": true,
+          "confidence": 0.0,
+          "uncertainty": "来自评价关系抽取的补抽实体"
+        },
+        {
+          "entity_id": "17_e7",
+          "mention": "两个图书馆网站",
+          "normalized_name": "两个图书馆网站",
+          "candidate_l3": "",
+          "candidate_l1": [],
+          "evidence": "两个图书馆网站有较高人气",
+          "is_specific_entity": true,
+          "confidence": 0.0,
+          "uncertainty": "来自评价关系抽取的补抽实体"
+        },
+        {
+          "entity_id": "17_e8",
+          "mention": "内容",
+          "normalized_name": "内容",
+          "candidate_l3": "",
+          "candidate_l1": [],
+          "evidence": "内容还是过于简单",
+          "is_specific_entity": true,
+          "confidence": 0.0,
+          "uncertainty": "来自评价关系抽取的补抽实体"
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "17",
+          "sentence": "对一些想详细了解该项内容的用户，则提供了一些有较高参考价值的网站链接。 除上面提到的两个图书馆网站有较高人气外，兰德大学图书馆馆员RobertJ·Lackie 创建的 Those Dark Hiding Places：The Invisible Web Re-vealed也是链接率很高的网站。其它如Brightplanet公司关于隐形网络的FAQ（htp：//www：brightplanet：com/deepcon-tent/deep-webfaq·asp）也是链接率较高的网站。不过，总的来说，内容还是过于简单，缺乏完整的说明和指南，各项内容相对独立，缺乏融合，对一些链接也未提供链接注释。",
+          "subject": "_paper_author",
+          "object": "17_e6",
+          "aspect": "参考价值",
+          "opinion": "有较高参考价值",
+          "evidence": "提供了一些有较高参考价值的网站链接"
+        },
+        {
+          "sentence_id": "17",
+          "sentence": "对一些想详细了解该项内容的用户，则提供了一些有较高参考价值的网站链接。 除上面提到的两个图书馆网站有较高人气外，兰德大学图书馆馆员RobertJ·Lackie 创建的 Those Dark Hiding Places：The Invisible Web Re-vealed也是链接率很高的网站。其它如Brightplanet公司关于隐形网络的FAQ（htp：//www：brightplanet：com/deepcon-tent/deep-webfaq·asp）也是链接率较高的网站。不过，总的来说，内容还是过于简单，缺乏完整的说明和指南，各项内容相对独立，缺乏融合，对一些链接也未提供链接注释。",
+          "subject": "_paper_author",
+          "object": "17_e7",
+          "aspect": "人气",
+          "opinion": "有较高人气",
+          "evidence": "两个图书馆网站有较高人气"
+        },
+        {
+          "sentence_id": "17",
+          "sentence": "对一些想详细了解该项内容的用户，则提供了一些有较高参考价值的网站链接。 除上面提到的两个图书馆网站有较高人气外，兰德大学图书馆馆员RobertJ·Lackie 创建的 Those Dark Hiding Places：The Invisible Web Re-vealed也是链接率很高的网站。其它如Brightplanet公司关于隐形网络的FAQ（htp：//www：brightplanet：com/deepcon-tent/deep-webfaq·asp）也是链接率较高的网站。不过，总的来说，内容还是过于简单，缺乏完整的说明和指南，各项内容相对独立，缺乏融合，对一些链接也未提供链接注释。",
+          "subject": "_paper_author",
+          "object": "17_e3",
+          "aspect": "链接率",
+          "opinion": "链接率很高",
+          "evidence": "Those Dark Hiding Places：The Invisible Web Re-vealed也是链接率很高的网站"
+        },
+        {
+          "sentence_id": "17",
+          "sentence": "对一些想详细了解该项内容的用户，则提供了一些有较高参考价值的网站链接。 除上面提到的两个图书馆网站有较高人气外，兰德大学图书馆馆员RobertJ·Lackie 创建的 Those Dark Hiding Places：The Invisible Web Re-vealed也是链接率很高的网站。其它如Brightplanet公司关于隐形网络的FAQ（htp：//www：brightplanet：com/deepcon-tent/deep-webfaq·asp）也是链接率较高的网站。不过，总的来说，内容还是过于简单，缺乏完整的说明和指南，各项内容相对独立，缺乏融合，对一些链接也未提供链接注释。",
+          "subject": "_paper_author",
+          "object": "17_e4",
+          "aspect": "链接率",
+          "opinion": "链接率较高",
+          "evidence": "Brightplanet公司关于隐形网络的FAQ也是链接率较高的网站"
+        },
+        {
+          "sentence_id": "17",
+          "sentence": "对一些想详细了解该项内容的用户，则提供了一些有较高参考价值的网站链接。 除上面提到的两个图书馆网站有较高人气外，兰德大学图书馆馆员RobertJ·Lackie 创建的 Those Dark Hiding Places：The Invisible Web Re-vealed也是链接率很高的网站。其它如Brightplanet公司关于隐形网络的FAQ（htp：//www：brightplanet：com/deepcon-tent/deep-webfaq·asp）也是链接率较高的网站。不过，总的来说，内容还是过于简单，缺乏完整的说明和指南，各项内容相对独立，缺乏融合，对一些链接也未提供链接注释。",
+          "subject": "_paper_author",
+          "object": "17_e8",
+          "aspect": null,
+          "opinion": "过于简单，缺乏完整的说明和指南，各项内容相对独立，缺乏融合，对一些链接也未提供链接注释",
+          "evidence": "内容还是过于简单，缺乏完整的说明和指南，各项内容相对独立，缺乏融合，对一些链接也未提供链接注释"
+        }
+      ]
+    },
+    {
+      "sentence_id": "18",
+      "sentence": "隐形网络因其内容的不确定性，其查寻方法也在不断变化中。 大多数图书馆网页都在近三个月内予以了更新，以便随时跟踪最新进展。",
+      "entities": [
+        {
+          "entity_id": "18_e1",
+          "mention": "隐形网络",
+          "normalized_name": "隐形网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "隐形网络因其内容的不确定性",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "18_e2",
+          "mention": "图书馆网页",
+          "normalized_name": "图书馆网页",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "大多数图书馆网页都在近三个月内予以了更新",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称，但作为具体网页类型，可视为系统"
+        }
+      ],
+      "has_evaluation": false,
+      "relations": []
+    },
+    {
+      "sentence_id": "19",
+      "sentence": "可在网页的显眼位置开辟一个专门的宣传窗口，在批判吸收国外图书馆网站建设经验的基础上，编写组织适合我国图书馆用户教学科研需求的隐形网络使用指南。网页内容宜由浅入深，穿插生动活泼的实例。各种链接需考虑语言障碍，以中文为主。 对国外站点可作适当链接。",
+      "entities": [
+        {
+          "entity_id": "19_e1",
+          "mention": "国外图书馆网站",
+          "normalized_name": "国外图书馆网站",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在批判吸收国外图书馆网站建设经验的基础上",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛指国外图书馆网站，非具体系统"
+        },
+        {
+          "entity_id": "19_e2",
+          "mention": "隐形网络使用指南",
+          "normalized_name": "隐形网络使用指南",
+          "candidate_l3": "guideline",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "编写组织适合我国图书馆用户教学科研需求的隐形网络使用指南",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        }
+      ],
+      "has_evaluation": false,
+      "relations": []
+    },
+    {
+      "sentence_id": "20",
+      "sentence": "对国外站点可作适当链接。 在内容系统、科学、全面的基础上，注意页面设计的友好、互动和功能全面。",
+      "entities": [],
+      "has_evaluation": false,
+      "relations": []
+    },
+    {
+      "sentence_id": "21",
+      "sentence": "国内大学在开展用户教育中，很少有将教学内容挂到网上的，所以此项工作开展情况无法掌握确切数据。 但是紧跟因特网发展趋势，及时将有关“隐形网络”的内容添加到教学内容中去是非常必要的，这不仅能提高学生网络信息搜索能力，更能激发他们探索网络奥秘的好奇心。美国兰格地亚社区学院图书馆馆员就在其“图书馆研究指南”的讲座中，把隐形网络作为开场白，很好地吸引了学生的注意力[9。 用户培训的方式可多种多样，既可在文检课教学中加入此项内容，也可结合“一小时讲座”、“因特网导航”等培训课程，指导学生进行实际操作，讲解检索技巧。",
+      "entities": [
+        {
+          "entity_id": "21_e1",
+          "mention": "国内大学",
+          "normalized_name": "国内大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国内大学在开展用户教育中",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称机构，但作为整体主体，可识别为组织"
+        },
+        {
+          "entity_id": "21_e2",
+          "mention": "因特网发展趋势",
+          "normalized_name": "因特网发展趋势",
+          "candidate_l3": "trend",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "紧跟因特网发展趋势",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e3",
+          "mention": "隐形网络",
+          "normalized_name": "隐形网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将有关“隐形网络”的内容添加到教学内容中去",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e4",
+          "mention": "美国兰格地亚社区学院图书馆馆员",
+          "normalized_name": "美国兰格地亚社区学院图书馆馆员",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国兰格地亚社区学院图书馆馆员就在其“图书馆研究指南”的讲座中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e5",
+          "mention": "图书馆研究指南",
+          "normalized_name": "图书馆研究指南",
+          "candidate_l3": "guideline",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在其“图书馆研究指南”的讲座中",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e6",
+          "mention": "文检课",
+          "normalized_name": "文检课",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "既可在文检课教学中加入此项内容",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "21_e7",
+          "mention": "一小时讲座",
+          "normalized_name": "一小时讲座",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "结合“一小时讲座”、“因特网导航”等培训课程",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "可能为培训课程名称"
+        },
+        {
+          "entity_id": "21_e8",
+          "mention": "因特网导航",
+          "normalized_name": "因特网导航",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "结合“一小时讲座”、“因特网导航”等培训课程",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": ""
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "21",
+          "sentence": "国内大学在开展用户教育中，很少有将教学内容挂到网上的，所以此项工作开展情况无法掌握确切数据。 但是紧跟因特网发展趋势，及时将有关“隐形网络”的内容添加到教学内容中去是非常必要的，这不仅能提高学生网络信息搜索能力，更能激发他们探索网络奥秘的好奇心。美国兰格地亚社区学院图书馆馆员就在其“图书馆研究指南”的讲座中，把隐形网络作为开场白，很好地吸引了学生的注意力[9。 用户培训的方式可多种多样，既可在文检课教学中加入此项内容，也可结合“一小时讲座”、“因特网导航”等培训课程，指导学生进行实际操作，讲解检索技巧。",
+          "subject": "_paper_author",
+          "object": "21_e1",
+          "aspect": "用户教育",
+          "opinion": "很少有将教学内容挂到网上的",
+          "evidence": "国内大学在开展用户教育中，很少有将教学内容挂到网上的"
+        },
+        {
+          "sentence_id": "21",
+          "sentence": "国内大学在开展用户教育中，很少有将教学内容挂到网上的，所以此项工作开展情况无法掌握确切数据。 但是紧跟因特网发展趋势，及时将有关“隐形网络”的内容添加到教学内容中去是非常必要的，这不仅能提高学生网络信息搜索能力，更能激发他们探索网络奥秘的好奇心。美国兰格地亚社区学院图书馆馆员就在其“图书馆研究指南”的讲座中，把隐形网络作为开场白，很好地吸引了学生的注意力[9。 用户培训的方式可多种多样，既可在文检课教学中加入此项内容，也可结合“一小时讲座”、“因特网导航”等培训课程，指导学生进行实际操作，讲解检索技巧。",
+          "subject": "_cite[9]",
+          "object": "21_e4",
+          "aspect": "讲座",
+          "opinion": "很好地吸引了学生的注意力",
+          "evidence": "把隐形网络作为开场白，很好地吸引了学生的注意力"
+        }
+      ]
+    },
+    {
+      "sentence_id": "22",
+      "sentence": "图书馆馆藏信息资源本身就是个蕴含着巨大价值的隐形网络宝库，要将宝库予以充分开发利用，就需通过各种方式、途径使之在法律允许的范围内最大限度地予以揭示和使用，提高信息用户查询的简便性和准确性。 具体方法有：（1）OPAC系统与电子资源的整合。",
+      "entities": [
+        {
+          "entity_id": "22_e1",
+          "mention": "OPAC系统",
+          "normalized_name": "OPAC系统",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "OPAC系统与电子资源的整合",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ],
+      "has_evaluation": false,
+      "relations": []
+    },
+    {
+      "sentence_id": "23",
+      "sentence": "图书馆管理系统一般都支持$\\mathbf { Z 3 9 . 5 0 }$ 协议，通过Z39.50客户端专用程序，将多个图书馆公共查询系统整合在一个界面上，用户只要使用自已熟悉的OPAC窗口，就可以无缝地同时检索多个图书馆OPAC系统中的书目内容。 美国Teaxs大学就使用这种方法使该馆的OPAC与该州60所公共图书馆和25所高校图书馆联结在了一起[10]。",
+      "entities": [
+        {
+          "entity_id": "23_e1",
+          "mention": "Z39.50",
+          "normalized_name": "Z39.50",
+          "candidate_l3": "standard",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "图书馆管理系统一般都支持$\\mathbf { Z 3 9 . 5 0 }$ 协议",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e2",
+          "mention": "Z39.50客户端专用程序",
+          "normalized_name": "Z39.50客户端专用程序",
+          "candidate_l3": "software",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "通过Z39.50客户端专用程序",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e3",
+          "mention": "OPAC",
+          "normalized_name": "OPAC",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "用户只要使用自已熟悉的OPAC窗口",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "23_e4",
+          "mention": "美国Teaxs大学",
+          "normalized_name": "美国德克萨斯大学",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国Teaxs大学就使用这种方法",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "拼写错误，规范化"
+        }
+      ],
+      "has_evaluation": false,
+      "relations": []
+    },
+    {
+      "sentence_id": "24",
+      "sentence": "在宣传、推广、开发隐形网络资源过程中，图书馆员起着重要的作用[11]，只有具备深厚、广博的网络信息素养，才能更好地为用户服务。 无论是从事参考咨询工作还是从事网络信息导航，图书馆员们都需对隐形网络保持时刻的敏感性，除了不断关注“搜索引擎大观（Search/engineWatch)”、“图书馆员因特网指南（TheLibrarian's Index to theInternet)”等专门报道工具，更需发挥创新潜能，努力使图书馆数字资源走出隐形网络的遮盖，为更多的用户利用。",
+      "entities": [
+        {
+          "entity_id": "24_e1",
+          "mention": "图书馆员",
+          "normalized_name": "图书馆员",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书馆员起着重要的作用",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e2",
+          "mention": "搜索引擎大观（Search/engineWatch)",
+          "normalized_name": "搜索引擎大观（Search/engineWatch)",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "搜索引擎大观（Search/engineWatch)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为网站或工具，但具体类型不明确"
+        },
+        {
+          "entity_id": "24_e3",
+          "mention": "图书馆员因特网指南（TheLibrarian's Index to theInternet)",
+          "normalized_name": "图书馆员因特网指南（TheLibrarian's Index to theInternet)",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "图书馆员因特网指南（TheLibrarian's Index to theInternet)",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "可能为网站或工具，但具体类型不明确"
+        },
+        {
+          "entity_id": "24_e4",
+          "mention": "隐形网络",
+          "normalized_name": "隐形网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "隐形网络资源、隐形网络的遮盖",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为phenomenon，但更偏向概念"
+        },
+        {
+          "entity_id": "24_e5",
+          "mention": "网络信息素养",
+          "normalized_name": "网络信息素养",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "网络信息素养",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "24_e6",
+          "mention": "参考咨询",
+          "normalized_name": "参考咨询",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从事参考咨询工作",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "可能为服务类型，但作为概念讨论"
+        },
+        {
+          "entity_id": "24_e7",
+          "mention": "网络信息导航",
+          "normalized_name": "网络信息导航",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从事网络信息导航",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "可能为服务类型，但作为概念讨论"
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "24",
+          "sentence": "在宣传、推广、开发隐形网络资源过程中，图书馆员起着重要的作用[11]，只有具备深厚、广博的网络信息素养，才能更好地为用户服务。 无论是从事参考咨询工作还是从事网络信息导航，图书馆员们都需对隐形网络保持时刻的敏感性，除了不断关注“搜索引擎大观（Search/engineWatch)”、“图书馆员因特网指南（TheLibrarian's Index to theInternet)”等专门报道工具，更需发挥创新潜能，努力使图书馆数字资源走出隐形网络的遮盖，为更多的用户利用。",
+          "subject": "_paper_author",
+          "object": "24_e1",
+          "aspect": null,
+          "opinion": "起着重要的作用",
+          "evidence": "图书馆员起着重要的作用"
+        }
+      ]
+    },
+    {
+      "sentence_id": "add_1",
+      "sentence": "网络信息在图书馆信息服务中占有举足轻重的地位。图书馆信息资源的组织、提供、检索、培训，无一不涉及因特网信息。隐形网络理论的提出，改变了人们对因特网信息的认识，拓宽了人们的信息视野，改变了人们的信息查询策略，对图书馆信息服务工作产生了深远影响。",
+      "entities": [
+        {
+          "entity_id": "add_1_e1",
+          "mention": "网络信息",
+          "normalized_name": "网络信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "网络信息在图书馆信息服务中占有举足轻重的地位",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为术语讨论"
+        },
+        {
+          "entity_id": "add_1_e2",
+          "mention": "图书馆信息服务",
+          "normalized_name": "图书馆信息服务",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "网络信息在图书馆信息服务中占有举足轻重的地位",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为服务类型，但作为概念讨论"
+        },
+        {
+          "entity_id": "add_1_e3",
+          "mention": "因特网信息",
+          "normalized_name": "因特网信息",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "无一不涉及因特网信息",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "add_1_e4",
+          "mention": "隐形网络理论",
+          "normalized_name": "隐形网络理论",
+          "candidate_l3": "theory",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "隐形网络理论的提出",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "add_1_e5",
+          "mention": "信息查询策略",
+          "normalized_name": "信息查询策略",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "改变了人们的信息查询策略",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为方法或概念，但作为术语讨论"
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "add_1",
+          "sentence": "网络信息在图书馆信息服务中占有举足轻重的地位。图书馆信息资源的组织、提供、检索、培训，无一不涉及因特网信息。隐形网络理论的提出，改变了人们对因特网信息的认识，拓宽了人们的信息视野，改变了人们的信息查询策略，对图书馆信息服务工作产生了深远影响。",
+          "subject": "_paper_author",
+          "object": "add_1_e1",
+          "aspect": "在图书馆信息服务中的地位",
+          "opinion": "占有举足轻重的地位",
+          "evidence": "网络信息在图书馆信息服务中占有举足轻重的地位"
+        },
+        {
+          "sentence_id": "add_1",
+          "sentence": "网络信息在图书馆信息服务中占有举足轻重的地位。图书馆信息资源的组织、提供、检索、培训，无一不涉及因特网信息。隐形网络理论的提出，改变了人们对因特网信息的认识，拓宽了人们的信息视野，改变了人们的信息查询策略，对图书馆信息服务工作产生了深远影响。",
+          "subject": "_paper_author",
+          "object": "add_1_e4",
+          "aspect": "影响",
+          "opinion": "产生了深远影响",
+          "evidence": "对图书馆信息服务工作产生了深远影响"
+        }
+      ]
+    },
+    {
+      "sentence_id": "add_3",
+      "sentence": "因特网在信息资源的丰富性、快捷性、共享的广泛性和低成本方面具有独特的优势，已成为学术界获取专业信息的重要渠道，越来越多的高校师生依赖于从因特网进行信息查找和利用。尤其是处于教学科研前沿的用户，对因特网资源利用率最高，依赖性最强[5。但是目前信息用户的信息素养能力不容乐观。据调查表明，绝大多数高校信息用户习惯于长期使用某一两个最初接触到的搜索引擎或数据库[5。在这一情况下，信息用户常用的搜索引擎往往搜索到的只是“表层网站”，其中只有不到 $7 \\%$ 的网站内容与教育或学术的主题有关。对于不善区分的低年级学生来说，很难找到内容与教育相关的“深层网站”。显然，缺乏方便、可靠的工具，会危及学生的学习质量。图书馆作为学校的知识管理中心、信息素质教育中心，应发挥其在信息化教育方面的独特优势，将隐形网络内容作为信息素质课程的一个重要组成部分予以充分重视，多途径提高信息用户的信息能力。",
+      "entities": [
+        {
+          "entity_id": "add_3_e1",
+          "mention": "因特网",
+          "normalized_name": "因特网",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "因特网在信息资源的丰富性、快捷性、共享的广泛性和低成本方面具有独特的优势",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为技术体系或应用概念"
+        },
+        {
+          "entity_id": "add_3_e2",
+          "mention": "高校师生",
+          "normalized_name": "高校师生",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "越来越多的高校师生依赖于从因特网进行信息查找和利用",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称但指代具体群体，可识别"
+        },
+        {
+          "entity_id": "add_3_e3",
+          "mention": "信息用户",
+          "normalized_name": "信息用户",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "目前信息用户的信息素养能力不容乐观",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称但指代具体群体，可识别"
+        },
+        {
+          "entity_id": "add_3_e4",
+          "mention": "搜索引擎",
+          "normalized_name": "搜索引擎",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "习惯于长期使用某一两个最初接触到的搜索引擎或数据库",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称，但作为系统类型可识别"
+        },
+        {
+          "entity_id": "add_3_e5",
+          "mention": "数据库",
+          "normalized_name": "数据库",
+          "candidate_l3": "database",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "习惯于长期使用某一两个最初接触到的搜索引擎或数据库",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "泛称，但作为数据资源类型可识别"
+        },
+        {
+          "entity_id": "add_3_e6",
+          "mention": "表层网站",
+          "normalized_name": "表层网站",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "搜索到的只是“表层网站”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "add_3_e7",
+          "mention": "深层网站",
+          "normalized_name": "深层网站",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "很难找到内容与教育相关的“深层网站”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "add_3_e8",
+          "mention": "图书馆",
+          "normalized_name": "图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书馆作为学校的知识管理中心、信息素质教育中心",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "泛称机构，但作为具体服务组织可识别"
+        },
+        {
+          "entity_id": "add_3_e9",
+          "mention": "信息素质课程",
+          "normalized_name": "信息素质课程",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将隐形网络内容作为信息素质课程的一个重要组成部分",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "add_3_e10",
+          "mention": "隐形网络内容",
+          "normalized_name": "隐形网络内容",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将隐形网络内容作为信息素质课程的一个重要组成部分",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "add_3",
+          "sentence": "因特网在信息资源的丰富性、快捷性、共享的广泛性和低成本方面具有独特的优势，已成为学术界获取专业信息的重要渠道，越来越多的高校师生依赖于从因特网进行信息查找和利用。尤其是处于教学科研前沿的用户，对因特网资源利用率最高，依赖性最强[5。但是目前信息用户的信息素养能力不容乐观。据调查表明，绝大多数高校信息用户习惯于长期使用某一两个最初接触到的搜索引擎或数据库[5。在这一情况下，信息用户常用的搜索引擎往往搜索到的只是“表层网站”，其中只有不到 $7 \\%$ 的网站内容与教育或学术的主题有关。对于不善区分的低年级学生来说，很难找到内容与教育相关的“深层网站”。显然，缺乏方便、可靠的工具，会危及学生的学习质量。图书馆作为学校的知识管理中心、信息素质教育中心，应发挥其在信息化教育方面的独特优势，将隐形网络内容作为信息素质课程的一个重要组成部分予以充分重视，多途径提高信息用户的信息能力。",
+          "subject": "_paper_author",
+          "object": "add_3_e1",
+          "aspect": "信息资源的丰富性、快捷性、共享的广泛性和低成本",
+          "opinion": "具有独特的优势",
+          "evidence": "因特网在信息资源的丰富性、快捷性、共享的广泛性和低成本方面具有独特的优势"
+        },
+        {
+          "sentence_id": "add_3",
+          "sentence": "因特网在信息资源的丰富性、快捷性、共享的广泛性和低成本方面具有独特的优势，已成为学术界获取专业信息的重要渠道，越来越多的高校师生依赖于从因特网进行信息查找和利用。尤其是处于教学科研前沿的用户，对因特网资源利用率最高，依赖性最强[5。但是目前信息用户的信息素养能力不容乐观。据调查表明，绝大多数高校信息用户习惯于长期使用某一两个最初接触到的搜索引擎或数据库[5。在这一情况下，信息用户常用的搜索引擎往往搜索到的只是“表层网站”，其中只有不到 $7 \\%$ 的网站内容与教育或学术的主题有关。对于不善区分的低年级学生来说，很难找到内容与教育相关的“深层网站”。显然，缺乏方便、可靠的工具，会危及学生的学习质量。图书馆作为学校的知识管理中心、信息素质教育中心，应发挥其在信息化教育方面的独特优势，将隐形网络内容作为信息素质课程的一个重要组成部分予以充分重视，多途径提高信息用户的信息能力。",
+          "subject": "_paper_author",
+          "object": "add_3_e3",
+          "aspect": "信息素养能力",
+          "opinion": "不容乐观",
+          "evidence": "信息用户的信息素养能力不容乐观"
+        },
+        {
+          "sentence_id": "add_3",
+          "sentence": "因特网在信息资源的丰富性、快捷性、共享的广泛性和低成本方面具有独特的优势，已成为学术界获取专业信息的重要渠道，越来越多的高校师生依赖于从因特网进行信息查找和利用。尤其是处于教学科研前沿的用户，对因特网资源利用率最高，依赖性最强[5。但是目前信息用户的信息素养能力不容乐观。据调查表明，绝大多数高校信息用户习惯于长期使用某一两个最初接触到的搜索引擎或数据库[5。在这一情况下，信息用户常用的搜索引擎往往搜索到的只是“表层网站”，其中只有不到 $7 \\%$ 的网站内容与教育或学术的主题有关。对于不善区分的低年级学生来说，很难找到内容与教育相关的“深层网站”。显然，缺乏方便、可靠的工具，会危及学生的学习质量。图书馆作为学校的知识管理中心、信息素质教育中心，应发挥其在信息化教育方面的独特优势，将隐形网络内容作为信息素质课程的一个重要组成部分予以充分重视，多途径提高信息用户的信息能力。",
+          "subject": "_paper_author",
+          "object": "add_3_e8",
+          "aspect": null,
+          "opinion": "应发挥其在信息化教育方面的独特优势",
+          "evidence": "图书馆作为学校的知识管理中心、信息素质教育中心，应发挥其在信息化教育方面的独特优势"
+        }
+      ]
+    },
+    {
+      "sentence_id": "add_5",
+      "sentence": "为了解国内外图书馆对“隐形网络”的应用现状，笔者在Google 中以“Invisible web”、“deep web”及“INURL：lib”等检索词进行搜寻，返回结果显示，有88所国外图书馆（英文版）网站中出现了与隐形网络相关的内容。这88个图书馆无一是国内图书馆。再以中文“隐形网络”或“深层网络”和“INURL：libANDINURL：cn”为检索词从“百度”中查找中国图书馆网页中与隐形网络相关的内容，返回有效结果仅有2项，一为台湾淡江大学觉生纪念图书馆，该馆主页上对隐形网络作了较详细的介绍。二为中国药科大学图书馆的一则培训通知内容。由此可见，国外一些图书馆已开始重视隐形网络的宣传和推广，在其主页上出现了相关的内容。而国内图书馆普遍未对此引起重视。",
+      "entities": [
+        {
+          "entity_id": "add_5_e1",
+          "mention": "Google",
+          "normalized_name": "Google",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "笔者在Google 中以“Invisible web”、“deep web”及“INURL：lib”等检索词进行搜寻",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "add_5_e2",
+          "mention": "Invisible web",
+          "normalized_name": "Invisible web",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以“Invisible web”、“deep web”及“INURL：lib”等检索词进行搜寻",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为检索词，可能指概念"
+        },
+        {
+          "entity_id": "add_5_e3",
+          "mention": "deep web",
+          "normalized_name": "deep web",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "以“Invisible web”、“deep web”及“INURL：lib”等检索词进行搜寻",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为检索词，可能指概念"
+        },
+        {
+          "entity_id": "add_5_e4",
+          "mention": "百度",
+          "normalized_name": "百度",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "从“百度”中查找中国图书馆网页中与隐形网络相关的内容",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "add_5_e5",
+          "mention": "台湾淡江大学觉生纪念图书馆",
+          "normalized_name": "台湾淡江大学觉生纪念图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "一为台湾淡江大学觉生纪念图书馆，该馆主页上对隐形网络作了较详细的介绍",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "add_5_e6",
+          "mention": "中国药科大学图书馆",
+          "normalized_name": "中国药科大学图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "二为中国药科大学图书馆的一则培训通知内容",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "add_5_e7",
+          "mention": "国外一些图书馆",
+          "normalized_name": "国外图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "国外一些图书馆已开始重视隐形网络的宣传和推广",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "泛称，但已知实体要求保留"
+        },
+        {
+          "entity_id": "add_5_e8",
+          "mention": "国内图书馆",
+          "normalized_name": "国内图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "而国内图书馆普遍未对此引起重视",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "泛称，但已知实体要求保留"
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "add_5",
+          "sentence": "为了解国内外图书馆对“隐形网络”的应用现状，笔者在Google 中以“Invisible web”、“deep web”及“INURL：lib”等检索词进行搜寻，返回结果显示，有88所国外图书馆（英文版）网站中出现了与隐形网络相关的内容。这88个图书馆无一是国内图书馆。再以中文“隐形网络”或“深层网络”和“INURL：libANDINURL：cn”为检索词从“百度”中查找中国图书馆网页中与隐形网络相关的内容，返回有效结果仅有2项，一为台湾淡江大学觉生纪念图书馆，该馆主页上对隐形网络作了较详细的介绍。二为中国药科大学图书馆的一则培训通知内容。由此可见，国外一些图书馆已开始重视隐形网络的宣传和推广，在其主页上出现了相关的内容。而国内图书馆普遍未对此引起重视。",
+          "subject": "_paper_author",
+          "object": "add_5_e7",
+          "aspect": "隐形网络的宣传和推广",
+          "opinion": "已开始重视",
+          "evidence": "国外一些图书馆已开始重视隐形网络的宣传和推广"
+        },
+        {
+          "sentence_id": "add_5",
+          "sentence": "为了解国内外图书馆对“隐形网络”的应用现状，笔者在Google 中以“Invisible web”、“deep web”及“INURL：lib”等检索词进行搜寻，返回结果显示，有88所国外图书馆（英文版）网站中出现了与隐形网络相关的内容。这88个图书馆无一是国内图书馆。再以中文“隐形网络”或“深层网络”和“INURL：libANDINURL：cn”为检索词从“百度”中查找中国图书馆网页中与隐形网络相关的内容，返回有效结果仅有2项，一为台湾淡江大学觉生纪念图书馆，该馆主页上对隐形网络作了较详细的介绍。二为中国药科大学图书馆的一则培训通知内容。由此可见，国外一些图书馆已开始重视隐形网络的宣传和推广，在其主页上出现了相关的内容。而国内图书馆普遍未对此引起重视。",
+          "subject": "_paper_author",
+          "object": "add_5_e8",
+          "aspect": "隐形网络",
+          "opinion": "普遍未对此引起重视",
+          "evidence": "国内图书馆普遍未对此引起重视"
+        }
+      ]
+    },
+    {
+      "sentence_id": "add_7",
+      "sentence": "较有代表性的是加州大学伯克利分校的隐形网络教程7“Invisible web：what itis，why it exists，howto findit，and its inherent ambiguity”。该教程是其“因特网信息查询教程”中的组成部分。该教程详细陈述了隐形网络的定义、内容、形成原因、查找方法和工具、其不确定性，提供了相关学术研究内容的超链接。另有美国 Albany 大学图书馆的“Deepweb”教程[，该教程指出了一些查询隐形网络时的小技巧，同样也提供了丰富的链接。调查中发现，以上两个教程因其制作规范，内容丰富，被很多网站予以了链接。从Google中输入“LINK：网站名”进行搜索，发现前者被链接了99次，后者则被链接了179次。",
+      "entities": [
+        {
+          "entity_id": "add_7_e1",
+          "mention": "加州大学伯克利分校的隐形网络教程",
+          "normalized_name": "加州大学伯克利分校的隐形网络教程",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "较有代表性的是加州大学伯克利分校的隐形网络教程7“Invisible web：what itis，why it exists，howto findit，and its inherent ambiguity”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "教程作为信息系统或指南，但更偏向信息制品，此处按已知实体保留"
+        },
+        {
+          "entity_id": "add_7_e2",
+          "mention": "Invisible web：what itis，why it exists，howto findit，and its inherent ambiguity",
+          "normalized_name": "Invisible web: what it is, why it exists, how to find it, and its inherent ambiguity",
+          "candidate_l3": "guideline",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "隐形网络教程7“Invisible web：what itis，why it exists，howto findit，and its inherent ambiguity”",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "add_7_e3",
+          "mention": "因特网信息查询教程",
+          "normalized_name": "因特网信息查询教程",
+          "candidate_l3": "guideline",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "该教程是其“因特网信息查询教程”中的组成部分",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "教程名称，可能为系列教程"
+        },
+        {
+          "entity_id": "add_7_e4",
+          "mention": "隐形网络",
+          "normalized_name": "隐形网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "该教程详细陈述了隐形网络的定义、内容、形成原因、查找方法和工具",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为概念讨论"
+        },
+        {
+          "entity_id": "add_7_e5",
+          "mention": "美国 Albany 大学图书馆的“Deepweb”教程",
+          "normalized_name": "美国 Albany 大学图书馆的“Deepweb”教程",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "另有美国 Albany 大学图书馆的“Deepweb”教程",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "教程作为信息系统或指南，按已知实体保留"
+        },
+        {
+          "entity_id": "add_7_e6",
+          "mention": "Deepweb",
+          "normalized_name": "Deepweb",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "美国 Albany 大学图书馆的“Deepweb”教程",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为概念名"
+        },
+        {
+          "entity_id": "add_7_e7",
+          "mention": "Google",
+          "normalized_name": "Google",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "从Google中输入“LINK：网站名”进行搜索",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "add_7",
+          "sentence": "较有代表性的是加州大学伯克利分校的隐形网络教程7“Invisible web：what itis，why it exists，howto findit，and its inherent ambiguity”。该教程是其“因特网信息查询教程”中的组成部分。该教程详细陈述了隐形网络的定义、内容、形成原因、查找方法和工具、其不确定性，提供了相关学术研究内容的超链接。另有美国 Albany 大学图书馆的“Deepweb”教程[，该教程指出了一些查询隐形网络时的小技巧，同样也提供了丰富的链接。调查中发现，以上两个教程因其制作规范，内容丰富，被很多网站予以了链接。从Google中输入“LINK：网站名”进行搜索，发现前者被链接了99次，后者则被链接了179次。",
+          "subject": "_paper_author",
+          "object": "add_7_e1",
+          "aspect": "制作规范",
+          "opinion": "制作规范",
+          "evidence": "以上两个教程因其制作规范，内容丰富"
+        },
+        {
+          "sentence_id": "add_7",
+          "sentence": "较有代表性的是加州大学伯克利分校的隐形网络教程7“Invisible web：what itis，why it exists，howto findit，and its inherent ambiguity”。该教程是其“因特网信息查询教程”中的组成部分。该教程详细陈述了隐形网络的定义、内容、形成原因、查找方法和工具、其不确定性，提供了相关学术研究内容的超链接。另有美国 Albany 大学图书馆的“Deepweb”教程[，该教程指出了一些查询隐形网络时的小技巧，同样也提供了丰富的链接。调查中发现，以上两个教程因其制作规范，内容丰富，被很多网站予以了链接。从Google中输入“LINK：网站名”进行搜索，发现前者被链接了99次，后者则被链接了179次。",
+          "subject": "_paper_author",
+          "object": "add_7_e1",
+          "aspect": "内容丰富",
+          "opinion": "内容丰富",
+          "evidence": "以上两个教程因其制作规范，内容丰富"
+        },
+        {
+          "sentence_id": "add_7",
+          "sentence": "较有代表性的是加州大学伯克利分校的隐形网络教程7“Invisible web：what itis，why it exists，howto findit，and its inherent ambiguity”。该教程是其“因特网信息查询教程”中的组成部分。该教程详细陈述了隐形网络的定义、内容、形成原因、查找方法和工具、其不确定性，提供了相关学术研究内容的超链接。另有美国 Albany 大学图书馆的“Deepweb”教程[，该教程指出了一些查询隐形网络时的小技巧，同样也提供了丰富的链接。调查中发现，以上两个教程因其制作规范，内容丰富，被很多网站予以了链接。从Google中输入“LINK：网站名”进行搜索，发现前者被链接了99次，后者则被链接了179次。",
+          "subject": "_paper_author",
+          "object": "add_7_e5",
+          "aspect": "制作规范",
+          "opinion": "制作规范",
+          "evidence": "以上两个教程因其制作规范，内容丰富"
+        },
+        {
+          "sentence_id": "add_7",
+          "sentence": "较有代表性的是加州大学伯克利分校的隐形网络教程7“Invisible web：what itis，why it exists，howto findit，and its inherent ambiguity”。该教程是其“因特网信息查询教程”中的组成部分。该教程详细陈述了隐形网络的定义、内容、形成原因、查找方法和工具、其不确定性，提供了相关学术研究内容的超链接。另有美国 Albany 大学图书馆的“Deepweb”教程[，该教程指出了一些查询隐形网络时的小技巧，同样也提供了丰富的链接。调查中发现，以上两个教程因其制作规范，内容丰富，被很多网站予以了链接。从Google中输入“LINK：网站名”进行搜索，发现前者被链接了99次，后者则被链接了179次。",
+          "subject": "_paper_author",
+          "object": "add_7_e5",
+          "aspect": "内容丰富",
+          "opinion": "内容丰富",
+          "evidence": "以上两个教程因其制作规范，内容丰富"
+        }
+      ]
+    },
+    {
+      "sentence_id": "add_8",
+      "sentence": "调查中发现，有6所（占 $30 \\%$ ）图书馆将隐形网络内容放在其在线素质教育课程中，作为因特网信息导航课程的一部分。将隐形网络内容作为教学课程的一部分，充分反映了这些图书馆在跟踪网络信息发展趋势，消化吸收现有研究成果，及时更新教学内容方面的敏感性。",
+      "entities": [
+        {
+          "entity_id": "add_8_e1",
+          "mention": "这些图书馆",
+          "normalized_name": "这些图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "这些图书馆在跟踪网络信息发展趋势",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "指代前文具体图书馆，但未给出名称，可能不够具体"
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "add_8",
+          "sentence": "调查中发现，有6所（占 $30 \\%$ ）图书馆将隐形网络内容放在其在线素质教育课程中，作为因特网信息导航课程的一部分。将隐形网络内容作为教学课程的一部分，充分反映了这些图书馆在跟踪网络信息发展趋势，消化吸收现有研究成果，及时更新教学内容方面的敏感性。",
+          "subject": "_paper_author",
+          "object": "add_8_e1",
+          "aspect": "跟踪网络信息发展趋势，消化吸收现有研究成果，及时更新教学内容方面的敏感性",
+          "opinion": "充分反映了这些图书馆在跟踪网络信息发展趋势，消化吸收现有研究成果，及时更新教学内容方面的敏感性",
+          "evidence": "充分反映了这些图书馆在跟踪网络信息发展趋势，消化吸收现有研究成果，及时更新教学内容方面的敏感性"
+        }
+      ]
+    },
+    {
+      "sentence_id": "add_9",
+      "sentence": "除上述两个图书馆外，一些中小型高校和研究型图书馆也在其网站中介绍了隐形网络。有15所（占 $7 5 \\%$ ）图书馆对隐形网络作了简明扼要的介绍，推荐了一些搜索工具和搜索方法。对一些想详细了解该项内容的用户，则提供了一些有较高参考价值的网站链接。除上面提到的两个图书馆网站有较高人气外，兰德大学图书馆馆员RobertJ·Lackie 创建的 Those Dark Hiding Places：The Invisible Web Re-vealed也是链接率很高的网站。其它如Brightplanet公司关于隐形网络的FAQ（htp：//www：brightplanet：com/deepcon-tent/deep-webfaq·asp）也是链接率较高的网站。不过，总的来说，内容还是过于简单，缺乏完整的说明和指南，各项内容相对独立，缺乏融合，对一些链接也未提供链接注释。",
+      "entities": [
+        {
+          "entity_id": "add_9_e1",
+          "mention": "一些中小型高校和研究型图书馆",
+          "normalized_name": "中小型高校和研究型图书馆",
+          "candidate_l3": "research",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "一些中小型高校和研究型图书馆也在其网站中介绍了隐形网络",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称机构，但已知实体要求保留"
+        },
+        {
+          "entity_id": "add_9_e2",
+          "mention": "15所图书馆",
+          "normalized_name": "15所图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "有15所（占 $7 5 \\%$ ）图书馆对隐形网络作了简明扼要的介绍",
+          "is_specific_entity": true,
+          "confidence": 0.6,
+          "uncertainty": "数量短语，非具体机构，但已知实体要求保留"
+        },
+        {
+          "entity_id": "add_9_e3",
+          "mention": "兰德大学图书馆馆员RobertJ·Lackie",
+          "normalized_name": "RobertJ·Lackie",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "兰德大学图书馆馆员RobertJ·Lackie 创建的 Those Dark Hiding Places",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "add_9_e4",
+          "mention": "Those Dark Hiding Places：The Invisible Web Re-vealed",
+          "normalized_name": "Those Dark Hiding Places：The Invisible Web Re-vealed",
+          "candidate_l3": "book",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "创建的 Those Dark Hiding Places：The Invisible Web Re-vealed也是链接率很高的网站",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "add_9_e5",
+          "mention": "Brightplanet公司关于隐形网络的FAQ",
+          "normalized_name": "Brightplanet公司关于隐形网络的FAQ",
+          "candidate_l3": "reference_tool",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "其它如Brightplanet公司关于隐形网络的FAQ（htp：//www：brightplanet：com/deepcon-tent/deep-webfaq·asp）也是链接率较高的网站",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "add_9_e6",
+          "mention": "隐形网络",
+          "normalized_name": "隐形网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "介绍了隐形网络",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为概念讨论"
+        },
+        {
+          "entity_id": "add_9_e7",
+          "mention": "内容",
+          "normalized_name": "内容",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "内容还是过于简单",
+          "is_specific_entity": true,
+          "confidence": 0.5,
+          "uncertainty": "泛称，但已知实体要求保留"
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "add_9",
+          "sentence": "除上述两个图书馆外，一些中小型高校和研究型图书馆也在其网站中介绍了隐形网络。有15所（占 $7 5 \\%$ ）图书馆对隐形网络作了简明扼要的介绍，推荐了一些搜索工具和搜索方法。对一些想详细了解该项内容的用户，则提供了一些有较高参考价值的网站链接。除上面提到的两个图书馆网站有较高人气外，兰德大学图书馆馆员RobertJ·Lackie 创建的 Those Dark Hiding Places：The Invisible Web Re-vealed也是链接率很高的网站。其它如Brightplanet公司关于隐形网络的FAQ（htp：//www：brightplanet：com/deepcon-tent/deep-webfaq·asp）也是链接率较高的网站。不过，总的来说，内容还是过于简单，缺乏完整的说明和指南，各项内容相对独立，缺乏融合，对一些链接也未提供链接注释。",
+          "subject": "_paper_author",
+          "object": "add_9_e1",
+          "aspect": "网站介绍",
+          "opinion": "介绍了隐形网络",
+          "evidence": "一些中小型高校和研究型图书馆也在其网站中介绍了隐形网络"
+        },
+        {
+          "sentence_id": "add_9",
+          "sentence": "除上述两个图书馆外，一些中小型高校和研究型图书馆也在其网站中介绍了隐形网络。有15所（占 $7 5 \\%$ ）图书馆对隐形网络作了简明扼要的介绍，推荐了一些搜索工具和搜索方法。对一些想详细了解该项内容的用户，则提供了一些有较高参考价值的网站链接。除上面提到的两个图书馆网站有较高人气外，兰德大学图书馆馆员RobertJ·Lackie 创建的 Those Dark Hiding Places：The Invisible Web Re-vealed也是链接率很高的网站。其它如Brightplanet公司关于隐形网络的FAQ（htp：//www：brightplanet：com/deepcon-tent/deep-webfaq·asp）也是链接率较高的网站。不过，总的来说，内容还是过于简单，缺乏完整的说明和指南，各项内容相对独立，缺乏融合，对一些链接也未提供链接注释。",
+          "subject": "_paper_author",
+          "object": "add_9_e2",
+          "aspect": "介绍",
+          "opinion": "作了简明扼要的介绍",
+          "evidence": "有15所（占 $7 5 \\%$ ）图书馆对隐形网络作了简明扼要的介绍"
+        },
+        {
+          "sentence_id": "add_9",
+          "sentence": "除上述两个图书馆外，一些中小型高校和研究型图书馆也在其网站中介绍了隐形网络。有15所（占 $7 5 \\%$ ）图书馆对隐形网络作了简明扼要的介绍，推荐了一些搜索工具和搜索方法。对一些想详细了解该项内容的用户，则提供了一些有较高参考价值的网站链接。除上面提到的两个图书馆网站有较高人气外，兰德大学图书馆馆员RobertJ·Lackie 创建的 Those Dark Hiding Places：The Invisible Web Re-vealed也是链接率很高的网站。其它如Brightplanet公司关于隐形网络的FAQ（htp：//www：brightplanet：com/deepcon-tent/deep-webfaq·asp）也是链接率较高的网站。不过，总的来说，内容还是过于简单，缺乏完整的说明和指南，各项内容相对独立，缺乏融合，对一些链接也未提供链接注释。",
+          "subject": "_paper_author",
+          "object": "add_9_e4",
+          "aspect": "链接率",
+          "opinion": "链接率很高",
+          "evidence": "也是链接率很高的网站"
+        },
+        {
+          "sentence_id": "add_9",
+          "sentence": "除上述两个图书馆外，一些中小型高校和研究型图书馆也在其网站中介绍了隐形网络。有15所（占 $7 5 \\%$ ）图书馆对隐形网络作了简明扼要的介绍，推荐了一些搜索工具和搜索方法。对一些想详细了解该项内容的用户，则提供了一些有较高参考价值的网站链接。除上面提到的两个图书馆网站有较高人气外，兰德大学图书馆馆员RobertJ·Lackie 创建的 Those Dark Hiding Places：The Invisible Web Re-vealed也是链接率很高的网站。其它如Brightplanet公司关于隐形网络的FAQ（htp：//www：brightplanet：com/deepcon-tent/deep-webfaq·asp）也是链接率较高的网站。不过，总的来说，内容还是过于简单，缺乏完整的说明和指南，各项内容相对独立，缺乏融合，对一些链接也未提供链接注释。",
+          "subject": "_paper_author",
+          "object": "add_9_e5",
+          "aspect": "链接率",
+          "opinion": "链接率较高",
+          "evidence": "也是链接率较高的网站"
+        },
+        {
+          "sentence_id": "add_9",
+          "sentence": "除上述两个图书馆外，一些中小型高校和研究型图书馆也在其网站中介绍了隐形网络。有15所（占 $7 5 \\%$ ）图书馆对隐形网络作了简明扼要的介绍，推荐了一些搜索工具和搜索方法。对一些想详细了解该项内容的用户，则提供了一些有较高参考价值的网站链接。除上面提到的两个图书馆网站有较高人气外，兰德大学图书馆馆员RobertJ·Lackie 创建的 Those Dark Hiding Places：The Invisible Web Re-vealed也是链接率很高的网站。其它如Brightplanet公司关于隐形网络的FAQ（htp：//www：brightplanet：com/deepcon-tent/deep-webfaq·asp）也是链接率较高的网站。不过，总的来说，内容还是过于简单，缺乏完整的说明和指南，各项内容相对独立，缺乏融合，对一些链接也未提供链接注释。",
+          "subject": "_paper_author",
+          "object": "add_9_e7",
+          "aspect": "内容",
+          "opinion": "过于简单，缺乏完整的说明和指南，各项内容相对独立，缺乏融合，对一些链接也未提供链接注释",
+          "evidence": "内容还是过于简单，缺乏完整的说明和指南，各项内容相对独立，缺乏融合，对一些链接也未提供链接注释"
+        }
+      ]
+    },
+    {
+      "sentence_id": "add_11",
+      "sentence": "缺少生动的检索实例，鲜有根据各馆实际，结合学科专题开发的隐形网络使用指南。页面设计也过于简单，对用户吸引力不足。",
+      "entities": [
+        {
+          "entity_id": "add_11_e1",
+          "mention": "检索实例",
+          "normalized_name": "检索实例",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "缺少生动的检索实例",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能指具体实例，但此处泛指，作为概念抽取"
+        },
+        {
+          "entity_id": "add_11_e2",
+          "mention": "隐形网络使用指南",
+          "normalized_name": "隐形网络使用指南",
+          "candidate_l3": "guideline",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "鲜有根据各馆实际，结合学科专题开发的隐形网络使用指南",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "add_11_e3",
+          "mention": "页面设计",
+          "normalized_name": "页面设计",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "页面设计也过于简单",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "可能指具体设计，但此处泛指，作为概念抽取"
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "add_11",
+          "sentence": "缺少生动的检索实例，鲜有根据各馆实际，结合学科专题开发的隐形网络使用指南。页面设计也过于简单，对用户吸引力不足。",
+          "subject": "_paper_author",
+          "object": "add_11_e1",
+          "aspect": null,
+          "opinion": "缺少生动的检索实例",
+          "evidence": "缺少生动的检索实例"
+        },
+        {
+          "sentence_id": "add_11",
+          "sentence": "缺少生动的检索实例，鲜有根据各馆实际，结合学科专题开发的隐形网络使用指南。页面设计也过于简单，对用户吸引力不足。",
+          "subject": "_paper_author",
+          "object": "add_11_e3",
+          "aspect": null,
+          "opinion": "过于简单，对用户吸引力不足",
+          "evidence": "页面设计也过于简单，对用户吸引力不足"
+        }
+      ]
+    },
+    {
+      "sentence_id": "add_14",
+      "sentence": "国内大学在开展用户教育中，很少有将教学内容挂到网上的，所以此项工作开展情况无法掌握确切数据。但是紧跟因特网发展趋势，及时将有关“隐形网络”的内容添加到教学内容中去是非常必要的，这不仅能提高学生网络信息搜索能力，更能激发他们探索网络奥秘的好奇心。美国兰格地亚社区学院图书馆馆员就在其“图书馆研究指南”的讲座中，把隐形网络作为开场白，很好地吸引了学生的注意力[9。用户培训的方式可多种多样，既可在文检课教学中加入此项内容，也可结合“一小时讲座”、“因特网导航”等培训课程，指导学生进行实际操作，讲解检索技巧。对于科研人员，则更需强调对其进行特定主题、多种形式的培训。可结合学科馆员的工作灵活开展，如在学术活动、报告会之余进行单主题、短时间的小型讲座；采用电子邮件推送、网页留言板的形式，主动向科研人员介绍隐形网络的有关知识。",
+      "entities": [
+        {
+          "entity_id": "add_14_e1",
+          "mention": "美国兰格地亚社区学院图书馆",
+          "normalized_name": "美国兰格地亚社区学院图书馆",
+          "candidate_l3": "service",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "美国兰格地亚社区学院图书馆馆员就在其“图书馆研究指南”的讲座中",
+          "is_specific_entity": true,
+          "confidence": 0.95,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "add_14_e2",
+          "mention": "隐形网络",
+          "normalized_name": "隐形网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "将有关“隐形网络”的内容添加到教学内容中去",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": "作为术语概念讨论"
+        },
+        {
+          "entity_id": "add_14_e3",
+          "mention": "图书馆研究指南",
+          "normalized_name": "图书馆研究指南",
+          "candidate_l3": "guideline",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "在其“图书馆研究指南”的讲座中",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "可能为讲座名称或指南，但作为具体名称抽取"
+        },
+        {
+          "entity_id": "add_14_e4",
+          "mention": "文检课",
+          "normalized_name": "文检课",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "既可在文检课教学中加入此项内容",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "课程名称，可能为具体课程"
+        },
+        {
+          "entity_id": "add_14_e5",
+          "mention": "一小时讲座",
+          "normalized_name": "一小时讲座",
+          "candidate_l3": "conference_meeting",
+          "candidate_l1": [
+            "Event"
+          ],
+          "evidence": "结合“一小时讲座”、“因特网导航”等培训课程",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "可能为系列讲座名称"
+        },
+        {
+          "entity_id": "add_14_e6",
+          "mention": "因特网导航",
+          "normalized_name": "因特网导航",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "结合“一小时讲座”、“因特网导航”等培训课程",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "可能为课程或服务名称"
+        },
+        {
+          "entity_id": "add_14_e7",
+          "mention": "学科馆员",
+          "normalized_name": "学科馆员",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "可结合学科馆员的工作灵活开展",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "泛称职业，但可能指具体岗位，根据规则不抽取？但此处作为具体角色，但无具体人名，故不抽取？"
+        },
+        {
+          "entity_id": "add_14_e8",
+          "mention": "国内大学",
+          "normalized_name": "国内大学",
+          "candidate_l3": "",
+          "candidate_l1": [],
+          "evidence": "国内大学在开展用户教育中，很少有将教学内容挂到网上的",
+          "is_specific_entity": true,
+          "confidence": 0.0,
+          "uncertainty": "来自评价关系抽取的补抽实体"
+        }
+      ],
+      "has_evaluation": true,
+      "relations": [
+        {
+          "sentence_id": "add_14",
+          "sentence": "国内大学在开展用户教育中，很少有将教学内容挂到网上的，所以此项工作开展情况无法掌握确切数据。但是紧跟因特网发展趋势，及时将有关“隐形网络”的内容添加到教学内容中去是非常必要的，这不仅能提高学生网络信息搜索能力，更能激发他们探索网络奥秘的好奇心。美国兰格地亚社区学院图书馆馆员就在其“图书馆研究指南”的讲座中，把隐形网络作为开场白，很好地吸引了学生的注意力[9。用户培训的方式可多种多样，既可在文检课教学中加入此项内容，也可结合“一小时讲座”、“因特网导航”等培训课程，指导学生进行实际操作，讲解检索技巧。对于科研人员，则更需强调对其进行特定主题、多种形式的培训。可结合学科馆员的工作灵活开展，如在学术活动、报告会之余进行单主题、短时间的小型讲座；采用电子邮件推送、网页留言板的形式，主动向科研人员介绍隐形网络的有关知识。",
+          "subject": "_paper_author",
+          "object": "add_14_e8",
+          "aspect": "用户教育",
+          "opinion": "很少有将教学内容挂到网上的",
+          "evidence": "国内大学在开展用户教育中，很少有将教学内容挂到网上的"
+        },
+        {
+          "sentence_id": "add_14",
+          "sentence": "国内大学在开展用户教育中，很少有将教学内容挂到网上的，所以此项工作开展情况无法掌握确切数据。但是紧跟因特网发展趋势，及时将有关“隐形网络”的内容添加到教学内容中去是非常必要的，这不仅能提高学生网络信息搜索能力，更能激发他们探索网络奥秘的好奇心。美国兰格地亚社区学院图书馆馆员就在其“图书馆研究指南”的讲座中，把隐形网络作为开场白，很好地吸引了学生的注意力[9。用户培训的方式可多种多样，既可在文检课教学中加入此项内容，也可结合“一小时讲座”、“因特网导航”等培训课程，指导学生进行实际操作，讲解检索技巧。对于科研人员，则更需强调对其进行特定主题、多种形式的培训。可结合学科馆员的工作灵活开展，如在学术活动、报告会之余进行单主题、短时间的小型讲座；采用电子邮件推送、网页留言板的形式，主动向科研人员介绍隐形网络的有关知识。",
+          "subject": "_cite[9]",
+          "object": "add_14_e1",
+          "aspect": "讲座",
+          "opinion": "很好地吸引了学生的注意力",
+          "evidence": "把隐形网络作为开场白，很好地吸引了学生的注意力"
+        }
+      ]
+    },
+    {
+      "sentence_id": "add_16",
+      "sentence": "在宣传、推广、开发隐形网络资源过程中，图书馆员起着重要的作用[11]，只有具备深厚、广博的网络信息素养，才能更好地为用户服务。无论是从事参考咨询工作还是从事网络信息导航，图书馆员们都需对隐形网络保持时刻的敏感性，除了不断关注“搜索引擎大观（Search/engineWatch)”、“图书馆员因特网指南（TheLibrarian's Index to theInternet)”等专门报道工具，更需发挥创新潜能，努力使图书馆数字资源走出隐形网络的遮盖，为更多的用户利用。",
+      "entities": [
+        {
+          "entity_id": "add_16_e1",
+          "mention": "图书馆员",
+          "normalized_name": "图书馆员",
+          "candidate_l3": "practitioner",
+          "candidate_l1": [
+            "Agent"
+          ],
+          "evidence": "图书馆员起着重要的作用",
+          "is_specific_entity": false,
+          "confidence": 0.2,
+          "uncertainty": "泛称职业，不指具体个人"
+        },
+        {
+          "entity_id": "add_16_e2",
+          "mention": "搜索引擎大观（Search/engineWatch)",
+          "normalized_name": "搜索引擎大观（Search/engineWatch)",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "关注“搜索引擎大观（Search/engineWatch)”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "add_16_e3",
+          "mention": "图书馆员因特网指南（TheLibrarian's Index to theInternet)",
+          "normalized_name": "图书馆员因特网指南（TheLibrarian's Index to theInternet)",
+          "candidate_l3": "information_system",
+          "candidate_l1": [
+            "Artifact"
+          ],
+          "evidence": "关注“图书馆员因特网指南（TheLibrarian's Index to theInternet)”",
+          "is_specific_entity": true,
+          "confidence": 0.9,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "add_16_e4",
+          "mention": "隐形网络",
+          "normalized_name": "隐形网络",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "隐形网络资源、隐形网络保持时刻的敏感性、隐形网络的遮盖",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": "作为概念讨论"
+        },
+        {
+          "entity_id": "add_16_e5",
+          "mention": "网络信息素养",
+          "normalized_name": "网络信息素养",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "具备深厚、广博的网络信息素养",
+          "is_specific_entity": true,
+          "confidence": 0.85,
+          "uncertainty": ""
+        },
+        {
+          "entity_id": "add_16_e6",
+          "mention": "参考咨询",
+          "normalized_name": "参考咨询",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从事参考咨询工作",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为工作类型，可能为concept"
+        },
+        {
+          "entity_id": "add_16_e7",
+          "mention": "网络信息导航",
+          "normalized_name": "网络信息导航",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "从事网络信息导航",
+          "is_specific_entity": true,
+          "confidence": 0.8,
+          "uncertainty": "作为工作类型，可能为concept"
+        },
+        {
+          "entity_id": "add_16_e8",
+          "mention": "图书馆数字资源",
+          "normalized_name": "图书馆数字资源",
+          "candidate_l3": "concept",
+          "candidate_l1": [
+            "Abstract"
+          ],
+          "evidence": "使图书馆数字资源走出隐形网络的遮盖",
+          "is_specific_entity": true,
+          "confidence": 0.7,
+          "uncertainty": "可能为资源集合，但无具体名称"
+        }
+      ],
+      "has_evaluation": false,
+      "relations": []
+    }
+  ]
+}
