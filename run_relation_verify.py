@@ -6,7 +6,7 @@
 事实类关系标记 is_evaluation=false 并附 fact_type, 评价类关系放行。
 
 输入 (二选一):
-  --input-relations: 关系 JSONL (run_relation_agent.py 或主管道的输出)
+  --input-relations: 关系 JSONL (run_relation_extraction.py 或主管道的输出)
   --input-dir:       输入目录, 配合 --verify 从 input/*.json 直接跑
                     (抽取+校验一体: 先 Agent 1 抽取, 再本工具校验)
 

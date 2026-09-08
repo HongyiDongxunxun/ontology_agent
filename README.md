@@ -1,4 +1,4 @@
-# Ontology Agent V5.1 — 五Agent端到端文献知识挖掘系统
+# Ontology Agent V5.2 — 五Agent端到端文献知识挖掘系统
 
 > **多智能体协同 · DeepSeek API · 并行批处理 · 关系优先抽取 · L1/L2/L3 精分类 + L4 规则匹配 · Likert 审查 · 关系校验 · 评估体系**
 
@@ -83,8 +83,7 @@ ontology_agent/
 │
 ├── run.py                              # 【主入口】批量并行处理 五Agent管道
 ├── run_eval.py                         # 【评估入口】一键评估脚本 (自动加载api.txt)
-├── run_relation.py                     # 【关系补抽】从 mid_data/实体结果补充抽取评价关系 (兼容/辅助)
-├── run_relation_agent.py               # 【独立关系抽取】单独运行 Agent 1 抽取评价关系
+├── run_relation_extraction.py          # 【独立关系抽取】单独运行 Agent 1 抽取评价关系
 ├── run_relation_verify.py              # 【关系校验】复核抽取结果, 标记事实/描述类关系
 ├── run_sample_review.py                # 【抽样审阅】随机采样N句运行管道并输出人工审阅报告
 ├── config.py                           # 统一配置系统 (LLM / Pipeline / 路径)
@@ -92,7 +91,7 @@ ontology_agent/
 ├── requirements.txt                    # Python 依赖
 ├── dynamic_terms.json                  # 预加载的动态术语库 (可选)
 │
-├── test_academic_evaluation_prompt_schema.py   # 单元测试: 关系schema/object回填/评价有效性规则
+├── test_pipeline_extraction.py          # 单元测试: 关系schema/object回填/评价有效性规则
 ├── test_eval_relations.py              # 单元测试: 评价关系评估指标
 ├── test_relation_verification.py       # 单元测试: 评价关系校验 Agent
 │
@@ -140,8 +139,7 @@ ontology_agent/
 |------|------|----------|
 | [run.py](run.py) | 五Agent管道主入口，批量并行处理所有输入文件（评价关系由 Agent 1 在管道内产出、经 Agent 5 校验过滤后导出） | `python run.py --live` |
 | [run_eval.py](run_eval.py) | 一键评估：自动加载 `api.txt`，运行 Pipeline 并计算指标 | `python run_eval.py` |
-| [run_relation.py](run_relation.py) | 关系补抽/兼容脚本：从 `mid_data/` 或实体结果中单独抽取/读取评价关系 | `python run_relation.py --live` |
-| [run_relation_agent.py](run_relation_agent.py) | 独立运行 Agent 1：单独抽取评价关系（快速试跑/批量生产关系数据） | `python run_relation_agent.py --live --sample 12` |
+| [run_relation_extraction.py](run_relation_extraction.py) | 独立运行 Agent 1：单独抽取评价关系（快速试跑/批量生产关系数据） | `python run_relation_extraction.py --live --sample 12` |
 | [run_relation_verify.py](run_relation_verify.py) | 关系校验：对抽取结果逐条复核，事实/描述类关系标记 `is_evaluation=false`，评价类放行 | `python run_relation_verify.py --live --input-relations <jsonl>` |
 
 #### 管道模块 (`pipeline/`)
@@ -291,14 +289,11 @@ python run.py --eval --gold eval/gold_data.jsonl
 # 一键评估 (自动加载 api.txt)
 python run_eval.py
 
-# 关系补抽 (兼容/辅助)
-python run_relation.py --live
-
 # 随机采样50句运行, 输出人工审阅报告 (默认seed=42, 修改脚本内SAMPLE_SIZE调整数量)
 python run_sample_review.py
 ```
 
-> 运行 `run.py` 时，评价关系由 Agent 1 在主管道内产出，经 Agent 5 校验过滤后自动导出到 `output/evaluative_relation/`（校验详情在 `output/relation_verification/`），无需再单独运行关系抽取脚本。`run_relation.py` 用于对已有中间/实体结果做补抽或兼容旧流程。`run_sample_review.py` 生成的审阅报告（`output/sample_review_50_report.md`）逐句展示原文、实体表与评价关系，适合人工检查效果。
+> 运行 `run.py` 时，评价关系由 Agent 1 在主管道内产出，经 Agent 5 校验过滤后自动导出到 `output/evaluative_relation/`（校验详情在 `output/relation_verification/`）。`run_sample_review.py` 生成的审阅报告（`output/sample_review_50_report.md`）逐句展示原文、实体表与评价关系，适合人工检查效果。
 
 ---
 
@@ -406,7 +401,7 @@ L1 分布、L3 类型分布、Likert 五点分布、平均分等聚合指标。
 
 由 **Agent 5** 产出，每行一句的校验快照，**包含被过滤的事实类关系**（`is_evaluation=false`），供审计与回溯。
 
-`mid_data/{name}_extracted.json` 中同样保存了按句分组的关系与 `has_evaluation` 标记，供断点续传与 `run_relation.py --from-agent1` 读取。
+`mid_data/{name}_extracted.json` 中同样保存了按句分组的关系与 `has_evaluation` 标记，供断点续传与调试读取。
 
 ### 中间数据 (`mid_data/{name}_extracted.json`)
 
