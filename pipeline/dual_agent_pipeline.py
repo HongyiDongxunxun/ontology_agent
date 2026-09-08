@@ -14,7 +14,6 @@ from typing import Optional
 from .llm import LLMClient
 from .entity_extraction_agent import (
     EntityExtractionAgent,
-    ExtractedEntity,
     SentenceExtractionOutput,
 )
 from .classification_agent import (
@@ -27,6 +26,7 @@ from .reviewer_agent import (
 )
 from .evaluative_relation_agent import (
     EvaluativeRelationAgent,
+    EvaluativeRelation,
     _normalize_name,
 )
 from .relation_verification_agent import RelationVerificationAgent
@@ -34,8 +34,9 @@ from .dynamic_term_db import DynamicTermDB
 
 
 class DualAgentPipeline:
-    """五Agent管道: Agent 1 评价关系 → Agent 2 实体抽取 → Agent 3 分类
-    → Agent 4 审查(Likert) → Agent 5 关系校验(过滤事实类)"""
+    """五Agent管道: Agent 1 评价关系(仅关系,主客体为原文短语)
+    → Agent 2 实体抽取(接收必抽短语,统一负责实体识别+ID+分类)
+    → Agent 3 分类 → Agent 4 审查(Likert) → Agent 5 关系校验(过滤事实类)"""
 
     def __init__(
         self,
@@ -83,8 +84,11 @@ class DualAgentPipeline:
     ) -> tuple[list[FinalEntityResult], list[dict]]:
         """
         执行五Agent管道:
-        - Agent 1: 评价关系抽取 (EvaluativeRelationAgent)
-        - Agent 2: 实体抽取补充 (EntityExtractionAgent, 接收上游已知实体)
+        - Agent 1: 评价关系抽取 (EvaluativeRelationAgent) — 仅输出 relations,
+          subject/object 为原文精确短语 (不再输出 entities)
+        - Agent 2: 实体抽取 (EntityExtractionAgent, 接收必抽短语) — 统一负责
+          实体识别、ID 分配与分类; pipeline 把 Agent 1 的 object 原文与 Agent 2
+          的 normalized_name/mention 做一次性匹配, 回填 entity_id 到 relation
         - Agent 3: 分类 (ClassificationAgent)
         - Agent 4: 审查 Likert (ReviewerAgent)
         - Agent 5: 关系校验 (RelationVerificationAgent, 标记并过滤事实类)
@@ -105,56 +109,52 @@ class DualAgentPipeline:
         total_relations_count = 0
         unresolved_count = 0
 
-        # ── Agent 1: 评价关系抽取 + Agent 2: 实体抽取补充 ──
+        # ── Agent 1: 评价关系抽取(仅 relations, 主客体为原文短语) ──
+        # ── Agent 2: 实体抽取(接收必抽短语, 统一负责实体识别+ID+分类) ──
         for idx, (sid, stmt) in enumerate(sentences, 1):
-            # Agent 1: 评价关系抽取
+            # Agent 1: 评价关系抽取 — 输出 relations, subject/object 为原文短语
             rel_output = self.evaluative_relation_agent.extract(sid, stmt)
             self.last_has_evaluation[sid] = rel_output.has_evaluation
 
-            # Agent 2: 实体抽取（补充，接收上游已知实体）
-            known_entities = rel_output.entities
+            # 从 relations 提取必抽短语 (object 原文 + subject 中的人物名)
+            # 占位符 (_paper_author / _cite[N] / _unknown / _missing_entity) 跳过
+            required_mentions = self._extract_required_mentions(rel_output.relations)
+
+            # Agent 2: 实体抽取 — 接收必抽短语, 统一负责实体识别/ID/分类
             extraction = self.extraction_agent.extract(
-                stmt, sentence_id=sid, known_entities=known_entities
+                stmt, sentence_id=sid, required_mentions=required_mentions
             )
 
-            # ── 关系 object ID 重映射: Agent 1 短ID → Agent 2 完整ID ──
-            # Agent 1 的 entities 用短ID (e1/e2), relations 引用短ID;
-            # Agent 2 的 entities 用完整ID ({sid}_eN)。此处按实体名匹配回填。
-            rel_entities_by_id = {
-                str(e.get("entity_id", "")): e for e in rel_output.entities
-            }
+            # ── 一次性匹配: relation 的 object/subject 原文 → Agent 2 的 entity_id ──
+            # 构建 normalized_name / mention → entity_id 索引 (双向, 不去重, 先到先得)
+            ent_index: dict[str, str] = {}
+            for e in extraction.entities:
+                for key in (_normalize_name(e.normalized_name), _normalize_name(e.mention)):
+                    if key and key not in ent_index:
+                        ent_index[key] = e.entity_id
+
             for rel in rel_output.relations:
                 rel_dict = {"sentence_id": sid, "sentence": stmt, **rel.to_dict()}
+                # ── object 回填 ──
                 obj = rel.object
-                if obj != "_missing_entity" and obj in rel_entities_by_id:
-                    rel_ent = rel_entities_by_id[obj]
-                    name = rel_ent.get("entity") or rel_ent.get("normalized_name") or ""
-                    matched_eid = self._find_entity_id(
-                        extraction.entities, name, rel_ent.get("normalized_name", "")
-                    )
+                if obj != "_missing_entity" and not self._is_placeholder(obj):
+                    matched_eid = ent_index.get(_normalize_name(obj), "")
                     if matched_eid:
                         rel_dict["object"] = matched_eid
                     else:
-                        # 回抽保障: Agent 2 漏抽了关系引用的实体 → 程序化补入
-                        new_eid = f"{sid}_e{len(extraction.entities) + 1}"
-                        extraction.entities.append(ExtractedEntity(
-                            entity_id=new_eid,
-                            mention=name,
-                            normalized_name=rel_ent.get("normalized_name") or name,
-                            evidence=rel_ent.get("evidence", ""),
-                            candidate_l3="",
-                            candidate_l1=[],
-                            is_specific_entity=True,
-                            confidence=0.0,
-                            uncertainty="来自评价关系抽取的补抽实体",
-                        ))
-                        rel_dict["object"] = new_eid
-                elif obj != "_missing_entity":
-                    # LLM 引用了不存在的实体ID → 降级为 _missing_entity
-                    rel_dict["object"] = "_missing_entity"
-                    rel_dict["object_text"] = rel_dict.get("object_text") or obj
-                    unresolved_count += 1
-                # obj == "_missing_entity" 时保留 LLM 提供的 object_text, 原样透传
+                        # Agent 2 未抽到该评价对象 → 保留原文 + 标记未匹配
+                        rel_dict["object_unmatched"] = True
+                        unresolved_count += 1
+                # _missing_entity / 占位符 原样透传
+
+                # ── subject 回填 (仅当 subject 是具体人物名, 非占位符) ──
+                subj = rel.subject
+                if not self._is_placeholder(subj):
+                    matched_eid = ent_index.get(_normalize_name(subj), "")
+                    if matched_eid:
+                        rel_dict["subject"] = matched_eid
+                    # subject 不匹配时不标记 (subject 可能本来就不是实体)
+
                 all_relations.append(rel_dict)
                 relations_by_sid.setdefault(sid, []).append(rel_dict)
             total_relations_count += len(rel_output.relations)
@@ -167,7 +167,7 @@ class DualAgentPipeline:
                       f"累计 {total_entities} 实体, {total_relations_count} 评价关系")
 
         if unresolved_count:
-            print(f"  [{base_name}] 警告: {unresolved_count} 条关系无法解析 object, 已降级为 _missing_entity")
+            print(f"  [{base_name}] 警告: {unresolved_count} 条关系 object 未匹配到实体, 已标记 object_unmatched")
 
         # ── 写中间结果到 mid_data/ ──
         if self.mid_data_dir:
@@ -285,25 +285,48 @@ class DualAgentPipeline:
         return all_results, all_relations
 
     @staticmethod
-    def _find_entity_id(
-        entities: list[ExtractedEntity],
-        name: str,
-        normalized_name: str = "",
-    ) -> str:
-        """在 Agent 2 实体列表中按名字查找实体ID (精确 → 包含匹配)"""
-        target = _normalize_name(name)
-        alt = _normalize_name(normalized_name)
-        for e in entities:
-            if _normalize_name(e.mention) in (target, alt) and target:
-                return e.entity_id
-            if _normalize_name(e.normalized_name) in (target, alt) and target:
-                return e.entity_id
-        # 包含匹配: 任一方向互为子串
-        for e in entities:
-            en = _normalize_name(e.mention)
-            if target and (target in en or en in target):
-                return e.entity_id
-        return ""
+    def _is_placeholder(value: str) -> bool:
+        """判断 subject/object 是否为占位符 (非具体原文短语)。
+
+        占位符集合:
+        - _paper_author, _unknown, _missing_entity
+        - _cite[N] (N 为具体引文编号, 如 _cite[3])
+        """
+        if not value:
+            return True
+        if value.startswith("_"):
+            return True
+        return False
+
+    @staticmethod
+    def _extract_required_mentions(
+        relations: list[EvaluativeRelation],
+    ) -> list[str]:
+        """从 Agent 1 的 relations 提取必抽短语 (供 Agent 2 作为必抽提示)。
+
+        提取范围:
+        - 每条 relation 的 object (若不是占位符 / _missing_entity)
+        - 每条 relation 的 subject (若不是占位符, 即具体人物名)
+
+        返回去重保序的字符串列表; 占位符 (_paper_author / _cite[N] /
+        _unknown / _missing_entity) 被过滤, 不传入 Agent 2。
+        """
+        mentions: list[str] = []
+        seen: set[str] = set()
+        for rel in relations:
+            # object 原文 (跳过占位符与 _missing_entity)
+            obj = rel.object or ""
+            if obj and obj != "_missing_entity" and not obj.startswith("_"):
+                if obj not in seen:
+                    seen.add(obj)
+                    mentions.append(obj)
+            # subject 具体人物名 (跳过占位符)
+            subj = rel.subject or ""
+            if subj and not subj.startswith("_"):
+                if subj not in seen:
+                    seen.add(subj)
+                    mentions.append(subj)
+        return mentions
 
     def _log(self, msg: str) -> None:
         if self.verbose:

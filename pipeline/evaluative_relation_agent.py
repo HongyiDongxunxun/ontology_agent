@@ -1,9 +1,9 @@
 """
 pipeline.evaluative_relation_agent -- evaluation relation extraction (Agent 1).
 
-Reads one sentence and returns evaluation subject/object relations
-plus entities extracted from those relations. Entities are passed to the
-next agent for supplementary entity extraction.
+Reads one sentence and returns evaluation subject/object relations.
+Subject/object are emitted as raw text spans (not entity_ids); entity
+recognition is delegated to Agent 2 (EntityExtractionAgent).
 """
 
 from __future__ import annotations
@@ -29,7 +29,9 @@ EVALUATIVE_RELATION_PROMPT = """
 
 你是一个通用的评价关系抽取专家。
 
-你的任务是从给定文本中识别评价关系，并同时补充评价关系所需的实体。
+你的任务是从给定文本中识别评价关系，输出评价关系的主客体。
+主客体直接使用原文精确短语，不要引用实体编号，也不要输出独立的实体列表。
+实体的识别与分类由下游 Agent 完成，你只需保证 subject/object 是原文中出现的精确短语。
 
 核心流程：
 
@@ -37,8 +39,7 @@ EVALUATIVE_RELATION_PROMPT = """
 → 确定评价主体、评价对象、评价方面、评价内容
 → Object Resolution（确定真正被评价的对象）
 → 判断对象是否符合评价客体要求
-→ 补充必要 Entity
-→ 输出 Relation
+→ 输出 Relation（subject/object 用原文短语）
 
 # 一、基本定义
 
@@ -160,16 +161,7 @@ object = 数字化建设
 
 object = _missing_entity
 
-# 五、Entity 补充
-
-评价关系确定后：
-
-1. 如果评价对象已经存在于 Entity 中，直接引用其 entity_id；
-2. 如果评价对象尚未进入 Entity，但其文本指称明确，则补充为 Entity；
-3. Aspect 不得因为承担评价作用而自动成为 Entity；
-4. 不要为了生成 Relation 而创造原文中不存在的实体名称。
-
-# 六、Subject
+# 五、Subject
 
 subject 表示实际作出评价的主体，而不是执行某个动作的主体。
 
@@ -187,7 +179,7 @@ subject 表示实际作出评价的主体，而不是执行某个动作的主体
 3. 如果无法从原文确定具体引文编号（如只看到“有研究指出”“相关文献认为”而无编号），不得使用 _cite[?]，应降级为 _unknown。
 4. 不得创造原文中不存在的引文编号。
 
-# 七、Aspect 与 Opinion
+# 六、Aspect 与 Opinion
 
 ### Aspect
 
@@ -210,21 +202,21 @@ opinion = 具有较高的理论价值
 错误：
 opinion = 具有
 
-# 八、多个评价关系
+# 七、多个评价关系
 
 一个句子可能包含多个评价关系。
 
 如果一个句子同时评价多个方面或多个对象，应分别输出多个 Relation。
 
-# 九、输出要求
+# 八、输出要求
 
 严格输出 JSON，不要输出解释，不要输出 Markdown。
+不要输出 entities 字段；实体识别由下游 Agent 完成。
 
 如果不存在评价：
 
 {
 "has_evaluation": false,
-"entities": [],
 "relations": []
 }
 
@@ -232,7 +224,6 @@ opinion = 具有
 
 {
 "has_evaluation": true,
-"entities": [...],
 "relations": []
 }
 
@@ -240,18 +231,10 @@ opinion = 具有
 
 {
 "has_evaluation": true,
-"entities": [
-{
-"entity_id": "e1",
-"entity": "<原文精确短语>",
-"normalized_name": "<规范化名称>",
-"evidence": "<实体证据>"
-}
-],
 "relations": [
 {
 "subject": "_paper_author|_cite[<真实编号>]|<人物名字>|_unknown",
-"object": "<entity_id>",
+"object": "<原文精确短语，不要填 entity_id>",
 "aspect": "<评价方面或 null>",
 "opinion": "<完整评价表达>",
 "evidence": "<最小评价证据片段>"
@@ -270,18 +253,10 @@ opinion = 具有
 
 {
 "has_evaluation": true,
-"entities": [
-{
-"entity_id": "e1",
-"entity": "某机构",
-"normalized_name": "某机构",
-"evidence": "某机构在人才培养方面表现突出"
-}
-],
 "relations": [
 {
 "subject": "_paper_author",
-"object": "e1",
+"object": "某机构",
 "aspect": "人才培养",
 "opinion": "表现突出",
 "evidence": "某机构在人才培养方面表现突出"
@@ -298,18 +273,10 @@ opinion = 具有
 
 {
 "has_evaluation": true,
-"entities": [
-{
-"entity_id": "e1",
-"entity": "农村图书馆研究",
-"normalized_name": "农村图书馆研究",
-"evidence": "农村图书馆研究取得了一定成绩"
-}
-],
 "relations": [
 {
 "subject": "_paper_author",
-"object": "e1",
+"object": "农村图书馆研究",
 "aspect": null,
 "opinion": "取得了一定成绩",
 "evidence": "农村图书馆研究取得了一定成绩"
@@ -339,7 +306,6 @@ object = 研究水平
 
 {
 "has_evaluation": false,
-"entities": [],
 "relations": []
 }
 
@@ -352,7 +318,6 @@ object = 研究水平
 
 {
 "has_evaluation": false,
-"entities": [],
 "relations": []
 }
 
@@ -365,14 +330,6 @@ object = 研究水平
 
 {
 "has_evaluation": true,
-"entities": [
-{
-"entity_id": "e1",
-"entity": "该方法",
-"normalized_name": "该方法",
-"evidence": "该方法具有较高的准确率"
-}
-],
 "relations": []
 }
 
@@ -385,7 +342,7 @@ object = 研究水平
 
 {
 "subject": "_cite[3]",
-"object": "<该机构对应entity_id>",
+"object": "该机构",
 "aspect": "创新能力",
 "opinion": "具有较强的创新能力",
 "evidence": "该机构具有较强的创新能力"
@@ -425,6 +382,12 @@ subject = "许晓东等"
 
 @dataclass
 class EvaluativeRelation:
+    """评价关系。subject/object 均为原文精确短语或占位符。
+
+    - subject: 占位符(_paper_author / _cite[N] / _unknown) 或具体人物名
+    - object: 原文精确短语；当 LLM 无法确定时为 _missing_entity，
+              此时 object_text 保留 LLM 原始输出便于审计。
+    """
     subject: str
     object: str
     aspect: Optional[str]
@@ -447,11 +410,16 @@ class EvaluativeRelation:
 
 @dataclass
 class SentenceRelationOutput:
+    """单句评价关系抽取输出（仅 relations，不含 entities）。
+
+    实体识别由下游 EntityExtractionAgent 完成。本类只关心评价关系，
+    其中 subject/object 直接携带原文短语，供 pipeline 后处理与下游
+    抽取的实体做名称匹配回填 entity_id。
+    """
     sentence_id: str
     sentence: str
     has_evaluation: bool
     relations: list[EvaluativeRelation] = field(default_factory=list)
-    entities: list[dict] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         return {
@@ -459,24 +427,26 @@ class SentenceRelationOutput:
             "sentence": self.sentence,
             "has_evaluation": self.has_evaluation,
             "relations": [r.to_dict() for r in self.relations],
-            "entities": self.entities,
         }
 
 
 class EvaluativeRelationAgent:
-    """Agent 1: evaluation relation extraction + entity extraction."""
+    """Agent 1: evaluation relation extraction only.
+
+    subject/object 使用原文精确短语；实体识别交由 Agent 2。
+    """
 
     def __init__(self, llm: Optional[LLMClient] = None):
         self.llm = llm or LLMClient()
 
     def extract(self, sentence_id: str, sentence: str) -> SentenceRelationOutput:
         if not sentence:
-            return SentenceRelationOutput(sentence_id, sentence, False, [], [])
+            return SentenceRelationOutput(sentence_id, sentence, False, [])
 
         prompt = EVALUATIVE_RELATION_PROMPT.replace("{statement}", sentence)
         data = self.llm.call_json(
             prompt,
-            {"has_evaluation": False, "relations": [], "entities": []},
+            {"has_evaluation": False, "relations": []},
         )
         return self._parse_output(sentence_id, sentence, data)
 
@@ -487,42 +457,11 @@ class EvaluativeRelationAgent:
         data: object,
     ) -> SentenceRelationOutput:
         if not isinstance(data, dict):
-            return SentenceRelationOutput(sentence_id, sentence, False, [], [])
-
-        # ── 解析实体 ──
-        raw_entities = data.get("entities", [])
-        if not isinstance(raw_entities, list):
-            raw_entities = []
-
-        parsed_entities: list[dict] = []
-        entity_ids: set[str] = set()
-        name_to_id: dict[str, str] = {}  # 规范化名字 → entity_id (用于名字匹配回退)
-        for i, item in enumerate(raw_entities):
-            if not isinstance(item, dict):
-                continue
-            eid = str(item.get("entity_id", "")).strip() or f"e{i + 1}"
-            # 去重: LLM 提供的 ID 与 fallback ID 可能冲突
-            if eid in entity_ids:
-                k = i + 1
-                while f"e{k}" in entity_ids:
-                    k += 1
-                eid = f"e{k}"
-            entity_name = str(item.get("entity", "")).strip()
-            if not entity_name:
-                continue
-            entity_ids.add(eid)
-            normalized = str(item.get("normalized_name", entity_name)).strip()
-            parsed_entities.append({
-                "entity_id": eid,
-                "entity": entity_name,
-                "normalized_name": normalized,
-                "evidence": str(item.get("evidence", "")).strip(),
-            })
-            for n in (_normalize_name(entity_name), _normalize_name(normalized)):
-                if n:
-                    name_to_id.setdefault(n, eid)
+            return SentenceRelationOutput(sentence_id, sentence, False, [])
 
         # ── 解析评价关系 ──
+        # object 直接保留 LLM 输出的原文短语；若 LLM 输出 _missing_entity,
+        # 同时附带 object_text 时保留 object_text 便于审计。
         raw_relations = data.get("relations", [])
         if not isinstance(raw_relations, list):
             raw_relations = []
@@ -540,17 +479,12 @@ class EvaluativeRelationAgent:
             evidence = str(item.get("evidence", "")).strip()
             object_text = str(item.get("object_text", "")).strip()
 
+            # 必填字段缺失 → 丢弃该 relation
             if not subject or not obj or not opinion or not evidence:
                 continue
-            if obj != "_missing_entity" and obj not in entity_ids:
-                # 1) 名字匹配回退: LLM 可能把实体名写在 object 字段而非 entity_id
-                matched_id = name_to_id.get(_normalize_name(obj), "")
-                if matched_id:
-                    obj = matched_id
-                else:
-                    # 2) 无法解析 → _missing_entity, 保留原始 object 文本
-                    object_text = object_text or str(item.get("object", "")).strip()
-                    obj = "_missing_entity"
+            # _missing_entity 必须附带 object_text, 否则无法回溯原文
+            if obj == "_missing_entity" and not object_text:
+                object_text = obj  # 至少保留占位符文本
 
             relations.append(
                 EvaluativeRelation(
@@ -574,5 +508,4 @@ class EvaluativeRelationAgent:
             sentence=sentence,
             has_evaluation=has_evaluation,
             relations=relations,
-            entities=parsed_entities,
         )

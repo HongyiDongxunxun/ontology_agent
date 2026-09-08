@@ -2,7 +2,7 @@
 
 > **多智能体协同 · DeepSeek API · 并行批处理 · 关系优先抽取 · L1/L2/L3 精分类 + L4 规则匹配 · Likert 审查 · 关系校验 · 评估体系**
 
-面向情报学/图书馆学领域学术文献，从评价句到结构化知识实体的全自动端到端挖掘管道。采用**关系优先策略**：先抽取评价关系及其评价对象，再补充抽取其余实体，然后分类、审查打分、校验关系，完整链路为 **评价关系抽取 → 实体抽取补充 → 精分类 → Likert 审查 → 关系校验**。
+面向情报学/图书馆学领域学术文献，从评价句到结构化知识实体的全自动端到端挖掘管道。采用**关系优先策略**：Agent 1 抽取评价关系（subject/object 为原文精确短语，不再输出实体），Agent 2 接收主客体原文短语作为必抽提示，统一负责实体识别、ID 分配与分类，然后审查打分、校验关系，完整链路为 **评价关系抽取 → 实体抽取 → 精分类 → Likert 审查 → 关系校验**。
 
 ---
 
@@ -12,10 +12,11 @@
 ┌──────────────────────────────────────────────────────────────────┐
 │  Agent 1: Evaluative Relation Extraction (评价关系抽取 — 关系优先) │
 │  评价句 → 评价关系(subject/object/aspect/opinion/evidence)         │
-│         + 评价对象实体 (作为下游已知实体)                          │
+│  subject/object 直接使用原文精确短语，不再输出 entities            │
 ├──────────────────────────────────────────────────────────────────┤
-│  Agent 2: Entity Extraction (实体抽取补充 — 高召回)               │
-│  接收 Agent 1 的评价对象实体作为"已知实体"，补抽关系之外的实体     │
+│  Agent 2: Entity Extraction (实体抽取 — 高召回)                  │
+│  接收 Agent 1 的主客体原文短语作为"必抽提示"                       │
+│  统一负责: 实体识别 + ID 分配 + 候选 L1/L3 分类                    │
 │  输出: mid_data/{name}_extracted.json                            │
 ├──────────────────────────────────────────────────────────────────┤
 │  Agent 3: Classification (精分类 — L1/L2/L3 + L4)                 │
@@ -35,9 +36,9 @@
 └──────────────────────────────────────────────────────────────────┘
 ```
 
-**关系优先策略**：Agent 1 先识别评价关系并解析出被评价的对象（object）实体，这些实体作为「已知实体」传给 Agent 2；Agent 2 在此基础上补抽评价关系之外的其余实体，避免遗漏，同时保证被评价对象一定进入实体列表。
+**关系优先策略**：Agent 1 仅输出评价关系（subject/object/aspect/opinion/evidence），subject/object 直接使用原文精确短语，不再输出 entities。pipeline 从 relations 提取主客体原文短语作为"必抽提示"传给 Agent 2；Agent 2 统一负责实体的识别、ID 分配与候选 L1/L3 分类，避免与 Agent 1 职责重叠。
 
-**ID 重映射**：Agent 1 输出使用句内短 ID（e1/e2），Agent 2 输出使用全局 ID（`{句号}_eN`）。管道编排器按实体名将关系引用的短 ID 重映射为最终实体 ID；若 Agent 2 漏抽了关系引用的实体，编排器会将该实体补入实体列表，保证每条关系都能解析到实体。无法解析时降级为 `_missing_entity` 并保留原文。
+**object 回填**：Agent 1 的 object 字段是原文短语；Agent 2 产出实体后，pipeline 用 normalized_name/mention 建索引，一次性匹配回填 entity_id 到 relation。未匹配时保留原文 + 标记 `object_unmatched: true`（不再程序化补入无分类实体）。占位符 subject（`_paper_author` / `_cite[N]` / `_unknown`）不参与匹配，原样透传。
 
 **评价有效性过滤（Evaluation Validity）**：Agent 1 在输出任何关系之前必须回答一个问题——这句话在"评价"一个对象，还是在"描述"这个对象发生了什么？研究行为（进行研究、进行分析、进行对比）、方法使用、功能实现、定义、分类、统计罗列均属于描述，一律不生成关系；中性比较判断（基本一致、水平相当、表现相近）属于评价。该机制把九类高频误判模式以完整示例写入了提示词。Agent 5 在管道末端对全部关系再做一次逐句复核，与 Agent 1 的内置过滤形成**双保险**。
 
@@ -45,9 +46,9 @@
 
 | 特性 | 说明 |
 |------|------|
-| **关系优先抽取** | Agent 1 先抽评价关系与评价对象，实体列表覆盖所有可解析的 relation.object |
-| **实体补充** | Agent 2 接收上游已知实体，补抽关系外实体，提升召回 |
-| **ID 重映射** | 关系短 ID 自动重映射为最终实体 ID，漏抽实体自动补入 |
+| **关系优先抽取** | Agent 1 仅抽评价关系，subject/object 为原文精确短语；不再输出 entities |
+| **统一实体抽取** | Agent 2 接收必抽提示，统一负责实体识别、ID 分配与候选分类 |
+| **object 回填** | pipeline 用 normalized_name/mention 一次性匹配 Agent 2 的 entity_id；未匹配保留原文 + `object_unmatched` |
 | **评价有效性过滤** | 输出前强制区分"评价"与"描述"，过滤九类典型误判 |
 | **关系校验 (Agent 5)** | 管道末端逐句复核评价关系，事实/描述类标记 `is_evaluation=false` 并过滤，校验详情落盘供审计 |
 | **Thinking Mode** | 支持 DeepSeek 推理模式，每个 Agent 可独立开关 |
@@ -91,7 +92,7 @@ ontology_agent/
 ├── requirements.txt                    # Python 依赖
 ├── dynamic_terms.json                  # 预加载的动态术语库 (可选)
 │
-├── test_academic_evaluation_prompt_schema.py   # 单元测试: 关系schema/ID重映射/评价有效性规则
+├── test_academic_evaluation_prompt_schema.py   # 单元测试: 关系schema/object回填/评价有效性规则
 ├── test_eval_relations.py              # 单元测试: 评价关系评估指标
 ├── test_relation_verification.py       # 单元测试: 评价关系校验 Agent
 │
@@ -99,13 +100,13 @@ ontology_agent/
 │   ├── __init__.py                     # 包定义 + 公开API导出
 │   ├── llm.py                          # LLM客户端: OpenAI兼容, Thinking/Voting/JSON重试
 │   ├── taxonomy.py                     # L1/L2/L3 分类体系层级映射 + 中文标签
-│   ├── evaluative_relation_agent.py    # Agent 1: 评价关系抽取 + 评价对象实体
+│   ├── evaluative_relation_agent.py    # Agent 1: 评价关系抽取 (subject/object 为原文短语)
 │   ├── relation_verification_agent.py  # Agent 5: 复核关系是"评价"还是"事实/描述"
-│   ├── entity_extraction_agent.py      # Agent 2: 实体抽取补充 (接收上游已知实体)
+│   ├── entity_extraction_agent.py      # Agent 2: 实体抽取 (接收必抽短语, 统一负责识别+ID+分类)
 │   ├── classification_agent.py         # Agent 3: 精分类 + Voting + RAG + L4匹配
 │   ├── reviewer_agent.py               # Agent 4: Likert 5点量表审查 Prompt
 │   ├── dynamic_term_db.py              # 线程安全动态术语底库 (trigram检索)
-│   └── dual_agent_pipeline.py          # 五Agent管道编排 + ID重映射 + JSONL/Summary/Relation/Verification导出
+│   └── dual_agent_pipeline.py          # 五Agent管道编排 + object回填 + JSONL/Summary/Relation/Verification导出
 │
 ├── eval/                               # 评估模块
 │   ├── __init__.py                     # 评估包定义
@@ -149,13 +150,13 @@ ontology_agent/
 |------|------|
 | [llm.py](pipeline/llm.py) | **LLM 抽象层**：封装 DeepSeek/OpenAI API，支持 Thinking 推理模式、JSON 输出自动重试与修复、多轮 Voting 投票机制、指数退避重连 |
 | [taxonomy.py](pipeline/taxonomy.py) | **分类体系**：定义 L1→L2→L3 完整层级映射表，提供 `get_l1_options()`、`get_l2_label()` 等查询工具函数 |
-| [evaluative_relation_agent.py](pipeline/evaluative_relation_agent.py) | **Agent 1**：关系优先策略，先识别评价关系（subject/object/aspect/opinion/evidence），解析被评价对象并输出评价对象实体，作为下游已知实体 |
+| [evaluative_relation_agent.py](pipeline/evaluative_relation_agent.py) | **Agent 1**：关系优先策略，识别评价关系（subject/object/aspect/opinion/evidence），subject/object 直接使用原文精确短语，不再输出 entities；实体识别交由 Agent 2 |
 | [relation_verification_agent.py](pipeline/relation_verification_agent.py) | **Agent 5**：管道末端对 Agent 1 抽取的关系逐句复核，强制判断该关系是「评价」还是「事实/描述」。事实类标记 `is_evaluation=false` 并附 `fact_type`（研究行为/方法使用/定义/过程描述等九类），评价类放行。与 Agent 1 的内置过滤形成双保险，校验详情可落盘审计 |
-| [entity_extraction_agent.py](pipeline/entity_extraction_agent.py) | **Agent 2**：接收 Agent 1 的已知实体，从评价句中补充抽取评价关系之外的其余实体，输出 mention、normalized_name、候选 L1/L3、evidence、confidence，严格过滤泛称/类别词 |
+| [entity_extraction_agent.py](pipeline/entity_extraction_agent.py) | **Agent 2**：接收 Agent 1 主客体原文短语作为必抽提示，统一负责实体识别、ID 分配（`{sid}_eN`）与候选 L1/L3 分类，输出 mention、normalized_name、candidate_l1/l3、evidence、confidence、is_specific_entity，严格过滤泛称/类别词 |
 | [classification_agent.py](pipeline/classification_agent.py) | **Agent 3**：验证实体有效性 → 标注 L1/L2/L3 → L4 规则匹配。支持 Voting（多轮投票）、RAG（从 TermDB 检索相似示例）、schema 约束输出 |
 | [reviewer_agent.py](pipeline/reviewer_agent.py) | **Agent 4**：以"图书馆学专业学长"视角审查 Agent 3 的分类结果，输出 Likert 1-5 置信度 + 修正建议 |
 | [dynamic_term_db.py](pipeline/dynamic_term_db.py) | **动态术语底库**：线程安全的术语积累和检索系统，支持 trigram 相似度搜索（用于 RAG）、JSON 导入导出、自动去重 |
-| [dual_agent_pipeline.py](pipeline/dual_agent_pipeline.py) | **管道编排器**：串联 Agent 1→2→3→4→5 的执行流程，管理中间数据写入、Likert 5 分实体入 TermDB、Agent 5 校验过滤与审计快照、调用 JSONL/Summary/Relation/Verification 导出工具 |
+| [dual_agent_pipeline.py](pipeline/dual_agent_pipeline.py) | **管道编排器**：串联 Agent 1→2→3→4→5 的执行流程，从 Agent 1 relations 提取必抽短语传给 Agent 2，再用 normalized_name/mention 一次性匹配回填 entity_id 到 relation；管理中间数据写入、Likert 5 分实体入 TermDB、Agent 5 校验过滤与审计快照、调用 JSONL/Summary/Relation/Verification 导出工具 |
 
 #### 评估模块 (`eval/`)
 
@@ -393,7 +394,7 @@ L1 分布、L3 类型分布、Likert 五点分布、平均分等聚合指标。
 | 字段 | 含义 |
 |------|------|
 | `subject` | 评价主体：`_paper_author`（本文作者）、`_cite[N]`（第N篇被引文献）、具体人名、`_unknown` |
-| `object` | 被评价对象的最终实体 ID（已由管道重映射，可直接关联 `output/entities/` 中的 `entity_id`）；无法解析时为 `_missing_entity`（附 `object_text` 原文） |
+| `object` | 被评价对象。Agent 1 输出原文精确短语；pipeline 用 normalized_name/mention 与 Agent 2 实体匹配后回填为最终 entity_id（可关联 `output/entities/`）。占位符 `_missing_entity` 表示 Agent 1 无法确定评价对象（附 `object_text`）；`object_unmatched: true` 表示 Agent 2 未抽到该评价对象（保留原文） |
 | `aspect` | 评价方面；没有则为 `null` |
 | `opinion` | 评价表达（完整片段） |
 | `evidence` | 支持该评价的最小原文片段 |
@@ -452,11 +453,12 @@ Agent 1 评价关系 + Agent 2 实体抽取的合并中间结果（stage = `agen
 input/reviewed_full_*.json           # 输入: 评价句 + 上下文
         │
         ▼
-  [Agent 1: 评价关系抽取]  ── 评价对象实体 ──┐
-        │  (评价关系暂存)                    │ (作为已知实体)
+  [Agent 1: 评价关系抽取]  ── 主客体原文短语 ──┐
+        │  (relations 暂存)                   │ (作为必抽提示)
         │                                   ▼
-        │                        [Agent 2: 实体抽取补充]
+        │                        [Agent 2: 实体抽取 (统一负责识别+ID+分类)]
         │                                   │
+        │  pipeline: object 原文 → entity_id 一次性回填
         │                                   ▼
         │                     mid_data/{name}_extracted.json  # 中间: 实体+关系
         │                                   │
@@ -472,7 +474,7 @@ input/reviewed_full_*.json           # 输入: 评价句 + 上下文
         │                           {name}_result.jsonl          (Likert=5 实体自动入库)
         │                           {name}_summary.json
         ▼
-  [Agent 5: 关系校验 — 评价/事实二分, ID重映射后逐句复核]
+  [Agent 5: 关系校验 — 评价/事实二分, object 回填后逐句复核]
         │
         ├────────────────────────────────────┐
         ▼                                    ▼

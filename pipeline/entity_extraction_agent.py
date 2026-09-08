@@ -1,8 +1,10 @@
 """
-pipeline.entity_extraction_agent — 实体抽取（补充抽取）
+pipeline.entity_extraction_agent — 实体抽取（Agent 2）
+
 对齐: 实体类型分类体系_opencode版.md — LangGPT 风格提示词
 从评价句中高召回抽取全部实体类型: Agent / Artifact / Abstract / Event
-作为评价关系抽取后的补充，接收上游已知实体，避免遗漏
+接收上游 Agent 1 评价关系的 subject/object 原文短语作为必抽提示，
+由本 Agent 统一负责实体的识别与分类，避免与 Agent 1 职责重叠。
 输出中间结果到 mid_data/ 目录
 """
 
@@ -48,10 +50,11 @@ ENTITY_EXTRACTION_PROMPT = (
     "1. candidate_l1 允许多个，模糊实体可标多个候选 L1\n"
     "2. evidence 是从原句中截取能证明该实体存在的文本片段\n\n"
     "## Workflow\n"
-    "1. 读取待分析句子，结合已知实体列表，识别句中所有符合 Agent/Artifact/Abstract/Event 分类体系的有效实体。\n"
-    "2. 已知实体已在上游评价关系抽取中识别，请勿遗漏；同时补充抽取句中其他有效实体。\n"
-    "3. 对每个实体判定 candidate_l3、candidate_l1，并提取 evidence。\n"
-    "4. 按 OutputFormat 输出严格 JSON。\n\n"
+    "1. 读取待分析句子，结合必抽实体列表（来自上游 Agent 1 评价关系的主客体原文短语），识别句中所有符合 Agent/Artifact/Abstract/Event 分类体系的有效实体。\n"
+    "2. 必抽实体来自上游评价关系抽取的主客体，请勿遗漏：若某短语符合实体性门槛则抽取为完整实体；若不符合门槛但仍作为评价对象被引用，仍抽取并标注 is_specific_entity=false + uncertainty 说明原因。\n"
+    "3. 除必抽实体外，补充抽取句中其他有效实体。\n"
+    "4. 对每个实体判定 candidate_l3、candidate_l1，并提取 evidence。\n"
+    "5. 按 OutputFormat 输出严格 JSON。\n\n"
     "## Background\n"
     "### 一、Agent (行为主体) — 能产生学术行为的主体\n"
     "**Person (个人)** — 刚性类型，身份不随评价语境改变\n"
@@ -215,8 +218,11 @@ ENTITY_EXTRACTION_PROMPT = (
     "输入: 通过比较两种方法的优劣，本文认为该理论具有重要意义。\n"
     '输出: {{"entities":[]}}\n'
     "> 「比较」通用动词、「优劣」评价用语、「本文」自指、「重要意义」评价用语 → 均不抽取。\n\n"
-    "## 已知实体（来自上游评价关系抽取，请勿遗漏）\n"
-    "{known_entities_text}\n\n"
+    "## 必抽实体（来自上游 Agent 1 评价关系的主客体原文短语）\n"
+    "以下短语在评价关系中被作为 subject/object 引用，必须被抽取为实体：\n"
+    "- 若符合实体性门槛，抽取为正常实体 (is_specific_entity=true)\n"
+    "- 若不符合门槛（如泛指/虚义），仍抽取并标注 is_specific_entity=false，在 uncertainty 中说明原因\n"
+    "{required_mentions_text}\n\n"
     "## Input\n"
     "{statement}"
 )
@@ -315,9 +321,10 @@ class SentenceExtractionOutput:
 
 class EntityExtractionAgent:
     """
-    实体抽取 Agent（补充抽取）
+    实体抽取 Agent（Agent 2）
     从评价句中高召回抽取全部 Agent/Artifact/Abstract/Event 实体。
-    接收上游评价关系抽取的已知实体作为上下文，避免遗漏。
+    接收上游 Agent 1 评价关系抽取的主客体原文短语作为必抽提示，
+    由本 Agent 统一负责实体的识别、ID 分配与分类。
     输出中间结果 (SentenceExtractionOutput) 写入 mid_data/。
     """
 
@@ -328,11 +335,21 @@ class EntityExtractionAgent:
         self,
         statement: str,
         sentence_id: str = "",
-        known_entities: Optional[list[dict]] = None,
+        required_mentions: Optional[list[str]] = None,
     ) -> SentenceExtractionOutput:
-        known_text = self._format_known_entities(known_entities or [])
+        """抽取实体。
+
+        Args:
+            statement: 待分析句子原文。
+            sentence_id: 句子 ID，用于生成实体 ID (格式 {sentence_id}_eN)。
+            required_mentions: 上游 Agent 1 评价关系的主客体原文短语，
+                这些短语会被注入 prompt 作为必抽提示。占位符
+                (_paper_author / _cite[N] / _unknown / _missing_entity)
+                由调用方过滤，不应出现在本列表中。
+        """
+        mentions_text = self._format_required_mentions(required_mentions or [])
         prompt = ENTITY_EXTRACTION_PROMPT.format(
-            statement=statement, known_entities_text=known_text
+            statement=statement, required_mentions_text=mentions_text
         )
         data = self.llm.call_json(prompt, {})
         if not isinstance(data, dict):
@@ -370,16 +387,21 @@ class EntityExtractionAgent:
         )
 
     @staticmethod
-    def _format_known_entities(entities: list[dict]) -> str:
-        """将上游已知实体格式化为提示词文本"""
-        if not entities:
+    def _format_required_mentions(mentions: list[str]) -> str:
+        """将上游评价关系的主客体原文短语格式化为提示词文本。
+
+        - 输入是字符串列表 (已是原文短语，不含占位符)。
+        - 空列表返回 "无"。
+        """
+        if not mentions:
             return "无"
-        lines = []
-        for e in entities:
-            name = e.get("entity", e.get("normalized_name", ""))
-            norm = e.get("normalized_name", "")
-            if norm and norm != name:
-                lines.append(f"- {name}（规范化：{norm}）")
-            elif name:
-                lines.append(f"- {name}")
+        # 去重保序
+        seen: set[str] = set()
+        lines: list[str] = []
+        for m in mentions:
+            m = (m or "").strip()
+            if not m or m in seen:
+                continue
+            seen.add(m)
+            lines.append(f"- {m}")
         return "\n".join(lines) if lines else "无"
