@@ -1,0 +1,252 @@
+{
+    "1": {
+        "previous_sentence": "",
+        "evaluative_sentence": "计算机技术的飞速发展、社交媒体作用下社区的快速连接,同时，数据类型的多样化、数据量的指数级增长，使得科研人员对大规模数据的信息挖掘已不再满足于用单一主题信息来代表数据集的特征，更多地是想挖掘主题与用户的关联关系，进而更全面地揭示数据集所包含的信息，发现其背后规律。基于此,科研人员于2004年提出了一种可以挖掘文档集中隐含作者与主题关系的统计模型,即作者主题(Author-Topic,AT)模型。",
+        "next_sentence": ""
+    },
+    "2": {
+        "previous_sentence": "",
+        "evaluative_sentence": "AT 模型是潜在狄利克雷分布模型（LatentDirichletAllocation,LDA）的扩展,继承了LDA主题模型将高维度的词集合映射到低维度的主题空间，进而实现数据降维。同时，将数据集中的作者信息作为扩展元数据融入到原模型中，使得数据集中的作者与主题建立起关联，为挖掘数据集中隐含的“作者－主题”语义信息提供了可能,有助于科研人员更好地将作者及其所讨论的内容对应起来。",
+        "next_sentence": ""
+    },
+    "3": {
+        "previous_sentence": "",
+        "evaluative_sentence": "随着模型应用范围的不断扩大，任务的多元化使得简单的AT模型难以满足日益增长的需求,如对社交媒体数据分析时需要考虑时间属性等。基于此，科研人员充分利用AT模型良好的可扩展性，对其尝试改进，并取得了一定突破，使其适用范围更为广泛。",
+        "next_sentence": ""
+    },
+    "4": {
+        "previous_sentence": "",
+        "evaluative_sentence": "笔者通过前期文献调研，发现现有综述文献大多是对主题模型为源头进行总结归纳，但随着主题模型的发展，使得由各种主题模型的改进模型所组成的模型集合十分宽泛,却少有针对于以“作者－主题”为脉络的一系列改进模型及应用的综述。同时,大部分综述主要是对模型原理及改进的时间顺序进行总结归纳，而从模型具体应用过程的视角进行综述则相对较少。",
+        "next_sentence": "因此，本文将立足于国内外有关AT模型的现有研究，采用文献分析及归纳总结法，深入分析国内外AT模型及其改进模型的方法及应用的研究现状,以期为相关科研人员提供参考，拓宽研究思路。"
+    },
+    "5": {
+        "previous_sentence": "为保证数据覆盖全面，本文在外文数据库的选取上除Webof Science核心数据库外,还选取了计算机领域较权威的数据库DBLP(Digital Bibliography & LibraryProject）。",
+        "evaluative_sentence": "两者收录的文献虽有重叠，但仍存在互补。",
+        "next_sentence": "中文数据库则选取了中国知网（CNKI）。"
+    },
+    "6": {
+        "previous_sentence": "由图1可知，AT模型自2004年被提出后，国内对该模型进行研究且有科研成果产出始于2008年-3。",
+        "evaluative_sentence": "从发文趋势上看,其被关注度整体呈上升趋势,相关研究在2013-2017年期间的关注度先后迎来两次小高峰。根据上述数据可以推测基于AT模型的相关研究在今后一段时间内仍将保持较高的热度。",
+        "next_sentence": ""
+    },
+    "7": {
+        "previous_sentence": "",
+        "evaluative_sentence": "经过总结归纳,国内外基于AT模型的改进与应用研究所选用的数据集主要分为6类（见表1）。其中，‘学术论文\"数据集类型数量位居首位(共17类),对其又可进一步细化为5小类: $\\textcircled{1}$ 专业领域数据库(DBLP、Pub-Chem、MEDLINE、PubMed Central、ACM Digital Library);",
+        "next_sentence": "$\\textcircled{2}$ 引文索引系统(Scopus、CiNii、NIPS、CiteULike、Citese-er、万方、CNKI、Web of Science);"
+    },
+    "8": {
+        "previous_sentence": "$\\textcircled{5}$ 评测会议及语料库(TREC）。",
+        "evaluative_sentence": "另外,文本类数据集中除学术论文这一大类外,还包括社交网站、邮件，而影像类数据集中除部分开放获取的数据外，还包含学校监控视频等非开放获取资源。",
+        "next_sentence": ""
+    },
+    "9": {
+        "previous_sentence": "学术论文类数据集通常包括文献标题、作者、摘要及时间。",
+        "evaluative_sentence": "针对不同研究内容，科研人员所提取的数据字段也存在一定差异。",
+        "next_sentence": "除上述4种字段外,部分研究还提取引文、期刊及会议信息等字段，以研究作者研究兴趣的变迁、学术论文推荐、学术领域专家社区发现、特定学科领域内作者主题识别等;"
+    },
+    "10": {
+        "previous_sentence": "获取目标数据字段后，需对其进行数据预处理。",
+        "evaluative_sentence": "其中,作者消歧(authordisambiguation）将对实验结果产生较大影响。而作者消歧目前面临两大难题：一是同名问题,即多人姓名相同;",
+        "next_sentence": "二是共指问题,即同一作者姓名的多种写法，该类问题常出现在英文文献中，与姓名缩写问题相关联。"
+    },
+    "11": {
+        "previous_sentence": "二是共指问题,即同一作者姓名的多种写法，该类问题常出现在英文文献中，与姓名缩写问题相关联。",
+        "evaluative_sentence": "在实际操作中，大多是结合作者邮箱、工作单位及合著关系等属性特征来对作者进行消歧,同时可进一步借助外部网络信息提高消歧准确度。",
+        "next_sentence": "具体可将作者消歧方法分为无监督学习与有监督学习两大类。"
+    },
+    "12": {
+        "previous_sentence": "其中，无监督学习方法包括图论与聚类，前者通过构建网络图将作者间的关系进行连接,计算节点间的拓扑距离,进而判断同名作者是否为同一个人。",
+        "evaluative_sentence": "后者通过衡量相似度，将所有可能指向同一作者的同名作者聚为一类,而聚类方法的选择及同名作者间相似度函数的定义是影响聚类效果的关键。",
+        "next_sentence": "有监督学习方法主要指基于概率模型的方法。"
+    },
+    "13": {
+        "previous_sentence": "完成数据清洗等操作后，根据研究内容及目标选择或构建合适的模型,并对模型进行参数估计。",
+        "evaluative_sentence": "本节将对目前国内外AT模型及其改进模型进行总结与分析。",
+        "next_sentence": ""
+    },
+    "14": {
+        "previous_sentence": "",
+        "evaluative_sentence": "即作者主题模型,通过加入作者元素，同时对主题与作者进行建模。该模型将分析对象的作者信息引入到LDA模型中,以实现词、主题、作者及文档间的语义主题关联。",
+        "next_sentence": "每个作者可以通过多项分布矩阵映射至隐含主题上,每个主题的描述可通过词语层上的多项分布实现，文档可通过主题空间上的作者混合分布完成建模。"
+    },
+    "17": {
+        "previous_sentence": "",
+        "evaluative_sentence": "由该生成过程可知,AT模型中的每位作者对应一个主题上的分布，且所有作者共享一个主题集合58-60 。",
+        "next_sentence": ""
+    },
+    "18": {
+        "previous_sentence": "(1)基于时间因素的改进。",
+        "evaluative_sentence": "随着AT模型的深入研究，如何得到作者所属的主题随时间变化的情况已成为当前研究热点。",
+        "next_sentence": "基于时间因素的改进从数据时间的角度可以进一步细化为两类：一是将时间视为随机变量,进而完成连续时间的建模;"
+    },
+    "19": {
+        "previous_sentence": "2010年唐杰等人在AT模型中加入时间这一连续变量，提出了随时间变化的作者主题模型(Author-Topic-Time model,ATT)模型[。",
+        "evaluative_sentence": "该模型将AT模型与随时间变化的话题模型(Time overTime,TOT)相结合,文档中每个词的生成由主题与时间两个属性共同决定,更好地描述了作者主题在不同时间的分布情况。",
+        "next_sentence": ""
+    },
+    "20": {
+        "previous_sentence": "",
+        "evaluative_sentence": "ATT模型为连续时间建模的典型代表，后续有许多有关时间因素的作者主题挖掘研究是基于此开展的2-6。通过考虑主题之间的依赖关系、用户兴趣数据的稀疏性等问题，相继提出了基于隐马尔可夫的随时间变化的作者主题模型（Hidden Markov Author -",
+        "next_sentence": ""
+    },
+    "21": {
+        "previous_sentence": "",
+        "evaluative_sentence": "Time-Topic,HMATT）[、融入会议信息的随时间变化的作者主题模型（Author Conference Topic OverTime,ACTOT）等模型,丰富了用户兴趣矩阵,降低了模型困惑度。",
+        "next_sentence": ""
+    },
+    "22": {
+        "previous_sentence": "",
+        "evaluative_sentence": "尽管ATT及ACTOT等模型相比于AT模型，考虑了文本的时间信息，以表示作者主题在不同时间的分布强度,但上述模型仍存在以下两个问题:第一，模型在每个时间窗口内主题数是固定的，因此只能揭示主题强度的变化,而忽略了主题内容的变化；",
+        "next_sentence": "第二，对于一些随时间变化较为频繁、规模较大的文档集，模型消耗大量计算及内存资源。"
+    },
+    "23": {
+        "previous_sentence": "针对ATT模型无法实现对动态数据的分析及主题内容追踪等不足，离散化时间建模的思想应运而生。",
+        "evaluative_sentence": "以2015年杨如意提出的动态作者主题 模型（Dynamic Author Topic Model,DAT）[6-61、2018年余传明等提出的复合主题演化模型（Author Topic Time-Latent Dirichlet Allocation withAuthor Ranking,ATT-LDA）b为代表,该类模型通常结合了动态主题模型(Dynamic Topic Model,DTM）及AT模型两者优点，将获取的主题离散到时间窗，使其在计算复杂度和应用场景两方面有较大优势。经实验证明该类模型能准确描述潜在作者主题及其动态变化。",
+        "next_sentence": ""
+    },
+    "24": {
+        "previous_sentence": "目前大多基于AT模型扩展的模型均为无监督模型,通常只需要输入文档集、主题数目等数据参数，模型即可实现自动学习。",
+        "evaluative_sentence": "然而,无监督学习方法得到的结果通常可解释性较差,甚至不易被理解。",
+        "next_sentence": "针对该问题,2015年H.Mou等人提出了有监督作者主题模型(Author Subject Top-ic,AST）[4,通过引入有监督的“subject”层来对文档进行分组。"
+    },
+    "25": {
+        "previous_sentence": "针对该问题,2015年H.Mou等人提出了有监督作者主题模型(Author Subject Top-ic,AST）[4,通过引入有监督的“subject”层来对文档进行分组。",
+        "evaluative_sentence": "与传统的AT模型相比，该类模型有助于将单词和文档聚在一起以减少噪声。",
+        "next_sentence": ""
+    },
+    "26": {
+        "previous_sentence": "（3）基于元数据元素扩展的改进。",
+        "evaluative_sentence": "引入更为丰富、多样化的元数据元素，将传统的“作者－主题”分布转变为“其他元数据-作者-主题\"分布,进一步拓宽AT模型可揭示的内容范围。基于元数据扩展的改进目前主要分为以下4种: $\\textcircled{1}$ 融入社区元素，如2012年C.S.Li等提出的“作者-主题-社区”模型(Author-Topic-Community,ATC)等 34,69-7l,该类模型结合社会网络分析，根据作者兴趣实现作者社区发现;",
+        "next_sentence": "$\\textcircled{2}$ 融入会议元素，如2008年唐杰等提出的融入会议信息的模型（Author-Conference-Topic,ACT）及 2011 年Y.Ding 提出的 ACTC（Author-Conference Topic-Connec-tion）模型7；"
+    },
+    "27": {
+        "previous_sentence": "$\\textcircled{2}$ 融入会议元素，如2008年唐杰等提出的融入会议信息的模型（Author-Conference-Topic,ACT）及 2011 年Y.Ding 提出的 ACTC（Author-Conference Topic-Connec-tion）模型7；",
+        "evaluative_sentence": "$\\textcircled{3}$ 融入用户兴趣等用户特征元素 $^ { [ 4 4 , 6 1 , 7 3 ] }$ ，该类模型可以更好地应用于个性化推荐等任务中；$\\textcircled{4}$ 融入作者引文等相关元素，其中主要包括引文、所属期刊等4-7,使得模型充分利用学术文档中作者和引文信息,对文档具有较高的作者判别和引文文献排序能力。",
+        "next_sentence": ""
+    },
+    "28": {
+        "previous_sentence": "为了让AT模型满足特定领域中的特定任务，科研人员提出了面向特定任务的AT模型。",
+        "evaluative_sentence": "该类模型目前针对的数据大多是图像。",
+        "next_sentence": "其中,最具有代表性的是通过融入地理信息（Au-thor - related Geographical Topic Modeling,AGTM）及多光谱遥感图像的颜色、形状特征(Author-GenreTopic Model,AGTM）对区域类别进行主题标注。"
+    },
+    "29": {
+        "previous_sentence": "其中,最具有代表性的是通过融入地理信息（Au-thor - related Geographical Topic Modeling,AGTM）及多光谱遥感图像的颜色、形状特征(Author-GenreTopic Model,AGTM）对区域类别进行主题标注。",
+        "evaluative_sentence": "但如何在结合地理信息的同时使用更优的概率模型来处理文档信息以提升图像类别标注的精准度仍需进一步研究。",
+        "next_sentence": ""
+    },
+    "30": {
+        "previous_sentence": "",
+        "evaluative_sentence": "上文所介绍的4类扩展模型主要是针对传统AT模型的现有问题,从不同角度改进而成的。",
+        "next_sentence": "图3对各模型的扩展模式进行总结归纳，主要分为以LDA及AT模型为基础的两大扩展模式,其中,实线箭头表示由箭尾一侧的模型改进成箭头所指一侧的模型,虚线箭头表示将虚线箭尾所指的模型与其作用的实线箭尾模型结合，进而得到实线箭头所指的模型。"
+    },
+    "31": {
+        "previous_sentence": "图3对各模型的扩展模式进行总结归纳，主要分为以LDA及AT模型为基础的两大扩展模式,其中,实线箭头表示由箭尾一侧的模型改进成箭头所指一侧的模型,虚线箭头表示将虚线箭尾所指的模型与其作用的实线箭尾模型结合，进而得到实线箭头所指的模型。",
+        "evaluative_sentence": "表2是对上文所介绍的4类扩展AT模型的汇总,同时对每个模型的优缺点等信息进行分析。",
+        "next_sentence": ""
+    },
+    "32": {
+        "previous_sentence": "",
+        "evaluative_sentence": "衡量结果是否真实揭示数据规律以及相比于已有研究是否更为优化，在整个实验过程中必不可少。随着科学研究的不断推进，模型评价角度更为全面。",
+        "next_sentence": "经过调研发现,针对AT模型及其改进的研究中常用的模型评估方法主要从以下6个角度开展，具体模型评价指标分类见图4。"
+    },
+    "33": {
+        "previous_sentence": "是指训练后的模型对未知数据的预测能力，在实际操作中，通过测试误差来量化模型的泛化能力。",
+        "evaluative_sentence": "目前衡量模型泛化能力最常用的度量指标是困惑度（perplexity）。在本文所构建的数据集中,Q.Q.Yang及L.Poddar等利用对该指标对模型泛化能力进行量化评估，实验中困惑度表示主题词预测的难易程度，值越低说明泛化能力越好[8-79。。",
+        "next_sentence": "此外,万路康等利用 $\\mathrm { P } @ \\mathrm { ~ n } ($ Precision $@$ N)对模型泛化能力进行评估，用以检测前N条预测结果的准确率。"
+    },
+    "34": {
+        "previous_sentence": "",
+        "evaluative_sentence": "<table><tr><td>扩展类型</td><td>时间 (年)</td><td>作者</td><td>模型</td><td>简单描述</td><td>优点</td><td>缺点</td></tr><tr><td></td><td></td><td>元晓青等[6]</td><td>ULLDA</td><td>作者对应的主题分布不再只是由作者结合微博数据特点，使结果通过经验确定主题数目，缺乏考 一人决定，而是根据微博的特点，使相更为精准 关人员的主题分布也能影响该分布</td><td>证</td><td></td></tr><tr><td></td><td>2014</td><td>江雨燕等4</td><td>ART</td><td>以USTM（Upstream Supervised Topic 将引文信息及有监督模型融引用信息涉及一些无效引用等干 Model)和 DSTMDSTM(Downstream Su-入其中 pervised Topic Model)方式构建了文档 作者和引用文献的生成过程</td><td></td><td>扰</td></tr><tr><td></td><td></td><td>Z.Yang等</td><td>ACVT 模</td><td>对作者、论文、被引作者等信息综合建包含更多有价值的上下文信 息</td><td></td><td></td></tr><tr><td></td><td></td><td>M. Morchid等</td><td>TSC</td><td>通过分析TSC的网络结构，揭示主题考虑了作者协作模式 上的协作模式</td><td></td><td>参数设定依据有待验证</td></tr><tr><td></td><td>2015</td><td>王永贵等[44</td><td>UF_AT</td><td>微博特性与AT模型结合</td><td>强</td><td>主题词更加准确，关联性更影响微博用户兴趣的因素考虑不 够全面</td></tr><tr><td>面向特定任务2012</td><td>2016</td><td>J.K.Ha等bg</td><td>AJT</td><td>兼顾作者与期刊主题进行分析</td><td>下文关系</td><td>考虑了相邻引文句之间的上 传统的基于频率的引文分析方法 适用性有待验证</td></tr><tr><td>的改进</td><td></td><td>罗杰斯[3</td><td>ARGT</td><td>引入地理区域的概念,得到主题－区适用于图像数据,拓宽了模在文档层面上没有提出好的概率 域分布</td><td>型适用领域</td><td>模型</td></tr><tr><td></td><td></td><td>W.Luo等[41]</td><td>AGT</td><td>采用了一种适用于多光谱遥感图像的提高了变化区域类别标注的缺少适用的概率图模型 基于颜色和形状特征的特征描述符，精度</td><td></td><td></td></tr></table>",
+        "next_sentence": ""
+    },
+    "35": {
+        "previous_sentence": "是模型输出结构与真实生命系统的特性符合程度的定量表示。",
+        "evaluative_sentence": "C.S.Li等人曾利用灵敏度（sensitivity）刻画模型对单位待评价变量变化所致的响应量变化程度69-7d。除此之外,W.Buntine 对 H.M.Wallach 的left-to-right 算法进行改进,提出了一种新型估计文档集合的似然方法，使得模型评价更具有公平性 。",
+        "next_sentence": ""
+    },
+    "36": {
+        "previous_sentence": "",
+        "evaluative_sentence": "为了相对客观地对其进行评价，有学者借助计算K.M.Schneider 等提出的 PMI( pointwise mutual in-formation)值进行量化,PMI值常用以衡量一对事件共同出现的概率8] 。",
+        "next_sentence": ""
+    },
+    "37": {
+        "previous_sentence": "复杂度具体指算法对应的程序运行时所需资源，可进一步分为时间复杂度和空间复杂度。",
+        "evaluative_sentence": "但基于复杂度的评估方法无法避免的问题在于模型复杂度低并不能代表该模型在语义层面可以得到良好的主题词,因此,H.M.Wallach等在已有评估方法的基础上，提出了包含有效性及正确性在内的两种不同评价维度。",
+        "next_sentence": ""
+    },
+    "38": {
+        "previous_sentence": "",
+        "evaluative_sentence": "查全率、查准率及相关综合评价指标。在本文构建的数据集中，王永贵等借助准确率(precision）、召回率(recall）及结合准确率P和召回率R的综合评价指标F1-Measure对模型正确性进行定量分析。此外,还有X.Xie等利用AUC（Ar-ea Under theROC Curve)指标衡量模型正确性,其中，ROC曲线(纵轴:真正例率TPR;",
+        "next_sentence": "横轴:假正例率FPR)下的面积越大表示模型越精确；"
+    },
+    "39": {
+        "previous_sentence": "",
+        "evaluative_sentence": "该评价角度在实际操作中通常借助一些具体任务进而间接完成对模型的评估，具体而言是利用距离这一可量化的概念反映文档或作者间主题相似性等。",
+        "next_sentence": "如在本文所构建的数据集中,C.S.Li等借助 KL距离(Kullback-Leibler Divergence）b、T.Wang等借助相似度(Similarity）衡量相同空间内两个作者主题概率分布的差异情况;"
+    },
+    "40": {
+        "previous_sentence": "此外,还有T.Zhang等利用斯皮尔曼等级(Spearman Rank）相关系数及皮尔逊相关系数(Pearson Correlation Coefficients）对相关性进行评估。",
+        "evaluative_sentence": "其中,斯皮尔曼等级相关系数认为如果数据中没有重复值，且当两个变量完全单调相关时，值为 $^ +$ 1或-1;",
+        "next_sentence": "而皮尔逊相关系数的取值范围通常在［-1,1]之间。"
+    },
+    "42": {
+        "previous_sentence": "",
+        "evaluative_sentence": "通过上述总结分析发现，不同评价角度对模型衡量的侧重点大不相同，而科研人员在对实验进行评估时往往会人为地根据程序所实现的任务选取相应评价指标，使得不同模型之间的横向比较变得困难。同时，现有研究表明，模型在特定评价指标下表现良好时，在其他方面的性能可能落差较大。以目前常见定量评估指标复杂度为例，若改进模型的复杂度低于现有模型，即表明改进模型的建模思想更为优化。但正如前文所提，该指标存在最大的问题是复杂度的高低并不能代表主题词挖掘结果的好坏。因此,促成了有效性、正确性等众多评价指标的应运而生，尽可能使评价更为公平。但由于模型的应用领域、时间切片划分等差异,截至目前,模型之间的好坏判断依旧没有统一标准。",
+        "next_sentence": ""
+    },
+    "43": {
+        "previous_sentence": "",
+        "evaluative_sentence": "由于AT模型的研究不断深入，目前已被广泛应用到文本挖掘等众多领域。其中，受关注较多的领域包括社交媒体分析、学术文献以及社区发现等。",
+        "next_sentence": "下文将重点介绍AT模型及其改进方法在以上领域中的应用。"
+    },
+    "44": {
+        "previous_sentence": "",
+        "evaluative_sentence": "微博及Twitter作为新媒体的代表,相比传统文档数据而言，其数据更新速度快，且伴有网络用语,不够规范。因此,如何结合社交媒体数据的特点来完成数据分析任务是目前研究热点之一。",
+        "next_sentence": ""
+    },
+    "45": {
+        "previous_sentence": "早期将AT模型应用至社交媒体数据分析主要是根据数据内容进行建模。",
+        "evaluative_sentence": "但该思想忽略了社交媒体数据极强的实时性，未将文本内容与时态相结合，导致模型无法观察主题随时间的变化。此外,由于Twitter 中文本内容长度过短，使得模型无法通过无监督学习获得较为理想的主题分布情况。C.S.Li等提出的ATC（Author-Topic-Community）模型解决了此问题,同时实现了作者兴趣及其社区结构的同步推断。",
+        "next_sentence": "后续还有基于此进行用户兴趣挖掘[4,8d、特定领域微博账号萃取、基于用户兴趣的微博推荐[88-8等研究。"
+    },
+    "46": {
+        "previous_sentence": "",
+        "evaluative_sentence": "此外,由于学术文献不同于博文,通常会附有参考文献、期刊会议等信息。因此，关于会议、引文等相关元素的融入也陆续引起科研人员的关注。如Y.Tu等于2010年提出了融入引用信息的模型(Citation-Author-Topic,CAT）b,该模型同时对论文作者及被引用的作者建模。后续,又有学者就作者影响力的问题进行了延伸思考。",
+        "next_sentence": ""
+    },
+    "47": {
+        "previous_sentence": "社区发现根据分析数据类型的不同，可以划分为社交媒体及科研合作团队两种类型。",
+        "evaluative_sentence": "利用社区发现方法可以有效地发现数据结构及演化过程，有助于科研人员分析数据集中存在的网络结构及其性质，进而了解整个网络的变化趋势，为资源搜索、推荐以及网络结构优化等提供服务。",
+        "next_sentence": "同样,推荐系统也可分为社交媒体及科研领域两类数据，其推荐的依据均为用户/作者的兴趣。"
+    },
+    "48": {
+        "previous_sentence": "上文对AT模型的具体应用进行了总结。",
+        "evaluative_sentence": "尽管AT模型已被不断改进,但由于需求及计算机技术的更新迭代,仍存在一些不足,具体体现在以下4个方面：",
+        "next_sentence": ""
+    },
+    "49": {
+        "previous_sentence": "(1)技术层面:社交媒体的数据规模越来越庞大，并且其数据具有过短的文本长度、快速的更新速度等特点，进而在短时间内产生了大量网络用语及符号语言,使得数据的噪声增大、上下文信息获取不足。",
+        "evaluative_sentence": "上述情况的产生会大大增加AT模型处理数据的难度，导致主题识别效果无法达到预期。",
+        "next_sentence": ""
+    },
+    "50": {
+        "previous_sentence": "",
+        "evaluative_sentence": "(2)特定领域内方法选择层面:AT模型初衷是对科技文献类型的数据进行分析，实现“作者－主题”的关联，以揭示特定学科领域内的某些发展演化规律，且效果较为理想。但在后期应用中发现，AT模型已在社交媒体乃至图像领域有着较为广泛的应用，而在图书情报领域的应用尚不成熟。大多研究更注重算法改进、算法性能提升,但图书情报领域中充分应用AT模型及其改进模型进行主题发现等相关研究的相对较少,特别是国内研究仍有部分停留在应用计量分析软件的层面。",
+        "next_sentence": ""
+    },
+    "51": {
+        "previous_sentence": "",
+        "evaluative_sentence": "(3)数据集选择层面:在AT模型应用于科技文献类型数据的研究中，大部分实验数据来自于语料库或公开数据集,侧重于验证模型的有效性。但考虑通过JCR、中国科学院分区以及特定领域内权威论文、会议评价体系等方法，尽可能全面地确定领域具有代表性的数据集，揭示某一学科或领域演化的研究还不够。",
+        "next_sentence": ""
+    },
+    "52": {
+        "previous_sentence": "",
+        "evaluative_sentence": "（4)缺少模型优劣性评价体系：科研人员通常根据经验或任务特性选择相关评价指标，但所选指标能否客观地衡量模型优劣性依旧是AT模型领域所面临的主要问题之一，如何改进或提出新的评价指标将成为未来研究的重点。",
+        "next_sentence": ""
+    },
+    "53": {
+        "previous_sentence": "",
+        "evaluative_sentence": "综上所述,未来AT模型的相关研究可以向性能优化、模型评价指标体系的规范完善以及在图书情报领域的深度应用3个方面发展：性能优化体现在高效的训练算法,减少时间或空间复杂度等;",
+        "next_sentence": "模型评价体系具体可根据任务性质等角度进行划分，结合任务性质与评价指标的原理，尽可能在领域内对于不同任务的模型评价方法达成一致;"
+    }
+}

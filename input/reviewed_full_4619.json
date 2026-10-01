@@ -1,0 +1,307 @@
+{
+    "1": {
+        "previous_sentence": "",
+        "evaluative_sentence": "摘要相较于其他聚类算法,模型聚类的实证研究结果表现出了独特的优势，越来越受到学界的关注。",
+        "next_sentence": "本文梳理了混合模型文本聚类的相关研究，根据聚类分析的技术路线，主要综述了文本建模、参数建模以及模型推理等三个主要模块,在此基础上总结了特征降维、半监督聚类以及聚类过程的系统整合等不同研究中的共性问题。"
+    },
+    "2": {
+        "previous_sentence": "",
+        "evaluative_sentence": "Abstract Model-based clustering has atracted more and more attention，and empirical studies also showed distinct advantage.This paperreviews thestatusof thedocument clustering basedon mixture models.According to the technical routes,it summarizes three mainparts，such as document modeling，parameter modeling，and model inference，and analysesthe common problems in diferent researches，including featurereduction，semi-supervised clusteringand the integration of clustering process.At last it presents possble future research directions in this field.",
+        "next_sentence": ""
+    },
+    "3": {
+        "previous_sentence": "其中混合模型聚类的基本思想是将聚类问题转化为数学建模问题，即利用简单概率分布的组合模拟复杂概率分布的统计建模方法，一个概率分布代表一个簇的特征分布，概率分布的组合即代表整个数据集的特征分布，核心环节是数据建模与模型推理。",
+        "evaluative_sentence": "相对于判别式方法，混合模型聚类有坚实的概率论基础，通过数据分布的形状与结构而非相似性进行类簇的识别，更具灵活性，而且能够从概率统计的视角为每个簇提供直观的解释，具有良好的理论与应用前景。",
+        "next_sentence": ""
+    },
+    "4": {
+        "previous_sentence": "",
+        "evaluative_sentence": "混合模型研究的早期存在模型推理过于复杂的瓶颈,1977年Dempster等[2]提出的EM算法较好地解决了该问题，促进了该模型在文本处理、生物医学、图像处理以及模式识别等领域的研究与应用，并取得了令人欣喜的成果。",
+        "next_sentence": "基于此，本文聚焦于基于混合模型的文本聚类研究，其流程见图1。"
+    },
+    "5": {
+        "previous_sentence": "聚类评估的相关指标及应用与判别式聚类相同，也不再展开。",
+        "evaluative_sentence": "本文重点综述文本建模、参数建模以及模型推理的相关研究进展。此外，还对混合模型聚类的特征选取、特征抽取（featureextraction）、特征选择（featureselection）、半监督聚类以及聚类过程的系统整合等共性问题进行了总结与展望。",
+        "next_sentence": ""
+    },
+    "6": {
+        "previous_sentence": "(4)在文献阅读过程中根据参考文献不断扩展综述文献的范围，另获得20篇参考文献，最终合计相关文献76篇。",
+        "evaluative_sentence": "根据权威的中国计算机学会推荐的国际学术会议和期刊目录选择了核心文献18篇；",
+        "next_sentence": "在此基础上，根据被引频次、发文量等指标确定了核心作者,如BanerjeeA,ZhongS，MeilaM等,由此得到核心文献19篇，二者去重后共得到核心文献 24篇（附录1），以此为线索，结合另外52篇相关文献完成本文。"
+    },
+    "7": {
+        "previous_sentence": "",
+        "evaluative_sentence": "(1)综述文献的基本设定为：文本集由若干简单概率分布的混合模型生成,每一混合成分对应一个簇，文本属于其中一个(或若干)簇；",
+        "next_sentence": ""
+    },
+    "8": {
+        "previous_sentence": "$\\pmb { D }$ 包含 $\\pmb { K }$ 个簇，即由 $\\pmb { K }$ 个成分的混合模型生成。",
+        "evaluative_sentence": "现有的混合模型都符合朴素贝叶斯假设，即特征维度之间相互独立，文本之间也相互独立。",
+        "next_sentence": "$\\{ d _ { 1 } , d _ { 2 } , \\cdots , d _ { N } \\} \\in \\mathbb { R } ^ { \\ast }$ 可以看做是随机向量 $d _ { n } \\in$ $\\pmb { \\mathbb { R } } ^ { \\pmb { \\mathbb { w } } }$ 的独立实现,从模型中生成 $d _ { n }$ 以及 $\\pmb { D }$ 的概率见公式（1）和公式(2）[3.4]。"
+    },
+    "9": {
+        "previous_sentence": "该类型主要有BM和 $\\mathbf { M M }$ 。",
+        "evaluative_sentence": "其中，BM最早应用于文本分类的文本建模，并且得到了较好的效果[8,9]。",
+        "next_sentence": "BM只考虑项在文本中是否出现,每个特征维度的取值 $d _ { n w } \\in \\{ 0 , 1 \\}$ ，取1表示项 $\\pmb { w }$ 在 $d _ { n }$ 中出现，否则反之。"
+    },
+    "10": {
+        "previous_sentence": "",
+        "evaluative_sentence": "BM与MM未区分项主题表达能力的不同，即某些项与特定主题密切相关，在不同簇上的分布差异明显；",
+        "next_sentence": "而有些项则概念宽泛，在不同簇上的分布类似。"
+    },
+    "11": {
+        "previous_sentence": "而有些项则概念宽泛，在不同簇上的分布类似。",
+        "evaluative_sentence": "对此,Li等[4]基于MM将 $\\theta _ { k }$ 细化为 ${ \\pmb \\theta } _ { T } ^ { k }$ 与 $\\theta _ { G } ^ { k }$ ，分别对应与主题内容相关的主题模型，以及与写作知识相关的通用模型，该方法与经典的MM相比，在Marco-F1指标上提高了 $40 \\%$ ；",
+        "next_sentence": "Bouguila[10]基于BM,引人参数 $\\lambda _ { w }$ 代替 $\\theta _ { k w }$ 表征所有无关特征项，参数 $\\pmb { \\rho } _ { \\pmb { \\ w } }$ 用于表征项 $\\pmb { w }$ 为相关特征项的概率。"
+    },
+    "12": {
+        "previous_sentence": "Bouguila[10]基于BM,引人参数 $\\lambda _ { w }$ 代替 $\\theta _ { k w }$ 表征所有无关特征项，参数 $\\pmb { \\rho } _ { \\pmb { \\ w } }$ 用于表征项 $\\pmb { w }$ 为相关特征项的概率。",
+        "evaluative_sentence": "上述研究归纳起来基本思路都是区分核心（core）项与通用（general)项，研究中具体计算公式虽有差异，但都可以统一于公式（5）。",
+        "next_sentence": "其中， $\\theta _ { k w } ^ { b }$ 为通用项的参数，$\\theta _ { k w } ^ { t }$ 为核心项的参数，系数 $\\pmb \\varepsilon$ 用于平衡两者的效用比重,类似于语言模型中的平滑思想。"
+    },
+    "13": {
+        "previous_sentence": "",
+        "evaluative_sentence": "Salton等[15]的研究表明,对文本向量进行归一化处理能够解决文本长度造成的偏差;",
+        "next_sentence": "Dhillon等[6]的研究显示，基于余弦相似度而非欧氏距离的 $\\mathbf { k }$ -means算法（spk-means）在文本聚类中效果更好。"
+    },
+    "14": {
+        "previous_sentence": "Dhillon等[6]的研究显示，基于余弦相似度而非欧氏距离的 $\\mathbf { k }$ -means算法（spk-means）在文本聚类中效果更好。",
+        "evaluative_sentence": "据此，Banerjee等[1]认为文本向量具有方向性数据(directional data,即 $\\mid \\mid d _ { n } \\mid \\mid = 1 )$ 的特征，并应用vMF（von Mises Fisher）分布完成文本建模[公式(6)][5,17]。",
+        "next_sentence": ""
+    },
+    "15": {
+        "previous_sentence": "",
+        "evaluative_sentence": "研究表明vMF具有鲜明的优点：Banerjee等[17]发现vMF是余弦相似度基于参数模型的一般化，从而理论上vMF模型能在保证聚类质量的同时提升算法效率；",
+        "next_sentence": "Banerjee等[18]的实验表明该模型能够较好地解决高维空间中的簇重叠、簇的分布偏斜、簇规模过小等问题；"
+    },
+    "16": {
+        "previous_sentence": "Mardia等[19]还证实vMF是一种适用于高维空间方向统计的分布。",
+        "evaluative_sentence": "不过, $\\mathbf { v } \\mathbf { M } \\mathbf { F }$ 也具有参数估计困难等缺点，由于参数 $\\pmb { \\kappa }$ 包含贝塞尔方程比值的倒数，这一复杂的非线性公式使得极大似然估计以及 EM算法中的 $M$ 步难以实现[20,21]。对此,Zhong等[1]在研究中采用了一种简化的vMF模型，即每次迭代中所有混合成分的参数 $\\pmb { \\kappa }$ 取值相同，然后逐次增大 $\\pmb { \\kappa }$ 值；",
+        "next_sentence": "Banerjee等[18]则运用 $\\pmb { \\kappa }$ 的近似替代 $\\pmb { \\kappa }$ ，该方法比固定的 $\\pmb { \\kappa }$ 值能得到更好的聚类结果，但是运算效率不高。"
+    },
+    "17": {
+        "previous_sentence": "（1)模型性能。",
+        "evaluative_sentence": "Zhong[]的对比实验显示，在聚类效果方面,大部分数据集上vMF优于MM,后者又优于BM，例如在NG20数据集上三者的NMI指标分别为0.57、0.54、0.19;",
+        "next_sentence": "在运行时间方面，基于NG20数据集在硬分配条件下三者的运行时间分别为 $1 7 . 5 \\mathrm { s } , 3 6 . 7 \\mathrm { s } , 4 3 \\mathrm { s } , \\mathrm { v M F }$ 呈现出良好的时间效率，但在软分配条件下分别为 $7 6 , 8 8 , 4 7 , 7 8 , 7 7 , 8 \\mathrm { s }$ ，显示vMF更容易受分配策略的影响,相比之下MM更具稳定的时间效率。"
+    },
+    "18": {
+        "previous_sentence": "在运行时间方面，基于NG20数据集在硬分配条件下三者的运行时间分别为 $1 7 . 5 \\mathrm { s } , 3 6 . 7 \\mathrm { s } , 4 3 \\mathrm { s } , \\mathrm { v M F }$ 呈现出良好的时间效率，但在软分配条件下分别为 $7 6 , 8 8 , 4 7 , 7 8 , 7 7 , 8 \\mathrm { s }$ ，显示vMF更容易受分配策略的影响,相比之下MM更具稳定的时间效率。",
+        "evaluative_sentence": "总体而言，BM结构简单，但实验结果不够理想。MM时间复杂度较低且聚类效果较好，在实践中取得了广泛的应用。vMF相比前两者模型更加复杂，模型推理的时间复杂度更大，建模效果相对更优，不过尚存部分理论问题有待解决，是目前的研究热点。",
+        "next_sentence": ""
+    },
+    "19": {
+        "previous_sentence": "另外三个数据集也得到了相似的结论。",
+        "evaluative_sentence": "由此可见，BM适合于短文本，而MM更适合于长文本的复杂聚类任务；",
+        "next_sentence": "研究还表明，MM更适合于文本长度变化较大的数据集，而BM则更适合于文本长度比较稳定的数据集。"
+    },
+    "20": {
+        "previous_sentence": "研究还表明，MM更适合于文本长度变化较大的数据集，而BM则更适合于文本长度比较稳定的数据集。",
+        "evaluative_sentence": "Novoviova[22]的研究表明，除非常小的项集之外MM的分类准确率总体上优于BM，MM最高能达到 $9 4 . 9 \\%$ ,比BM平均高 $4 \\%$ ；",
+        "next_sentence": "与BM相似， $\\mathbf { v } \\mathbf { M } \\mathbf { F }$ 也在较短的文本上表现优异[1]。"
+    },
+    "21": {
+        "previous_sentence": "(3)混合模型的综合应用。",
+        "evaluative_sentence": "Zhu等[]提出每个域都由一个最适合的概率模型独立生成的建模思想，构建了域独立聚类模型（FieldIndependentClusteringModel，FICM），分别采用伯努利、多项式分布对不同文本域联合构建混合模型，相比于单一的BM、MM,三者在TREC数据集上的平均NMI分别为0.736、0.714、0.712，从而提示混合模型的综合应用是该领域值得探讨的研究方向。",
+        "next_sentence": ""
+    },
+    "22": {
+        "previous_sentence": "除了上述三种模型之外，早期对于混合模型的研究都是以高斯混合模型（Gaussian Mixture Model,GMM)进行建模，目前仍然应用广泛[23.24]。",
+        "evaluative_sentence": "不过，因为文本的高维与稀疏特征不符合高斯分布，除了Liu 等[25]利用GMM 进行的探索性工作,在文本聚类中鲜见该模型。",
+        "next_sentence": ""
+    },
+    "23": {
+        "previous_sentence": "",
+        "evaluative_sentence": "MM模型难以识别项爆发（burstiness），对此，Madsen等[26]通过参数的先验分布对模型的参数进行建模，提高了建模效果。狄利克雷过程的引人成功地解决了MM以及vMF模型需要预先设定簇数量 $K$ 的不足。",
+        "next_sentence": ""
+    },
+    "24": {
+        "previous_sentence": "",
+        "evaluative_sentence": "其中， $\\alpha = \\{ \\alpha _ { \\mathrm { i } } , \\alpha _ { 2 } , \\cdots , \\alpha _ { w } \\}$ 是狄利克雷分布的参数，该模型的优点弥补了MM无法识别项爆发（burstiness）的缺陷，即项在文本中出现一次后趋向于再次出现，参数 $\\pmb { \\alpha } _ { w }$ 的值越小，项越趋向于爆发，该模型在文本分类的研究中呈现了较好的效果。Elkan[29]鉴于文本的稀疏特性对公式(8)进行了简化，采用 $T ( \\alpha _ { w } )$ 代替 $\\frac { T ( d _ { n w } + \\pmb { \\alpha } _ { w } ) } { T ( \\pmb { \\alpha } _ { w } ) }$ 提出了一种近似的EDCM并应用于文本聚类,在NIPS数据集的对比实验中，EDCM 与 DCM 的 MI分别为0.84364、0.83705，运行时间分别为6.61s $, 7 5 1 . 3 \\mathrm { s }$ ,在聚类效果相差无几的情况下，EDCM的时间复杂度远低于DCM。Bouguila基于广义狄利克雷（generalizedDirichlet）[30]提出了MGDD（Multinomial GeneralizedDirichlet Distribution）[31],该方法与DCM以及 MM在WEBKB数据集上的聚类准确率分别为87.12、84.25、81.16,t检验表明MGDD对聚类的改善效果具有统计上的显著性。该结果提示，广义狄利克雷分布在混合模型文本聚类中的研究与应用是一个可选的方向。",
+        "next_sentence": ""
+    },
+    "25": {
+        "previous_sentence": "$\\pmb { D P }$ 是狄利克雷分布在连续空间上的扩展，通常表示为： $G \\sim D P ( \\alpha , G _ { 0 } )$ ,其中 $G _ { \\mathfrak { o } }$ 是基分布， ${ \\pmb { \\alpha } } ( { \\pmb { \\alpha } } >$ 0)是集中度参数， $G$ 表示在 $G _ { \\mathfrak { d } }$ 和 $\\pmb { \\alpha }$ 上产生的随机分布。",
+        "evaluative_sentence": "DP主要应用于概率模型中作为先验分布以构建狄利克雷过程混合模型（DirichletProcessMixture，DPM）[32]。DPM在文本聚类中有 stick-breaking和中国餐馆过程（Chinese RestaurantProcess,CRP)两种不同的模型构建视角，聚类思想见公式(9)和公式(10)，即文本 $d _ { n }$ 以正比于簇规模的概率属于一个既有的簇，或以正比于 $\\pmb { \\alpha }$ 的概率属于一个新簇,最终得到的参数集 $\\{ \\pmb { \\theta } _ { 1 } , \\pmb { \\theta } _ { 2 } , \\cdots , \\pmb { \\theta } _ { N } \\}$ 提供了聚类的依据[33]。",
+        "next_sentence": ""
+    },
+    "26": {
+        "previous_sentence": "当 $\\pmb { K }$ 值不准确，如设 $K = 1 0$ ,NMI分别为 $0 . \\ 5 3 4 , 0 . \\ 5 1 2 , 0 . \\ 4 8 6 ,$ 0.184、0.482、0.401。",
+        "evaluative_sentence": "从而显示，DPMFP在K值未知的条件下更为稳健。",
+        "next_sentence": "Nguyen等[5]采用stick-breaking基于vMF提出了DPMvMF模型,即假设混合系数 $\\pi = \\left\\{ \\pi _ { k } \\right\\} _ { k = 1 } ^ { \\infty }$ 是一个无穷序列："
+    },
+    "27": {
+        "previous_sentence": "",
+        "evaluative_sentence": "DPM作为一种非参数贝叶斯模型，具有无需预先给定簇数目K以及建模更具灵活性与适应性等优点，在模式识别领域已有较多的研究与应用，但在自然语言处理领域仍处于起步阶段，尤其在混合模型文本聚类中还有一些有待解决的理论与应用问题。",
+        "next_sentence": ""
+    },
+    "28": {
+        "previous_sentence": "",
+        "evaluative_sentence": "HDP。",
+        "next_sentence": "DP可以对一组（group）文本进行聚类与分析，但在聚类多组文本时则显得力不从心，Teh等[35]提出的层次Dirichlet过程（HierarchicalDirichlet Processe，HDP)较好地解决了该问题。"
+    },
+    "29": {
+        "previous_sentence": "分配策略。",
+        "evaluative_sentence": "DPM聚类算法属于硬分配算法，无法处理簇重合的情况。Griffiths等[37]提出的IndianBuffet Processes(IBP)能实现实例同时属于多个簇，而且更适用于稀疏矩阵。该模型在图像处理、网络分析、特征抽取等领域已有一定的应用,相应推理算法的研究已取得较为丰富的成果，但是在自然语言处理领域研究与应用甚少[38]。吸收 IBP的研究成果将其应用于混合模型文本聚类，从而实现DPM的软聚类将是一个重要的研究方向。",
+        "next_sentence": ""
+    },
+    "30": {
+        "previous_sentence": "",
+        "evaluative_sentence": "层次语义聚类。",
+        "next_sentence": "经典的DPM为扁平式方法，《中图法》等诸多分类法的类目体系为层次语义关系，因此，聚类算法需要揭示文本集的层次主题结构。"
+    },
+    "31": {
+        "previous_sentence": "模型整合。",
+        "evaluative_sentence": "DP与其他模型和算法的整合研究与应用已经取得了较好的成效，比如Liang等[41]将HDP与PCFG相结合实现了句法分析中语法标签数量与过拟合间的平衡;Goldwater等[42]将DP与一元语言模型结合用于语音分段，避免了需要预先设定词形（word type)数量的问题,还将HDP与二元语言模型结合，实现上下文依赖的语音分段，在与 NGS的对比实验中，分段准确率分别为72.3、68.3,词形准确率分别为59.1、55.7；在 $\\mathbf { n }$ -gram语言模型中,n越大则模型的表征能力越强，但也更容易出现过度拟合， $\\mathrm { T e h } ^ { [ 4 3 ] }$ 基于Hierarchical Pitman-Yor Processes提出的 HPYCV方法取得了较好的效果。DP与语言模型相结合研究的成果理应为混合模型文本聚类提供新的视角。",
+        "next_sentence": ""
+    },
+    "32": {
+        "previous_sentence": "在公式(2)的基础上,定义隐性变量 $Z = \\left\\{ z _ { 1 } \\right.$ ，$z _ { 2 } , \\cdots , z _ { N } \\} , z _ { n } \\in \\{ 1 , 2 , \\cdots , K \\} , z _ { n } = k$ 表示文本 $d _ { n }$ 所对应的簇为 $k$ ， $\\mid ( d _ { n } , z _ { n } ) \\mid _ { n = 1 } ^ { N }$ 代表完整的数据集，基于完整的对数极大似然公式（或是最大后验概率，公式11）[24]即可进行EM的迭代过程,EM算法的具体描述参见文献［1,2]。",
+        "evaluative_sentence": "在混合模型文本聚类中EM算法多用于有限混合模型的推理,研究主要涉及以下几个方面。",
+        "next_sentence": ""
+    },
+    "33": {
+        "previous_sentence": "混合模型文本聚类中使用最多的分配策略是软分配、硬分配（CEM)以及决定性退火技术（Deterministic Annealing，DA）,分配策略的差异对混合模型存在不同的影响。",
+        "evaluative_sentence": "Zhong等[]对三者进行了实验比较，结果发现大部分数据集中DA优于软分配，后者又优于硬分配，其中DA对vMF的改善更为明显，但在BM中反而有所下降。Meila等[44]比较了基于MM的软分配与硬分配，得到了与Zhong等[]类似的结果。据此，可以得到聚类算法的质量与分配的“柔软度（softness）”相关的推论。在时间复杂度上，Zhong[]对三种分配策略测试的结果显示DA的时间复杂度远高于另外两者，硬分配最低，对vMF的影响尤甚。",
+        "next_sentence": "目前， $z _ { n , k }$ 值的计算大多通过当前参数获得，改进的计算方法则可以通过当前的条件概率密度模拟得到，如随机EM（stochastic EM，SEM）[45]、模拟退火EM与蒙特卡洛$\\mathbf { E M } ^ { [ 4 6 ] }$ 等。"
+    },
+    "34": {
+        "previous_sentence": "$\\pmb { K }$ 值。",
+        "evaluative_sentence": "$K$ 值是混合模型聚类和传统分割式聚类都需面对的问题，已经形成了丰富的研究成果[47]。在混合模型文本聚类中通常也沿用以往的方法对K值进行估计，但为了更好地解决该问题，学界做出了三个方向的探索：一是在模型推理中引入簇的修剪机制，即初始化一个较大的K，经过不断修剪得到最终合适的值;",
+        "next_sentence": "比如,Zeng等[3]在迭代中将 $\\pmb { \\pi } _ { k }$ 值低于最小阈值的成分从模型中剔除，最终得到一个成分数量较为合理的簇结构，而且避免了传统EM的稀疏簇问题。"
+    },
+    "35": {
+        "previous_sentence": "比如,Zeng等[3]在迭代中将 $\\pmb { \\pi } _ { k }$ 值低于最小阈值的成分从模型中剔除，最终得到一个成分数量较为合理的簇结构，而且避免了传统EM的稀疏簇问题。",
+        "evaluative_sentence": "Figueiredo等[48]基于类似的机制改变了传统EM算法的极大似然估计或最大后验概率估计，尝试采用最小信息长度（MML)准则来平衡模型复杂度与拟合质量，也得到了较好的结果。该方法能够自动选择簇的数目，且不需要精确的初始化，同时避免了参数空间的边际问题。",
+        "next_sentence": "二是采用基于混合模型的凝聚式聚类[21.44]或分割式聚类[49],通过层次式方法避免 $\\pmb { K }$ 值确定问题；"
+    },
+    "36": {
+        "previous_sentence": "特征空间的影响。",
+        "evaluative_sentence": "Rigouste等[13]的实验表明，特征维度的减少能降低模型推理结果的困惑度（Perplexity），并且能明显增强参数估计的稳定性，减少初始化条件对算法的影响。",
+        "next_sentence": "基于此，Rigouste等提出了两种策略：一是根据词频对词表进行分区，从最小分区开始在迭代过程中逐步增大词表规模；"
+    },
+    "37": {
+        "previous_sentence": "二是舍弃稀疏词，通过多次实验选择最佳结果所对应的词表。",
+        "evaluative_sentence": "在后续研究中Rigouste等[5o]进一步尝试将两种策略相结合，得到了更优的结果。",
+        "next_sentence": ""
+    },
+    "38": {
+        "previous_sentence": "",
+        "evaluative_sentence": "作为马尔可夫链－蒙特卡洛方法族的一员，吉布斯抽样为DPM混合模型的推理提供了非常有效的方法[51],研究表明该方法在优化模型聚类效果方面优于EM算法:52,53],算法的具体描述参见文献[54]。Rigouste等[13]在基于多项式混合模型的文本聚类中运用了吉布斯抽样以及Rao-Blackwellized吉布斯抽样；",
+        "next_sentence": "结果证明,Rao-Blackwellized抽样效果优于吉布斯，且收敛更快;"
+    },
+    "39": {
+        "previous_sentence": "吉布斯抽样与EM算法相近,但后者更加依赖于初始化。",
+        "evaluative_sentence": "Huang等[]在基于多项式分布的DPM文本聚类中运用了Blocked吉布斯抽样,该方法将特征组成若干块（Block）,在迭代过程中每次更新一个块中的特征，与吉布斯相比收敛速度有所提高，当特征间相互依赖时，该方法更有效率。",
+        "next_sentence": ""
+    },
+    "40": {
+        "previous_sentence": "",
+        "evaluative_sentence": "吉布斯抽样由于灵活、简单且易于实现等特点被广泛应用，但也存在MCMC方法两个主要的不足： $\\textcircled{1}$ 收敛速度缓慢，计算花销大；",
+        "next_sentence": "$\\textcircled{2}$ 收敛状态难以确定[55]。"
+    },
+    "41": {
+        "previous_sentence": "$\\textcircled{2}$ 收敛状态难以确定[55]。",
+        "evaluative_sentence": "尤其在处理大规模文本时算法时间复杂度更高，因而DPM的进一步推广有赖于推理算法的改进或者模型的简化。",
+        "next_sentence": "相关的探索有： $\\mathbf { L i u } ^ { [ s 6 ] }$ 提出的Collapsed吉布斯抽样，是对一部分随机特征进行积分从而加快收敛速度。"
+    },
+    "42": {
+        "previous_sentence": "相关的探索有： $\\mathbf { L i u } ^ { [ s 6 ] }$ 提出的Collapsed吉布斯抽样，是对一部分随机特征进行积分从而加快收敛速度。",
+        "evaluative_sentence": "Gilks等[]提出的基于DPM的split-merge 抽样算法实现了在一个步骤中批量更新多个变量，但该方法在更新变量的过程中并未使用马氏链中的所有信息，导致了收敛速度慢以及碎片类的问题。基于Collapsed吉布斯，丁轶群[58]提出了自适应分裂合并抽样算法（Adaptivesplit-mergesampler，ASM）并将其运用于文本主题建模，实证表明ASM能有效提高收敛速度，解决了split-merge抽样算法的碎片类问题，并且得到更优",
+        "next_sentence": ""
+    },
+    "43": {
+        "previous_sentence": "",
+        "evaluative_sentence": "相对于EM、吉布斯抽样，变分推理是一种确定性近似推理方法，在混合模型文本聚类中应用较多的是均值场变分推理，算法的具体描述参见文献[59]。",
+        "next_sentence": ""
+    },
+    "44": {
+        "previous_sentence": "DPM中的应用。",
+        "evaluative_sentence": "Huang等[7]在多项式分布的DPM文本聚类中将均值场变分[]与Blocked 吉布斯做了对比，聚类结果的NMI分别为0.945、0.979，变分方法准确率略低于抽样方法，时间维度吉布斯方法运行20次需要3小时，而变分方法只需10分钟，后者远优于前者;",
+        "next_sentence": "Nguyen等[5在DPM文本聚类中采用了一种改良的均值场变分方法，也得到了较好结果。"
+    },
+    "45": {
+        "previous_sentence": "Nguyen等[5在DPM文本聚类中采用了一种改良的均值场变分方法，也得到了较好结果。",
+        "evaluative_sentence": "变分推理除了时间方面的优势之外，计算也更为方便[61],在各种应用中表现出了较好的泛化性能，即无论参数估计还是非参数估计都能得到满意的结果[59]。相关研究的例子如,Fan等[32]基于狄利克雷分布的DPM（即无限狄利克雷混合模型）从stick-breaking模型的视角进行建模，提出运用变分方法进行模型推理，在仿真数据、图像检测、视频分类等数据集中的试验都得到了较好效果。Ma等[62]把伽马分布作为狄利克雷分布的参数先验，用若干相互独立的伽马分布近似参数的先验分布与后验分布，在仿生数据实验中该方法优于EM算法。",
+        "next_sentence": ""
+    },
+    "46": {
+        "previous_sentence": "",
+        "evaluative_sentence": "在线变分推理。",
+        "next_sentence": "在线变分推理是变分方法的一个研究方向，最早用于LDA以及HDP主题模型[63,64]。"
+    },
+    "47": {
+        "previous_sentence": "",
+        "evaluative_sentence": "非共轭模型。",
+        "next_sentence": "均值场变分方法存在一些潜在的不足[59,68]： $\\textcircled{1}$ 无法识别隐藏变量间的关系；"
+    },
+    "48": {
+        "previous_sentence": "在DPM推理中则多使用吉布斯抽样与变分推理。",
+        "evaluative_sentence": "就性能而言，多数实验结果表明,吉布斯抽样与变分推理优于EM;",
+        "next_sentence": "当测试条件为小样本时，吉布斯抽样的推理效果优于变分推理，但面对大样本时,Gao等[72]的结果表明变分方法更能适应大规模数据集的情况；"
+    },
+    "49": {
+        "previous_sentence": "非批量式算法。",
+        "evaluative_sentence": "经典的推理算法均为批量式方法，即在每次迭代过程中都需要遍历完整数据集对模型参数进行更新，当面对大规模高维度数据集时，时间复杂度较高，且推理效果没有必然优势。Zhong[73]认为在线参数更新能够改善模型效果，且更适合于数据流环境，Nigam等[74]研究表明增量式方法比批量式方法效果更好，Rigouste等[13]的特征增量式EM算法也证明了这一点。这些研究启示可以从增量式视角改进混合模型聚类研究。",
+        "next_sentence": ""
+    },
+    "51": {
+        "previous_sentence": "",
+        "evaluative_sentence": "从文本建模、参数建模、模型推理的研究文献中可以发现：参数建模中的狄利克雷过程可以应用于连续型以及离散型混合模型,模型推理中的EM算法、变分推理以及马尔可夫链－蒙特卡洛方法也可以应用于两类文本建模方法之中，从而展现出三者间交叉组合的技术特点，也突显出混合模型聚类的灵活性。Zhong[]比较了EM算法在不同模型中的性能,Fraley 等[52.53]比较了推理算法在单一文本建模方法中的性能，三种推理算法在两类文本建模中的性能比较尚缺乏实证证据，将成为本文进一步的研究方向。此外，在文本建模、参数建模以及模型推理研究中尚存在一些共性的问题。",
+        "next_sentence": ""
+    },
+    "52": {
+        "previous_sentence": "在自然语言处理的早期，文本特征通常表示为词袋模型，即将其看作是一系列独立项的集合，忽略其词序、语法与句法，项相互独立，即一元语言模型。",
+        "evaluative_sentence": "研究者已经发现一元项对主题的表征能力有限，吴夙慧等对此进行了系统的梳理[76]。在混合模型文本聚类中，多数研究者仍主要采取一元模型，文本表示的相关探索甚少，少量的研究如Liu等[25]基于GMM同时使用项、命名实体以及词组构建文本特征向量，相比使用单一的项聚类效果有所提高。该研究提示，在混合模型文本聚类中可以借鉴传统聚类通过短语、项共现、主题等从语义层面揭示文本内容、提高文本表征准度的做法。",
+        "next_sentence": "在文本内容特征之外,也可以考虑诸如用户标注[77]、链接或引用等相关信息，从多特征的视角选取更丰富的文本表征信息。"
+    },
+    "53": {
+        "previous_sentence": "",
+        "evaluative_sentence": "文本集大多是稀疏的大规模、高维度数据，混合模型文本聚类在高维空间的表现往往并不理想[78],在实际应用中需要借助特征选择与特征抽取等降维技术减少特征维度。",
+        "next_sentence": ""
+    },
+    "54": {
+        "previous_sentence": "在文本聚类领域广泛使用的特征抽取方法包括LSA、PLSA、LDA等。",
+        "evaluative_sentence": "Masada等[79]比较了LDA、PLSA以及随机映射的降维效果,实验表明LDA与PLSA比随机映射提供了更好的聚类结果，但二者之间效果差异不大，LDA模型推理的时间复杂度较大。Nguyen等[8]提出了基于项聚类的降维思路，该方法与文本频率（DF）、项共现（TC）、LSA等方法比较显示：其效果远优于DF和TC，与LSA相差不大，且在部分试验中优于LSA;",
+        "next_sentence": "该方法的不足是对初始化较为敏感，与LSA的共同点是子主题的数量需事先确定。"
+    },
+    "55": {
+        "previous_sentence": "该方法的不足是对初始化较为敏感，与LSA的共同点是子主题的数量需事先确定。",
+        "evaluative_sentence": "Pessiot等[7]认为在同一上下文中出现相同频次的共现项则语义相关，以此对特征项进行分类实现降维，基于该方法的MM与原始MM、基于PLSA的MM、PLSA以及LDA在NG20测试集上平均准确率与运行时间分别为 $0 . 4 \\AA , 2 0 \\mathrm { m i n }$ ，",
+        "next_sentence": ""
+    },
+    "56": {
+        "previous_sentence": "",
+        "evaluative_sentence": "$0 . 3 5 \\ 、 1 0 \\operatorname* { m i n } , 0 . 4 \\AA , 5 \\operatorname* { m i n } , 0 . 4 \\AA , 3 \\operatorname* { m i n } , 0 . 3 2 \\AA , 3 0 \\operatorname* { m i n }$ ,该方法与PLSA聚类准确性相当，但不具备时间优势，从而提示PLSA的特征抽取效果总体最优。",
+        "next_sentence": ""
+    },
+    "57": {
+        "previous_sentence": "",
+        "evaluative_sentence": "特征选择。",
+        "next_sentence": "常见的特征选择方法有文本频率（DF）、项共现（TC）、项强度（TS）以及信息熵（En）等。"
+    },
+    "58": {
+        "previous_sentence": "",
+        "evaluative_sentence": "上述研究可见，特征选择与特征抽取方法在实现降维的同时都不同程度地改进了聚类效果；",
+        "next_sentence": "特征抽取的相关研究结果显示PLSA以及LSA的聚类效果更值得期待；"
+    },
+    "59": {
+        "previous_sentence": "文本往往包含部分标签，或是其他约束条件，这类附加信息在半监督聚类中可以作为种子（即初始化条件）、限制(聚类过程中标签不变)或是反馈（聚类结束后根据标签进行调整)等用于改善聚类质量。",
+        "evaluative_sentence": "Basu等[81]基于skmeans的对比实验发现，限制方法与种子方法效果相当;",
+        "next_sentence": "Zhong[75]基于MM的实验表明，在标签完整的情况下，限制方法优于其他两种；"
+    },
+    "60": {
+        "previous_sentence": "当标签不完整，甚至无法包括所有簇的情况下，反馈方法聚类效果更优。",
+        "evaluative_sentence": "半监督聚类的重点在于发现未标签文本中的新簇，Zhong[75]提出了采用多元聚类或是条件信息瓶颈方法的思想。两项研究中使用的特定种子、限制或是反馈方法只是众多可能的设计之一，后续的研究中可以考虑采用其他特定方法或是将多种方法融合应用。",
+        "next_sentence": ""
+    },
+    "61": {
+        "previous_sentence": "相关研究表明，特征选择 $\\mathbf { \\nabla } _ { \\mathbf { \\nu } _ { \\mathbf { \\lambda } } } K$ 值确定以及模型推理等几个步骤之间存在相互影响[82]，因而，将特征选择、 $K$ 值确定融合到模型推理过程中，在模型迭代推理的同时特征空间以及 $\\pmb { K }$ 值也相应地调整变化，将模型推理的过程整合为一个动态系统。",
+        "evaluative_sentence": "Law等[4]、Kersten等[83]将 $\\pmb { K }$ 值确定、特征选择融入到了EM算法中,在与 SFFS-EM[84]、 $\\mathbf { R S E M } ^ { [ 8 5 ] }$ 等方法的比较中，其运行时间以及聚类质量都有较好的表现；Constantinopoulos等[8]在变分推理中将模型选择与特征选择相结合，同时得到聚类个数与特征显著性程度，实验结果表明该方法在高维稀疏数据集上更加稳健。变分方法在模型推理中融入了模型选择与特征选择，例如Fan等[87]把基于簇分割的 $\\pmb { K }$ 值选择[88]融合到DM的变分推理中，在文本聚类的实验中该方法的聚类准确率优于其他。上述研究显示聚类过程的系统整合能够有效的提高聚类效果，不过该领域的研究与实验尚少，有待深人探讨。",
+        "next_sentence": ""
+    },
+    "62": {
+        "previous_sentence": "具体的研究路径可以是模型的复杂化，例如引入新参数用于特征选择，增加模型层次进行参数建模，或是不同模型的综合应用等。",
+        "evaluative_sentence": "目前，混合模型都受到严格的独立性假设的制约，对簇之间、文本之间以及特征之间的依赖关系建模是进一步的研究方向。另一条研究路径是模型的简化，随着模型越来越“精密”，推理计算的可行性以及易行性是必须面对的问题,例如vMF中参数 $\\pmb { \\kappa }$ 以及DPM，在提高计算效率的同时，增加模型的稳定性。此外，更加开拓性的方向是尝试新的混合模型，根据文本的性质,在vMF的基础上进一步对球形分布[89]进行拓展研究。",
+        "next_sentence": ""
+    }
+}

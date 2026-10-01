@@ -1,0 +1,52 @@
+{
+    "1": {
+        "previous_sentence": "",
+        "evaluative_sentence": "[Abstract）Latentsemanticanalysis is the theoretical basisofnatural language infomationretrieval systemusedinbuilding the spacevector model to judgetheretrieval system pefomance.Thispaper discusedonlatentsemantic indexing(LSI）of the basiccontent，LSIundertheimpactofnaturallanguage searchof precisionfactorsandvectorspace modelretrievalsofwareoperat ing mechanism·Thiscommentaryonthenetwork of informationretrieval technology hasplayedacertainroleinthereference·",
+        "next_sentence": ""
+    },
+    "2": {
+        "previous_sentence": "在互联网世界里，各种搜索引擎和网络数据库也在日益广泛地应用自然语言。",
+        "evaluative_sentence": "但是自然语言本身存在的缺点影响了整个检索体系的检索效果，自然语言存在着同义词、近义词、多义词以及其他有着相互关系的语词，这些语词缺乏规范化处理，语词之间缺乏概念显示的语义关系，或者说语词之间语义关联性差，当用户采用的提问式具有多意义概念表达时，使用一个自然语言检索词，必然会影响输出结果的查准率。为此，学者们积极开展研究，先后提出了词干法（Stemming）、控制词表法（Controlled Vo\"cabularies）等解决方法，但由于这些方法的实质依然是关键词匹配，改进非常有限，从而无法根本上解决查准率低的问题[1]。1988 年，Dumais ST．等人提出了一种新的信息检索代数模型：潜在语义标引 (Latent Semantic Indexing LSI)模型，实现了基于概念的语义检索，较好地解决了自然语言检索问题，提高了检索系统的准确率[2]。",
+        "next_sentence": ""
+    },
+    "3": {
+        "previous_sentence": "这些语义结构的表现形式可以通过统计文献中存在的标引词的词频来展示。",
+        "evaluative_sentence": "美国康奈尔大学的Salton等人建立了潜在语义标引的向量空间模型，他们将文献及用户查询语句表示成标引词权重的向量，形成了文献一一—标引词矩阵[3]。",
+        "next_sentence": ""
+    },
+    "4": {
+        "previous_sentence": "由于文献中存在着许多同义、近义、多义等自然语言词语，因此，抽取的标引词之间就不可避免地存在着相互的联系，从而，标引词向量之间存在着“斜交”的情景。",
+        "evaluative_sentence": "若全然忽略这样的斜交可能，即忽略文献之间的相互联系，必然使得检索效果产生很大的偏差[4]。",
+        "next_sentence": ""
+    },
+    "5": {
+        "previous_sentence": "",
+        "evaluative_sentence": "$E _ { S }$ 矩阵是文献一—标引词矩阵 $E$ 的近似矩阵，表示着将文献向量从一个高维度空间降低到了一个低维度空间内，这样减少了高维度 $E$ 矩阵中的“噪声”因素，增强了文献与标引词之间的语义关联度，大大提高了自然语言检索的查准率。$S$ 值的大小是衡量文献检索质量和文献检索效率的关键指标。",
+        "next_sentence": "设 $z _ { s + 1 } + z _ { s + 2 } + . . . . . . + z _ { s + r } < \\mathfrak { s } ^ { 2 }$ ，则："
+    },
+    "6": {
+        "previous_sentence": "由上式可知：选取适当的 $S$ 值，对应适当的ε，可以使得 $E$ 和 $E _ { S }$ 近似度最大。",
+        "evaluative_sentence": "一方面， $S$ 值应该足够大，能够适合所有的潜在语义结构，即可以包括所有现实的结构信息。但是又不能太大，因为如果太大，则接近于标准的向量空间模型，失去它可以表示词相依性的能力，同时存在“噪声”，这就给检索带来新的问题。另一方面， $S$ 值应该足够小，小到可以忽略取消错误和不重要的细节；",
+        "next_sentence": "但是如果太小，则不能适应样本的误差，保留下来的语义结构太少，无法把握运算的结果，分辨文献或语词的能力不足[6]。"
+    },
+    "7": {
+        "previous_sentence": "即：文献向量中的元素权值与用户提问向量中的对应元素权值的乘积之和。",
+        "evaluative_sentence": "和值越大，说明文献向量和用户提问向量的相似度越大，文献检索的查准率越高。",
+        "next_sentence": ""
+    },
+    "8": {
+        "previous_sentence": "即：文献向量中的元素权值与用户提问向量中的对应权值的最小分量数值之和。",
+        "evaluative_sentence": "和值越大，说明文献向量和用户提问向量的相似度越大，文献检索的查准率越高。",
+        "next_sentence": ""
+    },
+    "9": {
+        "previous_sentence": "当两向量完全重合时，说明相似度最大。",
+        "evaluative_sentence": "为了提高文献检索的查准率，必须将相似度的阈值提高到一定的程度，这样相似度高于阈值的文献按照相似度由大到小的顺序排列输出，确保了被检文献的高准确率[7]。",
+        "next_sentence": ""
+    },
+    "11": {
+        "previous_sentence": "",
+        "evaluative_sentence": "目前，向量空间模型检索软件研究处在快速发展的阶段，其中开发最为成功的案例是美国Comell大学研制的smart 概率模型inquery，该软件实现了词项统计加权策略，优化了query 的相关性反馈技术。",
+        "next_sentence": "系统在unix上开发，可以依照建立索引库之前准备的一组需要装库的记录文件和一个装库的描述文件(Spec)，对格式化的文本文件建立索引库。"
+    }
+}

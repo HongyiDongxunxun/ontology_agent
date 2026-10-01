@@ -19,6 +19,13 @@ class LLMConfig:
     model: str = os.environ.get("LLM_MODEL", os.environ.get("B2_LLM_MODEL", "deepseek-v4-flash"))
     base_url: str = os.environ.get("DEEPSEEK_BASE_URL", os.environ.get("B2_LLM_BASE_URL",
         os.environ.get("LOCAL_MODEL_ENDPOINT", "https://api.deepseek.com")))
+    # Agent 5 can be routed to a separate OpenAI-compatible endpoint/model.
+    # Empty environment variables deliberately fall back to the shared defaults.
+    model_verification: str = os.environ.get("LLM_MODEL_VERIFICATION",
+        os.environ.get("LLM_MODEL", os.environ.get("B2_LLM_MODEL", "deepseek-v4-flash")))
+    base_url_verification: str = os.environ.get("DEEPSEEK_BASE_URL_VERIFICATION",
+        os.environ.get("DEEPSEEK_BASE_URL", os.environ.get("B2_LLM_BASE_URL",
+            os.environ.get("LOCAL_MODEL_ENDPOINT", "https://api.deepseek.com"))))
     temperature: float = 0.0
     max_tokens: int = 4096
     timeout: int = 60
@@ -35,6 +42,9 @@ class LLMConfig:
         os.environ.get("DEEPSEEK_API_KEY_L3", os.environ.get("B2_LLM_API_KEY", "")))
     api_key_relation: str = os.environ.get("DEEPSEEK_API_KEY_RELATION",
         os.environ.get("DEEPSEEK_API_KEY_EXTRACTION", os.environ.get("B2_LLM_API_KEY", "")))
+    api_key_verification: str = os.environ.get("DEEPSEEK_API_KEY_VERIFICATION",
+        os.environ.get("DEEPSEEK_API_KEY_RELATION",
+            os.environ.get("DEEPSEEK_API_KEY_EXTRACTION", os.environ.get("B2_LLM_API_KEY", ""))))
     api_key: str = os.environ.get("DEEPSEEK_API_KEY", os.environ.get("B2_LLM_API_KEY", ""))
 
 @dataclass

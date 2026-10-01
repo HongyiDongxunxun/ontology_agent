@@ -1,0 +1,132 @@
+{
+    "1": {
+        "previous_sentence": "",
+        "evaluative_sentence": "Abstract This papermainly sums up the research of tag recommendation methods in the social tagging system: Firstlyit analyzes the characters of tag recommendation in the social tagging system, and concems on the articles in this field based on types of the recmmendation methods Finallys the devebpment trends of research on tag recommendation methods in the social tagging system are forecast",
+        "next_sentence": ""
+    },
+    "2": {
+        "previous_sentence": "",
+        "evaluative_sentence": "Del icio us CiteUlike YouTube Flickr等社会标注系统不断涌现，其充分体现web2.0时代集体智慧，合作共享的精髓，吸引了广泛的用户兴趣。",
+        "next_sentence": "这些社会标注系统允许用户自由地对网络资源添加自定义标签进行标注，对网络资源进行自组织、分类及与他人共享。"
+    },
+    "3": {
+        "previous_sentence": "标签是用户根据各自需求、偏好对感兴趣的资源的注释，是用户为资源添加的自定义关键词。",
+        "evaluative_sentence": "为了更好地帮助用户标注资源，便于个人资源的浏览、回顾、组织、管理、检索及与他人的共享，诸多社会标注系统，在用户标注资源时提供推荐机制，为用户，尤其为没有标注经验的新手推荐适于标注给已知资源的一系列候选标签。",
+        "next_sentence": ""
+    },
+    "4": {
+        "previous_sentence": "$\\mathrm { F } _ { \\colon } = \\{ \\mathrm { U } ,$ TR,Y的四元组，其中U表示用户，T表示标签，R表示资源，Y∈ UU TU R表示为 U,T R间的关系。",
+        "evaluative_sentence": "多维和关系复杂性为推荐方法的设计、运用增加了困难，但是却补充了对资源特点的多层面描述。",
+        "next_sentence": ""
+    },
+    "5": {
+        "previous_sentence": "",
+        "evaluative_sentence": "传统电子商务系统中通常利用评级结果进行推荐，然而评级打分的方式增加了用户的负担，用户通常不愿或敷衍打分，导致评分数据缺乏或可信度不足，而社会标注系统中，很少使用评级的方式。标签是用户主动添加的，这一标注行为也可被看作是一种打分方式，而且它增添了更多语义，能从多个层面揭示资源特点，表达用户兴趣。但是标签具有随意性，语义模糊等特点，标注中存在大量同义、误拼的冗余标签，因此社会标注系统中的标签推荐要进行语义消歧，过滤冗余，从而提供高质量的标签满足用户需求。",
+        "next_sentence": ""
+    },
+    "6": {
+        "previous_sentence": "",
+        "evaluative_sentence": "社会标注系统中的标签推荐方法的研究侧重于理论与应用相结合的实证研究，更多关注于利用用",
+        "next_sentence": ""
+    },
+    "8": {
+        "previous_sentence": "Leandro BalbyMarinho等将保存用户信息的原始矩阵映射为二元矩阵，选出标注已知资源的用户集，计算其相似度，通过用户一资源或用户一标签矩阵确定邻居，聚合邻居标注已知资源的标签并用活跃邻居的相似度确定权重，加和每个特殊标签权重,降序排列,生成推荐标签[1]。",
+        "evaluative_sentence": "该文利用来自Lastf的数据，测试比较了全局出现频率最高的标签、最流行的标签、基于用户一资源矩阵和基于用户一标签矩阵的协作过滤方法的推荐标签，发现基于用户一标签矩阵的协作过滤对推荐结果有所促进，但其数据集考虑的是被标注10个标签以上的资源，而且仅测评了召回率，具有局限性。",
+        "next_sentence": ""
+    },
+    "9": {
+        "previous_sentence": "",
+        "evaluative_sentence": "混合推荐协作过滤将基于资源和用户的协作过滤方法融合在一起提供个性化推荐服务，在现有部分研究中还融合了聚类技术、数据挖掘技术，有助于消除冗余，识别有价值的个性化标签。",
+        "next_sentence": "Robert $\\mathrm { G r a ^ { - } }$ ham等设计了交互标注推荐系统Plurality该系统对于未标注的文献通过找到前10篇最相关文献，通过基于标签集和用户兴趣模型的 $\\mathrm { T F } ^ { \\ast }$ DF测量排序标签，应用传统信息检索技术和基于特定启发规则对基于用户标签和交互历史的用户标注风格进行建模[2]。"
+    },
+    "10": {
+        "previous_sentence": "Robert $\\mathrm { G r a ^ { - } }$ ham等设计了交互标注推荐系统Plurality该系统对于未标注的文献通过找到前10篇最相关文献，通过基于标签集和用户兴趣模型的 $\\mathrm { T F } ^ { \\ast }$ DF测量排序标签，应用传统信息检索技术和基于特定启发规则对基于用户标签和交互历史的用户标注风格进行建模[2]。",
+        "evaluative_sentence": "Andriy Shepitsen等研究基于聚类的个性化资源推荐，利用非个性化推荐方法生成推荐资源集，利用用户兴趣描述和标签聚类对标签重新排序，前提是通过程序能生成标签聚类w该研究探索了基于情境的层次聚类资源推荐，发现聚类标签比单个标签能更能有效识别用户兴趣。",
+        "next_sentence": "评估实验使用Delicio us Lastf数据比较基于层次聚类与基于 $\\mathrm { K } ^ { - }$ means聚类的方法，发现层次聚类对推荐结果改进效果更好，并发现基于上下文的聚类方法有助于改进数据稀疏问题[3]。"
+    },
+    "11": {
+        "previous_sentence": "协作过滤的标签推荐方法依赖于用户标注的历史数据，用户兴趣、偏好,结合用户兴趣模型的分类、挖掘能够更好地推荐个性化标签，发现用户兴趣的转移，发现新的知识。",
+        "evaluative_sentence": "但其标签推荐质量也取决于历史数据，如果已知用户是新用户没有标注记录，其要标注的资源也没有其他用户标注过，或是标注数据数量庞大但用户间关系稀疏，几乎没有联系，就无法构建近邻关系，得到推荐结果，从而出现冷启动或数据稀疏的问题。",
+        "next_sentence": ""
+    },
+    "12": {
+        "previous_sentence": "社会标注系统标注资源的类型多样，包含书签（Connotea)、照片（Flickr)、音乐（Last fn）、URL(Delicio us)等等。",
+        "evaluative_sentence": "因此针对不同类型资源的标签抽取方法也有不同，当前已在文本、网页及图片类型的标注系统中进行了一定的研究。",
+        "next_sentence": ""
+    },
+    "13": {
+        "previous_sentence": "AndrewByde等发展了基于两种网页相似度测量即基于内容和基于标签的标签推荐方法，推荐的标签是对已知资源内容分析得到的或来自用户使用过的常用标签。",
+        "evaluative_sentence": "比较发现基于内容的推荐优于基于标签的标签推荐方法[6]。",
+        "next_sentence": ""
+    },
+    "14": {
+        "previous_sentence": "Pieipaol Basile等通过用户兴趣和基于内容的方法过滤信息，通过获得用户兴趣描述模型的文档和基于Wordnet数据库的语义消歧进行内容分析提取用户偏好和兴趣并使用贝叶斯分类，根据用户偏好为文档推荐最适合的标签[10]。",
+        "evaluative_sentence": "从以上研究可以发现基于资源内容的方法通常用于与用户兴趣描述模型结合提供给用户个性化的标签。",
+        "next_sentence": ""
+    },
+    "15": {
+        "previous_sentence": "基于图片内容的标签推荐方法是先找到与已知用户要标注的图片相似的图片集，然后主要对图片集的视觉属性进行抽取，多数研究针对来自Flickr的图片数据进行测试。",
+        "evaluative_sentence": "MathiasLux等在基于计算相似标签的基础上，根据共现关系找出相关标签，找到相关标签注释的图片，抽取每幅图片的特征包括颜色、纹理或局部属性等,对其进行模糊分类生成列表，并计算成员度作为推荐相关性依据[11]。A shton Anderson等构建应用于Flickr的结合语义和视觉属性的标注推荐工具 TagEz该系统由语言、视觉和聚合组件组成，语言组件利用非对称共现测量方法，计算出共现标签的最相关标签，运用投票（Vote)、加和（Sum)及推销(Promotion)策略聚合相关标签;",
+        "next_sentence": "视觉组件对图片内容和标签间的相关性进行学习，通过信息检索Bordavoting算法对语言和视觉组件返回的候选标签进行聚合，该系统使用Flickr数据评估了系统性能[12]。"
+    },
+    "16": {
+        "previous_sentence": "视觉组件对图片内容和标签间的相关性进行学习，通过信息检索Bordavoting算法对语言和视觉组件返回的候选标签进行聚合，该系统使用Flickr数据评估了系统性能[12]。",
+        "evaluative_sentence": "EmilyMoxley等则构建基于Flickr的基于地理标注图片的标签推荐系统 SpirifTagger系统查找与已知图片在地理区域相似的图片集，挖掘相似图片集的标签并从图片抽取可视信息，最后通过标签的局部词频和藓阙频比较蔗得权值ww.cnki.net",
+        "next_sentence": ""
+    },
+    "17": {
+        "previous_sentence": "由于图片具有注释和说明的文本因此可以结合对文本内容和图片可视属性的抽取进行标签推荐。",
+        "evaluative_sentence": "基于资源内容的标签推荐能直接揭示资源的属性特点，可以较好的解决数据稀疏和冷启动问题，特别是它可以为系统中没有标注记录的新资源和新用户推荐标签，并且与用户兴趣描述模型结合能提供更具个性化的标签。",
+        "next_sentence": ""
+    },
+    "18": {
+        "previous_sentence": "",
+        "evaluative_sentence": "(1)Penalty-Reward ZhichenXu等提出高质量的标签要具有规范化、高流行度、高概括性、省力、类型具有排他性的标准，并基于这些标准提出采用Pen-alty一Rewad算法结合基于用户标注的标签质量和数量及用户权威值方法的推荐方法。",
+        "next_sentence": "基本思想是迭代选择出通过标注标签用户权威分值计算得到的带有高附加贡献的标签。"
+    },
+    "19": {
+        "previous_sentence": "在此过程中要对标签进行标准化，及根据标签流行度要赋予最近标注的标签较高的权值。",
+        "evaluative_sentence": "其结合 MyWeb 20数据评估了算法的有效性[14]。",
+        "next_sentence": ""
+    },
+    "20": {
+        "previous_sentence": "FolkRank基于随机冲浪模型，考虑边的权重及权重的传递[15]。",
+        "evaluative_sentence": "Robert Jäschke等利用 Del icio us Lastfm、BibSonomy的数据评估了最流行标签、标注资源的最流行标签、适应性PageRankFolkRank基于用户 一标签的协作过滤和基于用户一资源的协作过滤几种标签推荐方法，评估发现最流行标签适于解决冷启动问题，而基于图的folk rank在BibSonomy的数据评估中性能较高[16]。",
+        "next_sentence": ""
+    },
+    "21": {
+        "previous_sentence": "主要是从资源URL地址、文献内容、外链地址、外链内容抽取出的权值大的词，使用 $\\mathrm { T F } ^ { \\ast }$ IDF计算词的权重。",
+        "evaluative_sentence": "标签的能量是通过被标注而激活扩散，能量随之传递给相关标签并被存储，因此推荐的标签具有更高的能量。",
+        "next_sentence": "方法基于标签的标注使用记录运用有限循环和能量阈值进行了相关探索[17]。"
+    },
+    "22": {
+        "previous_sentence": "将标注系统中的三元组数据关系直接用三阶张量表示，避免将多元关系构建二元矩阵而造成的关系缺失，并对张量进行高阶奇异值分解（HOSVD），输出的新的张量由urtp四元组表示，其中p表示用户u用标签t标注资源r的可能性，由此得到推荐的标签。",
+        "evaluative_sentence": "该文还利用来自LastFm和BibSonomy的真实数据对基于 FolkRank和 Penalty一Reward算法的准确率和召回率进行了评估比较，得到了基于张量的推荐算法相对具有较高的精确度，能找出较相关的标签，具有较好的性能[19]。",
+        "next_sentence": ""
+    },
+    "23": {
+        "previous_sentence": "",
+        "evaluative_sentence": "在社会标注系统的标签推荐研究中，基于多种方法融合的研究更为广泛，避免了单一方法的缺陷。",
+        "next_sentence": "Bärkur Siguibjomsson等设计了基于标签共现的结合标签聚合和推销策略(包括投票（sum)和加和（vote)策略)组合生成的四种标签推荐策略。"
+    },
+    "24": {
+        "previous_sentence": "根据用户使用的标签构建用户兴趣描述模型属性集和用抽取关键词构建内容属性集,利用非对称共现测量生成两个属性集的关联矩阵，通过矩阵计算出推荐分值得到推荐标签,利用Del icio us数据进行实验，实验集中在内容属性集的区别上，即已知用户的已标注内容被作为个人视图而已知用户的社会联系即与之相关的用户内容也算在内作为社会视图。",
+        "evaluative_sentence": "结果表明社会视图下的推荐效果更优,但前提是数据集中用户的社会联系比较频繁[21]。",
+        "next_sentence": ""
+    },
+    "25": {
+        "previous_sentence": "在线状态，已知资源，计算标签与资源的概率得到推荐标签。",
+        "evaluative_sentence": "值得一提的是推荐由于大部分复杂处理在Ofine处理，响应时间很短，通过CiteUlike和Delicio us的真实的数据测试，显示了在大数据实时处理推荐的能力[22]。",
+        "next_sentence": ""
+    },
+    "26": {
+        "previous_sentence": "",
+        "evaluative_sentence": "基于资源内容的标签推荐对冷启动和数据稀疏等问题有所改进，基于协作过滤的方法关注于对用户历史数据、用户兴趣描述模型的研究，能够提供个性化的推荐结果。当前更多的研究关注于社会标注系统中的社会化视角 (基于所有用户标注的最流行标签，最近使用标签)和用户个性化视角 (基于用户标注历史，用户兴趣描述模型)的结合，综合运用多种技术方法，克服各自局限的探索。从目前研究看出该领域研究已渗透了多个领域的理论技术，包括信息检索、数据挖掘、认知学、人工智能、图像识别、统计计量学、系统建模等。这些技术方法在标签推荐中的深入探索和应用将为社会标注系统中的标签推荐研究带来更大的动力。",
+        "next_sentence": ""
+    },
+    "27": {
+        "previous_sentence": "",
+        "evaluative_sentence": "本文对当前社会标注系统中标签推荐方法相关研究进行了梳理，发现应用于标注系统中的标签推荐研究尚不成熟。虽然目前电子商务系统中的推荐技术方法的发展较为成熟，不乏成功的范例，但由于社会标注系统中关系结构的复杂及特殊性，很多传统方法不能直接应用，因此相关研究刚刚起步。并且现有研究多为利用标注站点提供的API抓取的真实标注数据进行的研究测试，很少是基于真实系统做出的实时测试,因此对推荐方法的性能、响应时间等方面还有待改进,这是今后研究的一个重点。而另一方面，对标签的语义消歧、去除冗余标签、垃圾标签及对标签质量的评估的探索也将成为为用户推荐高质量标签的研究方向之一。",
+        "next_sentence": ""
+    }
+}

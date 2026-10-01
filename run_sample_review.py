@@ -48,9 +48,16 @@ llm_cls = LLMClient(model="deepseek-chat", api_key=keys[1],
     base_url="https://api.deepseek.com", temperature=0.0, max_tokens=4096)
 llm_rev = LLMClient(model="deepseek-chat", api_key=keys[2],
     base_url="https://api.deepseek.com", temperature=0.0, max_tokens=4096)
+llm_verify = LLMClient(
+    model=os.environ.get("LLM_MODEL_VERIFICATION", "deepseek-chat"),
+    api_key=os.environ.get("DEEPSEEK_API_KEY_VERIFICATION", keys[0]),
+    base_url=os.environ.get("DEEPSEEK_BASE_URL_VERIFICATION", "https://api.deepseek.com"),
+    temperature=0.0, max_tokens=4096,
+)
 
 pipeline = DualAgentPipeline(
     llm_extraction=llm_ext, llm_classification=llm_cls, llm_reviewer=llm_rev,
+    llm_relation=llm_ext, llm_verification=llm_verify,
     dynamic_term_db=DynamicTermDB(), batch_size=12,
     mid_data_dir="mid_data", verbose=False)
 

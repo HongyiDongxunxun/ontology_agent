@@ -130,10 +130,9 @@ def main() -> int:
     args = parser.parse_args()
 
     build_config(live_mode=args.live, verbose=True)
-    api_key = (cfg.llm.api_key_relation or cfg.llm.api_key_extraction
-               or cfg.llm.api_key)
+    api_key = cfg.llm.api_key_verification
     if not api_key:
-        print("[ERR] 未找到 API Key (DEEPSEEK_API_KEY_RELATION / _EXTRACTION / 通用)")
+        print("[ERR] 未找到 API Key (DEEPSEEK_API_KEY_VERIFICATION / _RELATION / _EXTRACTION / 通用)")
         return 1
 
     if not args.input_relations:
@@ -156,8 +155,8 @@ def main() -> int:
         print("[INFO] 输入文件中没有待校验的关系")
         return 0
 
-    llm = LLMClient(model=cfg.llm.model, api_key=api_key,
-                    base_url=cfg.llm.base_url, temperature=cfg.llm.temperature,
+    llm = LLMClient(model=cfg.llm.model_verification, api_key=api_key,
+                    base_url=cfg.llm.base_url_verification, temperature=cfg.llm.temperature,
                     max_tokens=cfg.llm.max_tokens, timeout=cfg.llm.timeout)
     agent = RelationVerificationAgent(llm)
 

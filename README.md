@@ -59,7 +59,7 @@
 
 ---
 
-## 实体分类体系
+## 实体分类体系 (目前方案已删除L3，但需要进一步讨论，故代码层面未做修改)
 
 ### 顶层 L1 (4 大类)
 
@@ -100,10 +100,10 @@ ontology_agent/
 │   ├── llm.py                          # LLM客户端: OpenAI兼容, Thinking/Voting/JSON重试
 │   ├── taxonomy.py                     # L1/L2/L3 分类体系层级映射 + 中文标签
 │   ├── evaluative_relation_agent.py    # Agent 1: 评价关系抽取 (subject/object 为原文短语)
-│   ├── relation_verification_agent.py  # Agent 5: 复核关系是"评价"还是"事实/描述"
 │   ├── entity_extraction_agent.py      # Agent 2: 实体抽取 (接收必抽短语, 统一负责识别+ID+分类)
 │   ├── classification_agent.py         # Agent 3: 精分类 + Voting + RAG + L4匹配
 │   ├── reviewer_agent.py               # Agent 4: Likert 5点量表审查 Prompt
+│   ├── relation_verification_agent.py  # Agent 5: 复核关系是"评价"还是"事实/描述"
 │   ├── dynamic_term_db.py              # 线程安全动态术语底库 (trigram检索)
 │   └── dual_agent_pipeline.py          # 五Agent管道编排 + object回填 + JSONL/Summary/Relation/Verification导出
 │
@@ -207,7 +207,7 @@ pip install -r requirements.txt
 
 ### 2. 配置 API Key
 
-系统为各 Agent 使用独立的 API Key（Agent 5 复用 Agent 1 的 Key；各 Key 均可回退到同一把），完全通过环境变量读取，配置在进程启动时即固定，**请先设置环境变量再运行 `run.py`**。
+系统为各 Agent 使用独立的 API Key（各 Key 均可回退到同一把），完全通过环境变量读取，配置在进程启动时即固定，**请先设置环境变量再运行 `run.py`**。
 
 **方式 A — 环境变量 (推荐)：**
 
@@ -218,6 +218,9 @@ export DEEPSEEK_API_KEY_RELATION="sk-xxx"        # Agent 1 评价关系用
 export DEEPSEEK_API_KEY_EXTRACTION="sk-xxx"      # Agent 2 实体抽取用
 export DEEPSEEK_API_KEY_CLASSIFICATION="sk-xxx"  # Agent 3 分类用
 export DEEPSEEK_API_KEY_REVIEWER="sk-xxx"        # Agent 4 审查用
+export DEEPSEEK_API_KEY_VERIFICATION="sk-xxx"    # Agent 5 关系校验用（可独立）
+export DEEPSEEK_BASE_URL_VERIFICATION="https://api.deepseek.com" # Agent 5 可选独立地址
+export LLM_MODEL_VERIFICATION="deepseek-chat"    # Agent 5 可选独立模型
 export DEEPSEEK_BASE_URL="https://api.deepseek.com"  # 可选
 export LLM_MODEL="deepseek-chat"                     # 可选
 ```
@@ -229,12 +232,15 @@ $env:DEEPSEEK_API_KEY_RELATION="sk-xxx"
 $env:DEEPSEEK_API_KEY_EXTRACTION="sk-xxx"
 $env:DEEPSEEK_API_KEY_CLASSIFICATION="sk-xxx"
 $env:DEEPSEEK_API_KEY_REVIEWER="sk-xxx"
+$env:DEEPSEEK_API_KEY_VERIFICATION="sk-xxx"
+$env:DEEPSEEK_BASE_URL_VERIFICATION="https://api.deepseek.com"
+$env:LLM_MODEL_VERIFICATION="deepseek-chat"
 $env:DEEPSEEK_BASE_URL="https://api.deepseek.com"
 $env:LLM_MODEL="deepseek-chat"
 ```
 
 > **单把 Key 全共用**：只设 `B2_LLM_API_KEY` 即可（它是所有 Agent 的最终兜底 Key）。
-> 各 Agent 的 Key 回退链：`DEEPSEEK_API_KEY_*` → 各自次选 → `B2_LLM_API_KEY`；Agent 5 无独立环境变量，按 `DEEPSEEK_API_KEY_RELATION` → `DEEPSEEK_API_KEY_EXTRACTION` → `B2_LLM_API_KEY` 复用。
+> Agent 5 优先使用 `DEEPSEEK_API_KEY_VERIFICATION`；未设置时按 `DEEPSEEK_API_KEY_RELATION` → `DEEPSEEK_API_KEY_EXTRACTION` → `B2_LLM_API_KEY` 回退。`DEEPSEEK_BASE_URL_VERIFICATION` 与 `LLM_MODEL_VERIFICATION` 未设置时也回退至全局配置。
 
 **方式 B — api.txt 文件（供 `run_eval.py` 使用）：**
 
@@ -325,6 +331,44 @@ python run_sample_review.py
 
 ## 输出格式
 
+本节明确标注各 Agent 的输出样例：Agent 1 负责抽取评价关系，Agent 4 负责对实体分类结果进行 Likert 审查，Agent 5 负责复核关系是否属于评价。
+
+### Agent 1 输出样例：评价关系抽取
+
+Agent 1 的原始输出只包含评价关系字段；`object` 此时仍是原文短语，尚未由 pipeline 回填为 `entity_id`。
+
+```json
+{
+    "sentence_id": "1",
+    "sentence": "该研究方法的适用性较高。",
+    "has_evaluation": true,
+    "relations": [
+        {
+            "subject": "_paper_author",
+            "object": "该研究方法",
+            "aspect": "适用性",
+            "opinion": "较高",
+            "evidence": "适用性较高"
+        }
+    ]
+}
+```
+
+### Agent 4 输出样例：Likert 审查结果
+
+Agent 4 的原始输出使用 `likert_score`；pipeline 随后将其合并为最终实体结果中的 `likert_confidence`。
+
+```json
+[
+    {
+        "entity_id": "1_e1",
+        "likert_score": 5,
+        "reviewer_comment": "分类正确，实体类型与上下文一致",
+        "suggested_correction": ""
+    }
+]
+```
+
 ### 最终结果 (`output/entities/{name}_result.jsonl`)
 
 每行一个实体分类结果，完整字段：
@@ -370,7 +414,7 @@ L1 分布、L3 类型分布、Likert 五点分布、平均分等聚合指标。
 
 ### 评价关系 (`output/evaluative_relation/relation_full_{num}.jsonl`)
 
-由 **Agent 1** 产出、经 **Agent 5** 校验过滤后导出（事实/描述类不在此文件中）。每行一个句子的评价关系结果。每条关系字段为：
+由 **Agent 1** 产出、经 **Agent 5** 校验过滤后导出（事实/描述类不在此文件中）。每行一个句子的评价关系结果。下面是管道合并 Agent 5 校验字段后的放行样例：
 
 ```json
 {
@@ -401,6 +445,28 @@ L1 分布、L3 类型分布、Likert 五点分布、平均分等聚合指标。
 
 由 **Agent 5** 产出，每行一句的校验快照，**包含被过滤的事实类关系**（`is_evaluation=false`），供审计与回溯。
 
+### Agent 5 输出样例：关系校验裁决
+
+以下示例展示 Agent 5 将“进行分析”识别为事实/描述，而不是评价：
+
+```json
+{
+    "sentence_id": "2",
+    "sentence": "研究对用户需求进行了分析。",
+    "verifications": [
+        {
+            "relation_id": "r1",
+            "is_evaluation": false,
+            "verdict_reason": "opinion仅描述研究行为，没有明确的优劣或价值判断",
+            "fact_type": "研究行为"
+        }
+    ],
+    "total_relations": 1,
+    "evaluation_count": 0,
+    "fact_count": 1
+}
+```
+
 `mid_data/{name}_extracted.json` 中同样保存了按句分组的关系与 `has_evaluation` 标记，供断点续传与调试读取。
 
 ### 中间数据 (`mid_data/{name}_extracted.json`)
@@ -417,10 +483,13 @@ Agent 1 评价关系 + Agent 2 实体抽取的合并中间结果（stage = `agen
 | `DEEPSEEK_API_KEY_EXTRACTION` | Agent 2 实体抽取 Key | → `DEEPSEEK_API_KEY_L1` → `B2_LLM_API_KEY` |
 | `DEEPSEEK_API_KEY_CLASSIFICATION` | Agent 3 分类 Key | → `DEEPSEEK_API_KEY_L2` → `B2_LLM_API_KEY` |
 | `DEEPSEEK_API_KEY_REVIEWER` | Agent 4 审查 Key | → `DEEPSEEK_API_KEY_L3` → `B2_LLM_API_KEY` |
+| `DEEPSEEK_API_KEY_VERIFICATION` | Agent 5 关系校验 Key | → `DEEPSEEK_API_KEY_RELATION` → `DEEPSEEK_API_KEY_EXTRACTION` → `B2_LLM_API_KEY` |
 | `DEEPSEEK_API_KEY` | Agent 1 次选 / 通用 Key | — |
 | `B2_LLM_API_KEY` | 所有 Agent 的最终兜底 Key | — |
 | `DEEPSEEK_BASE_URL` | API 地址 | `https://api.deepseek.com` |
 | `LLM_MODEL` | 模型名称 | `deepseek-v4-flash` |
+| `DEEPSEEK_BASE_URL_VERIFICATION` | Agent 5 专用 API 地址 | → `DEEPSEEK_BASE_URL` |
+| `LLM_MODEL_VERIFICATION` | Agent 5 专用模型 | → `LLM_MODEL` |
 
 ---
 

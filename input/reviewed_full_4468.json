@@ -1,0 +1,317 @@
+{
+    "1": {
+        "previous_sentence": "信息过载背景下，会话推荐系统通过分析用户当前会话序列(在一段时间内用户与站点发生的连续交互行为)学习用户会话兴趣,实现实时推荐[]。",
+        "evaluative_sentence": "会话推荐系统不仅可以捕获用户的短期事务型意图[2],还可以依据不完整用户信息实现有效推荐[3],已成为当前热门研究方向。",
+        "next_sentence": ""
+    },
+    "2": {
+        "previous_sentence": "Processes)模型[7等，主要通过估计连续两个项目之间的转移概率实现会话推荐。",
+        "evaluative_sentence": "然而,这两类早期方法仅关注特定步长的项目转移，无法捕捉项目之间的长期依赖,使会话兴趣学习不充分[8]。",
+        "next_sentence": "为提升会话推荐性能,基于循环神经网络(Recurrent NeuralNetwork，RNN）的会话推荐方法，如GRU4REC(Gated RecurrentUnits for Recommendation)模型[9]、NARM(Neural Attentive Recommendation Machine)模型[10]等,通过考虑项目之间的长期依赖对会话兴趣表示进行学习。"
+    },
+    "3": {
+        "previous_sentence": "为提升会话推荐性能,基于循环神经网络(Recurrent NeuralNetwork，RNN）的会话推荐方法，如GRU4REC(Gated RecurrentUnits for Recommendation)模型[9]、NARM(Neural Attentive Recommendation Machine)模型[10]等,通过考虑项目之间的长期依赖对会话兴趣表示进行学习。",
+        "evaluative_sentence": "凭借序列建模的显著优势,RNN一度成为实现会话推荐的主流技术[]。然而,基于RNN的会话推荐方法过于强调项目之间的顺序依赖，无法对项目之间结构化的复杂关系进行有效建模[12]。",
+        "next_sentence": "为进一步提升会话推荐性能,基于图神经网络（Graph Neural Network，GNN)的会话推荐方法,如 SR-GNN（Session-Based Recommendation withGraph Neural Networks)模型[13]、GCE-GNN(GlobalContext Enhanced Graph Neural Networks）模 型[14]等,将会话数据组织为会话图,并借助GNN的信息传播机制对会话图进行学习。"
+    },
+    "4": {
+        "previous_sentence": "为进一步提升会话推荐性能,基于图神经网络（Graph Neural Network，GNN)的会话推荐方法,如 SR-GNN（Session-Based Recommendation withGraph Neural Networks)模型[13]、GCE-GNN(GlobalContext Enhanced Graph Neural Networks）模 型[14]等,将会话数据组织为会话图,并借助GNN的信息传播机制对会话图进行学习。",
+        "evaluative_sentence": "由于GNN可以通过建模项目之间的复杂转移关系更充分地理解用户的会话兴趣[15],因此基于GNN的会话推荐方法在会话推荐领域广泛流行。",
+        "next_sentence": ""
+    },
+    "5": {
+        "previous_sentence": "在中国知网数据库中，以\"会话推荐\"分别与\"关联规则”“马尔科夫”“循环神经网络\"和\"图神经网络\"组合生成检索式对相关研究进行检索和统计。",
+        "evaluative_sentence": "从图1中可以观察到：会话推荐研究在国内外的研究数量呈递增趋势;",
+        "next_sentence": "基于GNN的会话推荐方法在近期研究中的占比呈现递增趋势。"
+    },
+    "6": {
+        "previous_sentence": "基于GNN的会话推荐方法在近期研究中的占比呈现递增趋势。",
+        "evaluative_sentence": "由此可见,会话推荐研究符合国内外的热门研究趋势，且GNN是实现会话推荐系统的热点技术。",
+        "next_sentence": ""
+    },
+    "7": {
+        "previous_sentence": "例如：文献[11]分别从含义、应用场景、主要算法、实验设置等方面对会话推荐系统进行全面分类与总结。",
+        "evaluative_sentence": "文献[15]采用实证研究方法对神经网络和非神经网络会话推荐方法进行对比分析，并指出两类会话推荐方法在准确率和召回率指标上不存在绝对的优劣之分。",
+        "next_sentence": "然而，这些综述主要将"
+    },
+    "8": {
+        "previous_sentence": "",
+        "evaluative_sentence": "RNN作为实现会话推荐的前沿技术，尚未在当前主流的GNN技术背景下对会话推荐方法的新型研究范式展开系统性评述。本文聚焦GNN技术背景下会话推荐方法呈现出的新特点,对GNN会话推荐方法的研究框架、评价资源以及未来研究趋势进行系统性归纳、总结和讨论，为进一步优化会话推荐方法提供借鉴与参考。",
+        "next_sentence": "具体而言,本文的研究工作体现"
+    },
+    "9": {
+        "previous_sentence": "",
+        "evaluative_sentence": "(1)依据GNN会话推荐方法的研究特点，从会话图构建、会话图学习和会话兴趣表示三个方面归纳研究框架,并在研究框架下总结对比相关方法的研究思路和优劣势。",
+        "next_sentence": ""
+    },
+    "10": {
+        "previous_sentence": "",
+        "evaluative_sentence": "(2)依据GNN会话推荐方法的实验设置，从数据集、评价指标和基线模型三个方面总结评价资源，并分析现有评价资源存在的不足，为验证和发展GNN会话推荐方法提供实验基础。",
+        "next_sentence": ""
+    },
+    "11": {
+        "previous_sentence": "本文的技术基础是GNN,其主要思想是迭代地聚合来自邻居节点的信息，并将聚合的邻居信息与中心节点表示进行整合，实现信息传播[8]。",
+        "evaluative_sentence": "相较于CNN、RNN、注意力机制等深度学习方法,GNN在会话推荐中的优势主要体现为：",
+        "next_sentence": ""
+    },
+    "12": {
+        "previous_sentence": "会话序列可依据项目转移关系对应地组织为图数据，而图数据为建模项目之间的复杂转移关系提供了结构化基础[16]。",
+        "evaluative_sentence": "然而,其他深度学习技术仅在欧氏空间探究会话序列直接反映的会话兴趣，无法在非欧氏空间借助图结构挖掘蕴含在项目复杂转移关系中的隐式兴趣[8],致使会话兴趣表示不充分。",
+        "next_sentence": ""
+    },
+    "13": {
+        "previous_sentence": "项目之间的高阶连通性包含丰富的结构化语义,引入高阶项目转移关系有利于削弱噪声交互对会话兴趣建模的影响[18]。",
+        "evaluative_sentence": "相较于其他深度学习技术,GNN可利用信息传播机制有效地建模图中节点之间的高阶连通性,因此更有利于建模准确的会话兴趣表示。",
+        "next_sentence": ""
+    },
+    "14": {
+        "previous_sentence": "依据GNN会话推荐方法在图数据、图学习、图利用三方面的侧重,本文将研究框架归纳为三个方面，如图2所示。",
+        "evaluative_sentence": "会话图构建类研究重点关注如何科学地将会话数据组织为会话图，会话图学习类研究聚焦于GNN中信息传播机制的选择与设计，会话兴趣表示类研究重点关注项目整合方式的选择与设计。围绕研究框架中的三个核心问题对相关研究进行文献梳理,对比每个核心问题下相关方法的优势与劣势,全面且系统地了解现有研究范式。",
+        "next_sentence": ""
+    },
+    "15": {
+        "previous_sentence": "",
+        "evaluative_sentence": "在基于GNN的会话推荐方法研究中，构建合理的会话图模型是成功应用GNN的基础[]。",
+        "next_sentence": "依据会话数据的丰富性,将会话图构建方法分为两类：基于单会话的图构建方法和基于多会话的图构建方法。"
+    },
+    "16": {
+        "previous_sentence": "",
+        "evaluative_sentence": "基于单会话的图构建方法主要依据单个会话构建会话图,依据是否考虑会话内项目的非连续关系，相关研究可进一步分为两类：",
+        "next_sentence": ""
+    },
+    "17": {
+        "previous_sentence": "$\\textcircled{1}$ 基于会话内连续关系的图构建方法，如图3(a)所示。",
+        "evaluative_sentence": "此类方法操作相对直接,主要将单个会话内的每个项目视作图中的节点，通过在两个连续项目之间添加边构建会话图模型。",
+        "next_sentence": "如SR-GNN模型[13]、GC-SAN(Graph Contextualized Self-AttentionNetwork）模型[19]、TAGNN（Target Attentive GraphNeural Networks)模型[20]、Beyond Clicks 模型[21]、FA-"
+    },
+    "18": {
+        "previous_sentence": "GNR（Feature Augmentation Based Graph NeuralRecommendation)模型[22]等经典研究均采用此类方法对会话图进行构建。",
+        "evaluative_sentence": "然而,在实际推荐场景中，用户会话序列的长度较短[13],如Diginetica数据集（一种典型的会话推荐数据集)上的会话平均长度仅为5.71,导致会话图模型中的结构化信息不充分。",
+        "next_sentence": ""
+    },
+    "19": {
+        "previous_sentence": "考虑到仅在连续项目之间添加边可能会忽略远程项目关 系，SGNN-HN（Star Graph NeuralNetworks with Highway Networks)模型[24]在会话内引入一个虚拟的\"星\"节点作为会话中心,并将其与当前会话中的所有项目连接。",
+        "evaluative_sentence": "由于考虑项目之间的非连续关系可以有效稠密化会话图结构[23-24],所有此类方法往往比基于会话内连续关系的图构建方法表现出更优异的会话推荐性能。然而,此类研究仅聚焦单个会话，仍然无法摆脱单个会话固有的数据稀疏性。",
+        "next_sentence": ""
+    },
+    "20": {
+        "previous_sentence": "",
+        "evaluative_sentence": "基于多会话的图构建方法的出发点是丰富单个会话中的有限交互行为[14]，利用多个会话中的项目关系构建更丰富的会话图模型。",
+        "next_sentence": "依据会话图在结构上的差异,相关研究可进一步分为两类："
+    },
+    "21": {
+        "previous_sentence": "$\\textcircled{1}$ 基于超图的图构建方法，如图3(c)所示。",
+        "evaluative_sentence": "此类方法主要通过规定超边为项目建立联系，以有效利用项目之间的非成对关系构建会话图模型。如DHCN （Dual Channel Hypergraph ConvolutionalNetworks）模 型[25]和 HIDE（Hypergraph NeuralNetworks with IntentDisentanglement)模型[26]将每个会话作为一个超边，通过集成全局会话构建超图。类似地，SHARE（Session-Based HypergraphAttention Network for Recommendation)模型[27]依据滑动窗口对超边进行定义，并在全局层面为每个会话构造一个超图。此外,COTREC（Self-SupervisedGraph Co-Training for Session-BasedRecommendation)模型[28]结合会话之间的关系构建以会话为节点的超图，为显式地整合跨会话信息提",
+        "next_sentence": ""
+    },
+    "22": {
+        "previous_sentence": "供了充分基础。",
+        "evaluative_sentence": "然而，由于同属一个超边的节点之间无法有效体现时序关系，此类研究在时序关系利用上存在限制。",
+        "next_sentence": ""
+    },
+    "23": {
+        "previous_sentence": "$\\textcircled{2}$ 基于常规图的图构建方法，如图3(d)所示。",
+        "evaluative_sentence": "此类方法主要利用额外会话中的项目关系丰富单个会话中的项目转移关系，为跨会话项目建立联系。",
+        "next_sentence": "现有研究中，额外会话具体包括其他交互类型会话[21,29-31]、同一用户的历史会话[32-33],整个数据集中的部分或全部会话[34-35]、知识相关的会话序列[36-37]等。"
+    },
+    "24": {
+        "previous_sentence": "现有研究中，额外会话具体包括其他交互类型会话[21,29-31]、同一用户的历史会话[32-33],整个数据集中的部分或全部会话[34-35]、知识相关的会话序列[36-37]等。",
+        "evaluative_sentence": "例如,Beyond Clicks模型[21]综合考虑点击、购买等多种交互类型的会话序列构建会话图，以充分捕捉更有效的用户会话兴趣。",
+        "next_sentence": "A-PGNN（Personalized GraphNeural Networks with Attention Mechanism）模型[32]和 HetGNN （Heterogeneous Global Graph Neural"
+    },
+    "25": {
+        "previous_sentence": "DAT-MDI(Dual Attention Transfer withMulti-Dimensional Integration）模型[34]和 GEL-GNN(Global Enhanced Graph Neural NetworkwithLSTM)模型[35]利用所有会话中的项目转换协助当前会话中的项目转移,进而综合利用局部和全局上下文实现会话推荐目的。",
+        "evaluative_sentence": "然而，此类研究在引入额外会话时不可避免地增加了噪声信息引入的风险，因此如何避免噪声引入或消解引入的噪声是此类研究的重点。",
+        "next_sentence": ""
+    },
+    "27": {
+        "previous_sentence": "",
+        "evaluative_sentence": "<table><tr><td colspan=\"2\">图构建方法</td><td>研究思路</td><td>优点/缺点</td></tr><tr><td rowspan=\"2\">基于单会话的 图构建方法</td><td>关系</td><td>基于会话内连续 将单个会话内的每个项目视作图中的节点,通过在·优点:操作相对直接,构建逻辑简单;",
+        "next_sentence": "两个连续项目之间添加边构建会话图模型。"
+    },
+    "28": {
+        "previous_sentence": "两个连续项目之间添加边构建会话图模型。",
+        "evaluative_sentence": "</td><td>·缺点：无法克服会话数据固有的稀疏性问题。</td></tr><tr><td>续关系</td><td>考虑会话内非连 利用非连续项目关系弥补连续项目关系数据的稀疏·优点：利用非连续关系有效稠密化会话图结构；",
+        "next_sentence": "性，以综合连续和非连续关系构建会话图模型。"
+    },
+    "29": {
+        "previous_sentence": "</td></tr><tr><td rowspan=\"2\">基于多会话的 图构建方法</td><td>基于超图</td><td>通过规定超边为项目建立联系,以有效利用项目之 间的非成对关系构建会话图模型。",
+        "evaluative_sentence": "</td><td>·优点：利用项目之间的非成对关系有效丰富会 话图结构;·缺点：在时序关系利用上存在限制。",
+        "next_sentence": "</td></tr><tr><td>基于常规图</td><td>利用额外会话中的项目关系来丰富单个会话中的项 目转移关系,以有效利用跨会话项目关系。"
+    },
+    "30": {
+        "previous_sentence": "</td></tr><tr><td>基于常规图</td><td>利用额外会话中的项目关系来丰富单个会话中的项 目转移关系,以有效利用跨会话项目关系。",
+        "evaluative_sentence": "</td><td>·优点：利用跨会话项目转移关系有效丰富会话 图结构；·缺点：增加了噪声信息引入的风险。",
+        "next_sentence": "</td></tr></table>"
+    },
+    "31": {
+        "previous_sentence": "",
+        "evaluative_sentence": "在基于GNN的会话推荐方法中,会话图学习主要利用GNN的信息传播机制对项目之间的转移关系进行学习。依据信息传播机制的差异，现有的会话图学习方法主要分为4类：基于直推式图卷积网络（Graph Convolution Network,GCN）的图学习方法、基于归纳式图卷积网络（Graph Sample andAggregate,GraphSAGE)的图学习方法、基于图注意网络(Graph Attention Network,GAT)的图学习方法和基于门控图神经网络（Gated Graph SequenceNeuralNetworks,GGNN)的图学习方法。",
+        "next_sentence": "4种会话图学习方法的示意如图4所示， $i _ { 2 } \\ r , i _ { 3 } \\ r , i _ { 4 }$ 和 $i _ { 5 }$ 均为中心节点 $i _ { 1 }$ 的一阶邻居节点, $w _ { 1 j }$ 表示任意邻居节点 $i _ { j }$ 对中心节点 $i _ { 1 }$ 的重要性。"
+    },
+    "32": {
+        "previous_sentence": "GCN的信息传播过程如图4(a)所示，采用池化操作不加区分地对所有邻居节点进行聚合，然后以聚合信息更新中心节点表示[38]。",
+        "evaluative_sentence": "由于GCN具有简单的运算逻辑,基于GCN的图学习方法被广泛应用于会话图学习。",
+        "next_sentence": "如为适应流式会话推荐，GAG(Global Attributed Graph Neural Network)模型[39]基于GCN开发出一种带有Wasserstein库的全局属性感知的GCN。"
+    },
+    "33": {
+        "previous_sentence": "CAGE(Context-Aware Graph Embedding)模型[4I通过在新闻会话图上执行GCN有效实现了基于会话的新闻推荐系统。",
+        "evaluative_sentence": "尽管此类方法广泛应用于会话图学习,但由于GCN需要在会话图中通过聚合所有邻居节点实现信息传播，故此类方法效率较低、难以应用于大规模会话数据。",
+        "next_sentence": ""
+    },
+    "34": {
+        "previous_sentence": "GraphSAGE的信息传播过程如图4(b)所示，为每个中心节点采样固定数量的邻居,然后采用池化操作对邻居信息进行聚合，进而结合聚合的邻居信息对中心节点表示进行更新。",
+        "evaluative_sentence": "由于GraphSAGE具有较强的可扩展性和灵活性[42]，相关研究常利用GraphSAGE对规模较大或关系复杂的会话图进行学习。",
+        "next_sentence": "如为有效实现多行为感知的会话推荐，Beyond Clicks模型[21]综合点击、加购和购买等多种交互行为构建会话图，并采用GraphSAGE对会话图进行学习，以获取不同类型邻居感知的项目表示。"
+    },
+    "35": {
+        "previous_sentence": "MA-GNN模型[23]利用共享内存网络增强GraphSAGE,捕获长期和短期的用户兴趣实现更有效的时序推荐。",
+        "evaluative_sentence": "尽管GraphSAGE可以有效增强GCN的灵活性，但此类方法在会话图学习中无法考虑邻居节点的权重，故在信息传播过程中无法合理区分不同邻居节点对中心节点的重要性。",
+        "next_sentence": ""
+    },
+    "36": {
+        "previous_sentence": "GAT的信息传播过程如图4(c)所示，主要利用注意力机制差异化整合节点的邻居节点信息，进而结合邻居节点信息更新中心节点的表示。",
+        "evaluative_sentence": "由于GAT可以结合邻居节点的权重更准确地学习会话图，基于GAT的会话图学习方法在相关研究中得到广泛关注。",
+        "next_sentence": "如GCE-GNN模型[14]利用GAT分别对会话图和全局图中的项目关系进行学习，综合项目的全局和局部上下文实现会话推荐。"
+    },
+    "37": {
+        "previous_sentence": "AMAN(Adaptive Multi-AttentionNetwork)模型[30]采用GAT在有向异质图上对多行为感知的项目表示进行学习，综合不同行为重要性学习更准确的会话意图。",
+        "evaluative_sentence": "然而,GAT主要用于建模非顺序感知的无向会话图，故此类研究在顺序感知的会话图学习方面存在限制。",
+        "next_sentence": ""
+    },
+    "38": {
+        "previous_sentence": "GGNN的信息传播过程如图4(d)所示，将中心节点的前项邻居和后项邻居信息进行聚合，然后将聚合信息输入门控循环单元(GateRecurrentUnit,GRU)实现节点表示更新[45]。",
+        "evaluative_sentence": "由于GGNN可以有效考虑项目之间的顺序关系，且会话图中的节点本质上具有顺序关联，因此基于GGNN的会话图学习方法在基于GNN的会话推荐中应用更为广泛。作为将GNN引入会话推荐的开创性工作,SR-GNN模型[13]采用GGNN对会话图进行学习，并证明了图神经网络在会话推荐中的优势。",
+        "next_sentence": "类似地,GC-SAN模型[19]和TAGNN模型[20]同样采用GGNN对会话图进行学习，结合项目之间的转移关系对项目表示进行有效学习。"
+    },
+    "39": {
+        "previous_sentence": "类似地,GC-SAN模型[19]和TAGNN模型[20]同样采用GGNN对会话图进行学习，结合项目之间的转移关系对项目表示进行有效学习。",
+        "evaluative_sentence": "尽管GGNN在会话图学习的过程可以有效地考虑项目之间的顺序关联,但文献[2]指出仅利用GGNN并不总利于学习充分的会话表示,其往往需要搭配注意力网络、去噪机制等合理的情景建模方法才可实现有效的会话推荐。",
+        "next_sentence": ""
+    },
+    "40": {
+        "previous_sentence": "",
+        "evaluative_sentence": "综上,不同会话图学习方法均具有显著特点且存在差异，各类方法的研究思路及其优点和缺点总结如表2所示，可为后续研究提供借鉴和参考。",
+        "next_sentence": ""
+    },
+    "41": {
+        "previous_sentence": "",
+        "evaluative_sentence": "<table><tr><td>图学习方法</td><td>研究思路</td><td>优点/缺点</td></tr><tr><td>基于GCN</td><td>采用池化操作等同地对所有邻居节点进行信息聚·优点：具有简单的运算逻辑;",
+        "next_sentence": "合，然后以聚合信息更新中心节点表示。"
+    },
+    "42": {
+        "previous_sentence": "合，然后以聚合信息更新中心节点表示。",
+        "evaluative_sentence": "</td><td>·缺点：不适用于大规模会话图学习。</td></tr><tr><td>基于GraphSAGE</td><td>为每个中心节点采样固定数量的邻居,然后采用·优点：具有较强的可扩展性和灵活性;",
+        "next_sentence": "邻居信息对中心节点表示进行更新。"
+    },
+    "43": {
+        "previous_sentence": "邻居信息对中心节点表示进行更新。",
+        "evaluative_sentence": "</td><td>池化操作对邻居信息进行聚合,进而结合聚合的·缺点:在信息传播过程中无法合理区分不同邻居节点对中心节点的</td></tr><tr><td>基于GAT</td><td>息，然后结合邻居节点信息更新中心节点的表示。</td><td>利用注意力机制差异化整合节点的邻居节点信·优点:在信息传播过程中,结合邻居节点权重更准确地学习会话图;·缺点：在顺序感知的会话图学习方面存在限制。将中心节点的前项邻居和后项邻居信息进行聚·优点:在会话图学习的过程中有效地考虑项目之间的顺序关联；",
+        "next_sentence": "</td></tr><tr><td>基于GGNN</td><td></td><td>合,然后将聚合信息输入GRU实现节点表示更新。"
+    },
+    "44": {
+        "previous_sentence": "</td></tr><tr><td>基于GGNN</td><td></td><td>合,然后将聚合信息输入GRU实现节点表示更新。",
+        "evaluative_sentence": "·缺点:需要搭配合理的情景建模方法才可实现有效的会话推荐。",
+        "next_sentence": "</td></tr></table>"
+    },
+    "45": {
+        "previous_sentence": "",
+        "evaluative_sentence": "GNN中的信息传播不能有效地捕获项目之间的远程依赖关系[46]，且会话图会造成序列信息损失[2,因此依据GNN学习到的任意项目表示都无法充分代表用户的当前会话兴趣。为有效表示会话兴趣,整合会话序列中的多个项目是基于GNN会话推荐方法的重要一步。",
+        "next_sentence": "依据项目整合方式的不同，现有会话兴趣表示方法主要分为三类：基于注意力的会话兴趣表示方法、基于RNN的会话兴趣表示方法和基于位置的会话兴趣表示方法，如图5所示。"
+    },
+    "46": {
+        "previous_sentence": "最后融合局部和全局会话兴趣，得到完整的会话兴趣表示。",
+        "evaluative_sentence": "基于该思路,SR-GNN模型[13]、GAG模型[39]、SGNN-HN 模 型[24]、DCTN 模型[40]和 GNN-BiGRU-TA(Integration of GNN，Bi-GRU and the Attention",
+        "next_sentence": ""
+    },
+    "47": {
+        "previous_sentence": "Mechanism)模型[47]对基于GNN学习到项目表示进行差异化整合，以合理地对会话兴趣进行表示。",
+        "evaluative_sentence": "然而,仅利用注意力机制往往会忽略项目在会话中的位置信息，因此相关研究通常将注意力机制应用于位置信息感知的项目表示。",
+        "next_sentence": ""
+    },
+    "48": {
+        "previous_sentence": "",
+        "evaluative_sentence": "基于RNN的会话兴趣表示方法主要通过建模项目之间的顺序依赖建模会话兴趣表示，如图5(b)所示，采用RNN获取各个项目的隐藏状态，然后通过整合各个项目的隐藏状态输出会话兴趣的最终表示。如长短时记忆网络(Long Short-TermMemory,LSTM）模型、DGRec 模型[44]和 EFRec（EnhancingSession-Based Social Recommendation）模型[48]通过对会话内部的项目依赖进行学习，有效建模了社会化会话推荐场景下不同用户的会话兴趣。此外，基于 GRU、FGNN(Full Graph Neural Network)模型[49]利用序列中的项目表示迭代更新用户偏好,以有效平衡连续转移模型和灵活转移模式之间的关系。然而,此类研究无法克服噪声项对会话兴趣表示造成的影响,因此如何在RNN基础上引入噪声去除机制是改进此类方法的主要思路。",
+        "next_sentence": ""
+    },
+    "49": {
+        "previous_sentence": "基于位置的会话兴趣表示方法如图5(c)所示，将项目在当前会话中的位置编码为位置向量，然后组合位置向量与项目表示，将位置信息融入项目表示，实现更准确的会话兴趣建模。",
+        "evaluative_sentence": "在相关研究中，NISER(Normalized Item and Session Representationswith Graph Neural Networks)模型[50]、GCE-GNN 模型[14]和 MGS（Mirror Graph Network for Session-BasedRecommendation)模型[51]增加了反映物品相对顺序的位置嵌入，从而有效地获得位置感知的物品表示。DSAN(Dual Sparse Attention Network)模型[2将候选项目的位置信息作为查询项，采用双重注意力机制信息，消除噪声对会话兴趣学习造成的消极影响。由于位置信息本质上仅考虑了项目自身信息，故仅考虑项目位置无法综合会话内项目间关系完整表示会话兴趣。通常情况下，基于位置的会话兴趣表示方法会将项目位置编码与注意力机制或RNN相结合来学习会话兴趣表示。",
+        "next_sentence": "综上,不同基于位置的会话兴趣表示方法的研究思路及其优点和缺点总结如表3所示。"
+    },
+    "50": {
+        "previous_sentence": "</td></tr><tr><td>局会话兴趣，得到完整的会话兴趣表示。",
+        "evaluative_sentence": "</td><td>·缺点：仅利用注意力机制会忽略项目在会话中的位置信息。</td></tr><tr><td rowspan=\"2\">基于RNN</td><td>采用RNN获取各个项目的隐藏状态,通过整合各个·优点：利用项目之间的顺序依赖建模会话兴趣表示;",
+        "next_sentence": "</td><td></td></tr><tr><td>项目的隐藏状态输出会话兴趣的最终表示。"
+    },
+    "51": {
+        "previous_sentence": "</td><td></td></tr><tr><td>项目的隐藏状态输出会话兴趣的最终表示。",
+        "evaluative_sentence": "</td><td>·缺点：无法有效克服噪声项对会话兴趣表示造成的影响。</td></tr><tr><td rowspan=\"2\">基于位置</td><td>将项目在当前会话中的位置编码为位置向量,然后组·优点:将位置信息融入项目表示,实现更准确的会话兴趣建模;",
+        "next_sentence": "</td><td></td></tr><tr><td></td><td>合位置向量与项目表示,将位置信息融入项目表示。"
+    },
+    "52": {
+        "previous_sentence": "</td><td></td></tr><tr><td></td><td>合位置向量与项目表示,将位置信息融入项目表示。",
+        "evaluative_sentence": "·缺点：无法综合会话内项目间关系完整表示会话兴趣。",
+        "next_sentence": "</td></tr></table>"
+    },
+    "54": {
+        "previous_sentence": "(1)对于会话图构建,现有研究主要包括基于单会话和基于多会话的图构建方法。",
+        "evaluative_sentence": "然而，现有会话图模型大多仅关注项目之间的转移关系，在异质关系利用方面存在不足。推荐系统中，多源异构关系（如多类型交互关系、社交关系、知识图谱等)不仅为建模会话兴趣提供丰富的辅助信息，而且可以有效缓解会话序列的数据稀疏性。因此,如何融合多源异构关系丰富会话图结构值得进一步研究。",
+        "next_sentence": ""
+    },
+    "55": {
+        "previous_sentence": "现有研究主要通过应用或改进这4种学习方法进行会话图学习。",
+        "evaluative_sentence": "然而,现有方法大多为传统GNN框架的变体，无法克服GNN本身具有的缺陷，如GNN的过平滑[53]、鲁棒性较差[54]等问题。此外，一些复杂的会话图学习方法以增加计算量为代价获得性能增益[55],但是否采用复杂的传播方法应取决于计算代价和性能收益之间的权衡。",
+        "next_sentence": ""
+    },
+    "56": {
+        "previous_sentence": "(3)对于会话兴趣表示，现有研究主要包括基于注意力机制、RNN和位置的会话兴趣表示方法。",
+        "evaluative_sentence": "然而,尚未有研究明确证明哪种会话推荐方法具有绝对优势。",
+        "next_sentence": "此外,现有研究在表示用户会话兴趣时，大多将会话兴趣单一且确定的表示。"
+    },
+    "58": {
+        "previous_sentence": "",
+        "evaluative_sentence": "评价资源是客观评估科学研究的基础，全面整合评价资源有利于促进相关研究不断完善。",
+        "next_sentence": "通过梳理和整合相关研究中的实验设置,本文从数据集、评价标准和基线模型三个方面总结基于GNN的会话推荐方法相关的评价资源。"
+    },
+    "59": {
+        "previous_sentence": "",
+        "evaluative_sentence": "在GNN会话推荐研究中，用于实验验证的数据集主要集中在5个应用领域：电子商务推荐、新闻推荐、音乐推荐、地点推荐和影视推荐。",
+        "next_sentence": "不同应用领域中典型数据集的统计信息如表5所示。"
+    },
+    "60": {
+        "previous_sentence": "近期相关研究主要采用非位置敏感型指标和位置敏感型指标对会话推荐的准确性进行评价[3]。",
+        "evaluative_sentence": "两类评价指标均致力于评估Top-K个推荐结果的准确性，但相对于非位置敏感型指标，位置敏感型指标在考虑推荐结果准确性的基础上，同时考虑了有效推荐项目的位置信息[58]。",
+        "next_sentence": "非位置敏感型指标主要包括：准确率(Precision）、召回率(Recall)和命中率(HitRatio,HR);"
+    },
+    "61": {
+        "previous_sentence": "",
+        "evaluative_sentence": "在基于GNN的会话推荐方法研究中，通常有三类基线模型(传统会话推荐模型，基于RNN的会话推荐模型和基于GNN的会话推荐模型)用于对比实验。",
+        "next_sentence": "三类代表性基线模型的关键信息说明如表6所示。"
+    },
+    "63": {
+        "previous_sentence": "",
+        "evaluative_sentence": "(1)在数据集方面，现有研究已在不同应用场景下验证了GNN会话推荐方法的有效性，但数据集的采集年份相对陈旧。此外,数据偏见问题在现有数据集中较为常见。由于数据偏见是影响机器学习模型性能的关键因素[],因此如何消解会话推荐数据集中的偏见问题值得进一步探索。",
+        "next_sentence": ""
+    },
+    "64": {
+        "previous_sentence": "",
+        "evaluative_sentence": "(2)在评价指标方面，现有研究主要采用非位置敏感型指标和位置敏感型指标对会话推荐的准确性进行评估，大多仅关注会话推荐的准确性评价。因此现有评价指标在多样性[8]、可解释性[69]、公平性[70]等方面的度量相对不足,这可能导致会话推荐方法面临\"信息茧房\"[71]、可信度差[]等困境。",
+        "next_sentence": ""
+    },
+    "65": {
+        "previous_sentence": "(3)在基线模型方面，现有研究主要采用非深度会话推荐模型、基于RNN的会话推荐模型以及基于GNN的会话推荐模型进行对比实验。",
+        "evaluative_sentence": "自2022年以来，基于GNN的会话推荐方法不断成熟,基于GNN的会话推荐模型在基线模型中占比不断变多，其他会话推荐模型的占比不断变少。然而，现有研究的基线模型尚未结合特定实现流程进行细致化分类，导致对比实验结果缺乏说服力。未来研究可结合本文归纳的研究框架(即会话图构建、会话图学习和会话兴趣表示)对基线模型进行细致化分类，更有针对性地评估新型研究的创新。",
+        "next_sentence": ""
+    },
+    "66": {
+        "previous_sentence": "",
+        "evaluative_sentence": "尽管基于GNN的会话推荐已取得一定进展,但现有GNN会话推荐方法的相关研究数量仍然递增态势。",
+        "next_sentence": "基于现有研究的不足，结合推荐系统的领域实时研究热点，给出基于GNN的会话推荐方法的未来研究趋势。"
+    },
+    "67": {
+        "previous_sentence": "",
+        "evaluative_sentence": "可解释性推荐不仅可为用户提供准确的推荐结果,还可以为用户提供推荐解释,辅助用户或系统设计人员了解推荐原因,进而做出科学决策[72]。",
+        "next_sentence": "由于"
+    }
+}

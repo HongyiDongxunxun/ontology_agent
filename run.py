@@ -12,6 +12,7 @@ from config import config as cfg, build_config
 from pipeline import (LLMClient, DualAgentPipeline, DynamicTermDB,
                        export_jsonl, export_summary_json, export_relation_jsonl,
                        export_verification_jsonl, FinalEntityResult)
+from pipeline.input_loader import load_pipeline_sentences
 try:
     from eval import (GoldStandard, compute_metrics, normalize_pipeline_output,
                        normalize_relation_output,
@@ -23,32 +24,15 @@ except ImportError:
 _print_lock = Lock(); _summary_lock = Lock()
 RUN_MODE = "full"
 
-def reviewed_key_sort(key: str) -> tuple[int, int, str]:
-    if key.isdigit():
-        return (0, int(key), key)
-    import re
-    match = re.search(r"(\d+)$", key)
-    if match:
-        return (1, int(match.group(1)), key)
-    return (2, 0, key)
-
-def load_reviewed_json(filepath: str) -> list[tuple[str, str]]:
-    with open(filepath, "r", encoding="utf-8") as f: raw = json.load(f)
-    sentences: list[tuple[str, str]] = []
-    for key in sorted(raw.keys(), key=reviewed_key_sort):
-        entry = raw[key]
-        stmt = entry.get("evaluative_sentence", "")
-        prev = entry.get("previous_sentence", ""); nxt = entry.get("next_sentence", "")
-        full = f"{prev} {stmt} {nxt}".strip()
-        sentences.append((key, full))
-    return sentences
-
-def scan_input_files(input_dir: str, limit: int = 0) -> list[Path]:
+def scan_input_files(input_dir: str, limit: int = 0,
+                     only_nums: set[int] | None = None) -> list[Path]:
     dirpath = Path(input_dir)
     if not dirpath.is_dir(): return []
     import re as _re
     def _num_key(p): m = _re.search(r"(\d+)", p.stem); return int(m.group(1)) if m else 0
     files = sorted(dirpath.glob("reviewed_full_*.json"), key=_num_key)
+    if only_nums:
+        files = [p for p in files if _num_key(p) in only_nums]
     if limit and limit > 0: files = files[:limit]
     return files
 
@@ -57,10 +41,14 @@ def output_exists(fpath: Path, output_dir: str) -> bool:
 
 def process_one_file(fpath: Path, g, output_dir: str, mid_data_dir: str,
                      idx: int, total: int, dynamic_db: DynamicTermDB,
-                     enable_verify: bool = True) -> dict:
+                     enable_verify: bool = True, entity_source: str = "",
+                     additional_source: str = "") -> dict:
     fname = fpath.name; base_name = fpath.stem
     with _print_lock: print(f"[{idx}/{total}] {fname}  开始处理...")
     try:
+        llm_relation = LLMClient(model=cfg.llm.model, api_key=cfg.llm.api_key_relation,
+            base_url=cfg.llm.base_url, temperature=cfg.llm.temperature,
+            max_tokens=cfg.llm.max_tokens, enable_thinking=cfg.llm.enable_thinking_relation)
         llm_extraction = LLMClient(model=cfg.llm.model, api_key=cfg.llm.api_key_extraction,
             base_url=cfg.llm.base_url, temperature=cfg.llm.temperature,
             max_tokens=cfg.llm.max_tokens, enable_thinking=cfg.llm.enable_thinking_extraction)
@@ -71,12 +59,13 @@ def process_one_file(fpath: Path, g, output_dir: str, mid_data_dir: str,
             base_url=cfg.llm.base_url, temperature=cfg.llm.temperature,
             max_tokens=cfg.llm.max_tokens, enable_thinking=cfg.llm.enable_thinking_reviewer)
         # Agent 5 关系校验: 复用 relation key, 回退到 extraction / 通用
-        verify_key = cfg.llm.api_key_relation or cfg.llm.api_key_extraction or cfg.llm.api_key
-        llm_verification = LLMClient(model=cfg.llm.model, api_key=verify_key,
-            base_url=cfg.llm.base_url, temperature=cfg.llm.temperature,
+        llm_verification = LLMClient(model=cfg.llm.model_verification,
+            api_key=cfg.llm.api_key_verification,
+            base_url=cfg.llm.base_url_verification, temperature=cfg.llm.temperature,
             max_tokens=cfg.llm.max_tokens, enable_thinking=cfg.llm.enable_thinking_relation)
         pipeline = DualAgentPipeline(llm_extraction=llm_extraction,
             llm_classification=llm_classification, llm_reviewer=llm_reviewer,
+            llm_relation=llm_relation,
             llm_verification=llm_verification,
             dynamic_term_db=dynamic_db, batch_size=cfg.pipeline.batch_size,
             mid_data_dir=mid_data_dir, enable_verification=enable_verify, verbose=False)
@@ -86,7 +75,9 @@ def process_one_file(fpath: Path, g, output_dir: str, mid_data_dir: str,
         pipeline.classification_agent.voting_temperature = cfg.pipeline.voting_temperature
         pipeline.classification_agent.enable_rag = cfg.pipeline.enable_rag
         pipeline.classification_agent.rag_k_examples = cfg.pipeline.rag_k_examples
-        sentences = load_reviewed_json(str(fpath))
+        sentences = load_pipeline_sentences(
+            fpath, entity_source=entity_source, additional_source=additional_source
+        )
         results: list[FinalEntityResult]
         relations: list[dict]
         results, relations = pipeline.run(sentences, base_name)
@@ -162,6 +153,9 @@ def run_eval_mode(args) -> int:
           f"Voting={cfg.pipeline.enable_voting} | RAG={cfg.pipeline.enable_rag}")
 
     # Build LLM clients
+    llm_rel = LLMClient(model=cfg.llm.model, api_key=cfg.llm.api_key_relation,
+        base_url=cfg.llm.base_url, temperature=cfg.llm.temperature,
+        max_tokens=cfg.llm.max_tokens, enable_thinking=cfg.llm.enable_thinking_relation)
     llm_ext = LLMClient(model=cfg.llm.model, api_key=cfg.llm.api_key_extraction,
         base_url=cfg.llm.base_url, temperature=cfg.llm.temperature,
         max_tokens=cfg.llm.max_tokens, enable_thinking=cfg.llm.enable_thinking_extraction)
@@ -171,9 +165,14 @@ def run_eval_mode(args) -> int:
     llm_rev = LLMClient(model=cfg.llm.model, api_key=cfg.llm.api_key_reviewer,
         base_url=cfg.llm.base_url, temperature=cfg.llm.temperature,
         max_tokens=cfg.llm.max_tokens, enable_thinking=cfg.llm.enable_thinking_reviewer)
+    llm_verify = LLMClient(model=cfg.llm.model_verification,
+        api_key=cfg.llm.api_key_verification,
+        base_url=cfg.llm.base_url_verification, temperature=cfg.llm.temperature,
+        max_tokens=cfg.llm.max_tokens, enable_thinking=cfg.llm.enable_thinking_relation)
 
     pipeline = DualAgentPipeline(llm_extraction=llm_ext, llm_classification=llm_cls,
-        llm_reviewer=llm_rev, dynamic_term_db=dynamic_db,
+        llm_reviewer=llm_rev, llm_relation=llm_rel,
+        llm_verification=llm_verify, dynamic_term_db=dynamic_db,
         batch_size=cfg.pipeline.batch_size, mid_data_dir=str(cfg.mid_data_dir), verbose=False)
     pipeline.classification_agent.enable_voting = cfg.pipeline.enable_voting
     pipeline.classification_agent.voting_rounds = cfg.pipeline.voting_rounds
@@ -214,6 +213,8 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="V4.3 三Agent端到端文献知识挖掘系统")
     parser.add_argument("--live", action="store_true")
     parser.add_argument("--limit", type=int, default=0)
+    parser.add_argument("--only", type=str, default="",
+                        help="只处理指定编号的文件(逗号分隔), 如 920,8888,4617")
     parser.add_argument("--concurrency", type=int, default=40)
     parser.add_argument("--mode", choices=["full", "test"], default=None)
     parser.add_argument("--no-skip", action="store_true")
@@ -228,6 +229,10 @@ def main() -> int:
     parser.add_argument("--rag", action="store_true", default=False)
     parser.add_argument("--no-verify", action="store_true",
                         help="禁用 Agent 5 关系校验 (默认开启)")
+    parser.add_argument("--entity-sentences", type=str, default="",
+                        help="stage3 entity-recognition result file or directory")
+    parser.add_argument("--additional-sentences", type=str, default="",
+                        help="stage2 additional review sentence file or directory")
     parser.add_argument("--dynamic-terms", type=str, default="")
     parser.add_argument("--max-terms", type=int, default=0)
     args = parser.parse_args()
@@ -248,7 +253,9 @@ def main() -> int:
     api_keys = [cfg.llm.api_key_extraction, cfg.llm.api_key_classification, cfg.llm.api_key_reviewer]
     if args.live and not all(api_keys):
         print("[ERR] --live needs 3 API keys"); return 1
-    files = scan_input_files(str(g.input_dir), args.limit)
+    files = scan_input_files(str(g.input_dir), args.limit,
+                             only_nums={int(x.strip()) for x in args.only.split(",") if x.strip()}
+                             if args.only else None)
     if not files: print("[Batch] no input files"); return 1
     if run_mode == "test":
         sample_size = min(10, len(files)); random.seed(42)
@@ -270,7 +277,10 @@ def main() -> int:
     print(f"\n{'='*70}\n  Pipeline [{label}] — {total} files (x{concurrency})\n{'='*70}\n")
     aggregated, completed, start = [], 0, time.time(); dynamic_db = DynamicTermDB()
     with ThreadPoolExecutor(max_workers=concurrency) as ex:
-        futures = {ex.submit(process_one_file, fp, g, output_dir, mid_data_dir, i, total, dynamic_db, enable_verify): i for i, fp in enumerate(files, 1)}
+        futures = {ex.submit(process_one_file, fp, g, output_dir, mid_data_dir, i, total,
+                             dynamic_db, enable_verify, args.entity_sentences,
+                             args.additional_sentences): i
+                   for i, fp in enumerate(files, 1)}
         for fut in as_completed(futures):
             s = fut.result()
             with _summary_lock: aggregated.append(s); completed += 1
