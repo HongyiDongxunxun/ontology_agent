@@ -104,6 +104,11 @@
         "evaluative_sentence": "使用ILP进行基于关联数据的知识发现具有以下优势：首先，ILP的输入格式与关联数据格式相近；",
         "next_sentence": "其次，领域知识可以添加到输入数据中并被ILP 所学习。"
     },
+    "22": {
+        "previous_sentence": "",
+        "evaluative_sentence": "直接挖掘的优点除了包括利用关联数据的特点更准确、更有效、更便捷的发现相关数据外,与间接挖掘相比，直接挖掘方法针对关联数据自身的特点对已有挖掘方法进行了改进和重构，使得这些方法更具有更强的易用性和可拓展性。",
+        "next_sentence": ""
+    },
     "23": {
         "previous_sentence": "",
         "evaluative_sentence": "直接挖掘方法的缺点与间接挖掘相似，间接挖掘算法可以视为调整关联数据以适应传统挖掘算法，而直接挖掘可以视为改进传统挖掘算法以适应关联数据，就本质而言，它们的研究主题都是关联数据的数据资源，并对关联数据的另一重要主题关联数据的链接则未做深入的研究。",
@@ -197,6 +202,66 @@
     "41": {
         "previous_sentence": "",
         "evaluative_sentence": "总体而言，基于关联数据的知识发现技术仍处于快速发展阶段，其作为一种新的知识发现技术已经体现了巨大的价值。随着关联数据数量的飞速发展和对关联数据质量控制的加强，且已经有国内外的研究人员开始着手研究基于关联数据的知识发现统一框架，未来的研究重点将更加倾向于基于关联数据知识发现技术本身的丰富和完善。",
+        "next_sentence": ""
+    },
+    "add_28": {
+        "previous_sentence": "",
+        "evaluative_sentence": "为解决LOD中大量生物医学资源缺乏有效挖掘方法的问题，GabinPersoneni等提出利用归纳逻辑程序设计方法对关联数据进行学习[14]。ILP隶属于机器学习与逻辑程序设计的交叉领域，它借助逻辑程序设计已有的理论与方法，在一阶逻辑的框架下，试图克服传统机器学习存在的问题，建立新的机器学习体系，使机器更好地模拟人的思维。ILP想要完成的任务是，让计算机考察具体的事例，然后概括出能够刻画这些事例特有属性的一般性规则。ILP允许我们从观察中学习概念的定义，如给定正例集 $\\left( \\operatorname { E } \\pm \\right)$ 和负例集(E-)和背景知识(B),目标是生成一系列具有一致性（YUB覆盖或解释每个正例集)和完备性(Y∩B不覆盖任何负例集)的规则或理论T。使用ILP进行基于关联数据的知识发现具有以下优势：首先，ILP的输入格式与关联数据格式相近；其次，领域知识可以添加到输入数据中并被ILP 所学习。",
+        "next_sentence": ""
+    },
+    "add_30": {
+        "previous_sentence": "",
+        "evaluative_sentence": "图是由若干给定的点及连接两点的线所构成的图形，这种图形通常用来描述某些事务之间的某种特定关系，用点代表事务，用连接两点的线表示相应两个事务间具有这种关系。关联数据是一个由RDF三元组构成的有向图，图中的点对应每个资源、边对应每个属性(链接)。因此,本文将针对关联数据的链接这一研究主题的挖掘方法定义为链接挖掘。由于图的搜索空间呈指数级增长，图的挖掘是一项计算量繁重的任务，如何选择有效的挖掘策略对于能否从关联数据挖掘出有效知识的质量至关重要。根据挖掘方法的区别，我们将链接挖掘归结为后发式关联遍历挖掘、频繁子图挖掘、深度学习等三种类型并分别进行介绍。",
+        "next_sentence": ""
+    },
+    "add_35": {
+        "previous_sentence": "",
+        "evaluative_sentence": "在图的集合中发现一组公共子结构，这样的任务称作频繁子图挖掘（frequent subgraph mining）,常用的频繁子图挖掘方法包括AGM、AcGM、FSG等递归发现频繁子图的方法以及gSpan、CloseGraph 和FFSM等拓展频繁边得到频繁子图的方法。由于关联数据中关联模式缺乏准确正式的定义和关联数据图结构的复杂性，频繁子图挖掘方法难以直接应用到关联数据中。针对这一问题,Xiang Zhang 和CuifangZhao 等提出利用Typed Object Graph（类型化对象图，简称TOG)数据模型简化关联数据结构并利用基于gSpan的模式挖掘算法从关联数据中学习对象的关联模式[28]。TOG图通过一定的类检测策略可以为RDF图的每个实例赋予类型信息获取（见图1）。完成TOG图的构建后，对TOG图进行聚类后利用基于gSpan算法进行关联规则的挖掘。",
+        "next_sentence": ""
+    },
+    "add_37": {
+        "previous_sentence": "",
+        "evaluative_sentence": "在 Xiang Zhang 等的研究基础上,Xiaowei Jiang提出了一种TOG图压缩策略进行实例层的关联数据语义挖掘[15]由于关联数据中存在大量的重复结构和相互依赖结构，因此在挖掘前可以利用这种机构特征进行图的压缩。根据关联数据的结构特征，作者提出了两种结合重复结构和压缩互相依赖结构等两种图压缩策略。压缩的核心思想是利用链向TOG中一系列高度相关实例的单个实例代表一个可压缩的图结构。在完成了图的压缩后，关联数据内的一些图结构将变成一些所谓“超节点(hypernode)\"实例的内部结构，原始的关联数据图也压缩为较小的“超图(hypergraph)”。",
+        "next_sentence": ""
+    },
+    "add_38": {
+        "previous_sentence": "",
+        "evaluative_sentence": "深度学习的概念源于人工神经网络的研究。深度学习通过组合低层特征形成更加抽象的高层表示属性类别或特征，以发现数据的分布式特征表示。波尔兹曼机(Boltzmann machine,简称BM)是Hinton 和Sejnowski于1986年提出的一种根植于统计力学的随机神经网络。BM具有强大的无监督学习能力，能学习数据中复杂的规则。但是，拥有这种学习能力的代价是其训练(学习)过程耗时。此外，BM所表示的分布不仅无法确切计算，得到该分布的随机样本也很困难。于是 Sejnowski引入了一种受限波尔兹曼机(Restricted Boltzmann machine model，简称 RBM）。RBM具有一个可见层和一个隐层，层内无连接。RBM具有很好的性质，在给定可见层单元状态时，各隐单元的激活条件独立；反之，在给定隐单元状态时，可见层单元的激活亦条件独立。这样一来尽管RBM所表示的分布仍无法有效计算，但通过Gibbs采样(Gibbs sampling)可以得到RBM所表示分布的随机样本。目前RBM已经被成功运用到不同的机器学习问题[29]。",
+        "next_sentence": ""
+    },
+    "add_40": {
+        "previous_sentence": "",
+        "evaluative_sentence": "关联数据通过数据间的链接支持结构化数据的关联，这种携带语义的关联遍及整个数据网络，是关联数据的核心价值。为实现关联数据的价值，早期研究更多的关注了关联数据的构建与发布，而随着关联数据资源的快速发展，更多的研究开始关注关联数据的应用与消费，这些研究往往集中在“关联数据的数据资源”和“关联数据的关联\"等两个主题。本文所介绍的间接挖掘和直接挖掘主要关注“关联数据的数据资源”，这些研究促进了知识发现与关联数据领域之间研究体系上的拓展和融合，一方面有助于从数据挖掘和知识发现的角度去发挥关联数据的潜在价值；另一方面也可以借助数据挖掘和知识发现领域的知识解决关联数据存在的问题。链接挖掘则更多的关注了“关联数据的关联”主题，图论、深度学习等学科的引入为基于关联数据的知识发现提供了全新的视角与方法，虽然当前的研究仍比较分散缺少统一的综合框架，但这些方法和理论的引入已经为基于关联数据的知识发现提供了新",
+        "next_sentence": ""
+    },
+    "add_3": {
+        "previous_sentence": "",
+        "evaluative_sentence": "摘要：文章通过对CLOD、KIELD等关联数据相关会议、谷歌学术、IEEE和 Springer等数据库基于关联数据的知识发现技术文献的调研与整理，分析和总结了基于关联数据的知识发现技术发展现状和发展趋势。研究认为：根据对关联数据的挖掘层次的不同，将检索结果分为间接挖掘、直接挖掘和链接挖掘三类；总体而言，基于关联数据的知识发现研究仍处于探索阶段，相关研究较少且缺乏统一框架；基于关联数据的知识发现统一框架的构建以及针对关联数据知识发现技术的完善将是未来研究的重点。",
+        "next_sentence": ""
+    },
+    "add_6": {
+        "previous_sentence": "",
+        "evaluative_sentence": "Abstract This paper discusses thecurrent status and future directions of the related studies of knowledge discovery technology basedon linked data。By Using IEEE,Springer,Google Scholar andother scholarly search engines and collects papers about this subject from related conferences,such as COLD and KIELD,this paper makes a comprehensive study i this subject of research and classifies related papers according to the diferent knowledge discovery methods.In general,knowledgediscovery basedon linked data isstillin the exploratorystage.Therestillexistssome problems in the knowledge discoverybasedon linked data,suchas thequality problemof linkeddata;and thereis no unified frameworkfor those methods.Getting moreconvenient knowledge discovery methods based on linked data and building aunified framework for them will be the focus of future research.",
+        "next_sentence": ""
+    },
+    "add_11": {
+        "previous_sentence": "",
+        "evaluative_sentence": "以“关联数据”\"知识发现\"等为关键词在CNKI数据库中检索发现，国内基于关联数据的知识发现研究仍处于起步阶段，相关研究数量较少且多属于理论模型研究。如李楠[6李俊[]等分别总结了基于关联数据的数据挖掘相关研究，提出了基于关联数据的知识发现模型；高劲松等[8]在关联数据的知识发现过程金字塔的基础上提出了基于关联数据的知识发现模型；宋丽娜[9提出了关联数据环境下基于知识地图的隐形知识发现模型;刘龙[10]提出了基于关联数据的知识发现过程模型。",
+        "next_sentence": ""
+    },
+    "add_12": {
+        "previous_sentence": "",
+        "evaluative_sentence": "以“consuming linked data\"\"application of linkeddata\"\"KnowledgeDiscovery\"等为关键词在谷歌学术、ScienceDirect和Springer等学术搜索引擎上进行主题检索,同时总结了COLD、KIELD和LDOW等关联数据会议中有关知识发现的文献。相较国内研究，国外基于关联数据的知识发现方法更为丰富且付诸实践。根据对关联数据挖掘层次的区别，本文将基于关联数据的知识发现技术归结为3类：(1)间接挖掘，即通过格式转化将关联数据转化或特征提取将关联数据转化为适合传统数据挖掘算法的格式，如VenkataNarasimha等提出的Liddm关联数据挖掘系统[]以及Heiko Paulheim等提出的FeGeLOD 特征提取器[12]为代表；(2)直接挖掘，利用事务构建、归纳逻辑程序设计(Inductive logic programming,简称 ILP)等方法直接对RDF数据进行处理,如RezaRamezani等提出的 SWApriori [13]和Gabin Personeni等提出的ILP学习方法[14]是该类的典型研究；(3)链接挖掘，即对关联数据的属性链和节点等结构进行挖掘。如I-laria Tiddi等提出的Dedalo 遍历系统[15-16]、XiaoweiJiang等提出的频繁子图挖掘方法[17]及KangLi等提出的深度学习方法[18]最具代表性。",
+        "next_sentence": ""
+    },
+    "add_17": {
+        "previous_sentence": "",
+        "evaluative_sentence": "截至2016年9月7日，LOD中互相关联的关联数据集已达9960个，拥有超过1490亿个三元组，这些大量的结构化、语义关联的数据具有巨大的潜在价值。间接挖掘方法有效利用了关联数据的关联发现和数据整合的特性，通过数据集之间的关联帮助人们更为准确、高效的发现和获取相关数据。",
+        "next_sentence": ""
+    },
+    "add_18": {
+        "previous_sentence": "",
+        "evaluative_sentence": "然而，间接挖掘也存在着一些弊端，首先，间接挖掘需要用户构建数据查询，而构建关联数据的查询需要用户事先对关联数据集、SPARQL查询以及属性充分了解；其次，传统挖掘方法往往只针对特定类型的知识,如LiDDM仅支持关联规则的发现,由于传统数据挖掘算法本身的局限性，间接挖掘的方式未能深入挖掘关联数据内数据对象间的关联(links）。",
         "next_sentence": ""
     }
 }

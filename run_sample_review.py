@@ -28,7 +28,7 @@ def reviewed_key_sort(key: str) -> tuple:
     return (2, 0, key)
 
 all_sentences = []
-for f in sorted(glob.glob("input/reviewed_full_*.json")):
+for f in sorted(glob.glob("input/reviewed*_full_*.json")):
     data = json.load(open(f, "r", encoding="utf-8"))
     base = Path(f).stem  # e.g. reviewed_full_9
     for key in sorted(data.keys(), key=reviewed_key_sort):

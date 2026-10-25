@@ -346,7 +346,7 @@ def test_pipeline_run_backfills_object_to_entity_id():
     ent_payload = {
         "entities": [
             {"mention": "农村图书馆研究", "normalized_name": "农村图书馆研究",
-             "candidate_l3": "subfield", "candidate_l1": ["Abstract"],
+             "candidate_l3": "research_field", "candidate_l1": ["Abstract"],
              "evidence": "取得了一定成绩", "is_specific_entity": True,
              "confidence": 0.9, "uncertainty": ""},
         ],

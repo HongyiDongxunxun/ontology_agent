@@ -186,7 +186,7 @@ python run.py --eval --gold output/eval/gold_standard.jsonl
   "sentence_id": "reviewed_full_9::20",
   "sentence": "……完整上下文……",
   "gold_entities": [{"mention": "农村图书馆研究", "normalized_name": "农村图书馆研究",
-                     "l1": "Abstract", "l2": "Epistemic", "l3_type_code": "subfield",
+                     "l1": "Abstract", "l2": "Epistemic", "l3_type_code": "research_field",
                      "valid_entity": true}],
   "gold_relations": [{"subject": "_paper_author", "object": "农村图书馆研究",
                       "aspect": "研究水平", "opinion": "有待提高", "evidence": "研究水平有待提高"}]

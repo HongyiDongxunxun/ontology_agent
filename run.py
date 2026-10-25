@@ -29,8 +29,10 @@ def scan_input_files(input_dir: str, limit: int = 0,
     dirpath = Path(input_dir)
     if not dirpath.is_dir(): return []
     import re as _re
-    def _num_key(p): m = _re.search(r"(\d+)", p.stem); return int(m.group(1)) if m else 0
-    files = sorted(dirpath.glob("reviewed_full_*.json"), key=_num_key)
+    def _num_key(p):  # 取末尾数字段: reviewed_full_9 / reviewed_b2_full_29 均取文件号
+        nums = _re.findall(r"\d+", p.stem); return int(nums[-1]) if nums else 0
+    # 兼容 reviewed_full_{n}.json 与 reviewed_b{batch}_full_{n}.json 两种命名
+    files = sorted(dirpath.glob("reviewed*_full_*.json"), key=_num_key)
     if only_nums:
         files = [p for p in files if _num_key(p) in only_nums]
     if limit and limit > 0: files = files[:limit]

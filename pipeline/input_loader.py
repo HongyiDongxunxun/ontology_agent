@@ -1,6 +1,7 @@
 """Input normalization for the pipeline entry point.
 
-The standard ``reviewed_full_*.json`` input is a mapping of sentence IDs to
+The standard input (``reviewed_full_*.json`` or ``reviewed_b{批次}_full_*.json``)
+is a mapping of sentence IDs to
 objects containing ``previous_sentence``, ``evaluative_sentence``, and
 ``next_sentence``.  The pipeline receives one context-enriched string per ID.
 """

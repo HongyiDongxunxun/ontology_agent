@@ -51,7 +51,7 @@ def reviewed_key_sort(key: str) -> tuple:
 def load_sentences(input_dir: str, limit: int = 0, sample: int = 0,
                    seed: int = 42) -> list[tuple[str, str]]:
     """加载输入目录下的全部句子 (全局唯一 sentence_id)"""
-    files = sorted(glob.glob(os.path.join(input_dir, "reviewed_full_*.json")))
+    files = sorted(glob.glob(os.path.join(input_dir, "reviewed*_full_*.json")))
     if not files:
         return []
     sentences: list[tuple[str, str]] = []
@@ -149,7 +149,7 @@ def main() -> int:
 
     sentences = load_sentences(input_dir, args.limit, args.sample, args.seed)
     if not sentences:
-        print(f"[ERR] 在 {input_dir} 中未找到 reviewed_full_*.json 输入文件")
+        print(f"[ERR] 在 {input_dir} 中未找到 reviewed*_full_*.json 输入文件")
         return 1
 
     llm = LLMClient(model=cfg.llm.model, api_key=api_key,

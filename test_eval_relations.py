@@ -20,7 +20,7 @@ def _build_gold() -> GoldStandard:
         sentence="农村图书馆研究取得了一定成绩，但研究水平偏低。",
         gold_entities=[
             GoldEntity(mention="农村图书馆研究", l1="Abstract", l2="Epistemic",
-                       l3_type_code="subfield", valid_entity=True),
+                       l3_type_code="research_field", valid_entity=True),
         ],
         gold_relations=[
             GoldRelation(subject="_paper_author", object="农村图书馆研究",
@@ -176,7 +176,7 @@ def test_compute_metrics_integration_with_relations():
     entity_predictions = normalize_pipeline_output([
         {"sentence_id": "1", "entity_id": "1_e1", "entity": "农村图书馆研究",
          "normalized_name": "农村图书馆研究", "valid_entity": True,
-         "l1": "Abstract", "l2": "Epistemic", "l3_type_code": "subfield"},
+         "l1": "Abstract", "l2": "Epistemic", "l3_type_code": "research_field"},
     ])
     relation_predictions = normalize_relation_output([
         {"sentence_id": "1", "subject": "_paper_author", "object": "1_e1",
