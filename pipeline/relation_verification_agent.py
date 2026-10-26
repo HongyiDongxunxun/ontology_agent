@@ -86,7 +86,7 @@ RELATION_VERIFICATION_PROMPT = """
 1. 存疑从严：语言学证据不足、级差意义含糊时，标记事实。
 2. 独立裁决：每条关系依据自身 opinion 与 evidence 判定，不受同句其他关系影响。
 3. 完整语义：结合 evidence 还原 opinion 的完整语境后再判定，防止断章取义。
-4. 理由必写：每条裁决给出 verdict_reason，引述关键语言证据（如"opinion含级差词'偏低'"、"opinion仅有行为动词'进行'"）。
+4. 事实类给出 ≤10 字关键语言证据；评价类不写理由。
 
 ## Input
 
@@ -98,15 +98,20 @@ RELATION_VERIFICATION_PROMPT = """
 
 ## OutputFormat
 
-严格 JSON，不含 markdown 代码块。按输入顺序逐条输出，数组长度与输入关系数一致：
+严格 JSON 对象，不含 markdown 代码块。按输入顺序逐条输出，数组长度与输入关系数一致：
 
-[
-  {{"relation_id": "r1", "is_evaluation": true, "verdict_reason": "opinion含级差词'偏低', 构成价值命题"}},
-  {{"relation_id": "r2", "is_evaluation": false, "verdict_reason": "opinion仅有行为动词, 无级差证据", "fact_type": "研究行为"}}
-]
+{{"r": ["E", "F5"], "n": {{"1": "定义"}}}}
 
-verdict_reason 简述判定依据并引述关键语言证据；is_evaluation=false 时附 fact_type（九类事实类型之一）。
+- r: 每条关系一位。E = 评价(放行)；F1-F9 = 第四节的九类事实模式编号
+- n: 可选，仅事实类。键为关系下标，值为 ≤10 字关键语言证据
+- 不要输出 relation_id / is_evaluation / verdict_reason / fact_type 字段
 """.strip()
+
+
+FACT_TYPES = [
+    "研究行为", "研究工作", "方法使用", "功能实现", "定义",
+    "过程描述", "研究分布/统计", "客观结果陈述", "统计",
+]
 
 
 @dataclass
@@ -188,7 +193,9 @@ class RelationVerificationAgent:
             .replace("{sentence}", sentence)
             .replace("{relations_text}", json.dumps(tagged, ensure_ascii=False, indent=2))
         )
-        data = self.llm.call_json(prompt, [])
+        data = self.llm.call_json(
+            prompt, [], '{"r":["E","F5"],"n":{"1":"定义"}}'
+        )
 
         return self._parse_output(sentence_id, sentence, tagged, data)
 
@@ -199,6 +206,45 @@ class RelationVerificationAgent:
         tagged: list[dict],
         data: object,
     ) -> SentenceVerificationOutput:
+        if isinstance(data, dict) and isinstance(data.get("r"), list):
+            # 紧凑格式: {"r":["E","F5"], "n":{"1":"定义"}}
+            codes = data["r"]
+            notes = data.get("n") or {}
+            if not isinstance(notes, dict):
+                notes = {}
+            verifications: list[RelationVerification] = []
+            for idx, rel in enumerate(tagged):
+                code = str(codes[idx]).strip().upper() if idx < len(codes) else "E"
+                note = notes.get(str(idx), "")
+                note = note if isinstance(note, str) else ""
+                is_fact_code = code == "F" or (
+                    code.startswith("F") and code[1:].isdigit()
+                )
+                if not is_fact_code:
+                    # E 或未知编码: 保守放行
+                    is_eval = True
+                    fact_type = ""
+                    reason = "评价"
+                else:
+                    is_eval = False
+                    fact_type = "事实/描述"
+                    if code[1:].isdigit():
+                        n = int(code[1:])
+                        if 1 <= n <= len(FACT_TYPES):
+                            fact_type = FACT_TYPES[n - 1]
+                    reason = note or fact_type
+                verifications.append(
+                    RelationVerification(
+                        relation_id=rel["relation_id"],
+                        is_evaluation=is_eval,
+                        verdict_reason=reason,
+                        fact_type=fact_type,
+                        original=rel,
+                    )
+                )
+            return RelationVerificationAgent._build_output(
+                sentence_id, sentence, verifications)
+
         if not isinstance(data, list):
             # LLM 返回异常: 全部保守标记为评价 (放行), 附说明
             verifications = [

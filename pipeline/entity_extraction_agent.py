@@ -13,6 +13,8 @@ from __future__ import annotations
 from typing import Optional
 
 from .llm import LLMClient
+from .compact_output import derive_evidence, parse_flags
+from .taxonomy import get_l1l2_from_l3
 
 # ===========================================================================
 # 实体抽取 Prompt — LangGPT 风格 (Role/Profile/Rules/Workflow/Background/OutputFormat/Examples/Input)
@@ -117,86 +119,83 @@ ENTITY_EXTRACTION_PROMPT = (
     "- `research_program`(长期有组织研究，如 CADAL) | `policy_initiative`(自上而下的制度行动; 区别于作为文件的 policy)\n"
     "- `stage`(模糊起止的发展阶段) | `conference_meeting`(具体会议; 区别于 conference_paper 制品)\n\n"
     "## OutputFormat\n"
-    "严格 JSON，不含 markdown 代码块。entities 数组无实体时为 []。\n"
-    '{{\n'
-    '  "entities": [\n'
-    '    {{\n'
-    '      "mention": "<原文连续短语，最小充分语义单元，严禁概括/改名>",\n'
-    '      "normalized_name": "<规范名，无特殊问题时等于mention>",\n'
-    '      "candidate_l3": "<type_code，从 Background 选择>",\n'
-    '      "candidate_l1": ["Agent|Artifact|Abstract|Event，类型不清时可多个"],\n'
-    '      "evidence": "<原句中证明该实体存在的片段>",\n'
-    '      "is_specific_entity": true,\n'
-    '      "confidence": 0.95,\n'
-    '      "uncertainty": ""\n'
-    '    }}\n'
-    '  ]\n'
-    '}}\n\n'
+    "严格 JSON，不含 markdown 代码块。无实体时只输出 {{\"e\":[]}}。\n"
+    "根对象: {{\"e\": [ ... ], \"n\": {{ ... }} }}\n"
+    "- e: 每条实体为**位置固定的紧凑数组** [mention, candidate_l3, flags?]，不要写字段名:\n"
+    "  1. mention: 原文连续短语，最小充分语义单元，严禁概括/改名\n"
+    "  2. candidate_l3: 从 Background 选择 type_code\n"
+    "  3. flags: 可选标志串。? = 类型/边界不确定；! = 上游强制保留但非具体实体；!? = 两者\n"
+    "- n: 可选。仅当 normalized_name 与 mention 不同时，以实体下标为键输出规范名，"
+    "如 {{\"0\":\"卷积神经网络/CNN\"}}\n"
+    "- 不要输出 candidate_l1 / evidence / confidence / normalized_name / is_specific_entity 字段，"
+    "这些由下游推导\n"
+    "- e 数组长度必须等于本句抽出的实体数，顺序即实体 ID 顺序\n\n"
     "## Examples\n"
     "### 例1 (具体人名; 泛称不抽)\n"
     "输入: 谱学研究领域颇有建树的学者有潘光旦、罗香林等人。\n"
-    '输出: {{"entities":[{{"mention":"潘光旦","normalized_name":"潘光旦","candidate_l3":"scholar","candidate_l1":["Agent"],"evidence":"学者有潘光旦、罗香林等人","is_specific_entity":true,"confidence":0.95,"uncertainty":""}},{{"mention":"罗香林","normalized_name":"罗香林","candidate_l3":"scholar","candidate_l1":["Agent"],"evidence":"潘光旦、罗香林等人","is_specific_entity":true,"confidence":0.95,"uncertainty":""}}]}}\n'
+    '输出: {{"e":[["潘光旦","scholar"],["罗香林","scholar"]]}}\n'
     "> 「学者」泛称、「等人」引用词不另抽。\n\n"
     "### 例2 (文献专名; 剥版本修饰)\n"
     "输入: 新版《图书馆学概论》反映了网络时代图书馆学研究的最新成果。\n"
-    '输出: {{"entities":[{{"mention":"《图书馆学概论》","normalized_name":"《图书馆学概论》","candidate_l3":"book","candidate_l1":["Artifact"],"evidence":"新版《图书馆学概论》反映了","is_specific_entity":true,"confidence":0.95,"uncertainty":"版本定语「新版」不入mention"}}]}}\n\n'
+    '输出: {{"e":[["《图书馆学概论》","book"]]}}\n\n'
     "### 例3 (理论; 只抽具名稳定方法，类别词不抽)\n"
     "输入: Ausubel 基于学习迁移理论; 该文使用文献计量法、内容分析法与德尔菲法。\n"
-    '输出: {{"entities":[{{"mention":"学习迁移理论","normalized_name":"学习迁移理论","candidate_l3":"theoretical_construct","candidate_l1":["Abstract"],"evidence":"Ausubel基于学习迁移理论","is_specific_entity":true,"confidence":0.92,"uncertainty":""}},{{"mention":"文献计量法","normalized_name":"文献计量法","candidate_l3":"method","candidate_l1":["Abstract"],"evidence":"使用文献计量法、内容分析法与德尔菲法","is_specific_entity":true,"confidence":0.92,"uncertainty":""}},{{"mention":"内容分析法","normalized_name":"内容分析法","candidate_l3":"method","candidate_l1":["Abstract"],"evidence":"文献计量法、内容分析法与德尔菲法","is_specific_entity":true,"confidence":0.92,"uncertainty":""}},{{"mention":"德尔菲法","normalized_name":"德尔菲法","candidate_l3":"method","candidate_l1":["Abstract"],"evidence":"内容分析法与德尔菲法","is_specific_entity":true,"confidence":0.9,"uncertainty":""}}]}}\n'
+    '输出: {{"e":[["学习迁移理论","theoretical_construct"],["文献计量法","method"],["内容分析法","method"],["德尔菲法","method"]]}}\n'
     "> 方法只抽具名、稳定的方法 (文献计量法/内容分析法/德尔菲法);「研究方法」「分析方法」是类别词不抽;「该文」指代不抽。\n\n"
     "### 例4 (抽象构念有效; 命题框架与关系形态不抽)\n"
     "输入: 研究表明专利授权速度与专利保护范围密切相关。\n"
-    '输出: {{"entities":[{{"mention":"专利授权速度","normalized_name":"专利授权速度","candidate_l3":"concept","candidate_l1":["Abstract"],"evidence":"专利授权速度与专利保护范围密切相关","is_specific_entity":true,"confidence":0.9,"uncertainty":"领域限定+可测构念"}},{{"mention":"专利保护范围","normalized_name":"专利保护范围","candidate_l3":"concept","candidate_l1":["Abstract"],"evidence":"专利授权速度与专利保护范围密切相关","is_specific_entity":true,"confidence":0.9,"uncertainty":""}}]}}\n'
+    '输出: {{"e":[["专利授权速度","concept"],["专利保护范围","concept"]]}}\n'
     "> 「…与…密切相关」是命题框架不抽;「U型关系/正相关」等关系形态描述也不抽。两个构念虽抽象但可定义可测，必须抽。\n\n"
     "### 例5 (引用整体保留; 构念与类别词)\n"
     "输入: 薛明皋（2013）及唐恒等(2014)讨论专利价值的分析指标体系。\n"
-    '输出: {{"entities":[{{"mention":"薛明皋（2013）","normalized_name":"薛明皋","candidate_l3":"scholar","candidate_l1":["Agent"],"evidence":"薛明皋（2013）及唐恒等(2014)","is_specific_entity":true,"confidence":0.9,"uncertainty":"引用整体保留"}},{{"mention":"唐恒等(2014)","normalized_name":"唐恒","candidate_l3":"scholar","candidate_l1":["Agent"],"evidence":"薛明皋（2013）及唐恒等(2014)","is_specific_entity":true,"confidence":0.9,"uncertainty":""}},{{"mention":"专利价值","normalized_name":"专利价值","candidate_l3":"concept","candidate_l1":["Abstract"],"evidence":"讨论专利价值的分析指标体系","is_specific_entity":true,"confidence":0.9,"uncertainty":""}}]}}\n'
+    '输出: {{"e":[["薛明皋（2013）","scholar"],["唐恒等(2014)","scholar"],["专利价值","concept"]],"n":{{"0":"薛明皋","1":"唐恒"}}}}\n'
     "> 年份/「等」不剥; 并列作者拆条; 「分析指标体系」是类别性宾语不抽。\n\n"
     "### 例6 (括号中英对照保留; 全称与缩写合并一条)\n"
     "输入: 模型采用卷积神经网络（convolutional neural network,CNN)，CNN 在分类任务上表现稳定。\n"
-    '输出: {{"entities":[{{"mention":"卷积神经网络（convolutional neural network,CNN)","normalized_name":"卷积神经网络/CNN","candidate_l3":"algorithm","candidate_l1":["Artifact"],"evidence":"采用卷积神经网络（convolutional neural network,CNN)","is_specific_entity":true,"confidence":0.9,"uncertainty":"官方中英对照,全称缩写合并一条"}}]}}\n\n'
+    '输出: {{"e":[["卷积神经网络（convolutional neural network,CNN)","algorithm"]],"n":{{"0":"卷积神经网络/CNN"}}}}\n\n'
     "### 例7 (抽象概念与研究领域)\n"
     "输入: 「信息素养」这一概念强调个体识别与评价信息的能力; 信息检索在图书情报学中有稳定的方法传统。\n"
-    '输出: {{"entities":[{{"mention":"信息素养","normalized_name":"信息素养","candidate_l3":"concept","candidate_l1":["Abstract"],"evidence":"「信息素养」这一概念","is_specific_entity":true,"confidence":0.9,"uncertainty":"讨论术语本身"}},{{"mention":"信息检索","normalized_name":"信息检索","candidate_l3":"research_field","candidate_l1":["Abstract"],"evidence":"信息检索在图书情报学中","is_specific_entity":true,"confidence":0.9,"uncertainty":"研究领域"}},{{"mention":"图书情报学","normalized_name":"图书情报学","candidate_l3":"research_field","candidate_l1":["Abstract"],"evidence":"在图书情报学中","is_specific_entity":true,"confidence":0.9,"uncertainty":""}}]}}\n'
+    '输出: {{"e":[["信息素养","concept"],["信息检索","research_field"],["图书情报学","research_field"]]}}\n'
     "> 「能力」是零内涵外壳不抽。\n\n"
     "### 例8 (事件; 动词性运动名)\n"
     "输入: 情报学中对 Information 与 Intelligence 的争论是有益的; 开放获取让读者免费获取论文。\n"
-    '输出: {{"entities":[{{"mention":"Information与Intelligence的争论","normalized_name":"Information与Intelligence的争论","candidate_l3":"debate","candidate_l1":["Event"],"evidence":"对于Information与Intelligence的争论","is_specific_entity":true,"confidence":0.9,"uncertainty":""}},{{"mention":"开放获取","normalized_name":"开放获取","candidate_l3":"movement","candidate_l1":["Event"],"evidence":"开放获取意味着","is_specific_entity":true,"confidence":0.85,"uncertainty":"兼为concept,此处取运动义"}}]}}\n\n'
+    '输出: {{"e":[["Information与Intelligence的争论","debate"],["开放获取","movement","?"]]}}\n'
+    "> 「开放获取」兼为 concept, 此处取运动义; 标注 ? 表示类型有歧义。\n\n"
     "### 例9 (枚举普通成员不抽; 只抽具名数据集)\n"
     "输入: 本地化事件如音乐节、体育比赛是智慧城市建设中态势感知监测的重点，研究使用 Sentiment140 数据集训练事件过滤器。\n"
-    '输出: {{"entities":[{{"mention":"智慧城市建设","normalized_name":"智慧城市建设","candidate_l3":"policy_initiative","candidate_l1":["Event"],"evidence":"智慧城市建设中态势感知监测","is_specific_entity":true,"confidence":0.8,"uncertainty":""}},{{"mention":"Sentiment140 数据集","normalized_name":"Sentiment140","candidate_l3":"dataset","candidate_l1":["Artifact"],"evidence":"使用 Sentiment140 数据集训练","is_specific_entity":true,"confidence":0.9,"uncertainty":""}}]}}\n'
+    '输出: {{"e":[["智慧城市建设","policy_initiative"],["Sentiment140 数据集","dataset"]],"n":{{"1":"Sentiment140"}}}}\n'
     "> 「音乐节」「体育比赛」是枚举中的普通事件成员不抽;「本地化事件」裸类别不抽; 只有具名数据集 (Sentiment140) 才抽，「地理标记的推文」这类数据类别描述不抽。\n\n"
     "### 例10 (负例: 指代/泛称/外壳/动作)\n"
     "输入: 本文通过比较两种方法的优劣，综述了知识共享动机的作用，现有研究认为该方法能运用机器学习提升信息素养。\n"
-    '输出: {{"entities":[{{"mention":"知识共享动机","normalized_name":"知识共享动机","candidate_l3":"concept","candidate_l1":["Abstract"],"evidence":"知识共享动机的作用","is_specific_entity":true,"confidence":0.9,"uncertainty":""}},{{"mention":"机器学习","normalized_name":"机器学习","candidate_l3":"method","candidate_l1":["Abstract"],"evidence":"运用机器学习","is_specific_entity":true,"confidence":0.85,"uncertainty":"动作框架中的命名宾语"}},{{"mention":"信息素养","normalized_name":"信息素养","candidate_l3":"concept","candidate_l1":["Abstract"],"evidence":"提升信息素养","is_specific_entity":true,"confidence":0.85,"uncertainty":""}}]}}\n'
+    '输出: {{"e":[["知识共享动机","concept"],["机器学习","method"],["信息素养","concept"]]}}\n'
     "> 「本文」「该方法」「现有研究」指代，「比较/优劣」虚义，「…的作用」「两种方法」类别外壳，「运用/提升」谓语框架——均不单独抽取。\n\n"
     "### 例11 (形似学术实体、实为描述 — 全部不抽)\n"
     "输入: 本文探讨数据的有效利用与处理措施，梳理知识内容对竞争优势的作用，总结研究方法、分析方法与研究成果，展望发展趋势，指出二者呈 U 型关系。\n"
-    '输出: {{"entities":[]}}\n'
+    '输出: {{"e":[]}}\n'
     "> 逐条说明:「本文」指代;「数据的有效利用」动作性描述;「处理措施」「知识内容」「研究成果」裸泛称;「竞争优势」在本句只是普通名词 (若另句作为被定义/测量的研究构念，如变量「企业竞争优势」，则抽);「…的作用」命题外壳;「研究方法」「分析方法」类别词;「发展趋势」泛化趋势;「U型关系」关系形态描述。\n\n"
     "### 例12 (看似抽象、实为真正学术实体 — 全部要抽)\n"
     "输入: 专利价值与专利保护强度是常用的专利计量变量;知识共享动机、信息素养是被广泛讨论的概念;文献计量学与信息检索是图情领域的成熟方向。\n"
-    '输出: {{"entities":[{{"mention":"专利价值","normalized_name":"专利价值","candidate_l3":"concept","candidate_l1":["Abstract"],"evidence":"专利价值与专利保护强度是常用的专利计量变量","is_specific_entity":true,"confidence":0.9,"uncertainty":"可测构念"}},{{"mention":"专利保护强度","normalized_name":"专利保护强度","candidate_l3":"concept","candidate_l1":["Abstract"],"evidence":"专利价值与专利保护强度","is_specific_entity":true,"confidence":0.9,"uncertainty":"可测构念"}},{{"mention":"知识共享动机","normalized_name":"知识共享动机","candidate_l3":"concept","candidate_l1":["Abstract"],"evidence":"知识共享动机、信息素养是被广泛讨论的概念","is_specific_entity":true,"confidence":0.9,"uncertainty":""}},{{"mention":"信息素养","normalized_name":"信息素养","candidate_l3":"concept","candidate_l1":["Abstract"],"evidence":"知识共享动机、信息素养","is_specific_entity":true,"confidence":0.9,"uncertainty":""}},{{"mention":"文献计量学","normalized_name":"文献计量学","candidate_l3":"research_field","candidate_l1":["Abstract"],"evidence":"文献计量学与信息检索是图情领域的成熟方向","is_specific_entity":true,"confidence":0.9,"uncertainty":"研究领域"}},{{"mention":"信息检索","normalized_name":"信息检索","candidate_l3":"research_field","candidate_l1":["Abstract"],"evidence":"文献计量学与信息检索","is_specific_entity":true,"confidence":0.9,"uncertainty":"研究领域"}}]}}\n'
+    '输出: {{"e":[["专利价值","concept"],["专利保护强度","concept"],["知识共享动机","concept"],["信息素养","concept"],["文献计量学","research_field"],["信息检索","research_field"]]}}\n'
     "> 与例11 对照: 可测构念 (专利价值/专利保护强度)、命名概念 (知识共享动机/信息素养)、研究领域 (文献计量学/信息检索) 在论元位置被论及时照抽——抽象不等于无效。\n\n"
     "### 例13 (灰区后缀: 具名对象抽，占位泛称不抽)\n"
     "输入: 现有研究多采用这类方法; 本文使用文献计量法与 LDA 主题模型，该模型在相关技术中表现稳定。\n"
-    '输出: {{"entities":[{{"mention":"文献计量法","normalized_name":"文献计量法","candidate_l3":"method","candidate_l1":["Abstract"],"evidence":"本文使用文献计量法与 LDA 主题模型","is_specific_entity":true,"confidence":0.92,"uncertainty":""}},{{"mention":"LDA 主题模型","normalized_name":"LDA主题模型","candidate_l3":"algorithm","candidate_l1":["Artifact"],"evidence":"使用文献计量法与 LDA 主题模型","is_specific_entity":true,"confidence":0.9,"uncertainty":""}}]}}\n'
+    '输出: {{"e":[["文献计量法","method"],["LDA 主题模型","algorithm"]],"n":{{"1":"LDA主题模型"}}}}\n'
     "> 替换测试不通过者均不抽:「现有研究」「这类方法」「该模型」「相关技术」换成任何同类词句子都成立;「文献计量法」「LDA主题模型」换掉则客体改变。\n\n"
     "### 例14 (关系与描述成分不抽，只抽两端实体)\n"
     "输入: 专利保护强度正向影响企业专利价值，二者呈倒 U 型关系; 专利质量决定专利保护的效果。\n"
-    '输出: {{"entities":[{{"mention":"专利保护强度","normalized_name":"专利保护强度","candidate_l3":"concept","candidate_l1":["Abstract"],"evidence":"专利保护强度正向影响企业专利价值","is_specific_entity":true,"confidence":0.9,"uncertainty":"可测构念"}},{{"mention":"专利价值","normalized_name":"专利价值","candidate_l3":"concept","candidate_l1":["Abstract"],"evidence":"正向影响企业专利价值","is_specific_entity":true,"confidence":0.9,"uncertainty":"剥所有者定语「企业」"}},{{"mention":"专利质量","normalized_name":"专利质量","candidate_l3":"concept","candidate_l1":["Abstract"],"evidence":"专利质量决定专利保护的效果","is_specific_entity":true,"confidence":0.85,"uncertainty":"可测构念"}},{{"mention":"专利保护","normalized_name":"专利保护","candidate_l3":"concept","candidate_l1":["Abstract"],"evidence":"专利质量决定专利保护的效果","is_specific_entity":true,"confidence":0.8,"uncertainty":""}}]}}\n'
+    '输出: {{"e":[["专利保护强度","concept"],["专利价值","concept"],["专利质量","concept"],["专利保护","concept"]]}}\n'
     "> 「正向影响」「倒 U 型关系」是关系不抽;「…的效果」是结果外壳不抽;「企业」是所有者定语，mention 取「专利价值」。\n\n"
     "### 例15 (负例: 期刊本体)\n"
     "输入: 《经济研究》的影响因子位居前列。\n"
-    '输出: {{"entities":[]}}\n'
+    '输出: {{"e":[]}}\n'
     "> 《经济研究》是期刊本体，不是某篇论文，journal_article 不成立；无更贴切类型则不抽。\n\n"
     "### 例16 (负例: 管理实践 ≠ 研究方法)\n"
     "输入: 每3年进行一次综合考核，实行动态的评价方式。\n"
-    '输出: {{"entities":[]}}\n'
+    '输出: {{"e":[]}}\n'
     "> \"综合考核\"\"动态的评价方式\"是管理/评价实践，不是学术研究方法。\n\n"
     "### 例17 (负例: 指代与泛称)\n"
     "输入: 该期刊的影响因子较高；评价体系需要完善。\n"
-    '输出: {{"entities":[]}}\n'
+    '输出: {{"e":[]}}\n'
     "> \"该期刊\"指代表达不抽；\"评价体系\"是泛称类别词，替换测试不通过（换成\"评价方法\"句意不变）。\n\n"
     "## 必抽实体（上游 Agent 1 评价关系主客体原文短语）\n"
     "以下为**优先核查候选** (非免检项): 过双闸门 → 正常抽取 (is_specific_entity=true); 不过闸 → 按闸门 3 处理。\n"
@@ -330,31 +329,91 @@ class EntityExtractionAgent:
             statement=statement, required_mentions_text=mentions_text
         )
         data = self.llm.call_json(prompt, {})
-        if not isinstance(data, dict):
-            return SentenceExtractionOutput(
-                sentence_id=sentence_id, sentence=statement, entities=[]
-            )
+        return self._parse_output(data, statement, sentence_id)
+
+    @staticmethod
+    def _parse_output(
+        data: object,
+        statement: str,
+        sentence_id: str = "",
+    ) -> SentenceExtractionOutput:
+        """解析 Agent 2 输出。
+
+        兼容两种格式：
+        - 紧凑格式: {"e": [[mention, l3, flags?], ...], "n": {"0": "规范名"}}
+        - 旧格式:   {"entities": [{mention, normalized_name, candidate_l3, ...}]}
+        """
+        name_map: dict = {}
+        if isinstance(data, list):
+            raw_entities = data
+        elif isinstance(data, dict):
+            raw_entities = data.get("e")
+            if raw_entities is None:
+                raw_entities = data.get("entities", [])
+            name_map = data.get("n") or {}
+        else:
+            raw_entities = []
+        if not isinstance(raw_entities, list):
+            raw_entities = []
+        if not isinstance(name_map, dict):
+            name_map = {}
 
         entities: list[ExtractedEntity] = []
-        raw_entities = data.get("entities", []) or []
         for i, item in enumerate(raw_entities):
-            if not isinstance(item, dict):
+            if isinstance(item, dict):
+                # 兼容旧格式
+                mention = item.get("mention") or item.get("entity_name") or ""
+                if not mention:
+                    continue
+                normalized_name = item.get("normalized_name") or mention
+                candidate_l3 = item.get("candidate_l3") or ""
+                candidate_l1 = item.get("candidate_l1") or []
+                evidence = item.get("evidence") or ""
+                is_specific = item.get("is_specific_entity", True)
+                confidence = item.get("confidence", 0.0)
+                uncertainty = item.get("uncertainty", "")
+            elif isinstance(item, (list, tuple)):
+                # 紧凑格式: [mention, candidate_l3, flags?]
+                vals = list(item)
+                mention = str(vals[0]).strip() if len(vals) > 0 and vals[0] else ""
+                if not mention:
+                    continue
+                candidate_l3 = str(vals[1]).strip() if len(vals) > 1 and vals[1] else ""
+                uncertain, forced = parse_flags(vals[2] if len(vals) > 2 else "")
+                normalized_name = str(name_map.get(str(i)) or mention).strip()
+                candidate_l1 = []
+                evidence = ""
+                is_specific = not forced
+                confidence = 0.6 if uncertain else 0.9
+                if forced:
+                    uncertainty = "上游强制保留"
+                elif uncertain:
+                    uncertainty = "类型/边界不确定"
+                else:
+                    uncertainty = ""
+            else:
                 continue
-            mention = item.get("mention") or item.get("entity_name") or ""
-            if not mention:
-                continue
-            eid = f"{sentence_id}_e{i + 1}"
+
+            # 本地派生 candidate_l1
+            if not candidate_l1 and candidate_l3:
+                l1_code, _ = get_l1l2_from_l3(candidate_l3)
+                if l1_code:
+                    candidate_l1 = [l1_code]
+            # 本地回填 evidence
+            if not evidence:
+                evidence = derive_evidence(statement, mention) or mention
+
             entities.append(
                 ExtractedEntity(
-                    entity_id=eid,
+                    entity_id=f"{sentence_id}_e{i + 1}",
                     mention=mention,
-                    normalized_name=item.get("normalized_name") or mention,
-                    candidate_l3=item.get("candidate_l3") or "",
-                    candidate_l1=item.get("candidate_l1") or [],
-                    evidence=item.get("evidence") or "",
-                    is_specific_entity=item.get("is_specific_entity", True),
-                    confidence=item.get("confidence", 0.0),
-                    uncertainty=item.get("uncertainty", ""),
+                    normalized_name=normalized_name,
+                    candidate_l3=candidate_l3,
+                    candidate_l1=candidate_l1,
+                    evidence=evidence,
+                    is_specific_entity=is_specific,
+                    confidence=confidence,
+                    uncertainty=uncertainty,
                 )
             )
 

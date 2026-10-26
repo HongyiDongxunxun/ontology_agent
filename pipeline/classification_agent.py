@@ -84,81 +84,73 @@ CLASSIFICATION_PROMPT = (
     "3. 判定 L1 (Agent|Artifact|Abstract|Event)\n"
     "4. 在 L1 下选定 L2\n"
     "5. 在 L2 下选定 L3 (type_code + label)\n"
-    "6. 按 OutputFormat 输出 JSON 数组\n\n"
+    "6. 按 OutputFormat 输出紧凑 JSON 对象\n\n"
     "## Background\n"
     "### 分类体系 (L1 → L2 → L3)\n"
     "{taxonomy_text}\n\n"
     "## OutputFormat\n"
-    "严格 JSON 数组，不含 markdown 代码块。每个元素对应一个实体。\n"
-    "无效实体: 仅填 entity_id, valid_entity, invalid_reason，其余字段留空。\n"
-    '[\n'
-    '  {{\n'
-    '    "entity_id": "<原始entity_id>",\n'
-    '    "valid_entity": true,\n'
-    '    "invalid_reason": "",\n'
-    '    "l1": "Agent",\n'
-    '    "l2": "Person",\n'
-    '    "l2_label": "个人",\n'
-    '    "l3_type_code": "scholar",\n'
-    '    "l3_label": "知识生产者",\n'
-    '    "evidence": "分类证据原文片段",\n'
-    '    "reason": "简短分类理由 (<=30字)",\n'
-    '    "other_suggestion": ""\n'
-    '  }}\n'
-    ']\n\n'
+    "严格 JSON 对象，不含 markdown 代码块。数组顺序 = 输入实体顺序，长度必须等于输入实体数。\n"
+    "根对象: {{\"c\": [ ... ]}}\n"
+    "每个元素是**位置固定的紧凑数组**，不要写字段名:\n"
+    "  [\"<l3_type_code>\", \"<reason ≤12字>\"]                  有效实体\n"
+    "  [\"!\", \"<invalid_reason ≤12字>\"]                        无效实体\n"
+    "  [\"other\", \"<reason ≤12字>\", \"<l1>\", \"<l2>\", \"<other_suggestion>\"]  仅当 l3_type_code=other\n"
+    "- 除 other 分支外，不输出 entity_id / l1 / l2 / l2_label / l3_label / evidence，"
+    "这些由下游按 l3_type_code 自动推导或继承\n"
+    "- reason 必须控制在 12 字内，只写决定性依据\n\n"
     "## Examples\n"
     "### 例1 — scholar vs practitioner 区分\n"
     "实体: 罗香林 | 原句: 建国以前在谱学研究领域颇有建树的学者有潘光旦、罗香林等人。\n"
-    "分类: l1=Agent, l2=Person, l3_type_code=scholar, reason=以研究/知识生产为主要职能\n"
+    "分类: [\"scholar\",\"以研究/知识生产为主要职能\"]\n"
     "规则: scholar 产出是知识本身(论文/著作)；practitioner 产出是专业服务(咨询/管理)。同一人物以研究身份被评价→scholar。\n\n"
     "### 例2 — book vs journal_article 区分\n"
     "实体: 新版《图书馆学概论》 | 原句: 新版《图书馆学概论》反映了网络时代国内外图书馆学研究的最新成果。\n"
-    "分类: l1=Artifact, l2=Discursive, l3_type_code=book, reason=独立出版物发行,有独立书名\n"
+    "分类: [\"book\",\"独立出版物发行,有独立书名\"]\n"
     "规则: 专著有独立 ISBN 和书名，整本出版；期刊论文有卷期页码属于某期刊。\n\n"
     "### 例3 — policy(Artifact) vs policy_initiative(Event) 区分\n"
     "实体A: HR1858 | 原句: HR1858很好地平衡了反盗与利用信息制作新数据库产品需求之间的关系。\n"
-    "分类: l1=Artifact, l2=Normative, l3_type_code=policy, reason=政策文件本身,是制品\n"
+    "分类: [\"policy\",\"政策文件本身,是制品\"]\n"
     "实体B: 文献检索与利用课 | 原句: 教育部下发了在高校开设「文献检索与利用课」的红头文件,大大推动了其发展。\n"
-    "分类: l1=Event, l2=Event, l3_type_code=policy_initiative, reason=政策实施过程中的制度性行动事件\n"
+    "分类: [\"policy_initiative\",\"政策实施过程中的制度性行动事件\"]\n"
     "规则: policy 是政策文件本身(制品, Artifact)；policy_initiative 是政策实施事件(事件, Event)。判断语境评价的是文件内容还是实施行动。\n\n"
     "### 例4 — concept vs definition 区分\n"
     "实体: 知识流动 | 原句: Szulanski认为知识流动是在特定环境下知识从来源方到接收方的传递过程。\n"
-    "分类: l1=Abstract, l2=Conceptual, l3_type_code=definition, reason=对概念边界的特定界定方式,含有提出者\n"
+    "分类: [\"definition\",\"对概念边界的特定界定方式,含有提出者\"]\n"
     "规则: concept 是命名单元本身；definition 是对命名单元边界的特定界定(通常含提出者)。同一概念可有多个 definition。\n\n"
     "### 例5 — concept vs research_field/method/phenomenon 区分\n"
     "实体A: 信息检索 | 原句: 信息检索在图书情报学研究中形成了稳定的问题域和方法传统。\n"
-    "分类: l1=Abstract, l2=Epistemic, l3_type_code=research_field, reason=作为研究领域被评价\n"
+    "分类: [\"research_field\",\"作为研究领域被评价\"]\n"
     "实体B: 引文分析法 | 原句: 本文采用引文分析法揭示知识流动路径。\n"
-    "分类: l1=Abstract, l2=Methodological, l3_type_code=method, reason=完整研究方法\n"
+    "分类: [\"method\",\"完整研究方法\"]\n"
     "实体C: 信息过载 | 原句: 网络环境中的信息过载加重了用户筛选负担。\n"
-    "分类: l1=Abstract, l2=Phenomenon, l3_type_code=phenomenon, reason=现实信息问题,非术语本身\n"
+    "分类: [\"phenomenon\",\"现实信息问题,非术语本身\"]\n"
     "实体D: 信息素养 | 原句: 「信息素养」这一概念强调个体识别、获取和评价信息的能力。\n"
-    "分类: l1=Abstract, l2=Conceptual, l3_type_code=concept, reason=原句讨论概念名本身\n"
+    "分类: [\"concept\",\"原句讨论概念名本身\"]\n"
     "规则: concept 只收术语/概念名本身；若原句评价研究领域、方法或现实现象，必须归入更具体类别。\n\n"
     "### 例6 — 技术类实体边界 (无 Technology 时)\n"
     "实体A: 5G技术 | 原句: 5G技术为智慧图书馆提供高速低时延连接。\n"
-    "分类: l1=Abstract, l2=Conceptual, l3_type_code=concept, reason=技术体系概念,非算法\n"
+    "分类: [\"concept\",\"技术体系概念,非算法\"]\n"
     "实体B: 第五代移动通信系统 | 原句: 第五代移动通信系统作为通信制式标准支撑移动互联。\n"
-    "分类: l1=Artifact, l2=Normative, l3_type_code=standard, reason=通信制式/技术标准\n"
+    "分类: [\"standard\",\"通信制式/技术标准\"]\n"
     "实体C: VR/AR | 原句: VR/AR被用于构建沉浸式阅读场景。\n"
-    "分类: l1=Abstract, l2=Conceptual, l3_type_code=concept, reason=应用技术概念,非研究技术手段\n"
+    "分类: [\"concept\",\"应用技术概念,非研究技术手段\"]\n"
     "实体D: 电子计算机 | 原句: 电子计算机推动了图书馆自动化的发展。\n"
-    "分类: l1=Abstract, l2=Conceptual, l3_type_code=concept, reason=技术概念,非测量工具\n"
+    "分类: [\"concept\",\"技术概念,非测量工具\"]\n"
     "规则: 技术领域/技术体系不标 method/algorithm；普通设备不标 instrument；5G 不标 algorithm。\n\n"
     "### 例7 — 时间/地名过滤\n"
     "实体A: 2005年 | 原句: 2005年档案信息化建设进一步推进。\n"
-    "分类: valid_entity=false, invalid_reason=单纯时间表达,非发展阶段实体\n"
+    "分类: [\"!\",\"单纯时间表达,非发展阶段实体\"]\n"
     "实体B: 深圳 | 原句: 深圳和青岛的数字图书馆建设进展较快。\n"
-    "分类: valid_entity=false, invalid_reason=单纯地名,非具体治理机构\n"
+    "分类: [\"!\",\"单纯地名,非具体治理机构\"]\n"
     "规则: 年份不是 stage；城市名不是 governance，除非原句明确指城市政府/行政主体。\n\n"
     "### 例8 — Organization 子类型选择 (research vs service vs governance)\n"
-    "实体A: 哥伦比亚大学 | 分类: l3_type_code=research, reason=以知识生产为主要职能的大学\n"
-    "实体B: 沈阳师范大学图书馆 | 分类: l3_type_code=service, reason=以专业服务为主要职能的图书馆\n"
-    "实体C: 广州市档案局 | 分类: l3_type_code=governance, reason=有行政/治理职能的政府机构\n"
+    "实体A: 哥伦比亚大学 | 分类: [\"research\",\"以知识生产为主要职能的大学\"]\n"
+    "实体B: 沈阳师范大学图书馆 | 分类: [\"service\",\"以专业服务为主要职能的图书馆\"]\n"
+    "实体C: 广州市档案局 | 分类: [\"governance\",\"有行政/治理职能的政府机构\"]\n"
     "规则: 以核心职能判断。大学/研究院→research; 图书馆/档案馆→service; 学会/协会→professional; 政府部门→governance; 出版社→publishing。\n\n"
     "### 例9 — conference_paper(Artifact) vs conference_meeting(Event) 区分\n"
     "实体: 第二届全国灰色文献年会 | 原句: 本次会议在2018年第一次全国灰色文献年会的基础上进行了深入探讨。\n"
-    "分类: l1=Event, l2=Event, l3_type_code=conference_meeting, reason=具体召开的学术会议事件\n"
+    "分类: [\"conference_meeting\",\"具体召开的学术会议事件\"]\n"
     "规则: conference_paper 是会议论文(制品, Artifact)；conference_meeting 是会议召开本身(事件, Event)。\n\n"
     "## Few-Shot 参考 (来自动态术语库的高置信度实体类型)\n"
     "以下是从已确认术语库中检索到的与当前实体相似的参考分类，仅供参考:\n"
@@ -381,9 +373,7 @@ class ClassificationAgent:
         )
 
         schema_hint = (
-            '[{"entity_id": "...", "valid_entity": true/false, '
-            '"l1": "Agent|Artifact|Abstract|Event", "l2": "...", '
-            '"l3_type_code": "...", "l3_label": "...", "reason": "..."}]'
+            '{"c":[["<l3_type_code>","<reason <=12字>"],["!","<invalid_reason <=12字>"]]}'
         )
 
         # ── Voting or single call ──
@@ -394,36 +384,86 @@ class ClassificationAgent:
         else:
             data = self.llm.call_json(prompt, [], schema_hint)
 
-        if not isinstance(data, list):
+        raw = None
+        if isinstance(data, list):
+            raw = data
+        elif isinstance(data, dict):
+            raw = data.get("c")
+        if not isinstance(raw, list):
             return self._fallback_results(entities, sentence, sentence_id)
 
         results: list[FinalEntityResult] = []
-        for i, item in enumerate(data):
-            if not isinstance(item, dict):
-                continue
-            idx = i
-            entity_ref = entities[idx] if idx < len(entities) else None
-            if entity_ref is None:
-                continue
+        for idx, entity_ref in enumerate(entities):
+            item = raw[idx] if idx < len(raw) else None
+            entity_id = entity_ref.entity_id
+            valid_entity = bool(entity_ref.is_specific_entity)
+            invalid_reason = ""
+            l3_code = ""
+            reason = ""
+            other_suggestion = ""
+            l1 = l2 = ""
+            l2_label = l3_label = ""
+            evidence = entity_ref.evidence
+
+            if isinstance(item, dict):
+                # 兼容旧格式
+                entity_id = item.get("entity_id") or entity_ref.entity_id
+                valid_entity = bool(item.get("valid_entity", True))
+                invalid_reason = item.get("invalid_reason", "")
+                l3_code = item.get("l3_type_code", "")
+                reason = item.get("reason", "")
+                other_suggestion = item.get("other_suggestion", "")
+                l1 = item.get("l1", "")
+                l2 = item.get("l2", "")
+                l2_label = item.get("l2_label") or get_l2_label(l2)
+                l3_label = item.get("l3_label") or get_l3_label(l3_code)
+                evidence = item.get("evidence") or entity_ref.evidence
+            elif isinstance(item, (list, tuple)):
+                # 紧凑格式: [l3_type_code, reason] | ["!", invalid_reason]
+                vals = list(item)
+                code = str(vals[0]).strip() if len(vals) > 0 and vals[0] is not None else ""
+                note = str(vals[1]).strip() if len(vals) > 1 and vals[1] is not None else ""
+                if code == "!":
+                    valid_entity = False
+                    invalid_reason = note
+                elif code == "other":
+                    # other 无既有 L3 可推导, 需由 LLM 直接给出 L1/L2
+                    l3_code = "other"
+                    reason = note
+                    l1 = str(vals[2]).strip() if len(vals) > 2 and vals[2] else ""
+                    l2 = str(vals[3]).strip() if len(vals) > 3 and vals[3] else ""
+                    other_suggestion = (
+                        str(vals[4]).strip() if len(vals) > 4 and vals[4] else ""
+                    )
+                else:
+                    # 空值表示沿用 Agent 2 的候选 L3
+                    l3_code = code or entity_ref.candidate_l3
+                    reason = note
+
+            if valid_entity:
+                if not l1 or not l2:
+                    l1, l2 = get_l1l2_from_l3(l3_code)
+                l2_label = l2_label or get_l2_label(l2)
+                l3_label = l3_label or get_l3_label(l3_code)
 
             result = FinalEntityResult(
                 sentence_id=sentence_id,
-                entity_id=item.get("entity_id") or entity_ref.entity_id,
+                entity_id=entity_id,
                 sentence=sentence,
                 entity=entity_ref.mention,
                 normalized_name=entity_ref.normalized_name,
-                valid_entity=item.get("valid_entity", True),
-                invalid_reason=item.get("invalid_reason", ""),
-                l1=item.get("l1", ""),
-                l2=item.get("l2", ""),
-                l2_label=item.get("l2_label") or get_l2_label(item.get("l2", "")),
-                l3_type_code=item.get("l3_type_code", ""),
-                l3_label=item.get("l3_label") or get_l3_label(item.get("l3_type_code", "")),
+                valid_entity=valid_entity,
+                invalid_reason=invalid_reason,
+                l1=l1,
+                l2=l2,
+                l2_label=l2_label,
+                l3_type_code=l3_code,
+                l3_label=l3_label,
                 l4_matched_term="",
                 l4_term_type=None,
-                evidence=item.get("evidence") or entity_ref.evidence,
-                reason=item.get("reason", ""),
-                other_suggestion=item.get("other_suggestion", ""),
+                evidence=evidence,
+                reason=reason,
+                other_suggestion=other_suggestion,
             )
             # 规则匹配 L4 (不依赖 LLM)
             if result.valid_entity:
@@ -434,27 +474,6 @@ class ClassificationAgent:
                     result.l4_matched_term = matched
                     result.l4_term_type = matched_type
             results.append(result)
-
-        for remaining in entities[len(results):]:
-            matched, matched_type = self._match_l4_rules(
-                remaining.mention, remaining.normalized_name
-            )
-            results.append(
-                FinalEntityResult(
-                    sentence_id=sentence_id,
-                    entity_id=remaining.entity_id,
-                    sentence=sentence,
-                    entity=remaining.mention,
-                    normalized_name=remaining.normalized_name,
-                    valid_entity=True,
-                    l1="",
-                    l2="",
-                    l3_type_code=remaining.candidate_l3,
-                    evidence=remaining.evidence,
-                    l4_matched_term=matched,
-                    l4_term_type=matched_type,
-                )
-            )
 
         return results
 

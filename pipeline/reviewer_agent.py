@@ -62,9 +62,9 @@ REVIEWER_PROMPT = (
     "2. 从图书馆学专业角度判断该分类是否合理\n"
     "3. 对照分类体系验证 L1→L2→L3 链路的逻辑一致性\n"
     "4. 按 1-5 Likert 量表给出评分\n"
-    "5. 若评分 ≤ 2 分，填写 suggested_correction 给出修正建议\n"
-    "6. 填写 reviewer_comment 简述评分理由 (图书馆学专业角度)\n"
-    "7. 按 OutputFormat 输出严格 JSON 数组\n\n"
+    "5. 若评分 ≤ 2 分，在同一备注里给出修正建议\n"
+    "6. 评分 ≤ 3 分时在备注里简述理由 (≤20字)\n"
+    "7. 按 OutputFormat 输出紧凑 JSON 对象\n\n"
     "## Background\n"
     "### 分类体系 (L1 → L2 → L3)\n"
     "{taxonomy_text}\n\n"
@@ -92,68 +92,65 @@ REVIEWER_PROMPT = (
     "- 馆藏数字化 → Abstract.Conceptual.concept 或 Event.Event.research_program\n"
     "- 理论/概念模型/分析框架 (TAM、态势感知框架) → Abstract.KnowledgeClaim.theoretical_construct\n\n"
     "## OutputFormat\n"
-    "严格 JSON 数组，不含 markdown 代码块。每个元素对应一个待审查实体。\n"
-    "likert_score: 1-5 整数\n"
-    "reviewer_comment: 图书馆学专业角度的评分理由 (<=50字)\n"
-    "suggested_correction: 评分 ≤2 时必填，给出修正建议；评分 ≥3 时留空\n"
-    '[\n'
-    '  {{\n'
-    '    "entity_id": "<原始entity_id>",\n'
-    '    "likert_score": 4,\n'
-    '    "reviewer_comment": "分类合理，L1/L2/L3符合图情学科认知",\n'
-    '    "suggested_correction": ""\n'
-    '  }}\n'
-    ']\n\n'
+    "严格 JSON 对象，不含 markdown 代码块。\n"
+    "根对象: {{\"s\": \"<评分串>\", \"n\": {{...}}}}\n"
+    "- s: 每个待审查实体一位数字 1-5，顺序与输入一致，长度必须等于输入实体数\n"
+    "- n: 可选。仅对评分 ≤3 的实体，以实体下标为键输出 \"理由 | 修正建议\"\n"
+    "  理由 ≤20 字；评分 ≤2 时必须给出修正建议；评分 ≥4 不写理由\n"
+    "- 不输出 entity_id，不要为评分 ≥4 的正常实体写理由\n"
+    "示例: {{\"s\":\"5452\",\"n\":{{\"3\":\"研究子领域误用concept | l2→Epistemic,l3→research_field\"}}}}\n\n"
     "## Examples\n"
+    "### 输出示例 (4 个实体，第 4 个为 2 分)\n"
+    "输出: {{\"s\":\"5452\",\"n\":{{\"3\":\"研究子领域误用concept | l2→Epistemic,l3→research_field\"}}}}\n\n"
     "### 例1 — 完全认同 (5分)\n"
     "原句: 本文采用《中国图书馆分类法》对馆藏文献进行分类组织。\n"
     "分类结果: l1=Artifact, l2=Organizational, l3=knowledge_organization_system, l4=中国图书馆分类法\n"
-    "审查: likert_score=5, comment=中图法是图情领域核心知识组织系统,分类精准\n\n"
+    "审查: 评分=5; 理由=中图法是图情领域核心知识组织系统,分类精准\n\n"
     "### 例2 — 认同 (4分)\n"
     "原句: 潘光旦先生在谱牒学领域有深入的研究。\n"
     "分类结果: l1=Agent, l2=Person, l3=scholar\n"
-    "审查: likert_score=4, comment=潘光旦以学术研究产出为主,归为scholar合理\n"
-    "suggested_correction留空\n\n"
+    "审查: 评分=4; 理由=潘光旦以学术研究产出为主,归为scholar合理\n"
+    "修正: 无\n\n"
     "### 例3 — 不确定 (3分)\n"
     "原句: 知识流动是知识管理中的核心概念。\n"
     "分类结果: l1=Abstract, l2=Conceptual, l3=concept\n"
-    "审查: likert_score=3, comment=知识流动可视为概念或定义,取决于原文是否给出特定界定\n"
-    "suggested_correction留空\n\n"
+    "审查: 评分=3; 理由=知识流动可视为概念或定义,取决于原文是否给出特定界定\n"
+    "修正: 无\n\n"
     "### 例4 — 不认同: concept 兜底错误 (2分)\n"
     "原句: 信息检索在图书情报学研究中形成了稳定的问题域和方法传统。\n"
     "分类结果: l1=Abstract, l2=Conceptual, l3=concept\n"
-    "审查: likert_score=2, comment=此处为研究子领域,不应以concept兜底\n"
-    "suggested_correction=将l2改为Epistemic,l3改为research_field\n\n"
+    "审查: 评分=2; 理由=此处为研究子领域,不应以concept兜底\n"
+    "修正: 将l2改为Epistemic,l3改为research_field\n\n"
     "### 例5 — 不认同: 技术体系误归为研究方法 (2分)\n"
     "原句: 5G技术为智慧图书馆提供高速低时延连接。\n"
     "分类结果: l1=Abstract, l2=Methodological, l3=method\n"
-    "审查: likert_score=2, comment=5G是技术体系概念,不是研究操作程序\n"
-    "suggested_correction=将l2改为Conceptual,l3改为concept\n\n"
+    "审查: 评分=2; 理由=5G是技术体系概念,不是研究操作程序\n"
+    "修正: 将l2改为Conceptual,l3改为concept\n\n"
     "### 例6 — 不认同: instrument 误用 (2分)\n"
     "原句: 电子计算机推动了图书馆自动化的发展。\n"
     "分类结果: l1=Artifact, l2=Tool, l3=instrument\n"
-    "审查: likert_score=2, comment=电子计算机不是测量工具,不应归为instrument\n"
-    "suggested_correction=若作为技术概念讨论,改为Abstract.Conceptual.concept\n\n"
+    "审查: 评分=2; 理由=电子计算机不是测量工具,不应归为instrument\n"
+    "修正: 若作为技术概念讨论,改为Abstract.Conceptual.concept\n\n"
     "### 例7 — 不认同: 时间/地名误判 (2分)\n"
     "原句: 2005年深圳档案信息化建设进展较快。\n"
     "分类结果: 2005年→stage; 深圳→governance\n"
-    "审查: likert_score=2, comment=年份和城市名本身不是阶段或治理机构\n"
-    "suggested_correction=将二者判为无效实体\n\n"
+    "审查: 评分=2; 理由=年份和城市名本身不是阶段或治理机构\n"
+    "修正: 将二者判为无效实体\n\n"
     "### 例8 — 不认同 (2分)\n"
     "原句: 沈阳师范大学图书馆提供了丰富的学科服务。\n"
     "分类结果: l1=Agent, l2=Organization, l3=research\n"
-    "审查: likert_score=2, comment=大学图书馆核心职能是专业服务非知识生产,应归为service\n"
-    "suggested_correction=将l3从research改为service\n\n"
+    "审查: 评分=2; 理由=大学图书馆核心职能是专业服务非知识生产,应归为service\n"
+    "修正: 将l3从research改为service\n\n"
     "### 例9 — 完全不认同 (1分)\n"
     "原句: 本文采用引文分析法对文献进行分析。\n"
     "分类结果: l1=Event, l2=Event, l3=research_program\n"
-    "审查: likert_score=1, comment=引文分析法是具体研究方法,应归为Abstract.Methodological.method\n"
-    "suggested_correction=将l1改为Abstract,l2改为Methodological,l3改为method\n\n"
+    "审查: 评分=1; 理由=引文分析法是具体研究方法,应归为Abstract.Methodological.method\n"
+    "修正: 将l1改为Abstract,l2改为Methodological,l3改为method\n\n"
     "### 例10 — 无效实体审查 (5分)\n"
     "原句: 许多学者对此问题进行了深入研究。\n"
     "实体: 学者 | valid_entity=false, invalid_reason=泛称身份类别\n"
-    "审查: likert_score=5, comment=学者确为泛称身份类别,非具体可识别实体,判定正确\n"
-    "suggested_correction留空\n\n"
+    "审查: 评分=5; 理由=学者确为泛称身份类别,非具体可识别实体,判定正确\n"
+    "修正: 无\n\n"
     "## Input\n"
     "{entities_text}\n\n"
     "# 原始评价句\n"
@@ -255,29 +252,59 @@ class ReviewerAgent:
             sentence=sentence,
         )
 
-        data = self.llm.call_json(prompt, [])
-        if not isinstance(data, list):
+        data = self.llm.call_json(
+            prompt,
+            [],
+            '{"s":"<每个实体一位 1-5>","n":{"<下标>":"<理由> | <修正>"}}',
+        )
+
+        if isinstance(data, list):
+            # 兼容旧格式: 具名对象数组
+            reviews: list[ReviewResult] = []
+            for i, item in enumerate(data):
+                if not isinstance(item, dict):
+                    continue
+                entity_ref = results[i] if i < len(results) else None
+                if entity_ref is None:
+                    continue
+                reviews.append(
+                    ReviewResult(
+                        entity_id=item.get("entity_id") or entity_ref.entity_id,
+                        likert_score=int(item.get("likert_score", 0)),
+                        reviewer_comment=item.get("reviewer_comment", ""),
+                        suggested_correction=item.get("suggested_correction", ""),
+                    )
+                )
+            for remaining in results[len(reviews):]:
+                reviews.append(
+                    ReviewResult(entity_id=remaining.entity_id, likert_score=3)
+                )
+            return reviews
+
+        if not isinstance(data, dict):
             return self._fallback_results(results)
 
-        reviews: list[ReviewResult] = []
-        for i, item in enumerate(data):
-            if not isinstance(item, dict):
-                continue
-            entity_ref = results[i] if i < len(results) else None
-            if entity_ref is None:
-                continue
+        scores = data.get("s") if isinstance(data.get("s"), str) else ""
+        notes = data.get("n") or {}
+        if not isinstance(notes, dict):
+            notes = {}
 
-            review = ReviewResult(
-                entity_id=item.get("entity_id") or entity_ref.entity_id,
-                likert_score=int(item.get("likert_score", 0)),
-                reviewer_comment=item.get("reviewer_comment", ""),
-                suggested_correction=item.get("suggested_correction", ""),
-            )
-            reviews.append(review)
-
-        for remaining in results[len(reviews) :]:
+        reviews = []
+        for i, r in enumerate(results):
+            ch = scores[i] if i < len(scores) else ""
+            score = int(ch) if ch.isdigit() and 1 <= int(ch) <= 5 else 3
+            note = notes.get(str(i), "")
+            note = note if isinstance(note, str) else ""
+            comment, correction = note, ""
+            if "|" in note:
+                comment, correction = (part.strip() for part in note.split("|", 1))
             reviews.append(
-                ReviewResult(entity_id=remaining.entity_id, likert_score=3)
+                ReviewResult(
+                    entity_id=r.entity_id,
+                    likert_score=score,
+                    reviewer_comment=comment,
+                    suggested_correction=correction,
+                )
             )
 
         return reviews

@@ -13,6 +13,7 @@ from dataclasses import dataclass, field
 from typing import Optional
 
 from .llm import LLMClient
+from .compact_output import derive_evidence
 
 
 def _normalize_name(name: str) -> str:
@@ -210,37 +211,24 @@ opinion = 具有
 
 # 八、输出要求
 
-严格输出 JSON，不要输出解释，不要输出 Markdown。
+严格输出 JSON，不要输出解释，不要输出 Markdown，不要使用代码块。
 不要输出 entities 字段；实体识别由下游 Agent 完成。
+不要输出 evidence 字段；证据片段由下游按原句自动截取。
 
-如果不存在评价：
+根对象固定为：
 
-{
-"has_evaluation": false,
-"relations": []
-}
+{"h": <0|1>, "r": [ ... ]}
 
-如果存在评价但评价对象不符合任务要求：
-
-{
-"has_evaluation": true,
-"relations": []
-}
-
-如果存在合法评价关系：
-
-{
-"has_evaluation": true,
-"relations": [
-{
-"subject": "_paper_author|_cite[<真实编号>]|<人物名字>|_unknown",
-"object": "<原文精确短语，不要填 entity_id>",
-"aspect": "<评价方面或 null>",
-"opinion": "<完整评价表达>",
-"evidence": "<最小评价证据片段>"
-}
-]
-}
+- h: 1 = 句中存在真正的评价（即使 r 为空）；0 = 不存在评价。
+- 无评价时只输出：{"h": 0}
+- 有评价但评价对象不符合任务要求：{"h": 1, "r": []}
+- r 中每条关系是**位置固定的紧凑数组**，不要写字段名：
+  [object, opinion, aspect?, subject?]
+  1. object: 原文精确短语，不要填 entity_id
+  2. opinion: 原文完整评价表达
+  3. aspect: 有明确评价方面时放第 3 位；没有则省略
+  4. subject: 仅当 subject 不是 _paper_author 时才放第 4 位；
+     此时若 aspect 为空，第 3 位写 null
 
 # Examples
 
@@ -251,18 +239,7 @@ opinion = 具有
 
 结果：
 
-{
-"has_evaluation": true,
-"relations": [
-{
-"subject": "_paper_author",
-"object": "某机构",
-"aspect": "人才培养",
-"opinion": "表现突出",
-"evidence": "某机构在人才培养方面表现突出"
-}
-]
-}
+{"h":1,"r":[["某机构","表现突出","人才培养"]]}
 
 ## Example 2：研究对象作为评价对象
 
@@ -271,18 +248,7 @@ opinion = 具有
 
 结果：
 
-{
-"has_evaluation": true,
-"relations": [
-{
-"subject": "_paper_author",
-"object": "农村图书馆研究",
-"aspect": null,
-"opinion": "取得了一定成绩",
-"evidence": "农村图书馆研究取得了一定成绩"
-}
-]
-}
+{"h":1,"r":[["农村图书馆研究","取得了一定成绩"]]}
 
 ## Example 3：Aspect 不得成为 Object
 
@@ -304,10 +270,7 @@ object = 研究水平
 
 结果：
 
-{
-"has_evaluation": false,
-"relations": []
-}
+{"h":0}
 
 ## Example 5：研究行为，不是评价
 
@@ -316,10 +279,7 @@ object = 研究水平
 
 结果：
 
-{
-"has_evaluation": false,
-"relations": []
-}
+{"h":0}
 
 ## Example 6：有评价，但对象不符合任务要求
 
@@ -328,10 +288,7 @@ object = 研究水平
 
 如果当前任务规定“方法”不能作为 Evaluation Object，则：
 
-{
-"has_evaluation": true,
-"relations": []
-}
+{"h":1,"r":[]}
 
 ## Example 7：引用主体
 
@@ -340,13 +297,7 @@ object = 研究水平
 
 结果中的 relation：
 
-{
-"subject": "_cite[3]",
-"object": "该机构",
-"aspect": "创新能力",
-"opinion": "具有较强的创新能力",
-"evidence": "该机构具有较强的创新能力"
-}
+{"h":1,"r":[["该机构","具有较强的创新能力","创新能力","_cite[3]"]]}
 
 ## Example 8：无编号引用主体
 
@@ -359,7 +310,7 @@ subject = "_cite[N]"
 subject = "_cite[1]"
 
 正确：
-subject = "_unknown"
+{"h":1,"r":[["该机构","具有较强的创新能力","创新能力","_unknown"]]}
 
 ## Example 9：作者名不得填入 _cite
 
@@ -371,7 +322,7 @@ subject = "_cite[许晓东等]"
 subject = "_cite[Xiaodong Xu]"
 
 正确：
-subject = "许晓东等"
+{"h":1,"r":[["该机构","具有较强的创新能力","创新能力","许晓东等"]]}
 
 # Input
 
@@ -456,32 +407,52 @@ class EvaluativeRelationAgent:
         sentence: str,
         data: object,
     ) -> SentenceRelationOutput:
-        if not isinstance(data, dict):
+        if isinstance(data, list):
+            # 兼容旧格式: 关系数组
+            raw_relations, model_has_eval = data, bool(data)
+        elif isinstance(data, dict):
+            raw_relations = data.get("r", data.get("relations", []))
+            model_has_eval = bool(data.get("h", data.get("has_evaluation", False)))
+        else:
             return SentenceRelationOutput(sentence_id, sentence, False, [])
 
-        # ── 解析评价关系 ──
-        # object 直接保留 LLM 输出的原文短语；若 LLM 输出 _missing_entity,
-        # 同时附带 object_text 时保留 object_text 便于审计。
-        raw_relations = data.get("relations", [])
         if not isinstance(raw_relations, list):
             raw_relations = []
 
         relations: list[EvaluativeRelation] = []
         for item in raw_relations:
-            if not isinstance(item, dict):
+            object_text = ""
+            if isinstance(item, dict):
+                # 兼容旧格式: 具名对象
+                subject = str(item.get("subject", "")).strip()
+                obj = str(item.get("object", "")).strip()
+                aspect_value = item.get("aspect")
+                aspect = None if aspect_value is None else str(aspect_value).strip()
+                opinion = str(item.get("opinion", "")).strip()
+                evidence = str(item.get("evidence", "")).strip()
+                object_text = str(item.get("object_text", "")).strip()
+            elif isinstance(item, (list, tuple)):
+                # 紧凑格式: [object, opinion, aspect?, subject?]
+                vals = list(item)
+                obj = str(vals[0]).strip() if len(vals) > 0 and vals[0] else ""
+                opinion = str(vals[1]).strip() if len(vals) > 1 and vals[1] else ""
+                aspect_value = vals[2] if len(vals) > 2 else None
+                aspect = None if aspect_value in (None, "") else str(aspect_value).strip()
+                subject = str(vals[3]).strip() if len(vals) > 3 and vals[3] else "_paper_author"
+                evidence = ""
+            else:
                 continue
 
-            subject = str(item.get("subject", "")).strip()
-            obj = str(item.get("object", "")).strip()
-            aspect_value = item.get("aspect")
-            aspect = None if aspect_value is None else str(aspect_value).strip()
-            opinion = str(item.get("opinion", "")).strip()
-            evidence = str(item.get("evidence", "")).strip()
-            object_text = str(item.get("object_text", "")).strip()
-
-            # 必填字段缺失 → 丢弃该 relation
-            if not subject or not obj or not opinion or not evidence:
+            # 必填字段缺失 → 丢弃该 relation（旧格式仍要求 evidence 非空）
+            if not subject or not obj or not opinion:
                 continue
+            if isinstance(item, dict) and not evidence:
+                continue
+
+            # 紧凑格式不输出 evidence，由原句回填
+            if not evidence:
+                evidence = derive_evidence(sentence, obj, opinion) or opinion or obj
+
             # _missing_entity 必须附带 object_text, 否则无法回溯原文
             if obj == "_missing_entity" and not object_text:
                 object_text = obj  # 至少保留占位符文本
@@ -500,7 +471,6 @@ class EvaluativeRelationAgent:
         # has_evaluation 表示"句中是否存在真正评价"，独立于 relations 是否为空。
         # 情形B（有评价但客体非法）relations 为空但 has_evaluation 仍为 true，
         # 因此尊重模型返回的 has_evaluation；同时若存在合法 relation 则必为 true。
-        model_has_eval = bool(data.get("has_evaluation", False))
         has_evaluation = bool(relations) or model_has_eval
 
         return SentenceRelationOutput(
