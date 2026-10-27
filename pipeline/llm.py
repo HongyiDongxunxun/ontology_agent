@@ -20,9 +20,18 @@ class LLMClient:
         self.json_retries = json_retries
         self.api_key = api_key or os.environ.get("DEEPSEEK_API_KEY", "")
         self.base_url = base_url or os.environ.get("DEEPSEEK_BASE_URL", "https://api.deepseek.com")
+        self._client: OpenAI | None = None  # 懒加载, 复用连接池
+
+    def _get_client(self) -> OpenAI:
+        if self._client is None:
+            self._client = OpenAI(
+                api_key=self.api_key, base_url=self.base_url,
+                timeout=self.timeout, max_retries=0,
+            )
+        return self._client
 
     def _call(self, prompt: str, use_json: bool = False) -> str:
-        client = OpenAI(api_key=self.api_key, base_url=self.base_url, timeout=self.timeout, max_retries=0)
+        client = self._get_client()
         retryable = (APIConnectionError, APITimeoutError, RateLimitError)
         last_error: Exception | None = None
         for attempt in range(1, 5):
