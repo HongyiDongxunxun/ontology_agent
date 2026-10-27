@@ -3,9 +3,10 @@
 V4.3 端到端文献知识挖掘系统 — 三Agent并行启动入口 (eval mode support)
 """
 from __future__ import annotations
-import argparse, json, os, random, sys, time
+import argparse, json, os, random, re, sys, time
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from threading import Lock
 from config import config as cfg, build_config
@@ -237,7 +238,27 @@ def main() -> int:
                         help="stage2 additional review sentence file or directory")
     parser.add_argument("--dynamic-terms", type=str, default="")
     parser.add_argument("--max-terms", type=int, default=0)
+    parser.add_argument("--deadline", type=str, default="",
+                        help="截止时间 (北京时间 HH:MM), 到点停止派发新文献, 已提交的跑完")
     args = parser.parse_args()
+
+    # 解析截止时间
+    deadline_dt = None
+    if args.deadline:
+        m = re.match(r"^(\d{1,2}):(\d{2})$", args.deadline.strip())
+        if not m:
+            print(f"[ERR] --deadline 格式应为 HH:MM, 收到: {args.deadline}"); return 1
+        hh, mm = int(m.group(1)), int(m.group(2))
+        if not (0 <= hh < 24 and 0 <= mm < 60):
+            print(f"[ERR] --deadline 时间非法: {args.deadline}"); return 1
+        beijing_tz = timezone(timedelta(hours=8))
+        now = datetime.now(beijing_tz)
+        target = now.replace(hour=hh, minute=mm, second=0, microsecond=0)
+        if target <= now:  # 已过 → 顺延到次日
+            target += timedelta(days=1)
+        deadline_dt = target
+        print(f"[Deadline] 截止时间: 北京时间 {target.strftime('%Y-%m-%d %H:%M')} "
+              f"(距现在 {(target - now).total_seconds()/60:.0f} 分钟)")
 
     if args.no_thinking: args.thinking = False
     if args.no_voting: args.voting = False
@@ -278,11 +299,20 @@ def main() -> int:
     label = "Test(10)" if run_mode == "test" else "Full"
     print(f"\n{'='*70}\n  Pipeline [{label}] — {total} files (x{concurrency})\n{'='*70}\n")
     aggregated, completed, start = [], 0, time.time(); dynamic_db = DynamicTermDB()
+    beijing_tz = timezone(timedelta(hours=8))
     with ThreadPoolExecutor(max_workers=concurrency) as ex:
-        futures = {ex.submit(process_one_file, fp, g, output_dir, mid_data_dir, i, total,
-                             dynamic_db, enable_verify, args.entity_sentences,
-                             args.additional_sentences): i
-                   for i, fp in enumerate(files, 1)}
+        futures = {}
+        for i, fp in enumerate(files, 1):
+            if deadline_dt and datetime.now(beijing_tz) >= deadline_dt:
+                with _print_lock:
+                    print(f"[Deadline] 已到截止时间 {deadline_dt.strftime('%H:%M')}, "
+                          f"剩余 {total - i + 1} 个文献不再派发, 等待已提交的 {len(futures)} 个完成")
+                break
+            futures[ex.submit(process_one_file, fp, g, output_dir, mid_data_dir, i, total,
+                              dynamic_db, enable_verify, args.entity_sentences,
+                              args.additional_sentences)] = i
+        if not futures:
+            print(f"[Done] 到达截止时间前已无可派发文献"); return 0
         for fut in as_completed(futures):
             s = fut.result()
             with _summary_lock: aggregated.append(s); completed += 1
